@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- this file didn't change name in v5.5.1 
+Events tied to the escape, surrender, death, or crewdeath of ships. From this add-on or modified by it. -->
+
+<!-- 
+//////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+//////////////////	Exit bosses
+//////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+ -->
+<FTL>
+
+<ship name="SHIP_RK_BAM_EXIT_BOSS" auto_blueprint="DJMOD_RADIKAL_BOSS_BAM">
+	<destroyed>
+		<text>The ship is destroyed. The other gatekeepers give a solemn nod. "Whoever passed our coordinates along to you made a good choice, and so did you coming here. You are free to go! Have some free repairs too."</text>
+		<weapon name="GIFTLIST_FITTING_WEAPON_BAM"/>
+		<autoReward level="HIGH">stuff</autoReward>
+		<damage amount="-10"/>
+	</destroyed>
+	<deadCrew>
+		<text>Now that you've passed the test, the other gatekeepers allow you out of the sector, and hint that since you even managed to leave the ship in one piece, you get a free random deckhand!</text>
+		<weapon name="GIFTLIST_FITTING_WEAPON_BAM"/>
+		<autoReward level="HIGH">stuff</autoReward>
+		<damage amount="-10"/>
+		<crewMember amount="1"/>
+		<!-- <unlockCustomShip silent="false">PLAYER_SHIP_DJMOD_SCORCH</unlockCustomShip> -->
+	</deadCrew>
+	<crew>
+		<crewMember type="rock_paladin" prop="0.20"/>
+		<crewMember type="phantom_mare" prop="0.20"/>
+		<crewMember type="shell_mechanic" prop="0.20"/>
+		<crewMember type="lanius_welder" prop="0.20"/>
+		<crewMember type="zoltan_devotee" prop="0.20"/>
+	</crew>
+</ship>
+
+<ship name="SHIP_RK_PUNK_EXIT_BOSS" auto_blueprint="DJMOD_RADIKAL_BOSS_PUNK">
+	<destroyed>
+		<text>The ship is destroyed. The other gatekeepers give a solemn nod. "Whoever passed our coordinates along to you made a good choice, and so did you coming here. You are free to go! Have some free repairs too."</text>
+		<weapon name="GIFTLIST_FITTING_WEAPON_PUNK"/>
+		<autoReward level="HIGH">stuff</autoReward>
+		<damage amount="-10"/>
+	</destroyed>
+	<deadCrew>
+		<text>Now that you've passed the test, the other gatekeepers allow you out of the sector, and hint that since you even managed to leave the ship in one piece, you get a free random deckhand!</text>
+		<weapon name="GIFTLIST_FITTING_WEAPON_PUNK"/>
+		<autoReward level="HIGH">stuff</autoReward>
+		<damage amount="-10"/>
+		<crewMember amount="1"/>
+		<!-- <unlockCustomShip silent="false">PLAYER_SHIP_DJMOD_SCORCH</unlockCustomShip> -->
+	</deadCrew>
+	<crew>
+		<crewMember type="slug_knight" prop="0.20"/>
+		<crewMember type="phantom_wraith" prop="0.20"/>
+		<crewMember type="shell_scientist" prop="0.20"/>
+		<crewMember type="engi_separatist" prop="0.20"/>
+		<crewMember type="zoltan_devotee" prop="0.20"/>
+	</crew>
+</ship>
+
+<ship name="SHIP_RK_SCORCH_EXIT_BOSS" auto_blueprint="DJMOD_RADIKAL_BOSS_SCORCH">
+	<destroyed>
+		<text>The ship is destroyed. The other gatekeepers give a solemn nod. "Whoever passed our coordinates along to you made a good choice, and so did you coming here. You are free to go! Have some free repairs too."</text>
+		<weapon name="GIFTLIST_FITTING_WEAPON_SCORCH"/>
+		<autoReward level="HIGH">stuff</autoReward>
+		<damage amount="-10"/>
+	</destroyed>
+	<deadCrew>
+		<text>Now that you've passed the test, the other gatekeepers allow you out of the sector, and hint that since you even managed to leave the ship in one piece, you may retrieve a special cruiser blueprint from the wreck!</text>
+		<weapon name="GIFTLIST_FITTING_WEAPON_SCORCH"/>
+		<autoReward level="HIGH">stuff</autoReward>
+		<damage amount="-10"/>
+		<unlockCustomShip silent="false">PLAYER_SHIP_DJMOD_SCORCH</unlockCustomShip>
+	</deadCrew>
+	<crew>
+		<crewMember type="human_legion_pyro" prop="0.10"/>
+
+		<crewMember type="phantom_goul" prop="0.20"/>
+		<crewMember type="slug_clansman" prop="0.20"/>
+		<crewMember type="leech_ampere" prop="0.20"/>
+
+		<crewMember type="rock_commando" prop="0.30"/>
+	</crew>
+</ship>
+
+
+
+</FTL>
+
+<!-- ONLY REFS BELOW
+
+ALL REFS MV v5.5.1 for TEXT_DEAD_CREW_ZOLTAN & DEAD_CREW_ZOLTAN:
+
+<ship name="SHIP_ZOLTAN_FIGHT_FREEMANRESCUE" auto_blueprint="LIST_SHIPS_ZOLTAN_FIGHT">
+	<destroyed>
+		<text load="TEXT_DESTROYED_ZOLTAN"/>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event>
+				<text>The Free Mantis you've saved are extremely happy to see you. "Oh glorious Federation, you always coming when times of need! Our lives belong to yours! Taking plenty scrap!"</text>
+				<autoReward level="MED">scrap_only</autoReward>
+			</event>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text load="TEXT_DEAD_CREW_ZOLTAN"/>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event>
+				<text>The Free Mantis you've saved are extremely happy to see you. "Oh glorious Federation, you always coming when times of need! Our lives belong to yours! Taking plenty scrap!"</text>
+				<autoReward level="MED">scrap_only</autoReward>
+			</event>
+		</choice>
+	</deadCrew>
+</ship>
+
+<ship name="SHIP_ZOLTAN_ALL" auto_blueprint="LIST_SHIPS_ZOLTAN_ALL">
+	<surrender  chance="0.4" min="2" max="3" load="SURRENDER_ZOLTAN"/>
+	<destroyed load="DESTROYED_ZOLTAN"/>
+	<deadCrew load="DEAD_CREW_ZOLTAN"/>
+	<crew>
+		<crewMember type="zoltan" prop="0.90"/>
+		<crewMember type="engi" prop="0.10"/>
+	</crew>
+</ship>
+
+<ship name="SHIP_ZOLTAN_GENERIC" auto_blueprint="LIST_SHIPS_ZOLTAN_GENERIC">
+	<surrender  chance="0.4" min="2" max="3" load="SURRENDER_ZOLTAN"/>
+	<destroyed load="DESTROYED_ZOLTAN"/>
+	<deadCrew load="DEAD_CREW_ZOLTAN"/>
+	<crew>
+		<crewMember type="zoltan" prop="0.90"/>
+		<crewMember type="engi" prop="0.10"/>	
+	</crew>
+</ship>
+
+<ship name="SHIP_ZOLTAN_FIGHT" auto_blueprint="LIST_SHIPS_ZOLTAN_FIGHT">
+	<surrender  chance="0.4" min="2" max="3" load="SURRENDER_ZOLTAN"/>
+	<destroyed load="DESTROYED_ZOLTAN"/>
+	<deadCrew load="DEAD_CREW_ZOLTAN"/>
+</ship>
+
+<ship name="SHIP_ZOLTAN_TRANSPORT" auto_blueprint="MU_ZOLTAN_TRANSPORT">
+	<surrender  chance="0.4" min="2" max="3" load="SURRENDER_ZOLTAN"/>
+	<destroyed load="DESTROYED_ZOLTAN"/>
+	<deadCrew load="DEAD_CREW_ZOLTAN"/>
+</ship>
+
+<ship name="SHIP_ZOLTAN_GUARD" auto_blueprint="MU_ZOLTAN_GUARD">
+	<destroyed load="DESTROYED_ZOLTAN"/>
+	<deadCrew load="DEAD_CREW_ZOLTAN"/>
+</ship>
+
+<mod:findLike type="crew">
+	<mod:findName type = "race" name = "gnome">
+		<mod:findLike type = "passiveStatBoosts">
+			<mod:findName type = "statBoost" name = "silenced">
+				<mod:findLike type = "blackList">
+					<mod-append:box_damaged/>
+					<mod-append:box_black_engaged/>
+					<mod-append:box_white_engaged/>
+				</mod:findLike>
+			</mod:findName>
+		</mod:findLike>
+	</mod:findName>
+</mod:findLike>
+
+<mod:findName type = "event" name = "DISTRESS_PIRATE_CIVILIAN_BEACON">
+<mod-append:choice req="coords_radikal" lvl="0" max_lvl="0" hidden="true" blue="true">
+     <text>Don't you have anything better to do, weak-ass lowlives?</text>
+     <event load="DISTRESS_PIRA_CIVI_COORDS_RK"/>
+</mod-append:choice>
+</mod:findName>
+-->
+
+<!-- REFS from events_sector_abandoned in Piracy is Poggers:
+<mod:findName type="event" name="ABANDONED_SLAVER_MOON">
+    <mod:findWithChildLike type="choice" child-type="text">
+      <mod:selector>Pull closer.</mod:selector>
+      <mod:findLike type="event">
+        <mod:findWithChildLike type="choice" child-type="text">
+          <mod:selector>Check out the slaves being offered.</mod:selector>
+          <mod:findLike type="event">
+            <mod:removeTag/>
+          </mod:findLike>
+          <mod-append:event>
+            <text>The slavers notice your interest and show you several offers.</text>
+            <choice>
+              <text>Buy a slave.</text>
+              <event>
+                <text>"A great purchase. May they serve you well, captain..."</text>
+                <item_modify>
+                  <item type="scrap" min="-35" max="-25"/>
+                </item_modify>
+                <crewMember amount="1" class="LIST_SLAVES_GENERIC"/>
+                <choice hidden="true">
+                  <text>Continue...</text>
+                  <event load="REPUTATION_UPDATE_SLAVER_FREE"/>
+                </choice>
+              </event>
+            </choice>
+            <choice>
+              <text>Buy a slave.</text>
+              <event>
+                <text>"A great purchase. May they serve you well, captain..."</text>
+                <item_modify>
+                  <item type="scrap" min="-35" max="-25"/>
+                </item_modify>
+                <crewMember amount="1" class="LIST_SLAVES_GENERIC"/>
+                <choice hidden="true">
+                  <text>Continue...</text>
+                  <event load="REPUTATION_UPDATE_SLAVER_FREE"/>
+                </choice>
+              </event>
+            </choice>
+            <choice>
+              <text>Buy an elite slave.</text>
+              <event>
+                <text>"Ah, I see you have an eye for only the highest quality of slaves, captain. This one here is one of the finest slaves we have ever kept. May they serve you well, captain..."</text>
+                <item_modify>
+                  <item type="scrap" min="-70" max="-60"/>
+                </item_modify>
+                <crewMember amount="1" class="LIST_SLAVES_ELITE_ONLY"/>
+                <choice hidden="true">
+                  <text>Continue...</text>
+                  <event load="REPUTATION_UPDATE_SLAVER_FREE"/>
+                </choice>
+              </event>
+            </choice>
+            <choice hidden="true">
+              <text>Nevermind.</text>
+              <event/>
+            </choice>
+          </mod-append:event>
+        </mod:findWithChildLike>
+        <mod:findWithChildLike type="choice" child-type="text">
+          <mod:selector>Attack the slavers!</mod:selector>
+          <mod:findLike type="event">
+            <mod:findLike type="choice">
+              <mod:findLike type="event">
+                <mod:setAttributes load="REPUTATION_DECREASE_SLAVER_COMBAT"/>
+              </mod:findLike>
+            </mod:findLike>
+          </mod:findLike>
+        </mod:findWithChildLike>
+      </mod:findLike>
+    </mod:findWithChildLike>
+  </mod:findName>
+	
+  <mod:findName type="eventList" name="ABANDONED_COLONY_EXPLORE_SCANS">
+	  <mod:findWithChildLike type="event" child-type="text">
+		  <mod:selector>Seems a known pirate fugitive is hiding in the colony, but they haven't seen you yet.</mod:selector>
+		  <mod:findWithChildLike type="choice" child-type="text">
+			  <mod:selector>Engage the pirate.</mod:selector>
+			  <mod:findLike type="event">
+				  <mod:findLike type="choice">
+					  <mod:findLike type="event">
+						  <mod:setAttributes load="REPUTATION_DECREASE_PIRATES_COMBAT"/>
+					  </mod:findLike>
+				  </mod:findLike>
+			  </mod:findLike>
+		  </mod:findWithChildLike>
+	  </mod:findWithChildLike>
+  </mod:findName>
+ -->
+
+
+
+<!--
+REFS (unknown version)
+
+<ship name="SHIP_SMUGGLER_MONK" auto_blueprint="LIST_SHIPS_SMUGGLERS">
+	<destroyed>
+		<text>As you scrap the Smuggler ship, you're surprised to find a small device showing marked co-ordinates, likely for their intended client. Worth a look?</text>
+		<autoReward level="MED">standard</autoReward>
+		<quest event="NEBULA_ENCOUNTER_MONK_SMUGGLER_QUEST"/>
+	</destroyed>
+	<deadCrew>
+		<text>As you scrap the Smuggler ship, you're surprised to find a small device showing marked co-ordinates, likely for their intended client. Worth a look?</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<quest event="NEBULA_ENCOUNTER_MONK_SMUGGLER_QUEST"/>
+	</deadCrew>
+</ship>
+
+
+
+<ship name="SHIP_HEKTAR_POWERPLANT_HEKTAR" auto_blueprint="MU_HEKTAR_GUARD">
+	<destroyed>
+		<text>The powerplant's guard has been defeated. The powerplant surrenders to you.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Contact Ithen.</text>
+			<event>
+				<text>"Marvelous work! I cannot thank you enough. I guess my work here is done. Unfortunately, I'm kind of stuck here. You know, massive debt and all that. Mind helping escort me out of this place?"</text>
+				<crewMember amount="1" class="orchid">Ithen</crewMember>
+			</event>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>The powerplant's guard and its crew have been eliminated. The powerplant surrenders to you.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Contact Ithen.</text>
+			<event>
+				<text>"Marvelous work! I cannot thank you enough. I guess my work here is done. Unfortunately, I'm kind of stuck here. You know, massive debt and all that. Mind helping escort me out of this place?"</text>
+				<crewMember amount="1" class="orchid">Ithen</crewMember>
+			</event>
+		</choice>
+	</deadCrew>
+</ship>
+
+<ship name="SHIP_HEKTAR_PATENT_HEKTAR" auto_blueprint="LIST_SHIPS_HEKTAR_FIGHT">
+	<destroyed>
+		<text>The Hektar ship has been defeated. You scrap the remains.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Contact the Zoltan.</text>
+			<event>
+				<text>"We appreciate your efforts in defending the noble trademark laws which hold this galaxy together. Hektar Industries "(tm)" has been abusing them for quite some time. Here is a reward."</text>
+				<autoReward level="MED">standard</autoReward>
+			</event>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>The Hektar ship has been defeated. You scrap the remains.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Contact the Zoltan.</text>
+			<event>
+				<text>"We appreciate your efforts in defending the noble trademark laws which hold this galaxy together. Hektar Industries "(tm)" has been abusing them for quite some time. Here is a reward."</text>
+				<autoReward level="MED">standard</autoReward>
+			</event>
+		</choice>
+	</deadCrew>
+	<crew>
+		<crewMember type="slug_hektar" prop="0.75"/>
+		<crewMember type="lizard" prop="0.25"/>
+	</crew>
+</ship>
+<ship name="SHIP_HEKTAR_PATENT_ZOLTAN" auto_blueprint="LIST_SHIPS_ZOLTAN_FIGHT">
+	<destroyed>
+		<text>The Zoltan ship has been defeated. You scrap the remains.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Contact the Slugs.</text>
+			<event>
+				<text>"Hah! Thosssse dumbassss Zoltans thought they were so clever, coming in here sssaying nonsssenssse like 'you can't just ssssay you trademarked ssssomething, you have to actually go through a legal procccessss.' HAHAHAH what malarkey. Anywayssss uh, here'sss some garbage or sssomethin I dunno."</text>
+				<autoReward level="MED">standard</autoReward>
+			</event>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>The Zoltan ship has been defeated. You scrap the remains.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Contact the Slugs.</text>
+			<event>
+				<text>"Hah! Thosssse dumbassss Zoltans thought they were so clever, coming in here sssaying nonsssenssse like 'you can't just ssssay you trademarked ssssomething, you have to actually go through a legal procccessss.' HAHAHAH what malarkey. Anywayssss uh, here'sss some garbage or sssomethin I dunno."</text>
+				<autoReward level="MED">standard</autoReward>
+			</event>
+		</choice>
+	</deadCrew>
+</ship>
+
+<ship name="SHIP_TAURUS" auto_blueprint="MU_ANGEL_DEATH">
+	<destroyed>
+		<text>Taurus' ship explodes, plummeting into the ground. You pilot closer and scrap the wreckage.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true" req="LIST_VARIANT_BILLY" lvl="1" max_group="0" blue="false">
+			<text>Continue...</text>
+			<event load="BILLY_SAVE"/>
+		</choice>
+		<choice hidden="true" req="LIST_VARIANT_BILLY" lvl="0" max_group="0" blue="false">
+			<text>Continue...</text>
+			<event load="BILLY_DEAD"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Taurus' ship is now empty of crew, plummeting into the ground. You pilot closer and scrap the wreckage.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true" req="LIST_VARIANT_BILLY" lvl="1" max_group="0" blue="false">
+			<text>Continue...</text>
+			<event load="BILLY_SAVE"/>
+		</choice>
+		<choice hidden="true" req="LIST_VARIANT_BILLY" lvl="0" max_group="0" blue="false">
+			<text>Continue...</text>
+			<event load="BILLY_DEAD"/>
+		</choice>
+	</deadCrew>
+	<crew>
+		<crewMember type="rock" prop="0.33"/>
+		<crewMember type="mantis" prop="0.33"/>
+		<crewMember type="human" prop="0.33"/>
+	</crew>
+</ship>
+
+<ship name="SHIP_HEKTAR_BOSS" auto_blueprint="MU_HEKTAR_BOSS">
+	<destroyed>
+		<text>The Hektar ship has been defeated. Maybe you should feel guilty, considering they were just employees following orders, but you don't feel any sympathy whatsoever.</text>
+		<autoReward level="HIGH">weapon</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="METYUNT"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>The Hektar ship has been defeated. Maybe you should feel guilty, considering they were just employees following orders, but you don't feel any sympathy whatsoever.</text>
+		<autoReward level="HIGH">weapon</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="METYUNT"/>
+		</choice>
+	</deadCrew>
+	<crew>
+		<crewMember type="slug_hektar" prop="1"/>
+		<crewMember type="lizard" prop="0.50"/> 		NO LIZARDS
+	</crew>
+</ship>
+
+<ship name="SHIP_HEKTAR_EXIT_BOSS" auto_blueprint="MU_HEKTAR_BOSS">
+	<destroyed>
+		<text>The ship is destroyed. You can finally leave this nightmare of a sector.</text>
+		<autoReward level="HIGH">weapon</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>The crew of the ship is dead. You can finally leave this nightmare of a sector.</text>
+		<autoReward level="HIGH">weapon</autoReward>
+	</deadCrew>
+	<crew>
+		<crewMember type="slug_hektar" prop="0.75"/>
+		<crewMember type="lizard" prop="0.25"/>
+	</crew>
+</ship>
+-->

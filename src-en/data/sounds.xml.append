@@ -1,0 +1,31 @@
+<!-- Sounds must be defined here before they can be played ingame with <playSound> ! ! ! 
+
+REFS
+<lightspeed volume="7">ship/mv_lightspeed.ogg</lightspeed>
+
+<horseControl volume="4">aliens/bp_sfx_horse_control.ogg</horseControl>
+<horseDeath volume="8">aliens/bp_sfx_horse_death.ogg</horseDeath>
+
+<laser_particle volume="2">weapons/mv_particle_laser.ogg</laser_particle>
+-->
+<FTL>
+	<!-- Using the one in MV files causes the sound after each FTL jump (which is certainly this file) to be incredibly loud, as if the var here overwrites its volume. -->
+	<dj_enginesChargingUp volume="5">ship/radikal_jump.ogg</dj_enginesChargingUp>
+	<dj_enginesChargingUp_FP volume="10">ship/radikal_jumpFP.ogg</dj_enginesChargingUp_FP>
+	<dj_sunFlare volume="5">environment/radikal_bp_flare_1.ogg</dj_sunFlare>
+	<dj_sunFlare_FP volume="10">environment/radikal_bp_flare_1FP.ogg</dj_sunFlare_FP>
+	<dj_lightningWithFade volume="10">environment/radikal_bp_lightning1_01.ogg</dj_lightningWithFade>
+	
+	<!-- **************************************************************************************
+	******************************************* custom made
+	**************************************************************************************-->
+	
+	<!-- Punk -->
+	<dj_hackingZap1 volume="10">augments/hacking_zap1.ogg</dj_hackingZap1>
+	<dj_hackingZap2 volume="10">augments/hacking_zap2.ogg</dj_hackingZap2>
+	<dj_hackingZap3 volume="10">augments/hacking_zap3.ogg</dj_hackingZap3>
+	<!-- Scorch -->
+	<dj_scorchedEarth volume="10">augments/scorched_earth.ogg</dj_scorchedEarth>
+	<dj_plasmaTeleporter volume="8">augments/plasma_teleporter2.ogg</dj_plasmaTeleporter>
+	<dj_plasmaTeleporter_S volume="9">augments/plasma_teleporter_s.ogg</dj_plasmaTeleporter_S>
+</FTL>

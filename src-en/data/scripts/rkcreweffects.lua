@@ -1,0 +1,1 @@
+mods.fusion.burnSpeedCrew["rk_fireghost"] = {0, 2}

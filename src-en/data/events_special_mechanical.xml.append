@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Seems like this is where you should put "mechanical" events like power surges and triggered events with timer.
+However, MV's file does not feature player ship CURA's power surges in there. -->
+<FTL>
+
+<event name="RK_FIREGHOST_FIRES">
+	<playSound>dj_plasmaTeleporter</playSound>
+	
+	<!-- <item_modify>
+		<item type="fuel" min="-1" max="-1"/>
+	</item_modify>
+	
+	<damage amount="0" system="oxygen" effect="fire"/>
+	
+	<damage amount="0" system="room" effect="fire"/> -->
+	<damage amount="0" system="room" effect="fire"/>
+	<enemyDamage amount="0" system="random" effect="fire"/>
+	<!-- <choice>
+		<text>Deal with the fire, but keep an eye on the enemy. Continue to the fight!</text>
+		<event>
+			
+		</event>
+	</choice> -->
+</event>
+
+</FTL>

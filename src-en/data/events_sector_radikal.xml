@@ -1,0 +1,645 @@
+<!-- This file wasn't used in the version of RadiKal sector for MV v5.2.3, but now it better be.
+Keep building it by moving things to here, and cross fingers.
+
+
+Enemy ship BLUEPRINTS (not DEFINITIONS) go in autoblueprints.xml.append.
+
+Enemies in events have two components, their BLUEPRINT (which defines the weapons/systems/crew/rooms/etc)
+and they also have a ship DEFINITION. This can go in the same file as your other events but 
+usually they go in events_ships.xml.append.
+
+SURRENDER events do not, by default, turn the enemy ship neutral.
+If you are writing your own surrender event you need to make sure you use the ship tag to make them neutral
+in whatever option you include to accept the surrender.
+This does mean you can write “fake” surrender events that include some sort of mid-fight event.
+Don’t be afraid to get creative.
+DJMOD IDEAS: 
+- Calling for ASB (which MV probably already does, guards never surrender)
+- Start escaping (which MV probably already does)
+- Be empowered by enabling/unlimiting systems (which MV probably already does, obelisk/lanius at the Harmony Link,
+ and the Lylmik S8 Gate kidnapper from The Outer Expansion)
+- Be weakened (limit systems) Might interfere with Punk special combat hacks! (OR disable systems)
+- Switch strategies: if was escaping, enable&disable systems to go killmode, and vice-versa.
+- Power Surge-type reactions
+- Activation of augments, especially one-time use, like AERA Second Wind! Scorched Earth probably too tricky.
+- Smaller escape ship: have player choose between scrapping abandoned ship = instant win,
+ and chasing = replace current enemy by the smaller one,
+ with less loot ("self-destruct timer") but including a valuable item, or crewgain if smaller one can do their own surrender!
+ "I really don't wanna die, rather join you"-style dialogue.
+- Bigger ship: see above, but enemy "underestimated you and teleports to their REAL ship".
+ Player may choose to get low scrap reward and run "before the real ship comes online".
+- Steal from you and start escaping, StS-style!
+
+
+=== EVENT TYPES ===
+Events in FTL are typically organized into 6 categories, which are also the eventLists that make up the majority 
+of events in a sector. These categories are:
+
+Item Events - these events usually are very peaceful and often generic. They're typically basic free reward events, 
+	trade events, or involve some kind of interaction where fighting is undesirable or unlikely.
+Neutral Events - these are the second most common type of event in most sectors. They are events which don't have to resolve 
+	in a fight but present the player with some option to take a fight.
+Distress Events - these are events with a distress beacon.
+Quest Events - these are events that have some kind of quest beacon tied to them. Most sectors usually only have 
+	at most one or two of these.
+Hostile Events - the most generic type of event. Most of these events are very generic "a ship appears, time to fight!" 
+	They will usually have mandatory combat, although they might have a niche blue option that gets you out of a fight.
+Store Events - in vanilla, these are just extremely generic beacons with a store. In MV however, stores have been reworked 
+	to be fully fledged events of their own.
+
+-->
+
+<FTL>
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					RADIKAL SECTOR
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+					    DISTRESS EVENTS
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- Sniper girl merchant under attack by stealth ship. Rescue for store which sells mv-stealth weapons and cloak. -->
+<event name="RKS_STORE_SNIPER_SIEGED">
+	<preventQuest/>
+	<beaconType id="map_icon_hostilestore" global="false">
+		<color r="215" g="175" b="175" a="1"/>
+	</beaconType>
+	<text>Looks like an EXTREME-ly deadly stealth ship is attacking the nearby market owned by a certain "Sniper Girl". If you can stop them, you should be able to access the store.
+		The specialized store looks ready to provide fire support.
+	</text>
+	<ship load="SHIP_RKS_STORE_SNIPER_EXTREME" hostile="false"/>
+	<choice hidden="true">
+		<text>Rescue the store.</text>
+		<event>
+			<text>You prepare for combat.</text>
+			<environment type="PDS" target="enemy"/>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Ignore the merchant.</text>
+		<event>
+			<text>You are pretty sure they noticed your presence, but they seem too busy to care.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<!-- <ship name="SHIP_MTBOSS_ANGEL_B_EXTREME" auto_blueprint="MTS_BOSS_ANGEL_EXTREME"> -->
+<ship name="SHIP_RKS_STORE_SNIPER_EXTREME" auto_blueprint="MTS_BOSS_ANGEL_EXTREME">
+	<destroyed>
+		<text>The stealth ship breaks apart and you quickly salvage what you can.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="RKS_STORE_SNIPER_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can from the stealth ship.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="RKS_STORE_SNIPER_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="RKS_STORE_SNIPER_WIN">
+	<text>Sniper Girl wastes no time hailing you. "They just keep coming, with better equipment every time, to rob us. I just can't catch a breath. I know that's why you're here too..." You're about to say something to cheer her up when she cuts you off. "Because there's NO better shop in this universe for Stealth gear! So efficient, pirates dream about it, coalitions plot to acquire it, and renegades jump in to steal it! Buy while you still can!".
+		Turns out she's still in character. RK sector professionals must have seen some shit, you think to yourself.
+
+		"...And for your timely assistance, here's a little incentive to buy." You realize the gift is your "Thank you", and shrug.
+		Then you take one look at the wares and immediately understand why the attacker came here.
+
+		"Oh and, some of this stuff is so hard to source it shouldn't even exist, so only 1 purchase per customer. But for you I'll make it 3."
+	</text>
+	<autoReward level="HIGH">standard_no_item</autoReward>
+
+	<store>STORE_RKS_SNIPER</store>
+	<choice hidden="true">
+		<text>Alright then.</text>
+		<event/>
+	</choice>
+</event>
+
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+					    HOSTILE EVENTS
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+					    ITEM EVENTS
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+					    NEUTRAL EVENTS
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+					    QUEST EVENTS
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!-- Must buy at least once from each pirate, or whoever you're looking at turns hostile. You choose the order.
+If you don't come at all, trigger RKS_PIRATE_TRINITY_EXIT_AMBUSH.
+
+Quest was not spawning, with text saying it DID, but always "next sector" while that parameter was set to "false".
+FIXED by adding <mod-append:eventFile>sector_radikal</mod-append:eventFile>	to hyperspace.xml.append ,
+instead of <mod-append:eventFile>radikal</mod-append:eventFile> .
+
+Then it simply crashed.
+FIXED by using _LOADER technique like MV's gambling machine in events_special_storage .
+-->
+
+<!-- <event name="RKS_PIRATE_TRINITY" unique="true"> 	Should be unique but that slows down testing a lot. -->
+<event name="RKS_PIRATE_TRINITY">
+	<preventQuest/>
+	<preventFleet/>
+	<quest>
+		<nebulaBeacon>false</nebulaBeacon>
+		<aggressive>2</aggressive>			<!-- what does that even do? -->
+	</quest>
+	<beaconType id="map_icon_rks_pirate_trinity" global="true">
+		<color r="255" g="245" b="175" a="1.0"/>
+		<unvisitedTooltip>The pirates await your scrap. Disappoint them in any way at your own risk!</unvisitedTooltip>
+	</beaconType>
+	
+	<text>The pirate clans don't always see eye to eye, but when there's big money to be made, they know how to behave. The elite welcoming you here seems in charge of overseeing the transactions.
+		"Sssso, you're the big shot Feddy cusssstomer who threw away a lawful life to mingle with ussss, eh? No offensssse but I've gotta tell you, I don't really buy it. We shall ssssee if you're for real..."
+		
+		If you don't want to anger the slug and his ruthless associates, you had better buy something from each of the pirate subfactions.
+		It's all-or-nothing, but if you do, pirates everywhere will respect you that much more!
+	</text>
+	<!-- These are Clairvoyants, out of place. Customize eventually.
+	<ship load="SHIP_SLUG_ELITE_FIGHT" hostile="false"/>
+	<ship load="SHIP_SLUG_ELITE_GENERIC" hostile="false"/> -->
+	<ship load="SHIP_PIRATE_ELITE_STARGROVE" hostile="false"/>
+
+	<choice>
+		<text>Yep that's me. Enough chitchat, show us the goods.</text>
+		<!-- <event load="RKS_PIRATE_TRINITY_CHOOSE"/> 		Without Loader technique, CRASH. -->
+		<!-- <loadEvent seeded="false">RKS_PIRATE_TRINITY_CHOOSE_LOADER</loadEvent> 	CRASH -->
+		<event load="RKS_PIRATE_TRINITY_CHOOSE_LOADER"/>
+	</choice>
+
+	<!-- Kind of a failsafe. -->
+	<choice>
+		<text>Not us, just passing through.</text>
+		<event load="RKS_PIRATE_TRINITY_FIGHT_CURRENT_PIRATE"/>
+	</choice>
+</event>
+
+<!-- Is the crash about stupid anti-loop algorithm? IT WAS! Using _LOADER technique fixes it.
+REF MV v5.5.1:
+<event name="STORAGE_CHECK_GAMBLING_LOADER">
+    <loadEvent seeded="false">STORAGE_CHECK_AUG_GAMBLING_MACHINE</loadEvent>
+</event>
+-->
+<event name="RKS_PIRATE_TRINITY_CHOOSE_LOADER">
+	<!-- <event load="RKS_PIRATE_TRINITY_CHOOSE"/> 	CRASH -->
+	<loadEvent seeded="false">RKS_PIRATE_TRINITY_CHOOSE</loadEvent>
+</event>
+
+<event name="RKS_PIRATE_TRINITY_CHOOSE">
+	<text>The pirates are all looking at you expectantly.</text>
+
+	<!-- Now the exit ambush won't happen. Maybe move this to when player completes all deals? -->
+	<variable name="rks_pirate_trinity_visited" op="add" val="1"/>
+	
+	<choice req="rks_pirate_trinity_met_slaver" lvl="0" max_lvl="0" hidden="true" blue="false">
+		<text>Meet with the Tiiikaka slaver</text>
+		<!-- <event load="RKS_PIRATE_TRINITY_CHOOSE_SLAVER"/>	Does NOT remove the current ship, so no work. -->
+		<!-- <loadEvent seeded="false">RKS_PIRATE_TRINITY_CHOOSE_SLAVER</loadEvent>		CRASH ENDTASK -->
+		<!-- Retry without spawning the 2nd ship to see what happens: 				
+		<loadEvent seeded="false">RKS_PIRATE_TRINITY_CHOOSE_SLAVER</loadEvent>		CRASH ENDTASK -->
+		<!-- Retry with <multiShipFix enabled="true"/> in hyperspace.xml.append . WORKS!!
+		Alas as a side effect, makes S1 Leah stronger vs shieldless. -->
+		<event load="RKS_PIRATE_TRINITY_CHOOSE_SLAVER"/>
+	</choice>
+	<choice req="rks_pirate_trinity_met_slaver" lvl="1" hidden="true" blue="false">
+		<text>The slaver is counting their scrap, seated on a slave's face.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+
+	<choice req="rks_pirate_trinity_met_mercenary" lvl="0" max_lvl="0" hidden="true" blue="false">
+		<text>Meet with the Syndicate mercenary</text>
+		<event load="RKS_PIRATE_TRINITY_CHOOSE_MERCENARY"/>
+	</choice>
+	<choice req="rks_pirate_trinity_met_mercenary" lvl="1" hidden="true" blue="false">
+		<text>The mercenary is juggling bits of scrap, knives and loaded guns.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	
+	<choice req="rks_pirate_trinity_met_smuggler" lvl="0" max_lvl="0" hidden="true" blue="false">
+		<text>Meet with the Argeonn smuggler</text>
+		<event load="RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER"/>
+	</choice>
+	<choice req="rks_pirate_trinity_met_smuggler" lvl="1" hidden="true" blue="false">
+		<text>The smuggler is telling their third wife she can buy that Butler.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+
+	<!-- intended lvl="3". Simpler than making a custom req with all meetings, but do that if bugs arise. -->
+	<choice req="rks_pirate_trinity_count" lvl="3" hidden="true">
+		<text>Thank them for the business and say goodbye.</text>
+		<event>
+			<text>"Well well, you truly are one rich, ssssick individual with zero regard for other living thingsss, a fantasssstic customer by all accountssss! Accept my apologiesss for doubting you, and may your raidsss bring great bounty! Gals and guys it's party time! Narcotics for everyone, and a round of Shoot-Tha-Limbs on that human slave who looked at me funny this morning."
+				
+				They let you leave with a little gift and big smiles on their faces. Congratulations, you have just made the galaxy a worse place.
+			</text>
+			<autoReward level="MED">stuff</autoReward>
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="DJMOD_REPUTATION_UPDATE_PIRATES_DOUBLE"/>
+			</choice>
+		</event>
+	</choice>
+
+	<!-- Kind of a failsafe. -->
+	<choice>
+		<text>We won't actually do business with all of you. We're leaving.</text>
+		<event load="RKS_PIRATE_TRINITY_FIGHT_CURRENT_PIRATE"/>
+	</choice>
+</event>
+
+<event name="RKS_PIRATE_TRINITY_CHOOSE_SLAVER">
+	<text>"From warships, mining camps, nurseries, outposts too, we bring best and brightest slaves! Sure one of them is your need...
+		Unless you no wanna pay. Then we put slave collar on you too."</text>
+	<ship load="SHIP_RKS_TRINITY_SLAVER" hostile="false"/>
+	
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>The slaver proudly shows off the poor souls for you to buy.</text>
+			<variable name="rks_pirate_trinity_met_slaver" op="add" val="1"/>
+
+			<choice>
+				<text>Buy a slave.</text>
+				<event>
+					<text>"Great buy. Sure they serve well, captain!"</text>
+					<item_modify>
+						<item type="scrap" min="-35" max="-25"/>
+					</item_modify>
+					<!-- Only use lists from MV or RK since Piracy Is Poggers might not be patched in. -->
+					<crewMember amount="1" class="LIST_SLAVES_GENERIC"/>
+					<!-- <variable name="rks_pirate_trinity_met_slaver" op="add" val="1"/> -->
+					<variable name="rks_pirate_trinity_count" op="add" val="1"/>
+					
+					<choice hidden="true">
+						<text>Continue...</text>
+						<!-- <event load="RKS_PIRATE_TRINITY_CHOOSE"/> Without Loader technique, CRASH. -->
+						<!-- <loadEvent seeded="false">RKS_PIRATE_TRINITY_CHOOSE_LOADER</loadEvent> CRASH ENDTASK. -->
+						<event load="RKS_PIRATE_TRINITY_CHOOSE_LOADER"/>
+					</choice>
+				</event>
+			</choice>
+
+			<choice>
+				<text>Buy a better slave.</text>
+				<event>
+					<text>"Great buy. Sure they serve well, captain!"</text>
+					<item_modify>
+						<item type="scrap" min="-45" max="-35"/>
+					</item_modify>
+					<crewMember amount="1" class="LIST_SLAVES_GOOD"/>
+					<variable name="rks_pirate_trinity_count" op="add" val="1"/>
+					
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="RKS_PIRATE_TRINITY_CHOOSE_LOADER"/>
+					</choice>
+				</event>
+			</choice>
+
+			<choice>
+				<text>Buy an elite slave.</text>
+				<event>
+					<text>"Ah, I see you have eye for only best quality of slaves, captain. This is one of finest slaves ever. Sure they serve well, captain!"</text>
+					<item_modify>
+						<item type="scrap" min="-70" max="-60"/>
+					</item_modify>
+					<crewMember amount="1" class="LIST_SLAVES_GREAT"/>
+					<variable name="rks_pirate_trinity_count" op="add" val="1"/>
+					
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="RKS_PIRATE_TRINITY_CHOOSE_LOADER"/>
+					</choice>
+				</event>
+			</choice>
+
+			<choice hidden="true">
+				<text>You know what, the funny thing is, we're broke...</text>
+				<event>
+					<text>"Bad words feddy captain, should have choose better words. But mostly should have bring scrap." The pirate ship in front of you instantly makes itself combat ready, having clearly expected that. 
+						
+						You can't tell whether the slug overseer is furious, vindicated, or both. "Hah! I knew it, you just wanted to take down a bunch of piratesss at once you wannabe hero. Guesss what, we're not that dumb! Hey Kurt, hand over the scrap, i won the bet."
+						With that, they and the other pirate ships jump away, leaving you to deal with the slaver!</text> 
+					<ship hostile="true"/>
+
+					<choice hidden="true">
+						<text>Continue...</text>
+						<!-- <event load="COMBAT_CHECK"/> -->
+						<event load="REPUTATION_DECREASE_SLAVER_COMBAT"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="RKS_PIRATE_TRINITY_CHOOSE_MERCENARY">
+	<text>"Stay one step ahead of your enemies with our intelligence services. From recon to distraction, all the way to more ...decisive action once we're acquainted well enough!
+		Assuming you didn't make yourself our next target by coming here empty-handed, obviously."</text>
+	<ship load="SHIP_RKS_TRINITY_MERCENARY" hostile="false"/>
+	
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>The Syndicate mercenary awaits your orders.</text>
+			<variable name="rks_pirate_trinity_met_mercenary" op="add" val="1"/>
+
+			<choice>
+				<text>Buy a map of the sector.</text>
+				<event>
+					<text>"You got it, captain!"</text>
+					<item_modify>
+						<item type="scrap" min="-15" max="-25"/>
+					</item_modify>
+					<reveal_map/>
+					<variable name="rks_pirate_trinity_count" op="add" val="1"/>
+					
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="RKS_PIRATE_TRINITY_CHOOSE_LOADER"/>
+					</choice>
+				</event>
+			</choice>
+
+			<choice>
+				<text>Delay the rebel fleet for 2 turns.</text>
+				<event>
+					<text>"We're on it, captain!"</text>
+					<item_modify>
+						<item type="scrap" min="-15" max="-25"/>
+					</item_modify>
+					<modifyPursuit amount="-2"/>
+					<variable name="rks_pirate_trinity_count" op="add" val="1"/>
+					
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="RKS_PIRATE_TRINITY_CHOOSE_LOADER"/>
+					</choice>
+				</event>
+			</choice>
+
+			<choice hidden="true">
+				<text>You know what, the funny thing is, we're broke...</text>
+				<event>
+					<text>"Bad choice, captain. You should have brought that scrap." The pirate ship in front of you instantly makes itself combat ready, having clearly expected that. 
+						
+						You can't tell whether the slug overseer is furious, vindicated, or both. "Hah! I knew it, you just wanted to take down a bunch of piratesss at once you wannabe hero. Guesss what, we're not that dumb! Hey Kurt, hand over the scrap, i won the bet."
+						With that, they and the other pirate ships jump away, leaving you to deal with the mercenary!</text> 
+					<ship hostile="true"/>
+
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="REPUTATION_DECREASE_MERCENARY_COMBAT"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER">
+	<text>"Do you know what separates good captains from great captains? Well, we do, and that's where they procure their weaponry. We provide those extra special weapons and augments that go beyond what you can find in your everyday store.
+		And where did we get them? In the lifeless ships of non-paying captains, which you're too smart to be, right?"</text>
+	<ship load="SHIP_RKS_TRINITY_SMUGGLER" hostile="false"/>
+	
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<text>The smuggler awaits your order.</text>
+			<variable name="rks_pirate_trinity_met_smuggler" op="add" val="1"/>
+
+			<choice>
+				<text>Buy a backup weapon.</text>
+				<event>
+					<text>"Enjoy that little bit of extra firepower!"</text>
+					<item_modify>
+						<item type="scrap" min="-10" max="-20"/>
+					</item_modify>
+					<weapon name="GIFTLIST_SHIPVORE_RAM_FP"/>
+					<variable name="rks_pirate_trinity_count" op="add" val="1"/>
+					
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="RKS_PIRATE_TRINITY_CHOOSE_LOADER"/>
+					</choice>
+				</event>
+			</choice>
+
+			<choice>
+				<text>Buy a random RadiKal weapon.</text>
+				<event>
+					<text>"Enjoy that extra firepower!"</text>
+					<item_modify>
+						<item type="scrap" min="-70" max="-55"/>
+					</item_modify>
+					<weapon name="LIST_WEAPONS_RADIKAL"/>
+					<variable name="rks_pirate_trinity_count" op="add" val="1"/>
+					
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="RKS_PIRATE_TRINITY_CHOOSE_LOADER"/>
+					</choice>
+				</event>
+			</choice>
+
+			<choice>
+				<text>Buy a random very rare RadiKal augment.</text>
+				<event>
+					<text>"Use with caution!"</text>
+					<item_modify>
+						<item type="scrap" min="-70" max="-40"/>
+					</item_modify>
+					<augment name="SHOP_ITEM_RARE_RK_AUGMENTS_2"/>
+					<variable name="rks_pirate_trinity_count" op="add" val="1"/>
+					
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="RKS_PIRATE_TRINITY_CHOOSE_LOADER"/>
+					</choice>
+				</event>
+			</choice>
+
+			<choice hidden="true">
+				<text>You know what, the funny thing is, we're broke...</text>
+				<event>
+					<text>"Sad, I didn't take you for a joker. You should have brought that scrap." The pirate ship in front of you instantly makes itself combat ready, having clearly expected that. 
+						
+						You can't tell whether the slug overseer is furious, vindicated, or both. "Hah! I knew it, you just wanted to take down a bunch of piratesss at once you wannabe hero. Guesss what, we're not that dumb! Hey Kurt, hand over the scrap, i won the bet."
+						With that, they and the other pirate ships jump away, leaving you to deal with the smuggler!</text> 
+					<ship hostile="true"/>
+
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="REPUTATION_DECREASE_SMUGGLING_COMBAT"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+
+<event name="RKS_PIRATE_TRINITY_FIGHT_CURRENT_PIRATE">
+	<text>"Of coursssse you are. Told you Kurt, hand over my sssscrap, you lost the bet. Let'ssss kill these damn clownssss."
+		Looks like you'll have to fight your way out!
+	</text>
+	<ship hostile="true"/>
+	<environment type="PDS" target="player"/>
+	
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="COMBAT_CHECK"/>
+	</choice>
+</event>
+
+<ship name="SHIP_RKS_TRINITY_SLAVER" auto_blueprint="LIST_SHIPS_SLAVER_ALL">
+	<destroyed>
+		<text>The Slaver ship has been defeated. You scrap the remains.
+			Intentionally or not, you've made a mess disrupting pirate operations in this sector.</text>
+		<autoReward level="HIGH">standard</autoReward>
+
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="MORALITY_REMOVE_GENERAL"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>The Slaver ship has been defeated. You scrap the interior and free a great slave from the cargo bay!
+			Intentionally or not, you've made a mess disrupting pirate operations in this sector.</text>
+		<autoReward level="MED">stuff</autoReward>
+		<crewMember amount="1" class="LIST_SLAVES_GREAT"/>
+
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="MORALITY_REMOVE_GENERAL"/>
+		</choice>
+	</deadCrew>
+</ship>
+<ship name="SHIP_RKS_TRINITY_MERCENARY" auto_blueprint="LIST_SHIPS_MERCENARY_ALL">
+	<destroyed>
+		<text>The Mercenary ship has been defeated. You scrap the remains.
+			Intentionally or not, you've made a mess disrupting pirate operations in this sector.</text>
+		<autoReward level="HIGH">standard</autoReward>
+
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="MORALITY_REMOVE_GENERAL"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>The Mercenary ship has been defeated. You scrap the interior and find detailed sector data in the terminal!
+			Intentionally or not, you've made a mess disrupting pirate operations in this sector.</text>
+		<autoReward level="MED">stuff</autoReward>
+		<reveal_map/>
+
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="MORALITY_REMOVE_GENERAL"/>
+		</choice>
+	</deadCrew>
+</ship>
+<ship name="SHIP_RKS_TRINITY_SMUGGLER" auto_blueprint="LIST_SHIPS_SMUGGLERS">
+	<destroyed>
+		<text>The Smuggler ship has been defeated. You scrap the remains.
+			Intentionally or not, you've made a mess disrupting pirate operations in this sector.</text>
+		<autoReward level="HIGH">standard</autoReward>
+
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="MORALITY_REMOVE_GENERAL"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>The Smuggler ship has been defeated. You scrap the interior and find a weapon in the cargo bay!
+			Intentionally or not, you've made a mess disrupting pirate operations in this sector.</text>
+		<autoReward level="MED">stuff</autoReward>
+		<!-- <weapon name="RANDOM"/> -->
+		<weapon name="LIST_WEAPONS_RADIKAL"/>
+
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="MORALITY_REMOVE_GENERAL"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+
+<!-- Happens after victory and repairs over the RK exit guard, on pressing Jump.
+RKS_PIRATE_TRINITY_EXIT_AMBUSH in events.xml.append .
+TODO: move it here then check for new bugs.
+ 
+Just as you were about to jump, a volley suddenly grazes your ship! "I knew you were a phony! You really thought you could jussst like, wassste the time of all pirate factionsss at once and get away with it? It'sss time to teach you some mannersss. By killing you. Just wanted to make that part clear."
+Looks like the pirates didn't appreciate you not coming to the meeting that you asked for when you entered the sector, and you'll have to beat this Elite to leave!
+-->
+
+
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+					    SHOP EVENTS
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+					EXIT BEACON
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+
+</FTL>

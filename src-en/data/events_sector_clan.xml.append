@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- REF MV v5.5.1:
+<event name="NEBULA_CLAN_JAMMER_SALESMAN" unique="true">
+    <text>A small lodge is present here. "Looking to ssssspice up your hunt? Let me tell you thissss, there'ssss no better way to sssstalk your prey than to use a jammer to weaken them. Come take a look!"</text>
+    <environment type="nebula"/>
+	<choice>
+		<text>Purchase a mobility jammer.</text>
+		<event load="JAMMER_SALESMAN_ENGINES"/>
+    </choice>
+    <choice>
+		<text>Purchase an offensive system jammer.</text>
+		<event load="JAMMER_SALESMAN_OFFENSIVE_SYSTEMS"/>
+    </choice>
+    <choice>
+		<text>Purchase a defensive system jammer.</text>
+		<event load="JAMMER_SALESMAN_DEFENSIVE_SYSTEMS"/>
+    </choice>
+    <choice>
+		<text>Purchase a jammer of vital ship operations.</text>
+		<event load="JAMMER_SALESMAN_MISC"/>
+    </choice>
+    <choice>
+		<text>Ignore the offer.</text>
+		<event>
+			<text>You decline the lodge's offer. There's still time to do something at this beacon.</text>
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+    </choice>
+</event>
+<eventList name="JAMMER_SALESMAN_OFFENSIVE_SYSTEMS">
+    <event>
+		<item_modify>
+			<item type="scrap" min="-45" max="-35"/>
+		</item_modify>
+		<augment name="COMBAT_WEAPON_JAMMER"/>
+    </event>
+    <event>
+		<item_modify>
+			<item type="scrap" min="-55" max="-45"/>
+		</item_modify>
+		<augment name="COMBAT_WARP_JAMMER"/>
+    </event>
+</eventList>
+<eventList name="JAMMER_SALESMAN_DEFENSIVE_SYSTEMS">
+    <event>
+		<item_modify>
+			<item type="scrap" min="-75" max="-60"/>
+		</item_modify>
+		<augment name="COMBAT_CLOAKING_JAMMER"/>
+    </event>
+    <event>
+		<item_modify>
+			<item type="scrap" min="-50" max="-40"/>
+		</item_modify>
+		<augment name="COMBAT_SHIELDS_JAMMER"/>
+    </event>
+</eventList>
+<eventList name="JAMMER_SALESMAN_ENGINES">
+    <event>
+		<item_modify>
+			<item type="scrap" min="-35" max="-25"/>
+		</item_modify>
+		<augment name="EX_FTL_JAMMER"/>
+    </event>
+    <event>
+		<item_modify>
+			<item type="scrap" min="-45" max="-35"/>
+		</item_modify>
+		<augment name="COMBAT_ENGINE_JAMMER"/>
+    </event>
+</eventList>
+<eventList name="JAMMER_SALESMAN_MISC">
+    <event>
+		<item_modify>
+			<item type="scrap" min="-90" max="-75"/>
+		</item_modify>
+		<augment name="COMBAT_REACTOR_JAMMER"/>
+    </event>
+    <event>
+		<item_modify>
+			<item type="scrap" min="-40" max="-30"/>
+		</item_modify>
+		<augment name="COMBAT_OXYGEN_JAMMER"/>
+    </event>
+</eventList>
+-->
+<!-- Other Refs
+<mod:findName type = "event" name = "COMBAT_CHECK_REAL">
+<mod-append:choice req="DJMOD_OXYGENIZER" blue="false">
+	<text>(Oxygenizer) Create an atmosphere!</text>
+	<event load="DJMOD_OXYGENIZER_ACTIVATE"/>
+</mod-append:choice>
+</mod:findName>
+ -->
+
+
+<mod:findName type = "eventList" name = "JAMMER_SALESMAN_OFFENSIVE_SYSTEMS">
+<mod-append:event>
+	<item_modify>
+        <item type="scrap" min="-90" max="-80"/>
+    </item_modify>
+    <augment name="DJMOD_DEFENSE_REMOVER"/>
+</mod-append:event>
+</mod:findName>
+<mod:findName type = "eventList" name = "JAMMER_SALESMAN_DEFENSIVE_SYSTEMS">
+<mod-append:event>
+	<item_modify>
+        <item type="scrap" min="-67" max="-60"/>
+    </item_modify>
+    <augment name="DJMOD_COMBAT_OFFENSE_DISABLER"/>
+</mod-append:event>
+</mod:findName>

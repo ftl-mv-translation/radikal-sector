@@ -1,0 +1,2202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- The UI supports sort of long augment decriptions, don't squish them too hard.
+ 
+SCRAP ~
+FUEL {
+MISSILES }
+DRONEPARTS |
+
+System IDs:
+"shields",
+"engines",
+"oxygen",
+"weapons",
+"drones",
+"medbay",
+"pilot",			MV's core.lua says "piloting" but that's FALSE!
+"sensors",
+"doors",
+"teleporter",
+"cloaking",
+"artillery",
+"battery",
+"clonebay",
+"mind",
+"hacking",
+"temporal"
+-->
+
+<FTL>
+
+<!--
+**************************************************************************************************************
+				COMPATIBILITY
+**************************************************************************************************************
+-->
+
+	<augBlueprint name="ADDON_INSTALLED_DJ0ZAUGMENTS">
+		<title>Thank you for installing Dj0z' RadiKal Sector!</title>
+		<desc>Thank you for installing Dj0z' RadiKal Sector!</desc>
+		<cost>0</cost>
+		<rarity>0</rarity>
+		<stackable>false</stackable>
+		<bp>0</bp>
+	</augBlueprint>
+</FTL>
+
+<!-- **************************************************************************************************************
+				CREW
+**************************************************************************************************************-->
+<FTL>
+
+<!-- RadiKal OPERATIVE SOLDIER. Only purpose is to provide RK sector's coords, and die. Not in that order. -->
+<crewBlueprint name="human_soldier_operative">
+    <desc>Elite Human Crew. A highly trained human soldier, whose armor protects them from damage. Seems in pain?</desc>
+    <cost>39</cost>
+    <title>Human Soldier</title>
+    <short>Soldier</short>
+    <rarity>0</rarity>
+    <powerList>
+        <power>Inflicts 1.2x damage in combat</power>
+		<power>Takes 0.7x damage from combat and 0.6x from fires</power>
+        <power>Learns skills much faster</power>
+    </powerList>
+</crewBlueprint>
+
+<crewBlueprint name="rk_fireghost">
+    <desc>Uptors are Alpha Gouls stabilized in special RadiKal Scorch pressure cookers, changing their properties.
+		Your system in the current room is immune to fire. Any enemy system in the current room takes 100% more fire damage.
+		Can cause yoctoflares from its own body often. That's a very small solar flare, but it's also very close.
+
+	Inherited phantom stats: takes no damage from hazards, has door phasing properties.</desc>
+    <cost>135</cost>
+    <title>Uptor</title>
+    <short>Uptor</short>
+    <rarity>0</rarity>
+    <powerList>
+		<power>Active Ability: Start a fire in a random room on both ships. Short cooldown</power>
+        <power>Max Health is increased to 220</power>
+		<power>Can't split, repair or extinguish. No sabotage bonus</power>
+		<power>Movement speed is increased to 1.2x</power>
+		<power>Inflicts 1.5x damage in crew combat</power>
+    </powerList>
+    <colorList>
+        <layer>
+            <color r="255" g="255" b="255" a="1"/>
+        </layer>
+    </colorList>
+</crewBlueprint>
+
+</FTL>
+
+
+<!-- **************************************************************************************************************
+				AUGMENTS
+**************************************************************************************************************-->
+<FTL>
+
+<!-- 
+=======================
+RK BAM
+=======================
+ -->
+
+<!-- Basically an extra vampiric weapon with various events and RadiKal-style spice. -->
+<augBlueprint name="DJMOD_COMBAT_SHIPVORE_RAM">
+    <title>Shipvore Ram</title>
+    <desc>The signature combat augment of the RadiKal Bam lets you repeatedly ram the enemy for guaranteed quickly lethal damage, free repairs and sometimes other things. WARNING: your ship and/or crew may suffer. [Uses {, full power uses more and destroys the augment. Emergency Generator and Fuel Conserver can apply.]
+	Can be reinforced at empty beacons to survive the next Full Power use.
+	</desc>
+    <cost>70</cost>
+	<!--<bp>4</bp>-->
+    <rarity>3</rarity>
+    <stackable>false</stackable>
+</augBlueprint>
+<augBlueprint name="LOCKED_DJMOD_COMBAT_SHIPVORE_RAM">
+    <title>Shipvore Ram</title>
+    <desc>The signature combat augment of the RadiKal Bam lets you repeatedly ram the enemy for guaranteed quickly lethal damage, free repairs and sometimes other things. WARNING: your ship and/or crew may suffer. [Uses {, full power uses more. Emergency Generator and Fuel Conserver can apply.]
+	
+	The ship was built around this locked version that survives Full Power use. Also gives 9% faster shield recharge and chance to ignore hull damage.
+	</desc>
+    <cost>200</cost>
+    <rarity>0</rarity>
+    <stackable>false</stackable>
+</augBlueprint>
+
+
+<augBlueprint name="DJMOD_CREW_ARE_BOMBS_OFF">
+    <title>Charged Belts (Off)</title>
+    <desc>This augment is Off but can be toggled On anytime. When On: 
+	[This double-edged augment from the RadiKal Bam equips your crew with belts that reduce their HP by 10% (beware of Ghosts) and explode when they die, causing a fire and dealing damage to the room and ship they're in, with extra damage in systemless rooms.
+	Stacks upon already existing death effects.
+	
+	Cannot be toggled Off but can scrap itself into ~ or } at empty beacons.
+
+	COMBO: Makes any crew a fire source for Plasma Teleporter.]</desc>
+    <cost>50</cost>		
+    <rarity>5</rarity>
+    <stackable>false</stackable>
+</augBlueprint>
+<!-- Add combo to only work on enemy ship. Maybe should have charges -->
+<augBlueprint name="DJMOD_CREW_ARE_BOMBS_ON">
+    <title>Charged Belts</title>
+    <desc>This double-edged augment from the RadiKal Bam equips your crew with belts that reduce their HP by 10% (beware of Ghosts) and explode when they die, causing a fire and dealing damage to the room and ship they're in, with extra damage in systemless rooms.
+	Stacks upon already existing death effects.
+	
+	Cannot be toggled Off but can scrap itself into ~ or } at empty beacons.
+
+	COMBO: Makes any crew a fire source for Plasma Teleporter.</desc>
+    <cost>50</cost>		
+    <rarity>0</rarity>
+    <stackable>false</stackable>
+</augBlueprint>
+
+<!-- Can trigger immediately if below HP threshold when choosing to activate it in combat check. -->
+<augBlueprint name="DJMOD_AUG_AUTO_SYS_REPAIR">
+    <title>A.E.R.A. Second Wind</title>
+    <desc>'Automated Emergency Repair Augment', by RadiKal Bam engineers. When active, if your ship is almost destroyed (5 hull or less), a nanomachine burst will be released in your systems, fully repairing them as well as 8 hull points, and destroying the augment. No effect if your hull instantly reaches 0. [Activation uses 1 power]</desc>
+    <cost>70</cost>
+    <rarity>3</rarity>
+    <stackable>false</stackable>
+</augBlueprint>
+</FTL>
+
+<!-- 
+=======================
+RK PUNK
+=======================
+ -->
+<!--  
+REFS Energy Shield augments from MV's hyperspace.xml:
+<req name="LIST_CHECK_ENERGY_SHIELD" type="any">
+	<name>ENERGY_SHIELD</name>
+	<name>LOCKED_ENERGY_SHIELD</name>
+	<name>ANCIENT_SHIELD_PLAYER</name>
+	<name>LOCKED_ANCIENT_SHIELD</name>
+	<name>ROYAL_SHIELD_PLAYER</name>
+	<name>LOCKED_ROYAL_SHIELD</name>
+	<name>UPG_AETHER_SHIELDS</name>
+	<name>FLAGSHIP_SHIELD</name>
+	<name>FLAGSHIP_SHIELD_FULL</name>
+	<name>LOCKED_SYLVAN_SHIELD</name>
+	<name>SYLVAN_SHIELD_REWARD</name>
+	<name>LOCKED_SYLVAN_SHIELD_CONTINUITY</name>
+	<name>SYLVAN_SHIELD_PRIME</name>
+	<name>RHYME_SHIELDS</name>
+	<name>RHYME_SHIELDS_B</name>
+	<name>RHYME_SHIELDS_C</name>
+</req>
+
+Make a quest to obtain it. Add ways to feed it 1 zoltan to increase layers by 3 (up to 10) at empty beacons.
+-->
+<FTL>
+<augBlueprint name="DJMOD_ZOLTAN_SHIELD_EXTRACTOR">
+    <title>RK Shield (1)</title>
+    <desc>This RadiKal Punk augment provides 1 layer of supershields, for when you really just want to avoid immediate mind control, teleport or hacking issues.</desc>
+    <cost>20</cost>
+    <rarity>0</rarity>
+    <stackable>false</stackable>
+</augBlueprint>
+
+<!-- see 'textless events' in modding tips folder -->
+<augBlueprint name="DJMOD_COMBAT_OFFENSE_DISABLER">
+    <title>Offense Disabler</title>
+    <desc>This RadiKal Punk combat augment disables enemy offensive systems (Weapons, Drone Control, Hacking, Mind Control, Teleporter, and one Artillery) for 5 seconds. The effect then weakens progressively until it's gone at 18 seconds (you will be warned).
+		Perfect against aggressive enemies! [Uses 3| and 3 reactor power. Emergency Generator can apply.]</desc>
+    <cost>75</cost>
+    <rarity>4</rarity>
+    <stackable>false</stackable>
+</augBlueprint>
+
+<!--
+Jump event augment! Code is still in combat augment xml for technical reasons though.
+Disabled because too damn CLUNKY since it forces player to confirm every jump, even without having the augment...
+Some add-on that came out in the meantime has done a better implementation of this, check it out.
+
+<augBlueprint name="DJMOD_JUMP_DECOY">
+    <title>Jump Decoy</title>
+    <desc>When you escape a fight by performing an FTL jump, this sends a fake jump signature to a different destination. Your enemy has a 25% chance to transmit this misleading intel, delaying the rebel fleet for 1 turn.</desc>
+    <cost>30</cost>
+    <rarity>1</rarity>
+    <stackable>false</stackable>
+</augBlueprint>
+
+REWORKED JumpDecoy -->
+<augBlueprint name="DJMOD_HACK_FLEET">
+    <title>Enigmashin</title>
+    <desc>This RadiKal Punk combat augment needs a level 2 Hacking system on your ship. 
+	Attempts to send deepfake intel to the rebels through an enemy's comms for credibility.
+	On average, success delays the fleet 75% of the time and failure accelerates it 10% of the time. If you deal more than 2 hull damage during the process, it stops. [Reduces player Hacking power by 2 for 17s, uses 2|]</desc>
+    <cost>35</cost>
+    <rarity>3</rarity>
+    <stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="DJMOD_SUPER_DEFENDERS">
+    <title>Defense Kits</title>
+    <desc>This RadiKal Punk augment makes your crew better at survival on your ship.
+	x0.75 damage taken, x1.3 repair speed, x1.3 movement speed, and a 4 HP/second heal while idle (not even manning).</desc>
+    <cost>90</cost>
+    <rarity>4</rarity>
+    <stackable>false</stackable>
+</augBlueprint>
+
+<!-- Daft Punk H B F S reference -->
+<augBlueprint name="DJMOD_OWN_HARMONY_ON">
+    <title>Punk Harmony</title>
+    <desc>Some daft RadiKal Punks made their own Harmony. Controls your Engis on your ship, giving them immunity to (further) mind control and +40% damage and stun resistance. Powered levels in Hacking or Mind Control add 5/10/20/40/80/160% combat damage, and repair and movement speed.
+	
+	In short, makes them harder, better, faster, stronger, and automated.
+	
+	Can be toggled off anytime.</desc>
+    <cost>70</cost>
+    <rarity>5</rarity>
+    <stackable>false</stackable>
+</augBlueprint>
+<augBlueprint name="DJMOD_OWN_HARMONY_OFF">
+    <title>Punk Harmony (OFF)</title>
+    <desc>Some daft RadiKal Punks made their own Harmony. Controls your Engis on your ship, giving them immunity to (further) mind control and +40% damage and stun resistance. Powered levels in Hacking or Mind Control add 5/10/20/40/80/160% combat damage, and repair and movement speed.
+	
+	In short, makes them harder, better, faster, stronger, and automated.
+	
+	Can be toggled on anytime.</desc>
+    <cost>70</cost>
+    <rarity>0</rarity>
+    <stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="DJMOD_DEFENSE_REMOVER">
+    <title>Vulnerabilizer</title>
+    <desc>This powerful RadiKal Punk combat augment slowly weakens the enemy's defenses. Every 3 to 7 seconds (at random), limits enemy Shields and Engines by 1 power. This effect stacks. All effects end after a duration based on how many | you spent.[Uses 3 reactor power. Emergency Generator can apply.]</desc>
+    <cost>100</cost>
+    <rarity>5</rarity>
+    <stackable>false</stackable>
+</augBlueprint>
+</FTL>
+
+<!-- 
+=======================
+RK SCORCH
+=======================
+ -->
+<FTL>
+<!-- Each level increases the fire res and adds a full new stat. 
+The first one allows widespread own ship fire control and survival, with heal. -->
+<augBlueprint name="DJMOD_COMBAT_SCORCH_SELF">
+    <title>Scorched Earth (T1)</title>
+    <desc>On both ships, this RadiKal Scorch augment makes your crew take 40% less fire damage and get x3 extinguishing. While extinguishing, they also heal 2 HP/second +2 per powered level in O2.
+	Activate from the Toggles menu to set specific systems on your ship (or the whole ship) on fire to fight boarders.
+	
+	COMBO: Plasma Teleporter moves the augment's fire to the enemy ship.
+	
+	Can be upgraded twice at empty beacons.</desc>
+    <cost>75</cost>
+    <rarity>3</rarity>
+    <stackable>false</stackable>
+</augBlueprint>
+
+<!-- Scorched earth upgrade that makes it more offensive and general purpose, with speed & damage -->
+<augBlueprint name="DJMOD_COMBAT_SCORCH_SELF_2">
+    <title>Blazing Earth (T2)</title>
+    <desc>[Tier 2 Scorched Earth] On both ships, this RadiKal Scorch augment makes your crew take 55% less fire damage and get x3 extinguishing. While extinguishing, they also heal 2 HP/second +2 per powered level in O2.
+	In fire, they move and sabotage at x2 speed and deal x2 damage.
+	Activate from the Toggles menu to set specific systems on your ship (or the whole ship) on fire to fight boarders.
+	
+	COMBO: Plasma Teleporter moves the augment's fire to the enemy ship.
+	
+	Can be upgraded once at empty beacons.</desc>
+    <cost>120</cost>			
+    <rarity>5</rarity>
+    <stackable>false</stackable>
+</augBlueprint>
+
+<!-- finally adds offensive tools on the enemy ship to actually win, and potential infinity loop. -->
+<augBlueprint name="DJMOD_COMBAT_SCORCH_SELF_3">
+    <!-- <title>Molten Earth</title> -->
+	<title>Erupting Earth (T3)</title>
+    <desc>[Tier 3 Scorched Earth] On both ships, this RadiKal Scorch augment makes your crew take 70% less fire damage and get x3 extinguishing. While extinguishing, they also heal 2 HP/second +2 per powered level in O2.
+	In fire, they move and sabotage at x2 speed, deal x2 damage, and produce O2 like 2 Orchids.
+	Also, enemy crew and drones in fire lose 7 hp per second.
+	Activate from the Toggles menu to set specific systems on your ship (or the whole ship) on fire to fight boarders.
+	
+	COMBO: Plasma Teleporter moves the augment's fire to the enemy ship.</desc>
+    <cost>175</cost>
+    <rarity>0</rarity>
+    <stackable>false</stackable>
+</augBlueprint>
+
+<!-- finally adds enemy ship offense to actually win, and potential infinity loop.-->
+<!-- <augBlueprint name="DJMOD_COMBAT_SCORCH_SELF_4">
+    <title>Erupting Earth</title>
+    <desc>Set your ship on fire to fight boarders, with this fully upgraded RadiKal Scorch combat augment.
+	Your crew takes 70% less fire damage and gets x2 extinguishing (x3 in system rooms). While extinguishing, they also heal 4 HP/second per powered level in O2.
+	In fire, they also get x2 movement and sabotage speed, x2 damage, and Orchid-like O2 production.
+	COMBO: Plasma Teleporter moves the augment's fire to the enemy ship.
+
+	Activate from the Toggles menu.</desc>
+    <cost>230</cost>
+    <rarity>0</rarity>
+    <stackable>false</stackable>
+</augBlueprint> -->
+
+<augBlueprint name="DJMOD_COMBAT_SCORCH_ENEMY">
+	<title>Plasma Teleporter</title>
+	<desc>This combat augment from the RadiKal Scorch can set the enemy ship on fire at start of combat, outright winning some fights.
+		Needs a fire source: RK firestarting equipment, Gouls, Lost Suns, Shells, Zoltans, or 3}.
+		[Uses 1{, ignites your O2 system.]
+
+	COMBO: Charged Belts / Martyr Vests make all crew fire sources.
+	COMBO: any Scorched Earth can provide the fire for free.</desc>
+	<cost>75</cost>
+	<rarity>5</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="DJMOD_ENEMIES_CAN_BURN">
+	<title>Flammabilizer-Immune</title>
+	<desc>This RadiKal Scorch augment removes the fire immunity and resistance of enemies by limiting their total fire resistance, based on the energy in your O2 system (90/75/55/30 resistance at 0/1/2/3 power respectively).
+	Also makes enemies move 12% slower in fire (up to 50% with 3 power in O2).
+	Works on both ships.
+
+	Can be toggled to make non-fireproof enemies take more fire damage instead.</desc>
+	<cost>100</cost>
+	<rarity>5</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+<augBlueprint name="DJMOD_ENEMIES_BURN_MORE">
+	<title>Flammabilizer-Damage</title>
+	<desc>This RadiKal Scorch augment makes non-fireproof enemies take 50% more fire damage (scaling up to 250% with 4 energy in O2).
+	Also makes enemies move 12% slower in fire (up to 50% with 3 power in O2).
+	Works on both ships.
+	
+	Can be toggled to make fireproof and fire-resistant enemies vulnerable to fire instead.</desc>
+	<cost>100</cost>
+	<rarity>5</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="DJMOD_OXYGENIZER">
+	<title>Oxygenizer</title>
+	<desc>This RadiKal Scorch combat augment can basically shoot out giant canisters of ultracompressed O2 to fill the void of space when a fight starts.
+	Puts both ship in an atmosphere, making breaches and open vents fill oxygen instead of depleting it. Shenanigans ensue. [Uses 2}]</desc>
+	<cost>40</cost>
+	<rarity>4</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+</FTL>
+
+
+<!-- 
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+											INTERNAL UPGRADES
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+-->
+
+<!-- REFS MV 5.5.1
+
+<augBlueprint name="UPG_ARM_DRONES">
+	<title>Recovery Arm</title>
+	<desc>.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+<augBlueprint name="DRONE_RECOVERY">
+	<title>Drone Arm [M]</title>
+	<desc>Non-destroyed Combat and Defense drones will be retrieved when jumping, allowing their parts to be reused.
+	
+	[M] - As a modular arm upgrade, it does not take up your ship's arm slot and can stack with a different arm. It cannot however be internalized like external [X] augments.</desc>
+	<cost>50</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="UPG_TECH_SEALANT">
+	<title>Sealant</title>
+	<desc>.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+<augBlueprint name="EX_BREACH_SEALANT">
+	<title>Sealant [X]</title>
+	<desc>Breaches are slowly and automatically repaired.
+    
+	[X] - As an external system upgrade, this augment will provide its normal effect but take up an augment slot. Can be converted for free to the internal version under the internal upgrade menu, in the On-board Tech category.</desc>
+	<cost>55</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+	<value>1.f</value>
+</augBlueprint>
+
+<augBlueprint name="UPG_SHIELDS_PERFORMANCE"> CAN BE GOTTEN 3 TIMES
+	<title>Performance Upgrade</title>
+	<desc>.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+<augBlueprint name="EX_SHIELD_RECHARGE">
+	<title>Shield Charge Boost [X]</title>
+	<desc>Boosts the ship's shield recharge rate by 17%.
+    
+	[X] - As an external system upgrade, this augment will provide its normal effect but take up an augment slot. Can be converted for free to the internal version under the internal upgrade menu if you have the Shields system.</desc>
+	<cost>45</cost>
+	<bp>5</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.15</value>
+</augBlueprint>
+
+<augBlueprint name="UPG_SHIELDS_STUN">
+	<title>Electrical Insulation</title>
+	<desc>Upgrade - Your crew are immune to stun while in the shield room.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+</augBlueprint>
+
+
+REF Darkest Desires for MV 5.5.1
+
+<augBlueprint name="DD_INTERNAL_AUGMENT1">
+	<title>Matter Disperser</title>
+	<desc>Your Corruptor system heals Soulplague-aligned crew in the target room for 8HP each time it spawns a Soulplague Tide.</desc>
+	<cost>40</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+-->
+<FTL>
+
+<!-- Console: LOAD ELITE_SHIP_SLUG 8 to test. WORKS! -->
+<augBlueprint name="INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE">
+	<title>Mind Heater</title>
+	<desc>In fire, your crew are immune to Mind Control and stunned 50% shorter. Works on both ships.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="INTERNAL_DJMOD_DEMICLONER">
+	<title>Demicloners</title>
+	<desc>The RadiKal Punk infused these backpack-clonebay prototypes with dark energies. These try to resurrect your crew if they die (not in events) when you don't have a real Clonebay.
+		At best, crew resurrect as their own lesser version (Soldier = default Human, etc.) If no lesser version exists, they become Morphs. When Morphs die, nothing happens.
+	</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+<!-- External internalizable -->
+<augBlueprint name="EX_DJMOD_DEMICLONER">
+    <title>[X] Demicloners</title>
+    <desc>The RadiKal Punk infused these backpack-clonebay prototypes with dark energies. These try to resurrect your crew if they die (not in events) when you don't have a real Clonebay.
+		At best, crew resurrect as their own lesser version (Soldier = default Human, etc.) If no lesser version exists, they become Morphs. When Morphs die, nothing happens.
+		
+	[X] - As an external system upgrade, this augment will provide its normal effect but take up an augment slot. Can be converted for free to the internal version under the internal upgrade menu.
+	</desc>
+    <cost>65</cost>
+    <rarity>5</rarity>
+    <stackable>false</stackable>
+</augBlueprint>
+
+</FTL>
+
+<!--  
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+											LAB MODIFICATIONS (none yet)
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+
+REFS MV 5.5.1
+
+<augBlueprint name="LAB_HUMAN_INSTALLED">
+	<title>Human</title>
+	<desc>Human upgrade installed.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+<augBlueprint name="LAB_HUMAN_DIVERSE">
+	<title>Diversification</title>
+	<desc>Humans gain a 12% buff in movement speed, combat damage, repair speed, and health.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+REF Darkest Desires for MV 5.5.1
+
+<augBlueprint name="LAB_DEEPONE_INSTALLED">
+	<title>DeepOneLabInstalled</title>
+	<desc>Deep One upgrade installed.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint> -->
+
+
+<!-- **************************************************************************************************************
+				WEAPONS (see TOOLBOX at the end of this file for details on each field)
+**************************************************************************************************************-->
+<FTL>
+
+ <!-- <descriptionOverride>TEXT</descriptionOverride>
+Overrides the weapon's description you see when you open your inventory menu, with whatever you'd like it to say. The reason you would want this is if you say, wanted to hide the fact that the weapon spawned crew, such as my example below.
+Example
+ <descriptionOverride>Fires a photonic blast that can disrupt shields like normal lasers, but only deals system damage with a low chance to start a fire or breach. A ship would have to be close to destruction for this to possibly destroy it.
+    
+Stats:   
+Required Power: 1
+Charge Time: 8 seconds
+
+Shot Radius: 35
+Shots Per Charge: 3
+
+Total System Damage: 1
+
+Fire Chance: 10%
+
+
+Buy/Sell Price: 120~/60~
+</descriptionOverride> -->
+
+<!-- RK Bam fissure beam
+REFS (TRC v2.6 for MV v5.5.1) Fangtian, and Goedendag (and it's the art size base):
+
+<weaponBlueprint name="TRC_BEAM_TILE">
+	<type>BEAM</type>
+	<tip>tip_tile_beam</tip>
+	<title>'Fangtian' Fissure Beam</title>
+	<short>'Fangtian'</short>
+	<desc>Fissure Beams deal damage per tile rather than per room. This Beam specializes in destroying systems, capable of dealing more damage the larger a system is.</desc>
+	<tooltip>Beam weapon with extended line. 1 damage per room.</tooltip>
+	<damage>0</damage>
+	<sysDamage>1</sysDamage>
+	<mv-tileDamage method="2"/>
+	<sp>2</sp>
+	<fireChance>0</fireChance>
+	<breachChance>2</breachChance>
+	<speed>6</speed>
+	<cooldown>15</cooldown>
+	<power>2</power>
+	<cost>65</cost>
+	<bp>5</bp>
+	<rarity>3</rarity>
+	<image>beam_contact</image>
+	<length>128</length>
+	<launchSounds>
+		<sound>beam1</sound>
+		<sound>beam1_2</sound>
+	</launchSounds>
+	<weaponArt>beam_tile</weaponArt>
+	<iconImage>beam</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="BEAM_HULL_2">
+	<type>BEAM</type>
+	<tip>tip_beams</tip>
+	<title>'Goedendag' Beam</title>
+	<short>'Goedendag'</short>
+	<desc>A powerful Anti-Hull Beam that when wielded against the right ships, can be stronger than even a Glaive Beam.</desc>
+	<tooltip>Beam weapon; 2 damage; 2x damage in systemless rooms.</tooltip>
+	<damage>2</damage>
+	<fireChance>0</fireChance>
+	<breachChance>4</breachChance>
+	<cooldown>18</cooldown>
+	<hullBust>1</hullBust>
+	<power>4</power>
+	<cost>90</cost>
+	<bp>8</bp>
+	<rarity>5</rarity>
+	<image>beam_contact</image>
+	<length>90</length>
+	<launchSounds>
+		<sound>beam1</sound>
+		<sound>beam1_2</sound>
+	</launchSounds>
+	<weaponArt>beam_hull_2</weaponArt>
+	<iconImage>beamH</iconImage>
+</weaponBlueprint>
+-->
+<weaponBlueprint name="DJMOD_BAM_FISSUREBEAM">
+	<type>BEAM</type>
+	<!-- <tip>tip_tile_beam</tip> Error if TRC isnt patched in. -->
+	 <tip>tip_beams</tip>
+	<title>'Bada' Fissure Beam</title>
+	<short>'Bada Beam'</short>
+	<desc>Fissure Beams deal damage per tile rather than per room. This RadiKal Bam beam can only hit about 4, but hard. Has hullbust.
+		Best at destroying a large system in one sweep, or a ship by targeting systemless room tiles.</desc>
+	<tooltip>Beam weapon. 2 damage per tile; 2x damage in systemless rooms.</tooltip>
+	<damage>2</damage>
+	<sysDamage>0</sysDamage>
+	<mv-tileDamage method="2"/>
+	<sp>0</sp>
+	<fireChance>3</fireChance>
+	<breachChance>8</breachChance>
+	<stunChance>2</stunChance>
+	<speed>6</speed>
+	<cooldown>19.5</cooldown>
+	<hullBust>1</hullBust>
+	<power>3</power>
+	<cost>110</cost>
+	<bp>5</bp>
+	<rarity>4</rarity>
+	<image>beam_contact</image>
+	
+	<!-- REFS Spetum 45, Spontoon 65, Voulge 100, TRC Fangtian 128, Pike 170. -->
+	<length>60</length>
+	<launchSounds>
+		<sound>beam1</sound>
+		<sound>beam1_2</sound>
+	</launchSounds>
+	<weaponArt>djmod_bam_fissurebeam</weaponArt>
+	<iconImage>beamH</iconImage>
+</weaponBlueprint>
+
+<!-- Rain of Ion
+REFS MV v5.5.1: 
+
+Fastest base MV ion:
+<weaponBlueprint name="ION_4">
+	<type>LASER</type>
+	<title>Ion Blast Mark II</title>
+	<short>Ion Blast II</short>
+	<tip>tip_ion</tip>
+	<locked>1</locked>
+	<desc>Ion weapons can disable systems without causing hull damage.</desc>
+	<tooltip>Fires a single blast that does 1 ion damage and recharges very quickly. Can hit and disable shields as well as systems.</tooltip>
+	<damage>0</damage>
+	<ion>1</ion>
+	<speed>30</speed>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<stunChance>1</stunChance>
+	<cooldown>4</cooldown>
+	<power>3</power>
+	<cost>70</cost>
+	
+	<bp>6</bp>
+	<rarity>0</rarity>
+	<image>ion_1_shot</image>
+	<explosion>explosion_small_ion</explosion>
+	<launchSounds>
+		<sound>ionShoot1</sound>
+		<sound>ionShoot2</sound>
+		<sound>ionShoot3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>ionHit1</sound>
+		<sound>ionHit2</sound>
+		<sound>ionHit3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>ionShields1</sound>
+		<sound>ionShields2</sound>
+		<sound>ionShields3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>ion_4</weaponArt>
+	<iconImage>ion</iconImage>
+</weaponBlueprint>
+
+"Adaptive Phaser" aka chain phase ion:
+<weaponBlueprint name="ION_PIERCE_CHAIN">
+	<type>LASER</type>
+	<flavorType>Ion Blast</flavorType>
+	<title>Adaptive Phaser</title>
+	<short>Adap. Phase</short>
+	<tip>tip_phase</tip>
+	<locked>1</locked>
+	<desc>Phasers pierce additional shield layers, dealing ion damage for the first layer of shields, as well as additional damage to whatever system hit. Boosts its damage each time it is fired.</desc>
+	<tooltip>Fires a single blast that does 1 ion damage. Can hit and disable shields as well as systems.</tooltip>
+	<damage>0</damage>
+	<ion>1</ion>
+	<speed>25</speed>
+	<shots>1</shots>
+	<sp>10</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<stunChance>0</stunChance>
+	<cooldown>15</cooldown>
+	<power>3</power>
+	<cost>70</cost>
+	<bp>3</bp>
+	<rarity>0</rarity>
+	<image>ion_phase</image>
+	<explosion>explosion_small_phase</explosion>
+	<boost>
+		<type>damage</type>
+		<amount>1</amount>
+		<count>4</count>
+	</boost>
+	<launchSounds>
+		<sound>ionShoot1</sound>
+		<sound>ionShoot2</sound>
+		<sound>ionShoot3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>ionHit1</sound>
+		<sound>ionHit2</sound>
+		<sound>ionHit3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>ionShields1</sound>
+		<sound>ionShields2</sound>
+		<sound>ionShields3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>ion_phase_chaingun</weaponArt>
+	<iconImage>ion</iconImage>
+</weaponBlueprint>
+-->
+<weaponBlueprint name="DJMOD_RAIN_OF_ION">
+	<type>BURST</type>
+	<flavorType>Ion Blast</flavorType>
+	<title>Rain of Ions</title>
+	<short>RainIons</short>
+	<tip>tip_phase</tip>
+	<locked>1</locked>			<!-- what's that? -->
+	<desc>This RadiKal Punk inaccurate shotgun fires an accelerated phase ion, a heavy ion, a fire ion, a normal ion, a stun ion, and a radion (from fastest to slowest) all at once. Chains cooldown up to 8 times.
+		Many weapons worth of blue options!
+	</desc>
+	<tooltip>Fires all 6 common ions in a radius; Cooldown 12 seconds.</tooltip>
+
+	<radius>55</radius>
+	<damage>0</damage>
+	<ion>1</ion>
+	<!-- Non-stun Heavy Ion & Fire Ion 40 speed. Others 30. Default Phase Ion is slowest at 25.
+	OTHER REFS: Most lasers & missiles have no speed field (so they have the same default speed). Hull laser II has 75. -->
+	<speed>55</speed>
+	<shots>1</shots>
+	<sp>10</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<stunChance>0</stunChance>
+	<cooldown>12</cooldown>
+	<power>4</power>
+	<cost>120</cost>
+	<bp>3</bp>
+	<rarity>4</rarity>
+	<!-- REF Trifecta technique for shooting multiple types of stuff:
+	<projectiles>
+		<projectile count="1" fake="false" blueprint="TRIFECTA_LASER">laser_heavy</projectile>
+		<projectile count="2" fake="false">debris_med</projectile>
+		<projectile count="3" fake="true">debris_small</projectile>
+	</projectiles> -->
+	<projectiles>
+		<projectile count="1" fake="false">ion_phase</projectile>
+		<projectile count="1" fake="false" blueprint="ION_1">ion_barrage</projectile>
+		<projectile count="1" fake="false" blueprint="ION_HEAVY">ion_heavy</projectile>
+		<projectile count="1" fake="false" blueprint="ION_STUN">ion_stun_shot</projectile>
+
+		<projectile count="1" fake="false" blueprint="ION_BIO">ion_bio</projectile>
+		<projectile count="1" fake="false" blueprint="ION_FIRE">ion_fire</projectile>
+	</projectiles>
+
+	<image>ion_phase</image>
+	<explosion>explosion_small_phase</explosion>
+
+	<!-- intended fully chained: 8s -->
+	<boost>
+		<type>cooldown</type>
+		<amount>0.5</amount>
+		<count>8</count>
+	</boost>
+	<launchSounds>
+		<sound>ionShoot1</sound>
+		<sound>ionShoot2</sound>
+		<sound>ionShoot3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>ionHit1</sound>
+		<sound>ionHit2</sound>
+		<sound>ionHit3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>ionShields1</sound>
+		<sound>ionShields2</sound>
+		<sound>ionShields3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>djmod_rain_of_ion</weaponArt>
+	<iconImage>ion</iconImage>
+</weaponBlueprint>
+
+<!-- Missile weapon staggered just right so that the 100% chance fire they create never ends.
+Pre-rework: burns 2 bars (3 on 6tiles rooms like obelisk weapon room) through extinguishers,
+with a long cooldown so you cant just spray an O2 ship. Small targeting radius to allow for rare collateral fires on O2 ships when targeting smaller than 2x2 tile rooms.
+
+v5.5.1 rework: chains to lower cooldown so you CAN spray fire then. 
+DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown so it's very different for them. -->
+<weaponBlueprint name="DJMOD_RAIN_OF_FIRE">
+	<type>BURST</type>
+	<flavorType>'Rain of fire'</flavorType>
+	<tip>tip_missiles</tip>
+	<title>Rain of fire</title>
+	<short>RainFire</short>
+	<desc>This RadiKal Scorch weapon does one thing: sustain fires even in fireproof ships, with a rain of napalm. No damage but pierces all shields. 80% chance to not use a missile. Great with dedicated fire augments.</desc>
+	<tooltip>Fires many napalm missiles; 0 damage; pierces all shields; guaranteed fire.</tooltip>
+	<drone_targetable>1</drone_targetable>
+	<radius>30</radius>
+	<damage>0</damage>
+	<missiles>1</missiles>
+
+	<freeMissileChance>80</freeMissileChance>
+	<shots>3</shots>
+	<fireTime>0.58</fireTime>
+
+	<sp>10</sp>
+	<fireChance>10</fireChance>
+	<breachChance>0</breachChance>
+	<stunChance>0</stunChance>
+	<cooldown>19</cooldown>
+	<power>2</power>
+	<cost>80</cost>
+	<bp>6</bp>
+	<rarity>3</rarity>
+	<projectiles>
+		<projectile count="1" fake="false">djmod_napalm_missile</projectile>
+	</projectiles>
+	<!-- <image>kernel_projectile</image>		<projectiles> and <image> are mutually exclusive. If you declare one, 
+												DO NOT ! ! ! ! ! ! ! ! declare the other, or they will interfere with each other and either break the weapon or CRASH THE GAME.-->
+	<boost>
+		<type>cooldown</type>
+		<amount>8.5</amount>
+		<count>2</count>
+	</boost>
+	<launchSounds>
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>djmod_rain_of_fire</weaponArt>
+	<iconImage>missile</iconImage>
+	<!--<iconScale>0.5</iconScale>             	UGLY! Scales the weapon icon in equipment/store/hangar screens. Smaller numbers mean the image will be smaller in the hangar -->
+</weaponBlueprint>
+
+<weaponBlueprint name="DJMOD_RAIN_OF_FIRE_ENEMYFIX">
+	<type>BURST</type>
+	<flavorType>'Rain of fire'</flavorType>
+	<tip>tip_missiles</tip>
+	<title>Rain of fire</title>
+	<short>RainFire</short>
+	<desc>YOU SHOULD NEVER SEE THIS. Shots limited to 3 and cooldown reduced to avoid game freeze when: (shots > player ship rooms) due to the way AI targets.</desc>
+	<tooltip>YOU SHOULD NEVER SEE THIS.</tooltip>
+	<drone_targetable>1</drone_targetable>
+	<radius>28</radius>
+	<damage>0</damage>
+	<missiles>1</missiles>
+	<shots>3</shots>
+	<fireTime>0.58</fireTime>
+	<sp>10</sp>
+	<fireChance>10</fireChance>
+	<breachChance>0</breachChance>
+	<stunChance>0</stunChance>
+	<cooldown>12</cooldown>
+	<power>2</power>
+	<cost>80</cost>
+	<bp>6</bp>
+	<rarity>0</rarity>
+	<projectiles>
+		<projectile count="1" fake="false">djmod_napalm_missile</projectile>
+		<!-- <projectile count="1" fake="true">djmod_napalm_missile</projectile> -->
+	</projectiles>
+	<!-- <image>kernel_projectile</image>		<projectiles> and <image> are mutually exclusive. If you declare one, 
+												DO NOT ! ! ! ! ! ! ! ! declare the other, or they will interfere with each other and either break the weapon or CRASH THE GAME.-->
+	<launchSounds>
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>djmod_rain_of_fire</weaponArt>
+	<iconImage>missile</iconImage>
+</weaponBlueprint>
+
+<!-- Laser with plenty thematic effects. -->
+<weaponBlueprint name="DJMOD_LASER_BPS">
+	<type>LASER</type>
+	<title>'BPS Messenger'</title>
+	<short>'BPS Mess.'</short>
+	<tip>tip_chain_laser</tip>
+	<desc>A Piercing Heavy Laser boosted in the RadiKal sector: the Bam gave it hullbust and better stun, the Punk added ion and crew damage, and the Scorch replaced breach chance with guaranteed fire and chaining.</desc>
+	<tooltip>Cooldown drops the more it fires. Can chain up to 3 times.</tooltip>
+	<damage>2</damage>
+	<sysDamage>0</sysDamage>			<!-- Adding any of this makes it an Ancient Ion = Plasma! OP against shields. -->
+	<ion>1</ion>
+	<persDamage>2</persDamage>
+	<hullBust>1</hullBust>
+	<speed>45</speed>					<!-- ref speeds: mine=15 ion=30 missile=50 -->
+
+	<mv-stealth/>
+	
+	<shots>1</shots>
+	<fireTime>0.35</fireTime>
+	<sp>1</sp>
+	
+	<fireChance>10</fireChance>
+	<breachChance>0</breachChance>
+	<!-- <stunChance>9</stunChance> 	"Negates stun duration if you declare this."-->
+	<stun>4</stun>					<!-- Duration. Implies 100% stunChance. -->
+	
+	<cooldown>11.1</cooldown>			<!-- max chained intended : 5.1s -->
+	<power>2</power>
+	<cost>100</cost>
+	<bp>2</bp>
+	<rarity>5</rarity>
+	<boost>
+		<type>cooldown</type>
+		<amount>2</amount>
+		<count>3</count>
+	</boost>
+	<!-- <projectiles> and <image> are mutually exclusive. If you declare one, 
+	DO NOT ! ! ! ! ! ! ! ! declare the other, or they will interfere with each other and 
+	either break the weapon or CRASH THE GAME.-->
+	<image>djmod_laser_superheavy</image>
+	
+	<launchSounds>
+		<sound>heavyLaser1</sound>
+		<sound>heavyLaser2</sound>
+		<sound>heavyLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>djmod_laser_bps</weaponArt>
+	<iconImage>heavyL</iconImage>
+</weaponBlueprint>
+
+<!-- ==============================================================
+ARTILLERIES
+============================================================== -->
+
+<!-- REF: 
+<weaponBlueprint name="ARTILLERY_REBEL_MISSILE"> -->
+<weaponBlueprint name="DJMOD_ARTILLERY_MISSILE_FIRE">
+	<type>MISSILES</type>
+	<flavorType>Artillery</flavorType>
+	<title>Fire Missile Artillery</title>
+	<short>Artillery</short>
+	<desc>Artillery: Fires 3 missiles that do 1 hull damage each, always start a fire and never miss.
+	Base Cooldown: 18</desc>
+	<tooltip>Artillery: Fires 3 missiles that do 1 hull damage each, always start a fire and never miss.</tooltip>
+	<damage>1</damage>
+	
+	<missiles>0</missiles>
+	<accuracyMod>100</accuracyMod>
+
+	<shots>3</shots>
+	<sp>10</sp>
+	<fireChance>10</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>18</cooldown>
+	<power>1</power>
+	<cost>80</cost>
+	<bp>7</bp>
+	<rarity>0</rarity>
+
+	<image>missile_fire</image>
+
+	<launchSounds>
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>artillery_fed</weaponArt>
+</weaponBlueprint>
+
+<weaponBlueprint name="DJMOD_ARTILLERY_LASER_PARTICLE">
+	<type>LASER</type>
+	<flavorType>Artillery</flavorType>
+	<title>Particle Artillery</title>
+	<short>Artillery</short>
+	<desc>Artillery: Fires 6 particle lasers that do 3 system damage each, pierce 1 shield and never miss.
+	Base Cooldown: 20</desc>
+	<tooltip>Artillery: Fires 6 particle lasers that do 3 system damage each, pierce 1 shield and never miss.</tooltip>
+	<damage>0</damage>
+	
+	<sysDamage>3</sysDamage>
+	<accuracyMod>100</accuracyMod>
+	
+	<shots>6</shots>
+	<sp>1</sp>
+	<fireChance>1</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>20</cooldown>
+	<rarity>0</rarity>
+	
+    <image>laser_particle</image>
+	
+	<launchSounds>
+		<sound>laser_particle</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>artillery_fed</weaponArt>
+</weaponBlueprint>
+</FTL>
+
+
+
+<!-- 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+				SHIPS BELOW
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+
+<shipBlueprint name="PLAYER_SHIP_DJMOD_RAMMER" layout="djmod_rammer_a" img="djmod_rammer_a">
+	<class>RadiKal Bam Cruiser</class>
+	<name>Rammer</name>
+	<desc>The flagship of the RadiKal Bam has limited space for weapons, but is equipped to safely* smash into enemy ships, then eat them!&#xD;
+	*(Citation needed)</desc>
+	<systemList>
+		<artillery power="1" max="4" room="18" start="false" weapon="ARTILLERY_FED" img="room_artillery_1x1" />
+		<battery power="1" max="2" room="1" start="false" img="room_battery_10" />
+		<cloaking power="1" room="9" start="false" img="room_cloaking_10" />
+		<clonebay power="1" room="3" start="true">
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="6" start="true" img="room_doors_7">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="1" max="8" room="8" start="true" img="room_drones" />
+		<engines power="3" max="8" room="10" start="true" img="room_engines_8">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="15" start="false" img="room_hacking" />
+		<medbay power="2" room="3" start="true" img="room_medbay_4">
+			<slot>
+				<number>0</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="11" start="false" img="room_mind" />
+		<oxygen power="1" room="5" start="true" img="room_oxygen_orchid_3" />
+		<pilot power="1" room="0" start="true" img="room_pilot_7">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</pilot>
+		<sensors power="2" room="16" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="8" room="2" start="true" img="room_shields_7">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="13" start="false" />
+		<temporal power="1" max="3" room="4" start="false" img="room_temporal_3" />
+		<weapons power="2" max="8" room="14" start="true" img="room_weapons">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="0" count="2">
+		<weapon name="LASER_HEAVY_PIERCE" />
+	</weaponList>
+	<droneList drones="10" count="3">
+		<drone name="DRONE_SHIELD_POWERLESS" />
+	</droneList>
+	<health amount="30" />
+	<maxPower amount="8" />
+	<crewCount amount="1" class="mantis_free" />
+	<crewCount amount="1" class="shell_mechanic" />
+	<crewCount amount="1" class="human_soldier" />
+	<crewCount amount="1" class="human_medic" />
+	<crewCount amount="1" class="lanius" />
+	<aug name="LOCKED_DJMOD_COMBAT_SHIPVORE_RAM" />
+	<aug name="FUEL_CONSERVER" />
+	<aug name="CRATE_FUEL" />
+</shipBlueprint>
+
+
+<shipBlueprint name="PLAYER_SHIP_DJMOD_PUNKER" layout="djmod_punker_a" img="djmod_punker_a">
+	<class>RadiKal Punk Cruiser</class>
+	<name>Punker</name>
+	<desc>An orbital particle accelerator turned cruiser is the RadiKal Punk flagship. Use its enlarged reactor with cheaper upgrades for hacking and particle artillery, before internal difficulties get you scrapped.</desc>
+	<unlock>Reach sector 8 with the RadiKal Bam Cruiser (Rammer) OR win with the RadiKal Scorch Cruiser (Scorcher) to unlock this ship.</unlock>
+	<systemList>
+		<artillery power="2" max="4" room="25" start="true" weapon="DJMOD_ARTILLERY_LASER_PARTICLE" img="room_artillery_3" />
+		<battery power="1" max="2" room="34" start="true" img="room_battery_8" />
+		<cloaking power="1" room="14" start="false" img="room_cloaking" />
+		<clonebay power="1" room="28" start="false">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="24" start="true" img="room_doors_6">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" max="8" room="32" start="true" img="room_drones_4" />
+		<engines power="1" room="33" start="true" img="room_engines_2">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="13" start="true" img="room_hacking_6" />
+		<medbay power="1" room="28" start="true" img="room_medbay">
+			<slot>
+				<number>1</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="31" start="false" img="room_mind_2" />
+		<oxygen power="1" room="12" start="true" img="room_oxygen_4" />
+		<pilot power="1" room="0" start="true" img="room_pilot_4">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="2" room="23" start="true" img="room_sensors_7">
+			<slot>
+				<direction>down</direction>
+				<number>3</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="8" room="30" start="true" img="room_shields">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="26" start="false" />
+		<temporal power="1" max="3" room="27" start="false" img="room_temporal_3" />
+		<weapons power="2" max="8" room="29" start="true" img="room_weapons_5">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="0" count="4">
+		<weapon name="ENERGY_CHARGEGUN_PLAYER" />
+		<weapon name="FOCUS_BIO" />
+	</weaponList>
+	<droneList drones="16" count="2">
+		<drone name="REPAIR" />
+	</droneList>
+	<health amount="30" />
+	<maxPower amount="7" />
+	<crewCount amount="1" class="zoltan_devotee" />
+	<crewCount amount="1" class="engi_separatist" />
+	<crewCount amount="1" class="phantom_mare_alpha" />
+	<aug name="DJMOD_HACK_FLEET" />
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_DJMOD_PUNKER_2" layout="djmod_punker_b" img="djmod_punker_b">
+	<class>RadiKal Punk Cruiser</class>
+	<name>NuH4RM0NY</name>
+	<desc>The bootleg Harmony that redesigned this ship unprompted insists that it's "Peak design that it's sad you bio-stains can't appreciate!!". Keep away from the actual Engi Harmony. Delete after victory.</desc>
+	<unlock>Win with the type A.</unlock>
+	<systemList>
+		<artillery power="1" max="4" room="17" start="true" weapon="DJMOD_ARTILLERY_LASER_PARTICLE" img="room_artillery_2" />
+		<battery power="1" room="18" start="false" img="room_battery_14" />
+		<cloaking power="1" room="23" start="true" img="room_cloaking_13" />
+		<clonebay power="1" room="5" start="false">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="8" start="false" img="room_doors_9">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones max="8" power="1" room="21" start="true" img="room_drones_16" />
+		<engines power="1" room="7" start="true" img="room_engines_11">
+			<slot>
+				<direction>down</direction>
+				<number>3</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="14" start="true" img="room_hacking_9" />
+		<medbay power="1" room="5" start="true" img="room_medbay_8">
+			<slot>
+				<number>1</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="10" start="true" img="room_mind_12" />
+		<oxygen power="1" room="4" start="true" img="room_oxygen_16" />
+		<pilot power="1" room="0" start="true" img="room_pilot_8">
+			<slot>
+				<direction>right</direction>
+				<number>2</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="11" start="false" img="room_sensors_4">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="8" room="3" start="false" img="room_shields_3">
+			<slot>
+				<direction>left</direction>
+				<number>2</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="15" start="false" />
+		<temporal power="1" max="3" room="2" start="false" img="room_temporal_5" />
+		<weapons power="2" max="8" room="1" start="true" img="room_weapons_13">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>2</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="0" count="2">
+		<weapon name="DJMOD_LASER_BPS" />
+	</weaponList>
+	<droneList drones="10" count="4">
+		<drone name="ANCIENT_COMBAT_ION" />
+	</droneList>
+	<health amount="30" />
+	<maxPower amount="7" />
+	<crewCount amount="1" class="engi_separatist" />
+	<crewCount amount="1" class="orchid_caretaker" />
+	<crewCount amount="1" class="engi" />
+	<crewCount amount="1" class="engi" />
+	<aug name="DJMOD_OWN_HARMONY_ON" />
+</shipBlueprint>
+
+
+<shipBlueprint name="PLAYER_SHIP_DJMOD_SCORCH" layout="djmod_scorch" img="djmod_scorch">
+	<class>RadiKal Scorch Cruiser</class>
+	<name>Scorcher</name>
+	<desc>The flagship of the RadiKal Scorch has clear structural vulnerablities, but makes up for that through deadly use of their tech if you commit to it.</desc>
+	<systemList>
+		<artillery power="2" max="4" room="21" start="true" weapon="DJMOD_ARTILLERY_MISSILE_FIRE" img="room_artillery_4" />
+		<battery power="1" max="2" room="27" start="false" img="room_battery_9" />
+		<cloaking power="1" room="5" start="false" img="room_cloaking_9" />
+		<clonebay power="1" room="14" start="false">
+			<slot>
+				<number>3</number>
+			</slot>
+		</clonebay>
+		<doors power="2" room="18" start="true" img="room_doors">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="1" max="8" room="25" start="false" img="room_drones_7" />
+		<engines power="1" room="20" start="true" img="room_engines_8">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="23" start="false" img="room_hacking_orchid" />
+		<medbay power="1" room="14" start="true" img="room_medbay_3">
+			<slot>
+				<number>3</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="9" start="false" img="room_mind_11" />
+		<oxygen power="2" room="22" start="true" img="room_oxygen_16" />
+		<pilot power="1" room="26" start="true" img="room_pilot_7">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</pilot>
+		<sensors power="2" room="16" start="true" img="room_sensors_4">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="8" room="19" start="true" img="room_shields_11">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="17" start="false" />
+		<temporal power="1" max="3" room="0" start="true" img="room_temporal_3" />
+		<weapons power="2" max="8" room="13" start="true" img="room_weapons_6">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="14" count="4">
+		<weapon name="DJMOD_RAIN_OF_FIRE" />
+		<weapon name="BOMB_HEAL_SYSTEM_STRONG" />
+	</weaponList>
+	<droneList drones="0" count="2" />
+	<health amount="25" />
+	<maxPower amount="8" />
+	<crewCount amount="1" class="phantom_goul" />
+	<crewCount amount="1" class="rock_commando" />
+	<crewCount amount="1" class="human" />
+	<crewCount amount="1" class="human" />
+	<crewCount amount="1" class="human" />
+	<aug name="DJMOD_COMBAT_SCORCH_SELF" />
+	<aug name="DJMOD_ENEMIES_CAN_BURN" />
+</shipBlueprint>
+
+
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////TOOLBOX
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+See weapon tuto part 1 https://docs.google.com/document/d/1DNlSWG0l_FdxNo2QxlI5c-_dvlXp_3zxvsza78o2B78/edit 
+and part 2 https://docs.google.com/document/d/1zDyIQ4xBYtBMyCD3671D1oTzAy_f9uIZg-9IbVwP5uc/edit
+and part 3 https://docs.google.com/document/d/1uFne5fVc3B01ONuLOoa1IcmulctPmjazsqR1ovz-T18/edit
+for more.
+
+************************************************************************************************************************
+				WEAPONS
+************************************************************************************************************************
+
+<weaponBlueprint name="(WRITE THE NAME OF THE WEAPON HERE)"> 
+
+<type>WEAPON TYPE HERE! Such as "BURST" "LASER" "MISSILE" "BEAM" etc</type>
+<title>What is the weapon's name?</title>
+<short>What is the weapon's shortened name?</short>
+<desc>What will the player read for the weapon's flavor text?</desc>
+<tooltip>	An optional tooltip for the weapon if the player should be given advise on its purpose or usage(I believe this line is defunct, the tooltip is now called from the <tip> tag,
+			which I will not teach today to keep things simple, as tooltips are optional!</tooltip>
+
+<damage>How much hull damage does it do? Must be a number, no letters</damage>
+<shots>How many times does it fire, per charge?</shots>
+
+<fireTime>0.0</fireTime>       OVERRIDES THE FIRING ANIMATION SPEED and replaces it with the value you declare. Default is 1.0 for bombs and charge weapons, and 0.25 for other weapons. 
+							Does not apply to beams.The lower the number, the FASTER the weapon fires. Can even go to low decimals, like 0.05. The higher the number, the slower it fires
+
+
+<sp>Shield piercing: How many layers of the enemy ship's shield does the weapon pierce through?</sp>
+
+<fireChance>Chance of weapon starting a fire. Every number stands for 10%, up to 100%. 
+So if you set this to "5" then the weapon has a 50% chance to create a fire</fireChance>
+<breachChance>Same as fire chance, chance to create a hull breach</breachChance>		BASED ON CHANCE TO NOT CAUSE FIRE!
+
+<cooldown>How many seconds until the weapon can fully charge and fire? must be a number, no letters</cooldown>
+<power>The amount of power needed to power and use the weapon</power>
+
+<cost>How much scrap does it cost? Note: half of this number is the sell price</cost>
+<bp>I believe this is the blueprint group. An unused tag. I just include it to be safe but it does nothing at all.</bp>
+<rarity>How often will it appear in stores or events? "0" makes it never appear except for specific conditions you would have to code separately. </rarity>
+
+<image>Declares the weapon's projectile in animations.xml. You could even do silly things like make a laser shoot missiles instead of lasers.</image>
+
+<projectiles> and <image> are mutually exclusive. If you declare one, DO NOT ! ! ! ! ! ! ! ! declare the other, or they will interfere with each other and either break the weapon or crash the game.
+
+<launchSounds>What sound effects does the game play when this weapon is fired? Can customize, but leave it default for now</launchSounds>
+<hitShipSounds>What sound effects does the game play when this weapon's projectile hits a ship? Can customize, but leave it default for now</hitShipSounds>
+<hitShieldSounds>What sound effects does the game play when this weapon's projectile hits a shield? Can customize, but leave it default for now</hitShieldSounds>
+<missSounds>What sound effects does the game play when this weapon's projectile misses a ship? Can customize, but leave it default for now</missSounds>
+
+<weaponArt>This line declares what animation sheet the weapon will use (and then the animation sheet declares which sprite sheet). WILL BE COVERED in another guide, leave it default</weaponArt>
+<iconImage>I believe this calls the "icon" image to the left of each weapon's name in your weapon bar in-game. Leave it default for now</iconImage>
+
+</weaponBlueprint> This line is the end of the weapon's code. Make sure every new weapon you make STARTS with "<weaponBlueprint>" and ENDS with "</weaponBlueprint>"
+
+
+<weaponBlueprint name="MISSILES_FIRE">
+	<type>MISSILES</type>
+	<tip>tip_missiles</tip>
+	<title>'Hades' Heavy Missiles</title>
+	<short>'Hades'</short>
+	<desc>This Missile is loaded with explosives which will always start a fire upon impact.</desc>
+	<tooltip>Fires 1 missile; does 1 damage; pierces all shields.</tooltip>
+	<damage>3</damage>
+	<accuracyMod>10</accuracyMod>
+	<missiles>1</missiles>
+	<speed>50</speed>
+	<shots>1</shots>
+	<sp>10</sp>
+	<fireChance>10</fireChance>
+	<breachChance>0</breachChance>
+	<stunChance>2</stunChance>
+	<cooldown>16</cooldown>
+	<power>2</power>
+	<cost>70</cost>
+	<bp>2</bp>
+	<rarity>4</rarity>
+	<image>missile_fire</image>
+	<launchSounds>
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>explosion_heavy</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>missiles_fire</weaponArt>
+	<iconImage>missile</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="KERNEL_2">
+	<type>MISSILES</type>
+	<flavorType>Kernel Launcher</flavorType>
+	<tip>tip_kernel</tip>
+	<title>Kernel Mk II</title>
+	<short>Kernel II</short>
+	<desc>This weapon uses kernels of giant plants from the Orchid home planet as ammunition. Kernels pierce shields, but also have a 35% chance to ignore their ammunition cost.</desc>
+	<tooltip>Fires 2 kernels; 1 damage; pierces all shields; guaranteed breach.</tooltip>
+	<damage>1</damage>
+	<missiles>1</missiles>
+	<freeMissileChance>35</freeMissileChance>
+	<shots>3</shots>
+	<sp>10</sp>
+	<fireChance>0</fireChance>
+	<breachChance>6</breachChance>
+	<stunChance>3</stunChance>
+	<cooldown>15</cooldown>
+	<power>2</power>
+	<cost>60</cost>
+	<bp>6</bp>
+	<rarity>0</rarity>
+	<image>kernel_projectile</image>
+	<launchSounds>
+		<sound>kernel_launch1</sound>
+		<sound>kernel_launch2</sound>
+		<sound>kernel_launch3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>kernel_2</weaponArt>
+	<iconImage>missile</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="MISSILES_BURST_2">
+	<type>MISSILES</type>
+	<flavorType>Missile</flavorType>
+	<tip>tip_missiles_burst</tip>
+	<title>'Hydra' Burst Missiles</title>
+	<short>'Hydra'</short>
+	<desc>Burst Missiles fire multiple low damage warheads for the price of one through patented replication technology.</desc>
+	<tooltip>Fires 1 missile; does 2 damage; pierces all shields.</tooltip>
+	<damage>1</damage>
+	<missiles>1</missiles>
+	<speed>50</speed>
+	<shots>1</shots>
+	<sp>10</sp>
+	<fireChance>2</fireChance>
+	<breachChance>2</breachChance>
+	<stunChance>2</stunChance>
+	<cooldown>4.5</cooldown>
+	<power>3</power>
+	<cost>65</cost>
+	<bp>7</bp>
+	<rarity>4</rarity>
+	<chargeLevels>5</chargeLevels>
+	<image>missile_burst_1</image>
+	<launchSounds>
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>missiles_burst_2</weaponArt>		DISABLED IN REFERENCE
+	<weaponArt>chargemissile_2</weaponArt>
+	<iconImage>missile</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="MINELAUNCHER_2">
+	<type>BURST</type>
+	<tip>tip_mine</tip>
+	<title>'Osiris' Mine Launcher</title>
+	<short>'Osiris'</short>
+	<desc>Mine Launchers charge quickly and fire a burst of slow moving projectiles. Also serves as an efficient way to lay traps for the fleet.
+	
+	At empty beacons provides 2 fleet delay for 10 missiles.</desc>
+	<tooltip>Fires 1 missile; does 1 damage; pierces all shields.</tooltip>
+	<drone_targetable>1</drone_targetable>
+	<radius>50</radius>
+	<damage>1</damage>
+	<sysDamage>-1</sysDamage>
+	<missiles>1</missiles>
+	<shots>1</shots>
+	<sp>10</sp>
+	<fireChance>3</fireChance>
+	<breachChance>3</breachChance>
+	<cooldown>9</cooldown>
+	<power>3</power>
+	<cost>65</cost>
+	<bp>2</bp>
+	<speed>15</speed>
+	<rarity>0</rarity>
+	<projectiles>
+		<projectile count="4" fake="false">mine_large</projectile>
+	</projectiles>
+	<image>mine_medium</image>				DISABLED IN REFERENCE
+	<launchSounds>
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>minelauncher_2</weaponArt>
+	<iconImage>missile</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="LASER_CHAINGUN_2">
+	<type>BURST</type>
+	<drone_targetable>0</drone_targetable>
+	<title>Chain Vulcan</title>
+	<short>Vulcan</short>
+	<tip>tip_chain_laser</tip>
+	<desc>This Laser weapon takes a long time to warm up. Each time it fires it decreases the cooldown, eventually able to take down any amount of shields.</desc>
+	<tooltip>Cooldown drops the more it fires.</tooltip>
+	<radius>60</radius>
+	<damage>1</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>11.1</cooldown>
+	<power>3</power>
+	<cost>95</cost>
+	<bp>2</bp>
+	<rarity>5</rarity>
+	<boost>
+		<type>cooldown</type>
+		<amount>2</amount>
+		<count>5</count>
+	</boost>
+	<projectiles>
+		<projectile count="1" fake="false">laser_burst</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>lightLaser1</sound>
+		<sound>lightLaser2</sound>
+		<sound>lightLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>chainlaser_2</weaponArt> 
+	<iconImage>laser_chain</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="GATLING_SYLVAN">
+	<type>LASER</type>
+	<title>'The Rift Waker'</title>
+	<short>'Rift Waker'</short>
+	<tip>tip_chain_laser</tip>
+	<desc>A powerful weapon of war carried previously only by Sylvan, but now by you as well. You greedy, murdering traitor you.</desc>
+	<tooltip>Cooldown drops the more it fires. Can chain up to 7 times!</tooltip>
+	<damage>1</damage>
+	<shots>1</shots>
+	<fireTime>0.2</fireTime>
+	<sp>1</sp>
+	<fireChance>10</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>20</cooldown>
+	<power>4</power>
+	<cost>1000</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<image>laser_burst</image>
+	<boost>
+		<type>cooldown</type>
+		<amount>20</amount>
+		<count>1</count>
+	</boost>
+	<launchSounds>
+		<sound>lightLaser1</sound>
+		<sound>lightLaser2</sound>
+		<sound>lightLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>gatling_gold</weaponArt> 
+	<iconImage>laser_chain</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="RUSTY_LASER_BURST_2">
+	<type>BURST</type>
+	<title>Old Burst Mark I</title>
+	<short>O. Burst I</short>
+	<tip>tip_old</tip>
+	<desc>This simple Burst Laser isn't flashy but it gets the job done. Very old and has worse aim.</desc>
+	<tooltip>Shoots 2 lasers that do 1 damage each.</tooltip>
+	<radius>52</radius>
+	<damage>1</damage>
+	<shots>2</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>13</cooldown>
+	<power>2</power>
+	<cost>35</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<projectiles>
+		<projectile count="1" fake="false">laser_burst</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>lightLaser1</sound>
+		<sound>lightLaser2</sound>
+		<sound>lightLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_burst_2_rusty</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="EE_SHOTGUN_TRIFECTA">
+	<type>BURST</type>
+	<flavorType>Physical Projectile Blast</flavorType>
+	<drone_targetable>1</drone_targetable>
+	<title>Trifecta</title>
+	<short>Trifecta</short>
+	<tip>tip_flak</tip>
+	<desc>A bizarre jerry-rigged weapon that fires 2 flak shots along with a slow moving but high damage laser for a nominal charge time.</desc>
+	<tooltip>Fires a blast of debris across a random area doing up to 3 damage.</tooltip>
+	<radius>45</radius>
+	<damage>1</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<spin>0</spin>
+	<fireChance>0</fireChance>
+	<breachChance>2</breachChance>
+	<cooldown>15</cooldown>
+	<power>2</power>
+	<cost>70</cost>
+	<speed>30</speed>
+	<rarity>1</rarity>
+	<projectiles>
+		<projectile count="1" fake="false" blueprint="TRIFECTA_LASER">laser_heavy</projectile>
+		<projectile count="2" fake="false">debris_med</projectile>
+		<projectile count="3" fake="true">debris_small</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>flak</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>flakImpact1</sound>
+		<sound>flakImpact2</sound>
+		<sound>flakImpact3</sound>
+		<sound>flakImpact4</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>shotgun_trifecta</weaponArt> 
+	<iconImage>flak</iconImage>
+</weaponBlueprint>
+<weaponBlueprint name="TRIFECTA_LASER">
+	<type>LASER</type>
+	<title>Trifecta Laser</title>
+	<short>Trifecta Laser</short>
+	<desc>YOU SHOULD NEVER SEE THIS</desc>
+	<damage>2</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<speed>20</speed>
+	<fireChance>3</fireChance>
+	<breachChance>3</breachChance>
+	<stunChance>3</stunChance>
+	<rarity>0</rarity>
+	<image>laser_heavy</image>
+	<launchSounds>
+		<sound>heavyLaser1</sound>
+		<sound>heavyLaser2</sound>
+		<sound>heavyLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_heavy_1</weaponArt>
+	<iconImage>heavyL</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="BEAM_FIRE_PLAYER">
+	<type>BEAM</type>
+	<tip>tip_fire_beam</tip>
+	<title>'Torch' Beam†</title>
+	<short>'Torch'†</short>
+	<desc>This terrifying Beam does no physical damage but ignites fires.</desc>
+	<tooltip>Beam weapon that starts fires.</tooltip>
+	<damage>0</damage>
+	<sp>0</sp>
+	<fireChance>8</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>18</cooldown>
+	<power>1</power>
+	<cost>50</cost>
+	<bp>6</bp>
+	<rarity>0</rarity>
+	<length>150</length>
+	<image>beam_contact</image>
+	<launchSounds>
+		<sound>beam2</sound>
+	</launchSounds>
+	<weaponArt>beam_fire</weaponArt>
+	<iconImage>beam</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="BEAM_FIRE_PIERCE">
+    <type>BEAM</type>
+    <tip>tip_pierce_beam</tip>
+    <title>Piercing 'Torch'</title>
+    <short>'Torch' P.</short>
+    <desc>This terrifying Beam does no physical damage but ignites fires. This variant can pierce up to 2 layers of shields.</desc>
+	<tooltip>Beam weapon that starts fires.</tooltip>
+    <damage>0</damage>    
+    <sp>3</sp>
+    <fireChance>8</fireChance>
+    <breachChance>0</breachChance>
+    <cooldown>22</cooldown>
+    <power>2</power>
+    <cost>65</cost>
+    <bp>6</bp>
+    <rarity>5</rarity>
+    <length>130</length>
+    <image>beam_contact</image>
+    <launchSounds>
+        <sound>beam2</sound>
+    </launchSounds>
+    <weaponArt>beam_fire_pierce</weaponArt>
+    <iconImage>beam</iconImage>
+</weaponBlueprint>
+
+
+***************************************************************
+				PLAYER ARTILLERIES
+***************************************************************
+
+<weaponBlueprint name="ARTILLERY_LASER">
+	<type>LASER</type>
+	<flavorType>Artillery</flavorType>
+	<title>Laser Artillery</title>
+	<short>Artillery</short>
+	<desc>Artillery: Fires a powerful barrage of 4 lasers that do 2 damage each.
+	Base Cooldown: 25</desc>
+	<tooltip>Artillery: Fires a powerful barrage of 4 lasers that do 2 damage each.</tooltip>
+	<damage>2</damage>
+	<shots>6</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>5</breachChance>
+	<cooldown>25</cooldown>
+	<rarity>0</rarity>
+    <image>laser_heavy</image>
+	<launchSounds>
+		<sound>heavyLaser1</sound>
+		<sound>heavyLaser2</sound>
+		<sound>heavyLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>artillery_fed</weaponArt>
+</weaponBlueprint>
+
+<weaponBlueprint name="ARTILLERY_BEAM">
+	<type>BEAM</type>
+	<title>Beam Artillery</title>
+	<short>Artillery</short>
+	<desc>Artillery: Powers a massive beam that pierces all shields, with a moderate breach and fire chance.
+	Base Cooldown: 40</desc>
+	<tooltip>Artillery: Powers a massive beam that pierces all shields, with a moderate breach and fire chance.</tooltip>
+	<damage>1</damage>
+	<sp>10</sp>
+	<fireChance>3</fireChance>
+	<breachChance>3</breachChance>
+	<speed>15</speed>
+	<cooldown>40</cooldown>
+	<rarity>0</rarity>
+	<image>beam_contact</image>
+	<length>500</length>
+	<launchSounds>
+		<sound>beam2</sound>
+	</launchSounds>
+	<weaponArt>artillery_fed</weaponArt>
+</weaponBlueprint>
+
+<weaponBlueprint name="ARTILLERY_FIRE">
+	<type>BEAM</type>
+	<title>Fire Beam Artillery</title>
+	<short>Artillery</short>
+	<desc>Artillery: Powers a deadly fire beam that pierces all shields, starting fires across the entire enemy ship.
+	Base Cooldown: 30</desc>
+	<tooltip>Artillery: Powers a deadly fire beam that pierces all shields, starting fires across the entire enemy ship.</tooltip>
+	<damage>0</damage>
+	<sp>10</sp>
+	<fireChance>10</fireChance>
+	<breachChance>0</breachChance>
+	<speed>15</speed>
+	<cooldown>30</cooldown>
+	<rarity>0</rarity>
+	<image>beam_contact</image>
+	<length>500</length>
+	<launchSounds>
+		<sound>beam2</sound>
+	</launchSounds>
+	<weaponArt>artillery_fed</weaponArt>
+</weaponBlueprint>
+
+<weaponBlueprint name="ARTILLERY_JERRY">
+	<type>BOMB</type>
+	<title>Friend-Maker Artillery</title>
+	<short>Artillery</short>
+	<desc>Artillery: Fires a cluster of bombs that disable the ability for 7 seconds to fight for all crew other than Jerry.
+	Base Cooldown: 15</desc>
+	<tooltip>Artillery: Fires a cluster of bombs that disable the ability for 7 seconds to fight for all crew other than Jerry.</tooltip>
+	<damage>0</damage>
+	<statBoosts>
+		<statBoost name="canFight">
+			<boostType>SET</boostType>
+			<value>false</value>
+			<shipTarget>ALL</shipTarget>
+			<crewTarget>ALL</crewTarget>
+			<affectsSelf>true</affectsSelf>
+			<maxStacks>1</maxStacks>
+			<duration>7</duration>
+			<blackList>
+				<unique_jerry/>
+				<unique_jerry_gun/>
+				<unique_jerry_pony/>
+				<unique_jerry_pony_crystal/>
+			</blackList>
+		</statBoost>
+	</statBoosts>
+	<shots>6</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<stunChance>0</stunChance>
+	<cooldown>15</cooldown>
+	<power>1</power>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<image>bomb_stun</image>
+	<explosion>explosion_big1_ion</explosion>
+	<launchSounds>
+		<sound>bombTeleport</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<weaponArt>artillery_jerry</weaponArt>
+</weaponBlueprint>
+
+***************************************************************
+				POWER SURGE WEAPONS (crewjank?)
+***************************************************************
+
+<weaponBlueprint name="BARRAGE_FLAK">
+	<type>BURST</type>
+	<flavorType>Power Surge</flavorType>
+	<drone_targetable>1</drone_targetable>
+	<title>Flak Barrage</title>
+	<short>Flak Barrage</short>
+	<tip>tip_flak</tip>
+	<desc>YOU SHOULD NEVER SEE THIS.</desc>
+	<radius>42</radius>
+	<damage>1</damage>
+	<sysDamage>-1</sysDamage>
+	<speed>26</speed>
+	<shots>1</shots>
+	<sp>0</sp>
+	<spin>720</spin>
+	<fireChance>0</fireChance>
+	<breachChance>2</breachChance>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<projectiles>
+		<projectile count="1" fake="false">debris_med</projectile>
+		<projectile count="1" fake="true">debris_small</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>flak</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>flakImpact1</sound>
+		<sound>flakImpact2</sound>
+		<sound>flakImpact3</sound>
+		<sound>flakImpact4</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>shotgun</weaponArt> 
+	<iconImage>flak</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="BARRAGE_LASER">
+	<type>LASER</type>
+	<flavorType>Power Surge</flavorType>
+	<title>Laser Barrage</title>
+	<short>Laser Barrage</short>
+	<tip>tip_flak</tip>
+	<desc>YOU SHOULD NEVER SEE THIS.</desc>
+	<damage>1</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>3</fireChance>
+	<breachChance>3</breachChance>
+	<stunChance>2</stunChance>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<image>laser_heavy</image>
+	<launchSounds>
+		<sound>heavyLaser1</sound>
+		<sound>heavyLaser2</sound>
+		<sound>heavyLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_heavy_1</weaponArt>
+	<iconImage>heavyL</iconImage>
+</weaponBlueprint>
+
+**********************************************************************************************************
+				FROM ADD-ONS
+**********************************************************************************************************
+
+<weaponBlueprint name="RSW_BEAM_FIRE_PERSIST">
+	<type>BEAM</type>
+	<tip>tip_fire_beam</tip>
+	<title>'Eternal Flame' Beam</title>
+	<short>'Eternal'</short>
+	<desc>This special fire beam outputs so much energy that it not only starts fires, but also sustain them for a very long time. The enemy or lack of O2 will not be able to put them out for the duration. Due to the instability of the fire, it damages the system slower than normal fires.</desc>
+	<tooltip>-</tooltip>
+	<damage>0</damage>
+	<sp>0</sp>
+	<fireChance>9</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>20</cooldown>
+	<speed>1</speed>
+	<power>3</power>
+	<cost>105</cost>
+	<bp>2</bp>
+	<crewSpawnChance>10</crewSpawnChance>
+	<spawnCrew>
+        <race>rsc_fire</race>
+        <number>1</number>
+        <noSlot>true</noSlot>
+		<lifetime>7770</lifetime>
+        <statBoosts>
+            <statBoost name="noClone">
+                <boostType>SET</boostType>
+                <value>true</value>
+                <shipTarget>ALL</shipTarget>
+                <crewTarget>ALL</crewTarget>
+                <priority>999</priority>
+            </statBoost>
+        </statBoosts>
+    </spawnCrew> 
+	<rarity>4</rarity>
+	<image>beam_contact</image>
+	<length>1</length>
+	<launchSounds>
+		<sound>focus_weak</sound>
+	</launchSounds>
+	<weaponArt>rs_anim_eternal_fire</weaponArt>
+	<iconImage>beam</iconImage>
+</weaponBlueprint>
+-->

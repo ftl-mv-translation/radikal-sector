@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+REFS MV v5.5.1
+
+scrap ~ , fuel { , missiles } , drones |
+
+<event name="HEKTAR_COORDS_GET_1">
+	<text>The Hektar employee goes to add your point, when he stops in surprise. "Huh? You actually reached 4 pointssss... Do you have brain damage? Why would you visssit sssso many sssstores. Eh, whatever. Congratulationssss. Here's the sssshiny key to the Hektar Mega-Market(tm). Ssssomething sssomething we waive all liability or whatever." Looks like they've sent some special coords for your Atlas. You can travel there during any sector jump before the Federation Capital.</text>
+	<variable name="loc_uwupoint" op="add" val="1"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="HEKTAR_COORDS_GET_2"/>
+	</choice>
+</event>
+<event name="HEKTAR_COORDS_GET_2">
+	<text>With that out of the way, now you can shop here.</text>
+	<variable name="coords_hektar" op="set" val="1"/>
+	<store>STORE_HEKTAR_DEFAULT</store>
+	<choice>
+		<text>Do something onboard the ship.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+	<choice>
+		<text>Do nothing.</text>
+		<event/>
+	</choice>
+</event>
+-->
+
+<mod:findName type = "event" name = "REVISIT">
+<!-- <mod-append:choice req="coords_radikal" lvl="0" max_lvl="0" hidden="true" blue="true"> -->
+ <mod-append:choice req="DJMOD_NO_COORDS_NO_VISIT_RADIKAL_SECTOR" lvl="1" hidden="true" blue="true">
+     <text>Construct a dummy to practice shooting in space, for 5~, and 1}.</text>
+     <event load="TRYGET_COORDS_RADIKAL"/>
+</mod-append:choice>
+</mod:findName>
+
+<event name="TRYGET_COORDS_RADIKAL">
+	<text>You make the dummy and order your crew to take turns practicing their aim.</text>
+	<item_modify>
+		<item type="scrap" min="-5" max="-5"/>
+		<item type="missiles" min="-1" max="-1"/>
+		<!-- <item type="drones" min="-1" max="-1"/> -->
+	</item_modify>
+	
+	<choice>
+		<text>They deserve some fun.</text>
+		<event load="TRYGET_COORDS_RADIKAL_OUTCOMES"/>
+	</choice>
+</event>
+
+<eventList name="TRYGET_COORDS_RADIKAL_OUTCOMES">
+	<event load="GET_COORDS_RADIKAL"/>
+	<!-- Total 1 / (1+1= 2) = 50% success -->
+	<event load="NOTGET_COORDS_RADIKAL"/>
+</eventList>
+
+<event name="GET_COORDS_RADIKAL">
+	<text>Suddenly, the dummy hits something small during an evasive maneuver, which you eventually find by calculating trajectories and carefully looking around since it's too small for detection.
+	It's just a torn piece of clothing that probably belonged to someone who died near this beacon recently. It has a pocket.
+	Inside, encased in frozen blood, is a data card that you don't take long to clean up and decrypt, containing FTL jump coordinates...</text>
+	
+	<variable name="coords_radikal" op="set" val="1"/>
+	
+	<choice>
+		<text>Continue...</text>
+		<event>
+			<text>The destination sector doesn't match anything in your database (which isn't reassuring) and is unlabeled (which isn't legal).
+			The only clue is a logo with the letters "RK" on the back of the card.
+			You will be able to reroute to it the next time you change sectors, knowing that showing up uninvited somewhere you don't know is always a risky move.</text>
+			<choice>
+				<text>We'll see.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="NOTGET_COORDS_RADIKAL">
+	<text>Your crew enjoys the exercise, pretending they're using radical tactics to fight enemies. 
+	At some point you wonder if anything special could have come out of this recreational activity...
+	Then you call it a day and start focusing on your mission again.</text>
+	<choice>
+		<text>Continue...</text>
+		<event/>
+	</choice>
+</event>
+
+
+<!-- Append to Combat Augment vendor STOREEVENT_DYNASTY_DOOMSDAY
+REF MV v5.5.1:
+
+<eventList name="TRADELIST_AUGMENT_COMBAT">
+	<event>
+		<text id="trade_purchase"/>
+		<store>STORE_STANDARD</store>
+		<item_modify>
+			<item type="scrap" min="-40" max="-40"/>
+		</item_modify>
+		<augment name="COMBAT_WEAPON_JAMMER"/>
+	</event>
+	<event>
+		<text id="trade_purchase"/>
+		<store>STORE_STANDARD</store>
+		<item_modify>
+			<item type="scrap" min="-45" max="-45"/>
+		</item_modify>
+		<augment name="COMBAT_SHIELDS_JAMMER"/>
+	</event>
+	...
+ -->
+ <!-- Other Refs
+<mod:findName type = "event" name = "COMBAT_CHECK_REAL">
+<mod-append:choice req="DJMOD_OXYGENIZER" blue="false">
+	<text>(Oxygenizer) Create an atmosphere!</text>
+	<event load="DJMOD_OXYGENIZER_ACTIVATE"/>
+</mod-append:choice>
+</mod:findName>
+ -->
+
+<mod:findName type = "eventList" name = "TRADELIST_AUGMENT_COMBAT">
+	<mod-append:event>
+		<text id="trade_purchase"/>
+		<store>STORE_STANDARD</store>
+		<item_modify>
+			<item type="scrap" min="-60" max="-60"/>
+		</item_modify>
+		<augment name="DJMOD_COMBAT_SHIPVORE_RAM"/>
+	</mod-append:event>
+</mod:findName>
