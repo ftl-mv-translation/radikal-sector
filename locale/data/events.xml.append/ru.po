@@ -1,9 +1,17 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-04-19 14:42+0000\n"
+"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
+"Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
+"dataeventsxmlappend/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.13.3\n"
 
 #: src-en/data/events.xml.append:166
 msgid "data/events.xml.append$//event[@name=\"TEST_RKSHOP\"]/text"
@@ -1241,7 +1249,7 @@ msgstr "Продолжить..."
 #: src-en/data/events.xml.append:1482
 msgid ""
 "data/events.xml.append$/dummyroot/FTL[5]/event[@name=\"RK_SEIZE_ONE\"]/choice[@req=\"DJMOD_COMBAT_SCORCH_SELF_2\"]/text"
-msgstr ""
+msgstr "\"Пылающая земля\""
 
 #: src-en/data/events.xml.append:1484
 msgid ""
@@ -1331,7 +1339,7 @@ msgstr "Продолжить..."
 #: src-en/data/events.xml.append:1577
 msgid ""
 "data/events.xml.append$/dummyroot/FTL[5]/event[@name=\"RK_SEIZE_ONE\"]/choice[@req=\"DJMOD_LASER_BPS\"]/text"
-msgstr ""
+msgstr "БПС \"Мессенджер\""
 
 #: src-en/data/events.xml.append:1579
 msgid ""
