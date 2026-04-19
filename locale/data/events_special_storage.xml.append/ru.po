@@ -1,9 +1,17 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-04-19 14:42+0000\n"
+"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
+"Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
+"dataevents_special_storagexmlappend/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.13.3\n"
 
 #: src-en/data/events_special_storage.xml.append:395
 msgid ""
@@ -1542,7 +1550,7 @@ msgstr "Продолжить..."
 #: src-en/data/events_special_storage.xml.append:3549
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_SCORCH_ENEMY_PAY_FIRE_WEAPON_BAD\"]/choice[@req=\"DJMOD_ENEMIES_CAN_BURN\"]/text"
-msgstr ""
+msgstr "Фламмабилизатор-иммунитет"
 
 #: src-en/data/events_special_storage.xml.append:3551
 msgid ""
@@ -1557,7 +1565,7 @@ msgstr "Продолжить..."
 #: src-en/data/events_special_storage.xml.append:3561
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_SCORCH_ENEMY_PAY_FIRE_WEAPON_BAD\"]/choice[@req=\"DJMOD_ENEMIES_BURN_MORE\"]/text"
-msgstr ""
+msgstr "Фламмабилизатор-урон"
 
 #: src-en/data/events_special_storage.xml.append:3563
 msgid ""
@@ -1592,12 +1600,12 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:3598
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_SCORCH_ENEMY_PAY_FIRE_WEAPON_GOOD\"]/choice[@req=\"DJMOD_ENEMIES_CAN_BURN\"]/text"
-msgstr ""
+msgstr "Фламмабилизатор-иммунитет"
 
 #: src-en/data/events_special_storage.xml.append:3602
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_SCORCH_ENEMY_PAY_FIRE_WEAPON_GOOD\"]/choice[@req=\"DJMOD_ENEMIES_BURN_MORE\"]/text"
-msgstr ""
+msgstr "Фламмабилизатор-урон"
 
 #: src-en/data/events_special_storage.xml.append:3607
 msgid ""
