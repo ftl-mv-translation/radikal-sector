@@ -1,59 +1,78 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-04-19 14:42+0000\n"
+"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
+"Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
+"datatext_blueprintsxmlappend/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.13.3\n"
 
 #: src-en/data/text_blueprints.xml.append:3
 msgid ""
 "data/text_blueprints.xml.append$//text[@name=\"text_PLAYER_SHIP_DJMOD_RAMMER_class\"]"
-msgstr ""
+msgstr "Крейсер Бам РадиКалов"
 
 #: src-en/data/text_blueprints.xml.append:4
 msgid ""
 "data/text_blueprints.xml.append$//text[@name=\"text_PLAYER_SHIP_DJMOD_RAMMER_name\"]"
-msgstr ""
+msgstr "Таранщик"
 
 #: src-en/data/text_blueprints.xml.append:5
 msgid ""
 "data/text_blueprints.xml.append$//text[@name=\"text_PLAYER_SHIP_DJMOD_RAMMER_desc\"]"
 msgstr ""
+"На борту флагманского корабля Бам РадиКалов вы сможете приблизиться к "
+"вражеским кораблям, разгромить их, а затем... съесть! Разумеется, корабли."
 
 #: src-en/data/text_blueprints.xml.append:8
 msgid ""
 "data/text_blueprints.xml.append$//text[@name=\"text_PLAYER_SHIP_DJMOD_PUNKER_class\"]"
-msgstr ""
+msgstr "Крейсер Панк РадиКалов"
 
 #: src-en/data/text_blueprints.xml.append:9
 msgid ""
 "data/text_blueprints.xml.append$//text[@name=\"text_PLAYER_SHIP_DJMOD_PUNKER_name\"]"
-msgstr ""
+msgstr "Панкер"
 
 #: src-en/data/text_blueprints.xml.append:10
 msgid ""
 "data/text_blueprints.xml.append$//text[@name=\"text_PLAYER_SHIP_DJMOD_PUNKER_desc\"]"
 msgstr ""
+"Флагман Панк РадиКалов - это орбитальный ускоритель частиц, "
+"переоборудованный в крейсер. Используйте его мощный реактор с более "
+"доступными модернизациями для взлома систем и частичной артиллерии, пока "
+"внутренние проблемы не приведут к тому, что вас утилизируют."
 
 #: src-en/data/text_blueprints.xml.append:12
 msgid ""
 "data/text_blueprints.xml.append$//text[@name=\"text_PLAYER_SHIP_DJMOD_SCORCH_class\"]"
-msgstr ""
+msgstr "Крейсер Скорч РадиКалов"
 
 #: src-en/data/text_blueprints.xml.append:13
 msgid ""
 "data/text_blueprints.xml.append$//text[@name=\"text_PLAYER_SHIP_DJMOD_SCORCH_name\"]"
-msgstr ""
+msgstr "Испепелитель"
 
 #: src-en/data/text_blueprints.xml.append:14
 msgid ""
 "data/text_blueprints.xml.append$//text[@name=\"text_PLAYER_SHIP_DJMOD_SCORCH_desc\"]"
 msgstr ""
+"Флагман Сорч РадиКалов имеет явные конструктивные слабые места, но "
+"компенсирует их благодаря умелому использованию своих технологий."
 
 #: src-en/data/text_blueprints.xml.append:17
 msgid ""
 "data/text_blueprints.xml.append$//text[@name=\"ship_PLAYER_SHIP_DJMOD_PUNKER_unlock\"]"
 msgstr ""
+"Достигните 8-го сектора на крейсере Бам РадиКалов (Таранщик) ИЛИ одержите "
+"победу на крейсере Скорч РадиКалов (Испепелитель), чтобы разблокировать этот "
+"корабль."
 
 #: src-en/data/text_blueprints.xml.append:18
 msgid ""
@@ -64,3 +83,5 @@ msgstr "Пройдите игру на типе А."
 msgid ""
 "data/text_blueprints.xml.append$//text[@name=\"ship_PLAYER_SHIP_DJMOD_SCORCH_unlock\"]"
 msgstr ""
+"Убейте стража Скорч в конце сектора РадиКал, чтобы разблокировать этот "
+"корабль."
