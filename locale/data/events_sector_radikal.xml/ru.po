@@ -1,14 +1,26 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-04-19 14:42+0000\n"
+"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
+"Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
+"dataevents_sector_radikalxml/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.13.3\n"
 
 #: src-en/data/events_sector_radikal.xml:77
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_STORE_SNIPER_SIEGED\"]/text"
 msgstr ""
+"Похоже, ОЧЕНЬ смертельно опасный стелс-корабль атакует ближайший рынок, "
+"принадлежащий некой \"Снайперше\". Если вы сможете их остановить, то "
+"получите доступ к магазину.\n"
+"\t\tСпециализированный магазин, похоже, готов оказать огневую поддержку."
 
 #: src-en/data/events_sector_radikal.xml:82
 msgid ""
@@ -34,6 +46,8 @@ msgstr "Не обращать внимания на торговца."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_STORE_SNIPER_SIEGED\"]/choice[2]/event/text"
 msgstr ""
+"Вы почти уверены, что они заметили вас, но, похоже, они слишком заняты, "
+"чтобы обратить на это внимание."
 
 #: src-en/data/events_sector_radikal.xml:98
 msgid ""
@@ -49,6 +63,7 @@ msgstr "Ничего не делать."
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_STORE_SNIPER_EXTREME\"]/destroyed/text"
 msgstr ""
+"Стелс-корабль разваливается на части, и вы быстро собираете все, что можно."
 
 #: src-en/data/events_sector_radikal.xml:115
 msgid ""
@@ -59,6 +74,7 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_STORE_SNIPER_EXTREME\"]/deadCrew/text"
 msgstr ""
+"Поскольку экипаж погиб, вы быстро уносите с стелс-корабля все, что можно."
 
 #: src-en/data/events_sector_radikal.xml:123
 msgid ""
@@ -69,6 +85,26 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_STORE_SNIPER_WIN\"]/text"
 msgstr ""
+"Снайперша не теряет времени и сразу же обращается к вам: \"Они просто не "
+"перестают нападать, и с каждым разом их снаряжение становится все лучше - "
+"только чтобы нас ограбить. Я просто не успеваю перевести дух. Я знаю, что вы "
+"тоже здесь именно по этой причине...\" Вы уже собираетесь сказать что-"
+"нибудь, чтобы подбодрить ее, но она перебивает вас: \"Потому что в этой "
+"вселенной нет НИКАКОГО лучшего магазина снаряжения для скрытности! Оно "
+"настолько эффективно, что пираты мечтают о нем, коалиции строят планы по его "
+"приобретению, а Ренегаты пытаются его украсть! Покупайте, пока еще можете!\"."
+"\n"
+"\t\tОказывается, она все еще в роле. Профессионалы сектора РК, должно быть, "
+"повидали всякое, думаете вы про себя.\n"
+"\n"
+"\t\t\"...И за вашу своевременную помощь, вот небольшой стимул для покупки\". "
+"Вы понимаете, что подарок - это ее \"спасибо\", и пожимаете плечами.\n"
+"\t\tЗатем вы бросаете взгляд на товары и сразу понимаете, зачем сюда пришли "
+"нападавшие.\n"
+"\n"
+"\t\t\"Ах да, некоторые из этих вещей так трудно достать, что их вообще не "
+"должно быть в продаже, поэтому только по одной покупке на клиента. Но для "
+"тебя я сделаю исключение - три\"."
 
 #: src-en/data/events_sector_radikal.xml:142
 msgid ""
@@ -78,72 +114,94 @@ msgstr "Ну ладно."
 #: src-en/data/events_sector_radikal.xml:199
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY\"]/beaconType/unvisitedTooltip"
-msgstr ""
+msgstr "Пираты ждут вашего лом. Разочаровывать их - рискованная идея!"
 
 #: src-en/data/events_sector_radikal.xml:202
 msgid "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY\"]/text"
 msgstr ""
+"Пиратские кланы не всегда ладят друг с другом, но когда на кону стоят "
+"большие деньги, они знают, как себя вести. Элита, которая вас здесь "
+"встречает, судя по всему, отвечает за контроль над сделками.\n"
+"\t\t\"Так-так, ты тот сссамый важный клиент-Федерашшшка, который бросссил "
+"законную жизнь, чтобы примкнуть к нам, да? Без обид, но я должен сссказать, "
+"что не очень в это верю. Посссмотрим, насссколько ты сссерьезен...\"\n"
+"\t\t\n"
+"\t\tЕсли не хотите разозлить слизня и его безжалостных подельников, вам "
+"лучше купить что-нибудь у каждой из пиратских подфракций.\n"
+"Это все или ничего, но если вы это сделаете, пираты повсюду будут уважать "
+"вас еще больше!"
 
 #: src-en/data/events_sector_radikal.xml:214
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY\"]/choice[1]/text"
-msgstr ""
+msgstr "Да, это я. Хватит болтать, покажи, на что ты способен."
 
 #: src-en/data/events_sector_radikal.xml:222
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY\"]/choice[2]/text"
-msgstr ""
+msgstr "Это не мы, мы просто проходим мимо."
 
 #: src-en/data/events_sector_radikal.xml:239
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/text"
-msgstr ""
+msgstr "Все пираты с нетерпением смотрят на вас."
 
 #: src-en/data/events_sector_radikal.xml:245
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_met_slaver\""
 " and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "Встретиться с работорговцем из Тииикаки."
 
 #: src-en/data/events_sector_radikal.xml:255
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_met_slaver\""
 " and @lvl=\"1\"]/text"
-msgstr ""
+msgstr "Работорговец, сидя на лице раба, пересчитывает свой лом."
 
 #: src-en/data/events_sector_radikal.xml:260
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_met_mercenary\""
 " and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "Встретиться с наемником из Синдиката."
 
 #: src-en/data/events_sector_radikal.xml:264
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_met_mercenary\""
 " and @lvl=\"1\"]/text"
-msgstr ""
+msgstr "Наемник жонглирует кусочками лома, ножами и заряженным оружием."
 
 #: src-en/data/events_sector_radikal.xml:269
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_met_smuggler\""
 " and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "Встретиться с контрабандистом из Арджонна."
 
 #: src-en/data/events_sector_radikal.xml:273
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_met_smuggler\""
 " and @lvl=\"1\"]/text"
 msgstr ""
+"Контрабандист говорит своей третьей жене, что она может купить того "
+"дворецкого."
 
 #: src-en/data/events_sector_radikal.xml:279
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_count\"]/text"
-msgstr ""
+msgstr "Поблагодарить их за сотрудничество и попрощаться."
 
 #: src-en/data/events_sector_radikal.xml:281
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_count\"]/event/text"
 msgstr ""
+"\"Ну-ну, ты и вправду по-нассстоящему богатый, мерзкий тип, которому плевать "
+"на всссех живых сссущессств, просссто фантассстичессский клиент во всссех "
+"сссмыссслах! Прими мои извинения за то, что усссомнилссся в тебе, и пусссть "
+"твои набеги приносссят огромную добычу! Дамы и господа, время вечеринки! "
+"Наркотики всссем, и давайте сссыграем в \"Ссстреляй по конечноссстям\" этого "
+"раба-человека, который сссегодня утром ссстранно на меня посссмотрел\".\n"
+"\t\t\t\t\n"
+"\t\t\t\tВас отпускают с небольшим подарком и широкими улыбками на лицах. "
+"Поздравляем,вы только что сделал галактику еще хуже."
 
 #: src-en/data/events_sector_radikal.xml:288
 msgid ""
@@ -153,12 +211,17 @@ msgstr "Продолжить..."
 #: src-en/data/events_sector_radikal.xml:296
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[8]/text"
-msgstr ""
+msgstr "Мы не будем вести дела со всеми вами. Мы уходим."
 
 #: src-en/data/events_sector_radikal.xml:302
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/text"
 msgstr ""
+"\"С военных кораблей, из шахтерских лагерей, детских садов и даже с "
+"передовых рубежей мы привозим самых лучших и умных рабов! Наверняка один из "
+"них - именно тот, кто вам нужен...\n"
+"\t\tЕсли, конечно, вы не хотите платить. Тогда мы наденем ошейник раба и на "
+"вас\"."
 
 #: src-en/data/events_sector_radikal.xml:307
 msgid ""
@@ -169,6 +232,8 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/text"
 msgstr ""
+"Работорговец с гордостью выставляет на обозрение несчастных, чтобы вы их "
+"купили."
 
 #: src-en/data/events_sector_radikal.xml:313
 msgid ""
@@ -178,7 +243,7 @@ msgstr "Купить раба."
 #: src-en/data/events_sector_radikal.xml:315
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[1]/event/text"
-msgstr ""
+msgstr "\"Отличная покупка. Уверен, они отлично послужат, капитан!\""
 
 #: src-en/data/events_sector_radikal.xml:325
 msgid ""
@@ -188,12 +253,12 @@ msgstr "Продолжить..."
 #: src-en/data/events_sector_radikal.xml:334
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[2]/text"
-msgstr ""
+msgstr "Купить раба получше."
 
 #: src-en/data/events_sector_radikal.xml:336
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[2]/event/text"
-msgstr ""
+msgstr "\"Отличная покупка. Уверен, они отлично послужат, капитан!\""
 
 #: src-en/data/events_sector_radikal.xml:344
 msgid ""
@@ -209,6 +274,9 @@ msgstr "Купить элитного раба."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[3]/event/text"
 msgstr ""
+"\"А, вижу, у вас, капитан, глаз только на рабов самого высокого качества. "
+"Это один из лучших рабов, каких я когда-либо видел. Уверяю вас, он послужит "
+"на славу, капитан!\""
 
 #: src-en/data/events_sector_radikal.xml:361
 msgid ""
@@ -218,12 +286,22 @@ msgstr "Продолжить..."
 #: src-en/data/events_sector_radikal.xml:368
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[4]/text"
-msgstr ""
+msgstr "Знаешь, что, самое смешное, что мы на мели..."
 
 #: src-en/data/events_sector_radikal.xml:370
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[4]/event/text"
 msgstr ""
+"\"Нехорошшшие ссслова, капитан-Федерашшшка, ссстоило выбрать более "
+"подходящие. Но главное - ссстоило принессти лом\". Пиратский корабль перед "
+"вами мгновенно готовится к бою, явно ожидая именно этого. \n"
+"\t\t\t\t\t\t\n"
+"\t\t\t\t\t\tВы не можете понять, зол ли надзиратель-слизень, доволен ли он "
+"или и то и другое сразу. \"Ха! Я так и знал, ты просссто хотел разом "
+"перебить кучу пиратов, герой-недоучка. И знаешшшь что - мы не такие глупые! "
+"Эй, Курт, гони добычу, я выиграл ссспор\".\n"
+"\t\t\t\t\t\tС этими словами они и другие пиратские корабли уходят в прыжок, "
+"оставляя вас разбираться с работорговцами!"
 
 #: src-en/data/events_sector_radikal.xml:377
 msgid ""
@@ -234,6 +312,11 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/text"
 msgstr ""
+"\"Будьте на шаг впереди своих врагов благодаря нашим спецслужбам. От "
+"разведки до отвлечения внимания и далее... до более решительных действий, "
+"как только мы достаточно хорошо познакомимся!\n"
+"\t\tКонечно, при условии, что вы не сделали себя нашей следующей целью, "
+"придя сюда с пустыми руками\"."
 
 #: src-en/data/events_sector_radikal.xml:393
 msgid ""
@@ -243,7 +326,7 @@ msgstr "Продолжить..."
 #: src-en/data/events_sector_radikal.xml:395
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/text"
-msgstr ""
+msgstr "Наемник из Синдиката ждет ваших приказов."
 
 #: src-en/data/events_sector_radikal.xml:399
 msgid ""
@@ -253,7 +336,7 @@ msgstr "Купить карту сектора."
 #: src-en/data/events_sector_radikal.xml:401
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/choice[1]/event/text"
-msgstr ""
+msgstr "\"Есть, капитан!\""
 
 #: src-en/data/events_sector_radikal.xml:409
 msgid ""
@@ -263,12 +346,12 @@ msgstr "Продолжить..."
 #: src-en/data/events_sector_radikal.xml:416
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/choice[2]/text"
-msgstr ""
+msgstr "Задержать флот повстанцев на 2 хода."
 
 #: src-en/data/events_sector_radikal.xml:418
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/choice[2]/event/text"
-msgstr ""
+msgstr "\"Мы уже занимаемся этим, капитан!\""
 
 #: src-en/data/events_sector_radikal.xml:426
 msgid ""
@@ -278,12 +361,21 @@ msgstr "Продолжить..."
 #: src-en/data/events_sector_radikal.xml:433
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/choice[3]/text"
-msgstr ""
+msgstr "Знаешь, что, самое смешное, что мы на мели..."
 
 #: src-en/data/events_sector_radikal.xml:435
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/choice[3]/event/text"
 msgstr ""
+"\"Плохой выбор, капитан. Надо было взять ссс сссобой эту дрянь\". Пиратский "
+"корабль перед вами мгновенно готовится к бою, явно ожидая именно этого. \n"
+"\t\t\t\t\t\t\n"
+"\t\t\t\t\t\tВы не можете понять, зол ли надзиратель-слизень, доволен ли он "
+"или и то и другое сразу. \"Ха! Я так и знал, ты просссто хотел разом "
+"перебить кучу пиратов, герой-недоучка. И знаешшшь что - мы не такие глупые! "
+"Эй, Курт, гони добычу, я выиграл ссспор\".\n"
+"\t\t\t\t\t\tС этими словами они и другие пиратские корабли уходят в прыжок, "
+"оставляя вас разбираться с наемниками!"
 
 #: src-en/data/events_sector_radikal.xml:442
 msgid ""
@@ -294,6 +386,12 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/text"
 msgstr ""
+"\"Знаете, чем отличаются хорошие капитаны от великих? Мы-то знаем, и дело "
+"именно в том, где они добывают свое оружие. Мы предлагаем уникальное оружие "
+"и усовершенствования, которых не найдешь в обычных магазинах.\n"
+"\t\tА откуда мы их достали? С безжизненных кораблей капитанов-"
+"неплательщиков, к которым вы, конечно же, не относитесь, ведь вы слишком "
+"умны для этого, верно?\""
 
 #: src-en/data/events_sector_radikal.xml:457
 msgid ""
@@ -303,17 +401,17 @@ msgstr "Продолжить..."
 #: src-en/data/events_sector_radikal.xml:459
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/text"
-msgstr ""
+msgstr "Контрабандист ждет вашего заказа."
 
 #: src-en/data/events_sector_radikal.xml:463
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[1]/text"
-msgstr ""
+msgstr "Купить запасное оружие."
 
 #: src-en/data/events_sector_radikal.xml:465
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[1]/event/text"
-msgstr ""
+msgstr "\"Наслаждайтесь этой небольшой дополнительной огневой мощью!\""
 
 #: src-en/data/events_sector_radikal.xml:473
 msgid ""
@@ -323,12 +421,12 @@ msgstr "Продолжить..."
 #: src-en/data/events_sector_radikal.xml:480
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[2]/text"
-msgstr ""
+msgstr "Купить любое оружие РадиКалов."
 
 #: src-en/data/events_sector_radikal.xml:482
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[2]/event/text"
-msgstr ""
+msgstr "\"Наслаждайтесь дополнительной огневой мощью!\""
 
 #: src-en/data/events_sector_radikal.xml:490
 msgid ""
@@ -338,12 +436,12 @@ msgstr "Продолжить..."
 #: src-en/data/events_sector_radikal.xml:497
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[3]/text"
-msgstr ""
+msgstr "Купить случайный очень редкий модуль РадиКалов."
 
 #: src-en/data/events_sector_radikal.xml:499
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[3]/event/text"
-msgstr ""
+msgstr "\"Используйте его с осторожностью!\""
 
 #: src-en/data/events_sector_radikal.xml:507
 msgid ""
@@ -353,12 +451,22 @@ msgstr "Продолжить..."
 #: src-en/data/events_sector_radikal.xml:514
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[4]/text"
-msgstr ""
+msgstr "Знаешь, что, самое смешное, что мы на мели..."
 
 #: src-en/data/events_sector_radikal.xml:516
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[4]/event/text"
 msgstr ""
+"\"Жаль, я не думал, что ты такой шшшутник. Надо было взять ссс сссобой эту "
+"дрянь\". Пиратский корабль перед вами мгновенно готовится к бою, явно ожидая "
+"именно этого. \n"
+"\t\t\t\t\t\t\n"
+"\t\t\t\t\t\tВы не можете понять, зол ли надзиратель-слизень, доволен ли он "
+"или и то и другое сразу. \"Ха! Я так и знал, ты просссто хотел разом "
+"перебить кучу пиратов, герой-недоучка. И знаешшшь что - мы не такие глупые! "
+"Эй, Курт, гони добычу, я выиграл ссспор\".\n"
+"\t\t\t\t\t\tС этими словами они и другие пиратские корабли уходят в прыжок, "
+"оставляя вас разбираться с контрабандистами!"
 
 #: src-en/data/events_sector_radikal.xml:523
 msgid ""
@@ -369,6 +477,9 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_FIGHT_CURRENT_PIRATE\"]/text"
 msgstr ""
+"\"Конечно же, ты такой. Я же тебе говорил, Курт, гони мне мой лом, ты "
+"проиграл спор. Давай-ка прикончим этих чертовых клоунов\".\n"
+"\t\tПохоже, вам придется пробивать себе путь!"
 
 #: src-en/data/events_sector_radikal.xml:541
 msgid ""
@@ -379,6 +490,9 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_SLAVER\"]/destroyed/text"
 msgstr ""
+"Корабль работорговцев уничтожен. Вы собираете его обломки.\n"
+"\t\t\tНамеренно или нет, но вы наделали беспорядка, сорвав деятельность "
+"пиратов в этом секторе."
 
 #: src-en/data/events_sector_radikal.xml:553
 msgid ""
@@ -389,6 +503,10 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_SLAVER\"]/deadCrew/text"
 msgstr ""
+"Корабль работорговцев уничтожен. Вы демонтируете внутреннее оборудование и "
+"освобождаете сильного раба из грузового отсека!\n"
+"\t\t\tНамеренно или нет, но вы наделали кучу беспорядка, сорвав деятельность "
+"пиратов в этом секторе."
 
 #: src-en/data/events_sector_radikal.xml:564
 msgid ""
@@ -399,6 +517,9 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_MERCENARY\"]/destroyed/text"
 msgstr ""
+"Корабль наемников уничтожен. Вы собираете его обломки.\n"
+"\t\t\tНамеренно или нет, но вы наделали беспорядка, сорвав деятельность "
+"пиратов в этом секторе."
 
 #: src-en/data/events_sector_radikal.xml:576
 msgid ""
@@ -409,6 +530,10 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_MERCENARY\"]/deadCrew/text"
 msgstr ""
+"Корабль наемников уничтожен. Вы разбираете его на запчасти и находите в "
+"терминале подробные данные о секторе!\n"
+"\t\t\tНамеренно или нет, но вы наделали кучу дел, сорвав деятельность "
+"пиратов в этом секторе."
 
 #: src-en/data/events_sector_radikal.xml:587
 msgid ""
@@ -419,6 +544,9 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_SMUGGLER\"]/destroyed/text"
 msgstr ""
+"Корабль контрабандистов уничтожен. Вы собираете обломки.\n"
+"\t\t\tНамеренно или нет, но вы наделали беспорядка, сорвав деятельность "
+"пиратов в этом секторе."
 
 #: src-en/data/events_sector_radikal.xml:599
 msgid ""
@@ -429,6 +557,10 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_SMUGGLER\"]/deadCrew/text"
 msgstr ""
+"Корабль контрабандистов уничтожен. Вы разбираете его на запчасти и находите "
+"оружие в грузовом отсеке!\n"
+"\t\t\tНамеренно или нет, но вы наделали кучу беспорядка, сорвав деятельность "
+"пиратов в этом секторе."
 
 #: src-en/data/events_sector_radikal.xml:611
 msgid ""
