@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-04-18 14:21+0000\n"
-"Last-Translator: Aleev <aleev1414@gmail.com>\n"
+"PO-Revision-Date: 2026-04-19 14:42+0000\n"
+"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "datablueprintsxmlappend/ru/>\n"
 "Language: ru\n"
@@ -16,12 +16,12 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:39
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"ADDON_INSTALLED_DJ0ZAUGMENTS\"]/title"
-msgstr ""
+msgstr "Спасибо, что установили Dj0z' RadiKal Sector!"
 
 #: src-en/data/blueprints.xml.append:40
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"ADDON_INSTALLED_DJ0ZAUGMENTS\"]/desc"
-msgstr ""
+msgstr "Спасибо, что установили Dj0z' RadiKal Sector!"
 
 #: src-en/data/blueprints.xml.append:55
 msgid ""
@@ -58,29 +58,42 @@ msgstr "Осваивает навыки гораздо быстрее"
 #: src-en/data/blueprints.xml.append:68
 msgid "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/desc"
 msgstr ""
+"Апторы - это Альфа-Гули, стабилизированные в специальных скороварках РадиКал "
+"Скорч, что изменило их характеристики.\n"
+"\t\tВаша система в текущем помещении обладает иммунитетом к огню. Любая "
+"вражеская система в текущем отсеке получает на 100% больше урона от огня.\n"
+"\t\tЧасто может вызывать \"октовспышки\" из собственного тела. Это очень "
+"небольшая солнечная вспышка, но происходят они совсем близко.\n"
+"\n"
+"\tНаследует характеристики фантомов: не получает урона от среды, обладает "
+"возможностью проходить сквозь двери."
 
 #: src-en/data/blueprints.xml.append:74
 msgid "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/title"
-msgstr ""
+msgstr "Аптор"
 
 #: src-en/data/blueprints.xml.append:75
 msgid "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/short"
-msgstr ""
+msgstr "Аптор"
 
 #: src-en/data/blueprints.xml.append:78
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/powerList/power[1]"
 msgstr ""
+"Активная способность: Начинает пожар в случайном отсеке на обоих кораблях. "
+"Короткое время перезарядки"
 
 #: src-en/data/blueprints.xml.append:79
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/powerList/power[2]"
-msgstr ""
+msgstr "Мак. здоровье увеличено до 220"
 
 #: src-en/data/blueprints.xml.append:80
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/powerList/power[3]"
 msgstr ""
+"Невозможно разделить, не может ремонтировать или потушить. Не имеет бонуса "
+"при саботаже"
 
 #: src-en/data/blueprints.xml.append:81
 msgid ""
@@ -90,32 +103,50 @@ msgstr "Скорость передвижения увеличена до 1.2x"
 #: src-en/data/blueprints.xml.append:82
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/powerList/power[5]"
-msgstr ""
+msgstr "Наносит 1.5х урона в бою с экипажем"
 
 #: src-en/data/blueprints.xml.append:107
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_COMBAT_SHIPVORE_RAM\"]/title"
-msgstr ""
+msgstr "Кораблепожиратель"
 
 #: src-en/data/blueprints.xml.append:108
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_COMBAT_SHIPVORE_RAM\"]/desc"
 msgstr ""
+"Фирменное боевой модуль РадиКал Бам, который позволяет вам неоднократно "
+"таранить противника, нанося гарантированный быстрый летальный урон, получая "
+"бесплатный ремонт и иногда другие преимущества. ВНИМАНИЕ: ваш корабль и/или "
+"экипаж могут пострадать. [Использует {, при использовании на полной мощности "
+"расходуется больше ресурсов и модуль уничтожается. Может применяться "
+"Аварийный генератор и Переработчик топлива]\n"
+"\tМожно укрепить у пустых маяков, чтобы выдержать следующее использование на "
+"полной мощности."
 
 #: src-en/data/blueprints.xml.append:117
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"LOCKED_DJMOD_COMBAT_SHIPVORE_RAM\"]/title"
-msgstr ""
+msgstr "Кораблепожиратель"
 
 #: src-en/data/blueprints.xml.append:118
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"LOCKED_DJMOD_COMBAT_SHIPVORE_RAM\"]/desc"
 msgstr ""
+"Фирменное боевой модуль РадиКал Бам, который позволяет вам неоднократно "
+"таранить противника, нанося гарантированный быстрый летальный урон, получая "
+"бесплатный ремонт и иногда другие преимущества. ВНИМАНИЕ: ваш корабль и/или "
+"экипаж могут пострадать. [Использует {, при использовании на полной мощности "
+"расходуется больше ресурсов и модуль уничтожается. Может применяться "
+"Аварийный генератор и Переработчик топлива]\n"
+"\t\n"
+"\tКорабль был построен на основе этой надежной версии, которая выдерживает "
+"использование режима Полной мощности. Кроме того, она обеспечивает на 9% "
+"более быструю перезарядку щитов и шанс игнорировать повреждения корпуса."
 
 #: src-en/data/blueprints.xml.append:129
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_CREW_ARE_BOMBS_OFF\"]/title"
-msgstr ""
+msgstr "Заряженные пояса (Вкл)"
 
 #: src-en/data/blueprints.xml.append:130
 msgid ""
@@ -125,7 +156,7 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:143
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_CREW_ARE_BOMBS_ON\"]/title"
-msgstr ""
+msgstr "Заряженные пояса"
 
 #: src-en/data/blueprints.xml.append:144
 msgid ""
@@ -135,7 +166,7 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:157
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_AUG_AUTO_SYS_REPAIR\"]/title"
-msgstr ""
+msgstr "A.E.R.A. Второе дыхание"
 
 #: src-en/data/blueprints.xml.append:158
 msgid ""
@@ -145,7 +176,7 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:195
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_ZOLTAN_SHIELD_EXTRACTOR\"]/title"
-msgstr ""
+msgstr "РК щит (1)"
 
 #: src-en/data/blueprints.xml.append:196
 msgid ""
@@ -155,7 +186,7 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:204
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_COMBAT_OFFENSE_DISABLER\"]/title"
-msgstr ""
+msgstr "Обезвреживатель"
 
 #: src-en/data/blueprints.xml.append:205
 msgid ""
@@ -165,7 +196,7 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:227
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_HACK_FLEET\"]/title"
-msgstr ""
+msgstr "Энигмашин"
 
 #: src-en/data/blueprints.xml.append:228
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_HACK_FLEET\"]/desc"
@@ -174,7 +205,7 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:237
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_SUPER_DEFENDERS\"]/title"
-msgstr ""
+msgstr "Наборы защиты"
 
 #: src-en/data/blueprints.xml.append:238
 msgid ""
@@ -184,7 +215,7 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:247
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_OWN_HARMONY_ON\"]/title"
-msgstr ""
+msgstr "Панк-гармония"
 
 #: src-en/data/blueprints.xml.append:248
 msgid ""
@@ -194,7 +225,7 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:258
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_OWN_HARMONY_OFF\"]/title"
-msgstr ""
+msgstr "Панк-гармония (ВЫКЛ)"
 
 #: src-en/data/blueprints.xml.append:259
 msgid ""
@@ -204,7 +235,7 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:270
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_DEFENSE_REMOVER\"]/title"
-msgstr ""
+msgstr "Вулнереабилизатор"
 
 #: src-en/data/blueprints.xml.append:271
 msgid ""
@@ -214,7 +245,7 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:287
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_COMBAT_SCORCH_SELF\"]/title"
-msgstr ""
+msgstr "Выжженная земля (У1)"
 
 #: src-en/data/blueprints.xml.append:288
 msgid ""
@@ -224,7 +255,7 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:301
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_COMBAT_SCORCH_SELF_2\"]/title"
-msgstr ""
+msgstr "Пылающая земля (У2)"
 
 #: src-en/data/blueprints.xml.append:302
 msgid ""
@@ -234,7 +265,7 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:317
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_COMBAT_SCORCH_SELF_3\"]/title"
-msgstr ""
+msgstr "Извергающаяся земля (У3)"
 
 #: src-en/data/blueprints.xml.append:318
 msgid ""
@@ -244,7 +275,7 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:344
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_COMBAT_SCORCH_ENEMY\"]/title"
-msgstr ""
+msgstr "Плазменный телепортатор"
 
 #: src-en/data/blueprints.xml.append:345
 msgid ""
@@ -254,7 +285,7 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:357
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_ENEMIES_CAN_BURN\"]/title"
-msgstr ""
+msgstr "Фламмабилизатор-иммунитет"
 
 #: src-en/data/blueprints.xml.append:358
 msgid ""
@@ -264,7 +295,7 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:368
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_ENEMIES_BURN_MORE\"]/title"
-msgstr ""
+msgstr "Фламмабилизатор-урон"
 
 #: src-en/data/blueprints.xml.append:369
 msgid ""
@@ -274,7 +305,7 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:380
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_OXYGENIZER\"]/title"
-msgstr ""
+msgstr "Оксигенатор"
 
 #: src-en/data/blueprints.xml.append:381
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_OXYGENIZER\"]/desc"
@@ -283,7 +314,7 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:479
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/title"
-msgstr ""
+msgstr "Разогреватель разума"
 
 #: src-en/data/blueprints.xml.append:480
 msgid ""
@@ -293,7 +324,7 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:487
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"INTERNAL_DJMOD_DEMICLONER\"]/title"
-msgstr ""
+msgstr "Демиклонеры"
 
 #: src-en/data/blueprints.xml.append:488
 msgid ""
@@ -303,7 +334,7 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:497
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"EX_DJMOD_DEMICLONER\"]/title"
-msgstr ""
+msgstr "[В] Демиклонеры"
 
 #: src-en/data/blueprints.xml.append:498
 msgid ""
@@ -373,12 +404,12 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:953
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_LASER_BPS\"]/title"
-msgstr ""
+msgstr "БПС \"Мессенджер\""
 
 #: src-en/data/blueprints.xml.append:954
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_LASER_BPS\"]/short"
-msgstr ""
+msgstr "БПС Месс."
 
 #: src-en/data/blueprints.xml.append:956
 msgid ""
@@ -388,12 +419,12 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:1020
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_MISSILE_FIRE\"]/title"
-msgstr ""
+msgstr "Огненная ракетная артиллерия"
 
 #: src-en/data/blueprints.xml.append:1021
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_MISSILE_FIRE\"]/short"
-msgstr ""
+msgstr "Артиллерия"
 
 #: src-en/data/blueprints.xml.append:1022
 msgid ""
@@ -408,12 +439,12 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:1063
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_LASER_PARTICLE\"]/title"
-msgstr ""
+msgstr "Частичная артиллерия"
 
 #: src-en/data/blueprints.xml.append:1064
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_LASER_PARTICLE\"]/short"
-msgstr ""
+msgstr "Артиллерия"
 
 #: src-en/data/blueprints.xml.append:1065
 msgid ""
@@ -428,12 +459,12 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:1115
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_RAMMER\"]/class"
-msgstr ""
+msgstr "Крейсер Бам РадиКалов"
 
 #: src-en/data/blueprints.xml.append:1116
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_RAMMER\"]/name"
-msgstr ""
+msgstr "Таранщик"
 
 #: src-en/data/blueprints.xml.append:1117
 msgid ""
@@ -443,37 +474,48 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:1198
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER\"]/class"
-msgstr ""
+msgstr "Крейсер Панк РадиКалов"
 
 #: src-en/data/blueprints.xml.append:1199
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER\"]/name"
-msgstr ""
+msgstr "Панкер"
 
 #: src-en/data/blueprints.xml.append:1200
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER\"]/desc"
 msgstr ""
+"Флагман Панк РадиКалов - это орбитальный ускоритель частиц, "
+"переоборудованный в крейсер. Используйте его мощный реактор с более "
+"доступными модернизациями для взлома систем и частичной артиллерии, пока "
+"внутренние проблемы не приведут к тому, что вас утилизируют."
 
 #: src-en/data/blueprints.xml.append:1201
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER\"]/unlock"
 msgstr ""
+"Достигните 8-го сектора на крейсере Бам РадиКалов (Таранщик) ИЛИ одержите "
+"победу на крейсере Скорч РадиКалов (Испепелитель), чтобы разблокировать этот "
+"корабль."
 
 #: src-en/data/blueprints.xml.append:1277
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER_2\"]/class"
-msgstr ""
+msgstr "Крейсер Панк РадиКалов"
 
 #: src-en/data/blueprints.xml.append:1278
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER_2\"]/name"
-msgstr ""
+msgstr "НюГ4РМ0НИЯ"
 
 #: src-en/data/blueprints.xml.append:1279
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER_2\"]/desc"
 msgstr ""
+"Пиратская версия Гармонии, которая самостоятельно перепроектировала этот "
+"корабль, утверждает, что это "
+"\"вершина дизайна, и жаль, что вы, биопятна, не способны это оценить!!\". "
+"Держитесь подальше от настоящей энджи гармонии. Удалите после победы."
 
 #: src-en/data/blueprints.xml.append:1280
 msgid ""
@@ -483,14 +525,17 @@ msgstr "Пройдите игру на типе А."
 #: src-en/data/blueprints.xml.append:1357
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_SCORCH\"]/class"
-msgstr ""
+msgstr "Крейсер Скорч РадиКалов"
 
 #: src-en/data/blueprints.xml.append:1358
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_SCORCH\"]/name"
-msgstr ""
+msgstr "Испепелитель"
 
 #: src-en/data/blueprints.xml.append:1359
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_SCORCH\"]/desc"
 msgstr ""
+"Флагманский корабль РадиКал Скорч имеет явные конструктивные слабости, но "
+"при условии полной самоотдачи в бою компенсирует их благодаря эффективному "
+"использованию своих технологий."
