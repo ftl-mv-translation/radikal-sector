@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-04-20 20:42+0000\n"
+"PO-Revision-Date: 2026-04-21 21:42+0000\n"
 "Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "dataeventsxmlappend/ru/>\n"
@@ -15,27 +15,29 @@ msgstr ""
 
 #: src-en/data/events.xml.append:166
 msgid "data/events.xml.append$//event[@name=\"TEST_RKSHOP\"]/text"
-msgstr ""
+msgstr "Магазин отладки."
 
 #: src-en/data/events.xml.append:170
 msgid "data/events.xml.append$//event[@name=\"RKSHOP_SCORCH\"]/text"
-msgstr ""
+msgstr "Магазин отладки."
 
 #: src-en/data/events.xml.append:174
 msgid "data/events.xml.append$//event[@name=\"RKSHOP_SNIPER\"]/text"
-msgstr ""
+msgstr "Магазин отладки."
 
 #: src-en/data/events.xml.append:178
 msgid "data/events.xml.append$//event[@name=\"RK_DEMI\"]/text"
-msgstr ""
+msgstr "Отладка модуля"
 
 #: src-en/data/events.xml.append:183
 msgid "data/events.xml.append$//event[@name=\"DJFLEET\"]/text"
-msgstr ""
+msgstr "Флот остановился для проведения тестов."
 
 #: src-en/data/events.xml.append:188
 msgid "data/events.xml.append$//event[@name=\"RKDEV\"]/text"
 msgstr ""
+"быстрое тестирование. Другие команды: ДЖФЛОТ, ТЕСТ_РКМАГАЗИН, "
+"РКМАГАЗИН_СКОРЧ, РКМАГАЗИН_СНАЙПЕР, РК_ДЕМИ, ДЖКООРД, ДЖNОПАСНОСТИ."
 
 #: src-en/data/events.xml.append:191
 msgid "data/events.xml.append$//event[@name=\"RKDEV\"]/crewMember"
@@ -47,7 +49,7 @@ msgstr "Продолжить..."
 
 #: src-en/data/events.xml.append:203
 msgid "data/events.xml.append$//event[@name=\"RKDEV\"]/choice/event/text"
-msgstr ""
+msgstr "тест"
 
 #: src-en/data/events.xml.append:211
 msgid "data/events.xml.append$//event[@name=\"RKDEV\"]/choice/event/choice/text"
@@ -56,7 +58,7 @@ msgstr "Продолжить..."
 #: src-en/data/events.xml.append:213
 msgid ""
 "data/events.xml.append$//event[@name=\"RKDEV\"]/choice/event/choice/event/text"
-msgstr ""
+msgstr "тест"
 
 #: src-en/data/events.xml.append:222
 msgid ""
@@ -66,7 +68,7 @@ msgstr "Продолжить..."
 #: src-en/data/events.xml.append:224
 msgid ""
 "data/events.xml.append$//event[@name=\"RKDEV\"]/choice/event/choice/event/choice/event/text"
-msgstr ""
+msgstr "тест"
 
 #: src-en/data/events.xml.append:233
 msgid ""
@@ -75,40 +77,62 @@ msgstr "Продолжить..."
 
 #: src-en/data/events.xml.append:245
 msgid "data/events.xml.append$//event[@name=\"DJCOORDS\"]/text"
-msgstr ""
+msgstr "Получить координаты сектора РадиКал."
 
 #: src-en/data/events.xml.append:250
 msgid "data/events.xml.append$//event[@name=\"DJSECTOR\"]/text"
-msgstr ""
+msgstr "открытие меню перенаправления."
 
 #: src-en/data/events.xml.append:266
 msgid "data/events.xml.append$//event[@name=\"DJMOD_OPERATIVE_DIES\"]/text"
 msgstr ""
+"\"Итак\". Лицо вашего нового, но уже умирающего напарника совершенно "
+"серьезно. "
+"\"Раз ты за меня заплатил… значит, тебе нужен… наш особый товар, верно?\""
 
 #: src-en/data/events.xml.append:270
 msgid ""
 "data/events.xml.append$//event[@name=\"DJMOD_OPERATIVE_DIES\"]/choice[@req=\"DJMOD_NO_COORDS_NO_VISIT_RADIKAL_SECTOR\"]/text"
-msgstr ""
+msgstr "...Конечно, почему бы и нет?"
 
 #: src-en/data/events.xml.append:272
 msgid ""
 "data/events.xml.append$//event[@name=\"DJMOD_OPERATIVE_DIES\"]/choice[@req=\"DJMOD_NO_COORDS_NO_VISIT_RADIKAL_SECTOR\"]/event/text"
 msgstr ""
+"Ему явно трудно говорить. \"Тогда… отправляйся туда, взяв с собой весь этот "
+"ло... Эх. Весь лом, который сможешь найти... чтобы продвинуть дело. Ты "
+"найдешь дорогу. М... моя миссия завершена\". Он передает вам координаты "
+"какого-то скрытого сектора, а затем умирает.\n"
+"\t\t\tВы замечаете, что он был уже тяжело ранен и держался только до тех "
+"пор, пока не смог передать это кому-то, обманув и владельца магазина, и вас "
+"самих. Несколько ценных технических устройств в его кармане помогают вам "
+"возместить потери. \n"
+"\t\t\t\n"
+"\t\t\tВозможно, вы узнаете, в чем был весь этот смысл, в следующий раз, "
+"когда перенаправитесь на гиперскорости..."
 
 #: src-en/data/events.xml.append:282
 msgid ""
 "data/events.xml.append$//event[@name=\"DJMOD_OPERATIVE_DIES\"]/choice[@req=\"DJMOD_NO_COORDS_NO_VISIT_RADIKAL_SECTOR\"]/event/choice/text"
 msgstr ""
+"Странное посвящение для того, что выглядит не более чем как объявление на "
+"черном рынке."
 
 #: src-en/data/events.xml.append:289
 msgid ""
 "data/events.xml.append$//event[@name=\"DJMOD_OPERATIVE_DIES\"]/choice[@req=\"visited_radikal_sector\"]/text"
-msgstr ""
+msgstr "Мы уже побывали в секторе РадиКал. Покойся с миром, солдат."
 
 #: src-en/data/events.xml.append:291
 msgid ""
 "data/events.xml.append$//event[@name=\"DJMOD_OPERATIVE_DIES\"]/choice[@req=\"visited_radikal_sector\"]/event/text"
 msgstr ""
+"\"Дело рак... ракушек продолжится... это меня утешает... Спасибо\". Он "
+"умирает с едва заметной улыбкой на лице.\n"
+"            Как обычно, у этого агента была неизлечимая болезнь, и он "
+"добровольно взялся за агитацию ради того, чтобы найти финансирование РК и на "
+"вербовку безрассудных капитанов, так что вы не удивлены. Вы приступаете к "
+"изъятию его ценных технологий и утилизации тела."
 
 #: src-en/data/events.xml.append:298
 msgid ""
@@ -118,56 +142,103 @@ msgstr "Продолжить..."
 #: src-en/data/events.xml.append:305
 msgid ""
 "data/events.xml.append$//event[@name=\"DJMOD_OPERATIVE_DIES\"]/choice[3]/text"
-msgstr ""
+msgstr "Что? Конечно, нет. Подожди, с тобой все в порядке?"
 
 #: src-en/data/events.xml.append:307
 msgid ""
 "data/events.xml.append$//event[@name=\"DJMOD_OPERATIVE_DIES\"]/choice[3]/event/text"
 msgstr ""
+"\"Я… ха… я провалился\". Выглядя совершенно подавленным, он раздавливает "
+"маленький чип с выгравированными на нем несколькими заглавными буквами, "
+"который на мгновение, но очень ярко вспыхивает. Затем он умирает.\n"
+"\t\t\t\n"
+"\t\t\t\tВы начинаете обшаривать тело, замечаете отеки и некроз и задаетесь "
+"вопросом, почему продажа вам незаконного снаряжения была для этого парня "
+"важнее, чем его надвигающаяся смерть. Вы задаетесь вопросом, знал ли об этом "
+"владелец магазина или просто обманул вас.\n"
+"\t\t\tПо крайней мере, в кармане мертвого солдата есть ценная техника, "
+"которая поможет вам возместить убытки."
 
 #: src-en/data/events.xml.append:316
 msgid ""
 "data/events.xml.append$//event[@name=\"DJMOD_OPERATIVE_DIES\"]/choice[3]/event/choice/text"
 msgstr ""
+"Наверняка есть и другие способы вернуться к этой загадке и дойти до того "
+"места, куда она вела. Идем дальше."
 
 #: src-en/data/events.xml.append:360
 msgid ""
 "data/events.xml.append$//textList[@name=\"TEXT_EVENT_STORE_RADIKAL\"]/text[1]"
 msgstr ""
+"Ваши сенсоры перестают работать, и обзор внезапно исчезает, но, судя по "
+"всему, это просто дело рук очень осторожной и хорошо вооруженной группы "
+"торговцев. Неудивительно, учитывая все те темные дела, что тут творятся.\n"
+"\t\t\n"
+"\t\t[Предупреждение: ограниченное количество покупок]"
 
 #: src-en/data/events.xml.append:363
 msgid ""
 "data/events.xml.append$//textList[@name=\"TEXT_EVENT_STORE_RADIKAL\"]/text[2]"
 msgstr ""
+"В окрестностях не видно ни одного магазина, но вскоре дрон с отлично "
+"замаскированного корабля принимает ваш заказ.\n"
+"\t\t\n"
+"\t\t[Предупреждение: ограниченное количество покупок]"
 
 #: src-en/data/events.xml.append:366
 msgid ""
 "data/events.xml.append$//textList[@name=\"TEXT_EVENT_STORE_RADIKAL\"]/text[3]"
 msgstr ""
+"Вас быстро сканируют и просят подождать на месте, пока владелец магазина, "
+"который находится слишком далеко, чтобы его было видно, организует доставку "
+"ваших покупок.\n"
+"\t\t\n"
+"\t\t[Предупреждение: ограниченное количество покупок]"
 
 #: src-en/data/events.xml.append:369
 msgid ""
 "data/events.xml.append$//textList[@name=\"TEXT_EVENT_STORE_RADIKAL\"]/text[4]"
 msgstr ""
+"Пока вы ждете у торговой точки, крошечный дрон развлекает вас бесконечным "
+"потоком забавных видео.\n"
+"\t\t\n"
+"\t\t[Предупреждение: ограниченное количество покупок]"
 
 #: src-en/data/events.xml.append:372
 msgid ""
 "data/events.xml.append$//textList[@name=\"TEXT_EVENT_STORE_RADIKAL\"]/text[5]"
 msgstr ""
+"Вам приходится оставлять свой корабль на стоянке снаружи, пока вы делаете "
+"покупки под пристальным присмотром внутри того, что выглядело как обычный "
+"астероид.\n"
+"\t\t\n"
+"\t\t[Предупреждение: ограниченное количество покупок]"
 
 #: src-en/data/events.xml.append:375
 msgid ""
 "data/events.xml.append$//textList[@name=\"TEXT_EVENT_STORE_RADIKAL\"]/text[6]"
 msgstr ""
+"Здешний клерк очень сдержанный. Как только вы погрузили товар на свой "
+"корабль, в соответствии с договоренностью вы удаляете все недавние записи, "
+"чтобы создать впечатление, будто здесь не было корабля торговца.\n"
+"\t\t\n"
+"\t\t[Предупреждение: ограниченное количество покупок]"
 
 #: src-en/data/events.xml.append:378
 msgid ""
 "data/events.xml.append$//textList[@name=\"TEXT_EVENT_STORE_RADIKAL\"]/text[7]"
 msgstr ""
+"Вы с неохотой соглашаетесь оставить свой корабль в пустом пространстве "
+"матрицы, прежде чем вам предоставят доступ к магазину, и когда вы выходите "
+"из нее, здесь нет ни одного корабля, кроме вашего.\n"
+"\t\t\n"
+"\t\t[Предупреждение: ограниченное количество покупок]"
 
 #: src-en/data/events.xml.append:389
 msgid "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED\"]/text"
 msgstr ""
+"Работорговцы довольно комфортно устроились в этом секторе, во многом "
+"благодаря отсутствию контроля. Вы натыкаетесь на одних из них."
 
 #: src-en/data/events.xml.append:392
 msgid "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED\"]/choice[1]/text"
@@ -177,16 +248,20 @@ msgstr "Посмотреть кто выставлен на продажу."
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED\"]/choice[1]/event/text"
 msgstr ""
+"\"Федералы здесь? Вам явно нужна сильная рука. Как насчет воина со "
+"значительной скидкой, который возьмет на себя всю тяжелую работу?\" Вы "
+"замечаете, что скидка действительно внушительная, может быть, даже слишком "
+"хорошая."
 
 #: src-en/data/events.xml.append:396
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED\"]/choice[1]/event/choice[1]/text"
-msgstr ""
+msgstr "Купить элитного раба."
 
 #: src-en/data/events.xml.append:398
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED\"]/choice[1]/event/choice[1]/event/text"
-msgstr ""
+msgstr "Вы передаете лом работорговцам..."
 
 #: src-en/data/events.xml.append:404
 msgid ""
