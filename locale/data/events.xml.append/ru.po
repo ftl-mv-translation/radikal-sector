@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-04-21 21:42+0000\n"
-"Last-Translator: Aleev <aleev1414@gmail.com>\n"
+"PO-Revision-Date: 2026-04-23 14:42+0000\n"
+"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "dataeventsxmlappend/ru/>\n"
 "Language: ru\n"
@@ -88,7 +88,7 @@ msgid "data/events.xml.append$//event[@name=\"DJMOD_OPERATIVE_DIES\"]/text"
 msgstr ""
 "\"Итак\". Лицо вашего нового, но уже умирающего напарника совершенно "
 "серьезно. "
-"\"Раз ты за меня заплатил… значит, тебе нужен… наш особый товар, верно?\""
+"\"Раз ты за меня заплатил... значит, тебе нужен... наш особый товар, верно?\""
 
 #: src-en/data/events.xml.append:270
 msgid ""
@@ -99,8 +99,8 @@ msgstr "...Конечно, почему бы и нет?"
 msgid ""
 "data/events.xml.append$//event[@name=\"DJMOD_OPERATIVE_DIES\"]/choice[@req=\"DJMOD_NO_COORDS_NO_VISIT_RADIKAL_SECTOR\"]/event/text"
 msgstr ""
-"Ему явно трудно говорить. \"Тогда… отправляйся туда, взяв с собой весь этот "
-"ло... Эх. Весь лом, который сможешь найти... чтобы продвинуть дело. Ты "
+"Ему явно трудно говорить. \"Тогда... отправляйся туда, взяв с собой весь "
+"этот ло... Эх. Весь лом, который сможешь найти... чтобы продвинуть дело. Ты "
 "найдешь дорогу. М... моя миссия завершена\". Он передает вам координаты "
 "какого-то скрытого сектора, а затем умирает.\n"
 "\t\t\tВы замечаете, что он был уже тяжело ранен и держался только до тех "
@@ -148,7 +148,7 @@ msgstr "Что? Конечно, нет. Подожди, с тобой все в 
 msgid ""
 "data/events.xml.append$//event[@name=\"DJMOD_OPERATIVE_DIES\"]/choice[3]/event/text"
 msgstr ""
-"\"Я… ха… я провалился\". Выглядя совершенно подавленным, он раздавливает "
+"\"Я... ха... я провалился\". Выглядя совершенно подавленным, он раздавливает "
 "маленький чип с выгравированными на нем несколькими заглавными буквами, "
 "который на мгновение, но очень ярко вспыхивает. Затем он умирает.\n"
 "\t\t\t\n"
@@ -274,7 +274,6 @@ msgid ""
 msgstr "Отказаться."
 
 #: src-en/data/events.xml.append:416
-#, fuzzy
 msgid "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED\"]/choice[2]/text"
 msgstr "Не обращать на них внимания."
 
@@ -282,6 +281,9 @@ msgstr "Не обращать на них внимания."
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED\"]/choice[2]/event/text"
 msgstr ""
+"Вскоре появляется еще одно судно и покупает раба. Затем оно начинает гореть. "
+"Возможно, вы сделали правильный выбор.\n"
+"\t\t\tУ вас есть немного свободного времени."
 
 #: src-en/data/events.xml.append:421
 msgid ""
@@ -297,195 +299,269 @@ msgstr "Ничего не делать."
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED_GOODEND_LOSTSUN\"]/text"
 msgstr ""
+"Они приводят к вам раба и снимают с него оковы, явно облегченно вздыхая, что "
+"избавились от него. "
+"\"Это не я был заперт там с ними. Это они были заперты там со мной\", - "
+"говорит только что освободившийся проблемный раб. Вы дипломатично киваете и "
+"приветствуете его на борту."
 
 #: src-en/data/events.xml.append:450
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED_GOODEND_LOSTSUN\"]/choice/text"
-msgstr ""
+msgstr "Думаю, он отлично подойдет."
 
 #: src-en/data/events.xml.append:455
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED_GOODEND_DUSKBRINGER\"]/text"
 msgstr ""
+"Они приводят к вам раба и снимают с него оковы, явно облегченно вздыхая, что "
+"избавились от него. "
+"\"Это не я был заперт там с ними. Это они были заперты там со мной\", - "
+"говорит только что освободившийся проблемный раб. Вы дипломатично киваете и "
+"приветствуете его на борту."
 
 #: src-en/data/events.xml.append:458
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED_GOODEND_DUSKBRINGER\"]/choice/text"
-msgstr ""
+msgstr "Думаю, он отлично подойдет."
 
 #: src-en/data/events.xml.append:463
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED_GOODEND_GOUL\"]/text"
 msgstr ""
+"Они приводят к вам раба и снимают с него оковы, явно облегченно вздыхая, что "
+"избавились от него. "
+"\"Это не я был заперт там с ними. Это они были заперты там со мной\", - "
+"говорит только что освободившийся проблемный раб. Вы дипломатично киваете и "
+"приветствуете его на борту."
 
 #: src-en/data/events.xml.append:466
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED_GOODEND_GOUL\"]/choice/text"
-msgstr ""
+msgstr "Думаю, он отлично подойдет."
 
 #: src-en/data/events.xml.append:471
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED_GOODEND_MANTIS\"]/text"
 msgstr ""
+"Они приводят к вам раба и снимают с него оковы, явно облегченно вздыхая, что "
+"избавились от него. "
+"\"Это не я был заперт там с ними. Это они были заперты там со мной\", - "
+"говорит только что освободившийся проблемный раб. Вы дипломатично киваете и "
+"приветствуете его на борту."
 
 #: src-en/data/events.xml.append:474
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED_GOODEND_MANTIS\"]/choice/text"
-msgstr ""
+msgstr "Думаю, он отлично подойдет."
 
 #: src-en/data/events.xml.append:479
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED_GOODEND_RK_FIREGHOST\"]/text"
 msgstr ""
+"Они приводят к вам раба и снимают с него оковы, явно облегченно вздыхая, что "
+"избавились от него. "
+"\"Это не я был заперт там с ними. Это они были заперты там со мной\", - "
+"говорит только что освободившийся проблемный раб. Вы дипломатично киваете и "
+"приветствуете его на борту."
 
 #: src-en/data/events.xml.append:482
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED_GOODEND_RK_FIREGHOST\"]/choice/text"
-msgstr ""
+msgstr "Думаю, он отлично подойдет."
 
 #: src-en/data/events.xml.append:488
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED_BADEND_LOSTSUN\"]/text"
 msgstr ""
+"Они приводят к вам раба и снимают с него оковы так быстро, что вы еще даже "
+"не успели перегрузить весь лом. К сожалению, этому бунтарю явно не нравится, "
+"как на него смотрят некоторые из ваших людей, и он начинает драться! \n"
+"\tВы прерываете перегрузку лома и наблюдаете, как работорговцы тут же "
+"разбегаются, оставляя вам самому разбираться с ним."
 
 #: src-en/data/events.xml.append:497
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED_BADEND_LOSTSUN\"]/choice/text"
-msgstr ""
+msgstr "Вот почему он был таким дешевым."
 
 #: src-en/data/events.xml.append:502
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED_BADEND_DUSKBRINGER\"]/text"
 msgstr ""
+"Они приводят к вам раба и снимают с него оковы так быстро, что вы еще даже "
+"не успели перегрузить весь лом. К сожалению, этому бунтарю явно не нравится, "
+"как на него смотрят некоторые из ваших людей, и он начинает драться! \n"
+"\tВы прерываете перегрузку лома и наблюдаете, как работорговцы тут же "
+"разбегаются, оставляя вам самому разбираться с ним."
 
 #: src-en/data/events.xml.append:511
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED_BADEND_DUSKBRINGER\"]/choice/text"
-msgstr ""
+msgstr "Вот почему он был таким дешевым."
 
 #: src-en/data/events.xml.append:516
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED_BADEND_GOUL\"]/text"
 msgstr ""
+"Они приводят к вам раба и снимают с него оковы так быстро, что вы еще даже "
+"не успели перегрузить весь лом. К сожалению, этому бунтарю явно не нравится, "
+"как на него смотрят некоторые из ваших людей, и он начинает драться! \n"
+"\tВы прерываете перегрузку лома и наблюдаете, как работорговцы тут же "
+"разбегаются, оставляя вам самому разбираться с ним."
 
 #: src-en/data/events.xml.append:525
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED_BADEND_GOUL\"]/choice/text"
-msgstr ""
+msgstr "Вот почему он был таким дешевым."
 
 #: src-en/data/events.xml.append:530
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED_BADEND_MANTIS\"]/text"
 msgstr ""
+"Они приводят к вам раба и снимают с него оковы так быстро, что вы еще даже "
+"не успели перегрузить весь лом. К сожалению, этому бунтарю явно не нравится, "
+"как на него смотрят некоторые из ваших людей, и он начинает драться! \n"
+"\tВы прерываете перегрузку лома и наблюдаете, как работорговцы тут же "
+"разбегаются, оставляя вам самому разбираться с ним."
 
 #: src-en/data/events.xml.append:539
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED_BADEND_MANTIS\"]/choice/text"
-msgstr ""
+msgstr "Вот почему он был таким дешевым."
 
 #: src-en/data/events.xml.append:544
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED_BADEND_RK_FIREGHOST\"]/text"
 msgstr ""
+"Они приводят к вам раба и снимают с него оковы так быстро, что вы еще даже "
+"не успели перегрузить весь лом. К сожалению, этому бунтарю явно не нравится, "
+"как на него смотрят некоторые из ваших людей, и он начинает драться! \n"
+"\tВы прерываете перегрузку лома и наблюдаете, как работорговцы тут же "
+"разбегаются, оставляя вам самому разбираться с ним."
 
 #: src-en/data/events.xml.append:553
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED_BADEND_RK_FIREGHOST\"]/choice/text"
-msgstr ""
+msgstr "Вот почему он был таким дешевым."
 
 #: src-en/data/events.xml.append:571
 msgid "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/text"
 msgstr ""
+"Как только вы замечаете поблизости корабль Теократии, он сразу же выходит на "
+"связь с вами."
 
 #: src-en/data/events.xml.append:575
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/text"
-msgstr ""
+msgstr "Принять их вызов."
 
 #: src-en/data/events.xml.append:577
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/text"
-msgstr ""
+msgstr "\"Приветствую, неверный. Мы покупаем оружие РадиКал\"."
 
 #: src-en/data/events.xml.append:580
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/text"
-msgstr ""
+msgstr "\"Неужели?\""
 
 #: src-en/data/events.xml.append:582
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/text"
-msgstr ""
+msgstr "\"...\""
 
 #: src-en/data/events.xml.append:585
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/text"
-msgstr ""
+msgstr "\"...\""
 
 #: src-en/data/events.xml.append:587
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/text"
-msgstr ""
+msgstr "\"... ...\""
 
 #: src-en/data/events.xml.append:590
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/text"
-msgstr ""
+msgstr "\"... ... ...\""
 
 #: src-en/data/events.xml.append:592
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/text"
 msgstr ""
+"Вы понимаете, что они не станут вдаваться в подробности, и начинаете "
+"обдумывать ситуацию. Какое решение вы принимаете?"
 
 #: src-en/data/events.xml.append:596
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/choice[@req=\"DJMOD_BAM_FISSUREBEAM\"]/text"
-msgstr ""
+msgstr "Продать им свой Бада луч за 155~."
 
 #: src-en/data/events.xml.append:598
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/choice[@req=\"DJMOD_BAM_FISSUREBEAM\"]/event/text"
 msgstr ""
+"Вы пытаетесь скрыть свое удовлетворение, пока они перечисляют чрезмерно "
+"завышенную сумму, но при этом надеетесь, что какая-нибудь неприятная встреча "
+"не заставит вас в ближайшем будущем пожалеть о продаже. Они уходят, не "
+"сказав ни слова."
 
 #: src-en/data/events.xml.append:607
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/choice[@req=\"DJMOD_RAIN_OF_ION\"]/text"
-msgstr ""
+msgstr "Продать им свою осколочную пушку \"Дождь ионов\" за 180~."
 
 #: src-en/data/events.xml.append:609
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/choice[@req=\"DJMOD_RAIN_OF_ION\"]/event/text"
 msgstr ""
+"Вы пытаетесь скрыть свое удовлетворение, пока они перечисляют чрезмерно "
+"завышенную сумму, но при этом надеетесь, что какая-нибудь неприятная встреча "
+"не заставит вас в ближайшем будущем пожалеть о продаже. Они уходят, не "
+"сказав ни слова."
 
 #: src-en/data/events.xml.append:618
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/choice[@req=\"DJMOD_RAIN_OF_FIRE\"]/text"
-msgstr ""
+msgstr "Продать им свою пусковую установку \"Дождь огня\" за 120~."
 
 #: src-en/data/events.xml.append:620
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/choice[@req=\"DJMOD_RAIN_OF_FIRE\"]/event/text"
 msgstr ""
+"Вы пытаетесь скрыть свое удовлетворение, пока они перечисляют чрезмерно "
+"завышенную сумму, но при этом надеетесь, что какая-нибудь неприятная встреча "
+"не заставит вас в ближайшем будущем пожалеть о продаже. Они уходят, не "
+"сказав ни слова."
 
 #: src-en/data/events.xml.append:629
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/choice[@req=\"DJMOD_LASER_BPS\"]/text"
-msgstr ""
+msgstr "Продать им свой лазер БПС Мессенджер за 200~."
 
 #: src-en/data/events.xml.append:631
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/choice[@req=\"DJMOD_LASER_BPS\"]/event/text"
 msgstr ""
+"Вы стараетесь скрыть свое удовлетворение, пока они перечисляют чрезмерно "
+"завышенную сумму, но при этом надеетесь, что какая-нибудь неприятная "
+"ситуация не заставит вас в ближайшем будущем пожалеть о продаже."
 
 #: src-en/data/events.xml.append:640
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/choice[@req=\"rock_commando\"]/text"
 msgstr ""
+"(Член экипажа-Коммандос) \"Такое снаряжение не для промытых мозгами "
+"придурков. Тебе стоило остаться в своем мирке, где царит застой и ложь\"."
 
 #: src-en/data/events.xml.append:642
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/choice[@req=\"rock_commando\"]/event/text"
 msgstr ""
+"Капитан корабля внезапно обрел дар речи. \"Ха! Я вижу, вы сотрудничаете с "
+"террористами. Еще раз, братья мои, посмотрите, насколько эгоистичны и "
+"жестоки эти еретики. Давайте накажем их!\""
 
 #: src-en/data/events.xml.append:645
 msgid ""
@@ -501,9 +577,11 @@ msgstr "Отказаться."
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/choice[6]/event/text"
 msgstr ""
+"Вы думаете о прибыли, которую могли бы получить от этой встречи, но при этом "
+"помните, что продавать оружие случайным путникам - не самая безопасная "
+"стратегия."
 
 #: src-en/data/events.xml.append:668
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[2]/text"
 msgstr "Не обращать на них внимания."
@@ -512,6 +590,8 @@ msgstr "Не обращать на них внимания."
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[2]/event/text"
 msgstr ""
+"Вы не знаете, чего они хотят, но точно знаете, что сейчас вас не интересуют "
+"любые сделки с Теократией."
 
 #: src-en/data/events.xml.append:672
 msgid ""
@@ -526,6 +606,9 @@ msgstr "Ничего не делать."
 #: src-en/data/events.xml.append:685
 msgid "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/text"
 msgstr ""
+"Вскоре после вашего прибытия к маяку приближается еще одно судно, судя по "
+"всему чужаки, на котором царит тревожная атмосфера. Вы можете связаться с "
+"ними и спросить, в чем дело."
 
 #: src-en/data/events.xml.append:688
 msgid ""
@@ -535,77 +618,102 @@ msgstr "Выйти с ними на связь."
 #: src-en/data/events.xml.append:690
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/text"
-msgstr ""
+msgstr "\"Здравствуйте, военный корабль. Э-э... Вы не похожи на местных\"."
 
 #: src-en/data/events.xml.append:692
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/text"
-msgstr ""
+msgstr "Вы тоже. Какая это имеет значение?"
 
 #: src-en/data/events.xml.append:694
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/text"
 msgstr ""
+"Капитан корабля на мгновение задумывается. \"Понимаете, мы здесь с... можно "
+"сказать, с миссией по изучению вооружений. И нам нужны образцы\".\n"
+"\t\t\t\t\tВы про себя отмечаете, что это, должно быть, секретная миссия, "
+"ведь Министерство в обычных условиях ни за что не стало бы покупать "
+"незаконное оружие."
 
 #: src-en/data/events.xml.append:697
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/text"
-msgstr ""
+msgstr "Ну, почему бы вам не пойти и не взять эти образцы?"
 
 #: src-en/data/events.xml.append:699
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/text"
 msgstr ""
+"Возможно, вы выглядите достаточно надежным в глазах этого капитана, потому "
+"что он наконец-то раскрыл секрет. \n"
+"\t\t\t\t\t\t\t\"Местные жители не пользуются хорошей репутацией, и для нас "
+"было бы досадно, если бы нас заметили, ведущими с ними дела. К тому же у нас "
+"не было подходящего снаряжения, чтобы силой отобрать у них груз и уйти "
+"отсюда целыми и невредимыми...\""
 
 #: src-en/data/events.xml.append:702
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[1]/text"
-msgstr ""
+msgstr "Спросить их, почему они вам это рассказывают."
 
 #: src-en/data/events.xml.append:704
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[1]/event/text"
-msgstr ""
+msgstr "\"Ну, а если у вас оно есть, то не могли бы вы нам немного продать?\""
 
 #: src-en/data/events.xml.append:708
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[1]/event/choice[@req=\"DJMOD_BAM_FISSUREBEAM\"]/text"
-msgstr ""
+msgstr "Продать им свой Бада луч за 155~."
 
 #: src-en/data/events.xml.append:710
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[1]/event/choice[@req=\"DJMOD_BAM_FISSUREBEAM\"]/event/text"
 msgstr ""
+"Вы пытаетесь скрыть свое удовлетворение, пока они перечисляют чрезмерно "
+"завышенную сумму, но при этом надеетесь, что какая-нибудь неприятная встреча "
+"не заставит вас в ближайшем будущем пожалеть о продаже. Они уходят, не "
+"сказав ни слова."
 
 #: src-en/data/events.xml.append:719
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[1]/event/choice[@req=\"DJMOD_RAIN_OF_ION\"]/text"
-msgstr ""
+msgstr "Продать им свою осколочную пушку \"Дождь ионов\" за 180~."
 
 #: src-en/data/events.xml.append:721
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[1]/event/choice[@req=\"DJMOD_RAIN_OF_ION\"]/event/text"
 msgstr ""
+"Вы пытаетесь скрыть свое удовлетворение, пока они перечисляют чрезмерно "
+"завышенную сумму, но при этом надеетесь, что какая-нибудь неприятная встреча "
+"не заставит вас в ближайшем будущем пожалеть о продаже. Они уходят, не "
+"сказав ни слова."
 
 #: src-en/data/events.xml.append:730
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[1]/event/choice[@req=\"DJMOD_RAIN_OF_FIRE\"]/text"
-msgstr ""
+msgstr "Продать им свою пусковую установку \"Дождь огня\" за 120~."
 
 #: src-en/data/events.xml.append:732
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[1]/event/choice[@req=\"DJMOD_RAIN_OF_FIRE\"]/event/text"
 msgstr ""
+"Вы стараетесь скрыть свое удовлетворение, пока они перечисляют чрезмерно "
+"завышенную сумму, но при этом надеетесь, что какая-нибудь неприятная "
+"ситуация не заставит вас в ближайшем будущем пожалеть о продаже."
 
 #: src-en/data/events.xml.append:741
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[1]/event/choice[@req=\"DJMOD_LASER_BPS\"]/text"
-msgstr ""
+msgstr "Продать им свой лазер БПС Мессенджер за 200~."
 
 #: src-en/data/events.xml.append:743
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[1]/event/choice[@req=\"DJMOD_LASER_BPS\"]/event/text"
 msgstr ""
+"Вы стараетесь скрыть свое удовлетворение, пока они перечисляют чрезмерно "
+"завышенную сумму, но при этом надеетесь, что какая-нибудь неприятная "
+"ситуация не заставит вас в ближайшем будущем пожалеть о продаже."
 
 #: src-en/data/events.xml.append:752
 msgid ""
@@ -616,26 +724,39 @@ msgstr "Отказаться."
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[1]/event/choice[5]/event/text"
 msgstr ""
+"Вы думаете о прибыли, которую могли бы получить от этой встречи, но при этом "
+"помните, что продавать оружие случайным путникам - не самая безопасная "
+"стратегия."
 
 #: src-en/data/events.xml.append:761
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\"]/text"
 msgstr ""
+"(Оборудование РадиКал) Активировать оружие, пока они не отобрали ВАШЕ "
+"снаряжение силой."
 
 #: src-en/data/events.xml.append:763
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\"]/event/text"
-msgstr ""
+msgstr "\"Ладно-ладно, не надо прибегать к насилию, мы сейчас уходим\"."
 
 #: src-en/data/events.xml.append:766
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\"]/event/choice[1]/text"
 msgstr ""
+"...Ну, значит, они действительно такие слабые, как говорили. Давайте "
+"разберемся с ними без особых усилий!"
 
 #: src-en/data/events.xml.append:768
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\"]/event/choice[1]/event/text"
 msgstr ""
+"\"Подождите... Подождите! Это... это был всего лишь запрос на сделку. Как до "
+"этого дошло? Прошу вас!\"\n"
+"\t\t\t\t\t\t\t\t\t\t\tКак вы и подозревали, судя по секретному характеру их "
+"миссии, они не собираются отправлять никакого сообщения с обвинениями в ваш "
+"адрес, а просто запускают двигатели, чтобы сбежать! Похоже, вы нашли место, "
+"где преступления остаются безнаказанными..."
 
 #: src-en/data/events.xml.append:772
 msgid ""
@@ -645,10 +766,9 @@ msgstr "Продолжить..."
 #: src-en/data/events.xml.append:779
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\"]/event/choice[2]/text"
-msgstr ""
+msgstr "Оставить их в покое, они явно не представляют никакой угрозы."
 
 #: src-en/data/events.xml.append:792
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[2]/text"
 msgstr "Не обращать на них внимания."
@@ -657,6 +777,8 @@ msgstr "Не обращать на них внимания."
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[2]/event/text"
 msgstr ""
+"Вы оставляете их наедине с их проблемами и вместо этого решаете заняться "
+"техническим обслуживанием своего корабля."
 
 #: src-en/data/events.xml.append:796
 msgid ""
@@ -672,6 +794,8 @@ msgstr "Ничего не делать."
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN_GOTAWAY\"]/text"
 msgstr ""
+"Золтаны сбегают, не дав вам расправиться с ними ради добычи, и, вопреки "
+"вашим ожиданиям, действительно доносят на вас. Что ж, справедливо."
 
 #: src-en/data/events.xml.append:820
 msgid ""
@@ -681,49 +805,66 @@ msgstr "Продолжить..."
 #: src-en/data/events.xml.append:831
 msgid "data/events.xml.append$//event[@name=\"RADIKAL_PHILO\"]/text"
 msgstr ""
+"На небольшой космической станции, забитой под завязку гражданскими и "
+"военными припасами, вы встречаете приветливую и энергичную пожилую "
+"отшельницу, которая, судя по всему, хранит все это исключительно для себя. \n"
+"\t\t\"Здравствуй, чужак! Я знаю об этом секторе все. Не хочешь послушать и "
+"выпить чаю?\""
 
 #: src-en/data/events.xml.append:834
 msgid "data/events.xml.append$//event[@name=\"RADIKAL_PHILO\"]/choice[1]/text"
-msgstr ""
+msgstr "Остаться на минутку. Это может оказаться полезным."
 
 #: src-en/data/events.xml.append:836
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO\"]/choice[1]/event/text"
 msgstr ""
+"\"Меня зовут Брунтильда. Как вы наверняка заметили, этот сектор занят тремя "
+"основными подфракциями, и у каждой из них свой характер!\""
 
 #: src-en/data/events.xml.append:838
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO\"]/choice[1]/event/choice/text"
-msgstr ""
+msgstr "Вежливо прервать собеседницу и спросить, откуда взялись эти припасы."
 
 #: src-en/data/events.xml.append:840
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO\"]/choice[1]/event/choice/event/text"
 msgstr ""
+"\"Ой, как тебе интересно! Видишь ли, дорой, мои сыновья работают в этой "
+"сфере на руководящих и маркетинговых должностях. В какой-то момент они "
+"поняли, что у них нет ни времени, ни терпения, чтобы оценивать новичков и "
+"приучать их к нашим методам. Поэтому они придумали эту работу для своей "
+"милой старушки-мамочки и всегда следят за тем, чтобы обо мне заботились\"."
 
 #: src-en/data/events.xml.append:842
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO\"]/choice[1]/event/choice/event/choice/text"
-msgstr ""
+msgstr "Понятно. Приятно познакомиться."
 
 #: src-en/data/events.xml.append:844
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO\"]/choice[1]/event/choice/event/choice/event/text"
 msgstr ""
+"Теперь, когда ты догадываешься, почему это место до сих пор никто не "
+"разграбил, здесь есть чему поучиться. "
+"\"Что еще ты хотел бы узнать, дорогой?\""
 
 #: src-en/data/events.xml.append:846
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO\"]/choice[1]/event/choice/event/choice/event/choice/text"
-msgstr ""
+msgstr "Придумать несколько вопросов."
 
 #: src-en/data/events.xml.append:857
 msgid "data/events.xml.append$//event[@name=\"RADIKAL_PHILO\"]/choice[2]/text"
-msgstr ""
+msgstr "У нас нет времени тратить его на какие-то бабушкины сплетни."
 
 #: src-en/data/events.xml.append:859
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO\"]/choice[2]/event/text"
 msgstr ""
+"Вы прощаетесь, ничего не приобретая и ничего не теряя, что, если подумать, "
+"не так уж и плохо."
 
 #: src-en/data/events.xml.append:862
 msgid ""
@@ -737,22 +878,30 @@ msgstr "Ничего не делать."
 
 #: src-en/data/events.xml.append:879
 msgid "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/text"
-msgstr ""
+msgstr "Спросить ее..."
 
 #: src-en/data/events.xml.append:881
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[1]/text"
-msgstr ""
+msgstr "... о названиях подфракций."
 
 #: src-en/data/events.xml.append:883
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[1]/event/text"
 msgstr ""
+"\"Что это за имена такие? Радикал Бам? Панк? Скорч? Это что, из детского "
+"сериала или что?\" - спрашиваете вы.\n"
+"\t\t\t\"На самом деле, ничего особенного. Поскольку с самого начала этой "
+"небольшой операции многие называли их радикалами, мои сыновья и их маленькие "
+"друзья просто приняли это. Подгруппам просто нужно было что-то, чтобы "
+"отличаться друг от друга, а люди здесь не очень любят много болтать. Поэтому "
+"они выбрали короткие и лаконичные названия. Еще я слышала про какие-то "
+"переменные... Но я - исключение, мне так нравится болтать!\""
 
 #: src-en/data/events.xml.append:887
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[1]/event/choice[1]/text"
-msgstr ""
+msgstr "Спросить ее о чем-нибудь еще."
 
 #: src-en/data/events.xml.append:891
 msgid ""
@@ -762,27 +911,40 @@ msgstr "Уйти."
 #: src-en/data/events.xml.append:893
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[1]/event/choice[2]/event/text"
-msgstr ""
+msgstr "Вы берете свои вещи."
 
 #: src-en/data/events.xml.append:895
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[1]/event/choice[2]/event/choice/text"
-msgstr ""
+msgstr "Ладно, мы пойдем. Спасибо за чай."
 
 #: src-en/data/events.xml.append:903
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[2]/text"
-msgstr ""
+msgstr "... о философии проектирования оборудования РК."
 
 #: src-en/data/events.xml.append:905
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[2]/event/text"
 msgstr ""
+"\"Может, ты просто не очень сообразительный, так что на всякий случай "
+"позволь мне объяснить тебе.\n"
+"\t\t\tЧлены Бам верят в грубую эффективность мощных, впечатляющих и "
+"ошеломляющих ударов или событий. Например, хороший удар по башке, как я "
+"учила своих детей!\n"
+"\t\t\tПанк предпочитает технологическое превосходство, контрразведку и все "
+"такое. Они, как правило, приносят с собой меньше огневой мощи, а больше "
+"хитроумных гаджетов.\n"
+"\t\t\tНаконец, Скорч просто хотят смотреть, как все горит, и знают, как это "
+"обеспечить. Некоторые завистливые чужаки любят нести чушь о договорах с "
+"потусторонними существами, особенно среди Скорч. Разве не печально, до чего "
+"низко могут опуститься люди?\n"
+"\t\t\tНадеюсь, это прояснило ситуацию для вас, молодые люди!\""
 
 #: src-en/data/events.xml.append:912
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[2]/event/choice[1]/text"
-msgstr ""
+msgstr "Спросить ее о чем-нибудь еще."
 
 #: src-en/data/events.xml.append:916
 msgid ""
@@ -792,27 +954,31 @@ msgstr "Уйти."
 #: src-en/data/events.xml.append:918
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[2]/event/choice[2]/event/text"
-msgstr ""
+msgstr "Вы берете свои вещи."
 
 #: src-en/data/events.xml.append:920
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[2]/event/choice[2]/event/choice/text"
-msgstr ""
+msgstr "Ладно, мы пойдем. Спасибо за чай."
 
 #: src-en/data/events.xml.append:928
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[3]/text"
-msgstr ""
+msgstr "... о ценах."
 
 #: src-en/data/events.xml.append:930
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[3]/event/text"
 msgstr ""
+"\"Чтобы незаметно доставить такое количество материалов для ремесел в "
+"скрытый сектор, требуется много специального оборудования - так мне "
+"рассказали мои сыновья. Это приводит к высоким ценам, но, конечно, не "
+"настолько, если речь идет о локальном производстве!\""
 
 #: src-en/data/events.xml.append:933
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[3]/event/choice[1]/text"
-msgstr ""
+msgstr "Спросить ее о чем-нибудь еще."
 
 #: src-en/data/events.xml.append:937
 msgid ""
@@ -822,27 +988,32 @@ msgstr "Уйти."
 #: src-en/data/events.xml.append:939
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[3]/event/choice[2]/event/text"
-msgstr ""
+msgstr "Вы берете свои вещи."
 
 #: src-en/data/events.xml.append:941
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[3]/event/choice[2]/event/choice/text"
-msgstr ""
+msgstr "Ладно, мы пойдем. Спасибо за чай."
 
 #: src-en/data/events.xml.append:949
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[4]/text"
-msgstr ""
+msgstr "... о турнирах."
 
 #: src-en/data/events.xml.append:951
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[4]/event/text"
 msgstr ""
+"\"Неизбежное, но, как правило, дружеское соперничество между фракциями "
+"приводит к многочисленным столкновениям, цель которых - выяснить, чье "
+"снаряжение лучше. \n"
+"\t\t\t\tДаже такие туристы, как вы, могут принять в этом участие, если у них "
+"есть свое снаряжение. Иногда им даже удается выжить!\""
 
 #: src-en/data/events.xml.append:955
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[4]/event/choice[1]/text"
-msgstr ""
+msgstr "Спросить ее о чем-нибудь еще."
 
 #: src-en/data/events.xml.append:959
 msgid ""
@@ -852,51 +1023,74 @@ msgstr "Уйти."
 #: src-en/data/events.xml.append:961
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[4]/event/choice[2]/event/text"
-msgstr ""
+msgstr "Вы берете свои вещи."
 
 #: src-en/data/events.xml.append:963
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[4]/event/choice[2]/event/choice/text"
-msgstr ""
+msgstr "Ладно, мы пойдем. Спасибо за чай."
 
 #: src-en/data/events.xml.append:972
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[5]/text"
-msgstr ""
+msgstr "Угрожать ей, чтобы она отдала припасы!"
 
 #: src-en/data/events.xml.append:974
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[5]/event/text"
 msgstr ""
+"Уверенный в ее физической слабости, вы решаете, что разговоры никогда не "
+"будут столь же эффективны, как просто взять то, что вам нужно."
 
 #: src-en/data/events.xml.append:976
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[5]/event/choice/text"
-msgstr ""
+msgstr "А может, ты просто заткнешься и отдашь нам все эти припа..."
 
 #: src-en/data/events.xml.append:978
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[5]/event/choice/event/text"
 msgstr ""
+"Не успев договорить свою гнусную угрозу, вы чувствуете, как холодный кинжал, "
+"принадлежащий скрытому охранному дрону, прижимается к вашей шее, и "
+"понимаете, что это место, очевидно, надежно охраняется.\n"
+"\t\t\t\t\t\"Необразованные негодяи, да? Еще одно разочарование, но ясно, что "
+"наше маленькое дело привлекает именно таких людей. Какая жалость - зря "
+"потратила хороший чай. А теперь прочь отсюда\"."
 
 #: src-en/data/events.xml.append:982
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[5]/event/choice/event/choice/text"
-msgstr ""
+msgstr "Подождите-ка! Вы не поверите, но на самом деле мы совсем не такие..."
 
 #: src-en/data/events.xml.append:984
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[5]/event/choice/event/choice/event/text"
 msgstr ""
+"Вы с позором \"предлагаете\" несколько предметов снабжения в качестве "
+"извинения, выясняя, почему эта куча оказалась такой большой, и очень ясно "
+"даете своей команде понять, что об этом инциденте больше никогда не должно "
+"быть и речи.\n"
+"\t\t\t\t\t\t\tКроме того, вам кажется, что, хотя это и произошло в этом "
+"скрытом секторе, слухи о вашем отсутствии моральных принципов могут каким-то "
+"образом дойти до внешнего мира."
 
 #: src-en/data/events.xml.append:1002
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[6]/text"
-msgstr ""
+msgstr "Ладно, мы пойдем. Спасибо за чай."
 
 #: src-en/data/events.xml.append:1007
 msgid "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_GOODBYE\"]/text"
 msgstr ""
+"Она выглядит бодрой. \"Ой, спасибо! В этих краях очень немногие из вас, "
+"молодых, останавливаются, чтобы выслушать старушку. По какой-то причине они, "
+"кажется, предпочитают... \"допросы с пристрастием\", как, кажется, это "
+"называют молодые? Что-то про выяснение деталей производства. В любом случае, "
+"до свидания!\"\n"
+"\tВы замечаете шаттл, отправленный, чтобы поделиться с вами частью ее "
+"припасов. Эта работа, возможно, куда более одинокая, чем кажется, и вы "
+"невольно задумываетесь, как часто ее сыновья вообще к ней наведываются."
 
 #: src-en/data/events.xml.append:1013
 msgid ""
@@ -906,31 +1100,53 @@ msgstr "Продолжить..."
 #: src-en/data/events.xml.append:1026
 msgid "data/events.xml.append$//event[@name=\"ZOLTAN_POLICECHECK_RK\"]/text"
 msgstr ""
+"Как только вы попадаете сюда, вы замечаете, что вас окружает небольшой флот "
+"золтан, перехватывающий каждое проходящее мимо судно. Поступает срочный "
+"вызов от хорошо вооруженных элитных золтанов. \n"
+"\tСамо собой, было бы подозрительно не ответить на вызов.\n"
+"\t[Примечание разработчика: добавление фона с флотом приводит к сбою MV, так "
+"что просто вообразите его]"
 
 #: src-en/data/events.xml.append:1034
 msgid ""
 "data/events.xml.append$//event[@name=\"ZOLTAN_POLICECHECK_RK\"]/choice[1]/text"
-msgstr ""
+msgstr "Ответить."
 
 #: src-en/data/events.xml.append:1036
 msgid ""
 "data/events.xml.append$//event[@name=\"ZOLTAN_POLICECHECK_RK\"]/choice[1]/event/text"
 msgstr ""
+"\"Как вы, возможно, знаете, если только вы не безмозглый дикарь, этот сектор "
+"поставляет оружие Вестникам Заката. Недавно мы приступили к решению этой "
+"проблемы.\n"
+"\t\t\tКак и любое судно, проходящее транзитом через такую беззаконную зону "
+"производства оружия, как эта, вы будете подвергнуты обязательному "
+"тщательному досмотру на наличие указанного оружия. Борьба с незаконным "
+"распространением оружия начинается с вас. Не сопротивляйтесь\".\n"
+"\t\t\tЗолтаны относятся к этой зоне очень серьезно. Если они обнаружат какое-"
+"либо оборудование РадиКал, оно может быть конфисковано, или вам может быть "
+"наложен штраф в зависимости от количества, которое вы везете."
 
 #: src-en/data/events.xml.append:1041
 msgid ""
 "data/events.xml.append$//event[@name=\"ZOLTAN_POLICECHECK_RK\"]/choice[1]/event/choice[1]/text"
-msgstr ""
+msgstr "Согласиться на досмотр."
 
 #: src-en/data/events.xml.append:1046
 msgid ""
 "data/events.xml.append$//event[@name=\"ZOLTAN_POLICECHECK_RK\"]/choice[1]/event/choice[2]/text"
-msgstr ""
+msgstr "Поинтересоваться, что будет, если вы откажетесь."
 
 #: src-en/data/events.xml.append:1048
 msgid ""
 "data/events.xml.append$//event[@name=\"ZOLTAN_POLICECHECK_RK\"]/choice[1]/event/choice[2]/event/text"
 msgstr ""
+"\"Благодаря недавней поправке 3473-Б дельта, капитаны могут по своему выбору "
+"участвовать в финансировании таких кораблей контроля и отчитываться в "
+"ближайшем отделении полиции золтанов в течение 12 прыжковых циклов вместо "
+"немедленного прохождения досмотра\".\n"
+"\t\t\t\t\tДаже несмотря на то, что вы не собираетесь делать такой крюк, вас "
+"пока оставляют в покое."
 
 #: src-en/data/events.xml.append:1053
 msgid ""
@@ -941,11 +1157,13 @@ msgstr "Заплатить."
 msgid ""
 "data/events.xml.append$//event[@name=\"ZOLTAN_POLICECHECK_RK\"]/choice[1]/event/choice[2]/event/choice[1]/event/text"
 msgstr ""
+"Вы неохотно передаете лом, но умудряетесь натянуть на лицо улыбку, утешая "
+"себя тем, что ваше снаряжение в безопасности... по крайней мере, пока."
 
 #: src-en/data/events.xml.append:1063
 msgid ""
 "data/events.xml.append$//event[@name=\"ZOLTAN_POLICECHECK_RK\"]/choice[1]/event/choice[2]/event/choice[2]/text"
-msgstr ""
+msgstr "Согласиться на досмотр."
 
 #: src-en/data/events.xml.append:1072
 msgid ""
@@ -1886,7 +2104,6 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events.xml.append:2052
-#, fuzzy
 msgid "data/events.xml.append$//event[@name=\"THIEVES_RK_LASERS\"]/choice[4]/text"
 msgstr "Не обращать на них внимания."
 
@@ -2023,7 +2240,6 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events.xml.append:2192
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"THIEVES_RK_MISSILES\"]/choice[3]/text"
 msgstr "Не обращать на них внимания."
@@ -2160,7 +2376,6 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events.xml.append:2329
-#, fuzzy
 msgid "data/events.xml.append$//event[@name=\"THIEVES_RK_IONS\"]/choice[3]/text"
 msgstr "Не обращать на них внимания."
 
@@ -2296,7 +2511,6 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events.xml.append:2466
-#, fuzzy
 msgid "data/events.xml.append$//event[@name=\"THIEVES_RK_BEAMS\"]/choice[3]/text"
 msgstr "Не обращать на них внимания."
 
