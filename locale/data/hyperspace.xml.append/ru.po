@@ -1,50 +1,58 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-04-30 17:21+0000\n"
+"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
+"Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
+"datahyperspace-xml-append/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.13.3\n"
 
 #: src-en/data/hyperspace.xml.append:247
 msgid "data/hyperspace.xml.append$//human_soldier[@name=\"Rammerman\"]/@name"
-msgstr ""
+msgstr "Раммермен"
 
 #: src-en/data/hyperspace.xml.append:293
 msgid "data/hyperspace.xml.append$//engi_separatist[@name=\"Punkalot\"]/@name"
-msgstr ""
+msgstr "Пункалот"
 
 #: src-en/data/hyperspace.xml.append:294
 msgid ""
 "data/hyperspace.xml.append$//phantom_mare_alpha[@name=\"Breathenot\"]/@name"
-msgstr ""
+msgstr "Бездых"
 
 #: src-en/data/hyperspace.xml.append:295
 msgid "data/hyperspace.xml.append$//zoltan_devotee[@name=\"Movalot\"]/@name"
-msgstr ""
+msgstr "Мовалот"
 
 #: src-en/data/hyperspace.xml.append:327
 msgid "data/hyperspace.xml.append$//orchid_caretaker[@name=\"HighLife\"]/@name"
-msgstr ""
+msgstr "ХайЛайф"
 
 #: src-en/data/hyperspace.xml.append:328
 msgid "data/hyperspace.xml.append$//engi_separatist[@name=\"Aerodynamic\"]/@name"
-msgstr ""
+msgstr "Аэродинамика"
 
 #: src-en/data/hyperspace.xml.append:329
 msgid "data/hyperspace.xml.append$//engi[@name=\"TB\"]/@name"
-msgstr ""
+msgstr "ТБ"
 
 #: src-en/data/hyperspace.xml.append:330
 msgid "data/hyperspace.xml.append$//engi[@name=\"GMdHC\"]/@name"
-msgstr ""
+msgstr "ГМдХС"
 
 #: src-en/data/hyperspace.xml.append:373
 msgid "data/hyperspace.xml.append$//rock_commando[@name=\"Lighter\"]/@name"
-msgstr ""
+msgstr "Зажигалка"
 
 #: src-en/data/hyperspace.xml.append:374
 msgid "data/hyperspace.xml.append$//phantom_goul[@name=\"Log\"]/@name"
-msgstr ""
+msgstr "Лог"
 
 #: src-en/data/hyperspace.xml.append:423
 msgid ""
@@ -60,7 +68,8 @@ msgid ""
 "append:shipIcon/tooltip"
 msgstr ""
 "ПЫЛАЮЩАЯ ЗЕМЛЯ:\n"
-"\t\t\tЭкипаж этого корабля умеет обращаться с огнем и лечится во время его тушения."
+"\t\t\tЭкипаж этого корабля обладает сопротивляемостью огню, получает "
+"усиление в огне и восстанавливает здоровье во время тушения."
 
 #: src-en/data/hyperspace.xml.append:603
 msgid ""
@@ -138,25 +147,29 @@ msgstr "ТАИНСТВЕННЫЙ ЭКИПАЖ"
 msgid ""
 "data/hyperspace.xml.append$//mod-"
 "append:race[@name=\"rk_weaponlike\"]/powerEffect[1]/buttonText"
-msgstr ""
+msgstr "СБРОС БОМБЫ"
 
 #: src-en/data/hyperspace.xml.append:1058
 msgid ""
 "data/hyperspace.xml.append$//mod-"
 "append:race[@name=\"rk_weaponlike\"]/powerEffect[1]/tooltip"
 msgstr ""
+"Телепортирует бомбу на другой корабль, нанеся 1 единицу урона и создав "
+"пробоину. Можно использовать один раз за каждый прыжок."
 
 #: src-en/data/hyperspace.xml.append:1103
 msgid ""
 "data/hyperspace.xml.append$//mod-"
 "append:race[@name=\"rk_weaponlike\"]/powerEffect[2]/buttonText"
-msgstr ""
+msgstr "ПОДРЫВ"
 
 #: src-en/data/hyperspace.xml.append:1104
 msgid ""
 "data/hyperspace.xml.append$//mod-"
 "append:race[@name=\"rk_weaponlike\"]/powerEffect[2]/tooltip"
 msgstr ""
+"Взрывает бомбу, нанеся 1 ед. урона в текущему отсеку и образовав пробоину. "
+"Можно использовать один раз за прыжок"
 
 #: src-en/data/hyperspace.xml.append:1171
 msgid ""
@@ -266,7 +279,7 @@ msgstr "ДОПОЛНИТЕЛЬНЫЕ СИСТЕМЫ"
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[8]/mod-"
 "append:customStore/category[6]/customTitle"
-msgstr "СНАЙПЕРСКИЕ МОДУЛИ"
+msgstr "РК СКОРЧ СОРАТНИКИ"
 
 #: src-en/data/hyperspace.xml.append:2070
 msgid ""
@@ -337,12 +350,12 @@ msgstr "РК СНАЙПЕРСКИЕ МОДУЛИ (СКИДКА 10-20%)"
 #: src-en/data/hyperspace.xml.append:2331
 msgid ""
 "data/hyperspace.xml.append$//statBoost[@name=\"powerEffect\"]/powerEffect/buttonText"
-msgstr ""
+msgstr "ПРОРЫВ"
 
 #: src-en/data/hyperspace.xml.append:2332
 msgid ""
 "data/hyperspace.xml.append$//statBoost[@name=\"powerEffect\"]/powerEffect/tooltip"
-msgstr ""
+msgstr "ВЫ НИКОГДА НЕ ДОЛЖНЫ ЭТО ВИДЕТЬ - при ходьбе образуется пробоина."
 
 #: src-en/data/hyperspace.xml.append:3090
 msgid ""
