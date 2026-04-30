@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-04-30 17:21+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-05-01 12:12+0000\n"
+"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "dataevents_special_storagexmlappend/ru/>\n"
 "Language: ru\n"
@@ -2333,19 +2333,17 @@ msgid ""
 msgstr "Перейти к битве!"
 
 #: src-en/data/events_special_storage.xml.append:4184
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_HACK_FLEET\"]/text"
 msgstr ""
 "Вы уверены, что хотите это сделать?\n"
 "\t[Попытаться использовать особый взлом с целью задержать флот; отменяется "
-"при нанесении урона корпусу более 2 единиц. Требуется 17 секунд. Использует "
-"2 |]"
+"при нанесении урона корпусу более 2 единиц]"
 
 #: src-en/data/events_special_storage.xml.append:4199
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_HACK_FLEET\"]/choice[1]/text"
-msgstr ""
+msgstr "Да, бесплатный взлом на 17 секунд."
 
 #: src-en/data/events_special_storage.xml.append:4201
 msgid ""
@@ -2358,16 +2356,15 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events_special_storage.xml.append:4212
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_HACK_FLEET\"]/choice[@req=\"hacking\""
 " and @lvl=\"0\"]/text"
-msgstr "Для этого на вашем корабле должен быть установлен Взломщик 2 ур."
+msgstr "Установите Взломщик, чтобы получить больше возможностей."
 
 #: src-en/data/events_special_storage.xml.append:4217
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_HACK_FLEET\"]/choice[3]/text"
-msgstr ""
+msgstr "(Взломщик 1 ур. 1|) Взлом за 16 секунд."
 
 #: src-en/data/events_special_storage.xml.append:4219
 msgid ""
@@ -2380,11 +2377,10 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events_special_storage.xml.append:4234
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_HACK_FLEET\"]/choice[@req=\"hacking\""
 " and @lvl=\"2\"]/text"
-msgstr "(Взломщик 2 ур.) Да."
+msgstr "(Взломщик 2 ур. 2|) Взлом за 14 секунд."
 
 #: src-en/data/events_special_storage.xml.append:4236
 msgid ""
@@ -2399,16 +2395,15 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events_special_storage.xml.append:4252
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_HACK_FLEET\"]/choice[5]/text"
-msgstr "Неважно, давайте сражаться!"
+msgstr "Вам нужен более мощный Взломщик, чтобы получить больше возможностей."
 
 #: src-en/data/events_special_storage.xml.append:4257
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_HACK_FLEET\"]/choice[@req=\"hacking\""
 " and @lvl=\"3\"]/text"
-msgstr ""
+msgstr "(Взломщик 3 ур. 3|) Взлом за 10 секунд."
 
 #: src-en/data/events_special_storage.xml.append:4259
 msgid ""
@@ -2601,11 +2596,14 @@ msgstr "Перейти к битве!"
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_HACK_FLEET_OUTCOME_BOSS\"]/text"
 msgstr ""
+"Этот взлом должен был задержать флот, но не задержал... \n"
+"\t\tКто-то вмешался и прислал нам странные координаты с такой надписью: "
+"\"Н0вички!!1!\"."
 
 #: src-en/data/events_special_storage.xml.append:4581
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_HACK_FLEET_OUTCOME_BOSS\"]/choice/text"
-msgstr ""
+msgstr "Странно, но об этом поговорим позже. Вперед, в бой!"
 
 #: src-en/data/events_special_storage.xml.append:4587
 msgid ""
@@ -2615,7 +2613,6 @@ msgstr ""
 "системы, чтобы задержать флот повстанцев. В таких делах нужна осторожность!"
 
 #: src-en/data/events_special_storage.xml.append:4596
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_HACK_FLEET_STOP\"]/choice/text"
 msgstr "Какая жалость. Но продолжайте бороться!"
@@ -2624,21 +2621,35 @@ msgstr "Какая жалость. Но продолжайте бороться!
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/beaconType/unvisitedTooltip"
 msgstr ""
+"Кто-то настолько опасный, что способен остановить даже мощный взлом РК "
+"Энигмашин и бросить вам вызов!"
 
 #: src-en/data/events_special_storage.xml.append:4614
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/text"
 msgstr ""
+"Здесь появился корабль элитных повстанцев с очень зловещим видом. Его "
+"капитан пристально смотрит на вас.\n"
+"\n"
+"\t\t\"Когда я услышал, что кто-то балуется с системой связи флота, я сразу "
+"понял, что должен встретиться с этим дураком! И вот ты здесь, новички!\n"
+"\t\tПозвольте мне показать вам, как это делается! А потом ты умрешь\"."
 
 #: src-en/data/events_special_storage.xml.append:4622
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/choice[1]/text"
-msgstr ""
+msgstr "Значит, это вызов? Вперед!"
 
 #: src-en/data/events_special_storage.xml.append:4624
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/choice[1]/event/text"
 msgstr ""
+"Злобная улыбка на лице капитана противника становится еще шире. "
+"\"Ня-ха-ха, вот тебе небольшой подарок!\"\n"
+"\t\t\t\tВы сразу же замечаете сбои во многих системах своего корабля! "
+"Наверняка они используют боевой модуль! Вы, конечно, предполагали, что "
+"хакерский корабль не будет играть по правилам, но если вы этого не ожидали, "
+"то, возможно, пора подумать о быстром бегстве."
 
 #: src-en/data/events_special_storage.xml.append:4633
 msgid ""
@@ -2648,12 +2659,12 @@ msgstr "Продолжить..."
 #: src-en/data/events_special_storage.xml.append:4638
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/choice[1]/event/choice[@req=\"ANTI_VIRUS\"]/text"
-msgstr ""
+msgstr "(Антивирус) Восстановить свои системы."
 
 #: src-en/data/events_special_storage.xml.append:4640
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/choice[1]/event/choice[@req=\"ANTI_VIRUS\"]/event/text"
-msgstr ""
+msgstr "Ваши системы восстановлены и работают в полную мощность."
 
 #: src-en/data/events_special_storage.xml.append:4646
 msgid ""
@@ -2663,12 +2674,14 @@ msgstr "Продолжить..."
 #: src-en/data/events_special_storage.xml.append:4655
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/choice[2]/text"
-msgstr ""
+msgstr "Мы усвоили урок, мы умоляем вас, отпустите нас!"
 
 #: src-en/data/events_special_storage.xml.append:4667
 msgid ""
 "data/events_special_storage.xml.append$//ship[@name=\"SHIP_RK_HACK_FLEET_BOSS\"]/surrender/text"
 msgstr ""
+"\"Решил сыграть по-крупному сыграть, да? Ну как тебе это?\"\n"
+"\t\t\tБолее серьезные сбои оказывают влияние на системы вашего корабля!"
 
 #: src-en/data/events_special_storage.xml.append:4681
 msgid ""
@@ -2678,12 +2691,12 @@ msgstr "Продолжить..."
 #: src-en/data/events_special_storage.xml.append:4686
 msgid ""
 "data/events_special_storage.xml.append$//ship[@name=\"SHIP_RK_HACK_FLEET_BOSS\"]/surrender/choice[@req=\"ANTI_VIRUS\"]/text"
-msgstr ""
+msgstr "(Антивирус) Восстановить свои системы."
 
 #: src-en/data/events_special_storage.xml.append:4688
 msgid ""
 "data/events_special_storage.xml.append$//ship[@name=\"SHIP_RK_HACK_FLEET_BOSS\"]/surrender/choice[@req=\"ANTI_VIRUS\"]/event/text"
-msgstr ""
+msgstr "Ваши системы восстановлены и работают в полную мощность."
 
 #: src-en/data/events_special_storage.xml.append:4699
 msgid ""
@@ -2694,6 +2707,8 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_special_storage.xml.append$//ship[@name=\"SHIP_RK_HACK_FLEET_BOSS\"]/destroyed/text"
 msgstr ""
+"Корабль хакеров МФК разваливается на части, и вы быстро собираете все, что "
+"можно. Вы находите очень странное оружие!"
 
 #: src-en/data/events_special_storage.xml.append:4721
 msgid ""
@@ -2704,6 +2719,8 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_special_storage.xml.append$//ship[@name=\"SHIP_RK_HACK_FLEET_BOSS\"]/deadCrew/text"
 msgstr ""
+"Поскольку экипаж погиб, вы быстро собираете все, что можно, с корабля "
+"хакеров МФК. Вы находите весьма необычное оружие!"
 
 #: src-en/data/events_special_storage.xml.append:4741
 msgid ""
@@ -3118,18 +3135,16 @@ msgid ""
 msgstr "Демиклонеры [Не установлено]"
 
 #: src-en/data/events_special_storage.xml.append:5568
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[3]/text"
-msgstr "Демиклонеры [Установлено]"
+msgstr "Успокоитель разума [Установлено]"
 
 #: src-en/data/events_special_storage.xml.append:5572
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[4]/text"
-msgstr "Демиклонеры [Не установлено]"
+msgstr "Успокоитель разума [Не установлено]"
 
 #: src-en/data/events_special_storage.xml.append:5577
 msgid ""
@@ -3157,23 +3172,25 @@ msgstr ""
 "\t\t\tЕсли таких персонажей нет, они превращаются в морфов. Когда морфы гибнут, ничего не происходит. Не работает при гибели в результате событий. [УЖЕ УСТАНОВЛЕНО]"
 
 #: src-en/data/events_special_storage.xml.append:5598
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_DEMICLONER\""
 " and @lvl=\"0\"]/text"
-msgstr "Демиклонеры. [Цена: 50~, 1{]"
+msgstr "Демиклонеры. [Цена: 35~, 2|]"
 
 #: src-en/data/events_special_storage.xml.append:5603
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_MC_PARALYZER\""
 " and @lvl=\"1\"]/text"
 msgstr ""
+"РК Панк \"Успокоитель разума\": под воздействием контроля разума ваш экипаж "
+"не может сражаться, саботировать или телепортироваться. Действует на обоих "
+"кораблях. [УЖЕ УСТАНОВЛЕНО]"
 
 #: src-en/data/events_special_storage.xml.append:5607
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_MC_PARALYZER\""
 " and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "Успокоитель разума. [Цена: 30~, 1|]"
 
 #: src-en/data/events_special_storage.xml.append:5613
 msgid ""
@@ -3196,7 +3213,6 @@ msgid ""
 msgstr "Неважно."
 
 #: src-en/data/events_special_storage.xml.append:5675
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/text"
 msgstr ""
@@ -3225,20 +3241,18 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events_special_storage.xml.append:5693
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"0\"]/text"
 msgstr ""
-"Улучшение недоступно. Вам необходимо любое оружие или модуль РадиКал Панк "
-"(или БПС)."
+"Улучшение недоступно. Вам необходимо любое оружие, модуль или экипаж РадиКал "
+"Панк (или БПС)."
 
 #: src-en/data/events_special_storage.xml.append:5698
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"1\"]/text"
-msgstr "Установить улучшение. [Цена: 25~, 1{]"
+msgstr "Установить улучшение. [Цена: 35~, 2|]"
 
 #: src-en/data/events_special_storage.xml.append:5700
 msgid ""
@@ -3261,22 +3275,23 @@ msgstr "Неважно."
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER\"]/text"
 msgstr ""
+"Вы хотите добавить Успокоитель разума.\n"
+"\t[Эффекты: Под воздействием контроля разума ваш экипаж не может сражаться, "
+"саботировать или телепортироваться. Действует на обоих кораблях]"
 
 #: src-en/data/events_special_storage.xml.append:5727
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"0\"]/text"
 msgstr ""
-"Улучшение недоступно. Вам необходимо любое оружие или модуль РадиКал Панк "
-"(или БПС)."
+"Улучшение недоступно. Вам необходимо любое оружие, модуль или экипаж РадиКал "
+"Панк (или БПС)."
 
 #: src-en/data/events_special_storage.xml.append:5731
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"1\"]/text"
-msgstr "Установить улучшение. [Цена: 50~, 1{]"
+msgstr "Установить улучшение. [Цена: 30~, 1|]"
 
 #: src-en/data/events_special_storage.xml.append:5733
 msgid ""
@@ -3303,13 +3318,12 @@ msgstr ""
 "\t[Эффекты: в зоне действия огня ваш экипаж на обоих кораблях становится невосприимчивым к контролю разума, а продолжительность оглушения сокращается на 50%]"
 
 #: src-en/data/events_special_storage.xml.append:5761
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
 " and @lvl=\"0\"]/text"
 msgstr ""
-"Улучшение недоступно. Вам необходимо любое оружие или модуль РадиКал Скорч "
-"(или БПС)."
+"Улучшение недоступно. Вам необходимо любое оружие, модуль или экипаж РадиКал "
+"Скорч (или БПС)."
 
 #: src-en/data/events_special_storage.xml.append:5765
 msgid ""
