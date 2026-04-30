@@ -1,9 +1,17 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-04-30 17:21+0000\n"
+"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
+"Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
+"datatext_miscxmlappend/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.13.3\n"
 
 #: src-en/data/text_misc.xml.append:22
 msgid "data/text_misc.xml.append$//text[@name=\"map_icon_rks_pirate_trinity\"]"
@@ -31,7 +39,7 @@ msgstr "РК ЛАБ"
 
 #: src-en/data/text_misc.xml.append:38
 msgid "data/text_misc.xml.append$//text[@name=\"map_icon_rk_hack_fleet_boss\"]"
-msgstr ""
+msgstr "Н0вички!!1![!]"
 
 #: src-en/data/text_misc.xml.append:40
 msgid "data/text_misc.xml.append$//text[@name=\"warning_offense_disabler_end\"]"
@@ -44,15 +52,23 @@ msgstr "Усилить защиту!"
 #: src-en/data/text_misc.xml.append:51
 msgid "data/text_misc.xml.append$//text[@name=\"RK_lore_DJMOD_BAM_FISSUREBEAM\"]"
 msgstr ""
+"Знак качества: \"Уничтожил сбил с одного выстрела полностью загруженный "
+"гражданский транспортный самолет класса \"Элефант\"\""
 
 #: src-en/data/text_misc.xml.append:52
 msgid "data/text_misc.xml.append$//text[@name=\"RK_lore_DJMOD_RAIN_OF_ION\"]"
 msgstr ""
+"Знак качества: \"42 подтвержденных случая гибели представителей рас "
+"Федерации в результате удушья, судорог и других причин\""
 
 #: src-en/data/text_misc.xml.append:53
 msgid "data/text_misc.xml.append$//text[@name=\"RK_lore_DJMOD_RAIN_OF_FIRE\"]"
 msgstr ""
+"Знак качества: \"Питается жидким топливом из элитных орхидей, сжег корабли "
+"ланиусов и валунов\""
 
 #: src-en/data/text_misc.xml.append:54
 msgid "data/text_misc.xml.append$//text[@name=\"RK_lore_DJMOD_LASER_BPS\"]"
 msgstr ""
+"Знак качества: \"Доказал эффективность РК, уничтожив пилотируемый корабль "
+"каждой органической и неорганической фракции\""
