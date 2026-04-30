@@ -205,15 +205,17 @@ msgstr ""
 
 #: src-en/data/events.xml.append:392
 msgid "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED\"]/choice[1]/text"
-msgstr "See who they might have on sale."
+msgstr "See who they might have for sale."
 
 #: src-en/data/events.xml.append:394
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED\"]/choice[1]/event/text"
 msgstr ""
-"\"Feds here? You're surely in need of some muscle. How about a greatly "
-"discounted warrior to do the heavy lifting?\" You notice that the discount "
-"is pretty solid indeed, maybe too good."
+"\"Feds here? You're surely in need of some muscle, and this might just be "
+"your lucky day! We have an elite warrior to do the heavy lifting for you, "
+"greatly discounted because we must trade fast and leave for... reasons. What"
+" say you?\" You notice that the discount is pretty solid indeed, maybe too "
+"good."
 
 #: src-en/data/events.xml.append:396
 msgid ""
@@ -237,14 +239,14 @@ msgstr "Decline."
 
 #: src-en/data/events.xml.append:417
 msgid "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED\"]/choice[2]/text"
-msgstr "Ignore them."
+msgstr "Attack the slavers."
 
 #: src-en/data/events.xml.append:419
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_ENSLAVED\"]/choice[2]/event/text"
 msgstr ""
-"Another ship comes in and buys the slave shortly afterwards. Then it starts going up in flames. Maybe you chose wisely.\n"
-"\t\t\tYou have some time to yourself."
+"Slavery is despicable! You prepare for combat, knowing the elite slave will "
+"probably not survive it."
 
 #: src-en/data/events.xml.append:422
 msgid ""
@@ -414,7 +416,8 @@ msgstr "Take the hail."
 #: src-en/data/events.xml.append:590
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/text"
-msgstr "\"Greetings, pagan. We buy RadiKal weapons.\""
+msgstr ""
+"\"Greetings, pagan. We buy RadiKal weapons, and we believe you have some.\""
 
 #: src-en/data/events.xml.append:593
 msgid ""
@@ -529,9 +532,8 @@ msgstr "Decline."
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/choice[6]/event/text"
 msgstr ""
-"You think about the profit you could have made from this encounter, but also"
-" remember that selling your weapons to random passerbys isn't a very safe "
-"strategy."
+"You think about the profit you could have made from this encounter, but also remember that selling your weapons to random passerbys isn't a very safe strategy.\n"
+"\t\t\t\t\t\t\t\t\t\t\t\tYou still have time to do something around the ship instead."
 
 #: src-en/data/events.xml.append:672
 msgid ""
@@ -579,7 +581,7 @@ msgstr "Hail them."
 #: src-en/data/events.xml.append:714
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/text"
-msgstr "\"Hello, military ship. Um... You don't look like a local\"."
+msgstr "\"Hello, military ship. Um... You don't look like a RadiKal\"."
 
 #: src-en/data/events.xml.append:716
 msgid ""
@@ -590,7 +592,7 @@ msgstr "Neither do you. What does it matter?."
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/text"
 msgstr ""
-"The ship's captain hesitates a brief moment. \"You see, we are here on an... armament surveying mission you could say. And we need samples.\"\n"
+"The ship's captain hesitates a brief moment. \"You see, we are here on an... armament surveying mission you could say. And we need samples of RK gear.\"\n"
 "\t\t\t\t\tYou make a mental note that this must be a secret mission, as the Ministry wouldn't normally be caught dead buying illegal weaponry."
 
 #: src-en/data/events.xml.append:721
@@ -603,7 +605,7 @@ msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/text"
 msgstr ""
 "Maybe you look trustworthy enough to that captain, because he finally spills the beans. \n"
-"\t\t\t\t\t\t\t\"The people around here don't have the best reputation and it would be regrettable for us to be seen doing business with them. We were also not really provided the right equipment to take it by force from them and then leave this place in one piece...\""
+"\t\t\t\t\t\t\t\"The people in that sector don't have the best reputation and it would be regrettable for us to be seen doing business with them. We were also not really provided the right equipment to take it by force from them and then leave alive...\""
 
 #: src-en/data/events.xml.append:726
 msgid ""
@@ -613,7 +615,7 @@ msgstr "Ask them why they're telling you this."
 #: src-en/data/events.xml.append:728
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[1]/event/text"
-msgstr "\"Well if you have any, would you sell us some?\""
+msgstr "\"Well if you have any, sell us some. Please?\""
 
 #: src-en/data/events.xml.append:732
 msgid ""
@@ -676,9 +678,8 @@ msgstr "Decline."
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[1]/event/choice[5]/event/text"
 msgstr ""
-"You think about the profit you could have made from this encounter, but also"
-" remember that selling your weapons to random passerbys isn't a very safe "
-"strategy."
+"You think about the profit you could have made from this encounter, but also remember that selling your weapons to random passerbys isn't a very safe strategy.\n"
+"\t\t\t\t\t\t\t\t\t\t\t\tYou still have time to do something around the ship instead."
 
 #: src-en/data/events.xml.append:783
 msgid ""
@@ -700,8 +701,7 @@ msgstr ""
 #: src-en/data/events.xml.append:798
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\"]/event/text"
-msgstr ""
-"\"Alright alright, no need to resort to violence, we'll be on our way now.\""
+msgstr "\"Alright alright, no need to resort to violence. We'll be on our way.\""
 
 #: src-en/data/events.xml.append:801
 msgid ""
@@ -837,14 +837,22 @@ msgstr "Ask her..."
 #: src-en/data/events.xml.append:917
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[1]/text"
-msgstr "... about the subfaction names."
+msgstr "... about the Gatekeepers."
 
 #: src-en/data/events.xml.append:919
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[1]/event/text"
 msgstr ""
-"\"What kind of names are those? RadiKal Bam? Punk? Scorch? Is it from a kid's show or something?\" you ask.\n"
-"\t\t\t\"Not much to it really. Since so many people have been calling them radicals from the beginning of this little operation, my sons and their little friends simply embraced it. The subfactions just needed a little extra to tell themselves apart, and people don't really like talking too much around here. So they kept it short and to the point. Also I've heard something about variables? I'm the exception, chatting is so enjoyable!\""
+"\"This is supposed to be a bit of a surprise, but I've met some charming lads and lassies who never made it out of the sector because they didn't know. So I'll tell you: you're not leaving the sector without a fight (unless you're transporting one of our friends, hah!). Steer clear until you're prepared.\n"
+"\t\t\t\t\n"
+"\t\t\t\tThe Bam gatekeeper will be a tough nut to crack, but any missile defense and sufficient shielding should keep you safe.\n"
+"\n"
+"\t\t\t\tThe Punk gatekeeper has a bit of a chaotic mess going on, but it's mostly ion and anti-bio damage you must watch out for.\n"
+"\n"
+"\t\t\t\tThe Scorch gatekeeper will have you on fire soon and repeatedly, and that won't work too well against it either. But surely you already figured that one out!\n"
+"\t\t\t\t\n"
+"\t\t\t\tJust don't let my sons know i told you all that, Heeeheeehee! Oh and you can always just run away if you're a pussycat...\"\n"
+"\t\t\t\tYou can tell that even she would no longer respect you if you did that, but you must also think about the reality you're trying to save."
 
 #: src-en/data/events.xml.append:932
 msgid ""
@@ -876,6 +884,7 @@ msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[2]/event/text"
 msgstr ""
 "\"What kind of names are those? RadiKal Bam? Punk? Scorch? Is it from a kid's show or something?\" you ask.\n"
+"\t\t\t\n"
 "\t\t\t\"Not much to it really. Since so many people have been calling them radicals from the beginning of this little operation, my sons and their little friends simply embraced it. The subfactions just needed a little extra to tell themselves apart, and people don't really like talking too much around here. So they kept it short and to the point. Also I've heard something about variables? I'm the exception, chatting is so enjoyable!\""
 
 #: src-en/data/events.xml.append:956
@@ -907,10 +916,14 @@ msgstr "... about the RK equipment design philosophy."
 msgid ""
 "data/events.xml.append$//event[@name=\"RADIKAL_PHILO_INTEL_REAL\"]/choice[3]/event/text"
 msgstr ""
-"\"Maybe you're just a little slow in the head, so just in case, let me lay it out for you.\n"
-"\t\t\tMembers of Bam believe in the blunt efficiency of large, impactful, stunning hits or events. Such as a good bonk to the dome, like i taught my children!\n"
+"\"Maybe you're just a little slow in the head, so just in case, let me lay it out for youuu.\" You repress the urge to respond to the insult.\n"
+"\t\t\t\n"
+"\t\t\t\"Members of Bam believe in the blunt efficiency of impactful, stunning hits or events. Such as a good bonk to the dome, like i taught my children!\n"
+"\t\t\n"
 "\t\t\tThe Punk prefer technological superiority, counter-intelligence and all that jazz. They tend to bring less firepower and more fancy gadgets to the table.\n"
+"\t\t\n"
 "\t\t\tLastly the Scorch just want to watch things burn, and have ways to make sure they do. Some jealous foreigners like to spout nonsense about pacts with otherwordly creatures, especially among the Scorch. Isn't it sad, how low people will go?\n"
+"\t\t\n"
 "\t\t\tI hope that clears it up for y'all youngsters!\""
 
 #: src-en/data/events.xml.append:985
@@ -1023,7 +1036,8 @@ msgid "data/events.xml.append$//event[@name=\"ZOLTAN_POLICECHECK_RK\"]/text"
 msgstr ""
 "As soon as you get here, you notice that you're surrounded by a small Zoltan fleet intercepting every ship passing through here. An urgent hail from a heavily armed Zoltan Elite comes through. \n"
 "\tNeedless to say, it would look suspicious not to take the hail.\n"
-"\t[Dev note: Adding fleet background crashes MV so, just imagine it.]"
+"\t\n"
+"\t[Developer note: This buggy quest will be reworked soon. Consider it a forced fight, or engage with it knowing the risks.]"
 
 #: src-en/data/events.xml.append:1108
 msgid ""
@@ -1075,7 +1089,7 @@ msgstr "Agree to the search."
 #: src-en/data/events.xml.append:1146
 msgid ""
 "data/events.xml.append$//event[@name=\"ZOLTAN_POLICECHECK_RK\"]/choice[2]/text"
-msgstr "Try to ignore it and just pass through."
+msgstr "Try to ignore it and just pass through. [Recommended]"
 
 #: src-en/data/events.xml.append:1148
 msgid ""

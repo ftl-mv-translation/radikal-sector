@@ -2286,7 +2286,7 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_HACK_FLEET\"]/text"
 msgstr ""
 "Are you sure you want to do this?\n"
-"\t[Attempt special hacking to delay the fleet, cancelled by dealing more than 2 hull damage. Needs 17 seconds. Uses 2 |]"
+"\t[Attempt special hacking to delay the fleet, cancelled by dealing more than 2 hull damage.]"
 
 #: src-en/data/events_special_storage.xml.append:4199
 msgid ""
@@ -2307,7 +2307,7 @@ msgstr "Continue..."
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_HACK_FLEET\"]/choice[@req=\"hacking\""
 " and @lvl=\"0\"]/text"
-msgstr "This requires a level 2 Hacking system installed on your ship."
+msgstr "Install a Hacking system for more options."
 
 #: src-en/data/events_special_storage.xml.append:4217
 msgid ""
@@ -2328,7 +2328,7 @@ msgstr "Continue..."
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_HACK_FLEET\"]/choice[@req=\"hacking\""
 " and @lvl=\"2\"]/text"
-msgstr "(Hacking level 1, 1|) 16 seconds hack."
+msgstr "(Hacking level 2, 2|) 14 seconds hack."
 
 #: src-en/data/events_special_storage.xml.append:4236
 msgid ""
@@ -2345,7 +2345,7 @@ msgstr "Continue..."
 #: src-en/data/events_special_storage.xml.append:4252
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_HACK_FLEET\"]/choice[5]/text"
-msgstr "Nevermind, let's fight!"
+msgstr "You need a stronger Hacking system for more options."
 
 #: src-en/data/events_special_storage.xml.append:4257
 msgid ""
@@ -2560,7 +2560,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4596
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_HACK_FLEET_STOP\"]/choice/text"
-msgstr "Such a waste. But continue to the fight!"
+msgstr "What a waste. But continue to the fight!"
 
 #: src-en/data/events_special_storage.xml.append:4611
 msgid ""
@@ -3074,13 +3074,13 @@ msgstr "Demicloners [Not Installed]"
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[3]/text"
-msgstr "Demicloners [Installed]"
+msgstr "Mind Cooler [Installed]"
 
 #: src-en/data/events_special_storage.xml.append:5572
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[4]/text"
-msgstr "Demicloners [Not Installed]"
+msgstr "Mind Cooler [Not Installed]"
 
 #: src-en/data/events_special_storage.xml.append:5577
 msgid ""
@@ -3111,7 +3111,7 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_DEMICLONER\""
 " and @lvl=\"0\"]/text"
-msgstr "Demicloners. [Cost: 50~, 1{]"
+msgstr "Demicloners. [Cost: 35~, 2|]"
 
 #: src-en/data/events_special_storage.xml.append:5603
 msgid ""
@@ -3151,7 +3151,7 @@ msgstr "Nevermind."
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/text"
 msgstr ""
-"You are about to install the Demicloner upgrade.\n"
+"You are about to install the Demicloners upgrade.\n"
 "\t[Effects: The RadiKal Punk infused these backpack-clonebay prototypes with dark energies. These try to resurrect your crew if they die (not in events) when you don't have a real Clonebay.\n"
 "\t\tAt best, crew resurrect as their own lesser version (Soldier = default Human, etc.) If no lesser version exists, they become Morphs. When Morphs die, nothing happens.]"
 
@@ -3175,14 +3175,14 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"0\"]/text"
 msgstr ""
-"This upgrade is unavailable. You need any RadiKal Punk (or BPS) weapon or "
-"augment."
+"This upgrade is unavailable. You need any RadiKal Punk (or BPS) "
+"weapon/augment/crew."
 
 #: src-en/data/events_special_storage.xml.append:5698
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"1\"]/text"
-msgstr "Perform the upgrade. [Cost: 25~, 1{]"
+msgstr "Perform the upgrade. [Cost: 35~, 2|]"
 
 #: src-en/data/events_special_storage.xml.append:5700
 msgid ""
@@ -3213,14 +3213,14 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"0\"]/text"
 msgstr ""
-"This upgrade is unavailable. You need any RadiKal Punk (or BPS) weapon or "
-"augment."
+"This upgrade is unavailable. You need any RadiKal Punk (or BPS) "
+"weapon/augment/crew."
 
 #: src-en/data/events_special_storage.xml.append:5731
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"1\"]/text"
-msgstr "Perform the upgrade. [Cost: 50~, 1{]"
+msgstr "Perform the upgrade. [Cost: 30~, 1|]"
 
 #: src-en/data/events_special_storage.xml.append:5733
 msgid ""
@@ -3251,8 +3251,8 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
 " and @lvl=\"0\"]/text"
 msgstr ""
-"This upgrade is unavailable. You need any RadiKal Scorch (or BPS) weapon or "
-"augment."
+"This upgrade is unavailable. You need any RadiKal Scorch (or BPS) "
+"weapon/augment/crew."
 
 #: src-en/data/events_special_storage.xml.append:5765
 msgid ""
