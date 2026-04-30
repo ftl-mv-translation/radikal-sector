@@ -9,377 +9,376 @@ msgstr ""
 msgid ""
 "data/events_special_guards.xml.append$//textList[@name=\"TEXT_START_RADIKAL\"]/text[1]"
 msgstr ""
-"Вы прибыли в сектор РадиКал, куда съезжаются специалисты со всего мира в поисках высокоэффективного и незаконного снаряжения.\n"
-"\t\tПовстанцам будет нелегко получить координаты, что даст вам время подготовиться к тому, чтобы выбраться отсюда живым."
+"You have arrived in the RadiKal sector, where specialists from everywhere come in search of highly efficient and illegal gear.\n"
+"\t\tThe rebels will have some trouble getting the coordinates, giving you some time to prepare for getting out of here alive."
 
 #: src-en/data/events_special_guards.xml.append:9
 msgid ""
 "data/events_special_guards.xml.append$//textList[@name=\"TEXT_START_RADIKAL\"]/text[2]"
 msgstr ""
-"Вы прибыли в сектор РадиКал, где можно найти мощное, но опасное оборудование - если, конечно, вы готовы пойти на жертвы.\n"
-"\t\tПовстанцам будет нелегко получить координаты, что даст вам время подготовиться к тому, чтобы выбраться отсюда живым."
+"You have arrived in the RadiKal sector, where one can find hazardous equipment of great power, if they're ready to make sacrifices.\n"
+"\t\tThe rebels will have some trouble getting the coordinates, giving you some time to prepare for getting out of here alive."
 
 #: src-en/data/events_special_guards.xml.append:27
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"START_RADIKAL\"]/choice/text"
-msgstr "Продолжить..."
+msgstr "Continue..."
 
 #: src-en/data/events_special_guards.xml.append:34
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/text"
 msgstr ""
-"Маяк охраняет хорошо вооруженное судно, но пока оно не проявляет враждебности. Вдали виден удаляющийся пиратский корабль. Насколько можно судить, он загружен товаром, и охрана просто пропустила его, при этом никаких свежих следов сражения не наблюдается.\n"
+"The beacon is guarded by a well armed vessel but it's not hostile just yet. In the distance you see pirate ship jumping away. From what you can tell, they're loaded with cargo and the guard just let them through, with no recent signs of battle.\n"
 "\t\t\n"
-"\t\tОхрана вызывает вас."
+"\t\tThe guard is hailing you."
 
 #: src-en/data/events_special_guards.xml.append:38
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/text"
-msgstr "Ответить на вызов."
+msgstr "Respond to the hail."
 
 #: src-en/data/events_special_guards.xml.append:40
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/text"
 msgstr ""
-"\"Эй. Новенький или бывалый?\" Охранник невозмутимо ждет вашего ответа. "
-"Похоже, речь о том, насколько вы знакомі с этим сектором."
+"\"Hey there. Rook or reg?\" The guard is nonchalantly awaiting your answer. "
+"This seems to be about your familiarity with this sector."
 
 #: src-en/data/events_special_guards.xml.append:42
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[1]/text"
-msgstr "Новенький."
+msgstr "Rook."
 
 #: src-en/data/events_special_guards.xml.append:44
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[1]/event/text"
 msgstr ""
-"\"Да, неудивительно. Похоже, вашему кораблю не помешала бы серьезная "
-"модернизация. Вы вообще знаете, что здесь ищете?\""
+"\"Yeah no wonder. Your ship looks like it could use serious upgrades. Do you"
+" even know what you're looking for in here?\""
 
 #: src-en/data/events_special_guards.xml.append:46
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[1]/event/choice[1]/text"
-msgstr "Да."
+msgstr "Yes."
 
 #: src-en/data/events_special_guards.xml.append:48
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[1]/event/choice[1]/event/text"
 msgstr ""
-"\"Ладно, что выберете?\" Охранник выводит на экран короткий список пунктов "
-"назначения, в котором указаны только кодовые названия, а все обычные детали "
-"отсутствуют. Вы начинаете задумываться, насколько подозрительным оказалось "
-"место, в котором вы оказались."
+"\"Alright, what's it gonna be?.\" The guard has brought up a short list of "
+"destinations on the comms, with only codenames and all the usual details are"
+" missing. You are starting to wonder just how shady a place you just found "
+"yourself in."
 
 #: src-en/data/events_special_guards.xml.append:50
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[1]/event/choice[1]/event/choice[1]/text"
-msgstr "Выбрать \"Бам\"."
+msgstr "Pick \"Bam\"."
 
 #: src-en/data/events_special_guards.xml.append:52
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[1]/event/choice[1]/event/choice[1]/event/text"
 msgstr ""
-"\"Классика - это всегда верный выбор. Мудрый выбор\". Охранник передает вам "
-"координаты, а затем быстро прерывает связь, не дожидаясь вашего ответа."
+"\"The classics, always reliable. A wise choice.\" The guard transmits the "
+"coordinates to you, then quickly cuts comms before you can answer."
 
 #: src-en/data/events_special_guards.xml.append:60
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[1]/event/choice[1]/event/choice[1]/event/choice[1]/text"
-msgstr "Проверить склад."
+msgstr "Check the storage."
 
 #: src-en/data/events_special_guards.xml.append:64
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[1]/event/choice[1]/event/choice[1]/event/choice[2]/text"
-msgstr "Ничего не делать."
+msgstr "Do nothing."
 
 #: src-en/data/events_special_guards.xml.append:70
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[1]/event/choice[1]/event/choice[2]/text"
-msgstr "Выбрать \"Панк\"."
+msgstr "Pick \"Punk\"."
 
 #: src-en/data/events_special_guards.xml.append:72
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[1]/event/choice[1]/event/choice[2]/event/text"
 msgstr ""
-"\"Как раз вовремя, я слышал, у них появилось что-то новенькое\". Охранник "
-"передает вам координаты, а затем быстро прерывает связь, не дожидаясь вашего"
-" ответа."
+"\"A timely choice, I heard they've got some new stuff available.\" The guard"
+" transmits the coordinates to you, then quickly cuts comms before you can "
+"answer."
 
 #: src-en/data/events_special_guards.xml.append:79
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[1]/event/choice[1]/event/choice[2]/event/choice[1]/text"
-msgstr "Проверить склад."
+msgstr "Check the storage."
 
 #: src-en/data/events_special_guards.xml.append:83
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[1]/event/choice[1]/event/choice[2]/event/choice[2]/text"
-msgstr "Ничего не делать."
+msgstr "Do nothing."
 
 #: src-en/data/events_special_guards.xml.append:89
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[1]/event/choice[1]/event/choice[3]/text"
-msgstr "Выбрать \"Скорч\"."
+msgstr "Pick \"Scorch\"."
 
 #: src-en/data/events_special_guards.xml.append:91
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[1]/event/choice[1]/event/choice[3]/event/text"
 msgstr ""
-"\"Вижу, вы ищете что-то интересное\". Охранник передает вам координаты, а "
-"затем быстро прерывает связь, не дожидаясь вашего ответа."
+"\"Looking for hot stuff, I see.\" The guard transmits the coordinates to "
+"you, then quickly cuts comms before you can answer."
 
 #: src-en/data/events_special_guards.xml.append:98
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[1]/event/choice[1]/event/choice[3]/event/choice[1]/text"
-msgstr "Проверить склад."
+msgstr "Check the storage."
 
 #: src-en/data/events_special_guards.xml.append:102
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[1]/event/choice[1]/event/choice[3]/event/choice[2]/text"
-msgstr "Ничего не делать."
+msgstr "Do nothing."
 
 #: src-en/data/events_special_guards.xml.append:110
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[1]/event/choice[2]/text"
-msgstr "Ничего из этого."
+msgstr "Not in the least."
 
 #: src-en/data/events_special_guards.xml.append:112
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[1]/event/choice[2]/event/text"
 msgstr ""
-"Охранник хмурится. \"Не знаю, как вы сюда попали, но это не место для туристов. Лучше направляйтесь к выходу, не задерживаясь, и тогда проблем не будет\". Затем вы слышите, как охранник бормочет что-то о том, что \"нужно снова усилить охрану\", после чего связь обрывается, и вы понимаете, что они уже занимаются следующими прибывшими.\n"
-"\t\t\t\t\t\t\tВы идете дальше, растерянные и слегка обеспокоенные."
+"The guard frowns. \"Not sure how you people got here but this isn't a place for tourists. You better head for the exit without taking any detours, and there won't be trouble.\" You then hear the guard mutter something about \"needing to tighten security again\" before comms are cut and you realize that they're already dealing with next arrival.\n"
+"\t\t\t\t\t\t\tYou move on, confused and slightly worried."
 
 #: src-en/data/events_special_guards.xml.append:115
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[1]/event/choice[2]/event/choice[1]/text"
-msgstr "Проверить склад."
+msgstr "Check the storage."
 
 #: src-en/data/events_special_guards.xml.append:119
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[1]/event/choice[2]/event/choice[2]/text"
-msgstr "Ничего не делать."
+msgstr "Do nothing."
 
 #: src-en/data/events_special_guards.xml.append:128
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and @lvl=\"0\"]/text"
-msgstr "У вас нет снаряжения РадиКал. Вы также не летаете на корабле РК."
+msgstr ""
+"You do not have any RadiKal gear. You're not flying an RK ship either."
 
 #: src-en/data/events_special_guards.xml.append:133
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/text"
-msgstr "(Любое снаряжение РК) Бывалый. Я свой!"
+msgstr "(Any piece of RK gear) Reg. Hit me up!"
 
 #: src-en/data/events_special_guards.xml.append:135
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/text"
 msgstr ""
-"\"Отличная находка! Раз вы уже один из нас, вот все свежие координаты - на "
-"случай, если захотите разнообразить свои варианты\". С этими словами "
-"охранник уже переключился на следующий корабль."
+"\"Nice piece! Since you're already one of us, here are all the latest "
+"coordinates, in case you want to diversify your options.\" With that, the "
+"guard is already busy with the next ship."
 
 #: src-en/data/events_special_guards.xml.append:137
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/text"
-msgstr "Продолжить..."
+msgstr "Continue..."
 
 #: src-en/data/events_special_guards.xml.append:139
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/text"
-msgstr "Вы получаете координаты \"Главной лаборатории Бам\"..."
+msgstr "You receive \"Bam main lab\" coordinates..."
 
 #: src-en/data/events_special_guards.xml.append:146
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/text"
-msgstr "Продолжить..."
+msgstr "Continue..."
 
 #: src-en/data/events_special_guards.xml.append:148
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/event/text"
-msgstr "... а затем \"Главной лаборатории Панк\"..."
+msgstr "...then \"Punk main lab\"..."
 
 #: src-en/data/events_special_guards.xml.append:155
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/event/choice/text"
-msgstr "Продолжить..."
+msgstr "Continue..."
 
 #: src-en/data/events_special_guards.xml.append:157
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/event/choice/event/text"
-msgstr "... и наконец \"Главной лаборатории Скорч\". Можно идти!"
+msgstr "...and finally \"Scorch main lab\". Good to go!"
 
 #: src-en/data/events_special_guards.xml.append:164
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/event/choice/event/choice[1]/text"
-msgstr "Проверить склад."
+msgstr "Check the storage."
 
 #: src-en/data/events_special_guards.xml.append:168
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/event/choice/event/choice[2]/text"
-msgstr "Ничего не делать."
+msgstr "Do nothing."
 
 #: src-en/data/events_special_guards.xml.append:181
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[4]/text"
-msgstr "Это пиратское логово, да? Мы по делу. *сплюнуть*"
+msgstr "This here the pirate haven, innit? We'ere for business. *Spit*"
 
 #: src-en/data/events_special_guards.xml.append:183
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[4]/event/text"
 msgstr ""
-"\"Ох\". Охранник выглядит слегка раздраженным - то ли он устал каждый раз все разъяснять, то ли его не впечатлила ваша напыщенная манера. \"Вы немного ошибаетесь: пиратство - не наша специализация, скорее - неограниченный прогресс. Но да, здесь можно заниматься так называемой незаконной торговлей. Я сообщу о ваших интересах всем заинтересованным сторонам, а вы... ОБЯЗАТЕЛЬНО прихватите с собой достаточно лома\".\n"
+"\"Oh.\" The guard seems slightly annoyed, either tired of clearing things up every time or unimpressed by your overdone attitude. \"You are slightly mistaken, piracy isn't our focus, unbound progress is more like it. But yes you can conduct what's called illegal types of trade here. I'll let your interests be known to all interested parties, and you... make SURE to bring enough scrap.\"\n"
 "\t\t\t\t\t\t\n"
-"\t\t\t\t\t\tОни отправляют вам координаты и пропускают вас. Несмотря на секретность этого сектора, вы уже понимаете, что это плохо отразится на вашей общей репутации."
+"\t\t\t\t\t\tThey send you the coordinates and let you past. Despite the secrecy of this sector you can already tell that this will reflect poorly on your general reputation."
 
 #: src-en/data/events_special_guards.xml.append:199
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[4]/event/choice/text"
-msgstr "Пиратство - это круто. Оно стоит того."
+msgstr "Piracy is kinda poggers. Worth it."
 
 #: src-en/data/events_special_guards.xml.append:207
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/text"
-msgstr "Не обращать на них внимания и попробовать пролететь мимо."
+msgstr "Ignore them and try to fly past."
 
 #: src-en/data/events_special_guards.xml.append:209
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/event/text"
 msgstr ""
-"Их оружие тут же пришло в боевую готовность - они явно ждали этого. Вероятно, этого можно было бы избежать, обменявшись парой слов, но они уже вызвали подкрепление.\n"
-"\t\t\tК удивлению, похоже, что на их корабле произошло возгорание кислородной системы..."
+"Their weapons immediately come online, they've clearly been expecting this. This could probably have been avoided by exchanging a few words, but they've already called for backup.\n"
+"\t\t\tSurprisingly, it seems that their ship's O2 system has caught fire..."
 
 #: src-en/data/events_special_guards.xml.append:219
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/event/choice/text"
-msgstr "Ха! Какой идио..."
+msgstr "Hah! What an idio-"
 
 #: src-en/data/events_special_guards.xml.append:221
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/event/choice/event/text"
 msgstr ""
-"Внезапно вы слышите на корабле странные звуки телепортации, но не обнаруживаете никого на борту - только тепловые сигнатуры... К тому же ваш корабль горит! И горит гораздо сильнее, чем их.\n"
-"\t\t\t\t\tЕсли вам удастся выжить, вы, возможно, узнаете, что же произошло и как это использовать в своих интересах."
+"Suddenly, you hear strange teleportation sounds in your ship but detect no boarders, just heat signatures... Your ship is also on fire! And quite a bit more than theirs.\n"
+"\t\t\t\t\tIf you survive this, you might just find out how what happened and how to take advantage of it."
 
 #: src-en/data/events_special_guards.xml.append:230
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/event/choice/event/choice/text"
-msgstr "Продолжить..."
+msgstr "Continue..."
 
 #: src-en/data/events_special_guards.xml.append:254
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DESTROY\"]/text"
 msgstr ""
-"Вы победили сторожевой корабль РадиКалов. Что бы ни было в их грузе, оно, "
-"несомненно, уничтожено, но вы можете, по крайней мере, забрать с корабля "
-"часть припасов."
+"You have defeated the RadiKal guard. Whatever might have been in their cargo"
+" has for certain been destroyed, but you can at least salvage some supplies "
+"from the ship."
 
 #: src-en/data/events_special_guards.xml.append:257
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DESTROY\"]/choice/text"
-msgstr "Продолжить..."
+msgstr "Continue..."
 
 #: src-en/data/events_special_guards.xml.append:262
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/text"
 msgstr ""
-"Вы победили сторожевой корабль РадиКалов. Поскольку на борту нет экипажа, "
-"который мог бы вас остановить, вы можете осмотреть их груз. Вы находите "
-"добычу, которую можно взять на корабль, и приступаете к разборке их корпуса "
-"на лом."
+"You have defeated the RadiKal guard. Without crew on-board to stop you, you "
+"can investigate their cargo. You find some loot to bring back to the ship, "
+"and move on to scrap their hull."
 
 #: src-en/data/events_special_guards.xml.append:268
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/choice/text"
-msgstr "Продолжить..."
+msgstr "Continue..."
 
 #: src-en/data/events_special_guards.xml.append:270
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/choice/event/text"
-msgstr "Вы нашли запасные детали для оборудования РадиКал!"
+msgstr "You find spare RadiKal equipment!"
 
 #: src-en/data/events_special_guards.xml.append:273
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/choice/event/choice/text"
-msgstr "Продолжить..."
+msgstr "Continue..."
 
 #: src-en/data/events_special_guards.xml.append:295
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_FOLLOWUP\"]/text"
 msgstr ""
-"Уничтожив сторожевой корабль РадиКалов, вы, без сомнения, заставили их "
-"отправить подкрепление, чтобы выследить вас. Будьте осторожны, исследуя этот"
-" сектор."
+"By killing the RadiKal guard, you have no doubt caused them to dispatch "
+"reinforcements to track you down. Watch your step as you explore the sector."
 
 #: src-en/data/events_special_guards.xml.append:303
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_FOLLOWUP\"]/choice[1]/text"
-msgstr "Заняться чем-либо на корабле."
+msgstr "Do something onboard the ship."
 
 #: src-en/data/events_special_guards.xml.append:307
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_FOLLOWUP\"]/choice[2]/text"
-msgstr "Ничего не делать."
+msgstr "Do nothing."
 
 #: src-en/data/events_special_guards.xml.append:316
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/beaconType/unvisitedTooltip"
-msgstr "Непосещенное место."
+msgstr "An unvisited location."
 
 #: src-en/data/events_special_guards.xml.append:317
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/beaconType/visitedTooltip"
-msgstr "Посещенное место. Ничего интересного."
+msgstr "Explored location. Nothing left of interest."
 
 #: src-en/data/events_special_guards.xml.append:318
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/beaconType/undiscoveredTooltip"
-msgstr "Непосещенное место."
+msgstr "An unvisited location."
 
 #: src-en/data/events_special_guards.xml.append:320
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/text"
 msgstr ""
-"\"Кто-то же должен был охранять. Они просто выполняли свою работу и знали о "
-"рисках. Так же как и ты!\" Корабль РадиКалов атакует!"
+"\"Someone has to be the guard. They were just doing their job, and knew the "
+"risks. But so did you!\" The RadiKal ship attacks!"
 
 #: src-en/data/events_special_guards.xml.append:324
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/choice/text"
-msgstr "Продолжить..."
+msgstr "Continue..."
 
 #: src-en/data/events_special_guards.xml.append:332
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/beaconType/unvisitedTooltip"
-msgstr "Непосещенное место."
+msgstr "An unvisited location."
 
 #: src-en/data/events_special_guards.xml.append:333
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/beaconType/visitedTooltip"
-msgstr "Посещенное место. Ничего интересного."
+msgstr "Explored location. Nothing left of interest."
 
 #: src-en/data/events_special_guards.xml.append:334
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/beaconType/undiscoveredTooltip"
-msgstr "Непосещенное место."
+msgstr "An unvisited location."
 
 #: src-en/data/events_special_guards.xml.append:336
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/text"
 msgstr ""
-"\"Кто-то же должен был охранять. Они просто выполняли свою работу и знали о "
-"рисках. Так же как и ты!\" Корабль РадиКалов атакует!"
+"\"Someone has to be the guard, they were just doing their job and knew the "
+"risks. But so did you!\" The RadiKal ship attacks!"
 
 #: src-en/data/events_special_guards.xml.append:342
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/choice/text"
-msgstr "Продолжить..."
+msgstr "Continue..."

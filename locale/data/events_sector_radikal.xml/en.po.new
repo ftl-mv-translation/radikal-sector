@@ -1,0 +1,491 @@
+#
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src-en/data/events_sector_radikal.xml:77
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_STORE_SNIPER_SIEGED\"]/text"
+msgstr ""
+"Looks like an EXTREME-ly deadly stealth ship is attacking the nearby market owned by a certain \"Sniper Girl\". If you can stop them, you should be able to access the store.\n"
+"\t\tThe specialized store looks ready to provide fire support."
+
+#: src-en/data/events_sector_radikal.xml:82
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_STORE_SNIPER_SIEGED\"]/choice[1]/text"
+msgstr "Rescue the store."
+
+#: src-en/data/events_sector_radikal.xml:84
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_STORE_SNIPER_SIEGED\"]/choice[1]/event/text"
+msgstr "You prepare for combat."
+
+#: src-en/data/events_sector_radikal.xml:88
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_STORE_SNIPER_SIEGED\"]/choice[1]/event/choice/text"
+msgstr "Continue..."
+
+#: src-en/data/events_sector_radikal.xml:94
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_STORE_SNIPER_SIEGED\"]/choice[2]/text"
+msgstr "Ignore the merchant."
+
+#: src-en/data/events_sector_radikal.xml:96
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_STORE_SNIPER_SIEGED\"]/choice[2]/event/text"
+msgstr ""
+"You are pretty sure they noticed your presence, but they seem too busy to "
+"care."
+
+#: src-en/data/events_sector_radikal.xml:98
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_STORE_SNIPER_SIEGED\"]/choice[2]/event/choice[1]/text"
+msgstr "Do something onboard the ship."
+
+#: src-en/data/events_sector_radikal.xml:102
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_STORE_SNIPER_SIEGED\"]/choice[2]/event/choice[2]/text"
+msgstr "Do nothing."
+
+#: src-en/data/events_sector_radikal.xml:112
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_STORE_SNIPER_EXTREME\"]/destroyed/text"
+msgstr "The stealth ship breaks apart and you quickly salvage what you can."
+
+#: src-en/data/events_sector_radikal.xml:115
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_STORE_SNIPER_EXTREME\"]/destroyed/choice/text"
+msgstr "Continue..."
+
+#: src-en/data/events_sector_radikal.xml:120
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_STORE_SNIPER_EXTREME\"]/deadCrew/text"
+msgstr ""
+"With the crew dead you quickly salvage what you can from the stealth ship."
+
+#: src-en/data/events_sector_radikal.xml:123
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_STORE_SNIPER_EXTREME\"]/deadCrew/choice/text"
+msgstr "Continue..."
+
+#: src-en/data/events_sector_radikal.xml:130
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_STORE_SNIPER_WIN\"]/text"
+msgstr ""
+"Sniper Girl wastes no time hailing you. \"They just keep coming, with better equipment every time, to rob us. I just can't catch a breath. I know that's why you're here too...\" You're about to say something to cheer her up when she cuts you off. \"Because there's NO better shop in this universe for Stealth gear! So efficient, pirates dream about it, coalitions plot to acquire it, and renegades jump in to steal it! Buy while you still can!\".\n"
+"\t\tTurns out she's still in character. RK sector professionals must have seen some shit, you think to yourself.\n"
+"\n"
+"\t\t\"...And for your timely assistance, here's a little incentive to buy.\" You realize the gift is your \"Thank you\", and shrug.\n"
+"\t\tThen you take one look at the wares and immediately understand why the attacker came here.\n"
+"\n"
+"\t\t\"Oh and, some of this stuff is so hard to source it shouldn't even exist, so only 1 purchase per customer. But for you I'll make it 3.\""
+
+#: src-en/data/events_sector_radikal.xml:142
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_STORE_SNIPER_WIN\"]/choice/text"
+msgstr "Alright then."
+
+#: src-en/data/events_sector_radikal.xml:199
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY\"]/beaconType/unvisitedTooltip"
+msgstr ""
+"The pirates await your scrap. Disappoint them in any way at your own risk!"
+
+#: src-en/data/events_sector_radikal.xml:202
+msgid "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY\"]/text"
+msgstr ""
+"The pirate clans don't always see eye to eye, but when there's big money to be made, they know how to behave. The elite welcoming you here seems in charge of overseeing the transactions.\n"
+"\t\t\"Sssso, you're the big shot Feddy cusssstomer who threw away a lawful life to mingle with ussss, eh? No offensssse but I've gotta tell you, I don't really buy it. We shall ssssee if you're for real...\"\n"
+"\t\t\n"
+"\t\tIf you don't want to anger the slug and his ruthless associates, you had better buy something from each of the pirate subfactions.\n"
+"\t\tIt's all-or-nothing, but if you do, pirates everywhere will respect you that much more!"
+
+#: src-en/data/events_sector_radikal.xml:214
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY\"]/choice[1]/text"
+msgstr "Yep that's me. Enough chitchat, show us the goods."
+
+#: src-en/data/events_sector_radikal.xml:222
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY\"]/choice[2]/text"
+msgstr "Not us, just passing through."
+
+#: src-en/data/events_sector_radikal.xml:239
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/text"
+msgstr "The pirates are all looking at you expectantly."
+
+#: src-en/data/events_sector_radikal.xml:245
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_met_slaver\""
+" and @lvl=\"0\"]/text"
+msgstr "Meet with the Tiiikaka slaver"
+
+#: src-en/data/events_sector_radikal.xml:255
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_met_slaver\""
+" and @lvl=\"1\"]/text"
+msgstr "The slaver is counting their scrap, seated on a slave's face."
+
+#: src-en/data/events_sector_radikal.xml:260
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_met_mercenary\""
+" and @lvl=\"0\"]/text"
+msgstr "Meet with the Syndicate mercenary"
+
+#: src-en/data/events_sector_radikal.xml:264
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_met_mercenary\""
+" and @lvl=\"1\"]/text"
+msgstr "The mercenary is juggling bits of scrap, knives and loaded guns."
+
+#: src-en/data/events_sector_radikal.xml:269
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_met_smuggler\""
+" and @lvl=\"0\"]/text"
+msgstr "Meet with the Argeonn smuggler"
+
+#: src-en/data/events_sector_radikal.xml:273
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_met_smuggler\""
+" and @lvl=\"1\"]/text"
+msgstr "The smuggler is telling their third wife she can buy that Butler."
+
+#: src-en/data/events_sector_radikal.xml:279
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_count\"]/text"
+msgstr "Thank them for the business and say goodbye."
+
+#: src-en/data/events_sector_radikal.xml:281
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_count\"]/event/text"
+msgstr ""
+"\"Well well, you truly are one rich, ssssick individual with zero regard for other living thingsss, a fantasssstic customer by all accountssss! Accept my apologiesss for doubting you, and may your raidsss bring great bounty! Gals and guys it's party time! Narcotics for everyone, and a round of Shoot-Tha-Limbs on that human slave who looked at me funny this morning.\"\n"
+"\t\t\t\t\n"
+"\t\t\t\tThey let you leave with a little gift and big smiles on their faces. Congratulations, you have just made the galaxy a worse place."
+
+#: src-en/data/events_sector_radikal.xml:288
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_count\"]/event/choice/text"
+msgstr "Continue..."
+
+#: src-en/data/events_sector_radikal.xml:296
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[8]/text"
+msgstr "We won't actually do business with all of you. We're leaving."
+
+#: src-en/data/events_sector_radikal.xml:302
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/text"
+msgstr ""
+"\"From warships, mining camps, nurseries, outposts too, we bring best and brightest slaves! Sure one of them is your need...\n"
+"\t\tUnless you no wanna pay. Then we put slave collar on you too.\""
+
+#: src-en/data/events_sector_radikal.xml:307
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/text"
+msgstr "Continue..."
+
+#: src-en/data/events_sector_radikal.xml:309
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/text"
+msgstr "The slaver proudly shows off the poor souls for you to buy."
+
+#: src-en/data/events_sector_radikal.xml:313
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[1]/text"
+msgstr "Buy a slave."
+
+#: src-en/data/events_sector_radikal.xml:315
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[1]/event/text"
+msgstr "\"Great buy. Sure they serve well, captain!\""
+
+#: src-en/data/events_sector_radikal.xml:325
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[1]/event/choice/text"
+msgstr "Continue..."
+
+#: src-en/data/events_sector_radikal.xml:334
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[2]/text"
+msgstr "Buy a better slave."
+
+#: src-en/data/events_sector_radikal.xml:336
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[2]/event/text"
+msgstr "\"Great buy. Sure they serve well, captain!\""
+
+#: src-en/data/events_sector_radikal.xml:344
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[2]/event/choice/text"
+msgstr "Continue..."
+
+#: src-en/data/events_sector_radikal.xml:351
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[3]/text"
+msgstr "Buy an elite slave."
+
+#: src-en/data/events_sector_radikal.xml:353
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[3]/event/text"
+msgstr ""
+"\"Ah, I see you have eye for only best quality of slaves, captain. This is "
+"one of finest slaves ever. Sure they serve well, captain!\""
+
+#: src-en/data/events_sector_radikal.xml:361
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[3]/event/choice/text"
+msgstr "Continue..."
+
+#: src-en/data/events_sector_radikal.xml:368
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[4]/text"
+msgstr "You know what, the funny thing is, we're broke..."
+
+#: src-en/data/events_sector_radikal.xml:370
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[4]/event/text"
+msgstr ""
+"\"Bad words feddy captain, should have choose better words. But mostly should have bring scrap.\" The pirate ship in front of you instantly makes itself combat ready, having clearly expected that. \n"
+"\t\t\t\t\t\t\n"
+"\t\t\t\t\t\tYou can't tell whether the slug overseer is furious, vindicated, or both. \"Hah! I knew it, you just wanted to take down a bunch of piratesss at once you wannabe hero. Guesss what, we're not that dumb! Hey Kurt, hand over the scrap, i won the bet.\"\n"
+"\t\t\t\t\t\tWith that, they and the other pirate ships jump away, leaving you to deal with the slaver!"
+
+#: src-en/data/events_sector_radikal.xml:377
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[4]/event/choice/text"
+msgstr "Continue..."
+
+#: src-en/data/events_sector_radikal.xml:388
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/text"
+msgstr ""
+"\"Stay one step ahead of your enemies with our intelligence services. From recon to distraction, all the way to more ...decisive action once we're acquainted well enough!\n"
+"\t\tAssuming you didn't make yourself our next target by coming here empty-handed, obviously.\""
+
+#: src-en/data/events_sector_radikal.xml:393
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/text"
+msgstr "Continue..."
+
+#: src-en/data/events_sector_radikal.xml:395
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/text"
+msgstr "The Syndicate mercenary awaits your orders."
+
+#: src-en/data/events_sector_radikal.xml:399
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/choice[1]/text"
+msgstr "Buy a map of the sector."
+
+#: src-en/data/events_sector_radikal.xml:401
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/choice[1]/event/text"
+msgstr "\"You got it, captain!\""
+
+#: src-en/data/events_sector_radikal.xml:409
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/choice[1]/event/choice/text"
+msgstr "Continue..."
+
+#: src-en/data/events_sector_radikal.xml:416
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/choice[2]/text"
+msgstr "Delay the rebel fleet for 2 turns."
+
+#: src-en/data/events_sector_radikal.xml:418
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/choice[2]/event/text"
+msgstr "\"We're on it, captain!\""
+
+#: src-en/data/events_sector_radikal.xml:426
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/choice[2]/event/choice/text"
+msgstr "Continue..."
+
+#: src-en/data/events_sector_radikal.xml:433
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/choice[3]/text"
+msgstr "You know what, the funny thing is, we're broke..."
+
+#: src-en/data/events_sector_radikal.xml:435
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/choice[3]/event/text"
+msgstr ""
+"\"Bad choice, captain. You should have brought that scrap.\" The pirate ship in front of you instantly makes itself combat ready, having clearly expected that. \n"
+"\t\t\t\t\t\t\n"
+"\t\t\t\t\t\tYou can't tell whether the slug overseer is furious, vindicated, or both. \"Hah! I knew it, you just wanted to take down a bunch of piratesss at once you wannabe hero. Guesss what, we're not that dumb! Hey Kurt, hand over the scrap, i won the bet.\"\n"
+"\t\t\t\t\t\tWith that, they and the other pirate ships jump away, leaving you to deal with the mercenary!"
+
+#: src-en/data/events_sector_radikal.xml:442
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/choice[3]/event/choice/text"
+msgstr "Continue..."
+
+#: src-en/data/events_sector_radikal.xml:452
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/text"
+msgstr ""
+"\"Do you know what separates good captains from great captains? Well, we do, and that's where they procure their weaponry. We provide those extra special weapons and augments that go beyond what you can find in your everyday store.\n"
+"\t\tAnd where did we get them? In the lifeless ships of non-paying captains, which you're too smart to be, right?\""
+
+#: src-en/data/events_sector_radikal.xml:457
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/text"
+msgstr "Continue..."
+
+#: src-en/data/events_sector_radikal.xml:459
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/text"
+msgstr "The smuggler awaits your order."
+
+#: src-en/data/events_sector_radikal.xml:463
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[1]/text"
+msgstr "Buy a backup weapon."
+
+#: src-en/data/events_sector_radikal.xml:465
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[1]/event/text"
+msgstr "\"Enjoy that little bit of extra firepower!\""
+
+#: src-en/data/events_sector_radikal.xml:473
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[1]/event/choice/text"
+msgstr "Continue..."
+
+#: src-en/data/events_sector_radikal.xml:480
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[2]/text"
+msgstr "Buy a random RadiKal weapon."
+
+#: src-en/data/events_sector_radikal.xml:482
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[2]/event/text"
+msgstr "\"Enjoy that extra firepower!\""
+
+#: src-en/data/events_sector_radikal.xml:490
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[2]/event/choice/text"
+msgstr "Continue..."
+
+#: src-en/data/events_sector_radikal.xml:497
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[3]/text"
+msgstr "Buy a random very rare RadiKal augment."
+
+#: src-en/data/events_sector_radikal.xml:499
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[3]/event/text"
+msgstr "\"Use with caution!\""
+
+#: src-en/data/events_sector_radikal.xml:507
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[3]/event/choice/text"
+msgstr "Continue..."
+
+#: src-en/data/events_sector_radikal.xml:514
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[4]/text"
+msgstr "You know what, the funny thing is, we're broke..."
+
+#: src-en/data/events_sector_radikal.xml:516
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[4]/event/text"
+msgstr ""
+"\"Sad, I didn't take you for a joker. You should have brought that scrap.\" The pirate ship in front of you instantly makes itself combat ready, having clearly expected that. \n"
+"\t\t\t\t\t\t\n"
+"\t\t\t\t\t\tYou can't tell whether the slug overseer is furious, vindicated, or both. \"Hah! I knew it, you just wanted to take down a bunch of piratesss at once you wannabe hero. Guesss what, we're not that dumb! Hey Kurt, hand over the scrap, i won the bet.\"\n"
+"\t\t\t\t\t\tWith that, they and the other pirate ships jump away, leaving you to deal with the smuggler!"
+
+#: src-en/data/events_sector_radikal.xml:523
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[4]/event/choice/text"
+msgstr "Continue..."
+
+#: src-en/data/events_sector_radikal.xml:534
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_FIGHT_CURRENT_PIRATE\"]/text"
+msgstr ""
+"\"Of coursssse you are. Told you Kurt, hand over my sssscrap, you lost the bet. Let'ssss kill these damn clownssss.\"\n"
+"\t\tLooks like you'll have to fight your way out!"
+
+#: src-en/data/events_sector_radikal.xml:541
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_FIGHT_CURRENT_PIRATE\"]/choice/text"
+msgstr "Continue..."
+
+#: src-en/data/events_sector_radikal.xml:548
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_SLAVER\"]/destroyed/text"
+msgstr ""
+"The Slaver ship has been defeated. You scrap the remains.\n"
+"\t\t\tIntentionally or not, you've made a mess disrupting pirate operations in this sector."
+
+#: src-en/data/events_sector_radikal.xml:553
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_SLAVER\"]/destroyed/choice/text"
+msgstr "Continue..."
+
+#: src-en/data/events_sector_radikal.xml:558
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_SLAVER\"]/deadCrew/text"
+msgstr ""
+"The Slaver ship has been defeated. You scrap the interior and free a great slave from the cargo bay!\n"
+"\t\t\tIntentionally or not, you've made a mess disrupting pirate operations in this sector."
+
+#: src-en/data/events_sector_radikal.xml:564
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_SLAVER\"]/deadCrew/choice/text"
+msgstr "Continue..."
+
+#: src-en/data/events_sector_radikal.xml:571
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_MERCENARY\"]/destroyed/text"
+msgstr ""
+"The Mercenary ship has been defeated. You scrap the remains.\n"
+"\t\t\tIntentionally or not, you've made a mess disrupting pirate operations in this sector."
+
+#: src-en/data/events_sector_radikal.xml:576
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_MERCENARY\"]/destroyed/choice/text"
+msgstr "Continue..."
+
+#: src-en/data/events_sector_radikal.xml:581
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_MERCENARY\"]/deadCrew/text"
+msgstr ""
+"The Mercenary ship has been defeated. You scrap the interior and find detailed sector data in the terminal!\n"
+"\t\t\tIntentionally or not, you've made a mess disrupting pirate operations in this sector."
+
+#: src-en/data/events_sector_radikal.xml:587
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_MERCENARY\"]/deadCrew/choice/text"
+msgstr "Continue..."
+
+#: src-en/data/events_sector_radikal.xml:594
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_SMUGGLER\"]/destroyed/text"
+msgstr ""
+"The Smuggler ship has been defeated. You scrap the remains.\n"
+"\t\t\tIntentionally or not, you've made a mess disrupting pirate operations in this sector."
+
+#: src-en/data/events_sector_radikal.xml:599
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_SMUGGLER\"]/destroyed/choice/text"
+msgstr "Continue..."
+
+#: src-en/data/events_sector_radikal.xml:604
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_SMUGGLER\"]/deadCrew/text"
+msgstr ""
+"The Smuggler ship has been defeated. You scrap the interior and find a weapon in the cargo bay!\n"
+"\t\t\tIntentionally or not, you've made a mess disrupting pirate operations in this sector."
+
+#: src-en/data/events_sector_radikal.xml:611
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_SMUGGLER\"]/deadCrew/choice/text"
+msgstr "Continue..."
