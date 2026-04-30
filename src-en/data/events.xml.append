@@ -389,9 +389,9 @@ If used in eventList, list must have a non-unique option!-->
 	<text>Slavers are quite comfortably installed in this sector, in great part due to the lack of regulation. You stumble upon one.</text>
 	<ship load="SHIP_SLAVER_ALL" hostile="false"/>
 	<choice>
-		<text>See who they might have on sale.</text>
+		<text>See who they might have for sale.</text>
 		<event>
-			<text>"Feds here? You're surely in need of some muscle. How about a greatly discounted warrior to do the heavy lifting?" You notice that the discount is pretty solid indeed, maybe too good.</text> 
+			<text>"Feds here? You're surely in need of some muscle, and this might just be your lucky day! We have an elite warrior to do the heavy lifting for you, greatly discounted because we must trade fast and leave for... reasons. What say you?" You notice that the discount is pretty solid indeed, maybe too good.</text> 
 			<choice hidden="false">
 				<text>Purchase the elite slave.</text>
 				<event>
@@ -412,6 +412,19 @@ If used in eventList, list must have a non-unique option!-->
 			</choice>
 		</event>
 	</choice>
+
+	<choice hidden="true">
+		<text>Attack the slavers.</text>
+		<event>
+			<text>Slavery is despicable! You prepare for combat, knowing the elite slave will probably not survive it.</text>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+
 	<choice>
 		<text>Ignore them.</text>
 		<event>
@@ -574,7 +587,7 @@ If used in eventList, list must have a non-unique option!-->
 	<choice hidden="true">
 		<text>Take the hail.</text>
 		<event>
-			<text>"Greetings, pagan. We buy RadiKal weapons."</text>
+			<text>"Greetings, pagan. We buy RadiKal weapons, and we believe you have some."</text>
 			
 			<choice>
 				<text>"Is that so?"</text>
@@ -651,7 +664,18 @@ If used in eventList, list must have a non-unique option!-->
 									<choice>
 										<text>Decline.</text>
 										<event>
-											<text>You think about the profit you could have made from this encounter, but also remember that selling your weapons to random passerbys isn't a very safe strategy.</text>
+											<text>You think about the profit you could have made from this encounter, but also remember that selling your weapons to random passerbys isn't a very safe strategy.
+												You still have time to do something around the ship instead.
+											</text>
+
+											<choice>
+												<text>Do something onboard the ship.</text>
+												<event load="STORAGE_CHECK"/>
+											</choice>
+											<choice>
+												<text>Do nothing.</text>
+												<event/>
+											</choice>
 										</event>
 									</choice>
 								</event>
@@ -687,21 +711,21 @@ If used in eventList, list must have a non-unique option!-->
 	<choice hidden="true">
 		<text>Hail them.</text>
 		<event>
-			<text>"Hello, military ship. Um... You don't look like a local".</text> 
+			<text>"Hello, military ship. Um... You don't look like a RadiKal".</text> 
 			<choice>
 				<text>Neither do you. What does it matter?.</text>
 				<event>
-					<text>The ship's captain hesitates a brief moment. "You see, we are here on an... armament surveying mission you could say. And we need samples."
+					<text>The ship's captain hesitates a brief moment. "You see, we are here on an... armament surveying mission you could say. And we need samples of RK gear."
 					You make a mental note that this must be a secret mission, as the Ministry wouldn't normally be caught dead buying illegal weaponry.</text> 
 					<choice>
 						<text>Well why don't you go and get those samples?</text>
 						<event>
 							<text>Maybe you look trustworthy enough to that captain, because he finally spills the beans. 
-							"The people around here don't have the best reputation and it would be regrettable for us to be seen doing business with them. We were also not really provided the right equipment to take it by force from them and then leave this place in one piece..."</text> 
+							"The people in that sector don't have the best reputation and it would be regrettable for us to be seen doing business with them. We were also not really provided the right equipment to take it by force from them and then leave alive..."</text> 
 							<choice>
 								<text>Ask them why they're telling you this.</text>
 								<event>
-									<text>"Well if you have any, would you sell us some?"</text>
+									<text>"Well if you have any, sell us some. Please?"</text>
 									<!-- Sell for 150% of value, except BPS Messenger which passes all checks so 200%. -->
 
 									<choice req="DJMOD_BAM_FISSUREBEAM" hidden="true">
@@ -751,7 +775,18 @@ If used in eventList, list must have a non-unique option!-->
 									<choice>
 										<text>Decline.</text>
 										<event>
-											<text>You think about the profit you could have made from this encounter, but also remember that selling your weapons to random passerbys isn't a very safe strategy.</text>
+											<text>You think about the profit you could have made from this encounter, but also remember that selling your weapons to random passerbys isn't a very safe strategy.
+												You still have time to do something around the ship instead.
+											</text>
+											
+											<choice>
+												<text>Do something onboard the ship.</text>
+												<event load="STORAGE_CHECK"/>
+											</choice>
+											<choice>
+												<text>Do nothing.</text>
+												<event/>
+											</choice>
 										</event>
 									</choice>
 								</event>
@@ -760,7 +795,7 @@ If used in eventList, list must have a non-unique option!-->
 							<choice req="DJMOD_HAS_RADIKAL_GEAR">
 								<text>(RadiKal gear) Power up your weapons before they take YOUR equipment by force.</text>
 								<event>
-									<text>"Alright alright, no need to resort to violence, we'll be on our way now."</text>
+									<text>"Alright alright, no need to resort to violence. We'll be on our way."</text>
 									
 									<choice hidden="true">
 										<text>...Well that means they're as weak as they said, let's make some easy scrap!</text>
@@ -877,11 +912,45 @@ If used in eventList, list must have a non-unique option!-->
 </event>
 <event name="RADIKAL_PHILO_INTEL_REAL">
 	<text>Ask her...</text>
+
+	<choice hidden="true">
+		<text>... about the Gatekeepers.</text>
+		<event>
+			<text>"This is supposed to be a bit of a surprise, but I've met some charming lads and lassies who never made it out of the sector because they didn't know. So I'll tell you: you're not leaving the sector without a fight (unless you're transporting one of our friends, hah!). Steer clear until you're prepared.
+				
+				The Bam gatekeeper will be a tough nut to crack, but any missile defense and sufficient shielding should keep you safe.
+
+				The Punk gatekeeper has a bit of a chaotic mess going on, but it's mostly ion and anti-bio damage you must watch out for.
+
+				The Scorch gatekeeper will have you on fire soon and repeatedly, and that won't work too well against it either. But surely you already figured that one out!
+				
+				Just don't let my sons know i told you all that, Heeeheeehee! Oh and you can always just run away if you're a pussycat..."
+				You can tell that even she would no longer respect you if you did that, but you must also think about the reality you're trying to save.
+				</text>
+			
+			<choice>
+				<text>Ask her something else.</text>
+				<event load="RADIKAL_PHILO_INTEL_LOAD"/>
+			</choice>
+			<choice>
+				<text>Leave.</text>
+				<event>
+					<text>You grab your things.</text>
+					<choice hidden="true">
+						<text>Alright, we'll be on our way now. Thank you for the tea.</text>
+						<event load="RADIKAL_PHILO_GOODBYE"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
 	<choice hidden="true">
 		<text>... about the subfaction names.</text>
 		<event>
 			<text>"What kind of names are those? RadiKal Bam? Punk? Scorch? Is it from a kid's show or something?" you ask.
-			"Not much to it really. Since so many people have been calling them radicals from the beginning of this little operation, my sons and their little friends simply embraced it. The subfactions just needed a little extra to tell themselves apart, and people don't really like talking too much around here. So they kept it short and to the point. Also I've heard something about variables? I'm the exception, chatting is so enjoyable!"</text>
+			
+			"Not much to it really. Since so many people have been calling them radicals from the beginning of this little operation, my sons and their little friends simply embraced it. The subfactions just needed a little extra to tell themselves apart, and people don't really like talking too much around here. So they kept it short and to the point. Also I've heard something about variables? I'm the exception, chatting is so enjoyable!"
+			</text>
 						
 			<choice>
 				<text>Ask her something else.</text>
@@ -902,10 +971,14 @@ If used in eventList, list must have a non-unique option!-->
 	<choice hidden="true">
 		<text>... about the RK equipment design philosophy.</text>
 		<event>
-			<text>"Maybe you're just a little slow in the head, so just in case, let me lay it out for you.
-			Members of Bam believe in the blunt efficiency of large, impactful, stunning hits or events. Such as a good bonk to the dome, like i taught my children!
+			<text>"Maybe you're just a little slow in the head, so just in case, let me lay it out for youuu." You repress the urge to respond to the insult.
+			
+			"Members of Bam believe in the blunt efficiency of impactful, stunning hits or events. Such as a good bonk to the dome, like i taught my children!
+		
 			The Punk prefer technological superiority, counter-intelligence and all that jazz. They tend to bring less firepower and more fancy gadgets to the table.
+		
 			Lastly the Scorch just want to watch things burn, and have ways to make sure they do. Some jealous foreigners like to spout nonsense about pacts with otherwordly creatures, especially among the Scorch. Isn't it sad, how low people will go?
+		
 			I hope that clears it up for y'all youngsters!"</text>
 			
 			<choice>
@@ -945,7 +1018,7 @@ If used in eventList, list must have a non-unique option!-->
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true">
+	<!-- <choice hidden="true">
 		<text>... about the contests.</text>
 		<event>
 			<text>"The inevitable but usually friendly rivalry between the factions leads to many confrontations to figure out whose equipment is the best. 
@@ -966,7 +1039,7 @@ If used in eventList, list must have a non-unique option!-->
 				</event>
 			</choice>
 		</event>
-	</choice>
+	</choice> -->
 	
 	<choice req="pilot" lvl="1" hidden="true" blue="false" max_group="2">
 		<text>Threaten her for the supplies!</text>
@@ -1025,7 +1098,8 @@ About 900 lines, minimize if not interested. -->
 	<!-- <customFleet right="false" firing="false" autoDarkening="true">CUSTOM_FLEET_ZOLTAN</customFleet> 	CRASH! on sector jump -->
 	<text>As soon as you get here, you notice that you're surrounded by a small Zoltan fleet intercepting every ship passing through here. An urgent hail from a heavily armed Zoltan Elite comes through. 
 	Needless to say, it would look suspicious not to take the hail.
-	[Dev note: Adding fleet background crashes MV so, just imagine it.]</text>
+	
+	[Developer note: This buggy quest will be reworked soon. Consider it a forced fight, or engage with it knowing the risks.]</text>
 	<ship load="SHIP_ZOLTAN_POLICE_RK" hostile="false"/>
 	<!-- <customFleet right="false" firing="false" autoDarkening="true">CUSTOM_FLEET_ZOLTAN</customFleet> 	Also CRASH below <text> -->
 	<!-- <customFleet right="false" firing="true" autoDarkening="true">CUSTOM_FLEET_ENGINEER</customFleet> 	Also CRASH below <text> -->
@@ -1069,7 +1143,7 @@ About 900 lines, minimize if not interested. -->
 	</choice>
 	
 	<choice hidden="true">
-		<text>Try to ignore it and just pass through.</text>
+		<text>Try to ignore it and just pass through. [Recommended]</text>
 		<event>
 			<text>"You admission of guilt in facilitating terrorist operations has been recorded and filed for the trial of any surviving spouse(s) and/or heir(s). You will not escape the law."
 			Sounds like you'll have to fight your way through. In fact you wonder how you managed to convince yourself this could end any differently.</text>
@@ -2913,7 +2987,6 @@ Except this time the loader is EXIT_RADIKAL so i'm not changing the name for con
 <event name="EXIT_RADIKAL">
 	<loadEvent seeded="false">EXIT_RADIKAL_PART2</loadEvent>
 </event>
-
 <!-- Copy-paste of the above -->
  <event name="NEBULA_EXIT_RADIKAL">
 	<loadEvent seeded="false">EXIT_RADIKAL_PART2</loadEvent>
@@ -3087,9 +3160,122 @@ REFS MV v5.5.1:
 
 <instantEscape/>		This is how non-player ships instantly jump out.
 
+<ship name="SHIP_PIRATE_ELITE_STARGROVE" auto_blueprint="LIST_SHIPS_PIRATE_ELITE_ALL">
+	<surrender  chance="0.4" min="2" max="3" load="SURRENDER_PIRATE"/>
+	<escape  chance="0.3" min="3" max="4" load="ESCAPE_PIRATE"/>
+	<gotaway load="GOTAWAY_PIRATE"/>
+	<destroyed load="DESTROYED_PIRATE_ELITE"/>
+	<deadCrew load="DEAD_CREW_PIRATE_ELITE"/>
+	<weaponOverride count="1">
+		<name>LIST_WEAPONS_UNFAIR</name>
+	</weaponOverride>
+</ship>
+
+HOW TO HAVE MULTIPLE ENEMY HP THRESHOLD EVENTS (kleptocracy sector Pleasure Barge):
+<ship name="SHIP_PLEASURE_BARGE" auto_blueprint="MU_PLEASURE_BARGE">
+	<escape min="6" max="7" timer="80">
+		<text>As you continue your assault on the barge, you notice several life pods dispensing from the vessel! It appears the civilians are attempting to escape. Meanwhile, the Pleasure Barge begins to charge its engines.</text>
+		<choice hidden="true">
+			<text>Keep firing!</text>
+			<event/>
+		</choice>
+		<choice hidden="true">
+			<text>Cease attacking and pick up some of the pods.</text>
+			<event>
+				<text>You abandon the barge and scoop up some of the lifepods. It seems you've lucked out once again with your find... this pod contains a Slug Saboteur!</text>
+				<ship hostile="false"/>
+				<choice>
+					<text>They're at our mercy. Force them to serve on the ship.</text>
+					<event>
+						<crewMember amount="1" class="slug_saboteur"/>
+					</event>
+				</choice>
+				<choice>
+					<text>Force them to surrender all they have in return for their lives.</text>
+					<event>
+						<autoReward level="HIGH">augment</autoReward>
+					</event>
+				</choice>
+			</event>
+		</choice>
+	</escape>
+	<surrender min="1" max="2">
+		<text>You receive a hail from the captain of the pleasure barge. "Pleasssse, there are sssso many innocent people on thisss ssship. I will give you everything, jussst do not kill usss!"</text>
+		<choice>
+			<text>Agree to their surrender.</text>
+			<event>
+				<text>"Ok, ok! I will beam the ssssuppliesss over now."</text>
+				<ship hostile="false"/>
+				<autoReward level="HIGH">standard</autoReward>
+				<variable name="ach_boss_pleasurebarge" op="set" val="1"/>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Your offer does not interest us. Is this the best you can do?</text>
+			<event>
+				<text>"Ok! I sssaid I will give you everything! I will ssserve on your sssship, how doesss thisss ssound?"</text>
+				<choice>
+					<text>Agree to his new surrender.</text>
+					<event>
+						<text>The Slug teleports over, reluctant to work among you but realizing it's the only way to save the civilians from your wrath.</text>
+						<ship hostile="false"/>
+						<crewMember amount="1" pilot="2" class="slug_saboteur"/>
+						<variable name="ach_boss_pleasurebarge" op="set" val="1"/>
+					</event>
+				</choice>
+				<choice hidden="true">
+					<text>You have to think bigger, grander! Think of what is at stake.</text>
+					<event>
+						<text>"Fine! Take the entire sssship! I don't care. Jussst let ussss all go."</text>
+						<choice hidden="true">
+							<text>Now that's an offer we can't refuse.</text>
+							<event>
+								<text>The rest of the civilians clear out of the pleasure barge. You raze the interior, salvaging as much as you can. It would be a shame to let this ship go to waste. You reprogram the ship's FTL drive to direct the ship back to the nearest Federation base, where it will be scanned and rebuilt for future Multiverse travelers.</text>
+								<ship hostile="false"/>
+								<drone name="BUTLER_DEFENSE"/>
+								<autoReward level="HIGH">stuff</autoReward>
+								<variable name="ach_boss_pleasurebarge" op="set" val="1"/>
+								<unlockCustomShip silent="false">PLAYER_SHIP_PLEASURE</unlockCustomShip>
+							</event>
+						</choice>
+						<choice hidden="true">
+							<text>We will not accept your surrender.</text>
+							<event/>
+						</choice>
+					</event>
+				</choice>
+			</event>
+		</choice>
+	</surrender>
+	<destroyed>
+		<text>The Pleasure Barge explodes, scattering debris and the corpses of dozens of civilian Slugs. You salvage the debris, of which there is quite a decent portion of.</text>
+		<autoReward level="HIGH">scrap_only</autoReward>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event>
+				<text>As you fly away, you spot a single life-pod that survived the explosion. Inside is a slave who was forced to work aboard the barge. Now free, they join your crew.</text>
+				<crewMember amount="1"/>
+				<variable name="ach_boss_pleasurebarge" op="set" val="1"/>
+			</event>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>You have emptied the barge entirely of its crew. As you move about salvaging what you can, you also come across an odd drone blueprint and plenty of resources.</text>
+		<autoReward level="HIGH">stuff</autoReward>
+		<drone name="BUTLER_DEFENSE"/>
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event>
+				<text>The ship is eerily quiet. You've done a proficient job of clearing out the crew, and it would be a shame to let it go to waste. You reprogram the ship's FTL drive to direct the ship back to the nearest Federation base, where it will be scanned and rebuilt for future Multiverse travelers.</text>
+				<variable name="ach_boss_pleasurebarge" op="set" val="1"/>
+				<unlockCustomShip silent="false">PLAYER_SHIP_PLEASURE</unlockCustomShip>
+			</event>
+		</choice>
+	</deadCrew>
+</ship>
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////				REFS v5.2.3
+/////////////////////////////////				REFS v5.2.3 (to be updated)
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 From events_gb (ghostbusters ship)

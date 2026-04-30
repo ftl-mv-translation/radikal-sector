@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!-- HOW TO READ
+In animSheet's fw and fh, f stands for "frame". w is "width" and h "height" ofc.
+The x and y coordinates in sheets are SPRITES not pixels, starting BOTTOM LEFT. x horizontal, y vertical.
+-->
+
+<!-- **************************************************************************************************************
+				BUFFS
+**************************************************************************************************************-->
+
+<!-- REF MV v5.5.1
+<animSheet name="energy_shield_buff" w="35" h="35" fw="35" fh="35">people/energy_shield_buff.png</animSheet>
+<anim name="energy_shield_buff">
+	<sheet>energy_shield_buff</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim> -->
+<animSheet name="rk_lead_titans_buff" w="35" h="35" fw="35" fh="35">people/rk_lead_titans_buff.png</animSheet>
+<anim name="rk_lead_titans_buff">
+	<sheet>rk_lead_titans_buff</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
 <!-- **************************************************************************************************************
 				CREW
 **************************************************************************************************************-->
 
-
-<!-- RADIKAL OPERATIVE SOLDIER -->
+<!-- RADIKAL MYSTERIOUS OPERATIVE SOLDIER -->
 <FTL>
 <animSheet name="human_soldier_operative" w="315" h="455" fw="35" fh="35">people/human_soldier_operative_base.png</animSheet>
 <anim name="human_soldier_operative_clone">
@@ -125,6 +147,127 @@
 </anim>
 <anim name="human_soldier_operative_portrait">
 	<sheet>human_soldier_operative</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+</FTL>
+
+<!-- RK_WEAPONLIKE based on technoboarderion aka "Technopath morph imitating an ion boarder drone."
+TODO: recolor the sprites and rename all necessary below this line. 
+-->
+<FTL>
+<animSheet name="rk_weaponlike_charge" w="175" h="35" fw="35" fh="35">people/rk_weaponlike_charge.png</animSheet>
+<anim name="rk_weaponlike_charge">
+	<sheet>rk_weaponlike_charge</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.5</time>
+</anim>
+
+<animSheet name="rk_weaponlike" w="210" h="245" fw="35" fh="35">people/rk_weaponlike_base.png</animSheet>
+<anim name="rk_weaponlike_shoot_down">
+	<sheet>rk_weaponlike</sheet>
+	<desc length="2" x="0" y="6"/>
+	<time>1.5</time>
+</anim>
+<anim name="rk_weaponlike_shoot_right">
+	<sheet>rk_weaponlike</sheet>
+	<desc length="2" x="2" y="6"/>
+	<time>1.5</time>
+</anim>
+<anim name="rk_weaponlike_shoot_up">
+	<sheet>rk_weaponlike</sheet>
+	<desc length="2" x="0" y="5"/>
+	<time>1.5</time>
+</anim>
+<anim name="rk_weaponlike_shoot_left">
+	<sheet>rk_weaponlike</sheet>
+	<!-- <desc length="2" x="0" y="5"/> -->
+	 <desc length="2" x="2" y="5"/>
+	<time>1.5</time>
+</anim>
+
+<anim name="rk_weaponlike_punch_down">
+	<sheet>rk_weaponlike</sheet>
+	<desc length="2" x="0" y="6"/>
+	<time>1.5</time>
+</anim>
+<anim name="rk_weaponlike_punch_right">
+	<sheet>rk_weaponlike</sheet>
+	<desc length="2" x="2" y="6"/>
+	<time>1.5</time>
+</anim>
+<anim name="rk_weaponlike_punch_up">
+	<sheet>rk_weaponlike</sheet>
+	<desc length="2" x="0" y="5"/>
+	<time>1.5</time>
+</anim>
+<anim name="rk_weaponlike_punch_left">
+	<sheet>rk_weaponlike</sheet>
+	<desc length="2" x="0" y="5"/>
+	<time>1.5</time>
+</anim>
+<!-- <anim name="rk_weaponlike_death_right">
+	<sheet>rk_weaponlike</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+Below, modified sheet to accomodate added projectile.
+-->
+<anim name="rk_weaponlike_death_right">
+	<sheet>rk_weaponlike</sheet>
+	<desc length="4" x="2" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="rk_weaponlike_teleport">
+	<sheet>rk_weaponlike</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.5</time>
+</anim>
+<anim name="rk_weaponlike_walk_down">
+	<sheet>rk_weaponlike</sheet>
+	<desc length="4" x="0" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="rk_weaponlike_walk_right">
+	<sheet>rk_weaponlike</sheet>
+	<desc length="2" x="4" y="2"/>
+	<time>0.5</time>
+</anim>
+<anim name="rk_weaponlike_walk_up">
+	<sheet>rk_weaponlike</sheet>
+	<desc length="4" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="rk_weaponlike_walk_left">
+	<sheet>rk_weaponlike</sheet>
+	<desc length="2" x="4" y="1"/>
+	<time>0.5</time>
+</anim>
+
+<!-- custom: First frame of shooting anims -->
+<anim name="rk_weaponlike_type_down">
+	<sheet>rk_weaponlike</sheet>
+	<desc length="1" x="0" y="6"/>
+	<time>0.75</time>
+</anim>
+<anim name="rk_weaponlike_type_right">
+	<sheet>rk_weaponlike</sheet>
+	<desc length="1" x="2" y="6"/>
+	<time>0.75</time>
+</anim>
+<anim name="rk_weaponlike_type_up">
+	<sheet>rk_weaponlike</sheet>
+	<desc length="1" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="rk_weaponlike_type_left">
+	<sheet>rk_weaponlike</sheet>
+	<desc length="1" x="2" y="5"/>
+	<time>0.75</time>
+</anim>
+
+<anim name="rk_weaponlike_portrait">
+	<sheet>rk_weaponlike</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>1</time>
 </anim>
@@ -272,7 +415,6 @@
 **************************************************************************************************************-->
 <FTL>
 <!--
-In animSheet's fw and fh, f stands for "frame."
 
 TODO : 
 .

@@ -4182,10 +4182,10 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 
 <event name="DJMOD_HACK_FLEET">
 	<text>Are you sure you want to do this?
-	[Attempt special hacking to delay the fleet, cancelled by dealing more than 2 hull damage. Needs 17 seconds. Uses 2 |]</text>
+	[Attempt special hacking to delay the fleet, cancelled by dealing more than 2 hull damage.]</text>
 	
 	<!-- Choice hiding based on system presence and level WORKS! use as reference. -->
-	<choice req="hacking" lvl="0" max_lvl="0" hidden="true" blue="false">
+	<!-- <choice req="hacking" lvl="0" max_lvl="0" hidden="true" blue="false">
 		<text>This requires a level 2 Hacking system installed on your ship.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
@@ -4193,10 +4193,45 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 	<choice req="hacking" max_lvl="1" hidden="true" blue="false">
 		<text>Your hacking system is too weak.</text>
 		<event load="OPTION_INVALID"/>
-	</choice>
+	</choice> -->
 	
+	<choice hidden="true">
+		<text>Yes, free 17 seconds hack.</text>
+		<event>
+			<text>You activate the augment...</text>
+			
+			<choice>
+				<text>Continue...</text>
+				<event load="DJMOD_HACK_FLEET_TIMER_START"/>
+			</choice>
+		</event>
+	</choice>
+
+	<!-- <choice hidden="true" req="hacking" lvl="2" max_lvl="2"> -->
+	<choice hidden="true" req="hacking" lvl="0" max_lvl="0">
+		<text>Install a Hacking system for more options.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+
+	<choice req="hacking" lvl="1" hidden="true" blue="true">
+		<text>(Hacking level 1, 1|) 16 seconds hack.</text>
+		<event>
+			<text>You activate the augment...</text>
+			<item_modify>
+				<item type="drones" min="-1" max="-1"/>
+			</item_modify>
+			
+			<status type="loss" target="player" system="hacking" amount="1"/>
+			
+			<choice>
+				<text>Continue...</text>
+				<event load="DJMOD_HACK_FLEET_TIMER_START_BONUS1"/>
+			</choice>
+		</event>
+	</choice>
+
 	<choice req="hacking" lvl="2" hidden="true" blue="true">
-		<text>(Hacking level 2) Yes</text>
+		<text>(Hacking level 2, 2|) 14 seconds hack.</text>
 		<event>
 			<text>You activate the augment...</text>
 			<item_modify>
@@ -4207,7 +4242,30 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 			
 			<choice>
 				<text>Continue...</text>
-				<event load="DJMOD_HACK_FLEET_TIMER_START"/>
+				<event load="DJMOD_HACK_FLEET_TIMER_START_BONUS2"/>
+			</choice>
+		</event>
+	</choice>
+
+	<!-- <choice hidden="true" req="hacking" lvl="2" max_lvl="2"> -->
+	<choice hidden="true" req="hacking" lvl="1" max_lvl="2">
+		<text>You need a stronger Hacking system for more options.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+
+	<choice req="hacking" lvl="3" hidden="true" blue="true">
+		<text>(Hacking level 3, 3|) 10 seconds hack.</text>
+		<event>
+			<text>You activate the augment...</text>
+			<item_modify>
+				<item type="drones" min="-3" max="-3"/>
+			</item_modify>
+			
+			<status type="loss" target="player" system="hacking" amount="3"/>
+			
+			<choice>
+				<text>Continue...</text>
+				<event load="DJMOD_HACK_FLEET_TIMER_START_BONUS3"/>
 			</choice>
 		</event>
 	</choice>
@@ -4235,13 +4293,11 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 		</triggeredEventBox>
 		<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
 	</triggeredEvent>
-	
 	<triggeredEvent event="DJMOD_HACK_FLEET_STOP" thisFight="true">
 		<enemyDamage amount="3" countRepairs="true"/>
 	</triggeredEvent>
-	
+
 	<playSound>dj_hackingZap2</playSound>
-	
 	<choice>
 		<text>Continue to the fight!</text>
 		<event/>
@@ -4260,7 +4316,7 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 </event>
 
 <eventList name="DJMOD_HACK_FLEET_OUTCOMES">
-	<!-- Total good = -17 fleet chances / 13 -->
+	<!-- Total good = -13 fleet chances / 12 -->
 	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
 	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
 	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
@@ -4271,12 +4327,12 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
 	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
 	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
 
 	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
-	<!-- Total bad = +2 fleet chances / 7 -->
+	<!-- Total bad = +3 fleet chances / 8 -->
 	<event load="DJMOD_HACK_FLEET_OUTCOME_NEUTRAL"/>
 	<event load="DJMOD_HACK_FLEET_OUTCOME_NEUTRAL"/>
 	<event load="DJMOD_HACK_FLEET_OUTCOME_NEUTRAL"/>
@@ -4285,8 +4341,206 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 	
 	<event load="DJMOD_HACK_FLEET_OUTCOME_BAD"/>
 	<event load="DJMOD_HACK_FLEET_OUTCOME_BAD"/>
-	<!-- Average = -15 fleet chances / 20 = 75% success -->
+	<event load="DJMOD_HACK_FLEET_OUTCOME_BAD"/>
+	<!-- Average = -10 fleet chances / 20 = 50% delaying, 60% good outcomes -->
 </eventList>
+
+
+<event name="DJMOD_HACK_FLEET_TIMER_START_BONUS1">
+	<text>You start breaking into the enemy's comms. Now survive without damaging the enemy's hull too much...</text>
+	
+	<triggeredEvent event="DJMOD_HACK_FLEET_TIMER_END_BONUS1" time="16" thisFight="true"> <!--intended delay is 17s-->
+		<triggeredEventBox load="DEFAULT_SMALL">
+			<image r="255" g="50" b="255" a="0.6"/>
+			<image2  r="255" g="50" b="255" a="0.6"/>
+			<tooltip>The fleet delaying hack succeeds or fails in this amount of time. Cancelled if you deal 3 hull damage.</tooltip>
+		</triggeredEventBox>
+		<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
+	</triggeredEvent>
+	<triggeredEvent event="DJMOD_HACK_FLEET_STOP" thisFight="true">
+		<enemyDamage amount="3" countRepairs="true"/>
+	</triggeredEvent>
+
+	<playSound>dj_hackingZap2</playSound>
+	<choice>
+		<text>Continue to the fight!</text>
+		<event/>
+	</choice>
+</event>
+<event name="DJMOD_HACK_FLEET_TIMER_END_BONUS1">
+	<text>The process is complete!</text>
+	<clearTriggeredEvent name="DJMOD_HACK_FLEET_STOP"/>
+	
+	<status type="clear" target="player" system="hacking" amount="100"/>
+	
+	<choice hidden="true">
+		<text> Let's see if it worked...</text>
+		<event load="DJMOD_HACK_FLEET_OUTCOMES_BONUS1"/>
+	</choice>
+</event>
+
+<eventList name="DJMOD_HACK_FLEET_OUTCOMES_BONUS1">
+	<!-- Total good = -16 fleet chances / 14 -->
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
+	<!-- Total bad = +2 fleet chances / 6 -->
+	<event load="DJMOD_HACK_FLEET_OUTCOME_NEUTRAL"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_NEUTRAL"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_NEUTRAL"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_NEUTRAL"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_NEUTRAL"/>
+	
+	<event load="DJMOD_HACK_FLEET_OUTCOME_BAD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_BAD"/>
+	<!-- Average = -14 fleet chances / 20 = 70% delaying, 70% good outcomes -->
+</eventList>
+
+
+<event name="DJMOD_HACK_FLEET_TIMER_START_BONUS2">
+	<text>You start breaking into the enemy's comms. Now survive without damaging the enemy's hull too much...</text>
+	
+	<triggeredEvent event="DJMOD_HACK_FLEET_TIMER_END_BONUS2" time="14" thisFight="true"> <!--intended delay is 17s-->
+		<triggeredEventBox load="DEFAULT_SMALL">
+			<image r="255" g="50" b="255" a="0.6"/>
+			<image2  r="255" g="50" b="255" a="0.6"/>
+			<tooltip>The fleet delaying hack succeeds or fails in this amount of time. Cancelled if you deal 3 hull damage.</tooltip>
+		</triggeredEventBox>
+		<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
+	</triggeredEvent>
+	<triggeredEvent event="DJMOD_HACK_FLEET_STOP" thisFight="true">
+		<enemyDamage amount="3" countRepairs="true"/>
+	</triggeredEvent>
+
+	<playSound>dj_hackingZap2</playSound>
+	<choice>
+		<text>Continue to the fight!</text>
+		<event/>
+	</choice>
+</event>
+<event name="DJMOD_HACK_FLEET_TIMER_END_BONUS2">
+	<text>The process is complete!</text>
+	<clearTriggeredEvent name="DJMOD_HACK_FLEET_STOP"/>
+	
+	<status type="clear" target="player" system="hacking" amount="100"/>
+	
+	<choice hidden="true">
+		<text> Let's see if it worked...</text>
+		<event load="DJMOD_HACK_FLEET_OUTCOMES_BONUS2"/>
+	</choice>
+</event>
+
+<eventList name="DJMOD_HACK_FLEET_OUTCOMES_BONUS2">
+	<!-- Total good = -19 fleet chances / 16 -->
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
+	
+	<event load="DJMOD_HACK_FLEET_OUTCOME_BOSS"/>
+	<!-- Total bad = +1 fleet chances / 4 -->
+	<event load="DJMOD_HACK_FLEET_OUTCOME_NEUTRAL"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_NEUTRAL"/>
+	
+	<event load="DJMOD_HACK_FLEET_OUTCOME_BAD"/>
+	<!-- Average = -18 fleet chances / 20 = 90% delaying, 80% good outcomes, 5% BOSS -->
+</eventList>
+
+
+<event name="DJMOD_HACK_FLEET_TIMER_START_BONUS3">
+	<text>You start breaking into the enemy's comms. Now survive without damaging the enemy's hull too much...</text>
+	
+	<triggeredEvent event="DJMOD_HACK_FLEET_TIMER_END_BONUS3" time="10" thisFight="true"> <!--intended delay is 17s-->
+		<triggeredEventBox load="DEFAULT_SMALL">
+			<image r="255" g="50" b="255" a="0.6"/>
+			<image2  r="255" g="50" b="255" a="0.6"/>
+			<tooltip>The fleet delaying hack succeeds or fails in this amount of time. Cancelled if you deal 3 hull damage.</tooltip>
+		</triggeredEventBox>
+		<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
+	</triggeredEvent>
+	<triggeredEvent event="DJMOD_HACK_FLEET_STOP" thisFight="true">
+		<enemyDamage amount="3" countRepairs="true"/>
+	</triggeredEvent>
+
+	<playSound>dj_hackingZap2</playSound>
+	<choice>
+		<text>Continue to the fight!</text>
+		<event/>
+	</choice>
+</event>
+<event name="DJMOD_HACK_FLEET_TIMER_END_BONUS3">
+	<text>The process is complete!</text>
+	<clearTriggeredEvent name="DJMOD_HACK_FLEET_STOP"/>
+	
+	<status type="clear" target="player" system="hacking" amount="100"/>
+	
+	<choice hidden="true">
+		<text> Let's see if it worked...</text>
+		<event load="DJMOD_HACK_FLEET_OUTCOMES_BONUS3"/>
+	</choice>
+</event>
+
+<eventList name="DJMOD_HACK_FLEET_OUTCOMES_BONUS3">
+	<!-- Total good = -21 fleet chances / 18 -->
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
+	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
+	
+	<event load="DJMOD_HACK_FLEET_OUTCOME_BOSS"/>
+	<!-- Total bad = +1 fleet chances / 2 -->
+	<event load="DJMOD_HACK_FLEET_OUTCOME_NEUTRAL"/>
+	
+	<event load="DJMOD_HACK_FLEET_OUTCOME_BAD"/>
+	<!-- Average = -20 fleet chances / 20 = 100% delaying 90% good outcomes, 5% BOSS -->
+</eventList>
+
+
 <event name="DJMOD_HACK_FLEET_OUTCOME_GOOD_CRITICAL">
 	<text>Hehe, they really bought it! This hack gives us a solid advance.</text>
 	<modifyPursuit amount="-2"/>
@@ -4318,20 +4572,182 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 		<event/>
 	</choice>
 </event>
+<event name="DJMOD_HACK_FLEET_OUTCOME_BOSS">
+	<text>This hack should have, but didn't delay the fleet... 
+		Someone interfered, and sent us strange coordinates with this attached: "N00bs!!1!".</text>
+	<quest event="RK_HACK_FLEET_BOSS"/>
+
+	<choice>
+		<text>Weird, but we'll deal with that later. Continue to the fight!</text>
+		<event/>
+	</choice>
+</event>
 
 <event name="DJMOD_HACK_FLEET_STOP">
 	<text>Excess damage to the enemy's hull ruined our hacking attempt to delay the rebel fleet. These things require subtlety!</text>
 	<clearTriggeredEvent name="DJMOD_HACK_FLEET_TIMER_END"/>
+	<clearTriggeredEvent name="DJMOD_HACK_FLEET_TIMER_END_BONUS1"/>
+	<clearTriggeredEvent name="DJMOD_HACK_FLEET_TIMER_END_BONUS2"/>
+	<clearTriggeredEvent name="DJMOD_HACK_FLEET_TIMER_END_BONUS3"/>
 	
 	<status type="clear" target="player" system="hacking" amount="100"/>
 	
 	<choice>
-		<text>Such a waste. But continue to the fight!</text>
+		<text>What a waste. But continue to the fight!</text>
 		<event/>
 	</choice>
 </event>
 
 
+<event name="RK_HACK_FLEET_BOSS">
+	<preventQuest/>
+	<preventFleet/>
+	<quest>
+		<nebulaBeacon>false</nebulaBeacon>
+		<aggressive>2</aggressive>			<!-- what does that even do? -->
+	</quest>
+	<beaconType id="map_icon_rk_hack_fleet_boss" global="true">
+		<color r="255" g="245" b="175" a="1.0"/>
+		<unvisitedTooltip>Someone dangerous enough to stop a strong RK Enigmashin hack dares you to come!</unvisitedTooltip>
+	</beaconType>
+	
+	<text>A very mean-looking elite rebel ship is here. Its captain is staring you down.
+
+		"When i heard someone was playing games with the fleet's comms, I knew i had to meet the fool! And here you are, noobs!
+		Let me show you how it's done! And then you die."
+	</text>
+	<ship load="SHIP_RK_HACK_FLEET_BOSS" hostile="false"/>
+
+	<choice>
+		<text>A challenge, then? Let's go!</text>
+		<event>
+			<text>The vicious smile on the enemy captain's face widens. "Nyahaha, Here's a taste!"
+				You immediately notice malfunctions in many of your ship's systems! They must be using a combat augment! You probably expected that a hacker ship wouldn't play fair, but if you didn't, it might be time to consider a quick escape.</text>
+			<status type="loss" target="player" system="engines" amount="1"/>
+			<status type="loss" target="player" system="pilot" amount="1"/>
+			<status type="loss" target="player" system="shields" amount="1"/>
+			<status type="loss" target="player" system="weapons" amount="1"/>
+			<ship hostile="true"/>
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+
+			<choice req="ANTI_VIRUS" hidden="true">
+				<text>(Anti-Virus) Restore your systems.</text>
+				<event>
+					<text>Your systems are restored to full power.</text>
+					<status type="clear" target="player" system="engines" amount="100"/>
+					<status type="clear" target="player" system="pilot" amount="100"/>
+					<status type="clear" target="player" system="shields" amount="100"/>
+					<status type="clear" target="player" system="weapons" amount="100"/>
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+
+	<choice>
+		<text>We have learned our lesson, we beg you to let us go!</text>
+		<event>
+			<item_modify>
+				<item type="scrap" min="-75" max="-75"/>
+			</item_modify>
+		</event>
+	</choice>
+</event>
+
+<!-- Use and reward BEAM_HACK -->
+<ship name="SHIP_RK_HACK_FLEET_BOSS" auto_blueprint="RK_HACK_FLEET_BOSS_MFK">
+	<surrender min="6" max="7">
+		<text>"Playing tough huh! How do you like this?"
+			Stronger malfunctions affect your ship's systems!</text>
+		<status type="loss" target="player" system="engines" amount="2"/>
+		<status type="loss" target="player" system="pilot" amount="2"/>
+		<status type="loss" target="player" system="shields" amount="3"/>
+		<status type="loss" target="player" system="weapons" amount="2"/>
+
+		<status type="loss" target="player" system="cloaking" amount="1"/>
+		<status type="loss" target="player" system="drones" amount="1"/>
+		<!-- <status type="loss" target="player" system="hacking" amount="1"/> -->
+		<status type="loss" target="player" system="oxygen" amount="1"/>
+		<ship hostile="true"/>
+		
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event/>
+		</choice>
+
+		<choice req="ANTI_VIRUS" hidden="true">
+			<text>(Anti-Virus) Restore your systems.</text>
+			<event>
+				<text>Your systems are restored to full power.</text>
+				<status type="clear" target="player" system="engines" amount="100"/>
+				<status type="clear" target="player" system="pilot" amount="100"/>
+				<status type="clear" target="player" system="shields" amount="100"/>
+				<status type="clear" target="player" system="weapons" amount="100"/>
+
+				<status type="clear" target="player" system="cloaking" amount="100"/>
+				<status type="clear" target="player" system="drones" amount="100"/>
+				<!-- <status type="clear" target="player" system="hacking" amount="100"/> -->
+				<status type="clear" target="player" system="oxygen" amount="100"/>
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event/>
+				</choice>
+			</event>
+		</choice>
+	</surrender>
+	<destroyed>
+		<text>The hacker MFK breaks apart and you quickly salvage what you can. You find a very peculiar weapon!</text>
+		<status type="clear" target="player" system="engines" amount="100"/>
+		<status type="clear" target="player" system="pilot" amount="100"/>
+		<status type="clear" target="player" system="shields" amount="100"/>
+		<status type="clear" target="player" system="weapons" amount="100"/>
+
+		<status type="clear" target="player" system="cloaking" amount="100"/>
+		<status type="clear" target="player" system="drones" amount="100"/>
+		<!-- <status type="clear" target="player" system="hacking" amount="100"/> -->
+		<status type="clear" target="player" system="oxygen" amount="100"/>
+
+		<autoReward level="MED">standard</autoReward>
+		<weapon name="BEAM_HACK"/>
+		
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can from the hacker MFK ship. You find a very peculiar weapon!</text>
+		<status type="clear" target="player" system="engines" amount="100"/>
+		<status type="clear" target="player" system="pilot" amount="100"/>
+		<status type="clear" target="player" system="shields" amount="100"/>
+		<status type="clear" target="player" system="weapons" amount="100"/>
+
+		<status type="clear" target="player" system="cloaking" amount="100"/>
+		<status type="clear" target="player" system="drones" amount="100"/>
+		<!-- <status type="clear" target="player" system="hacking" amount="100"/> -->
+		<status type="clear" target="player" system="oxygen" amount="100"/>
+
+		<autoReward level="HIGH">standard</autoReward>
+		<weapon name="BEAM_HACK"/>
+
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event/>
+		</choice>
+	</deadCrew>
+
+	<crew>
+		<crewMember type="human_mfk" prop="0.5"/>
+		<crewMember type="human_soldier" prop="0.5"/>
+	</crew>
+</ship>
 
 <!--
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -5138,14 +5554,6 @@ REFS Darkest Desires for MV 5.5.1
 
 
 <mod:findName type="event" name="STORAGE_CHECK_INVENTORY_UPGRADES">
-	<mod-append:choice hidden="true" req="INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE" lvl="1" blue="false">
-		<text>Mind Heater [Installed]</text>
-		<event load="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL"/>
-	</mod-append:choice>
-	<mod-append:choice hidden="true" req="INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE" lvl="0" max_lvl="0" blue="false">
-		<text>Mind Heater [Not Installed]</text>
-		<event load="OPTION_INVALID"/>
-	</mod-append:choice>
 
 	<mod-append:choice hidden="true" req="INTERNAL_DJMOD_DEMICLONER" lvl="1" blue="false">
 		<text>Demicloners [Installed]</text>
@@ -5155,20 +5563,30 @@ REFS Darkest Desires for MV 5.5.1
 		<text>Demicloners [Not Installed]</text>
 		<event load="OPTION_INVALID"/>
 	</mod-append:choice>
+
+	<mod-append:choice hidden="true" req="INTERNAL_DJMOD_MC_PARALYZER" lvl="1" blue="false">
+		<text>Mind Cooler [Installed]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="INTERNAL_DJMOD_MC_PARALYZER" lvl="0" max_lvl="0" blue="false">
+		<text>Mind Cooler [Not Installed]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+
+	<mod-append:choice hidden="true" req="INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE" lvl="1" blue="false">
+		<text>Mind Heater [Installed]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE" lvl="0" max_lvl="0" blue="false">
+		<text>Mind Heater [Not Installed]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+
 </mod:findName>
 
 
 <event name="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL">
 	<text>What upgrade do you want to install?</text>
-	
-	<choice req="INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE" lvl="1" blue="false" hidden="true">
-		<text>RK Scorch "Mind Heater": In fire, your crew are immune to Mind Control and stunned 50% shorter, on both ships. [ALREADY INSTALLED]</text>
-		<event load="OPTION_INVALID"/>
-	</choice>
-	<choice req="INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE" lvl="0" max_lvl="0" blue="false" hidden="true">
-		<text>Mind Heater. [Cost: 25~, 1{]</text>
-		<event load="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE"/>
-	</choice>
 
 	<choice req="INTERNAL_DJMOD_DEMICLONER" lvl="1" blue="false" hidden="true">
 		<text>RK Punk "Demicloners": With no Clonebay, your dying crew resurrect as a lesser version (Soldier = default Human, etc.)
@@ -5177,8 +5595,27 @@ REFS Darkest Desires for MV 5.5.1
 		<event load="OPTION_INVALID"/>
 	</choice>
 	<choice req="INTERNAL_DJMOD_DEMICLONER" lvl="0" max_lvl="0" blue="false" hidden="true">
-		<text>Demicloners. [Cost: 50~, 1{]</text>
+		<text>Demicloners. [Cost: 35~, 2|]</text>
 		<event load="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER"/>
+	</choice>
+
+	<choice req="INTERNAL_DJMOD_MC_PARALYZER" lvl="1" blue="false" hidden="true">
+		<text>RK Punk "Mind Cooler": When under the effects of Mind Control, your crew cannot fight, sabotage, or teleport away. Works on both ships. [ALREADY INSTALLED]</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="INTERNAL_DJMOD_MC_PARALYZER" lvl="0" max_lvl="0" blue="false" hidden="true">
+		<text>Mind Cooler. [Cost: 30~, 1|]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER"/>
+	</choice>
+	
+
+	<choice req="INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE" lvl="1" blue="false" hidden="true">
+		<text>RK Scorch "Mind Heater": In fire, your crew are immune to Mind Control and stunned 50% shorter, on both ships. [ALREADY INSTALLED]</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE" lvl="0" max_lvl="0" blue="false" hidden="true">
+		<text>Mind Heater. [Cost: 25~, 1{]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE"/>
 	</choice>
 
 	<choice>
@@ -5199,41 +5636,6 @@ REFS Darkest Desires for MV 5.5.1
 	</mod-append:choice>
 </mod:findName> -->
 
-<!-- <event name="STORAGE_CHECK_SYSTEM_TECH_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE"> -->
-<event name="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE">
-	<text>You are about to install the Mind Heater upgrade.
-	[Effects: In fire, your crew are immune to Mind Control and stunned 50% shorter, on both ships.]</text>
-	
-	<!-- <choice req="DJMOD_HAS_RADIKAL_SCORCH_GEAR" lvl="0" max_lvl="0" max_group="0" blue="false" hidden="true"> -->
-	<choice req="DJMOD_HAS_RADIKAL_SCORCH_GEAR" lvl="0" max_lvl="0" blue="false" hidden="true">
-		<text>This upgrade is unavailable. You need any RadiKal Scorch (or BPS) weapon or augment.</text>
-		<event load="OPTION_INVALID"/>
-	</choice>
-	<!-- <choice req="DJMOD_HAS_RADIKAL_SCORCH_GEAR" lvl="1" max_group="0" blue="false" hidden="true"> -->
-	<choice req="DJMOD_HAS_RADIKAL_SCORCH_GEAR" lvl="1" blue="false" hidden="true">
-		<text>Perform the upgrade. [Cost: 25~, 1{]</text>
-		<event>
-			<text>You install the upgrade.</text>
-			<item_modify>
-				<item type="scrap" min="-25" max="-25"/>
-				<item type="fuel" min="-1" max="-1"/>
-			</item_modify>
-			<choice hidden="true">
-				<text>Continue...</text>
-				<event load="INSTALL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE"/>
-			</choice>
-		</event>
-	</choice>
-	<choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true">
-		<text>Nevermind.</text>
-		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
-	</choice>
-</event>
-<event name="INSTALL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE">
-	<variable name="loc_internal_upgrades" op="add" val="1"/>
-	<hiddenAug>INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE</hiddenAug>
-	<loadEvent>STORAGE_CHECK_SYSTEM</loadEvent>
-</event>
 
 <!-- REF MV v5.5.1
 <event name="STORAGE_CHECK_SYSTEM_TECH_SEALANT">
@@ -5270,7 +5672,7 @@ REFS Darkest Desires for MV 5.5.1
 	</choice>
 -->
 <event name="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER">
-	<text>You are about to install the Demicloner upgrade.
+	<text>You are about to install the Demicloners upgrade.
 	[Effects: The RadiKal Punk infused these backpack-clonebay prototypes with dark energies. These try to resurrect your crew if they die (not in events) when you don't have a real Clonebay.
 		At best, crew resurrect as their own lesser version (Soldier = default Human, etc.) If no lesser version exists, they become Morphs. When Morphs die, nothing happens.]
 	</text>
@@ -5288,17 +5690,17 @@ REFS Darkest Desires for MV 5.5.1
 	</choice>
 	
 	<choice req="DJMOD_HAS_RADIKAL_PUNK_GEAR" lvl="0" max_lvl="0" blue="false" hidden="true">
-		<text>This upgrade is unavailable. You need any RadiKal Punk (or BPS) weapon or augment.</text>
+		<text>This upgrade is unavailable. You need any RadiKal Punk (or BPS) weapon/augment/crew.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
 	
 	<choice req="DJMOD_HAS_RADIKAL_PUNK_GEAR" lvl="1" blue="false" hidden="true">
-		<text>Perform the upgrade. [Cost: 50~, 1{]</text>
+		<text>Perform the upgrade. [Cost: 35~, 2|]</text>
 		<event>
 			<text>You install the upgrade.</text>
 			<item_modify>
-				<item type="scrap" min="-50" max="-50"/>
-				<item type="fuel" min="-1" max="-1"/>
+				<item type="scrap" min="-35" max="-35"/>
+				<item type="drones" min="-2" max="-2"/>
 			</item_modify>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -5314,6 +5716,73 @@ REFS Darkest Desires for MV 5.5.1
 <event name="INSTALL_INTERNAL_DJMOD_DEMICLONER">
 	<variable name="loc_internal_upgrades" op="add" val="1"/>
 	<hiddenAug>INTERNAL_DJMOD_DEMICLONER</hiddenAug>
+	<loadEvent>STORAGE_CHECK_SYSTEM</loadEvent>
+</event>
+
+<event name="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER">
+	<text>You are about to install the Mind Cooler upgrade.
+	[Effects: When under the effects of Mind Control, your crew cannot fight, sabotage, or teleport away. Works on both ships.]</text>
+	
+	<choice req="DJMOD_HAS_RADIKAL_PUNK_GEAR" lvl="0" max_lvl="0" blue="false" hidden="true">
+		<text>This upgrade is unavailable. You need any RadiKal Punk (or BPS) weapon/augment/crew.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="DJMOD_HAS_RADIKAL_PUNK_GEAR" lvl="1" blue="false" hidden="true">
+		<text>Perform the upgrade. [Cost: 30~, 1|]</text>
+		<event>
+			<text>You install the upgrade.</text>
+			<item_modify>
+				<item type="scrap" min="-30" max="-30"/>
+				<item type="drones" min="-1" max="-1"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="INSTALL_INTERNAL_DJMOD_MC_PARALYZER"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
+	</choice>
+</event>
+<event name="INSTALL_INTERNAL_DJMOD_MC_PARALYZER">
+	<variable name="loc_internal_upgrades" op="add" val="1"/>
+	<hiddenAug>INTERNAL_DJMOD_MC_PARALYZER</hiddenAug>
+	<loadEvent>STORAGE_CHECK_SYSTEM</loadEvent>
+</event>
+
+
+<event name="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE">
+	<text>You are about to install the Mind Heater upgrade.
+	[Effects: In fire, your crew are immune to Mind Control and stunned 50% shorter, on both ships.]</text>
+	
+	<choice req="DJMOD_HAS_RADIKAL_SCORCH_GEAR" lvl="0" max_lvl="0" blue="false" hidden="true">
+		<text>This upgrade is unavailable. You need any RadiKal Scorch (or BPS) weapon/augment/crew.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="DJMOD_HAS_RADIKAL_SCORCH_GEAR" lvl="1" blue="false" hidden="true">
+		<text>Perform the upgrade. [Cost: 25~, 1{]</text>
+		<event>
+			<text>You install the upgrade.</text>
+			<item_modify>
+				<item type="scrap" min="-25" max="-25"/>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="INSTALL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
+	</choice>
+</event>
+<event name="INSTALL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE">
+	<variable name="loc_internal_upgrades" op="add" val="1"/>
+	<hiddenAug>INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE</hiddenAug>
 	<loadEvent>STORAGE_CHECK_SYSTEM</loadEvent>
 </event>
 

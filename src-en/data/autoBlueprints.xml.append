@@ -110,6 +110,48 @@ SEE ALSO: MV's BLUELIST_CREW_NOFIRE in hyperspace.xml
 	<name>unique_turzil</name>
 </blueprintList>
 
+<blueprintList name="RK_LIST_CREW_RADIKALS">
+	<name>rk_weaponlike</name>
+	<name>rk_fireghost</name>
+</blueprintList>
+
+<!-- 
+/////////////////////////////////////////////////////////////////////////////
+For Lead Titans aug. - see MV's LIST_CREW_... in MV's autoblueprints.xml.
+LIST_CREW_CRYSTAL
+LIST_CREW_ROCK
+LIST_CREW_LANIUS
+/////////////////////////////////////////////////////////////////////////////
+ -->
+
+<blueprintList name="RK_LIST_LEAD_TITANS">
+	<name>crystal</name>
+	<name>crystal_sentinel</name>
+	<name>crystal_liberator</name>
+	<name>unique_ruwen</name>
+	<name>unique_dianesh</name>
+
+	<name>rock</name>
+	<name>unique_symbiote</name>
+	<name>rock_commando</name>
+	<name>rock_crusader</name>
+	<name>rock_paladin</name>
+	<name>rock_elder</name>
+	<name>rock_outcast</name>
+	<name>rock_cultist</name>
+	<name>unique_tuco</name>
+	<name>unique_ariadne</name>
+	<name>unique_vortigon</name>
+	<name>unique_judge_wakeson</name>
+	<name>easter_brick</name>
+
+	<name>lanius</name>
+	<name>lanius_welder</name>
+	<name>lanius_augmented</name>
+	<name>unique_anointed</name>
+	<name>unique_eater</name>
+</blueprintList>
+
 <!-- 
 /////////////////////////////////////////////////////////////////////////////
 For Demicloners - see MV's LIST_CREW_ALIENS in MV's autoblueprints.xml,
@@ -361,6 +403,7 @@ Debated using a blacklist instead, to make it auto-work on modded crew, but soun
 <blueprintList name="RK_LIST_DEMICLONER_TO_DEFAULT">
 	<!-- <name>blob</name>		the final product. Not demicloned at all. -->
 	<name>unique_ooj</name>
+	<name>rk_weaponlike</name>
 
 
 	<name>beans</name>
@@ -468,6 +511,7 @@ For Demicloners End.
 <!-- For non-rares see the RK shop -->
 <blueprintList name="SHOP_ITEM_RARE_RK_AUGMENTS">
 	<name>DJMOD_CREW_ARE_BOMBS_OFF</name>
+	<name>DJMOD_LEAD_TITANS</name>
 	
 	<name>DJMOD_SUPER_DEFENDERS</name>
 	<name>DJMOD_OWN_HARMONY_ON</name>
@@ -492,6 +536,7 @@ For Demicloners End.
 	<name>DJMOD_AUG_AUTO_SYS_REPAIR</name>
 	<name>DJMOD_COMBAT_SHIPVORE_RAM</name>
 	<name>DJMOD_CREW_ARE_BOMBS_OFF</name>
+	<name>DJMOD_LEAD_TITANS</name>
 </blueprintList>
 <blueprintList name="SHOP_ITEM_RK_PUNK_AUGMENTS">
 	<name>DJMOD_COMBAT_OFFENSE_DISABLER</name>
@@ -849,8 +894,72 @@ TODO: Add hacking somewhere (via custom event-aug probably). -->
 	<aug name="DJMOD_COMBAT_SCORCH_SELF_2" />
 </shipBlueprint>
 
+<!-- 
+ENIGMASHIN BOSS based on MU_MFK_GUNBOAT.
+ -->
 
+<shipBlueprint name="RK_HACK_FLEET_BOSS_MFK" layout="mu_rebel_artillery_selite" img="mu_rebel_artillery_selite">
+	<class>MFK Hacker Ace</class>
+	<systemList>
+		<artillery power="1" max="2" room="8" start="true" weapon="LIST_ARTILLERY_MFK" />
+		<cloaking power="1" max="1" room="5" start="true" />
+		<doors power="1" max="3" room="9" start="true" />
+		<engines power="2" max="4" room="1" start="true" />
+		<medbay power="2" max="3" room="7" start="true" />
+		<oxygen power="1" max="2" room="10" start="true" />
+		<pilot power="2" max="2" room="0" start="true" />
+		<shields power="3" max="9" room="4" start="true" />
+		<weapons power="7" max="8" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<!-- <weaponList missiles="7" count="4" load="LIST_WEAPONS_REBEL_SELITEA" /> -->
+	<!-- Weapon powercosts: 2, 3, 2, 1 -->
+	<weaponList missiles="10" count="4">
+		<weapon name="ION_TRI" />
+		<weapon name="BEAM_HACK" />			<!-- Has hull damage. -->
+		<weapon name="MISSILES_BURST_ENEMY" />
+		<weapon name="LASER_BURST_2" />
+	</weaponList>
+	<droneList drones="0" count="0" />
+	<health amount="12" />
+	<maxPower amount="18" />
+	<crewCount amount="4" max="8" class="human_soldier" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="UPG_TECH_RESPIRATOR" />
+	<aug name="ENERGY_SHIELD" />
+	<cloakImage>mu_rebel_artillery_selite</cloakImage>
+</shipBlueprint>
+<!-- <shipBlueprint name="MU_MFK_GUNBOAT" layout="mu_rebel_artillery_selite" img="mu_rebel_artillery_selite">
+	<class>MFK Gunboat Ace</class>
+	<systemList>
+		<artillery power="1" max="2" room="8" start="true" weapon="LIST_ARTILLERY_MFK" />
+		<cloaking power="1" max="3" room="5" start="false" />
+		<doors power="1" max="3" room="9" start="true" />
+		<engines power="1" max="1" room="1" start="true" />
+		<medbay power="1" max="3" room="7" start="false" />
+		<oxygen power="1" max="2" room="10" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="4" max="12" room="4" start="true" />
+		<weapons power="3" max="8" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="7" count="4" load="LIST_WEAPONS_REBEL_SELITEA" />
+	<droneList drones="0" count="0" />
+	<health amount="11" />
+	<maxPower amount="11" />
+	<crewCount amount="3" max="7" class="human_soldier" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="UPG_SHIELDS_PERFORMANCE" />
+	<aug name="UPG_TECH_RESPIRATOR" />
+	<aug name="ENERGY_SHIELD" />
+	<cloakImage>mu_rebel_artillery_selite</cloakImage>
+</shipBlueprint> -->
 
+<!-- 
+SHIP LISTS
+-->
 <blueprintList name="LIST_SHIPS_RADIKAL_ALL">
 	<name>MU_HEKTAR_MERCHANDISER</name>
 	<name>MU_HEKTAR_CLERK</name>
@@ -1182,7 +1291,11 @@ LIST_CREW_MARE
 LIST_CREW_WRAITH
 LIST_CREW_VAGABOND			Not really? First, check every event using it.
 LIST_CREW_VAGABOND_NOALPHA
-LIST_CREW_ALPHA
+ -->
+<mod:findName type="blueprintList" name="LIST_CREW_ALPHA">
+	<mod-append:name>rk_fireghost</mod-append:name>
+</mod:findName>
+<!--
 LIST_CREW_VAGABOND_ALPHA
 LIST_CREW_SLUG
 LIST_CREW_CLAN

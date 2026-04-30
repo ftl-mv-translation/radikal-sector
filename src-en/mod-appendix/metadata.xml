@@ -15,7 +15,7 @@
 	<threadUrl><![CDATA[ https://ftlmultiverse.boards.net/thread/214/mv-radikal-sector-equipment-ships ]]></threadUrl>
 	<!-- Your forum user name. -->
 	<author><![CDATA[ Dj0z ]]></author>
-	<version><![CDATA[ 5.82g ]]></version>
+	<version><![CDATA[ 5.86d ]]></version>
 	<description>
 <![CDATA[
 A relatively small add-on for Multiverse 5.5.1, which adds a secret sector, many spicy augments (multi-ramming, fire-related, special hacking, repair, internal...), blue options, upgrades, sounds, visuals and combos!
@@ -42,6 +42,7 @@ Comes with a safe and a risky deployment method.
 -Vulnerabilizer: slowly remove the enemy's defenses, with some randomness.
 
 	Utility augments:
+-Lead Titans: make your crew of specific races heavier, maybe too much for your ship.
 -Enigmashin: gamble with fleet delays through briefly peaceful hacking.
 -Oxygenizer: spawn an atmosphere at the start of fights.
 
@@ -64,27 +65,32 @@ Comes with a safe and a risky deployment method.
 	New crew:
 -Uptors are made out of Alpha Gouls to fit the needs of the RK Scorch.
 
-	3 player ships with unique gimmicks!
+	Player ships with unique gimmicks!
 -Embark on a wild ride with the Rammer, boasting a superior locked version of the Shipvore Ram.
 -The Scorcher is outfitted with what you need to burn down any enemy.
 -The Punker plays around its massive reactor, particle accelerator, and special hacking.
 
-****** Changelog ******
-CHANGELOG RadiKal Sector v5.82g
--NOW REQUIRES FUSION LIBRARY.
+
+************ Changelog ******************
+CHANGELOG RadiKal Sector v5.86d
+
 -Improved some texts.
+-Fixed some potential bugs where a few newer RK crew / items might not count for RK gear requirements.
 
 * Augments
--Demicloner:
-Is now Demicloners: new technology called backpacks allows it to work on both ships. (No I did not lose 3 trained Free Mantis and Ty'Erel while boarding Weapons in the giant auto boss of the ghost sector. Look, If I didn't do that it would have destroyed my ship, okay?)
-Shell Radiants now demiclone into Shell Guardians instead of normal Shells.
+-New internal RK Punk augment "Mind Cooler": when mind controlled, your crew cannot fight, sabotage or teleport.
+-Demicloners: internal requires droneparts instead of fuel, reduced scrap cost to compensate.
+-Enigmashin: greyed out text now tells you if some choices are not available because your Hacking system is too weak.
+-Offense Disabler: Fixed description saying it works on one artillery when actually it works on all of them.
 
 * Crew
-- New (and first) RadiKal crew subtype, Uptor! Type: ghost. Good survivability, can set random rooms on fire remotely and affect system fire resistance. Demiclones into Phantom Goul Alpha but does not usually count as a Vagabond.
+-Squyrt:
+Now learns weapons even faster (max speed).
+No longer shoots projectiles looking like itself.
 
 * The RadiKal sector
--The event with Theocracy gear buyers and the equivalent Zoltan one are now unique (again).
--The RadiKal Deckhands section in stores was renamed RK Associates. The new RadiKals section is for crew exclusive to this add-on (with a discount).
+-RK gear buyer unique beacons now allow storage actions if you don't engage in trading or combat.
+-Stores now always sell at least 10 of each resource type. Reduced the max amount they can offer to compensate.
 
 
 Special thanks to (in no particular order) Arc, Lizzard, codyfun, Qaser7, bamalf, Dr. Nauter, Witherbottom, Chooseche, Eschaton, Pepper, Untitled, Pupi, vertaalfout, Dalvest, Alder, Kix, [Enchanter], Pedrosian96, Royal Slime, [yenlo]R4V3-0N, robinthedragon2, Ehtya (Laythe), Blizz/mr_easy_money, Skye[NikoMaster], Julk, Felipe, marcrusian, Abstrusity and other people who helped on the FTL:MV Discord, for streaming the mod, and valuable information on balance, modding, coding and art.

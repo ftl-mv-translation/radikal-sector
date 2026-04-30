@@ -6,22 +6,21 @@ However, MV's file does not feature player ship CURA's power surges in there. --
 
 <event name="RK_FIREGHOST_FIRES">
 	<playSound>dj_plasmaTeleporter</playSound>
-	
-	<!-- <item_modify>
-		<item type="fuel" min="-1" max="-1"/>
-	</item_modify>
-	
-	<damage amount="0" system="oxygen" effect="fire"/>
-	
-	<damage amount="0" system="room" effect="fire"/> -->
 	<damage amount="0" system="room" effect="fire"/>
 	<enemyDamage amount="0" system="random" effect="fire"/>
-	<!-- <choice>
-		<text>Deal with the fire, but keep an eye on the enemy. Continue to the fight!</text>
-		<event>
-			
-		</event>
-	</choice> -->
 </event>
+
+<event name="RK_WEAPONLIKE_ABILITY">
+	<!-- <playSound>lightLaser1</playSound> -->
+	<!-- <variable name="gnome_punishment_surge" op="set" val="3"/> -->
+	<superBarrage player="true" name="RK_WEAPONLIKE_SURGE"/>
+</event>
+<!-- REF MV v5.5.1 (see also hyperspace):
+<event name="CHAOS_MODE_DAMAGE_PLAYER_SURGE">
+	<playSound>gm_surge</playSound>
+	<variable name="gnome_punishment_surge" op="set" val="3"/>
+	<superBarrage player="true" name="GNOME_SURGE"/>
+</event>
+ -->
 
 </FTL>

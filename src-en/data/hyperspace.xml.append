@@ -208,6 +208,20 @@ From Silly's Auto Fleet :
 			<value>5</value>
 		</unlock>
 	</mod-append:ship>
+
+
+	REFS MV v5.5.1
+
+	<customShip name="PLAYER_SHIP_TUCO">
+		<hiddenAug>SHIP_TUCO</hiddenAug>
+		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+		<crew>
+			<unique_tuco room="0" name="Tuco"/>  	pilot
+			<mantis_free room="5"/>  				weapons
+			<human room="1"/>  						engines
+			<engi room="6"/>  						shields
+		</crew>
+	</customShip>
 -->
 
 <!-- Activate Lua code snippets! -->
@@ -229,6 +243,13 @@ From Silly's Auto Fleet :
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 		<crewLimit>8</crewLimit>
 		<systemLimit>8</systemLimit>
+		<crew>
+			<human_soldier room="0" name="Rammerman"/>  	<!-- pilot -->
+			<mantis_free room="14"/>  						<!-- weapons -->
+			<human_medic room="10"/>  							<!-- engines -->
+			<shell_mechanic room="2"/>  					<!-- shields -->
+			<lanius room="16"/>  					<!-- sensors -->
+		</crew>
 	</mod-append:customShip>
 
 
@@ -268,7 +289,12 @@ From Silly's Auto Fleet :
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 		<crewLimit>9</crewLimit>
 		<systemLimit>9</systemLimit>
-		
+		<crew>
+			<engi_separatist room="0" name="Punkalot"/>  	<!-- pilot -->
+			<phantom_mare_alpha room="33" name="Breathenot"/>  							<!-- engines -->
+			<zoltan_devotee room="30" name="Movalot"/>  					<!-- shields -->
+		</crew>
+
 		<customReactor maxLevel="35">
 			<!-- <baseCost>15</baseCost> -->
 			<!-- <increment>5</increment> -->
@@ -297,6 +323,13 @@ From Silly's Auto Fleet :
 		<hiddenAug>SHIP_PIRATE</hiddenAug>
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 		<crewLimit>12</crewLimit>
+		<crew>
+			<orchid_caretaker room="7" name="HighLife"/>  		<!-- engines -->
+			<engi_separatist room="0" name="Aerodynamic"/>  	<!-- pilot -->
+			<engi room="1" name="TB"/>  					<!-- weapons -->
+			<engi room="21" name="GMdHC"/>  					<!-- drones -->
+		</crew>
+
 		<rooms>
 			<room id="21"> <!--drones-->
 				<roomAnim renderLayer="0">resist_2x2</roomAnim>
@@ -336,6 +369,13 @@ From Silly's Auto Fleet :
 		<hiddenAug>SHIP_PIRATE</hiddenAug>						
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
 		<crewLimit>12</crewLimit>
+		<crew>
+			<rock_commando room="26" name="Lighter"/>  	<!-- pilot -->
+			<phantom_goul room="20" name="Log"/>  							<!-- engines -->
+			<human room="13"/>  						<!-- weapons -->
+			<human room="19"/>  					<!-- shields -->
+			<human room="16"/>  					<!-- sensors -->
+		</crew>
 		<systemLimit>9</systemLimit>
 	</mod-append:customShip>
 	
@@ -395,7 +435,7 @@ From Silly's Auto Fleet :
 		<mod-append:shipIcon>
 			<name>icon_scorchself2</name>
 			<tooltip>BLAZING EARTH:
-			This ship's crew is comfortable with fire and heals while extinguishing.</tooltip>
+			This ship's crew resists fire, is boosted in it, and heals while extinguishing.</tooltip>
 		</mod-append:shipIcon>
 	</mod:findLike>
 	
@@ -545,6 +585,8 @@ REF: Bag of Dumb Fixed does this.
 	<mod:findName type="req" name="LIST_UPG_ALL">
 		<!-- REF Darkest Desires for MV 5.5.1
 		<mod-append:name>DD_INTERNAL_AUGMENT1</mod-append:name> -->
+		<mod-append:name>INTERNAL_DJMOD_DEMICLONER</mod-append:name>
+		<mod-append:name>INTERNAL_DJMOD_MC_PARALYZER</mod-append:name>
 		<mod-append:name>INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE</mod-append:name>
 	</mod:findName>
 </mod:findLike>
@@ -868,7 +910,7 @@ REF: Bag of Dumb Fixed does this.
 	<healCrewAmount>0.0</healCrewAmount>                                             Amount of health to heal friendly crew in the same room over time, in HP/second. Affected by healSpeed of the respective crew. -->
 		
 	<mod-append:race name="human_soldier_operative">
-		<!-- Buyable even at full crew, which gives away that it's special, but the text above it hints (1 out of 3). -->
+		<!-- Buyable even at full crew, which gives away that it's special, but the text above it also hints (1 out of 3). -->
 		<noSlot>true</noSlot>
 		<noClone>true</noClone>
 		<controllable>false</controllable>
@@ -892,7 +934,8 @@ REF: Bag of Dumb Fixed does this.
 		
 		<animBase>human</animBase>
 		<deathSounds>
-			<deathSound>humanDeathSpecial</deathSound>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
 		</deathSounds>
 		<skills>
 			<piloting req="10"/>
@@ -902,25 +945,213 @@ REF: Bag of Dumb Fixed does this.
 			<repair req="12"/>
 			<combat req="4"/>
 		</skills>
-	
 	</mod-append:race>
 
-	<!-- TEST HERE adding crew without appending, like Old Guard does -->
-	<race name="rk_fireghost">
+	<!-- Based on MV v5.5.1 technoboarderion (also read hyperspace documentation for powerResource):
+	<race name="technoboarderion">
+		<canFight>false</canFight>
+		<canSabotage>false</canSabotage>
+		<canRepair>false</canRepair>
+		<canSuffocate>false</canSuffocate>
+		<canMan>false</canMan>
+		<maxHealth>148</maxHealth>
+		<crewSlots>0.5</crewSlots>
+		<damageMultiplier>1.1</damageMultiplier>
+		<fireDamageMultiplier>0.25</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<stunMultiplier>0.25</stunMultiplier>
+		<deathSounds>
+			<deathSound>sysExplosion</deathSound>
+		</deathSounds>
+		<powerEffect>
+			<cooldown>13</cooldown>
+			<jumpCooldown>full</jumpCooldown>
+			<powerSounds>
+				<powerSound>ionHit1</powerSound>
+			</powerSounds>
+			<req>
+				<systemInRoom/>
+				<enemyShip/>
+			</req>
+			<friendlyFire>false</friendlyFire>
+			<ion>3</ion>
+			<stun>7</stun>
+			<animFrame>-1</animFrame>
+			<buttonText>ION</buttonText>
+			<tooltip>Automatic: activates an ion pulse</tooltip>
+			<cooldownColor r="0" g="235" b="255"/>
+			<effectAnim>explosion_big1_ion</effectAnim>
+			<activateWhenReady enemiesOnly="false">true</activateWhenReady>
+			<temporaryEffect>
+				<duration>2</duration>
+				<cooldownColor r="10" g="255" b="255"/>
+				<canFight>false</canFight>
+				<canRepair>false</canRepair>
+				<canSabotage>false</canSabotage>
+				<canMan>false</canMan>
+				<canMove>false</canMove>
+				<snapToSlot>true</snapToSlot>
+			</temporaryEffect>
+		</powerEffect>
+	</race> 
+	-->
+	<mod-append:race name="rk_weaponlike">
+		<canFight>true</canFight>
+		<canSabotage>false</canSabotage>
+		<canRepair>false</canRepair>
+		<canSuffocate>false</canSuffocate>
+		<canMan>true</canMan>
+		<maxHealth>75</maxHealth>
+		<crewSlots>0.5</crewSlots>
+		<!-- <damageMultiplier>1.1</damageMultiplier> -->
+		<fireDamageMultiplier>0.25</fireDamageMultiplier>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<stunMultiplier>0.25</stunMultiplier>
+		<deathSounds>
+			<deathSound>sysExplosion</deathSound>
+		</deathSounds>
+
+		<powerEffect>
+			<cooldown>3</cooldown>
+			<jumpCooldown>reset</jumpCooldown>
+			
+			<powerCharges>1</powerCharges>
+			<initialCharges>1</initialCharges>
+			<chargesPerJump>1</chargesPerJump>
+
+			<event load="RK_WEAPONLIKE_ABILITY"/>
+			
+			<!-- BUG: never refills on jump, so the crew can only shoot once ever.
+			No refs exist, this was found in hyperspace documentation. Try debug again later.
+			<powerResource name="rk_weaponlike_ammo">
+                <sortOrder>0</sortOrder>
+                <cooldown>3</cooldown>
+                <jumpCooldown>reset</jumpCooldown>
+                <powerCharges>1</powerCharges>
+                <initialCharges>1</initialCharges>
+                <chargesPerJump>1</chargesPerJump>
+                <respawnCharges>1</respawnCharges>
+                <cooldownColor r="133" g="231" b="237"/>
+                <hideCooldown>false</hideCooldown>
+                <hideCharges>false</hideCharges>
+                <showTemporaryBars>false</showTemporaryBars>
+                <showLinkedCooldowns>false</showLinkedCooldowns>
+                <showLinkedCharges>false</showLinkedCharges>
+            </powerResource> -->
+
+			<!-- <powerSounds>
+				<powerSound>ionHit1</powerSound>
+			</powerSounds> -->
+			<req>
+				<inCombat/>                                             <!-- Hostile enemy ship is present. -->
+			</req>
+			<!-- <req type="player">
+				<systemInRoom/>
+				<enemyShip/>
+			</req> -->
+
+			<!-- REF: Forgemaster for MV v5.4
+			<effectAnim>fm_plated_charge</effectAnim> -->
+			<effectAnim>rk_weaponlike_charge</effectAnim>
+			<animFrame>4</animFrame>
+			<buttonText>BOMB OUT</buttonText>
+			<tooltip>Teleport the bomb to the other ship, dealing 1 damage and causing a breach. Can be done once per jump.</tooltip>
+			<cooldownColor r="0" g="235" b="255"/>
+			<!-- <effectAnim>explosion_big1_ion</effectAnim> -->
+			<!-- <activateWhenReady enemiesOnly="false">true</activateWhenReady> -->
+			<temporaryEffect>
+				<duration>2</duration>
+				<cooldownColor r="255" g="0" b="0"/>
+				<!--<controllable>false</controllable>-->
+				
+				<!-- Why MV adds these since it was already not possible?
+				<canFight>false</canFight>
+				<canRepair>false</canRepair>
+				<canSabotage>false</canSabotage>
+				<canMan>false</canMan> -->
+
+				<!-- <canMove>false</canMove>
+				<snapToSlot>true</snapToSlot> -->
+			</temporaryEffect>
+		</powerEffect>
+
+		<powerEffect>
+			<cooldown>3</cooldown>
+			<jumpCooldown>reset</jumpCooldown>
+
+			<powerCharges>1</powerCharges>
+			<initialCharges>1</initialCharges>
+			<chargesPerJump>1</chargesPerJump>
+			
+			<!-- Additional resources (cooldowns and charges) that can be shared between abilities, can use load and copy keywords. -->
+			<!-- <powerResource load="rk_weaponlike_ammo"/> -->
+			
+			<friendlyFire>true</friendlyFire>
+			<shipFriendlyFire>true</shipFriendlyFire>
+			<damage>1</damage>
+			<sysDamage>0</sysDamage>
+			<persDamage>0</persDamage>
+			<breachChance>10</breachChance>
+			
+			<req type="enemy">
+				<inCombat/>
+				<enemyInRoom/>
+			</req>
+
+			<effectAnim>rk_weaponlike_charge</effectAnim>
+			<animFrame>4</animFrame>
+			<buttonText>BOMB IN</buttonText>
+			<tooltip>Detonate the bomb, dealing 1 damage in the current room and causing a breach. Can be done once per jump</tooltip>
+			<cooldownColor r="0" g="235" b="255"/>
+			<!-- <effectAnim>explosion_big1_ion</effectAnim> -->
+			<!-- <activateWhenReady enemiesOnly="false">true</activateWhenReady> -->
+			<temporaryEffect>
+				<duration>2</duration>
+				<cooldownColor r="255" g="0" b="0"/>
+
+				<!--<controllable>false</controllable>-->
+				<!-- Why MV adds these since it was already not possible?
+				<canFight>false</canFight>
+				<canRepair>false</canRepair>
+				<canSabotage>false</canSabotage>
+				<canMan>false</canMan> -->
+
+				<!-- <canMove>false</canMove>
+				<snapToSlot>true</snapToSlot> -->
+			</temporaryEffect>
+		</powerEffect>
+
+		<skills>
+			<!-- <piloting req="10"/>
+			<engines req="10"/>
+			<shields req="43"/> -->
+			<weapons req="1"/>
+			<!-- <repair req="12"/>
+			<combat req="4"/> -->
+		</skills>
+	</mod-append:race>
+
+
+
+
+
+	<!-- TESTED HERE adding crew without appending (just "<race" ), like Old Guard does. WORKED BUT NOT RECOMMENDED. -->
+	<mod-append:race name="rk_fireghost">
+		<lowHealthThreshold>2500.0</lowHealthThreshold>
+		<lowHealthThresholdPercentage>0.25</lowHealthThresholdPercentage>
 		<maxHealth>220</maxHealth>
 		<canBurn>false</canBurn>
 		<canSuffocate>false</canSuffocate>
 		<canPhaseThroughDoors>true</canPhaseThroughDoors>
 		<canRepair>false</canRepair>
 
-		<!-- <sabotageSpeedMultiplier>2</sabotageSpeedMultiplier> -->
+		<sabotageSpeedMultiplier>2</sabotageSpeedMultiplier>
 		<moveSpeedMultiplier>1.2</moveSpeedMultiplier>
 
 		<damageMultiplier>1.5</damageMultiplier>
 		<damageTakenMultiplier>1</damageTakenMultiplier>
 		<fireDamageMultiplier>0.1</fireDamageMultiplier>	<!-- If immunity is just removed, is very resistant. -->
 		<suffocationModifier>0.1</suffocationModifier>
-		<!-- <animBase>human</animBase> -->
 		<deathSounds>
 			<deathSound>ghostDeath</deathSound>
 		</deathSounds>
@@ -959,12 +1190,9 @@ REF: Bag of Dumb Fixed does this.
 				<validTarget>false</validTarget>
 				<sabotageSpeedMultiplier>1.25</sabotageSpeedMultiplier>
 			</temporaryEffect>
-
-			<powerCharges>3</powerCharges>
-			<initialCharges>3</initialCharges>
-			<chargesPerJump>3</chargesPerJump> -->
+			 -->
 		</powerEffect>
-	</race>
+	</mod-append:race>
 	
 <!-- </mod:findLike> -->
 </crew>
@@ -976,14 +1204,78 @@ REF: Bag of Dumb Fixed does this.
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
  -->
 
+<!-- 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+				BOSS STUFF and POWER SURGES
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+TODO:
+.
+-->
+
+<mod:findLike type="boss" limit="1">
+	<mod-append:surgeBarrage name="RK_WEAPONLIKE_SURGE">
+		<weapon name="RK_WEAPONLIKE_SURGEBOMB" count="1"/>
+	</mod-append:surgeBarrage>
+</mod:findLike>
+<!-- REF Outer Expansion for MV v5.5.1:
+<mod:findLike type="boss" limit="1">
+	<mod-append:surgeBarrage name="AEA_SURGE_DARK_FIRE">
+		<weapon name="BOMB_FIRE" count="3"/>
+	</mod-append:surgeBarrage>
+	...
+</mod:findLike>
+
+REFS MV v5.5.1 
+<boss>
+	...
+	<surgeBarrage name="CRYSTAL_ARMOR_BURST">
+		<weapon name="CRYSTAL_ARMOR_PROJ" count="1"/>
+	</surgeBarrage>
+	<surgeBarrage name="CRYSTAL_ARMOR_BURST_SHATTER">
+		<weapon name="CRYSTAL_ARMOR_PROJ" count="2"/>
+	</surgeBarrage>
+	
+	<surgeBarrage name="GNOME_SURGE">
+		<weapon name="LASER_BURST_1" count="4"/>
+	</surgeBarrage>
+	...
+	<surgeBarrage name="GNOME_BEAM">
+		<weapon name="BEAM_2" count="1"/>
+	</surgeBarrage>
+	
+	<surgeBarrage name="TULLY_AIRSTRIKE">
+		<weapon name="BOMB_1" count="3"/>
+		<weapon name="BOMB_BREACH_1" count="2"/>
+		<weapon name="BOMB_FIRE" count="1"/>
+	</surgeBarrage>
+	
+	<surgeBarrage name="SUPPORT_BOMBS">
+		<weapon name="BOMB_BREACH_1" count="1"/>
+		<weapon name="BOMB_ION" count="1"/>
+	</surgeBarrage>
+</boss>
+
+and in events_special_mechanical:
+<event name="CHAOS_MODE_DAMAGE_PLAYER_SURGE">
+	<playSound>gm_surge</playSound>
+	<variable name="gnome_punishment_surge" op="set" val="3"/>
+	<superBarrage player="true" name="GNOME_SURGE"/>
+</event>
+ -->
+
 
 
 <events>		<!--Necessary wrapper! All variables and req lists go IN HERE or won't work, silently without giving any error.-->
-
 <!--
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
 				REQ LISTS
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 Events need unique names, else it might crash the game!
@@ -1113,6 +1405,8 @@ For unique sector 'membership' and other gear checks.
 	<name>DJMOD_AUG_AUTO_SYS_REPAIR</name>
 	
 	<name>DJMOD_BAM_FISSUREBEAM</name>
+	
+	<name>rk_weaponlike</name>
 
 	<name>DJMOD_LASER_BPS</name>
 </req>
@@ -1136,6 +1430,8 @@ For unique sector 'membership' and other gear checks.
 	
 	<name>DJMOD_RAIN_OF_FIRE</name>
 	
+	<name>rk_fireghost</name>
+
 	<name>DJMOD_LASER_BPS</name>
 </req>
 
@@ -1363,11 +1659,11 @@ Any crew that could nicely start a fire in MV. Complete this list regularly. Add
 		</resource>
 		<resource>
 			<type>missiles</type>
-			<count min="6" max="14"/>
+			<count min="10" max="12"/>
 		</resource>
 		<resource>
 			<type>drones</type>
-			<count min="8" max="14"/>
+			<count min="10" max="12"/>
 		</resource>
 				
 		<category type="WEAPONS">
@@ -1543,12 +1839,12 @@ Any crew that could nicely start a fire in MV. Complete this list regularly. Add
 		<category type="CREW">
 			<customTitle>RADIKALS (10-20% OFF)</customTitle>
 			<item>
-				<blueprint>rk_fireghost</blueprint>
+				<blueprint>rk_weaponlike</blueprint>
 				<modifier min="0.80" max="0.90" flat="false"/>
 				<!-- <price>-1</price> -->
 			</item>
 			<item>
-				<blueprint>rk_fireghost</blueprint>
+				<blueprint>rk_weaponlike</blueprint>
 				<modifier min="0.80" max="0.90" flat="false"/>
 			</item>
 			<item>
@@ -1678,11 +1974,11 @@ Any crew that could nicely start a fire in MV. Complete this list regularly. Add
 		</resource>
 		<resource>
 			<type>missiles</type>
-			<count min="6" max="14"/>
+			<count min="10" max="12"/>
 		</resource>
 		<resource>
 			<type>drones</type>
-			<count min="8" max="14"/>
+			<count min="10" max="12"/>
 		</resource>
 		
 		<category type="WEAPONS">
@@ -1754,10 +2050,26 @@ Any crew that could nicely start a fire in MV. Complete this list regularly. Add
 		</category>
 		
 		<!-- Thematic crew. Other than that, same philosophy as general RK store. -->
-		<category type="CREW" group="1">
-			<customTitle>RK SCORCH DECKHANDS</customTitle>
+		<category type="CREW">
+			<customTitle>RK SCORCH ASSOCIATES</customTitle>
 			<item>
 				<blueprint>rock_commando</blueprint>
+				<modifier min="0.95" max="1.05" flat="false"/>
+			</item>
+			<item>
+				<blueprint>human_legion_pyro</blueprint>
+				<modifier min="0.95" max="1.05" flat="false"/>
+			</item>
+			<item>
+				<blueprint>zoltan_infernum</blueprint>
+				<modifier min="0.95" max="1.05" flat="false"/>
+			</item>
+			<chance>100</chance>
+		</category>
+		<category type="CREW">
+			<customTitle>RK SCORCH DECKHANDS</customTitle>
+			<item>
+				<blueprint>phantom_goul</blueprint>
 				<modifier min="0.95" max="1.05" flat="false"/>
 			</item>
 			<item>
@@ -1765,8 +2077,8 @@ Any crew that could nicely start a fire in MV. Complete this list regularly. Add
 				<modifier min="0.95" max="1.05" flat="false"/>
 			</item>
 			<item>
-				<blueprint>human_legion_pyro</blueprint>
-				<modifier min="0.95" max="1.05" flat="false"/>
+				<blueprint>rk_fireghost</blueprint>
+				<modifier min="0.75" max="0.85" flat="false"/>
 			</item>
 			<chance>100</chance>
 		</category>
@@ -1867,11 +2179,11 @@ plus any cloak-related augs. -->
 		</resource>
 		<resource>
 			<type>missiles</type>
-			<count min="6" max="14"/>
+			<count min="10" max="12"/>
 		</resource>
 		<resource>
 			<type>drones</type>
-			<count min="8" max="14"/>
+			<count min="10" max="12"/>
 		</resource>
 		
 		<category type="WEAPONS">
@@ -1996,6 +2308,140 @@ plus any cloak-related augs. -->
 		<function name="ROCK_ARMOR" value="0.09" useForReqs="false" warning="false"/>
 		<function name="SHIELD_RECHARGE" value="0.09" useForReqs="true" warning="false"/>
     </aug>
+
+	<!-- Lead Titans gives
+	x2 crew slot WORK - try 1.5 too TEST
+	Breaches while walking WORKS but inconsistent - TEST lower cooldown.
+	Stat bonuses WORK
+	-->
+	<aug name="DJMOD_LEAD_TITANS">
+		<statBoosts>
+
+			<statBoost name="powerEffect">
+				<boostType>ADD</boostType>
+				<powerEffect>
+					<activateWhenReady>true</activateWhenReady>
+					<jumpCooldown>continue</jumpCooldown>
+					<hideCooldown>true</hideCooldown>
+					<disabledCooldown>pause</disabledCooldown>
+					<initialCooldownFraction>0</initialCooldownFraction>
+					<onDeath>cancel</onDeath>
+					<cooldown>0.45</cooldown>
+
+					<buttonText>WALKBREACH</buttonText>
+					<tooltip>SHOULD NEVER BE SEEN, opens breach while walking.</tooltip>
+					<cooldownColor r="172" g="210" b="112"/>
+					<friendlyFire>true</friendlyFire>
+					<shipFriendlyFire>true</shipFriendlyFire>
+					<damage>0</damage>
+					<breachChance>10</breachChance>
+				</powerEffect>
+
+				<!-- REFS MV v5.5.1: phantom_mare_alpha and the lab.
+				<powerEffect>
+					<chargeReq>
+						<maxHealth>109</maxHealth>
+					</chargeReq>
+					<cooldown>13</cooldown>
+					<jumpCooldown>continue</jumpCooldown>
+					<buttonText>CORRODE</buttonText>
+					<tooltip>Opens a breach in the current room.</tooltip>
+					<cooldownColor r="172" g="210" b="112"/>
+					<activateWhenReady>true</activateWhenReady>
+					<breachChance>10</breachChance>
+					<shipFriendlyFire>true</shipFriendlyFire>
+				</powerEffect>
+				
+				LAB_VAGABOND_STABLE
+				<powerEffect>
+					<cooldown>20</cooldown>
+					<jumpCooldown>continue</jumpCooldown>
+					<buttonText>CORRODE</buttonText>
+					<tooltip>[COOLDOWN:20s]
+						Opens a breach in the current room.</tooltip>
+					<cooldownColor r="172" g="210" b="112"/>
+					<breachChance>10</breachChance>
+					<shipFriendlyFire>true</shipFriendlyFire>
+				</powerEffect> -->
+				<shipTarget>ALL</shipTarget>
+                <crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<whiteList load="RK_LIST_LEAD_TITANS"/>
+				<extraConditions type="and">             
+					<moving>true</moving>
+				</extraConditions>
+			</statBoost>
+			
+			<statBoost name="crewSlots">
+				<boostType>MULT</boostType>
+				<amount>2</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<whiteList load="RK_LIST_LEAD_TITANS"/>
+			</statBoost>
+
+			<statBoost name="allDamageTakenMultiplier">
+				<boostType>MULT</boostType>
+				<amount>0.5</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<affectsSelf>true</affectsSelf>
+				<!-- <boostAnim>energy_shield_buff</boostAnim> -->
+				<boostAnim>rk_lead_titans_buff</boostAnim>
+				<whiteList load="RK_LIST_LEAD_TITANS"/>
+			</statBoost>
+			<statBoost name="stunMultiplier">
+				<boostType>MULT</boostType>
+				<amount>0.5</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<whiteList load="RK_LIST_LEAD_TITANS"/>
+			</statBoost>
+			
+			<statBoost name="damageMultiplier">
+				<boostType>MULT</boostType>
+				<amount>3.0</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<whiteList load="RK_LIST_LEAD_TITANS"/>
+			</statBoost>
+			<statBoost name="doorDamageMultiplier">
+				<boostType>MULT</boostType>
+				<amount>3.0</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<whiteList load="RK_LIST_LEAD_TITANS"/>
+			</statBoost>
+			<statBoost name="sabotageSpeedMultiplier">
+				<boostType>MULT</boostType>
+				<amount>3.0</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<whiteList load="RK_LIST_LEAD_TITANS"/>
+			</statBoost>
+
+			<statBoost name="repairSpeed">
+				<boostType>MULT</boostType>
+				<amount>1.4</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<whiteList load="RK_LIST_LEAD_TITANS"/>
+			</statBoost>
+			<statBoost name="moveSpeedMultiplier">
+				<boostType>MULT</boostType>
+				<amount>1.4</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<whiteList load="RK_LIST_LEAD_TITANS"/>
+			</statBoost>
+		</statBoosts>
+    </aug>
 	
 	<!-- Zoltan shield extractor. 
 	Give 1 supershield (WORKS), 
@@ -2052,6 +2498,9 @@ plus any cloak-related augs. -->
 		<icon>icon_zoltan_shield</icon>
     </aug>
 
+
+	
+
 	<!-- Scorched earth
 	Fire resist (WORKS)
 	extinguishing stats to allies (WORKS)
@@ -2075,33 +2524,6 @@ plus any cloak-related augs. -->
 				<amount>3.0</amount>
 				<priority>0</priority>
 			</statBoost>
-			<!-- <statBoost name="fireRepairMultiplier">
-				<boostType>MULT</boostType>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ORIGINAL_ALLIES</crewTarget>
-				<droneTarget>CREW</droneTarget>
-				<amount>1.5</amount>
-				<priority>0</priority>
-				<systemRoomTarget>ALL</systemRoomTarget>
-				<systemList>
-					<pilot/>
-					<engines/>
-					<shields/>
-					<weapons/>
-					<oxygen/>
-					<medbay/>
-					<clonebay/>
-					<doors/>
-					<drones/>
-					<sensors/>
-					<cloaking/>
-					<mind/>
-					<hacking/>
-					<teleporter/>
-					<artillery/>
-					<battery/>
-				</systemList>
-			</statBoost> -->
 
 			<!-- Fire-dependent stats below -->
 
@@ -2345,11 +2767,10 @@ plus any cloak-related augs. -->
 
 
 	<!-- Flammabilizer 
-	5.5.1 REVIVAL: simplify this. See the weapon in the Collector's Outcast cruiser from TRC, which also removes fire immunity.
+	5.5.1 REVIVAL: See the weapon in the Collector's Outcast cruiser from TRC, which also removes fire immunity.
 
 	making all enemy types BURNABLE AT ALL (WORKS)
-	scaling with power in the Oxygen system (one of the two scalings is prob redundant but WORKS! - RETEST)
-	Then apply whitelist of fireproofs to give the fire res (LIST_CREW_FIREPROOF in my autoblueprints.xml) (WORKS! - RETEST) 
+	scaling with power in the Oxygen system (WORKS)
 	Console (press L) "EVENT ROCK_ATHEIST" for quick testing!
 	NB: it counters Scorched Earth's resistance but not the heal and other boosts, as intended.
 	-->
@@ -2360,8 +2781,7 @@ plus any cloak-related augs. -->
 			For this toggle mode only
 			************************ -->
 			
-			<!-- Make sure they can burn at all. 
-			very specific priority. -->
+			<!-- Make sure they can burn at all. Check priority. -->
 			<statBoost name="canBurn">
 				<boostType>SET</boostType>
 				<shipTarget>ALL</shipTarget>
@@ -2371,85 +2791,33 @@ plus any cloak-related augs. -->
 				<priority>-987654</priority>
 			</statBoost>
 			
-			<!-- Make sure ex-immunes have high resistance. Priority makes this happen before capping it.
-			<statBoost name="fireDamageMultiplier">
-				<boostType>MULT</boostType>
-				<amount>0.10</amount>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ENEMIES</crewTarget>
-				<droneTarget>ALL</droneTarget>
-				<priority>-9876543</priority>
-				<whiteList load="LIST_CREW_FIREPROOF"/>
-			</statBoost>
-			-->
-			
-			<!-- Now cap res of all enemies. In other words, floor their vulnerability. Already vulnerables are unchanged.-->
+			<!-- Cap res of all enemies. In other words, floor their vulnerability. Already vulnerables are unchanged. -->
 			<statBoost name="fireDamageMultiplier">
 				<!-- <boostType>MIN</boostType> MIN definitely picks the lower value : 0.00 made all enemies immune to fire.-->
 				<boostType>MAX</boostType>
 				<amount>1.00</amount>
+				<!-- <amount>0</amount> -->
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ENEMIES</crewTarget>
 				<droneTarget>ALL</droneTarget>
-				<priority>-98765432</priority>
-				<systemRoomTarget>ALL</systemRoomTarget>
-				<systemList>
-					<all/>
-				</systemList>
-				<systemPowerDependency>
-					<oxygen/>
-				</systemPowerDependency>
-				<systemPowerScaling>						
-					<!-- 80% More damage multi per bar -->
-					<!-- <noSys>0.10</noSys>
-					<noPwr>0.10</noPwr>
-					<onePwr>0.18</onePwr>
-					<twoPwr>0.32</twoPwr>
-					<threePwr>0.56</threePwr>
-					<morePwr>1.00</morePwr> -->
-					<noSys>0.10</noSys>
-					<noPwr>0.10</noPwr>
-					<onePwr>0.25</onePwr>
-					<twoPwr>0.45</twoPwr>
-					<threePwr>0.70</threePwr>
-					<morePwr>1.00</morePwr>
-				</systemPowerScaling>
-			</statBoost>
-			
-			<!-- Finally, apply Oxygen scaling. Mb don't do this whole boost (no scaling but almost universally compatible). -->
-			<statBoost name="fireDamageMultiplier">
-				<boostType>MULT</boostType>
-				<amount>2.00</amount>
-				<!-- <amount>10.00</amount> -->
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ENEMIES</crewTarget>
-				<droneTarget>ALL</droneTarget>
+				<!-- <priority>-9876543210</priority>		Seems to error on game startup. -->
 				<priority>-987654321</priority>
 				<systemRoomTarget>ALL</systemRoomTarget>
-				<systemList>
+				<!-- <systemList>
 					<all/>
 				</systemList>
 				<systemPowerDependency>
 					<oxygen/>
 				</systemPowerDependency>
 				<systemPowerScaling>
-					<noSys>0.05</noSys>
-					<noPwr>0.05</noPwr>
-					<onePwr>0.09</onePwr>
-					<twoPwr>0.16</twoPwr>
-					<threePwr>0.28</threePwr>
-					<morePwr>0.50</morePwr>
-				</systemPowerScaling>
+					<noSys>0.10</noSys>
+					<noPwr>0.10</noPwr>
+					<onePwr>0.25</onePwr>
+					<twoPwr>0.45</twoPwr>
+					<threePwr>0.70</threePwr>
+					<morePwr>1.00</morePwr>
+				</systemPowerScaling> -->
 			</statBoost>
-				
-				<!-- 
-				<noSys>0.10</noSys>					This reference progression is 80% More damage multi per bar
-				<noPwr>0.10</noPwr>
-				<onePwr>0.18</onePwr>
-				<twoPwr>0.32</twoPwr>
-				<threePwr>0.56</threePwr>
-				<morePwr>1.00</morePwr> -->
-			
 
 			<!-- ************************ 
 			Both toggle modes have this below
@@ -2460,11 +2828,11 @@ plus any cloak-related augs. -->
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ENEMIES</crewTarget>
 				<droneTarget>ALL</droneTarget>
-				<amount>0.5</amount>						<!-- A MULT boostType of 1.0 is unscalable! except by 0, which disables it. -->
-				<priority>0</priority>
-				
+				<amount>0.20</amount>						<!-- A MULT boostType of 1.0 is unscalable! except by 0, which disables it. -->
+				<priority>-200</priority>
+				<!-- Current room is on fire. -->
 				<extraConditions type="and">             
-					<burning>true</burning>                 <!--Current room is on fire.-->
+					<burning>true</burning>                 
 				</extraConditions>
 				<systemRoomTarget>ALL</systemRoomTarget>
 				<systemList>
@@ -2474,13 +2842,14 @@ plus any cloak-related augs. -->
 					<oxygen/>
 				</systemPowerDependency>
 				<systemPowerScaling>
-					<!-- FINALLY WORKS 
+					<!-- RETEST - WORKS - NB: at <threePwr>1.00</threePwr> the <amount>0.5</amount> is fully applied!
 					</systemPowerScaling> can be COUNTER-INTUITIVE, make sure to check my reference.-->
-					<noSys>0.12</noSys>
-					<noPwr>0.12</noPwr>
-					<onePwr>0.25</onePwr>
-					<twoPwr>0.50</twoPwr>
-					<threePwr>0.75</threePwr>
+					<noSys>0.25</noSys>
+					<noPwr>0.25</noPwr>
+					<onePwr>0.50</onePwr>
+					<twoPwr>0.75</twoPwr>
+					<!-- <threePwr>0.75</threePwr> -->
+					<threePwr>1.00</threePwr>
 					<!--<morePwr>1.00</morePwr> intended value here, test value below-->
 					<morePwr>1.00</morePwr>
 					<!--<morePwr>3.00</morePwr> makes them walk backwards! Probably means the MULT is interpreted as "remove 0.5 MS from enemy", so with x3.0 effect that's "1.0 (base) - 1.5 = -0.5 MS" !
@@ -2513,18 +2882,18 @@ plus any cloak-related augs. -->
 					<oxygen/>
 				</systemPowerDependency>
 				<systemPowerScaling>
-					<noSys>0.15</noSys>
-					<noPwr>0.15</noPwr>
-					<onePwr>0.20</onePwr>
-					<twoPwr>0.25</twoPwr>
-					<threePwr>0.30</threePwr>
-					<!-- <morePwr>0.35</morePwr> intended value here, test value below-->
-					<morePwr>0.35</morePwr>
+					<noSys>0.175</noSys>
+					<noPwr>0.175</noPwr>
+					<onePwr>0.250</onePwr>
+					<twoPwr>0.325</twoPwr>
+					<threePwr>0.400</threePwr>
+					<!-- <morePwr>0.475</morePwr> intended value here, test value below-->
+					<morePwr>0.475</morePwr>
 				</systemPowerScaling>
 			</statBoost>
 			
 			<!-- ************************ 
-			Both toggle modes have this
+			Both toggle modes have this below
 			************************ -->
 			
 			<statBoost name="moveSpeedMultiplier">
@@ -2532,11 +2901,11 @@ plus any cloak-related augs. -->
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ENEMIES</crewTarget>
 				<droneTarget>ALL</droneTarget>
-				<amount>0.5</amount>
-				<priority>0</priority>
-				
-				<extraConditions type="and">
-					<burning>true</burning>
+				<amount>0.20</amount>
+				<priority>-200</priority>
+				<!-- Current room is on fire. -->
+				<extraConditions type="and">             
+					<burning>true</burning>                 
 				</extraConditions>
 				<systemRoomTarget>ALL</systemRoomTarget>
 				<systemList>
@@ -2546,12 +2915,11 @@ plus any cloak-related augs. -->
 					<oxygen/>
 				</systemPowerDependency>
 				<systemPowerScaling>
-					<!-- </systemPowerScaling> can be COUNTER-INTUITIVE, make sure to check my reference. -->
-					<noSys>0.12</noSys>
-					<noPwr>0.12</noPwr>
-					<onePwr>0.25</onePwr>
-					<twoPwr>0.50</twoPwr>
-					<threePwr>0.75</threePwr>
+					<noSys>0.25</noSys>
+					<noPwr>0.25</noPwr>
+					<onePwr>0.50</onePwr>
+					<twoPwr>0.75</twoPwr>
+					<threePwr>1.00</threePwr>
 					<morePwr>1.00</morePwr>
 				</systemPowerScaling>
 			</statBoost>
@@ -5971,10 +6339,68 @@ plus any cloak-related augs. -->
 [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
 [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
 											INTERNAL UPGRADES
-						(except Demicloners which is right below its EX_ version)
+						except Demicloners which is right below its EX_ (external) version
 [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
 [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+TODO:
+TEST Mind Cooler
  -->
+	<aug name="INTERNAL_DJMOD_MC_PARALYZER">
+		<statBoosts>
+			<statBoost name="canTeleport">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>-9876</priority>
+
+				<extraConditions type="and">             
+					<mindControlled>true</mindControlled>
+				</extraConditions>
+			</statBoost>
+
+			<statBoost name="teleportMoveOtherShip">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>-9876</priority>
+
+				<extraConditions type="and">             
+					<mindControlled>true</mindControlled>
+				</extraConditions>
+			</statBoost>
+
+			<statBoost name="canSabotage">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>-9876</priority>
+				
+				<extraConditions type="and">             
+					<mindControlled>true</mindControlled>
+				</extraConditions>
+			</statBoost>
+
+			<statBoost name="canFight">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>-9876</priority>
+
+				<extraConditions type="and">             
+					<mindControlled>true</mindControlled>
+				</extraConditions>
+			</statBoost>
+		</statBoosts>
+	</aug>
+
 
 	<aug name="INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE">
 		<statBoosts>
