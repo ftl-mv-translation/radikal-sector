@@ -1,9 +1,17 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-04-30 17:21+0000\n"
+"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
+"Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
+"dataevents_special_storagexmlappend/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.13.3\n"
 
 #: src-en/data/events_special_storage.xml.append:395
 msgid ""
@@ -2325,11 +2333,14 @@ msgid ""
 msgstr "Перейти к битве!"
 
 #: src-en/data/events_special_storage.xml.append:4184
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_HACK_FLEET\"]/text"
 msgstr ""
 "Вы уверены, что хотите это сделать?\n"
-"\t[Попытаться использовать особый взлом с целью задержать флот; отменяется при нанесении урона корпусу более 2 единиц. Требуется 17 секунд. Использует 2 |]"
+"\t[Попытаться использовать особый взлом с целью задержать флот; отменяется "
+"при нанесении урона корпусу более 2 единиц. Требуется 17 секунд. Использует "
+"2 |]"
 
 #: src-en/data/events_special_storage.xml.append:4199
 msgid ""
@@ -2347,6 +2358,7 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events_special_storage.xml.append:4212
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_HACK_FLEET\"]/choice[@req=\"hacking\""
 " and @lvl=\"0\"]/text"
@@ -2602,6 +2614,7 @@ msgstr ""
 "системы, чтобы задержать флот повстанцев. В таких делах нужна осторожность!"
 
 #: src-en/data/events_special_storage.xml.append:4596
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_HACK_FLEET_STOP\"]/choice/text"
 msgstr "Какая жалость. Но продолжайте бороться!"
@@ -3104,12 +3117,14 @@ msgid ""
 msgstr "Демиклонеры [Не установлено]"
 
 #: src-en/data/events_special_storage.xml.append:5568
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[3]/text"
 msgstr "Демиклонеры [Установлено]"
 
 #: src-en/data/events_special_storage.xml.append:5572
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[4]/text"
@@ -3141,6 +3156,7 @@ msgstr ""
 "\t\t\tЕсли таких персонажей нет, они превращаются в морфов. Когда морфы гибнут, ничего не происходит. Не работает при гибели в результате событий. [УЖЕ УСТАНОВЛЕНО]"
 
 #: src-en/data/events_special_storage.xml.append:5598
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_DEMICLONER\""
 " and @lvl=\"0\"]/text"
@@ -3179,12 +3195,18 @@ msgid ""
 msgstr "Неважно."
 
 #: src-en/data/events_special_storage.xml.append:5675
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/text"
 msgstr ""
 "Вы собираетесь добавить модификацию Демиклонеры.\n"
-"\t[Эффекты: РадиКал Панк наполнил эти прототипы клон-рюкзаков мрачной энергией. Они пытаются воскресить членов вашего экипажа, если те погибнут (за исключением событий), когда у вас нет настоящего Колон-отсека.\n"
-"\t\tВ лучшем случае члены экипажа воскрешаются в виде упрощенной версии самих себя (Солдат = человек по умолчанию и т. д.). Если упрощенной версии не существует, они превращаются в морфов. Когда морфы погибают, ничего не происходит."
+"\t[Эффекты: РадиКал Панк наполнил эти прототипы клон-рюкзаков мрачной "
+"энергией. Они пытаются воскресить членов вашего экипажа, если те погибнут "
+"(за исключением событий), когда у вас нет настоящего Колон-отсека.\n"
+"\t\tВ лучшем случае члены экипажа воскрешаются в виде упрощенной версии "
+"самих себя (Солдат = человек по умолчанию и т. д.). Если упрощенной версии "
+"не существует, они превращаются в морфов. Когда морфы погибают, ничего не "
+"происходит."
 
 #: src-en/data/events_special_storage.xml.append:5681
 msgid ""
@@ -3202,6 +3224,7 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events_special_storage.xml.append:5693
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"0\"]/text"
@@ -3276,6 +3299,7 @@ msgstr ""
 "\t[Эффекты: в зоне действия огня ваш экипаж на обоих кораблях становится невосприимчивым к контролю разума, а продолжительность оглушения сокращается на 50%]"
 
 #: src-en/data/events_special_storage.xml.append:5761
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
 " and @lvl=\"0\"]/text"
