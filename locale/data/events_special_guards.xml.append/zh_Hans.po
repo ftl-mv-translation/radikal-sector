@@ -1,23 +1,36 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-05-14 17:22+0000\n"
+"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/radikal-sector/dataevents_special_guardsxmlappend/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events_special_guards.xml.append:6
+#, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//textList[@name=\"TEXT_START_RADIKAL\"]/text[1]"
 msgstr ""
-"你已抵达拉迪卡尔星区，来自各地的专家们都会来到这里，寻找高效的非法规格装备。\n"
-"\t\t叛军要弄到这里的坐标会有些困难，这给了你一些时间，为活着离开这里做好准备。"
+"你已抵达拉迪卡尔星区，来自各地的专家们都会来到这里，寻找高效的非法规格装备"
+"。\n"
+"\t\t叛军要弄到这里的坐标会有些困难，这给了你一些时间，为活着离开这里做好准备"
+"。"
 
 #: src-en/data/events_special_guards.xml.append:11
+#, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//textList[@name=\"TEXT_START_RADIKAL\"]/text[2]"
 msgstr ""
-"你已抵达拉迪卡尔星区。只要准备好做出牺牲，就能在这里找到威力巨大但充满危险的装备。\n"
-"\t\t叛军要弄到这里的坐标会有些困难，这给了你一些时间，为活着离开这里做好准备。"
+"你已抵达拉迪卡尔星区。只要准备好做出牺牲，就能在这里找到威力巨大但充满危险的"
+"装备。\n"
+"\t\t叛军要弄到这里的坐标会有些困难，这给了你一些时间，为活着离开这里做好准备"
+"。"
 
 #: src-en/data/events_special_guards.xml.append:16
 msgid ""
@@ -44,9 +57,12 @@ msgid ""
 msgstr "回应呼叫。"
 
 #: src-en/data/events_special_guards.xml.append:49
+#, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/text"
-msgstr "“嘿，那边。是新来的还是常客？”守卫漫不经心地等着你的回答。这似乎是在问你对这个星区的熟悉程度。"
+msgstr ""
+"“嘿，那边。是新来的还是常客？”守卫漫不经心地等着你的回答。这似乎是在问你对这"
+"个星区的熟悉程度。"
 
 #: src-en/data/events_special_guards.xml.append:54
 msgid ""
@@ -68,6 +84,7 @@ msgid ""
 msgstr "继续。"
 
 #: src-en/data/events_special_guards.xml.append:60
+#, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/text"
@@ -81,6 +98,7 @@ msgid ""
 msgstr "继续。"
 
 #: src-en/data/events_special_guards.xml.append:70
+#, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/event/text"
@@ -94,6 +112,7 @@ msgid ""
 msgstr "继续。"
 
 #: src-en/data/events_special_guards.xml.append:80
+#, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/event/choice/event/text"
