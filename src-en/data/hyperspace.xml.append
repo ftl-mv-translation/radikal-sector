@@ -224,23 +224,45 @@ From Silly's Auto Fleet :
 	</customShip>
 -->
 
-<!-- Activate Lua code snippets! -->
-<!-- <mod:findLike type="scripts">
-    <mod-append:script>data/scripts/ram.lua</mod-append:script>
-</mod:findLike> -->
+<!-- Activate Lua code snippets! 
+NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PERCENTAGE.
+-->
 <mod:findLike type="scripts" reverse="false">
+    <!-- FUSION-INDEPENDENCE LINES (part 1/2) for custom fires by codyfun - MUST REMAIN AT THE TOP of this block! -->
+    <mod-append:script>data/addon_common/fire_common.lua</mod-append:script>
+
     <mod-append:script>data/scripts/djmodatmosphereappend.lua</mod-append:script>
-	<mod-append:script>data/scripts/rkcreweffects.lua</mod-append:script>
-	<!-- <mod-append:script>data/scripts/ram.lua</mod-append:script> -->
+    <mod-append:script>data/scripts/rkaugmenteffects.lua</mod-append:script>
+    <mod-append:script>data/scripts/rkcreweffects.lua</mod-append:script>
+
+    <!-- FUSION-INDEPENDENCE LINES (part 2/2) for custom fires by codyfun - MUST REMAIN AT THE BOTTOM of this block! -->
+    <mod:findLike type="script" start="1" limit="1">
+        <mod:selector>data/addon_common/fire_common.lua</mod:selector>
+        <mod:removeTag/>
+    </mod:findLike>
+
 </mod:findLike>
 
 <mod:findLike type="ships">
-	<mod-append:ship name="PLAYER_SHIP_DJMOD_RAMMER" b="false" c="false" />
+
+
+
+	<mod-append:ship name="PLAYER_SHIP_DJMOD_RAMMER" a="true" b="true" c="false">
+		<unlock variant="b" silent="false">
+            <type>5</type>
+            <victories>
+				<victory>PLAYER_SHIP_DJMOD_RAMMER</victory>
+			</victories>
+			<silent/>
+        </unlock>
+	</mod-append:ship>
+
 	<mod-append:customShip name="PLAYER_SHIP_DJMOD_RAMMER">
 	<!-- The next line or SHIP_MULTIVERSE does fix the "No Last Stand Tully gift" bug. Console 'SECTOR FINAL' to test. 
 		See events_boss.xml.append for other options. Eventually, append something unique to RadiKal ships. -->
-		<hiddenAug>SHIP_PIRATE</hiddenAug>
+		<hiddenAug>SHIP_RK</hiddenAug>
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+		<hiddenAug>IS_RK_BAM_GEAR</hiddenAug>		<!-- for gear checks in RKS or internals -->
 		<crewLimit>8</crewLimit>
 		<systemLimit>8</systemLimit>
 		<crew>
@@ -249,6 +271,20 @@ From Silly's Auto Fleet :
 			<human_medic room="10"/>  							<!-- engines -->
 			<shell_mechanic room="2"/>  					<!-- shields -->
 			<lanius room="16"/>  					<!-- sensors -->
+		</crew>
+	</mod-append:customShip>
+
+	<mod-append:customShip name="PLAYER_SHIP_DJMOD_RAMMER_2">
+		<hiddenAug>SHIP_RK</hiddenAug>
+		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+		<hiddenAug>IS_RK_BAM_GEAR</hiddenAug>
+		<crewLimit>8</crewLimit>
+		<systemLimit>9</systemLimit>
+		<crew>
+			<rk_weaponlike room="5" name="Bomb-A"/>  	<!-- pilot -->
+			<rk_weaponlike room="2" name="Bomb-B"/>  	<!-- weapons -->
+			<rk_weaponlike room="6" name="Bomb-C"/>  	<!-- engines -->
+			<rk_weaponlike room="13" name="Bomb-D"/>  <!-- shields -->
 		</crew>
 	</mod-append:customShip>
 
@@ -284,9 +320,11 @@ From Silly's Auto Fleet :
 			<silent/>
         </unlock>
 	</mod-append:ship>
+
 	<mod-append:customShip name="PLAYER_SHIP_DJMOD_PUNKER">
-		<hiddenAug>SHIP_PIRATE</hiddenAug>
+		<hiddenAug>SHIP_RK</hiddenAug>
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+		<hiddenAug>IS_RK_PUNK_GEAR</hiddenAug>
 		<crewLimit>9</crewLimit>
 		<systemLimit>9</systemLimit>
 		<crew>
@@ -298,7 +336,6 @@ From Silly's Auto Fleet :
 		<customReactor maxLevel="35">
 			<!-- <baseCost>15</baseCost> -->
 			<!-- <increment>5</increment> -->
-			<!-- <overrideCost coloumn="1">40</overrideCost> -->
 			<overrideCost coloumn="1">12</overrideCost>
 			<overrideCost coloumn="2">15</overrideCost>
 			<overrideCost coloumn="3">18</overrideCost>
@@ -309,19 +346,10 @@ From Silly's Auto Fleet :
 		</customReactor>
 	</mod-append:customShip>
 
-	<!-- <mod-append:ship name="PLAYER_SHIP_DJMOD_PUNKER_2">
-	<splitVictoryAchievement>true</splitVictoryAchievement>
-		<unlock variant="b" silent="false">
-            <type>5</type>
-            <victories>
-				<victory>PLAYER_SHIP_DJMOD_PUNKER</victory>
-			</victories>
-			<silent/>
-        </unlock>
-	</mod-append:ship> -->
 	<mod-append:customShip name="PLAYER_SHIP_DJMOD_PUNKER_2">
-		<hiddenAug>SHIP_PIRATE</hiddenAug>
+		<hiddenAug>SHIP_RK</hiddenAug>
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+		<hiddenAug>IS_RK_PUNK_GEAR</hiddenAug>
 		<crewLimit>12</crewLimit>
 		<crew>
 			<orchid_caretaker room="7" name="HighLife"/>  		<!-- engines -->
@@ -366,12 +394,13 @@ From Silly's Auto Fleet :
         </unlock>
 	</mod-append:ship>
 	<mod-append:customShip name="PLAYER_SHIP_DJMOD_SCORCH">
-		<hiddenAug>SHIP_PIRATE</hiddenAug>						
+		<hiddenAug>SHIP_RK</hiddenAug>						
 		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+		<hiddenAug>IS_RK_SCORCH_GEAR</hiddenAug>
 		<crewLimit>12</crewLimit>
 		<crew>
 			<rock_commando room="26" name="Lighter"/>  	<!-- pilot -->
-			<phantom_goul room="20" name="Log"/>  							<!-- engines -->
+			<rk_fireghost room="20" name="Log"/>  							<!-- engines -->
 			<human room="13"/>  						<!-- weapons -->
 			<human room="19"/>  					<!-- shields -->
 			<human room="16"/>  					<!-- sensors -->
@@ -391,19 +420,64 @@ From Silly's Auto Fleet :
 	
 	<mod-append:customShip name="DJMOD_RADIKAL_GUARD">
 		<shipIcons>
-			<shipIcon>icon_plasmateleporter</shipIcon>		
-			<!-- Last one shows up topmost ingame. 
-			Apparently augment icons are autogenerated for MV gear now. Just add the custom ones. -->
+			<shipIcon>rk_icon_plasma_teleporter</shipIcon>		
+			<!-- Last one here shows up topmost in-game. 
+			Augment icons are now auto-displayed on enemies if icon is defined in hyperspace. Just add the custom ones. -->
+		</shipIcons>
+
+		<!-- REF MV v5.5.1:
+		<shipIcons>
+            <shipIcon>icon_threat</shipIcon>
+			<shipIcon>icon_auto_boss</shipIcon>
+			<shipIcon>icon_resist</shipIcon>
+			<shipIcon>icon_invasion</shipIcon>
+        </shipIcons>
+		<rooms>
+			<room id="24"> 		doors
+				<roomAnim renderLayer="0">resist_3x1</roomAnim>
+                <roomAnim renderLayer="3">resist_icon</roomAnim>
+				<sysDamageResistChance>100</sysDamageResistChance>
+			</room>
+			<room id="4"> 		ion artillery
+				<roomAnim renderLayer="0">resist_2x1</roomAnim>
+                <roomAnim renderLayer="3">resist_icon</roomAnim>
+				<sysDamageResistChance>100</sysDamageResistChance>
+			</room>
+		</rooms>
+		<noFuelStalemate/> -->
+	</mod-append:customShip>
+
+	<mod-append:customShip name="RKS_LAB_BAM_SHELL_ELITE">
+		<shipIcons>
+            <shipIcon>icon_threat</shipIcon>
+		</shipIcons>
+	</mod-append:customShip>
+	<mod-append:customShip name="RKS_LAB_PUNK_FREEMANTIS_ELITE">
+		<shipIcons>
+            <shipIcon>icon_threat</shipIcon>
+			<shipIcon>icon_invasion</shipIcon>
+		</shipIcons>
+	</mod-append:customShip>
+	<mod-append:customShip name="RKS_LAB_SCORCH_ORCHID_ELITE">
+		<shipIcons>
+            <shipIcon>icon_threat</shipIcon>
+		</shipIcons>
+	</mod-append:customShip>
+	
+	<mod-append:customShip name="DJMOD_RADIKAL_BOSS_BAM">
+		<shipIcons>
+			<shipIcon>icon_threat</shipIcon>
+			<!-- <shipIcon>rk_icon_scorch_self2</shipIcon> put one for AERA Second Wind instead -->
+		</shipIcons>
+	</mod-append:customShip>
+	<mod-append:customShip name="DJMOD_RADIKAL_BOSS_PUNK">
+		<shipIcons>
+			<shipIcon>icon_threat</shipIcon>
 		</shipIcons>
 	</mod-append:customShip>
 	<mod-append:customShip name="DJMOD_RADIKAL_BOSS_SCORCH">
 		<shipIcons>
-			<shipIcon>icon_scorchself2</shipIcon>
-		</shipIcons>
-	</mod-append:customShip>
-	<mod-append:customShip name="DJMOD_RADIKAL_BOSS_BAM">
-		<shipIcons>
-			<!-- <shipIcon>icon_scorchself2</shipIcon> put one for AERA 2nd Wind instead -->
+			<shipIcon>icon_threat</shipIcon>
 		</shipIcons>
 	</mod-append:customShip>
 </mod:findLike>
@@ -411,40 +485,107 @@ From Silly's Auto Fleet :
 <!-- 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
-						SHIP HANGAR ORDER
+						AUGMENT ICONS (+text) and SHIP HANGAR ORDER
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
 
 <mod:findLike type="ships">
+	<mod:findLike type="shipIcons">
+		<mod-append:shipIcon>
+			<name>rk_icon_persistence_shield</name>
+			<tooltip>PERSISTENCE SHIELD:
+			This enemy is protected by an Energy Shield. Hacking, Mind Control, Teleportation, Boarding Drones, and all hull-damaging or ion weapons will all be blocked until disabled. This specific shield also increased shield recharge rate, and the enemy is capable of regenerating their Energy Shield once!</tooltip>
+		</mod-append:shipIcon>
+	</mod:findLike>
+	<mod:findLike type="shipIcons">
+		<mod-append:shipIcon>
+			<name>rk_icon_choking_is_fine</name>
+			<tooltip>CHOKING F.I.N.E.:
+			This ship's crew take 0.75x suffocation damage.
+			While suffocating, they move, sabotage, repair and fight 1.5x better.</tooltip>
+		</mod-append:shipIcon>
+	</mod:findLike>
+
+	
+	<mod:findLike type="shipIcons">
+		<mod-append:shipIcon>
+			<name>rk_icon_punk_harmony</name>
+			<tooltip>PUNK HARMONY:
+			This ship's Engis are more resistant and immune to Mind Control. They're also exponentially better at repairs, faster and stronger for each active level of Hacking and Mind Control on their ship!</tooltip>
+		</mod-append:shipIcon>
+	</mod:findLike>
+	<mod:findLike type="shipIcons">
+		<mod-append:shipIcon>
+			<name>rk_icon_super_defenders</name>
+			<tooltip>DEFENSE KITS:
+			On their ship, this ship's crew resist combat damage, repair and move faster, and heal over time if they are idle (not manning).</tooltip>
+		</mod-append:shipIcon>
+	</mod:findLike>
+	<mod:findLike type="shipIcons">
+		<mod-append:shipIcon>
+			<name>rk_icon_demicloner</name>
+			<tooltip>DEMICLONERS:
+			Dark energies try to resurrect this ship's crew if they die (not in events) without a real Clonebay.
+			At best, they become their own lesser version (Soldier = default Human, etc.) If no lesser version exists, they become Morphs. When Morphs die, nothing happens.</tooltip>
+		</mod-append:shipIcon>
+	</mod:findLike>
+
     <mod:findLike type="shipIcons">
 		<mod-append:shipIcon>
-			<name>icon_plasmateleporter</name>
+			<name>rk_icon_plasma_teleporter</name>
 			<tooltip>PLASMA TELEPORTER:
 			This ship can instantly set its enemy on fire when a fight starts. Beware!</tooltip>
 		</mod-append:shipIcon>
 	</mod:findLike>
-	<!-- <mod:findLike type="shipIcons">
-		<mod-append:shipIcon>
-			<name>icon_scorchself1</name>
-			<tooltip>SCORCHED EARTH:
-			This ship's crew is comfortable with fire.</tooltip>
-		</mod-append:shipIcon>
-	</mod:findLike> -->
 	<mod:findLike type="shipIcons">
 		<mod-append:shipIcon>
-			<name>icon_scorchself2</name>
+			<name>rk_icon_scorch_self1</name>
+			<tooltip>SCORCHED EARTH:
+			This ship's crew resists fire, and heals while extinguishing.</tooltip>
+		</mod-append:shipIcon>
+	</mod:findLike>
+	<mod:findLike type="shipIcons">
+		<mod-append:shipIcon>
+			<name>rk_icon_scorch_self2</name>
 			<tooltip>BLAZING EARTH:
 			This ship's crew resists fire, is boosted in it, and heals while extinguishing.</tooltip>
 		</mod-append:shipIcon>
 	</mod:findLike>
-	
+	<mod:findLike type="shipIcons">
+		<mod-append:shipIcon>
+			<name>rk_icon_scorch_self3</name>
+			<tooltip>ERUPTING EARTH:
+			This ship's crew resists fire, is boosted in it and generates O2 in fire, and heals while extinguishing. Your crew loses HP in fire.</tooltip>
+		</mod-append:shipIcon>
+	</mod:findLike>
+	<mod:findLike type="shipIcons">
+		<mod-append:shipIcon>
+			<name>rk_icon_enemies_can_burn</name>
+			<tooltip>FLAMMABILIZER-I:
+			Your crew's fire immunity, resistance or direct healing from fire (not extinguishing) are removed! Your crew also move slower in fire, even more for each active level of Life Support (O2) on the enemy ship!</tooltip>
+		</mod-append:shipIcon>
+	</mod:findLike>
+	<mod:findLike type="shipIcons">
+		<mod-append:shipIcon>
+			<name>rk_icon_enemies_burn_more</name>
+			<tooltip>FLAMMABILIZER-D:
+			Your crew takes more fire damage and move slower in fire. These effects are stronger for each active level of Life Support (O2) on the enemy ship!</tooltip>
+		</mod-append:shipIcon>
+	</mod:findLike>
+
+	<!-- 
+	//////////////////////////////////////////////////////////////////////////////////////////////
+							SHIP HANGAR ORDER
+	//////////////////////////////////////////////////////////////////////////////////////////////
+	-->
 	<mod:findLike type="shipOrder">
         <mod-append:ship>PLAYER_SHIP_DJMOD_RAMMER</mod-append:ship>
         <mod-append:ship>PLAYER_SHIP_DJMOD_PUNKER</mod-append:ship>
         <mod-append:ship>PLAYER_SHIP_DJMOD_SCORCH</mod-append:ship>
 		<mod-append:empty/>
         <mod-append:empty/>
+
         <mod-append:empty/>
         <mod-append:empty/>
         <mod-append:empty/>
@@ -468,28 +609,16 @@ so for the engi ship, the layoutFile is mup_engi_b, so the icon would be img/ach
 you can also put multiple unlock methods which will let the player do ANY of them to unlock the ship -->
 
 
-<!-- 
-REFS:
-LIST_CHECK_AUGMENTS no longer in autoblueprints.xml.append (since HS v1.00 / MV v5.2.3) nor with a blueprintList type, 
-now in hyperspace.xml as a req list, inside the huge <events> tag (which is why the append below is like it is).
--->
-
-
 <!--
-REF: Bag of Dumb Fixed does this.
+REF: Bag of Dumb Fixed:
 <mod:findLike type="events" limit="1">
 	<mod-append:eventFile>mithra</mod-append:eventFile>
 -->
 
-<!-- <mod:findLike type="events"> -->
 <mod:findLike type="events" limit="1">
-	<!-- in v5.5.1, needed again! WORKS. but file doesn't ... -->
-	<!-- <mod-append:eventFile>radikal</mod-append:eventFile> -->
+	<!-- in v5.5.1, needed again! WORKS. -->
 
-	<!-- ... So try this to see if it recognizes events_sector_radikal.xml
-	RESULT: now sector doesn't crash, but guard pirate choice does! because RKS_PIRATE_TRINITY does.
-
-	REF:
+	<!-- REF:
 	<eventFile>sector_hektar</eventFile> -->
 	<mod-append:eventFile>sector_radikal</mod-append:eventFile>	
 
@@ -504,8 +633,16 @@ REF: Bag of Dumb Fixed does this.
 	<mod:findName type="req" name="COORDS">
 		<mod-append:name>coords_radikal</mod-append:name>
 	</mod:findName>
-	<!-- These are new in v5.5.1 (or at least, after v5.2.3) and in a sub-tag, not directly in the coords block.
-	UNNECESSARY - Bag Of Dumb Fixed (for MV 5.5.1) only does the "COORDS" block above.
+	<!-- Can reroute to RKS on sector 7 exit: NOT WORK. Something must be missing. -->
+	<mod:findName type="req" name="COORDS_BOSS">
+		<mod-append:name>coords_radikal</mod-append:name>
+	</mod:findName>
+	
+	<!-- COORDS_BOSS & COORDS_BOSS_TOOLATE are new in v5.5.1 (or at least, after v5.2.3) and in a sub-tag,
+	  not directly in the coords block.
+	UNNECESSARY - Bag Of Dumb Fixed (for MV 5.5.1) only does the name="COORDS" block above.
+	
+	TEST: activate COORDS_BOSS so we can reroute and then insta-fight boss.
 	<mod:findName type="req" name="COORDS_BOSS">
 		<mod-append:name>coords_radikal</mod-append:name>
 	</mod:findName>
@@ -514,12 +651,14 @@ REF: Bag of Dumb Fixed does this.
 	</mod:findName>
 	 -->
 
-	<!-- makes Shipvore Ram not be disintegrated for 1 Full Power use. -->
-	<mod-append:variable name="shipvore_ram_reinforcement" op="set" val="0"/>
-
 	<!-- Prevent return to sector to avoid crash. -->
 	<mod-append:variable name="visited_radikal_sector" op="set" val="0"/>
 	
+	<!-- Labs progress progress. -->
+	<mod-append:variable name="rks_lab_coords_bam" op="set" val="0"/>
+	<mod-append:variable name="rks_lab_coords_punk" op="set" val="0"/>
+	<mod-append:variable name="rks_lab_coords_scorch" op="set" val="0"/>
+
 	<!-- Pirate Trinity beacon progress. -->
 	<mod-append:variable name="rks_pirate_trinity_active" op="set" val="0"/>
 	<mod-append:variable name="rks_pirate_trinity_visited" op="set" val="0"/>
@@ -527,32 +666,6 @@ REF: Bag of Dumb Fixed does this.
 	<mod-append:variable name="rks_pirate_trinity_met_slaver" op="set" val="0"/>
 	<mod-append:variable name="rks_pirate_trinity_met_mercenary" op="set" val="0"/>
 	<mod-append:variable name="rks_pirate_trinity_met_smuggler" op="set" val="0"/>
-
-	<!-- Police confiscation for raid. -->
-	<mod-append:variable name="seized_shipvoreram" op="set" val="0"/>
-	<mod-append:variable name="seized_crewarebombs" op="set" val="0"/>
-	<mod-append:variable name="seized_autosysrepair" op="set" val="0"/>
-	
-	<mod-append:variable name="seized_hackfleet" op="set" val="0"/>
-	<mod-append:variable name="seized_offensedisabler" op="set" val="0"/>
-	<mod-append:variable name="seized_ownharmony" op="set" val="0"/>
-	<mod-append:variable name="seized_superdefenders" op="set" val="0"/>
-	<mod-append:variable name="seized_defenseremover" op="set" val="0"/>
-	
-	<mod-append:variable name="seized_enemiescanburn" op="set" val="0"/>
-	<mod-append:variable name="seized_oxygenizer" op="set" val="0"/>
-	<mod-append:variable name="seized_scorchself" op="set" val="0"/>
-	<mod-append:variable name="seized_scorchself2" op="set" val="0"/>
-	<mod-append:variable name="seized_scorchself3" op="set" val="0"/>
-	<mod-append:variable name="seized_scorchenemy" op="set" val="0"/>
-	
-	<mod-append:variable name="seized_bam_fissurebeam" op="set" val="0"/>
-
-	<mod-append:variable name="seized_rainofion" op="set" val="0"/>
-
-	<mod-append:variable name="seized_rainoffire" op="set" val="0"/>
-	
-	<mod-append:variable name="seized_laserbps" op="set" val="0"/>
 
 	<!-- v5.5.1 Now useless.
 	<mod-append:event name="JUMP_TO_RADIKAL" recursive="true">
@@ -565,8 +678,21 @@ REF: Bag of Dumb Fixed does this.
 	Sector stuff - end
 	**************************************
 	-->
-	
-	
+
+	<!-- 
+	**************************************
+	Mechanical stuff - start
+	**************************************
+	-->
+
+	<!-- makes Shipvore Ram not be disintegrated for 1 Full Power use. -->
+	<mod-append:variable name="shipvore_ram_reinforcement" op="set" val="0"/>
+
+	<!-- 
+	**************************************
+	Mechanical stuff - end
+	**************************************
+	-->
 	
 	<mod:findName type="event" name="START_BEACON">
 		<!-- This tells the game to give the hidden augment associated with your addon being installed to the player
@@ -574,19 +700,28 @@ REF: Bag of Dumb Fixed does this.
 		<mod-append:hiddenAug>ADDON_INSTALLED_DJ0ZAUGMENTS</mod-append:hiddenAug>
 	</mod:findName>
 		
-	<!-- Fix "Use an augment" for MV 5.2.3+ and HS 1.0+. DJMOD_CREW_ARE_BOMBS_OFF seems no work? -->
+	<!-- Fix empty beacon "Use an augment" for MV 5.2.3+ and HS 1.0+.
+
+	LIST_CHECK_AUGMENTS no longer in autoblueprints.xml.append (since HS v1.00 / MV v5.2.3) nor with a blueprintList type, 
+	now in hyperspace.xml as a req list, inside the huge <events> tag.-->
 	<mod:findName name = "LIST_CHECK_AUGMENTS">
 		<mod-append:name>DJMOD_COMBAT_SHIPVORE_RAM</mod-append:name>
+		<mod-append:name>DJMOD_CREW_ARE_BOMBS_ON</mod-append:name>
+		<mod-append:name>RK_PERSISTENCE_SHIELD</mod-append:name>
+		
 		<mod-append:name>DJMOD_COMBAT_SELF_FIRE_UPGRADABLE</mod-append:name>
-		<mod-append:name>DJMOD_CREW_ARE_BOMBS_OFF</mod-append:name>
+
+		<mod-append:name>RK_BPS_SURVEYOR</mod-append:name>
     </mod:findName>
 
 	<!-- FOR INTERNAL AUGMENTS -->
 	<mod:findName type="req" name="LIST_UPG_ALL">
 		<!-- REF Darkest Desires for MV 5.5.1
 		<mod-append:name>DD_INTERNAL_AUGMENT1</mod-append:name> -->
+		<mod-append:name>INTERNAL_RK_CHOKING_IS_FINE</mod-append:name>
 		<mod-append:name>INTERNAL_DJMOD_DEMICLONER</mod-append:name>
 		<mod-append:name>INTERNAL_DJMOD_MC_PARALYZER</mod-append:name>
+		<mod-append:name>INTERNAL_RK_IN_FIRE_CREWBOOSTS</mod-append:name>
 		<mod-append:name>INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE</mod-append:name>
 	</mod:findName>
 </mod:findLike>
@@ -598,7 +733,6 @@ REF: Bag of Dumb Fixed does this.
 
 	<mod:findLike type="customStore">
 	<mod:selector id="STORE_STANDARD"/>
-		<!-- "EVENT CHARACTER_TEST" to test. There must be a shorter one. -->
 		<mod-append:category type="CREW">
 			<customTitle>MYSTERIOUS CREW</customTitle>
             <item/>
@@ -762,9 +896,7 @@ REF: Bag of Dumb Fixed does this.
 -->
 
 <!-- Custom Races
-
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Syntax \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
 <crew>
 	(default human values v5.2.3)
 	<race name="newRace">
@@ -899,8 +1031,36 @@ REF: Bag of Dumb Fixed does this.
 </crew>
 -->
 
-<!-- <mod:findLike type="crew"> -->
-<crew>
+<!-- For Aenwithe's Crewser. REF: TCC v1.2.7 for MV v5.5.1:
+
+<mod:findLike type="ships" limit="1">
+	<mod:findName type="customShip" name="CREW_SHIP_WITHER">
+		<mod:findLike type="crew">
+			<mod-append:trash_eater room="27" name="Trash Eater"/>
+			<mod-append:scrapper_zog room="27" name="Zog"/>
+			<mod-append:unique_black_rose room="26" name="Black Rose"/>
+			<mod-append:sergal_cheese room="26" name="Cheese"/>
+			<mod-append:protogen_tracker room="23" name="Tracker"/>
+			<mod-append:primagen_raptor room="23" name="Raptor"/>
+			<mod-append:protogen_pete room="15" name="Pete"/>
+			<mod-append:clonefail_lancer room="15" name="Lancer"/>
+			<mod-append:polyester room="24" name="Polyster"/>
+			<mod-append:unique_skygirr room="24" name="Skygirr"/>
+			<mod-append:unique_kora room="25" name="Kora"/>
+		</mod:findLike>
+	</mod:findName>
+  </mod:findLike>
+-->
+<mod:findLike type="ships" limit="1">
+	<mod:findName type="customShip" name="CREW_SHIP_WITHER">
+		<mod:findLike type="crew">
+			<mod-append:unique_rk_defromorius room="26" name="Defromorius"/>  <!--oxygen-->
+		</mod:findLike>
+	</mod:findName>
+</mod:findLike>
+
+<mod:findLike type="crew">
+<!-- <crew> 	Doing it as not-an-append works, but makes fltMan complain, which isn't helping. -->
 	<!-- HEALS (See hyperspace ref for more)
 	<passiveHealAmount>1.0</passiveHealAmount>                                       Amount of health to heal over time, in HP/second. Affected by healSpeed, stops at full health.
 	<truePassiveHealAmount>1.0</truePassiveHealAmount>                               Amount of health to heal over time, in HP/second. Unaffected by healSpeed, stops at full health.
@@ -910,7 +1070,7 @@ REF: Bag of Dumb Fixed does this.
 	<healCrewAmount>0.0</healCrewAmount>                                             Amount of health to heal friendly crew in the same room over time, in HP/second. Affected by healSpeed of the respective crew. -->
 		
 	<mod-append:race name="human_soldier_operative">
-		<!-- Buyable even at full crew, which gives away that it's special, but the text above it also hints (1 out of 3). -->
+		<!-- Buyable even at full crew, giving away that it's special, but the store text above also hints at that (1 out of 3). -->
 		<noSlot>true</noSlot>
 		<noClone>true</noClone>
 		<controllable>false</controllable>
@@ -997,12 +1157,14 @@ REF: Bag of Dumb Fixed does this.
 	-->
 	<mod-append:race name="rk_weaponlike">
 		<canFight>true</canFight>
-		<canSabotage>false</canSabotage>
+		<canSabotage>true</canSabotage>
 		<canRepair>false</canRepair>
 		<canSuffocate>false</canSuffocate>
 		<canMan>true</canMan>
 		<maxHealth>75</maxHealth>
 		<crewSlots>0.5</crewSlots>
+		<cloneSpeedMultiplier>2</cloneSpeedMultiplier>
+
 		<!-- <damageMultiplier>1.1</damageMultiplier> -->
 		<fireDamageMultiplier>0.25</fireDamageMultiplier>
 		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
@@ -1018,10 +1180,11 @@ REF: Bag of Dumb Fixed does this.
 			<powerCharges>1</powerCharges>
 			<initialCharges>1</initialCharges>
 			<chargesPerJump>1</chargesPerJump>
+			<respawnCharges>0</respawnCharges>
 
 			<event load="RK_WEAPONLIKE_ABILITY"/>
 			
-			<!-- BUG: never refills on jump, so the crew can only shoot once ever.
+			<!-- BUG: shared resource never refills on jump, so the crew can only shoot once ever.
 			No refs exist, this was found in hyperspace documentation. Try debug again later.
 			<powerResource name="rk_weaponlike_ammo">
                 <sortOrder>0</sortOrder>
@@ -1042,23 +1205,23 @@ REF: Bag of Dumb Fixed does this.
 			<!-- <powerSounds>
 				<powerSound>ionHit1</powerSound>
 			</powerSounds> -->
+			<powerEffectSounds enemy="true">                                             Sound effects to use when the power effect goes off.
+				<powerSound>lockdown1</powerSound>
+				<powerSound>lockdown2</powerSound>
+			</powerEffectSounds>
 			<req>
-				<inCombat/>                                             <!-- Hostile enemy ship is present. -->
+				<inCombat/>										<!-- Hostile enemy ship is present. -->
 			</req>
-			<!-- <req type="player">
-				<systemInRoom/>
-				<enemyShip/>
-			</req> -->
 
 			<!-- REF: Forgemaster for MV v5.4
 			<effectAnim>fm_plated_charge</effectAnim> -->
 			<effectAnim>rk_weaponlike_charge</effectAnim>
 			<animFrame>4</animFrame>
+
 			<buttonText>BOMB OUT</buttonText>
-			<tooltip>Teleport the bomb to the other ship, dealing 1 damage and causing a breach. Can be done once per jump.</tooltip>
+			<tooltip>Teleport the bomb to the other ship, dealing 1 damage and causing a breach. Get 1 charge per jump.</tooltip>
 			<cooldownColor r="0" g="235" b="255"/>
-			<!-- <effectAnim>explosion_big1_ion</effectAnim> -->
-			<!-- <activateWhenReady enemiesOnly="false">true</activateWhenReady> -->
+			<!-- <activateWhenReady enemiesOnly="true">true</activateWhenReady> -->
 			<temporaryEffect>
 				<duration>2</duration>
 				<cooldownColor r="255" g="0" b="0"/>
@@ -1082,6 +1245,7 @@ REF: Bag of Dumb Fixed does this.
 			<powerCharges>1</powerCharges>
 			<initialCharges>1</initialCharges>
 			<chargesPerJump>1</chargesPerJump>
+			<respawnCharges>0</respawnCharges>
 			
 			<!-- Additional resources (cooldowns and charges) that can be shared between abilities, can use load and copy keywords. -->
 			<!-- <powerResource load="rk_weaponlike_ammo"/> -->
@@ -1096,12 +1260,15 @@ REF: Bag of Dumb Fixed does this.
 			<req type="enemy">
 				<inCombat/>
 				<enemyInRoom/>
+				<minHealth>16</minHealth>
 			</req>
 
 			<effectAnim>rk_weaponlike_charge</effectAnim>
 			<animFrame>4</animFrame>
+			<effectPostAnim>explosion_shell_death</effectPostAnim>
+
 			<buttonText>BOMB IN</buttonText>
-			<tooltip>Detonate the bomb, dealing 1 damage in the current room and causing a breach. Can be done once per jump</tooltip>
+			<tooltip>Detonate the bomb, dealing 1 damage in the current room and causing a breach. Get 1 charge per jump</tooltip>
 			<cooldownColor r="0" g="235" b="255"/>
 			<!-- <effectAnim>explosion_big1_ion</effectAnim> -->
 			<!-- <activateWhenReady enemiesOnly="false">true</activateWhenReady> -->
@@ -1122,18 +1289,184 @@ REF: Bag of Dumb Fixed does this.
 		</powerEffect>
 
 		<skills>
-			<!-- <piloting req="10"/>
-			<engines req="10"/>
-			<shields req="43"/> -->
 			<weapons req="1"/>
-			<!-- <repair req="12"/>
-			<combat req="4"/> -->
 		</skills>
 	</mod-append:race>
 
+	
+<!-- 
+===================================================================================================
+RK Punk crew
+===================================================================================================
+-->
 
+	<!-- Unique. Based on MV v5.5.1 blobrock aka "Morph imitating a Rockman":
+	<race name="blobrock">
+		<maxHealth>131</maxHealth>
+		<crewSlots>0.5</crewSlots>
+		<canBurn>false</canBurn>
+		<fireRepairMultiplier>1.67</fireRepairMultiplier>
+		<moveSpeedMultiplier>0.5</moveSpeedMultiplier>
+		<animBase>rock</animBase>
+		<canSuffocate>false</canSuffocate>
+		<deathSounds>
+			<deathSound>blobDeath</deathSound>
+		</deathSounds>
+		<shootingSounds>
+			<shootingSound>rockThrow1</shootingSound>
+			<shootingSound>rockThrow2</shootingSound>
+			<shootingSound>rockThrow3</shootingSound>
+		</shootingSounds>
+		<repairSounds animSoundFrame="5">
+		  <repairSound>rockThud1</repairSound>
+		  <repairSound>rockThud2</repairSound>
+		  <repairSound>rockThud3</repairSound>
+		</repairSounds>
+	</race>
+	-->
+	<mod-append:race name="unique_rk_defromorius">
+		<essential>1</essential>
+		<maxHealth>200</maxHealth>
+		<lowHealthThreshold>2500.0</lowHealthThreshold>
+		<lowHealthThresholdPercentage>0.25</lowHealthThresholdPercentage>
+		
+		<repairSpeed>2.7</repairSpeed>
+		<fireRepairMultiplier>1.67</fireRepairMultiplier>
+		<moveSpeedMultiplier>0.5</moveSpeedMultiplier>
 
+		<punchTimer min="250" max="325"/>		<!-- min="250" max="325" = 2x speed -->
+		<stunMultiplier>0.5</stunMultiplier>
 
+		<canBurn>true</canBurn>
+		<fireDamageMultiplier>0.2</fireDamageMultiplier>
+		<canSuffocate>true</canSuffocate>
+		<suffocationModifier>0.2</suffocationModifier>
+		<oxygenChangeSpeed>-0.5</oxygenChangeSpeed>
+
+		<!-- <powerEffect>
+			<cooldown>20</cooldown>
+			<jumpCooldown>full</jumpCooldown>
+			<powerSounds>
+				<powerSound>shieldsUp</powerSound>
+			</powerSounds>
+			<buttonText>SHIELD</buttonText>
+			<tooltip>[COOLDOWN:20s  DURATION:15s]
+				Each of your allied crew in the room will only take 0.25x damage from ANY source, and quadruples their repair speed.</tooltip>
+			<cooldownColor r="0" g="186" b="255"/>
+			<temporaryEffect>
+				<duration>15</duration>
+				<cooldownColor r="0" g="234" b="255"/>
+				<finishSounds>
+					<finishSound>shieldsDown</finishSound>
+				</finishSounds>
+				<animSheet>unique_turzil_shield</animSheet>
+				<isTelepathic>true</isTelepathic>
+				<statBoosts>
+					<statBoost name="repairSpeed">
+						<boostType>MULT</boostType>
+						<amount>4</amount>
+						<affectsSelf>true</affectsSelf>
+						<shipTarget>CURRENT_ROOM</shipTarget>
+						<crewTarget>ALLIES</crewTarget>
+					</statBoost>
+					<statBoost name="allDamageTakenMultiplier">
+						<boostType>SET</boostType>
+						<amount>0.25</amount>
+						<shipTarget>CURRENT_ROOM</shipTarget>
+						<crewTarget>ALLIES</crewTarget>
+						<affectsSelf>true</affectsSelf>
+						<priority>0</priority>
+						<boostAnim>unique_turzil_shield_buff</boostAnim>
+					</statBoost>
+				</statBoosts>
+			</temporaryEffect>
+		</powerEffect> -->
+		<powerEffect>
+			<cooldown>10</cooldown>
+			<jumpCooldown>full</jumpCooldown>
+			<powerSounds>
+				<powerSound>shieldsUp</powerSound>
+			</powerSounds>
+			<buttonText>DECUBITUS</buttonText>
+			<tooltip>[COOLDOWN:10s  DURATION:10s]
+				Allied crew in the same ship including Defromorius take 0.65x damage from hazards and combat, and deal 1.5x damage.
+				</tooltip>
+			<cooldownColor r="0" g="186" b="255"/>
+			
+			<!-- Sadly this affects the charge but also the buff: only suffocating allies get it.
+			<chargeReq>
+				<extraConditions type="and">
+					<suffocating>true</suffocating>
+				</extraConditions>
+			</chargeReq> -->
+
+			<temporaryEffect>
+				<duration>10</duration>
+				<cooldownColor r="0" g="234" b="255"/>
+				<finishSounds>
+					<finishSound>shieldsDown</finishSound>
+				</finishSounds>
+				<animSheet>unique_turzil_shield</animSheet>
+				<statBoosts>
+					<statBoost name="damageMultiplier">
+						<boostType>MULT</boostType>
+						<amount>1.5</amount>
+						<shipTarget>CURRENT_SHIP</shipTarget>
+						<crewTarget>ALLIES</crewTarget>
+						<affectsSelf>true</affectsSelf>
+					</statBoost>
+
+					<statBoost name="damageTakenMultiplier">
+						<boostType>MULT</boostType>
+						<amount>0.65</amount>
+						<shipTarget>CURRENT_SHIP</shipTarget>
+						<crewTarget>ALLIES</crewTarget>
+						<affectsSelf>true</affectsSelf>
+						<priority>0</priority>
+						<boostAnim>unique_turzil_shield_buff</boostAnim>
+					</statBoost>
+					<statBoost name="suffocationModifier">
+						<boostType>MULT</boostType>
+						<amount>0.65</amount>
+						<shipTarget>CURRENT_SHIP</shipTarget>
+						<crewTarget>ALLIES</crewTarget>
+						<affectsSelf>true</affectsSelf>
+						<priority>0</priority>
+					</statBoost>
+					<statBoost name="fireDamageMultiplier">
+						<boostType>MULT</boostType>
+						<amount>0.65</amount>
+						<shipTarget>CURRENT_SHIP</shipTarget>
+						<crewTarget>ALLIES</crewTarget>
+						<affectsSelf>true</affectsSelf>
+						<priority>0</priority>
+					</statBoost>
+				</statBoosts>
+			</temporaryEffect>
+		</powerEffect>
+
+		<deathSounds>
+			<deathSound>blobDeath</deathSound>
+		</deathSounds>
+		<shootingSounds>
+			<shootingSound>rockThrow1</shootingSound>
+			<shootingSound>rockThrow2</shootingSound>
+			<shootingSound>rockThrow3</shootingSound>
+		</shootingSounds>
+		
+		<animBase>rock</animBase>
+		<repairSounds animSoundFrame="5">
+		  <repairSound>rockThud1</repairSound>
+		  <repairSound>rockThud2</repairSound>
+		  <repairSound>rockThud3</repairSound>
+		</repairSounds>
+	</mod-append:race>
+
+<!-- 
+===================================================================================================
+RK Scorch crew
+===================================================================================================
+-->
 
 	<!-- TESTED HERE adding crew without appending (just "<race" ), like Old Guard does. WORKED BUT NOT RECOMMENDED. -->
 	<mod-append:race name="rk_fireghost">
@@ -1163,8 +1496,12 @@ REF: Bag of Dumb Fixed does this.
 				<powerSound>fire_blast</powerSound>
 			</powerSounds>
 
-			<req>
+			<req type="enemy">
+				<inCombat/>
 				<minHealth>36</minHealth>
+			</req>
+			<req type="player">
+				<minHealth>21</minHealth>
 			</req>
 
 			<!-- <activateWhenReady enemiesOnly="true">true</activateWhenReady> -->
@@ -1176,26 +1513,10 @@ REF: Bag of Dumb Fixed does this.
 			<selfHealth>-20</selfHealth>
 
 			<event load="RK_FIREGHOST_FIRES"/>
-
-			<!-- <temporaryEffect>
-				<duration>15</duration>
-				<cooldownColor r="198" g="198" b="198"/>
-				<finishSounds>
-					<finishSound>decloak</finishSound>
-				</finishSounds>
-				<damageMultiplier>1.5</damageMultiplier>
-				<animSheet baseVisible="true">human_og_dawn_cloak</animSheet>
-				<canFight>true</canFight>
-				<canSabotage>true</canSabotage>
-				<validTarget>false</validTarget>
-				<sabotageSpeedMultiplier>1.25</sabotageSpeedMultiplier>
-			</temporaryEffect>
-			 -->
 		</powerEffect>
 	</mod-append:race>
 	
-<!-- </mod:findLike> -->
-</crew>
+</mod:findLike>
 
 
 <!-- 
@@ -1282,6 +1603,9 @@ Events need unique names, else it might crash the game!
 I assume the same goes for these lists.
 -->
 
+<!-- 
+RK BAM
+ -->
 <req name="DJMOD_COMBAT_SHIPVORE_RAM_ANY" type="any">
     <name>DJMOD_COMBAT_SHIPVORE_RAM</name>
     <name>LOCKED_DJMOD_COMBAT_SHIPVORE_RAM</name>
@@ -1322,9 +1646,29 @@ I assume the same goes for these lists.
 <req name="DJMOD_SUM_ENGINEERS" type="sum">
 	<name>engi</name>
 	<name>engi_separatist</name>
+	<name>engi_separatist_nano</name>
+	<name>engi_defender</name>
+	<name>unique_turzil</name>
+	<name>unique_judge_corby</name>
+
+	<name>technoengi</name>
+	<name>technoavatar</name>
+	<name>technorepair</name>
+	<name>technomender</name>
+	<name>golddefend</name>
+
 	<name>human_engineer</name>
 	<name>human_technician</name>
+
 	<name>shell_mechanic</name>
+
+	<name>sylvanrick</name>
+
+	<name>cognitive</name>
+	<name>cognitive_automated</name>
+	<name>cognitive_advanced</name>
+	<name>cognitive_advanced_automated</name>
+	<name>unique_wither</name>
 </req>
 <req name="DJMOD_ANY_RESCUE_ARM" type="any">
 	<name>UPG_ARM_DRONES</name>
@@ -1343,6 +1687,11 @@ I assume the same goes for these lists.
 	<name>EX_TELEPORT_HEAL</name>
 </req>
 
+<req name="RK_CHOKING_IS_FINE_ANY" type="any">
+    <name>EX_RK_CHOKING_IS_FINE</name>
+    <name>INTERNAL_RK_CHOKING_IS_FINE</name>
+</req>
+
 
 <!-- 
 RK PUNK
@@ -1357,13 +1706,13 @@ RK PUNK
 RK SCORCH
  -->
 <req name="DJMOD_COMBAT_SELF_FIRE" type="any">
-    <name>DJMOD_COMBAT_SCORCH_SELF</name>
-    <name>DJMOD_COMBAT_SCORCH_SELF_2</name>
-	<name>DJMOD_COMBAT_SCORCH_SELF_3</name>
+    <name>RK_SCORCH_SELF</name>
+    <name>RK_SCORCH_SELF_2</name>
+	<name>RK_SCORCH_SELF_3</name>
 </req>
 <req name="DJMOD_COMBAT_SELF_FIRE_UPGRADABLE" type="any">
-    <name>DJMOD_COMBAT_SCORCH_SELF</name>
-    <name>DJMOD_COMBAT_SCORCH_SELF_2</name>
+    <name>RK_SCORCH_SELF</name>
+    <name>RK_SCORCH_SELF_2</name>
 </req>
 
 <!-- 2-combat-augments combo to set the enemy ship on fire for free. -->
@@ -1373,7 +1722,7 @@ RK SCORCH
 </req>
 
 <!-- Toggles. -->
-<req name="DJMOD_FLAMMABILIZER" type="any">
+<req name="DJMOD_FLAMMABILIZER_ANY" type="any">
     <name>DJMOD_ENEMIES_CAN_BURN</name>
     <name>DJMOD_ENEMIES_BURN_MORE</name>
 </req>
@@ -1382,7 +1731,7 @@ RK SCORCH
     <name>DJMOD_OWN_HARMONY_OFF</name>
 </req>
 
-<!-- Refillables (actually none yet). -->
+<!-- Anti-abuse pseudo-toggles. -->
 <req name="DJMOD_CREW_ARE_BOMBS" type="any">
     <name>DJMOD_CREW_ARE_BOMBS_OFF</name>
 	<name>DJMOD_CREW_ARE_BOMBS_ON</name>
@@ -1399,39 +1748,60 @@ For unique sector 'membership' and other gear checks.
 	<!-- Add any non-main-subfaction gear here -->
 </req>
 <req name="DJMOD_HAS_RADIKAL_BAM_GEAR" type="any">
+	<name>DJMOD_AUG_AUTO_SYS_REPAIR</name>
+	<name>RK_CHOKING_IS_FINE_ANY</name>
     <name>DJMOD_COMBAT_SHIPVORE_RAM</name>
 	<name>LOCKED_DJMOD_COMBAT_SHIPVORE_RAM</name>
 	<name>DJMOD_CREW_ARE_BOMBS</name>
-	<name>DJMOD_AUG_AUTO_SYS_REPAIR</name>
+	<name>DJMOD_LEAD_TITANS</name>
+	<name>RK_PERSISTENCE_SHIELD</name>
 	
 	<name>DJMOD_BAM_FISSUREBEAM</name>
+	<name>RK_UNLOADER</name>
 	
 	<name>rk_weaponlike</name>
 
+	<name>IS_RK_BAM_GEAR</name>			<!-- hidden, on RK ships -->
+
+	<name>RK_BPS_SURVEYOR</name>
 	<name>DJMOD_LASER_BPS</name>
 </req>
 <req name="DJMOD_HAS_RADIKAL_PUNK_GEAR" type="any">
     <name>DJMOD_HACK_FLEET</name>
-	<name>DJMOD_COMBAT_OFFENSE_DISABLER</name>
-	<name>DJMOD_SUPER_DEFENDERS</name>
-	<name>DJMOD_OWN_HARMONY</name>
 	<name>DJMOD_DEFENSE_REMOVER</name>
+	<name>DJMOD_COMBAT_OFFENSE_DISABLER</name>
 	<name>DJMOD_DEMICLONER_ANY</name>
+	<name>DJMOD_OWN_HARMONY</name>
+	<name>DJMOD_SUPER_DEFENDERS</name>
+
+	<name>INTERNAL_DJMOD_MC_PARALYZER</name>
 	
-	<name>DJMOD_RAIN_OF_ION</name>
+	<name>RK_RAIN_OF_ION</name>
+	<name>RK_SHOTPHASER</name>
+
+	<name>unique_rk_defromorius</name>
+
+	<name>IS_RK_PUNK_GEAR</name>
 	
+	<name>RK_BPS_SURVEYOR</name>
 	<name>DJMOD_LASER_BPS</name>
 </req>
 <req name="DJMOD_HAS_RADIKAL_SCORCH_GEAR" type="any">
-    <name>DJMOD_FLAMMABILIZER</name>
-	<name>DJMOD_OXYGENIZER</name>
 	<name>DJMOD_COMBAT_SELF_FIRE</name>
     <name>DJMOD_COMBAT_SCORCH_ENEMY</name>
+    <name>DJMOD_FLAMMABILIZER_ANY</name>
+	<name>DJMOD_OXYGENIZER</name>
 	
+	<name>INTERNAL_RK_IN_FIRE_CREWBOOSTS</name>
+	<name>INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE</name>
+
 	<name>DJMOD_RAIN_OF_FIRE</name>
 	
 	<name>rk_fireghost</name>
 
+	<name>IS_RK_SCORCH_GEAR</name>
+
+	<name>RK_BPS_SURVEYOR</name>
 	<name>DJMOD_LASER_BPS</name>
 </req>
 
@@ -1441,28 +1811,33 @@ For unique sector 'membership' and other gear checks.
 	<name>DJMOD_CREW_ARE_BOMBS_OFF</name>
 	<name>DJMOD_CREW_ARE_BOMBS_ON</name>
 	<name>DJMOD_AUG_AUTO_SYS_REPAIR</name>
+	<name>EX_RK_CHOKING_IS_FINE</name>
 	
 	<name>DJMOD_HACK_FLEET</name>
-	<name>DJMOD_SUPER_DEFENDERS</name>
+	<name>DJMOD_DEFENSE_REMOVER</name>
+	<name>DJMOD_COMBAT_OFFENSE_DISABLER</name>
 	<name>DJMOD_OWN_HARMONY_OFF</name>
 	<name>DJMOD_OWN_HARMONY_ON</name>
-	<name>DJMOD_DEFENSE_REMOVER</name>
+	<name>DJMOD_SUPER_DEFENDERS</name>
 	<name>EX_DJMOD_DEMICLONER</name>
 	
-	<name>DJMOD_ENEMIES_CAN_BURN</name>
 	<name>DJMOD_ENEMIES_BURN_MORE</name>
+	<name>DJMOD_ENEMIES_CAN_BURN</name>
 	<name>DJMOD_OXYGENIZER</name>
-	<name>DJMOD_COMBAT_SCORCH_SELF</name>
-	<name>DJMOD_COMBAT_SCORCH_SELF_2</name>
-	<name>DJMOD_COMBAT_SCORCH_SELF_3</name>
+	<name>RK_SCORCH_SELF</name>
+	<name>RK_SCORCH_SELF_2</name>
+	<name>RK_SCORCH_SELF_3</name>
     <name>DJMOD_COMBAT_SCORCH_ENEMY</name>
 
 	<name>DJMOD_BAM_FISSUREBEAM</name>
+	<name>RK_UNLOADER</name>
 	
-	<name>DJMOD_RAIN_OF_ION</name>
+	<name>RK_RAIN_OF_ION</name>
+	<name>RK_SHOTPHASER</name>
 
 	<name>DJMOD_RAIN_OF_FIRE</name>
 	
+	<name>RK_BPS_SURVEYOR</name>
 	<name>DJMOD_LASER_BPS</name>
 </req>
 
@@ -1472,38 +1847,69 @@ Other RKSector checks
 ///////////////////////////////////////////////////////////////////////////
 -->
 
+<!-- Quest unique_rk_defromorius: get black box -->
+<req name="RKS_HAS_ENGI_AND_LANIUS" type="all">
+	<req type="any" load="LIST_CREW_ENGI"/>
+	<req type="any" load="LIST_CREW_LANIUS"/>
+</req>
+<!-- Quest unique_rk_defromorius: remote-decode black box -->
+<req name="RKS_HAS_HIGH_SENSORS_AND_HACKING" type="all">
+	<req lvl="2">
+		<name>sensors</name>
+	</req>
+	<req lvl="1">
+		<name>hacking</name>
+	</req>
+</req>
+
+<!-- Bam Lab -->
+<req name="RKS_HAS_ANY_SACRIFICEABLE_SHELL" type="any">
+	<name>shell</name>
+	<name>shell_mechanic</name>
+	<name>shell_scientist</name>
+	<name>shell_guardian</name>
+	<name>shell_radiant</name>
+</req>
+<!-- Bam Lab fight skip check: unique_alkali is the only one. -->
+
+<!-- Punk Lab -->
+<req name="RKS_HAS_ANY_SACRIFICEABLE_MANTIS" type="any">
+	<name>mantis</name>
+	<name>mantis_free</name>
+	<name>mantis_warlord</name>
+	<name>mantis_suzerain</name>
+	<name>mantis_bishop</name>
+</req>
+<!-- Punk Lab fight skip check, REF: MV's LIST_CREW_MANTIS at the end -->
+<req name="RKS_HAS_MANTIS_UNIQUE" type="any">
+	<name>unique_kaz</name>
+	<name>unique_freddy</name>
+	<name>unique_freddy_sombrero</name>
+	<name>unique_freddy_jester</name>
+	<name>unique_freddy_fedora</name>
+	<name>unique_freddy_twohats</name>
+</req>
+
+<!-- Scorch Lab -->
+<req name="RKS_HAS_ANY_SACRIFICEABLE_ORCHID" type="any">
+	<name>orchid</name>
+	<name>orchid_caretaker</name>
+	<name>orchid_praetor</name>
+	<name>orchid_vampweed</name>
+	<name>orchid_cultivator</name>
+</req>
+<!-- Scorch Lab fight skip check, REF: MV's LIST_CREW_ORCHID_UNIQUE -->
+<req name="RKS_HAS_ORCHID_UNIQUE" type="any">
+	<name>unique_mayeb</name>
+    <name>unique_ivar</name>
+    <name>unique_tyerel</name>
+</req>
+
 <req name="RKS_TRYING_TO_SKIP_TRINITY" type="all">
 	<name>rks_pirate_trinity_active</name>
 	<req lvl="0" max_lvl="0">
 		<name>rks_pirate_trinity_visited</name>
 	</req>
-</req>
-
-<req name="DJMOD_WAS_SEIZED_RADIKAL_GEAR" type="any">
-    <name>seized_shipvoreram</name>
-	<name>seized_crewarebombs</name>
-	<name>seized_autosysrepair</name>
-	
-	<name>seized_hackfleet</name>
-	<name>seized_offensedisabler</name>
-	<name>seized_ownharmony</name>
-	<name>seized_superdefenders</name>
-	<name>seized_defenseremover</name>
-	
-	<name>seized_enemiescanburn</name>
-	<name>seized_oxygenizer</name>
-	<name>seized_scorchself</name>
-	<name>seized_scorchself2</name>
-	<name>seized_scorchself3</name>
-	<name>seized_scorchenemy</name>
-
-	<name>seized_bam_fissurebeam</name>
-
-	<name>seized_rainofion</name>
-	
-	<name>seized_rainoffire</name>
-	
-	<name>seized_laserbps</name>
 </req>
 
 <!-- Better than checking for coords only. -->
@@ -1531,9 +1937,9 @@ Sector membership end
 ///////////////////////////////////////////////////////////////////////////
  -->
 
- <!-- 
+ <!-- For Plasma Teleporter
 DEPRECATED many options for MV v5.5.1 - TOO MUCH MAINTENANCE because of MV and ADD-ON changes.
-Any fire equipment from the RK sector.
+Any fire equipment from the RKS (and MV?).
 -->
 <req name="DJMOD_HAS_FIRE_ITEMS" type="any">
 	<name>DJMOD_LASER_BPS</name>
@@ -1548,7 +1954,6 @@ Any fire equipment from the RK sector.
 
 <!-- 
 DEPRECATE THIS - TOO MUCH MAINTENANCE because of MV and ADD-ON changes.
-
 Any crew that could nicely start a fire in MV. Complete this list regularly. Add add-on crew names if that doesn't cause crashes.
 -->
 <req name="DJMOD_HAS_COMBUSTIBLE_CREW" type="any">
@@ -1585,7 +1990,7 @@ Any crew that could nicely start a fire in MV. Complete this list regularly. Add
 </req>
 
 <!-- MV has the checks this was doing. WHEN RK CREW ADDED: If appending to MV lists doesn't work,
- restore this using LIST_CHECK_ANY_CREW and manually add RK crew.
+restore this using LIST_CHECK_ANY_CREW and manually add RK crew.
 
 <req name="DJMOD_ANY_CREW" type="any">
 	<name>LIST_CREW_ALL_CRAPBUCKET</name>
@@ -1624,7 +2029,40 @@ Any crew that could nicely start a fire in MV. Complete this list regularly. Add
 </req>
 -->
 
- 
+<!-- 
+interesting REF from Forgotten Races for MV v5.5.1:
+<mod:findName type="req" name="BLUELIST_CREW_NO2">
+	...
+	<mod-append:name>fr_ghost_haynes</mod-append:name>
+	<mod-append:name>fr_ghost_tully</mod-append:name>
+	<mod-append:name>fr_reformed_pok</mod-append:name>
+	<mod-append:name>fr_reformed_charror</mod-append:name>
+	<mod-append:name>JUDGE_BOON_FR_REVENANT_CREW</mod-append:name>
+	<mod-append:req type="all">
+		<name>LIST_CHECK_ANY_CREW</name>
+		<name>JUDGE_BOON_FR_REVENANT_CREW</name>
+	</mod-append:req>
+	<mod-append:req type="all">
+		<name>FR_LIST_CREW_SALT</name>
+		<name>JUDGE_BOON_FR_SALT_CREW</name>
+	</mod-append:req>
+</mod:findName>
+-->
+
+<!-- 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+Boss boxes to see the whole of BIG ships - Use the AUTOBLUEPRINT name, not the SHIP_... one.
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<!-- REF: Forgotten Races for MV v5.5.1:
+<bossShip>FR_BOSS_REVENANT_G</bossShip> -->
+
+<bossShip>RK_HACK_FLEET_BOSS_MFK</bossShip>
+
+<bossShip>DJMOD_RADIKAL_BOSS_BAM</bossShip>
+<bossShip>DJMOD_RADIKAL_BOSS_PUNK</bossShip>
+<bossShip>DJMOD_RADIKAL_BOSS_SCORCH</bossShip>
+
 
 </events>		<!--Necessary wrapper! All variables and req lists go IN HERE or won't work, silently without giving any error.-->
 
@@ -1632,18 +2070,79 @@ Any crew that could nicely start a fire in MV. Complete this list regularly. Add
 <!--
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+*********************************************************************************************************
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
-            STORES (1 general, 1 of each subfaction, 1 sniper)
+            STORES (1 Sylvan, 1 general, 1 of each subfaction, 1 Sniper)
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+*********************************************************************************************************
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
+REFS: MV v5.5.1; The Outer Expansion for that MV (STORE_SYLVAN_AEA_WEAPONS)
 -->
 
 <mod:findLike type="store">
+
+	<mod-append:customStore id="STORE_SYLVAN_RK_GEAR">
+        <itemPurchaseLimit>2</itemPurchaseLimit>
+		<category type="WEAPONS">
+			<customTitle>RADIKAL WEAPONS</customTitle>
+            <item>
+                <blueprint>LIST_WEAPONS_RADIKAL</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>LIST_WEAPONS_RADIKAL</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>LIST_WEAPONS_RADIKAL</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+        </category>
+		<category type="AUGMENTS">
+			<customTitle>RADIKAL AUGMENTS</customTitle>
+            <item>
+                <blueprint>SHOP_ITEM_RK_BAM_AUGMENTS</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item> 
+			<item>
+                <blueprint>SHOP_ITEM_RK_PUNK_AUGMENTS</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    			
+            <item>
+                <blueprint>SHOP_ITEM_RK_SCORCH_AUGMENTS</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+        </category>
+		<category type="CREW">
+			<customTitle>RADIKALS</customTitle>
+			<allowDuplicates />
+            <item>
+                <blueprint>RK_LIST_CREW_RADIKALS</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item> 
+			<item>
+                <blueprint>RK_LIST_CREW_RADIKALS</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    			
+            <item>
+                <blueprint>RK_LIST_CREW_RADIKALS</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>    
+        </category>
+    </mod-append:customStore>
+
 	<mod-append:customStore id="STORE_RADIKAL">
 		
 		<!-- Limit because strong. Applies to all non-resource items. -->
@@ -1673,7 +2172,7 @@ Any crew that could nicely start a fire in MV. Complete this list regularly. Add
 				<modifier min="0.80" max="0.90" flat="false"/>
 			</item>
 			<item>
-				<blueprint>DJMOD_RAIN_OF_ION</blueprint>
+				<blueprint>RK_RAIN_OF_ION</blueprint>
 				<modifier min="0.80" max="0.90" flat="false"/>
 			</item>
 			<item>
@@ -1684,10 +2183,25 @@ Any crew that could nicely start a fire in MV. Complete this list regularly. Add
 		</category>
 		
 		<category type="WEAPONS">
+			<customTitle>RADIKAL WEAPONS</customTitle>
+			<item>
+				<blueprint>RK_UNLOADER</blueprint>
+				<modifier min="0.80" max="0.90" flat="false"/>
+			</item>
+			<item>
+				<blueprint>RK_SHOTPHASER</blueprint>
+				<modifier min="0.80" max="0.90" flat="false"/>
+			</item>
 			<item>
 				<blueprint>DJMOD_LASER_BPS</blueprint>
 				<modifier min="0.80" max="0.90" flat="false"/>
 			</item>
+			<item/>
+			<chance>100</chance>			
+		</category>
+
+		<category type="WEAPONS">
+			<item/>
 			<item/>
 			<item/>
 			<chance>100</chance>			
@@ -1863,7 +2377,7 @@ Any crew that could nicely start a fire in MV. Complete this list regularly. Add
                 <price>-1</price>
             </item>
             <item>
-                <blueprint>DJMOD_COMBAT_SCORCH_SELF</blueprint>
+                <blueprint>RK_SCORCH_SELF</blueprint>
                 <modifier min="0.80" max="0.90" flat="false"/>
                 <price>-1</price>
             </item>
@@ -1956,9 +2470,411 @@ Any crew that could nicely start a fire in MV. Complete this list regularly. Add
         </category> -->
 
 	</mod-append:customStore>
-</mod:findLike>
 
-<mod:findLike type="store">
+	<mod-append:customStore id="STORE_RADIKAL_BAM">
+		
+		<!-- Limit because strong. Applies to all non-resource items. -->
+		<itemPurchaseLimit>3</itemPurchaseLimit>
+		
+		<!-- Great quantities because hungry augments. Cheap repairs. -->
+		<hullRepair>
+			<price>2</price>
+		</hullRepair>
+		<resource>
+			<type>fuel</type>
+			<count min="10" max="20"/>
+		</resource>
+		<resource>
+			<type>missiles</type>
+			<count min="10" max="12"/>
+		</resource>
+		<resource>
+			<type>drones</type>
+			<count min="10" max="12"/>
+		</resource>
+		
+		<category type="WEAPONS">
+			<item>
+				<blueprint>DJMOD_LASER_BPS</blueprint>
+				<modifier flat="false">0.9</modifier>
+			</item>
+			<item>
+				<blueprint>DJMOD_BAM_FISSUREBEAM</blueprint>
+				<modifier flat="false">0.9</modifier>
+			</item>
+			<item>
+				<blueprint>RK_UNLOADER</blueprint>
+				<modifier flat="false">0.9</modifier>
+			</item>
+			<chance>100</chance>
+		</category>
+
+		<category type="WEAPONS">
+			<item>
+				<blueprint>GIFTLIST_FITTING_WEAPON_BAM</blueprint>
+			</item>
+			<item>
+				<blueprint>GIFTLIST_FITTING_WEAPON_BAM</blueprint>
+			</item>
+			<item>
+				<blueprint>GIFTLIST_FITTING_WEAPON_BAM</blueprint>
+			</item>
+			<chance>100</chance>
+		</category>
+		
+		<!-- If total groupchance isn't 100, the difference with 100 is the chance none will show up. -->
+		<category type="SYSTEMS">
+			<customTitle>ESSENTIAL SYSTEMS</customTitle>
+			<guaranteedSystems>
+				<weapons/>
+				<shields/>
+				<drones/>
+			</guaranteedSystems>
+			<item>
+				<blueprint>SHOP_ITEM_SYSTEMS_ESSENTIAL</blueprint>
+			</item>
+			<item>
+				<blueprint>SHOP_ITEM_SYSTEMS_ESSENTIAL</blueprint>
+			</item>
+			<item>
+				<blueprint>SHOP_ITEM_SYSTEMS_ESSENTIAL</blueprint>
+			</item>
+			<chance>33</chance>
+		</category>
+		<category type="SYSTEMS">
+			<customTitle>AUXILIARY SYSTEMS</customTitle>
+			<item>
+				<blueprint>SHOP_ITEM_SYSTEMS_BONUS</blueprint>
+			</item>
+			<item>
+				<blueprint>SHOP_ITEM_SYSTEMS_BONUS</blueprint>
+			</item>
+			<item>
+				<blueprint>SHOP_ITEM_SYSTEMS_BONUS</blueprint>
+			</item>
+			<chance>67</chance>
+		</category>
+		
+		<category type="DRONES">
+			<item/>
+			<item/>
+			<item/>
+			<chance>100</chance>
+		</category>
+		
+		<!-- Thematic crew. Other than that, same philosophy as general RK store. -->
+		<category type="CREW">
+			<customTitle>RK BAM ASSOCIATES</customTitle>
+			<item>
+				<blueprint>lanius_welder</blueprint>
+				<modifier min="0.95" max="1.05" flat="false"/>
+			</item>
+			<item>
+				<blueprint>rock_paladin</blueprint>
+				<modifier min="0.95" max="1.05" flat="false"/>
+			</item>
+			<item>
+				<blueprint>human_legion</blueprint>
+				<modifier min="0.95" max="1.05" flat="false"/>
+			</item>
+			<chance>100</chance>
+		</category>
+		<category type="CREW">
+			<customTitle>RK BAM DECKHANDS</customTitle>
+			<item>
+				<blueprint>mantis_warlord</blueprint>
+				<modifier min="0.95" max="1.05" flat="false"/>
+			</item>
+			<item>
+				<blueprint>rk_weaponlike</blueprint>
+				<modifier min="0.75" max="0.85" flat="false"/>
+			</item>
+			<item>
+				<blueprint>rk_weaponlike</blueprint>
+				<modifier min="0.75" max="0.85" flat="false"/>
+			</item>
+			<chance>100</chance>
+		</category>
+		
+		<category type="CREW">
+			<item>
+				<modifier min="1.05" max="1.10" flat="false"/>
+				<price>-1</price>
+			</item>
+			<item>
+				<modifier min="1.05" max="1.10" flat="false"/>
+				<price>-1</price>
+			</item>
+			<item>
+				<modifier min="1.05" max="1.10" flat="false"/>
+				<price>-1</price>
+			</item>
+			<chance>50</chance>
+		</category>
+		
+		<category type="AUGMENTS">
+			<!-- U.I. can maybe take 3-4 more letters than "ESSENTIAL RADIKAL AUGMENTS". -->
+			<customTitle>ESSENTIAL RADIKAL AUGMENTS</customTitle>
+			<item>
+                <blueprint>DJMOD_COMBAT_SHIPVORE_RAM</blueprint>
+                <modifier min="0.80" max="0.90" flat="false"/>
+                <price>-1</price>
+            </item>
+            <item>
+                <blueprint>RK_SCORCH_SELF</blueprint>
+                <modifier min="0.80" max="0.90" flat="false"/>
+                <price>-1</price>
+            </item>
+			<item>
+                <blueprint>DJMOD_HACK_FLEET</blueprint>
+                <modifier min="0.80" max="0.90" flat="false"/>
+                <price>-1</price>
+            </item>
+			<chance>100</chance>
+        </category>
+		
+		<category type="AUGMENTS">
+			<customTitle>RK BAM AUGMENTS</customTitle>
+			<item>
+                <blueprint>SHOP_ITEM_RK_BAM_AUGMENTS</blueprint>
+                <modifier min="0.85" max="1.0" flat="false"/>
+                <price>-1</price>
+            </item>
+            <item>
+                <blueprint>SHOP_ITEM_RK_BAM_AUGMENTS</blueprint>
+                <modifier min="0.85" max="1.0" flat="false"/>
+                <price>-1</price>
+            </item>
+			<item>
+                <blueprint>SHOP_ITEM_RK_BAM_AUGMENTS</blueprint>
+                <modifier min="0.85" max="1.0" flat="false"/>
+                <price>-1</price>
+            </item>
+			<chance>100</chance>
+        </category>
+		<category type="AUGMENTS">
+			<customTitle>TOP RK BAM AUGMENTS</customTitle>
+			<item>
+                <blueprint>DJMOD_AUG_AUTO_SYS_REPAIR</blueprint>
+                <modifier min="0.90" max="1.0" flat="false"/>
+                <price>-1</price>
+            </item>
+			<item>
+                <blueprint>RK_BAM_DIVINE_ARMOR</blueprint>
+                <modifier min="0.90" max="1.0" flat="false"/>
+                <price>-1</price>
+            </item>
+            <item>
+                <blueprint>RK_PERSISTENCE_SHIELD</blueprint>
+                <modifier min="0.90" max="1.0" flat="false"/>
+                <price>-1</price>
+            </item>
+			<chance>100</chance>
+        </category>
+	</mod-append:customStore>
+
+	<mod-append:customStore id="STORE_RADIKAL_PUNK">
+		
+		<!-- Limit because strong. Applies to all non-resource items. -->
+		<itemPurchaseLimit>3</itemPurchaseLimit>
+		
+		<!-- Great quantities because hungry augments. Cheap repairs. -->
+		<hullRepair>
+			<price>2</price>
+		</hullRepair>
+		<resource>
+			<type>fuel</type>
+			<count min="10" max="20"/>
+		</resource>
+		<resource>
+			<type>missiles</type>
+			<count min="10" max="12"/>
+		</resource>
+		<resource>
+			<type>drones</type>
+			<count min="10" max="12"/>
+		</resource>
+		
+		<category type="WEAPONS">
+			<item>
+				<blueprint>DJMOD_LASER_BPS</blueprint>
+				<modifier flat="false">0.9</modifier>
+			</item>
+			<item>
+				<blueprint>GIFTLIST_FITTING_WEAPON_PUNK</blueprint>
+			</item>
+			<item>
+				<blueprint>GIFTLIST_FITTING_WEAPON_PUNK</blueprint>
+			</item>
+			<chance>100</chance>
+		</category>
+
+		<category type="WEAPONS">
+			<item>
+				<blueprint>RK_SHOTPHASER</blueprint>
+				<modifier flat="false">0.9</modifier>
+			</item>
+			<item>
+				<blueprint>RK_RAIN_OF_ION</blueprint>
+				<modifier flat="false">0.9</modifier>
+			</item>
+			<item>
+				<blueprint>GIFTLIST_FITTING_WEAPON_PUNK</blueprint>
+			</item>
+			<chance>100</chance>
+		</category>
+		
+		<!-- If total groupchance isn't 100, the difference with 100 is the chance none will show up. -->
+		<category type="SYSTEMS">
+			<customTitle>ESSENTIAL SYSTEMS</customTitle>
+			<guaranteedSystems>
+				<weapons/>
+				<shields/>
+				<drones/>
+			</guaranteedSystems>
+			<item>
+				<blueprint>SHOP_ITEM_SYSTEMS_ESSENTIAL</blueprint>
+			</item>
+			<item>
+				<blueprint>SHOP_ITEM_SYSTEMS_ESSENTIAL</blueprint>
+			</item>
+			<item>
+				<blueprint>SHOP_ITEM_SYSTEMS_ESSENTIAL</blueprint>
+			</item>
+			<chance>33</chance>
+		</category>
+		<category type="SYSTEMS">
+			<customTitle>AUXILIARY SYSTEMS</customTitle>
+			<item>
+				<blueprint>SHOP_ITEM_SYSTEMS_BONUS</blueprint>
+			</item>
+			<item>
+				<blueprint>SHOP_ITEM_SYSTEMS_BONUS</blueprint>
+			</item>
+			<item>
+				<blueprint>SHOP_ITEM_SYSTEMS_BONUS</blueprint>
+			</item>
+			<chance>67</chance>
+		</category>
+		
+		<category type="DRONES">
+			<item/>
+			<item/>
+			<item/>
+			<chance>100</chance>
+		</category>
+		
+		<!-- Thematic crew. Other than that, same philosophy as general RK store. -->
+		<category type="CREW">
+			<customTitle>RK PUNK ASSOCIATES</customTitle>
+			<item>
+				<blueprint>human_technician</blueprint>
+				<modifier min="0.95" max="1.05" flat="false"/>
+			</item>
+			<item>
+				<blueprint>engi_defender</blueprint>
+				<modifier min="0.95" max="1.05" flat="false"/>
+			</item>
+			<item>
+				<blueprint>slug_knight</blueprint>
+				<modifier min="0.95" max="1.05" flat="false"/>
+			</item>
+			<chance>100</chance>
+		</category>
+		<!-- <category type="CREW">
+			<customTitle>RK PUNK DECKHANDS</customTitle>
+			<item>
+				<blueprint>phantom_goul</blueprint>
+				<modifier min="0.95" max="1.05" flat="false"/>
+			</item>
+			<item>
+				<blueprint>phantom_goul_alpha</blueprint>
+				<modifier min="0.95" max="1.05" flat="false"/>
+			</item>
+			<item>
+				<blueprint>rk_fireghost</blueprint>
+				<modifier min="0.75" max="0.85" flat="false"/>
+			</item>
+			<chance>100</chance>
+		</category> -->
+		
+		<category type="CREW">
+			<item>
+				<modifier min="1.05" max="1.10" flat="false"/>
+				<price>-1</price>
+			</item>
+			<item>
+				<modifier min="1.05" max="1.10" flat="false"/>
+				<price>-1</price>
+			</item>
+			<item>
+				<modifier min="1.05" max="1.10" flat="false"/>
+				<price>-1</price>
+			</item>
+			<chance>50</chance>
+		</category>
+		
+		<category type="AUGMENTS">
+			<!-- U.I. can maybe take 3-4 more letters than "ESSENTIAL RADIKAL AUGMENTS". -->
+			<customTitle>ESSENTIAL RADIKAL AUGMENTS</customTitle>
+			<item>
+                <blueprint>DJMOD_COMBAT_SHIPVORE_RAM</blueprint>
+                <modifier min="0.80" max="0.90" flat="false"/>
+                <price>-1</price>
+            </item>
+            <item>
+                <blueprint>RK_SCORCH_SELF</blueprint>
+                <modifier min="0.80" max="0.90" flat="false"/>
+                <price>-1</price>
+            </item>
+			<item>
+                <blueprint>DJMOD_HACK_FLEET</blueprint>
+                <modifier min="0.80" max="0.90" flat="false"/>
+                <price>-1</price>
+            </item>
+			<chance>100</chance>
+        </category>
+		
+		<category type="AUGMENTS">
+			<customTitle>RK PUNK AUGMENTS</customTitle>
+			<item>
+                <blueprint>SHOP_ITEM_RK_PUNK_AUGMENTS</blueprint>
+                <modifier min="0.85" max="1.0" flat="false"/>
+                <price>-1</price>
+            </item>
+            <item>
+                <blueprint>SHOP_ITEM_RK_PUNK_AUGMENTS</blueprint>
+                <modifier min="0.85" max="1.0" flat="false"/>
+                <price>-1</price>
+            </item>
+			<item>
+                <blueprint>SHOP_ITEM_RK_PUNK_AUGMENTS</blueprint>
+                <modifier min="0.85" max="1.0" flat="false"/>
+                <price>-1</price>
+            </item>
+			<chance>100</chance>
+        </category>
+		<category type="AUGMENTS">
+			<customTitle>TOP RK PUNK AUGMENTS</customTitle>
+			<item>
+                <blueprint>DJMOD_COMBAT_OFFENSE_DISABLER</blueprint>
+                <modifier min="0.90" max="1.0" flat="false"/>
+                <price>-1</price>
+            </item>
+            <item>
+                <blueprint>DJMOD_DEFENSE_REMOVER</blueprint>
+                <modifier min="0.90" max="1.0" flat="false"/>
+                <price>-1</price>
+            </item>
+			<item>
+                <blueprint>DJMOD_SUPER_DEFENDERS</blueprint>
+                <modifier min="0.90" max="1.0" flat="false"/>
+                <price>-1</price>
+            </item>
+			<chance>100</chance>
+        </category>
+	</mod-append:customStore>
+
 	<mod-append:customStore id="STORE_RADIKAL_SCORCH">
 		
 		<!-- Limit because strong. Applies to all non-resource items. -->
@@ -2057,11 +2973,11 @@ Any crew that could nicely start a fire in MV. Complete this list regularly. Add
 				<modifier min="0.95" max="1.05" flat="false"/>
 			</item>
 			<item>
-				<blueprint>human_legion_pyro</blueprint>
+				<blueprint>zoltan_infernum</blueprint>
 				<modifier min="0.95" max="1.05" flat="false"/>
 			</item>
 			<item>
-				<blueprint>zoltan_infernum</blueprint>
+				<blueprint>human_legion_pyro</blueprint>
 				<modifier min="0.95" max="1.05" flat="false"/>
 			</item>
 			<chance>100</chance>
@@ -2108,7 +3024,7 @@ Any crew that could nicely start a fire in MV. Complete this list regularly. Add
                 <price>-1</price>
             </item>
             <item>
-                <blueprint>DJMOD_COMBAT_SCORCH_SELF</blueprint>
+                <blueprint>RK_SCORCH_SELF</blueprint>
                 <modifier min="0.80" max="0.90" flat="false"/>
                 <price>-1</price>
             </item>
@@ -2153,7 +3069,7 @@ Any crew that could nicely start a fire in MV. Complete this list regularly. Add
                 <price>-1</price>
             </item>
 			<item>
-                <blueprint>DJMOD_COMBAT_SCORCH_SELF_3</blueprint>
+                <blueprint>RK_SCORCH_SELF_3</blueprint>
                 <modifier min="0.90" max="1.0" flat="false"/>
                 <price>-1</price>
             </item>
@@ -2162,9 +3078,10 @@ Any crew that could nicely start a fire in MV. Complete this list regularly. Add
 	</mod-append:customStore>
 </mod:findLike>
 
+
 <!-- Sniper girl (HARD DISTRESS). Fixed list of all mv-stealth (no cloak timer reduction while firing) MV and RK weapons,
-plus any cloak-related augs. -->
- <mod:findLike type="store">
+plus any cloak-friendly/cloak-like augs. -->
+<mod:findLike type="store">
 	<mod-append:customStore id="STORE_RKS_SNIPER">
 		
 		<itemPurchaseLimit>3</itemPurchaseLimit>
@@ -2296,7 +3213,7 @@ plus any cloak-related augs. -->
 <!--
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////AUGMENT EFFECTS based on HARDCODE or HYPERSPACE statBoosts
+//////////////	AUGMENT EFFECTS based on HARDCODE or HYPERSPACE statBoosts
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
@@ -2309,9 +3226,161 @@ plus any cloak-related augs. -->
 		<function name="SHIELD_RECHARGE" value="0.09" useForReqs="true" warning="false"/>
     </aug>
 
+
+	<!-- Choking FINE gives:
+	Slower choking: WORKS
+	Higher stats while choking: WORKS
+	Stacks with Internal: WORKS
+	Lower stats while bored ABANDONED, avoids messing with immunes blacklists that may involve other add-ons.
+	-->
+	<aug name="EX_RK_CHOKING_IS_FINE">
+		<statBoosts>
+			<statBoost name="suffocationModifier">
+				<boostType>MULT</boostType>
+				<amount>0.75</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+			</statBoost>
+
+			<statBoost name="damageMultiplier">
+				<boostType>MULT</boostType>
+				<amount>1.5</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+
+				<extraConditions type="or">
+					<suffocating>true</suffocating>
+				</extraConditions>
+				<!-- Can both LIST and individually at once. REF: unique_obyn MV v5.5.1:
+				<blackList load="LIST_CREW_OBYN">
+					<blobsalt/>
+				</blackList> -->
+			</statBoost>
+			<statBoost name="doorDamageMultiplier">
+				<boostType>MULT</boostType>
+				<amount>1.5</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+
+				<extraConditions type="or">
+					<suffocating>true</suffocating>
+				</extraConditions>
+			</statBoost>
+			<statBoost name="sabotageSpeedMultiplier">
+				<boostType>MULT</boostType>
+				<amount>1.5</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+
+				<extraConditions type="or">
+					<suffocating>true</suffocating>
+				</extraConditions>
+			</statBoost>
+
+			<statBoost name="repairSpeed">
+				<boostType>MULT</boostType>
+				<amount>1.5</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+
+				<extraConditions type="or">
+					<suffocating>true</suffocating>
+				</extraConditions>
+			</statBoost>
+			<statBoost name="moveSpeedMultiplier">
+				<boostType>MULT</boostType>
+				<amount>1.5</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+
+				<extraConditions type="or">
+					<suffocating>true</suffocating>
+				</extraConditions>
+			</statBoost>
+		</statBoosts>
+		<icon>rk_icon_choking_is_fine</icon>
+    </aug>
+	<!-- Copy-paste of the above. -->
+	<aug name="INTERNAL_RK_CHOKING_IS_FINE">
+		<statBoosts>
+			<statBoost name="suffocationModifier">
+				<boostType>MULT</boostType>
+				<amount>0.75</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+			</statBoost>
+
+			<statBoost name="damageMultiplier">
+				<boostType>MULT</boostType>
+				<amount>1.5</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+
+				<extraConditions type="or">
+					<suffocating>true</suffocating>
+				</extraConditions>
+			</statBoost>
+			<statBoost name="doorDamageMultiplier">
+				<boostType>MULT</boostType>
+				<amount>1.5</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+
+				<extraConditions type="or">
+					<suffocating>true</suffocating>
+				</extraConditions>
+			</statBoost>
+			<statBoost name="sabotageSpeedMultiplier">
+				<boostType>MULT</boostType>
+				<amount>1.5</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+
+				<extraConditions type="or">
+					<suffocating>true</suffocating>
+				</extraConditions>
+			</statBoost>
+
+			<statBoost name="repairSpeed">
+				<boostType>MULT</boostType>
+				<amount>1.5</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+
+				<extraConditions type="or">
+					<suffocating>true</suffocating>
+				</extraConditions>
+			</statBoost>
+			<statBoost name="moveSpeedMultiplier">
+				<boostType>MULT</boostType>
+				<amount>1.5</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+
+				<extraConditions type="or">
+					<suffocating>true</suffocating>
+				</extraConditions>
+			</statBoost>
+		</statBoosts>
+		<icon>rk_icon_choking_is_fine</icon>
+    </aug>
+
+
 	<!-- Lead Titans gives
-	x2 crew slot WORK - try 1.5 too TEST
-	Breaches while walking WORKS but inconsistent - TEST lower cooldown.
+	x2 crew slot WORK - try 1.5 too WORKS but much less intuitive, reverted.
+	Breaches while walking WORKS but inconsistent - lower cooldown WORKS.
 	Stat bonuses WORK
 	-->
 	<aug name="DJMOD_LEAD_TITANS">
@@ -2328,7 +3397,7 @@ plus any cloak-related augs. -->
 					<onDeath>cancel</onDeath>
 					<cooldown>0.45</cooldown>
 
-					<buttonText>WALKBREACH</buttonText>
+					<buttonText>STEPBREACH</buttonText>
 					<tooltip>SHOULD NEVER BE SEEN, opens breach while walking.</tooltip>
 					<cooldownColor r="172" g="210" b="112"/>
 					<friendlyFire>true</friendlyFire>
@@ -2365,7 +3434,14 @@ plus any cloak-related augs. -->
 				</powerEffect> -->
 				<shipTarget>ALL</shipTarget>
                 <crewTarget>ORIGINAL_ALLIES</crewTarget>
-				<whiteList load="RK_LIST_LEAD_TITANS"/>
+
+				<!-- <whiteList load="RK_LIST_LEAD_TITANS"/> -->
+				<whiteList>
+					<blueprintList load="LIST_CREW_CRYSTAL"/>
+					<blueprintList load="LIST_CREW_LANIUS"/>
+					<blueprintList load="LIST_CREW_ROCK"/>
+				</whiteList>
+
 				<extraConditions type="and">             
 					<moving>true</moving>
 				</extraConditions>
@@ -2376,54 +3452,85 @@ plus any cloak-related augs. -->
 				<amount>2</amount>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ORIGINAL_ALLIES</crewTarget>
-				<whiteList load="RK_LIST_LEAD_TITANS"/>
+				<!-- <whiteList load="RK_LIST_LEAD_TITANS"/> -->
+				<whiteList>
+					<blueprintList load="LIST_CREW_CRYSTAL"/>
+					<blueprintList load="LIST_CREW_LANIUS"/>
+					<blueprintList load="LIST_CREW_ROCK"/>
+				</whiteList>
 			</statBoost>
 
 			<statBoost name="allDamageTakenMultiplier">
 				<boostType>MULT</boostType>
-				<amount>0.5</amount>
+				<amount>0.4</amount>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ORIGINAL_ALLIES</crewTarget>
 				<droneTarget>CREW</droneTarget>
 				<affectsSelf>true</affectsSelf>
 				<!-- <boostAnim>energy_shield_buff</boostAnim> -->
 				<boostAnim>rk_lead_titans_buff</boostAnim>
-				<whiteList load="RK_LIST_LEAD_TITANS"/>
+				<!-- <whiteList load="RK_LIST_LEAD_TITANS"/> -->
+				<whiteList>
+					<blueprintList load="LIST_CREW_CRYSTAL"/>
+					<blueprintList load="LIST_CREW_LANIUS"/>
+					<blueprintList load="LIST_CREW_ROCK"/>
+				</whiteList>
 			</statBoost>
 			<statBoost name="stunMultiplier">
 				<boostType>MULT</boostType>
-				<amount>0.5</amount>
+				<amount>0.4</amount>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ORIGINAL_ALLIES</crewTarget>
 				<droneTarget>CREW</droneTarget>
-				<whiteList load="RK_LIST_LEAD_TITANS"/>
+				<!-- <whiteList load="RK_LIST_LEAD_TITANS"/> -->
+				<whiteList>
+					<blueprintList load="LIST_CREW_CRYSTAL"/>
+					<blueprintList load="LIST_CREW_LANIUS"/>
+					<blueprintList load="LIST_CREW_ROCK"/>
+				</whiteList>
 			</statBoost>
 			
 			<statBoost name="damageMultiplier">
 				<boostType>MULT</boostType>
-				<amount>3.0</amount>
+				<amount>3.5</amount>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ORIGINAL_ALLIES</crewTarget>
 				<droneTarget>CREW</droneTarget>
-				<whiteList load="RK_LIST_LEAD_TITANS"/>
+				<!-- <whiteList load="RK_LIST_LEAD_TITANS"/> -->
+				<whiteList>
+					<blueprintList load="LIST_CREW_CRYSTAL"/>
+					<blueprintList load="LIST_CREW_LANIUS"/>
+					<blueprintList load="LIST_CREW_ROCK"/>
+				</whiteList>
 			</statBoost>
 			<statBoost name="doorDamageMultiplier">
 				<boostType>MULT</boostType>
-				<amount>3.0</amount>
+				<amount>3.5</amount>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ORIGINAL_ALLIES</crewTarget>
 				<droneTarget>CREW</droneTarget>
-				<whiteList load="RK_LIST_LEAD_TITANS"/>
+				<!-- <whiteList load="RK_LIST_LEAD_TITANS"/> -->
+				<whiteList>
+					<blueprintList load="LIST_CREW_CRYSTAL"/>
+					<blueprintList load="LIST_CREW_LANIUS"/>
+					<blueprintList load="LIST_CREW_ROCK"/>
+				</whiteList>
 			</statBoost>
 			<statBoost name="sabotageSpeedMultiplier">
 				<boostType>MULT</boostType>
-				<amount>3.0</amount>
+				<amount>3.5</amount>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ORIGINAL_ALLIES</crewTarget>
 				<droneTarget>CREW</droneTarget>
-				<whiteList load="RK_LIST_LEAD_TITANS"/>
+				<!-- <whiteList load="RK_LIST_LEAD_TITANS"/> -->
+				<whiteList>
+					<blueprintList load="LIST_CREW_CRYSTAL"/>
+					<blueprintList load="LIST_CREW_LANIUS"/>
+					<blueprintList load="LIST_CREW_ROCK"/>
+				</whiteList>
 			</statBoost>
 
+			<!-- REMOVED ABILITY TO REPAIR ENTIRELY: AI immediately stops moving to repair, endless loop.
 			<statBoost name="repairSpeed">
 				<boostType>MULT</boostType>
 				<amount>1.4</amount>
@@ -2432,24 +3539,93 @@ plus any cloak-related augs. -->
 				<droneTarget>CREW</droneTarget>
 				<whiteList load="RK_LIST_LEAD_TITANS"/>
 			</statBoost>
-			<statBoost name="moveSpeedMultiplier">
-				<boostType>MULT</boostType>
-				<amount>1.4</amount>
+			-->
+			<!-- REF MV v5.5.1:
+			 <statBoost name="canFight">
+				<boostType>SET</boostType>
+				<value>true</value>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<priority>10</priority>
+				<whiteList load="LIST_CREW_MONK"/>
+			</statBoost>
+			-->
+			<statBoost name="canRepair">
+				<boostType>SET</boostType>
+				<value>false</value>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ORIGINAL_ALLIES</crewTarget>
 				<droneTarget>CREW</droneTarget>
-				<whiteList load="RK_LIST_LEAD_TITANS"/>
+				<priority>10</priority>
+				<!-- <whiteList load="RK_LIST_LEAD_TITANS"/> -->
+				<whiteList>
+					<blueprintList load="LIST_CREW_CRYSTAL"/>
+					<blueprintList load="LIST_CREW_LANIUS"/>
+					<blueprintList load="LIST_CREW_ROCK"/>
+				</whiteList>
+			</statBoost>
+
+			<statBoost name="repairSpeed">
+				<boostType>FLAT</boostType>
+				<amount>0.75</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>9999</priority>
+				<!-- <blackList load="RK_LIST_LEAD_TITANS"/> -->
+				<blackList>
+					<blueprintList load="LIST_CREW_CRYSTAL"/>
+					<blueprintList load="LIST_CREW_LANIUS"/>
+					<blueprintList load="LIST_CREW_ROCK"/>
+				</blackList>
+			</statBoost>
+			<statBoost name="moveSpeedMultiplier">
+				<boostType>FLAT</boostType>
+				<amount>0.5</amount>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>9999</priority>
 			</statBoost>
 		</statBoosts>
     </aug>
+
+	<aug name="RK_BAM_DIVINE_ARMOR">
+		<function name="AUTO_COOLDOWN" value="-0.05" useForReqs="false" warning="false" />
+	</aug>
 	
-	<!-- Zoltan shield extractor. 
+	
+	<!-- Supershield augments.
+
+	Zoltan Shield Extractor abandoned prototype:
 	Give 1 supershield (WORKS), 
 	can be replaced by a normal Zoltan Shield from the default Zoltan crewkill (TEST).
 
+
+	REFS HS v1.22.2 doc (for an EVENT):
+
+	<superShields player="false" amount="12" add="0"/>
+		Regenerates supershield to given amount (full if not given), then adds the given additional amount (if not full).
+
+
+	REFS Forgotten Races for MV v5.5.1:
+
+	<mod-append:aug name="FR_OVERCHARGED_AETHER_SHIELDS">
+		<function name="ENERGY_SHIELD" value="0" useForReqs="true" warning="false"/>
+		<function name="SHIELD_RECHARGE" value="-0.2" useForReqs="false" warning="false" />
+		<superShield>
+			<value>12</value>
+			<color r="0" g="255" b="6" a="1" />
+			<shieldImage>ship/fr_shield_base_bubble_white.png</shieldImage>
+		</superShield>
+		<locked/>
+		<icon>icon_aether_shield</icon>
+	</mod-append:aug>
+
+
 	REFS MV 5.5.1:
 
-	 <aug name="ENERGY_SHIELD">				The default one, and only one sold in the Nexus.
+	<aug name="ENERGY_SHIELD">				The default one, and only one sold in the Nexus.
     	<icon>icon_zoltan_shield</icon>
     </aug>
 	<aug name="LOCKED_ENERGY_SHIELD">
@@ -2486,27 +3662,41 @@ plus any cloak-related augs. -->
 		</superShield>
     </aug>
 	-->
-	<aug name="DJMOD_ZOLTAN_SHIELD_EXTRACTOR">
+
+	<!-- <aug name="DJMOD_ZOLTAN_SHIELD_EXTRACTOR">
 		<function name="SYLVAN_SHIELD_REWARD" useForReqs="false" stackable="false" warning="false"/>
 		<function name="ENERGY_SHIELD" value="0" useForReqs="true" stackable="false"/>
 		<superShield>
-			<!-- <value>12</value> -->
 			<value>1</value>
 			<color r="175" g="58" b="165" a="1.0"/>
 			<shieldImage>ship/enemy_shields_white.png</shieldImage>
 		</superShield>
 		<icon>icon_zoltan_shield</icon>
-    </aug>
+    </aug> -->
+	<aug name="RK_PERSISTENCE_SHIELD">
+		<function name="ENERGY_SHIELD" value="0" useForReqs="true" warning="false"/>
+		<function name="SHIELD_RECHARGE" value="0.2" useForReqs="true" warning="false" />
+		<superShield>
+			<value>0</value>
+			<add>4</add>
+			<color r="120" g="210" b="50" a="1" />
+			<shieldImage>ship/enemy_shields_white.png</shieldImage>
+		</superShield>
+		<icon>rk_icon_persistence_shield</icon>
+	</aug>
 
 
-	
 
-	<!-- Scorched earth
+	<!-- Scorched Earth
 	Fire resist (WORKS)
+	Systems fire resist aka FIRE_IMMUNITY (RETEST: WEIRD AF. T1 resists, T2 & T3 don't, no matter what.)
+	=> FEATURE DISABLED until somebody figures out WTF is happening.
 	extinguishing stats to allies (WORKS)
 	and healing while extinguishing fire (WORKS)... which kinda looks like "drinking healing fire" TBH. -->
 
-	<aug name="DJMOD_COMBAT_SCORCH_SELF">
+	<aug name="RK_SCORCH_SELF">
+		<!-- <function name="FIRE_IMMUNITY" value="0.22" useForReqs="true"/> -->
+		<!-- <function name="FIRE_IMMUNITY" value="0.78" useForReqs="true"/> -->
     	<statBoosts>
 			<statBoost name="fireDamageMultiplier">
 				<boostType>MULT</boostType>
@@ -2551,16 +3741,16 @@ plus any cloak-related augs. -->
 				</systemPowerScaling>
 			</statBoost>
 		</statBoosts>
+		<icon>rk_icon_scorch_self1</icon>		<!-- This how to automate the augment icons now! -->
     </aug>
 	
-	<!-- Blazing earth additionally gives
-	speed while in fire (WORKS)
-	sabotage speed while in fire (WORKS)
-	increased damage in fire. (WORKS)
+	<!-- Blazing Earth additionally gives
+	orchid-like oxygen production while in fire (WORKS)
 	-->
-	<aug name="DJMOD_COMBAT_SCORCH_SELF_2">
+	<aug name="RK_SCORCH_SELF_2">
 		<statBoosts>
-			
+			<!-- <function name="FIRE_IMMUNITY" value="0.44" useForReqs="true"/> -->
+			<!-- <function name="FIRE_IMMUNITY" value="0.56" useForReqs="true"/> -->
 			<statBoost name="fireDamageMultiplier">
 				<boostType>MULT</boostType>
 				<shipTarget>ALL</shipTarget>
@@ -2604,38 +3794,12 @@ plus any cloak-related augs. -->
 				</systemPowerScaling>
 			</statBoost>
 			
-			<statBoost name="moveSpeedMultiplier">
-				<boostType>MULT</boostType>
+			<statBoost name="oxygenChangeSpeed">
+				<boostType>FLAT</boostType>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ORIGINAL_ALLIES</crewTarget>
 				<droneTarget>CREW</droneTarget>
-				<amount>2.0</amount>
-				<priority>0</priority>
-				
-				<extraConditions type="and">             
-					<burning>true</burning>                <!--Current room is on fire.-->
-				</extraConditions>
-			</statBoost>
-			
-			<statBoost name="damageMultiplier">
-				<boostType>MULT</boostType>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ORIGINAL_ALLIES</crewTarget>
-				<droneTarget>CREW</droneTarget>
-				<amount>2.0</amount>
-				<priority>0</priority>
-				
-				<extraConditions type="and">             
-					<burning>true</burning>
-				</extraConditions>
-			</statBoost>
-
-			<statBoost name="sabotageSpeedMultiplier">
-				<boostType>MULT</boostType>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ORIGINAL_ALLIES</crewTarget>
-				<droneTarget>CREW</droneTarget>
-				<amount>2.0</amount>
+				<amount>0.5</amount>
 				<priority>0</priority>
 				
 				<extraConditions type="and">             
@@ -2643,15 +3807,17 @@ plus any cloak-related augs. -->
 				</extraConditions>
 			</statBoost>
 		</statBoosts>
+		<icon>rk_icon_scorch_self2</icon>
     </aug>
 	
-	<!-- Erupting earth additionally gives
-	double sabotage damage in fire (WORKS)
-	orchid-like oxygen production while in fire (WORKS)
+	<!-- Erupting earth just increases all stats.
+	SYSTEM FIRE RES HERE DOES NOTHING AT ALL. Even with a value set in blueprint.
 	-->
-	<aug name="DJMOD_COMBAT_SCORCH_SELF_3">
+	<aug name="RK_SCORCH_SELF_3">
 		<statBoosts>
-			
+			<!-- <function name="FIRE_IMMUNITY" value="0.95" useForReqs="true"/> -->
+			<!-- <function name="FIRE_IMMUNITY" value="0.66" useForReqs="true"/> -->
+			<!-- <function name="FIRE_IMMUNITY" value="0.34" useForReqs="true"/> -->
 			<statBoost name="fireDamageMultiplier">
 				<boostType>MULT</boostType>
 				<shipTarget>ALL</shipTarget>
@@ -2695,58 +3861,20 @@ plus any cloak-related augs. -->
 				</systemPowerScaling>
 			</statBoost>
 			
-			<statBoost name="moveSpeedMultiplier">
-				<boostType>MULT</boostType>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ORIGINAL_ALLIES</crewTarget>
-				<droneTarget>CREW</droneTarget>
-				<amount>2.0</amount>
-				<priority>0</priority>
-				
-				<extraConditions type="and">             
-					<burning>true</burning>
-				</extraConditions>
-			</statBoost>
-			
-			<statBoost name="damageMultiplier">
-				<boostType>MULT</boostType>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ORIGINAL_ALLIES</crewTarget>
-				<droneTarget>CREW</droneTarget>
-				<amount>2.0</amount>
-				<priority>0</priority>
-				
-				<extraConditions type="and">             
-					<burning>true</burning>
-				</extraConditions>
-			</statBoost>
-
-			<statBoost name="sabotageSpeedMultiplier">
-				<boostType>MULT</boostType>
-				<shipTarget>ALL</shipTarget>
-				<crewTarget>ORIGINAL_ALLIES</crewTarget>
-				<droneTarget>CREW</droneTarget>
-				<amount>2.0</amount>
-				<priority>0</priority>
-				
-				<extraConditions type="and">             
-					<burning>true</burning>
-				</extraConditions>
-			</statBoost>
-			
 			<statBoost name="oxygenChangeSpeed">
 				<boostType>FLAT</boostType>
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ORIGINAL_ALLIES</crewTarget>
 				<droneTarget>CREW</droneTarget>
-				<amount>1.05</amount>
+				<amount>1.5</amount>
 				<priority>0</priority>
 				
 				<extraConditions type="and">             
 					<burning>true</burning>
 				</extraConditions>
 			</statBoost>
-
+			
+			<!-- TODO: move to new source.
 			<statBoost name="trueHealAmount">
 				<boostType>FLAT</boostType>
 				<amount>-7</amount>
@@ -2758,11 +3886,10 @@ plus any cloak-related augs. -->
 				<extraConditions type="and">             
 					<burning>true</burning>
 				</extraConditions>
-			</statBoost>
-			
-		</statBoosts>
+			</statBoost> -->
 
-		<icon>icon_shell_gas</icon>		<!-- Ooohhh is this how to automate the augment icons now? -->
+		</statBoosts>
+		<icon>rk_icon_scorch_self3</icon>
     </aug>
 
 
@@ -2857,6 +3984,7 @@ plus any cloak-related augs. -->
 				</systemPowerScaling>
 			</statBoost>
 		</statBoosts>
+		<icon>rk_icon_enemies_can_burn</icon>
     </aug>
 
 	<!-- Flammabilizer making burnable enemy types MORE BURNABLE (WORKS!)
@@ -2924,6 +4052,7 @@ plus any cloak-related augs. -->
 				</systemPowerScaling>
 			</statBoost>
 		</statBoosts>
+		<icon>rk_icon_enemies_burn_more</icon>
     </aug>
 
 
@@ -2986,6 +4115,7 @@ plus any cloak-related augs. -->
 				</extraConditions>
 			</statBoost>
 		</statBoosts>
+		<icon>rk_icon_super_defenders</icon>
     </aug>
 
 
@@ -4560,6 +5690,8 @@ plus any cloak-related augs. -->
                 </systemPowerScaling>
 			</statBoost>
 		</statBoosts>
+
+		<icon>rk_icon_demicloner</icon>
     </aug>
 	<!--  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 	COPY-PASTE of the External above. Modify only above, then paste below.
@@ -6048,11 +7180,13 @@ plus any cloak-related augs. -->
                 </systemPowerScaling>
 			</statBoost>
 		</statBoosts>
+
+		<icon>rk_icon_demicloner</icon>
     </aug>
 
 
 	<!-- Punk Harmony
-	Makes engis uncontrollable (WORKS!) 
+	Makes engis uncontrollable (WORKS) 
 	and was supposed to work on drones too (NOT WORK else it affects ALL CREW) but unnecessary. MV has auto drone toggle now.
 	and Gives repair speed (WORKS)
 	and damage taken reduc (WORKS)
@@ -6184,33 +7318,6 @@ plus any cloak-related augs. -->
 			</aug>
 			-->
 
-			<!-- Removed recharge bonus for balance
-			<statBoost name="powerRechargeMultiplier">
-				<boostType>MULT</boostType>
-				<shipTarget>ORIGINAL_SHIP</shipTarget>
-				<crewTarget>ALLIES</crewTarget>
-				<droneTarget>CREW</droneTarget>
-				<amount>1.25</amount>
-				<priority>0</priority>
-				<whiteList load="LIST_CREW_ENGI"/>
-				<systemPowerDependency>
-					<mind/>
-					<hacking/>
-				</systemPowerDependency>
-				<systemPowerScaling>
-					<noSys>1</noSys>
-					<hackedSys>0.1</hackedSys>
-					<noPwr>1</noPwr>
-					<onePwr>1.2</onePwr>
-					<twoPwr>1.4</twoPwr>
-					<threePwr>1.6</threePwr>
-					<fourPwr>1.8</fourPwr>
-					<fivePwr>2.0</fivePwr>
-					<sixPwr>2.2</sixPwr>
-				</systemPowerScaling>
-			</statBoost>
-			-->
-
 			<!-- Exponential scaling (except resistance). 
 			Gives +160% at 6 power, not x33,6 which would look like instant movement. -->
 			<statBoost name="moveSpeedMultiplier">
@@ -6263,8 +7370,8 @@ plus any cloak-related augs. -->
 					<sixPwr>32</sixPwr>
 				</systemPowerScaling>
 			</statBoost>
-						
 		</statBoosts>
+		<icon>rk_icon_punk_harmony</icon>
     </aug>
 
 
@@ -6339,11 +7446,11 @@ plus any cloak-related augs. -->
 [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
 [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
 											INTERNAL UPGRADES
-						except Demicloners which is right below its EX_ (external) version
+				NB: those with EX_ (external) versions are instead copy-pasted right below them.
 [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
 [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
 TODO:
-TEST Mind Cooler
+.
  -->
 	<aug name="INTERNAL_DJMOD_MC_PARALYZER">
 		<statBoosts>
@@ -6401,6 +7508,52 @@ TEST Mind Cooler
 		</statBoosts>
 	</aug>
 
+	<!-- 
+	RK Scorch internals 
+	-->
+
+	<aug name="INTERNAL_RK_IN_FIRE_CREWBOOSTS">
+		<statBoosts>
+			<statBoost name="moveSpeedMultiplier">
+				<boostType>MULT</boostType>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<amount>2.0</amount>
+				<priority>0</priority>
+				
+				<extraConditions type="and">             
+					<burning>true</burning>
+				</extraConditions>
+			</statBoost>
+			
+			<statBoost name="damageMultiplier">
+				<boostType>MULT</boostType>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<amount>2.0</amount>
+				<priority>0</priority>
+				
+				<extraConditions type="and">             
+					<burning>true</burning>
+				</extraConditions>
+			</statBoost>
+
+			<statBoost name="sabotageSpeedMultiplier">
+				<boostType>MULT</boostType>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<amount>2.0</amount>
+				<priority>0</priority>
+				
+				<extraConditions type="and">             
+					<burning>true</burning>
+				</extraConditions>
+			</statBoost>
+		</statBoosts>
+	</aug>
 
 	<aug name="INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE">
 		<statBoosts>
@@ -6412,6 +7565,18 @@ TEST Mind Cooler
 				<crewTarget>ORIGINAL_ALLIES</crewTarget>
 				<droneTarget>CREW</droneTarget>
 				<!-- <priority>-1000</priority> -->
+				<priority>0</priority>
+
+				<extraConditions type="and">             
+					<burning>true</burning>
+				</extraConditions>
+			</statBoost>
+			<statBoost name="isTelepathic">
+				<boostType>SET</boostType>
+				<value>TRUE</value>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
 				<priority>0</priority>
 
 				<extraConditions type="and">             
@@ -6435,4 +7600,134 @@ TEST Mind Cooler
 	</aug>
 
 </augments>
+
+
+<!-- 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+				ACHIEVEMENTS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+
+<mod:findLike type="achievements" limit="1">
+	<mod-append:page>
+		<section text="RadiKal Events" hidden="false">
+			<achievement name="ACH_RK_EVENT_DEFROMORIUS">
+				<name>Tormented Amalgam</name>
+				<secretName>???</secretName>
+				<description>Rescue RK Defromorius from suffocating to death in space.</description>
+				<secretDescription>Rescue a strange RK sector creature.</secretDescription>
+				<!-- <header id="text_id">text</name> (if set, will play the ship unlock sound unless <sound> is specified) -->
+				<icon>ach_rk_event_defromorius</icon>
+				<lockImage>ach_locked</lockImage>
+				<!-- 
+				<variable name="varname" amount="100"/> (name of variable or meta-variable to track, optional)
+				<hidden/> (don't show achievement on stats if locked)
+				<multiDifficulty>true</multiDifficulty> (if true display the achieved difficulty, if false then don't)
+				<sound>sound_id</sound> (replace the achievement sound with a custom sound) 
+				-->
+			</achievement>
+
+			<achievement name="ACH_RK_EVENT_HACK_FLEET_BOSS_REBEL">
+				<name>Fleet Hacker</name>
+				<secretName>???</secretName>
+				<description>Draw the attention of the Hacker MFK with Enigmashin, then defeat it.</description>
+				<secretDescription>Abuse the fleet and deal with the consequences.</secretDescription>
+				<icon>ach_rk_event_hack_fleet_boss_rebel</icon>
+				<lockImage>ach_locked</lockImage>
+				<multiDifficulty>true</multiDifficulty>
+			</achievement>
+			<achievement name="ACH_RK_EVENT_SHIPVORE_RAM_SCRAP">
+				<name>Scrapvore Ram</name>
+				<secretName>???</secretName>
+				<description>Get a huge and very rare scrap payout from Shipvore Ram.</description>
+				<secretDescription>Get truly lucky while eating ships.</secretDescription>
+				<icon>ach_rk_event_shipvore_ram_scrap</icon>
+				<lockImage>ach_locked</lockImage>
+				<multiDifficulty>false</multiDifficulty>
+			</achievement>
+		</section>
+	</mod-append:page>
+</mod:findLike>
+<!-- REFS: MV v5.5.1:
+
+<achievement name="ACH_OBEL_STEALGREATEYE">
+				<name>Grand Theft Oculus</name>
+				<description>Fix and steal the Great Eye with your Obelisk crew member.</description>
+				<secretDescription>Make away with the sacred monolith.</secretDescription>
+				<icon>ach_obel_greateyesteal</icon>
+				<lockImage>ach_locked</lockImage>
+				<sound>achievement</sound>
+			</achievement>
+
+REFS: Forgotten Races for MV v 5.5.1:
+
+<mod:findLike type="achievements" limit="1">
+	<mod-append:page>
+		<section text="Forgotten Boons" hidden="false">
+			<achievement name="ACH_FR_BOON_COMMONWEALTH">
+				<secretName>Boon of ???</secretName>
+				<secretDescription>Receive the Boon of ??? from Thest.</secretDescription>
+				<name>Boon of The Extinct</name>
+				<description>Show a Commonwealth crew to Thest. 
+				While in effect, your Commonwealth crew can move anywhere by teleporting.</description>
+				<header>Boon Received</header>
+				<icon>fr_ach_boon_commonwealth</icon>
+				<lockImage>ach_locked</lockImage>
+				<multiDifficulty>false</multiDifficulty>
+			</achievement>
+			...
+		</section>
+		<section text="Forgotten Blessings" hidden="false">
+			<achievement name="ACH_FR_BOON_ION">
+				<secretName>Blessing of ???</secretName>
+				<secretDescription>Receive the Blessing of ??? from Wakeson.</secretDescription>
+				<name>Blessing of Ionization</name>
+				<description>Show a Commonwealth weapon to Wakeson. 
+				While in effect, you gain 50% ion resistance.</description>
+				<header>Blessing Received</header>
+				<icon>fr_ach_boon_ion</icon>
+				<lockImage>ach_locked</lockImage>
+				<multiDifficulty>false</multiDifficulty>
+			</achievement>
+			...
+		</section>
+		<section text="Forgotten Events" hidden="false">
+			<achievement name="ACH_FR_EVENT_ENHANCED">
+				<name>Forbidden Snack</name>
+				<secretName>???</secretName>
+				<description>Rescue one of the last Enhanced crew deep in Augmented space.</description>
+				<secretDescription>Rescue a rare Augmented inside their home.</secretDescription>
+				<icon>fr_ach_event_enhanced</icon>
+				<lockImage>ach_locked</lockImage>
+			</achievement>
+			<achievement name="ACH_FR_EVENT_TESTER">
+				<name>Testing, Testing, One, Two, Three</name>
+				<secretName>???</secretName>
+				<description>Ditch your ship for the new and improved Tester.</description>
+				<secretDescription>Ditch your ship.</secretDescription>
+				<icon>fr_ach_event_tester</icon>
+				<lockImage>ach_locked</lockImage>
+			</achievement>
+			<achievement name="ACH_FR_EVENT_TARTARUS">
+				<name>Ghosts With The Most</name>
+				<secretName>???</secretName>
+				<description>End G's madness and free the spirits of the damned from Tartarus.</description>
+				<secretDescription>Help the Spook Chasers with a big-time bounty.</secretDescription>
+				<icon>fr_ach_event_tartarus</icon>
+				<lockImage>ach_locked</lockImage>
+			</achievement>
+			...
+		</section>
+	</mod-append:page>
+</mod:findLike>
+-->
+
+<mod:findLike type="titleScreen" limit="1">
+    <mod:findLike type="splashImages">
+        <mod-append:splashImage x="640" y="360" center="true">rk_secret_title</mod-append:splashImage>
+    </mod:findLike>
+</mod:findLike>
+
 </FTL>

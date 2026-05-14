@@ -4,12 +4,6 @@
 However, MV's file does not feature player ship CURA's power surges in there. -->
 <FTL>
 
-<event name="RK_FIREGHOST_FIRES">
-	<playSound>dj_plasmaTeleporter</playSound>
-	<damage amount="0" system="room" effect="fire"/>
-	<enemyDamage amount="0" system="random" effect="fire"/>
-</event>
-
 <event name="RK_WEAPONLIKE_ABILITY">
 	<!-- <playSound>lightLaser1</playSound> -->
 	<!-- <variable name="gnome_punishment_surge" op="set" val="3"/> -->
@@ -22,5 +16,11 @@ However, MV's file does not feature player ship CURA's power surges in there. --
 	<superBarrage player="true" name="GNOME_SURGE"/>
 </event>
  -->
+
+<event name="RK_FIREGHOST_FIRES">
+	<playSound>dj_plasmaTeleporter</playSound>
+	<damage amount="0" system="room" effect="fire"/>
+	<enemyDamage amount="0" system="random" effect="fire"/>
+</event>
 
 </FTL>

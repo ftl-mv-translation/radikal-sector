@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- rammer. -->
+<!-- rammer A -->
 <roomLayout name="engines_8">
 	<computerGlow x="0" y="44" dir="LEFT" />
 </roomLayout>
@@ -11,6 +11,19 @@
 	<computerGlow name="computer1_glow" x="29" y="-1" dir="UP" />
 </roomLayout>
 <roomLayout name="weapons">
+	<computerGlow x="40" y="0" dir="UP" />
+</roomLayout>
+<!-- rammer B -->
+<roomLayout name="engines_3">
+	<computerGlow x="53" y="7" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="pilot_2">
+	<computerGlow name="glow_pilot" x="54" y="8" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="shields_5">
+	<computerGlow name="computer1_glow" x="3" y="-1" dir="UP" />
+</roomLayout>
+<roomLayout name="weapons_8">
 	<computerGlow x="40" y="0" dir="UP" />
 </roomLayout>
 

@@ -41,7 +41,6 @@ scrap ~ , fuel { , missiles } , drones |
 	<item_modify>
 		<item type="scrap" min="-5" max="-5"/>
 		<item type="missiles" min="-1" max="-1"/>
-		<!-- <item type="drones" min="-1" max="-1"/> -->
 	</item_modify>
 	
 	<choice>
@@ -58,7 +57,8 @@ scrap ~ , fuel { , missiles } , drones |
 
 <event name="GET_COORDS_RADIKAL">
 	<text>Suddenly, the dummy hits something small during an evasive maneuver, which you eventually find by calculating trajectories and carefully looking around since it's too small for detection.
-	It's just a torn piece of clothing that probably belonged to someone who died near this beacon recently. It has a pocket.
+	
+	It's just a torn piece of clothing that probably belonged to someone who died near this beacon recently. There's a pocket.
 	Inside, encased in frozen blood, is a data card that you don't take long to clean up and decrypt, containing FTL jump coordinates...</text>
 	
 	<variable name="coords_radikal" op="set" val="1"/>
@@ -67,7 +67,9 @@ scrap ~ , fuel { , missiles } , drones |
 		<text>Continue...</text>
 		<event>
 			<text>The destination sector doesn't match anything in your database (which isn't reassuring) and is unlabeled (which isn't legal).
+			
 			The only clue is a logo with the letters "RK" on the back of the card.
+			
 			You will be able to reroute to it the next time you change sectors, knowing that showing up uninvited somewhere you don't know is always a risky move.</text>
 			<choice>
 				<text>We'll see.</text>
@@ -78,8 +80,8 @@ scrap ~ , fuel { , missiles } , drones |
 </event>
 
 <event name="NOTGET_COORDS_RADIKAL">
-	<text>Your crew enjoys the exercise, pretending they're using radical tactics to fight enemies. 
-	At some point you wonder if anything special could have come out of this recreational activity...
+	<text>Your crew enjoy the exercise, pretending they're using radical tactics to fight enemies. 
+	At some point you think to yourself that there's probably a 50% chance anything special could have come out of this recreational activity...
 	Then you call it a day and start focusing on your mission again.</text>
 	<choice>
 		<text>Continue...</text>

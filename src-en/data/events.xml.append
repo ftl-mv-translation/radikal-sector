@@ -6,6 +6,7 @@ SCRAP ~
 FUEL {
 MISSILES }
 DRONEPARTS |
+REPAIRS $
 
 THEY CAN HAVE REQS NOW v5.5.1 (not sure when that happened):
 <event name="NEBULA_SLUG_O2_JAM" unique="true">
@@ -151,22 +152,60 @@ LUA                Run lua code directly for testing       Usage: LUA <code on o
                                                                                           Example: LUA Hyperspace.Global.GetInstance():GetCApp().world.starMap:ModifyPursuit(-1)
 
 
-TODO:
--Add this to some event to (i assume) set jump charge back to 0: <resetFtl/> . See MV for refs.
-Could be some augment activated via toggle, 
-or a periodic/on-death effect caused by an enemy-only RKS augment/crew,
-or a surrender threshold effect in the RKS.
+*****************************************************************************************************************
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+******************** HARD RULES: ********************************************************************************
+1) <upgrade>: upgrade tag's parent (which must be an event tag) MUST NOT be the opening event of a beacon,
+ otherwise revisiting the beacon lets you upgrade again.
+2) <event> and eventList: names must be unique among both events and eventLists. 
+Otherwise, if an event and an eventList has the same name, the eventList will take priority over the event.
+3) Defining nebula beacons with events and eventLists: 
+The event MUST be in an eventList with a "NEBULA_" prefix in order for the nebula to appear on the map. 
+The event MUST have an environment tag with type attribute "nebula" or "storm" in order for there to be nebula / nebula with ion storm when you ENTER the beacon. You must do both, doing either will not guarantee the other.
+4) <choice>: parent tag MUST be an event tag, or one of a ship tag's outcome tags (e.g. surrender, gotaway etc.). 
+MUST have 1 child text tag, MUST have 1 event tag, and MUST NOT HAVE other child tags.
+5) <event>: parent and child tags must NOT be other event tags. (list "safe" tags for event parents and children?)
+6) <animsheet> (for weapons): w and h attributes need to correspond to the image's width and height. fh needs to be equal h. fw multiplied by the anim/weaponanim's desc length needs to equal w
+7) <quest>: if an event is created via the quest tag, it will only be created at a non-nebula beacon. 
+With HS you can add these children to quest: <nebulaBeacon>true</nebulaBeacon> to let them spawn in nebula,
+ and/or <nonNebulaBeacon>false</nonNebulaBeacon> to prevent them from spawning in non-nebula.
 
+KEEP IN MIND:
+* <autoReward> and item_modify sibling tags: if they give or penalise the same resource, 
+	the autoReward part will overwrite the item_modify (I am making a HS bugfix for this though)
+* <autoReward> and weapon/drone sibling tags: 
+	the guaranteed weapon/drone will overwrite any bonus weapon/drone/augment from the autoReward.
+* <autoReward> and augment sibling tags: 
+	the guaranteed augment will BE OVERWRITTEN BY any bonus weapon/drone/augment from the autoReward.
+* <quest>: it is recommended for quest tags to have a sibling text tag. 
+	It looks weird with the newlines before the "Added quest marker" message
+******************** HARD RULES End *****************************************************************************
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*****************************************************************************************************************
+
+TODO:
 -Use transformRace for planned "trainer"-type augments/events. It keeps everything in place including saved stations.
 REF MV v5.5.1: <transformRace class="leech">leech_ampere</transformRace>
+
+-This reduces player hull to 1 without killing them:
+<damage amount="999"/>
+<damage amount="-1"/>
 -->
 
 <FTL>
-<event name="TEST_RKSHOP">
+<event name="RKSHOP">
 	<text>Debug Store.</text>
 	<store>STORE_RADIKAL</store>
 </event>
-<event name="RKSHOP_SCORCH">
+<event name="RKSHOP_B">
+	<text>Debug Store.</text>
+	<store>STORE_RADIKAL_BAM</store>
+</event>
+<event name="RKSHOP_P">
+	<text>Debug Store.</text>
+	<store>STORE_RADIKAL_PUNK</store>
+</event>
+<event name="RKSHOP_S">
 	<text>Debug Store.</text>
 	<store>STORE_RADIKAL_SCORCH</store>
 </event>
@@ -174,6 +213,11 @@ REF MV v5.5.1: <transformRace class="leech">leech_ampere</transformRace>
 	<text>Debug Store.</text>
 	<store>STORE_RKS_SNIPER</store>
 </event>
+<event name="RKSHOP_SYLVAN">
+	<text>Debug Store.</text>
+	<store>STORE_SYLVAN_RK_GEAR</store>
+</event>
+
 <event name="RK_DEMI">
 	<text>Debug aug.</text>
 	<augment name="EX_DJMOD_DEMICLONER"/>
@@ -185,7 +229,7 @@ REF MV v5.5.1: <transformRace class="leech">leech_ampere</transformRace>
 </event>
 
 <event name="RKDEV">
-	<text>quick testing. Other commands: DJFLEET, TEST_RKSHOP, RKSHOP_SCORCH, RKSHOP_SNIPER, RK_DEMI, DJCOORDS, DJNOHAZARDS.</text>
+	<text>Testing. Other events: DJFLEET, RKSHOP, RKSHOP_SCORCH, RKSHOP_SNIPER, RKSHOP_SYLVAN, RK_DEMI, DJCOORDS, DJNOHAZARDS.</text>
 	
 	<weapon name="GATLING_ANCIENT"/>
 	<crewMember amount="1" class="unique_billy" all_skills="2">Billy</crewMember>
@@ -606,23 +650,43 @@ If used in eventList, list must have a non-unique option!-->
 									<!-- Sell for 150% of value, except BPS Messenger which passes all checks so 200%. -->
 
 									<choice req="DJMOD_BAM_FISSUREBEAM" hidden="true">
-										<text>Sell them your Bada beam for 155~.</text>
+										<text>Sell them your Bada beam for 165~.</text>
 										<event>
 											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
 											<remove name="DJMOD_BAM_FISSUREBEAM"/>
 											<item_modify>
-												<item type="scrap" min="155" max="155"/>
+												<item type="scrap" min="165" max="165"/>
+											</item_modify>
+										</event>
+									</choice>
+									<choice req="RK_UNLOADER" hidden="true">
+										<text>Sell them your Unloader launcher for 135~.</text>
+										<event>
+											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
+											<remove name="RK_UNLOADER"/>
+											<item_modify>
+												<item type="scrap" min="135" max="135"/>
 											</item_modify>
 										</event>
 									</choice>
 
-									<choice req="DJMOD_RAIN_OF_ION" hidden="true">
+									<choice req="RK_RAIN_OF_ION" hidden="true">
 										<text>Sell them your Rain of Ions shotgun for 180~.</text>
 										<event>
 											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
-											<remove name="DJMOD_RAIN_OF_ION"/>
+											<remove name="RK_RAIN_OF_ION"/>
 											<item_modify>
 												<item type="scrap" min="180" max="180"/>
+											</item_modify>
+										</event>
+									</choice>
+									<choice req="RK_SHOTPHASER" hidden="true">
+										<text>Sell them your Shotphaser shotgun for 105~.</text>
+										<event>
+											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
+											<remove name="RK_SHOTPHASER"/>
+											<item_modify>
+												<item type="scrap" min="105" max="105"/>
 											</item_modify>
 										</event>
 									</choice>
@@ -729,23 +793,43 @@ If used in eventList, list must have a non-unique option!-->
 									<!-- Sell for 150% of value, except BPS Messenger which passes all checks so 200%. -->
 
 									<choice req="DJMOD_BAM_FISSUREBEAM" hidden="true">
-										<text>Sell them your Bada beam for 155~.</text>
+										<text>Sell them your Bada beam for 165~.</text>
 										<event>
 											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
 											<remove name="DJMOD_BAM_FISSUREBEAM"/>
 											<item_modify>
-												<item type="scrap" min="155" max="155"/>
+												<item type="scrap" min="165" max="165"/>
+											</item_modify>
+										</event>
+									</choice>
+									<choice req="RK_UNLOADER" hidden="true">
+										<text>Sell them your Unloader launcher for 135~.</text>
+										<event>
+											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
+											<remove name="RK_UNLOADER"/>
+											<item_modify>
+												<item type="scrap" min="135" max="135"/>
 											</item_modify>
 										</event>
 									</choice>
 
-									<choice req="DJMOD_RAIN_OF_ION" hidden="true">
+									<choice req="RK_RAIN_OF_ION" hidden="true">
 										<text>Sell them your Rain of Ions shotgun for 180~.</text>
 										<event>
 											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
-											<remove name="DJMOD_RAIN_OF_ION"/>
+											<remove name="RK_RAIN_OF_ION"/>
 											<item_modify>
 												<item type="scrap" min="180" max="180"/>
+											</item_modify>
+										</event>
+									</choice>
+									<choice req="RK_SHOTPHASER" hidden="true">
+										<text>Sell them your Shotphaser shotgun for 105~.</text>
+										<event>
+											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
+											<remove name="RK_SHOTPHASER"/>
+											<item_modify>
+												<item type="scrap" min="105" max="105"/>
 											</item_modify>
 										</event>
 									</choice>
@@ -1058,9 +1142,9 @@ If used in eventList, list must have a non-unique option!-->
 							You also feel like even though this happened in this hidden sector, word of your lack of morals could somehow reach the outside world.</text>
 
 							<item_modify steal="true">
-								<item type="scrap" min="-10" max="-20"/>
-								<item type="missiles" min="-3" max="-5"/>
-								<item type="drones" min="-2" max="-3"/>
+								<item type="scrap" min="-20" max="-10"/>
+								<item type="missiles" min="-5" max="-3"/>
+								<item type="drones" min="-3" max="-2"/>
 							</item_modify>
 							<event load="MORALITY_UPDATE_GENERAL"/>		<!-- does nothing? try in a choice wrapper -->
 							<!-- <event/> -->
@@ -1097,9 +1181,8 @@ About 900 lines, minimize if not interested. -->
 	<!-- <customFleet right="false" firing="true" autoDarkening="true">CUSTOM_FLEET_ENGINEER</customFleet> 	CRASH! on sector jump -->
 	<!-- <customFleet right="false" firing="false" autoDarkening="true">CUSTOM_FLEET_ZOLTAN</customFleet> 	CRASH! on sector jump -->
 	<text>As soon as you get here, you notice that you're surrounded by a small Zoltan fleet intercepting every ship passing through here. An urgent hail from a heavily armed Zoltan Elite comes through. 
-	Needless to say, it would look suspicious not to take the hail.
-	
-	[Developer note: This buggy quest will be reworked soon. Consider it a forced fight, or engage with it knowing the risks.]</text>
+		Needless to say, it would look suspicious not to take the hail.
+	</text>
 	<ship load="SHIP_ZOLTAN_POLICE_RK" hostile="false"/>
 	<!-- <customFleet right="false" firing="false" autoDarkening="true">CUSTOM_FLEET_ZOLTAN</customFleet> 	Also CRASH below <text> -->
 	<!-- <customFleet right="false" firing="true" autoDarkening="true">CUSTOM_FLEET_ENGINEER</customFleet> 	Also CRASH below <text> -->
@@ -1107,9 +1190,53 @@ About 900 lines, minimize if not interested. -->
 	<choice hidden="true">
 		<text>Answer it.</text>
 		<event>
-			<text>"As you may know if you're not a brainless savage, this sector has been providing armament to the Duskbringers. We have recently started tackling this problem.
-			Like any vessel in transit in a lawless armament-manufacturing area like this one, you will be subjected to the mandatory thorough search for said armament. The fight against illegal weapon proliferation starts with you. Do not resist."
-			Zoltans consider this area a very serious issue. If they find any RadiKal equipment, it may be confiscated, or you might be fined based on how many you're carrying.</text>
+			<text>"As you may know if you're not a brainless savage, this lawless sector has been providing armament to the Duskbringers. We have recently started tackling this problem.
+				Like any vessel in transit in a lawless armament-manufacturing area like this one, you will be subjected to the mandatory thorough search for said armament. The fight against illegal weapon proliferation starts with you. Do not resist."
+				
+				Zoltans consider this area a very serious issue. If they find any RadiKal equipment a fine must be paid, based on how many you're carrying.
+			</text>
+
+			<choice req="zoltan_peacekeeper" hidden="true">
+				<text>(Zoltan Peacekeeper) We were sent to help you.</text>
+				<event>
+					<text>"At last, the reinforcements. Here is your warrant. You'll find criminals in this sector, usually hiding in hazardous beacons. Seize their illegal gear and drop it off at the station. The coordinates are on the back."
+						
+						It's safe to assume that not every "criminal" will relinquish their RK gear without a fight, but this could greatly benefit your mission.
+					</text>
+
+					<augment name="RKS_POLICE_WARRANT"/>
+					
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+
+			<choice req="human_soldier" hidden="true">
+				<text>(Human Soldier) We were sent to help you.</text>
+				<event>
+					<text>"At last, the reinforcements. Here is your warrant. You'll find criminals in this sector, usually hiding in hazardous beacons. Seize their illegal gear and drop it off at the station. The coordinates are on the back."
+						
+						It's safe to assume that not every "criminal" will relinquish their RK gear without a fight, but this could greatly benefit your mission.
+					</text>
+
+					<augment name="RKS_POLICE_WARRANT"/>
+					
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
 			
 			<choice hidden="true">
 				<text>Agree to the search.</text>
@@ -1120,15 +1247,15 @@ About 900 lines, minimize if not interested. -->
 				<text>Ask what happens if you refuse.</text>
 				<event>
 					<text>"Thanks to the merciful recent amendment 3473-B delta, captains may choose to participate in the funding of control vessels like this one, and report to the closest Zoltan police station within 12 jump cycles instead of immediately submitting to the search."
-					Even though you have no intention of taking that detour, they would leave you alone for now.</text>
+						Even though you have no intention of taking that detour, they would leave you alone for now.
+					</text>
 					
-					<!-- <choice hidden="true"> -->
 					<choice>
 						<text>Pay up.</text>
 						<event>
-							<text>You begrudgingly transfer the scrap but manage to fake a smile, taking comfort in the fact that your equipment's safe... at least for now.</text>
+							<text>You begrudgingly transfer the scrap but manage to not look mad about it, taking comfort in the fact that your equipment's safe... at least for now.</text>
 							<item_modify>
-								<item type="scrap" min="-42" max="-42"/>
+								<item type="scrap" min="-25" max="-25"/>
 							</item_modify>
 						</event>
 					</choice>
@@ -1143,10 +1270,11 @@ About 900 lines, minimize if not interested. -->
 	</choice>
 	
 	<choice hidden="true">
-		<text>Try to ignore it and just pass through. [Recommended]</text>
+		<text>Try to ignore it and just pass through.</text>
 		<event>
 			<text>"You admission of guilt in facilitating terrorist operations has been recorded and filed for the trial of any surviving spouse(s) and/or heir(s). You will not escape the law."
-			Sounds like you'll have to fight your way through. In fact you wonder how you managed to convince yourself this could end any differently.</text>
+				Sounds like you'll have to fight your way through. You wonder whether having an insider in your crew could have changed this outcome.
+			</text>
 			<ship hostile="true"/>
 			
 			<choice hidden="true">
@@ -1157,26 +1285,11 @@ About 900 lines, minimize if not interested. -->
 		</event>
 	</choice>
 		
-	<choice req="zoltan_peacekeeper" hidden="true">
-		<text>(Zoltan Peacekeeper) Send the secret 'All clear' signal.</text>
-		<event>
-			<text>The Zoltan ship immediately stops and then finds someone else to harass.</text>
-			
-			<choice>
-				<text>Do something onboard the ship.</text>
-				<event load="STORAGE_CHECK"/>
-			</choice>
-			<choice>
-				<text>Do nothing.</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
 </event>
 <ship name="SHIP_ZOLTAN_POLICE_RK" auto_blueprint="LIST_SHIPS_ZOLTAN_ELITE_GENERIC">
 	<destroyed load="DEFEAT_ZOLTAN_ELITE"/>
 	<deadCrew load="DEFEAT_ZOLTAN_ELITE"/>
-	<!-- THIS CRASHES THE GAME upon JUMPING TO THE BEACON!
+	<!-- THIS CRASHES THE GAME upon JUMPING TO THE BEACON! Maybe because that should go in autoblueprints.xml ?
 	<weaponOverride count="4">
 		<name>LIST_WEAPONS_ZOLTAN</name>
 	</weaponOverride> 
@@ -1207,19 +1320,11 @@ About 900 lines, minimize if not interested. -->
 			<text>Before long, they do find something. "Understand that without justification for this, which you may still provide, we will apply the necessary sanctions, which may be a fine or outright confiscation of the offending equipment. Both may be avoided if you willingly leave someone with us for interrogation."</text>
 			<choice>
 				<text>Continue...</text>
-				<event load="ZOLTAN_POLICECHECK_RK_OUTCOMES"/>
+				<event load="ZOLTAN_POLICECHECK_RK_FINED"/>
 			</choice>
 		</event>
 	</choice>
 </event>
-
-<eventList name="ZOLTAN_POLICECHECK_RK_OUTCOMES">
-	<event name="ZOLTAN_POLICECHECK_RK_FINED"/>
-	<!-- Seize 1 chosen RK item the player has. Keep track of which. WHY DID I DO THIS TO MYSELF"
-	Leads to Police Station event below to get it back if removed, else it's just a raid with a scrap entry fee.
-	Hyperspace variables to save state of things in hyperspace.xml	-->
-	<event name="ZOLTAN_POLICECHECK_RK_SEIZINGS"/>
-</eventList>
 
 <event name="ZOLTAN_POLICECHECK_RK_FINED">
 	<text>Maybe you forgot you were carrying RadiKal gear, or maybe you just didn't find a way to avoid the search. Regardless, they are now fining you for each piece!</text>
@@ -1230,6 +1335,8 @@ About 900 lines, minimize if not interested. -->
 			<item_modify steal="true">
 				<item type="scrap" min="-15" max="-15"/>
 			</item_modify>
+
+			<quest event="ZOLTAN_POLICESTATION_RK"/>
 		</event>
 	</choice>
 	<!-- From here, unlocks police station quest. MAKE THIS START AT ... one piece!? -->
@@ -1237,7 +1344,8 @@ About 900 lines, minimize if not interested. -->
 		<text>Let them calculate your total fine.</text>
 		<event>
 			<text>"Two illegal pieces of gear. You should really know better than to give up ethics for power."
-			Supposedly you can get some of your scrap back by surrendering your illegal gear at the Police Station, but somehow you doubt that. It might be worth it to pay them a visit regardless.</text>
+				Supposedly you can get some of your scrap back by surrendering your illegal gear at the Police Station, but somehow you doubt that. It might be worth it to pay them a visit regardless.
+			</text>
 			<item_modify steal="true">
 				<item type="scrap" min="-30" max="-30"/>
 			</item_modify>
@@ -1248,8 +1356,9 @@ About 900 lines, minimize if not interested. -->
 	<choice req="DJMOD_SUM_RADIKAL_GEAR" lvl="3" max_lvl="3" hidden="true">
 		<text>Let them calculate your total fine.</text>
 		<event>
-			<text>"Three illegal pieces of gear... The federation really hires any random scum these days. We will be notifying your leadership."
-			Supposedly you can get some of your scrap back by surrendering your illegal gear at the Police Station, but somehow you doubt that. It might be worth it to pay them a visit regardless.</text>
+			<text>"Three illegal pieces of gear... The federation really hires any random scum these days."
+				Supposedly you can get some of your scrap back by surrendering your illegal gear at the Police Station, but somehow you doubt that. It might be worth it to pay them a visit regardless.
+			</text>
 			<!-- <event load="MORALITY_UPDATE_ZOLTAN_FIGHT"/> -->
 			<item_modify steal="true">
 				<item type="scrap" min="-45" max="-45"/>
@@ -1261,8 +1370,9 @@ About 900 lines, minimize if not interested. -->
 	<choice req="DJMOD_SUM_RADIKAL_GEAR" lvl="4" hidden="true">
 		<text>Let them calculate your total fine.</text>
 		<event>
-			<text>"FOUR or more illegal pieces of gear! What th-... I do not even wish to know. What a horrible person you must be. Luckily for you, this is the maximum fine stipulated in the applicable regulation. I suppose nobody foresaw that anyone would make themselves any more of a wretched menace to society than that."
-			Supposedly you can get some of your scrap back by surrendering your illegal gear at the Police Station, but somehow you doubt that. It might be worth it to pay them a visit regardless.</text>
+			<text>"AT LEAST FOUR illegal pieces of gear! What th-... I do not even wish to know. What a horrible person you must be. Luckily for you, this is the maximum fine stipulated in the applicable regulation. I suppose nobody foresaw that anyone would make themselves any more of a wretched menace to society than that."
+				Supposedly you can get some of your scrap back by surrendering your illegal gear at the Police Station, but somehow you doubt that. It might be worth it to pay them a visit regardless.
+			</text>
 			<item_modify steal="true">
 				<item type="scrap" min="-60" max="-60"/>
 			</item_modify>
@@ -1271,407 +1381,18 @@ About 900 lines, minimize if not interested. -->
 		</event>
 	</choice>
 	
-	<choice hidden="true">
+	<choice req="LIST_CHECK_ANY_CREW" lvl="1" hidden="true" blue="true">
 		<text>Give someone up for interrogation instead.</text>
 		<event load="RK_INTERROGATED_CREW"/>
 	</choice>
-</event>
 
-
-<eventList name="ZOLTAN_POLICECHECK_RK_SEIZINGS">
-	<event name="RK_SEIZE_ONE"/>
-	<!-- <event name="RK_SEIZE_SCORCHSELF2"/> etc. -->
-</eventList>
-
-<event name="RK_SEIZE_ONE">
-	<text>"Our current mission order is to confiscate any criminal weaponry of mass destruction called..."</text>
-	
-	<!-- 
-	<name>seized_shipvoreram</name>
-	<name>seized_crewarebombs</name>
-	<name>seized_autosysrepair</name>
-	
-	<name>seized_hackfleet</name>
-	<name>seized_offensedisabler</name>
-	<name>seized_ownharmony</name>
-	<name>seized_superdefenders</name>
-	<name>seized_defenseremover</name>
-	
-	<name>seized_enemiescanburn</name>
-	<name>seized_oxygenizer</name>
-	<name>seized_scorchself</name>
-	<name>seized_scorchself2</name>
-	<name>seized_scorchself3</name>
-	<name>seized_scorchenemy</name>
-
-	<name>seized_bam_fissurebeam</name>
-
-	<name>seized_rainofion</name>
-	
-	<name>seized_rainoffire</name>
-	
-	<name>seized_laserbps</name>
-	-->
-	
-	<choice req="DJMOD_COMBAT_SHIPVORE_RAM" lvl="1" hidden="true" blue="true">
-		<text>'Shipvore Ram'</text>
-		<event>
-			<text>"... yes indeed. Thank you for your cooperation. Remember to pass by the Police Station to cover the post-seizure administrative fees."
-			As they finally leave you alone, you wonder whether it would be possible to get your gear back.</text>
-			<quest event="ZOLTAN_POLICESTATION_RK"/>
-			
-			<!-- <variable name="seized_shipvoreram" op="set" val="1"/> -->
-			<variable name="seized_shipvoreram" op="add" val="1"/>
-			<remove name="DJMOD_COMBAT_SHIPVORE_RAM"/>
-			<choice>
-				<text>...</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-	<choice req="LOCKED_DJMOD_COMBAT_SHIPVORE_RAM" lvl="1" hidden="true" blue="true">
-		<text>'Shipvore Ram [L]'</text>
-		<event>
-			<text>"... yes indeed. Thank you for your... wait, this contraption is one half of the vessel. It cannot be simply cut out without causing catastrophic failure, and then we would be accused of "police brutality" for ages... These orders are suboptimal, we are special police, not disassembly technicians!"</text>
-			
-			<choice>
-				<text>So... what now?</text>
-				<event>
-					<text>"...Just... Hmmm. Pay the fine. No, we're not currently assigned to fining duties... I do not wish to deal with another 'unlawful scrap transfer interrogation'... Alright. We found nothing and left you innocent citizens alone... yes, definitely much easier to fake. Move along!"</text>
-					<!-- <remove name="DJMOD_COMBAT_SHIPVORE_RAM"/> -->
-					
-					<choice>
-						<text>We won't make you say it twice!</text>
-						<event/>
-					</choice>
-				</event>
-			</choice>
-		</event>
-	</choice>
-	
-	<choice req="DJMOD_CREW_ARE_BOMBS_ON" lvl="1" hidden="true" blue="true">
-		<text>'Charged Belts'</text>
-		<event>
-			<text>"... yes indeed. Thank you for your cooperation. Remember to pass by the Police Station to cover the post-seizure administrative fees."
-			As they finally leave you alone, you wonder whether it would be possible to get your gear back.</text>
-			<quest event="ZOLTAN_POLICESTATION_RK"/>
-			
-			<variable name="seized_crewarebombs" op="add" val="1"/>
-			<remove name="DJMOD_CREW_ARE_BOMBS_ON"/>
-			<choice>
-				<text>...</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-	<choice req="DJMOD_CREW_ARE_BOMBS_OFF" lvl="1" hidden="true" blue="true">
-		<text>'Charged Belts'</text>
-		<event>
-			<text>"... yes indeed. Thank you for your cooperation. Remember to pass by the Police Station to cover the post-seizure administrative fees."
-			As they finally leave you alone, you wonder whether it would be possible to get your gear back.</text>
-			<quest event="ZOLTAN_POLICESTATION_RK"/>
-			
-			<variable name="seized_crewarebombs" op="add" val="1"/>
-			<remove name="DJMOD_CREW_ARE_BOMBS_OFF"/>
-			<choice>
-				<text>...</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-	
-	<choice req="DJMOD_AUG_AUTO_SYS_REPAIR" lvl="1" hidden="true" blue="true">
-		<text>'AERA Second Wind'</text>
-		<event>
-			<text>"... yes indeed. Thank you for your cooperation. Remember to pass by the Police Station to cover the post-seizure administrative fees."
-			As they finally leave you alone, you wonder whether it would be possible to get your gear back.</text>
-			<quest event="ZOLTAN_POLICESTATION_RK"/>
-			
-			<variable name="seized_autosysrepair" op="add" val="1"/>
-			<remove name="DJMOD_AUG_AUTO_SYS_REPAIR"/>
-			<choice>
-				<text>...</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-	
-	
-	<choice req="DJMOD_COMBAT_OFFENSE_DISABLER" lvl="1" hidden="true" blue="true">
-		<text>'Offense Disabler'</text>
-		<event>
-			<text>"... yes indeed. Thank you for your cooperation. Remember to pass by the Police Station to cover the post-seizure administrative fees."
-			As they finally leave you alone, you wonder whether it would be possible to get your gear back.</text>
-			<quest event="ZOLTAN_POLICESTATION_RK"/>
-			
-			<variable name="seized_offensedisabler" op="add" val="1"/>
-			<remove name="DJMOD_COMBAT_OFFENSE_DISABLER"/>
-			<choice>
-				<text>Continue...</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-	<choice req="DJMOD_HACK_FLEET" lvl="1" hidden="true" blue="true">
-		<text>'Enigmashin'</text>
-		<event>
-			<text>"... yes indeed. Thank you for your cooperation. Remember to pass by the Police Station to cover the post-seizure administrative fees."
-			As they finally leave you alone, you wonder whether it would be possible to get your gear back.</text>
-			<quest event="ZOLTAN_POLICESTATION_RK"/>
-			
-			<variable name="seized_hackfleet" op="add" val="1"/>
-			<remove name="DJMOD_HACK_FLEET"/>
-			<choice>
-				<text>Continue...</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-	<choice req="DJMOD_SUPER_DEFENDERS" lvl="1" hidden="true" blue="true">
-		<text>'Defense Kits'</text>
-		<event>
-			<text>"... yes indeed. Thank you for your cooperation. Remember to pass by the Police Station to cover the post-seizure administrative fees."
-			As they finally leave you alone, you wonder whether it would be possible to get your gear back.</text>
-			<quest event="ZOLTAN_POLICESTATION_RK"/>
-			
-			<variable name="seized_superdefenders" op="add" val="1"/>
-			<remove name="DJMOD_SUPER_DEFENDERS"/>
-			<choice>
-				<text>Continue...</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-	
-	<choice req="DJMOD_OWN_HARMONY_ON" lvl="1" hidden="true" blue="true">
-		<text>'Punk Harmony'</text>
-		<event>
-			<text>"... yes indeed. Thank you for your cooperation. Remember to pass by the Police Station to cover the post-seizure administrative fees."
-			As they finally leave you alone, you wonder whether it would be possible to get your gear back.</text>
-			<quest event="ZOLTAN_POLICESTATION_RK"/>
-			
-			<variable name="seized_ownharmony" op="add" val="1"/>
-			<remove name="DJMOD_OWN_HARMONY_ON"/>
-			<choice>
-				<text>Continue...</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-	<choice req="DJMOD_OWN_HARMONY_OFF" lvl="1" hidden="true" blue="true">
-		<text>'Punk Harmony'</text>
-		<event>
-			<text>"... yes indeed. Thank you for your cooperation. Remember to pass by the Police Station to cover the post-seizure administrative fees."
-			As they finally leave you alone, you wonder whether it would be possible to get your gear back.</text>
-			<quest event="ZOLTAN_POLICESTATION_RK"/>
-			
-			<variable name="seized_ownharmony" op="add" val="1"/>
-			<remove name="DJMOD_OWN_HARMONY_OFF"/>
-			<choice>
-				<text>Continue...</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-	
-	<choice req="DJMOD_DEFENSE_REMOVER" lvl="1" hidden="true" blue="true">
-		<text>'Vulnerabilizer'</text>
-		<event>
-			<text>"... yes indeed. Thank you for your cooperation. Remember to pass by the Police Station to cover the post-seizure administrative fees."
-			As they finally leave you alone, you wonder whether it would be possible to get your gear back.</text>
-			<quest event="ZOLTAN_POLICESTATION_RK"/>
-			
-			<variable name="seized_defenseremover" op="add" val="1"/>
-			<remove name="DJMOD_DEFENSE_REMOVER"/>
-			<choice>
-				<text>Continue...</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-		
-	<choice req="DJMOD_ENEMIES_CAN_BURN" lvl="1" hidden="true" blue="true">
-		<text>'Flammabilizer-Immune'</text>
-		<event>
-			<text>"... yes indeed. Thank you for your cooperation. Remember to pass by the Police Station to cover the post-seizure administrative fees."
-			As they finally leave you alone, you wonder whether it would be possible to get your gear back.</text>
-			<quest event="ZOLTAN_POLICESTATION_RK"/>
-			
-			<variable name="seized_enemiescanburn" op="add" val="1"/>
-			<remove name="DJMOD_ENEMIES_CAN_BURN"/>
-			<choice>
-				<text>Continue...</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-	<choice req="DJMOD_ENEMIES_BURN_MORE" lvl="1" hidden="true" blue="true">
-		<text>'Flammabilizer-Damage'</text>
-		<event>
-			<text>"... yes indeed. Thank you for your cooperation. Remember to pass by the Police Station to cover the post-seizure administrative fees."
-			As they finally leave you alone, you wonder whether it would be possible to get your gear back.</text>
-			<quest event="ZOLTAN_POLICESTATION_RK"/>
-			
-			<variable name="seized_enemiescanburn" op="add" val="1"/>
-			<remove name="DJMOD_ENEMIES_BURN_MORE"/>
-			<choice>
-				<text>Continue...</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-	
-	<choice req="DJMOD_OXYGENIZER" lvl="1" hidden="true" blue="true">
-		<text>'Oxygenizer'</text>
-		<event>
-			<text>"... yes indeed. Thank you for your cooperation. Remember to pass by the Police Station to cover the post-seizure administrative fees."
-			As they finally leave you alone, you wonder whether it would be possible to get your gear back.</text>
-			<quest event="ZOLTAN_POLICESTATION_RK"/>
-			
-			<variable name="seized_oxygenizer" op="add" val="1"/>
-			<remove name="DJMOD_OXYGENIZER"/>
-			<choice>
-				<text>Continue...</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-
-	<choice req="DJMOD_COMBAT_SCORCH_SELF" lvl="1" hidden="true" blue="true">
-		<text>'Scorched Earth'</text>
-		<event>
-			<text>"... yes indeed. Thank you for your cooperation. Remember to pass by the Police Station to cover the post-seizure administrative fees."
-			As they finally leave you alone, you wonder whether it would be possible to get your gear back.</text>
-			<quest event="ZOLTAN_POLICESTATION_RK"/>
-			
-			<variable name="seized_scorchself" op="add" val="1"/>
-			<remove name="DJMOD_COMBAT_SCORCH_SELF"/>
-			<choice>
-				<text>Continue...</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-	<choice req="DJMOD_COMBAT_SCORCH_SELF_2" lvl="1" hidden="true" blue="true">
-		<text>'Blazing Earth'</text>
-		<event>
-			<text>"... yes indeed. Thank you for your cooperation. Remember to pass by the Police Station to cover the post-seizure administrative fees."
-			As they finally leave you alone, you wonder whether it would be possible to get your gear back.</text>
-			<quest event="ZOLTAN_POLICESTATION_RK"/>
-			
-			<variable name="seized_scorchself2" op="add" val="1"/>
-			<remove name="DJMOD_COMBAT_SCORCH_SELF_2"/>
-			<choice>
-				<text>Continue...</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-	<choice req="DJMOD_COMBAT_SCORCH_SELF_3" lvl="1" hidden="true" blue="true">
-		<text>'Molten Earth'</text>
-		<event>
-			<text>"... yes indeed. Thank you for your cooperation. Remember to pass by the Police Station to cover the post-seizure administrative fees."
-			As they finally leave you alone, you wonder whether it would be possible to get your gear back.</text>
-			<quest event="ZOLTAN_POLICESTATION_RK"/>
-			
-			<variable name="seized_scorchself3" op="add" val="1"/>
-			<remove name="DJMOD_COMBAT_SCORCH_SELF_3"/>
-			<choice>
-				<text>Continue...</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-	
-	<choice req="DJMOD_COMBAT_SCORCH_ENEMY" lvl="1" hidden="true" blue="true">
-		<text>'Plasma Teleporter'</text>
-		<event>
-			<text>"... yes indeed. Thank you for your cooperation. Remember to pass by the Police Station to cover the post-seizure administrative fees."
-			As they finally leave you alone, you wonder whether it would be possible to get your gear back.</text>
-			<quest event="ZOLTAN_POLICESTATION_RK"/>
-			
-			<variable name="seized_scorchenemy" op="add" val="1"/>
-			<remove name="DJMOD_COMBAT_SCORCH_ENEMY"/>
-			<choice>
-				<text>Continue...</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-	
-	<choice req="DJMOD_BAM_FISSUREBEAM" lvl="1" hidden="true" blue="true">
-		<text>'Bada'</text>
-		<event>
-			<text>"... yes indeed. Thank you for your cooperation. Remember to pass by the Police Station to cover the post-seizure administrative fees."
-			As they finally leave you alone, you wonder whether it would be possible to get your gear back.</text>
-			<quest event="ZOLTAN_POLICESTATION_RK"/>
-			
-			<variable name="seized_bam_fissurebeam" op="add" val="1"/>
-			<remove name="DJMOD_BAM_FISSUREBEAM"/>
-			<choice>
-				<text>Continue...</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-
-	<choice req="DJMOD_RAIN_OF_ION" lvl="1" hidden="true" blue="true">
-		<text>'Rain of Ions'</text>
-		<event>
-			<text>"... yes indeed. Thank you for your cooperation. Remember to pass by the Police Station to cover the post-seizure administrative fees."
-			As they finally leave you alone, you wonder whether it would be possible to get your gear back.</text>
-			<quest event="ZOLTAN_POLICESTATION_RK"/>
-			
-			<variable name="seized_rainofion" op="add" val="1"/>
-			<remove name="DJMOD_RAIN_OF_ION"/>
-			<choice>
-				<text>Continue...</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-	
-	<choice req="DJMOD_RAIN_OF_FIRE" lvl="1" hidden="true" blue="true">
-		<text>'Rain of Fire'</text>
-		<event>
-			<text>"... yes indeed. Thank you for your cooperation. Remember to pass by the Police Station to cover the post-seizure administrative fees."
-			As they finally leave you alone, you wonder whether it would be possible to get your gear back.</text>
-			<quest event="ZOLTAN_POLICESTATION_RK"/>
-			
-			<variable name="seized_rainoffire" op="add" val="1"/>
-			<remove name="DJMOD_RAIN_OF_FIRE"/>
-			<choice>
-				<text>Continue...</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-	
-	<choice req="DJMOD_LASER_BPS" lvl="1" hidden="true" blue="true">
-		<text>'BPS Messenger'</text>
-		<event>
-			<text>"... yes indeed. Thank you for your cooperation. Remember to pass by the Police Station to cover the post-seizure administrative fees."
-			As they finally leave you alone, you wonder whether it would be possible to get your gear back.</text>
-			<quest event="ZOLTAN_POLICESTATION_RK"/>
-			
-			<variable name="seized_laserbps" op="add" val="1"/>
-			<remove name="DJMOD_LASER_BPS"/>
-			<choice>
-				<text>Continue...</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-	
-	<!-- Equipment choices end -->
-	
 	<choice hidden="true">
-		<text>Headshot that nosy lightbulb. (Risky)</text>
+		<text>Surprise headshot that nosy lightbulb. (Risky)</text>
 		<event>
 			<text>Quickly but accurately aiming through the hardlight, you splatter the chief inspector with your blaster, right before taking cover for the explosion! 
 			Very satisfying ... but can you deal with the rest of them?</text>
 			<ship hostile="true"/>
-			<boarders min="5" max="7" class="zoltan_peacekeeper"/>
+			<boarders min="4" max="6" class="zoltan_peacekeeper"/>
 			
 			<choice>
 				<text>Pop them all!</text>
@@ -1679,17 +1400,11 @@ About 900 lines, minimize if not interested. -->
 			</choice>
 		</event>
 	</choice>
-	
-	<!-- <choice req="DJMOD_ANY_CREW" lvl="1" hidden="true" blue="true">  -->
-	<choice req="LIST_CHECK_ANY_CREW" lvl="1" hidden="true" blue="true">
-		<text>Give someone up for interrogation instead.</text>
-		<event load="RK_INTERROGATED_CREW"/>
-	</choice>
 </event>
 
 <event name="RK_INTERROGATED_CREW">
 	<text>You come to an agreement where they keep one of your crew in custody so they can explain what you were doing in this sector. It's a lengthy process, you will certainly finish your mission (or die) before you see them again.</text>
-	<removeCrew>			<!--No class argument means it's a random crewmember.-->
+	<removeCrew>			<!--No class argument means it's a random crewmember. Uniques immune if any non-uniques. -->
 		<clone>false</clone>
 		<text>Your crew cannot be cloned as they are not dead, though they might go insane shortly.</text>
 	</removeCrew>
@@ -1702,7 +1417,7 @@ About 900 lines, minimize if not interested. -->
 
 </FTL>
 
-<!-- Safeguards RadiKal gear confiscated by Zoltan Police in event above. Player can raid to get gear back or just loot. -->
+<!-- Player can raid to get gear or just loot. -->
 <!-- <event name="ZOLTAN_POLICESTATION_RK" unique="true"> -->
 <event name="ZOLTAN_POLICESTATION_RK">
 	<preventQuest/>
@@ -1713,17 +1428,20 @@ About 900 lines, minimize if not interested. -->
 	</quest>
 	<beaconType id="map_icon_rk_policestation" global="true">
 		<color r="94" g="255" b="94" a="1.0"/>
-		<unvisitedTooltip>Where Zoltan Police holds confiscated RadiKal gear and seized supplies.</unvisitedTooltip>
+		<unvisitedTooltip>Where Zoltan Police holds confiscated RadiKal gear.</unvisitedTooltip>
 	</beaconType>
 	<text>You wonder how exactly the Zoltans set up a fortified police station in such an area undeterred, but it is proof of their determination.
-	"Welcome captain. Since you found this place, you must be part of the special Federation corps attached to this regulation effort." Might be far from the truth, but you decide to roll with it.
-	"What can we do for you?"</text>
+		"Welcome captain. Since you found this place, you must be part of the special Federation corps attached to this regulation effort."
+		
+		Might be far from the truth, but you decide to roll with it.
+		"What can we do for you?"
+	</text>
 	<ship load="SHIP_ZOLTAN_POLICESTATION_RK" hostile="false"/>
 	
 	<choice hidden="true">
 		<text>Request supplies.</text>
 		<event>
-			<text>"We have seized quite a lot of supplies from this band of criminals, at great cost. But you are our ally in this operation, so help yourself. Within the limits of the Alliance Supply and Logistics Act of course."</text>
+			<text>"We have seized quite a lot of supplies from this band of criminals, at great cost. But as Federation you are our ally in this operation. Help yourself, within the limits of the Alliance Supply and Logistics Act of course."</text>
 			<autoReward level="MED">stuff</autoReward>
 		</event>
 	</choice>
@@ -1731,308 +1449,31 @@ About 900 lines, minimize if not interested. -->
 	<choice hidden="true">
 		<text>Request RadiKal gear.</text>
 		<event>
-			<text>After some brief icebreaker chitchat which the officer seems to midly enjoy, you take your shot asking for a free piece. What passes for his facial expression changes that instant. 
-				"Surely you must be confused. This is labeled and sorted trial evidence, in the form of illegal weaponry which is unsafe for use, unethical and generally a threat to law and order. Thanks for stopping by, I have work to do now."</text>
+			<text>After some brief icebreaker chitchat which the officer almost seems to enjoy, you take your shot asking for a free piece. What passes for his facial expression changes that instant.
+				"Surely you must be confused. This is labeled and sorted trial evidence, in the form of illegal weaponry which is unsafe for use, unethical and generally a threat to law and order. Thanks for stopping by, I have work to do now."
+			</text>
 			
 			<choice hidden="true">
 				<text>Feign surprise.</text>
 				<event>
 					<text>You expected this. "Oh? We weren't informed. Sorry for asking, keep up the good work." 
-						The Zoltan throws you one suspicious look, but he's too busy dealing with the paperwork to investigate, and you're out without a hitch, but with nothing to show for it.</text>
-					<event/>
+						The Zoltan throws you a suspicious look, but he's too busy dealing with the paperwork to investigate. You're out without a hitch but with nothing to show for it.
+					</text>
+					
+					<choice hidden="true">
+						<text>Meh.</text>
+						<event/>
+					</choice>
 				</event>
 			</choice>
 			
 			<choice hidden="true">
-				<text>Hint that you can do this the hard way instead...</text>
+				<text>"We can do this the hard way instead..."</text>
 				<event>
 					<text>Now certain that you're not, in fact, here to help at all, the Zoltan rings the alarm and you rush back to your ship. The fight is breaking out within range of the station's defense turrets!</text>
 					<ship hostile="true"/>
 					<environment type="PDS" target="player"/>
 				</event>
-			</choice>
-		</event>
-	</choice>
-	
-	<choice req="DJMOD_WAS_SEIZED_RADIKAL_GEAR" hidden="true">
-		<text>(Seized equipment) Inquire about your gear. (Risky)</text>
-		<event>
-			<text>Confused, the officer briefly searches for it in the database. "Hold on... the ship this piece was found on is YOURS! You must be here to steal it back! I will no-"
-			Before he can finish, you permanently silence him with a blaster shot to the face, find and grab your equipment thanks to the info he just brought up, then get the hell out before the defense turrets can land more than a couple hits on your hull.
-			Your rap sheet is getting longer by the minute!</text>
-			<damage amount="2" system="room"/>
-			<ship hostile="true"/>
-			<environment type="PDS" target="player"/>
-			
-			<choice req="seized_shipvoreram" hidden="true">
-				<text>Put the gear back on your ship.</text>
-				<event>
-					<text>You are delighted to have it back. Your crew has mixed feelings, but you remind them of the mission.</text>
-					<augment name="DJMOD_COMBAT_SHIPVORE_RAM"/>
-					<variable name="seized_shipvoreram" op="add" val="-1"/>
-					
-					<choice hidden="true">
-						<text>Continue...</text>
-						<event load="MORALITY_UPDATE_ZOLTAN_FIGHT"/>
-					</choice>
-				</event>
-			</choice>
-
-			<choice req="seized_crewarebombs" hidden="true">
-				<text>Put the gear back on your ship.</text>
-				<event>
-					<text>You are delighted to have it back. Your crew has mixed feelings, but you remind them of the mission.</text>
-					<augment name="DJMOD_CREW_ARE_BOMBS_OFF"/>
-					<variable name="seized_crewarebombs" op="add" val="-1"/>
-					
-					<choice hidden="true">
-						<text>Continue...</text>
-						<event load="MORALITY_UPDATE_ZOLTAN_FIGHT"/>
-					</choice>
-				</event>
-			</choice>
-
-			<choice req="seized_autosysrepair" hidden="true">
-				<text>Put the gear back on your ship.</text>
-				<event>
-					<text>You are delighted to have it back. Your crew has mixed feelings, but you remind them of the mission.</text>
-					<augment name="DJMOD_AUG_AUTO_SYS_REPAIR"/>
-					<variable name="seized_autosysrepair" op="add" val="-1"/>
-					
-					<choice hidden="true">
-						<text>Continue...</text>
-						<event load="MORALITY_UPDATE_ZOLTAN_FIGHT"/>
-					</choice>
-				</event>
-			</choice>
-			
-
-			<choice req="seized_hackfleet" hidden="true">
-				<text>Put the gear back on your ship.</text>
-				<event>
-					<text>You are delighted to have it back. Your crew has mixed feelings, but you remind them of the mission.</text>
-					<augment name="DJMOD_HACK_FLEET"/>
-					<variable name="seized_hackfleet" op="add" val="-1"/>
-					
-					<choice hidden="true">
-						<text>Continue...</text>
-						<event load="MORALITY_UPDATE_ZOLTAN_FIGHT"/>
-					</choice>
-				</event>
-			</choice>
-
-			<choice req="seized_offensedisabler" hidden="true">
-				<text>Put the gear back on your ship.</text>
-				<event>
-					<text>You are delighted to have it back. Your crew has mixed feelings, but you remind them of the mission.</text>
-					<augment name="DJMOD_COMBAT_OFFENSE_DISABLER"/>
-					<variable name="seized_offensedisabler" op="add" val="-1"/>
-					
-					<choice hidden="true">
-						<text>Continue...</text>
-						<event load="MORALITY_UPDATE_ZOLTAN_FIGHT"/>
-					</choice>
-				</event>
-			</choice>
-
-			<choice req="seized_superdefenders" hidden="true">
-				<text>Put the gear back on your ship.</text>
-				<event>
-					<text>You are delighted to have it back. Your crew has mixed feelings, but you remind them of the mission.</text>
-					<augment name="DJMOD_SUPER_DEFENDERS"/>
-					<variable name="seized_superdefenders" op="add" val="-1"/>
-					
-					<choice hidden="true">
-						<text>Continue...</text>
-						<event load="MORALITY_UPDATE_ZOLTAN_FIGHT"/>
-					</choice>
-				</event>
-			</choice>
-
-			<choice req="seized_ownharmony" hidden="true">
-				<text>Put the gear back on your ship.</text>
-				<event>
-					<text>You are delighted to have it back. Your crew has mixed feelings, but you remind them of the mission.</text>
-					<augment name="DJMOD_OWN_HARMONY_OFF"/>
-					<variable name="seized_ownharmony" op="add" val="-1"/>
-					
-					<choice hidden="true">
-						<text>Continue...</text>
-						<event load="MORALITY_UPDATE_ZOLTAN_FIGHT"/>
-					</choice>
-				</event>
-			</choice>
-
-			<choice req="seized_defenseremover" hidden="true">
-				<text>Put the gear back on your ship.</text>
-				<event>
-					<text>You are delighted to have it back. Your crew has mixed feelings, but you remind them of the mission.</text>
-					<augment name="DJMOD_DEFENSE_REMOVER"/>
-					<variable name="seized_defenseremover" op="add" val="-1"/>
-					
-					<choice hidden="true">
-						<text>Continue...</text>
-						<event load="MORALITY_UPDATE_ZOLTAN_FIGHT"/>
-					</choice>
-				</event>
-			</choice>
-			
-
-			<choice req="seized_enemiescanburn" hidden="true">
-				<text>Put the gear back on your ship.</text>
-				<event>
-					<text>You are delighted to have it back. Your crew has mixed feelings, but you remind them of the mission.</text>
-					<augment name="DJMOD_ENEMIES_CAN_BURN"/>
-					<variable name="seized_enemiescanburn" op="add" val="-1"/>
-					
-					<choice hidden="true">
-						<text>Continue...</text>
-						<event load="MORALITY_UPDATE_ZOLTAN_FIGHT"/>
-					</choice>
-				</event>
-			</choice>
-
-			<choice req="seized_oxygenizer" hidden="true">
-				<text>Put the gear back on your ship.</text>
-				<event>
-					<text>You are delighted to have it back. Your crew has mixed feelings, but you remind them of the mission.</text>
-					<augment name="DJMOD_OXYGENIZER"/>
-					<variable name="seized_oxygenizer" op="add" val="-1"/>
-					
-					<choice hidden="true">
-						<text>Continue...</text>
-						<event load="MORALITY_UPDATE_ZOLTAN_FIGHT"/>
-					</choice>
-				</event>
-			</choice>
-			
-			<choice req="seized_scorchself" hidden="true">
-				<text>Put the gear back on your ship.</text>
-				<event>
-					<text>You are delighted to have it back. Your crew has mixed feelings, but you remind them of the mission.</text>
-					<augment name="DJMOD_COMBAT_SCORCH_SELF"/>
-					<variable name="seized_scorchself" op="add" val="-1"/>
-					
-					<choice hidden="true">
-						<text>Continue...</text>
-						<event load="MORALITY_UPDATE_ZOLTAN_FIGHT"/>
-					</choice>
-				</event>
-			</choice>
-			<choice req="seized_scorchself2" hidden="true">
-				<text>Put the gear back on your ship.</text>
-				<event>
-					<text>You are delighted to have it back. Your crew has mixed feelings, but you remind them of the mission.</text>
-					<augment name="DJMOD_COMBAT_SCORCH_SELF_2"/>
-					<variable name="seized_scorchself2" op="add" val="-1"/>
-					
-					<choice hidden="true">
-						<text>Continue...</text>
-						<event load="MORALITY_UPDATE_ZOLTAN_FIGHT"/>
-					</choice>
-				</event>
-			</choice>
-			<choice req="seized_scorchself3" hidden="true">
-				<text>Put the gear back on your ship.</text>
-				<event>
-					<text>You are delighted to have it back. Your crew has mixed feelings, but you remind them of the mission.</text>
-					<augment name="DJMOD_COMBAT_SCORCH_SELF_3"/>
-					<variable name="seized_scorchself3" op="add" val="-1"/>
-					
-					<choice hidden="true">
-						<text>Continue...</text>
-						<event load="MORALITY_UPDATE_ZOLTAN_FIGHT"/>
-					</choice>
-				</event>
-			</choice>
-			
-			<choice req="seized_scorchenemy" hidden="true">
-				<text>Put the gear back on your ship.</text>
-				<event>
-					<text>You are delighted to have it back. Your crew has mixed feelings, but you remind them of the mission.</text>
-					<augment name="DJMOD_COMBAT_SCORCH_ENEMY"/>
-					<variable name="seized_scorchenemy" op="add" val="-1"/>
-					
-					<choice hidden="true">
-						<text>Continue...</text>
-						<event load="MORALITY_UPDATE_ZOLTAN_FIGHT"/>
-					</choice>
-				</event>
-			</choice>
-
-			<!-- ============ Get WEAPONS back ============ -->
-			<choice req="seized_bam_fissurebeam" hidden="true">
-				<text>Put the gear back on your ship.</text>
-				<event>
-					<text>You are delighted to have it back. Your crew has mixed feelings, but you remind them of the mission.</text>
-					<weapon name="DJMOD_BAM_FISSUREBEAM"/>
-					<variable name="seized_bam_fissurebeam" op="add" val="-1"/>
-					
-					<choice hidden="true">
-						<text>Continue...</text>
-						<event load="MORALITY_UPDATE_ZOLTAN_FIGHT"/>
-					</choice>
-				</event>
-			</choice>
-
-			<choice req="seized_rainofion" hidden="true">
-				<text>Put the gear back on your ship.</text>
-				<event>
-					<text>You are delighted to have it back. Your crew has mixed feelings, but you remind them of the mission.</text>
-					<weapon name="DJMOD_RAIN_OF_ION"/>
-					<variable name="seized_rainofion" op="add" val="-1"/>
-					
-					<choice hidden="true">
-						<text>Continue...</text>
-						<event load="MORALITY_UPDATE_ZOLTAN_FIGHT"/>
-					</choice>
-				</event>
-			</choice>
-			
-			<choice req="seized_rainoffire" hidden="true">
-				<text>Put the gear back on your ship.</text>
-				<event>
-					<text>You are delighted to have it back. Your crew has mixed feelings, but you remind them of the mission.</text>
-					<weapon name="DJMOD_RAIN_OF_FIRE"/>
-					<variable name="seized_rainoffire" op="add" val="-1"/>
-					
-					<choice hidden="true">
-						<text>Continue...</text>
-						<event load="MORALITY_UPDATE_ZOLTAN_FIGHT"/>
-					</choice>
-				</event>
-			</choice>
-			
-			<choice req="seized_laserbps" hidden="true">
-				<text>Put the gear back on your ship.</text>
-				<event>
-					<text>You are delighted to have it back. Your crew has mixed feelings, but you remind them of the mission.</text>
-					<weapon name="DJMOD_LASER_BPS"/>
-					<variable name="seized_laserbps" op="add" val="-1"/>
-					
-					<choice hidden="true">
-						<text>Continue...</text>
-						<event load="MORALITY_UPDATE_ZOLTAN_FIGHT"/>
-					</choice>
-				</event>
-			</choice>
-			
-			<!-- ============ Get Gear Back choices end ============ -->
-			
-			<choice hidden="true">
-				<text>Make a trap for the rebels out of it. [Delays the fleet 2 jumps]</text>
-				<event>
-					<text>This should damage or confuse the rebels, delaying them a little.</text>
-					<modifyPursuit amount="-2"/>
-					<choice hidden="true">
-						<text>Continue...</text>
-						<event load="MORALITY_UPDATE_ZOLTAN_FIGHT"/>
-					</choice>
-				</event>
-			</choice>
-			<choice hidden="true">
-				<text>Continue...</text>
-				<event load="COMBAT_CHECK"/>
 			</choice>
 		</event>
 	</choice>
@@ -2060,6 +1501,13 @@ About 900 lines, minimize if not interested. -->
 	</crew>
 </ship>
 
+<!-- 
+*********************************************************************************************************
+*********************************************************************************************************
+ZOLTAN POLICE QUESTS END
+*********************************************************************************************************
+*********************************************************************************************************
+-->
 
 <!-- 
 RK ships under attack, giving subfaction-theme-fitting gear when saved, or RK gear when crewkilled. 
@@ -2640,7 +2088,13 @@ _LASERS version updated 5.5.1, re-copypaste the others completely, based on this
 
 </FTL>
 
-<!-- Empty beacons -->
+<!-- 
+*********************************************************************************************************
+*********************************************************************************************************
+Empty beacons
+*********************************************************************************************************
+*********************************************************************************************************
+-->
 <FTL>
 <event name="EMPTY_RADIKAL">
 	<text load="EMPTY_RADIKAL"/>
@@ -2681,11 +2135,13 @@ _LASERS version updated 5.5.1, re-copypaste the others completely, based on this
 
 <!-- 
 *********************************************************************************************************
-				QUESTS
+*********************************************************************************************************
+				QUESTS (move to sector file eventually)
+*********************************************************************************************************
 *********************************************************************************************************
  -->
 <FTL>
-<event name="RK_QUEST_LAB_BAM" unique="true">
+<!-- <event name="RK_QUEST_LAB_BAM" unique="true">
 	<preventQuest/>
 	<preventFleet/>
 	<quest>
@@ -2698,7 +2154,7 @@ _LASERS version updated 5.5.1, re-copypaste the others completely, based on this
 	</beaconType>
 
 	<text>[PLACEHOLDER QUEST] There is no ship here but someone from the nearby planet is hailing you. "You who dare come here, are you one of us RadiKals?"</text>
-	<img planet="PLANET_POPULATED"/>
+	<img planet="PLANET_RINGS"/>
 	
 	<choice req="DJMOD_HAS_RADIKAL_GEAR" hidden="true">
 		<text>(any piece of RK gear) Yes</text>
@@ -2712,8 +2168,9 @@ _LASERS version updated 5.5.1, re-copypaste the others completely, based on this
 					<text>You receive another, larger delivery and a very rare augment. "Excellent. Hit hard, homie."
 					You would have asked for an explanation but they've blocked your hails. That went well enough overall.</text>
 					<autoReward level="HIGH">stuff</autoReward>
-					<augment name="DJMOD_AUG_AUTO_SYS_REPAIR"/>
 					
+					<store>STORE_RADIKAL_BAM</store>
+
 					<choice>
 						<text>Do something onboard the ship.</text>
 						<event load="STORAGE_CHECK"/>
@@ -2780,7 +2237,7 @@ _LASERS version updated 5.5.1, re-copypaste the others completely, based on this
 			</choice>
 		</event>
 	</choice>
-</event>
+</event> -->
 
 <event name="RK_QUEST_LAB_PUNK" unique="true">
 	<preventQuest/>
@@ -2795,7 +2252,7 @@ _LASERS version updated 5.5.1, re-copypaste the others completely, based on this
 	</beaconType>
 
 	<text>[PLACEHOLDER QUEST] There is no ship here but someone from the nearby planet is hailing you. "You who dare come here, are you one of us RadiKals?"</text>
-	<img planet="PLANET_POPULATED"/>
+	<img planet="PLANET_WATER"/>
 	
 	<choice req="DJMOD_HAS_RADIKAL_GEAR" hidden="true">
 		<text>(any piece of RK gear) Yes</text>
@@ -2809,7 +2266,8 @@ _LASERS version updated 5.5.1, re-copypaste the others completely, based on this
 					<text>You receive another, larger delivery and a very rare augment. "Excellent. Stay smart, captain."
 					You would have asked for an explanation but they've blocked your hails. That went well enough overall.</text>
 					<autoReward level="HIGH">stuff</autoReward>
-					<augment name="DJMOD_DEFENSE_REMOVER"/>
+					
+					<store>STORE_RADIKAL_PUNK</store>
 					
 					<choice>
 						<text>Do something onboard the ship.</text>
@@ -2879,104 +2337,6 @@ _LASERS version updated 5.5.1, re-copypaste the others completely, based on this
 	</choice>
 </event>
 
-<event name="RK_QUEST_LAB_SCORCH" unique="true">
-	<preventQuest/>
-	<preventFleet/>
-	<quest>
-		<nebulaBeacon>false</nebulaBeacon>
-		<aggressive>2</aggressive>
-	</quest>
-	<beaconType id="map_icon_radikal_scorch" global="true">
-		<color r="255" g="120" b="94" a="1.0"/>
-		<unvisitedTooltip>You were told you can get great RadiKal Scorch gear at this beacon, if you can prove you're a customer.</unvisitedTooltip>
-	</beaconType>
-
-	<text>[PLACEHOLDER QUEST] There is no ship here but someone from the nearby planet is hailing you. "You who dare come here, are you one of us RadiKals?"</text>
-	<img planet="PLANET_POPULATED"/>
-	
-	<choice req="DJMOD_HAS_RADIKAL_GEAR" hidden="true">
-		<text>(any piece of RK gear) Yes</text>
-		<event>
-			<text>You receive a delivery. "Good. Do you support the Scorch?"</text>
-			<autoReward level="MED">standard</autoReward>
-			
-			<choice req="DJMOD_HAS_RADIKAL_SCORCH_GEAR" hidden="true">
-				<text>(RK Scorch equipment) Yes</text>
-				<event>
-					<text>You receive another, larger delivery and a very rare augment. "Excellent. You may access our best store. Burn bright, sunshine."
-					You would have asked for an explanation but they've blocked your hails. That went well enough overall.</text>
-					<autoReward level="HIGH">stuff</autoReward>
-
-					<!-- <augment name="DJMOD_ENEMIES_CAN_BURN"/> -->
-					<store>STORE_RADIKAL_SCORCH</store>
-					
-					<choice>
-						<text>Do something onboard the ship.</text>
-						<event load="STORAGE_CHECK"/>
-					</choice>
-					<choice>
-						<text>Do nothing.</text>
-						<event/>
-					</choice>
-				</event>
-			</choice>
-
-			<choice req="DJMOD_HAS_RADIKAL_SCORCH_GEAR" lvl="0" max_lvl="0" hidden="true" blue="false">
-				<text>You do not have any RK Scorch gear.</text>
-				<event load="OPTION_INVALID"/>
-			</choice>
-			
-			<choice hidden="true">
-				<text>No</text>
-				<event>
-					<text>"Then move along." Your hails are now blocked.</text>
-					
-					<choice>
-						<text>Do something onboard the ship.</text>
-						<event load="STORAGE_CHECK"/>
-					</choice>
-					<choice>
-						<text>Do nothing.</text>
-						<event/>
-					</choice>
-				</event>
-			</choice>
-		</event>
-	</choice>
-	
-	<choice hidden="true">
-		<text>Uhm... I don't know, maybe?</text>
-		<event>
-			<text>Your ship soon takes damage from a source you cannot identify. "Begone, tourist. You had been warned."</text>
-			<damage amount="3" system="room" effect="fire"/>
-			
-			<choice>
-				<text>Do something onboard the ship.</text>
-				<event load="STORAGE_CHECK"/>
-			</choice>
-			<choice>
-				<text>Do nothing.</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-	
-	<choice hidden="true">
-		<text>No. Sorry for the intrusion. We're leaving.</text>
-		<event>
-			<text>There is no answer. You figure you didn't give the worst possible answer but it's still best not to stick around.</text>
-			
-			<choice>
-				<text>Do something onboard the ship.</text>
-				<event load="STORAGE_CHECK"/>
-			</choice>
-			<choice>
-				<text>Do nothing.</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-</event>
 </FTL>
 
 <!-- Add an event based on this, free upgrade reward.
@@ -3022,13 +2382,15 @@ Except this time the loader is EXIT_RADIKAL so i'm not changing the name for con
 	<text>"I'll make it simple for you, we have a reputation to uphold. If you're not able to beat one of our gatekeepers, we can't let you leave and make RadiKal gear look bad with your incompetence.
 	Think about it. Why do you think folks fund all of this? That's because you've never heard of subpar RadiKal equipment, and this is one way to do quality control.
 	You do get to pick your opponent, so choose wisely... yeah, that IS part of the skill test.
-	Oh and, don't worry about killing crew in these ships, they're all purpose-grown illegal clones. In fact we'd like to see you try to kill them cleanly."
+	Oh and, don't worry about killing crew in these ships, they're all purpose-grown illegal clones. In fact we'd like to see you try to kill them cleanly.
+	
+	So, which Gatekeeper do you choose?"
 	</text>
 	
 	<choice hidden="true">
-		<text>Fight the Bam Gatekeeper!</text>
+		<text>Bam, with the raw blunt damage and reinforcements</text>
 		<event>
-			<text>You think your best shot is against the Bam, with their blunt hull damage weaponry, and reinforcements. Get ready!</text>
+			<text>You are taken to the Bam arena to prove your worth. Get ready!</text>
 			<environment type="asteroid"/>
 			<ship load="SHIP_RK_BAM_EXIT_BOSS" hostile="true"/>
 			<choice hidden="true">
@@ -3038,9 +2400,9 @@ Except this time the loader is EXIT_RADIKAL so i'm not changing the name for con
 		</event>
 	</choice>
 	<choice hidden="true">
-		<text>Fight the Punk Gatekeeper!</text>
+		<text>Punk, with the fancy tricks and crew shenanigans</text>
 		<event>
-			<text>You think your best shot is against the Punk, with their sneaky high-tech weaponry and crew shenanigans. Get ready!</text>
+			<text>You are taken to the Punk arena to prove your worth. Get ready!</text>
 			<environment type="pulsar"/>
 			<ship load="SHIP_RK_PUNK_EXIT_BOSS" hostile="true"/>
 			<choice hidden="true">
@@ -3050,9 +2412,9 @@ Except this time the loader is EXIT_RADIKAL so i'm not changing the name for con
 		</event>
 	</choice>
 	<choice hidden="true">
-		<text>Fight the Scorch Gatekeeper!</text>
+		<text>Scorch, with the fire weaponry and acceleration features</text>
 		<event>
-			<text>You think your best shot is against the Scorch, with their fire weaponry and acceleration features. Get ready!</text>
+			<text>You are taken to the Scorch arena to prove your worth. Get ready!</text>
 			<environment type="sun"/>
 			<ship load="SHIP_RK_SCORCH_EXIT_BOSS" hostile="true"/>
 			<choice hidden="true">
@@ -3139,9 +2501,11 @@ REFS MV v5.5.1:
 	<text>Just as you were about to jump, a serious warship in pirate colors come out of hiding, followed by more pirates.
 		"Forgetting something? A lil' business meeting that YOU asked for, maybe? Have you no honor??! You can't just make a bunch of cutthroats waste their time. Now die, fool!"
 		
-		Looks like the pirates didn't appreciate you not coming to your own Pirate Trinity reunion, and in order to leave you'll have to beat this Elite while its associates provide fire support!
+		Looks like the pirates didn't appreciate you not coming to your own Pirate Trinity reunion. They have somehow reset the charge on your jump drive, so you'll have to fight this Elite while its associates provide fire support!
 	</text>
 	<clearJumpEvent/>
+
+	<resetFtl/>
 
 	<!-- Only possible after Gatekeeper fights thanks to multiShipFix in hyperspace.xml.append -->
 	<ship load="SHIP_PIRATE_ELITE_STARGROVE" hostile="true"/>

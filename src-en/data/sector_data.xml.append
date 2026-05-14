@@ -68,56 +68,114 @@ REFS
 
 <mod:findName type="sectorDescription" name="SECRET_ANCIENT">
 	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="DJMOD_AUG_AUTO_SYS_REPAIR" rarity="0"/>	
 		<mod-append:blueprint name="DJMOD_COMBAT_SHIPVORE_RAM" rarity="0" />
 		<mod-append:blueprint name="DJMOD_CREW_ARE_BOMBS_OFF" rarity="0"/>
-		<mod-append:blueprint name="DJMOD_AUG_AUTO_SYS_REPAIR" rarity="0"/>
+		<mod-append:blueprint name="DJMOD_LEAD_TITANS" rarity="0"/>
+		<mod-append:blueprint name="RK_PERSISTENCE_SHIELD" rarity="0"/>
+		<mod-append:blueprint name="EX_RK_CHOKING_IS_FINE" rarity="0"/>
 		
-		<mod-append:blueprint name="DJMOD_HACK_FLEET" rarity="0"/>
-		<mod-append:blueprint name="DJMOD_COMBAT_OFFENSE_DISABLER" rarity="0"/>
-		<mod-append:blueprint name="DJMOD_SUPER_DEFENDERS" rarity="0"/>
-		<mod-append:blueprint name="DJMOD_OWN_HARMONY_ON" rarity="0"/>
 		<mod-append:blueprint name="DJMOD_DEFENSE_REMOVER" rarity="0"/>
+		<mod-append:blueprint name="DJMOD_COMBAT_OFFENSE_DISABLER" rarity="0"/>
+		<mod-append:blueprint name="DJMOD_HACK_FLEET" rarity="0"/>
+		<mod-append:blueprint name="DJMOD_OWN_HARMONY_ON" rarity="0"/>
+		<mod-append:blueprint name="DJMOD_SUPER_DEFENDERS" rarity="0"/>
+		<mod-append:blueprint name="EX_DJMOD_DEMICLONER" rarity="0"/>
 		
-		<mod-append:blueprint name="DJMOD_COMBAT_SCORCH_SELF" rarity="0"/>
-		<mod-append:blueprint name="DJMOD_COMBAT_SCORCH_SELF_2" rarity="0"/>
-		<mod-append:blueprint name="DJMOD_COMBAT_SCORCH_SELF_3" rarity="0"/>
+		<mod-append:blueprint name="RK_SCORCH_SELF" rarity="0"/>
+		<mod-append:blueprint name="RK_SCORCH_SELF_2" rarity="0"/>
+		<mod-append:blueprint name="RK_SCORCH_SELF_3" rarity="0"/>
 		<mod-append:blueprint name="DJMOD_COMBAT_SCORCH_ENEMY" rarity="0"/>
-		<mod-append:blueprint name="DJMOD_ENEMIES_CAN_BURN" rarity="0"/>
 		<mod-append:blueprint name="DJMOD_ENEMIES_BURN_MORE" rarity="0"/>
+		<mod-append:blueprint name="DJMOD_ENEMIES_CAN_BURN" rarity="0"/>
 		<mod-append:blueprint name="DJMOD_OXYGENIZER" rarity="0"/>
+
+		<mod-append:blueprint name="RK_BPS_SURVEYOR" rarity="0"/>
 		
-		<mod-append:blueprint name="DJMOD_RAIN_OF_ION" rarity="0" />
+		<mod-append:blueprint name="DJMOD_BAM_FISSUREBEAM" rarity="0" />
+		<mod-append:blueprint name="RK_UNLOADER" rarity="0" />
+		<mod-append:blueprint name="RK_RAIN_OF_ION" rarity="0" />
+		<mod-append:blueprint name="RK_SHOTPHASER" rarity="0" />
 		<mod-append:blueprint name="DJMOD_RAIN_OF_FIRE" rarity="0" />
+
 		<mod-append:blueprint name="DJMOD_LASER_BPS" rarity="0" />
 	</mod:findLike>
 </mod:findName>
 <mod:findName type="sectorDescription" name="SECRET_ROYAL">
 	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="DJMOD_AUG_AUTO_SYS_REPAIR" rarity="0"/>	
 		<mod-append:blueprint name="DJMOD_COMBAT_SHIPVORE_RAM" rarity="0" />
 		<mod-append:blueprint name="DJMOD_CREW_ARE_BOMBS_OFF" rarity="0"/>
-		<mod-append:blueprint name="DJMOD_AUG_AUTO_SYS_REPAIR" rarity="0"/>
+		<mod-append:blueprint name="DJMOD_LEAD_TITANS" rarity="0"/>
+		<mod-append:blueprint name="RK_PERSISTENCE_SHIELD" rarity="0"/>
+		<mod-append:blueprint name="EX_RK_CHOKING_IS_FINE" rarity="0"/>
 		
-		<mod-append:blueprint name="DJMOD_HACK_FLEET" rarity="0"/>
-		<mod-append:blueprint name="DJMOD_COMBAT_OFFENSE_DISABLER" rarity="0"/>
-		<mod-append:blueprint name="DJMOD_SUPER_DEFENDERS" rarity="0"/>
-		<mod-append:blueprint name="DJMOD_OWN_HARMONY_ON" rarity="0"/>
 		<mod-append:blueprint name="DJMOD_DEFENSE_REMOVER" rarity="0"/>
+		<mod-append:blueprint name="DJMOD_COMBAT_OFFENSE_DISABLER" rarity="0"/>
+		<mod-append:blueprint name="DJMOD_HACK_FLEET" rarity="0"/>
+		<mod-append:blueprint name="DJMOD_OWN_HARMONY_ON" rarity="0"/>
+		<mod-append:blueprint name="DJMOD_SUPER_DEFENDERS" rarity="0"/>
+		<mod-append:blueprint name="EX_DJMOD_DEMICLONER" rarity="0"/>
 		
-		<mod-append:blueprint name="DJMOD_COMBAT_SCORCH_SELF" rarity="0"/>
-		<mod-append:blueprint name="DJMOD_COMBAT_SCORCH_SELF_2" rarity="0"/>
-		<mod-append:blueprint name="DJMOD_COMBAT_SCORCH_SELF_3" rarity="0"/>
+		<mod-append:blueprint name="RK_SCORCH_SELF" rarity="0"/>
+		<mod-append:blueprint name="RK_SCORCH_SELF_2" rarity="0"/>
+		<mod-append:blueprint name="RK_SCORCH_SELF_3" rarity="0"/>
 		<mod-append:blueprint name="DJMOD_COMBAT_SCORCH_ENEMY" rarity="0"/>
-		<mod-append:blueprint name="DJMOD_ENEMIES_CAN_BURN" rarity="0"/>
 		<mod-append:blueprint name="DJMOD_ENEMIES_BURN_MORE" rarity="0"/>
+		<mod-append:blueprint name="DJMOD_ENEMIES_CAN_BURN" rarity="0"/>
 		<mod-append:blueprint name="DJMOD_OXYGENIZER" rarity="0"/>
+
+		<mod-append:blueprint name="RK_BPS_SURVEYOR" rarity="0"/>
 		
-		<mod-append:blueprint name="DJMOD_RAIN_OF_ION" rarity="0" />
+		<mod-append:blueprint name="DJMOD_BAM_FISSUREBEAM" rarity="0" />
+		<mod-append:blueprint name="RK_UNLOADER" rarity="0" />
+		<mod-append:blueprint name="RK_RAIN_OF_ION" rarity="0" />
+		<mod-append:blueprint name="RK_SHOTPHASER" rarity="0" />
 		<mod-append:blueprint name="DJMOD_RAIN_OF_FIRE" rarity="0" />
+
 		<mod-append:blueprint name="DJMOD_LASER_BPS" rarity="0" />
-		
 	</mod:findLike>
 </mod:findName>
+<!-- 
+===============================================================================
+RARITY IN OTHER ADD-ONS
+===============================================================================
+-->
+<mod:findName type="sectorDescription" name="SECRET_FR_COMMONWEALTH">
+	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="DJMOD_AUG_AUTO_SYS_REPAIR" rarity="0"/>	
+		<mod-append:blueprint name="DJMOD_COMBAT_SHIPVORE_RAM" rarity="0" />
+		<mod-append:blueprint name="DJMOD_CREW_ARE_BOMBS_OFF" rarity="0"/>
+		<mod-append:blueprint name="DJMOD_LEAD_TITANS" rarity="0"/>
+		<mod-append:blueprint name="RK_PERSISTENCE_SHIELD" rarity="0"/>
+		<mod-append:blueprint name="EX_RK_CHOKING_IS_FINE" rarity="0"/>
+		
+		<mod-append:blueprint name="DJMOD_DEFENSE_REMOVER" rarity="0"/>
+		<mod-append:blueprint name="DJMOD_COMBAT_OFFENSE_DISABLER" rarity="0"/>
+		<mod-append:blueprint name="DJMOD_HACK_FLEET" rarity="0"/>
+		<mod-append:blueprint name="DJMOD_OWN_HARMONY_ON" rarity="0"/>
+		<mod-append:blueprint name="DJMOD_SUPER_DEFENDERS" rarity="0"/>
+		<mod-append:blueprint name="EX_DJMOD_DEMICLONER" rarity="0"/>
+		
+		<mod-append:blueprint name="RK_SCORCH_SELF" rarity="0"/>
+		<mod-append:blueprint name="RK_SCORCH_SELF_2" rarity="0"/>
+		<mod-append:blueprint name="RK_SCORCH_SELF_3" rarity="0"/>
+		<mod-append:blueprint name="DJMOD_COMBAT_SCORCH_ENEMY" rarity="0"/>
+		<mod-append:blueprint name="DJMOD_ENEMIES_BURN_MORE" rarity="0"/>
+		<mod-append:blueprint name="DJMOD_ENEMIES_CAN_BURN" rarity="0"/>
+		<mod-append:blueprint name="DJMOD_OXYGENIZER" rarity="0"/>
 
+		<mod-append:blueprint name="RK_BPS_SURVEYOR" rarity="0"/>
+		
+		<mod-append:blueprint name="DJMOD_BAM_FISSUREBEAM" rarity="0" />
+		<mod-append:blueprint name="RK_UNLOADER" rarity="0" />
+		<mod-append:blueprint name="RK_RAIN_OF_ION" rarity="0" />
+		<mod-append:blueprint name="RK_SHOTPHASER" rarity="0" />
+		<mod-append:blueprint name="DJMOD_RAIN_OF_FIRE" rarity="0" />
+
+		<mod-append:blueprint name="DJMOD_LASER_BPS" rarity="0" />
+	</mod:findLike>
+</mod:findName>
 
 <!-- This was not causing the issue after guard dialogues closes. MV's secret Mantis sector isn't even in that list. -->
 <mod:findName type="sectorType" name="secret">
@@ -211,7 +269,6 @@ REF v5.5.1 (from "Bag of Dumb fixed" ?)
 
 TODO:
 -Test ANOMALY_SPAWNER not crashing: no crash but hasn't spawned yet either.
--Test remaining RK events
 -->
 <sectorDescription name="SECRET_RADIKAL" unique="true">    
 	<nameList>
@@ -226,80 +283,99 @@ TODO:
 	<rarityList>
 		<!--
 		\\\\\\\\\\\
-		   CREW - Lost Suns, Duskbringers, Shells, Soldiers, special Ghosts, special slugs, and rarely,
-		    normal versions of any elites in this list except zoltan (too lawful).
+		CREW - Lost Suns, Duskbringers, Shells, Soldiers, special Ghosts, special slugs, and rarely,
+		normal versions of any elites in this list. Zoltans rare because lawful, Crystals just rare.
 		\\\\\\\\\\\
 		-->
 		<!--human-->
 		<blueprint name="human" rarity="0"/>
-		<blueprint name="human_engineer" rarity="2"/>
-		<blueprint name="human_medic" rarity="2"/>
-		<blueprint name="human_mfk" rarity="3"/>
-		<blueprint name="human_legion" rarity="5"/>
-		<blueprint name="human_legion_pyro" rarity="5"/>
-		<blueprint name="human_soldier" rarity="1"/>
-		<blueprint name="human_technician" rarity="4"/>
+
+		<blueprint name="human_medic" rarity="4"/>
+
+		<blueprint name="human_engineer" rarity="4"/>
+		<blueprint name="human_technician" rarity="3"/>
+
+		<blueprint name="human_soldier" rarity="3"/>
+		<blueprint name="human_mfk" rarity="5"/>
+		<blueprint name="human_legion" rarity="4"/>
+		<blueprint name="human_legion_pyro" rarity="4"/>
 		<!--engi-->
 		<blueprint name="engi" rarity="0"/>
 		<blueprint name="engi_separatist" rarity="4"/>
-		<blueprint name="engi_defender" rarity="5"/>
+		<blueprint name="engi_defender" rarity="3"/>
 		<!--zoltan-->
-		<blueprint name="zoltan" rarity="0"/>
-		<blueprint name="zoltan_monk" rarity="0"/>
-		<blueprint name="zoltan_devotee" rarity="1"/>
-		<blueprint name="zoltan_martyr" rarity="3"/>
-		<blueprint name="zoltan_peace" rarity="0"/>
+		<blueprint name="zoltan" rarity="5"/>
+		<blueprint name="zoltan_peacekeeper" rarity="4"/>
+
+		<blueprint name="zoltan_devotee" rarity="4"/>
+		<blueprint name="zoltan_martyr" rarity="2"/>
+		
+		<blueprint name="zoltan_monk" rarity="5"/>
 		<!--rock-->
 		<blueprint name="rock" rarity="0"/>
-		<blueprint name="rock_commando" rarity="1"/>
-		<blueprint name="rock_crusader" rarity="4"/>
-		<blueprint name="rock_cultist" rarity="2"/>
+		<blueprint name="rock_crusader" rarity="3"/>
+		<blueprint name="rock_paladin" rarity="4"/>
+		
 		<blueprint name="rock_outcast" rarity="4"/>
-		<blueprint name="rock_paladin" rarity="5"/>
+		<blueprint name="rock_commando" rarity="2"/>
+
+		<blueprint name="rock_cultist" rarity="2"/>
 		<!--mantis-->
-		<blueprint name="mantis" rarity="0"/>
-		<blueprint name="mantis_bishop" rarity="5"/>
-		<blueprint name="mantis_free" rarity="0"/>
+		<blueprint name="mantis" rarity="5"/>
 		<blueprint name="mantis_suzerain" rarity="3"/>
-		<blueprint name="mantis_warlord" rarity="3"/>
+		<blueprint name="mantis_bishop" rarity="4"/>
+
+		<blueprint name="mantis_free" rarity="5"/>
+		<blueprint name="mantis_warlord" rarity="2"/>
 		<!--slug-->
 		<blueprint name="slug" rarity="0"/>
-		<blueprint name="slug_clansman" rarity="1"/>
-		<blueprint name="slug_hektar" rarity="4"/>
-		<blueprint name="slug_knight" rarity="5"/>
-		<blueprint name="slug_ranger" rarity="3"/>
-		<blueprint name="slug_saboteur" rarity="1"/>
+
+		<blueprint name="slug_hektar" rarity="5"/>
+
+		<blueprint name="slug_clansman" rarity="5"/>
+		<blueprint name="slug_ranger" rarity="4"/>
 		
+		<blueprint name="slug_saboteur" rarity="5"/>
+		<blueprint name="slug_knight" rarity="4"/>
 		<!--shell-->
 		<blueprint name="shell" rarity="5"/>
-		<blueprint name="shell_mechanic" rarity="2"/>
-		<blueprint name="shell_scientist" rarity="2"/>
-		<blueprint name="shell_guardian" rarity="3"/>
-		<blueprint name="shell_radiant" rarity="4"/>
+		<blueprint name="shell_guardian" rarity="4"/>
+		<blueprint name="shell_radiant" rarity="3"/>
+		
+		<blueprint name="shell_mechanic" rarity="3"/>
+		<blueprint name="shell_scientist" rarity="3"/>
 		<!--crystal-->
 		<blueprint name="crystal" rarity="0"/>
-		<blueprint name="crystal_liberator" rarity="0"/>
-		<blueprint name="crystal_sentinel" rarity="0"/>
+		<blueprint name="crystal_liberator" rarity="5"/>
+		<blueprint name="crystal_sentinel" rarity="5"/>
 		<!--orchid-->
 		<blueprint name="orchid" rarity="0"/>
+		<blueprint name="orchid_caretaker" rarity="4"/>
+		<blueprint name="orchid_praetor" rarity="3"/>
+
 		<blueprint name="orchid_vampweed" rarity="5"/>
-		<blueprint name="orchid_cultivator" rarity="4"/>
+		<blueprint name="orchid_cultivator" rarity="3"/>
 		<!--leech-->
-		<blueprint name="leech" rarity="0"/>
-		<blueprint name="leech_ampere" rarity="3"/>
+		<blueprint name="leech" rarity="5"/>
+		<blueprint name="leech_ampere" rarity="2"/>
 		<!--lanius-->
-		<blueprint name="lanius" rarity="0"/>
-		<blueprint name="lanius_welder" rarity="3"/>
+		<blueprint name="lanius" rarity="5"/>
+		<blueprint name="lanius_welder" rarity="2"/>
 		<!--ghost-->
 		<blueprint name="phantom" rarity="0"/>
-		<blueprint name="phantom_goul" rarity="3"/>
+		<blueprint name="phantom_alpha" rarity="4"/>
+		<blueprint name="phantom_goul" rarity="5"/>
 		<blueprint name="phantom_goul_alpha" rarity="4"/>
-		<blueprint name="phantom_mare" rarity="3"/>
+		<blueprint name="phantom_mare" rarity="5"/>
 		<blueprint name="phantom_mare_alpha" rarity="4"/>
-		<blueprint name="phantom_wraith" rarity="3"/>
+		<blueprint name="phantom_wraith" rarity="5"/>
 		<blueprint name="phantom_wraith_alpha" rarity="4"/>
 		<!--lizard-->
-		<blueprint name="lizard" rarity="5"/>
+		<blueprint name="lizard" rarity="4"/>
+		
+		<!-- RadiKals -->
+		<blueprint name="rk_weaponlike" rarity="1"/>
+		<blueprint name="rk_fireghost" rarity="2"/>
 	</rarityList>
 	<startEvent>START_RADIKAL</startEvent>
 	<!-- <exitBeacon event="NEBULA_EXIT_RADIKAL" nebulaEvent="NEBULA_EXIT_RADIKAL" rebelEvent="NEBULA_EXIT_RADIKAL"/> -->
@@ -320,26 +396,27 @@ TODO:
 	as you ideally want players to only rarely encounter piracy or filler events or else your sector will feel generic.
 	-->
 
-	
 	<!-- ===============================================================================
 	uniques, make SURE to check numbers. Apply scorched earth method if problems. 
 	CURRENT CRASH WAS FROM SOMETHING IN HERE.
 	Not from: PHILO, RK STORES, POLICECHECK, MV travelers, PIRACY_LIST, ... 
 	FROM: LEAH ( = NEMESIS), customFleet, ...
-	CURRENT CRASH (v5.69) MIGHT BE FROM SOMETHING IN HERE.
-	Not from: RK GEAR BUYERS, Scorch shop spawning, ... 
-	FROM:  ...
 
-	NB: Guard can spawn up to 3 quests.
+	NB: Guard can spawn up to 3 quests (labs).
 	=============================================================================== -->
 	<event name="RADIKAL_PHILO" min="1" max="1"/>
-	<event name="ZOLTAN_POLICECHECK_RK" min="1" max="1"/> <!-- Counts for 2, may spawn quest. -->
+	<event name="ZOLTAN_POLICECHECK_RK" min="1" max="1"/>		<!-- Counts for 2, may spawn quest. -->
 	<event name="RADIKAL_ENSLAVED" min="1" max="1"/>
 	<event name="THIEVES_RK_LASERS" min="1" max="1"/>
 	<event name="RK_GEAR_BUYERS" min="1" max="2"/>
 
+	<event name="RKS_QUEST_DEFROMORIUS" min="1" max="1"/>
+	
 	<event name="RKS_STORE_SNIPER_SIEGED" min="1" max="1"/>
-	<event name="EVENT_STORE_RADIKAL" min="3" max="4"/>
+	<event name="EVENT_STORE_RADIKAL" min="2" max="3"/>
+
+	<event name="RKS_SUSPICIOUS_SMUGGLER" min="2" max="2"/>		<!-- for Zoltan Police Warrant -->
+	<event name="RKS_FIGHT_ELITE_COALITION" min="1" max="1"/>
 
 	<event name="EMPTY_RADIKAL" min="1" max="2"/>
 
@@ -355,7 +432,6 @@ TODO:
 	<event name="THIEVES_RK_BEAMS" min="0" max="1"/>
 	
 
-	v
 	<event name="NEBULA_EMPTY_RADIKAL" min="1" max="2"/>
 	
 	<event name="DISTRESS" min="2" max="3"/>

@@ -152,8 +152,13 @@ The x and y coordinates in sheets are SPRITES not pixels, starting BOTTOM LEFT. 
 </anim>
 </FTL>
 
+<!-- 
+===================================================================================================
+RK Bam crew
+===================================================================================================
+-->
+
 <!-- RK_WEAPONLIKE based on technoboarderion aka "Technopath morph imitating an ion boarder drone."
-TODO: recolor the sprites and rename all necessary below this line. 
 -->
 <FTL>
 <animSheet name="rk_weaponlike_charge" w="175" h="35" fw="35" fh="35">people/rk_weaponlike_charge.png</animSheet>
@@ -181,7 +186,6 @@ TODO: recolor the sprites and rename all necessary below this line.
 </anim>
 <anim name="rk_weaponlike_shoot_left">
 	<sheet>rk_weaponlike</sheet>
-	<!-- <desc length="2" x="0" y="5"/> -->
 	 <desc length="2" x="2" y="5"/>
 	<time>1.5</time>
 </anim>
@@ -244,7 +248,7 @@ Below, modified sheet to accomodate added projectile.
 	<time>0.5</time>
 </anim>
 
-<!-- custom: First frame of shooting anims -->
+<!-- added manning: First frame of shooting anims -->
 <anim name="rk_weaponlike_type_down">
 	<sheet>rk_weaponlike</sheet>
 	<desc length="1" x="0" y="6"/>
@@ -272,6 +276,144 @@ Below, modified sheet to accomodate added projectile.
 	<time>1</time>
 </anim>
 </FTL>
+
+<!-- 
+===================================================================================================
+RK Punk crew
+===================================================================================================
+-->
+
+<!-- Unique RK based on blobrock aka "Morph imitating a Rockman" -->
+<FTL>
+<!-- <animSheet name="blobrock" w="350" h="455" fw="35" fh="35">people/blobrock_base.png</animSheet> -->
+<animSheet name="unique_rk_defromorius" w="350" h="455" fw="35" fh="35">people/unique_rk_defromorius_base.png</animSheet>
+<anim name="unique_rk_defromorius_clone">
+	<sheet>unique_rk_defromorius</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_rk_defromorius_death_right">
+	<sheet>unique_rk_defromorius</sheet>
+	<desc length="7" x="3" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_rk_defromorius_death_left">
+	<sheet>unique_rk_defromorius</sheet>
+	<desc length="7" x="3" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_rk_defromorius_walk_down">
+	<sheet>unique_rk_defromorius</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_rk_defromorius_walk_right">
+	<sheet>unique_rk_defromorius</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_rk_defromorius_walk_up">
+	<sheet>unique_rk_defromorius</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_rk_defromorius_walk_left">
+	<sheet>unique_rk_defromorius</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_rk_defromorius_shoot_down">
+	<sheet>unique_rk_defromorius</sheet>
+	<desc length="4" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_rk_defromorius_shoot_right">
+	<sheet>unique_rk_defromorius</sheet>
+	<desc length="4" x="4" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_rk_defromorius_shoot_up">
+	<sheet>unique_rk_defromorius</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_rk_defromorius_shoot_left">
+	<sheet>unique_rk_defromorius</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim> 
+<anim name="unique_rk_defromorius_fire_down">
+	<sheet>unique_rk_defromorius</sheet>
+	<desc length="10" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_rk_defromorius_fire_right">
+	<sheet>unique_rk_defromorius</sheet>
+	<desc length="10" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_rk_defromorius_fire_up">
+	<sheet>unique_rk_defromorius</sheet>
+	<desc length="10" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_rk_defromorius_fire_left">
+	<sheet>unique_rk_defromorius</sheet>
+	<desc length="10" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_rk_defromorius_repair">
+	<sheet>unique_rk_defromorius</sheet>
+	<desc length="8" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_rk_defromorius_punch_up">
+	<sheet>unique_rk_defromorius</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_rk_defromorius_punch_down">
+	<sheet>unique_rk_defromorius</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="unique_rk_defromorius_teleport">
+	<sheet>unique_rk_defromorius</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="unique_rk_defromorius_type_right">
+	<sheet>unique_rk_defromorius</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>1</time>
+</anim>
+<anim name="unique_rk_defromorius_type_left">
+	<sheet>unique_rk_defromorius</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>1</time>
+</anim>
+<anim name="unique_rk_defromorius_type_up">
+	<sheet>unique_rk_defromorius</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>1</time>
+</anim>
+<anim name="unique_rk_defromorius_type_down">
+	<sheet>unique_rk_defromorius</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>1</time>
+</anim>
+<anim name="unique_rk_defromorius_portrait">
+	<sheet>unique_rk_defromorius</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+</FTL>
+
+<!-- 
+===================================================================================================
+RK Scorch crew
+===================================================================================================
+-->
 
 <!-- RK_FIREGHOST based on phantom_goul_alpha -->
 <FTL>
@@ -397,6 +539,7 @@ Below, modified sheet to accomodate added projectile.
 	<time>1</time>
 </anim>
 </FTL>
+
 <!-- **************************************************************************************************************
 				AUGMENTS
 **************************************************************************************************************-->
@@ -431,16 +574,28 @@ TODO :
 	<mountPoint x="12" y="66"/>
 	<chargeImage>weapon_beams/beam_hull_2_glow.png</chargeImage>
 </weaponAnim> -->
-<animSheet name="djmod_bam_fissurebeam" w="560" h="87" fw="70" fh="87">weapon_radikal/djmod_bam_fissurebeam.png</animSheet>
+<animSheet name="djmod_bam_fissurebeam" w="980" h="87" fw="70" fh="87">weapon_radikal/djmod_bam_fissurebeam.png</animSheet>
 <weaponAnim name="djmod_bam_fissurebeam">
 	<sheet>djmod_bam_fissurebeam</sheet>
-	<desc length="8" x="0" y="0"/>
+	<desc length="14" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>2</fireFrame>
 	<firePoint  x="39" y="55"/>
 	<mountPoint x="12" y="66"/>
 	<chargeImage>weapons/djmod_bam_fissurebeam_glow.png</chargeImage>
 </weaponAnim>
+
+<animSheet name="rk_unloader" w="693" h="48" fw="77" fh="48">weapon_radikal/rk_unloader.png</animSheet>
+<weaponAnim name="rk_unloader">
+	<sheet>rk_unloader</sheet>
+	<desc length="9" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="27" y="16"/>
+	<mountPoint x="3" y="30"/>
+	<chargeImage>weapon_radikal/rk_unloader_glow.png</chargeImage>
+</weaponAnim>
+
 
 <!-- NB: The block for chaining, starting with "<animSheet name="BLABLA_charge ..." must be ABOVE the block for the weapon body!
 Just like in MV in fact.
@@ -461,25 +616,43 @@ REF v5.5.1
 	<firePoint  x="21" y="18"/>
 	<mountPoint x="3" y="44"/>
 	<chargeImage>weapon_ion/ion_phase_chain_glow.png</chargeImage>
-	<boost>ion_phase_chaingun_charge</boost>		IS THIS WHAT SHOWS THE CHAIN STACKS?
+	<boost>ion_phase_chaingun_charge</boost>
 </weaponAnim>
 -->
-<animSheet name="djmod_rain_of_ion_charge" w="336" h="73" fw="42" fh="73">weapon_radikal/djmod_rain_of_ion_chargeglow.png</animSheet>
-<anim name="djmod_rain_of_ion_charge">
-	<sheet>djmod_rain_of_ion_charge</sheet>
-	<desc length="8" x="0" y="0"/>
+<animSheet name="rk_rain_of_ion_charge" w="200" h="84" fw="50" fh="84">weapon_radikal/rk_rain_of_ion_chargeglow.png</animSheet>
+<anim name="rk_rain_of_ion_charge">
+	<sheet>rk_rain_of_ion_charge</sheet>
+	<desc length="4" x="0" y="0"/>
 	<time>1.0</time>
 </anim>
-<animSheet name="djmod_rain_of_ion" w="420" h="73" fw="42" fh="73">weapon_radikal/djmod_rain_of_ion.png</animSheet>
-<weaponAnim name="djmod_rain_of_ion">
-	<sheet>djmod_rain_of_ion</sheet>
+<animSheet name="rk_rain_of_ion" w="500" h="84" fw="50" fh="84">weapon_radikal/rk_rain_of_ion.png</animSheet>
+<weaponAnim name="rk_rain_of_ion">
+	<sheet>rk_rain_of_ion</sheet>
 	<desc length="10" x="0" y="0"/>
 	<chargedFrame>1</chargedFrame>
 	<fireFrame>7</fireFrame>
 	<firePoint  x="21" y="18"/>
-	<mountPoint x="3" y="44"/>
-	<chargeImage>weapon_radikal/djmod_rain_of_ion_glow.png</chargeImage>
-	<boost>djmod_rain_of_ion_charge</boost>
+	<mountPoint x="3" y="54"/>
+	<chargeImage>weapon_radikal/rk_rain_of_ion_glow.png</chargeImage>
+	<boost>rk_rain_of_ion_charge</boost>		<!-- Shows the CHAIN stacks -->
+</weaponAnim>
+
+<!-- <animSheet name="rk_shotphaser" w="168" h="73" fw="42" fh="73">weapon_radikal/rk_shotphaser_chargeglow.png</animSheet>
+<anim name="rk_shotphaser_charge">
+	<sheet>rk_shotphaser_charge</sheet>
+	<desc length="4" x="0" y="0"/>
+	<time>1.0</time>
+</anim> -->
+<animSheet name="rk_shotphaser" w="420" h="73" fw="42" fh="73">weapon_radikal/rk_shotphaser.png</animSheet>
+<weaponAnim name="rk_shotphaser">
+	<sheet>rk_shotphaser</sheet>
+	<desc length="10" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>7</fireFrame>
+	<firePoint  x="21" y="18"/>
+	<mountPoint x="3" y="54"/>
+	<chargeImage>weapon_radikal/rk_shotphaser_glow.png</chargeImage>
+	<!-- <boost>rk_shotphaser_charge</boost> -->
 </weaponAnim>
 
 

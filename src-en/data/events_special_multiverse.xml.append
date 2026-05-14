@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<event name="SYLVAN_RKS_AUGMENTS">
-	<text>"Aaaaah. Ssstranger ssstranger, any ssself ressspecting Renegade knowssss they need sssome gear if they're going to ssssurvive."</text>
-	<store>STORE_SYLVAN_AEA_WEAPONS</store>
+<event name="SYLVAN_RK_ONE_LINE_EACH_CATEGORY">
+	<text>"Aaaaah. Ssstranger ssstranger, don't be mad but I'm ssselling you illegal, unethical goodsss, don't get caught with those!"</text>
+	<!-- <store>STORE_SYLVAN_AEA_WEAPONS</store>	REF from The Outer Expansion -->
+	<store>STORE_SYLVAN_RK_GEAR</store>
 </event>

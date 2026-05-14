@@ -150,8 +150,62 @@ Store Events - in vanilla, these are just extremely generic beacons with a store
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
+<event name="RKS_FIGHT_ELITE_COALITION">
+	<text>The elite Coalition ship here is flying away from the fresh wreck of an unlucky smuggler. They sound very excited on the open comms.
+		"Ok we have steal good weapons. Now, must test! I see prey here, gogogo!"
+	</text>
+	<ship load="SHIP_RKS_COALITION_ELITE_FIGHT" hostile="false"/>
 
+	<choice req="unique_nights" hidden="true">
+		<text>(Nights) Tell them to bugger off.</text>
+		<event>
+			<text>"Go find a different ship to test that on, fools!"
+				"Oh shit, Nights on that ship? Tkkkktk. Power engines, must find preyyyy!"
+			</text>
 
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+
+	<choice req="unique_tyrdeo" hidden="true">
+		<text>(Tyrdeo) Tell them to bugger off.</text>
+		<event>
+			<text>"Go find a different ship to test that on, please!"
+				"Oh shit, Tyrdeo on that ship? Tkkkktk. Power engines, must find preyyyy!"
+			</text>
+
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+
+	<choice hidden="true">
+		<text>Defend yourself!</text>
+		<event>
+			<text>You prepare for combat.</text>
+			<ship hostile="true"/> 
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+<ship name="SHIP_RKS_COALITION_ELITE_FIGHT" auto_blueprint="RKS_COALITION_DESTROYER_ELITE">
+	<destroyed load="DEFEAT_COALITION_ELITE"/>
+	<deadCrew load="DEFEAT_COALITION_ELITE"/>
+	<crew>
+		<crewMember type="leech" prop="0.25"/>
+		<crewMember type="mantis" prop="0.25"/>
+		<crewMember type="rock" prop="0.25"/>
+		<crewMember type="slug_saboteur" prop="0.25"/>
+	</crew>
+</ship>
 
 <!--//////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -167,7 +221,98 @@ Store Events - in vanilla, these are just extremely generic beacons with a store
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
+<!-- <event name="BLACKMARKET_SUSPICIOUS_SMUGGLER" unique="true"> -->
+<event name="RKS_SUSPICIOUS_SMUGGLER">
+	<text>The ship hiding at this hazardous beacon has no conspicuous pirate markings, but behaves very strangely. You suspect it's a smuggler. Fighting it will certainly destroy whatever cargo they're hiding.</text>
+	<environment type="pulsar"/>
+	<ship load="SHIP_GENERIC" hostile="false"/>
 
+	<choice req="RKS_POLICE_WARRANT" lvl="0" max_lvl="0" hidden="true" blue="false">
+		<text>Without a Police Warrant, you can't submit them to a search.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+
+	<choice req="RKS_POLICE_WARRANT" hidden="true">
+		<text>(Police Warrant) Demand to search them</text>
+
+		<event>
+			<text>"Oh god dammit, you're with those Zoltan party poopers? Just my luck... I'm not risking our lives over this, come on in."
+				
+				After a thorough search, you find their RK augment! You're supposed to drop it off at the Police Station marked on your map, but keeping it could help with your more important mission.
+			</text>
+			<augment name="SHOP_ITEM_RK_ALL_AUGMENTS"/>
+
+			<choice hidden="true">
+				<text>Nice!</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+		<event>
+			<text>"Oh god dammit, you're with those Zoltan party poopers? Just my luck... I'm not risking our lives over this, come on in."
+				
+				After a thorough search, you find their RK weaponry! You're supposed to drop it off at the Police Station marked on your map, but keeping it could help with your more important mission.
+			</text>
+			<weapon name="LIST_WEAPONS_RADIKAL"/>
+
+			<choice hidden="true">
+				<text>Nice!</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+
+		<event>
+			<text>They immediately start powering their weapons!</text>
+			<ship hostile="true"/> 
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+
+	<choice hidden="true">
+		<text>Attack them!</text>
+		<event>
+			<text>You prepare for combat.</text>
+			<ship hostile="true"/> 
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="true">
+		<text>Don't do anything.</text>
+		<event>
+			<text>You don't approach, but the ship seems aware that you noticed them. "Hey, uh, what are you looking at?"</text>
+			<choice hidden="true">
+				<text>Oh, you know...</text>
+				<event>
+					<text>"Y-yeah? And what about it?"</text>
+					<choice hidden="true">
+						<text>You got anything to trade?</text>
+						<event>
+							<text>"O-oh. Yeah, of course. Come aboard!"</text>
+							<store>STORE_PIRATE</store>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Attack them!</text>
+						<event>
+							<text>You prepare for combat.</text>
+							<ship hostile="true"/> 
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="COMBAT_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
 
 <!--//////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -175,7 +320,1459 @@ Store Events - in vanilla, these are just extremely generic beacons with a store
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-<!-- Must buy at least once from each pirate, or whoever you're looking at turns hostile. You choose the order.
+<!-- unique_rk_engilanius_rockmorph Defromorius Quest
+It needs air but constantly drains it, so play on that:
+1) Find distress Harmony Elite blowing up, need Temporal / Sensors2+Hack / Lanius+Engi to decode black box before it explodes
+2) Box says ship was sabotaged, shuttle escaped, and passerby ship witnessed.
+3) Find passerby at same beacon, need high engines or long-ranged scanners to avoid fleetboost.
+4) Passerby hostile, must use MC or reach surrender so they spawn next quest beacon.
+5) At destination, find Fed looking empty: survivor says they rescued drifting creature from broken shuttle, 
+it was interested in their O2 and medical rooms, they said they bring it back to Harmony, it killed them.
+6) Find creature, use Medi-Bot or lvl2 O2 to convince it to join you. Harmony Elite demands it then attacks.
+-->
+<event name="RKS_QUEST_DEFROMORIUS">
+	<distressBeacon/>
+	<preventQuest/>
+	<!-- <quest>
+		<nebulaBeacon>false</nebulaBeacon>
+		<aggressive>2</aggressive>
+	</quest>
+	<beaconType id="map_icon_radikal_scorch" global="true">
+		<color r="255" g="120" b="94" a="1.0"/>
+		<unvisitedTooltip>You were told you can get great RadiKal Scorch gear at this beacon, if you can prove you're a customer.</unvisitedTooltip>
+	</beaconType> -->
+
+	<text>The distress beacon is coming from a large Elite Harmony ship, but it's already starting to blow up! Scans don't seem to reveal any life signs inside, so it's not like you could have saved anyone.
+		
+		There might be just enough time to catch the black box if you have a quick solution.
+	</text>
+	
+	<choice req="temporal" lvl="0" max_lvl="0" hidden="true" blue="false">
+		<text>A Temporal system could have helped here.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="temporal" lvl="1" hidden="true">
+		<text>(Temporal Manipulator) Slow down the black box's area and retrieve it.</text>
+		<event>
+			<text>Your Temporal Manipulator allows you to retrieve the box comfortably. You start scrapping the wreck during decoding.</text>
+			<autoReward level="LOW">scrap_only</autoReward>
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="RKS_QUEST_DEFROMORIUS_2"/>
+			</choice>		
+		</event>
+	</choice>
+
+	<choice req="RKS_HAS_HIGH_SENSORS_AND_HACKING" lvl="0" max_lvl="0" hidden="true" blue="false">
+		<text>With good Sensors and some Hacking we could have decoded it.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="RKS_HAS_HIGH_SENSORS_AND_HACKING" hidden="true">
+		<text>(Sensors 2 + Hacking) Remotely decode it.</text>
+		<event>
+			<text>It takes but a moment for your hacking drone to reach the black box and find out what happened. You also start scrapping the wreck.</text>
+			<autoReward level="LOW">scrap_only</autoReward>
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="RKS_QUEST_DEFROMORIUS_2"/>
+			</choice>		
+		</event>
+	</choice>
+
+	<choice req="RKS_HAS_ENGI_AND_LANIUS" hidden="true">
+		<text>Your Engi locates the box and says your Lanius could catch it before it's too late.</text>
+		<event>
+			<text>"Suggestion: throw metalvore through airlock in less than 8.7534 seconds. Chance of success = significant."
+				You're not too sure about this, until your Lanius happily jumps out to grab the box like a kid chasing a tasty snack!
+				
+				Fortunately it's used to this type of acrobatics, and avoids any injuries while also bringing back some scrap.
+				It adds, "Ship tasted weird. Bit familiar."
+			</text>
+			<autoReward level="LOW">scrap_only</autoReward>
+
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="RKS_QUEST_DEFROMORIUS_2"/>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="true">
+		<text>There's nothing we can do, just scrap whatever's left.</text>
+		<event>
+			<text>You wait for the ship to finish blowing up, then enjoy the free scrap.</text>
+			<autoReward level="MED">standard</autoReward>
+
+			<choice>
+				<text>Continue...</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="RKS_QUEST_DEFROMORIUS_2">
+	<text>According to the box, the crew were crushed or impaled, and the ship sabotaged, save for the Life Support and Medbay.
+		A single shuttle managed to escape before the ship blew up. Another ship was present, maybe the ones who did this. You realize it's still here, docked not far from this beacon!
+
+		Close enough to see what's up before jumping away.
+	</text>
+	
+	<choice hidden="true">
+		<text>To that ship!</text>
+		<event>
+			<text>You easily catch up to them, and they haven't noticed you yet.</text>
+			<ship load="SHIP_RKS_DEFROMORIUS_SUSPICIOUS" hostile="false"/>
+
+			<choice req="mind" hidden="true">
+				<text>(Mind Control) Find out what happened.</text>
+				<event>
+					<text>"We were selling mind torture devices to Engi Defenders. The deal went sour went something in their ship went on a rampage. A shuttle escaped. We ran."
+
+						That solves the mystery. You also extract the shuttle's destination and leave like nothing happened.
+					</text>
+
+					<quest event="RKS_QUEST_DEFROMORIUS_SHUTTLE"/>
+
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+
+			<choice hidden="true">
+				<text>Hail them.</text>
+				<event>
+					<text>"The Feds are here for revenge! I told you we should have jumped away, Lisa."
+						
+						"But why? We're innocent! Why else would we still be here, just tell them that you numbnut!"
+
+						"Hah! Like they would believe us, why are you always so naive? Charge the jump drive already!"
+
+						If you really think they could be innocent, you'll have to rough up their hull without killing them to get answers.
+					</text>
+					<ship hostile="true"/> 
+
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice>
+
+			<choice hidden="true">
+				<text>Forget it, let's leave.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="true">
+		<text>No thanks, finish scrapping then we're leaving.</text>
+		<event>
+			<text>Why take risks when there's scrap right here and more important things to do?</text>
+			<autoReward level="LOW">stuff</autoReward>
+
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+<ship name="SHIP_RKS_DEFROMORIUS_SUSPICIOUS" auto_blueprint="LIST_SHIPS_GENERIC">
+	<escape timer="40" min="999" max="999"/>
+	<!-- <gotaway load="REBEL_COLONY_PRISONBREAK_GOTAWAY"/> -->
+	<gotaway>
+		<text>As the ship escapes, you ask around the dock but nobody tells you anything.
+			There goes your only lead in this mystery. Back to the mission.</text>
+
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event/>
+		</choice>
+	</gotaway>
+	<surrender min="4" max="5">
+		<text>"It wasn't us! I beg you in the name of Lisa, stop! We'll tell you everything!"
+			
+			"Wait, what does that have to do with me? They don't even kno-... Oh, whatever."
+		</text>
+
+		<choice hidden="true">
+			<text>Ok, then who did this?</text>
+			<event>
+				<text>"We were just minding our own business, on the way to this dock to sell our trinkets..."
+					As you dig into their eyes with your hand ready to gesture "Fire at will", they adjust their story.
+					
+					"Ok mayyyybe we were selling a little neural shocker or two to those Engis off the books. But then they started acting strange and sent a Distress signal. Being just humble merchants, we took it as a clue to get the hell away! Right, Lisa?"
+
+					"Just tell him about the shuttle, numbnut! No crazy stuff, just the facts."
+
+					"Oh yeah, right! We detected this small vessel escaping, and scans said there was this big monster inside! Some kind of Frankenstein! You know what, that must be the killer right there, it was an inside job I tell you!"
+					They start rambling about various conspiracy theories while "Lisa" in the back looks increasingly worried about their mental health.
+				</text>
+				<ship hostile="false"/>
+
+				<choice hidden="true">
+					<text>We believe you. Where did the shuttle go?</text>
+					<event>
+						<text>As a security measure they had trackers in their merchandise. That gives you the shuttle's destination.</text>
+
+						<!-- The "quest event" parameters are in the event itself. -->
+						<quest event="RKS_QUEST_DEFROMORIUS_SHUTTLE"/>
+
+						<choice hidden="true">
+							<text>Continue...</text>
+							<event/>
+						</choice>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		
+		<choice hidden="true">
+			<text>That's probably a lie, keep fighting!</text>
+			<event/>
+		</choice>
+	</surrender>
+	<destroyed>
+		<text>The ship breaks apart and you salvage what you can. Maybe justice was served, you can't really be sure.</text>
+		<autoReward level="LOW">standard</autoReward>
+		<choice hidden="true">
+			<text>Even if it wasn't them, scrap is scrap.</text>
+			<event/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you salvage what you can. Maybe justice was served, you can't really be sure.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Even if it wasn't them, scrap is scrap.</text>
+			<event/>
+		</choice>
+	</deadCrew>
+	<crew>
+		<crewMember type="orchid_praetor" prop="0.50"/>
+		<crewMember type="orchid_caretaker" prop="0.25"/>
+		<crewMember type="orchid" prop="0.25"/>
+	</crew>
+</ship>
+
+<event name="RKS_QUEST_DEFROMORIUS_SHUTTLE">
+	<preventQuest/>
+	<!-- <preventFleet/> -->
+	<quest>
+		<!-- TODO: this would be cooler in a nebula, figure it out. See "HARD RULES" top of events.xml.append .
+		<nebulaBeacon>true</nebulaBeacon>
+		<createNebula>true</createNebula> -->
+		<nextSector>true</nextSector>
+		<aggressive>2</aggressive>
+	</quest>
+	<beaconType id="map_icon_rks_defromorius" global="true">
+		<color r="200" g="200" b="200" a="1.0"/>
+		<unvisitedTooltip>The destination of the creature likely responsible for goring the Engis.</unvisitedTooltip>
+	</beaconType>
+
+	<text>You quickly find the shuttle, which didn't get very far since it turns out it took serious damage at some point.
+		Scans indeed reveal life inside, slowly fading. You detect markers of Engi Defender... and Lanius?... and something else too??
+		
+		That doesn't make sense since there's only 1 creature detected. 
+	</text>
+	
+	<choice hidden="true">
+		<text>Attempt to communicate with it.</text>
+		<event>
+			<text>To your surprise, it does seem to be some sort of Engi Defender, and it definitely answers you like one.
+				
+				"Self = in jeopardy but know you = Federation. --COMPUTING-- This beacon = not likely your mission. Your presence here: purpose?"
+			</text>
+
+			<choice hidden="true">
+				<text>Did you kill the Engi Defenders?</text>
+				<event>
+					<text>"Affirmative. Number of reasons to lie = 0. Self = anomaly. --PAIN-- 
+						Accidental discovery: Lanius metalflesh: can bind to Engi nanites. Requirements: matter from Shell forbidden experiments + extremely unlikely radiation burst. --STATISTICALLY IMPOSSIBLE-- Harmony verdict: undo or eliminate."
+
+						You don't seem very convinced, but the creature keeps going.
+
+						"Solution for survival: join the RadiKals. --OBJECTIVE COMPLETE-- However, Harmony = persistent. Captured me. Attempted to reset with: neural torture. Solution for escape: kill. --OBJECTIVE COMPLETE-- Now: your intents?"
+					</text>
+
+					<choice hidden="true">
+						<text>We could protect you from the Harmony.</text>
+						<event>
+							<text>"Answer = unexpected. You = fools: 97% probability. Regardless, I cease functioning in: [time.short]"
+
+								The creature does look desperate for oxygen by now. You can't risk bringing it in just yet, but maybe you can help it remotely and see what happens.
+							</text>
+
+							<choice req="DJMOD_OXYGENIZER" lvl="0" max_lvl="0" hidden="true" blue="false">
+								<text>You don't have ways to sufficiently oxygenize outside of your ship.</text>
+								<event load="OPTION_INVALID"/>
+							</choice>
+							
+							<choice req="DJMOD_OXYGENIZER" hidden="true">
+								<text>(Oxygenizer) Help it breathe</text>
+								<event load="RKS_QUEST_DEFROMORIUS_OFFER"/>
+							</choice>
+
+							<choice req="NANO_MEDBAY" lvl="0" max_lvl="0" hidden="true" blue="false">
+								<text>You can't spread Medbay healing around.</text>
+								<event load="OPTION_INVALID"/>
+							</choice>
+
+							<choice req="NANO_MEDBAY" hidden="true">
+								<text>(Med-bot Dispersal) Send it some help</text>
+								<event load="RKS_QUEST_DEFROMORIUS_OFFER"/>
+							</choice>
+
+							<choice req="BLUELIST_BOMBS_HEAL" hidden="true">
+								<text>(Healing Bomb) Revive it</text>
+								<event load="RKS_QUEST_DEFROMORIUS_OFFER"/>
+								<!-- <text>(Healing Bomb) Revive it [-1}]</text>
+								<event>
+									<text>Once safely returned to the realm of the living, the Free Mantis applauds you. "Excellency of fighter beyond any realm of imaginings! I must coming with and see you in further action."</text>
+									<crewMember amount="1" class="mantis_free"/>
+									<item_modify>
+										<item type="missiles" min="-1" max="-1"/>
+									</item_modify>
+								</event> -->
+							</choice>
+
+							<choice hidden="true">
+								<text>Leave it to die, it did deserve it.</text>
+								<event>
+									<text>You wait for the creature to suffocate, thrashing around the ship as it does so, then scrap the remains of the shuttle.
+									</text>
+									<autoReward level="LOW">standard</autoReward>
+
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+
+					<choice hidden="true">
+						<text>We will avenge our allies.</text>
+						<event>
+							<text>"Outcome: expected. Solutions = none. Proceed, this = better than: lethal suffocation."
+
+								You safely put the creature out of its misery from a distance, then scrap the remains of the shuttle.
+							</text>
+							<autoReward level="LOW">standard</autoReward>
+
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="true">
+		<text>This cannot end well, better leave now.</text>
+		<event/>
+	</choice>
+</event>
+
+<event name="RKS_QUEST_DEFROMORIUS_OFFER">
+	<text>"Wow. This solution: ingenious. You = promising, now 51% probability. --NEW OBJECTIVE: JOIN YOU--"
+
+		Looks like you have new loyal crew. You ask their name.
+
+		"Self ID = 'RK (Engi) Defender x Rockman-shaped-Morph x Lanius [amalgam]'.
+		Else If: you = limited brainpower, use alias 'Def_Rock-Morph_Lanius'."
+		
+		You decide 'Defromorius' will do. Once healed, it helps you fully scrap the shuttle and you're all ready to go.
+	</text>
+	<autoReward level="MED">standard</autoReward>
+	<crewMember amount="1" class="unique_rk_defromorius" all_skills="2"/>
+	<achievement silent="false">ACH_RK_EVENT_DEFROMORIUS</achievement>
+	
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event/>	<!-- TODO: attack here -->
+	</choice>		
+</event>
+
+<!-- 
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+				RADIKAL LAB QUESTS
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+TODO: Bam and Punk.
+-->
+
+<!-- 
+/////////////////////////////////////////////
+RK Bam lab
+/////////////////////////////////////////////
+-->
+<!-- <event name="RKS_QUEST_LAB_BAM" unique="true"> -->
+<event name="RKS_QUEST_LAB_BAM">
+	<preventQuest/>
+	<preventFleet/>
+	<quest>
+		<nebulaBeacon>false</nebulaBeacon>
+		<aggressive>2</aggressive>
+	</quest>
+	<beaconType id="map_icon_radikal_bam" global="true">
+		<color r="150" g="150" b="150" a="1.0"/>
+		<unvisitedTooltip>You were told you can get great RadiKal Bam gear at this beacon, if you can prove you're a customer.</unvisitedTooltip>
+	</beaconType>
+
+	<text>The planet here is surrounded by majestic, profitable, and highly hazardous asteroid rings, but you're far enough not to risk collisions.
+		The longer and farther away you scan, the more auto-ships you detect harvesting minerals from them.
+		Plenty of manned ships are also practicing flight maneuvers, fighting each other in what seems to be friendly sparring, or patrolling. Some of those seem to have noticed you but haven't reacted so far.
+			
+		Now a hail is coming from the planet, which you take. "Enjoying the view, Captain? Instead of just sitting there, show us you're a customer or get lost."
+	</text>
+	<img planet="PLANET_RINGS"/>
+	
+	<choice req="DJMOD_HAS_RADIKAL_BAM_GEAR" lvl="0" max_lvl="0" hidden="true" blue="false">
+		<text>You do not have any RK Bam gear.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+
+	<choice req="DJMOD_HAS_RADIKAL_BAM_GEAR" hidden="true">
+		<text>(RK Bam gear) Hit Hard...</text>
+		<event>
+			<text>"... Homie! That's what I'm talking about. Here's the welcome gift. Hurry up and come over so we can trade!"</text>
+			<autoReward level="LOW">standard</autoReward>
+
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="RKS_QUEST_LAB_BAM_2"/>
+			</choice>
+		</event>
+	</choice>
+
+	<choice req="DJMOD_HAS_RADIKAL_GEAR" lvl="0" max_lvl="0" hidden="true" blue="false">
+		<text>You do not have any RK gear at all.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	
+	<choice req="DJMOD_HAS_RADIKAL_GEAR" hidden="true">
+		<text>(any piece of RK gear) Business</text>
+		<event>
+			<text>"Nice. Hope you're bringing anything for us. We have gear. Hurry up and come over so we can trade!"</text>
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="RKS_QUEST_LAB_BAM_2"/>
+			</choice>		
+		</event>
+	</choice>
+
+	<choice req="RKS_HAS_ANY_SACRIFICEABLE_MANTIS" lvl="1" hidden="true" blue="true">
+		<text>(Non-Unique Mantis) We have 'workpieces' for sale, could you direct us to the right place?</text>
+		<event>
+			<text>"Righto, then it's the Punk lab you want. I can send you there instead."
+			</text>
+			
+			<!-- Add req: dont have lab coords <variable name="rks_lab_coords_scorch" op="set" val="1"/> -->
+			<choice req="rks_lab_coords_punk" lvl="0" max_lvl="0" hidden="true" blue="false">
+				<text>Alright then.</text>
+				<event>
+					<text>"Tell them they stink while you're at it. Hah! Those smug freaks."				
+					</text>
+					<quest event="RKS_QUEST_LAB_PUNK">
+						<!-- <nextSector>false</nextSector>
+						<aggressive>2</aggressive> -->
+					</quest>
+					<variable name="rks_lab_coords_punk" op="set" val="1"/>
+					
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+
+			<choice hidden="true">
+				<text>We already have that lab's coords, but thanks.</text>
+				<!-- REF: MV v5.5.1 for compact "Loader Method":
+				<event><loadEvent>ELLIE_4_START</loadEvent></event> -->
+				<event><loadEvent>RKS_QUEST_LAB_BAM</loadEvent></event>
+			</choice>
+		</event>
+	</choice>
+	<choice req="RKS_HAS_ANY_SACRIFICEABLE_ORCHID" lvl="1" hidden="true" blue="true">
+		<text>(Non-Unique Orchids) We have 'flammable material' for sale, could you direct us to the right place?</text>
+		<event>
+			<text>"Righto, then it's the Scorch lab you want. I can send you there instead."				
+			</text>
+			
+			<!-- Add req: dont have lab coords <variable name="rks_lab_coords_scorch" op="set" val="1"/> -->
+			<choice req="rks_lab_coords_scorch" lvl="0" max_lvl="0" hidden="true" blue="false">
+				<text>Alright then.</text>
+				<event>
+					<text>"Tell them they stink while you're at it. Hah! That's gonna make their blood boil."				
+					</text>
+					<quest event="RKS_QUEST_LAB_SCORCH">
+						<!-- <nextSector>false</nextSector>
+						<aggressive>2</aggressive> -->
+					</quest>
+					<variable name="rks_lab_coords_scorch" op="set" val="1"/>
+					
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+
+			<choice hidden="true">
+				<text>We already have that lab's coords, but thanks.</text>
+				<event><loadEvent>RKS_QUEST_LAB_BAM</loadEvent></event>
+			</choice>
+		</event>
+	</choice>
+
+
+	<choice hidden="true">
+		<text>Is this the Giant Carousel?</text>
+		<event>
+			<text>Your ship soon takes damage from a source you cannot identify. "F**k off, tourist. You had been warned."</text>
+			<damage amount="2" system="room" effect="breach"/>
+			
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="true">
+		<text>We're just passing through here, don't mind us.</text>
+		<event>
+			<text>There is no answer. You move a safe distance away and figure you have time to do some maintenance.
+
+			After some time, you detect some Shell ships jumping in weapons hot, but you're safe here.</text>
+			
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="RKS_QUEST_LAB_BAM_2">
+	<text>"So, what've you got? Anything hard, or explosive? And breathing? Or even inanimate, that's fine too, we're not like the Scorch." He says that like they're so much better, but you don't think it's a good idea to point that out.
+
+		You look at what they want and get a better understanding of why this sector is outlawed by so many factions. However the mission comes first, right?
+	</text>
+	<jumpEvent>RKS_LAB_BAM_AMBUSH</jumpEvent>
+
+	<choice req="RKS_HAS_ANY_SACRIFICEABLE_SHELL" lvl="0" max_lvl="0" hidden="true" blue="false">
+		<text>You don't have Shells for this (Uniques would rather kill you and themselves)</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+
+	<choice req="shell" hidden="false">
+		<text>A Shell.</text>
+		<event>
+			<text>"Explodey ball, always nice. Here's your cash."
+			
+				You can feel the rest of your crew judging you.
+			</text>
+
+			<item_modify>
+                <item type="scrap" min="60" max="60"/>
+            </item_modify>
+			<removeCrew class="shell">
+				<clone>false</clone>
+				<text>You cannot clone crew that you sold away to a painful death.</text>
+			</removeCrew>
+			
+			<choice>
+				<text>Moving on...</text>
+				<event load="RKS_QUEST_LAB_BAM_3"/>
+			</choice>
+		</event>
+	</choice>
+
+	<!-- TODO: add zoltans later.
+	<choice req="zoltan" hidden="false">
+		<text>A Zoltan.</text>
+		<event>
+			<text>"Explodey boi! Or gal! Person. Anyway here's your cash."
+			
+				You can feel the rest of your crew judging you.
+			</text>
+
+			<item_modify>
+                <item type="scrap" min="60" max="60"/>
+            </item_modify>
+			<removeCrew class="zoltan">
+				<clone>false</clone>
+				<text>You cannot clone crew that you sold away to a painful death.</text>
+			</removeCrew>
+			
+			<choice>
+				<text>Moving on...</text>
+				<event load="RKS_QUEST_LAB_BAM_3"/>
+			</choice>
+		</event>
+	</choice> -->
+
+	<choice req="shell_guardian" hidden="false">
+		<text>A Guardian.</text>
+		<event>
+			<text>"Explodey-er ball! Here's big cash!"
+			
+				You can feel the rest of your crew judging you.
+			</text>
+
+			<item_modify>
+                <item type="scrap" min="100" max="100"/>
+				<item type="fuel" min="5" max="5"/>
+            </item_modify>
+			<removeCrew class="shell_guardian">
+				<clone>false</clone>
+				<text>You cannot clone crew that you sold away to a painful death.</text>
+			</removeCrew>
+			
+			<choice>
+				<text>Moving on...</text>
+				<event load="RKS_QUEST_LAB_BAM_3"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="shell_scientist" hidden="false">
+		<text>A Shell Scientist.</text>
+		<event>
+			<text>"Insta-heal ball! Here's big cash!"
+			
+				You can feel the rest of your crew judging you.
+			</text>
+
+			<item_modify>
+                <item type="scrap" min="100" max="100"/>
+				<item type="missiles" min="3" max="3"/>
+            </item_modify>
+			<removeCrew class="shell_scientist">
+				<clone>false</clone>
+				<text>You cannot clone crew that you sold away to a painful death.</text>
+			</removeCrew>
+			
+			<choice>
+				<text>Moving on...</text>
+				<event load="RKS_QUEST_LAB_BAM_3"/>
+			</choice>
+		</event>
+	</choice>	
+	<choice req="shell_mechanic" hidden="false">
+		<text>A Shell Mechanic.</text>
+		<event>
+			<text>"Insta-repair ball! Perfect for A.E.R.A., here's big cash!"
+			
+				You can feel the rest of your crew judging you.
+			</text>
+
+			<item_modify>
+                <item type="scrap" min="100" max="100"/>
+				<item type="drones" min="2" max="2"/>
+            </item_modify>
+			<removeCrew class="shell_mechanic">
+				<clone>false</clone>
+				<text>You cannot clone crew that you sold away to a painful death.</text>
+			</removeCrew>
+			
+			<choice>
+				<text>Moving on...</text>
+				<event load="RKS_QUEST_LAB_BAM_3"/>
+			</choice>
+		</event>
+	</choice>
+
+	<choice req="shell_radiant" hidden="false">
+		<text>A Shell Radiant.</text>
+		<event>
+			<text>"Multi-explodey ball! You brought a rare treat, here's super cash!!"
+			
+				You can feel the rest of your crew judging you.
+			</text>
+
+			<item_modify>
+                <item type="scrap" min="140" max="140"/>
+            </item_modify>
+			<removeCrew class="shell_radiant">
+				<clone>false</clone>
+				<text>You cannot clone crew that you sold away to a painful death.</text>
+			</removeCrew>
+			
+			<choice>
+				<text>Moving on...</text>
+				<event load="RKS_QUEST_LAB_BAM_3"/>
+			</choice>
+		</event>
+	</choice>
+
+	<choice hidden="true">
+		<text>Nothing, I'm afraid.</text>
+		<event load="RKS_QUEST_LAB_BAM_3"/>
+	</choice>
+
+	<choice>
+		<text>Actually... we have an emergency, bye!</text>
+		<event/>
+	</choice>
+</event>
+
+<event name="RKS_QUEST_LAB_BAM_3">	
+	<text>"OK, now enjoy our best local store. I've got shit to take care of, ya know? Sounds kinda urgent. Bye."
+
+		Before you shop, you still have some time to do something else aboard the ship.
+	</text>
+
+	<store>STORE_RADIKAL_BAM</store>
+
+	<choice>
+		<text>Do something onboard the ship.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+	<choice>
+		<text>Do nothing.</text>
+		<event/>
+	</choice>
+</event>
+
+<event name="RKS_LAB_BAM_AMBUSH">	
+	<text>You barely even reach the Jump button as a small Shell fleet jumps in! A very angry Radiant ship immediately hails you.
+
+		"Federation simpletons, don't get me wrong, these guys actually do cool science, and we even know a few of our rogue elites are high-ranking in there."
+		
+		For a brief moment, you think this is gonna end peacefully.
+		
+		"But it's at our expense, plus they make a lot of breaches, like, A LOT! It's crazy. Anyway our management just can't tolerate all this anymore and unfortunately letting you just fly out of there alive would look bad for us."
+
+		You wonder why they would expose themselves to weaponry so specifically good against their biology, but your scans reveal they came quite prepared!
+	</text>
+	<ship load="SHIP_RKS_LAB_BAM_ATTACKER" hostile="false"/>
+	<!-- Add fleet image later and hope it doesn't crash. -->
+
+	<choice req="unique_alkali" hidden="true">
+		<text>(Alkali) Speaking of, make way idiots. Secret mission.</text>
+		<event/>
+	</choice>
+
+	<choice>
+		<text>...Guess that's the price of business.</text>
+		<event>
+			<text>"Ah shit, here we go again. The Geniocracy is back, pals. You know what to do: EXPLOSIONS!"
+				
+				Projectiles from the RK Bam and the assault fleet start flying in every direction!
+				Also, they must have used a special jammer to depower your jump drive, you will have to charge it again.
+			</text>
+			<resetFtl/>
+			<environment type="PDS" target="all"/>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<!-- <event load="COMBAT_CHECK"/> -->
+				<event load="MORALITY_UPDATE_SHELL_FIGHT"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+<ship name="SHIP_RKS_LAB_BAM_ATTACKER" auto_blueprint="RKS_LAB_BAM_SHELL_ELITE">
+	<destroyed>
+		<text>The Elite Shell ship breaks apart and you quickly salvage what you can before the rest of the fleet realizes what happened.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>The Shells are messed up, but we might be worse.</text>
+			<event/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can from the Elite Shell ship before the rest of the fleet realizes what happened.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>The Shells are messed up, but we might be worse.</text>
+			<event/>
+		</choice>
+	</deadCrew>
+	<crew>
+		<crewMember type="shell_radiant" prop="0.20"/>
+		<crewMember type="shell_mechanic" prop="0.20"/>
+		<crewMember type="shell_scientist" prop="0.20"/>
+		<crewMember type="shell_guardian" prop="0.20"/>
+		<crewMember type="shell" prop="0.20"/>
+	</crew>
+</ship>
+
+<!-- 
+/////////////////////////////////////////////
+RK Punk lab
+/////////////////////////////////////////////
+-->
+
+<event name="RKS_QUEST_LAB_PUNK">
+	<preventQuest/>
+	<preventFleet/>
+	<quest>
+		<nebulaBeacon>false</nebulaBeacon>
+		<aggressive>2</aggressive>
+	</quest>
+	<beaconType id="map_icon_radikal_punk" global="true">
+		<color r="255" g="150" b="255" a="1.0"/>
+		<unvisitedTooltip>You were told you can get great RadiKal Punk gear at this beacon, if you can prove you're a customer.</unvisitedTooltip>
+	</beaconType>
+
+	<text>So much blue. Not an island in sight, this planet is covered in water. And when you look closely, a few floating structures. A few hovering ones too.
+		Deeper scans can only penetrate the endless ocean so much, but reveal vast underwater facilities dedicated to the study of who-knows-what. Probably hidden for good reason.
+			
+		You take an incoming hail. "Ho hooo, a visitor. A quiet one at that. Maybe here for quiet affairs? Then show proof."
+	</text>
+	<img planet="PLANET_WATER"/>	
+	
+	<choice req="DJMOD_HAS_RADIKAL_PUNK_GEAR" lvl="0" max_lvl="0" hidden="true" blue="false">
+		<text>You do not have any RK Punk gear.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+
+	<choice req="DJMOD_HAS_RADIKAL_PUNK_GEAR" hidden="true">
+		<text>(RK Punk gear) Stay Smart...</text>
+		<event>
+			<text>"... Slayer. Heheh. A drone will bring you the welcome gift. We await you."</text>
+			<autoReward level="LOW">standard</autoReward>
+
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="RKS_QUEST_LAB_PUNK_2"/>
+			</choice>
+		</event>
+	</choice>
+
+	<choice req="DJMOD_HAS_RADIKAL_GEAR" lvl="0" max_lvl="0" hidden="true" blue="false">
+		<text>You do not have any RK gear at all.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	
+	<choice req="DJMOD_HAS_RADIKAL_GEAR" hidden="true">
+		<text>(any piece of RK gear) Business</text>
+		<event>
+			<text>"Yes yes... Let's do business. We are in need of a few things. We await you."</text>
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="RKS_QUEST_LAB_PUNK_2"/>
+			</choice>		
+		</event>
+	</choice>
+
+	<choice hidden="true">
+		<text>Is this the Aqua Funzone?</text>
+		<event>
+			<text>Your ship soon takes damage from a source you cannot identify. "Ha! Nice one. For us maybe. But you are very lost."</text>
+			<damage amount="1" system="room" effect="all"/>
+			
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="true">
+		<text>We're just passing through here, don't mind us.</text>
+		<event>
+			<text>There is no answer. You move a safe distance away and figure you have time to do some maintenance.
+
+			After some time, you detect some Orchid ships jumping in weapons hot, but you're safe here.</text>
+			
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="RKS_QUEST_LAB_PUNK_2">
+	<text>"I take great pleasure in watching new workpieces arrive. Are you going to please me? HAH I'm just teasing you. But really, anything?"
+
+		You look at the list of "workpieces" in-demand and what you just heard only gets more creepy.
+	</text>
+	<jumpEvent>RKS_LAB_PUNK_AMBUSH</jumpEvent>
+
+	<choice req="RKS_HAS_ANY_SACRIFICEABLE_MANTIS" lvl="0" max_lvl="0" hidden="true" blue="false">
+		<text>You don't have Mantis for this (Uniques would rather kill you and themselves)</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+
+	<choice req="mantis" hidden="false">
+		<text>A Mantis.</text>
+		<event>
+			<text>"Reliable vigor, yes, a staple. Here's your check."
+			
+				You can feel the rest of your crew judging you.
+			</text>
+
+			<item_modify>
+                <item type="scrap" min="60" max="60"/>
+            </item_modify>
+			<removeCrew class="mantis">
+				<clone>false</clone>
+				<text>You cannot clone crew that you sold away to a painful death.</text>
+			</removeCrew>
+			
+			<choice>
+				<text>Moving on...</text>
+				<event load="RKS_QUEST_LAB_PUNK_3"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="mantis_free" hidden="false">
+		<text>A Free Mantis.</text>
+		<event>
+			<text>"Potential vigor, yes, a staple. Here's your check."
+			
+				You can feel the rest of your crew judging you.
+			</text>
+
+			<item_modify>
+                <item type="scrap" min="60" max="60"/>
+            </item_modify>
+			<removeCrew class="mantis_free">
+				<clone>false</clone>
+				<text>You cannot clone crew that you sold away to a painful death.</text>
+			</removeCrew>
+			
+			<choice>
+				<text>Moving on...</text>
+				<event load="RKS_QUEST_LAB_PUNK_3"/>
+			</choice>
+		</event>
+	</choice>
+
+	<choice req="mantis_warlord" hidden="false">
+		<text>A Mantis Warlord.</text>
+		<event>
+			<text>"Great potential, full of good molecules, yes! Here's a fat check."
+			
+				You can feel the rest of your crew judging you.
+			</text>
+
+			<item_modify>
+                <item type="scrap" min="100" max="100"/>
+				<item type="fuel" min="5" max="5"/>
+            </item_modify>
+			<removeCrew class="mantis_warlord">
+				<clone>false</clone>
+				<text>You cannot clone crew that you sold away to a painful death.</text>
+			</removeCrew>
+			
+			<choice>
+				<text>Moving on...</text>
+				<event load="RKS_QUEST_LAB_PUNK_3"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="mantis_suzerain" hidden="false">
+		<text>A Praetor.</text>
+		<event>
+			<text>"Great potential, full of chemicals, yes! Here's a fat check."
+			
+				You can feel the rest of your crew judging you.
+			</text>
+
+			<item_modify>
+                <item type="scrap" min="100" max="100"/>
+				<item type="missiles" min="3" max="3"/>
+            </item_modify>
+			<removeCrew class="mantis_suzerain">
+				<clone>false</clone>
+				<text>You cannot clone crew that you sold away to a painful death.</text>
+			</removeCrew>
+			
+			<choice>
+				<text>Moving on...</text>
+				<event load="RKS_QUEST_LAB_PUNK_3"/>
+			</choice>
+		</event>
+	</choice>	
+	<choice req="mantis_bishop" hidden="false">
+		<text>A Mantis Bishop.</text>
+		<event>
+			<text>"Ho ho hooo, the rage, the vigor! Aren't you a sweetheart! Here's a huge check for your trouble."
+			
+				You can feel the rest of your crew judging you.
+			</text>
+
+			<item_modify>
+                <item type="scrap" min="140" max="140"/>
+            </item_modify>
+			<removeCrew class="mantis_bishop">
+				<clone>false</clone>
+				<text>You cannot clone crew that you sold away to a painful death.</text>
+			</removeCrew>
+			
+			<choice>
+				<text>Moving on...</text>
+				<event load="RKS_QUEST_LAB_PUNK_3"/>
+			</choice>
+		</event>
+	</choice>
+
+	<choice hidden="true">
+		<text>Nothing, I'm afraid.</text>
+		<event load="RKS_QUEST_LAB_PUNK_3"/>
+	</choice>
+
+	<choice>
+		<text>Actually... we have an emergency, bye!</text>
+		<event/>
+	</choice>
+</event>
+
+<event name="RKS_QUEST_LAB_PUNK_3">	
+	<text>"Enough pleasantries, welcome to our best local store. I'm hearing voices... HAH gotcha, no, not like that. In my earpiece, sounds urgent. Be seeing you."
+
+		Before you shop, you still have some time to do something else aboard the ship.
+	</text>
+
+	<store>STORE_RADIKAL_PUNK</store>
+
+	<choice>
+		<text>Do something onboard the ship.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+	<choice>
+		<text>Do nothing.</text>
+		<event/>
+	</choice>
+</event>
+
+<event name="RKS_LAB_PUNK_AMBUSH">	
+	<text>You barely even reach the Jump button as a small Free Mantis fleet jumps in! A very Warlord ship immediately hails you.
+
+		"Federation, federation. You our heroes! So WHY you here, doing evil trade??!" The already drugged-up Warlord looks devastated but is back on the warpath before you can even answer. "We come to kill them, but you with them! We kill you too!"
+
+		You wonder why they would come to people so adept at killing their kind (and everybody else too), but your scans reveal they came quite prepared!
+	</text>
+	<ship load="SHIP_RKS_LAB_PUNK_ATTACKER" hostile="false"/>
+	<!-- Add fleet image later and hope it doesn't crash. -->
+
+	<choice req="RKS_HAS_MANTIS_UNIQUE" hidden="true">
+		<text>(Unique Mantis) TskKAK! Let pass! Secret mission.</text>
+		<event/>
+	</choice>
+
+	<choice>
+		<text>...Makes sense, really.</text>
+		<event>
+			<text>"So much vigor, so little intellect, and we have so. many. guns. Butler drone, tell the staff to get off their arses. And prepare my tea."
+				
+				Projectiles from the RK Punk and the assault fleet start flying in every direction!
+				Also, they must have used a special jammer to depower your jump drive, you will have to charge it again.
+			</text>
+			<resetFtl/>
+			<environment type="PDS" target="all"/>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="MORALITY_UPDATE_FREEMANTIS_FIGHT"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+<ship name="SHIP_RKS_LAB_PUNK_ATTACKER" auto_blueprint="RKS_LAB_PUNK_FREEMANTIS_ELITE">
+	<destroyed>
+		<text>The Elite Free Mantis ship breaks apart and you quickly salvage what you can before the rest of the fleet realizes what happened.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Let's hope they remain such hardcore fans after this.</text>
+			<event/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can from the Elite Free Mantis ship before the rest of the fleet realizes what happened.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Let's hope they remain such hardcore fans after this.</text>
+			<event/>
+		</choice>
+	</deadCrew>
+	<crew>
+		<crewMember type="mantis_warlord" prop="0.40"/>
+		<crewMember type="mantis_free" prop="0.40"/>
+		<crewMember type="engi" prop="0.20"/>
+	</crew>
+</ship>
+
+<!-- 
+/////////////////////////////////////////////
+RK Scorch lab
+/////////////////////////////////////////////
+-->
+<!-- <event name="RKS_QUEST_LAB_SCORCH" unique="true"> -->
+<event name="RKS_QUEST_LAB_SCORCH">
+	<preventQuest/>
+	<preventFleet/>
+	<quest>
+		<nebulaBeacon>false</nebulaBeacon>
+		<aggressive>2</aggressive>
+	</quest>
+	<beaconType id="map_icon_radikal_scorch" global="true">
+		<color r="255" g="120" b="94" a="1.0"/>
+		<unvisitedTooltip>You were told you can get great RadiKal Scorch gear at this beacon, if you can prove you're a customer.</unvisitedTooltip>
+	</beaconType>
+
+	<text>You arrive at a red planet with volcanoes so large you can see them from orbit, and around them, a multitude of structures that look like giant insects. The atmosphere looks like it's on fire.
+		Taking a closer look, you notice that many of the "structures" actually move, sampling lava, putting things in it, and doing all sorts of strange experiments.
+		You can also tell that there are many scientific facilities, factories and even what looks like stadiums all over the surface, a good distance away from the lava flows.
+			
+		Someone on the planet is hailing you. "We see you, Federation Renegade. If you have reason to be here, now's time to show proof."
+	</text>
+	<img planet="PLANET_LAVA"/>	
+	
+	<choice req="DJMOD_HAS_RADIKAL_SCORCH_GEAR" lvl="0" max_lvl="0" hidden="true" blue="false">
+		<text>You do not have any RK Scorch gear.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+
+	<choice req="DJMOD_HAS_RADIKAL_SCORCH_GEAR" hidden="true">
+		<text>(RK Scorch gear) Burn Bright...</text>
+		<event>
+			<text>"... Brother. It always warms the heart to see one of us. Here is the welcome gift. You are cleared to land."</text>
+			<autoReward level="LOW">standard</autoReward>
+
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="RKS_QUEST_LAB_SCORCH_2"/>
+			</choice>
+		</event>
+	</choice>
+
+	<choice req="DJMOD_HAS_RADIKAL_GEAR" lvl="0" max_lvl="0" hidden="true" blue="false">
+		<text>You do not have any RK gear at all.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	
+	<choice req="DJMOD_HAS_RADIKAL_GEAR" hidden="true">
+		<text>(any piece of RK gear) Business</text>
+		<event>
+			<text>"Good. We've been awaiting some deliveries, and have quite the stockpile of equipment to sell. Let's trade then. You are cleared to land."</text>
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="RKS_QUEST_LAB_SCORCH_2"/>
+			</choice>		
+		</event>
+	</choice>
+
+	<choice hidden="true">
+		<text>Is this the Bakery Planet?</text>
+		<event>
+			<text>Your ship soon takes damage from a source you cannot identify. "Begone, tourist. You had been warned."</text>
+			<damage amount="2" system="room" effect="fire"/>
+			
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice hidden="true">
+		<text>We're just passing through here, don't mind us.</text>
+		<event>
+			<text>There is no answer. You move a safe distance away and figure you have time to do some maintenance.
+
+			After some time, you detect some Orchid ships jumping in weapons hot, but you're safe here.</text>
+			
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Do nothing.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<event name="RKS_QUEST_LAB_SCORCH_2">
+	<text>"First, the deliveries. What raw materials do you bring? The furnaces, vivisection labs and distilleries hunger."
+
+		You look at the list of "materials" and get a better understanding of why this sector is outlawed by so many factions. However the mission comes first, right?
+	</text>
+	<jumpEvent>RKS_LAB_SCORCH_AMBUSH</jumpEvent>
+
+	<choice req="RKS_HAS_ANY_SACRIFICEABLE_ORCHID" lvl="0" max_lvl="0" hidden="true" blue="false">
+		<text>You don't have Orchids for this (Uniques would rather kill you and themselves)</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+
+	<choice req="orchid" hidden="false">
+		<text>An Orchid.</text>
+		<event>
+			<text>"The base material. Always useful. Here's your payment."
+			
+				You can feel the rest of your crew judging you.
+			</text>
+
+			<item_modify>
+                <item type="scrap" min="60" max="60"/>
+            </item_modify>
+			<removeCrew class="orchid">
+				<clone>false</clone>
+				<text>You cannot clone crew that you sold away to a painful death.</text>
+			</removeCrew>
+			
+			<choice>
+				<text>Moving on...</text>
+				<event load="RKS_QUEST_LAB_SCORCH_3"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="orchid_vampweed" hidden="false">
+		<text>A Vampweed.</text>
+		<event>
+			<text>"The base material. Always useful. Here's your payment."
+			
+				You can feel the rest of your crew judging you.
+			</text>
+
+			<item_modify>
+                <item type="scrap" min="60" max="60"/>
+            </item_modify>
+			<removeCrew class="orchid_vampweed">
+				<clone>false</clone>
+				<text>You cannot clone crew that you sold away to a painful death.</text>
+			</removeCrew>
+			
+			<choice>
+				<text>Moving on...</text>
+				<event load="RKS_QUEST_LAB_SCORCH_3"/>
+			</choice>
+		</event>
+	</choice>
+
+	<choice req="orchid_caretaker" hidden="false">
+		<text>A Caretaker.</text>
+		<event>
+			<text>"Quality material, yes. Here's greater payment."
+			
+				You can feel the rest of your crew judging you.
+			</text>
+
+			<item_modify>
+                <item type="scrap" min="100" max="100"/>
+				<item type="fuel" min="5" max="5"/>
+            </item_modify>
+			<removeCrew class="orchid_caretaker">
+				<clone>false</clone>
+				<text>You cannot clone crew that you sold away to a painful death.</text>
+			</removeCrew>
+			
+			<choice>
+				<text>Moving on...</text>
+				<event load="RKS_QUEST_LAB_SCORCH_3"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="orchid_praetor" hidden="false">
+		<text>A Praetor.</text>
+		<event>
+			<text>"Quality material, yes. Here's greater payment."
+			
+				You can feel the rest of your crew judging you.
+			</text>
+
+			<item_modify>
+                <item type="scrap" min="100" max="100"/>
+				<item type="missiles" min="3" max="3"/>
+            </item_modify>
+			<removeCrew class="orchid_praetor">
+				<clone>false</clone>
+				<text>You cannot clone crew that you sold away to a painful death.</text>
+			</removeCrew>
+			
+			<choice>
+				<text>Moving on...</text>
+				<event load="RKS_QUEST_LAB_SCORCH_3"/>
+			</choice>
+		</event>
+	</choice>	
+	<choice req="orchid_cultivator" hidden="false">
+		<text>A Cultivator.</text>
+		<event>
+			<text>"Quality material, yes. Here's greater payment."
+			
+				You can feel the rest of your crew judging you.
+			</text>
+
+			<item_modify>
+                <item type="scrap" min="100" max="100"/>
+				<item type="drones" min="2" max="2"/>
+            </item_modify>
+			<removeCrew class="orchid_cultivator">
+				<clone>false</clone>
+				<text>You cannot clone crew that you sold away to a painful death.</text>
+			</removeCrew>
+			
+			<choice>
+				<text>Moving on...</text>
+				<event load="RKS_QUEST_LAB_SCORCH_3"/>
+			</choice>
+		</event>
+	</choice>
+
+	<choice req="ORCHID_KIDS" hidden="false">
+		<text>Orchid children.</text>
+		<event>
+			<text>"Fantastic! These are increasingly difficult to come by, as if the Orchids are tightening security over time. Here's your generous payment."
+			
+				You can feel the rest of your crew looking at you in disgust, but nobody dares say anything.
+			</text>
+
+			<item_modify>
+                <item type="scrap" min="150" max="150"/>
+				<item type="fuel" min="10" max="10"/>
+                <item type="missiles" min="5" max="5"/>
+				<item type="drones" min="5" max="5"/>
+            </item_modify>
+			<remove name="ORCHID_KIDS"/>
+			
+			<choice>
+				<text>Moving on...</text>
+				<event load="RKS_QUEST_LAB_SCORCH_3"/>
+			</choice>
+		</event>
+	</choice>
+
+	<choice hidden="true">
+		<text>Nothing, I'm afraid.</text>
+		<event load="RKS_QUEST_LAB_SCORCH_3"/>
+	</choice>
+
+	<choice>
+		<text>Actually... we have an emergency, bye!</text>
+		<event/>
+	</choice>
+</event>
+
+<event name="RKS_QUEST_LAB_SCORCH_3">	
+	<text>"Alright, now enjoy our best local store. I'm getting some pressing reports that I have to look into. Pleasure doing business and all."
+
+		Before you shop, you still have some time to do something else aboard the ship.
+	</text>
+
+	<store>STORE_RADIKAL_SCORCH</store>
+
+	<choice>
+		<text>Do something onboard the ship.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+	<choice>
+		<text>Do nothing.</text>
+		<event/>
+	</choice>
+</event>
+
+<!-- Event WORKS,
+triggering: WORKS -->
+<event name="RKS_LAB_SCORCH_AMBUSH">	
+	<text>You barely even reach the Jump button as a small Orchid fleet jumps in! A very angry Praetor ship immediately hails you.
+
+		"Federation. Scouts saw you engage with these people. You traitorous pest. We will avenge our people. Then raze this abomination of a planet."
+
+		You wonder why they would expose themselves to weaponry so specifically good against their biology, but your scans reveal they came quite prepared!
+	</text>
+	<ship load="SHIP_RKS_LAB_SCORCH_ATTACKER" hostile="false"/>
+	<!-- Add fleet image later and hope it doesn't crash. -->
+
+	<choice req="RKS_HAS_ORCHID_UNIQUE" hidden="true">
+		<text>(Unique Orchid) Let us go. Secret mission.</text>
+		<event/>
+	</choice>
+
+	<choice>
+		<text>...To be honest, I expected something like this.</text>
+		<event>
+			<text>"Goddamn Florals, why must you always try and stop progress? It's not our fault if these bodies make the best fuel! We didn't make the rules. Guards, it's time to do some gardening!"
+				
+				Projectiles from the RK Scorch and the assault fleet start flying in every direction!
+				Also, they must have used a special jammer to depower your jump drive, you will have to charge it again.
+			</text>
+			<resetFtl/>
+			<environment type="PDS" target="all"/>
+			<ship hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<!-- <event load="COMBAT_CHECK"/> -->
+				<event load="MORALITY_UPDATE_ORCHID_FIGHT"/>
+			</choice>
+		</event>
+	</choice>
+</event>
+<ship name="SHIP_RKS_LAB_SCORCH_ATTACKER" auto_blueprint="RKS_LAB_SCORCH_ORCHID_ELITE">
+	<destroyed>
+		<text>The Elite Orchid ship breaks apart and you quickly salvage what you can before the rest of the fleet realizes what happened.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Now we're killing Elite allies to defend arms dealers. Okay.</text>
+			<event/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can from the Elite Orchid ship before the rest of the fleet realizes what happened.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Now we're killing Elite allies to defend arms dealers. Okay.</text>
+			<event/>
+		</choice>
+	</deadCrew>
+	<crew>
+		<crewMember type="orchid_praetor" prop="0.50"/>
+		<crewMember type="orchid_caretaker" prop="0.25"/>
+		<crewMember type="orchid" prop="0.25"/>
+	</crew>
+</ship>
+
+
+<!-- PIRATE TRINITY: Must buy at least once from each pirate, or whoever you're looking at turns hostile. You choose the order.
 If you don't come at all, trigger RKS_PIRATE_TRINITY_EXIT_AMBUSH.
 
 Quest was not spawning, with text saying it DID, but always "next sector" while that parameter was set to "false".
@@ -185,7 +1782,6 @@ instead of <mod-append:eventFile>radikal</mod-append:eventFile> .
 Then it simply crashed.
 FIXED by using _LOADER technique like MV's gambling machine in events_special_storage .
 -->
-
 <!-- <event name="RKS_PIRATE_TRINITY" unique="true"> 	Should be unique but that slows down testing a lot. -->
 <event name="RKS_PIRATE_TRINITY">
 	<preventQuest/>
@@ -278,7 +1874,7 @@ REF MV v5.5.1:
 	<choice req="rks_pirate_trinity_count" lvl="3" hidden="true">
 		<text>Thank them for the business and say goodbye.</text>
 		<event>
-			<text>"Well well, you truly are one rich, ssssick individual with zero regard for other living thingsss, a fantasssstic customer by all accountssss! Accept my apologiesss for doubting you, and may your raidsss bring great bounty! Gals and guys it's party time! Narcotics for everyone, and a round of Shoot-Tha-Limbs on that human slave who looked at me funny this morning."
+			<text>"Well well, you truly are one rich, ssssick individual with zero regard for other living thingsss, a fantasssstic customer by all accountssss! Accept my apologiesss for doubting you, and may your raidsss bring great bounty! Galsss and guyssss, IT'SSS PARTY TIME! Narcoticsss for everyone, and a round of Shoot-Tha-Limbs on that human sssslave who looked at me funny thisss morning!"
 				
 				They let you leave with a little gift and big smiles on their faces. Congratulations, you have just made the galaxy a worse place.
 			</text>
@@ -318,7 +1914,6 @@ REF MV v5.5.1:
 					</item_modify>
 					<!-- Only use lists from MV or RK since Piracy Is Poggers might not be patched in. -->
 					<crewMember amount="1" class="LIST_SLAVES_GENERIC"/>
-					<!-- <variable name="rks_pirate_trinity_met_slaver" op="add" val="1"/> -->
 					<variable name="rks_pirate_trinity_count" op="add" val="1"/>
 					
 					<choice hidden="true">
@@ -400,7 +1995,7 @@ REF MV v5.5.1:
 				<event>
 					<text>"You got it, captain!"</text>
 					<item_modify>
-						<item type="scrap" min="-15" max="-25"/>
+						<item type="scrap" min="-25" max="-15"/>
 					</item_modify>
 					<reveal_map/>
 					<variable name="rks_pirate_trinity_count" op="add" val="1"/>
@@ -417,7 +2012,7 @@ REF MV v5.5.1:
 				<event>
 					<text>"We're on it, captain!"</text>
 					<item_modify>
-						<item type="scrap" min="-15" max="-25"/>
+						<item type="scrap" min="-25" max="-15"/>
 					</item_modify>
 					<modifyPursuit amount="-2"/>
 					<variable name="rks_pirate_trinity_count" op="add" val="1"/>
@@ -464,7 +2059,7 @@ REF MV v5.5.1:
 				<event>
 					<text>"Enjoy that little bit of extra firepower!"</text>
 					<item_modify>
-						<item type="scrap" min="-10" max="-20"/>
+						<item type="scrap" min="-20" max="-10"/>
 					</item_modify>
 					<weapon name="GIFTLIST_SHIPVORE_RAM_FP"/>
 					<variable name="rks_pirate_trinity_count" op="add" val="1"/>
@@ -604,7 +2199,6 @@ REF MV v5.5.1:
 		<text>The Smuggler ship has been defeated. You scrap the interior and find a weapon in the cargo bay!
 			Intentionally or not, you've made a mess disrupting pirate operations in this sector.</text>
 		<autoReward level="MED">stuff</autoReward>
-		<!-- <weapon name="RANDOM"/> -->
 		<weapon name="LIST_WEAPONS_RADIKAL"/>
 
 		<choice hidden="true">

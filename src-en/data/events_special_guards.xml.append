@@ -4,10 +4,19 @@
 <FTL>
 <textList name="TEXT_START_RADIKAL">
 	<text>You have arrived in the RadiKal sector, where specialists from everywhere come in search of highly efficient and illegal gear.
-		The rebels will have some trouble getting the coordinates, giving you some time to prepare for getting out of here alive.
+		
+		While individual rebels or small groups certainly work with the RadiKals, the fleet will have trouble getting here, giving you some time to prepare for getting out of here alive.
+		And prepare you should.
 	</text>
 	<text>You have arrived in the RadiKal sector, where one can find hazardous equipment of great power, if they're ready to make sacrifices.
-		The rebels will have some trouble getting the coordinates, giving you some time to prepare for getting out of here alive.
+		
+		While individual rebels or small groups certainly work with the RadiKals, the fleet will have trouble getting here, giving you some time to prepare for getting out of here alive.
+		And prepare you should.
+	</text>
+	<text>You have arrived in the RadiKal sector, which should be fine if you know what you're looking for, and when to avoid fights you might not win.
+		
+		While individual rebels or small groups certainly work with the RadiKals, the fleet will have trouble getting here, giving you some time to prepare for getting out of here alive.
+		And prepare you should.
 	</text>
 </textList>
 
@@ -37,97 +46,9 @@
 	<choice hidden="true">
 		<text>Respond to the hail.</text>
 		<event>
-			<text>"Hey there. Rook or reg?" The guard is nonchalantly awaiting your answer. This seems to be about your familiarity with this sector.</text>
-			<choice hidden="true">
-				<text>Rook.</text>
-				<event>
-					<text>"Yeah no wonder. Your ship looks like it could use serious upgrades. Do you even know what you're looking for in here?"</text>
-					<choice hidden="true">
-						<text>Yes.</text>
-						<event>
-							<text>"Alright, what's it gonna be?." The guard has brought up a short list of destinations on the comms, with only codenames and all the usual details are missing. You are starting to wonder just how shady a place you just found yourself in.</text>
-							<choice hidden="true">
-								<text>Pick "Bam".</text>
-								<event>
-									<text>"The classics, always reliable. A wise choice." The guard transmits the coordinates to you, then quickly cuts comms before you can answer.</text>
-									<!-- <quest event="QUEST_LANIUS_ZOLTAN_PEACE"/> -->
-									<quest event="RK_QUEST_LAB_BAM">
-										<nextSector>false</nextSector>
-										<aggressive>2</aggressive>
-									</quest>
-									
-									<choice hidden="true">
-										<text>Check the storage.</text>
-										<event load="STORAGE_CHECK"/>
-									</choice>
-									<choice hidden="true">
-										<text>Do nothing.</text>
-										<event/>
-									</choice>
-								</event>
-							</choice>
-							<choice hidden="true">
-								<text>Pick "Punk".</text>
-								<event>
-									<text>"A timely choice, I heard they've got some new stuff available." The guard transmits the coordinates to you, then quickly cuts comms before you can answer.</text>
-									<quest event="RK_QUEST_LAB_PUNK">
-										<nextSector>false</nextSector>
-										<aggressive>2</aggressive>
-									</quest>
-									
-									<choice hidden="true">
-										<text>Check the storage.</text>
-										<event load="STORAGE_CHECK"/>
-									</choice>
-									<choice hidden="true">
-										<text>Do nothing.</text>
-										<event/>
-									</choice>
-								</event>
-							</choice>
-							<choice hidden="true">
-								<text>Pick "Scorch".</text>
-								<event>
-									<text>"Looking for hot stuff, I see." The guard transmits the coordinates to you, then quickly cuts comms before you can answer.</text>
-									<quest event="RK_QUEST_LAB_SCORCH">
-										<nextSector>false</nextSector>
-										<aggressive>2</aggressive>
-									</quest>
-									
-									<choice hidden="true">
-										<text>Check the storage.</text>
-										<event load="STORAGE_CHECK"/>
-									</choice>
-									<choice hidden="true">
-										<text>Do nothing.</text>
-										<event/>
-									</choice>
-								</event>
-							</choice>
-						</event>
-					</choice>
-					<choice hidden="true">
-						<text>Not in the least.</text>
-						<event>
-							<text>The guard frowns. "Not sure how you people got here but this isn't a place for tourists. You better head for the exit without taking any detours, and there won't be trouble." You then hear the guard mutter something about "needing to tighten security again" before comms are cut and you realize that they're already dealing with next arrival.
-							You move on, confused and slightly worried.</text>
-							<choice hidden="true">
-								<text>Check the storage.</text>
-								<event load="STORAGE_CHECK"/>
-							</choice>
-							<choice hidden="true">
-								<text>Do nothing.</text>
-								<event/>
-							</choice>
-						</event>
-					</choice>
-				</event>
-			</choice>
-
-			<choice req="DJMOD_HAS_RADIKAL_GEAR" lvl="0" max_lvl="0" hidden="true" blue="false">
-				<text>You do not have any RadiKal gear. You're not flying an RK ship either.</text>
-				<event load="OPTION_INVALID"/>
-			</choice>
+			<text>"Hey there. Rook or reg?" The guard is nonchalantly awaiting your answer.
+				This seems to be about your familiarity with this sector.
+			</text>
 
 			<choice req="DJMOD_HAS_RADIKAL_GEAR" hidden="true">
 				<text>(Any piece of RK gear) Reg. Hit me up!</text>
@@ -136,29 +57,37 @@
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event>
-							<text>You receive "Bam main lab" coordinates...</text>
-							<quest event="RK_QUEST_LAB_BAM">
-								<nextSector>false</nextSector>
-								<aggressive>2</aggressive>
+							<text>"Here's the current location of the RadiKal Bam lab, if you have explodey stuff, or need more, you know they'll be happy to see you."</text>
+							<quest event="RKS_QUEST_LAB_BAM">
+								<!-- <nextSector>false</nextSector>
+								<aggressive>2</aggressive> -->
 							</quest>
+							<variable name="rks_lab_coords_bam" op="set" val="1"/>
 							
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event>
-									<text>...then "Punk main lab"...</text>
-									<quest event="RK_QUEST_LAB_PUNK">
-										<nextSector>false</nextSector>
-										<aggressive>2</aggressive>
+									<text>"Sly as always, the Punk have set camp at this beacon. For all your fancy needs."</text>
+									<quest event="RKS_QUEST_LAB_PUNK">
+										<!-- <nextSector>false</nextSector>
+										<aggressive>2</aggressive> -->
 									</quest>
+									<variable name="rks_lab_coords_punk" op="set" val="1"/>
 									
 									<choice hidden="true">
 										<text>Continue...</text>
 										<event>
-											<text>...and finally "Scorch main lab". Good to go!</text>
-											<quest event="RK_QUEST_LAB_SCORCH">
-												<nextSector>false</nextSector>
-												<aggressive>2</aggressive>
+											<text>"... and here's the Scorch lab. They're in need of supplies. You know, the kind that burns really well...
+												Safe travels! Hahaha"
+												
+												If you had to guess, the "supplies" might be living creatures, which could mean all sorts of trouble.
+												You'll decide what to do on the way, there's nothing left to do here but some maintenance.
+											</text>
+											<quest event="RKS_QUEST_LAB_SCORCH">
+												<!-- <nextSector>false</nextSector>
+												<aggressive>2</aggressive> -->
 											</quest>
+											<variable name="rks_lab_coords_scorch" op="set" val="1"/>
 					
 											<choice hidden="true">
 												<text>Check the storage.</text>
@@ -176,6 +105,101 @@
 					</choice>
 				</event>
 			</choice>
+
+			<choice req="DJMOD_HAS_RADIKAL_GEAR" lvl="0" max_lvl="0" hidden="true" blue="false">
+				<text>You do not have any RadiKal gear. You're not flying an RK ship either.</text>
+				<event load="OPTION_INVALID"/>
+			</choice>
+	
+			<choice hidden="true">
+				<text>Rook.</text>
+				<event>
+					<text>"Yeah no wonder. Your ship looks like it could use serious upgrades. Do you even know what you're looking for in here?"</text>
+					<choice hidden="true">
+						<text>Yes.</text>
+						<event>
+							<text>"Alright, what's it gonna be?." The guard has brought up a short list of destinations on the comms, with only codenames and all the usual details are missing. You are starting to wonder just how shady a place you just found yourself in.</text>
+							<choice hidden="true">
+								<text>Pick "Bam".</text>
+								<event>
+									<text>"The classics, always reliable. A wise choice." The guard transmits the coordinates to you, then quickly cuts comms before you can answer.</text>
+									<!-- <quest event="QUEST_LANIUS_ZOLTAN_PEACE"/> -->
+									<quest event="RKS_QUEST_LAB_BAM">
+										<!-- <nextSector>false</nextSector>
+										<aggressive>2</aggressive> -->
+									</quest>
+									<variable name="rks_lab_coords_bam" op="set" val="1"/>
+									
+									<choice hidden="true">
+										<text>Check the storage.</text>
+										<event load="STORAGE_CHECK"/>
+									</choice>
+									<choice hidden="true">
+										<text>Do nothing.</text>
+										<event/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text>Pick "Punk".</text>
+								<event>
+									<text>"A timely choice, I heard they've got some new stuff available." The guard transmits the coordinates to you, then quickly cuts comms before you can answer.</text>
+									<quest event="RKS_QUEST_LAB_PUNK">
+										<!-- <nextSector>false</nextSector>
+										<aggressive>2</aggressive> -->
+									</quest>
+									<variable name="rks_lab_coords_punk" op="set" val="1"/>
+									
+									<choice hidden="true">
+										<text>Check the storage.</text>
+										<event load="STORAGE_CHECK"/>
+									</choice>
+									<choice hidden="true">
+										<text>Do nothing.</text>
+										<event/>
+									</choice>
+								</event>
+							</choice>
+							<choice hidden="true">
+								<text>Pick "Scorch".</text>
+								<event>
+									<text>"Looking for hot stuff, I see." The guard transmits the coordinates to you, then quickly cuts comms before you can answer.</text>
+									<quest event="RKS_QUEST_LAB_SCORCH">
+										<!-- <nextSector>false</nextSector>
+										<aggressive>2</aggressive> -->
+									</quest>
+									<variable name="rks_lab_coords_scorch" op="set" val="1"/>
+									
+									<choice hidden="true">
+										<text>Check the storage.</text>
+										<event load="STORAGE_CHECK"/>
+									</choice>
+									<choice hidden="true">
+										<text>Do nothing.</text>
+										<event/>
+									</choice>
+								</event>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Not in the least.</text>
+						<event>
+							<text>The guard frowns. "Not sure how you people got here but this isn't a place for tourists. You better head for the exit without taking any detours, and there won't be trouble." You then hear the guard mutter something about "needing to tighten security again" before comms are cut and you realize that they're already dealing with next arrival.
+							
+							You move on, confused and slightly worried.</text>
+							<choice hidden="true">
+								<text>Check the storage.</text>
+								<event load="STORAGE_CHECK"/>
+							</choice>
+							<choice hidden="true">
+								<text>Do nothing.</text>
+								<event/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
 			
 			<choice hidden="true">
 				<text>This here the pirate haven, innit? We'ere for business. *Spit*</text>
@@ -185,13 +209,8 @@
 						They send you the coordinates and let you past. Despite the secrecy of this sector you can already tell that this will reflect poorly on your general reputation.
 					</text>
 
-					<!-- BUG same as below. FIXED. The "quest event" parameters are in the event itself. -->
+					<!-- The "quest event" parameters are in the event itself, seems to work better overall. -->
 					<quest event="RKS_PIRATE_TRINITY"/>
-					<!-- BUG this one "spawns in the next sector" and doesn't actually spawn. But works in rest of the mod. -->
-					<!-- <quest event="RKS_PIRATE_TRINITY">
-						<nextSector>false</nextSector>
-						<aggressive>2</aggressive>
-					</quest> -->
 
 					<variable name="rks_pirate_trinity_active" op="add" val="1"/>
 					

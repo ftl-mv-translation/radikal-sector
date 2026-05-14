@@ -31,7 +31,7 @@ System IDs:
 
 <!--
 **************************************************************************************************************
-				COMPATIBILITY
+				COMPATIBILITY (probably OBSO, delete some day)
 **************************************************************************************************************
 -->
 
@@ -45,9 +45,15 @@ System IDs:
 	</augBlueprint>
 </FTL>
 
-<!-- **************************************************************************************************************
+<!-- 
+**************************************************************************************************************
+**************************************************************************************************************
+**************************************************************************************************************
 				CREW
-**************************************************************************************************************-->
+**************************************************************************************************************
+**************************************************************************************************************
+**************************************************************************************************************
+-->
 <FTL>
 
 <!-- RadiKal OPERATIVE SOLDIER. Only purpose is to provide RK sector's coords, and die. Not in that order. -->
@@ -63,6 +69,12 @@ System IDs:
         <power>Learns skills much faster</power>
     </powerList>
 </crewBlueprint>
+
+<!-- 
+===================================================================================================
+RK Bam crew
+===================================================================================================
+-->
 
 <!-- RK_WEAPONLIKE based on technoboarderion aka "Technopath morph imitating an ion boarder drone".
 REF MV v5.5.1:
@@ -81,18 +93,19 @@ REF MV v5.5.1:
 </crewBlueprint> 
 -->
 <crewBlueprint name="rk_weaponlike">
-    <desc>The RadiKal Bam make these by applying electroshocks to a technopath bathed in acid and stuffed with a bomb, making it mad and unable to change shape but capable of bomb-launching. No longer counts as a technopath or morph.
+    <desc>(RK Bam) Made by applying electroshocks to a technopath bathed in acid and stuffed with a bomb, making it mad and unable to change shape, but able to launch bombs.
+		No longer counts as a Technopath or Morph.
 
 	Inherited stats: takes 0.5 crew slot, immune to suffocation, 75% resistance to fire damage and stun, 0.8x movement speed.</desc>
-    <cost>60</cost>
+    <cost>55</cost>
     <title>Squyrt</title>
     <short>Squyrt</short>
     <rarity>0</rarity>
     <powerList>
 		<power>Active Ability: Teleport a bomb to the enemy ship, once per jump</power>
-		<power>Active Ability: Detonate a bomb immediately, once per jump</power>
-        <power>Max Health is 75</power>
-		<power>Can only move, man, fight, and teleport</power>
+		<power>Active Ability: Detonate a bomb right here, once per jump</power>
+        <power>Max Health is 75. Is cloned at 2x speed.</power>
+		<power>Can only move, man, fight, sabotage, teleport</power>
 		<power>Learns Weapons extremely fast</power>
     </powerList>
     <colorList>
@@ -102,8 +115,44 @@ REF MV v5.5.1:
     </colorList>
 </crewBlueprint>
 
+<!-- 
+===================================================================================================
+RK Punk crew
+===================================================================================================
+-->
+
+<!-- Based on MV v5.5.1 blobrock aka "Morph imitating a Rockman"
+<crewBlueprint name="unique_rk_engilanius_rockmorph"> -->
+<crewBlueprint name="unique_rk_defromorius">
+    <desc>(RK Punk) An Engi Defender accidentally amalgamed itself with Rockman-Morph goo and Lanius flesh. Became a RadiKal to escape Harmony torture, all while gasping for air.
+		Counts as a rogue Engi Defender.
+
+	Inherited stats: 0.5x stun and movement speed, 2.7x repair speed, drains oxygen.</desc>
+    <cost>200</cost>
+    <title>Defromorius</title>
+    <short>Defromorius</short>
+    <rarity>0</rarity>
+    <powerList>
+		<power>Active Ability: It and allies on the same ship take 0.65x damage from hazards and combat, and deal 1.5x damage. [Lasts 10 seconds. Cooldown 3 seconds. Only recharges while suffocating.]</power>
+        <power>Health increased to 200, Is cloned at 0.5x speed</power>
+		<power>Takes 0.2x damage from hazards</power>
+		<power>Attacks in melee combat at 2x speed</power>
+    </powerList>
+    <colorList>
+        <layer>
+            <color r="255" g="255" b="255" a="1"/>
+        </layer>
+    </colorList>
+</crewBlueprint>
+
+<!-- 
+===================================================================================================
+RK Scorch crew
+===================================================================================================
+-->
+
 <crewBlueprint name="rk_fireghost">
-    <desc>An Uptor is made of Alpha Gouls megapressed together by the RadiKal Scorch. They are Ghosts but no longer Gouls or Vagabonds.
+    <desc>(RK Scorch) An Uptor is made of Alpha Gouls megapressed together. They are Ghosts but no longer Gouls or Vagabonds.
 		On your ship, makes the system they're in immune to fire. On the enemy ship, the system takes 2x fire damage.
 		Can cause solar yoctoflares from its own body often.
 
@@ -129,21 +178,28 @@ REF MV v5.5.1:
 </FTL>
 
 
-<!-- **************************************************************************************************************
+<!-- 
+**************************************************************************************************************
+**************************************************************************************************************
+**************************************************************************************************************
 				AUGMENTS
-**************************************************************************************************************-->
-<FTL>
+**************************************************************************************************************
+**************************************************************************************************************
+**************************************************************************************************************
+-->
 
 <!-- 
 =======================
 RK BAM
 =======================
  -->
+<FTL>
 
 <!-- Basically an extra vampiric weapon with various events and RadiKal-style spice. -->
 <augBlueprint name="DJMOD_COMBAT_SHIPVORE_RAM">
     <title>Shipvore Ram</title>
     <desc>The signature combat augment of the RadiKal Bam lets you repeatedly ram the enemy for guaranteed quickly lethal damage, free repairs and sometimes other things. WARNING: your ship and/or crew may suffer. [Uses {, Full Power uses more and destroys the augment. Emergency Generator and Fuel Conserver can apply.]
+	
 	Can be reinforced at empty beacons to survive the next Full Power use.
 	</desc>
     <cost>70</cost>
@@ -165,8 +221,8 @@ RK BAM
 
 <augBlueprint name="DJMOD_CREW_ARE_BOMBS_OFF">
     <title>Charged Belts (Off)</title>
-    <desc>This augment is Off but can be toggled On anytime. When On: 
-	[This double-edged augment from the RadiKal Bam equips your crew with belts that reduce their HP by 10% (beware of Ghosts) and explode when they die, causing a fire and dealing damage to the room and ship they're in, with extra damage in systemless rooms.
+    <desc>(RK Bam gear) This augment is Off but can be toggled On anytime. When On: 
+	[This double-edged augment equips your crew with belts that reduce their HP by 10% (beware of Vagabonds) and explode when they die, causing a fire and dealing damage to the room and ship they're in, with extra damage in systemless rooms.
 	Stacks upon already existing death effects.
 	
 	Cannot be toggled Off but can scrap itself into ~ or } at empty beacons.
@@ -176,10 +232,9 @@ RK BAM
     <rarity>5</rarity>
     <stackable>false</stackable>
 </augBlueprint>
-<!-- Add combo to only work on enemy ship. Maybe should have charges -->
 <augBlueprint name="DJMOD_CREW_ARE_BOMBS_ON">
     <title>Charged Belts</title>
-    <desc>This double-edged augment from the RadiKal Bam equips your crew with belts that reduce their HP by 10% (beware of Ghosts) and explode when they die, causing a fire and dealing damage to the room and ship they're in, with extra damage in systemless rooms.
+    <desc>(RK Bam gear) This double-edged augment equips your crew with belts that reduce their HP by 10% (beware of Vagabonds) and explode when they die, causing a fire and dealing damage to the room and ship they're in, with extra damage in systemless rooms.
 	Stacks upon already existing death effects.
 	
 	Cannot be toggled Off but can scrap itself into ~ or } at empty beacons.
@@ -193,7 +248,7 @@ RK BAM
 <!-- Can trigger immediately if below HP threshold when choosing to activate it in combat check. -->
 <augBlueprint name="DJMOD_AUG_AUTO_SYS_REPAIR">
     <title>A.E.R.A. Second Wind</title>
-    <desc>'Automated Emergency Repair Augment', by RadiKal Bam engineers. 
+    <desc>(RK Bam gear) 'Automated Emergency Repair Augment'. 
 		When active, if your ship is almost destroyed (5 hull or less), a nanomachine burst will be released in your systems, fully repairing them as well as 8 hull points, and destroying the augment. No effect if your hull instantly reaches 0. [Activation uses 1 power, Emergency Generator can apply]</desc>
     <cost>60</cost>
     <rarity>3</rarity>
@@ -202,12 +257,39 @@ RK BAM
 
 <augBlueprint name="DJMOD_LEAD_TITANS">
     <title>Lead Titans</title>
-    <desc>RadiKal Bam engineers had the insane idea to weave motile fiber-lead into the muscles of creatures who could handle it. 
+    <desc>(RK Bam gear) Someone had the insane idea to weave motile fiber-lead into muscles. 
 		
-		Your Crystals, Rockmen and Lanius double their resistance to everything, triple their damage to everything, and get 1.4x faster repair and movement.
-		However the weight and volume makes them take 2 crew slots, and create a breach every few steps they walk.</desc>
-    <cost>75</cost>
+		Your 'big' crew (Crystals, Rockmen, and Lanius) have: 2.5x resistance to everything, 3.5x damage to everything.
+		The weight makes them take 2 crew slots, create breaches while walking, and they can't repair.
+		Your other crew get a flat +75% repair speed from smaller fibers.
+
+		All your crew gain a flat +50% movement speed.</desc>
+    <cost>70</cost>
     <rarity>4</rarity>
+    <stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="RK_BAM_DIVINE_ARMOR">
+    <title>Thicker Hull</title>
+    <desc>(RK Bam gear) RadiKals reverse engineered extremely rare armor into this slightly more accessible armor, but it reduces weapon charge speed by 5%.
+		Impacts that deal 1 damage have a 40% chance to be negated, and all other damage is reduced by 1.
+	</desc>
+    <cost>130</cost>
+    <rarity>0</rarity>
+    <stackable>false</stackable>
+	<value>0.4</value>			<!-- THIS IS THE CHANCE TO NEGATE 1-DAMAGE HITS via the Lua!!! -->
+</augBlueprint>
+
+<augBlueprint name="RK_PERSISTENCE_SHIELD">
+    <title>Persistence Shield</title>
+	<desc>(RK Bam gear) Adds a 4 hitpoints Super Shield. Stacks with other super shields, but not with itself.
+		Also increases shield charge speed by 20%.
+		
+		Activate from the Toggle Menu to instantly restore all your Supershield layers. [Uses 1 {]
+		Cannot be activated again until you rebuild its capacitor at an empty beacon for 7~ .
+	</desc>
+    <cost>130</cost>
+    <rarity>5</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 </FTL>
@@ -217,6 +299,8 @@ RK BAM
 RK PUNK
 =======================
  -->
+<FTL>
+
 <!--  
 REFS Energy Shield augments from MV's hyperspace.xml:
 <req name="LIST_CHECK_ENERGY_SHIELD" type="any">
@@ -240,26 +324,31 @@ REFS Energy Shield augments from MV's hyperspace.xml:
 
 Make a quest to obtain it. Add ways to feed it 1 zoltan to increase layers by 3 (up to 10) at empty beacons.
 -->
-<FTL>
-<augBlueprint name="DJMOD_ZOLTAN_SHIELD_EXTRACTOR">
+<!-- <augBlueprint name="DJMOD_ZOLTAN_SHIELD_EXTRACTOR">
     <title>RK Shield (1)</title>
     <desc>This RadiKal Punk augment provides 1 layer of supershields, for when you really just want to avoid immediate mind control, teleport or hacking issues.</desc>
     <cost>20</cost>
     <rarity>0</rarity>
     <stackable>false</stackable>
-</augBlueprint>
+</augBlueprint> -->
 
 <!-- see 'textless events' in modding tips folder -->
 <augBlueprint name="DJMOD_COMBAT_OFFENSE_DISABLER">
     <title>Offense Disabler</title>
-    <desc>This RadiKal Punk combat augment disables enemy offensive systems (Weapons, Drone Control, Hacking, Mind Control, Teleporter, and all Artilleries) for 5 seconds. The effect then weakens progressively until it's gone at 18 seconds (you will be warned).
-		Perfect against aggressive enemies! [Uses 3| and 3 reactor power. Emergency Generator can apply.]</desc>
-    <cost>75</cost>
+    <desc>(RK Punk gear) This combat augment can fully disable enemy offense for 5 seconds. The effect becomes weaker until it's gone at 18 seconds (you will be warned). Affected systems:
+		-Weapons
+		-Drone Control
+		-Hacking
+		-Mind Control
+		-Teleporter
+		-all Artilleries
+		Perfect against aggressive enemies! [Uses 2| and 3 reactor power. Emergency Generator can apply.]</desc>
+    <cost>70</cost>
     <rarity>4</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 
-<!--
+<!-- [OUTDATED, Rework below.]
 Jump event augment! Code is still in combat augment xml for technical reasons though.
 Disabled because too damn CLUNKY since it forces player to confirm every jump, even without having the augment...
 Some add-on that came out in the meantime has done a better implementation of this, check it out.
@@ -275,8 +364,10 @@ Some add-on that came out in the meantime has done a better implementation of th
 REWORKED JumpDecoy -->
 <augBlueprint name="DJMOD_HACK_FLEET">
     <title>Enigmashin</title>
-    <desc>This RadiKal Punk combat augment attempts to send deepfake intel to the rebels through an enemy's comms for credibility. Success delays the fleet, Crit-fail accelerates it.
-		If you deal more than 2 hull damage during the process, it stops. Free use takes 17 seconds. Limit your Hacking system and use droneparts for faster &amp; better results. (Someone might notice)
+    <desc>(RK Punk gear) This combat augment attempts to send deepfake intel to the rebels through an enemy's comms for credibility. Success delays the fleet, Crit-fail accelerates it.
+		If you deal more than 2 hull damage during the process, it stops. 
+		
+		Free use takes 17 seconds. Limit your Hacking system and use droneparts for faster, better results. (Someone might notice)
 		
 		Chances (Good / Crit / Crit-fail)
 		0| no hacking = 60% / 5% / 15%
@@ -291,7 +382,7 @@ REWORKED JumpDecoy -->
 
 <augBlueprint name="DJMOD_SUPER_DEFENDERS">
     <title>Defense Kits</title>
-    <desc>This RadiKal Punk augment makes your crew better at survival on your ship.
+    <desc>(RK Punk gear) Makes your crew better at survival on your ship.
 	x0.75 damage taken, x1.3 repair speed, x1.3 movement speed, and a 4 HP/second heal while idle (not even manning).</desc>
     <cost>90</cost>
     <rarity>4</rarity>
@@ -301,31 +392,31 @@ REWORKED JumpDecoy -->
 <!-- Daft Punk H B F S reference -->
 <augBlueprint name="DJMOD_OWN_HARMONY_ON">
     <title>Punk Harmony</title>
-    <desc>Some daft RadiKal Punks made their own Harmony. Controls your Engis on your ship, giving them immunity to (further) mind control and +40% damage and stun resistance. Powered levels in Hacking or Mind Control add 5/10/20/40/80/160% combat damage, and repair and movement speed.
+    <desc>Some daft RadiKal Punks made their own Harmony. Controls your Engis on your ship, giving them immunity to (further) mind control and +40% resistance to damage and stun. Powered levels in Hacking or Mind Control add 5/10/20/40/80/160% combat damage, and repair and movement speed.
 	
 	In short, makes them harder, better, faster, stronger, and automated.
 	
 	Can be toggled off anytime.</desc>
-    <cost>70</cost>
+    <cost>55</cost>
     <rarity>5</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 <augBlueprint name="DJMOD_OWN_HARMONY_OFF">
     <title>Punk Harmony (OFF)</title>
-    <desc>Some daft RadiKal Punks made their own Harmony. Controls your Engis on your ship, giving them immunity to (further) mind control and +40% damage and stun resistance. Powered levels in Hacking or Mind Control add 5/10/20/40/80/160% combat damage, and repair and movement speed.
+    <desc>Some daft RadiKal Punks made their own Harmony. Controls your Engis on your ship, giving them immunity to (further) mind control and +40% resistance to damage and stun. Powered levels in Hacking or Mind Control add 5/10/20/40/80/160% combat damage, and repair and movement speed.
 	
 	In short, makes them harder, better, faster, stronger, and automated.
 	
 	Can be toggled on anytime.</desc>
-    <cost>70</cost>
+    <cost>55</cost>
     <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 
 <augBlueprint name="DJMOD_DEFENSE_REMOVER">
     <title>Vulnerabilizer</title>
-    <desc>This powerful RadiKal Punk combat augment slowly weakens the enemy's defenses. Every 3 to 7 seconds (at random), limits enemy Shields and Engines by 1 power. This effect stacks. All effects end after a duration based on how many | you spent.[Uses 3 reactor power. Emergency Generator can apply.]</desc>
-    <cost>100</cost>
+    <desc>(RK Punk gear) This combat augment slowly weakens the enemy's defenses. Every 3 to 7 seconds (at random), limits enemy Shields and Engines by 1 power. This effect stacks. All effects end after 20 to 40 seconds. [Uses 2-4 | and 3 reactor power. Emergency Generator can apply.]</desc>
+    <cost>80</cost>
     <rarity>5</rarity>
     <stackable>false</stackable>
 </augBlueprint>
@@ -337,58 +428,79 @@ RK SCORCH
 =======================
  -->
 <FTL>
-<!-- Each level increases the fire res and adds new stats. 
-The first one allows widespread own ship fire control and survival, with heal. -->
-<augBlueprint name="DJMOD_COMBAT_SCORCH_SELF">
+
+<!-- TEST: DEBUGS NONSENSICAL "Scorched Earth" tiers TEST RESULTS? (T1 protecting a little, T2&T3 doing nothing)
+=> This aug itself works perfectly fine. Evens stacks with T1 Scorched Earth for "negative" fire damage
+(that cannot repair damaged bars above it though) -->
+<augBlueprint name="FIRE_IMMUNITY">
+	<!-- <title id="fusion_aug_FIRE_IMMUNITY_title"/>Fire Immunity
+	<desc id="fusion_aug_FIRE_IMMUNITY_desc"/>Systems don't take fire damage. -->
+	<title>Fire Immunity</title>
+	<desc>Systems take 100% less fire damage.</desc>
+	<cost>45</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<value>1</value>
+	<stackable>true</stackable>
+</augBlueprint>
+
+<!-- Each level increases the fire resists.
+The first one allows widespread own ship fire control (removal and creation) and survival, with heal. -->
+<augBlueprint name="RK_SCORCH_SELF">
     <title>Scorched Earth (T1)</title>
-    <desc>On both ships, this RadiKal Scorch augment makes your crew take 40% less fire damage and get x3 extinguishing. While extinguishing, they also heal 2 HP/second +2 per powered level in O2.
+    <desc>(RK Scorch gear) Your crew take 0.6x fire damage and get 3x extinguishing. While extinguishing, they also heal 2 HP/second, +2 per powered level in O2.
 	
 	Activate from the Toggles menu to set any system room on your ship (or the whole ship) on fire to fight boarders.
 	
 	COMBO: Plasma Teleporter moves the augment's fire to the enemy ship.
 	
-	Can be upgraded twice at empty beacons, increasing the fire resistance and gaining other effects.</desc>
-    <cost>75</cost>
+	Can be upgraded twice at empty beacons, increasing the fire resistances and gaining an effect.</desc>
+    <cost>60</cost>
     <rarity>3</rarity>
-    <stackable>false</stackable>
+	<!-- <value>1</value> This field is unneeded and can't fix system fire resistance. -->
+    <!-- <stackable>false</stackable> -->
+    <stackable>true</stackable>
 </augBlueprint>
 
-<!-- Scorched earth upgrade that makes it more offensive and general purpose, with speed & damage -->
-<augBlueprint name="DJMOD_COMBAT_SCORCH_SELF_2">
+<!-- Better res, potential infinity loop. -->
+<augBlueprint name="RK_SCORCH_SELF_2">
     <title>Blazing Earth (T2)</title>
-    <desc>[Tier 2 Scorched Earth] On both ships, this RadiKal Scorch augment makes your crew take 55% less fire damage and get x3 extinguishing. While extinguishing, they also heal 2 HP/second +2 per powered level in O2.
-	In fire, they move and sabotage at x2 speed and deal x2 damage.
+    <desc>(RK Scorch gear) [Tier 2 Scorched Earth] Your crew take 0.45x fire damage and get 3x extinguishing. While extinguishing, they also heal 2 HP/second, +2 per powered level in O2.
+		In fire, they also produce O2 like 1 Orchid.
 	
 	Activate from the Toggles menu to set any system room on your ship (or the whole ship) on fire to fight boarders.
 	
 	COMBO: Plasma Teleporter moves the augment's fire to the enemy ship.
 	
-	Can be upgraded once at empty beacons, increasing the fire resistance and gaining other effects.</desc>
-    <cost>120</cost>			
+	Can be upgraded once at empty beacons, increasing the fire resistances and O2 production.</desc>
+    <cost>90</cost>			
     <rarity>5</rarity>
-    <stackable>false</stackable>
+	<!-- <value>1</value> This field is unneeded and can't fix system fire resistance. -->
+    <!-- <stackable>false</stackable> -->
+    <stackable>true</stackable>
 </augBlueprint>
 
-<!-- finally adds offensive tools on the enemy ship to actually win, and potential infinity loop. -->
-<augBlueprint name="DJMOD_COMBAT_SCORCH_SELF_3">
+<!-- Better res, facilitate infinity loop. -->
+<augBlueprint name="RK_SCORCH_SELF_3">
     <!-- <title>Molten Earth</title> -->
 	<title>Erupting Earth (T3)</title>
-    <desc>[Tier 3 Scorched Earth] On both ships, this RadiKal Scorch augment makes your crew take 70% less fire damage and get x3 extinguishing. While extinguishing, they also heal 2 HP/second +2 per powered level in O2.
-	In fire, they move and sabotage at x2 speed, deal x2 damage, and produce O2 like 2 Orchids.
-	Enemy crew and drones in fire also lose 7 HP/second.
+    <desc>(RK Scorch gear) [Tier 3 Scorched Earth] Your crew take 0.3x fire damage and get 3x extinguishing. While extinguishing, they also heal 2 HP/second, +2 per powered level in O2.
+		In fire, they also produce O2 like 3 Orchids.
 	
 	Activate from the Toggles menu to set any system room on your ship (or the whole ship) on fire to fight boarders.
 	
 	COMBO: Plasma Teleporter moves the augment's fire to the enemy ship.</desc>
-    <cost>175</cost>
+    <cost>120</cost>
     <rarity>0</rarity>
-    <stackable>false</stackable>
+	<!-- <value>1</value> This field is unneeded and can't fix system fire resistance. -->
+    <!-- <stackable>false</stackable> -->
+    <stackable>true</stackable>
 </augBlueprint>
 
 
 <augBlueprint name="DJMOD_COMBAT_SCORCH_ENEMY">
 	<title>Plasma Teleporter</title>
-	<desc>This combat augment from the RadiKal Scorch can set the enemy ship on fire at start of combat, outright winning some fights.
+	<desc>(RK Scorch gear) This combat augment can set the enemy ship on fire at start of combat, outright winning some fights.
 		Needs a fire source: RK firestarting equipment, Gouls, Lost Suns, Shells, Zoltans, or 3}.
 		[Uses 1{, ignites your O2 system.]
 
@@ -401,7 +513,7 @@ The first one allows widespread own ship fire control and survival, with heal. -
 
 <augBlueprint name="DJMOD_ENEMIES_CAN_BURN">
 	<title>Flammabilizer-Immune</title>
-	<desc>This RadiKal Scorch augment removes the fire immunity of enemies, and limits their fire resistance to 0%. Enemies who invert fire damage stop doing that. Vulnerable enemies (like Orchids) are unaffected.
+	<desc>(RK Scorch gear) Passively removes the fire immunity of enemies, and limits their fire resistance to 0%. Enemies who invert fire damage stop doing that. Vulnerable enemies (like Orchids) are unaffected.
 	Works on both ships.
 
 	Can be toggled anytime to make non-fireproof enemies take more fire damage instead.
@@ -412,7 +524,7 @@ The first one allows widespread own ship fire control and survival, with heal. -
 </augBlueprint>
 <augBlueprint name="DJMOD_ENEMIES_BURN_MORE">
 	<title>Flammabilizer-Damage</title>
-	<desc>This RadiKal Scorch augment makes enemies who can burn take 75% more fire damage, scaling up to 375% with 4 power in your Life Support (O2) system.
+	<desc>(RK Scorch gear) Passively makes enemies who can burn take 75% more fire damage, scaling up to 375% with 4 power in your Life Support (O2) system.
 	Works on both ships.
 	
 	Can be toggled anytime to make fireproof and fire-resistant enemies vulnerable to fire instead.
@@ -432,6 +544,41 @@ The first one allows widespread own ship fire control and survival, with heal. -
 </augBlueprint>
 </FTL>
 
+<!-- 
+=======================
+RadiKal Bam+Punk+Scorch ( = BPS)
+=======================
+ -->
+
+<augBlueprint name="RK_BPS_SURVEYOR">
+    <title>RK Surveyor</title>
+    <desc>(BPS gear) The ingenuity of RadiKals from all subfactions lets you deep-search most empty beacons, at a non-negligible cost.
+		
+		You can choose to retrieve/steal the random weapon or augment found, accelerating the fleet 1 turn.
+	</desc>
+    <cost>40</cost>
+    <rarity>4</rarity>
+    <stackable>false</stackable>
+</augBlueprint>
+</FTL>
+
+<!-- 
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+											QUEST AUGMENTS
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+-->
+
+<augBlueprint name="RKS_POLICE_WARRANT">
+	<title>Z. Police Warrant</title>
+	<desc>The Zoltan Police foothold in the RadiKal Sector gave you this authorization to shake down suspicious passerbys for their RK gear. You could also sell it.
+	[Provides blue options in some beacons of the RadiKal sector.]</desc>
+	<cost>40</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+</FTL>
 
 <!-- 
 [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
@@ -440,8 +587,41 @@ The first one allows widespread own ship fire control and survival, with heal. -
 [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
 [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
 -->
+<augBlueprint name="SHIP_RK"> 	<!-- for Tully S8 reaction -->
+	<title>RadiKal Cruiser</title>
+	<desc>YOU SHOULD NEVER SEE THIS</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+	<bp>0</bp>
+</augBlueprint>
 
-<!-- REFS MV 5.5.1
+<augBlueprint name="IS_RK_BAM_GEAR"> 	<!-- for gear checks in the RKS or to allow real internal augments. -->
+	<title>Bam Cruiser and gear</title>
+	<desc>YOU SHOULD NEVER SEE THIS</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+	<bp>0</bp>
+</augBlueprint>
+<augBlueprint name="IS_RK_PUNK_GEAR">
+	<title>Punk Cruiser and gear</title>
+	<desc>YOU SHOULD NEVER SEE THIS</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+	<bp>0</bp>
+</augBlueprint>
+<augBlueprint name="IS_RK_SCORCH_GEAR">
+	<title>Scorch Cruiser and gear</title>
+	<desc>YOU SHOULD NEVER SEE THIS</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+	<bp>0</bp>
+</augBlueprint>
+
+<!-- REFS MV 5.5.1:
 
 <augBlueprint name="UPG_ARM_DRONES">
 	<title>Recovery Arm</title>
@@ -508,7 +688,7 @@ The first one allows widespread own ship fire control and survival, with heal. -
 </augBlueprint>
 
 
-REF Darkest Desires for MV 5.5.1
+REF Darkest Desires for MV 5.5.1:
 
 <augBlueprint name="DD_INTERNAL_AUGMENT1">
 	<title>Matter Disperser</title>
@@ -520,9 +700,35 @@ REF Darkest Desires for MV 5.5.1
 -->
 <FTL>
 
+<augBlueprint name="EX_RK_CHOKING_IS_FINE">
+    <title>[X] Choking F.I.N.E.</title>
+    <desc>(RK Bam gear) Outlawed in many places like most of RK gear, the "Choking Fetish-Inducing Neural Entrancers" are often in-demand.
+		
+		Your crew take 0.75x suffocation damage.
+		While suffocating, they move, sabotage, repair and fight 1.5x better.
+		
+	[X] - As an external system upgrade, this augment will provide its normal effect but take up an augment slot. Can be converted for free to the internal version under the internal upgrade menu.
+	Does not stack with itself, but stacks with the internal version...
+	</desc>
+    <cost>75</cost>		
+    <rarity>0</rarity>
+    <stackable>false</stackable>
+</augBlueprint>
+<augBlueprint name="INTERNAL_RK_CHOKING_IS_FINE">
+    <title>Choking F.I.N.E.</title>
+    <desc>(RK Bam gear) Outlawed in many places like most of RK gear, the "Choking Fetish-Inducing Neural Entrancers" are often in-demand.
+		
+		Your crew take 0.75x suffocation damage.
+		While suffocating, they move, sabotage, repair and fight 1.5x better.
+	</desc>
+    <cost>75</cost>		
+    <rarity>0</rarity>
+    <stackable>false</stackable>
+</augBlueprint>
+
 <augBlueprint name="INTERNAL_DJMOD_DEMICLONER">
 	<title>Demicloners</title>
-	<desc>The RadiKal Punk infused these backpack-clonebay prototypes with dark energies. These try to resurrect your crew if they die (not in events) when you don't have a real Clonebay.
+	<desc>(RK Punk gear) These backpack-clonebay prototypes are infused with dark energies. They try to resurrect your crew if they die (not in events) when you don't have a real Clonebay.
 		At best, crew resurrect as their own lesser version (Soldier = default Human, etc.) If no lesser version exists, they become Morphs. When Morphs die, nothing happens.
 	</desc>
 	<cost>0</cost>
@@ -538,12 +744,12 @@ REF Darkest Desires for MV 5.5.1
 	[X] - As an external system upgrade, this augment will provide its normal effect but take up an augment slot. Can be converted for free to the internal version under the internal upgrade menu.
 	Does not stack with itself, but stacks with the internal version...
 	</desc>
-    <cost>65</cost>
+    <cost>50</cost>
     <rarity>5</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 
-<!-- Console: LOAD ELITE_SHIP_SLUG 8 to test. -->
+<!-- Console: LOAD ELITE_SHIP_SLUG 8 to retest. -->
 <augBlueprint name="INTERNAL_DJMOD_MC_PARALYZER">
 	<title>Mind Cooler</title>
 	<desc>When under the effects of Mind Control, your crew cannot fight, sabotage, or teleport away. Works on both ships.</desc>
@@ -552,20 +758,30 @@ REF Darkest Desires for MV 5.5.1
 	<stackable>false</stackable>
 </augBlueprint>
 
-<!-- Console: LOAD ELITE_SHIP_SLUG 8 to test. WORKS! -->
-<augBlueprint name="INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE">
-	<title>Mind Heater</title>
-	<desc>In fire, your crew are immune to Mind Control and stunned 50% shorter. Works on both ships.</desc>
+
+<augBlueprint name="INTERNAL_RK_IN_FIRE_CREWBOOSTS">
+	<title>Hellion Wraps</title>
+	<desc>2x crew speed and damage in fire on both ships.</desc>
 	<cost>0</cost>
 	<rarity>0</rarity>
 	<stackable>false</stackable>
 </augBlueprint>
+
+<!-- Console: LOAD ELITE_SHIP_SLUG 8 to retest. -->
+<augBlueprint name="INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE">
+	<title>Mind Heater</title>
+	<desc>In fire, your crew are immune to Mind Control, stunned 50% shorter, and reveal adjacent rooms. Works on both ships.</desc>
+	<cost>0</cost>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
 </FTL>
 
 <!--  
 [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
 [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
-											LAB MODIFICATIONS (none yet)
+									LAB MODIFICATIONS (none yet)
 [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
 [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
 
@@ -686,9 +902,10 @@ REFS (TRC v2.6 for MV v5.5.1) Fangtian, and Goedendag (and it's the art size bas
 	<!-- <tip>tip_tile_beam</tip> Error if TRC isnt patched in. -->
 	 <tip>tip_beams</tip>
 	<title>'Bada' Fissure Beam</title>
-	<short>'Bada Beam'</short>
-	<desc>Fissure Beams deal damage per tile rather than per room. 
-		This RadiKal Bam beam can hit up to 4 tiles, hard enough to destroy systems or ships.</desc>
+	<short>'Bada' Beam</short>
+	<desc>(RK Bam gear) Can hit 3-5 tiles, hard enough to destroy systems or ships.
+		Fissure Beams deal damage per tile rather than per room. 
+	</desc>
 	<tip>RK_lore_DJMOD_BAM_FISSUREBEAM</tip>
 	<damage>2</damage>
 	<sysDamage>0</sysDamage>
@@ -696,7 +913,7 @@ REFS (TRC v2.6 for MV v5.5.1) Fangtian, and Goedendag (and it's the art size bas
 	<sp>0</sp>
 	<fireChance>3</fireChance>
 	<breachChance>8</breachChance>
-	<stunChance>2</stunChance>
+	<stunChance>5</stunChance>
 	
 	<erosionChance>10</erosionChance>
 	<erosion>
@@ -713,7 +930,7 @@ REFS (TRC v2.6 for MV v5.5.1) Fangtian, and Goedendag (and it's the art size bas
 		</roomAnim>
 	</erosion>
 
-	<speed>6</speed>
+	<speed>5</speed>
 	<cooldown>19.5</cooldown>
 	<hullBust>1</hullBust>
 	<power>3</power>
@@ -723,7 +940,7 @@ REFS (TRC v2.6 for MV v5.5.1) Fangtian, and Goedendag (and it's the art size bas
 	<image>beam_contact</image>
 	
 	<!-- REFS Spetum 45, Spontoon 65, Voulge 100, TRC Fangtian 128, Pike 170. -->
-	<length>60</length>
+	<length>61</length>
 	<launchSounds>
 		<sound>beam1</sound>
 		<sound>beam1_2</sound>
@@ -731,8 +948,51 @@ REFS (TRC v2.6 for MV v5.5.1) Fangtian, and Goedendag (and it's the art size bas
 	<weaponArt>djmod_bam_fissurebeam</weaponArt>
 	<iconImage>beamH</iconImage>
 
-	<iconScale>0.9</iconScale>
+	<iconScale>0.9</iconScale>		<!-- Scales the weapon icon in equipment/store/hangar screens. Smaller numbers mean the image will be smaller there. -->
 </weaponBlueprint>
+
+<!-- Based on Leto aka MISSILES_1 -->
+<weaponBlueprint name="RK_UNLOADER">
+	<type>MISSILES</type>
+	<flavorType>'Unloader'</flavorType>
+	<tip>tip_missiles</tip>
+	<title>'Unloader' of missiles</title>
+	<short>Unloader</short>
+	<desc>(RK Bam gear) People ask "Why all these Letos in a supercooling rotary missile loader?" and the Bam answer "We got a great bulk discount."</desc>
+	<tip>lore_RK_UNLOADER</tip>
+	<damage>1</damage>
+	<missiles>1</missiles>
+	<speed>50</speed>
+	<shots>1</shots>
+	<sp>10</sp>
+	<fireChance>1</fireChance>
+	<breachChance>1</breachChance>
+	<stunChance>1</stunChance>
+	<cooldown>0.9</cooldown>
+	<power>3</power>
+	<cost>90</cost>
+	<bp>2</bp>
+	<rarity>5</rarity>
+	<image>missile_heavy_1</image>
+	<launchSounds>
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>rk_unloader</weaponArt>
+	<iconImage>missile</iconImage>
+</weaponBlueprint>
+
 
 <!-- Rain of Ion
 REFS MV v5.5.1: 
@@ -836,18 +1096,18 @@ Fastest base MV ion:
 	<iconImage>ion</iconImage>
 </weaponBlueprint>
 -->
-<weaponBlueprint name="DJMOD_RAIN_OF_ION">
+<weaponBlueprint name="RK_RAIN_OF_ION">
 	<type>BURST</type>
 	<flavorType>Ion Blast</flavorType>
 	<title>Rain of Ions</title>
-	<short>RainIons</short>
+	<short>Rain Ions</short>
 	<tip>tip_phase</tip>
 	<locked>1</locked>			<!-- what's that? -->
-	<desc>This RadiKal Punk inaccurate shotgun fires an accelerated phase ion, a heavy ion, a fire ion, a normal ion, a stun ion, and a radion (from fastest to slowest) all at once. Chains cooldown up to 8 times.
+	<desc>(RK Punk gear) This heavy duty shotgun fires an accelerated phase ion, a heavy ion, a fire ion, a normal ion, a stun ion, and a radion (from fastest to slowest) all at once. Chains cooldown up to 4 times.
 		Many weapons worth of blue options!
 	</desc>
-	<!-- <tooltip>Fires all 6 common ions in a radius; Cooldown 12 seconds.</tooltip>	They don't show with a <tip> set -->
-	<tip>RK_lore_DJMOD_RAIN_OF_ION</tip>
+	<!-- <tooltip>Fires all 6 common ions in a radius; Cooldown 12 seconds.</tooltip>	Tooltips don't show with a <tip> set -->
+	<tip>lore_RK_RAIN_OF_ION</tip>
 
 	<radius>55</radius>
 	<damage>0</damage>
@@ -860,17 +1120,12 @@ Fastest base MV ion:
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
 	<stunChance>0</stunChance>
-	<cooldown>12</cooldown>
+	<cooldown>16</cooldown>
 	<power>4</power>
 	<cost>120</cost>
 	<bp>3</bp>
-	<rarity>4</rarity>
-	<!-- REF Trifecta technique for shooting multiple types of stuff:
-	<projectiles>
-		<projectile count="1" fake="false" blueprint="TRIFECTA_LASER">laser_heavy</projectile>
-		<projectile count="2" fake="false">debris_med</projectile>
-		<projectile count="3" fake="true">debris_small</projectile>
-	</projectiles> -->
+	<rarity>5</rarity>
+	<!-- REF Trifecta from TRC. -->
 	<projectiles>
 		<projectile count="1" fake="false">ion_phase</projectile>
 		<projectile count="1" fake="false" blueprint="ION_1">ion_barrage</projectile>
@@ -887,8 +1142,8 @@ Fastest base MV ion:
 	<!-- intended fully chained: 8s -->
 	<boost>
 		<type>cooldown</type>
-		<amount>0.5</amount>
-		<count>8</count>
+		<amount>2</amount>
+		<count>4</count>
 	</boost>
 	<launchSounds>
 		<sound>ionShoot1</sound>
@@ -908,7 +1163,63 @@ Fastest base MV ion:
 	<missSounds>
 		<sound>miss</sound>
 	</missSounds>
-	<weaponArt>djmod_rain_of_ion</weaponArt>
+	<weaponArt>rk_rain_of_ion</weaponArt>
+	<iconImage>ion</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="RK_SHOTPHASER">		<!-- Based on MV's <weaponBlueprint name="ION_PIERCE_2"> -->
+	<type>BURST</type>
+	<flavorType>Ion Blast</flavorType>
+	<title>Shotphaser</title>
+	<short>Shotphaser</short>
+	<tip>tip_phase</tip>
+	<locked>1</locked>			<!-- what's that? -->
+	<desc>(RK Punk gear) This shotgun fires 3 greatly accelerated phase ions in a small radius, with a high chance to stun.
+		Phasers pierce shields, dealing ion damage for the first layer of shields, as well as additional damage to whatever system hit.
+	</desc>
+	<tip>lore_RK_SHOTPHASER</tip>
+
+	<radius>35</radius>
+	<damage>0</damage>
+	<ion>1</ion>
+	<!-- Default Phase Ion is slowest ion at 25 speed. -->
+	<speed>75</speed>
+	<shots>1</shots>
+	<sp>10</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<stunChance>6</stunChance>
+	<cooldown>12.5</cooldown>
+	<power>2</power>
+	<cost>70</cost>
+	<bp>3</bp>
+	<rarity>4</rarity>
+
+	<projectiles>
+		<projectile count="3" fake="false">ion_phase</projectile>
+	</projectiles>
+
+	<image>ion_phase</image>
+	<explosion>explosion_small_phase</explosion>
+	<launchSounds>
+		<sound>ionShoot1</sound>
+		<sound>ionShoot2</sound>
+		<sound>ionShoot3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>ionHit1</sound>
+		<sound>ionHit2</sound>
+		<sound>ionHit3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>ionShields1</sound>
+		<sound>ionShields2</sound>
+		<sound>ionShields3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>rk_shotphaser</weaponArt>
 	<iconImage>ion</iconImage>
 </weaponBlueprint>
 
@@ -920,11 +1231,11 @@ v5.5.1 rework: chains to lower cooldown so you CAN spray fire then.
 DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown so it's very different for them. -->
 <weaponBlueprint name="DJMOD_RAIN_OF_FIRE">
 	<type>BURST</type>
-	<flavorType>'Rain of Fire'</flavorType>
+	<flavorType>Rain of Fire</flavorType>
 	<tip>tip_missiles</tip>
 	<title>Rain of Fire</title>
-	<short>RainFire</short>
-	<desc>This RadiKal Scorch launcher roasts so well, it can keep airless rooms on fire when fully chained.
+	<short>Rain Fire</short>
+	<desc>(RK Scorch gear) This launcher roasts so well, it can keep airless rooms on fire when fully chained.
 		No damage but pierces shields and supershields.</desc>
 	<tip>RK_lore_DJMOD_RAIN_OF_FIRE</tip>
 	<drone_targetable>1</drone_targetable>
@@ -948,8 +1259,10 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 	<projectiles>
 		<projectile count="1" fake="false">djmod_napalm_missile</projectile>
 	</projectiles>
-	<!-- <image>kernel_projectile</image>		<projectiles> and <image> are mutually exclusive. If you declare one, 
-												DO NOT ! ! ! ! ! ! ! ! declare the other, or they will interfere with each other and either break the weapon or CRASH THE GAME.-->
+	<!-- <projectiles> and <image> are mutually exclusive. If you declare one, 
+	DO NOT ! ! ! ! ! ! ! ! declare the other, or they will interfere with each other and 
+	either break the weapon or CRASH THE GAME.-->
+	<!-- <image>kernel_projectile</image> -->
 	<boost>
 		<type>cooldown</type>
 		<amount>8</amount>
@@ -972,7 +1285,7 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 	</missSounds>
 	<weaponArt>djmod_rain_of_fire</weaponArt>
 	<iconImage>missile</iconImage>
-	<!--<iconScale>0.5</iconScale>             	UGLY! Scales the weapon icon in equipment/store/hangar screens. Smaller numbers mean the image will be smaller in the hangar -->
+	<!-- <iconScale>0.8</iconScale> -->
 </weaponBlueprint>
 
 <weaponBlueprint name="DJMOD_RAIN_OF_FIRE_ENEMYFIX">
@@ -1000,10 +1313,7 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 	<rarity>0</rarity>
 	<projectiles>
 		<projectile count="1" fake="false">djmod_napalm_missile</projectile>
-		<!-- <projectile count="1" fake="true">djmod_napalm_missile</projectile> -->
 	</projectiles>
-	<!-- <image>kernel_projectile</image>		<projectiles> and <image> are mutually exclusive. If you declare one, 
-												DO NOT ! ! ! ! ! ! ! ! declare the other, or they will interfere with each other and either break the weapon or CRASH THE GAME.-->
 	<launchSounds>
 		<sound>smallMissile1</sound>
 		<sound>smallMissile2</sound>
@@ -1029,7 +1339,7 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 	<title>'BPS Messenger'</title>
 	<short>'BPS Mess.'</short>
 	<tip>tip_chain_laser</tip>
-	<desc>A Piercing Heavy Laser boosted in the RadiKal sector: the Bam gave it hullbust and better stun, the Punk added ion and crew damage, and the Scorch replaced breach chance with guaranteed fire and chaining.</desc>
+	<desc>(RK BPS gear) A Piercing Heavy Laser boosted in the RadiKal sector: the Bam gave it hullbust and better stun, the Punk added ion and crew damage, and the Scorch replaced breach chance with guaranteed fire and chaining.</desc>
 	<tooltip>Cooldown chaining: 3 times.</tooltip>
 	<tip>RK_lore_DJMOD_LASER_BPS</tip>
 	<damage>2</damage>
@@ -1050,7 +1360,7 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 	<!-- <stunChance>9</stunChance> 	"Negates stun duration if you declare this."-->
 	<stun>4</stun>					<!-- Duration. Implies 100% stunChance. -->
 	
-	<cooldown>11</cooldown>			<!-- max chained intended : 5s -->
+	<cooldown>11</cooldown>			<!-- max chained intended : 5s = 1 ion dissipation time -->
 	<power>2</power>
 	<cost>100</cost>
 	<bp>2</bp>
@@ -1089,6 +1399,96 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 ARTILLERIES
 ============================================================== -->
 
+<!-- <weaponBlueprint name="ARTILLERY_FLAK"> -->
+<weaponBlueprint name="RK_ARTILLERY_FLAK_QUICK">
+	<type>BURST</type>
+	<flavorType>Physical Projectile Blast</flavorType>
+	<drone_targetable>1</drone_targetable>
+	<title>Flak Artillery</title>
+	<short>Artillery</short>
+	<desc>Artillery: Fires a burst of 4 flak projectiles that do 1 damage each.
+	Base Cooldown: 16</desc>
+	<tooltip>Artillery: [Cooldown: 16s] Burst of 4 flak projectiles.</tooltip>
+	<radius>35</radius>
+	<damage>1</damage>
+	<spin>720</spin>
+	<shots>4</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>1</breachChance>
+	<cooldown>16</cooldown>
+	<power>0</power>
+	<cost>75</cost>
+	<bp>10</bp>
+	<speed>26</speed>
+	<rarity>0</rarity>
+	<projectiles>
+		<projectile count="2" fake="false">debris_large</projectile>
+		<projectile count="2" fake="false">debris_med</projectile>
+		<projectile count="2" fake="true">debris_small</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>flak</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>flakImpact1</sound>
+		<sound>flakImpact2</sound>
+		<sound>flakImpact3</sound>
+		<sound>flakImpact4</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<iconImage>flak</iconImage>
+	<weaponArt>artillery_fed</weaponArt> 
+</weaponBlueprint>
+
+
+<weaponBlueprint name="DJMOD_ARTILLERY_LASER_PARTICLE">
+	<type>LASER</type>
+	<flavorType>Artillery</flavorType>
+	<title>Particle Artillery</title>
+	<short>Artillery</short>
+	<desc>Artillery: Fires 6 particle lasers that do 3 system damage each, pierce 1 shield and never miss.
+	Base Cooldown: 20</desc>
+	<tooltip>Artillery: [Cooldown: 20s] Fires 6 particle lasers that do 3 system damage each, pierce 1 shield and never miss.</tooltip>
+	<damage>0</damage>
+	
+	<sysDamage>3</sysDamage>
+	<accuracyMod>100</accuracyMod>
+	
+	<shots>6</shots>
+	<sp>1</sp>
+	<fireChance>1</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>20</cooldown>
+	<rarity>0</rarity>
+	
+    <image>laser_particle</image>
+	
+	<launchSounds>
+		<sound>laser_particle</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>artillery_fed</weaponArt>
+</weaponBlueprint>
+
+
 <!-- REF: 
 <weaponBlueprint name="ARTILLERY_REBEL_MISSILE"> -->
 <weaponBlueprint name="DJMOD_ARTILLERY_MISSILE_FIRE">
@@ -1098,7 +1498,7 @@ ARTILLERIES
 	<short>Artillery</short>
 	<desc>Artillery: Fires 3 missiles that do 1 hull damage each, always start a fire and never miss.
 	Base Cooldown: 18</desc>
-	<tooltip>Artillery: Fires 3 missiles that do 1 hull damage each, always start a fire and never miss.</tooltip>
+	<tooltip>Artillery: [Cooldown: 18s] Fires 3 missiles that do 1 hull damage each, always start a fire and never miss.</tooltip>
 	<damage>1</damage>
 	
 	<missiles>0</missiles>
@@ -1133,49 +1533,14 @@ ARTILLERIES
 	</missSounds>
 	<weaponArt>artillery_fed</weaponArt>
 </weaponBlueprint>
-
-<weaponBlueprint name="DJMOD_ARTILLERY_LASER_PARTICLE">
-	<type>LASER</type>
-	<flavorType>Artillery</flavorType>
-	<title>Particle Artillery</title>
-	<short>Artillery</short>
-	<desc>Artillery: Fires 6 particle lasers that do 3 system damage each, pierce 1 shield and never miss.
-	Base Cooldown: 20</desc>
-	<tooltip>Artillery: Fires 6 particle lasers that do 3 system damage each, pierce 1 shield and never miss.</tooltip>
-	<damage>0</damage>
-	
-	<sysDamage>3</sysDamage>
-	<accuracyMod>100</accuracyMod>
-	
-	<shots>6</shots>
-	<sp>1</sp>
-	<fireChance>1</fireChance>
-	<breachChance>0</breachChance>
-	<cooldown>20</cooldown>
-	<rarity>0</rarity>
-	
-    <image>laser_particle</image>
-	
-	<launchSounds>
-		<sound>laser_particle</sound>
-	</launchSounds>
-	<hitShipSounds>
-		<sound>hitHull1</sound>
-	</hitShipSounds>
-	<hitShieldSounds>
-		<sound>hitShield1</sound>
-		<sound>hitShield2</sound>
-		<sound>hitShield3</sound>
-	</hitShieldSounds>
-	<missSounds>
-		<sound>miss</sound>
-	</missSounds>
-	<weaponArt>artillery_fed</weaponArt>
-</weaponBlueprint>
 </FTL>
 
 <!-- 
-SPECIAL WEAPONS
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+			SPECIAL WEAPONS
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
  -->
 
 <weaponBlueprint name="RK_WEAPONLIKE_SURGEBOMB">
@@ -1187,8 +1552,8 @@ SPECIAL WEAPONS
 	<desc>SHOULD NEVER SEE. For surge-powered crew ability. Based on ANCIENT_BOMB.</desc>
 	<tooltip>Should Never See This Description.</tooltip>
 	<damage>1</damage>
-	<sysDamage>1</sysDamage>
-	<persDamage>1</persDamage>
+	<sysDamage>0</sysDamage>
+	<persDamage>0</persDamage>
 	<accuracyMod>30</accuracyMod>
 	<missiles>0</missiles>
 	<stun>3</stun>
@@ -1298,83 +1663,89 @@ SPECIAL WEAPONS
 	</droneList>
 	<health amount="30" />
 	<maxPower amount="8" />
-	
-	<!-- <systemList>
-		<artillery power="1" max="4" room="18" start="false" weapon="ARTILLERY_FED" img="room_artillery_1x1" />
-		<battery power="1" max="2" room="1" start="false" img="room_battery_10" />
-		<cloaking power="1" room="9" start="false" img="room_cloaking_10" />
-		<clonebay power="1" room="3" start="true">
+	<!-- crew in hyperspace.xml with names & positions -->
+	<aug name="LOCKED_DJMOD_COMBAT_SHIPVORE_RAM" />
+	<aug name="FUEL_CONSERVER" />
+	<aug name="CRATE_FUEL" />
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_DJMOD_RAMMER_2" layout="djmod_rammer_b" img="djmod_rammer_b">
+	<class>RadiKal Bam Cruiser</class>
+	<name>RAMBADAM</name>
+	<desc>This RadiKal Bam flagship sacrifices various defenses for quick, blind, hardly sustainable destruction. Max weapons power: 10.</desc>
+	<unlock>Win with layout A to unlock this ship.</unlock>
+	<systemList>
+		<artillery max="5" power="2" room="3" start="true" weapon="RK_ARTILLERY_FLAK_QUICK" img="room_artillery_6" />
+		<battery max="2" power="1" room="9" start="false" img="room_battery_2" />
+		<cloaking power="1" room="15" start="false" img="room_cloaking_8" />
+		<clonebay power="1" room="14" start="true">
 			<slot>
 				<number>0</number>
 			</slot>
 		</clonebay>
-		<doors power="1" room="6" start="true" img="room_doors_7">
+		<doors max="2" power="1" room="1" start="false" img="room_doors_10">
 			<slot>
 				<direction>up</direction>
-				<number>1</number>
+				<number>0</number>
 			</slot>
 		</doors>
-		<drones power="1" max="8" room="8" start="true" img="room_drones" />
-		<engines power="3" max="8" room="10" start="true" img="room_engines_8">
+		<drones max="8" power="2" room="16" start="true" img="room_drones_14" />
+		<engines max="5" power="1" room="6" start="true" img="room_engines_3">
 			<slot>
-				<direction>left</direction>
+				<direction>right</direction>
 				<number>1</number>
 			</slot>
 		</engines>
-		<hacking power="1" room="15" start="false" img="room_hacking" />
-		<medbay power="2" room="3" start="true" img="room_medbay_4">
+		<hacking power="1" room="17" start="false" img="room_hacking_11" />
+		<medbay power="1" room="14" start="false" img="room_medbay_4">
 			<slot>
 				<number>0</number>
 			</slot>
 		</medbay>
-		<mind power="1" room="11" start="false" img="room_mind" />
-		<oxygen power="1" room="5" start="true" img="room_oxygen_orchid_3" />
-		<pilot power="1" room="0" start="true" img="room_pilot_7">
+		<mind power="1" room="8" start="false" img="room_mind_9" />
+		<oxygen power="1" room="18" start="false" img="room_oxygen_6" />
+		<pilot max="2" power="1" room="5" start="true" img="room_pilot_2">
 			<slot>
 				<direction>right</direction>
 				<number>1</number>
 			</slot>
 		</pilot>
-		<sensors power="2" room="16" start="true" img="room_sensors">
-			<slot>
-				<direction>down</direction>
-				<number>1</number>
-			</slot>
-		</sensors>
-		<shields power="2" max="8" room="2" start="true" img="room_shields_7">
+		<sensors power="1" room="0" start="false" img="room_sensors">
 			<slot>
 				<direction>up</direction>
 				<number>1</number>
 			</slot>
+		</sensors>
+		<!-- Add-ons with alternative systems like Lily's Innovations with its "Ablative Armor" would
+		NOT inherit a Shields limit, ruining the point. -->
+		<shields max="8" power="2" room="13" start="true" img="room_shields_5">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
 		</shields>
-		<teleporter power="1" room="13" start="false" />
-		<temporal power="1" max="3" room="4" start="false" img="room_temporal_3" />
-		<weapons power="2" max="8" room="14" start="true" img="room_weapons">
+		<teleporter power="1" room="4" start="false" />
+		<temporal power="1" room="11" start="true" img="room_temporal_3" />
+		<weapons max="10" power="4" room="2" start="true" img="room_weapons_8">
 			<slot>
 				<direction>up</direction>
 				<number>1</number>
 			</slot>
 		</weapons>
 	</systemList>
-	<weaponSlots>2</weaponSlots>
-	<droneSlots>3</droneSlots>
-	<weaponList missiles="0" count="2">
-		<weapon name="LASER_HEAVY_PIERCE" />
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="8" count="4">
+		<weapon name="DJMOD_BAM_FISSUREBEAM" />
+		<weapon name="MISSILES_2" />
 	</weaponList>
-	<droneList drones="10" count="3">
-		<drone name="DRONE_SHIELD_POWERLESS" />
+	<droneList drones="8" count="2">
+		<drone name="COMBAT_1" />
+		<drone name="MENDER" />
 	</droneList>
-	<health amount="30" />
-	<maxPower amount="8" /> -->
-
-	<!-- <crewCount amount="1" class="mantis_free" />
-	<crewCount amount="1" class="shell_mechanic" />
-	<crewCount amount="1" class="human_soldier" />
-	<crewCount amount="1" class="human_medic" />
-	<crewCount amount="1" class="lanius" /> -->
+	<health amount="25" />
+	<maxPower amount="10" />
 	<aug name="LOCKED_DJMOD_COMBAT_SHIPVORE_RAM" />
-	<aug name="FUEL_CONSERVER" />
-	<aug name="CRATE_FUEL" />
 </shipBlueprint>
 
 
@@ -1451,9 +1822,6 @@ SPECIAL WEAPONS
 	</droneList>
 	<health amount="30" />
 	<maxPower amount="7" />
-	<!-- <crewCount amount="1" class="zoltan_devotee" />
-	<crewCount amount="1" class="engi_separatist" />
-	<crewCount amount="1" class="phantom_mare_alpha" /> -->
 	<aug name="DJMOD_HACK_FLEET" />
 </shipBlueprint>
 
@@ -1461,7 +1829,7 @@ SPECIAL WEAPONS
 	<class>RadiKal Punk Cruiser</class>
 	<name>NuH4RM0NY</name>
 	<desc>The bootleg Harmony that redesigned this ship unprompted insists that it's "Peak design that it's sad you bio-stains can't appreciate!!". Keep away from the actual Engi Harmony. Delete after victory.</desc>
-	<unlock>Win with the type A.</unlock>
+	<unlock>Win with layout A to unlock this ship.</unlock>
 	<systemList>
 		<artillery power="1" max="4" room="17" start="true" weapon="DJMOD_ARTILLERY_LASER_PARTICLE" img="room_artillery_2" />
 		<battery power="1" room="18" start="false" img="room_battery_14" />
@@ -1529,10 +1897,6 @@ SPECIAL WEAPONS
 	</droneList>
 	<health amount="30" />
 	<maxPower amount="7" />
-	<!-- <crewCount amount="1" class="engi_separatist" />
-	<crewCount amount="1" class="orchid_caretaker" />
-	<crewCount amount="1" class="engi" />
-	<crewCount amount="1" class="engi" /> -->
 	<aug name="DJMOD_OWN_HARMONY_ON" />
 </shipBlueprint>
 
@@ -1607,12 +1971,7 @@ SPECIAL WEAPONS
 	<droneList drones="0" count="2" />
 	<health amount="25" />
 	<maxPower amount="8" />
-	<!-- <crewCount amount="1" class="phantom_goul" />
-	<crewCount amount="1" class="rock_commando" />
-	<crewCount amount="1" class="human" />
-	<crewCount amount="1" class="human" />
-	<crewCount amount="1" class="human" /> -->
-	<aug name="DJMOD_COMBAT_SCORCH_SELF" />
+	<aug name="RK_SCORCH_SELF" />
 	<aug name="DJMOD_ENEMIES_CAN_BURN" />
 </shipBlueprint>
 

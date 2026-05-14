@@ -86,7 +86,7 @@ New candidate: FILLER_DISTRESS_COMBAT. It's rebels, but will do. NO WORK.
 	<text>"Sorry about that interruption, a member of my crew suddenly went rogue but we've dealt with it. Anyways, we have something special I've been keeping for smartasses like you. Give me a sec."
 	They just threw a Magnetic Payload at your engines!</text>
 	<!-- <ship load="SHIP_PIRATE_RESCUE" hostile="true"/> -->
-	 <ship hostile="true"/>
+	<ship hostile="true"/>
 	<damage amount="4" system="engines" effect="random"/>
 	
 	<choice hidden="true">

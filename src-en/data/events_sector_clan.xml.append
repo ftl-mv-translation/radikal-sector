@@ -107,7 +107,7 @@
 	<item_modify>
         <item type="scrap" min="-90" max="-80"/>
     </item_modify>
-    <augment name="DJMOD_DEFENSE_REMOVER"/>
+    <augment name="DJMOD_COMBAT_OFFENSE_DISABLER"/>
 </mod-append:event>
 </mod:findName>
 <mod:findName type = "eventList" name = "JAMMER_SALESMAN_DEFENSIVE_SYSTEMS">
@@ -115,6 +115,6 @@
 	<item_modify>
         <item type="scrap" min="-67" max="-60"/>
     </item_modify>
-    <augment name="DJMOD_COMBAT_OFFENSE_DISABLER"/>
+    <augment name="DJMOD_DEFENSE_REMOVER"/>
 </mod-append:event>
 </mod:findName>
