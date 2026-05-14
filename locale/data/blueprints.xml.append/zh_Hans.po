@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-05-14 17:22+0000\n"
-"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/radikal-sector/datablueprintsxmlappend/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -134,10 +134,13 @@ msgid ""
 msgstr ""
 
 #: src-en/data/blueprints.xml.append:155
+#, fuzzy
 msgid "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/desc"
 msgstr ""
-"厄普托是在特制的拉迪卡尔灼烧高压釜中稳定下来的阿尔法食尸鬼，其特性因此改变。\n"
-"\t\t你当前舱室内的系统免疫火焰。当前舱室内的任何敌方系统受到的火焰伤害提高 100%。\n"
+"厄普托是在特制的拉迪卡尔灼烧高压釜中稳定下来的阿尔法食尸鬼，其特性因此改变"
+"。\n"
+"\t\t你当前舱室内的系统免疫火焰。当前舱室内的任何敌方系统受到的火焰伤害提高 "
+"100%。\n"
 "\t\t自身可以引发约克托耀斑。那是一种非常小的太阳耀斑，距离也极其近。\n"
 "\n"
 "\t继承的幻灵属性：不受环境伤害，具有无视舱门特性。"
@@ -409,11 +412,15 @@ msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_SCORCH_SELF\"]/title
 msgstr "焦土（T1）"
 
 #: src-en/data/blueprints.xml.append:451
+#, fuzzy
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_SCORCH_SELF\"]/desc"
 msgstr ""
-"在双方飞船上，这款拉迪卡尔·灼烧增强部件使你的船员受到的火焰伤害降低 40%，并获得 3 倍的灭火速度。在灭火时，他们还会每秒恢复 2 生命值，再加上氧气系统每升级一级 +2。\n"
+"在双方飞船上，这款拉迪卡尔·灼烧增强部件使你的船员受到的火焰伤害降低 40%，并获"
+"得 3 倍的灭火速度。在灭火时，他们还会每秒恢复 2 生命值，再加上氧气系统每升级"
+"一级 +2。\n"
 "\t\n"
-"\t从切换菜单中激活，可将你飞船上的任意系统舱室（或整艘飞船）点燃，以对抗登舰者。\n"
+"\t从切换菜单中激活，可将你飞船上的任意系统舱室（或整艘飞船）点燃，以对抗登舰"
+"者。\n"
 "\t\n"
 "\t组合：等离子传送器可将此增强部件引发的火焰转移到敌舰上。\n"
 "\t\n"
