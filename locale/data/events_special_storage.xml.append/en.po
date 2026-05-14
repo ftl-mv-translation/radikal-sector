@@ -33,7 +33,7 @@ msgstr "(Offense Disabler) Disable the enemy's offense!"
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[5]/mod-"
 "append:choice/text"
-msgstr "(Enigmashin) Try to delay the rebels!"
+msgstr "(Vulnerabilizer) Start removing the enemy's defense!"
 
 #: src-en/data/events_special_storage.xml.append:439
 msgid ""
@@ -81,7 +81,7 @@ msgstr "(Flammabilizer) Set the state of the augment. [Current mode: Damage]"
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[13]/mod-"
 "append:choice/text"
-msgstr "(Scorched Earth series) Set your ship on fire to fight boarders!"
+msgstr "(Persistence Shield) Regenerate your Supershields!"
 
 #: src-en/data/events_special_storage.xml.append:538
 msgid ""
@@ -99,13 +99,13 @@ msgstr "(Shipvore Ram) Reinforce to resist Full Power use."
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[16]/mod-"
 "append:choice/text"
-msgstr "(Scorched Earth) Upgrade to Blazing Earth."
+msgstr "(Charged Belts) Scrap it."
 
 #: src-en/data/events_special_storage.xml.append:574
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[17]/mod-"
 "append:choice/text"
-msgstr "(Blazing Earth) Upgrade to Erupting Earth."
+msgstr "(Persistence Shield) Rebuild the capacitor."
 
 #: src-en/data/events_special_storage.xml.append:582
 msgid ""
@@ -130,7 +130,8 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/text"
 msgstr ""
 "Are you sure you want to do this?\n"
-"\t[Ram the enemy ship, high chance to repair your ship. WARNING: may go wrong!]"
+"\t[Ram the enemy ship, high chance to repair your ship.\n"
+"\tWARNING: may go wrong!]"
 
 #: src-en/data/events_special_storage.xml.append:652
 msgid ""
@@ -1214,7 +1215,8 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/text"
 msgstr ""
 "Prepare to ram again?\n"
-"\t[Ram the enemy ship, high chance to repair your ship. Warning: may go wrong!]"
+"\t[Ram the enemy ship, high chance to repair your ship.\n"
+"\tWarning: may go wrong!]"
 
 #: src-en/data/events_special_storage.xml.append:1979
 msgid ""
@@ -1404,93 +1406,93 @@ msgstr "No need. Return to the toggle menu."
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/text"
 msgstr ""
-"Are you sure you want to do this?\n"
-"\t[Set your own ship on fire! Usually to repel boarders.]"
+"Are you sure you want to do this?\t[Set your own ship on fire! Usually to repel boarders.]\n"
+"\t\tBurn them out of..."
 
 #: src-en/data/events_special_storage.xml.append:2204
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"artillery\"]/text"
-msgstr "Burn them out of the Artillery room!"
+msgstr "The Artillery room!"
 
 #: src-en/data/events_special_storage.xml.append:2208
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"battery\"]/text"
-msgstr "Burn them out of the Battery room!"
+msgstr "The Battery room!"
 
 #: src-en/data/events_special_storage.xml.append:2212
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"cloaking\"]/text"
-msgstr "Burn them out of the Cloaking room!"
+msgstr "The Cloaking room!"
 
 #: src-en/data/events_special_storage.xml.append:2216
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"clonebay\"]/text"
-msgstr "Burn them out of the Clonebay!"
+msgstr "The Clonebay!"
 
 #: src-en/data/events_special_storage.xml.append:2220
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"doors\"]/text"
-msgstr "Burn them out of the Door Control room!"
+msgstr "The Door Control room!"
 
 #: src-en/data/events_special_storage.xml.append:2224
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"drones\"]/text"
-msgstr "Burn them out of the Drone Control room!"
+msgstr "The Drone Control room!"
 
 #: src-en/data/events_special_storage.xml.append:2228
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"engines\"]/text"
-msgstr "Burn them out of the Engines room!"
+msgstr "The Engines room!"
 
 #: src-en/data/events_special_storage.xml.append:2232
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"hacking\"]/text"
-msgstr "Burn them out of the Hacking room!"
+msgstr "The Hacking room!"
 
 #: src-en/data/events_special_storage.xml.append:2236
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"medbay\"]/text"
-msgstr "Burn them out of the Medbay!"
+msgstr "The Medbay!"
 
 #: src-en/data/events_special_storage.xml.append:2240
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"mind\"]/text"
-msgstr "Burn them out of the Mind Control room!"
+msgstr "The Mind Control room!"
 
 #: src-en/data/events_special_storage.xml.append:2244
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"oxygen\"]/text"
-msgstr "Burn them out of the Life Support (O2) room!"
+msgstr "The Life Support (O2) room!"
 
 #: src-en/data/events_special_storage.xml.append:2248
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"pilot\"]/text"
-msgstr "Burn them out of the Piloting room!"
+msgstr "The Piloting room!"
 
 #: src-en/data/events_special_storage.xml.append:2252
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"sensors\"]/text"
-msgstr "Burn them out of the Sensors room!"
+msgstr "The Sensors room!"
 
 #: src-en/data/events_special_storage.xml.append:2256
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"shields\"]/text"
-msgstr "Burn them out of the Shields room!"
+msgstr "The Shields room!"
 
 #: src-en/data/events_special_storage.xml.append:2260
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"teleporter\"]/text"
-msgstr "Burn them out of the Teleporter room!"
+msgstr "The Teleporter room!"
 
 #: src-en/data/events_special_storage.xml.append:2264
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"temporal\"]/text"
-msgstr "Burn them out of the Temporal room!"
+msgstr "The Temporal room!"
 
 #: src-en/data/events_special_storage.xml.append:2268
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"weapons\"]/text"
-msgstr "Burn them out of the Weapons room!"
+msgstr "The Weapons room!"
 
 #: src-en/data/events_special_storage.xml.append:2277
 msgid ""
@@ -2785,7 +2787,7 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_OFFENSE_DISABLER\"]/text"
 msgstr ""
 "Are you sure you want to do this?\n"
-"\t[Disables enemy offense, they get it back increasingly quickly. Uses 3 | and 3 reactor power]"
+"\t[Disables enemy offense, they get it back increasingly quickly. Uses 2 | and 3 reactor power]"
 
 #: src-en/data/events_special_storage.xml.append:4960
 msgid ""
@@ -3250,13 +3252,13 @@ msgstr "RadiKal tech."
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[1]/text"
-msgstr "Demicloners [Installed]"
+msgstr "Choking F.I.N.E. [Installed]"
 
 #: src-en/data/events_special_storage.xml.append:5829
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[2]/text"
-msgstr "Demicloners [Not Installed]"
+msgstr "Choking F.I.N.E. [Not Installed]"
 
 #: src-en/data/events_special_storage.xml.append:5835
 msgid ""
@@ -3373,14 +3375,15 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\""
 " and @lvl=\"1\"]/text"
 msgstr ""
-"RK Scorch \"Mind Heater\": In fire, your crew are immune to Mind Control and"
-" stunned 50% shorter, on both ships. [ALREADY INSTALLED]"
+"RK Scorch \"Mind Heater\": In fire, your crew are immune to Mind Control, "
+"stunned 50% shorter, and reveal adjacent rooms, on both ships. [ALREADY "
+"INSTALLED]"
 
 #: src-en/data/events_special_storage.xml.append:5923
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\""
 " and @lvl=\"0\"]/text"
-msgstr "Mind Heater. [Cost: 25~, 1{]"
+msgstr "Mind Heater. [Cost: 25~, 1{, 1|]"
 
 #: src-en/data/events_special_storage.xml.append:5928
 msgid ""
@@ -3415,8 +3418,8 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
 " and @lvl=\"0\"]/text"
 msgstr ""
-"This upgrade is unavailable. You need any RadiKal Punk (or BPS) "
-"weapon/augment/crew."
+"This upgrade is unavailable. You need any RadiKal Bam (or BPS) "
+"weapon/augment/crew/ship."
 
 #: src-en/data/events_special_storage.xml.append:6004
 msgid ""
@@ -3470,7 +3473,7 @@ msgid ""
 " and @lvl=\"0\"]/text"
 msgstr ""
 "This upgrade is unavailable. You need any RadiKal Punk (or BPS) "
-"weapon/augment/crew."
+"weapon/augment/crew/ship."
 
 #: src-en/data/events_special_storage.xml.append:6053
 msgid ""
@@ -3508,7 +3511,7 @@ msgid ""
 " and @lvl=\"0\"]/text"
 msgstr ""
 "This upgrade is unavailable. You need any RadiKal Punk (or BPS) "
-"weapon/augment/crew."
+"weapon/augment/crew/ship."
 
 #: src-en/data/events_special_storage.xml.append:6086
 msgid ""
@@ -3546,13 +3549,13 @@ msgid ""
 " and @lvl=\"0\"]/text"
 msgstr ""
 "This upgrade is unavailable. You need any RadiKal Scorch (or BPS) "
-"weapon/augment/crew."
+"weapon/augment/crew/ship."
 
 #: src-en/data/events_special_storage.xml.append:6120
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_IN_FIRE_CREWBOOSTS\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
 " and @lvl=\"1\"]/text"
-msgstr "Perform the upgrade. [Cost: 25~, 1{]"
+msgstr "Perform the upgrade. [Cost: 55~, 1{, 1}]"
 
 #: src-en/data/events_special_storage.xml.append:6122
 msgid ""
@@ -3576,7 +3579,7 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/text"
 msgstr ""
 "You are about to install the Mind Heater upgrade.\n"
-"\t[Effects: In fire, your crew are immune to Mind Control and stunned 50% shorter, on both ships.]"
+"\t[Effects: In fire, your crew are immune to Mind Control, stunned 50% shorter, and reveal adjacent rooms, on both ships.]"
 
 #: src-en/data/events_special_storage.xml.append:6150
 msgid ""
@@ -3584,13 +3587,13 @@ msgid ""
 " and @lvl=\"0\"]/text"
 msgstr ""
 "This upgrade is unavailable. You need any RadiKal Scorch (or BPS) "
-"weapon/augment/crew."
+"weapon/augment/crew/ship."
 
 #: src-en/data/events_special_storage.xml.append:6154
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
 " and @lvl=\"1\"]/text"
-msgstr "Perform the upgrade. [Cost: 25~, 1{]"
+msgstr "Perform the upgrade. [Cost: 25~, 1{, 1|]"
 
 #: src-en/data/events_special_storage.xml.append:6156
 msgid ""

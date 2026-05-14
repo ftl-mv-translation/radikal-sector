@@ -40,8 +40,8 @@ msgstr "Fleet stopped for testing."
 #: src-en/data/events.xml.append:232
 msgid "data/events.xml.append$//event[@name=\"RKDEV\"]/text"
 msgstr ""
-"quick testing. Other commands: DJFLEET, TEST_RKSHOP, RKSHOP_SCORCH, "
-"RKSHOP_SNIPER, RK_DEMI, DJCOORDS, DJNOHAZARDS."
+"Testing. Other events: DJFLEET, RKSHOP, RKSHOP_SCORCH, RKSHOP_SNIPER, "
+"RKSHOP_SYLVAN, RK_DEMI, DJCOORDS, DJNOHAZARDS."
 
 #: src-en/data/events.xml.append:235
 msgid "data/events.xml.append$//event[@name=\"RKDEV\"]/crewMember"
@@ -466,7 +466,7 @@ msgstr ""
 #: src-en/data/events.xml.append:653
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/choice[@req=\"DJMOD_BAM_FISSUREBEAM\"]/text"
-msgstr "Sell them your Bada beam for 155~."
+msgstr "Sell them your Bada beam for 165~."
 
 #: src-en/data/events.xml.append:655
 msgid ""
@@ -658,7 +658,7 @@ msgstr "\"Well if you have any, sell us some. Please?\""
 #: src-en/data/events.xml.append:796
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[1]/event/choice[@req=\"DJMOD_BAM_FISSUREBEAM\"]/text"
-msgstr "Sell them your Bada beam for 155~."
+msgstr "Sell them your Bada beam for 165~."
 
 #: src-en/data/events.xml.append:798
 msgid ""
@@ -1099,9 +1099,7 @@ msgstr "Continue..."
 msgid "data/events.xml.append$//event[@name=\"ZOLTAN_POLICECHECK_RK\"]/text"
 msgstr ""
 "As soon as you get here, you notice that you're surrounded by a small Zoltan fleet intercepting every ship passing through here. An urgent hail from a heavily armed Zoltan Elite comes through. \n"
-"\tNeedless to say, it would look suspicious not to take the hail.\n"
-"\t\n"
-"\t[Developer note: This buggy quest will be reworked soon. Consider it a forced fight, or engage with it knowing the risks.]"
+"\t\tNeedless to say, it would look suspicious not to take the hail."
 
 #: src-en/data/events.xml.append:1191
 msgid ""
@@ -1112,9 +1110,10 @@ msgstr "Answer it."
 msgid ""
 "data/events.xml.append$//event[@name=\"ZOLTAN_POLICECHECK_RK\"]/choice[1]/event/text"
 msgstr ""
-"\"As you may know if you're not a brainless savage, this sector has been providing armament to the Duskbringers. We have recently started tackling this problem.\n"
-"\t\t\tLike any vessel in transit in a lawless armament-manufacturing area like this one, you will be subjected to the mandatory thorough search for said armament. The fight against illegal weapon proliferation starts with you. Do not resist.\"\n"
-"\t\t\tZoltans consider this area a very serious issue. If they find any RadiKal equipment, it may be confiscated, or you might be fined based on how many you're carrying."
+"\"As you may know if you're not a brainless savage, this lawless sector has been providing armament to the Duskbringers. We have recently started tackling this problem.\n"
+"\t\t\t\tLike any vessel in transit in a lawless armament-manufacturing area like this one, you will be subjected to the mandatory thorough search for said armament. The fight against illegal weapon proliferation starts with you. Do not resist.\"\n"
+"\t\t\t\t\n"
+"\t\t\t\tZoltans consider this area a very serious issue. If they find any RadiKal equipment a fine must be paid, based on how many you're carrying."
 
 #: src-en/data/events.xml.append:1200
 msgid ""
@@ -1177,7 +1176,7 @@ msgid ""
 "data/events.xml.append$//event[@name=\"ZOLTAN_POLICECHECK_RK\"]/choice[1]/event/choice[4]/event/text"
 msgstr ""
 "\"Thanks to the merciful recent amendment 3473-B delta, captains may choose to participate in the funding of control vessels like this one, and report to the closest Zoltan police station within 12 jump cycles instead of immediately submitting to the search.\"\n"
-"\t\t\t\t\tEven though you have no intention of taking that detour, they would leave you alone for now."
+"\t\t\t\t\t\tEven though you have no intention of taking that detour, they would leave you alone for now."
 
 #: src-en/data/events.xml.append:1254
 msgid ""
@@ -1188,8 +1187,8 @@ msgstr "Pay up."
 msgid ""
 "data/events.xml.append$//event[@name=\"ZOLTAN_POLICECHECK_RK\"]/choice[1]/event/choice[4]/event/choice[1]/event/text"
 msgstr ""
-"You begrudgingly transfer the scrap but manage to fake a smile, taking "
-"comfort in the fact that your equipment's safe... at least for now."
+"You begrudgingly transfer the scrap but manage to not look mad about it, "
+"taking comfort in the fact that your equipment's safe... at least for now."
 
 #: src-en/data/events.xml.append:1264
 msgid ""
@@ -1199,14 +1198,14 @@ msgstr "Agree to the search."
 #: src-en/data/events.xml.append:1273
 msgid ""
 "data/events.xml.append$//event[@name=\"ZOLTAN_POLICECHECK_RK\"]/choice[2]/text"
-msgstr "Try to ignore it and just pass through. [Recommended]"
+msgstr "Try to ignore it and just pass through."
 
 #: src-en/data/events.xml.append:1275
 msgid ""
 "data/events.xml.append$//event[@name=\"ZOLTAN_POLICECHECK_RK\"]/choice[2]/event/text"
 msgstr ""
 "\"You admission of guilt in facilitating terrorist operations has been recorded and filed for the trial of any surviving spouse(s) and/or heir(s). You will not escape the law.\"\n"
-"\t\t\tSounds like you'll have to fight your way through. In fact you wonder how you managed to convince yourself this could end any differently."
+"\t\t\t\tSounds like you'll have to fight your way through. You wonder whether having an insider in your crew could have changed this outcome."
 
 #: src-en/data/events.xml.append:1281
 msgid ""
@@ -1297,7 +1296,7 @@ msgid ""
 " and @lvl=\"2\"]/event/text"
 msgstr ""
 "\"Two illegal pieces of gear. You should really know better than to give up ethics for power.\"\n"
-"\t\t\tSupposedly you can get some of your scrap back by surrendering your illegal gear at the Police Station, but somehow you doubt that. It might be worth it to pay them a visit regardless."
+"\t\t\t\tSupposedly you can get some of your scrap back by surrendering your illegal gear at the Police Station, but somehow you doubt that. It might be worth it to pay them a visit regardless."
 
 #: src-en/data/events.xml.append:1357
 msgid ""
@@ -1310,8 +1309,8 @@ msgid ""
 "data/events.xml.append$//event[@name=\"ZOLTAN_POLICECHECK_RK_FINED\"]/choice[@req=\"DJMOD_SUM_RADIKAL_GEAR\""
 " and @lvl=\"3\"]/event/text"
 msgstr ""
-"\"Three illegal pieces of gear... The federation really hires any random scum these days. We will be notifying your leadership.\"\n"
-"\t\t\tSupposedly you can get some of your scrap back by surrendering your illegal gear at the Police Station, but somehow you doubt that. It might be worth it to pay them a visit regardless."
+"\"Three illegal pieces of gear... The federation really hires any random scum these days.\"\n"
+"\t\t\t\tSupposedly you can get some of your scrap back by surrendering your illegal gear at the Police Station, but somehow you doubt that. It might be worth it to pay them a visit regardless."
 
 #: src-en/data/events.xml.append:1371
 msgid ""
@@ -1324,8 +1323,8 @@ msgid ""
 "data/events.xml.append$//event[@name=\"ZOLTAN_POLICECHECK_RK_FINED\"]/choice[@req=\"DJMOD_SUM_RADIKAL_GEAR\""
 " and @lvl=\"4\"]/event/text"
 msgstr ""
-"\"FOUR or more illegal pieces of gear! What th-... I do not even wish to know. What a horrible person you must be. Luckily for you, this is the maximum fine stipulated in the applicable regulation. I suppose nobody foresaw that anyone would make themselves any more of a wretched menace to society than that.\"\n"
-"\t\t\tSupposedly you can get some of your scrap back by surrendering your illegal gear at the Police Station, but somehow you doubt that. It might be worth it to pay them a visit regardless."
+"\"AT LEAST FOUR illegal pieces of gear! What th-... I do not even wish to know. What a horrible person you must be. Luckily for you, this is the maximum fine stipulated in the applicable regulation. I suppose nobody foresaw that anyone would make themselves any more of a wretched menace to society than that.\"\n"
+"\t\t\t\tSupposedly you can get some of your scrap back by surrendering your illegal gear at the Police Station, but somehow you doubt that. It might be worth it to pay them a visit regardless."
 
 #: src-en/data/events.xml.append:1385
 msgid ""
@@ -1370,15 +1369,16 @@ msgstr "Continue..."
 #: src-en/data/events.xml.append:1431
 msgid ""
 "data/events.xml.append$//event[@name=\"ZOLTAN_POLICESTATION_RK\"]/beaconType/unvisitedTooltip"
-msgstr ""
-"Where Zoltan Police holds confiscated RadiKal gear and seized supplies."
+msgstr "Where Zoltan Police holds confiscated RadiKal gear."
 
 #: src-en/data/events.xml.append:1433
 msgid "data/events.xml.append$//event[@name=\"ZOLTAN_POLICESTATION_RK\"]/text"
 msgstr ""
 "You wonder how exactly the Zoltans set up a fortified police station in such an area undeterred, but it is proof of their determination.\n"
-"\t\"Welcome captain. Since you found this place, you must be part of the special Federation corps attached to this regulation effort.\" Might be far from the truth, but you decide to roll with it.\n"
-"\t\"What can we do for you?\""
+"\t\t\"Welcome captain. Since you found this place, you must be part of the special Federation corps attached to this regulation effort.\"\n"
+"\t\t\n"
+"\t\tMight be far from the truth, but you decide to roll with it.\n"
+"\t\t\"What can we do for you?\""
 
 #: src-en/data/events.xml.append:1442
 msgid ""
@@ -1390,8 +1390,9 @@ msgid ""
 "data/events.xml.append$//event[@name=\"ZOLTAN_POLICESTATION_RK\"]/choice[1]/event/text"
 msgstr ""
 "\"We have seized quite a lot of supplies from this band of criminals, at "
-"great cost. But you are our ally in this operation, so help yourself. Within"
-" the limits of the Alliance Supply and Logistics Act of course.\""
+"great cost. But as Federation you are our ally in this operation. Help "
+"yourself, within the limits of the Alliance Supply and Logistics Act of "
+"course.\""
 
 #: src-en/data/events.xml.append:1450
 msgid ""
@@ -1402,7 +1403,7 @@ msgstr "Request RadiKal gear."
 msgid ""
 "data/events.xml.append$//event[@name=\"ZOLTAN_POLICESTATION_RK\"]/choice[2]/event/text"
 msgstr ""
-"After some brief icebreaker chitchat which the officer seems to midly enjoy, you take your shot asking for a free piece. What passes for his facial expression changes that instant. \n"
+"After some brief icebreaker chitchat which the officer almost seems to enjoy, you take your shot asking for a free piece. What passes for his facial expression changes that instant.\n"
 "\t\t\t\t\"Surely you must be confused. This is labeled and sorted trial evidence, in the form of illegal weaponry which is unsafe for use, unethical and generally a threat to law and order. Thanks for stopping by, I have work to do now.\""
 
 #: src-en/data/events.xml.append:1457
@@ -1415,7 +1416,7 @@ msgid ""
 "data/events.xml.append$//event[@name=\"ZOLTAN_POLICESTATION_RK\"]/choice[2]/event/choice[1]/event/text"
 msgstr ""
 "You expected this. \"Oh? We weren't informed. Sorry for asking, keep up the good work.\" \n"
-"\t\t\t\t\t\tThe Zoltan throws you one suspicious look, but he's too busy dealing with the paperwork to investigate, and you're out without a hitch, but with nothing to show for it."
+"\t\t\t\t\t\tThe Zoltan throws you a suspicious look, but he's too busy dealing with the paperwork to investigate. You're out without a hitch but with nothing to show for it."
 
 #: src-en/data/events.xml.append:1464
 msgid ""
@@ -1425,7 +1426,7 @@ msgstr "Meh."
 #: src-en/data/events.xml.append:1471
 msgid ""
 "data/events.xml.append$//event[@name=\"ZOLTAN_POLICESTATION_RK\"]/choice[2]/event/choice[2]/text"
-msgstr "Hint that you can do this the hard way instead..."
+msgstr "\"We can do this the hard way instead...\""
 
 #: src-en/data/events.xml.append:1473
 msgid ""
@@ -2322,18 +2323,18 @@ msgstr ""
 "\"I'll make it simple for you, we have a reputation to uphold. If you're not able to beat one of our gatekeepers, we can't let you leave and make RadiKal gear look bad with your incompetence.\n"
 "\tThink about it. Why do you think folks fund all of this? That's because you've never heard of subpar RadiKal equipment, and this is one way to do quality control.\n"
 "\tYou do get to pick your opponent, so choose wisely... yeah, that IS part of the skill test.\n"
-"\tOh and, don't worry about killing crew in these ships, they're all purpose-grown illegal clones. In fact we'd like to see you try to kill them cleanly.\""
+"\tOh and, don't worry about killing crew in these ships, they're all purpose-grown illegal clones. In fact we'd like to see you try to kill them cleanly.\n"
+"\t\n"
+"\tSo, which Gatekeeper do you choose?\""
 
 #: src-en/data/events.xml.append:2391
 msgid "data/events.xml.append$//event[@name=\"EXIT_RADIKAL_MAIN\"]/choice[1]/text"
-msgstr "Fight the Bam Gatekeeper!"
+msgstr "Bam, with the raw blunt damage and reinforcements"
 
 #: src-en/data/events.xml.append:2393
 msgid ""
 "data/events.xml.append$//event[@name=\"EXIT_RADIKAL_MAIN\"]/choice[1]/event/text"
-msgstr ""
-"You think your best shot is against the Bam, with their blunt hull damage "
-"weaponry, and reinforcements. Get ready!"
+msgstr "You are taken to the Bam arena to prove your worth. Get ready!"
 
 #: src-en/data/events.xml.append:2397
 msgid ""
@@ -2342,14 +2343,12 @@ msgstr "Continue..."
 
 #: src-en/data/events.xml.append:2403
 msgid "data/events.xml.append$//event[@name=\"EXIT_RADIKAL_MAIN\"]/choice[2]/text"
-msgstr "Fight the Punk Gatekeeper!"
+msgstr "Punk, with the fancy tricks and crew shenanigans"
 
 #: src-en/data/events.xml.append:2405
 msgid ""
 "data/events.xml.append$//event[@name=\"EXIT_RADIKAL_MAIN\"]/choice[2]/event/text"
-msgstr ""
-"You think your best shot is against the Punk, with their sneaky high-tech "
-"weaponry and crew shenanigans. Get ready!"
+msgstr "You are taken to the Punk arena to prove your worth. Get ready!"
 
 #: src-en/data/events.xml.append:2409
 msgid ""
@@ -2358,14 +2357,12 @@ msgstr "Continue..."
 
 #: src-en/data/events.xml.append:2415
 msgid "data/events.xml.append$//event[@name=\"EXIT_RADIKAL_MAIN\"]/choice[3]/text"
-msgstr "Fight the Scorch Gatekeeper!"
+msgstr "Scorch, with the fire weaponry and acceleration features"
 
 #: src-en/data/events.xml.append:2417
 msgid ""
 "data/events.xml.append$//event[@name=\"EXIT_RADIKAL_MAIN\"]/choice[3]/event/text"
-msgstr ""
-"You think your best shot is against the Scorch, with their fire weaponry and"
-" acceleration features. Get ready!"
+msgstr "You are taken to the Scorch arena to prove your worth. Get ready!"
 
 #: src-en/data/events.xml.append:2421
 msgid ""
@@ -2457,7 +2454,7 @@ msgstr ""
 "Just as you were about to jump, a serious warship in pirate colors come out of hiding, followed by more pirates.\n"
 "\t\t\"Forgetting something? A lil' business meeting that YOU asked for, maybe? Have you no honor??! You can't just make a bunch of cutthroats waste their time. Now die, fool!\"\n"
 "\t\t\n"
-"\t\tLooks like the pirates didn't appreciate you not coming to your own Pirate Trinity reunion, and in order to leave you'll have to beat this Elite while its associates provide fire support!"
+"\t\tLooks like the pirates didn't appreciate you not coming to your own Pirate Trinity reunion. They have somehow reset the charge on your jump drive, so you'll have to fight this Elite while its associates provide fire support!"
 
 #: src-en/data/events.xml.append:2515
 msgid ""

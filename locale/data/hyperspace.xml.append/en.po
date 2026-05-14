@@ -67,16 +67,17 @@ msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[1]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"PLASMA TELEPORTER:\n"
-"\t\t\tThis ship can instantly set its enemy on fire when a fight starts. Beware!"
+"PERSISTENCE SHIELD:\n"
+"\t\t\tThis enemy is protected by an Energy Shield. Hacking, Mind Control, Teleportation, Boarding Drones, and all hull-damaging or ion weapons will all be blocked until disabled. This specific shield also increased shield recharge rate, and the enemy is capable of regenerating their Energy Shield once!"
 
 #: src-en/data/hyperspace.xml.append:504
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[2]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"BLAZING EARTH:\n"
-"\t\t\tThis ship's crew resists fire, is boosted in it, and heals while extinguishing."
+"CHOKING F.I.N.E.:\n"
+"\t\t\tThis ship's crew take 0.75x suffocation damage.\n"
+"\t\t\tWhile suffocating, they move, sabotage, repair and fight 1.5x better."
 
 #: src-en/data/hyperspace.xml.append:514
 msgid ""
@@ -235,7 +236,7 @@ msgid ""
 "append:race[@name=\"rk_weaponlike\"]/powerEffect[1]/tooltip"
 msgstr ""
 "Teleport the bomb to the other ship, dealing 1 damage and causing a breach. "
-"Can be done once per jump."
+"Get 1 charge per jump."
 
 #: src-en/data/hyperspace.xml.append:1270
 msgid ""
@@ -249,7 +250,7 @@ msgid ""
 "append:race[@name=\"rk_weaponlike\"]/powerEffect[2]/tooltip"
 msgstr ""
 "Detonate the bomb, dealing 1 damage in the current room and causing a "
-"breach. Can be done once per jump"
+"breach. Get 1 charge per jump"
 
 #: src-en/data/hyperspace.xml.append:1390
 msgid ""
@@ -546,7 +547,7 @@ msgstr "RK SNIPER AUGMENTS (10-20% OFF)"
 #: src-en/data/hyperspace.xml.append:3400
 msgid ""
 "data/hyperspace.xml.append$//statBoost[@name=\"powerEffect\"]/powerEffect/buttonText"
-msgstr "WALKBREACH"
+msgstr "STEPBREACH"
 
 #: src-en/data/hyperspace.xml.append:3401
 msgid ""
