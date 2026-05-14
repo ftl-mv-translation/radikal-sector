@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-05-14 17:22+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-05-15 11:13+0000\n"
+"Last-Translator: Aleev <aleev1414@gmail.com>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "dataevents_special_storagexmlappend/ru/>\n"
 "Language: ru\n"
@@ -1453,149 +1453,132 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:2199
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/text"
 msgstr ""
-"Вы уверены, что хотите это сделать?\n"
-"\t[Поджигает свой собственный корабль! Обычно для отражения абордажа]"
+"Вы уверены, что хотите это сделать?\t[Поджигает свой собственный корабль! "
+"Обычно для отражения абордажа]\n"
+"\t\tВыкурить их из..."
 
 #: src-en/data/events_special_storage.xml.append:2204
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"artillery\"]/text"
-msgstr "Выкурить их из артиллерийского отсека!"
+msgstr "Артиллерийского отсека!"
 
 #: src-en/data/events_special_storage.xml.append:2208
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"battery\"]/text"
-msgstr "Выкурить их из отсека Батареи!"
+msgstr "Отсека Батареи!"
 
 #: src-en/data/events_special_storage.xml.append:2212
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"cloaking\"]/text"
-msgstr "Выкурить их из отсека Маскировки!"
+msgstr "Отсека Маскировки!"
 
 #: src-en/data/events_special_storage.xml.append:2216
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"clonebay\"]/text"
-msgstr "Выкурить их из Клон-отсека!"
+msgstr "Клон-отсека!"
 
 #: src-en/data/events_special_storage.xml.append:2220
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"doors\"]/text"
-msgstr "Выкурить их из отсека контроля дверей!"
+msgstr "Отсека контроля дверей!"
 
 #: src-en/data/events_special_storage.xml.append:2224
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"drones\"]/text"
-msgstr "Выкурить их из отсека контроля дронов!"
+msgstr "Отсека контроля дронов!"
 
 #: src-en/data/events_special_storage.xml.append:2228
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"engines\"]/text"
-msgstr "Выкурить их из отсека Двигателей!"
+msgstr "Отсека Двигателей!"
 
 #: src-en/data/events_special_storage.xml.append:2232
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"hacking\"]/text"
-msgstr "Выкурить их из отсека Взломщика!"
+msgstr "Отсека Взломщика!"
 
 #: src-en/data/events_special_storage.xml.append:2236
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"medbay\"]/text"
-msgstr "Выкурить их из Медотсека!"
+msgstr "Медотсека!"
 
 #: src-en/data/events_special_storage.xml.append:2240
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"mind\"]/text"
-msgstr "Выкурить их из отсека Контроля разума!"
+msgstr "Отсека Контроля разума!"
 
 #: src-en/data/events_special_storage.xml.append:2244
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"oxygen\"]/text"
-msgstr "Выкурить их из отсека Кислородной установки!"
+msgstr "Отсека Кислородной установки!"
 
 #: src-en/data/events_special_storage.xml.append:2248
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"pilot\"]/text"
-msgstr "Выкурить их из Рубки пилотирования!"
+msgstr "Рубки пилотирования!"
 
 #: src-en/data/events_special_storage.xml.append:2252
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"sensors\"]/text"
-msgstr "Выкурить их из отсека Сенсоров!"
+msgstr "Отсека Сенсоров!"
 
 #: src-en/data/events_special_storage.xml.append:2256
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"shields\"]/text"
-msgstr "Выкурить их из отсека Щитов!"
+msgstr "Отсека Щитов!"
 
 #: src-en/data/events_special_storage.xml.append:2260
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"teleporter\"]/text"
-msgstr "Выкурить их из отсека Телепортатора!"
+msgstr "Отсека Телепортатора!"
 
 #: src-en/data/events_special_storage.xml.append:2264
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"temporal\"]/text"
-msgstr "Выкурить их из отсека Временного манипулятора!"
+msgstr "Отсека Временного манипулятора!"
 
 #: src-en/data/events_special_storage.xml.append:2268
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"weapons\"]/text"
-msgstr "Выкурить их из отсека Оружия!"
+msgstr "Отсека Оружия!"
 
 #: src-en/data/events_special_storage.xml.append:2277
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_ablative_armor\"]/text"
-msgstr ""
+msgstr "Отсека Абляционной брони!"
 
 #: src-en/data/events_special_storage.xml.append:2281
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_system_bracers\"]/text"
-msgstr ""
+msgstr "Отсека Систем наручи!"
 
 #: src-en/data/events_special_storage.xml.append:2285
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_targeting_core\"]/text"
-msgstr ""
+msgstr "Отсека Ядра целенаведения!"
 
 #: src-en/data/events_special_storage.xml.append:2289
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_shock_neutralizer\"]/text"
-msgstr ""
+msgstr "Шокового нейтрализатора!"
 
 #: src-en/data/events_special_storage.xml.append:2293
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_infusion_bay\"]/text"
-msgstr ""
+msgstr "Инфузионного отсека!"
 
 #: src-en/data/events_special_storage.xml.append:2297
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_ecm_suite\"]/text"
-msgstr ""
+msgstr "Отсека Комплекс РЭБ!"
 
 #: src-en/data/events_special_storage.xml.append:2301
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_fiber_liner\"]/text"
-msgstr ""
+msgstr "Отсека Волокнистый лайнер!"
 
 #: src-en/data/events_special_storage.xml.append:2307
 msgid ""
@@ -1615,7 +1598,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:3490
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_SCORCH_SELF_UPGRADE\"]/choice[@req=\"RK_SCORCH_SELF\"]/text"
-msgstr ""
+msgstr "Да [-16~, -1{, -1}]"
 
 #: src-en/data/events_special_storage.xml.append:3492
 msgid ""
@@ -1650,7 +1633,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:3524
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_SCORCH_SELF_UPGRADE_2\"]/choice[@req=\"RK_SCORCH_SELF_2\"]/text"
-msgstr ""
+msgstr "Да [-11~, -1{, -1}, флот ускорится на 1 ход]"
 
 #: src-en/data/events_special_storage.xml.append:3526
 msgid ""
@@ -3313,18 +3296,16 @@ msgid ""
 msgstr "Технология РадиКал."
 
 #: src-en/data/events_special_storage.xml.append:5825
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[1]/text"
-msgstr "Демиклонеры [Установлено]"
+msgstr "Удушье Х.О.Р.О.Ш.О. [Установлено]"
 
 #: src-en/data/events_special_storage.xml.append:5829
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[2]/text"
-msgstr "Демиклонеры [Не установлено]"
+msgstr "Удушье Х.О.Р.О.Ш.О. [Не установлено]"
 
 #: src-en/data/events_special_storage.xml.append:5835
 msgid ""
@@ -3384,12 +3365,15 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_CHOKING_IS_FINE\""
 " and @lvl=\"1\"]/text"
 msgstr ""
+"РК Бам \"Удушье Х.О.Р.О.Ш.О.\": ваш экипаж получает 0.75х урон от удушья.\n"
+"В состоянии удушья они двигаются, саботируют, ремонтируют и сражаются в 1,5 "
+"раза эффективнее. [УЖЕ УСТАНОВЛЕНО]"
 
 #: src-en/data/events_special_storage.xml.append:5884
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_CHOKING_IS_FINE\""
 " and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "Удушье Х.О.Р.О.Ш.О. [Цена: 55~, 1}, 1|]"
 
 #: src-en/data/events_special_storage.xml.append:5889
 msgid ""
@@ -3458,6 +3442,10 @@ msgstr "Неважно."
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE\"]/text"
 msgstr ""
+"Вы собираетесь установить Удушье Х.О.Р.О.Ш.О.\n"
+"[Эффекты: ваш экипаж получает 0.75х урон от удушья.\n"
+"В состоянии удушья они двигаются, саботируют, ремонтируют и сражаются в 1,5 "
+"раза эффективнее.]"
 
 #: src-en/data/events_special_storage.xml.append:5987
 msgid ""
@@ -3615,11 +3603,10 @@ msgstr ""
 "Скорч (или БПС)."
 
 #: src-en/data/events_special_storage.xml.append:6120
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_IN_FIRE_CREWBOOSTS\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
 " and @lvl=\"1\"]/text"
-msgstr "Установить улучшение. [Цена: 25~, 1{]"
+msgstr "Установить улучшение. [Цена: 55~, 1{, 1}]"
 
 #: src-en/data/events_special_storage.xml.append:6122
 msgid ""
