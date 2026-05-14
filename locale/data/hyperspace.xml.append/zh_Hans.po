@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-05-14 17:21+0000\n"
+"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/radikal-sector/datahyperspace-xml-append/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/hyperspace.xml.append:269
 msgid "data/hyperspace.xml.append$//human_soldier[@name=\"Rammerman\"]/@name"
@@ -63,6 +70,7 @@ msgid "data/hyperspace.xml.append$//rk_fireghost[@name=\"Log\"]/@name"
 msgstr "日志"
 
 #: src-en/data/hyperspace.xml.append:497
+#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[1]/mod-"
 "append:shipIcon/tooltip"
@@ -71,6 +79,7 @@ msgstr ""
 "\t\t\t这艘飞船可以在战斗开始时立即点燃敌人。当心！"
 
 #: src-en/data/hyperspace.xml.append:504
+#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[2]/mod-"
 "append:shipIcon/tooltip"
@@ -215,6 +224,7 @@ msgid ""
 msgstr "炸弹出击"
 
 #: src-en/data/hyperspace.xml.append:1222
+#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$//mod-"
 "append:race[@name=\"rk_weaponlike\"]/powerEffect[1]/tooltip"
@@ -227,6 +237,7 @@ msgid ""
 msgstr "炸弹注入"
 
 #: src-en/data/hyperspace.xml.append:1271
+#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$//mod-"
 "append:race[@name=\"rk_weaponlike\"]/powerEffect[2]/tooltip"
@@ -523,6 +534,7 @@ msgid ""
 msgstr "RK 狙击增强部件（10-20% 折扣）"
 
 #: src-en/data/hyperspace.xml.append:3400
+#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$//statBoost[@name=\"powerEffect\"]/powerEffect/buttonText"
 msgstr "移动破洞"
