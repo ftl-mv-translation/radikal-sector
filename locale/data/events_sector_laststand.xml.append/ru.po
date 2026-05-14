@@ -1,21 +1,37 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-05-15 11:13+0000\n"
+"Last-Translator: Aleev <aleev1414@gmail.com>\n"
+"Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
+"dataevents_sector_laststandxmlappend/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events_sector_laststand.xml.append:28
 msgid ""
 "data/events_sector_laststand.xml.append$//mod:findName[@name=\"TRUE_LAST_STAND_START\"]/mod:findLike/mod:findLike/mod-"
 "append:choice/text"
-msgstr ""
+msgstr "Связаться с командным пунктом Федерации."
 
 #: src-en/data/events_sector_laststand.xml.append:30
+#, fuzzy
 msgid ""
 "data/events_sector_laststand.xml.append$//mod:findName[@name=\"TRUE_LAST_STAND_START\"]/mod:findLike/mod:findLike/mod-"
 "append:choice/event/text"
 msgstr ""
+"На видеоэкране появляются несколько офицеров Федерации и энджи, а также "
+"адмирал Талли в центре. \"Это корабль РадиКалов? СОЛДАТЫ, ЗАЙМИТЕ СВОИ ПО… "
+"Постойте, как это вы — из Федерации? О боже, неужели мы опустились до "
+"такого? Даже если мы победим Восстание, этого может хватить, чтобы разжечь "
+"новое. Честно говоря, я рад, что вы добрались сюда, но, во имя всего "
+"святого, вам лучше убедиться, что все зверства, которые вы финансировали или "
+"совершали сами, стоили того, победив Флагман\"."
 
 #: src-en/data/events_sector_laststand.xml.append:32
 msgid ""
