@@ -1,9 +1,17 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-05-14 17:22+0000\n"
+"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
+"Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
+"dataevents_special_storagexmlappend/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events_special_storage.xml.append:395
 msgid ""
@@ -30,6 +38,7 @@ msgid ""
 msgstr "(Обезвреживатель) Подавить систему оружия противника!"
 
 #: src-en/data/events_special_storage.xml.append:430
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[5]/mod-"
 "append:choice/text"
@@ -79,6 +88,7 @@ msgid ""
 msgstr "(Фламмабилизатор) Настроить состояние модуля. [Текущий режим: Урон]"
 
 #: src-en/data/events_special_storage.xml.append:531
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[13]/mod-"
 "append:choice/text"
@@ -99,12 +109,14 @@ msgstr ""
 "применения Полной мощности."
 
 #: src-en/data/events_special_storage.xml.append:567
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[16]/mod-"
 "append:choice/text"
 msgstr "(Выжженная земля) Улучшить до Пылающей земли."
 
 #: src-en/data/events_special_storage.xml.append:574
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[17]/mod-"
 "append:choice/text"
@@ -129,11 +141,13 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:643
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/text"
 msgstr ""
 "Вы уверены, что хотите это сделать?\n"
-"\t[Протаранить вражеский корабль - высокая вероятность ремонта вашего корабля. ВНИМАНИЕ: может закончиться плохо!]"
+"\t[Протаранить вражеский корабль - высокая вероятность ремонта вашего "
+"корабля. ВНИМАНИЕ: может закончиться плохо!]"
 
 #: src-en/data/events_special_storage.xml.append:652
 msgid ""
@@ -1251,11 +1265,13 @@ msgid ""
 msgstr "Это, наверное, самое худшее, что могло случиться!"
 
 #: src-en/data/events_special_storage.xml.append:1967
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/text"
 msgstr ""
 "Готовы к новому тарану?\n"
-"\t[При таране вражеского корабля есть высокий шанс починить свой собственный. Внимание: может не получиться!]"
+"\t[При таране вражеского корабля есть высокий шанс починить свой "
+"собственный. Внимание: может не получиться!]"
 
 #: src-en/data/events_special_storage.xml.append:1979
 msgid ""
@@ -1437,6 +1453,7 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:2199
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/text"
 msgstr ""
@@ -1444,86 +1461,103 @@ msgstr ""
 "\t[Поджигает свой собственный корабль! Обычно для отражения абордажа]"
 
 #: src-en/data/events_special_storage.xml.append:2204
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"artillery\"]/text"
 msgstr "Выкурить их из артиллерийского отсека!"
 
 #: src-en/data/events_special_storage.xml.append:2208
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"battery\"]/text"
 msgstr "Выкурить их из отсека Батареи!"
 
 #: src-en/data/events_special_storage.xml.append:2212
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"cloaking\"]/text"
 msgstr "Выкурить их из отсека Маскировки!"
 
 #: src-en/data/events_special_storage.xml.append:2216
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"clonebay\"]/text"
 msgstr "Выкурить их из Клон-отсека!"
 
 #: src-en/data/events_special_storage.xml.append:2220
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"doors\"]/text"
 msgstr "Выкурить их из отсека контроля дверей!"
 
 #: src-en/data/events_special_storage.xml.append:2224
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"drones\"]/text"
 msgstr "Выкурить их из отсека контроля дронов!"
 
 #: src-en/data/events_special_storage.xml.append:2228
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"engines\"]/text"
 msgstr "Выкурить их из отсека Двигателей!"
 
 #: src-en/data/events_special_storage.xml.append:2232
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"hacking\"]/text"
 msgstr "Выкурить их из отсека Взломщика!"
 
 #: src-en/data/events_special_storage.xml.append:2236
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"medbay\"]/text"
 msgstr "Выкурить их из Медотсека!"
 
 #: src-en/data/events_special_storage.xml.append:2240
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"mind\"]/text"
 msgstr "Выкурить их из отсека Контроля разума!"
 
 #: src-en/data/events_special_storage.xml.append:2244
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"oxygen\"]/text"
 msgstr "Выкурить их из отсека Кислородной установки!"
 
 #: src-en/data/events_special_storage.xml.append:2248
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"pilot\"]/text"
 msgstr "Выкурить их из Рубки пилотирования!"
 
 #: src-en/data/events_special_storage.xml.append:2252
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"sensors\"]/text"
 msgstr "Выкурить их из отсека Сенсоров!"
 
 #: src-en/data/events_special_storage.xml.append:2256
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"shields\"]/text"
 msgstr "Выкурить их из отсека Щитов!"
 
 #: src-en/data/events_special_storage.xml.append:2260
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"teleporter\"]/text"
 msgstr "Выкурить их из отсека Телепортатора!"
 
 #: src-en/data/events_special_storage.xml.append:2264
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"temporal\"]/text"
 msgstr "Выкурить их из отсека Временного манипулятора!"
 
 #: src-en/data/events_special_storage.xml.append:2268
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"weapons\"]/text"
 msgstr "Выкурить их из отсека Оружия!"
@@ -2817,11 +2851,13 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events_special_storage.xml.append:4956
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_OFFENSE_DISABLER\"]/text"
 msgstr ""
 "Вы уверены, что хотите это сделать?\n"
-"\t[Отключает оружейный отсек врагов; они восстанавливают его работу все быстрее. Потребляет 3 | и 3 единицы энергии реактора]"
+"\t[Отключает оружейный отсек врагов; они восстанавливают его работу все "
+"быстрее. Потребляет 3 | и 3 единицы энергии реактора]"
 
 #: src-en/data/events_special_storage.xml.append:4960
 msgid ""
@@ -3277,12 +3313,14 @@ msgid ""
 msgstr "Технология РадиКал."
 
 #: src-en/data/events_special_storage.xml.append:5825
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[1]/text"
 msgstr "Демиклонеры [Установлено]"
 
 #: src-en/data/events_special_storage.xml.append:5829
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[2]/text"
@@ -3395,6 +3433,7 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:5919
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\""
 " and @lvl=\"1\"]/text"
@@ -3404,6 +3443,7 @@ msgstr ""
 "оглушения сокращается на 50%. [УЖЕ УСТАНОВЛЕНО]"
 
 #: src-en/data/events_special_storage.xml.append:5923
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\""
 " and @lvl=\"0\"]/text"
@@ -3489,12 +3529,13 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events_special_storage.xml.append:6048
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"0\"]/text"
 msgstr ""
-"Улучшение недоступно. Вам необходимо любое оружие, модуль или экипаж РадиКал"
-" Панк (или БПС)."
+"Улучшение недоступно. Вам необходимо любое оружие, модуль или экипаж РадиКал "
+"Панк (или БПС)."
 
 #: src-en/data/events_special_storage.xml.append:6053
 msgid ""
@@ -3527,12 +3568,13 @@ msgstr ""
 "\t[Эффекты: Под воздействием контроля разума ваш экипаж не может сражаться, саботировать или телепортироваться. Действует на обоих кораблях]"
 
 #: src-en/data/events_special_storage.xml.append:6082
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"0\"]/text"
 msgstr ""
-"Улучшение недоступно. Вам необходимо любое оружие, модуль или экипаж РадиКал"
-" Панк (или БПС)."
+"Улучшение недоступно. Вам необходимо любое оружие, модуль или экипаж РадиКал "
+"Панк (или БПС)."
 
 #: src-en/data/events_special_storage.xml.append:6086
 msgid ""
@@ -3594,21 +3636,26 @@ msgid ""
 msgstr "Неважно."
 
 #: src-en/data/events_special_storage.xml.append:6146
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/text"
 msgstr ""
 "Вы собираетесь добавить модификацию Разогреватель разума.\n"
-"\t[Эффекты: в зоне действия огня ваш экипаж на обоих кораблях становится невосприимчивым к контролю разума, а продолжительность оглушения сокращается на 50%]"
+"\t[Эффекты: в зоне действия огня ваш экипаж на обоих кораблях становится "
+"невосприимчивым к контролю разума, а продолжительность оглушения сокращается "
+"на 50%]"
 
 #: src-en/data/events_special_storage.xml.append:6150
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
 " and @lvl=\"0\"]/text"
 msgstr ""
-"Улучшение недоступно. Вам необходимо любое оружие, модуль или экипаж РадиКал"
-" Скорч (или БПС)."
+"Улучшение недоступно. Вам необходимо любое оружие, модуль или экипаж РадиКал "
+"Скорч (или БПС)."
 
 #: src-en/data/events_special_storage.xml.append:6154
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
 " and @lvl=\"1\"]/text"
