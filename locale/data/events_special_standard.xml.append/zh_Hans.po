@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-05-14 17:22+0000\n"
+"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/radikal-sector/dataevents_special_standardxmlappend/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events_special_standard.xml.append:34
 msgid ""
@@ -22,12 +29,16 @@ msgid ""
 msgstr "他们该享有一些乐趣。"
 
 #: src-en/data/events_special_standard.xml.append:59
+#, fuzzy
 msgid ""
 "data/events_special_standard.xml.append$//event[@name=\"GET_COORDS_RADIKAL\"]/text"
 msgstr ""
-"突然，靶标在一次规避机动中击中了某个小东西，这东西太小而无法被探测到，你通过计算弹道并仔细环顾四周，最终找到了它。\n"
-"\t那只是一片撕破的衣物，可能属于最近死在这个信标附近的某个人。它有一个口袋。\n"
-"\t口袋里，封装在冻结的血液中的，是一张数据卡。你花不了多久就把它清理干净并解密了，里面包含了超光速跳跃坐标……"
+"突然，靶标在一次规避机动中击中了某个小东西，这东西太小而无法被探测到，你通过"
+"计算弹道并仔细环顾四周，最终找到了它。\n"
+"\t那只是一片撕破的衣物，可能属于最近死在这个信标附近的某个人。它有一个口袋"
+"。\n"
+"\t口袋里，封装在冻结的血液中的，是一张数据卡。你花不了多久就把它清理干净并解"
+"密了，里面包含了超光速跳跃坐标……"
 
 #: src-en/data/events_special_standard.xml.append:67
 #, fuzzy
@@ -36,12 +47,15 @@ msgid ""
 msgstr "继续。"
 
 #: src-en/data/events_special_standard.xml.append:69
+#, fuzzy
 msgid ""
 "data/events_special_standard.xml.append$//event[@name=\"GET_COORDS_RADIKAL\"]/choice/event/text"
 msgstr ""
-"目的地星区与你数据库中的任何内容都不匹配（这让人不安），并且没有标签（这是不合法的）。\n"
+"目的地星区与你数据库中的任何内容都不匹配（这让人不安），并且没有标签（这是不"
+"合法的）。\n"
 "\t\t\t唯一的线索是卡片背面印有字母“RK”的标志。\n"
-"\t\t\t下次你更换星区时，将能够调整航径前往那里。要知道，不请自来地出现在一个你一无所知的地方，永远都是一步险棋。"
+"\t\t\t下次你更换星区时，将能够调整航径前往那里。要知道，不请自来地出现在一个"
+"你一无所知的地方，永远都是一步险棋。"
 
 #: src-en/data/events_special_standard.xml.append:75
 msgid ""
@@ -49,6 +63,7 @@ msgid ""
 msgstr "到时候再说。"
 
 #: src-en/data/events_special_standard.xml.append:83
+#, fuzzy
 msgid ""
 "data/events_special_standard.xml.append$//event[@name=\"NOTGET_COORDS_RADIKAL\"]/text"
 msgstr ""
