@@ -88,12 +88,1425 @@ msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_STORE_SNIPER_WIN\"]/choice/text"
 msgstr "Ну ладно."
 
-#: src-en/data/events_sector_radikal.xml:199
+#: src-en/data/events_sector_radikal.xml:154
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_ELITE_COALITION\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:160
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_ELITE_COALITION\"]/choice[@req=\"unique_nights\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:162
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_ELITE_COALITION\"]/choice[@req=\"unique_nights\"]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:167
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_ELITE_COALITION\"]/choice[@req=\"unique_nights\"]/event/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:174
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_ELITE_COALITION\"]/choice[@req=\"unique_tyrdeo\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:176
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_ELITE_COALITION\"]/choice[@req=\"unique_tyrdeo\"]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:181
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_ELITE_COALITION\"]/choice[@req=\"unique_tyrdeo\"]/event/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:188
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_ELITE_COALITION\"]/choice[3]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:190
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_ELITE_COALITION\"]/choice[3]/event/text"
+msgstr "Вы готовитесь к бою."
+
+#: src-en/data/events_sector_radikal.xml:193
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_ELITE_COALITION\"]/choice[3]/event/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:226
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:231
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[@req=\"RKS_POLICE_WARRANT\""
+" and @lvl=\"0\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:236
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[@req=\"RKS_POLICE_WARRANT\""
+" and not(@lvl)]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:239
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[@req=\"RKS_POLICE_WARRANT\""
+" and not(@lvl)]/event[1]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:246
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[@req=\"RKS_POLICE_WARRANT\""
+" and not(@lvl)]/event[1]/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:251
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[@req=\"RKS_POLICE_WARRANT\""
+" and not(@lvl)]/event[2]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:258
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[@req=\"RKS_POLICE_WARRANT\""
+" and not(@lvl)]/event[2]/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:264
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[@req=\"RKS_POLICE_WARRANT\""
+" and not(@lvl)]/event[3]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:267
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[@req=\"RKS_POLICE_WARRANT\""
+" and not(@lvl)]/event[3]/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:274
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[3]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:276
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[3]/event/text"
+msgstr "Вы готовитесь к бою."
+
+#: src-en/data/events_sector_radikal.xml:279
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[3]/event/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:286
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[4]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:288
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[4]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:290
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[4]/event/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:292
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[4]/event/choice/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:294
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[4]/event/choice/event/choice[1]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:296
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[4]/event/choice/event/choice[1]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:301
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[4]/event/choice/event/choice[2]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:303
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[4]/event/choice/event/choice[2]/event/text"
+msgstr "Вы готовитесь к бою."
+
+#: src-en/data/events_sector_radikal.xml:306
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[4]/event/choice/event/choice[2]/event/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:345
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:351
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[@req=\"temporal\""
+" and @lvl=\"0\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:355
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[@req=\"temporal\""
+" and @lvl=\"1\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:357
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[@req=\"temporal\""
+" and @lvl=\"1\"]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:361
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[@req=\"temporal\""
+" and @lvl=\"1\"]/event/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:368
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[@req=\"RKS_HAS_HIGH_SENSORS_AND_HACKING\""
+" and @lvl=\"0\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:372
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[@req=\"RKS_HAS_HIGH_SENSORS_AND_HACKING\""
+" and not(@lvl)]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:374
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[@req=\"RKS_HAS_HIGH_SENSORS_AND_HACKING\""
+" and not(@lvl)]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:378
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[@req=\"RKS_HAS_HIGH_SENSORS_AND_HACKING\""
+" and not(@lvl)]/event/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:385
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[@req=\"RKS_HAS_ENGI_AND_LANIUS\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:387
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[@req=\"RKS_HAS_ENGI_AND_LANIUS\"]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:396
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[@req=\"RKS_HAS_ENGI_AND_LANIUS\"]/event/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:403
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[6]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:405
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[6]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:409
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[6]/event/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:417
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_2\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:424
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_2\"]/choice[1]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:426
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_2\"]/choice[1]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:430
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_2\"]/choice[1]/event/choice[@req=\"mind\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:432
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_2\"]/choice[1]/event/choice[@req=\"mind\"]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:440
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_2\"]/choice[1]/event/choice[@req=\"mind\"]/event/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:447
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_2\"]/choice[1]/event/choice[2]/text"
+msgstr "Выйти с ними на связь."
+
+#: src-en/data/events_sector_radikal.xml:449
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_2\"]/choice[1]/event/choice[2]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:460
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_2\"]/choice[1]/event/choice[2]/event/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:467
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_2\"]/choice[1]/event/choice[3]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:474
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_2\"]/choice[2]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:476
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_2\"]/choice[2]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:480
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_2\"]/choice[2]/event/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:490
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_DEFROMORIUS_SUSPICIOUS\"]/gotaway/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:494
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_DEFROMORIUS_SUSPICIOUS\"]/gotaway/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:499
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_DEFROMORIUS_SUSPICIOUS\"]/surrender/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:505
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_DEFROMORIUS_SUSPICIOUS\"]/surrender/choice[1]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:507
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_DEFROMORIUS_SUSPICIOUS\"]/surrender/choice[1]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:520
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_DEFROMORIUS_SUSPICIOUS\"]/surrender/choice[1]/event/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:522
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_DEFROMORIUS_SUSPICIOUS\"]/surrender/choice[1]/event/choice/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:528
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_DEFROMORIUS_SUSPICIOUS\"]/surrender/choice[1]/event/choice/event/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:537
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_DEFROMORIUS_SUSPICIOUS\"]/surrender/choice[2]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:542
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_DEFROMORIUS_SUSPICIOUS\"]/destroyed/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:545
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_DEFROMORIUS_SUSPICIOUS\"]/destroyed/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:550
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_DEFROMORIUS_SUSPICIOUS\"]/deadCrew/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:553
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_DEFROMORIUS_SUSPICIOUS\"]/deadCrew/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:576
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/beaconType/unvisitedTooltip"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:579
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:586
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[1]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:588
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[1]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:594
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[1]/event/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:596
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[1]/event/choice/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:605
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[1]/event/choice/event/choice[1]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:607
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[1]/event/choice/event/choice[1]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:613
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[1]/event/choice/event/choice[1]/event/choice[@req=\"DJMOD_OXYGENIZER\""
+" and @lvl=\"0\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:618
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[1]/event/choice/event/choice[1]/event/choice[@req=\"DJMOD_OXYGENIZER\""
+" and not(@lvl)]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:623
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[1]/event/choice/event/choice[1]/event/choice[@req=\"NANO_MEDBAY\""
+" and @lvl=\"0\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:628
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[1]/event/choice/event/choice[1]/event/choice[@req=\"NANO_MEDBAY\""
+" and not(@lvl)]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:633
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[1]/event/choice/event/choice[1]/event/choice[@req=\"BLUELIST_BOMBS_HEAL\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:646
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[1]/event/choice/event/choice[1]/event/choice[6]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:648
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[1]/event/choice/event/choice[1]/event/choice[6]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:653
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[1]/event/choice/event/choice[1]/event/choice[6]/event/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:662
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[1]/event/choice/event/choice[2]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:664
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[1]/event/choice/event/choice[2]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:671
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[1]/event/choice/event/choice[2]/event/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:682
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[2]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:688
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_OFFER\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:702
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_OFFER\"]/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:729
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/beaconType/unvisitedTooltip"
+msgstr ""
+"Вам сказали, что в этом магазине можно приобрести отличное снаряжение "
+"РадиКал Бам, если вы докажете, что являетесь постоянным клиентом."
+
+#: src-en/data/events_sector_radikal.xml:732
+msgid "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:741
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
+" and @lvl=\"0\"]/text"
+msgstr "У вас нет снаряжения РК Бам."
+
+#: src-en/data/events_sector_radikal.xml:746
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
+" and not(@lvl)]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:748
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
+" and not(@lvl)]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:752
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
+" and not(@lvl)]/event/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:759
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and @lvl=\"0\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:764
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:766
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:769
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/event/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:776
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_MANTIS\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:778
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_MANTIS\"]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:783
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_MANTIS\"]/event/choice[@req=\"rks_lab_coords_punk\"]/text"
+msgstr "Ну ладно."
+
+#: src-en/data/events_sector_radikal.xml:785
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_MANTIS\"]/event/choice[@req=\"rks_lab_coords_punk\"]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:794
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_MANTIS\"]/event/choice[@req=\"rks_lab_coords_punk\"]/event/choice[1]/text"
+msgstr "Заняться чем-либо на корабле."
+
+#: src-en/data/events_sector_radikal.xml:798
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_MANTIS\"]/event/choice[@req=\"rks_lab_coords_punk\"]/event/choice[2]/text"
+msgstr "Ничего не делать."
+
+#: src-en/data/events_sector_radikal.xml:805
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_MANTIS\"]/event/choice[2]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:813
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ORCHID\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:815
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ORCHID\"]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:820
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ORCHID\"]/event/choice[@req=\"rks_lab_coords_scorch\"]/text"
+msgstr "Ну ладно."
+
+#: src-en/data/events_sector_radikal.xml:822
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ORCHID\"]/event/choice[@req=\"rks_lab_coords_scorch\"]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:831
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ORCHID\"]/event/choice[@req=\"rks_lab_coords_scorch\"]/event/choice[1]/text"
+msgstr "Заняться чем-либо на корабле."
+
+#: src-en/data/events_sector_radikal.xml:835
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ORCHID\"]/event/choice[@req=\"rks_lab_coords_scorch\"]/event/choice[2]/text"
+msgstr "Ничего не делать."
+
+#: src-en/data/events_sector_radikal.xml:842
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ORCHID\"]/event/choice[2]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:850
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[7]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:852
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[7]/event/text"
+msgstr ""
+"Ваш корабль вскоре получает повреждения от неизвестного источника. "
+"\"Убирайся, турист. Тебя предупреждали\"."
+
+#: src-en/data/events_sector_radikal.xml:856
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[7]/event/choice[1]/text"
+msgstr "Заняться чем-либо на корабле."
+
+#: src-en/data/events_sector_radikal.xml:860
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[7]/event/choice[2]/text"
+msgstr "Ничего не делать."
+
+#: src-en/data/events_sector_radikal.xml:867
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[8]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:869
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[8]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:874
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[8]/event/choice[1]/text"
+msgstr "Заняться чем-либо на корабле."
+
+#: src-en/data/events_sector_radikal.xml:878
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[8]/event/choice[2]/text"
+msgstr "Ничего не делать."
+
+#: src-en/data/events_sector_radikal.xml:886
+msgid "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:893
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_SHELL\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:898
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/choice[@req=\"shell\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:900
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/choice[@req=\"shell\"]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:910
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/choice[@req=\"shell\"]/event/removeCrew/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:914
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/choice[@req=\"shell\"]/event/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:945
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/choice[@req=\"shell_guardian\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:947
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/choice[@req=\"shell_guardian\"]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:958
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/choice[@req=\"shell_guardian\"]/event/removeCrew/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:962
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/choice[@req=\"shell_guardian\"]/event/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:968
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/choice[@req=\"shell_scientist\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:970
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/choice[@req=\"shell_scientist\"]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:981
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/choice[@req=\"shell_scientist\"]/event/removeCrew/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:985
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/choice[@req=\"shell_scientist\"]/event/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:991
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/choice[@req=\"shell_mechanic\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:993
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/choice[@req=\"shell_mechanic\"]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1004
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/choice[@req=\"shell_mechanic\"]/event/removeCrew/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1008
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/choice[@req=\"shell_mechanic\"]/event/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1015
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/choice[@req=\"shell_radiant\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1017
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/choice[@req=\"shell_radiant\"]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1027
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/choice[@req=\"shell_radiant\"]/event/removeCrew/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1031
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/choice[@req=\"shell_radiant\"]/event/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1038
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/choice[7]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1043
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/choice[8]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1049
+msgid "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_3\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1057
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_3\"]/choice[1]/text"
+msgstr "Заняться чем-либо на корабле."
+
+#: src-en/data/events_sector_radikal.xml:1061
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_3\"]/choice[2]/text"
+msgstr "Ничего не делать."
+
+#: src-en/data/events_sector_radikal.xml:1067
+msgid "data/events_sector_radikal.xml$//event[@name=\"RKS_LAB_BAM_AMBUSH\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1081
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_LAB_BAM_AMBUSH\"]/choice[@req=\"unique_alkali\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1086
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_LAB_BAM_AMBUSH\"]/choice[2]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1088
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_LAB_BAM_AMBUSH\"]/choice[2]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1097
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_LAB_BAM_AMBUSH\"]/choice[2]/event/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:1106
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_LAB_BAM_ATTACKER\"]/destroyed/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1109
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_LAB_BAM_ATTACKER\"]/destroyed/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1114
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_LAB_BAM_ATTACKER\"]/deadCrew/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1117
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_LAB_BAM_ATTACKER\"]/deadCrew/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1145
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/beaconType/unvisitedTooltip"
+msgstr ""
+"Вам сказали, что в этом магазине можно купить отличное снаряжение РадиКал "
+"Панк, если вы докажете, что являетесь постоянным клиентом."
+
+#: src-en/data/events_sector_radikal.xml:1148
+msgid "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1156
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
+" and @lvl=\"0\"]/text"
+msgstr "У вас нет снаряжения РК Панк."
+
+#: src-en/data/events_sector_radikal.xml:1161
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
+" and not(@lvl)]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1163
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
+" and not(@lvl)]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1167
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
+" and not(@lvl)]/event/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:1174
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and @lvl=\"0\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1179
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1181
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1184
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/event/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:1191
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[5]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1193
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[5]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1197
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[5]/event/choice[1]/text"
+msgstr "Заняться чем-либо на корабле."
+
+#: src-en/data/events_sector_radikal.xml:1201
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[5]/event/choice[2]/text"
+msgstr "Ничего не делать."
+
+#: src-en/data/events_sector_radikal.xml:1208
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[6]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1210
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[6]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1215
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[6]/event/choice[1]/text"
+msgstr "Заняться чем-либо на корабле."
+
+#: src-en/data/events_sector_radikal.xml:1219
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[6]/event/choice[2]/text"
+msgstr "Ничего не делать."
+
+#: src-en/data/events_sector_radikal.xml:1227
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1234
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_MANTIS\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1239
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[@req=\"mantis\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1241
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[@req=\"mantis\"]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1251
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[@req=\"mantis\"]/event/removeCrew/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1255
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[@req=\"mantis\"]/event/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1261
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[@req=\"mantis_free\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1263
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[@req=\"mantis_free\"]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1273
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[@req=\"mantis_free\"]/event/removeCrew/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1277
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[@req=\"mantis_free\"]/event/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1284
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[@req=\"mantis_warlord\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1286
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[@req=\"mantis_warlord\"]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1297
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[@req=\"mantis_warlord\"]/event/removeCrew/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1301
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[@req=\"mantis_warlord\"]/event/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1307
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[@req=\"mantis_suzerain\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1309
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[@req=\"mantis_suzerain\"]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1320
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[@req=\"mantis_suzerain\"]/event/removeCrew/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1324
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[@req=\"mantis_suzerain\"]/event/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1330
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[@req=\"mantis_bishop\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1332
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[@req=\"mantis_bishop\"]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1342
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[@req=\"mantis_bishop\"]/event/removeCrew/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1346
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[@req=\"mantis_bishop\"]/event/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1353
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[7]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1358
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[8]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1364
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_3\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1372
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_3\"]/choice[1]/text"
+msgstr "Заняться чем-либо на корабле."
+
+#: src-en/data/events_sector_radikal.xml:1376
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_3\"]/choice[2]/text"
+msgstr "Ничего не делать."
+
+#: src-en/data/events_sector_radikal.xml:1382
+msgid "data/events_sector_radikal.xml$//event[@name=\"RKS_LAB_PUNK_AMBUSH\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1392
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_LAB_PUNK_AMBUSH\"]/choice[@req=\"RKS_HAS_MANTIS_UNIQUE\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1397
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_LAB_PUNK_AMBUSH\"]/choice[2]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1399
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_LAB_PUNK_AMBUSH\"]/choice[2]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1408
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_LAB_PUNK_AMBUSH\"]/choice[2]/event/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:1416
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_LAB_PUNK_ATTACKER\"]/destroyed/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1419
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_LAB_PUNK_ATTACKER\"]/destroyed/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1424
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_LAB_PUNK_ATTACKER\"]/deadCrew/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1427
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_LAB_PUNK_ATTACKER\"]/deadCrew/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1453
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/beaconType/unvisitedTooltip"
+msgstr ""
+"Вам сказали, что в этом магазине вы сможете приобрести отличное снаряжение "
+"РадиКал Скорч, если докажете, что являетесь постоянным клиентом."
+
+#: src-en/data/events_sector_radikal.xml:1456
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1465
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
+" and @lvl=\"0\"]/text"
+msgstr "У вас нет снаряжения РК Сторч."
+
+#: src-en/data/events_sector_radikal.xml:1470
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
+" and not(@lvl)]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1472
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
+" and not(@lvl)]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1476
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
+" and not(@lvl)]/event/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:1483
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and @lvl=\"0\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1488
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1490
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1493
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/event/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:1500
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[5]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1502
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[5]/event/text"
+msgstr ""
+"Ваш корабль вскоре получает повреждения от неизвестного источника. "
+"\"Убирайся, турист. Тебя предупреждали\"."
+
+#: src-en/data/events_sector_radikal.xml:1506
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[5]/event/choice[1]/text"
+msgstr "Заняться чем-либо на корабле."
+
+#: src-en/data/events_sector_radikal.xml:1510
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[5]/event/choice[2]/text"
+msgstr "Ничего не делать."
+
+#: src-en/data/events_sector_radikal.xml:1517
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[6]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1519
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[6]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1524
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[6]/event/choice[1]/text"
+msgstr "Заняться чем-либо на корабле."
+
+#: src-en/data/events_sector_radikal.xml:1528
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[6]/event/choice[2]/text"
+msgstr "Ничего не делать."
+
+#: src-en/data/events_sector_radikal.xml:1536
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1543
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ORCHID\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1548
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1550
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid\"]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1560
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid\"]/event/removeCrew/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1564
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid\"]/event/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1570
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid_vampweed\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1572
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid_vampweed\"]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1582
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid_vampweed\"]/event/removeCrew/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1586
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid_vampweed\"]/event/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1593
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid_caretaker\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1595
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid_caretaker\"]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1606
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid_caretaker\"]/event/removeCrew/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1610
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid_caretaker\"]/event/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1616
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid_praetor\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1618
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid_praetor\"]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1629
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid_praetor\"]/event/removeCrew/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1633
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid_praetor\"]/event/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1639
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid_cultivator\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1641
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid_cultivator\"]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1652
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid_cultivator\"]/event/removeCrew/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1656
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid_cultivator\"]/event/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1663
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"ORCHID_KIDS\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1665
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"ORCHID_KIDS\"]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1679
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"ORCHID_KIDS\"]/event/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1686
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[8]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1691
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[9]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1697
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_3\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1705
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_3\"]/choice[1]/text"
+msgstr "Заняться чем-либо на корабле."
+
+#: src-en/data/events_sector_radikal.xml:1709
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_3\"]/choice[2]/text"
+msgstr "Ничего не делать."
+
+#: src-en/data/events_sector_radikal.xml:1717
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_LAB_SCORCH_AMBUSH\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1727
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_LAB_SCORCH_AMBUSH\"]/choice[@req=\"RKS_HAS_ORCHID_UNIQUE\"]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1732
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_LAB_SCORCH_AMBUSH\"]/choice[2]/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1734
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_LAB_SCORCH_AMBUSH\"]/choice[2]/event/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1743
+msgid ""
+"data/events_sector_radikal.xml$//event[@name=\"RKS_LAB_SCORCH_AMBUSH\"]/choice[2]/event/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_sector_radikal.xml:1752
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_LAB_SCORCH_ATTACKER\"]/destroyed/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1755
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_LAB_SCORCH_ATTACKER\"]/destroyed/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1760
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_LAB_SCORCH_ATTACKER\"]/deadCrew/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1763
+msgid ""
+"data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_LAB_SCORCH_ATTACKER\"]/deadCrew/choice/text"
+msgstr ""
+
+#: src-en/data/events_sector_radikal.xml:1795
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY\"]/beaconType/unvisitedTooltip"
 msgstr "Пираты ждут вашего лом. Разочаровывать их - рискованная идея!"
 
-#: src-en/data/events_sector_radikal.xml:202
+#: src-en/data/events_sector_radikal.xml:1798
 msgid "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY\"]/text"
 msgstr ""
 "Пиратские кланы не всегда ладят друг с другом, но когда на кону стоят большие деньги, они знают, как себя вести. Элита, которая вас здесь встречает, судя по всему, отвечает за контроль над сделками.\n"
@@ -102,52 +1515,52 @@ msgstr ""
 "\t\tЕсли не хотите разозлить слизня и его безжалостных подельников, вам лучше купить что-нибудь у каждой из пиратских подфракций.\n"
 "Это все или ничего, но если вы это сделаете, пираты повсюду будут уважать вас еще больше!"
 
-#: src-en/data/events_sector_radikal.xml:214
+#: src-en/data/events_sector_radikal.xml:1810
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY\"]/choice[1]/text"
 msgstr "Да, это я. Хватит болтать, покажи, на что ты способен."
 
-#: src-en/data/events_sector_radikal.xml:222
+#: src-en/data/events_sector_radikal.xml:1818
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY\"]/choice[2]/text"
 msgstr "Это не мы, мы просто проходим мимо."
 
-#: src-en/data/events_sector_radikal.xml:239
+#: src-en/data/events_sector_radikal.xml:1835
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/text"
 msgstr "Все пираты с нетерпением смотрят на вас."
 
-#: src-en/data/events_sector_radikal.xml:245
+#: src-en/data/events_sector_radikal.xml:1841
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_met_slaver\""
 " and @lvl=\"0\"]/text"
 msgstr "Встретиться с работорговцем из Тииикаки."
 
-#: src-en/data/events_sector_radikal.xml:255
+#: src-en/data/events_sector_radikal.xml:1851
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_met_slaver\""
 " and @lvl=\"1\"]/text"
 msgstr "Работорговец, сидя на лице раба, пересчитывает свой лом."
 
-#: src-en/data/events_sector_radikal.xml:260
+#: src-en/data/events_sector_radikal.xml:1856
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_met_mercenary\""
 " and @lvl=\"0\"]/text"
 msgstr "Встретиться с наемником из Синдиката."
 
-#: src-en/data/events_sector_radikal.xml:264
+#: src-en/data/events_sector_radikal.xml:1860
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_met_mercenary\""
 " and @lvl=\"1\"]/text"
 msgstr "Наемник жонглирует кусочками лома, ножами и заряженным оружием."
 
-#: src-en/data/events_sector_radikal.xml:269
+#: src-en/data/events_sector_radikal.xml:1865
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_met_smuggler\""
 " and @lvl=\"0\"]/text"
 msgstr "Встретиться с контрабандистом из Арджонна."
 
-#: src-en/data/events_sector_radikal.xml:273
+#: src-en/data/events_sector_radikal.xml:1869
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_met_smuggler\""
 " and @lvl=\"1\"]/text"
@@ -155,12 +1568,12 @@ msgstr ""
 "Контрабандист говорит своей третьей жене, что она может купить того "
 "дворецкого."
 
-#: src-en/data/events_sector_radikal.xml:279
+#: src-en/data/events_sector_radikal.xml:1875
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_count\"]/text"
 msgstr "Поблагодарить их за сотрудничество и попрощаться."
 
-#: src-en/data/events_sector_radikal.xml:281
+#: src-en/data/events_sector_radikal.xml:1877
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_count\"]/event/text"
 msgstr ""
@@ -168,71 +1581,71 @@ msgstr ""
 "\t\t\t\t\n"
 "\t\t\t\tВас отпускают с небольшим подарком и широкими улыбками на лицах. Поздравляем,вы только что сделал галактику еще хуже."
 
-#: src-en/data/events_sector_radikal.xml:288
+#: src-en/data/events_sector_radikal.xml:1884
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[@req=\"rks_pirate_trinity_count\"]/event/choice/text"
 msgstr "Продолжить..."
 
-#: src-en/data/events_sector_radikal.xml:296
+#: src-en/data/events_sector_radikal.xml:1892
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE\"]/choice[8]/text"
 msgstr "Мы не будем вести дела со всеми вами. Мы уходим."
 
-#: src-en/data/events_sector_radikal.xml:302
+#: src-en/data/events_sector_radikal.xml:1898
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/text"
 msgstr ""
 "\"С военных кораблей, из шахтерских лагерей, детских садов и даже с передовых рубежей мы привозим самых лучших и умных рабов! Наверняка один из них - именно тот, кто вам нужен...\n"
 "\t\tЕсли, конечно, вы не хотите платить. Тогда мы наденем ошейник раба и на вас\"."
 
-#: src-en/data/events_sector_radikal.xml:307
+#: src-en/data/events_sector_radikal.xml:1903
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/text"
 msgstr "Продолжить..."
 
-#: src-en/data/events_sector_radikal.xml:309
+#: src-en/data/events_sector_radikal.xml:1905
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/text"
 msgstr ""
 "Работорговец с гордостью выставляет на обозрение несчастных, чтобы вы их "
 "купили."
 
-#: src-en/data/events_sector_radikal.xml:313
+#: src-en/data/events_sector_radikal.xml:1909
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[1]/text"
 msgstr "Купить раба."
 
-#: src-en/data/events_sector_radikal.xml:315
+#: src-en/data/events_sector_radikal.xml:1911
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[1]/event/text"
 msgstr "\"Отличная покупка. Уверен, они отлично послужат, капитан!\""
 
-#: src-en/data/events_sector_radikal.xml:325
+#: src-en/data/events_sector_radikal.xml:1920
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[1]/event/choice/text"
 msgstr "Продолжить..."
 
-#: src-en/data/events_sector_radikal.xml:334
+#: src-en/data/events_sector_radikal.xml:1929
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[2]/text"
 msgstr "Купить раба получше."
 
-#: src-en/data/events_sector_radikal.xml:336
+#: src-en/data/events_sector_radikal.xml:1931
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[2]/event/text"
 msgstr "\"Отличная покупка. Уверен, они отлично послужат, капитан!\""
 
-#: src-en/data/events_sector_radikal.xml:344
+#: src-en/data/events_sector_radikal.xml:1939
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[2]/event/choice/text"
 msgstr "Продолжить..."
 
-#: src-en/data/events_sector_radikal.xml:351
+#: src-en/data/events_sector_radikal.xml:1946
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[3]/text"
 msgstr "Купить элитного раба."
 
-#: src-en/data/events_sector_radikal.xml:353
+#: src-en/data/events_sector_radikal.xml:1948
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[3]/event/text"
 msgstr ""
@@ -240,17 +1653,17 @@ msgstr ""
 "Это один из лучших рабов, каких я когда-либо видел. Уверяю вас, он послужит "
 "на славу, капитан!\""
 
-#: src-en/data/events_sector_radikal.xml:361
+#: src-en/data/events_sector_radikal.xml:1956
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[3]/event/choice/text"
 msgstr "Продолжить..."
 
-#: src-en/data/events_sector_radikal.xml:368
+#: src-en/data/events_sector_radikal.xml:1963
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[4]/text"
 msgstr "Знаешь, что, самое смешное, что мы на мели..."
 
-#: src-en/data/events_sector_radikal.xml:370
+#: src-en/data/events_sector_radikal.xml:1965
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[4]/event/text"
 msgstr ""
@@ -259,64 +1672,64 @@ msgstr ""
 "\t\t\t\t\t\tВы не можете понять, зол ли надзиратель-слизень, доволен ли он или и то и другое сразу. \"Ха! Я так и знал, ты просссто хотел разом перебить кучу пиратов, герой-недоучка. И знаешшшь что - мы не такие глупые! Эй, Курт, гони добычу, я выиграл ссспор\".\n"
 "\t\t\t\t\t\tС этими словами они и другие пиратские корабли уходят в прыжок, оставляя вас разбираться с работорговцами!"
 
-#: src-en/data/events_sector_radikal.xml:377
+#: src-en/data/events_sector_radikal.xml:1972
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[4]/event/choice/text"
 msgstr "Продолжить..."
 
-#: src-en/data/events_sector_radikal.xml:388
+#: src-en/data/events_sector_radikal.xml:1983
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/text"
 msgstr ""
 "\"Будьте на шаг впереди своих врагов благодаря нашим спецслужбам. От разведки до отвлечения внимания и далее... до более решительных действий, как только мы достаточно хорошо познакомимся!\n"
 "\t\tКонечно, при условии, что вы не сделали себя нашей следующей целью, придя сюда с пустыми руками\"."
 
-#: src-en/data/events_sector_radikal.xml:393
+#: src-en/data/events_sector_radikal.xml:1988
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/text"
 msgstr "Продолжить..."
 
-#: src-en/data/events_sector_radikal.xml:395
+#: src-en/data/events_sector_radikal.xml:1990
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/text"
 msgstr "Наемник из Синдиката ждет ваших приказов."
 
-#: src-en/data/events_sector_radikal.xml:399
+#: src-en/data/events_sector_radikal.xml:1994
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/choice[1]/text"
 msgstr "Купить карту сектора."
 
-#: src-en/data/events_sector_radikal.xml:401
+#: src-en/data/events_sector_radikal.xml:1996
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/choice[1]/event/text"
 msgstr "\"Есть, капитан!\""
 
-#: src-en/data/events_sector_radikal.xml:409
+#: src-en/data/events_sector_radikal.xml:2004
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/choice[1]/event/choice/text"
 msgstr "Продолжить..."
 
-#: src-en/data/events_sector_radikal.xml:416
+#: src-en/data/events_sector_radikal.xml:2011
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/choice[2]/text"
 msgstr "Задержать флот повстанцев на 2 хода."
 
-#: src-en/data/events_sector_radikal.xml:418
+#: src-en/data/events_sector_radikal.xml:2013
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/choice[2]/event/text"
 msgstr "\"Мы уже занимаемся этим, капитан!\""
 
-#: src-en/data/events_sector_radikal.xml:426
+#: src-en/data/events_sector_radikal.xml:2021
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/choice[2]/event/choice/text"
 msgstr "Продолжить..."
 
-#: src-en/data/events_sector_radikal.xml:433
+#: src-en/data/events_sector_radikal.xml:2028
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/choice[3]/text"
 msgstr "Знаешь, что, самое смешное, что мы на мели..."
 
-#: src-en/data/events_sector_radikal.xml:435
+#: src-en/data/events_sector_radikal.xml:2030
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/choice[3]/event/text"
 msgstr ""
@@ -325,79 +1738,79 @@ msgstr ""
 "\t\t\t\t\t\tВы не можете понять, зол ли надзиратель-слизень, доволен ли он или и то и другое сразу. \"Ха! Я так и знал, ты просссто хотел разом перебить кучу пиратов, герой-недоучка. И знаешшшь что - мы не такие глупые! Эй, Курт, гони добычу, я выиграл ссспор\".\n"
 "\t\t\t\t\t\tС этими словами они и другие пиратские корабли уходят в прыжок, оставляя вас разбираться с наемниками!"
 
-#: src-en/data/events_sector_radikal.xml:442
+#: src-en/data/events_sector_radikal.xml:2037
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/choice[3]/event/choice/text"
 msgstr "Продолжить..."
 
-#: src-en/data/events_sector_radikal.xml:452
+#: src-en/data/events_sector_radikal.xml:2047
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/text"
 msgstr ""
 "\"Знаете, чем отличаются хорошие капитаны от великих? Мы-то знаем, и дело именно в том, где они добывают свое оружие. Мы предлагаем уникальное оружие и усовершенствования, которых не найдешь в обычных магазинах.\n"
 "\t\tА откуда мы их достали? С безжизненных кораблей капитанов-неплательщиков, к которым вы, конечно же, не относитесь, ведь вы слишком умны для этого, верно?\""
 
-#: src-en/data/events_sector_radikal.xml:457
+#: src-en/data/events_sector_radikal.xml:2052
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/text"
 msgstr "Продолжить..."
 
-#: src-en/data/events_sector_radikal.xml:459
+#: src-en/data/events_sector_radikal.xml:2054
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/text"
 msgstr "Контрабандист ждет вашего заказа."
 
-#: src-en/data/events_sector_radikal.xml:463
+#: src-en/data/events_sector_radikal.xml:2058
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[1]/text"
 msgstr "Купить запасное оружие."
 
-#: src-en/data/events_sector_radikal.xml:465
+#: src-en/data/events_sector_radikal.xml:2060
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[1]/event/text"
 msgstr "\"Наслаждайтесь этой небольшой дополнительной огневой мощью!\""
 
-#: src-en/data/events_sector_radikal.xml:473
+#: src-en/data/events_sector_radikal.xml:2068
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[1]/event/choice/text"
 msgstr "Продолжить..."
 
-#: src-en/data/events_sector_radikal.xml:480
+#: src-en/data/events_sector_radikal.xml:2075
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[2]/text"
 msgstr "Купить любое оружие РадиКалов."
 
-#: src-en/data/events_sector_radikal.xml:482
+#: src-en/data/events_sector_radikal.xml:2077
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[2]/event/text"
 msgstr "\"Наслаждайтесь дополнительной огневой мощью!\""
 
-#: src-en/data/events_sector_radikal.xml:490
+#: src-en/data/events_sector_radikal.xml:2085
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[2]/event/choice/text"
 msgstr "Продолжить..."
 
-#: src-en/data/events_sector_radikal.xml:497
+#: src-en/data/events_sector_radikal.xml:2092
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[3]/text"
 msgstr "Купить случайный очень редкий модуль РадиКалов."
 
-#: src-en/data/events_sector_radikal.xml:499
+#: src-en/data/events_sector_radikal.xml:2094
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[3]/event/text"
 msgstr "\"Используйте его с осторожностью!\""
 
-#: src-en/data/events_sector_radikal.xml:507
+#: src-en/data/events_sector_radikal.xml:2102
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[3]/event/choice/text"
 msgstr "Продолжить..."
 
-#: src-en/data/events_sector_radikal.xml:514
+#: src-en/data/events_sector_radikal.xml:2109
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[4]/text"
 msgstr "Знаешь, что, самое смешное, что мы на мели..."
 
-#: src-en/data/events_sector_radikal.xml:516
+#: src-en/data/events_sector_radikal.xml:2111
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[4]/event/text"
 msgstr ""
@@ -406,91 +1819,91 @@ msgstr ""
 "\t\t\t\t\t\tВы не можете понять, зол ли надзиратель-слизень, доволен ли он или и то и другое сразу. \"Ха! Я так и знал, ты просссто хотел разом перебить кучу пиратов, герой-недоучка. И знаешшшь что - мы не такие глупые! Эй, Курт, гони добычу, я выиграл ссспор\".\n"
 "\t\t\t\t\t\tС этими словами они и другие пиратские корабли уходят в прыжок, оставляя вас разбираться с контрабандистами!"
 
-#: src-en/data/events_sector_radikal.xml:523
+#: src-en/data/events_sector_radikal.xml:2118
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[4]/event/choice/text"
 msgstr "Продолжить..."
 
-#: src-en/data/events_sector_radikal.xml:534
+#: src-en/data/events_sector_radikal.xml:2129
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_FIGHT_CURRENT_PIRATE\"]/text"
 msgstr ""
 "\"Конечно же, ты такой. Я же тебе говорил, Курт, гони мне мой лом, ты проиграл спор. Давай-ка прикончим этих чертовых клоунов\".\n"
 "\t\tПохоже, вам придется пробивать себе путь!"
 
-#: src-en/data/events_sector_radikal.xml:541
+#: src-en/data/events_sector_radikal.xml:2136
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_FIGHT_CURRENT_PIRATE\"]/choice/text"
 msgstr "Продолжить..."
 
-#: src-en/data/events_sector_radikal.xml:548
+#: src-en/data/events_sector_radikal.xml:2143
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_SLAVER\"]/destroyed/text"
 msgstr ""
 "Корабль работорговцев уничтожен. Вы собираете его обломки.\n"
 "\t\t\tНамеренно или нет, но вы наделали беспорядка, сорвав деятельность пиратов в этом секторе."
 
-#: src-en/data/events_sector_radikal.xml:553
+#: src-en/data/events_sector_radikal.xml:2148
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_SLAVER\"]/destroyed/choice/text"
 msgstr "Продолжить..."
 
-#: src-en/data/events_sector_radikal.xml:558
+#: src-en/data/events_sector_radikal.xml:2153
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_SLAVER\"]/deadCrew/text"
 msgstr ""
 "Корабль работорговцев уничтожен. Вы демонтируете внутреннее оборудование и освобождаете сильного раба из грузового отсека!\n"
 "\t\t\tНамеренно или нет, но вы наделали кучу беспорядка, сорвав деятельность пиратов в этом секторе."
 
-#: src-en/data/events_sector_radikal.xml:564
+#: src-en/data/events_sector_radikal.xml:2159
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_SLAVER\"]/deadCrew/choice/text"
 msgstr "Продолжить..."
 
-#: src-en/data/events_sector_radikal.xml:571
+#: src-en/data/events_sector_radikal.xml:2166
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_MERCENARY\"]/destroyed/text"
 msgstr ""
 "Корабль наемников уничтожен. Вы собираете его обломки.\n"
 "\t\t\tНамеренно или нет, но вы наделали беспорядка, сорвав деятельность пиратов в этом секторе."
 
-#: src-en/data/events_sector_radikal.xml:576
+#: src-en/data/events_sector_radikal.xml:2171
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_MERCENARY\"]/destroyed/choice/text"
 msgstr "Продолжить..."
 
-#: src-en/data/events_sector_radikal.xml:581
+#: src-en/data/events_sector_radikal.xml:2176
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_MERCENARY\"]/deadCrew/text"
 msgstr ""
 "Корабль наемников уничтожен. Вы разбираете его на запчасти и находите в терминале подробные данные о секторе!\n"
 "\t\t\tНамеренно или нет, но вы наделали кучу дел, сорвав деятельность пиратов в этом секторе."
 
-#: src-en/data/events_sector_radikal.xml:587
+#: src-en/data/events_sector_radikal.xml:2182
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_MERCENARY\"]/deadCrew/choice/text"
 msgstr "Продолжить..."
 
-#: src-en/data/events_sector_radikal.xml:594
+#: src-en/data/events_sector_radikal.xml:2189
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_SMUGGLER\"]/destroyed/text"
 msgstr ""
 "Корабль контрабандистов уничтожен. Вы собираете обломки.\n"
 "\t\t\tНамеренно или нет, но вы наделали беспорядка, сорвав деятельность пиратов в этом секторе."
 
-#: src-en/data/events_sector_radikal.xml:599
+#: src-en/data/events_sector_radikal.xml:2194
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_SMUGGLER\"]/destroyed/choice/text"
 msgstr "Продолжить..."
 
-#: src-en/data/events_sector_radikal.xml:604
+#: src-en/data/events_sector_radikal.xml:2199
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_SMUGGLER\"]/deadCrew/text"
 msgstr ""
 "Корабль контрабандистов уничтожен. Вы разбираете его на запчасти и находите оружие в грузовом отсеке!\n"
 "\t\t\tНамеренно или нет, но вы наделали кучу беспорядка, сорвав деятельность пиратов в этом секторе."
 
-#: src-en/data/events_sector_radikal.xml:611
+#: src-en/data/events_sector_radikal.xml:2205
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_TRINITY_SMUGGLER\"]/deadCrew/choice/text"
 msgstr "Продолжить..."
