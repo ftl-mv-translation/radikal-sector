@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-05-22 16:07+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/radikal-sector/datablueprintsxmlappend/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/blueprints.xml.append:39
 msgid ""
@@ -73,6 +80,7 @@ msgid ""
 msgstr "主动能力：每跃迁一次，立即引爆一枚炸弹"
 
 #: src-en/data/blueprints.xml.append:107
+#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/powerList/power[3]"
 msgstr "75点最大生命值"
@@ -177,10 +185,13 @@ msgid ""
 msgstr "噬舰冲击"
 
 #: src-en/data/blueprints.xml.append:201
+#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_COMBAT_SHIPVORE_RAM\"]/desc"
 msgstr ""
-"拉迪卡尔·巴姆的标志性战斗强化，能够让你反复冲撞敌人，造成稳定而快速的致命伤害，获得免费维修，有时还有其它好处。警告：你的飞船和/或船员可能会因此受伤。[消耗 {，满功率使用消耗更多并会摧毁该增强部件。应急供能器和燃料回收器可生效。]\n"
+"拉迪卡尔·巴姆的标志性战斗强化，能够让你反复冲撞敌人，造成稳定而快速的致命伤害"
+"，获得免费维修，有时还有其它好处。警告：你的飞船和/或船员可能会因此受伤。[消"
+"耗 {，满功率使用消耗更多并会摧毁该增强部件。应急供能器和燃料回收器可生效。]\n"
 "\t可以在空信标处进行加固，以承受下一次满功率使用。"
 
 #: src-en/data/blueprints.xml.append:211
@@ -250,12 +261,15 @@ msgid ""
 msgstr "铅之泰坦"
 
 #: src-en/data/blueprints.xml.append:260
+#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_LEAD_TITANS\"]/desc"
 msgstr ""
-"拉迪卡尔·巴姆的工程师们产生了一个疯狂的想法：将移动的纤维铅编织到能够承受它的生物肌肉中。\n"
+"拉迪卡尔·巴姆的工程师们产生了一个疯狂的想法：将移动的纤维铅编织到能够承受它的"
+"生物肌肉中。\n"
 "\t\t\n"
-"\t\t你的水晶、岩石和食铁族对一切的抗性翻倍，对一切的伤害变为三倍，并获得 1.4 倍更快的维修和移动速度。\n"
+"\t\t你的水晶、岩石和食铁族对一切的抗性翻倍，对一切的伤害变为三倍，并获得 1.4 "
+"倍更快的维修和移动速度。\n"
 "\t\t然而，其重量和体积使他们占用 2 个船员槽位，并且每走几步就会造成一处破舱。"
 
 #: src-en/data/blueprints.xml.append:273
@@ -297,11 +311,14 @@ msgid ""
 msgstr "谜团机"
 
 #: src-en/data/blueprints.xml.append:371
+#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_COMBAT_HACK_FLEET\"]/desc"
 msgstr ""
-"这款拉迪卡尔·朋克战斗增强部件尝试通过敌方的通讯系统发送深度伪造情报给叛军以增加可信度。成功则会延迟舰队，暴击失败则会加速舰队。\n"
-"\t\t若在此过程中你造成超过 2 点船体伤害，该尝试将停止。自由使用需要 17 秒。限制你的黑客系统并消耗无人机部件可获得更快更好的结果。（可能会有人注意到）\n"
+"这款拉迪卡尔·朋克战斗增强部件尝试通过敌方的通讯系统发送深度伪造情报给叛军以增"
+"加可信度。成功则会延迟舰队，暴击失败则会加速舰队。\n"
+"\t\t若在此过程中你造成超过 2 点船体伤害，该尝试将停止。自由使用需要 17 秒。限"
+"制你的黑客系统并消耗无人机部件可获得更快更好的结果。（可能会有人注意到）\n"
 "\t\t\n"
 "\t\t几率（成功 / 暴击 / 暴击失败）\n"
 "\t\t0| 无黑客 = 60% / 5% / 15%\n"
@@ -352,10 +369,14 @@ msgid ""
 msgstr "朋克谐合（关）"
 
 #: src-en/data/blueprints.xml.append:423
+#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_OWN_HARMONY_OFF\"]/desc"
 msgstr ""
-"几个愚蠢的拉迪卡尔·朋克制造出了他们自己的谐合器。它会控制你飞船上的半械，使其免疫（进一步）的心灵控制，并获得 +40% 的伤害抗性和眩晕抗性。黑客或心灵控制的已升级等级会提供 5/10/20/40/80/160% 的战斗伤害加成，以及维修和移动速度加成。\n"
+"几个愚蠢的拉迪卡尔·朋克制造出了他们自己的谐合器。它会控制你飞船上的半械，使其"
+"免疫（进一步）的心灵控制，并获得 +40% 的伤害抗性和眩晕抗性。黑客或心灵控制的"
+"已升级等级会提供 5/10/20/40/80/160% 的战斗伤害加成，以及维修和移动速度加成"
+"。\n"
 "\t\n"
 "\t简而言之，让他们变得更硬、更好、更快、更强，并且自动化。\n"
 "\t\n"
