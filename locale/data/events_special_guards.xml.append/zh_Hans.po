@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-05-22 16:07+0000\n"
+"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/radikal-sector/dataevents_special_guardsxmlappend/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events_special_guards.xml.append:6
 #, fuzzy
@@ -58,10 +65,13 @@ msgid ""
 msgstr "（任何一件 RK 装备）常客。给我安排上！"
 
 #: src-en/data/events_special_guards.xml.append:56
+#, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/text"
-msgstr "“好装备！既然你已经是我们中的一员了，这是所有最新的坐标，供你多元化选择。”说完，守卫已经忙着应付下一艘船了。"
+msgstr ""
+"“好装备！既然你已经是我们中的一员了，这是所有最新的坐标，供你多元化选择。”说"
+"完，守卫已经忙着应付下一艘船了。"
 
 #: src-en/data/events_special_guards.xml.append:58
 #, fuzzy
@@ -234,12 +244,17 @@ msgid ""
 msgstr "这儿就是海盗的老巢，对吧？我们来做点买卖。*Spit*"
 
 #: src-en/data/events_special_guards.xml.append:202
+#, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[4]/event/text"
 msgstr ""
-"“哦。”守卫似乎有点恼火，要么是厌倦了每次都费劲解释，要么是对你过火的态度不以为然。“你稍微有点搞错了，海盗勾当不是我们的重点，追求不受束缚的进步才更像那么回事。但没错，你可以在这里进行所谓的非法交易。我会把你的兴趣告知所有相关方，而你……务必要带够废料。”\n"
+"“哦。”守卫似乎有点恼火，要么是厌倦了每次都费劲解释，要么是对你过火的态度不以"
+"为然。“你稍微有点搞错了，海盗勾当不是我们的重点，追求不受束缚的进步才更像那么"
+"回事。但没错，你可以在这里进行所谓的非法交易。我会把你的兴趣告知所有相关方，"
+"而你……务必要带够废料。”\n"
 "\t\t\t\t\t\t\n"
-"\t\t\t\t\t\t他们把坐标发给你，然后放你过去了。尽管这个星区行事隐秘，但你心里已经清楚，这将会对你的整体声誉产生负面影响。"
+"\t\t\t\t\t\t他们把坐标发给你，然后放你过去了。尽管这个星区行事隐秘，但你心里"
+"已经清楚，这将会对你的整体声誉产生负面影响。"
 
 #: src-en/data/events_special_guards.xml.append:214
 msgid ""
