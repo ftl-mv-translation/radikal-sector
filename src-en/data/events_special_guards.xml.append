@@ -53,7 +53,7 @@
 			<choice req="DJMOD_HAS_RADIKAL_GEAR" hidden="true">
 				<text>(Any piece of RK gear) Reg. Hit me up!</text>
 				<event>
-					<text>"Nice piece! Since you're already one of us, here are all the latest coordinates, in case you want to diversify your options." With that, the guard is already busy with the next ship.</text>
+					<text>"Nice piece! Since you're already one of us, here are all the latest coordinates, in case you want to diversify your options."</text>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event>
@@ -122,8 +122,7 @@
 							<choice hidden="true">
 								<text>Pick "Bam".</text>
 								<event>
-									<text>"The classics, always reliable. A wise choice." The guard transmits the coordinates to you, then quickly cuts comms before you can answer.</text>
-									<!-- <quest event="QUEST_LANIUS_ZOLTAN_PEACE"/> -->
+									<text>"Always reliable. 'When in doubt, make big holes in it until it's in pieces' never fails." The guard transmits the coordinates to you, then quickly cuts comms before you can answer.</text>
 									<quest event="RKS_QUEST_LAB_BAM">
 										<!-- <nextSector>false</nextSector>
 										<aggressive>2</aggressive> -->
@@ -143,10 +142,8 @@
 							<choice hidden="true">
 								<text>Pick "Punk".</text>
 								<event>
-									<text>"A timely choice, I heard they've got some new stuff available." The guard transmits the coordinates to you, then quickly cuts comms before you can answer.</text>
+									<text>"A timely choice, I heard they've got some new elaborate killing gear and nerdy stuff available." The guard transmits the coordinates to you, then quickly cuts comms before you can answer.</text>
 									<quest event="RKS_QUEST_LAB_PUNK">
-										<!-- <nextSector>false</nextSector>
-										<aggressive>2</aggressive> -->
 									</quest>
 									<variable name="rks_lab_coords_punk" op="set" val="1"/>
 									
@@ -165,8 +162,6 @@
 								<event>
 									<text>"Looking for hot stuff, I see." The guard transmits the coordinates to you, then quickly cuts comms before you can answer.</text>
 									<quest event="RKS_QUEST_LAB_SCORCH">
-										<!-- <nextSector>false</nextSector>
-										<aggressive>2</aggressive> -->
 									</quest>
 									<variable name="rks_lab_coords_scorch" op="set" val="1"/>
 									
@@ -204,9 +199,10 @@
 			<choice hidden="true">
 				<text>This here the pirate haven, innit? We'ere for business. *Spit*</text>
 				<event>
-					<text>"Oh." The guard seems slightly annoyed, either tired of clearing things up every time or unimpressed by your overdone attitude. "You are slightly mistaken, piracy isn't our focus, unbound progress is more like it. But yes you can conduct what's called illegal types of trade here. I'll let your interests be known to all interested parties, and you... make SURE to bring enough scrap."
+					<text>"Oh." The guard seems slightly annoyed, either tired of clearing things up every time or unimpressed by your overdone attitude. "You are slightly mistaken, piracy isn't our focus, unbound progress is more like it. But yes you can conduct what others call illegal types of trade here. Very useful to source the kind of things we need.
+						I'll let your request be known to all interested parties, and you... make SURE to bring enough scrap. We like to avoid unnecessary messes."
 						
-						They send you the coordinates and let you past. Despite the secrecy of this sector you can already tell that this will reflect poorly on your general reputation.
+						They send you the coordinates and let you past. Despite the secrecy of this sector you can already tell that this will reflect poorly on your general reputation. Though if you can get everything you need by yourself and from pirates, it doesn't matter.
 					</text>
 
 					<!-- The "quest event" parameters are in the event itself, seems to work better overall. -->

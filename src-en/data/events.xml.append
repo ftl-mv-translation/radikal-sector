@@ -8,12 +8,23 @@ MISSILES }
 DRONEPARTS |
 REPAIRS $
 
-THEY CAN HAVE REQS NOW v5.5.1 (not sure when that happened):
+EVENTS CAN HAVE REQS NOW v5.5.1 (not sure when that happened):
 <event name="NEBULA_SLUG_O2_JAM" unique="true">
 	<loadEventList seeded="false" first="false" generate="false">
 		<event name="NEBULA_ENCOUNTER_SLUG_REGULAR" req="oxygen" lvl="0" max_lvl="0"/>
 		<event name="NEBULA_SLUG_OXYGEN" req="oxygen" lvl="1"/>
 	</loadEventList>
+</event>
+
+<event name="EVENT_TEMPLATE">
+	<text>For copy-paste / copy and paste.</text>
+
+	<choice>
+		<text>Ok</text>
+		<event>
+			<text>text</text>
+		</event>
+	</choice>
 </event>
 
 REFS v5.5.1 in hyperspace.xml
@@ -346,9 +357,9 @@ REF MV v5.5.1: <transformRace class="leech">leech_ampere</transformRace>
 	</choice>
 	
 	<choice hidden="true">
-		<text>What? Of course not. Wait, are you OK?</text>
+		<text>What? Of course not. Hold tight!</text>
 		<event>
-			<text>"I... ha-... have failed." Looking mortified, he crushes a small chip inscribed with a couple capital letters, which briefly but intensely burns. Then he dies.
+			<text>"Don't b- *cough* ... bother, it's too late ... for me... I... ha-... have failed." Looking mortified, he crushes a small chip inscribed with a couple capital letters, which briefly but intensely burns. Then he dies.
 			
 				You proceed to strip the body, notice the swelling and necrosis, and wonder why selling you illegal gear mattered more to that guy more than his impending death. You wonder if the store owner knew and just scammed you.
 			At least there's some valuable tech in the dead soldier's pocket to recoup your losses.</text>
@@ -491,6 +502,7 @@ If used in eventList, list must have a non-unique option!-->
 	<event load="RADIKAL_ENSLAVED_GOODEND_DUSKBRINGER"/>
 	<event load="RADIKAL_ENSLAVED_GOODEND_GOUL"/>
 	<event load="RADIKAL_ENSLAVED_GOODEND_MANTIS"/>
+	<!-- Don't give rk_weaponlike, half crew slot isn't on the same level -->
 	<event load="RADIKAL_ENSLAVED_GOODEND_RK_FIREGHOST"/>
 	
 	<event load="RADIKAL_ENSLAVED_BADEND_LOSTSUN"/>
@@ -670,6 +682,16 @@ If used in eventList, list must have a non-unique option!-->
 										</event>
 									</choice>
 
+									<choice req="RK_KILLALL_BEAM" hidden="true">
+										<text>Sell them your Gravespred beam for 135~.</text>
+										<event>
+											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
+											<remove name="RK_KILLALL_BEAM"/>
+											<item_modify>
+												<item type="scrap" min="135" max="135"/>
+											</item_modify>
+										</event>
+									</choice>
 									<choice req="RK_RAIN_OF_ION" hidden="true">
 										<text>Sell them your Rain of Ions shotgun for 180~.</text>
 										<event>
@@ -812,7 +834,17 @@ If used in eventList, list must have a non-unique option!-->
 											</item_modify>
 										</event>
 									</choice>
-
+									
+									<choice req="RK_KILLALL_BEAM" hidden="true">
+										<text>Sell them your Gravespred beam for 135~.</text>
+										<event>
+											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
+											<remove name="RK_KILLALL_BEAM"/>
+											<item_modify>
+												<item type="scrap" min="135" max="135"/>
+											</item_modify>
+										</event>
+									</choice>
 									<choice req="RK_RAIN_OF_ION" hidden="true">
 										<text>Sell them your Rain of Ions shotgun for 180~.</text>
 										<event>
@@ -1163,7 +1195,7 @@ If used in eventList, list must have a non-unique option!-->
 <event name="RADIKAL_PHILO_GOODBYE">
 	<text>She looks cheerful. "Why, thank you! Very few of you young'uns take a pause to listen to an old lady around these parts. For some reason they seem to favor... 'enhanced interrogation' I think the kids call it? Something about manufacturing details. Anyhoo, farewell!"
 	You notice a shuttle sent to share a little of her supplies with you. That job might be lonelier than it looks, and you wonder how often her sons visit her.</text>
-	<autoReward level="MED">stuff</autoReward>
+	<autoReward level="HIGH">stuff</autoReward>
 	<modifyPursuit amount="1"/>
 	
 	<choice>
@@ -2110,7 +2142,7 @@ Empty beacons
 <textList name="EMPTY_RADIKAL">
 	<text>You arrive at the beacon and are relieved to get a break, as nobody here seems to care about what tech you do or don't have.</text>
 	<text>No other ships or interesting structures can be found here, a chance to do some work on your ship, or chat with your crew maybe.</text>
-	<text>This sector isn't exactly what you'd call calm, but here at least there is nothing going on worthy of attention.</text>
+	<text>This sector isn't exactly what you'd call calm, but here at least there is nothing going on here worthy of attention.</text>
 	<text>Looks like you've found a relatively peaceful spot, a rarity in this sector.</text>
 	<text>A weapons test seems to have gone catastrophically wrong around here recently, and the place is currently abandoned.</text>
 </textList>
@@ -2127,9 +2159,10 @@ Empty beacons
 	</choice>
 </event>
 <textList name="NEBULA_EMPTY_RADIKAL">
-	<text>It looks like this nebula is a good hiding spot for now, no hostiles detected.</text>
+	<text>No living thing here, just large autoships harvesting gases. Probably ingredients for some deadly weapon, but it wouldn't be worth your time to engage with them.</text>
 	<text>You won't find any special tech here, but nobody to bother you either, not even ambushing pirates.</text>
 	<text>This beacon is closed off for security reasons, but that's all the computer says. You can probably enjoy the mesmerizing nebula without getting hit by some experimental weapon.</text>
+	<text>It looks like this nebula is a good hiding spot for now, no hostiles detected.</text>
 </textList>
 </FTL>
 
@@ -2494,7 +2527,7 @@ REFS MV v5.5.1:
 <event name="CURA_FAILED_TASK">
 	<text>Suddenly, you receive a hail from C.U.R.A. - You aren't sure where it's coming from, but it's strangely not far away. "What was that, Renegade? My instructions were clear. You've failed. This is an unrecoverable loss of data. [ERROR: 907]. This is an intolerable blunder. Consider yourself formally dismissed."</text>
 	<variable name="loc_task_accepted" op="set" val="0"/>
-	<clearJumpEvent/> 
+	<clearJumpEvent/>
 </event>
 -->
 <event name="RKS_EXIT_PIRATE_TRINITY_AMBUSH">
@@ -2519,7 +2552,31 @@ REFS MV v5.5.1:
 
 <!-- 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////				LUA XML CALLS because it can't do everything by itself. see luatoolbox.lua.
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<!-- Should be OBSO now? Keep for reference? -->
+<event name="ADD_WOF_STACK_Q">
+	<queueEvent>ADD_WOF_STACK</queueEvent>
+</event>
+<event name="ADD_WOF_STACK">
+	<hiddenAug>RK_WEAPONS_ON_FIRE_TEMP</hiddenAug>
+</event>
+
+<event name="REMOVE_WOF_STACK_Q">
+	<queueEvent>REMOVE_WOF_STACK</queueEvent>
+</event>
+<event name="REMOVE_WOF_STACK">
+	<!-- NB: remove has "HIDDEN " in front, with the space. -->
+	<remove name="HIDDEN RK_WEAPONS_ON_FIRE_TEMP"/>
+</event>
+<!-- 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////				REFS v5.5.1
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 <instantEscape/>		This is how non-player ships instantly jump out.
@@ -2637,48 +2694,4 @@ HOW TO HAVE MULTIPLE ENEMY HP THRESHOLD EVENTS (kleptocracy sector Pleasure Barg
 		</choice>
 	</deadCrew>
 </ship>
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////				REFS v5.2.3 (to be updated)
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	
-From events_gb (ghostbusters ship)
-
-<event name="STORAGE_CHECK_PROTONPACK_LOCATE_VAGABOND">
-	<text>It appears the nearest ship on the Database is a Vagabond vessel. You mark down the coordinates and shut off the Proton Pack.</text>
-	<quest event="PROTON_VAGABOND"/>
-</event>
-
-
-From Silly's Auto Fleet in events.xml (doesn't bother with an extra xml for its sector code). NOW I KNOW WHY! And she's right.
-
-<event name="SILLY_STORE_EVENT">
-	<text>Silly offers you a broad selection of wares that they dispense directly from different auto support ships. They also offer to install hacking for extra cheap.</text>
-	<choice hidden="true" req="hacking" lvl="0" max_group="0" blue="false">
-		<text>Install the hacking module. [-75~]</text>
-		<event>
-			<text>You install the hacking module. "I sssstole all of thesssse waressss from auto shipssss. Hehe. I am sssso ssssmart."</text>
-			<system name="hacking"/>
-			<item_modify>
-				<item type="scrap" min="-75" max="-75"/>
-			</item_modify>
-			<choice hidden="true">
-				<text>See what they're selling.</text>
-				<event>
-					<store>STORE_SILLY</store>
-				</event>
-			</choice>
-		</event>
-	</choice>
-	<choice>
-		<text>Just shop.</text>
-		<event>
-			<text>"I sssstole all of thesssse waressss from auto shipssss. Hehe. I am sssso ssssmart."</text>
-			<store>STORE_SILLY</store>
-		</event>
-	</choice>
-</event>
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 -->

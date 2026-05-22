@@ -47,6 +47,20 @@ Hostile Events - the most generic type of event. Most of these events are very g
 Store Events - in vanilla, these are just extremely generic beacons with a store. In MV however, stores have been reworked 
 	to be fully fledged events of their own.
 
+<event name="EVENT_TEMPLATE">
+	<text>For copy-paste / copy and paste.</text>
+
+	<choice>
+		<text>Ok</text>
+		<event>
+			<text>text</text>
+		</event>
+	</choice>
+</event>
+
+
+	REF: Old Guard v2.10 for MV v5.5.1, choices with negative rep:
+	<choice req="rep_og_dawn" lvl="-999" max_lvl="1" blue="false">	
 -->
 
 <FTL>
@@ -150,6 +164,170 @@ Store Events - in vanilla, these are just extremely generic beacons with a store
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
+<!-- REF MV v5.5.1: Light Nebula is: always unique, using "NEBULA_LIGHT_" prefix,
+adding back="BACK_EVENT_STARS_SPARSE" with any planet, and limiting sensors manually.
+To make normal nebula instead (debugging?), disable all that and make prefix "NEBULA_" only.
+
+<event name="NEBULA_LIGHT_MONK_GRAVE" unique="true">
+	<text>Though a nebula is still present at this beacon, you can't help but notice strange readings from the nearby moon. With these, you deduct a ship has landed there, but you can't tell what kind.</text>
+	<img back="BACK_EVENT_STARS_SPARSE" planet="PLANET_MOONS"/>
+	<status type="loss" target="player" system="sensors" amount="1"/>
+	...
+</event> -->
+<!-- <event name="NEBULA_RKS_FIGHT_LEAD_TITANS" > -->
+<event name="NEBULA_LIGHT_RKS_FIGHT_LEAD_TITANS" unique="true">
+	<preventQuest/>
+	<text>Right after jumping in, you notice an imposing Shell ship jumping away, leaving behind a few crates and a message for you: "Run while you can! Death is here, we only got away with our lives thanks to smart hacking!"
+		The only other ship here is a small RadiKal Bam dropship collecting the crates in a hurry, but now that they've noticed you it seems like they're moving to attack!
+		
+		You tell them you're not here to mess with them. The captain who answers definitely looks abnormally big for its race.
+		"Yes, miss or mister Renegade. Nobody's flying around this godforsaken nebula all day, but you just happened to get here during this short skirmish, right?
+		Well I'm not taking the risk to believe that, and if it was somehow the truth, blame your own bad luck."
+
+		Unless you have something very convincing to tell them, it seems you'll have to fight!
+	</text>
+	<!-- You still have a few seconds to get out of here, but with the distance you need to put between your ship and their teleporter, there won't be any time left to do maintenance. -->
+	 
+	<!-- <environment type="nebula"/> -->
+	<img back="BACK_EVENT_STARS_SPARSE" planet="PLANET_MOONS"/>
+	<status type="loss" target="player" system="sensors" amount="1"/>
+	
+	<ship load="SHIP_RKS_LEAD_TITANS_USER_SLUG" hostile="false"/>
+
+	<choice req="unique_rk_defromorius" hidden="true">
+		<text>(Defromorius) Tell them to stand down.</text>
+		<event>
+			<text>"--NEW OBJECTIVE: DEFUSE SITUATION-- Greetings. Stop."
+
+				"Sir, yes sir. Damn folks, Defromorius is still alive! Spread the news, those Harmony assholes failed again! Welcome back, sir. So there's no trouble here, then. We'll bring in these spoils and talk later. Here's some of it to apologize for almost attacking you, sir."
+			</text>
+			<item_modify>
+				<item type="scrap" min="15" max="25"/>
+			</item_modify>
+			<instantEscape/>
+
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+
+	<choice hidden="true">
+		<text>Defend yourself!</text>
+		<event>
+			<text>You prepare for combat as your floor is immediately wrecked by a very bulky enemy teleporting in...</text>
+			<ship hostile="true"/>
+			<!-- They DO get augment effects. -->
+			<boarders min="1" max="1" class="crystal"/>
+			<!-- TEST Can we have 2 types in same event screen? NO. -->
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+
+			<!-- <choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>...and another one!</text>
+					<boarders min="1" max="1" class="lanius"/>
+
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="COMBAT_CHECK"/>
+					</choice>
+				</event>
+			</choice> -->
+		</event>
+	</choice>
+
+	<choice req="cloaking" hidden="true" blue="true">
+		<text>(Cloaking) Cloak and fly away before they can lock on.</text>
+		<event/>
+	</choice>
+
+	<choice req="engines" lvl="6" hidden="true" blue="true">
+		<text>(Adv. Engines) Fly away as fast as possible.</text>
+		<event/>
+	</choice>
+</event>
+<ship name="SHIP_RKS_LEAD_TITANS_USER_SLUG" auto_blueprint="RKS_LEAD_TITANS_USER_SLUG">
+	<destroyed>
+		<text>The RK Bam ship breaks apart and you quickly salvage a great amount of things.</text>
+		<autoReward level="HIGH">standard</autoReward>
+
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event>
+				<text>You also find their augments in pieces, with bits of a strange mechanism still attached. No matter what it could do, it's no longer functional, but that's extra scrap.</text>
+				<autoReward level="LOW">standard</autoReward>
+
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event/>
+				</choice>
+			</event>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage a great amount of things from the RK Bam ship.
+			
+			Analyzing the inside, you understand that an internal apparatus can let you extract any of its augments from the ship, but then everything will blow up afterwards.
+			Which one do you pick?
+		</text>
+		<autoReward level="HIGH">standard</autoReward>
+		
+		<choice>
+			<text>"Regenerative Plating"</text>
+			<event>
+				<text>You extract the augment and get away before the ship explodes into tiny pieces.</text>
+				<augment name="REGEN_ARMOR"/>
+
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event/>
+				</choice>
+			</event>
+		</choice>
+
+		<choice>
+			<text>"Choking F.I.N.E."</text>
+			<event>
+				<text>You extract the augment and get away before the ship explodes into tiny pieces.</text>
+				<augment name="EX_RK_CHOKING_IS_FINE"/>
+
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event/>
+				</choice>
+			</event>
+		</choice>
+
+		<choice>
+			<text>"Lead Titans"</text>
+			<event>
+				<text>You extract the augment and get away before the ship explodes into tiny pieces.</text>
+				<augment name="DJMOD_LEAD_TITANS"/>
+
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event/>
+				</choice>
+			</event>
+		</choice>
+	</deadCrew>
+	<crew>
+		<!-- AI is capable of sending the ghosts and keeping 2 titans in! Jeez! -->
+		<!-- <crewMember type="phantom" prop="0.50"/> -->
+		<crewMember type="rock" prop="0.33"/>
+		<!-- <crewMember type="crystal" prop="0.25"/> -->
+		<crewMember type="lanius" prop="0.33"/>
+		<crewMember type="rock_crusader" prop="0.33"/>
+	</crew>
+</ship>
+
+<!-- Hardly skippable fight with thief of RK weapons -->
 <event name="RKS_FIGHT_ELITE_COALITION">
 	<text>The elite Coalition ship here is flying away from the fresh wreck of an unlucky smuggler. They sound very excited on the open comms.
 		"Ok we have steal good weapons. Now, must test! I see prey here, gogogo!"
@@ -188,7 +366,8 @@ Store Events - in vanilla, these are just extremely generic beacons with a store
 		<text>Defend yourself!</text>
 		<event>
 			<text>You prepare for combat.</text>
-			<ship hostile="true"/> 
+			<ship hostile="true"/>
+
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event load="COMBAT_CHECK"/>
@@ -213,7 +392,439 @@ Store Events - in vanilla, these are just extremely generic beacons with a store
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
+<!-- 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+Hideout: Path of Exile-style.
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+ -->
+<event name="NEBULA_RKS_HIDEOUT_SWITCHER" unique="true">
+	<!-- <loadEventList seeded="false" first="false" generate="false"> TEST generate=true to spawn the map marker. -->
+	<loadEventList seeded="false" first="false" generate="true">
+		<event name="NEBULA_RKS_HIDEOUT_UNLOCK" req="rks_hideout_unlocked" lvl="0" max_lvl="0"/>
+		<event name="NEBULA_LIGHT_RKS_HIDEOUT" req="rks_hideout_unlocked" lvl="1"/>
+	</loadEventList>
+</event>
 
+<event name="NEBULA_RKS_HIDEOUT_UNLOCK">
+	<preventQuest/>
+	<preventFleet/>
+	<text>Looks like the RadiKals really do work with (or for) eldritch beings... Your mind becomes foggy as a disembodied voice starts resonating inside your skull.
+		
+		"I know what you need, Renegade. This beacon so nicely hidden in the nebula could become your very own hideout. Accessible across different timelines thanks to my power.
+		Show me that you deserve it by killing one of the current residents and razing their settlement to the ground, heheheh.
+		Are you just going to sit there letting other Renegades get stronger? You know they will inevitably end up at the same beacon as you some day, and that will surely be the last resting place for one of you.
+		Don't you wish to make sure you will be the one making it out alive? CHOOSE."
+
+		That last word carried the weight of sin, in the form of both guilt and regret. You need only bear one of those.
+	</text>
+
+	<environment type="nebula"/>
+	
+	<choice req="rks_hideout_unlocked" lvl="0" max_lvl="0" hidden="true" blue="false">
+		<text>Look for the weakest resident.</text>
+		<event>
+			<text>You quickly find an unlucky homeowner to evict. Maybe you won't feel any guilt, after all they could be a bad person, right? Whoever took this deal to have an outpost here must be.</text>
+			<!-- <metaVariable name="rks_hideout_unlocked" op="set" val="1"/> -->
+			<ship load="SHIP_RKS_HIDEOUT_UNLOCKER" hostile="false"/>
+
+			<choice>
+				<text>Attack!</text>
+				<event>
+					<text>You prepare for combat.</text>
+					<ship hostile="true"/>
+
+				</event>
+			</choice>
+		</event>
+	</choice>
+
+	<choice>
+		<text>Cold-blooded killing for the fun of deranged deities? Nah.</text>
+		<event>
+			<text>You gather your willpower and break free from the influence, then leave. You hope you won't feel any regret, knowing that this could have helped other realities vanquish the rebellion.</text>
+
+			<choice>
+				<text>Continue...</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+<!-- One-off, no need to make it epic.
+<ship name="SHIP_FED_ELITE_GENERIC" auto_blueprint="LIST_SHIPS_FED_ELITE_GENERIC">
+	<destroyed load="DEFEAT_FED_ELITE"/>
+	<deadCrew load="DEFEAT_FED_ELITE"/>
+</ship> -->
+<ship name="SHIP_RKS_HIDEOUT_UNLOCKER" auto_blueprint="LIST_SHIPS_FED_ELITE_GENERIC">
+	<surrender min="6" max="7">
+		<text>"Captain, we are on the same side! Just stop and take everyth- ... hrhmmrmh!... MHMRrMPH!!" The captain was certainly trying to surrender, but suddenly their lips and mouth... disappeared, and their body started dancing like a ridiculous puppet hung by strings!
+		</text>
+		
+		<choice hidden="true">
+			<text>Abort, something's very wrong here! Is this what happens to hideout owners who try to surrender when an invader wants to take over? Are we next?...</text>
+			<event load="OPTION_INVALID"/>
+		</choice>
+
+		<choice>
+			<text>Ignore this disturbing event and keep attacking...</text>
+			<event/>
+		</choice>
+	</surrender>
+	<destroyed>
+		<text>The Elite Federation previous owner of your spot breaks apart and you quickly salvage what you can.
+			A sort of urge presses you to move to a specific area on a small moon hidden in the nebula, where you find a few buildings that you destroy and burn down without hesitation. Then the fever subsides.
+		</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Hear the deity's voice.</text>
+
+			<event name="RKS_HIDEOUT_UNLOCK_SUCCESS">
+				<text>"BWAHAHA, that was negatively delightful! This spot is now yours forevermore... probably. BWAAAHAHA, enjoy!"
+					Now free of influence, you take a look at what you just did all that for, and faint. Coming back to your senses, you feel your thoughts shifting.
+				</text>
+				<metaVariable name="rks_hideout_unlocked" op="set" val="1"/>
+				<achievement silent="false">ACH_RK_EVENT_HIDEOUT</achievement>
+
+				<choice>
+					<text>Continue...</text>
+					<event><loadEvent>NEBULA_LIGHT_RKS_HIDEOUT</loadEvent></event>
+				</choice>
+			</event>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage what you can from the Elite Federation previous owner of your spot.
+			A sort of urge presses you to move to a specific area on a small moon hidden in the nebula, where you find a few buildings that you destroy and burn down without hesitation. Then the fever subsides.
+		</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Hear the deity's voice.</text>
+			<event><loadEvent>RKS_HIDEOUT_UNLOCK_SUCCESS</loadEvent></event>
+		</choice>
+	</deadCrew>
+	<crew>
+		<crewMember type="engi" prop="0.20"/>
+		<crewMember type="human_soldier" prop="0.20"/>
+		<crewMember type="mantis_free" prop="0.20"/>
+		<crewMember type="zoltan" prop="0.20"/>
+		<crewMember type="human" prop="0.20"/>
+	</crew>
+</ship>
+
+<event name="NEBULA_LIGHT_RKS_HIDEOUT">
+	<preventQuest/>
+	<preventFleet/>
+	<beaconType id="map_icon_rk_player_hideout" global="true">
+		<color r="200" g="255" b="200" a="1.0"/>
+		<unvisitedTooltip>In one reality, you passed a deal with an eldritch god to get this cosy place to rest and restock at.</unvisitedTooltip>
+	</beaconType>
+	
+	<text>Your now familiar hideout is a welcome break from all the violence around. You almost forget the blood you had to get on your hands to obtain it.
+		
+		You consider your options. Building is not cheap, but you know you'll only ever have to do it once, for an infinity of uses in different realities.
+	</text>
+	
+	<!-- <environment type="nebula"/> -->
+	<img back="BACK_EVENT_STARS_SPARSE" planet="PLANET_MOONS"/>
+	<status type="loss" target="player" system="sensors" amount="1"/>
+
+	<choice req="rks_hideout_instabenefit" lvl="0" max_lvl="0" hidden="false" blue="false">
+		<text>Build a Construction Accelerator. [Building does not end the beacon, letting you build more or reap benefits, in any run.]</text>
+		<event>
+			<text>Your drones get to work creating the spinny wheel and Temporal rooms.
+			</text>
+			<item_modify>
+                <item type="scrap" min="-50" max="-50"/>
+				<item type="fuel" min="-2" max="-2"/>
+				<item type="missiles" min="-2" max="-2"/>
+				<item type="drones" min="-1" max="-1"/>
+            </item_modify>
+			<!-- <modifyPursuit amount="1"/> -->
+			<metaVariable name="rks_hideout_instabenefit" op="set" val="1"/>
+
+			<!-- Disable this one right here after testing -->
+			<choice req="rks_hideout_instabenefit" hidden="false" blue="true">
+				<text>(Accelerator) Do something else.</text>
+				<event><loadEvent>NEBULA_LIGHT_RKS_HIDEOUT</loadEvent></event>
+			</choice>
+			
+			<choice>
+				<text>Watch your drones work from the window and leave.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+
+	<choice req="rks_hideout_multibenefit" lvl="0" max_lvl="0" hidden="false" blue="false">
+		<text>Build a Service Speeder. [Reaping a hideout benefit does not end the beacon, letting you build more or reap benefits, in any run.]</text>
+		<event>
+			<text>Your drones get to work creating the F1 stabilizers and dispensers.
+			</text>
+			<item_modify>
+                <item type="scrap" min="-50" max="-50"/>
+				<item type="fuel" min="-2" max="-2"/>
+				<item type="missiles" min="-4" max="-4"/>
+				<item type="drones" min="-1" max="-1"/>
+            </item_modify>
+			<!-- <modifyPursuit amount="1"/> -->
+			<metaVariable name="rks_hideout_multibenefit" op="set" val="1"/>
+
+			<choice req="rks_hideout_instabenefit" hidden="false" blue="true">
+				<text>(Accelerator) Do something else.</text>
+				<event><loadEvent>NEBULA_LIGHT_RKS_HIDEOUT</loadEvent></event>
+			</choice>
+			
+			<choice>
+				<text>Watch your drones work from the window and leave.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+
+	<choice req="rks_hideout_repairs" lvl="0" max_lvl="0" hidden="false" blue="false">
+		<text>Build a Repair Platform. [The fleet accelerates for 1 turn] [Repairs 15 hull in any run.]</text>
+		<event>
+			<text>Your drones get to work creating the scaffolding, arms and spare part boxes to repair your ships.
+			</text>
+			<item_modify>
+                <item type="scrap" min="-70" max="-70"/>
+				<item type="fuel" min="-1" max="-1"/>
+				<item type="drones" min="-4" max="-4"/>
+            </item_modify>
+			<modifyPursuit amount="1"/>
+			<metaVariable name="rks_hideout_repairs" op="set" val="1"/>
+
+			<choice req="rks_hideout_instabenefit" hidden="false" blue="true">
+				<text>(Accelerator) Do something else.</text>
+				<event><loadEvent>NEBULA_LIGHT_RKS_HIDEOUT</loadEvent></event>
+			</choice>
+			
+			<choice>
+				<text>Watch your drones work from the window and leave.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="RKS_HIDEOUT_CAN_REPAIR" hidden="false" blue="false">
+		<text>(Repair Platform) Give your ship some care.</text>
+		<event>
+			<text>You get some free repairs. Well, repairs you already paid for, really.</text>
+			<damage amount="-15"/>
+			<variable name="rks_hideout_repairs_used" op="set" val="1"/>
+
+			<choice req="rks_hideout_multibenefit" hidden="false" blue="true">
+				<text>(Speeder) Do something else.</text>
+				<event><loadEvent>NEBULA_LIGHT_RKS_HIDEOUT</loadEvent></event>
+			</choice>
+
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Leave.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice req="rks_hideout_scavenge" lvl="0" max_lvl="0" hidden="false" blue="false">
+		<text>Build an Auto-Scavenge Complex. [The fleet accelerates for 1 turn] [Provides scrap, fuel, missiles and droneparts in any run.]</text>
+		<event>
+			<text>Your drones get to work creating the sensor arrays, central coordinator, scavenger drone bays and long-term storage containers.
+			</text>
+			<item_modify>
+                <item type="scrap" min="-100" max="-100"/>
+				<item type="fuel" min="-8" max="-8"/>
+				<item type="missiles" min="-4" max="-4"/>
+				<item type="drones" min="-8" max="-8"/>
+            </item_modify>
+			<modifyPursuit amount="1"/>
+			<metaVariable name="rks_hideout_scavenge" op="set" val="1"/>
+
+			<choice>
+				<text>Do something else.</text>
+				<event><loadEvent>NEBULA_LIGHT_RKS_HIDEOUT</loadEvent></event>
+			</choice>
+		</event>
+	</choice>
+	<choice req="RKS_HIDEOUT_CAN_SCAVENGE" hidden="false" blue="false">
+		<text>(Auto-Scavenge Complex) Collect your harvest.</text>
+		<event>
+			<text>Your scavengers have been hard at work in this reality.</text>
+			<!-- Avg. 42 scrap worth of each -->
+			<item_modify>
+                <item type="scrap" min="40" max="44"/>
+				<item type="fuel" min="12" max="16"/>
+				<item type="missiles" min="6" max="8"/>
+				<item type="drones" min="5" max="7"/>
+            </item_modify>
+			<variable name="rks_hideout_scavenge_used" op="set" val="1"/>
+
+			<choice req="rks_hideout_multibenefit" hidden="false" blue="true">
+				<text>(Speeder) Do something else.</text>
+				<event><loadEvent>NEBULA_LIGHT_RKS_HIDEOUT</loadEvent></event>
+			</choice>
+
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Leave.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+
+	<choice req="rks_hideout_recruit" lvl="0" max_lvl="0" hidden="false" blue="false">
+		<text>Build a Recruitment Center. [The fleet accelerates for 1 turn] [Some crew will be available for free in any run.]</text>
+		<event>
+			<text>Your drones get to work creating the encrypted offer broadcasters, hydroponic farms, cantina and crew quarters.
+			</text>
+			<item_modify>
+                <item type="scrap" min="-180" max="-180"/>
+				<item type="fuel" min="-2" max="-2"/>
+				<item type="missiles" min="-8" max="-8"/>
+				<item type="drones" min="-8" max="-8"/>
+            </item_modify>
+			<modifyPursuit amount="1"/>
+			<metaVariable name="rks_hideout_recruit" op="set" val="1"/>
+
+			<choice req="rks_hideout_instabenefit" hidden="false" blue="true">
+				<text>(Accelerator) Do something else.</text>
+				<event><loadEvent>NEBULA_LIGHT_RKS_HIDEOUT</loadEvent></event>
+			</choice>
+			
+			<choice>
+				<text>Watch your drones work from the window and leave.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="RKS_HIDEOUT_CAN_RECRUIT" hidden="false" blue="false">
+		<text>(Recruitment Center) Get a free deckhand.</text>
+		<event>
+			<text>Your offers have been generating interest in this reality.</text>
+			
+			<choice>
+				<text>Choose crew #1</text>
+				<event>
+					<text>You welcome them aboard.</text>
+					<crewMember amount="1"/>
+					<variable name="rks_hideout_recruit_used" op="set" val="1"/>
+
+					<choice req="rks_hideout_multibenefit" hidden="false" blue="true">
+						<text>(Speeder) Do something else.</text>
+						<event><loadEvent>NEBULA_LIGHT_RKS_HIDEOUT</loadEvent></event>
+					</choice>
+					<choice>
+						<text>Leave.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+			<choice>
+				<text>Choose crew #2</text>
+				<event>
+					<text>You welcome them aboard.</text>
+					<crewMember amount="1"/>
+					<variable name="rks_hideout_recruit_used" op="set" val="1"/>
+
+					<choice req="rks_hideout_multibenefit" hidden="false" blue="true">
+						<text>(Speeder) Do something else.</text>
+						<event><loadEvent>NEBULA_LIGHT_RKS_HIDEOUT</loadEvent></event>
+					</choice>
+					<choice>
+						<text>Leave.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+
+			<choice>
+				<text>Do something else.</text>
+				<event><loadEvent>NEBULA_LIGHT_RKS_HIDEOUT</loadEvent></event>
+			</choice>
+
+			<choice>
+				<text>Do something onboard the ship.</text>
+				<event load="STORAGE_CHECK"/>
+			</choice>
+			<choice>
+				<text>Leave.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+
+	<!-- <choice>
+		<text>Build a long-range jump ramp. [The fleet accelerates for 1 turn] [You can jump to any beacon from here]</text>
+		<event>
+			<text>You can jump to any beacon from here.</text>
+			
+		</event>
+	</choice> -->
+
+	<!-- <choice>
+		<text>Try to talk to a neighbor. (Risky)</text>
+		<event>
+			<text>text</text>
+			
+		</event>
+	</choice> -->
+
+	<choice>
+		<text>Reset your Hideout progress. /!\</text>
+		<event>
+			<text>You focus on asking the eldritch deity that invited you here in the first place to revert your hideout back in time. It answers, sounding amused.
+				
+				"Are you sure you want to do this? Your hideout will lose all improvements, not be yours anymore, and you will gain nothing in return. But you can fight to get it back, and I will have a good chuckle!"
+			</text>
+
+			<choice>
+				<text>Yes. Do it!</text>
+				<event>
+					<text>All you hear is a hearty (...heartless?) laugh, you blink once, and so it is done.
+						
+						It's like you never even came here at all. The next time you see the place, it will probably have a new owner. Or is that the old owner? Time travel is weird.
+					</text>
+					<metaVariable name="rks_hideout_unlocked" op="set" val="0"/>
+					<metaVariable name="rks_hideout_instabenefit" op="set" val="0"/>
+					<metaVariable name="rks_hideout_multibenefit" op="set" val="0"/>
+					<metaVariable name="rks_hideout_repairs" op="set" val="0"/>
+					<metaVariable name="rks_hideout_scavenge" op="set" val="0"/>
+					<metaVariable name="rks_hideout_recruit" op="set" val="0"/>
+
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+
+					<choice>
+						<text>Leave.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+
+			<choice>
+				<text>Nevermind, do something else.</text>
+				<event><loadEvent>NEBULA_LIGHT_RKS_HIDEOUT</loadEvent></event>
+			</choice>
+		</event>
+	</choice>
+
+	<choice>
+		<text>Do something onboard the ship.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+
+	<choice>
+		<text>Leave the relative comfort of your Hideout, back to the mission!</text>
+		<event/>
+	</choice>
+</event>
 
 <!--//////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -238,7 +849,7 @@ Store Events - in vanilla, these are just extremely generic beacons with a store
 		<event>
 			<text>"Oh god dammit, you're with those Zoltan party poopers? Just my luck... I'm not risking our lives over this, come on in."
 				
-				After a thorough search, you find their RK augment! You're supposed to drop it off at the Police Station marked on your map, but keeping it could help with your more important mission.
+				After a thorough search, you find their RK augment! You're supposed to drop it off at a Zoltan Police Station, but keeping it could help with your more important mission.
 			</text>
 			<augment name="SHOP_ITEM_RK_ALL_AUGMENTS"/>
 
@@ -250,7 +861,7 @@ Store Events - in vanilla, these are just extremely generic beacons with a store
 		<event>
 			<text>"Oh god dammit, you're with those Zoltan party poopers? Just my luck... I'm not risking our lives over this, come on in."
 				
-				After a thorough search, you find their RK weaponry! You're supposed to drop it off at the Police Station marked on your map, but keeping it could help with your more important mission.
+				After a thorough search, you find their RK weaponry! You're supposed to drop it off at a Zoltan Police Station, but keeping it could help with your more important mission.
 			</text>
 			<weapon name="LIST_WEAPONS_RADIKAL"/>
 
@@ -606,7 +1217,7 @@ it was interested in their O2 and medical rooms, they said they bring it back to
 						<event>
 							<text>"Answer = unexpected. You = fools: 97% probability. Regardless, I cease functioning in: [time.short]"
 
-								The creature does look desperate for oxygen by now. You can't risk bringing it in just yet, but maybe you can help it remotely and see what happens.
+								The creature does look desperate for oxygen by now, which took longer than you thought. You can't risk bringing it in just yet, but maybe you can help it remotely and see what happens.
 							</text>
 
 							<choice req="DJMOD_OXYGENIZER" lvl="0" max_lvl="0" hidden="true" blue="false">
@@ -625,7 +1236,7 @@ it was interested in their O2 and medical rooms, they said they bring it back to
 							</choice>
 
 							<choice req="NANO_MEDBAY" hidden="true">
-								<text>(Med-bot Dispersal) Send it some help</text>
+								<text>(Med-bot Dispersal) Send it some medical help</text>
 								<event load="RKS_QUEST_DEFROMORIUS_OFFER"/>
 							</choice>
 
@@ -640,6 +1251,27 @@ it was interested in their O2 and medical rooms, they said they bring it back to
 										<item type="missiles" min="-1" max="-1"/>
 									</item_modify>
 								</event> -->
+							</choice>
+
+							<choice req="oxygen" max_lvl="2" hidden="true" blue="false">
+								<text>Your Life Support (O2) system is too weak.</text>
+								<event load="OPTION_INVALID"/>
+							</choice>
+							
+							<choice req="oxygen" lvl="3" hidden="false">
+								<text>(Adv. Life Support) Have a drone bring it air, quickly!</text>
+								<event>
+									<text>With your strong Life Support and a drone, you save the creature in the nick of time.
+									</text>
+									<item_modify>
+										<item type="drones" min="-1" max="-1"/>
+									</item_modify>
+
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event load="RKS_QUEST_DEFROMORIUS_OFFER"/>
+									</choice>
+								</event>
 							</choice>
 
 							<choice hidden="true">
@@ -679,7 +1311,7 @@ it was interested in their O2 and medical rooms, they said they bring it back to
 	</choice>
 	
 	<choice hidden="true">
-		<text>This cannot end well, better leave now.</text>
+		<text>I don't feel like getting mauled, better leave now.</text>
 		<event/>
 	</choice>
 </event>
@@ -690,12 +1322,13 @@ it was interested in their O2 and medical rooms, they said they bring it back to
 		Looks like you have new loyal crew. You ask their name.
 
 		"Self ID = 'RK (Engi) Defender x Rockman-shaped-Morph x Lanius [amalgam]'.
-		Else If: you = limited brainpower, use alias 'Def_Rock-Morph_Lanius'."
+		Else If: you = limited brainpower, use alias 'Def_Rock-Morph_Lanius'. Or 'Defromorius'."
 		
-		You decide 'Defromorius' will do. Once healed, it helps you fully scrap the shuttle and you're all ready to go.
+		You decide that last one will do. Once healed, it helps you fully scrap the shuttle and you're all ready to go.
 	</text>
 	<autoReward level="MED">standard</autoReward>
-	<crewMember amount="1" class="unique_rk_defromorius" all_skills="2"/>
+	<!-- <crewMember amount="1" class="unique_rk_defromorius" all_skills="2"/> -->
+	<crewMember amount="1" class="unique_rk_defromorius" all_skills="2">Defromorius</crewMember>
 	<achievement silent="false">ACH_RK_EVENT_DEFROMORIUS</achievement>
 	
 	<choice hidden="true">
@@ -815,7 +1448,6 @@ RK Bam lab
 			<text>"Righto, then it's the Scorch lab you want. I can send you there instead."				
 			</text>
 			
-			<!-- Add req: dont have lab coords <variable name="rks_lab_coords_scorch" op="set" val="1"/> -->
 			<choice req="rks_lab_coords_scorch" lvl="0" max_lvl="0" hidden="true" blue="false">
 				<text>Alright then.</text>
 				<event>
@@ -883,9 +1515,9 @@ RK Bam lab
 </event>
 
 <event name="RKS_QUEST_LAB_BAM_2">
-	<text>"So, what've you got? Anything hard, or explosive? And breathing? Or even inanimate, that's fine too, we're not like the Scorch." He says that like they're so much better, but you don't think it's a good idea to point that out.
+	<text>"So, what've you got? Anything hard, or explosive? And breathing? Or even inanimate, that's fine too, we're not fanatics like the Scorch. Or twisted like the Punk, but who cares? Everybody looks smart until their hull is cut in half, HAHAHA!" He says that like they're so much better, but you don't think it's a good idea to point that out.
 
-		You look at what they want and get a better understanding of why this sector is outlawed by so many factions. However the mission comes first, right?
+		You look at what they want and get a better understanding of why these guys are featured on so many kill lists. However the mission comes first, right?
 	</text>
 	<jumpEvent>RKS_LAB_BAM_AMBUSH</jumpEvent>
 
@@ -912,7 +1544,9 @@ RK Bam lab
 			
 			<choice>
 				<text>Moving on...</text>
-				<event load="RKS_QUEST_LAB_BAM_3"/>
+				<!-- <event load="RKS_QUEST_LAB_BAM_3"/> -->
+				<!-- Compact "Loader Method" to prevent anti-loop algorithm crashes. -->
+				<event><loadEvent>RKS_QUEST_LAB_BAM_2</loadEvent></event>
 			</choice>
 		</event>
 	</choice>
@@ -960,7 +1594,7 @@ RK Bam lab
 			
 			<choice>
 				<text>Moving on...</text>
-				<event load="RKS_QUEST_LAB_BAM_3"/>
+				<event><loadEvent>RKS_QUEST_LAB_BAM_2</loadEvent></event>
 			</choice>
 		</event>
 	</choice>
@@ -983,7 +1617,7 @@ RK Bam lab
 			
 			<choice>
 				<text>Moving on...</text>
-				<event load="RKS_QUEST_LAB_BAM_3"/>
+				<event><loadEvent>RKS_QUEST_LAB_BAM_2</loadEvent></event>
 			</choice>
 		</event>
 	</choice>	
@@ -1006,7 +1640,7 @@ RK Bam lab
 			
 			<choice>
 				<text>Moving on...</text>
-				<event load="RKS_QUEST_LAB_BAM_3"/>
+				<event><loadEvent>RKS_QUEST_LAB_BAM_2</loadEvent></event>
 			</choice>
 		</event>
 	</choice>
@@ -1029,13 +1663,13 @@ RK Bam lab
 			
 			<choice>
 				<text>Moving on...</text>
-				<event load="RKS_QUEST_LAB_BAM_3"/>
+				<event><loadEvent>RKS_QUEST_LAB_BAM_2</loadEvent></event>
 			</choice>
 		</event>
 	</choice>
 
 	<choice hidden="true">
-		<text>Nothing, I'm afraid.</text>
+		<text>Let's see what you have in store.</text>
 		<event load="RKS_QUEST_LAB_BAM_3"/>
 	</choice>
 
@@ -1046,7 +1680,7 @@ RK Bam lab
 </event>
 
 <event name="RKS_QUEST_LAB_BAM_3">	
-	<text>"OK, now enjoy our best local store. I've got shit to take care of, ya know? Sounds kinda urgent. Bye."
+	<text>"OK, now enjoy our best local store. I've got shit to take care of, ya know? Right now, even. Bye."
 
 		Before you shop, you still have some time to do something else aboard the ship.
 	</text>
@@ -1074,6 +1708,7 @@ RK Bam lab
 
 		You wonder why they would expose themselves to weaponry so specifically good against their biology, but your scans reveal they came quite prepared!
 	</text>
+	<clearJumpEvent/>
 	<ship load="SHIP_RKS_LAB_BAM_ATTACKER" hostile="false"/>
 	<!-- Add fleet image later and hope it doesn't crash. -->
 
@@ -1209,7 +1844,7 @@ RK Punk lab
 		<event>
 			<text>There is no answer. You move a safe distance away and figure you have time to do some maintenance.
 
-			After some time, you detect some Orchid ships jumping in weapons hot, but you're safe here.</text>
+			After some time, you detect some Free Mantis ships jumping in weapons hot, but you're safe here.</text>
 			
 			<choice>
 				<text>Do something onboard the ship.</text>
@@ -1253,7 +1888,8 @@ RK Punk lab
 			
 			<choice>
 				<text>Moving on...</text>
-				<event load="RKS_QUEST_LAB_PUNK_3"/>
+				<!-- <event load="RKS_QUEST_LAB_PUNK_3"/> -->
+				<event><loadEvent>RKS_QUEST_LAB_PUNK_2</loadEvent></event>
 			</choice>
 		</event>
 	</choice>
@@ -1275,7 +1911,7 @@ RK Punk lab
 			
 			<choice>
 				<text>Moving on...</text>
-				<event load="RKS_QUEST_LAB_PUNK_3"/>
+				<event><loadEvent>RKS_QUEST_LAB_PUNK_2</loadEvent></event>
 			</choice>
 		</event>
 	</choice>
@@ -1299,7 +1935,7 @@ RK Punk lab
 			
 			<choice>
 				<text>Moving on...</text>
-				<event load="RKS_QUEST_LAB_PUNK_3"/>
+				<event><loadEvent>RKS_QUEST_LAB_PUNK_2</loadEvent></event>
 			</choice>
 		</event>
 	</choice>
@@ -1322,7 +1958,7 @@ RK Punk lab
 			
 			<choice>
 				<text>Moving on...</text>
-				<event load="RKS_QUEST_LAB_PUNK_3"/>
+				<event><loadEvent>RKS_QUEST_LAB_PUNK_2</loadEvent></event>
 			</choice>
 		</event>
 	</choice>	
@@ -1344,13 +1980,13 @@ RK Punk lab
 			
 			<choice>
 				<text>Moving on...</text>
-				<event load="RKS_QUEST_LAB_PUNK_3"/>
+				<event><loadEvent>RKS_QUEST_LAB_PUNK_2</loadEvent></event>
 			</choice>
 		</event>
 	</choice>
 
 	<choice hidden="true">
-		<text>Nothing, I'm afraid.</text>
+		<text>Let's see what you have in store.</text>
 		<event load="RKS_QUEST_LAB_PUNK_3"/>
 	</choice>
 
@@ -1385,6 +2021,7 @@ RK Punk lab
 
 		You wonder why they would come to people so adept at killing their kind (and everybody else too), but your scans reveal they came quite prepared!
 	</text>
+	<clearJumpEvent/>
 	<ship load="SHIP_RKS_LAB_PUNK_ATTACKER" hostile="false"/>
 	<!-- Add fleet image later and hope it doesn't crash. -->
 
@@ -1396,7 +2033,7 @@ RK Punk lab
 	<choice>
 		<text>...Makes sense, really.</text>
 		<event>
-			<text>"So much vigor, so little intellect, and we have so. many. guns. Butler drone, tell the staff to get off their arses. And prepare my tea."
+			<text>The unnerving Punk you were talking to remains unfazed. "So much vigor, so little intellect, and we have so. many. guns. Butler drone, tell the staff to get off their arses. And prepare my tea."
 				
 				Projectiles from the RK Punk and the assault fleet start flying in every direction!
 				Also, they must have used a special jammer to depower your jump drive, you will have to charge it again.
@@ -1469,7 +2106,7 @@ RK Scorch lab
 	<choice req="DJMOD_HAS_RADIKAL_SCORCH_GEAR" hidden="true">
 		<text>(RK Scorch gear) Burn Bright...</text>
 		<event>
-			<text>"... Brother. It always warms the heart to see one of us. Here is the welcome gift. You are cleared to land."</text>
+			<text>"... Bruh. It always warms the heart to see one of us. Here is the welcome gift. You are cleared to land."</text>
 			<autoReward level="LOW">standard</autoReward>
 
 			<choice hidden="true">
@@ -1562,7 +2199,8 @@ RK Scorch lab
 			
 			<choice>
 				<text>Moving on...</text>
-				<event load="RKS_QUEST_LAB_SCORCH_3"/>
+				<!-- <event load="RKS_QUEST_LAB_SCORCH_3"/> -->
+				<event><loadEvent>RKS_QUEST_LAB_SCORCH_2</loadEvent></event>
 			</choice>
 		</event>
 	</choice>
@@ -1584,7 +2222,7 @@ RK Scorch lab
 			
 			<choice>
 				<text>Moving on...</text>
-				<event load="RKS_QUEST_LAB_SCORCH_3"/>
+				<event><loadEvent>RKS_QUEST_LAB_SCORCH_2</loadEvent></event>
 			</choice>
 		</event>
 	</choice>
@@ -1608,7 +2246,7 @@ RK Scorch lab
 			
 			<choice>
 				<text>Moving on...</text>
-				<event load="RKS_QUEST_LAB_SCORCH_3"/>
+				<event><loadEvent>RKS_QUEST_LAB_SCORCH_2</loadEvent></event>
 			</choice>
 		</event>
 	</choice>
@@ -1631,7 +2269,7 @@ RK Scorch lab
 			
 			<choice>
 				<text>Moving on...</text>
-				<event load="RKS_QUEST_LAB_SCORCH_3"/>
+				<event><loadEvent>RKS_QUEST_LAB_SCORCH_2</loadEvent></event>
 			</choice>
 		</event>
 	</choice>	
@@ -1654,7 +2292,7 @@ RK Scorch lab
 			
 			<choice>
 				<text>Moving on...</text>
-				<event load="RKS_QUEST_LAB_SCORCH_3"/>
+				<event><loadEvent>RKS_QUEST_LAB_SCORCH_2</loadEvent></event>
 			</choice>
 		</event>
 	</choice>
@@ -1677,13 +2315,13 @@ RK Scorch lab
 			
 			<choice>
 				<text>Moving on...</text>
-				<event load="RKS_QUEST_LAB_SCORCH_3"/>
+				<event><loadEvent>RKS_QUEST_LAB_SCORCH_2</loadEvent></event>
 			</choice>
 		</event>
 	</choice>
 
 	<choice hidden="true">
-		<text>Nothing, I'm afraid.</text>
+		<text>Let's see what you have in store.</text>
 		<event load="RKS_QUEST_LAB_SCORCH_3"/>
 	</choice>
 
@@ -1720,6 +2358,7 @@ triggering: WORKS -->
 
 		You wonder why they would expose themselves to weaponry so specifically good against their biology, but your scans reveal they came quite prepared!
 	</text>
+	<clearJumpEvent/>
 	<ship load="SHIP_RKS_LAB_SCORCH_ATTACKER" hostile="false"/>
 	<!-- Add fleet image later and hope it doesn't crash. -->
 
@@ -1844,7 +2483,7 @@ REF MV v5.5.1:
 		<!-- Retry without spawning the 2nd ship to see what happens: 				
 		<loadEvent seeded="false">RKS_PIRATE_TRINITY_CHOOSE_SLAVER</loadEvent>		CRASH ENDTASK -->
 		<!-- Retry with <multiShipFix enabled="true"/> in hyperspace.xml.append . WORKS!!
-		Alas as a side effect, makes S1 Leah stronger vs shieldless. -->
+		Alas as a side effect, makes S1 Leah stronger vs shieldless. FIXED by MultiShipFix (add-on by Zuggo). -->
 		<event load="RKS_PIRATE_TRINITY_CHOOSE_SLAVER"/>
 	</choice>
 	<choice req="rks_pirate_trinity_met_slaver" lvl="1" hidden="true" blue="false">
@@ -2126,7 +2765,7 @@ REF MV v5.5.1:
 
 
 <event name="RKS_PIRATE_TRINITY_FIGHT_CURRENT_PIRATE">
-	<text>"Of coursssse you are. Told you Kurt, hand over my sssscrap, you lost the bet. Let'ssss kill these damn clownssss."
+	<text>"Of coursssse you are. Told you Kurt, hand over my sssscrap, you lossst the bet. Let'ssss kill these damn clownssss."
 		Looks like you'll have to fight your way out!
 	</text>
 	<ship hostile="true"/>

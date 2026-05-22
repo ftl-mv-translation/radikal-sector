@@ -75,7 +75,10 @@ end
 
 --Return a table that corresponds to a fire
 local function get_fire_extend(fire)
+
+  -- TODO: check Fusion for whatever this was supposed to be:
   local argType = swig_type(fire)
+
   local expectedType = "Fire *"
   if argType ~= expectedType then
     local errorMessage = string.format("Error in get_fire_extend: Expected arg of type: %s, recieved arg of type: %s", expectedType, argType)
@@ -171,82 +174,88 @@ function(shipManager)
     end
   end
 end, constants.FIRE_STAT_INITIALIZATION_PRIORITY)
+
 local vanillaSheet = Hyperspace.Resources:GetImageId("effects/largeFire.png")
 script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, 
 function(shipManager)
-  for room in vter(shipManager.ship.vRoomList) do
-    local timeDilation = Hyperspace.TemporalSystemParser.GetDilationStrength(room.extend.timeDilation)
-    local fireCount = shipManager:GetFireCount(room.iRoomId)
-    --System damage
-    local sys = shipManager:GetSystemInRoom(room.iRoomId)
-    if sys ~= nil and fireCount ~= 0 then
-      local nativeDamage = timeDilation * 0.5 * fireCount
-      local desiredDamage = 0
-      for fire in fires(room, shipManager) do
-        if fire.fDamage > 0 then
-          desiredDamage = desiredDamage + (0.5 * timeDilation * get_fire_extend(fire).systemDamageMultiplier)
+  
+  -- "if" wrapper below: Fajdek anti-lag addition. BUG: causes everything inside to stop working.
+  -- if shipManager.ship.fireSpreader.count > 0 then
+  -- if shipManager.ship.fireSpreader and shipManager.ship.fireSpreader.count and shipManager.ship.fireSpreader.count > 0 then
+    for room in vter(shipManager.ship.vRoomList) do
+      local timeDilation = Hyperspace.TemporalSystemParser.GetDilationStrength(room.extend.timeDilation)
+      local fireCount = shipManager:GetFireCount(room.iRoomId)
+      --System damage
+      local sys = shipManager:GetSystemInRoom(room.iRoomId)
+      if sys ~= nil and fireCount ~= 0 then
+        local nativeDamage = 0.5 * timeDilation * fireCount
+        local desiredDamage = 0
+        for fire in fires(room, shipManager) do
+          if fire.fDamage > 0 then
+            desiredDamage = desiredDamage + (0.5 * timeDilation * get_fire_extend(fire).systemDamageMultiplier)
+          end
         end
+        sys:DamageOverTime(desiredDamage - nativeDamage)
       end
-      sys:DamageOverTime(desiredDamage - nativeDamage)
-    end
-    --Oxygen drain
-    local oxygenSystem = shipManager.oxygenSystem
-    if oxygenSystem ~= nil and fireCount ~= 0 then
-      local nativeDrain = -0.06 * Hyperspace.FPS.SpeedFactor * fireCount
-      local desiredDrain = 0
-      for fire in fires(room, shipManager) do
-        if fire.fDamage > 0 then
-          desiredDrain = desiredDrain + (-0.06 * get_fire_extend(fire).oxygenDrainMultiplier)
+      --Oxygen drain
+      local oxygenSystem = shipManager.oxygenSystem
+      if oxygenSystem ~= nil and fireCount ~= 0 then
+        local nativeDrain = -0.06 * Hyperspace.FPS.SpeedFactor * fireCount
+        local desiredDrain = 0
+        for fire in fires(room, shipManager) do
+          if fire.fDamage > 0 then
+            desiredDrain = desiredDrain + (-0.06 * get_fire_extend(fire).oxygenDrainMultiplier)
+          end
         end
+        --Temporal system applies effect within modifyRoomOxygen so it is not included in calculation
+        oxygenSystem:ModifyRoomOxygen(room.iRoomId, desiredDrain - nativeDrain)
       end
-      --Temporal system applies effect within modifyRoomOxygen so it is not included in calculation
-      oxygenSystem:ModifyRoomOxygen(room.iRoomId, desiredDrain - nativeDrain)
-    end
 
-    --Fire death and spread
-    local shape = room.rect
-    local startX = shape.x // 35
-    local startY = shape.y // 35
-    local endX = startX + (shape.w // 35) - 1
-    local endY = startY + (shape.h // 35) - 1
-    for x = startX, endX do
-      for y = startY, endY do
-        local thisFire = Hyperspace.Point(x, y)
-        local top = Hyperspace.Point(x, y - 1)
-        local bottom = Hyperspace.Point(x, y + 1)
-        local left = Hyperspace.Point(x - 1, y)
-        local right = Hyperspace.Point(x + 1, y)
+      --Fire death and spread
+      local shape = room.rect
+      local startX = shape.x // 35
+      local startY = shape.y // 35
+      local endX = startX + (shape.w // 35) - 1
+      local endY = startY + (shape.h // 35) - 1
+      for x = startX, endX do
+        for y = startY, endY do
+          local thisFire = Hyperspace.Point(x, y)
+          local top = Hyperspace.Point(x, y - 1)
+          local bottom = Hyperspace.Point(x, y + 1)
+          local left = Hyperspace.Point(x - 1, y)
+          local right = Hyperspace.Point(x + 1, y)
 
-        local connectedFires =  
-        check_square_spread(shipManager, thisFire, top, timeDilation) +
-        check_square_spread(shipManager, thisFire, bottom, timeDilation) +
-        check_square_spread(shipManager, thisFire, left, timeDilation) +
-        check_square_spread(shipManager, thisFire, right, timeDilation)
-        
-        --Partial reimplementation of UpdateDeathTimer
-        local fire = shipManager:GetFire(x, y)
-        if fire.fDeathTimer > 0 then
-          local deathSpeedMultiplier = get_fire_extend(fire).deathSpeedMultiplier
-          fire.fDeathTimer = fire.fDeathTimer - (connectedFires * -3 + 15) * 0.01 * Hyperspace.FPS.SpeedFactor * timeDilation * (deathSpeedMultiplier - 1);
-          fire.fDeathTimer = math.max(0, fire.fDeathTimer)
+          local connectedFires =  
+          check_square_spread(shipManager, thisFire, top, timeDilation) +
+          check_square_spread(shipManager, thisFire, bottom, timeDilation) +
+          check_square_spread(shipManager, thisFire, left, timeDilation) +
+          check_square_spread(shipManager, thisFire, right, timeDilation)
+          
+          --Partial reimplementation of UpdateDeathTimer
+          local fire = shipManager:GetFire(x, y)
+          if fire.fDeathTimer > 0 then
+            local deathSpeedMultiplier = get_fire_extend(fire).deathSpeedMultiplier
+            fire.fDeathTimer = fire.fDeathTimer - (connectedFires * -3 + 15) * 0.01 * Hyperspace.FPS.SpeedFactor * timeDilation * (deathSpeedMultiplier - 1);
+            fire.fDeathTimer = math.max(0, fire.fDeathTimer)
+          end
+          --Animations
+          local animationSpeedMultiplier = get_fire_extend(fire).animationSpeedMultiplier
+          accelerate_animation(fire.fireAnimation, animationSpeedMultiplier, FIRE_ANIMATION_DURATION)
+          local replacementSheet = get_fire_extend(fire).replacementSheet
+          if replacementSheet ~= nil then
+            fire.fireAnimation.animationStrip = replacementSheet
+            fire.fireAnimation.primitive = nil
+            fire.fireAnimation.mirroredPrimitive = nil
+          elseif fire.fireAnimation.animationStrip ~= vanillaSheet then
+            fire.fireAnimation.animationStrip = vanillaSheet
+            fire.fireAnimation.primitive = nil
+            fire.fireAnimation.mirroredPrimitive = nil
+          end
+          accelerate_animation(fire.smokeAnimation, animationSpeedMultiplier, SMOKE_ANIMATION_DURATION) 
         end
-        --Animations
-        local animationSpeedMultiplier = get_fire_extend(fire).animationSpeedMultiplier
-        accelerate_animation(fire.fireAnimation, animationSpeedMultiplier, FIRE_ANIMATION_DURATION)
-        local replacementSheet = get_fire_extend(fire).replacementSheet
-        if replacementSheet ~= nil then
-          fire.fireAnimation.animationStrip = replacementSheet
-          fire.fireAnimation.primitive = nil
-          fire.fireAnimation.mirroredPrimitive = nil
-        elseif fire.fireAnimation.animationStrip ~= vanillaSheet then
-          fire.fireAnimation.animationStrip = vanillaSheet
-          fire.fireAnimation.primitive = nil
-          fire.fireAnimation.mirroredPrimitive = nil
-        end
-        accelerate_animation(fire.smokeAnimation, animationSpeedMultiplier, SMOKE_ANIMATION_DURATION) 
       end
     end
-  end
+  -- end
 end, constants.FIRE_STAT_APPLICATION_PRIORITY)
 --TODO: Implement fires with crew damage and crew repair multipliers once lua statboosts are active
 
@@ -266,7 +275,13 @@ mods.fusion.burnSpeedCrew ={
 }
 local burnSpeedCrew = mods.fusion.burnSpeedCrew ]]
 
+
 --PUBLIC API
+
+--[[TEST for better: mods.fire_common = {}
+if mods.fire_common == nil then
+    mods.fire_common = {}
+end ]]
 mods.fire_common = {}
 mods.fire_common.custom_fires = {}
 mods.fire_common.custom_fires.get_fire_extend = get_fire_extend --Get the extend attributes of an individual fire. Only works for valid fires within a room.
@@ -303,6 +318,7 @@ function(shipManager)
   
   local augMult = 1 - shipManager:GetAugmentationValue("FIRE_IMMUNITY")
   -- print (augMult)
+  --TODO: fix "augMult being wrong( = 1.0) for RK augments EXCEPT Scorched Earth T1" !
 
   for room in vter(shipManager.ship.vRoomList) do
     local crewMult = roomFireMult[room.iRoomId]

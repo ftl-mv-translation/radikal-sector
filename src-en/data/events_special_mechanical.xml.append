@@ -9,6 +9,9 @@ However, MV's file does not feature player ship CURA's power surges in there. --
 	<!-- <variable name="gnome_punishment_surge" op="set" val="3"/> -->
 	<superBarrage player="true" name="RK_WEAPONLIKE_SURGE"/>
 </event>
+<event name="RK_WEAPONLIKE_ABILITY_ENEMY">
+	<superBarrage player="false" name="RK_WEAPONLIKE_SURGE"/>
+</event>
 <!-- REF MV v5.5.1 (see also hyperspace):
 <event name="CHAOS_MODE_DAMAGE_PLAYER_SURGE">
 	<playSound>gm_surge</playSound>

@@ -24,6 +24,15 @@ Events tied to the escape, surrender, death, or crewdeath of ships. From this ad
 <FTL>
 
 <ship name="SHIP_RK_BAM_EXIT_BOSS" auto_blueprint="DJMOD_RADIKAL_BOSS_BAM">
+	<surrender min="6" max="7">
+		<text>All of a sudden, the enemy fully restores their Supershields! This is probably a one-off.</text>
+		<superShields player="false" add="0"/>
+		
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event/>
+		</choice>
+	</surrender>
 	<destroyed>
 		<text>The ship is destroyed. The other gatekeepers give a solemn nod. "Whoever passed our coordinates along to you made a good choice, and so did you coming here. You are free to go! Have some free repairs too."</text>
 		<weapon name="GIFTLIST_FITTING_WEAPON_BAM"/>

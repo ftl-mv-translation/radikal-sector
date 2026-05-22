@@ -408,10 +408,18 @@ and this isn't detected by Slipstream and doesn't cause a crash! -->
 </mod:findName>
 
 <mod:findName type = "event" name = "COMBAT_CHECK_REAL">
-<mod-append:choice req="DJMOD_HACK_FLEET" blue="false">
-	<text>(Enigmashin) Try to delay the rebels!</text>
-	<event load="DJMOD_HACK_FLEET"/>
+<mod-append:choice req="HAS_RK_COMBAT_HACK_FLEET_IN_S8" hidden="true" blue="false">
+	<text>(Enigmashin) The rebels are already here, with Enigmashin jammers. No reason to keep it.</text>
+	<event load="OPTION_INVALID"/>
 </mod-append:choice>
+<mod-append:choice req="HAS_RK_COMBAT_HACK_FLEET_NOT_IN_S8" blue="false">
+	<text>(Enigmashin) Try to delay the rebels!</text>
+	<event load="RK_COMBAT_HACK_FLEET_ACTIVATE"/>
+</mod-append:choice>
+	<!-- <choice hidden="true" req="loc_laststand" lvl="1" max_group="0" blue="false">
+		<text id="storage_not_enough_time"/>
+		<event load="OPTION_INVALID"/>
+	</choice> -->
 </mod:findName>
 
 <!--TODO v5.5.1: hide if the enemy has none of the affected systems. 
@@ -2298,7 +2306,7 @@ So we spam fires.
 		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_LILY_ECM_SUITE"/>
 	</choice>
 	<choice req="lily_fiber_liner" hidden="true" blue="false">
-		<text>The System Bracers room!</text>
+		<text>The Fiber Liner room!</text>
 		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_LILY_FIBER_LINER"/>
 	</choice>
 
@@ -3484,7 +3492,7 @@ Works? NO, STILL THE SAME TILES EVERY TIME. -->
 
 <event name="RK_SCORCH_SELF_UPGRADE">
 	<text>Are you sure you want to upgrade this augment?
-	[More fire resistance for your crew and systems. In fire, your crew produce O2 like 1 Orchid.]</text>
+	[More fire resistance. In fire, your crew produce O2 like 1 Orchid.]</text>
 	
 	<choice req="RK_SCORCH_SELF" hidden="true" blue="false">
 		<text>Yes [-16~, -1{, -1}]</text>
@@ -3518,7 +3526,7 @@ Works? NO, STILL THE SAME TILES EVERY TIME. -->
 
 <event name="RK_SCORCH_SELF_UPGRADE_2">
 	<text>Are you sure you want to upgrade this augment?
-	[More fire resistance for your crew and systems. In fire, your crew produce O2 like 3 Orchids.]</text>
+	[More fire resistance for your crew. In fire, your crew produce O2 like 3 Orchids.]</text>
 	
 	<choice req="RK_SCORCH_SELF_2" hidden="true" blue="false">
 		<text>Yes [-11~, -1{, -1}, the fleet advances for 1 turn]</text>
@@ -4351,20 +4359,9 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
 
-<event name="DJMOD_HACK_FLEET">
+<event name="RK_COMBAT_HACK_FLEET_ACTIVATE">
 	<text>Are you sure you want to do this?
 	[Attempt special hacking to delay the fleet, cancelled by dealing more than 2 hull damage.]</text>
-	
-	<!-- Choice hiding based on system presence and level WORKS! use as reference. -->
-	<!-- <choice req="hacking" lvl="0" max_lvl="0" hidden="true" blue="false">
-		<text>This requires a level 2 Hacking system installed on your ship.</text>
-		<event load="OPTION_INVALID"/>
-	</choice>
-	
-	<choice req="hacking" max_lvl="1" hidden="true" blue="false">
-		<text>Your hacking system is too weak.</text>
-		<event load="OPTION_INVALID"/>
-	</choice> -->
 	
 	<choice hidden="true">
 		<text>Yes, free 17 seconds hack.</text>
@@ -4373,19 +4370,18 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 			
 			<choice>
 				<text>Continue...</text>
-				<event load="DJMOD_HACK_FLEET_TIMER_START"/>
+				<event load="RK_COMBAT_HACK_FLEET_TIMER_START"/>
 			</choice>
 		</event>
 	</choice>
 
-	<!-- <choice hidden="true" req="hacking" lvl="2" max_lvl="2"> -->
 	<choice hidden="true" req="hacking" lvl="0" max_lvl="0">
 		<text>Install a Hacking system for more options.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
 
 	<choice req="hacking" lvl="1" hidden="true" blue="true">
-		<text>(Hacking level 1, 1|) 16 seconds hack.</text>
+		<text>(Hacking level 1, 1|) 14 seconds hack.</text>
 		<event>
 			<text>You activate the augment...</text>
 			<item_modify>
@@ -4396,13 +4392,13 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 			
 			<choice>
 				<text>Continue...</text>
-				<event load="DJMOD_HACK_FLEET_TIMER_START_BONUS1"/>
+				<event load="RK_COMBAT_HACK_FLEET_TIMER_START_BONUS1"/>
 			</choice>
 		</event>
 	</choice>
 
 	<choice req="hacking" lvl="2" hidden="true" blue="true">
-		<text>(Hacking level 2, 2|) 14 seconds hack.</text>
+		<text>(Hacking level 2, 2|) 9 seconds hack.</text>
 		<event>
 			<text>You activate the augment...</text>
 			<item_modify>
@@ -4413,7 +4409,7 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 			
 			<choice>
 				<text>Continue...</text>
-				<event load="DJMOD_HACK_FLEET_TIMER_START_BONUS2"/>
+				<event load="RK_COMBAT_HACK_FLEET_TIMER_START_BONUS2"/>
 			</choice>
 		</event>
 	</choice>
@@ -4425,18 +4421,20 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 	</choice>
 
 	<choice req="hacking" lvl="3" hidden="true" blue="true">
-		<text>(Hacking level 3, 3|) 10 seconds hack.</text>
+		<text>(Hacking level 3, 3|) instant hack.</text>
 		<event>
 			<text>You activate the augment...</text>
 			<item_modify>
 				<item type="drones" min="-3" max="-3"/>
 			</item_modify>
 			
-			<status type="loss" target="player" system="hacking" amount="3"/>
+			<!-- <status type="loss" target="player" system="hacking" amount="3"/> -->
+			<playSound>dj_hackingZap2</playSound>
 			
 			<choice>
 				<text>Continue...</text>
-				<event load="DJMOD_HACK_FLEET_TIMER_START_BONUS3"/>
+				<!-- <event load="RK_COMBAT_HACK_FLEET_TIMER_START_BONUS3"/> -->
+				 <event load="RK_COMBAT_HACK_FLEET_OUTCOMES_BONUS3"/>
 			</choice>
 		</event>
 	</choice>
@@ -4453,10 +4451,10 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 	</choice>
 </event>
 
-<event name="DJMOD_HACK_FLEET_TIMER_START">
+<event name="RK_COMBAT_HACK_FLEET_TIMER_START">
 	<text>You start breaking into the enemy's comms. Now survive without damaging the enemy's hull too much...</text>
 	
-	<triggeredEvent event="DJMOD_HACK_FLEET_TIMER_END" time="17" thisFight="true"> <!--intended delay is 17s-->
+	<triggeredEvent event="RK_COMBAT_HACK_FLEET_TIMER_END" time="17" thisFight="true"> <!--intended delay is 17s-->
 		<triggeredEventBox load="DEFAULT_SMALL">
 			<image r="255" g="50" b="255" a="0.6"/>
 			<image2  r="255" g="50" b="255" a="0.6"/>
@@ -4464,7 +4462,7 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 		</triggeredEventBox>
 		<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
 	</triggeredEvent>
-	<triggeredEvent event="DJMOD_HACK_FLEET_STOP" thisFight="true">
+	<triggeredEvent event="RK_COMBAT_HACK_FLEET_STOP" thisFight="true">
 		<enemyDamage amount="3" countRepairs="true"/>
 	</triggeredEvent>
 
@@ -4474,53 +4472,53 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 		<event/>
 	</choice>
 </event>
-<event name="DJMOD_HACK_FLEET_TIMER_END">
+<event name="RK_COMBAT_HACK_FLEET_TIMER_END">
 	<text>The process is complete!</text>
-	<clearTriggeredEvent name="DJMOD_HACK_FLEET_STOP"/>
+	<clearTriggeredEvent name="RK_COMBAT_HACK_FLEET_STOP"/>
 	
 	<status type="clear" target="player" system="hacking" amount="100"/>
 	
 	<choice hidden="true">
 		<text> Let's see if it worked...</text>
-		<event load="DJMOD_HACK_FLEET_OUTCOMES"/>
+		<event load="RK_COMBAT_HACK_FLEET_OUTCOMES"/>
 	</choice>
 </event>
 
-<eventList name="DJMOD_HACK_FLEET_OUTCOMES">
+<eventList name="RK_COMBAT_HACK_FLEET_OUTCOMES">
 	<!-- Total good = -13 fleet chances / 12 -->
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
 
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
 
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
 
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
 	<!-- Total bad = +3 fleet chances / 8 -->
-	<event load="DJMOD_HACK_FLEET_OUTCOME_NEUTRAL"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_NEUTRAL"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_NEUTRAL"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_NEUTRAL"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_NEUTRAL"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_NEUTRAL"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_NEUTRAL"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_NEUTRAL"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_NEUTRAL"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_NEUTRAL"/>
 	
-	<event load="DJMOD_HACK_FLEET_OUTCOME_BAD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_BAD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_BAD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_BAD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_BAD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_BAD"/>
 	<!-- Average = -10 fleet chances / 20 = 50% delaying, 60% good outcomes -->
 </eventList>
 
 
-<event name="DJMOD_HACK_FLEET_TIMER_START_BONUS1">
+<event name="RK_COMBAT_HACK_FLEET_TIMER_START_BONUS1">
 	<text>You start breaking into the enemy's comms. Now survive without damaging the enemy's hull too much...</text>
 	
-	<triggeredEvent event="DJMOD_HACK_FLEET_TIMER_END_BONUS1" time="16" thisFight="true"> <!--intended delay is 17s-->
+	<triggeredEvent event="RK_COMBAT_HACK_FLEET_TIMER_END_BONUS1" time="14" thisFight="true"> <!-- base delay is 17s-->
 		<triggeredEventBox load="DEFAULT_SMALL">
 			<image r="255" g="50" b="255" a="0.6"/>
 			<image2  r="255" g="50" b="255" a="0.6"/>
@@ -4528,7 +4526,7 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 		</triggeredEventBox>
 		<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
 	</triggeredEvent>
-	<triggeredEvent event="DJMOD_HACK_FLEET_STOP" thisFight="true">
+	<triggeredEvent event="RK_COMBAT_HACK_FLEET_STOP" thisFight="true">
 		<enemyDamage amount="3" countRepairs="true"/>
 	</triggeredEvent>
 
@@ -4538,54 +4536,54 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 		<event/>
 	</choice>
 </event>
-<event name="DJMOD_HACK_FLEET_TIMER_END_BONUS1">
+<event name="RK_COMBAT_HACK_FLEET_TIMER_END_BONUS1">
 	<text>The process is complete!</text>
-	<clearTriggeredEvent name="DJMOD_HACK_FLEET_STOP"/>
+	<clearTriggeredEvent name="RK_COMBAT_HACK_FLEET_STOP"/>
 	
 	<status type="clear" target="player" system="hacking" amount="100"/>
 	
 	<choice hidden="true">
 		<text> Let's see if it worked...</text>
-		<event load="DJMOD_HACK_FLEET_OUTCOMES_BONUS1"/>
+		<event load="RK_COMBAT_HACK_FLEET_OUTCOMES_BONUS1"/>
 	</choice>
 </event>
 
-<eventList name="DJMOD_HACK_FLEET_OUTCOMES_BONUS1">
+<eventList name="RK_COMBAT_HACK_FLEET_OUTCOMES_BONUS1">
 	<!-- Total good = -16 fleet chances / 14 -->
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
 
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
 
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
 
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
 	<!-- Total bad = +2 fleet chances / 6 -->
-	<event load="DJMOD_HACK_FLEET_OUTCOME_NEUTRAL"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_NEUTRAL"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_NEUTRAL"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_NEUTRAL"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_NEUTRAL"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_NEUTRAL"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_NEUTRAL"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_NEUTRAL"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_NEUTRAL"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_NEUTRAL"/>
 	
-	<event load="DJMOD_HACK_FLEET_OUTCOME_BAD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_BAD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_BAD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_BAD"/>
 	<!-- Average = -14 fleet chances / 20 = 70% delaying, 70% good outcomes -->
 </eventList>
 
 
-<event name="DJMOD_HACK_FLEET_TIMER_START_BONUS2">
+<event name="RK_COMBAT_HACK_FLEET_TIMER_START_BONUS2">
 	<text>You start breaking into the enemy's comms. Now survive without damaging the enemy's hull too much...</text>
 	
-	<triggeredEvent event="DJMOD_HACK_FLEET_TIMER_END_BONUS2" time="14" thisFight="true"> <!--intended delay is 17s-->
+	<triggeredEvent event="RK_COMBAT_HACK_FLEET_TIMER_END_BONUS2" time="9" thisFight="true"> <!-- base delay is 17s-->
 		<triggeredEventBox load="DEFAULT_SMALL">
 			<image r="255" g="50" b="255" a="0.6"/>
 			<image2  r="255" g="50" b="255" a="0.6"/>
@@ -4593,7 +4591,7 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 		</triggeredEventBox>
 		<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
 	</triggeredEvent>
-	<triggeredEvent event="DJMOD_HACK_FLEET_STOP" thisFight="true">
+	<triggeredEvent event="RK_COMBAT_HACK_FLEET_STOP" thisFight="true">
 		<enemyDamage amount="3" countRepairs="true"/>
 	</triggeredEvent>
 
@@ -4603,54 +4601,54 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 		<event/>
 	</choice>
 </event>
-<event name="DJMOD_HACK_FLEET_TIMER_END_BONUS2">
+<event name="RK_COMBAT_HACK_FLEET_TIMER_END_BONUS2">
 	<text>The process is complete!</text>
-	<clearTriggeredEvent name="DJMOD_HACK_FLEET_STOP"/>
+	<clearTriggeredEvent name="RK_COMBAT_HACK_FLEET_STOP"/>
 	
 	<status type="clear" target="player" system="hacking" amount="100"/>
 	
 	<choice hidden="true">
 		<text> Let's see if it worked...</text>
-		<event load="DJMOD_HACK_FLEET_OUTCOMES_BONUS2"/>
+		<event load="RK_COMBAT_HACK_FLEET_OUTCOMES_BONUS2"/>
 	</choice>
 </event>
 
-<eventList name="DJMOD_HACK_FLEET_OUTCOMES_BONUS2">
+<eventList name="RK_COMBAT_HACK_FLEET_OUTCOMES_BONUS2">
 	<!-- Total good = -19 fleet chances / 16 -->
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
 
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
 
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
 
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
 	
-	<event load="DJMOD_HACK_FLEET_OUTCOME_BOSS"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_BOSS"/>
 	<!-- Total bad = +1 fleet chances / 4 -->
-	<event load="DJMOD_HACK_FLEET_OUTCOME_NEUTRAL"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_NEUTRAL"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_NEUTRAL"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_NEUTRAL"/>
 	
-	<event load="DJMOD_HACK_FLEET_OUTCOME_BAD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_BAD"/>
 	<!-- Average = -18 fleet chances / 20 = 90% delaying, 80% good outcomes, 5% BOSS -->
 </eventList>
 
 
-<event name="DJMOD_HACK_FLEET_TIMER_START_BONUS3">
+<!-- <event name="RK_COMBAT_HACK_FLEET_TIMER_START_BONUS3">
 	<text>You start breaking into the enemy's comms. Now survive without damaging the enemy's hull too much...</text>
 	
-	<triggeredEvent event="DJMOD_HACK_FLEET_TIMER_END_BONUS3" time="10" thisFight="true"> <!--intended delay is 17s-->
+	<triggeredEvent event="RK_COMBAT_HACK_FLEET_TIMER_END_BONUS3" time="2" thisFight="true">
 		<triggeredEventBox load="DEFAULT_SMALL">
 			<image r="255" g="50" b="255" a="0.6"/>
 			<image2  r="255" g="50" b="255" a="0.6"/>
@@ -4658,7 +4656,7 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 		</triggeredEventBox>
 		<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
 	</triggeredEvent>
-	<triggeredEvent event="DJMOD_HACK_FLEET_STOP" thisFight="true">
+	<triggeredEvent event="RK_COMBAT_HACK_FLEET_STOP" thisFight="true">
 		<enemyDamage amount="3" countRepairs="true"/>
 	</triggeredEvent>
 
@@ -4668,51 +4666,51 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 		<event/>
 	</choice>
 </event>
-<event name="DJMOD_HACK_FLEET_TIMER_END_BONUS3">
+<event name="RK_COMBAT_HACK_FLEET_TIMER_END_BONUS3">
 	<text>The process is complete!</text>
-	<clearTriggeredEvent name="DJMOD_HACK_FLEET_STOP"/>
+	<clearTriggeredEvent name="RK_COMBAT_HACK_FLEET_STOP"/>
 	
 	<status type="clear" target="player" system="hacking" amount="100"/>
 	
 	<choice hidden="true">
 		<text> Let's see if it worked...</text>
-		<event load="DJMOD_HACK_FLEET_OUTCOMES_BONUS3"/>
+		<event load="RK_COMBAT_HACK_FLEET_OUTCOMES_BONUS3"/>
 	</choice>
-</event>
+</event> -->
 
-<eventList name="DJMOD_HACK_FLEET_OUTCOMES_BONUS3">
+<eventList name="RK_COMBAT_HACK_FLEET_OUTCOMES_BONUS3">
 	<!-- Total good = -21 fleet chances / 18 -->
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
 
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD"/>
 
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
-	<event load="DJMOD_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
+
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD_CRITICAL"/>
 	
-	<event load="DJMOD_HACK_FLEET_OUTCOME_BOSS"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_BOSS"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_BOSS"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_BOSS"/>
 	<!-- Total bad = +1 fleet chances / 2 -->
-	<event load="DJMOD_HACK_FLEET_OUTCOME_NEUTRAL"/>
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_NEUTRAL"/>
 	
-	<event load="DJMOD_HACK_FLEET_OUTCOME_BAD"/>
-	<!-- Average = -20 fleet chances / 20 = 100% delaying 90% good outcomes, 5% BOSS -->
+	<event load="RK_COMBAT_HACK_FLEET_OUTCOME_BAD"/>
+	<!-- Average = -20 fleet chances / 20 = 100% delaying 90% good outcomes, 15% BOSS -->
 </eventList>
 
 
-<event name="DJMOD_HACK_FLEET_OUTCOME_GOOD_CRITICAL">
+<event name="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD_CRITICAL">
 	<text>Hehe, they really bought it! This hack gives us a solid advance.</text>
 	<modifyPursuit amount="-2"/>
 	<choice>
@@ -4720,7 +4718,7 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 		<event/>
 	</choice>
 </event>
-<event name="DJMOD_HACK_FLEET_OUTCOME_GOOD">
+<event name="RK_COMBAT_HACK_FLEET_OUTCOME_GOOD">
 	<text>They fell for it! At least we get some rest out of this.</text>
 	<modifyPursuit amount="-1"/>
 	<choice>
@@ -4728,14 +4726,14 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 		<event/>
 	</choice>
 </event>
-<event name="DJMOD_HACK_FLEET_OUTCOME_NEUTRAL">
+<event name="RK_COMBAT_HACK_FLEET_OUTCOME_NEUTRAL">
 	<text>Unfortunately, they didn't fall for the hack this time.</text>
 	<choice>
 		<text>Continue to the fight!</text>
 		<event/>
 	</choice>
 </event>
-<event name="DJMOD_HACK_FLEET_OUTCOME_BAD">
+<event name="RK_COMBAT_HACK_FLEET_OUTCOME_BAD">
 	<text>This hack went terribly wrong, and their comms countered by giving away our location!</text>
 	<modifyPursuit amount="1"/>
 	<choice>
@@ -4743,8 +4741,9 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 		<event/>
 	</choice>
 </event>
-<event name="DJMOD_HACK_FLEET_OUTCOME_BOSS">
+<event name="RK_COMBAT_HACK_FLEET_OUTCOME_BOSS">
 	<text>This hack should have, but didn't delay the fleet... 
+		
 		Someone interfered, and sent us strange coordinates with this attached: "N00bs!!1!".</text>
 	<quest event="RK_HACK_FLEET_BOSS"/>
 
@@ -4754,12 +4753,12 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 	</choice>
 </event>
 
-<event name="DJMOD_HACK_FLEET_STOP">
+<event name="RK_COMBAT_HACK_FLEET_STOP">
 	<text>Excess damage to the enemy's hull ruined our hacking attempt to delay the rebel fleet. These things require subtlety!</text>
-	<clearTriggeredEvent name="DJMOD_HACK_FLEET_TIMER_END"/>
-	<clearTriggeredEvent name="DJMOD_HACK_FLEET_TIMER_END_BONUS1"/>
-	<clearTriggeredEvent name="DJMOD_HACK_FLEET_TIMER_END_BONUS2"/>
-	<clearTriggeredEvent name="DJMOD_HACK_FLEET_TIMER_END_BONUS3"/>
+	<clearTriggeredEvent name="RK_COMBAT_HACK_FLEET_TIMER_END"/>
+	<clearTriggeredEvent name="RK_COMBAT_HACK_FLEET_TIMER_END_BONUS1"/>
+	<clearTriggeredEvent name="RK_COMBAT_HACK_FLEET_TIMER_END_BONUS2"/>
+	<clearTriggeredEvent name="RK_COMBAT_HACK_FLEET_TIMER_END_BONUS3"/>
 	
 	<status type="clear" target="player" system="hacking" amount="100"/>
 	
@@ -4769,7 +4768,7 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 	</choice>
 </event>
 
-
+<!-- Repeatable, for now at least. More variants planned. -->
 <event name="RK_HACK_FLEET_BOSS">
 	<preventQuest/>
 	<preventFleet/>
@@ -4782,10 +4781,13 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 		<unvisitedTooltip>Someone dangerous enough to stop a strong RK Enigmashin hack dares you to come!</unvisitedTooltip>
 	</beaconType>
 	
-	<text>A very mean-looking elite rebel ship is here. Its captain is staring you down.
+	<text>A very mean-looking elite rebel ship is here. Its captain is staring you down, with just a hint of a spark in the eye.
 
-		"When i heard someone was playing games with the fleet's comms, I knew i had to meet the fool! And here you are, noobs!
-		Let me show you how it's done! And then you die."
+		"When i heard someone was playing games big time with the fleet's comms, I knew i had to meet the fools! And here you are, noobs!
+		I hope you don't mind that I'm calling you that, noobs. There's no harm in telling you that we all even respect the gumption, pissing off the largest army this side of the universe, that blankets entire sectors in the shadow of fleet ships.
+		But me and my friends here didn't become MFKs by going all soft for that much, as one would guess.
+
+		So as a show of friendly rivalry, let me show you how it's done! Right before we murder you."
 	</text>
 	<ship load="SHIP_RK_HACK_FLEET_BOSS" hostile="false"/>
 
@@ -4823,7 +4825,7 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 	</choice>
 
 	<choice>
-		<text>We have learned our lesson, we beg you to let us go!</text>
+		<text>We have learned our lesson, we beg you to let us go! Here's fuel for the rebellion as proof.</text>
 		<event>
 			<item_modify>
 				<item type="scrap" min="-75" max="-75"/>
@@ -5916,11 +5918,11 @@ REFS Darkest Desires for MV 5.5.1
 	</choice>
 
 	<choice req="INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE" lvl="1" blue="false" hidden="true">
-		<text>RK Scorch "Mind Heater": In fire, your crew are immune to Mind Control, stunned 50% shorter, and reveal adjacent rooms, on both ships. [ALREADY INSTALLED]</text>
+		<text>RK Scorch "Mind Heater": In fire, your crew are immune to Mind Control and cured from it, stunned 50% shorter, and reveal adjacent rooms, on both ships. [ALREADY INSTALLED]</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
 	<choice req="INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE" lvl="0" max_lvl="0" blue="false" hidden="true">
-		<text>Mind Heater. [Cost: 25~, 1{, 1|]</text>
+		<text>Mind Heater. [Cost: 30~, 1{, 1|]</text>
 		<event load="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE"/>
 	</choice>
 
@@ -6144,18 +6146,18 @@ REFS Darkest Desires for MV 5.5.1
 
 <event name="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE">
 	<text>You are about to install the Mind Heater upgrade.
-	[Effects: In fire, your crew are immune to Mind Control, stunned 50% shorter, and reveal adjacent rooms, on both ships.]</text>
+	[Effects: In fire, your crew are immune to Mind Control and cured from it, stunned 50% shorter, and reveal adjacent rooms, on both ships.]</text>
 	
 	<choice req="DJMOD_HAS_RADIKAL_SCORCH_GEAR" lvl="0" max_lvl="0" blue="false" hidden="true">
 		<text>This upgrade is unavailable. You need any RadiKal Scorch (or BPS) weapon/augment/crew/ship.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
 	<choice req="DJMOD_HAS_RADIKAL_SCORCH_GEAR" lvl="1" blue="false" hidden="true">
-		<text>Perform the upgrade. [Cost: 25~, 1{, 1|]</text>
+		<text>Perform the upgrade. [Cost: 30~, 1{, 1|]</text>
 		<event>
 			<text>You install the upgrade.</text>
 			<item_modify>
-				<item type="scrap" min="-25" max="-25"/>
+				<item type="scrap" min="-30" max="-30"/>
 				<item type="fuel" min="-1" max="-1"/>
 				<item type="drones" min="-1" max="-1"/>
 			</item_modify>
@@ -6177,6 +6179,7 @@ REFS Darkest Desires for MV 5.5.1
 </event>
 
 
+</FTL>
 <!--	ONLY REFS BELOW THIS LINE.		/////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -6210,7 +6213,6 @@ REFS MV v5.5.1:
 <clearJumpEvent name="DJMOD_JUMP_DECOY_SETUP"/>
 -->
 
-</FTL>
 
 
 <!--

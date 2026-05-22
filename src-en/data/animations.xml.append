@@ -6,7 +6,7 @@ The x and y coordinates in sheets are SPRITES not pixels, starting BOTTOM LEFT. 
 -->
 
 <!-- **************************************************************************************************************
-				BUFFS
+				BUFFS & DEBUFFS
 **************************************************************************************************************-->
 
 <!-- REF MV v5.5.1
@@ -20,6 +20,19 @@ The x and y coordinates in sheets are SPRITES not pixels, starting BOTTOM LEFT. 
 <anim name="rk_lead_titans_buff">
 	<sheet>rk_lead_titans_buff</sheet>
 	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<!-- <animSheet name="spores_debuff_elite" w="352" h="32" fw="32" fh="32">people/spores_debuff_elite.png</animSheet>
+<anim name="spores_debuff_elite">
+	<sheet>spores_debuff_elite</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim> -->
+<animSheet name="rk_dread_deck_debuff" w="352" h="32" fw="32" fh="32">people/rk_dread_deck_debuff.png</animSheet>
+<anim name="rk_dread_deck_debuff">
+	<sheet>rk_dread_deck_debuff</sheet>
+	<desc length="11" x="0" y="0"/>
 	<time>1.0</time>
 </anim>
 
@@ -597,6 +610,23 @@ TODO :
 </weaponAnim>
 
 
+<animSheet name="rk_killall_beam_charge" w="240" h="72" fw="60" fh="72">weapon_radikal/rk_killall_beam_chargeglow.png</animSheet>
+<anim name="rk_killall_beam_charge">
+	<sheet>rk_killall_beam_charge</sheet>
+	<desc length="4" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<animSheet name="rk_killall_beam" w="600" h="72" fw="60" fh="72">weapon_radikal/rk_killall_beam.png</animSheet>
+<weaponAnim name="rk_killall_beam">
+	<sheet>rk_killall_beam</sheet>
+	<desc length="10" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="31" y="34"/>
+	<mountPoint x="7" y="52"/>
+	<chargeImage>weapon_radikal/rk_killall_beam_glow.png</chargeImage>
+	<boost>rk_killall_beam_charge</boost>
+</weaponAnim>
 <!-- NB: The block for chaining, starting with "<animSheet name="BLABLA_charge ..." must be ABOVE the block for the weapon body!
 Just like in MV in fact.
 
