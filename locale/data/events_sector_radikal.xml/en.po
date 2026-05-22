@@ -717,7 +717,7 @@ msgid ""
 msgstr ""
 "\"Oh god dammit, you're with those Zoltan party poopers? Just my luck... I'm not risking our lives over this, come on in.\"\n"
 "\t\t\t\t\n"
-"\t\t\t\tAfter a thorough search, you find their RK augment! You're supposed to drop it off at the Police Station marked on your map, but keeping it could help with your more important mission."
+"\t\t\t\tAfter a thorough search, you find their RK augment! You're supposed to drop it off at a Zoltan Police Station, but keeping it could help with your more important mission."
 
 #: src-en/data/events_sector_radikal.xml:857
 msgid ""
@@ -732,7 +732,7 @@ msgid ""
 msgstr ""
 "\"Oh god dammit, you're with those Zoltan party poopers? Just my luck... I'm not risking our lives over this, come on in.\"\n"
 "\t\t\t\t\n"
-"\t\t\t\tAfter a thorough search, you find their RK weaponry! You're supposed to drop it off at the Police Station marked on your map, but keeping it could help with your more important mission."
+"\t\t\t\tAfter a thorough search, you find their RK weaponry! You're supposed to drop it off at a Zoltan Police Station, but keeping it could help with your more important mission."
 
 #: src-en/data/events_sector_radikal.xml:869
 msgid ""
@@ -1134,7 +1134,7 @@ msgid ""
 msgstr ""
 "\"Answer = unexpected. You = fools: 97% probability. Regardless, I cease functioning in: [time.short]\"\n"
 "\n"
-"\t\t\t\t\t\t\t\tThe creature does look desperate for oxygen by now. You can't risk bringing it in just yet, but maybe you can help it remotely and see what happens."
+"\t\t\t\t\t\t\t\tThe creature does look desperate for oxygen by now, which took longer than you thought. You can't risk bringing it in just yet, but maybe you can help it remotely and see what happens."
 
 #: src-en/data/events_sector_radikal.xml:1224
 msgid ""
@@ -1158,7 +1158,7 @@ msgstr "You can't spread Medbay healing around."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[1]/event/choice/event/choice[1]/event/choice[@req=\"NANO_MEDBAY\""
 " and not(@lvl)]/text"
-msgstr "(Med-bot Dispersal) Send it some help"
+msgstr "(Med-bot Dispersal) Send it some medical help"
 
 #: src-en/data/events_sector_radikal.xml:1244
 msgid ""
@@ -1229,7 +1229,7 @@ msgstr "Continue..."
 #: src-en/data/events_sector_radikal.xml:1314
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[2]/text"
-msgstr "This cannot end well, better leave now."
+msgstr "I don't feel like getting mauled, better leave now."
 
 #: src-en/data/events_sector_radikal.xml:1320
 msgid ""
@@ -1240,9 +1240,9 @@ msgstr ""
 "\t\tLooks like you have new loyal crew. You ask their name.\n"
 "\n"
 "\t\t\"Self ID = 'RK (Engi) Defender x Rockman-shaped-Morph x Lanius [amalgam]'.\n"
-"\t\tElse If: you = limited brainpower, use alias 'Def_Rock-Morph_Lanius'.\"\n"
+"\t\tElse If: you = limited brainpower, use alias 'Def_Rock-Morph_Lanius'. Or 'Defromorius'.\"\n"
 "\t\t\n"
-"\t\tYou decide 'Defromorius' will do. Once healed, it helps you fully scrap the shuttle and you're all ready to go."
+"\t\tYou decide that last one will do. Once healed, it helps you fully scrap the shuttle and you're all ready to go."
 
 #: src-en/data/events_sector_radikal.xml:1331
 msgid ""
@@ -1448,9 +1448,9 @@ msgstr "Do nothing."
 #: src-en/data/events_sector_radikal.xml:1518
 msgid "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/text"
 msgstr ""
-"\"So, what've you got? Anything hard, or explosive? And breathing? Or even inanimate, that's fine too, we're not like the Scorch.\" He says that like they're so much better, but you don't think it's a good idea to point that out.\n"
+"\"So, what've you got? Anything hard, or explosive? And breathing? Or even inanimate, that's fine too, we're not fanatics like the Scorch. Or twisted like the Punk, but who cares? Everybody looks smart until their hull is cut in half, HAHAHA!\" He says that like they're so much better, but you don't think it's a good idea to point that out.\n"
 "\n"
-"\t\tYou look at what they want and get a better understanding of why this sector is outlawed by so many factions. However the mission comes first, right?"
+"\t\tYou look at what they want and get a better understanding of why these guys are featured on so many kill lists. However the mission comes first, right?"
 
 #: src-en/data/events_sector_radikal.xml:1525
 msgid ""
@@ -1577,7 +1577,7 @@ msgstr "Moving on..."
 #: src-en/data/events_sector_radikal.xml:1672
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/choice[7]/text"
-msgstr "Nothing, I'm afraid."
+msgstr "Let's see what you have in store."
 
 #: src-en/data/events_sector_radikal.xml:1677
 msgid ""
@@ -1587,7 +1587,7 @@ msgstr "Actually... we have an emergency, bye!"
 #: src-en/data/events_sector_radikal.xml:1683
 msgid "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_3\"]/text"
 msgstr ""
-"\"OK, now enjoy our best local store. I've got shit to take care of, ya know? Sounds kinda urgent. Bye.\"\n"
+"\"OK, now enjoy our best local store. I've got shit to take care of, ya know? Right now, even. Bye.\"\n"
 "\n"
 "\t\tBefore you shop, you still have some time to do something else aboard the ship."
 
@@ -1762,7 +1762,7 @@ msgid ""
 msgstr ""
 "There is no answer. You move a safe distance away and figure you have time to do some maintenance.\n"
 "\n"
-"\t\t\tAfter some time, you detect some Orchid ships jumping in weapons hot, but you're safe here."
+"\t\t\tAfter some time, you detect some Free Mantis ships jumping in weapons hot, but you're safe here."
 
 #: src-en/data/events_sector_radikal.xml:1850
 msgid ""
@@ -1907,7 +1907,7 @@ msgstr "Moving on..."
 #: src-en/data/events_sector_radikal.xml:1989
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[7]/text"
-msgstr "Nothing, I'm afraid."
+msgstr "Let's see what you have in store."
 
 #: src-en/data/events_sector_radikal.xml:1994
 msgid ""
@@ -1955,7 +1955,7 @@ msgstr "...Makes sense, really."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_LAB_PUNK_AMBUSH\"]/choice[2]/event/text"
 msgstr ""
-"\"So much vigor, so little intellect, and we have so. many. guns. Butler drone, tell the staff to get off their arses. And prepare my tea.\"\n"
+"The unnerving Punk you were talking to remains unfazed. \"So much vigor, so little intellect, and we have so. many. guns. Butler drone, tell the staff to get off their arses. And prepare my tea.\"\n"
 "\t\t\t\t\n"
 "\t\t\t\tProjectiles from the RK Punk and the assault fleet start flying in every direction!\n"
 "\t\t\t\tAlso, they must have used a special jammer to depower your jump drive, you will have to charge it again."
@@ -2023,8 +2023,8 @@ msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
 " and not(@lvl)]/event/text"
 msgstr ""
-"\"... Brother. It always warms the heart to see one of us. Here is the "
-"welcome gift. You are cleared to land.\""
+"\"... Bruh. It always warms the heart to see one of us. Here is the welcome "
+"gift. You are cleared to land.\""
 
 #: src-en/data/events_sector_radikal.xml:2113
 msgid ""
@@ -2254,7 +2254,7 @@ msgstr "Moving on..."
 #: src-en/data/events_sector_radikal.xml:2324
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[8]/text"
-msgstr "Nothing, I'm afraid."
+msgstr "Let's see what you have in store."
 
 #: src-en/data/events_sector_radikal.xml:2329
 msgid ""
@@ -2660,7 +2660,7 @@ msgstr "Continue..."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_FIGHT_CURRENT_PIRATE\"]/text"
 msgstr ""
-"\"Of coursssse you are. Told you Kurt, hand over my sssscrap, you lost the bet. Let'ssss kill these damn clownssss.\"\n"
+"\"Of coursssse you are. Told you Kurt, hand over my sssscrap, you lossst the bet. Let'ssss kill these damn clownssss.\"\n"
 "\t\tLooks like you'll have to fight your way out!"
 
 #: src-en/data/events_sector_radikal.xml:2775

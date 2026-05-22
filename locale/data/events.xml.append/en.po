@@ -135,13 +135,13 @@ msgstr "Continue..."
 #: src-en/data/events.xml.append:360
 msgid ""
 "data/events.xml.append$//event[@name=\"DJMOD_OPERATIVE_DIES\"]/choice[3]/text"
-msgstr "What? Of course not. Wait, are you OK?"
+msgstr "What? Of course not. Hold tight!"
 
 #: src-en/data/events.xml.append:362
 msgid ""
 "data/events.xml.append$//event[@name=\"DJMOD_OPERATIVE_DIES\"]/choice[3]/event/text"
 msgstr ""
-"\"I... ha-... have failed.\" Looking mortified, he crushes a small chip inscribed with a couple capital letters, which briefly but intensely burns. Then he dies.\n"
+"\"Don't b- *cough* ... bother, it's too late ... for me... I... ha-... have failed.\" Looking mortified, he crushes a small chip inscribed with a couple capital letters, which briefly but intensely burns. Then he dies.\n"
 "\t\t\t\n"
 "\t\t\t\tYou proceed to strip the body, notice the swelling and necrosis, and wonder why selling you illegal gear mattered more to that guy more than his impending death. You wonder if the store owner knew and just scammed you.\n"
 "\t\t\tAt least there's some valuable tech in the dead soldier's pocket to recoup your losses."
@@ -2154,7 +2154,7 @@ msgstr ""
 msgid "data/events.xml.append$//textList[@name=\"EMPTY_RADIKAL\"]/text[3]"
 msgstr ""
 "This sector isn't exactly what you'd call calm, but here at least there is "
-"nothing going on worthy of attention."
+"nothing going on here worthy of attention."
 
 #: src-en/data/events.xml.append:2146
 msgid "data/events.xml.append$//textList[@name=\"EMPTY_RADIKAL\"]/text[4]"
@@ -2180,8 +2180,9 @@ msgstr "Do nothing."
 #: src-en/data/events.xml.append:2162
 msgid "data/events.xml.append$//textList[@name=\"NEBULA_EMPTY_RADIKAL\"]/text[1]"
 msgstr ""
-"It looks like this nebula is a good hiding spot for now, no hostiles "
-"detected."
+"No living thing here, just large autoships harvesting gases. Probably "
+"ingredients for some deadly weapon, but it wouldn't be worth your time to "
+"engage with them."
 
 #: src-en/data/events.xml.append:2163
 msgid "data/events.xml.append$//textList[@name=\"NEBULA_EMPTY_RADIKAL\"]/text[2]"
