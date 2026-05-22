@@ -1,9 +1,17 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-05-22 16:07+0000\n"
+"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
+"Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
+"dataevents_special_guardsxmlappend/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events_special_guards.xml.append:6
 msgid ""
@@ -64,6 +72,7 @@ msgid ""
 msgstr "(Любое снаряжение РК) Бывалый. Я свой!"
 
 #: src-en/data/events_special_guards.xml.append:56
+#, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/text"
@@ -257,12 +266,20 @@ msgid ""
 msgstr "Это пиратское логово, да? Мы по делу. *сплюнуть*"
 
 #: src-en/data/events_special_guards.xml.append:202
+#, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[4]/event/text"
 msgstr ""
-"\"Ох\". Охранник выглядит слегка раздраженным - то ли он устал каждый раз все разъяснять, то ли его не впечатлила ваша напыщенная манера. \"Вы немного ошибаетесь: пиратство - не наша специализация, скорее - неограниченный прогресс. Но да, здесь можно заниматься так называемой незаконной торговлей. Я сообщу о ваших интересах всем заинтересованным сторонам, а вы... ОБЯЗАТЕЛЬНО прихватите с собой достаточно лома\".\n"
+"\"Ох\". Охранник выглядит слегка раздраженным - то ли он устал каждый раз "
+"все разъяснять, то ли его не впечатлила ваша напыщенная манера. \"Вы немного "
+"ошибаетесь: пиратство - не наша специализация, скорее - неограниченный "
+"прогресс. Но да, здесь можно заниматься так называемой незаконной торговлей. "
+"Я сообщу о ваших интересах всем заинтересованным сторонам, а вы... "
+"ОБЯЗАТЕЛЬНО прихватите с собой достаточно лома\".\n"
 "\t\t\t\t\t\t\n"
-"\t\t\t\t\t\tОни отправляют вам координаты и пропускают вас. Несмотря на секретность этого сектора, вы уже понимаете, что это плохо отразится на вашей общей репутации."
+"\t\t\t\t\t\tОни отправляют вам координаты и пропускают вас. Несмотря на "
+"секретность этого сектора, вы уже понимаете, что это плохо отразится на "
+"вашей общей репутации."
 
 #: src-en/data/events_special_guards.xml.append:214
 msgid ""
