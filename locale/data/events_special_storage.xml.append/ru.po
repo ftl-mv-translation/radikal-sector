@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-05-22 16:07+0000\n"
-"Last-Translator: Aleev <aleev1414@gmail.com>\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "dataevents_special_storagexmlappend/ru/>\n"
 "Language: ru\n"
@@ -2479,6 +2479,7 @@ msgid ""
 msgstr "Установите Взломщик, чтобы получить больше возможностей."
 
 #: src-en/data/events_special_storage.xml.append:4384
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[3]/text"
 msgstr "(Взломщик 1 ур. 1|) Взлом за 16 секунд."
@@ -2494,6 +2495,7 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events_special_storage.xml.append:4401
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[@req=\"hacking\""
 " and @lvl=\"2\"]/text"
@@ -2681,11 +2683,13 @@ msgid ""
 msgstr "Перейти к битве!"
 
 #: src-en/data/events_special_storage.xml.append:4745
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_OUTCOME_BOSS\"]/text"
 msgstr ""
 "Этот взлом должен был задержать флот, но не задержал... \n"
-"\t\tКто-то вмешался и прислал нам странные координаты с такой надписью: \"Н0вички!!1!\"."
+"\t\tКто-то вмешался и прислал нам странные координаты с такой надписью: "
+"\"Н0вички!!1!\"."
 
 #: src-en/data/events_special_storage.xml.append:4751
 msgid ""
@@ -3390,6 +3394,7 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:5921
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\""
 " and @lvl=\"1\"]/text"
@@ -3399,6 +3404,7 @@ msgstr ""
 "оглушения сокращается на 50%. [УЖЕ УСТАНОВЛЕНО]"
 
 #: src-en/data/events_special_storage.xml.append:5925
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\""
 " and @lvl=\"0\"]/text"
@@ -3596,11 +3602,14 @@ msgid ""
 msgstr "Неважно."
 
 #: src-en/data/events_special_storage.xml.append:6148
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/text"
 msgstr ""
 "Вы собираетесь добавить модификацию Разогреватель разума.\n"
-"\t[Эффекты: в зоне действия огня ваш экипаж на обоих кораблях становится невосприимчивым к контролю разума, а продолжительность оглушения сокращается на 50%]"
+"\t[Эффекты: в зоне действия огня ваш экипаж на обоих кораблях становится "
+"невосприимчивым к контролю разума, а продолжительность оглушения сокращается "
+"на 50%]"
 
 #: src-en/data/events_special_storage.xml.append:6152
 #, fuzzy
@@ -3612,6 +3621,7 @@ msgstr ""
 " Скорч (или БПС)."
 
 #: src-en/data/events_special_storage.xml.append:6156
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
 " and @lvl=\"1\"]/text"
