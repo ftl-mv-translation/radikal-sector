@@ -1,9 +1,17 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-05-22 16:07+0000\n"
+"Last-Translator: Aleev <aleev1414@gmail.com>\n"
+"Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
+"datahyperspace-xml-append/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/hyperspace.xml.append:270
 msgid "data/hyperspace.xml.append$//human_soldier[@name=\"Rammerman\"]/@name"
@@ -63,21 +71,28 @@ msgid "data/hyperspace.xml.append$//rk_fireghost[@name=\"Log\"]/@name"
 msgstr "Лог"
 
 #: src-en/data/hyperspace.xml.append:509
+#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[1]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
 "ЩИТ СТОЙКОСТИ:\n"
-"\t\t\tЭтот враг защищен энергетическим щитом. Взлом, контроль разума, телепортация, абордажные дроны и все повреждающее корпус или ионное оружие будут заблокированы до тех пор, пока не будет отключен. Этот особый щит также обладает повышенной скоростью перезарядки, и противник способен восстановить свой энергетический щит один раз!"
+"\t\t\tЭтот враг защищен энергетическим щитом. Взлом, контроль разума, "
+"телепортация, абордажные дроны и все повреждающее корпус или ионное оружие "
+"будут заблокированы до тех пор, пока не будет отключен. Этот особый щит "
+"также обладает повышенной скоростью перезарядки, и противник способен "
+"восстановить свой энергетический щит один раз!"
 
 #: src-en/data/hyperspace.xml.append:518
+#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[2]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
 "УДУШЬЕ Х.О.Р.О.Ш.О.:\n"
 "            Экипаж этого корабля получает 0.75х урон от удушья.\n"
-"            В состоянии удушья они двигаются, саботируют, ремонтируют и сражаются в 1,5 раза эффективнее."
+"            В состоянии удушья они двигаются, саботируют, ремонтируют и "
+"сражаются в 1,5 раза эффективнее."
 
 #: src-en/data/hyperspace.xml.append:527
 msgid ""
@@ -271,6 +286,7 @@ msgid ""
 msgstr "ПОДРЫВ"
 
 #: src-en/data/hyperspace.xml.append:1337
+#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$//mod-"
 "append:race[@name=\"rk_weaponlike\"]/powerEffect[2]/tooltip"
