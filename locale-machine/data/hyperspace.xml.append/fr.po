@@ -27,20 +27,20 @@ msgstr "Bombe-D"
 
 #: src-en/data/hyperspace.xml.append:331
 msgid "data/hyperspace.xml.append$//engi_separatist[@name=\"Punkalot\"]/@name"
-msgstr "Punkalot"
+msgstr "Anarcheur"
 
 #: src-en/data/hyperspace.xml.append:332
 msgid ""
 "data/hyperspace.xml.append$//phantom_mare_alpha[@name=\"Breathenot\"]/@name"
-msgstr "Ne-respire-pas"
+msgstr "Respirepas"
 
 #: src-en/data/hyperspace.xml.append:333
 msgid "data/hyperspace.xml.append$//zoltan_devotee[@name=\"Movalot\"]/@name"
-msgstr "Bouge-beaucoup"
+msgstr "Bougebeaucoup"
 
 #: src-en/data/hyperspace.xml.append:355
 msgid "data/hyperspace.xml.append$//orchid_caretaker[@name=\"HighLife\"]/@name"
-msgstr "Grande-vie"
+msgstr "GrandeVie"
 
 #: src-en/data/hyperspace.xml.append:356
 msgid "data/hyperspace.xml.append$//engi_separatist[@name=\"Aerodynamic\"]/@name"
@@ -56,7 +56,7 @@ msgstr "GMdHC"
 
 #: src-en/data/hyperspace.xml.append:402
 msgid "data/hyperspace.xml.append$//rock_commando[@name=\"Lighter\"]/@name"
-msgstr "Allumeur"
+msgstr "PlusLéger"
 
 #: src-en/data/hyperspace.xml.append:403
 msgid "data/hyperspace.xml.append$//rk_fireghost[@name=\"Log\"]/@name"
@@ -67,25 +67,25 @@ msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[1]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"BOUCLIER DE PERSISTANCE :\n"
-"\t\t\tCet ennemi est protégé par un Bouclier d'énergie. Le piratage, le Contrôle Mental, la téléportation, les drones d'abordage et toutes les armes infligeant des dégâts à la coque ou ioniques seront bloqués jusqu'à désactivation. Ce bouclier spécifique augmente également le taux de recharge du bouclier, et l'ennemi est capable de régénérer son Bouclier d'énergie une fois !"
+"BOUCLIER PERSISTANT :\n"
+"\t\t\tCet ennemi est protégé par un Bouclier Énergétique. Le Piratage, le Contrôle Mental, la Téléportation, les Drones d'abordage et toutes les armes infligeant des dégâts à la coque ou ioniques seront bloqués jusqu'à ce qu'il soit désactivé. Ce bouclier spécifique augmente également le taux de recharge des boucliers, et l'ennemi est capable de régénérer son Bouclier Énergétique une fois !"
 
 #: src-en/data/hyperspace.xml.append:504
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[2]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"F.I.N.E. D'ÉTOUFFEMENT :\n"
-"\t\t\tL'équipage de ce vaisseau subit 0.75x dégâts de suffocation.\n"
-"\t\t\tEn suffocant, ils se déplacent, sabotent, réparent et combattent 1.5x mieux."
+"AMENDE D'ASPHYXIE :\n"
+"\t\t\tL'équipage de ce vaisseau subit 0,75x dégâts de suffocation.\n"
+"\t\t\tEn suffoquant, ils se déplacent, sabotent, réparent et combattent 1,5x mieux."
 
 #: src-en/data/hyperspace.xml.append:514
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[3]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"HARMONIE DE FORTUNE :\n"
-"\t\t\tLes Engis de ce vaisseau sont plus résistants et immunisés contre le Contrôle Mental. Ils sont aussi exponentiellement meilleurs en réparations, plus rapides et plus forts pour chaque niveau actif de Piratage et de Contrôle Mental sur leur vaisseau !"
+"HARMONIE PUNK :\n"
+"\t\t\tLes Engis de ce vaisseau sont plus résistants et immunisés au Contrôle Mental. Ils sont également exponentiellement meilleurs en réparations, plus rapides et plus forts pour chaque niveau actif de Piratage et de Contrôle Mental sur leur vaisseau !"
 
 #: src-en/data/hyperspace.xml.append:521
 msgid ""
@@ -93,7 +93,7 @@ msgid ""
 "append:shipIcon/tooltip"
 msgstr ""
 "KITS DE DÉFENSE :\n"
-"\t\t\tSur leur vaisseau, l'équipage de ce vaisseau résiste aux dégâts de combat, répare et se déplace plus vite, et se soigne au fil du temps s'il est inactif (non aux commandes)."
+"\t\t\tSur leur vaisseau, l'équipage de ce vaisseau résiste aux dégâts de combat, répare et se déplace plus vite, et se soigne avec le temps s'il est inactif (non affecté à un poste)."
 
 #: src-en/data/hyperspace.xml.append:528
 msgid ""
@@ -101,8 +101,8 @@ msgid ""
 "append:shipIcon/tooltip"
 msgstr ""
 "DEMICLONEURS :\n"
-"\t\t\tDes énergies sombres tentent de ressusciter l'équipage de ce vaisseau s'il meurt (pas lors d'événements) sans une véritable salle des clones.\n"
-"\t\t\tAu mieux, ils deviennent leur propre version inférieure (Soldat = Humain par défaut, etc.) S'il n'existe pas de version inférieure, ils deviennent des Morphes. Quand les Morphes meurent, rien ne se passe."
+"\t\t\tDes énergies sombres tentent de ressusciter l'équipage de ce vaisseau s'il meurt (pas lors d'événements) sans vraie salle des clones.\n"
+"\t\t\tAu mieux, ils deviennent leur propre version moindre (Soldat = Humain par défaut, etc.) S'il n'existe pas de version moindre, ils deviennent des Morphes. Quand les Morphes meurent, rien ne se passe."
 
 #: src-en/data/hyperspace.xml.append:537
 msgid ""
@@ -110,7 +110,7 @@ msgid ""
 "append:shipIcon/tooltip"
 msgstr ""
 "TÉLÉPORTEUR PLASMATIQUE :\n"
-"\t\t\tCe vaisseau peut instantanément mettre son ennemi en feu au début d'un combat. Méfiez-vous !"
+"\t\t\tCe vaisseau peut instantanément mettre son ennemi en feu au début d'un combat. Attention !"
 
 #: src-en/data/hyperspace.xml.append:544
 msgid ""
@@ -126,31 +126,31 @@ msgid ""
 "append:shipIcon/tooltip"
 msgstr ""
 "TERRE ARDENTE :\n"
-"\t\t\tL'équipage de ce vaisseau résiste au feu, y est boosté et se soigne en l'éteignant."
+"\t\t\tL'équipage de ce vaisseau résiste au feu, est boosté par celui-ci et se soigne en l'éteignant."
 
 #: src-en/data/hyperspace.xml.append:558
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[9]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"TERRE EN ÉRUPTION :\n"
-"\t\t\tL'équipage de ce vaisseau résiste au feu, y est boosté et génère de l'O2 en cas d'incendie, et se soigne en l'éteignant. Votre équipage perd des PV en cas d'incendie."
+"TERRE ÉRUPTIVE :\n"
+"\t\t\tL'équipage de ce vaisseau résiste au feu, est boosté par celui-ci et génère de l'O2 dans le feu, et se soigne en l'éteignant. Votre équipage perd des PV dans le feu."
 
 #: src-en/data/hyperspace.xml.append:565
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[10]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"FLAMMABILISATEUR-I :\n"
-"\t\t\tL'immunité au feu, la résistance ou le soin direct du feu (non l'extinction) de votre équipage sont supprimés ! Votre équipage se déplace également plus lentement en cas d'incendie, encore plus pour chaque niveau actif de système de survie (O2) sur le vaisseau ennemi !"
+"INFLAMMABILISATEUR-I :\n"
+"\t\t\tL'immunité au feu de votre équipage, sa résistance ou sa guérison directe par le feu (pas l'extinction) sont supprimées ! Votre équipage se déplace également plus lentement dans le feu, encore plus pour chaque niveau actif de Système de survie (O2) sur le vaisseau ennemi !"
 
 #: src-en/data/hyperspace.xml.append:572
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[11]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"FLAMMABILISATEUR-D :\n"
-"\t\t\tVotre équipage subit plus de dégâts de feu et se déplace plus lentement en cas d'incendie. Ces effets sont plus forts pour chaque niveau actif de système de survie (O2) sur le vaisseau ennemi !"
+"INFLAMMABILISATEUR-D :\n"
+"\t\t\tVotre équipage subit plus de dégâts de feu et se déplace plus lentement dans le feu. Ces effets sont plus forts pour chaque niveau actif de Système de survie (O2) sur le vaisseau ennemi !"
 
 #: src-en/data/hyperspace.xml.append:737
 msgid ""
@@ -228,7 +228,7 @@ msgstr "ÉQUIPAGE MYSTÉRIEUX"
 msgid ""
 "data/hyperspace.xml.append$//mod-"
 "append:race[@name=\"rk_weaponlike\"]/powerEffect[1]/buttonText"
-msgstr "BOMBE EXTERNE"
+msgstr "BOMBE EXT"
 
 #: src-en/data/hyperspace.xml.append:1222
 msgid ""
@@ -242,29 +242,29 @@ msgstr ""
 msgid ""
 "data/hyperspace.xml.append$//mod-"
 "append:race[@name=\"rk_weaponlike\"]/powerEffect[2]/buttonText"
-msgstr "BOMBE INTERNE"
+msgstr "BOMBE INT"
 
 #: src-en/data/hyperspace.xml.append:1271
 msgid ""
 "data/hyperspace.xml.append$//mod-"
 "append:race[@name=\"rk_weaponlike\"]/powerEffect[2]/tooltip"
 msgstr ""
-"Détonne la bombe, infligeant 1 dégât dans la pièce actuelle et causant une "
+"Détoner la bombe, infligeant 1 dégât dans la pièce actuelle et causant une "
 "brèche. Obtient 1 charge par saut."
 
 #: src-en/data/hyperspace.xml.append:1390
 msgid ""
 "data/hyperspace.xml.append$//mod-"
 "append:race[@name=\"unique_rk_defromorius\"]/powerEffect/buttonText"
-msgstr "DECUBITUS"
+msgstr "DÉCUBITUS"
 
 #: src-en/data/hyperspace.xml.append:1391
 msgid ""
 "data/hyperspace.xml.append$//mod-"
 "append:race[@name=\"unique_rk_defromorius\"]/powerEffect/tooltip"
 msgstr ""
-"[TEMPS DE RECHARGE:10s DURÉE:10s]\n"
-"\t\t\t\tL'équipage allié dans le même vaisseau, y compris Defromorius, subit 0.65x dégâts des dangers et du combat, et inflige 1.5x dégâts."
+"[TEMPS DE RECHARGE : 10s DURÉE : 10s]\n"
+"\t\t\t\tL'équipage allié dans le même vaisseau, y compris Defromorius, subit 0,65x dégâts des dangers et du combat, et inflige 1,5x dégâts."
 
 #: src-en/data/hyperspace.xml.append:1508
 msgid ""
@@ -277,8 +277,8 @@ msgid ""
 "data/hyperspace.xml.append$//mod-"
 "append:race[@name=\"rk_fireghost\"]/powerEffect/tooltip"
 msgstr ""
-"[TEMPS DE RECHARGE:9s -20PV]\n"
-"\t\t\t\tDémarre un incendie dans une pièce aléatoire sur les deux vaisseaux."
+"[TEMPS DE RECHARGE : 9s -20PV]\n"
+"\t\t\t\tDéclenche un incendie dans une salle aléatoire sur les deux vaisseaux."
 
 #: src-en/data/hyperspace.xml.append:2090
 msgid ""
@@ -476,13 +476,13 @@ msgstr ""
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[5]/category[6]/customTitle"
-msgstr "ASSOCIÉS RK SCORCH"
+msgstr "ASSOCIÉS RK CALCINEUR"
 
 #: src-en/data/hyperspace.xml.append:2986
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[5]/category[7]/customTitle"
-msgstr "MATELOTS RK SCORCH"
+msgstr "MATELOTS RK CALCINEUR"
 
 #: src-en/data/hyperspace.xml.append:3020
 msgid ""
@@ -494,60 +494,60 @@ msgstr "AUGMENTATIONS RADIKAL ESSENTIELLES"
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[5]/category[10]/customTitle"
-msgstr "AUGMENTATIONS RK SCORCH"
+msgstr "AUGMENTATIONS RK CALCINEUR"
 
 #: src-en/data/hyperspace.xml.append:3060
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[5]/category[11]/customTitle"
-msgstr "MEILLEURES AUGMENTATIONS RK SCORCH"
+msgstr "MEILLEURES AUGMENTATIONS RK CALCINEUR"
 
 #: src-en/data/hyperspace.xml.append:3107
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[10]/mod-"
 "append:customStore/category[1]/customTitle"
-msgstr "ARMES DE SNIPER"
+msgstr "ARMES SNIPER"
 
 #: src-en/data/hyperspace.xml.append:3122
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[10]/mod-"
 "append:customStore/category[2]/customTitle"
-msgstr "ARMES DE SNIPER"
+msgstr "ARMES SNIPER"
 
 #: src-en/data/hyperspace.xml.append:3136
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[10]/mod-"
 "append:customStore/category[3]/customTitle"
-msgstr "ARMES DE SNIPER"
+msgstr "ARMES SNIPER"
 
 #: src-en/data/hyperspace.xml.append:3151
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[10]/mod-"
 "append:customStore/category[4]/customTitle"
-msgstr "ARMES DE SNIPER"
+msgstr "ARMES SNIPER"
 
 #: src-en/data/hyperspace.xml.append:3162
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[10]/mod-"
 "append:customStore/category[5]/customTitle"
-msgstr "SYSTÈMES DE SNIPER (30% DE RÉDUCTION)"
+msgstr "SYSTÈMES SNIPER (30% DE RÉDUCTION)"
 
 #: src-en/data/hyperspace.xml.append:3179
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[10]/mod-"
 "append:customStore/category[6]/customTitle"
-msgstr "AUGMENTATIONS DE SNIPER"
+msgstr "AUGMENTATIONS SNIPER"
 
 #: src-en/data/hyperspace.xml.append:3194
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[10]/mod-"
 "append:customStore/category[7]/customTitle"
-msgstr "AUGMENTATIONS DE SNIPER RK (10-20% DE RÉDUCTION)"
+msgstr "AUGMENTATIONS RK SNIPER (10-20% DE RÉDUCTION)"
 
 #: src-en/data/hyperspace.xml.append:3400
 msgid ""
 "data/hyperspace.xml.append$//statBoost[@name=\"powerEffect\"]/powerEffect/buttonText"
-msgstr "PASSE-BRÈCHE"
+msgstr "PAS-BRECHE"
 
 #: src-en/data/hyperspace.xml.append:3401
 msgid ""
