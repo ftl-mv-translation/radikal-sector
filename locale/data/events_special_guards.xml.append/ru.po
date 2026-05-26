@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-05-22 16:07+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-05-26 15:17+0000\n"
+"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "dataevents_special_guardsxmlappend/ru/>\n"
 "Language: ru\n"
@@ -72,14 +72,12 @@ msgid ""
 msgstr "(Любое снаряжение РК) Бывалый. Я свой!"
 
 #: src-en/data/events_special_guards.xml.append:56
-#, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/text"
 msgstr ""
 "\"Отличная находка! Раз вы уже один из нас, вот все свежие координаты - на "
-"случай, если захотите разнообразить свои варианты\". С этими словами "
-"охранник уже переключился на следующий корабль."
+"случай, если захотите разнообразить свои варианты\"."
 
 #: src-en/data/events_special_guards.xml.append:58
 msgid ""
@@ -176,12 +174,13 @@ msgid ""
 msgstr "Выбрать \"Бам\"."
 
 #: src-en/data/events_special_guards.xml.append:125
-#, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[1]/event/text"
 msgstr ""
-"\"Классика - это всегда верный выбор. Мудрый выбор\". Охранник передает вам "
-"координаты, а затем быстро прерывает связь, не дожидаясь вашего ответа."
+"\"Всегда верный выбор. Если сомневаешься - проделывай в нем большие дырки, "
+"пока оно не развалится на куски - этот способ никогда не подводит\". "
+"Охранник передает вам координаты, а затем быстро прерывает связь, не "
+"дожидаясь вашего ответа."
 
 #: src-en/data/events_special_guards.xml.append:133
 msgid ""
@@ -199,13 +198,12 @@ msgid ""
 msgstr "Выбрать \"Панк\"."
 
 #: src-en/data/events_special_guards.xml.append:145
-#, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[2]/event/text"
 msgstr ""
-"\"Как раз вовремя, я слышал, у них появилось что-то новенькое\". Охранник "
-"передает вам координаты, а затем быстро прерывает связь, не дожидаясь вашего "
-"ответа."
+"\"Как раз вовремя, я слышал, у них появилось новое продвинутое снаряжение "
+"для убийств и всякие такие штуковины для гиков\". Охранник передает вам "
+"координаты, а затем быстро прерывает связь, не дожидаясь вашего ответа."
 
 #: src-en/data/events_special_guards.xml.append:151
 msgid ""
@@ -268,20 +266,22 @@ msgid ""
 msgstr "Это пиратское логово, да? Мы по делу. *сплюнуть*"
 
 #: src-en/data/events_special_guards.xml.append:202
-#, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[4]/event/text"
 msgstr ""
 "\"Ох\". Охранник выглядит слегка раздраженным - то ли он устал каждый раз "
 "все разъяснять, то ли его не впечатлила ваша напыщенная манера. \"Вы немного "
 "ошибаетесь: пиратство - не наша специализация, скорее - неограниченный "
-"прогресс. Но да, здесь можно заниматься так называемой незаконной торговлей. "
-"Я сообщу о ваших интересах всем заинтересованным сторонам, а вы... "
-"ОБЯЗАТЕЛЬНО прихватите с собой достаточно лома\".\n"
+"прогресс. Но да, здесь можно заниматься тем, что другие называют незаконной "
+"торговлей. Это очень удобно для приобретения всего необходимого.\n"
+"\t\t\t\t\t\tЯ передам ваш запрос всем заинтересованным лицам, а вы... "
+"ОБЯЗАТЕЛЬНО прихватите с собой достаточно лома\". Мы стараемся избегать "
+"лишней суеты.\n"
 "\t\t\t\t\t\t\n"
 "\t\t\t\t\t\tОни отправляют вам координаты и пропускают вас. Несмотря на "
 "секретность этого сектора, вы уже понимаете, что это плохо отразится на "
-"вашей общей репутации."
+"вашей общей репутации. Хотя, если вы можете добыть все необходимое "
+"самостоятельно и у пиратов, это не имеет значения."
 
 #: src-en/data/events_special_guards.xml.append:214
 msgid ""
