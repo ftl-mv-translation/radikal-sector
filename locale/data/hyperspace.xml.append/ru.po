@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-05-22 16:07+0000\n"
+"PO-Revision-Date: 2026-05-26 15:17+0000\n"
 "Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "datahyperspace-xml-append/ru/>\n"
@@ -71,28 +71,29 @@ msgid "data/hyperspace.xml.append$//rk_fireghost[@name=\"Log\"]/@name"
 msgstr "Лог"
 
 #: src-en/data/hyperspace.xml.append:509
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[1]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"ЩИТ СТОЙКОСТИ:\n"
-"\t\t\tЭтот враг защищен энергетическим щитом. Взлом, контроль разума, "
-"телепортация, абордажные дроны и все повреждающее корпус или ионное оружие "
-"будут заблокированы до тех пор, пока не будет отключен. Этот особый щит "
-"также обладает повышенной скоростью перезарядки, и противник способен "
-"восстановить свой энергетический щит один раз!"
+"КОРАБЛЬ РАДИКАЛ:\n"
+"\t\t\tВероятно, представляет опасность, возможно, в том числе для самого "
+"себя и/или своего экипажа.\n"
+"\t\t\tВероятно, содержит добываемое снаряжение РадиКал: открывает доступ к "
+"внутренним улучшениям и синим опциям или координатам секторов РК."
 
 #: src-en/data/hyperspace.xml.append:518
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[2]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"УДУШЬЕ Х.О.Р.О.Ш.О.:\n"
-"            Экипаж этого корабля получает 0.75х урон от удушья.\n"
-"            В состоянии удушья они двигаются, саботируют, ремонтируют и "
-"сражаются в 1,5 раза эффективнее."
+"СВИНЦОВЫЕ ТИТАНЫ:\n"
+"\t\t\tКристаллины, ланиусы и валуны на этом корабле обладают следующими "
+"свойствами: 2.5х сопротивляемость ко всему, 2.5х урон по всем целям, создают "
+"пробоины при передвижении и не могут ремонтировать.\n"
+"\t\t\tОстальные члены экипажа получают фиксированное увеличение скорости "
+"ремонта на 75%.\n"
+"\t\t\tВсе члены экипажа этого корабля получают фиксированное увеличение "
+"скорости передвижения на 40%."
 
 #: src-en/data/hyperspace.xml.append:527
 msgid ""
@@ -116,52 +117,76 @@ msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[5]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
+"ПАЛУБА УЖАСА:\n"
+"\t\t\tВраги, проникшие на этот корабль, получают 1.5х урона от всех "
+"источников.\n"
+"\t\t\t2х скорость клонирования и лечения у членов экипажа этого корабля. При "
+"клонировании они не теряют навыки.\n"
+"\t\t\tВсе члены экипажа, находящиеся в одном помещении с кем-либо из экипажа "
+"этого корабля, не могут быть клонированы."
 
 #: src-en/data/hyperspace.xml.append:553
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[6]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"ПЛАЗМЕННЫЙ ТЕЛЕПОРТАТОР:\n"
-"\t\t\tЭтот корабль может мгновенно поджечь противника в начале боя. Будьте осторожны!"
+"ПАНК-ГАРМОНИЯ:\n"
+"\t\t\tИнженеры на этом корабле обладают повышенной сопротивляемостью и "
+"иммунитетом Контролю разума.\n"
+"\t\t\tКроме того, их эффективность при ремонте растет в геометрической "
+"прогрессии: чем больше активных уровней Взломщика и Контроля разума на "
+"корабле, тем быстрее и эффективнее они работают!"
 
 #: src-en/data/hyperspace.xml.append:562
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[7]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
+"НАБОРЫ ЗАЩИТЫ:\n"
+"\t\t\tНаходясь на своем корабле, экипаж этого судна получает защиту от урона "
+"в бою, быстрее ремонтирует корабль и перемещается, а также постепенно "
+"восстанавливает здоровье, если находится в режиме ожидания и не заняты "
+"обслуживанием систем."
 
 #: src-en/data/hyperspace.xml.append:569
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[8]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"ПЫЛАЮЩАЯ ЗЕМЛЯ:\n"
-"\t\t\tЭкипаж этого корабля обладает сопротивляемостью огню, получает усиление в огне и восстанавливает здоровье во время тушения."
+"ДЕМИКЛОНЕРЫ:\n"
+"\t\t\tТемные силы пытаются воскресить экипаж этого корабля, если его члены "
+"погибают (не в ходе событий) в отсутствие настоящего Клон-отсека.\n"
+"\t\t\tВ лучшем случае они превращаются в свои собственные упрощенные версии "
+"(солдат = человек по умолчанию и т. д.). Если упрощенной версии не "
+"существует, они становятся морфами. Когда морфы умирают - ничего не "
+"происходит."
 
 #: src-en/data/hyperspace.xml.append:578
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[9]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
 "ПЛАЗМЕННЫЙ ТЕЛЕПОРТАТОР:\n"
-"\t\t\tЭтот корабль может мгновенно поджечь противника в начале боя. Будьте "
-"осторожны!"
+"\t\t\tЭтот корабль может мгновенно поджечь противника в начале боя!"
 
 #: src-en/data/hyperspace.xml.append:585
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[10]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
+"ПРЕДВАРИТЕЛЬНЫЙ ЗАЖИГАТЕЛЬ СКОРЧ:\n"
+"\t\t\tОружие этого корабля становится доступным сразу после сверхсветового "
+"прыжка, но при каждом выстреле снарядом или лучом в оружейном отсеке "
+"возникает пожар!"
 
 #: src-en/data/hyperspace.xml.append:592
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[11]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
+"ВЫЖЖЕННАЯ ЗЕМЛЯ:\n"
+"\t\t\tЭкипаж этого корабля обладает сопротивляемостью к огню и исцеляется во "
+"время тушения пожара."
 
 #: src-en/data/hyperspace.xml.append:599
 msgid ""
@@ -176,24 +201,40 @@ msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[13]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
+"ИЗВЕРГАЮЩАЯСЯ ЗЕМЛЯ:\n"
+"\t\t\tЭкипаж этого корабля устойчив к огню, получает бонус в условиях "
+"пожара, вырабатывает кислород в огне и исцеляется при тушении пожара. Ваш "
+"экипаж теряет здоровья при пожаре."
 
 #: src-en/data/hyperspace.xml.append:613
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[14]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
+"ФЛАММАБИЛИЗАТОР-И:\n"
+"\t\t\tУ вашего экипажа снимается иммунитет к огню, сопротивляемость огню или "
+"прямое исцеление от огня (не тушение)! Кроме того, ваш экипаж передвигается "
+"в огне медленнее, причем скорость снижается еще больше за каждый активный "
+"уровень системы жизнеобеспечения (O2) на вражеском корабле!"
 
 #: src-en/data/hyperspace.xml.append:620
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[15]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
+"ФЛАММАБИЛИЗАТОР-У:\n"
+"\t\t\tВаш экипаж получает больше урона от огня и передвигается медленнее в "
+"условиях пожара. Эти эффекты усиливаются с каждым активным уровнем системы "
+"жизнеобеспечения (O2) на вражеском корабле!"
 
 #: src-en/data/hyperspace.xml.append:627
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[16]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
+"ОРУДИЯ НА ПРЕДЕЛЕ:\n"
+"\t\t\tСкорострельность орудий и артиллерии этого корабля повышена на 25%, но "
+"при каждом выстреле в отсеке Оружия возникает пожар."
 
 #: src-en/data/hyperspace.xml.append:804
 msgid ""
@@ -282,19 +323,17 @@ msgstr ""
 "пробоину. Получает 1 заряд за каждый прыжок."
 
 #: src-en/data/hyperspace.xml.append:1336
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$//mod-"
 "append:race[@name=\"rk_weaponlike\"]/powerEffect[2]/buttonText"
-msgstr "ПОДРЫВ"
+msgstr "УНИЧТОЖИТЕЛЬ"
 
 #: src-en/data/hyperspace.xml.append:1337
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$//mod-"
 "append:race[@name=\"rk_weaponlike\"]/powerEffect[2]/tooltip"
 msgstr ""
-"Телепортирует бомбу на другой корабль, нанеся 1 единицу урона и создав "
+"Телепортирует бомбу на вражеский корабль, нанося 1 единицу урона и создав "
 "пробоину. Получает 1 заряд за каждый прыжок."
 
 #: src-en/data/hyperspace.xml.append:1376
@@ -315,13 +354,16 @@ msgstr ""
 msgid ""
 "data/hyperspace.xml.append$//mod-"
 "append:race[@name=\"unique_rk_defromorius\"]/powerEffect/buttonText"
-msgstr ""
+msgstr "ПРОЛЕЖНИ"
 
 #: src-en/data/hyperspace.xml.append:1487
 msgid ""
 "data/hyperspace.xml.append$//mod-"
 "append:race[@name=\"unique_rk_defromorius\"]/powerEffect/tooltip"
 msgstr ""
+"[ПЕРЕЗАРЯДКА:10с  ДЛИТЕЛЬНОСТЬ:10с]\n"
+"\t\t\t\tЭкипаж союзников на одном корабле, включая Дефромориуса, получает "
+"0.7х урона от всех источников и наносит 1.5х урона."
 
 #: src-en/data/hyperspace.xml.append:1593
 msgid ""
@@ -341,19 +383,19 @@ msgstr ""
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[1]/category[1]/customTitle"
-msgstr ""
+msgstr "ОРУЖИЕ РАДИКАЛ"
 
 #: src-en/data/hyperspace.xml.append:2232
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[1]/category[2]/customTitle"
-msgstr ""
+msgstr "МОДУЛИ РАДИКАЛ"
 
 #: src-en/data/hyperspace.xml.append:2250
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[1]/category[3]/customTitle"
-msgstr ""
+msgstr "РАДИКАЛЫ"
 
 #: src-en/data/hyperspace.xml.append:2293
 msgid ""
@@ -365,7 +407,7 @@ msgstr "ОСНОВНОЕ ОРУЖИЕ РАДИКАЛ"
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[2]/category[2]/customTitle"
-msgstr ""
+msgstr "ОРУЖИЕ РАДИКАЛ"
 
 #: src-en/data/hyperspace.xml.append:2335
 msgid ""
@@ -443,7 +485,7 @@ msgstr "МОДУЛИ ДНЯ [СКИДКА 33%]"
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[3]/category[1]/customTitle"
-msgstr ""
+msgstr "ОРУЖИЕ РК БАМ"
 
 #: src-en/data/hyperspace.xml.append:2652
 msgid ""
@@ -461,13 +503,13 @@ msgstr "ДОПОЛНИТЕЛЬНЫЕ СИСТЕМЫ"
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[3]/category[6]/customTitle"
-msgstr ""
+msgstr "РК БАМ СОРАТНИКИ"
 
 #: src-en/data/hyperspace.xml.append:2708
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[3]/category[7]/customTitle"
-msgstr ""
+msgstr "РК БAM ЭКИПАЖ"
 
 #: src-en/data/hyperspace.xml.append:2742
 msgid ""
@@ -479,19 +521,19 @@ msgstr "ОСНОВНЫЕ МОДУЛИ РАДИКАЛ"
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[3]/category[10]/customTitle"
-msgstr ""
+msgstr "РК БAM МОДУЛИ"
 
 #: src-en/data/hyperspace.xml.append:2781
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[3]/category[11]/customTitle"
-msgstr ""
+msgstr "ТОП РК БAM МОДУЛИ"
 
 #: src-en/data/hyperspace.xml.append:2824
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[4]/category[1]/customTitle"
-msgstr ""
+msgstr "РК ПАНК ОРУЖИЕ"
 
 #: src-en/data/hyperspace.xml.append:2856
 msgid ""
@@ -509,7 +551,7 @@ msgstr "ДОПОЛНИТЕЛЬНЫЕ СИСТЕМЫ"
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[4]/category[6]/customTitle"
-msgstr ""
+msgstr "РК ПАНК СОРАТНИКИ"
 
 #: src-en/data/hyperspace.xml.append:2946
 msgid ""
@@ -521,19 +563,19 @@ msgstr "ОСНОВНЫЕ МОДУЛИ РАДИКАЛ"
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[4]/category[9]/customTitle"
-msgstr ""
+msgstr "РК ПАНК МОДУЛИ"
 
 #: src-en/data/hyperspace.xml.append:2985
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[4]/category[10]/customTitle"
-msgstr ""
+msgstr "ТОП РК ПАНК МОДУЛИ"
 
 #: src-en/data/hyperspace.xml.append:3028
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[5]/category[1]/customTitle"
-msgstr ""
+msgstr "РК СКОРЧ ОРУЖИЕ"
 
 #: src-en/data/hyperspace.xml.append:3059
 msgid ""
