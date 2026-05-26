@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-05-22 16:07+0000\n"
+"PO-Revision-Date: 2026-05-26 15:17+0000\n"
 "Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/radikal-sector/datahyperspace-xml-append/zh_Hans/>\n"
@@ -70,40 +70,44 @@ msgid "data/hyperspace.xml.append$//rk_fireghost[@name=\"Log\"]/@name"
 msgstr "日志"
 
 #: src-en/data/hyperspace.xml.append:509
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[1]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"等离子传送器：\n"
-"\t\t\t这艘飞船可以在战斗开始时立即点燃敌人。当心！"
+"拉迪卡尔飞船：\n"
+"\t\t\t可能很危险，也可能对它自己和/或其船员构成威胁。\n"
+"\t\t\t可能拥有可掠夺的拉迪卡尔装备：解锁内置升级以及拉迪卡尔星区的蓝色选项或"
+"坐标。"
 
 #: src-en/data/hyperspace.xml.append:518
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[2]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"烈焰大地：\n"
-"\t\t\t这艘飞船的船员抵抗火焰，在火焰中获得强化，并在灭火时进行治疗。"
+"铅之泰坦：\n"
+"\t\t\t这艘飞船的水晶、食铁族和岩石拥有：对所有伤害 2.5 倍抗性，对所有伤害 "
+"2.5 倍加成，行走时造成破舱，且无法维修。\n"
+"\t\t\t其他船员获得固定 +75% 的维修速度。\n"
+"\t\t\t这艘飞船的所有船员获得固定 +40% 的移动速度。"
 
 #: src-en/data/hyperspace.xml.append:527
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[3]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"等离子传送器：\n"
-"\t\t\t这艘飞船可以在战斗开始时立即点燃敌人。当心！"
+"持久护盾：\n"
+"\t\t\t此敌人受到能量护盾的保护。黑客、心灵控制、传送、登舰无人机以及所有造成"
+"船体伤害的武器或离子武器都将被阻挡，直至护盾被禁用。这面特殊的超盾还能提高护"
+"盾充能速率，且敌人能够再生一次他们的能量护盾！"
 
 #: src-en/data/hyperspace.xml.append:534
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[4]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"烈焰大地：\n"
-"\t\t\t这艘飞船的船员抵抗火焰，在火焰中获得强化，并在灭火时进行治疗。"
+"憋气冠军：\n"
+"\t\t\t这艘飞船的船员受到 0.75 倍的窒息伤害。\n"
+"\t\t\t窒息时，他们的移动、破坏、维修和战斗能力提升 1.5 倍。"
 
 #: src-en/data/hyperspace.xml.append:543
 msgid ""
@@ -112,13 +116,14 @@ msgid ""
 msgstr ""
 
 #: src-en/data/hyperspace.xml.append:553
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[6]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"等离子传送器：\n"
-"\t\t\t这艘飞船可以在战斗开始时立即点燃敌人。当心！"
+"朋克谐合：\n"
+"\t\t\t这艘飞船的半械族抵抗力更强，且免疫心灵控制。\n"
+"\t\t\t根据飞船上黑客和心灵控制的每个激活等级，他们的维修能力会呈指数级提升，"
+"速度更快，战斗力更强！"
 
 #: src-en/data/hyperspace.xml.append:562
 msgid ""
@@ -127,13 +132,15 @@ msgid ""
 msgstr ""
 
 #: src-en/data/hyperspace.xml.append:569
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[8]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"烈焰大地：\n"
-"\t\t\t这艘飞船的船员抵抗火焰，在火焰中获得强化，并在灭火时进行治疗。"
+"伪克隆：\n"
+"\t\t\t当这艘飞船的船员在没有真正的克隆舱时死亡（非事件死亡），黑暗能量会尝试"
+"复活他们。\n"
+"\t\t\t最好的情况是，他们复活为自己较弱的版本（士兵 = 默认人类等）。如果没有较"
+"弱的版本存在，他们会变成模物族。当模物族死亡时，则无事发生。"
 
 #: src-en/data/hyperspace.xml.append:578
 #, fuzzy
