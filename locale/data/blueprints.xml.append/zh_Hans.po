@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-05-22 16:07+0000\n"
+"PO-Revision-Date: 2026-05-26 15:17+0000\n"
 "Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/radikal-sector/datablueprintsxmlappend/zh_Hans/>\n"
@@ -53,12 +53,14 @@ msgid ""
 msgstr "技能提升速度很快"
 
 #: src-en/data/blueprints.xml.append:96
-#, fuzzy
 msgid "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/desc"
 msgstr ""
-"拉迪卡尔·巴姆通过对浸泡在酸液中并塞入炸弹的模物技变者施加电击来制造这些，使其疯狂且无法改变形态，但具备发射炸弹的能力。不再算作模物技变者或模物族。\n"
+"（RK 巴姆）通过对浸泡在酸液中并塞入炸弹的模物技变者施加电击来制造，使其疯狂且"
+"无法改变形态，但具备发射炸弹的能力。\n"
+"\t\t不再算作模物技变者或模物族。\n"
 "\n"
-"\t继承模物族属性：占用 0.5 船员槽位，免疫窒息，75% 火焰伤害抗性和眩晕抗性，0.8 倍移动速度。"
+"\t\t继承的属性：占用 0.5 船员槽位，免疫窒息，75% 火焰伤害抗性和眩晕抗性，0.8 "
+"倍移动速度。"
 
 #: src-en/data/blueprints.xml.append:101
 msgid "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/title"
@@ -138,11 +140,12 @@ msgid ""
 msgstr ""
 
 #: src-en/data/blueprints.xml.append:155
-#, fuzzy
 msgid "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/desc"
 msgstr ""
-"厄普托是在特制的拉迪卡尔灼烧高压釜中稳定下来的阿尔法食尸鬼，其特性因此改变。\n"
-"\t\t你当前舱室内的系统免疫火焰。当前舱室内的任何敌方系统受到的火焰伤害提高 100%。\n"
+"（RK 灼烧）厄普托是在特制的灼烧高压釜中稳定下来的阿尔法食尸鬼，其特性因此改变"
+"。\n"
+"\t\t你当前舱室内的系统免疫火焰。当前舱室内的任何敌方系统受到的火焰伤害提高 "
+"100%。\n"
 "\t\t自身可以引发约克托耀斑。那是一种非常小的太阳耀斑，距离也极其近。\n"
 "\n"
 "\t继承的幻灵属性：不受环境伤害，具有无视舱门特性。"
@@ -187,11 +190,10 @@ msgid ""
 msgstr "噬舰冲击"
 
 #: src-en/data/blueprints.xml.append:201
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_COMBAT_SHIPVORE_RAM\"]/desc"
 msgstr ""
-"拉迪卡尔·巴姆的标志性战斗强化，能够让你反复冲撞敌人，造成稳定而快速的致命伤害"
+"（RK 巴姆装备）标志性战斗强化，能够让你反复冲撞敌人，造成稳定而快速的致命伤害"
 "，获得免费维修，有时还有其它好处。警告：你的飞船和/或船员可能会因此受伤。[消"
 "耗 {，满功率使用消耗更多并会摧毁该增强部件。应急供能器和燃料回收器可生效。]\n"
 "\t可以在空信标处进行加固，以承受下一次满功率使用。"
@@ -267,16 +269,18 @@ msgid ""
 msgstr "铅之泰坦"
 
 #: src-en/data/blueprints.xml.append:260
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_LEAD_TITANS\"]/desc"
 msgstr ""
-"拉迪卡尔·巴姆的工程师们产生了一个疯狂的想法：将移动的纤维铅编织到能够承受它的"
-"生物肌肉中。\n"
+"（RK 巴姆装备）某个疯狂的人想到将活动的纤维铅编织进肌肉里。\n"
 "\t\t\n"
-"\t\t你的水晶、岩石和食铁族对一切的抗性翻倍，对一切的伤害变为三倍，并获得 1.4 "
-"倍更快的维修和移动速度。\n"
-"\t\t然而，其重量和体积使他们占用 2 个船员槽位，并且每走几步就会造成一处破舱。"
+"\t\t\n"
+"你的“大型”船员（水晶、食铁和岩石）拥有：对所有伤害 2.5 倍抗性，对所有伤害造"
+"成 2.5 倍加成。\n"
+"\t\t重量使他们占用 2 个船员槽位，行走时造成破舱，且无法维修。\n"
+"\t\t你的其他船员则从更细小的纤维中获得固定 +75% 的维修速度。\n"
+"\n"
+"\t\t你所有的船员获得固定 +40% 的移动速度。"
 
 #: src-en/data/blueprints.xml.append:273
 msgid ""
@@ -291,12 +295,20 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:286
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_PERSISTENCE_SHIELD\"]/title"
-msgstr ""
+msgstr "持久护盾"
 
 #: src-en/data/blueprints.xml.append:287
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_PERSISTENCE_SHIELD\"]/desc"
 msgstr ""
+"（RK 巴姆装备）这是依赖护盾的高端飞船的标配，得益于对许多再也没有回家的超能族"
+"侦察兵进行的压力测试。\n"
+"\t\t\n"
+"\t\t增加一个 4 耐久的超级护盾。可与其他超级护盾叠加，但不能与自身叠加。\n"
+"\t\t同时提高 20% 的护盾充能速度。\n"
+"\t\t\n"
+"\t\t从切换菜单中激活，可立即恢复你所有的超级护盾层数。[消耗 1 {]\n"
+"\t\t在空信标处以 7 废料重建其电容器之前，无法再次激活。"
 
 #: src-en/data/blueprints.xml.append:341
 msgid ""
@@ -304,12 +316,18 @@ msgid ""
 msgstr "进攻抑制器"
 
 #: src-en/data/blueprints.xml.append:342
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_COMBAT_OFFENSE_DISABLER\"]/desc"
 msgstr ""
-"这款拉迪卡尔·朋克战斗增强部件可使敌方的进攻性系统（武器、无人机控制、黑客、心灵控制、传送器以及所有巨炮）失效 5 秒。随后效果逐渐减弱，直至 18 秒时完全消失（你会收到警告）。\n"
-"\t\t对付攻击性强的敌人非常有效！[消耗 3| 和 3 反应堆。应急供能器可生效。]"
+"（RK 朋克装备）这款战斗增强部件可使敌方进攻能力完全失效 5 秒。效果逐渐减弱，"
+"直至 18 秒时完全消失（你会收到警告）。受影响的系统：\n"
+"\t\t- 武器\n"
+"\t\t- 无人机控制\n"
+"\t\t- 黑客\n"
+"\t\t- 心灵控制\n"
+"\t\t- 传送器\n"
+"\t\t- 所有巨炮\n"
+"\t\t对付攻击性强的敌人非常有效！[消耗 2| 和 3 反应堆电力。应急供能器可生效。]"
 
 #: src-en/data/blueprints.xml.append:370
 msgid ""
@@ -317,7 +335,6 @@ msgid ""
 msgstr "谜团机"
 
 #: src-en/data/blueprints.xml.append:371
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_COMBAT_HACK_FLEET\"]/desc"
 msgstr ""
@@ -330,7 +347,7 @@ msgstr ""
 "\t\t0| 无黑客 = 60% / 5% / 15%\n"
 "\t\t1| 黑客等级1 = 70% / 10% / 10%\n"
 "\t\t2| 黑客等级2 = 80% / 15% / 5% / +???\n"
-"\t\t3| 黑客等级3 = 90% / 20% / 5% / +???"
+"\t\t3| 黑客等级3 = 90% / 30% / 5% / +???"
 
 #: src-en/data/blueprints.xml.append:388
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_DREAD_DECK\"]/title"
@@ -535,8 +552,12 @@ msgstr ""
 
 #: src-en/data/blueprints.xml.append:599
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_BPS_SURVEYOR\"]/title"
-msgstr ""
+msgstr "RK 勘测器"
 
 #: src-en/data/blueprints.xml.append:600
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_BPS_SURVEYOR\"]/desc"
 msgstr ""
+"（BPS 装备）来自所有子派系的拉迪卡尔族人的独创性，让你能以不可忽视的成本深度"
+"搜索大多数空信标。\n"
+"\t\t\n"
+"\t\t你可以选择取回/偷取找到的随机武器或增强部件，但这会使舰队加速 1 步。"
