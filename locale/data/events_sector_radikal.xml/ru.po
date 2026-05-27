@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-05-22 16:07+0000\n"
+"PO-Revision-Date: 2026-05-27 21:53+0000\n"
 "Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "dataevents_sector_radikalxml/ru/>\n"
@@ -100,16 +100,41 @@ msgstr "Ну ладно."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"NEBULA_LIGHT_RKS_FIGHT_LEAD_TITANS\"]/text"
 msgstr ""
+"Сразу после прыжка вы замечаете, как отсюда улетает внушительный корабль "
+"ракушек, оставив после себя несколько ящиков и сообщение для вас: \"Бегите, "
+"пока можете! Смерть уже здесь, мы спаслись только благодаря Взломщику!\"\n"
+"\t\tЕдинственный другой корабль здесь - небольшой десантный корабль РадиКал "
+"Бам, который спешно собирает ящики, но теперь, когда они вас заметили, "
+"похоже, собираются атаковать!\n"
+"\t\t\n"
+"\t\tВы говорите им, что не собираетесь с ними связываться. Капитан, "
+"ответивший на ваш вызов, выглядит явно ненормально крупным для представителя "
+"своей расы.\n"
+"\t\t\"Да, мисс или мистер Ренегат. Никто не летает по этой заброшенной "
+"туманности целыми днями, но вы просто оказались здесь во время этой короткой "
+"стычки, верно?\n"
+"\t\tНу, я не рискну в это поверить, а если это и правда, вините в этом свою "
+"неудачу\".\n"
+"\n"
+"\t\tЕсли у вас нет чего-то очень убедительного, что можно им сказать, "
+"похоже, вам придется сражаться!"
 
 #: src-en/data/events_sector_radikal.xml:198
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"NEBULA_LIGHT_RKS_FIGHT_LEAD_TITANS\"]/choice[@req=\"unique_rk_defromorius\"]/text"
-msgstr ""
+msgstr "(Дефромориус) Сказать, чтобы они отступили."
 
 #: src-en/data/events_sector_radikal.xml:200
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"NEBULA_LIGHT_RKS_FIGHT_LEAD_TITANS\"]/choice[@req=\"unique_rk_defromorius\"]/event/text"
 msgstr ""
+"\"--НОВАЯ ЗАДАЧА: УСТАНОВИТЬ ПОРЯДОК-- Приветствую. Стоп\".\n"
+"\n"
+"\t\t\t\t\"Да, сэр. Черт возьми, Дефромориус все еще жив! Распространите "
+"новость, эти ублюдки из Гармонии снова провалились! С возвращением, сэр. "
+"Значит, здесь все в порядке. Мы заберем эту добычу и поговорим позже. Вот "
+"вам часть добычи в качестве извинения за то, что чуть не напали на вас, "
+"сэр\"."
 
 #: src-en/data/events_sector_radikal.xml:210
 msgid ""
@@ -119,12 +144,14 @@ msgstr "Продолжить..."
 #: src-en/data/events_sector_radikal.xml:217
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"NEBULA_LIGHT_RKS_FIGHT_LEAD_TITANS\"]/choice[2]/text"
-msgstr ""
+msgstr "Защищаться!"
 
 #: src-en/data/events_sector_radikal.xml:219
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"NEBULA_LIGHT_RKS_FIGHT_LEAD_TITANS\"]/choice[2]/event/text"
 msgstr ""
+"Вы готовитесь к бою, как вдруг ваш этаж мгновенно разрушается из-за "
+"появления телепортировавшегося сюда огромного врага..."
 
 #: src-en/data/events_sector_radikal.xml:226
 msgid ""
@@ -134,17 +161,19 @@ msgstr "Продолжить..."
 #: src-en/data/events_sector_radikal.xml:246
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"NEBULA_LIGHT_RKS_FIGHT_LEAD_TITANS\"]/choice[@req=\"cloaking\"]/text"
-msgstr ""
+msgstr "(Маскировка) Спрятаться и улететь, пока они не успели нацелиться."
 
 #: src-en/data/events_sector_radikal.xml:251
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"NEBULA_LIGHT_RKS_FIGHT_LEAD_TITANS\"]/choice[@req=\"engines\"]/text"
-msgstr ""
+msgstr "(Продв. Двигатели) Улететь как можно быстрее."
 
 #: src-en/data/events_sector_radikal.xml:257
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_LEAD_TITANS_USER_SLUG\"]/destroyed/text"
 msgstr ""
+"Корабль РК Бам разваливается на части, и вы быстро собираете огромное "
+"количество вещей."
 
 #: src-en/data/events_sector_radikal.xml:261
 msgid ""
@@ -155,6 +184,9 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_LEAD_TITANS_USER_SLUG\"]/destroyed/choice/event/text"
 msgstr ""
+"Вы также находите их модули в виде обломков, к которым еще прикреплены "
+"детали какого-то странного механизма. Что бы он ни делал, он уже не "
+"работает, но это дополнительный лом."
 
 #: src-en/data/events_sector_radikal.xml:267
 msgid ""
@@ -165,16 +197,25 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_LEAD_TITANS_USER_SLUG\"]/deadCrew/text"
 msgstr ""
+"После гибели экипажа вы быстро забираете с корабля РК Бам огромное "
+"количество вещей.\n"
+"\t\t\t\n"
+"\t\t\tИзучив внутреннее устройство корабля, вы понимаете, что с помощью "
+"специального устройства можно извлечь из него любые модули, но после этого "
+"корабль взорвется.\n"
+"\t\t\tЧто вы выберете?"
 
 #: src-en/data/events_sector_radikal.xml:282
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_LEAD_TITANS_USER_SLUG\"]/deadCrew/choice[1]/text"
-msgstr ""
+msgstr "Регенеративная обшивка."
 
 #: src-en/data/events_sector_radikal.xml:284
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_LEAD_TITANS_USER_SLUG\"]/deadCrew/choice[1]/event/text"
 msgstr ""
+"Вы извлекаете модуль и успеваете убраться, прежде чем корабль разлетается на "
+"мелкие кусочки."
 
 #: src-en/data/events_sector_radikal.xml:288
 msgid ""
@@ -184,12 +225,14 @@ msgstr "Продолжить..."
 #: src-en/data/events_sector_radikal.xml:295
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_LEAD_TITANS_USER_SLUG\"]/deadCrew/choice[2]/text"
-msgstr ""
+msgstr "Удушье Х.О.Р.О.Ш.О."
 
 #: src-en/data/events_sector_radikal.xml:297
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_LEAD_TITANS_USER_SLUG\"]/deadCrew/choice[2]/event/text"
 msgstr ""
+"Вы извлекаете модуль и успеваете убраться, прежде чем корабль разлетается на "
+"мелкие кусочки."
 
 #: src-en/data/events_sector_radikal.xml:301
 msgid ""
@@ -199,12 +242,14 @@ msgstr "Продолжить..."
 #: src-en/data/events_sector_radikal.xml:308
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_LEAD_TITANS_USER_SLUG\"]/deadCrew/choice[3]/text"
-msgstr ""
+msgstr "Свинцовые титаны."
 
 #: src-en/data/events_sector_radikal.xml:310
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_LEAD_TITANS_USER_SLUG\"]/deadCrew/choice[3]/event/text"
 msgstr ""
+"Вы извлекаете модуль и успеваете убраться, прежде чем корабль разлетается на "
+"мелкие кусочки."
 
 #: src-en/data/events_sector_radikal.xml:314
 msgid ""
@@ -215,16 +260,24 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_ELITE_COALITION\"]/text"
 msgstr ""
+"Здесь находится элитный корабль Коалиции, который отдаляется от недавно "
+"уничтоженного корабля несчастных контрабандистов. По открытому каналу связи "
+"слышно, что они очень возбуждены.\n"
+"\t\t\"Окей, у нас есть крутое оружие. Теперь надо его опробовать! Я вижу "
+"добычу, вперед-вперед-вперед!\""
 
 #: src-en/data/events_sector_radikal.xml:338
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_ELITE_COALITION\"]/choice[@req=\"unique_nights\"]/text"
-msgstr ""
+msgstr "(Туман) Сказать им, чтобы они отвалили."
 
 #: src-en/data/events_sector_radikal.xml:340
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_ELITE_COALITION\"]/choice[@req=\"unique_nights\"]/event/text"
 msgstr ""
+"\"Идите и найдите другой корабль, чтобы это проверить, дураки!\"\n"
+"\t\t\t\t\"О черт, Туман на том корабле? Тааак. Запускайте двигатели, надо "
+"найти другую жертвуууу!\""
 
 #: src-en/data/events_sector_radikal.xml:345
 msgid ""
@@ -234,12 +287,15 @@ msgstr "Продолжить..."
 #: src-en/data/events_sector_radikal.xml:352
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_ELITE_COALITION\"]/choice[@req=\"unique_tyrdeo\"]/text"
-msgstr ""
+msgstr "(Тирдео) Сказать им, чтобы они отвалили."
 
 #: src-en/data/events_sector_radikal.xml:354
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_ELITE_COALITION\"]/choice[@req=\"unique_tyrdeo\"]/event/text"
 msgstr ""
+"\"Пожалуйста, найдите другой корабль, чтобы проверить его!\"\n"
+"\t\t\t\t\"О черт, Тирдео на том корабле? Тааак. Запускайте двигатели, надо "
+"найти другую жертвуууу!\""
 
 #: src-en/data/events_sector_radikal.xml:359
 msgid ""
@@ -249,7 +305,7 @@ msgstr "Продолжить..."
 #: src-en/data/events_sector_radikal.xml:366
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_ELITE_COALITION\"]/choice[3]/text"
-msgstr ""
+msgstr "Защищаться!"
 
 #: src-en/data/events_sector_radikal.xml:368
 msgid ""
