@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-05-27 21:53+0000\n"
+"Last-Translator: kronen68 <obrice@hotmail.fr>\n"
+"Language-Team: French <https://weblate.hyperq.be/projects/radikal-sector/"
+"dataevents_special_storagexmlappend/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events_special_storage.xml.append:395
 msgid ""
@@ -2338,10 +2345,11 @@ msgid ""
 msgstr "Continuer..."
 
 #: src-en/data/events_special_storage.xml.append:4419
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[5]/text"
-msgstr "Peu importe, combattons !"
+msgstr ""
+"Il vous faut un système de piratage plus performant pour avoir davantage "
+"d'options."
 
 #: src-en/data/events_special_storage.xml.append:4424
 msgid ""
@@ -3250,11 +3258,10 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:6055
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"1\"]/text"
-msgstr "Effectuer l'amélioration. [Coût : 50~, 1{]"
+msgstr "Effectuer l'amélioration. [Coût : 35~, 2|]"
 
 #: src-en/data/events_special_storage.xml.append:6057
 msgid ""
@@ -3286,11 +3293,10 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:6088
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"1\"]/text"
-msgstr "Effectuer l'amélioration. [Coût : 50~, 1{]"
+msgstr "Effectuer l'amélioration. [Coût : 30~, 1|]"
 
 #: src-en/data/events_special_storage.xml.append:6090
 msgid ""
