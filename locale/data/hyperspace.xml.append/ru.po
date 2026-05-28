@@ -1,9 +1,17 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-05-28 15:03+0000\n"
+"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
+"Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
+"datahyperspace-xml-append/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/hyperspace.xml.append:270
 msgid "data/hyperspace.xml.append$//human_soldier[@name=\"Rammerman\"]/@name"
@@ -72,14 +80,19 @@ msgstr ""
 "\t\t\tВероятно, содержит добываемое снаряжение РадиКал: открывает доступ к внутренним улучшениям и синим опциям или координатам секторов РК."
 
 #: src-en/data/hyperspace.xml.append:524
+#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[2]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
 "СВИНЦОВЫЕ ТИТАНЫ:\n"
-"\t\t\tКристаллины, ланиусы и валуны на этом корабле обладают следующими свойствами: 2.5х сопротивляемость ко всему, 2.5х урон по всем целям, создают пробоины при передвижении и не могут ремонтировать.\n"
-"\t\t\tОстальные члены экипажа получают фиксированное увеличение скорости ремонта на 75%.\n"
-"\t\t\tВсе члены экипажа этого корабля получают фиксированное увеличение скорости передвижения на 40%."
+"\t\t\tКристаллины, ланиусы и валуны на этом корабле обладают следующими "
+"свойствами: 2.5х сопротивляемость ко всему, 2.5х урон по всем целям, создают "
+"пробоины при передвижении и не могут ремонтировать.\n"
+"\t\t\tОстальные члены экипажа получают фиксированное увеличение скорости "
+"ремонта на 75%.\n"
+"\t\t\tВсе члены экипажа этого корабля получают фиксированное увеличение "
+"скорости передвижения на 40%."
 
 #: src-en/data/hyperspace.xml.append:533
 msgid ""
@@ -191,12 +204,14 @@ msgstr ""
 "\t\t\tВаш экипаж получает больше урона от огня и передвигается медленнее в условиях пожара. Эти эффекты усиливаются с каждым активным уровнем системы жизнеобеспечения (O2) на вражеском корабле!"
 
 #: src-en/data/hyperspace.xml.append:633
+#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[16]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
 "ОРУДИЯ НА ПРЕДЕЛЕ:\n"
-"\t\t\tСкорострельность орудий и артиллерии этого корабля повышена на 25%, но при каждом выстреле в отсеке Оружия возникает пожар."
+"\t\t\tСкорострельность орудий и артиллерии этого корабля повышена на 25%, но "
+"при каждом выстреле в отсеке Оружия возникает пожар."
 
 #: src-en/data/hyperspace.xml.append:811
 msgid ""
