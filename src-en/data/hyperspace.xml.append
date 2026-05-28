@@ -451,9 +451,15 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
 
 	<mod-append:customShip name="RKS_LEAD_TITANS_USER_SLUG">
 		<shipIcons>
-			<shipIcon>rk_icon_radikal_ship</shipIcon>
             <shipIcon>icon_threat</shipIcon>
+			<shipIcon>rk_icon_radikal_ship</shipIcon>
 			<shipIcon>icon_invasion</shipIcon>
+		</shipIcons>
+	</mod-append:customShip>
+	<mod-append:customShip name="RKS_WOF_USER_UNION">
+		<shipIcons>
+            <shipIcon>icon_threat</shipIcon>
+			<shipIcon>rk_icon_radikal_ship</shipIcon>
 		</shipIcons>
 	</mod-append:customShip>
 
@@ -476,20 +482,20 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
 	
 	<mod-append:customShip name="DJMOD_RADIKAL_BOSS_BAM">
 		<shipIcons>
-			<shipIcon>rk_icon_radikal_ship</shipIcon>
 			<shipIcon>icon_threat</shipIcon>
+			<shipIcon>rk_icon_radikal_ship</shipIcon>
 		</shipIcons>
 	</mod-append:customShip>
 	<mod-append:customShip name="DJMOD_RADIKAL_BOSS_PUNK">
 		<shipIcons>
-			<shipIcon>rk_icon_radikal_ship</shipIcon>
 			<shipIcon>icon_threat</shipIcon>
+			<shipIcon>rk_icon_radikal_ship</shipIcon>
 		</shipIcons>
 	</mod-append:customShip>
 	<mod-append:customShip name="DJMOD_RADIKAL_BOSS_SCORCH">
 		<shipIcons>
-			<shipIcon>rk_icon_radikal_ship</shipIcon>
 			<shipIcon>icon_threat</shipIcon>
+			<shipIcon>rk_icon_radikal_ship</shipIcon>
 		</shipIcons>
 	</mod-append:customShip>
 </mod:findLike>
@@ -516,7 +522,7 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
 		<mod-append:shipIcon>
 			<name>rk_icon_lead_titans</name>
 			<tooltip>LEAD TITANS:
-			This ship's Crystals, Lanius, and Rockmen have: 2.5x resistance to everything, 2.5x damage to everything, they create breaches while walking, and can't repair.
+			This ship's Crystals, Lanius, Rockmen and Saltmen have: 2.5x resistance to everything, 2.5x damage to everything, they create breaches while walking, and can't repair.
 			The other crew get a flat +75% repair speed.
 			All of this ship's crew gain a flat +40% movement speed</tooltip>
 		</mod-append:shipIcon>
@@ -625,7 +631,8 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
 		<mod-append:shipIcon>
 			<name>rk_icon_weapons_on_fire</name>
 			<tooltip>WEAPONS ON FIRE:
-			The fire rate of this ship's Weapons and Artillery is improved by 25% but they light a fire in the Weapon Control room every time they shoot a projectile.</tooltip>
+			The fire rate of this ship's Weapons and Artilleries is improved by 25%. It gain an extra 1% fire rate every time they shoot a projectile or beam (up to 10%), but at the same time there's a 10% chance to light a fire in the Weapon Control and any Artillery rooms.
+			COMBO: Scorch Preigniter increases max extra bonus to 20%.</tooltip>
 		</mod-append:shipIcon>
 	</mod:findLike>
 
@@ -1890,7 +1897,7 @@ For unique sector 'membership' and other gear checks.
 	<name>DJMOD_COMBAT_SELF_FIRE</name>
     <name>DJMOD_COMBAT_SCORCH_ENEMY</name>
     <name>DJMOD_FLAMMABILIZER_ANY</name>
-	<name>DJMOD_OXYGENIZER</name>
+	<name>RK_COMBAT_OXYGENIZER</name>
 	
 	<name>INTERNAL_RK_IN_FIRE_CREWBOOSTS</name>
 	<name>INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE</name>
@@ -1924,7 +1931,7 @@ For unique sector 'membership' and other gear checks.
 	
 	<name>DJMOD_ENEMIES_BURN_MORE</name>
 	<name>DJMOD_ENEMIES_CAN_BURN</name>
-	<name>DJMOD_OXYGENIZER</name>
+	<name>RK_COMBAT_OXYGENIZER</name>
 	<name>RK_SCORCH_SELF</name>
 	<name>RK_SCORCH_SELF_2</name>
 	<name>RK_SCORCH_SELF_3</name>
@@ -3114,12 +3121,12 @@ REFS: MV v5.5.1; The Outer Expansion for that MV (STORE_SYLVAN_AEA_WEAPONS)
 		<category type="CREW">
 			<customTitle>RK SCORCH DECKHANDS</customTitle>
 			<item>
-				<blueprint>phantom_goul</blueprint>
+				<blueprint>phantom_goul_alpha</blueprint>
 				<modifier min="0.95" max="1.05" flat="false"/>
 			</item>
 			<item>
-				<blueprint>phantom_goul_alpha</blueprint>
-				<modifier min="0.95" max="1.05" flat="false"/>
+				<blueprint>rk_fireghost</blueprint>
+				<modifier min="0.75" max="0.85" flat="false"/>
 			</item>
 			<item>
 				<blueprint>rk_fireghost</blueprint>
@@ -3186,7 +3193,31 @@ REFS: MV v5.5.1; The Outer Expansion for that MV (STORE_SYLVAN_AEA_WEAPONS)
 			<chance>100</chance>
         </category>
 		<category type="AUGMENTS">
-			<customTitle>TOP RK SCORCH AUGMENTS</customTitle>
+			<customTitle>SET SCORCH AUGMENTS</customTitle>
+			<item>
+                <blueprint>RK_SCORCH_SELF_2</blueprint>
+                <modifier min="0.85" max="1.0" flat="false"/>
+                <price>-1</price>
+            </item>
+            <item>
+                <blueprint>DJMOD_COMBAT_SCORCH_ENEMY</blueprint>
+                <modifier min="0.85" max="1.0" flat="false"/>
+                <price>-1</price>
+            </item>
+			<item>
+                <blueprint>RK_SCORCH_PREIGNITER</blueprint>
+                <modifier min="0.85" max="1.0" flat="false"/>
+                <price>-1</price>
+            </item>
+			<chance>100</chance>
+        </category>
+		<category type="AUGMENTS">
+			<customTitle>TOP SCORCH AUGMENTS</customTitle>
+			<item>
+                <blueprint>RK_SCORCH_SELF_3</blueprint>
+                <modifier min="0.90" max="1.0" flat="false"/>
+                <price>-1</price>
+            </item>
 			<item>
                 <blueprint>DJMOD_ENEMIES_CAN_BURN</blueprint>
                 <modifier min="0.90" max="1.0" flat="false"/>
@@ -3194,11 +3225,6 @@ REFS: MV v5.5.1; The Outer Expansion for that MV (STORE_SYLVAN_AEA_WEAPONS)
             </item>
             <item>
                 <blueprint>RK_WEAPONS_ON_FIRE</blueprint>
-                <modifier min="0.90" max="1.0" flat="false"/>
-                <price>-1</price>
-            </item>
-			<item>
-                <blueprint>RK_SCORCH_SELF_3</blueprint>
                 <modifier min="0.90" max="1.0" flat="false"/>
                 <price>-1</price>
             </item>
@@ -3257,6 +3283,7 @@ plus any cloak-friendly/cloak-like augs. -->
 			</item>
 			<item>
 				<blueprint>LOOT_DYNASTY_2</blueprint>	<!-- loot LASER_PIERCE_2 -->
+				<modifier flat="false">1.2</modifier>
 			</item>
 			<chance>100</chance>
 		</category>
@@ -3570,6 +3597,7 @@ plus any cloak-friendly/cloak-like augs. -->
 					<blueprintList load="LIST_CREW_CRYSTAL"/>
 					<blueprintList load="LIST_CREW_LANIUS"/>
 					<blueprintList load="LIST_CREW_ROCK"/>
+					<blueprintList load="LIST_CREW_OBYN"/>
 				</whiteList>
 
 				<extraConditions type="and">             
@@ -3586,6 +3614,7 @@ plus any cloak-friendly/cloak-like augs. -->
 					<blueprintList load="LIST_CREW_CRYSTAL"/>
 					<blueprintList load="LIST_CREW_LANIUS"/>
 					<blueprintList load="LIST_CREW_ROCK"/>
+					<blueprintList load="LIST_CREW_OBYN"/>
 				</whiteList>
 			</statBoost>
 
@@ -3601,6 +3630,7 @@ plus any cloak-friendly/cloak-like augs. -->
 					<blueprintList load="LIST_CREW_CRYSTAL"/>
 					<blueprintList load="LIST_CREW_LANIUS"/>
 					<blueprintList load="LIST_CREW_ROCK"/>
+					<blueprintList load="LIST_CREW_OBYN"/>
 				</whiteList>
 			</statBoost>
 			<statBoost name="stunMultiplier">
@@ -3613,6 +3643,7 @@ plus any cloak-friendly/cloak-like augs. -->
 					<blueprintList load="LIST_CREW_CRYSTAL"/>
 					<blueprintList load="LIST_CREW_LANIUS"/>
 					<blueprintList load="LIST_CREW_ROCK"/>
+					<blueprintList load="LIST_CREW_OBYN"/>
 				</whiteList>
 			</statBoost>
 			
@@ -3626,6 +3657,7 @@ plus any cloak-friendly/cloak-like augs. -->
 					<blueprintList load="LIST_CREW_CRYSTAL"/>
 					<blueprintList load="LIST_CREW_LANIUS"/>
 					<blueprintList load="LIST_CREW_ROCK"/>
+					<blueprintList load="LIST_CREW_OBYN"/>
 				</whiteList>
 			</statBoost>
 			<statBoost name="doorDamageMultiplier">
@@ -3638,6 +3670,7 @@ plus any cloak-friendly/cloak-like augs. -->
 					<blueprintList load="LIST_CREW_CRYSTAL"/>
 					<blueprintList load="LIST_CREW_LANIUS"/>
 					<blueprintList load="LIST_CREW_ROCK"/>
+					<blueprintList load="LIST_CREW_OBYN"/>
 				</whiteList>
 			</statBoost>
 			<statBoost name="sabotageSpeedMultiplier">
@@ -3650,6 +3683,7 @@ plus any cloak-friendly/cloak-like augs. -->
 					<blueprintList load="LIST_CREW_CRYSTAL"/>
 					<blueprintList load="LIST_CREW_LANIUS"/>
 					<blueprintList load="LIST_CREW_ROCK"/>
+					<blueprintList load="LIST_CREW_OBYN"/>
 				</whiteList>
 			</statBoost>
 
@@ -3675,6 +3709,7 @@ plus any cloak-friendly/cloak-like augs. -->
 					<blueprintList load="LIST_CREW_CRYSTAL"/>
 					<blueprintList load="LIST_CREW_LANIUS"/>
 					<blueprintList load="LIST_CREW_ROCK"/>
+					<blueprintList load="LIST_CREW_OBYN"/>
 				</whiteList>
 			</statBoost>
 
@@ -3689,6 +3724,7 @@ plus any cloak-friendly/cloak-like augs. -->
 					<blueprintList load="LIST_CREW_CRYSTAL"/>
 					<blueprintList load="LIST_CREW_LANIUS"/>
 					<blueprintList load="LIST_CREW_ROCK"/>
+					<blueprintList load="LIST_CREW_OBYN"/>
 				</blackList>
 			</statBoost>
 			<statBoost name="moveSpeedMultiplier">
@@ -7699,10 +7735,11 @@ plus any cloak-friendly/cloak-like augs. -->
     </aug>
 
 	<aug name="RK_WEAPONS_ON_FIRE">
-		<function name="AUTO_COOLDOWN" value="0.20" useForReqs="true"/>
+		<function name="AUTO_COOLDOWN" value="0.25" useForReqs="true"/>
 		<icon>rk_icon_weapons_on_fire</icon>
     </aug>
 	<aug name="RK_WEAPONS_ON_FIRE_TEMP">
+		<!-- intended: 0.01 -->
 		<function name="AUTO_COOLDOWN" value="0.01" useForReqs="false"/>
     </aug>
 
@@ -7895,7 +7932,7 @@ TODO:
 			<achievement name="ACH_RK_EVENT_HIDEOUT">
 				<name>RadiKal Hideout</name>
 				<secretName>???</secretName>
-				<description>Get your own place in the RadiKal sector.</description>
+				<description>Get your own place in the RadiKal Sector.</description>
 				<secretDescription>Get involved with dark forces for comfort.</secretDescription>
 				<icon>ach_rk_event_hideout</icon>
 				<lockImage>ach_locked</lockImage>

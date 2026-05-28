@@ -1,4 +1,4 @@
-<!-- This file wasn't used in the version of RadiKal sector for MV v5.2.3, but now it better be.
+<!-- This file wasn't used in the version of RadiKal Sector for MV v5.2.3, but now it better be.
 Keep building it by moving things to here, and cross fingers.
 
 
@@ -220,7 +220,7 @@ To make normal nebula instead (debugging?), disable all that and make prefix "NE
 			<ship hostile="true"/>
 			<!-- They DO get augment effects. -->
 			<boarders min="1" max="1" class="crystal"/>
-			<!-- TEST Can we have 2 types in same event screen? NO. -->
+			<!-- Can't have 2 types of boarder in same event screen. -->
 			
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -324,6 +324,137 @@ To make normal nebula instead (debugging?), disable all that and make prefix "NE
 		<!-- <crewMember type="crystal" prop="0.25"/> -->
 		<crewMember type="lanius" prop="0.33"/>
 		<crewMember type="rock_crusader" prop="0.33"/>
+	</crew>
+</ship>
+
+<!-- Hardly skippable fight with "Weapons On Fire" RK Scorch ship -->
+<event name="RKS_FIGHT_WOF" unique="true">
+	<preventQuest/>
+	<text>You ship has barely finished the jump but you're already in front of a small but furious-looking RK Scorch ship, shouting fast on open comms.
+		"Here they are! You shouldn't have messed with our deliveries, dirty Merc! Don't even try to deny it. Die! Burn!"
+		You do try to tell them that they are mistaken but their guns are quickly warming up as they rush to take you down.
+
+		Unless you have something very convincing to tell them, it seems you'll have to fight!
+	</text>
+	 
+	<!-- <environment type="nebula"/> -->
+	
+	<ship load="SHIP_RKS_WOF_USER_UNION" hostile="false"/>
+
+	<choice req="unique_rk_defromorius" hidden="true">
+		<text>(Defromorius) Tell them to stand down.</text>
+		<event>
+			<text>"--NEW OBJECTIVE: DEFUSE SITUATION-- Stop. Greetings."
+
+				"Oh shit they have captured Defromorius! DIE SCU-" Somebody on the other ship interrupts the captain before he starts firing. "Don't be an idiot, calm down and look again" "What? Wait. Oh. Oh! Sorry sir, I should really chill every now and then to avoid making mistakes like this. Here's an apology. See you around sir!"
+			</text>
+			<item_modify>
+				<item type="scrap" min="15" max="25"/>
+			</item_modify>
+			<instantEscape/>
+
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+
+	<choice hidden="true">
+		<text>Defend yourself!</text>
+		<event>
+			<text>You prepare for combat while keeping a worried eye on the enemy's weapon charge levels</text>
+			<ship hostile="true"/>
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+
+	<choice req="cloaking" hidden="true" blue="true">
+		<text>(Cloaking) Cloak and fly away before they can lock on.</text>
+		<event/>
+	</choice>
+
+	<choice req="engines" lvl="6" hidden="true" blue="true">
+		<text>(Adv. Engines) Fly away as fast as possible.</text>
+		<event/>
+	</choice>
+</event>
+<ship name="SHIP_RKS_WOF_USER_UNION" auto_blueprint="RKS_WOF_USER_UNION">
+	<destroyed>
+		<text>The Sorch ship breaks apart and you quickly salvage a great amount of things.</text>
+		<autoReward level="HIGH">standard</autoReward>
+
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event>
+				<text>You also find their augments in pieces, with bits of a strange mechanism still attached. No matter what it could do, it's no longer functional, but that's extra scrap.</text>
+				<autoReward level="LOW">standard</autoReward>
+
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event/>
+				</choice>
+			</event>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>With the crew dead you quickly salvage a great amount of things from the Scorch ship.
+			
+			Analyzing the inside, you understand that an internal apparatus can let you extract any of its augments from the ship, but then everything will blow up afterwards.
+			Which one do you pick?
+		</text>
+		<autoReward level="HIGH">standard</autoReward>
+		
+		<choice>
+			<text>"Re-loader [X]"</text>
+			<event>
+				<text>You extract the augment and get away before the ship explodes into tiny pieces.</text>
+				<!-- <augment name="UPG_WEAPONS_PERFORMANCE"/>	Some kinda template or meant for enemies only -->
+				<augment name="EX_AUTO_COOLDOWN"/>
+
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event/>
+				</choice>
+			</event>
+		</choice>
+
+		<choice>
+			<text>"Blazing Earth"</text>
+			<event>
+				<text>You extract the augment and get away before the ship explodes into tiny pieces.</text>
+				<augment name="RK_SCORCH_SELF_2"/>
+
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event/>
+				</choice>
+			</event>
+		</choice>
+
+		<choice>
+			<text>"Weapons On Fire"</text>
+			<event>
+				<text>You extract the augment and get away before the ship explodes into tiny pieces.</text>
+				<augment name="RK_WEAPONS_ON_FIRE"/>
+
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event/>
+				</choice>
+			</event>
+		</choice>
+	</deadCrew>
+	<crew>
+		<crewMember type="rock_commando" prop="0.25"/>
+		<crewMember type="phantom" prop="0.25"/>
+		<crewMember type="human_technician" prop="0.25"/>
+		<crewMember type="engi_defender" prop="0.25"/>
+		<crewMember type="lizard" prop="0.25"/>
 	</crew>
 </ship>
 
@@ -1220,12 +1351,12 @@ it was interested in their O2 and medical rooms, they said they bring it back to
 								The creature does look desperate for oxygen by now, which took longer than you thought. You can't risk bringing it in just yet, but maybe you can help it remotely and see what happens.
 							</text>
 
-							<choice req="DJMOD_OXYGENIZER" lvl="0" max_lvl="0" hidden="true" blue="false">
+							<choice req="RK_COMBAT_OXYGENIZER" lvl="0" max_lvl="0" hidden="true" blue="false">
 								<text>You don't have ways to sufficiently oxygenize outside of your ship.</text>
 								<event load="OPTION_INVALID"/>
 							</choice>
 							
-							<choice req="DJMOD_OXYGENIZER" hidden="true">
+							<choice req="RK_COMBAT_OXYGENIZER" hidden="true">
 								<text>(Oxygenizer) Help it breathe</text>
 								<event load="RKS_QUEST_DEFROMORIUS_OFFER"/>
 							</choice>

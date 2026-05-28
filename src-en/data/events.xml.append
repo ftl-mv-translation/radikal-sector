@@ -297,7 +297,7 @@ REF MV v5.5.1: <transformRace class="leech">leech_ampere</transformRace>
 </event>
 
 <event name="DJCOORDS">
-	<text>RadiKal sector coordinates get.</text>
+	<text>RadiKal Sector coordinates get.</text>
 	<variable name="coords_radikal" op="set" val="1"/>
 </event>
 
@@ -341,7 +341,7 @@ REF MV v5.5.1: <transformRace class="leech">leech_ampere</transformRace>
 	</choice>
 
 	<choice req="visited_radikal_sector">
-		<text>We've already visited the RadiKal sector. Rest in peace, soldier.</text>
+		<text>We've already visited the RadiKal Sector. Rest in peace, soldier.</text>
 		<event>
 			<text>"Progress sha- shall continue... this does bring me comfort... Thank you." He dies with a faint smile on his face.
 			As usual this agent had an incurable disease and volunteered to spread awareness for RK funding and recruit reckless captains, so you're not surprised. You proceed to loot his valuable tech and dispose of the body.</text>

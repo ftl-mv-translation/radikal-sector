@@ -89,7 +89,7 @@ REFS
 		<mod-append:blueprint name="DJMOD_COMBAT_SCORCH_ENEMY" rarity="0"/>
 		<mod-append:blueprint name="DJMOD_ENEMIES_BURN_MORE" rarity="0"/>
 		<mod-append:blueprint name="DJMOD_ENEMIES_CAN_BURN" rarity="0"/>
-		<mod-append:blueprint name="DJMOD_OXYGENIZER" rarity="0"/>
+		<mod-append:blueprint name="RK_COMBAT_OXYGENIZER" rarity="0"/>
 		<mod-append:blueprint name="RK_SCORCH_PREIGNITER" rarity="0"/>
 		<mod-append:blueprint name="RK_WEAPONS_ON_FIRE" rarity="0"/>
 
@@ -127,7 +127,7 @@ REFS
 		<mod-append:blueprint name="DJMOD_COMBAT_SCORCH_ENEMY" rarity="0"/>
 		<mod-append:blueprint name="DJMOD_ENEMIES_BURN_MORE" rarity="0"/>
 		<mod-append:blueprint name="DJMOD_ENEMIES_CAN_BURN" rarity="0"/>
-		<mod-append:blueprint name="DJMOD_OXYGENIZER" rarity="0"/>
+		<mod-append:blueprint name="RK_COMBAT_OXYGENIZER" rarity="0"/>
 		<mod-append:blueprint name="RK_SCORCH_PREIGNITER" rarity="0"/>
 		<mod-append:blueprint name="RK_WEAPONS_ON_FIRE" rarity="0"/>
 
@@ -170,7 +170,7 @@ RARITY IN OTHER ADD-ONS
 		<mod-append:blueprint name="DJMOD_COMBAT_SCORCH_ENEMY" rarity="0"/>
 		<mod-append:blueprint name="DJMOD_ENEMIES_BURN_MORE" rarity="0"/>
 		<mod-append:blueprint name="DJMOD_ENEMIES_CAN_BURN" rarity="0"/>
-		<mod-append:blueprint name="DJMOD_OXYGENIZER" rarity="0"/>
+		<mod-append:blueprint name="RK_COMBAT_OXYGENIZER" rarity="0"/>
 		<mod-append:blueprint name="RK_SCORCH_PREIGNITER" rarity="0"/>
 		<mod-append:blueprint name="RK_WEAPONS_ON_FIRE" rarity="0"/>
 
@@ -440,6 +440,8 @@ TODO:
 
 	<!-- HOSTILE -->
 	<event name="NEBULA_LIGHT_RKS_FIGHT_LEAD_TITANS" min="1" max="1"/>
+	<event name="RKS_FIGHT_WOF" min="1" max="1"/>
+
 	<event name="RKS_FIGHT_ELITE_COALITION" min="1" max="1"/>
 	
 	<!-- EMPTY -->
@@ -449,7 +451,7 @@ TODO:
 	<event name="MV_TRAVELER" min="2" max="2"/>
 	
 	<!-- Mercs, Slavers, Smugglers. They can give bad rep (or good with Piracy is Poggers) or threaten. Accepts 999 instances. -->
-	<event name="PIRACY_LIST" min="3" max="5"/> 
+	<event name="PIRACY_LIST" min="2" max="4"/> 
 
 	<!--
 	<event name="THIEVES_RK_MISSILES" min="0" max="1"/>

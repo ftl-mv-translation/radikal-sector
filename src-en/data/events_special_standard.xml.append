@@ -114,9 +114,9 @@ REF MV v5.5.1:
  -->
  <!-- Other Refs
 <mod:findName type = "event" name = "COMBAT_CHECK_REAL">
-<mod-append:choice req="DJMOD_OXYGENIZER" blue="false">
+<mod-append:choice req="RK_COMBAT_OXYGENIZER" blue="false">
 	<text>(Oxygenizer) Create an atmosphere!</text>
-	<event load="DJMOD_OXYGENIZER_ACTIVATE"/>
+	<event load="RK_COMBAT_OXYGENIZER_ACTIVATE"/>
 </mod-append:choice>
 </mod:findName>
  -->

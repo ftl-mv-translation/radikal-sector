@@ -134,6 +134,7 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projec
     -- Weapons On Fire augment
     local augName = "RK_WEAPONS_ON_FIRE"
     local stackAugName = "RK_WEAPONS_ON_FIRE_TEMP"
+    local comboAugName = "RK_SCORCH_PREIGNITER"
     if shipManager:HasAugmentation(augName) > 0 then
         -- Chance fire - WORKS
         if math.random() < shipManager:GetAugmentationValue(augName) then
@@ -151,13 +152,29 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projec
         end
 
         -- Stack fire rate - clear on jump.
-        local augCount = Hyperspace.ships.player:HasAugmentation(stackAugName)
-        --print("aug count for adding:"..augCount)
-        if augCount < 10 then
-            -- Add temp aug
-
-            -- Arc technique: pure Lua. WORKS
-            shipManager:AddAugmentation("HIDDEN " .. stackAugName)
+        -- WORKS but try version that works for enemies too.
+        -- local augCount = Hyperspace.ships.player:HasAugmentation(stackAugName)
+        local augCount = shipManager:HasAugmentation(stackAugName)
+        -- print("aug count for adding:"..augCount)
+        
+        -- Add temp augs
+        
+        -- if Hyperspace.ships.player:HasAugmentation(comboAugName) then        --NO WORK, seems always true.
+        -- WORKS
+        local comboAugCount = shipManager:HasAugmentation(comboAugName)
+        if comboAugCount >= 1 then
+            -- intended: 20
+            if augCount < 20 then
+                shipManager:AddAugmentation("HIDDEN " .. stackAugName)
+            end
+        else
+            -- WORKS
+            -- intended: 10
+            if augCount < 10 then
+                -- Arc technique: pure Lua. WORKS
+                shipManager:AddAugmentation("HIDDEN " .. stackAugName)
+            end
         end
+
     end
 end)

@@ -221,11 +221,12 @@ RK BAM
 
 <augBlueprint name="DJMOD_CREW_ARE_BOMBS_OFF">
     <title>Charged Belts (Off)</title>
-    <desc>(RK Bam gear) This augment is Off but can be toggled On anytime. When On: 
+    <desc>(RK Bam gear) This augment is Off but can be toggled On anytime. When On:
+
 	[This double-edged augment equips your crew with belts that reduce their HP by 10% (beware of Vagabonds) and explode when they die, causing a fire and dealing damage to the room and ship they're in, with extra damage in systemless rooms.
 	Stacks upon already existing death effects.
 	
-	Cannot be toggled Off but can scrap itself into ~ or } at empty beacons.
+	WARNING: Can't be toggled Off. Can scrap itself into ~ or } at empty beacons.
 
 	COMBO: Makes any crew a fire source for Plasma Teleporter.]</desc>
     <cost>50</cost>		
@@ -259,7 +260,7 @@ RK BAM
     <title>Lead Titans</title>
     <desc>(RK Bam gear) Someone had the insane idea to weave motile fiber-lead into muscles. 
 		
-		Your 'big' crew (Crystals, Lanius, and Rockmen) have: 2.5x resistance to everything, deal 2.5x damage to everything.
+		Your 'big' crew (Crystals, Lanius, Rockmen, Saltmen) have: 2.5x resistance to everything, deal 2.5x damage to everything.
 		The weight makes them take 2 crew slots, create breaches while walking, and they can't repair.
 		Your other crew get a flat +75% repair speed from smaller fibers.
 
@@ -551,7 +552,7 @@ The first one allows widespread own ship fire control (removal and creation) and
 	<stackable>false</stackable>
 </augBlueprint>
 
-<augBlueprint name="DJMOD_OXYGENIZER">
+<augBlueprint name="RK_COMBAT_OXYGENIZER">
 	<title>Oxygenizer</title>
 	<desc>This RadiKal Scorch combat augment can basically shoot out giant canisters of ultracompressed O2 to fill the void of space when a fight starts.
 	Puts both ships in an atmosphere, making breaches and open vents fill oxygen instead of depleting it. Shenanigans ensue. [Uses 2}]</desc>
@@ -564,7 +565,8 @@ The first one allows widespread own ship fire control (removal and creation) and
 	<title>Scorch Pre-Igniter</title>
 	<desc>(RK Scorch gear) Weapons are made immediately available after an FTL jump but they light a fire in the Weapons room every time they shoot a projectile or beam.
 		This variant of the famous Weapon Pre-igniter is flawed but more accessible.
-	</desc>
+		
+		COMBO: Increases Weapons On Fire's max extra bonus to 20%</desc>
 	<cost>100</cost>
 	<rarity>5</rarity>
 	<stackable>false</stackable>
@@ -572,10 +574,12 @@ The first one allows widespread own ship fire control (removal and creation) and
 
 <augBlueprint name="RK_WEAPONS_ON_FIRE">
 	<title>Weapons On Fire</title>
-	<desc>(RK Scorch gear) The fire rate of your Weapons and Artilleries is improved by 20%.
+	<desc>(RK Scorch gear) The fire rate of your Weapons and Artilleries is improved by 25%.
 		Gain an extra 1% fire rate every time they shoot a projectile or beam (up to 10%), but at the same time there's a 10% chance to light a fire in the Weapon Control and any Artillery rooms.
-		The extra bonus is reset on jump.</desc>
-	<cost>130</cost>
+		The extra bonus is reset on jump.
+
+		COMBO: Scorch Preigniter increases max extra bonus to 20%</desc>
+	<cost>135</cost>
 	<rarity>5</rarity>
 	<value>0.1</value>
 	<stackable>true</stackable>
@@ -605,7 +609,7 @@ RadiKal Bam+Punk+Scorch ( = BPS)
     <rarity>4</rarity>
     <stackable>false</stackable>
 </augBlueprint>
-</FTL>
+<FTL>
 
 <!-- 
 [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
@@ -618,7 +622,7 @@ RadiKal Bam+Punk+Scorch ( = BPS)
 <augBlueprint name="RKS_POLICE_WARRANT">
 	<title>Z. Police Warrant</title>
 	<desc>The Zoltan Police foothold in the RadiKal Sector gave you this authorization to shake down suspicious passerbys for their RK gear. You could also sell it.
-	[Provides blue options in some beacons of the RadiKal sector.]</desc>
+	[Provides blue options in some beacons of the RadiKal Sector.]</desc>
 	<cost>40</cost>
 	<rarity>0</rarity>
 	<stackable>false</stackable>
@@ -1179,9 +1183,9 @@ Shield Piercing: 2</tooltipOverride>
 	<tip>tip_bio</tip>
 	<title>'Gravespred' Rad-Beam</title>
 	<short>Gravespred</short>
-	<desc>(RK Punk gear) This radiation Beam wants everyone dead. Deals +15 crew damage per chain.
-		Pierces 2 shields +1 per chain. [Ignore the tooltip values]
-		WARNING: Deals 15 damage to crew on your ship per chain!
+	<desc>(RK Punk gear) This radiation Beam wants everyone dead. Deals +15 crew damage per chain. [Max 105 crew damage]
+		Pierces 2 shields +1 per chain. [Max 6 pierce. Ignore the tooltip]
+		WARNING: Deals 15 damage to crew on your ship per chain! [Max 60]
 	</desc>
 	<tip>lore_RK_KILLALL_BEAM</tip>
 	<damage>0</damage>
@@ -1595,7 +1599,7 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 	<title>'BPS Messenger'</title>
 	<short>'BPS Mess.'</short>
 	<tip>tip_chain_laser</tip>
-	<desc>(RK BPS gear) A Piercing Heavy Laser boosted in the RadiKal sector: the Bam gave it hullbust and better stun, the Punk added ion and crew damage, and the Scorch replaced breach chance with guaranteed fire and chaining.</desc>
+	<desc>(RK BPS gear) A Piercing Heavy Laser boosted in the RadiKal Sector: the Bam gave it hullbust and better stun, the Punk added ion and crew damage, and the Scorch replaced breach chance with guaranteed fire and chaining.</desc>
 	<tooltip>Cooldown chaining: 3 times.</tooltip>
 	<tip>RK_lore_DJMOD_LASER_BPS</tip>
 	<damage>2</damage>

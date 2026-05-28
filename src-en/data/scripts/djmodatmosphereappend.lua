@@ -5,4 +5,4 @@ No fitting background image exists, so we add one and set its atmosphere status 
 
 local atmo = mods.multiverse.atmoBackgrounds
 
-atmo.BACK_DJMOD_OXYGENIZER_ACTIVATE = true
+atmo.BACK_RK_COMBAT_OXYGENIZER_ACTIVATE = true

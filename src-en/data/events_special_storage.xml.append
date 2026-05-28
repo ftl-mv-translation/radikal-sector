@@ -450,9 +450,9 @@ See specific system hack refs in MV's events_special_storage.xml and the reqs th
 </mod:findName>
 
 <mod:findName type = "event" name = "COMBAT_CHECK_REAL">
-<mod-append:choice req="DJMOD_OXYGENIZER" blue="false">
+<mod-append:choice req="RK_COMBAT_OXYGENIZER" blue="false">
 	<text>(Oxygenizer) Create an atmosphere!</text>
-	<event load="DJMOD_OXYGENIZER_ACTIVATE"/>
+	<event load="RK_COMBAT_OXYGENIZER_ACTIVATE"/>
 </mod-append:choice>
 </mod:findName>
 
@@ -4195,7 +4195,7 @@ REF:
 
 <!-- Spawns the "O2 Atmosphere" hazard to make fires unventable. MV Lua code means must change background.
 See events_imageList.xml.append -->
-<event name="DJMOD_OXYGENIZER_ACTIVATE">
+<event name="RK_COMBAT_OXYGENIZER_ACTIVATE">
 	<text>Are you sure you want to do this?
 	[Will envelop both ships in an O2 atmosphere, protecting fires and crew from venting and breaches. Costs 2}]</text>
 	<choice req="loc_environment_atmosphere" lvl="0" max_lvl="0" blue="false" hidden="false">
@@ -4203,7 +4203,7 @@ See events_imageList.xml.append -->
 		<event>
 			<text>You fire the flash-release ultracompressed O2 grenades, enveloping the whole area in just enough atmosphere to breathe... or sustain fires!</text>
 			<!-- <environment type="sun"/> It's Lua, not an "environment type". -->
-			<changeBackground>BACK_DJMOD_OXYGENIZER_ACTIVATE</changeBackground>
+			<changeBackground>BACK_RK_COMBAT_OXYGENIZER_ACTIVATE</changeBackground>
 			<item_modify>
 				<item type="missiles" min="-2" max="-2"/>
 			</item_modify>

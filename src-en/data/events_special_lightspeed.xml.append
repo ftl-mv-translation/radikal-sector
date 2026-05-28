@@ -3,34 +3,113 @@
 <FTL>	<!-- Bag of Dumb Fixed doesn't use any FTL tags in this file. Lily's Beam Emporium doesn't even have the file. -->
 
 <!-- 
-Coords are obtained in events_special_standard.xml.append .
+Coords are obtained in events_special_standard.xml.append , random shops, or revisit event append.
 -->
 
 <mod:findName type="event" name="REROUTE_MENU">
 	<!-- <mod-append:choice hidden="true" req="coords_radikal" lvl="1" blue="false" max_group="999"> -->
     <mod-append:choice hidden="true" req="DJMOD_CAN_REROUTE_TO_RADIKAL_SECTOR" lvl="1" blue="false" max_group="999">
-        <text>Jump to the RadiKal sector.</text>
+        <text>Jump to the RadiKal Sector.</text>
         <event load="LIGHTSPEED_SECTOR_WARP_RADIKAL"/>
     </mod-append:choice>
 </mod:findName>
 
 <mod:findName type="event" name="REROUTE_MENU_LASTSTAND">
     <mod-append:choice hidden="true" req="DJMOD_CAN_REROUTE_TO_RADIKAL_SECTOR" lvl="1" blue="false" max_group="999">
-        <text>Jump to the RadiKal sector.</text>
+        <text>Jump to the RadiKal Sector.</text>
         <event load="LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS"/>
     </mod-append:choice>
 </mod:findName>
 
+<!-- Magic Hat bypasses coords requirement. -->
+<mod:findName type="event" name="REROUTE_MENU_HAT">
+	<mod-append:choice hidden="true" req="visited_radikal_sector" lvl="0" max_lvl="0" blue="false">
+		<text>Go to the RadiKal Sector.</text>
+		<event load="LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT" />
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="visited_radikal_sector" lvl="1" blue="false">
+		<text>The RadiKal Sector is behind you.</text>
+		<event load="OPTION_INVALID" />
+	</mod-append:choice>
+</mod:findName>
+<!-- REF: The Old Guard v2.10 for MV v5.5.1
+<mod:findName type="event" name="REROUTE_MENU_HAT">
+	<mod-append:choice hidden="true" req="sec_unique_og_dawn" lvl="0" max_lvl="0" blue="false">
+		<text>Go to the New Dawn Forward Operating Base.</text>
+		<event load="LIGHTSPEED_SECTOR_WARP_OG_DAWN" />
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="sec_unique_og_dawn" lvl="1" blue="false">
+		<text>The New Dawn Forward Operating Base is behind you.</text>
+		<event load="OPTION_INVALID" />
+	</mod-append:choice>
+</mod:findName> 
+
+<event name="LIGHTSPEED_SECTOR_WARP_OG_DAWN">
+	<text id="atlas_og_dawn"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="magical_hat_active" op="set" val="0"/>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_OG_DAWN_UNIQUE">SECTOR_OG_IRON</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_OG_DAWN_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<mod:findName type="event" name="REROUTE_MENU_ASTROMETRICS">
+	<mod-append:choice req="ASTRO_OG_IRON" max_group="2" blue="false" hidden="true">
+		<text>Go to an Iron Watch Controlled Sector.</text>
+		<event load="ASTROMETRIC_WARP_OG_IRON"/>
+	</mod-append:choice>
+</mod:findName>
+
+(...)
+
+<event name="ASTROMETRIC_WARP_OG_IRON">
+	<text id="atlas_og_iron_generic"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="loc_astrometrics_active" op="set" val="-1"/>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_OG_IRON</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+-->
+
+
 <event name="LIGHTSPEED_SECTOR_WARP_RADIKAL">
 	<text>You are about to reroute. Below is the Atlas entry for this sector.
-	Name: RadiKal sector
+	Name: RadiKal Sector
 	Type: Neutral
 	Dominant Faction: RK Bam, RK Punk, RK Scorch
 	Rebel Threat Level: Very Low
 	Locations of Interest: Bam HQ, Punk HQ, Scorch HQ
 	
 	The dangerous sector where RadiKal subfactions develop illegal equipment. Specialists from everywhere secretly come to keep up with the tech, regulate its trade or steal it. Mind whatever Radikal (RK) equipment you have in there!
-	[Report any bugs @Dj0z on discord.]</text>
+	[Feedback? @Dj0z on discord.]</text>
 	<choice hidden="true">
 		<text>Continue with the jump.</text>
 		<event>
@@ -50,16 +129,18 @@ Coords are obtained in events_special_standard.xml.append .
 		</event>
 	</choice>
 </event>
+
+<!-- At end of Sector 7 -->
 <event name="LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS">
 	<text>You are about to reroute. Below is the Atlas entry for this sector.
-	Name: RadiKal sector
+	Name: RadiKal Sector
 	Type: Neutral
 	Dominant Faction: RK Bam, RK Punk, RK Scorch
 	Rebel Threat Level: Very Low
 	Locations of Interest: Bam HQ, Punk HQ, Scorch HQ
 	
 	The dangerous sector where RadiKal subfactions develop illegal equipment. Specialists from everywhere secretly come to keep up with the tech, regulate its trade or steal it. Mind whatever Radikal (RK) equipment you have in there!
-	[Report any bugs @Dj0z on discord.]</text>
+	[Feedback? @Dj0z on discord.]</text>
 	<choice hidden="true">
 		<text>Continue with the jump.</text>
 		<event>
@@ -67,6 +148,38 @@ Coords are obtained in events_special_standard.xml.append .
 			<variable name="coords_radikal" op="set" val="0"/>
 			<variable name="visited_radikal_sector" op="set" val="1"/>
 			<variable name="loc_laststand" op="add" val="1"/>		<!-- this is the only difference. -->
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="JUMP_TO_RADIKAL"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<!-- Using Nexus Magic Hat -->
+<event name="LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT">
+	<text>You are about to reroute. Below is the Atlas entry for this sector.
+	Name: RadiKal Sector
+	Type: Neutral
+	Dominant Faction: RK Bam, RK Punk, RK Scorch
+	Rebel Threat Level: Very Low
+	Locations of Interest: Bam HQ, Punk HQ, Scorch HQ
+	
+	The dangerous sector where RadiKal subfactions develop illegal equipment. Specialists from everywhere secretly come to keep up with the tech, regulate its trade or steal it. Mind whatever Radikal (RK) equipment you have in there!
+	[Feedback? @Dj0z on discord.]</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="coords_radikal" op="set" val="0"/>
+			<variable name="visited_radikal_sector" op="set" val="1"/>
+			<variable name="magical_hat_active" op="set" val="0"/>		<!-- this is the only difference. -->
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event load="JUMP_TO_RADIKAL"/>

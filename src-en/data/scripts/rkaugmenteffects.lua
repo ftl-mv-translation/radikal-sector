@@ -44,14 +44,14 @@ script.on_internal_event(Defines.InternalEvents.JUMP_LEAVE, function ()
     -- Remove all Weapons On Fire stacks.
     local stackAugName = "RK_WEAPONS_ON_FIRE_TEMP"
 
-    --TODO: make it work for enemies too.
+    -- No need to make it work for enemies too, if they jump away it's a new fight, right?
     local stackAugCount = Hyperspace.ships.player:HasAugmentation(stackAugName)
     
-    --print('stacks for removal:'..stackAugCount)    -- Always 0 since the adding doesn't work.
+    --print('stacks for removal:'..stackAugCount)
 
     
     if stackAugCount > 0 then
-        --TODO: make it work for enemies too.
+        -- No need to make it work for enemies too, if they jump away it's a new fight, right?
         local shipManager = Hyperspace.ships.player
         for i = 1, stackAugCount, 1 do
             --print('removed stack on jump')

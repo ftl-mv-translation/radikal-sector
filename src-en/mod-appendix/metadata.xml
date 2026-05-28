@@ -15,7 +15,7 @@
 	<threadUrl><![CDATA[ https://ftlmultiverse.boards.net/thread/214/mv-radikal-sector-equipment-ships ]]></threadUrl>
 	<!-- Your forum user name. -->
 	<author><![CDATA[ Dj0z ]]></author>
-	<version><![CDATA[ 5.97k ]]></version>
+	<version><![CDATA[ 5.98e ]]></version>
 	<description>
 <![CDATA[
 (Patching: put Forgotten Races above RK to avoid populating their stores.)
@@ -26,7 +26,7 @@ The general theme is powerful but potentially dangerous (to you) experimental te
 
 ****** CONTENT ******
 	
-The secret RadiKal sector:
+The secret RadiKal Sector:
 -Weapons, augments and some other things are rarely accessible from the outside.
 -Get coordinates rarely during normal play or from double agents in stores, then reroute. There might be other ways too.
 -Original content, events, enemies, quests and specialized shops.
@@ -50,6 +50,7 @@ Other defensive augments:
 -Persistence Shield gives Super Shields, a way to recharge them instantly, and regular shield recharge speed!
 -Thicker Hull can negate low damage hits, and always reduces high damage ones, with a drawback.
 -Punk Harmony uses a bootleg Harmony to automate and empower your Engi, scaling with Mind Control and Hacking.
+-Dread deck: indirectly makes your ship much deadlier to invaders while making your crew antisocials clinging to life.
 -Defense Kits make your crew much sturdier on your ship.
 -A.E.R.A. Second Wind can automatically save your ship, once per purchase.
 
@@ -90,22 +91,26 @@ Player ships with unique gimmicks!
 
 
 ************ Changelog ******************
-CHANGELOG RadiKal Sector v5.97k
+CHANGELOG RadiKal Sector v5.98e
 
 -Improved some texts.
 
 * Augments
--New "top" Punk augment "Dread Deck": Enemies aboard your ship take more damage from everything. Your crew have increased cloning speed and healing from most sources. They lose no skills from cloning. All crew in the same room as any of your crew cannot be cloned. (NB: includes your own crew!)
--Fixed fire rate values given by "Weapons On Fire" being different from what the description says.
+-"Lead Titans": now also applies to Saltmen.
+-"Weapons On Fire":
+Now has combo with "Scorch Preigniter" for higher extra stacks!
+Base bonus fire rate increased to 25% (was 20%).
+Scrap cost slightly increased.
+Fixed it potentially not working for enemy ships.
 
-* Crew
--Fixed wrong cloning speed on Defromorius.
+* Weapons
+-Max chained values for "Gravespred" now displayed in the description so you don't need to do math.
 
-* The RadiKal sector
--New beacon: "Hideout" for metaprogression! Once unlocked by fighting, you can build things able to provide free benefits (such as repairs, resources, crew) in each subsequent run you go there. Can be reset to nothing on-demand (but why would you do that?). Unlocking it for the first time gives an achievement.
--Reward for sitting down for the tea increased to be in line with similar MV events (like "Volunteer to stand guard").
--The Bam gatekeeper now actually uses its augment's active ability.
--Fixed the "A Vampweed" choice sending you straight to the store instead of letting you sell more like all other choices.
+* The RadiKal Sector
+-Now accessible by using the "Magic Hat"!
+-New hardly skippable fight with a quick RK Scorch.
+-In dedicated RK Scorch store: more Uptors and fewer Gouls, expanded augments section.
+-Sniper Store prices increased on some stronger weapons.
 
 
 Special thanks to (in no particular order) Fajdek, Aleev, Zuggo, LoudMute, Arc, Lizzard, codyfun, Qaser7, bamalf, Dr. Nauter, Witherbottom, Chooseche, Eschaton, Pepper, Untitled, Pupi, vertaalfout, Dalvest, Alder, Kix, [Enchanter], Pedrosian96, Royal Slime, [yenlo]R4V3-0N, robinthedragon2, Ehtya (Laythe), Blizz/mr_easy_money, Skye[NikoMaster], Julk, Felipe, marcrusian, Abstrusity and other people who helped on the FTL:MV Discord, for streaming the mod, and valuable information on balance, modding, coding and art.
