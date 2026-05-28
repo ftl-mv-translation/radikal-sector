@@ -17,7 +17,19 @@ msgid ""
 "append:choice/text"
 msgstr "跃迁到拉迪卡尔星区。"
 
-#: src-en/data/events_special_lightspeed.xml.append:25
+#: src-en/data/events_special_lightspeed.xml.append:27
+msgid ""
+"data/events_special_lightspeed.xml.append$//mod:findName[@name=\"REROUTE_MENU_HAT\"]/mod-"
+"append:choice[1]/text"
+msgstr ""
+
+#: src-en/data/events_special_lightspeed.xml.append:31
+msgid ""
+"data/events_special_lightspeed.xml.append$//mod:findName[@name=\"REROUTE_MENU_HAT\"]/mod-"
+"append:choice[2]/text"
+msgstr ""
+
+#: src-en/data/events_special_lightspeed.xml.append:104
 #, fuzzy
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL\"]/text"
@@ -32,29 +44,29 @@ msgstr ""
 "\t危险的星区，拉迪卡尔子派系在此开发非法装备。来自各地的专家秘密前来跟上技术发展、监管其贸易或窃取技术。小心你拥有的任何拉迪卡尔（RK）装备！\n"
 "\t[进行中！如有任何bug，请在Discord上报告 @Dj0z。]"
 
-#: src-en/data/events_special_lightspeed.xml.append:35
+#: src-en/data/events_special_lightspeed.xml.append:114
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL\"]/choice[1]/text"
 msgstr "确定调整航径。"
 
-#: src-en/data/events_special_lightspeed.xml.append:37
+#: src-en/data/events_special_lightspeed.xml.append:116
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL\"]/choice[1]/event/text"
 msgstr "你准备跃迁至新坐标处，并相应地调整航径。"
 
-#: src-en/data/events_special_lightspeed.xml.append:41
+#: src-en/data/events_special_lightspeed.xml.append:120
 #, fuzzy
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL\"]/choice[1]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_lightspeed.xml.append:47
+#: src-en/data/events_special_lightspeed.xml.append:126
 #, fuzzy
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL\"]/choice[2]/text"
 msgstr "算了。"
 
-#: src-en/data/events_special_lightspeed.xml.append:54
+#: src-en/data/events_special_lightspeed.xml.append:135
 #, fuzzy
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS\"]/text"
@@ -69,24 +81,49 @@ msgstr ""
 "\t危险的星区，拉迪卡尔子派系在此开发非法装备。来自各地的专家秘密前来跟上技术发展、监管其贸易或窃取技术。小心你拥有的任何拉迪卡尔（RK）装备！\n"
 "\t[进行中！如有任何bug，请在Discord上报告 @Dj0z。]"
 
-#: src-en/data/events_special_lightspeed.xml.append:64
+#: src-en/data/events_special_lightspeed.xml.append:145
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS\"]/choice[1]/text"
 msgstr "确定调整航径。"
 
-#: src-en/data/events_special_lightspeed.xml.append:66
+#: src-en/data/events_special_lightspeed.xml.append:147
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS\"]/choice[1]/event/text"
 msgstr "你准备跃迁至新坐标处，并相应地调整航径。"
 
-#: src-en/data/events_special_lightspeed.xml.append:71
+#: src-en/data/events_special_lightspeed.xml.append:152
 #, fuzzy
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS\"]/choice[1]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_lightspeed.xml.append:77
+#: src-en/data/events_special_lightspeed.xml.append:158
 #, fuzzy
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS\"]/choice[2]/text"
 msgstr "算了。"
+
+#: src-en/data/events_special_lightspeed.xml.append:167
+msgid ""
+"data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/text"
+msgstr ""
+
+#: src-en/data/events_special_lightspeed.xml.append:177
+msgid ""
+"data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/choice[1]/text"
+msgstr ""
+
+#: src-en/data/events_special_lightspeed.xml.append:179
+msgid ""
+"data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/choice[1]/event/text"
+msgstr ""
+
+#: src-en/data/events_special_lightspeed.xml.append:184
+msgid ""
+"data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/choice[1]/event/choice/text"
+msgstr ""
+
+#: src-en/data/events_special_lightspeed.xml.append:190
+msgid ""
+"data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/choice[2]/text"
+msgstr ""

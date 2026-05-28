@@ -207,20 +207,21 @@ msgstr "Charged Belts (Off)"
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_CREW_ARE_BOMBS_OFF\"]/desc"
 msgstr ""
-"(RK Bam gear) This augment is Off but can be toggled On anytime. When On: \n"
+"(RK Bam gear) This augment is Off but can be toggled On anytime. When On:\n"
+"\n"
 "\t[This double-edged augment equips your crew with belts that reduce their HP by 10% (beware of Vagabonds) and explode when they die, causing a fire and dealing damage to the room and ship they're in, with extra damage in systemless rooms.\n"
 "\tStacks upon already existing death effects.\n"
 "\t\n"
-"\tCannot be toggled Off but can scrap itself into ~ or } at empty beacons.\n"
+"\tWARNING: Can't be toggled Off. Can scrap itself into ~ or } at empty beacons.\n"
 "\n"
 "\tCOMBO: Makes any crew a fire source for Plasma Teleporter.]"
 
-#: src-en/data/blueprints.xml.append:236
+#: src-en/data/blueprints.xml.append:237
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_CREW_ARE_BOMBS_ON\"]/title"
 msgstr "Charged Belts"
 
-#: src-en/data/blueprints.xml.append:237
+#: src-en/data/blueprints.xml.append:238
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_CREW_ARE_BOMBS_ON\"]/desc"
 msgstr ""
@@ -231,41 +232,41 @@ msgstr ""
 "\n"
 "\tCOMBO: Makes any crew a fire source for Plasma Teleporter."
 
-#: src-en/data/blueprints.xml.append:250
+#: src-en/data/blueprints.xml.append:251
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_AUG_AUTO_SYS_REPAIR\"]/title"
 msgstr "A.E.R.A. Second Wind"
 
-#: src-en/data/blueprints.xml.append:251
+#: src-en/data/blueprints.xml.append:252
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_AUG_AUTO_SYS_REPAIR\"]/desc"
 msgstr ""
 "(RK Bam gear) 'Automated Emergency Repair Augment'. \n"
 "\t\tWhen active, if your ship is almost destroyed (5 hull or less), a nanomachine burst will be released in your systems, fully repairing them as well as 8 hull points, and destroying the augment. No effect if your hull instantly reaches 0. [Activation uses 1 power, Emergency Generator can apply]"
 
-#: src-en/data/blueprints.xml.append:259
+#: src-en/data/blueprints.xml.append:260
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_LEAD_TITANS\"]/title"
 msgstr "Lead Titans"
 
-#: src-en/data/blueprints.xml.append:260
+#: src-en/data/blueprints.xml.append:261
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_LEAD_TITANS\"]/desc"
 msgstr ""
 "(RK Bam gear) Someone had the insane idea to weave motile fiber-lead into muscles. \n"
 "\t\t\n"
-"\t\tYour 'big' crew (Crystals, Lanius, and Rockmen) have: 2.5x resistance to everything, deal 2.5x damage to everything.\n"
+"\t\tYour 'big' crew (Crystals, Lanius, Rockmen, Saltmen) have: 2.5x resistance to everything, deal 2.5x damage to everything.\n"
 "\t\tThe weight makes them take 2 crew slots, create breaches while walking, and they can't repair.\n"
 "\t\tYour other crew get a flat +75% repair speed from smaller fibers.\n"
 "\n"
 "\t\tAll your crew gain a flat +40% movement speed."
 
-#: src-en/data/blueprints.xml.append:273
+#: src-en/data/blueprints.xml.append:274
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_BAM_DIVINE_ARMOR\"]/title"
 msgstr "Thicker Hull"
 
-#: src-en/data/blueprints.xml.append:274
+#: src-en/data/blueprints.xml.append:275
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_BAM_DIVINE_ARMOR\"]/desc"
 msgstr ""
@@ -274,12 +275,12 @@ msgstr ""
 "\t\tReduces weapon charge speed by 5%.\n"
 "\t\tImpacts that deal 1 damage have a 40% chance to be negated, and all other damage is reduced by 1."
 
-#: src-en/data/blueprints.xml.append:286
+#: src-en/data/blueprints.xml.append:287
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_PERSISTENCE_SHIELD\"]/title"
 msgstr "Persistence Shield"
 
-#: src-en/data/blueprints.xml.append:287
+#: src-en/data/blueprints.xml.append:288
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_PERSISTENCE_SHIELD\"]/desc"
 msgstr ""
@@ -291,12 +292,12 @@ msgstr ""
 "\t\tActivate from the Toggle Menu to instantly restore all your Supershield layers. [Uses 1 {]\n"
 "\t\tCannot be activated again until you rebuild its capacitor at an empty beacon for 7~ ."
 
-#: src-en/data/blueprints.xml.append:341
+#: src-en/data/blueprints.xml.append:342
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_COMBAT_OFFENSE_DISABLER\"]/title"
 msgstr "Offense Disabler"
 
-#: src-en/data/blueprints.xml.append:342
+#: src-en/data/blueprints.xml.append:343
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_COMBAT_OFFENSE_DISABLER\"]/desc"
 msgstr ""
@@ -309,12 +310,12 @@ msgstr ""
 "\t\t-all Artilleries\n"
 "\t\tPerfect against aggressive enemies! [Uses 2| and 3 reactor power. Emergency Generator can apply.]"
 
-#: src-en/data/blueprints.xml.append:370
+#: src-en/data/blueprints.xml.append:371
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_COMBAT_HACK_FLEET\"]/title"
 msgstr "Enigmashin"
 
-#: src-en/data/blueprints.xml.append:371
+#: src-en/data/blueprints.xml.append:372
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_COMBAT_HACK_FLEET\"]/desc"
 msgstr ""
@@ -329,11 +330,11 @@ msgstr ""
 "\t\t2| hacking 2 = 80% / 15% / 5% / +???\n"
 "\t\t3| hacking 3 = 90% / 30% / 5% / +???"
 
-#: src-en/data/blueprints.xml.append:388
+#: src-en/data/blueprints.xml.append:389
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_DREAD_DECK\"]/title"
 msgstr "Dread Deck"
 
-#: src-en/data/blueprints.xml.append:389
+#: src-en/data/blueprints.xml.append:390
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_DREAD_DECK\"]/desc"
 msgstr ""
 "(RK Punk gear) Doesn't directly do anything, but seasoned crew start praying and social distancing whenever this augment shows up.\n"
@@ -342,24 +343,24 @@ msgstr ""
 "\t\tYour crew have 2x cloning speed and healing from most sources. They lose no skills from cloning.\n"
 "\t\tAll crew in the same room as any of your crew cannot be cloned."
 
-#: src-en/data/blueprints.xml.append:401
+#: src-en/data/blueprints.xml.append:402
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_SUPER_DEFENDERS\"]/title"
 msgstr "Defense Kits"
 
-#: src-en/data/blueprints.xml.append:402
+#: src-en/data/blueprints.xml.append:403
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_SUPER_DEFENDERS\"]/desc"
 msgstr ""
 "(RK Punk gear) Makes your crew better at survival on your ship.\n"
 "\tx0.75 damage taken, x1.3 repair speed, x1.3 movement speed, and a 4 HP/second heal while idle (not even manning)."
 
-#: src-en/data/blueprints.xml.append:411
+#: src-en/data/blueprints.xml.append:412
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_OWN_HARMONY_ON\"]/title"
 msgstr "Punk Harmony"
 
-#: src-en/data/blueprints.xml.append:412
+#: src-en/data/blueprints.xml.append:413
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_OWN_HARMONY_ON\"]/desc"
 msgstr ""
@@ -369,12 +370,12 @@ msgstr ""
 "\t\n"
 "\tCan be toggled off anytime."
 
-#: src-en/data/blueprints.xml.append:422
+#: src-en/data/blueprints.xml.append:423
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_OWN_HARMONY_OFF\"]/title"
 msgstr "Punk Harmony (OFF)"
 
-#: src-en/data/blueprints.xml.append:423
+#: src-en/data/blueprints.xml.append:424
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_OWN_HARMONY_OFF\"]/desc"
 msgstr ""
@@ -384,12 +385,12 @@ msgstr ""
 "\t\n"
 "\tCan be toggled on anytime."
 
-#: src-en/data/blueprints.xml.append:434
+#: src-en/data/blueprints.xml.append:435
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_DEFENSE_REMOVER\"]/title"
 msgstr "Vulnerabilizer"
 
-#: src-en/data/blueprints.xml.append:435
+#: src-en/data/blueprints.xml.append:436
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_DEFENSE_REMOVER\"]/desc"
 msgstr ""
@@ -398,19 +399,19 @@ msgstr ""
 "power. This effect stacks. All effects end after 20 to 40 seconds. [Uses 2-4"
 " | and 3 reactor power. Emergency Generator can apply.]"
 
-#: src-en/data/blueprints.xml.append:455
+#: src-en/data/blueprints.xml.append:456
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"FIRE_IMMUNITY\"]/title"
 msgstr "Fire Immunity"
 
-#: src-en/data/blueprints.xml.append:456
+#: src-en/data/blueprints.xml.append:457
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"FIRE_IMMUNITY\"]/desc"
 msgstr "Systems take 100% less fire damage."
 
-#: src-en/data/blueprints.xml.append:467
+#: src-en/data/blueprints.xml.append:468
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_SCORCH_SELF\"]/title"
 msgstr "Scorched Earth (T1)"
 
-#: src-en/data/blueprints.xml.append:468
+#: src-en/data/blueprints.xml.append:469
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_SCORCH_SELF\"]/desc"
 msgstr ""
 "(RK Scorch gear) Your crew take 0.6x fire damage and get 3x extinguishing. While extinguishing, they also heal 2 HP/second, +2 per powered level in O2.\n"
@@ -421,12 +422,12 @@ msgstr ""
 "\t\n"
 "\tCan be upgraded twice at empty beacons, increasing the fire resistances and gaining an effect."
 
-#: src-en/data/blueprints.xml.append:484
+#: src-en/data/blueprints.xml.append:485
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_SCORCH_SELF_2\"]/title"
 msgstr "Blazing Earth (T2)"
 
-#: src-en/data/blueprints.xml.append:485
+#: src-en/data/blueprints.xml.append:486
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_SCORCH_SELF_2\"]/desc"
 msgstr ""
 "(RK Scorch gear) [Tier 2 Scorched Earth] Your crew take 0.45x fire damage and get 3x extinguishing. While extinguishing, they also heal 2 HP/second, +2 per powered level in O2.\n"
@@ -438,12 +439,12 @@ msgstr ""
 "\t\n"
 "\tCan be upgraded once at empty beacons, increasing the fire resistances and O2 production."
 
-#: src-en/data/blueprints.xml.append:503
+#: src-en/data/blueprints.xml.append:504
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_SCORCH_SELF_3\"]/title"
 msgstr "Erupting Earth (T3)"
 
-#: src-en/data/blueprints.xml.append:504
+#: src-en/data/blueprints.xml.append:505
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_SCORCH_SELF_3\"]/desc"
 msgstr ""
 "(RK Scorch gear) [Tier 3 Scorched Earth] Your crew take 0.3x fire damage and get 3x extinguishing. While extinguishing, they also heal 2 HP/second, +2 per powered level in O2.\n"
@@ -453,12 +454,12 @@ msgstr ""
 "\t\n"
 "\tCOMBO: Plasma Teleporter moves the augment's fire to the enemy ship."
 
-#: src-en/data/blueprints.xml.append:519
+#: src-en/data/blueprints.xml.append:520
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_COMBAT_SCORCH_ENEMY\"]/title"
 msgstr "Plasma Teleporter"
 
-#: src-en/data/blueprints.xml.append:520
+#: src-en/data/blueprints.xml.append:521
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_COMBAT_SCORCH_ENEMY\"]/desc"
 msgstr ""
@@ -469,12 +470,12 @@ msgstr ""
 "\tCOMBO: Charged Belts / Martyr Vests make all crew fire sources.\n"
 "\tCOMBO: any Scorched Earth can provide the fire for free."
 
-#: src-en/data/blueprints.xml.append:532
+#: src-en/data/blueprints.xml.append:533
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_ENEMIES_CAN_BURN\"]/title"
 msgstr "Flammabilizer-Immune"
 
-#: src-en/data/blueprints.xml.append:533
+#: src-en/data/blueprints.xml.append:534
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_ENEMIES_CAN_BURN\"]/desc"
 msgstr ""
@@ -484,12 +485,12 @@ msgstr ""
 "\tCan be toggled anytime to make non-fireproof enemies take more fire damage instead.\n"
 "\tBoth toggle modes make enemies move 20% slower in fire (up to 80% with 3 power in O2)."
 
-#: src-en/data/blueprints.xml.append:543
+#: src-en/data/blueprints.xml.append:544
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_ENEMIES_BURN_MORE\"]/title"
 msgstr "Flammabilizer-Damage"
 
-#: src-en/data/blueprints.xml.append:544
+#: src-en/data/blueprints.xml.append:545
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_ENEMIES_BURN_MORE\"]/desc"
 msgstr ""
@@ -499,59 +500,522 @@ msgstr ""
 "\tCan be toggled anytime to make fireproof and fire-resistant enemies vulnerable to fire instead.\n"
 "\tBoth toggle modes make enemies move 20% slower in fire (up to 80% with 3 power in O2)."
 
-#: src-en/data/blueprints.xml.append:555
+#: src-en/data/blueprints.xml.append:556
 msgid ""
-"data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_OXYGENIZER\"]/title"
+"data/blueprints.xml.append$//augBlueprint[@name=\"RK_COMBAT_OXYGENIZER\"]/title"
 msgstr "Oxygenizer"
 
-#: src-en/data/blueprints.xml.append:556
-msgid "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_OXYGENIZER\"]/desc"
+#: src-en/data/blueprints.xml.append:557
+msgid ""
+"data/blueprints.xml.append$//augBlueprint[@name=\"RK_COMBAT_OXYGENIZER\"]/desc"
 msgstr ""
 "This RadiKal Scorch combat augment can basically shoot out giant canisters of ultracompressed O2 to fill the void of space when a fight starts.\n"
 "\tPuts both ships in an atmosphere, making breaches and open vents fill oxygen instead of depleting it. Shenanigans ensue. [Uses 2}]"
 
-#: src-en/data/blueprints.xml.append:564
+#: src-en/data/blueprints.xml.append:565
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_SCORCH_PREIGNITER\"]/title"
 msgstr "Scorch Pre-Igniter"
 
-#: src-en/data/blueprints.xml.append:565
+#: src-en/data/blueprints.xml.append:566
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_SCORCH_PREIGNITER\"]/desc"
 msgstr ""
 "(RK Scorch gear) Weapons are made immediately available after an FTL jump but they light a fire in the Weapons room every time they shoot a projectile or beam.\n"
-"\t\tThis variant of the famous Weapon Pre-igniter is flawed but more accessible."
+"\t\tThis variant of the famous Weapon Pre-igniter is flawed but more accessible.\n"
+"\t\t\n"
+"\t\tCOMBO: Increases Weapons On Fire's max extra bonus to 20%"
 
-#: src-en/data/blueprints.xml.append:574
+#: src-en/data/blueprints.xml.append:576
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_WEAPONS_ON_FIRE\"]/title"
 msgstr "Weapons On Fire"
 
-#: src-en/data/blueprints.xml.append:575
+#: src-en/data/blueprints.xml.append:577
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_WEAPONS_ON_FIRE\"]/desc"
 msgstr ""
-"(RK Scorch gear) The fire rate of your Weapons and Artilleries is improved by 20%.\n"
+"(RK Scorch gear) The fire rate of your Weapons and Artilleries is improved by 25%.\n"
 "\t\tGain an extra 1% fire rate every time they shoot a projectile or beam (up to 10%), but at the same time there's a 10% chance to light a fire in the Weapon Control and any Artillery rooms.\n"
-"\t\tThe extra bonus is reset on jump."
+"\t\tThe extra bonus is reset on jump.\n"
+"\n"
+"\t\tCOMBO: Scorch Preigniter increases max extra bonus to 20%"
 
-#: src-en/data/blueprints.xml.append:584
+#: src-en/data/blueprints.xml.append:588
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_WEAPONS_ON_FIRE_TEMP\"]/title"
 msgstr "Weapons On Fire"
 
-#: src-en/data/blueprints.xml.append:585
+#: src-en/data/blueprints.xml.append:589
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_WEAPONS_ON_FIRE_TEMP\"]/desc"
 msgstr "YOU SHOULD NEVER SEE THIS 1% weapon fire rate."
 
-#: src-en/data/blueprints.xml.append:599
+#: src-en/data/blueprints.xml.append:603
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_BPS_SURVEYOR\"]/title"
 msgstr "RK Surveyor"
 
-#: src-en/data/blueprints.xml.append:600
+#: src-en/data/blueprints.xml.append:604
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_BPS_SURVEYOR\"]/desc"
 msgstr ""
 "(BPS gear) The ingenuity of RadiKals from all subfactions lets you deep-search most empty beacons, at a non-negligible cost.\n"
 "\t\t\n"
 "\t\tYou can choose to retrieve/steal the random weapon or augment found, accelerating the fleet 1 turn."
+
+#: src-en/data/blueprints.xml.append:623
+msgid ""
+"data/blueprints.xml.append$//augBlueprint[@name=\"RKS_POLICE_WARRANT\"]/title"
+msgstr "Z. Police Warrant"
+
+#: src-en/data/blueprints.xml.append:624
+msgid ""
+"data/blueprints.xml.append$//augBlueprint[@name=\"RKS_POLICE_WARRANT\"]/desc"
+msgstr ""
+"The Zoltan Police foothold in the RadiKal Sector gave you this authorization to shake down suspicious passerbys for their RK gear. You could also sell it.\n"
+"\t[Provides blue options in some beacons of the RadiKal Sector.]"
+
+#: src-en/data/blueprints.xml.append:640
+msgid "data/blueprints.xml.append$//augBlueprint[@name=\"SHIP_RK\"]/title"
+msgstr "RadiKal Cruiser"
+
+#: src-en/data/blueprints.xml.append:641
+msgid "data/blueprints.xml.append$//augBlueprint[@name=\"SHIP_RK\"]/desc"
+msgstr "YOU SHOULD NEVER SEE THIS"
+
+#: src-en/data/blueprints.xml.append:649
+msgid "data/blueprints.xml.append$//augBlueprint[@name=\"IS_RK_BAM_GEAR\"]/title"
+msgstr "Bam Cruiser and gear"
+
+#: src-en/data/blueprints.xml.append:650
+msgid "data/blueprints.xml.append$//augBlueprint[@name=\"IS_RK_BAM_GEAR\"]/desc"
+msgstr "YOU SHOULD NEVER SEE THIS"
+
+#: src-en/data/blueprints.xml.append:657
+msgid "data/blueprints.xml.append$//augBlueprint[@name=\"IS_RK_PUNK_GEAR\"]/title"
+msgstr "Punk Cruiser and gear"
+
+#: src-en/data/blueprints.xml.append:658
+msgid "data/blueprints.xml.append$//augBlueprint[@name=\"IS_RK_PUNK_GEAR\"]/desc"
+msgstr "YOU SHOULD NEVER SEE THIS"
+
+#: src-en/data/blueprints.xml.append:665
+msgid ""
+"data/blueprints.xml.append$//augBlueprint[@name=\"IS_RK_SCORCH_GEAR\"]/title"
+msgstr "Scorch Cruiser and gear"
+
+#: src-en/data/blueprints.xml.append:666
+msgid ""
+"data/blueprints.xml.append$//augBlueprint[@name=\"IS_RK_SCORCH_GEAR\"]/desc"
+msgstr "YOU SHOULD NEVER SEE THIS"
+
+#: src-en/data/blueprints.xml.append:753
+msgid ""
+"data/blueprints.xml.append$//augBlueprint[@name=\"EX_RK_CHOKING_IS_FINE\"]/title"
+msgstr "[X] Choking F.I.N.E."
+
+#: src-en/data/blueprints.xml.append:754
+msgid ""
+"data/blueprints.xml.append$//augBlueprint[@name=\"EX_RK_CHOKING_IS_FINE\"]/desc"
+msgstr ""
+"(RK Bam gear) Outlawed in many places like most of RK gear, the \"Choking Fetish-Inducing Neural Entrancers\" are often in-demand.\n"
+"\t\t\n"
+"\t\tYour crew take 0.75x suffocation damage.\n"
+"\t\tWhile suffocating, they move, sabotage, repair and fight 1.5x better.\n"
+"\t\t\n"
+"\t[X] - As an external system upgrade, this augment will provide its normal effect but take up an augment slot. Can be converted for free to the internal version under the internal upgrade menu.\n"
+"\tDoes not stack with itself, but stacks with the internal version..."
+
+#: src-en/data/blueprints.xml.append:767
+msgid ""
+"data/blueprints.xml.append$//augBlueprint[@name=\"INTERNAL_RK_CHOKING_IS_FINE\"]/title"
+msgstr "Choking F.I.N.E."
+
+#: src-en/data/blueprints.xml.append:768
+msgid ""
+"data/blueprints.xml.append$//augBlueprint[@name=\"INTERNAL_RK_CHOKING_IS_FINE\"]/desc"
+msgstr ""
+"(RK Bam gear) Outlawed in many places like most of RK gear, the \"Choking Fetish-Inducing Neural Entrancers\" are often in-demand.\n"
+"\t\t\n"
+"\t\tYour crew take 0.75x suffocation damage.\n"
+"\t\tWhile suffocating, they move, sabotage, repair and fight 1.5x better."
+
+#: src-en/data/blueprints.xml.append:779
+msgid ""
+"data/blueprints.xml.append$//augBlueprint[@name=\"INTERNAL_DJMOD_DEMICLONER\"]/title"
+msgstr "Demicloners"
+
+#: src-en/data/blueprints.xml.append:780
+msgid ""
+"data/blueprints.xml.append$//augBlueprint[@name=\"INTERNAL_DJMOD_DEMICLONER\"]/desc"
+msgstr ""
+"(RK Punk gear) These backpack-clonebay prototypes are infused with dark energies. They try to resurrect your crew if they die (not in events) when you don't have a real Clonebay.\n"
+"\t\tAt best, crew resurrect as their own lesser version (Soldier = default Human, etc.) If no lesser version exists, they become Morphs. When Morphs die, nothing happens."
+
+#: src-en/data/blueprints.xml.append:789
+msgid ""
+"data/blueprints.xml.append$//augBlueprint[@name=\"EX_DJMOD_DEMICLONER\"]/title"
+msgstr "[X] Demicloners"
+
+#: src-en/data/blueprints.xml.append:790
+msgid ""
+"data/blueprints.xml.append$//augBlueprint[@name=\"EX_DJMOD_DEMICLONER\"]/desc"
+msgstr ""
+"The RadiKal Punk infused these backpack-clonebay prototypes with dark energies. These try to resurrect your crew if they die (not in events) when you don't have a real Clonebay.\n"
+"\t\tAt best, crew resurrect as their own lesser version (Soldier = default Human, etc.) If no lesser version exists, they become Morphs. When Morphs die, nothing happens.\n"
+"\t\t\n"
+"\t[X] - As an external system upgrade, this augment will provide its normal effect but take up an augment slot. Can be converted for free to the internal version under the internal upgrade menu.\n"
+"\tDoes not stack with itself, but stacks with the internal version..."
+
+#: src-en/data/blueprints.xml.append:803
+msgid ""
+"data/blueprints.xml.append$//augBlueprint[@name=\"INTERNAL_DJMOD_MC_PARALYZER\"]/title"
+msgstr "Mind Cooler"
+
+#: src-en/data/blueprints.xml.append:804
+msgid ""
+"data/blueprints.xml.append$//augBlueprint[@name=\"INTERNAL_DJMOD_MC_PARALYZER\"]/desc"
+msgstr ""
+"When under the effects of Mind Control, your crew cannot fight, sabotage, or"
+" teleport away. Works on both ships."
+
+#: src-en/data/blueprints.xml.append:812
+msgid ""
+"data/blueprints.xml.append$//augBlueprint[@name=\"INTERNAL_RK_IN_FIRE_CREWBOOSTS\"]/title"
+msgstr "Hellion Wraps"
+
+#: src-en/data/blueprints.xml.append:813
+msgid ""
+"data/blueprints.xml.append$//augBlueprint[@name=\"INTERNAL_RK_IN_FIRE_CREWBOOSTS\"]/desc"
+msgstr "2x crew speed and damage in fire on both ships."
+
+#: src-en/data/blueprints.xml.append:821
+msgid ""
+"data/blueprints.xml.append$//augBlueprint[@name=\"INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/title"
+msgstr "Mind Heater"
+
+#: src-en/data/blueprints.xml.append:822
+msgid ""
+"data/blueprints.xml.append$//augBlueprint[@name=\"INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/desc"
+msgstr ""
+"In fire, your crew are immune to Mind Control and cured from it, stunned 50%"
+" shorter, and reveal adjacent rooms. Works on both ships."
+
+#: src-en/data/blueprints.xml.append:953
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_BAM_FISSUREBEAM\"]/title"
+msgstr "'Bada' Fissure Beam"
+
+#: src-en/data/blueprints.xml.append:954
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_BAM_FISSUREBEAM\"]/short"
+msgstr "'Bada' Beam"
+
+#: src-en/data/blueprints.xml.append:955
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_BAM_FISSUREBEAM\"]/desc"
+msgstr ""
+"(RK Bam gear) Can hit 3-5 tiles, hard enough to destroy systems or ships.\n"
+"\t\tFissure Beams deal damage per tile rather than per room."
+
+#: src-en/data/blueprints.xml.append:1008
+msgid "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_UNLOADER\"]/title"
+msgstr "'Unloader' of missiles"
+
+#: src-en/data/blueprints.xml.append:1009
+msgid "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_UNLOADER\"]/short"
+msgstr "Unloader"
+
+#: src-en/data/blueprints.xml.append:1010
+msgid "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_UNLOADER\"]/desc"
+msgstr ""
+"(RK Bam gear) People ask \"Why all these pre-ignited Letos in a supercooling"
+" rotary missile loader?\" and the Bam answer \"We got a great bulk "
+"discount.\""
+
+#: src-en/data/blueprints.xml.append:1184
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_KILLALL_BEAM\"]/title"
+msgstr "'Gravespred' Rad-Beam"
+
+#: src-en/data/blueprints.xml.append:1185
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_KILLALL_BEAM\"]/short"
+msgstr "Gravespred"
+
+#: src-en/data/blueprints.xml.append:1186
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_KILLALL_BEAM\"]/desc"
+msgstr ""
+"(RK Punk gear) This radiation Beam wants everyone dead. Deals +15 crew damage per chain. [Max 105 crew damage]\n"
+"\t\tPierces 2 shields +1 per chain. [Max 6 pierce. Ignore the tooltip]\n"
+"\t\tWARNING: Deals 15 damage to crew on your ship per chain! [Max 60]"
+
+#: src-en/data/blueprints.xml.append:1352
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_RAIN_OF_ION\"]/title"
+msgstr "Rain of Ions"
+
+#: src-en/data/blueprints.xml.append:1353
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_RAIN_OF_ION\"]/short"
+msgstr "Rain Ions"
+
+#: src-en/data/blueprints.xml.append:1356
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_RAIN_OF_ION\"]/desc"
+msgstr ""
+"(RK Punk gear) This heavy duty shotgun fires an accelerated phase ion, a heavy ion, a fire ion, a normal ion, a stun ion, and a radion (from fastest to slowest) all at once. Chains cooldown up to 4 times.\n"
+"\t\tMany weapons worth of blue options!"
+
+#: src-en/data/blueprints.xml.append:1425
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_SHOTPHASER\"]/title"
+msgstr "Shotphaser"
+
+#: src-en/data/blueprints.xml.append:1426
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_SHOTPHASER\"]/short"
+msgstr "Shotphaser"
+
+#: src-en/data/blueprints.xml.append:1429
+msgid "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_SHOTPHASER\"]/desc"
+msgstr ""
+"(RK Punk gear) This shotgun fires 3 greatly accelerated phase ions in a small radius, with a high chance to stun.\n"
+"\t\tPhasers pierce shields, dealing ion damage for the first layer of shields, as well as additional damage to whatever system hit."
+
+#: src-en/data/blueprints.xml.append:1496
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_RAIN_OF_FIRE\"]/title"
+msgstr "Rain of Fire"
+
+#: src-en/data/blueprints.xml.append:1497
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_RAIN_OF_FIRE\"]/short"
+msgstr "Rain Fire"
+
+#: src-en/data/blueprints.xml.append:1498
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_RAIN_OF_FIRE\"]/desc"
+msgstr ""
+"(RK Scorch gear) This launcher roasts so well, it can keep airless rooms on fire when fully chained.\n"
+"\t\tNo damage but pierces shields and supershields."
+
+#: src-en/data/blueprints.xml.append:1555
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_RAIN_OF_FIRE_ENEMYFIX\"]/title"
+msgstr "Rain of fire"
+
+#: src-en/data/blueprints.xml.append:1556
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_RAIN_OF_FIRE_ENEMYFIX\"]/short"
+msgstr "RainFire"
+
+#: src-en/data/blueprints.xml.append:1557
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_RAIN_OF_FIRE_ENEMYFIX\"]/desc"
+msgstr ""
+"YOU SHOULD NEVER SEE THIS. Shots limited to 3 and cooldown reduced to avoid "
+"game freeze when: (shots > player ship rooms) due to the way AI targets."
+
+#: src-en/data/blueprints.xml.append:1599
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_LASER_BPS\"]/title"
+msgstr "'BPS Messenger'"
+
+#: src-en/data/blueprints.xml.append:1600
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_LASER_BPS\"]/short"
+msgstr "'BPS Mess.'"
+
+#: src-en/data/blueprints.xml.append:1602
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_LASER_BPS\"]/desc"
+msgstr ""
+"(RK BPS gear) A Piercing Heavy Laser boosted in the RadiKal Sector: the Bam "
+"gave it hullbust and better stun, the Punk added ion and crew damage, and "
+"the Scorch replaced breach chance with guaranteed fire and chaining."
+
+#: src-en/data/blueprints.xml.append:1667
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_ARTILLERY_FLAK_QUICK\"]/title"
+msgstr "Flak Artillery"
+
+#: src-en/data/blueprints.xml.append:1668
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_ARTILLERY_FLAK_QUICK\"]/short"
+msgstr "Artillery"
+
+#: src-en/data/blueprints.xml.append:1669
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_ARTILLERY_FLAK_QUICK\"]/desc"
+msgstr ""
+"Artillery: Fires a burst of 4 flak projectiles that do 1 damage each.\n"
+"\tBase Cooldown: 16"
+
+#: src-en/data/blueprints.xml.append:1715
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_LASER_PARTICLE\"]/title"
+msgstr "Particle Artillery"
+
+#: src-en/data/blueprints.xml.append:1716
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_LASER_PARTICLE\"]/short"
+msgstr "Artillery"
+
+#: src-en/data/blueprints.xml.append:1717
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_LASER_PARTICLE\"]/desc"
+msgstr ""
+"Artillery: Fires 6 particle lasers that do 3 system damage each, pierce 1 shield and never miss.\n"
+"\tBase Cooldown: 20"
+
+#: src-en/data/blueprints.xml.append:1719
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_LASER_PARTICLE\"]/tooltip"
+msgstr ""
+"Artillery: [Cooldown: 20s] Fires 6 particle lasers that do 3 system damage "
+"each, pierce 1 shield and never miss."
+
+#: src-en/data/blueprints.xml.append:1757
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_MISSILE_FIRE\"]/title"
+msgstr "Fire Missile Artillery"
+
+#: src-en/data/blueprints.xml.append:1758
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_MISSILE_FIRE\"]/short"
+msgstr "Artillery"
+
+#: src-en/data/blueprints.xml.append:1759
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_MISSILE_FIRE\"]/desc"
+msgstr ""
+"Artillery: Fires 3 missiles that do 1 hull damage each, always start a fire and never miss.\n"
+"\tBase Cooldown: 28"
+
+#: src-en/data/blueprints.xml.append:1761
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_MISSILE_FIRE\"]/tooltip"
+msgstr ""
+"Artillery: [Cooldown: 28s] Fires 3 missiles that do 1 hull damage each, "
+"always start a fire and never miss."
+
+#: src-en/data/blueprints.xml.append:1810
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_WEAPONLIKE_SURGEBOMB\"]/title"
+msgstr "BOMBSURGE"
+
+#: src-en/data/blueprints.xml.append:1811
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_WEAPONLIKE_SURGEBOMB\"]/short"
+msgstr "BOMBSURGE"
+
+#: src-en/data/blueprints.xml.append:1812
+msgid ""
+"data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_WEAPONLIKE_SURGEBOMB\"]/desc"
+msgstr ""
+"SHOULD NEVER SEE. For surge-powered crew ability. Based on ANCIENT_BOMB."
+
+#: src-en/data/blueprints.xml.append:1854
+msgid ""
+"data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_RAMMER\"]/class"
+msgstr "RadiKal Bam Cruiser"
+
+#: src-en/data/blueprints.xml.append:1855
+msgid ""
+"data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_RAMMER\"]/name"
+msgstr "Rammer"
+
+#: src-en/data/blueprints.xml.append:1856
+msgid ""
+"data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_RAMMER\"]/desc"
+msgstr ""
+"The flagship of the RadiKal Bam has limited space for weapons, but is equipped to safely* smash into enemy ships, then eat them!\r\n"
+"\t*(Citation needed)"
+
+#: src-en/data/blueprints.xml.append:1933
+msgid ""
+"data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_RAMMER_2\"]/class"
+msgstr "RadiKal Bam Cruiser"
+
+#: src-en/data/blueprints.xml.append:1934
+msgid ""
+"data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_RAMMER_2\"]/name"
+msgstr "RAMBADAM"
+
+#: src-en/data/blueprints.xml.append:1935
+msgid ""
+"data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_RAMMER_2\"]/desc"
+msgstr ""
+"This RadiKal Bam flagship sacrifices various defenses for quick, blind, "
+"hardly sustainable destruction. Max weapons power: 10."
+
+#: src-en/data/blueprints.xml.append:1936
+msgid ""
+"data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_RAMMER_2\"]/unlock"
+msgstr "Win with layout A to unlock this ship."
+
+#: src-en/data/blueprints.xml.append:2013
+msgid ""
+"data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER\"]/class"
+msgstr "RadiKal Punk Cruiser"
+
+#: src-en/data/blueprints.xml.append:2014
+msgid ""
+"data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER\"]/name"
+msgstr "Punker"
+
+#: src-en/data/blueprints.xml.append:2015
+msgid ""
+"data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER\"]/desc"
+msgstr ""
+"An orbital particle accelerator turned cruiser is the RadiKal Punk flagship."
+" Use its enlarged reactor with cheaper upgrades for hacking and particle "
+"artillery, before internal difficulties get you scrapped."
+
+#: src-en/data/blueprints.xml.append:2016
+msgid ""
+"data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER\"]/unlock"
+msgstr ""
+"Reach sector 8 with the RadiKal Bam Cruiser (Rammer) OR win with the RadiKal"
+" Scorch Cruiser (Scorcher) to unlock this ship."
+
+#: src-en/data/blueprints.xml.append:2089
+msgid ""
+"data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER_2\"]/class"
+msgstr "RadiKal Punk Cruiser"
+
+#: src-en/data/blueprints.xml.append:2090
+msgid ""
+"data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER_2\"]/name"
+msgstr "NuH4RM0NY"
+
+#: src-en/data/blueprints.xml.append:2091
+msgid ""
+"data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER_2\"]/desc"
+msgstr ""
+"The bootleg Harmony that redesigned this ship unprompted insists that it's "
+"\"Peak design that it's sad you bio-stains can't appreciate!!\". Keep away "
+"from the actual Engi Harmony. Delete after victory."
+
+#: src-en/data/blueprints.xml.append:2092
+msgid ""
+"data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER_2\"]/unlock"
+msgstr "Win with layout A to unlock this ship."
+
+#: src-en/data/blueprints.xml.append:2165
+msgid ""
+"data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_SCORCH\"]/class"
+msgstr "RadiKal Scorch Cruiser"
+
+#: src-en/data/blueprints.xml.append:2166
+msgid ""
+"data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_SCORCH\"]/name"
+msgstr "Scorcher"
+
+#: src-en/data/blueprints.xml.append:2167
+msgid ""
+"data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_SCORCH\"]/desc"
+msgstr ""
+"The flagship of the RadiKal Scorch has clear structural vulnerablities, but "
+"makes up for that through deadly use of their tech if you commit to it."

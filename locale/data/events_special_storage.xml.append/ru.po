@@ -1,17 +1,9 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-05-27 21:53+0000\n"
-"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
-"Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
-"dataevents_special_storagexmlappend/ru/>\n"
-"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events_special_storage.xml.append:395
 msgid ""
@@ -149,8 +141,7 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/text"
 msgstr ""
 "Вы уверены, что хотите это сделать?\n"
-"\t[Протаранить вражеский корабль - высокая вероятность ремонта вашего "
-"корабля. \n"
+"\t[Протаранить вражеский корабль - высокая вероятность ремонта вашего корабля. \n"
 "\tВНИМАНИЕ: может не получиться!]"
 
 #: src-en/data/events_special_storage.xml.append:660
@@ -1273,8 +1264,7 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/text"
 msgstr ""
 "Готовы к новому тарану?\n"
-"\t[При таране вражеского корабля есть высокий шанс починить свой "
-"собственный.\n"
+"\t[При таране вражеского корабля есть высокий шанс починить свой собственный.\n"
 "\tВнимание: может не получиться!]"
 
 #: src-en/data/events_special_storage.xml.append:1987
@@ -1405,8 +1395,7 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_PERSISTENCE_SHIELD_REBUILD_CAPACITOR\"]/text"
 msgstr ""
 "Вы уверены, что хотите перестроить конденсатор Щита стойкости?\n"
-"\t[Это позволит вам снова использовать его активную способность из меню "
-"переключения.\n"
+"\t[Это позволит вам снова использовать его активную способность из меню переключения.\n"
 "\tПосле этого вы сможете продолжить действия у пустого маяка]"
 
 #: src-en/data/events_special_storage.xml.append:2130
@@ -1425,7 +1414,8 @@ msgstr "Да"
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_PERSISTENCE_SHIELD_REBUILD_CAPACITOR\"]/choice[@req=\"rk_persistence_shield_capacitorneed\""
 " and @lvl=\"1\"]/event/text"
-msgstr "Вы перестраиваете конденсатор, восстанавливая работоспособность модуля."
+msgstr ""
+"Вы перестраиваете конденсатор, восстанавливая работоспособность модуля."
 
 #: src-en/data/events_special_storage.xml.append:2143
 msgid ""
@@ -1443,8 +1433,7 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"TOGGLEMENU_RK_PERSISTENCE_SHIELD\"]/text"
 msgstr ""
 "Вы уверены, что хотите это сделать?\n"
-"\t[Восстанавливает все свои суперщиты. Эту операцию можно повторить только "
-"после перестройки конденсатора у пустого маяка]"
+"\t[Восстанавливает все свои суперщиты. Эту операцию можно повторить только после перестройки конденсатора у пустого маяка]"
 
 #: src-en/data/events_special_storage.xml.append:2160
 msgid ""
@@ -1605,8 +1594,7 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_SCORCH_SELF_UPGRADE\"]/text"
 msgstr ""
 "Вы уверены, что хотите улучшить этот модуль?\n"
-"\t[Повышенная огнестойкость. В условиях пожара ваш экипаж производит "
-"кислород, как 1 орхидея]"
+"\t[Повышенная огнестойкость. В условиях пожара ваш экипаж производит кислород, как 1 орхидея]"
 
 #: src-en/data/events_special_storage.xml.append:3498
 msgid ""
@@ -1643,8 +1631,7 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_SCORCH_SELF_UPGRADE_2\"]/text"
 msgstr ""
 "Вы уверены, что хотите улучшить этот модуль?\n"
-"\t[Повышенная огнестойкость. В условиях пожара ваш экипаж производит "
-"кислород, как 3 орхидеи]"
+"\t[Повышенная огнестойкость. В условиях пожара ваш экипаж производит кислород, как 3 орхидеи]"
 
 #: src-en/data/events_special_storage.xml.append:3532
 msgid ""
@@ -2344,20 +2331,20 @@ msgstr "Потушить пожар, но не спускать глаз с вр
 
 #: src-en/data/events_special_storage.xml.append:4199
 msgid ""
-"data/events_special_storage.xml.append$//event[@name=\"DJMOD_OXYGENIZER_ACTIVATE\"]/text"
+"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE\"]/text"
 msgstr ""
 "Вы уверены, что хотите это сделать?\n"
 "\t[Оба корабля будут окружены кислородной атмосферой, что защитит пожар от затухания при пробоинах или открытии шлюзов, а экипаж не сможет задохнуться. Стоимость: 2}]"
 
 #: src-en/data/events_special_storage.xml.append:4202
 msgid ""
-"data/events_special_storage.xml.append$//event[@name=\"DJMOD_OXYGENIZER_ACTIVATE\"]/choice[@req=\"loc_environment_atmosphere\""
+"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE\"]/choice[@req=\"loc_environment_atmosphere\""
 " and @lvl=\"0\"]/text"
 msgstr "Да."
 
 #: src-en/data/events_special_storage.xml.append:4204
 msgid ""
-"data/events_special_storage.xml.append$//event[@name=\"DJMOD_OXYGENIZER_ACTIVATE\"]/choice[@req=\"loc_environment_atmosphere\""
+"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE\"]/choice[@req=\"loc_environment_atmosphere\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
 "Вы запускаете сверхкомпрессированные кислородные гранаты с моментальным "
@@ -2366,24 +2353,24 @@ msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:4213
 msgid ""
-"data/events_special_storage.xml.append$//event[@name=\"DJMOD_OXYGENIZER_ACTIVATE\"]/choice[@req=\"loc_environment_atmosphere\""
+"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE\"]/choice[@req=\"loc_environment_atmosphere\""
 " and @lvl=\"0\"]/event/choice/text"
 msgstr "Это даст нам преимущество!"
 
 #: src-en/data/events_special_storage.xml.append:4219
 msgid ""
-"data/events_special_storage.xml.append$//event[@name=\"DJMOD_OXYGENIZER_ACTIVATE\"]/choice[@req=\"loc_environment_atmosphere\""
+"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE\"]/choice[@req=\"loc_environment_atmosphere\""
 " and not(@lvl)]/text"
 msgstr "Вы уже в атмосфере!"
 
 #: src-en/data/events_special_storage.xml.append:4223
 msgid ""
-"data/events_special_storage.xml.append$//event[@name=\"DJMOD_OXYGENIZER_ACTIVATE\"]/choice[3]/text"
+"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE\"]/choice[3]/text"
 msgstr "Заняться чем-то другим."
 
 #: src-en/data/events_special_storage.xml.append:4227
 msgid ""
-"data/events_special_storage.xml.append$//event[@name=\"DJMOD_OXYGENIZER_ACTIVATE\"]/choice[4]/text"
+"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE\"]/choice[4]/text"
 msgstr "Неважно, давайте сражаться!"
 
 #: src-en/data/events_special_storage.xml.append:4271
@@ -2698,8 +2685,7 @@ msgid ""
 msgstr ""
 "Этот взлом должен был задержать флот, но не задержал... \n"
 "\t\t\n"
-"\t\tКто-то вмешался и прислал нам странные координаты с такой надписью: "
-"\"Нубы!!1!\"."
+"\t\tКто-то вмешался и прислал нам странные координаты с такой надписью: \"Нубы!!1!\"."
 
 #: src-en/data/events_special_storage.xml.append:4751
 msgid ""
@@ -2729,21 +2715,13 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/text"
 msgstr ""
-"Здесь появился корабль элитных повстанцев с очень зловещим видом. Его "
-"капитан пристально смотрит на вас, с легким блеском в глазах.\n"
+"Здесь появился корабль элитных повстанцев с очень зловещим видом. Его капитан пристально смотрит на вас, с легким блеском в глазах.\n"
 "\n"
-"\t\t\"Когда я услышал, что кто-то серьезно балуется с системой связи флота, "
-"я сразу понял, что должен познакомиться с этими дураками! И вот вы здесь, "
-"нубы!\n"
-"\t\tНадеюсь, вы не против, что я вас так называю, нубы. Нет ничего плохого в "
-"том, чтобы сказать вам, что мы все даже уважаем вашу смелость, раздражающую "
-"самую большую армию в этой части вселенной, которая окутывает целые сектора "
-"тенью кораблей флота.\n"
-"Но я и мои друзья здесь не стали МФК, потому что так легко сдались, как "
-"можно было бы подумать.\n"
+"\t\t\"Когда я услышал, что кто-то серьезно балуется с системой связи флота, я сразу понял, что должен познакомиться с этими дураками! И вот вы здесь, нубы!\n"
+"\t\tНадеюсь, вы не против, что я вас так называю, нубы. Нет ничего плохого в том, чтобы сказать вам, что мы все даже уважаем вашу смелость, раздражающую самую большую армию в этой части вселенной, которая окутывает целые сектора тенью кораблей флота.\n"
+"Но я и мои друзья здесь не стали МФК, потому что так легко сдались, как можно было бы подумать.\n"
 "\n"
-"\t\tТак что в знак дружеского соперничества позвольте мне показать вам, как "
-"это делается! Прямо перед тем, как мы вас убьем\"."
+"\t\tТак что в знак дружеского соперничества позвольте мне показать вам, как это делается! Прямо перед тем, как мы вас убьем\"."
 
 #: src-en/data/events_special_storage.xml.append:4795
 msgid ""
@@ -2840,8 +2818,7 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_OFFENSE_DISABLER\"]/text"
 msgstr ""
 "Вы уверены, что хотите это сделать?\n"
-"\t[Отключает оружейный отсек врагов; они восстанавливают его работу все "
-"быстрее. Потребляет 2 | и 3 единицы энергии реактора]"
+"\t[Отключает оружейный отсек врагов; они восстанавливают его работу все быстрее. Потребляет 2 | и 3 единицы энергии реактора]"
 
 #: src-en/data/events_special_storage.xml.append:4962
 msgid ""
@@ -3230,10 +3207,8 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/text"
 msgstr ""
 "Вы уверены, что хотите это сделать?\n"
-"\t[Потратить ресурсы на отправку дронов-разведчиков для глубокой разведки. "
-"Они найдут случайное оружие и модуль.\n"
-"\tВы можете забрать только одну находку за 1 единицу ускорения флота или "
-"отказаться от них, получив небольшую компенсацию]"
+"\t[Потратить ресурсы на отправку дронов-разведчиков для глубокой разведки. Они найдут случайное оружие и модуль.\n"
+"\tВы можете забрать только одну находку за 1 единицу ускорения флота или отказаться от них, получив небольшую компенсацию]"
 
 #: src-en/data/events_special_storage.xml.append:5591
 msgid ""
@@ -3244,15 +3219,12 @@ msgstr "Да"
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/text"
 msgstr ""
-"\"На поиски!\" - вы отправляете оба специальных дрона, скрестив пальцы или "
-"что-то в этом роде.\n"
+"\"На поиски!\" - вы отправляете оба специальных дрона, скрестив пальцы или что-то в этом роде.\n"
 "\t\t\t\tЧерез некоторое время они удаленно сообщают о своих находках.\n"
 "\t\t\t\t\n"
-"\t\t\t\tЕсли вы решите ничего не забирать, то получите обратно то, что "
-"осталось от обоих дронов-разведчиков.\n"
+"\t\t\t\tЕсли вы решите ничего не забирать, то получите обратно то, что осталось от обоих дронов-разведчиков.\n"
 "\t\t\t\t\n"
-"\t\t\t\tЕсли вы решите что-нибудь забрать, вы получите обратно то, что "
-"осталось от 1 дрона-разведчика, но флот ускорится на 1 прыжок."
+"\t\t\t\tЕсли вы решите что-нибудь забрать, вы получите обратно то, что осталось от 1 дрона-разведчика, но флот ускорится на 1 прыжок."
 
 #: src-en/data/events_special_storage.xml.append:5608
 msgid ""
@@ -3262,7 +3234,8 @@ msgstr "Взять случайное оружие."
 #: src-en/data/events_special_storage.xml.append:5610
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/choice[1]/event/text"
-msgstr "Вы тратите время, чтобы встретить к дрон на полпути и забрать находку."
+msgstr ""
+"Вы тратите время, чтобы встретить к дрон на полпути и забрать находку."
 
 #: src-en/data/events_special_storage.xml.append:5620
 msgid ""
@@ -3277,7 +3250,8 @@ msgstr "Взять случайный модуль."
 #: src-en/data/events_special_storage.xml.append:5629
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/choice[2]/event/text"
-msgstr "Вы тратите время, чтобы встретить к дрон на полпути и забрать находку."
+msgstr ""
+"Вы тратите время, чтобы встретить к дрон на полпути и забрать находку."
 
 #: src-en/data/events_special_storage.xml.append:5639
 msgid ""
@@ -3605,8 +3579,7 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_IN_FIRE_CREWBOOSTS\"]/text"
 msgstr ""
 "Вы собираетесь установить Огненные повязки.\n"
-"\t[Эффекты: 2х скорость передвижения и скорость саботажа вашего экипажа в "
-"условиях пожар, а наносимый урон увеличен до 2х на обоих кораблях.]"
+"\t[Эффекты: 2х скорость передвижения и скорость саботажа вашего экипажа в условиях пожар, а наносимый урон увеличен до 2х на обоих кораблях.]"
 
 #: src-en/data/events_special_storage.xml.append:6118
 msgid ""
@@ -3644,10 +3617,7 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/text"
 msgstr ""
 "Вы собираетесь добавить модификацию Разогреватель разума.\n"
-"\t[Эффекты: При наличии огня ваш экипаж на обоих кораблях становится "
-"невосприимчивым к Контролю разума и избавляется от его воздействия, "
-"продолжительность оглушения сокращается на 50%, также вы начинаете видеть "
-"соседние помещения]"
+"\t[Эффекты: При наличии огня ваш экипаж на обоих кораблях становится невосприимчивым к Контролю разума и избавляется от его воздействия, продолжительность оглушения сокращается на 50%, также вы начинаете видеть соседние помещения]"
 
 #: src-en/data/events_special_storage.xml.append:6152
 msgid ""

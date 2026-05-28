@@ -17,7 +17,19 @@ msgid ""
 "append:choice/text"
 msgstr "Перейти в сектор РадиКал."
 
-#: src-en/data/events_special_lightspeed.xml.append:25
+#: src-en/data/events_special_lightspeed.xml.append:27
+msgid ""
+"data/events_special_lightspeed.xml.append$//mod:findName[@name=\"REROUTE_MENU_HAT\"]/mod-"
+"append:choice[1]/text"
+msgstr ""
+
+#: src-en/data/events_special_lightspeed.xml.append:31
+msgid ""
+"data/events_special_lightspeed.xml.append$//mod:findName[@name=\"REROUTE_MENU_HAT\"]/mod-"
+"append:choice[2]/text"
+msgstr ""
+
+#: src-en/data/events_special_lightspeed.xml.append:104
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL\"]/text"
 msgstr ""
@@ -31,29 +43,29 @@ msgstr ""
 "\tОпасный сектор, где подфракции РадиКал разрабатывают незаконное оборудование. Специалисты со всего мира тайно приезжают сюда, чтобы быть в курсе технологий, регулировать их торговлю или украсть их. Будьте осторожны с любым оборудованием РадиКал (РК), если оно у вас есть!\n"
 "\t[Сообщайте о любых ошибках @Dj0z в Discord]"
 
-#: src-en/data/events_special_lightspeed.xml.append:35
+#: src-en/data/events_special_lightspeed.xml.append:114
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL\"]/choice[1]/text"
 msgstr "Продолжить прыжок."
 
-#: src-en/data/events_special_lightspeed.xml.append:37
+#: src-en/data/events_special_lightspeed.xml.append:116
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL\"]/choice[1]/event/text"
 msgstr ""
 "Вы готовитесь прыгнуть по новым координатам и меняете маршрут корабля "
 "соответствующим образом."
 
-#: src-en/data/events_special_lightspeed.xml.append:41
+#: src-en/data/events_special_lightspeed.xml.append:120
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL\"]/choice[1]/event/choice/text"
 msgstr "Продолжить..."
 
-#: src-en/data/events_special_lightspeed.xml.append:47
+#: src-en/data/events_special_lightspeed.xml.append:126
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL\"]/choice[2]/text"
 msgstr "Неважно."
 
-#: src-en/data/events_special_lightspeed.xml.append:54
+#: src-en/data/events_special_lightspeed.xml.append:135
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS\"]/text"
 msgstr ""
@@ -67,24 +79,49 @@ msgstr ""
 "\tОпасный сектор, где подфракции РадиКал разрабатывают незаконное оборудование. Специалисты со всего мира тайно приезжают сюда, чтобы быть в курсе технологий, регулировать их торговлю или украсть их. Будьте осторожны с любым оборудованием РадиКал (РК), если оно у вас есть!\n"
 "\t[Сообщайте о любых ошибках @Dj0z в Discord]"
 
-#: src-en/data/events_special_lightspeed.xml.append:64
+#: src-en/data/events_special_lightspeed.xml.append:145
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS\"]/choice[1]/text"
 msgstr "Продолжить прыжок."
 
-#: src-en/data/events_special_lightspeed.xml.append:66
+#: src-en/data/events_special_lightspeed.xml.append:147
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS\"]/choice[1]/event/text"
 msgstr ""
 "Вы готовитесь прыгнуть по новым координатам и меняете маршрут корабля "
 "соответствующим образом."
 
-#: src-en/data/events_special_lightspeed.xml.append:71
+#: src-en/data/events_special_lightspeed.xml.append:152
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS\"]/choice[1]/event/choice/text"
 msgstr "Продолжить..."
 
-#: src-en/data/events_special_lightspeed.xml.append:77
+#: src-en/data/events_special_lightspeed.xml.append:158
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS\"]/choice[2]/text"
 msgstr "Неважно."
+
+#: src-en/data/events_special_lightspeed.xml.append:167
+msgid ""
+"data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/text"
+msgstr ""
+
+#: src-en/data/events_special_lightspeed.xml.append:177
+msgid ""
+"data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/choice[1]/text"
+msgstr ""
+
+#: src-en/data/events_special_lightspeed.xml.append:179
+msgid ""
+"data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/choice[1]/event/text"
+msgstr ""
+
+#: src-en/data/events_special_lightspeed.xml.append:184
+msgid ""
+"data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/choice[1]/event/choice/text"
+msgstr ""
+
+#: src-en/data/events_special_lightspeed.xml.append:190
+msgid ""
+"data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/choice[2]/text"
+msgstr ""

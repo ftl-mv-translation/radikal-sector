@@ -2288,20 +2288,20 @@ msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:4199
 msgid ""
-"data/events_special_storage.xml.append$//event[@name=\"DJMOD_OXYGENIZER_ACTIVATE\"]/text"
+"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE\"]/text"
 msgstr ""
 "Are you sure you want to do this?\n"
 "\t[Will envelop both ships in an O2 atmosphere, protecting fires and crew from venting and breaches. Costs 2}]"
 
 #: src-en/data/events_special_storage.xml.append:4202
 msgid ""
-"data/events_special_storage.xml.append$//event[@name=\"DJMOD_OXYGENIZER_ACTIVATE\"]/choice[@req=\"loc_environment_atmosphere\""
+"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE\"]/choice[@req=\"loc_environment_atmosphere\""
 " and @lvl=\"0\"]/text"
 msgstr "Yes."
 
 #: src-en/data/events_special_storage.xml.append:4204
 msgid ""
-"data/events_special_storage.xml.append$//event[@name=\"DJMOD_OXYGENIZER_ACTIVATE\"]/choice[@req=\"loc_environment_atmosphere\""
+"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE\"]/choice[@req=\"loc_environment_atmosphere\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
 "You fire the flash-release ultracompressed O2 grenades, enveloping the whole"
@@ -2309,24 +2309,24 @@ msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:4213
 msgid ""
-"data/events_special_storage.xml.append$//event[@name=\"DJMOD_OXYGENIZER_ACTIVATE\"]/choice[@req=\"loc_environment_atmosphere\""
+"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE\"]/choice[@req=\"loc_environment_atmosphere\""
 " and @lvl=\"0\"]/event/choice/text"
 msgstr "This will give us the advantage!"
 
 #: src-en/data/events_special_storage.xml.append:4219
 msgid ""
-"data/events_special_storage.xml.append$//event[@name=\"DJMOD_OXYGENIZER_ACTIVATE\"]/choice[@req=\"loc_environment_atmosphere\""
+"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE\"]/choice[@req=\"loc_environment_atmosphere\""
 " and not(@lvl)]/text"
 msgstr "You're already in atmosphere!"
 
 #: src-en/data/events_special_storage.xml.append:4223
 msgid ""
-"data/events_special_storage.xml.append$//event[@name=\"DJMOD_OXYGENIZER_ACTIVATE\"]/choice[3]/text"
+"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE\"]/choice[3]/text"
 msgstr "Do something else instead."
 
 #: src-en/data/events_special_storage.xml.append:4227
 msgid ""
-"data/events_special_storage.xml.append$//event[@name=\"DJMOD_OXYGENIZER_ACTIVATE\"]/choice[4]/text"
+"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE\"]/choice[4]/text"
 msgstr "Nevermind, let's fight!"
 
 #: src-en/data/events_special_storage.xml.append:4271
