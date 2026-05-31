@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-05-28 15:03+0000\n"
-"Last-Translator: Aleev <aleev1414@gmail.com>\n"
+"PO-Revision-Date: 2026-05-31 22:13+0000\n"
+"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "dataevents_special_lightspeedxmlappend/ru/>\n"
 "Language: ru\n"
@@ -14,33 +14,30 @@ msgstr ""
 "X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events_special_lightspeed.xml.append:12
-#, fuzzy
 msgid ""
 "data/events_special_lightspeed.xml.append$//mod:findName[@name=\"REROUTE_MENU\"]/mod-"
 "append:choice/text"
-msgstr "Перейти в сектор РадиКал."
+msgstr "Перейти в сектор РадиКалов."
 
 #: src-en/data/events_special_lightspeed.xml.append:19
-#, fuzzy
 msgid ""
 "data/events_special_lightspeed.xml.append$//mod:findName[@name=\"REROUTE_MENU_LASTSTAND\"]/mod-"
 "append:choice/text"
-msgstr "Перейти в сектор РадиКал."
+msgstr "Перейти в сектор РадиКалов."
 
 #: src-en/data/events_special_lightspeed.xml.append:27
 msgid ""
 "data/events_special_lightspeed.xml.append$//mod:findName[@name=\"REROUTE_MENU_HAT\"]/mod-"
 "append:choice[1]/text"
-msgstr ""
+msgstr "Перейти в сектор РадиКалов."
 
 #: src-en/data/events_special_lightspeed.xml.append:31
 msgid ""
 "data/events_special_lightspeed.xml.append$//mod:findName[@name=\"REROUTE_MENU_HAT\"]/mod-"
 "append:choice[2]/text"
-msgstr ""
+msgstr "Сектор РадиКалов остался позади вас."
 
 #: src-en/data/events_special_lightspeed.xml.append:104
-#, fuzzy
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL\"]/text"
 msgstr ""
@@ -57,7 +54,7 @@ msgstr ""
 "оборудование. Специалисты со всего мира тайно приезжают сюда, чтобы быть в "
 "курсе технологий, регулировать их торговлю или украсть их. Будьте осторожны "
 "с любым оборудованием РадиКал (РК), если оно у вас есть!\n"
-"\t[Сообщайте о любых ошибках @Dj0z в Discord]"
+"\t[Фидбек? @Dj0z в Discord]"
 
 #: src-en/data/events_special_lightspeed.xml.append:114
 msgid ""
@@ -82,7 +79,6 @@ msgid ""
 msgstr "Неважно."
 
 #: src-en/data/events_special_lightspeed.xml.append:135
-#, fuzzy
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS\"]/text"
 msgstr ""
@@ -99,7 +95,7 @@ msgstr ""
 "оборудование. Специалисты со всего мира тайно приезжают сюда, чтобы быть в "
 "курсе технологий, регулировать их торговлю или украсть их. Будьте осторожны "
 "с любым оборудованием РадиКал (РК), если оно у вас есть!\n"
-"\t[Сообщайте о любых ошибках @Dj0z в Discord]"
+"\t[Фидбек? @Dj0z в Discord]"
 
 #: src-en/data/events_special_lightspeed.xml.append:145
 msgid ""
@@ -127,23 +123,39 @@ msgstr "Неважно."
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/text"
 msgstr ""
+"Вы собираетесь изменить маршрут. Ниже приведена информация из Атласа по "
+"этому сектору.\n"
+"\tНазвание: Сектор РадиКалов\n"
+"\tТип: Нейтральный\n"
+"\tДоминирующие фракции: РК Бам, РК Панк, РК Скорч\n"
+"\tУровень угрозы повстанцев:: Очень низкий\n"
+"\tМеста, представляющие интерес: Штаб-квартира Бам, штаб-квартира Панк, штаб-"
+"квартира Скорч\n"
+"\t\n"
+"\tОпасный сектор, где подфракции РадиКалов разрабатывают незаконное "
+"оборудование. Специалисты со всего мира тайно приезжают сюда, чтобы быть в "
+"курсе технологий, регулировать их торговлю или украсть их. Следите за своим "
+"оборудованием РадиКалов (РК), если оно у вас есть!\n"
+"\t[Фидбек? @Dj0z в Discord]"
 
 #: src-en/data/events_special_lightspeed.xml.append:177
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/choice[1]/text"
-msgstr ""
+msgstr "Продолжить прыжок."
 
 #: src-en/data/events_special_lightspeed.xml.append:179
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/choice[1]/event/text"
 msgstr ""
+"Вы готовитесь к прыжку на новые координаты и соответствующим образом "
+"изменяете траекторию полета."
 
 #: src-en/data/events_special_lightspeed.xml.append:184
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/choice[1]/event/choice/text"
-msgstr ""
+msgstr "Продолжить..."
 
 #: src-en/data/events_special_lightspeed.xml.append:190
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/choice[2]/text"
-msgstr ""
+msgstr "Неважно."
