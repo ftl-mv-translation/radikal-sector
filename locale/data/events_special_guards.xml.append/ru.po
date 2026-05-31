@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-05-28 15:03+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-05-31 22:13+0000\n"
+"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "dataevents_special_guardsxmlappend/ru/>\n"
 "Language: ru\n"
@@ -14,43 +14,40 @@ msgstr ""
 "X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events_special_guards.xml.append:6
-#, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//textList[@name=\"TEXT_START_RADIKAL\"]/text[1]"
 msgstr ""
-"Вы прибыли в сектор РадиКал, куда съезжаются специалисты со всего мира в "
+"Вы прибыли в сектор РадиКалов, куда съезжаются специалисты со всего мира в "
 "поисках высокоэффективного и незаконного снаряжения.\n"
-"\n"
+"\t\t\n"
 "\t\tХотя отдельные повстанцы или небольшие группы, безусловно, сотрудничают "
 "с РадиКалами, флоту будет непросто добраться сюда, что даст вам время "
 "подготовиться к тому, чтобы выбраться отсюда живыми.\n"
-"        И вам стоит подготовиться."
+"\t\tИ вам стоит подготовиться."
 
 #: src-en/data/events_special_guards.xml.append:11
-#, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//textList[@name=\"TEXT_START_RADIKAL\"]/text[2]"
 msgstr ""
-"Вы прибыли в сектор РадиКал, где можно найти мощное, но опасное "
+"Вы прибыли в сектор РадиКалов, где можно найти мощное, но опасное "
 "оборудование - если, конечно, вы готовы пойти на жертвы.\n"
-"\n"
+"\t\t\n"
 "\t\tХотя отдельные повстанцы или небольшие группы, безусловно, сотрудничают "
 "с РадиКалами, флоту будет непросто добраться сюда, что даст вам время "
 "подготовиться к тому, чтобы выбраться отсюда живыми.\n"
-"        И вам стоит подготовиться."
+"\t\tИ вам стоит подготовиться."
 
 #: src-en/data/events_special_guards.xml.append:16
-#, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//textList[@name=\"TEXT_START_RADIKAL\"]/text[3]"
 msgstr ""
-"Вы прибыли в сектор РадиКал, что должно быть неплохо, если вы знаете, что "
+"Вы прибыли в сектор РадиКалов, что должно быть неплохо, если вы знаете, что "
 "ищете, и умеете избегать боев, в которых у вас нет шансов на победу.\n"
-"\n"
+"\t\t\n"
 "\t\tХотя отдельные повстанцы или небольшие группы, безусловно, сотрудничают "
 "с РадиКалами, флоту будет непросто добраться сюда, что даст вам время "
 "подготовиться к тому, чтобы выбраться отсюда живыми.\n"
-" И вам стоит подготовиться."
+" \t\tИ вам стоит подготовиться."
 
 #: src-en/data/events_special_guards.xml.append:36
 msgid ""
@@ -66,10 +63,9 @@ msgstr ""
 "\t\tОхрана вызывает вас."
 
 #: src-en/data/events_special_guards.xml.append:47
-#, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/text"
-msgstr "Ответить на вызов."
+msgstr "Принять вызов."
 
 #: src-en/data/events_special_guards.xml.append:49
 msgid ""
@@ -82,7 +78,7 @@ msgstr ""
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/text"
-msgstr "(Любое снаряжение РК) Бывалый. Я свой!"
+msgstr "(Любое оборудование РК) Бывалый. Я свой!"
 
 #: src-en/data/events_special_guards.xml.append:56
 msgid ""
@@ -214,7 +210,7 @@ msgstr "Выбрать \"Панк\"."
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[2]/event/text"
 msgstr ""
-"\"Как раз вовремя, я слышал, у них появилось новое продвинутое снаряжение "
+"\"Как раз вовремя, я слышал, у них появилось новое продвинутое оборудование "
 "для убийств и всякие такие штуковины для гиков\". Охранник передает вам "
 "координаты, а затем быстро прерывает связь, не дожидаясь вашего ответа."
 
