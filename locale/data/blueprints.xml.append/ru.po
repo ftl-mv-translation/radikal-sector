@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-05-31 22:13+0000\n"
+"PO-Revision-Date: 2026-06-01 18:24+0000\n"
 "Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "datablueprintsxmlappend/ru/>\n"
@@ -838,275 +838,344 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:953
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_BAM_FISSUREBEAM\"]/title"
-msgstr ""
+msgstr "Расщепляющий луч \"Бада\""
 
 #: src-en/data/blueprints.xml.append:954
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_BAM_FISSUREBEAM\"]/short"
-msgstr ""
+msgstr "Луч Бада"
 
 #: src-en/data/blueprints.xml.append:955
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_BAM_FISSUREBEAM\"]/desc"
 msgstr ""
+"(Оборудование РК Бам) Может поражать 3-5 тайлов, нанося урон, достаточный "
+"для уничтожения систем или кораблей.\n"
+"\t\tРасщепляющие лучи наносят урон за каждую ячейку, а не за каждый отсек."
 
 #: src-en/data/blueprints.xml.append:1008
 msgid "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_UNLOADER\"]/title"
-msgstr ""
+msgstr "Ракетница \"Разгрузчик\""
 
 #: src-en/data/blueprints.xml.append:1009
 msgid "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_UNLOADER\"]/short"
-msgstr ""
+msgstr "Разгрузчик"
 
 #: src-en/data/blueprints.xml.append:1010
 msgid "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_UNLOADER\"]/desc"
 msgstr ""
+"(Оборудование РК Бам) Люди спрашивают: \"Почему в сверхохлаждаемом роторном "
+"загрузчике ракет так много ракет \"Лето\" с предзажигателем?\", а в Бам "
+"отвечают: \"Мы получили отличную оптовую скидку\"."
 
 #: src-en/data/blueprints.xml.append:1184
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_KILLALL_BEAM\"]/title"
-msgstr ""
+msgstr "Рад-луч \"Грейвспред\""
 
 #: src-en/data/blueprints.xml.append:1185
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_KILLALL_BEAM\"]/short"
-msgstr ""
+msgstr "Грейвспред"
 
 #: src-en/data/blueprints.xml.append:1186
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_KILLALL_BEAM\"]/desc"
 msgstr ""
+"(Оборудование РК Панк) Этот радиационный луч стремится убить всех. Наносит "
+"+15 единиц урона экипажу за каждую цепочку. [Макс. 105 урона экипажу]\n"
+"\t\tПробивает 2 щита +1 за каждую цепочку. [Макс. 6 пробиваний. Игнорируйте "
+"подсказку]\n"
+"\t\tВНИМАНИЕ: Наносит 15 единиц урона экипажу вашего корабля за каждую "
+"цепочку! [Макс. 60]"
 
 #: src-en/data/blueprints.xml.append:1352
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_RAIN_OF_ION\"]/title"
-msgstr ""
+msgstr "Дождь ионов"
 
 #: src-en/data/blueprints.xml.append:1353
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_RAIN_OF_ION\"]/short"
-msgstr ""
+msgstr "Дождь ионов"
 
 #: src-en/data/blueprints.xml.append:1356
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_RAIN_OF_ION\"]/desc"
 msgstr ""
+"(Оборудование РК Панк) Этот сверхмощная пушка одновременно выпускает "
+"ускоренные ионы, тяжелые ионы, зажигающие ионы, обычные ионы, оглушающие "
+"ионы и рад-ионы (в порядке от самого быстрого к самому медленному). Время "
+"перезарядки цепи сокращается до 4 раз.\n"
+"\t\tСиние варианты выбора, которые стоят целого арсенала оружия!"
 
 #: src-en/data/blueprints.xml.append:1425
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_SHOTPHASER\"]/title"
-msgstr ""
+msgstr "Шотфазер"
 
 #: src-en/data/blueprints.xml.append:1426
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_SHOTPHASER\"]/short"
-msgstr ""
+msgstr "Шотфазер"
 
 #: src-en/data/blueprints.xml.append:1429
 msgid "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_SHOTPHASER\"]/desc"
 msgstr ""
+"(Оборудование РК Панк) Эта пушка выпускает 3 сильно ускоренных иона в "
+"небольшом радиусе, с высокой вероятностью оглушения.\n"
+"\t\tИонные фазеры пробивают щиты, нанося ионный урон первому слою щитов, а "
+"также дополнительный урон любой пораженной системе."
 
 #: src-en/data/blueprints.xml.append:1496
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_RAIN_OF_FIRE\"]/title"
-msgstr ""
+msgstr "Огненный дождь"
 
 #: src-en/data/blueprints.xml.append:1497
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_RAIN_OF_FIRE\"]/short"
-msgstr ""
+msgstr "Огн. дождь"
 
 #: src-en/data/blueprints.xml.append:1498
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_RAIN_OF_FIRE\"]/desc"
 msgstr ""
+"(Оборудование РК Скорч) Эта пусковая установка настолько мощная, что при "
+"полной цепи может поджигать безвоздушные помещения.\n"
+"\t\tНе наносит урона, но пробивает щиты и суперщиты."
 
 #: src-en/data/blueprints.xml.append:1555
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_RAIN_OF_FIRE_ENEMYFIX\"]/title"
-msgstr ""
+msgstr "Огненный дождь"
 
 #: src-en/data/blueprints.xml.append:1556
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_RAIN_OF_FIRE_ENEMYFIX\"]/short"
-msgstr ""
+msgstr "Огн. дождь"
 
 #: src-en/data/blueprints.xml.append:1557
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_RAIN_OF_FIRE_ENEMYFIX\"]/desc"
 msgstr ""
+"ВЫ НИКОГДА НЕ ДОЛЖНЫ ЭТО ВИДЕТЬ. Количество выстрелов ограничено 3, а время "
+"перезарядки сокращено, чтобы избежать зависания игры в случае, когда "
+"количество выстрелов превышает количество отсеков на корабле игрока из-за "
+"особенностей наведения ИИ."
 
 #: src-en/data/blueprints.xml.append:1599
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_LASER_BPS\"]/title"
-msgstr ""
+msgstr "\"БПС Мессенджер\""
 
 #: src-en/data/blueprints.xml.append:1600
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_LASER_BPS\"]/short"
-msgstr ""
+msgstr "БПС Месс."
 
 #: src-en/data/blueprints.xml.append:1602
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_LASER_BPS\"]/desc"
 msgstr ""
+"(Оборудование РК БПС) Пробивающий тяжелый лазер, усовершенствованный в "
+"секторе РадиКал: Бам обеспечил ему способность пробивать корпус и улучшил "
+"оглушение, Панк добавил ионный урон и урон экипажу, а Скорч заменил шанс на "
+"пробоину на гарантированное возгорание и цепь."
 
 #: src-en/data/blueprints.xml.append:1667
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_ARTILLERY_FLAK_QUICK\"]/title"
-msgstr ""
+msgstr "Осколочная артиллерия"
 
 #: src-en/data/blueprints.xml.append:1668
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_ARTILLERY_FLAK_QUICK\"]/short"
-msgstr ""
+msgstr "Артиллерия"
 
 #: src-en/data/blueprints.xml.append:1669
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_ARTILLERY_FLAK_QUICK\"]/desc"
 msgstr ""
+"Артиллерия: Выпускает серию из 4 осколочных снарядов, каждый из которых "
+"наносит 1 единицу урона.\n"
+"\tБазовая перезарядка: 16"
 
 #: src-en/data/blueprints.xml.append:1715
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_LASER_PARTICLE\"]/title"
-msgstr ""
+msgstr "Частичная артиллерия"
 
 #: src-en/data/blueprints.xml.append:1716
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_LASER_PARTICLE\"]/short"
-msgstr ""
+msgstr "Артиллерия"
 
 #: src-en/data/blueprints.xml.append:1717
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_LASER_PARTICLE\"]/desc"
 msgstr ""
+"Артиллерия: Выпускает 6 частичных лазеров, каждый из которых наносит 3 "
+"единицы урона системе, пробивает 1 щит и никогда не промахивается.\n"
+"\tБазовая перезарядка: 20"
 
 #: src-en/data/blueprints.xml.append:1719
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_LASER_PARTICLE\"]/tooltip"
 msgstr ""
+"Артиллерия: [Перезарядка: 20с] Выпускает 6 частичных лазеров, каждый из "
+"которых наносит 3 единицы системного урона, пробивает 1 щит и никогда не "
+"промахивается."
 
 #: src-en/data/blueprints.xml.append:1757
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_MISSILE_FIRE\"]/title"
-msgstr ""
+msgstr "Зажигательная ракетная артиллерия"
 
 #: src-en/data/blueprints.xml.append:1758
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_MISSILE_FIRE\"]/short"
-msgstr ""
+msgstr "Артиллерия"
 
 #: src-en/data/blueprints.xml.append:1759
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_MISSILE_FIRE\"]/desc"
 msgstr ""
+"Артиллерия: Выпускает 3 ракеты, каждая из которых наносит 1 ед. урона "
+"корпусу, всегда вызывает возгорание и никогда не промахивается.\n"
+"\tБазовая перезарядка: 28"
 
 #: src-en/data/blueprints.xml.append:1761
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_MISSILE_FIRE\"]/tooltip"
 msgstr ""
+"Артиллерия: [Перезарядка: 28с] Выпускает 3 ракеты, каждая из которых наносит "
+"1 урона корпусу, всегда вызывает возгорание и никогда не промахивается."
 
 #: src-en/data/blueprints.xml.append:1810
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_WEAPONLIKE_SURGEBOMB\"]/title"
-msgstr ""
+msgstr "БОМБОВЫЙ ИМПУЛЬС"
 
 #: src-en/data/blueprints.xml.append:1811
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_WEAPONLIKE_SURGEBOMB\"]/short"
-msgstr ""
+msgstr "БОМБ. ИМП."
 
 #: src-en/data/blueprints.xml.append:1812
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_WEAPONLIKE_SURGEBOMB\"]/desc"
 msgstr ""
+"ВЫ НИКОГДА НЕ ДОЛЖНЫ ЭТО ВИДЕТЬ. Для усиления способностей экипажа. На "
+"основе ДРЕВНЕЙ БОМБЫ."
 
 #: src-en/data/blueprints.xml.append:1854
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_RAMMER\"]/class"
-msgstr ""
+msgstr "Крейсер РадиКал Бам"
 
 #: src-en/data/blueprints.xml.append:1855
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_RAMMER\"]/name"
-msgstr ""
+msgstr "Таранщик"
 
 #: src-en/data/blueprints.xml.append:1856
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_RAMMER\"]/desc"
 msgstr ""
+"Флагманский корабль РадиКал Бам имеет ограниченное пространство для "
+"размещения вооружения, но оснащен так, чтобы безопасно* врезаться в корабли "
+"противника, а затем поглотить их!\n"
+"\t*(Требуется источник)"
 
 #: src-en/data/blueprints.xml.append:1933
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_RAMMER_2\"]/class"
-msgstr ""
+msgstr "Крейсер РадиКал Бам"
 
 #: src-en/data/blueprints.xml.append:1934
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_RAMMER_2\"]/name"
-msgstr ""
+msgstr "РАМБАДАМ"
 
 #: src-en/data/blueprints.xml.append:1935
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_RAMMER_2\"]/desc"
 msgstr ""
+"Этот флагман РадиКал Бам жертвует различными защитными характеристиками ради "
+"быстрого, неожиданного и едва ли оправданного уничтожения. Максимальная "
+"мощность оружия: 10."
 
 #: src-en/data/blueprints.xml.append:1936
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_RAMMER_2\"]/unlock"
-msgstr ""
+msgstr "Победите, используя тип A, чтобы разблокировать этот корабль."
 
 #: src-en/data/blueprints.xml.append:2013
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER\"]/class"
-msgstr ""
+msgstr "Крейсер РадиКал Панк"
 
 #: src-en/data/blueprints.xml.append:2014
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER\"]/name"
-msgstr ""
+msgstr "Панкер"
 
 #: src-en/data/blueprints.xml.append:2015
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER\"]/desc"
 msgstr ""
+"Флагман РадиКал Панк - это орбитальный ускоритель частиц, переоборудованный "
+"в крейсер. Используйте его мощный реактор с более доступными модернизациями "
+"для Взомщика и частичной артиллерии, пока внутренние проблемы не приведут к "
+"тому, что вас утилизируют."
 
 #: src-en/data/blueprints.xml.append:2016
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER\"]/unlock"
 msgstr ""
+"Достигните 8-го сектора на крейсере РадиКал Бам (Таранщик) ИЛИ одержите "
+"победу на крейсере РадиКал Скорч (Испепелитель), чтобы разблокировать этот "
+"корабль."
 
 #: src-en/data/blueprints.xml.append:2089
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER_2\"]/class"
-msgstr ""
+msgstr "Крейсер РадиКал Панк"
 
 #: src-en/data/blueprints.xml.append:2090
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER_2\"]/name"
-msgstr ""
+msgstr "НюГ4РМ0НИЯ"
 
 #: src-en/data/blueprints.xml.append:2091
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER_2\"]/desc"
 msgstr ""
+"Пиратская версия гармонии, которая самостоятельно перепроектировала этот "
+"корабль, утверждает, что это \"вершина дизайна, которую вы, био-пятна, к "
+"сожалению, не способны оценить!!\". Держитесь подальше от настоящей гармонии "
+"энджи. Удалите после победы."
 
 #: src-en/data/blueprints.xml.append:2092
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER_2\"]/unlock"
-msgstr ""
+msgstr "Победите, используя тип A, чтобы разблокировать этот корабль."
 
 #: src-en/data/blueprints.xml.append:2165
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_SCORCH\"]/class"
-msgstr ""
+msgstr "Крейсер РадиКал Скорч"
 
 #: src-en/data/blueprints.xml.append:2166
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_SCORCH\"]/name"
-msgstr ""
+msgstr "Испепелитель"
 
 #: src-en/data/blueprints.xml.append:2167
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_SCORCH\"]/desc"
 msgstr ""
+"Флагманский РадиКал Скорч имеет явные конструктивные слабости, но при "
+"условии полной самоотдачи в бою компенсирует их благодаря мастерскому "
+"использованию своих технологий."
