@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-05-31 22:13+0000\n"
-"Last-Translator: Aleev <aleev1414@gmail.com>\n"
+"PO-Revision-Date: 2026-06-01 18:24+0000\n"
+"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "dataevents_sector_radikalxml/ru/>\n"
 "Language: ru\n"
@@ -255,16 +255,33 @@ msgstr "Продолжить..."
 #: src-en/data/events_sector_radikal.xml:333
 msgid "data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_WOF\"]/text"
 msgstr ""
+"Ваш корабль едва успел завершить прыжок, как перед вами уже появился "
+"небольшой, но угрожающе выглядящий корабль РК Скорч, и его экипаж начал "
+"громко кричать по открытому каналу связи.\n"
+"\t\t\"Вот они! Не стоило лезть в наши поставки, грязный наемник! Даже не "
+"пытайся отрицать. Умри! Сгори!\"\n"
+"\t\tВы пытаетесь объяснить им, что они ошибаются, но их орудия быстро "
+"нагреваются, и они спешат уничтожить вас.\n"
+"\n"
+"\t\tЕсли у вас нет чего-то очень убедительного, что можно им сказать, "
+"похоже, вам придется сражаться!"
 
 #: src-en/data/events_sector_radikal.xml:345
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_WOF\"]/choice[@req=\"unique_rk_defromorius\"]/text"
-msgstr ""
+msgstr "(Дефромориус) Сказать, чтобы они отступили."
 
 #: src-en/data/events_sector_radikal.xml:347
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_WOF\"]/choice[@req=\"unique_rk_defromorius\"]/event/text"
 msgstr ""
+"\"--НОВАЯ ЗАДАЧА: РАЗРЯДИТЬ СИТУАЦИЮ-- Стоп. Приветствую\".\n"
+"\n"
+"\t\t\t\t\"О черт, они захватили Дефромориуса! УМРИ, МРА...\" Кто-то с "
+"другого корабля прерывает капитана, прежде чем тот успевает открыть огонь. "
+"\"Не будь идиотом, успокойся и посмотри еще раз\". \"Что? Подожди. Ох. Ох! "
+"Простите, сэр, мне действительно нужно время от времени успокаиваться, чтобы "
+"не допускать таких ошибок. Примите мои извинения. До встречи, сэр!\""
 
 #: src-en/data/events_sector_radikal.xml:357
 msgid ""
@@ -274,12 +291,13 @@ msgstr "Продолжить..."
 #: src-en/data/events_sector_radikal.xml:364
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_WOF\"]/choice[2]/text"
-msgstr ""
+msgstr "Защищаться!"
 
 #: src-en/data/events_sector_radikal.xml:366
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_WOF\"]/choice[2]/event/text"
 msgstr ""
+"Вы готовитесь к бою, пристально следя за уровнем заряда оружия противника"
 
 #: src-en/data/events_sector_radikal.xml:370
 msgid ""
@@ -289,17 +307,19 @@ msgstr "Продолжить..."
 #: src-en/data/events_sector_radikal.xml:377
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_WOF\"]/choice[@req=\"cloaking\"]/text"
-msgstr ""
+msgstr "(Маскировка) Спрятаться и улететь, пока они не успели нацелиться."
 
 #: src-en/data/events_sector_radikal.xml:382
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_WOF\"]/choice[@req=\"engines\"]/text"
-msgstr ""
+msgstr "(Продв. Двигатели) Улететь как можно быстрее."
 
 #: src-en/data/events_sector_radikal.xml:388
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_WOF_USER_UNION\"]/destroyed/text"
 msgstr ""
+"Корабль Скорч разваливается на части, и вы быстро поднимаете на борт "
+"огромное количество вещей."
 
 #: src-en/data/events_sector_radikal.xml:392
 msgid ""
@@ -310,6 +330,9 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_WOF_USER_UNION\"]/destroyed/choice/event/text"
 msgstr ""
+"Вы также находите их модули в виде обломков, к которым еще прикреплены "
+"детали какого-то странного механизма. Что бы он ни делал, он уже не "
+"работает, но это дополнительный лом."
 
 #: src-en/data/events_sector_radikal.xml:398
 msgid ""
@@ -320,16 +343,25 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_WOF_USER_UNION\"]/deadCrew/text"
 msgstr ""
+"Поскольку экипаж погиб, вы быстро поднимаете с корабля Скорч на борт "
+"огромное количество вещей.\n"
+"\t\t\t\n"
+"\t\t\tИзучив внутреннее устройство корабля, вы понимаете, что с помощью "
+"специального устройства можно извлечь из него любые компоненты, но после "
+"этого корабль взорвется.\n"
+"\t\t\tЧто вы выберете?"
 
 #: src-en/data/events_sector_radikal.xml:413
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_WOF_USER_UNION\"]/deadCrew/choice[1]/text"
-msgstr ""
+msgstr "\"Перезарядник [В]\""
 
 #: src-en/data/events_sector_radikal.xml:415
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_WOF_USER_UNION\"]/deadCrew/choice[1]/event/text"
 msgstr ""
+"Вы извлекаете модуль и успеваете убраться, прежде чем корабль разлетается на "
+"мелкие кусочки."
 
 #: src-en/data/events_sector_radikal.xml:420
 msgid ""
@@ -339,12 +371,14 @@ msgstr "Продолжить..."
 #: src-en/data/events_sector_radikal.xml:427
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_WOF_USER_UNION\"]/deadCrew/choice[2]/text"
-msgstr ""
+msgstr "\"Пылающая земля\""
 
 #: src-en/data/events_sector_radikal.xml:429
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_WOF_USER_UNION\"]/deadCrew/choice[2]/event/text"
 msgstr ""
+"Вы извлекаете модуль и успеваете убраться, прежде чем корабль разлетается на "
+"мелкие кусочки."
 
 #: src-en/data/events_sector_radikal.xml:433
 msgid ""
@@ -354,12 +388,14 @@ msgstr "Продолжить..."
 #: src-en/data/events_sector_radikal.xml:440
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_WOF_USER_UNION\"]/deadCrew/choice[3]/text"
-msgstr ""
+msgstr "\"Орудия на переделе\""
 
 #: src-en/data/events_sector_radikal.xml:442
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_WOF_USER_UNION\"]/deadCrew/choice[3]/event/text"
 msgstr ""
+"Вы извлекаете модуль и успеваете убраться, прежде чем корабль разлетается на "
+"мелкие кусочки."
 
 #: src-en/data/events_sector_radikal.xml:446
 msgid ""
@@ -426,21 +462,42 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_RKS_HIDEOUT_UNLOCK\"]/text"
 msgstr ""
+"Похоже, РадиКалы действительно сотрудничают с (или работают на) "
+"сверхъестественные существа... Ваш разум затуманивается, а в черепной "
+"коробке начинает звучать бесплотный голос.\n"
+"\t\t\n"
+"\t\t\"Я знаю, что тебе нужно, Рунегат. Этот маяк, так искусно спрятанный в "
+"туманности, может стать твоим личным укрытием. Благодаря моей силе к нему "
+"можно будет попасть из разных временных линий.\n"
+"\t\tДокажи, что ты этого достоин, убив одного из нынешних обитателей и "
+"сравняв их поселение с землей, хе-хе-хе.\n"
+"\t\tТы просто будешь сидеть сложа руки, позволяя другим Ренегатам "
+"становиться сильнее? Ты знаешь, что однажды они неизбежно окажутся на том же "
+"маяке, что и ты, и это, несомненно, станет последним пристанищем для одних "
+"из вас.\n"
+"\t\tРазве ты не хочешь убедиться, что именно ты выживешь? ВЫБИРАЙ\".\n"
+"\n"
+"\t\tПоследнее слово несло в себе груз греха в виде как вины, так и "
+"сожаления. Вам нужно взять на себя только один из них."
 
 #: src-en/data/events_sector_radikal.xml:555
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_RKS_HIDEOUT_UNLOCK\"]/choice[@req=\"rks_hideout_unlocked\"]/text"
-msgstr ""
+msgstr "Найти самого слабого обитателя."
 
 #: src-en/data/events_sector_radikal.xml:557
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_RKS_HIDEOUT_UNLOCK\"]/choice[@req=\"rks_hideout_unlocked\"]/event/text"
 msgstr ""
+"Вы быстро находите несчастного домовладельца, которого можно выселить. "
+"Возможно, вы не почувствуете никакой вины - в конце концов, он может "
+"оказаться плохим человеком, верно? Тот, кто согласился на эту сделку, чтобы "
+"открыть здесь свой аванпост, наверняка им и является."
 
 #: src-en/data/events_sector_radikal.xml:562
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_RKS_HIDEOUT_UNLOCK\"]/choice[@req=\"rks_hideout_unlocked\"]/event/choice/text"
-msgstr ""
+msgstr "В атаку!"
 
 #: src-en/data/events_sector_radikal.xml:564
 msgid ""
@@ -450,12 +507,15 @@ msgstr "Вы готовитесь к бою."
 #: src-en/data/events_sector_radikal.xml:573
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_RKS_HIDEOUT_UNLOCK\"]/choice[2]/text"
-msgstr ""
+msgstr "Хладнокровное убийство ради развлечения безумных божеств? Не думаю."
 
 #: src-en/data/events_sector_radikal.xml:575
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_RKS_HIDEOUT_UNLOCK\"]/choice[2]/event/text"
 msgstr ""
+"Вы собираете всю свою волю в кулак, вырываетесь из-под влияния и уходите. Вы "
+"надеетесь, что не будете испытывать сожалений, понимая, что это могло бы "
+"помочь другим реальностям победить Восстание."
 
 #: src-en/data/events_sector_radikal.xml:578
 msgid ""
@@ -466,31 +526,49 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_HIDEOUT_UNLOCKER\"]/surrender/text"
 msgstr ""
+"\"Капитан, мы же на одной стороне! Просто остановитесь и примите все... "
+"хрхммрх!... МХМРрМПХ!!\" Капитан, безусловно, пытался сдаться, но вдруг его "
+"губы и рот... исчезли, а тело начало танцевать, словно нелепая марионетка, "
+"подвешенная на ниточках!"
 
 #: src-en/data/events_sector_radikal.xml:595
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_HIDEOUT_UNLOCKER\"]/surrender/choice[1]/text"
 msgstr ""
+"Прервать операцию, здесь что-то явно не так! Так вот что происходит с "
+"владельцами укрытий, которые пытаются сдаться, когда захватчик хочет их "
+"захватить? Мы следующие?..."
 
 #: src-en/data/events_sector_radikal.xml:600
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_HIDEOUT_UNLOCKER\"]/surrender/choice[2]/text"
-msgstr ""
+msgstr "Не обращать внимания на это тревожное событие и продолжить атаку..."
 
 #: src-en/data/events_sector_radikal.xml:605
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_HIDEOUT_UNLOCKER\"]/destroyed/text"
 msgstr ""
+"Элитная Федерация, прежний владелец вашего участка, разрушается, и вы "
+"поспешно забираете все, что можно.\n"
+"\t\t\tКакое-то непреодолимое желание заставляет вас отправиться в "
+"определенный район на небольшой луне, скрытой в туманности, где вы "
+"обнаруживаете несколько зданий, которые без колебаний разрушаете и сжигаете "
+"дотла. После этого это неистовство утихает."
 
 #: src-en/data/events_sector_radikal.xml:610
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_HIDEOUT_UNLOCKER\"]/destroyed/choice/text"
-msgstr ""
+msgstr "Услышать голос божества."
 
 #: src-en/data/events_sector_radikal.xml:613
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_HIDEOUT_UNLOCK_SUCCESS\"]/text"
 msgstr ""
+"\"МВА-ХА-ХА, это было просто восхитительно! Теперь это место принадлежит "
+"тебе навсегда... наверное. МВААА-ХА-ХА, наслаждайся!\"\n"
+"\t\t\t\t\tОсвободившись от чужого влияния, вы смотрите на то, ради чего "
+"только что проделали все это, и теряете сознание. Придя в себя, вы "
+"чувствуете, как ваши мысли меняются."
 
 #: src-en/data/events_sector_radikal.xml:620
 msgid ""
@@ -501,96 +579,124 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_HIDEOUT_UNLOCKER\"]/deadCrew/text"
 msgstr ""
+"После гибели экипажа вы быстро забираете все, что можно, с корабля элиты "
+"Федерации, принадлежавшего предыдущему владельцу вашей базы.\n"
+"\t\t\tКакое-то непреодолимое желание заставляет вас отправиться в "
+"определенный район на небольшой луне, скрытой в туманности, где вы "
+"обнаруживаете несколько зданий, которые без колебаний разрушаете и сжигаете "
+"дотла. После этого это неистовство утихает."
 
 #: src-en/data/events_sector_radikal.xml:632
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_HIDEOUT_UNLOCKER\"]/deadCrew/choice/text"
-msgstr ""
+msgstr "Услышать голос божества."
 
 #: src-en/data/events_sector_radikal.xml:650
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/beaconType/unvisitedTooltip"
 msgstr ""
+"В одной из реальностей вы заключили сделку с жутким богом, чтобы обрести это "
+"уютное место, где можно отдохнуть и пополнить запасы."
 
 #: src-en/data/events_sector_radikal.xml:653
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/text"
 msgstr ""
+"Ваше теперь уже привычное убежище - долгожданная передышка от всего этого "
+"насилия вокруг. Вы почти забываете о крови, которую пришлось пролить, чтобы "
+"его заполучить.\n"
+"\t\t\n"
+"\t\tВы взвешиваете все варианты. Строительство - дело не из дешевых, но вы "
+"знаете, что вам придется заняться этим всего один раз, а результат будет "
+"служить бесконечно долго в самых разных реальностях."
 
 #: src-en/data/events_sector_radikal.xml:663
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_instabenefit\"]/text"
 msgstr ""
+"Построить Ускоритель строительства. [Строительство не уничтожает маяк, что "
+"позволяет вам строить дальше или получать выгоду в любом прохождении]"
 
 #: src-en/data/events_sector_radikal.xml:665
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_instabenefit\"]/event/text"
 msgstr ""
+"Ваши дроны приступают к созданию вращающегося колеса и временных помещений."
 
 #: src-en/data/events_sector_radikal.xml:678
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_instabenefit\"]/event/choice[@req=\"rks_hideout_instabenefit\"]/text"
-msgstr ""
+msgstr "(Ускоритель) Заняться чем-нибудь другим."
 
 #: src-en/data/events_sector_radikal.xml:683
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_instabenefit\"]/event/choice[2]/text"
-msgstr ""
+msgstr "Понаблюдать за работой дронов из иллюминатора и уйти."
 
 #: src-en/data/events_sector_radikal.xml:690
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_multibenefit\"]/text"
 msgstr ""
+"Построить Ускоритель услуг. [Использование преимущества укрытия не приводит "
+"к уничтожению маяка, что позволяет вам строить дальше или получать выгоду в "
+"любом прохождении]"
 
 #: src-en/data/events_sector_radikal.xml:692
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_multibenefit\"]/event/text"
 msgstr ""
+"Ваши дроны приступают к работе по изготовлению стабилизаторов и дозаторов Ф1."
 
 #: src-en/data/events_sector_radikal.xml:704
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_multibenefit\"]/event/choice[@req=\"rks_hideout_instabenefit\"]/text"
-msgstr ""
+msgstr "(Ускоритель) Заняться чем-нибудь другим."
 
 #: src-en/data/events_sector_radikal.xml:709
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_multibenefit\"]/event/choice[2]/text"
-msgstr ""
+msgstr "Понаблюдать за работой дронов из иллюминатора и уйти."
 
 #: src-en/data/events_sector_radikal.xml:716
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_repairs\"]/text"
 msgstr ""
+"Построить Ремонтную платформу. [Флот ускоряется на 1 ход] [Чинит 15 единиц "
+"прочности корпуса в любом ходу]"
 
 #: src-en/data/events_sector_radikal.xml:718
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_repairs\"]/event/text"
 msgstr ""
+"Ваши дроны приступают к работе: они создают строительные леса, манипуляторы "
+"и ящики с запасными частями для ремонта ваших кораблей."
 
 #: src-en/data/events_sector_radikal.xml:729
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_repairs\"]/event/choice[@req=\"rks_hideout_instabenefit\"]/text"
-msgstr ""
+msgstr "(Ускоритель) Заняться чем-нибудь другим."
 
 #: src-en/data/events_sector_radikal.xml:734
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_repairs\"]/event/choice[2]/text"
-msgstr ""
+msgstr "Понаблюдать за работой дронов из иллюминатора и уйти."
 
 #: src-en/data/events_sector_radikal.xml:740
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_REPAIR\"]/text"
-msgstr ""
+msgstr "(Ремонтная платформа) Позаботиться о своем корабле."
 
 #: src-en/data/events_sector_radikal.xml:742
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_REPAIR\"]/event/text"
 msgstr ""
+"Вам предоставляется бесплатный ремонт. Хотя, по сути, это ремонт, за который "
+"вы уже заплатили."
 
 #: src-en/data/events_sector_radikal.xml:747
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_REPAIR\"]/event/choice[@req=\"rks_hideout_multibenefit\"]/text"
-msgstr ""
+msgstr "(Ускоритель услуг) Заняться чем-нибудь другим."
 
 #: src-en/data/events_sector_radikal.xml:752
 msgid ""
@@ -606,11 +712,17 @@ msgstr "Уйти."
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_scavenge\"]/text"
 msgstr ""
+"Построить Комплекс автоматического сбора. [Флот ускоряется на 1 ход] "
+"[Обеспечивает ломом, топливом, боеголовками и дрон-комплектами в любом "
+"прохождении]"
 
 #: src-en/data/events_sector_radikal.xml:765
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_scavenge\"]/event/text"
 msgstr ""
+"Ваши дроны приступают к созданию сенсорных массивов, центрального "
+"координатора, отсеков для дронов-сборщиков и контейнеров для долгосрочного "
+"хранения."
 
 #: src-en/data/events_sector_radikal.xml:777
 msgid ""
@@ -620,17 +732,17 @@ msgstr "Заняться чем-то еще."
 #: src-en/data/events_sector_radikal.xml:783
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_SCAVENGE\"]/text"
-msgstr ""
+msgstr "(Комплекс автоматического сбора) Собрать свой урожай."
 
 #: src-en/data/events_sector_radikal.xml:785
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_SCAVENGE\"]/event/text"
-msgstr ""
+msgstr "Ваши мусорщики усердно трудились в этой реальности."
 
 #: src-en/data/events_sector_radikal.xml:796
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_SCAVENGE\"]/event/choice[@req=\"rks_hideout_multibenefit\"]/text"
-msgstr ""
+msgstr "(Ускоритель услуг) Заняться чем-нибудь другим."
 
 #: src-en/data/events_sector_radikal.xml:801
 msgid ""
@@ -646,46 +758,50 @@ msgstr "Уйти."
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_recruit\"]/text"
 msgstr ""
+"Построить Центр рекрутинга. [Флот ускоряется на 1 ход] [Часть экипажа будет "
+"доступна бесплатно в любом прохождении]"
 
 #: src-en/data/events_sector_radikal.xml:814
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_recruit\"]/event/text"
 msgstr ""
+"Ваши дроны приступают к работе: создают зашифрованные трансляторы "
+"предложений, гидропонические фермы, столовую и жилые помещения для экипажа."
 
 #: src-en/data/events_sector_radikal.xml:826
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_recruit\"]/event/choice[@req=\"rks_hideout_instabenefit\"]/text"
-msgstr ""
+msgstr "(Ускоритель) Заняться чем-нибудь другим."
 
 #: src-en/data/events_sector_radikal.xml:831
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_recruit\"]/event/choice[2]/text"
-msgstr ""
+msgstr "Понаблюдать за работой дронов из иллюминатора и уйти."
 
 #: src-en/data/events_sector_radikal.xml:837
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_RECRUIT\"]/text"
-msgstr ""
+msgstr "(Центр рекрутинга) Получить бесплатного матроса."
 
 #: src-en/data/events_sector_radikal.xml:839
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_RECRUIT\"]/event/text"
-msgstr ""
+msgstr "Ваши предложения вызвали интерес в этой реальности."
 
 #: src-en/data/events_sector_radikal.xml:842
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_RECRUIT\"]/event/choice[1]/text"
-msgstr ""
+msgstr "Выбрать экипаж #1"
 
 #: src-en/data/events_sector_radikal.xml:844
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_RECRUIT\"]/event/choice[1]/event/text"
-msgstr ""
+msgstr "Вы приветствуете нового члена экипажа на борту."
 
 #: src-en/data/events_sector_radikal.xml:849
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_RECRUIT\"]/event/choice[1]/event/choice[@req=\"rks_hideout_multibenefit\"]/text"
-msgstr ""
+msgstr "(Ускоритель услуг) Заняться чем-нибудь другим."
 
 #: src-en/data/events_sector_radikal.xml:853
 msgid ""
@@ -695,17 +811,17 @@ msgstr "Уйти."
 #: src-en/data/events_sector_radikal.xml:859
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_RECRUIT\"]/event/choice[2]/text"
-msgstr ""
+msgstr "Выбрать экипаж #2"
 
 #: src-en/data/events_sector_radikal.xml:861
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_RECRUIT\"]/event/choice[2]/event/text"
-msgstr ""
+msgstr "Вы приветствуете нового члена экипажа на борту."
 
 #: src-en/data/events_sector_radikal.xml:866
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_RECRUIT\"]/event/choice[2]/event/choice[@req=\"rks_hideout_multibenefit\"]/text"
-msgstr ""
+msgstr "(Ускоритель услуг) Заняться чем-нибудь другим."
 
 #: src-en/data/events_sector_radikal.xml:870
 msgid ""
@@ -730,12 +846,19 @@ msgstr "Уйти."
 #: src-en/data/events_sector_radikal.xml:909
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[9]/text"
-msgstr ""
+msgstr "Сбросить прогресс в Убежище. /!\\"
 
 #: src-en/data/events_sector_radikal.xml:911
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[9]/event/text"
 msgstr ""
+"Вы сосредотачиваетесь на том, чтобы попросить таинственное божество, "
+"пригласившее вас сюда, вернуть ваше убежище в прошлое. Оно отвечает так, как "
+"будто это его позабавило.\n"
+"\t\t\t\t\n"
+"\t\t\t\tТы уверен, что хочешь это сделать? Твое убежище лишится всех "
+"улучшений, перестанет принадлежать тебе, и ты ничего не получишь взамен. Но "
+"ты сможешь сражаться, чтобы вернуть его, а я при этом от души посмеюсь!\""
 
 #: src-en/data/events_sector_radikal.xml:917
 msgid ""
