@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-06-01 18:24+0000\n"
+"PO-Revision-Date: 2026-06-02 10:29+0000\n"
 "Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "dataevents_sector_radikalxml/ru/>\n"
@@ -863,12 +863,18 @@ msgstr ""
 #: src-en/data/events_sector_radikal.xml:917
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[9]/event/choice[1]/text"
-msgstr ""
+msgstr "Да. Сделай это!"
 
 #: src-en/data/events_sector_radikal.xml:919
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[9]/event/choice[1]/event/text"
 msgstr ""
+"Слышен лишь задушевный (...бессердечный?) смех, вы моргаете - и все уже "
+"позади.\n"
+"\t\t\t\t\t\t\n"
+"\t\t\t\t\t\tКак будто вы вообще сюда и не приходили. Когда вы в следующий "
+"раз увидите это место, у него, скорее всего, будет новый владелец. Или это "
+"все-таки прежний владелец? Путешествия во времени - странная штука."
 
 #: src-en/data/events_sector_radikal.xml:931
 msgid ""
@@ -894,53 +900,71 @@ msgstr "Заняться чем-либо на корабле."
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[11]/text"
 msgstr ""
+"Покинуть относительный комфорт своего убежища и вернуться к выполнению "
+"задания!"
 
 #: src-en/data/events_sector_radikal.xml:968
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/text"
 msgstr ""
+"Корабль, скрывающийся у этого опасного маяка, не имеет заметных пиратских "
+"знаков, но ведет себя очень странно. Вы подозреваете, что это "
+"контрабандисты. Сражение с ними наверняка приведет к уничтожению всего "
+"груза, который они перевозят."
 
 #: src-en/data/events_sector_radikal.xml:973
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[@req=\"RKS_POLICE_WARRANT\""
 " and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "Без ордера на обыск вы не имеете права проводить их обыск."
 
 #: src-en/data/events_sector_radikal.xml:978
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[@req=\"RKS_POLICE_WARRANT\""
 " and not(@lvl)]/text"
-msgstr ""
+msgstr "(Ордер на обыск) Потребовать провести их обыск."
 
 #: src-en/data/events_sector_radikal.xml:981
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[@req=\"RKS_POLICE_WARRANT\""
 " and not(@lvl)]/event[1]/text"
 msgstr ""
+"\"Черт возьми, вы с этими занудами-золтанами? Вот мне и везет... Я не буду "
+"рисковать нашими жизнями из-за этого, вы можете подняться на борт\".\n"
+"\t\t\t\t\n"
+"\t\t\t\tПосле тщательного обыска вы находите их РК модуль! Его нужно сдать в "
+"полицейский участок золтан, но, возможно, он пригодится вам в выполнении "
+"более важной миссии."
 
 #: src-en/data/events_sector_radikal.xml:988
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[@req=\"RKS_POLICE_WARRANT\""
 " and not(@lvl)]/event[1]/choice/text"
-msgstr ""
+msgstr "Здорово!"
 
 #: src-en/data/events_sector_radikal.xml:993
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[@req=\"RKS_POLICE_WARRANT\""
 " and not(@lvl)]/event[2]/text"
 msgstr ""
+"\"Черт возьми, вы с этими занудами-золтанами? Вот мне и везет... Я не буду "
+"рисковать нашими жизнями из-за этого, вы можете подняться на борт\".\n"
+"\t\t\t\t\n"
+"\t\t\t\tПосле тщательного обыска вы находите их РК оружие! Вам предстоит "
+"сдать его в полицейский участок золтан, но, возможно, оно пригодится вам в "
+"выполнении более важной миссии."
 
 #: src-en/data/events_sector_radikal.xml:1000
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[@req=\"RKS_POLICE_WARRANT\""
 " and not(@lvl)]/event[2]/choice/text"
-msgstr ""
+msgstr "Здорово!"
 
 #: src-en/data/events_sector_radikal.xml:1006
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[@req=\"RKS_POLICE_WARRANT\""
 " and not(@lvl)]/event[3]/text"
-msgstr ""
+msgstr "Они сразу же начинают заряжать свое оружие!"
 
 #: src-en/data/events_sector_radikal.xml:1009
 msgid ""
@@ -951,7 +975,7 @@ msgstr "Продолжить..."
 #: src-en/data/events_sector_radikal.xml:1016
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[3]/text"
-msgstr ""
+msgstr "Атаковать их!"
 
 #: src-en/data/events_sector_radikal.xml:1018
 msgid ""
@@ -966,37 +990,39 @@ msgstr "Продолжить..."
 #: src-en/data/events_sector_radikal.xml:1028
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[4]/text"
-msgstr ""
+msgstr "Ничего не делать."
 
 #: src-en/data/events_sector_radikal.xml:1030
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[4]/event/text"
 msgstr ""
+"Вы не приближаетесь, но на корабле, похоже, заметили, что вы их заметили. "
+"\"Эй, э-э, на что вы там смотрите?\""
 
 #: src-en/data/events_sector_radikal.xml:1032
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[4]/event/choice/text"
-msgstr ""
+msgstr "Ну, знаете..."
 
 #: src-en/data/events_sector_radikal.xml:1034
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[4]/event/choice/event/text"
-msgstr ""
+msgstr "\"А-а да? И что дальше?\""
 
 #: src-en/data/events_sector_radikal.xml:1036
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[4]/event/choice/event/choice[1]/text"
-msgstr ""
+msgstr "У вас есть что-нибудь для торговли?"
 
 #: src-en/data/events_sector_radikal.xml:1038
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[4]/event/choice/event/choice[1]/event/text"
-msgstr ""
+msgstr "\"О-ой. Да, конечно. Заходите!\""
 
 #: src-en/data/events_sector_radikal.xml:1043
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[4]/event/choice/event/choice[2]/text"
-msgstr ""
+msgstr "Атаковать их!"
 
 #: src-en/data/events_sector_radikal.xml:1045
 msgid ""
@@ -1012,24 +1038,33 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/text"
 msgstr ""
+"Сигнал бедствия исходит от большого корабля элиты Гармони, но он уже "
+"начинает взрываться! Сканирование не выявляет никаких признаков жизни "
+"внутри, так что спасти кого-либо вам все равно не удалось бы.\n"
+"\t\t\n"
+"\t\tЕсли у вас есть быстрый способ, возможно, у вас еще хватит времени, "
+"чтобы подобрать черный ящик."
 
 #: src-en/data/events_sector_radikal.xml:1093
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[@req=\"temporal\""
 " and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "В данном случае могла бы помочь Временной манипулятор."
 
 #: src-en/data/events_sector_radikal.xml:1097
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[@req=\"temporal\""
 " and @lvl=\"1\"]/text"
 msgstr ""
+"(Временной манипулятор) Замедлить время в зоне черного ящика и забрать его."
 
 #: src-en/data/events_sector_radikal.xml:1099
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[@req=\"temporal\""
 " and @lvl=\"1\"]/event/text"
 msgstr ""
+"Ваш Временной манипулятор позволяет вам без труда достать ящик. Вы начинаете "
+"разбирать обломки во время декодирования."
 
 #: src-en/data/events_sector_radikal.xml:1103
 msgid ""
@@ -1041,19 +1076,22 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[@req=\"RKS_HAS_HIGH_SENSORS_AND_HACKING\""
 " and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "С помощью хороших Сенсоров и Взломщика мы могли бы его расшифровать."
 
 #: src-en/data/events_sector_radikal.xml:1114
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[@req=\"RKS_HAS_HIGH_SENSORS_AND_HACKING\""
 " and not(@lvl)]/text"
-msgstr ""
+msgstr "(Сенсоры 2-го уровня + Взломщик) Декодировать удаленно."
 
 #: src-en/data/events_sector_radikal.xml:1116
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[@req=\"RKS_HAS_HIGH_SENSORS_AND_HACKING\""
 " and not(@lvl)]/event/text"
 msgstr ""
+"Вашему хакерскому дрону потребовалось всего мгновение, чтобы добраться до "
+"черного ящика и выяснить, что произошло. Вы также приступаете к разборке "
+"обломков."
 
 #: src-en/data/events_sector_radikal.xml:1120
 msgid ""
@@ -1065,11 +1103,22 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[@req=\"RKS_HAS_ENGI_AND_LANIUS\"]/text"
 msgstr ""
+"Ваш энджи обнаруживает ящик и говорит, что ваш ланиус сможет достать его, "
+"пока не стало слишком поздно."
 
 #: src-en/data/events_sector_radikal.xml:1129
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[@req=\"RKS_HAS_ENGI_AND_LANIUS\"]/event/text"
 msgstr ""
+"\"Предложение: выбросить металлопожирателя через шлюз менее чем за 8.7534 "
+"секунды. Шансы на успех = высокие\".\n"
+"                Вы не слишком уверены в этом, пока ваш ланиус с радостью не "
+"выпрыгивает, чтобы схватить ящик, словно ребенок, гоняющийся за вкусной "
+"конфеткой!\n"
+"\t\t\t\t\n"
+"\t\t\t\tК счастью, он привык к подобным акробатическим трюкам и избегает "
+"травм, принося при этом немного лома.\n"
+"\t\t\t\tОн добавляет: \"Корабль пахнул странно. Немного знакомо\"."
 
 #: src-en/data/events_sector_radikal.xml:1138
 msgid ""
@@ -1079,12 +1128,14 @@ msgstr "Продолжить..."
 #: src-en/data/events_sector_radikal.xml:1145
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[6]/text"
-msgstr ""
+msgstr "Ничего не поделаешь, придется просто разобрать на лом то, что осталось."
 
 #: src-en/data/events_sector_radikal.xml:1147
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[6]/event/text"
 msgstr ""
+"Подождать, пока корабль полностью взорвется, а потом насладиться бесплатным "
+"ломом."
 
 #: src-en/data/events_sector_radikal.xml:1151
 msgid ""
@@ -1095,26 +1146,39 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_2\"]/text"
 msgstr ""
+"Судя по записи в черном ящике, экипаж был раздавлен или заколот, а корабль "
+"подвергся саботажу, за исключением Кислородной установки и Медотсека.\n"
+"\t\tОдному шаттлу удалось улететь до взрыва корабля. Здесь был еще один "
+"корабль - возможно, именно те, кто это устроил. Вы понимаете, что он все еще "
+"здесь, пристыкованный недалеко от этого маяка!\n"
+"\n"
+"\t\tДостаточно близко, чтобы разобраться, в чем дело, прежде чем улететь."
 
 #: src-en/data/events_sector_radikal.xml:1166
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_2\"]/choice[1]/text"
-msgstr ""
+msgstr "К тому кораблю!"
 
 #: src-en/data/events_sector_radikal.xml:1168
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_2\"]/choice[1]/event/text"
-msgstr ""
+msgstr "Вы легко догоняете их, а они вас еще не заметили."
 
 #: src-en/data/events_sector_radikal.xml:1172
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_2\"]/choice[1]/event/choice[@req=\"mind\"]/text"
-msgstr ""
+msgstr "(Контроль разума) Узнать, что произошло."
 
 #: src-en/data/events_sector_radikal.xml:1174
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_2\"]/choice[1]/event/choice[@req=\"mind\"]/event/text"
 msgstr ""
+"\"Мы продавали устройства для пыток разума энджи Защитников. Сделка "
+"сорвалась, когда что-то на их корабле вышло из-под контроля. Один шаттл смог "
+"улететь. Мы сбежали\".\n"
+"\n"
+"\t\t\t\t\t\tВот и разгадана загадка. Вы также выясняете, куда направлялся "
+"шаттл, и уходите, как ни в чем не бывало."
 
 #: src-en/data/events_sector_radikal.xml:1182
 msgid ""
@@ -1130,6 +1194,16 @@ msgstr "Выйти с ними на связь."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_2\"]/choice[1]/event/choice[2]/event/text"
 msgstr ""
+"\"Федералы пришли мстить! Я же говорил, что нам нужно было улетать, Лиза\".\n"
+"\t\t\t\t\t\t\n"
+"\"Но почему? Мы же невиновны! Иначе зачем нам до сих пор быть здесь? Просто "
+"скажи им это, ты, тупица!\"\n"
+"\n"
+"\t\t\t\t\t\t\"Ха! Как будто они нам поверят, почему ты всегда такая наивная? "
+"Заряжай уже прыжковый двигатель!\"\n"
+"\n"
+"\t\t\t\t\t\tЕсли вы действительно думаете, что они могут быть невиновны, вам "
+"придется помять их корпус, не убивая их, чтобы получить ответы."
 
 #: src-en/data/events_sector_radikal.xml:1202
 msgid ""
@@ -1139,17 +1213,17 @@ msgstr "Продолжить..."
 #: src-en/data/events_sector_radikal.xml:1209
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_2\"]/choice[1]/event/choice[3]/text"
-msgstr ""
+msgstr "Забыть об этом и уйти."
 
 #: src-en/data/events_sector_radikal.xml:1216
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_2\"]/choice[2]/text"
-msgstr ""
+msgstr "Нет, спасибо, закончим сбор лома, а потом мы уходим."
 
 #: src-en/data/events_sector_radikal.xml:1218
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_2\"]/choice[2]/event/text"
-msgstr ""
+msgstr "Зачем рисковать, когда под рукой есть лом, и есть более важные дела?"
 
 #: src-en/data/events_sector_radikal.xml:1222
 msgid ""
@@ -1160,6 +1234,10 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_DEFROMORIUS_SUSPICIOUS\"]/gotaway/text"
 msgstr ""
+"Пока корабль улетает, вы расспрашиваете людей в доке, но никто ничего вам не "
+"говорит.\n"
+"\t\t\tВот и исчезла ваша единственная зацепка в этом деле. Возвращаемся к "
+"заданию."
 
 #: src-en/data/events_sector_radikal.xml:1236
 msgid ""
@@ -1170,11 +1248,14 @@ msgstr "Продолжить..."
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_DEFROMORIUS_SUSPICIOUS\"]/surrender/text"
 msgstr ""
+"\"Это не мы! Прошу вас, ради Лизы, перестаньте! Мы все расскажем!\"\n"
+"\t\t\t\n"
+"\t\t\t\"Постой, а при чем тут я? Они даже не зна... Ох, неважно\"."
 
 #: src-en/data/events_sector_radikal.xml:1247
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_DEFROMORIUS_SUSPICIOUS\"]/surrender/choice[1]/text"
-msgstr ""
+msgstr "Ладно, тогда кто это сделал?"
 
 #: src-en/data/events_sector_radikal.xml:1249
 msgid ""
