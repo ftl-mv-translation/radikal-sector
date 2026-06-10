@@ -1,0 +1,372 @@
+#
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src-en/data/events_special_guards.xml.append:6
+msgid ""
+"data/events_special_guards.xml.append$//textList[@name=\"TEXT_START_RADIKAL\"]/text[1]"
+msgstr ""
+"RadiKal宙域に到着した。あらゆる場所から専門家が、高効率で違法な装備を求めてやってくる場所だ。\n"
+"個々の反乱軍や小グループは確かにRadiKalsと協力しているが、艦隊がここに来るのは難しい。ここから生きて脱出するための準備をする時間が少しはあるはずだ。\n"
+"覚悟しておくがいい。"
+
+#: src-en/data/events_special_guards.xml.append:11
+msgid ""
+"data/events_special_guards.xml.append$//textList[@name=\"TEXT_START_RADIKAL\"]/text[2]"
+msgstr ""
+"RadiKal宙域に到着した。犠牲を払う覚悟があれば、強力で危険な装備が見つかる場所だ。\n"
+"個々の反乱軍や小グループは確かにRadiKalsと協力しているが、艦隊がここに来るのは難しい。ここから生きて脱出するための準備をする時間が少しはあるはずだ。\n"
+"覚悟しておくがいい。"
+
+#: src-en/data/events_special_guards.xml.append:16
+msgid ""
+"data/events_special_guards.xml.append$//textList[@name=\"TEXT_START_RADIKAL\"]/text[3]"
+msgstr ""
+"RadiKal宙域に到着した。何を探しているのか、いつ勝てない戦いを避けるべきなのかを知っていれば問題ないはずだ。\n"
+"個々の反乱軍や小グループは確かにRadiKalsと協力しているが、艦隊がここに来るのは難しい。ここから生きて脱出するための準備をする時間が少しはあるはずだ。\n"
+"覚悟しておくがいい。"
+
+#: src-en/data/events_special_guards.xml.append:36
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"START_RADIKAL\"]/choice/text"
+msgstr "次へ…"
+
+#: src-en/data/events_special_guards.xml.append:43
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/text"
+msgstr ""
+"ビーコンは武装した船に守られているが、まだ敵対はしていない。遠くに海賊船がジャンプしていくのが見える。見たところ、貨物を満載しているようだが、ガードは通したようだ。最近の戦闘の痕跡はない。\n"
+"\n"
+"ガードが通信してくる。"
+
+#: src-en/data/events_special_guards.xml.append:47
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/text"
+msgstr "通信に応じる。"
+
+#: src-en/data/events_special_guards.xml.append:49
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/text"
+msgstr ""
+"「よお。新入りか常連か？」ガードは無関心に答えを待っている。\n"
+"この宙域への馴染み深さについて聞いているようだ。"
+
+#: src-en/data/events_special_guards.xml.append:54
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/text"
+msgstr "（Any piece of RK gear）常連だ。頼むぜ！"
+
+#: src-en/data/events_special_guards.xml.append:56
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/event/text"
+msgstr "「いい装備だな！もう我々の仲間だからな、選択肢を広げたい時のために最新の座標を全部教えてやる。」"
+
+#: src-en/data/events_special_guards.xml.append:58
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/event/choice/text"
+msgstr "次へ…"
+
+#: src-en/data/events_special_guards.xml.append:60
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/event/choice/event/text"
+msgstr "「これがRadiKal Bamラボの現在の場所だ。爆発物を持っているか、もっと必要なら、奴らは歓迎してくれるだろうぜ。」"
+
+#: src-en/data/events_special_guards.xml.append:68
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/event/choice/event/choice/text"
+msgstr "次へ…"
+
+#: src-en/data/events_special_guards.xml.append:70
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/event/choice/event/choice/event/text"
+msgstr "「相変わらずずる賢いPunkが、このビーコンにキャンプを張っている。お前のあらゆる洒落たニーズのために。」"
+
+#: src-en/data/events_special_guards.xml.append:78
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/event/choice/event/choice/event/choice/text"
+msgstr "次へ…"
+
+#: src-en/data/events_special_guards.xml.append:80
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/event/choice/event/choice/event/choice/event/text"
+msgstr ""
+"「…で、こっちがScorchラボだ。奴らは物資を必要としている。わかるだろ、よく燃える種類の…\n"
+"道中気をつけて！アハハハ」\n"
+"推測するに、「物資」とは生きている生物の可能性があり、あらゆる厄介事につながりそうだ。\n"
+"道中でどうするか決めることにする、ここにはメンテナンス以外にやることはない。"
+
+#: src-en/data/events_special_guards.xml.append:93
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/event/choice/event/choice/event/choice/event/choice[1]/text"
+msgstr "ストレージを確認する。"
+
+#: src-en/data/events_special_guards.xml.append:97
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/event/choice/event/choice/event/choice/event/choice[2]/text"
+msgstr "何もしない。"
+
+#: src-en/data/events_special_guards.xml.append:110
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and @lvl=\"0\"]/text"
+msgstr "RadiKalの装備を何も持っていない。RKの船に乗っているわけでもない。"
+
+#: src-en/data/events_special_guards.xml.append:115
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/text"
+msgstr "新入りだ。"
+
+#: src-en/data/events_special_guards.xml.append:117
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/text"
+msgstr "「だよな。お前の船は本格的なアップグレードが必要そうだ。ここで何を探しているのかわかっているのか？」"
+
+#: src-en/data/events_special_guards.xml.append:119
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/text"
+msgstr "イエス。"
+
+#: src-en/data/events_special_guards.xml.append:121
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/text"
+msgstr ""
+"「よし、どれにするんだ？」ガードは通信に短い目的地のリストを呼び出すが、コードネームだけで通常の詳細がすべて欠落している。自分がどれほど怪しい場所に迷い込んだのか、疑問に思い始める。"
+
+#: src-en/data/events_special_guards.xml.append:123
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[1]/text"
+msgstr "「Bam」を選ぶ。"
+
+#: src-en/data/events_special_guards.xml.append:125
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[1]/event/text"
+msgstr ""
+"「いつでも頼りになるぜ。『迷ったら、バラバラになるまで大きな穴を開けろ』、これが不変の真理だ。」ガードは座標を送信し、答える間もなく即座に通信を切る。"
+
+#: src-en/data/events_special_guards.xml.append:133
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[1]/event/choice[1]/text"
+msgstr "ストレージを確認する。"
+
+#: src-en/data/events_special_guards.xml.append:137
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[1]/event/choice[2]/text"
+msgstr "何もしない。"
+
+#: src-en/data/events_special_guards.xml.append:143
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[2]/text"
+msgstr "「Punk」を選ぶ。"
+
+#: src-en/data/events_special_guards.xml.append:145
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[2]/event/text"
+msgstr "「タイムリーな選択だな、新しい精巧な殺傷装備やナードなものが手に入ると聞いた。」ガードは座標を送信し、答える間もなく即座に通信を切る。"
+
+#: src-en/data/events_special_guards.xml.append:151
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[2]/event/choice[1]/text"
+msgstr "ストレージを確認する。"
+
+#: src-en/data/events_special_guards.xml.append:155
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[2]/event/choice[2]/text"
+msgstr "何もしない。"
+
+#: src-en/data/events_special_guards.xml.append:161
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[3]/text"
+msgstr "「Scorch」を選ぶ。"
+
+#: src-en/data/events_special_guards.xml.append:163
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[3]/event/text"
+msgstr "「熱いものをお探しというわけか。」ガードは座標を送信し、答える間もなく即座に通信を切る。"
+
+#: src-en/data/events_special_guards.xml.append:169
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[3]/event/choice[1]/text"
+msgstr "ストレージを確認する。"
+
+#: src-en/data/events_special_guards.xml.append:173
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[3]/event/choice[2]/text"
+msgstr "何もしない。"
+
+#: src-en/data/events_special_guards.xml.append:181
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[2]/text"
+msgstr "全くもって違う。"
+
+#: src-en/data/events_special_guards.xml.append:183
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[2]/event/text"
+msgstr ""
+"ガードは顔をしかめる。「どうやってここに来たのかは知らんが、ここは観光客の来る場所じゃない。寄り道をせずに出口へ向かえ、そうすれば問題は起きない。」ガードが「またセキュリティを強化しないとな」と呟くのが聞こえ、通信が切れる。次の到着客の対応に追われているようだ。\n"
+"\n"
+"混乱と少しの不安を抱えながら、先へ進む。"
+
+#: src-en/data/events_special_guards.xml.append:187
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[2]/event/choice[1]/text"
+msgstr "ストレージを確認する。"
+
+#: src-en/data/events_special_guards.xml.append:191
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[2]/event/choice[2]/text"
+msgstr "何もしない。"
+
+#: src-en/data/events_special_guards.xml.append:200
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[4]/text"
+msgstr "ここが海賊の隠れ家だよな？商売に来たんだ。 *ペッ*"
+
+#: src-en/data/events_special_guards.xml.append:202
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[4]/event/text"
+msgstr ""
+"「ああ。」ガードは少しうんざりした様子だ。毎回説明するのに疲れたのか、あなたの芝居がかった態度に感銘を受けていないのか。「少し勘違いしているようだが、海賊行為が我々の焦点じゃない。束縛されない進歩こそがそれだ。だがまあ、他者が違法と呼ぶ取引をここで行うことはできる。我々に必要なものを調達するのには非常に便利だ。\n"
+"興味のあるすべての当事者に伝えておこう。それと、確実な量のスクラップを持ってこいよ。不必要な揉め事は避けたいんだ。」\n"
+"彼らは座標を送って通してくれる。この宙域の秘密にもかかわらず、これがあなたの全体的な評判に悪影響を与えることはすでにわかる。もっとも、必要なものをすべて自分で、あるいは海賊から調達できるなら問題ないが。"
+
+#: src-en/data/events_special_guards.xml.append:214
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[4]/event/choice/text"
+msgstr "海賊行為って最高だな。やる価値あるわ。"
+
+#: src-en/data/events_special_guards.xml.append:222
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/text"
+msgstr "無視して通り過ぎようとする。"
+
+#: src-en/data/events_special_guards.xml.append:224
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/event/text"
+msgstr ""
+"彼らの武器が即座に起動する。明らかにこれを予期していた。数言交わすだけで避けられたはずだが、すでに増援を呼んでいる。\n"
+"驚いたことに、彼らの船のO2システムから出火したようだ…"
+
+#: src-en/data/events_special_guards.xml.append:234
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/event/choice/text"
+msgstr "ハッ！なんてバカ…"
+
+#: src-en/data/events_special_guards.xml.append:236
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/event/choice/event/text"
+msgstr ""
+"突然、船内で奇妙なテレポート音が聞こえるが、侵入者は検知できない。熱源反応だけだ…船も出火している！奴らの船よりも激しく。\n"
+"生き延びることができれば、何が起きたのか、どうすればそれを活かせるのかわかるかもしれない。"
+
+#: src-en/data/events_special_guards.xml.append:245
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/event/choice/event/choice/text"
+msgstr "次へ…"
+
+#: src-en/data/events_special_guards.xml.append:269
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DESTROY\"]/text"
+msgstr "RadiKalのガードを撃破した。貨物にあったものは確実に破壊されたが、少なくとも船から物資を回収できる。"
+
+#: src-en/data/events_special_guards.xml.append:272
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DESTROY\"]/choice/text"
+msgstr "次へ…"
+
+#: src-en/data/events_special_guards.xml.append:277
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/text"
+msgstr "RadiKalのガードを撃破した。船内にクルーがいないので、貨物を調査できる。船に持ち帰れる戦利品を見つけ、船体をスクラップにする。"
+
+#: src-en/data/events_special_guards.xml.append:283
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/choice/text"
+msgstr "次へ…"
+
+#: src-en/data/events_special_guards.xml.append:285
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/choice/event/text"
+msgstr "予備のRadiKal装備を見つけた！"
+
+#: src-en/data/events_special_guards.xml.append:288
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/choice/event/choice/text"
+msgstr "次へ…"
+
+#: src-en/data/events_special_guards.xml.append:310
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_FOLLOWUP\"]/text"
+msgstr "RadiKalのガードを殺したことで、奴らがあなたを追跡するために増援を差し向けたことは疑いようがない。宙域を探索する際は足元に注意しろ。"
+
+#: src-en/data/events_special_guards.xml.append:318
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_FOLLOWUP\"]/choice[1]/text"
+msgstr "船内で何か作業をする。"
+
+#: src-en/data/events_special_guards.xml.append:322
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_FOLLOWUP\"]/choice[2]/text"
+msgstr "何もしない。"
+
+#: src-en/data/events_special_guards.xml.append:331
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/beaconType/unvisitedTooltip"
+msgstr "未訪問の場所。"
+
+#: src-en/data/events_special_guards.xml.append:332
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/beaconType/visitedTooltip"
+msgstr "探索済みの場所。興味深いものは何もない。"
+
+#: src-en/data/events_special_guards.xml.append:333
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/beaconType/undiscoveredTooltip"
+msgstr "未訪問の場所。"
+
+#: src-en/data/events_special_guards.xml.append:335
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/text"
+msgstr "「誰かがガードにならなければならない。奴らは仕事をしていて、リスクも承知だった。だが、お前もな！」RadiKalの船が攻撃してくる！"
+
+#: src-en/data/events_special_guards.xml.append:339
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/choice/text"
+msgstr "次へ…"
+
+#: src-en/data/events_special_guards.xml.append:347
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/beaconType/unvisitedTooltip"
+msgstr "未訪問の場所。"
+
+#: src-en/data/events_special_guards.xml.append:348
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/beaconType/visitedTooltip"
+msgstr "探索済みの場所。興味深いものは何もない。"
+
+#: src-en/data/events_special_guards.xml.append:349
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/beaconType/undiscoveredTooltip"
+msgstr "未訪問の場所。"
+
+#: src-en/data/events_special_guards.xml.append:351
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/text"
+msgstr "「誰かがガードにならなければならない、奴らは仕事をしていてリスクも承知だった。だが、お前もな！」RadiKalの船が攻撃してくる！"
+
+#: src-en/data/events_special_guards.xml.append:357
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/choice/text"
+msgstr "次へ…"
