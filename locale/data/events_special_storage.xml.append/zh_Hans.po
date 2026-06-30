@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-06-30 19:43+0000\n"
-"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/radikal-sector/dataevents_special_storagexmlappend/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -513,6 +513,7 @@ msgid ""
 msgstr "……在你自己的飞船上产生了这个结果（80% 几率良好）。"
 
 #: src-en/data/events_special_storage.xml.append:1153
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_6DMG_BREACH_1DMG_BREACH\"]/text"
 msgstr "你以满功率猛撞敌舰，造成了巨大的 6 点伤害……"
@@ -523,6 +524,7 @@ msgid ""
 msgstr "……在你自己的飞船上产生了这个结果（80% 几率良好）。"
 
 #: src-en/data/events_special_storage.xml.append:1163
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_5DMG_BREACH_2DMG_BREACH\"]/text"
 msgstr "你以满功率猛撞敌舰，造成了巨大的 6 点伤害……"
@@ -1868,6 +1870,7 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:4129
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"DJMOD_HAS_CREW_ARE_BOMBS_AND_CREW\"]/event/text"
 msgstr "为了更伟大的事业，船员被牺牲，强行激活了增强部件！"
@@ -1888,6 +1891,7 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:4148
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"DJMOD_HAS_DEATH_VESTS_AND_CREW\"]/event/text"
 msgstr "为了更伟大的事业，船员被牺牲，强行激活了增强部件！"
@@ -1993,6 +1997,7 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:4253
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"rk_fireghost\"]/event/text"
 msgstr "为了更伟大的事业，船员被牺牲，强行激活了增强部件！"
@@ -2640,14 +2645,20 @@ msgid ""
 msgstr "你决定什么都不做，准备战斗。"
 
 #: src-en/data/events_special_storage.xml.append:5087
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START\"]/text"
-msgstr "你开始入侵敌人的通讯系统。现在，努力活下去，同时不要对敌人的船体造成太大伤害……"
+msgstr ""
+"你开始入侵敌人的通讯系统。现在，努力活下去，同时不要对敌人的船体造成太大伤害…"
+"…"
 
 #: src-en/data/events_special_storage.xml.append:5093
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START\"]/triggeredEvent/triggeredEventBox/tooltip"
-msgstr "拖延叛军舰队的黑客攻击会在这一时长内成功或失败。若你造成 3 点船体伤害，则此过程取消。"
+msgstr ""
+"拖延叛军舰队的黑客攻击会在这一时长内成功或失败。若你造成 3 点船体伤害，则此过"
+"程取消。"
 
 #: src-en/data/events_special_storage.xml.append:5103
 msgid ""
@@ -2665,14 +2676,20 @@ msgid ""
 msgstr "让我们看看它是否奏效了……"
 
 #: src-en/data/events_special_storage.xml.append:5152
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS1\"]/text"
-msgstr "你开始入侵敌人的通讯系统。现在，努力活下去，同时不要对敌人的船体造成太大伤害……"
+msgstr ""
+"你开始入侵敌人的通讯系统。现在，努力活下去，同时不要对敌人的船体造成太大伤害…"
+"…"
 
 #: src-en/data/events_special_storage.xml.append:5158
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS1\"]/triggeredEvent/triggeredEventBox/tooltip"
-msgstr "拖延叛军舰队的黑客攻击会在这一时长内成功或失败。若你造成 3 点船体伤害，则此过程取消。"
+msgstr ""
+"拖延叛军舰队的黑客攻击会在这一时长内成功或失败。若你造成 3 点船体伤害，则此过"
+"程取消。"
 
 #: src-en/data/events_special_storage.xml.append:5168
 msgid ""
@@ -2690,14 +2707,20 @@ msgid ""
 msgstr "让我们看看它是否奏效了……"
 
 #: src-en/data/events_special_storage.xml.append:5218
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS2\"]/text"
-msgstr "你开始入侵敌人的通讯系统。现在，努力活下去，同时不要对敌人的船体造成太大伤害……"
+msgstr ""
+"你开始入侵敌人的通讯系统。现在，努力活下去，同时不要对敌人的船体造成太大伤害…"
+"…"
 
 #: src-en/data/events_special_storage.xml.append:5224
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS2\"]/triggeredEvent/triggeredEventBox/tooltip"
-msgstr "拖延叛军舰队的黑客攻击会在这一时长内成功或失败。若你造成 3 点船体伤害，则此过程取消。"
+msgstr ""
+"拖延叛军舰队的黑客攻击会在这一时长内成功或失败。若你造成 3 点船体伤害，则此过"
+"程取消。"
 
 #: src-en/data/events_special_storage.xml.append:5234
 msgid ""
@@ -3685,6 +3708,7 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:7127
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CALIBRATOR\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
 " and @lvl=\"1\"]/text"
