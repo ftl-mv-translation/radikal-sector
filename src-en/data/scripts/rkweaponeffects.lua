@@ -250,8 +250,17 @@ end, 64) ]]
     local stackAugName = "RK_WEAPONS_ON_FIRE_TEMP"
     local comboAugName = "RK_SCORCH_PREIGNITER"
     if shipManager:HasAugmentation(augName) > 0 then
-        -- Chance fire - WORKS
+        -- Chance fire - WORKS.
+        -- Make it stack with >1 "Weapons On Fire": turns out shipManager:GetAugmentationValue(augName) ALREADY stacks,
+        -- most likely because the augment has <stackable>true</stackable>.
         if math.random() < shipManager:GetAugmentationValue(augName) then
+
+        --[[ local baseAugCount = shipManager:HasAugmentation(augName)
+        local realFireChance = shipManager:GetAugmentationValue(augName) * baseAugCount
+        print("baseAugCount:"..baseAugCount)
+        print("realFireChance:"..realFireChance)
+        if math.random() < realFireChance then ]]
+
             local roomId = shipManager.weaponSystem.roomId
             if roomId then
                 shipManager:StartFire(roomId)
@@ -295,6 +304,9 @@ end)
 -- REF: Lizzard's Variety: LV_RECOIL_MISSILES
 -- script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(shipManager, projectile, location, damage, shipFriendlyFire)
 script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(shipManager, projectile, location, damage, realNewTile, beamHitType)
+    
+    -- RK_FOCUS_FIRE aka "Hot Poker", Fireblast effect.
+    
     -- Antibug "Triggers exactly 5 times every shot no matter what."
     if beamHitType ~= Defines.BeamHit.NEW_ROOM then return Defines.Chain.CONTINUE, beamHitType end
     

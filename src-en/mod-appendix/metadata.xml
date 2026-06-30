@@ -15,7 +15,7 @@
 	<threadUrl><![CDATA[ https://ftlmultiverse.boards.net/thread/214/mv-radikal-sector-equipment-ships ]]></threadUrl>
 	<!-- Your forum user name. -->
 	<author><![CDATA[ Dj0z ]]></author>
-	<version><![CDATA[ 6.10f ]]></version>
+	<version><![CDATA[ 6.11n ]]></version>
 	<description>
 <![CDATA[
 (Patching order:
@@ -23,7 +23,7 @@
 -Forgotten Races above RK to avoid populating their stores.)
 
 An add-on for FTL: Multiverse v5.5.1, which adds a secret sector, multiple spicy augments (multi-ramming, extensive fire effects, special hacking, repair, internal...), including upgrades and combos!
-Also features a few weapons and 7 ships (6 unlockable) with specific gimmicks, and judge boons.
+Also features a few weapons and 8 ships (7 unlockable) with specific gimmicks, and judge boons.
 The general theme is powerful but potentially dangerous (to you) experimental tech. More content coming soon!
 
 ****** CONTENT ******
@@ -103,43 +103,35 @@ Plus a few secrets!
 
 
 ************ Changelog ******************
-CHANGELOG RadiKal Sector v6.10f "Hack-compatibility"
+CHANGELOG RadiKal Sector v6.11n
 
--Improved some texts. <credit: Cerebralcloud92>
+-Improved some texts.
+
+* Cruisers
+-"Scorcher":
+Now has a layout C! (Win with layout B)
+Layout A's Flammabilizer now starts in "Damage" mode.
 
 * Augments
--"Enigmashin":
-The "???" outcome: now gives 1 delay still, just not more.
-Fixed ECM Suite from add-on "Lily's Innovations" not being cleared at the end of hack delays. <credit: Mr. Do>
+-New rare and powerful augment: BPS "Shield Over Matter"!
 -A certain enemy:
-Purchased better antennas to also limit Mind Control, Ablative Armor (from add-on "Lily's Innovations"), Auxiliary Shields (from add-on "The Outer Expansion"), Corruptor (from add-on "Darkest Desire"), and Turret Control (from add-on "The Old Guard").
-No longer limits Piloting by default.
-Reaction comes slightly sooner. In theory that reaction also had a chance to never happen, which should be fixed now. It also now limits Piloting by 1 (was 2).
-Baseline reward was increased, and another round of reward that cannot give items was added. This other round lets you choose between the previously guaranteed item drop, and a new powerful exclusive augment!
--"Offense Disabler":
-Now supports systems from add-ons "Darkest Desire" and "The Old Guard"!
-Fixed description saying the complete disable lasted 5 seconds, while it really lasts 6.
--"Flammabilizer":
-Both toggles now have a faint overhead debuff visual so it's easier to tell they're active.
-Nerfed the "Damage" toggle to 160% +60%  per power in O2 (was 175% +75%).
-Fixed the slowing effect common to both toggles being able to stack when you have both at once, as that was never intended and grossly overpowered. <credit: prophet_of_the_grand_schnitzel>
--"Scorched Earth" series:
-Now supports systems from add-ons "Darkest Desire", "The Old Guard" and "The Outer Expansion"!
+Reduced minimum crew by 4, increased maximum crew by 8, added a crew type, and slightly changed crew type probabilities.
+Increased maximum Medbay, Shields and Weapons power by 1.
+Reduced minimum Shields power by 1.
+Replaced its missile launcher by a Hydra.
+-"H.A.C.": fixed it not counting as RK Punk gear for relevant checks. <credit: Mr. Do>
+-"Weapons On Fire": increased chance of fire to 15% (was 10%).
 
 * Weapons
--New RK Punk "Battery Artemis". Does what you think. <idea: Cerebralcloud92>
--"Heavy Popper MK II": Shooting animation length increased to 0.45 seconds (was 0.25) for more "oomph". Skilled users might exploit that to optimize shield removal in tandem with other weapons.
-
-* The RadiKal Sector
--"RK Punk Auto-Depopulator":
-Now has a much more consistent weapon loadout. <credit: Cerebralcloud92>
-Lower minimum Weapons power.
-Now has and can use 4 weapons in later sectors.
-Modified one of the rewards you can choose from.
-Probably reduced chance of a bug where it would sometimes use Gravespred like a pinpoint, by modifying its AI targeting.
--Added the option to take nothing from RK enemies that give a choice of gear on defeat. Might be useful for speedrunning or challenges, idk.
-
-HOTFIX v6.10f: Fixed Gravespred cooldown being 5s instead of 11s. That was for faster testing, forgot to revert. Whoops.
+-"Battery Artemis": Fixed it visually shooting backwards when used by enemies, by disabling its enhanced targeting.
+-"Shotphaser": <credit: Cat that is an engineer, MagPak, slow, Jelly, bilaterus the platypus>
+Radius increased again, now 50 (more than Flak 2, less than Trion).
+Cooldown increased again to 16s (was 14). Now equal to the slowest MV ion.
+Stun chance reduced to 50% (was 60).
+Cost increased to 80 (was 70).
+-"Hot Poker":
+System damage reduced to 3 (was 4).
+Cooldown reduced to 10s (was 14).
 
 
 Special thanks to (in no particular order) Wooden Bench Acolyte, Mr Do, Waffle, Cerebralcloud92, dirt block, aktoja, Harmony, Fajdek, Aleev, Zuggo, LoudMute, Arc, Lizzard, codyfun, Qaser7, bamalf, Dr. Nauter, Witherbottom, Chooseche, Eschaton, Pepper, Untitled, Pupi, vertaalfout, Dalvest, Alder, Kix, [Enchanter], Pedrosian96, Royal Slime, [yenlo]R4V3-0N, robinthedragon2, Ehtya (Laythe), Blizz/mr_easy_money, Skye[NikoMaster], Julk, Felipe, marcrusian, Abstrusity and other people who helped on the FTL:MV Discord, for streaming the mod, and valuable information on balance, modding, coding and art.

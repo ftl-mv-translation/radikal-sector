@@ -205,11 +205,13 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
     <!-- FUSION-INDEPENDENCE LINES (part 1/2) for custom fires by codyfun - MUST REMAIN AT THE TOP of this block! -->
     <mod-append:script>data/addon_common/fire_common.lua</mod-append:script>
 
+	<mod-append:script>data/scripts/rk-core.lua</mod-append:script>
     <mod-append:script>data/scripts/djmodatmosphereappend.lua</mod-append:script>
     <mod-append:script>data/scripts/rkaugmenteffects.lua</mod-append:script>
     <mod-append:script>data/scripts/rkcreweffects.lua</mod-append:script>
     <mod-append:script>data/scripts/rkeventeffects.lua</mod-append:script>
 	<mod-append:script>data/scripts/rkweaponeffects.lua</mod-append:script>
+	<mod-append:script>data/scripts/rk-shield-over-matter.lua</mod-append:script>
 
     <!-- FUSION-INDEPENDENCE LINES (part 2/2) for custom fires by codyfun - MUST REMAIN AT THE BOTTOM of this block! -->
     <mod:findLike type="script" start="1" limit="1">
@@ -353,7 +355,7 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
 	</mod-append:customShip>
 	
 
-	<mod-append:ship name="PLAYER_SHIP_RK_SCORCHER" a="true" b="true" c="false" secret="true">
+	<mod-append:ship name="PLAYER_SHIP_RK_SCORCHER" a="true" b="true" c="true" secret="true">
 	<splitVictoryAchievement>true</splitVictoryAchievement>
 		<unlock variant="a" silent="false">
             <type>5</type>
@@ -367,6 +369,14 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
             <type>5</type>
             <victories>
 				<victory>PLAYER_SHIP_RK_SCORCHER</victory>
+			</victories>
+			<silent/>
+        </unlock>
+		
+		<unlock variant="c" silent="false">
+            <type>5</type>
+            <victories>
+				<victory>PLAYER_SHIP_RK_SCORCHER_2</victory>
 			</victories>
 			<silent/>
         </unlock>
@@ -397,6 +407,28 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
 			<engi_separatist_nano room="0" name="Concierge"/>  						<!-- weapons -->
 		</crew>
 		<systemLimit>9</systemLimit>
+	</mod-append:customShip>
+	<mod-append:customShip name="PLAYER_SHIP_RK_SCORCHER_3">
+		<hiddenAug>SHIP_RK</hiddenAug>
+		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+		<hiddenAug>IS_RK_SCORCH_GEAR</hiddenAug>
+		<crewLimit>10</crewLimit>
+		<crew>
+			<human_rebel_medic room="6" name="Druidess"/>  							<!-- pilot -->
+			<human_technician room="12" name="Summoner"/>  			<!-- engines -->
+			<human_legion_pyro room="11" name="Paladin"/>  		<!-- shields -->
+			<rk_fireghost room="0" name="Fire Mage"/>  			<!-- weapons -->
+			<zoltan_infernum room="0" name="Rogue"/>  			<!-- ENABLES weapons before 2nd weapon -->
+		</crew>
+		<rooms>
+			<room id="0"> <!--weapons-->
+				<roomAnim renderLayer="0">ionresist_2x3</roomAnim>
+                <roomAnim renderLayer="3">ionresist_icon</roomAnim>
+				<sysDamageResistChance>100</sysDamageResistChance>
+				<ionDamageResistChance>100</ionDamageResistChance>
+			</room>
+		</rooms>
+		<systemLimit>10</systemLimit>
 	</mod-append:customShip>
 
 	<mod-append:ship name="PLAYER_SHIP_DJMOD_SCORCH" b="false" c="false" secret="true">
@@ -708,7 +740,7 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
 			<name>rk_icon_choking_is_fine</name>
 			<tooltip>CHOKING F.I.N.E.:
 			This ship's crew take 0.75x suffocation damage.
-			While suffocating, they move, sabotage, repair and fight 1.5x better.</tooltip>
+			While suffocating, they move, sabotage, repair and fight 1.5x better. Suffocation immune can't suffocate.</tooltip>
 		</mod-append:shipIcon>
 	</mod:findLike>
 	
@@ -2744,8 +2776,9 @@ For unique sector 'membership' and other gear checks like Judges.
 </req>
 <req name="DJMOD_HAS_RADIKAL_PUNK_EQUIPMENT" type="any">
     <name>RK_ARROGANCE_SHIELD</name>
-    <name>RK_COMBAT_HACK_FLEET</name>
+    <name>RK_COMBAT_ACE_CONSOLE</name>
 	<name>RK_COMBAT_DEFENSE_REMOVER</name>
+    <name>RK_COMBAT_HACK_FLEET</name>
 	<name>RK_COMBAT_OFFENSE_DISABLER</name>
 	<name>RK_DREAD_DECK</name>
 	<name>RK_OWN_HARMONY_ANY</name>
@@ -2793,7 +2826,9 @@ For unique sector 'membership' and other gear checks like Judges.
 </req>
 
 <req name="RK_HAS_BPS_EQUIPMENT" type="any">
+	<name>RK_BPS_SHIELD_OVER_MATTER</name>
 	<name>RK_BPS_SURVEYOR</name>
+
 	<name>DJMOD_LASER_BPS</name>
 </req>
 
@@ -2807,6 +2842,7 @@ For unique sector 'membership' and other gear checks like Judges.
 	<name>EX_RK_CHOKING_IS_FINE</name>
 	
     <name>RK_ARROGANCE_SHIELD</name>
+    <name>RK_COMBAT_ACE_CONSOLE</name>
 	<name>RK_COMBAT_DEFENSE_REMOVER</name>
 	<name>RK_COMBAT_HACK_FLEET</name>
 	<name>RK_COMBAT_OFFENSE_DISABLER</name>
@@ -2825,6 +2861,9 @@ For unique sector 'membership' and other gear checks like Judges.
 	<name>RK_SCORCH_SELF_2</name>
 	<name>RK_SCORCH_SELF_3</name>
 	<name>RK_WEAPONS_ON_FIRE</name>
+	
+	<name>RK_BPS_SHIELD_OVER_MATTER</name>
+	<name>RK_BPS_SURVEYOR</name>
 
 	<name>DJMOD_BAM_FISSUREBEAM</name>
 	<name>RK_HEAVY_POPPER_2</name>
@@ -2839,8 +2878,7 @@ For unique sector 'membership' and other gear checks like Judges.
 	<name>RK_FOCUS_FIRE</name>
 	<name>RK_OXY_FIREFILL_MISSILES</name>
 	<name>DJMOD_RAIN_OF_FIRE</name>
-	
-	<name>RK_BPS_SURVEYOR</name>
+
 	<name>DJMOD_LASER_BPS</name>
 </req>
 
@@ -3159,7 +3197,12 @@ REFS: MV v5.5.1; The Outer Expansion for that MV (STORE_SYLVAN_AEA_WEAPONS)
             </item>    
         </category>
 		<category type="AUGMENTS">
-			<customTitle>BPS AUGMENT</customTitle>
+			<customTitle>BPS AUGMENTS</customTitle>
+            <item>
+                <blueprint>RK_BPS_SHIELD_OVER_MATTER</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>
             <item>
                 <blueprint>RK_BPS_SURVEYOR</blueprint>
                 <modifier min="0.8" max="1.1" flat="false"/>
@@ -8900,6 +8943,26 @@ plus any cloak-friendly/cloak-like augs. -->
 		<!-- intended: 0.01 -->
 		<function name="AUTO_COOLDOWN" value="0.01" useForReqs="false"/>
     </aug>
+
+	<!-- 
+	//////////////////////////////////////////////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////////////////////////////////////////////
+	////////////////		BPS augments 
+	//////////////////////////////////////////////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////////////////////////////////////////////
+	-->
+
+	<aug name="RK_BPS_SHIELD_OVER_MATTER">
+		<function name="ENERGY_SHIELD" value="0" useForReqs="true" warning="false"/>
+		<!-- <function name="SHIELD_RECHARGE" value="0.25" useForReqs="true" warning="false" /> -->
+		<superShield>
+			<value>10</value>		<!-- intended: 10 -->
+			<!-- <add>3</add> -->
+			<color r="150" g="175" b="150" a="1" />
+			<shieldImage>ship/enemy_shields_white.png</shieldImage>
+		</superShield>
+		<icon>rk_icon_persistence_shield</icon>
+	</aug>
 
 <!-- 
 [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[

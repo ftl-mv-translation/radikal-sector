@@ -80,6 +80,19 @@
 <roomLayout name="weapons_rk_6b">
 	<computerGlow x="40" y="54" dir="DOWN" />
 </roomLayout>
+<!-- scorcher C -->
+<roomLayout name="engines_9">
+	<computerGlow x="43" y="1" dir="UP" />
+</roomLayout>
+<roomLayout name="pilot_6">
+	<computerGlow name="glow_pilot" x="19" y="43" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="shields_6">
+	<computerGlow name="computer1_glow" x="-1" y="3" dir="LEFT" />
+</roomLayout>
+<roomLayout name="weapons_9">
+	<computerGlow x="40" y="0" dir="UP" />
+</roomLayout>
 
 <!-- beta Scorch -->
 <roomLayout name="engines_8">

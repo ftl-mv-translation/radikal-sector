@@ -233,6 +233,10 @@ REF MV v5.5.1: <transformRace class="leech">leech_ampere</transformRace>
 	<text>Debug aug.</text>
 	<augment name="EX_DJMOD_DEMICLONER"/>
 </event>
+<event name="RK_SOM">
+	<text>Debug aug.</text>
+	<augment name="RK_BPS_SHIELD_OVER_MATTER"/>
+</event>
 
 <event name="DJFLEET">
 	<text>Fleet stopped for testing.</text>
@@ -760,12 +764,12 @@ If used in eventList, list must have a non-unique option!-->
 										</event>
 									</choice>
 									<choice req="RK_SHOTPHASER" hidden="true">
-										<text>Sell them your Shotphaser shotgun for 105~.</text>
+										<text>Sell them your Shotphaser shotgun for 120~.</text>
 										<event>
 											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
 											<remove name="RK_SHOTPHASER"/>
 											<item_modify>
-												<item type="scrap" min="105" max="105"/>
+												<item type="scrap" min="120" max="120"/>
 											</item_modify>
 										</event>
 									</choice>
@@ -966,12 +970,12 @@ If used in eventList, list must have a non-unique option!-->
 										</event>
 									</choice>
 									<choice req="RK_SHOTPHASER" hidden="true">
-										<text>Sell them your Shotphaser shotgun for 105~.</text>
+										<text>Sell them your Shotphaser shotgun for 120~.</text>
 										<event>
 											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
 											<remove name="RK_SHOTPHASER"/>
 											<item_modify>
-												<item type="scrap" min="105" max="105"/>
+												<item type="scrap" min="120" max="120"/>
 											</item_modify>
 										</event>
 									</choice>

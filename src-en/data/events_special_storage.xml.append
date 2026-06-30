@@ -5537,7 +5537,7 @@ Now using eventList to prevent combat check activation + manual activation abuse
 		</choice>
 	</surrender>
 	<destroyed>
-		<text>The hacker MFK breaks apart and you quickly salvage what you can. You find very peculiar equipment!</text>
+		<text>The MFK Hacker breaks apart and you quickly salvage a great amount of things!</text>
 		<status type="clear" target="player" system="shields" amount="100"/>
 		<!-- Ablative Armor from mod Lily's Innovations, a Shields equivalent. -->
 		<status type="clear" target="player" system="lily_ablative_armor" amount="100"/>
@@ -5577,10 +5577,10 @@ Now using eventList to prevent combat check activation + manual activation abuse
 		<choice hidden="true">
 			<text>Continue...</text>
 			<event name="SHIP_RK_HACK_FLEET_BOSS_REWARD_CHOICES">
-				<text>With the ship defeated, you quickly salvage a great amount of things.
+				<text>As you finish scavenging, you find very peculiar equipment!
 					
-					Analyzing the wreck, you understand that an internal apparatus can let you extract equipment from the ship, but then everything will blow up.
-					Which one do you pick?</text>
+					Analyzing the wreck, you understand that an internal apparatus can let you extract something from the ship, but then everything will blow up.
+					What do you pick?</text>
 				<autoReward level="LOW">standard_no_item</autoReward>
 
 				<choice>
@@ -5617,7 +5617,7 @@ Now using eventList to prevent combat check activation + manual activation abuse
 		</choice>
 	</destroyed>
 	<deadCrew>
-		<text>With the crew dead you quickly salvage what you can from the hacker MFK ship. You find very peculiar equipment!</text>
+		<text>With the crew dead you quickly salvage a great amount of things from the MFK Hacker ship!</text>
 		<status type="clear" target="player" system="shields" amount="100"/>
 		<!-- Ablative Armor from mod Lily's Innovations, a Shields equivalent. -->
 		<status type="clear" target="player" system="lily_ablative_armor" amount="100"/>
@@ -5661,9 +5661,10 @@ Now using eventList to prevent combat check activation + manual activation abuse
 	</deadCrew>
 
 	<crew>
-		<crewMember type="human_mfk" prop="0.3"/>
 		<crewMember type="human_legion" prop="0.2"/>
-		<crewMember type="human_soldier" prop="0.2"/>
+		<crewMember type="human_mfk" prop="0.2"/>
+		<crewMember type="human_soldier" prop="0.1"/>
+		<crewMember type="human_rebel_medic" prop="0.2"/>
 		<crewMember type="human_engineer" prop="0.1"/>
 		<crewMember type="human_technician" prop="0.2"/>
 	</crew>
@@ -7013,7 +7014,7 @@ REFS Darkest Desires for MV 5.5.1
 
 	<choice req="INTERNAL_RK_CHOKING_IS_FINE" lvl="1" blue="false" hidden="true">
 		<text>RK Bam "Choking F.I.N.E.": Your crew take 0.75x suffocation damage.
-		While suffocating, they move, sabotage, repair and fight 1.5x better. [ALREADY INSTALLED]</text>
+		While suffocating, they move, sabotage, repair and fight 1.5x better. Suffocation immune can't suffocate. [ALREADY INSTALLED]</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
 	<choice req="INTERNAL_RK_CHOKING_IS_FINE" lvl="0" max_lvl="0" blue="false" hidden="true">
@@ -7150,7 +7151,7 @@ REFS Darkest Desires for MV 5.5.1
 <event name="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE">
 	<text>You are about to install the Choking F.I.N.E. upgrade.
 	[Effects: Your crew take 0.75x suffocation damage.
-		While suffocating, they move, sabotage, repair and fight 1.5x better.]</text>
+		While suffocating, they move, sabotage, repair and fight 1.5x better. Suffocation immune can't suffocate.]</text>
 
 	<choice req="EX_RK_CHOKING_IS_FINE" blue="true" hidden="true">
 		<text>Install the External Augment internally.</text>

@@ -651,13 +651,13 @@ The first one allows widespread own ship fire control (removal and creation) and
 <augBlueprint name="RK_WEAPONS_ON_FIRE">
 	<title>Weapons On Fire</title>
 	<desc>(RK Scorch gear) The fire rate of your Weapons and Artilleries is improved by 25%.
-		Gain an extra 1% fire rate every time they shoot a projectile or beam (up to 10%), but at the same time there's a [style[color:ff3377]]10% chance to light a fire in your Weapon Control and any Artillery rooms[[/style]].
+		Gain an extra 1% fire rate every time they shoot a projectile or beam (up to 10% - does not stack with multiple Weapons On Fire), but at the same time there's a [style[color:ff3377]]15% chance to light a fire in your Weapon Control and any Artillery rooms[[/style]].
 		The extra bonus is reset on jump.
 
 		COMBO: Scorch Preigniter increases the maximum extra bonus to 20%</desc>
 	<cost>135</cost>
 	<rarity>5</rarity>
-	<value>0.1</value>		<!-- Chance of fire. -->
+	<value>0.15</value>		<!-- Chance of fire. intended: 0.15 -->
 	<stackable>true</stackable>
 </augBlueprint>
 <augBlueprint name="RK_WEAPONS_ON_FIRE_TEMP">
@@ -670,10 +670,12 @@ The first one allows widespread own ship fire control (removal and creation) and
 </FTL>
 
 <!-- 
-=======================
+=====================================================================
+=====================================================================
 RadiKal Bam+Punk+Scorch ( = BPS)
-=======================
- -->
+=====================================================================
+=====================================================================
+-->
 
 <FTL>
 
@@ -685,6 +687,17 @@ RadiKal Bam+Punk+Scorch ( = BPS)
 	</desc>
     <cost>40</cost>
     <rarity>4</rarity>
+    <stackable>false</stackable>
+</augBlueprint>
+
+<augBlueprint name="RK_BPS_SHIELD_OVER_MATTER">
+    <title>Shield Over Matter</title>
+    <desc>(RK BPS gear) Provides an Energy Shield with an integrity of 10 hitpoints. (Does not stack with itself or other non-stacking Energy Shields)
+		
+		Whenever you take hull damage, it has a 50% chance to restore 1 layer of Energy Shields but when that happens, [style[color:ff3377]]the room that was hit catches fire (on top of any fire chance from the weapon that did the damage)[[/style]].</desc>
+    <cost>200</cost>
+    <rarity>5</rarity>
+	<value>0.5</value>		<!-- Chance of re-shield. intended: 0.5 -->
     <stackable>false</stackable>
 </augBlueprint>
 
@@ -870,7 +883,7 @@ REF Darkest Desires for MV 5.5.1:
     <desc>(RK Bam gear) Outlawed in many places like most of RK gear, the "Choking Fetish-Inducing Neural Entrancers" are often in-demand.
 		
 		Your crew take 0.75x suffocation damage.
-		While suffocating, they move, sabotage, repair and fight 1.5x better.
+		While suffocating, they move, sabotage, repair and fight 1.5x better. Suffocation immune can't suffocate.
 		
 	[X] - As an external system upgrade, this augment will provide its normal effect but take up an augment slot. Can be converted for free to the internal version under the internal upgrade menu.
 	Does not stack with itself, but stacks with the internal version...</desc>
@@ -883,7 +896,7 @@ REF Darkest Desires for MV 5.5.1:
     <desc>(RK Bam gear) Outlawed in many places like most of RK gear, the "Choking Fetish-Inducing Neural Entrancers" are often in-demand.
 		
 		Your crew take 0.75x suffocation damage.
-		While suffocating, they move, sabotage, repair and fight 1.5x better.</desc>
+		While suffocating, they move, sabotage, repair and fight 1.5x better. Suffocation immune can't suffocate.</desc>
     <cost>0</cost>		
     <rarity>0</rarity>
     <stackable>false</stackable>
@@ -1571,7 +1584,7 @@ Shield Piercing: 2</tooltipOverride>
 	<desc>(RK Punk gear) The classic Artemis improved to provide power, at the cost of some performance.</desc>
 	<tip>RK_lore_RK_MISSLAUNCHER_2_BATTERY</tip>
 
-	<mv-aiSystemTarget system="engines"/>
+	<!-- <mv-aiSystemTarget system="engines"/>		FIXES WONKY TRAJECTORY? -->
 	<damage>2</damage>
 	<missiles>1</missiles>
 	<speed>50</speed>
@@ -1779,7 +1792,7 @@ Targeting specific systems, even has conditions:
 	<!-- <tooltip>Fires all 6 common ions in a radius; Cooldown 12 seconds.</tooltip>	Tooltips don't show with a <tip> set -->
 	<tip>lore_RK_RAIN_OF_ION</tip>
 
-	<radius>55</radius>
+	<radius>55</radius>			<!-- REFS: Flak 2 = 45, Trion = 60 -->
 	<damage>0</damage>
 	<ion>1</ion>
     <mv-aiSystemTarget system="weapons"/>
@@ -1792,6 +1805,8 @@ Targeting specific systems, even has conditions:
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
 	<stunChance>0</stunChance>
+	<!-- REFS: Ion Charger II 3.75s (1-4dmg), Trion 11s (3dmg), Adaptive ion 13s (1->5dmg), 
+	 Heavy ion 15s (3dmg) Heavy Stunner 16s (3dmg) -->
 	<cooldown>16</cooldown>
 	<power>4</power>
 	<cost>120</cost>
@@ -1846,11 +1861,11 @@ Targeting specific systems, even has conditions:
 	<short>Shotphaser</short>
 	<tip>tip_phase</tip>
 	<locked>1</locked>			<!-- what's that? -->
-	<desc>(RK Punk gear) This shotgun fires 3 greatly accelerated phase ions in a radius, with a high chance to stun.
+	<desc>(RK Punk gear) This shotgun fires 3 greatly accelerated phase ions in a radius, with decent chance to stun.
 		Phasers pierce shields, dealing ion damage for the first layer of shields, as well as additional damage to whatever system hit.</desc>
 	<tip>lore_RK_SHOTPHASER</tip>
 
-	<radius>40</radius>
+	<radius>50</radius>			<!-- REFS: Flak 2 = 45, Trion = 60 -->
 	<damage>0</damage>
 	<ion>1</ion>
 	<mv-aiSystemTarget system="any"/>
@@ -1861,10 +1876,12 @@ Targeting specific systems, even has conditions:
 	<sp>10</sp>
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
-	<stunChance>6</stunChance>
-	<cooldown>14</cooldown>
+	<stunChance>5</stunChance>
+	<!-- REFS: Ion Charger II 3.75s (1-4dmg), Trion 11s (3dmg), Adaptive ion 13s (1->5dmg), 
+	 Heavy ion 15s (3dmg) Heavy Stunner 16s (3dmg) -->
+	<cooldown>16</cooldown>
 	<power>2</power>
-	<cost>70</cost>
+	<cost>80</cost>
 	<bp>3</bp>
 	<rarity>4</rarity>
 
@@ -2127,14 +2144,14 @@ Targeting specific systems, even has conditions:
 		On top of system damage, sets the room fully on fire. [Fireblast: If the room hit was on fire, adjacent rooms (diagonals included) take: 1 system and 15 crew damage, and a fire. Don't hit your boarders!]</desc>
 	<tip>RK_lore_RK_FOCUS_FIRE</tip>
 	<damage>0</damage>
-	<sysDamage>4</sysDamage>
+	<sysDamage>3</sysDamage>
 	<persDamage>2</persDamage>
-	<sp>0</sp>
+	<sp>0</sp>						<!-- Increasing this will LEAVE PIERCE AT 0! -->
 	<fireChance>10</fireChance>
 	<breachChance>0</breachChance>
 
 	<mv-aiSystemTarget system="any"/>
-	<cooldown>14</cooldown>
+	<cooldown>10</cooldown>			<!-- REFS: LASER_PARTICLE 13s (3dmg/1pow), LASER_PARTICLE_2 15s (5dmg/2pow) -->
 
 	<color>
 		<r>255</r>
@@ -2977,7 +2994,7 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 	<health amount="25" />
 	<maxPower amount="8" />
 	<aug name="RK_SCORCH_SELF" />
-	<aug name="RK_ENEMIES_CAN_BURN" />
+	<aug name="RK_ENEMIES_BURN_MORE" />
 </shipBlueprint>
 
 <shipBlueprint name="PLAYER_SHIP_RK_SCORCHER_2" layout="rk_scorcher_b" img="rk_scorcher_b">
@@ -3045,7 +3062,6 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 	<weaponSlots>2</weaponSlots>
 	<droneSlots>3</droneSlots>
 	<weaponList missiles="0" count="2">
-		<!-- <weapon name="RK_BOMBLAUNCHER_OXYBOTTLE" /> 	for Layout C -->
 		<weapon name="LASER_FIRE_PLAYER" />
 	</weaponList>
 	<droneList drones="6" count="3">
@@ -3055,6 +3071,79 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 	<maxPower amount="8" />
 	<aug name="RK_SCORCH_SELF_2" />
 	<aug name="EX_BACKUP_DNA" />
+</shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_RK_SCORCHER_3" layout="rk_scorcher_c" img="rk_scorcher_c">
+	<class>RadiKal Scorch Cruiser</class>
+	<name>Air Phoenix</name>
+	<unlock id="ship_PLAYER_SHIP_RK_SCORCHER_3_unlock"/>
+	<desc>An assistant said "Why can't this have an Oxygen system? Ship looks like it needs to jump or fall apart real quick. And don't you think that bird is a bit MFK-like?" Their body was never found. Max Weapons power: 10.</desc>
+	<systemList>
+		<artillery power="1" max="4" room="18" start="true" weapon="DJMOD_ARTILLERY_MISSILE_FIRE" img="room_artillery_6" />
+		<battery power="1" room="17" start="false" img="room_battery_3" />
+		<cloaking power="1" room="1" start="true" img="room_cloaking" />
+		<clonebay power="1" room="16" start="false">
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="3" start="true" img="room_doors">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="1" max="8" room="15" start="false" img="room_drones" />
+		<engines power="1" room="12" start="true" img="room_engines_9">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="20" start="false" img="room_hacking_9" />
+		<medbay power="1" room="16" start="false" img="room_medbay_4">
+			<slot>
+				<number>0</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="5" start="false" img="room_mind_4" />
+		<pilot power="1" room="6" start="true" img="room_pilot_6">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="4" start="false" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="8" room="11" start="true" img="room_shields_6">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="2" start="true" />
+		<temporal power="1" room="19" start="true" img="room_temporal_3" />
+		<weapons power="2" max="10" room="0" start="true" img="room_weapons_9">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="20" count="4">
+		<weapon name="RK_BOMBLAUNCHER_OXYBOTTLE" />
+	</weaponList>
+	<droneList drones="0" count="2" />
+	<health amount="25" />
+	<maxPower amount="7" />
+	<aug name="RK_ENEMIES_CAN_BURN" />
+	<aug name="RK_SCORCH_PREIGNITER" />
 </shipBlueprint>
 
 
