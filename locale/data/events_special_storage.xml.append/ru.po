@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-06-30 19:44+0000\n"
-"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "dataevents_special_storagexmlappend/ru/>\n"
 "Language: ru\n"
@@ -236,6 +236,7 @@ msgid ""
 msgstr "(Заряженные пояса) Разобрать его."
 
 #: src-en/data/events_special_storage.xml.append:691
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[19]/mod-"
 "append:choice/text"
@@ -537,6 +538,7 @@ msgid ""
 msgstr "...тоже самое происходит и на вашем корабле (шанс на успех 80%)."
 
 #: src-en/data/events_special_storage.xml.append:1153
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_6DMG_BREACH_1DMG_BREACH\"]/text"
 msgstr ""
@@ -549,6 +551,7 @@ msgid ""
 msgstr "...тоже самое происходит и на вашем корабле (шанс на успех 80%)."
 
 #: src-en/data/events_special_storage.xml.append:1163
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_5DMG_BREACH_2DMG_BREACH\"]/text"
 msgstr ""
@@ -1977,10 +1980,10 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:4129
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"DJMOD_HAS_CREW_ARE_BOMBS_AND_CREW\"]/event/text"
-msgstr ""
-"Член экипажа жертвует собой ради общего блага, мощно активируя модуль!"
+msgstr "Член экипажа жертвует собой ради общего блага, мощно активируя модуль!"
 
 #: src-en/data/events_special_storage.xml.append:4136
 msgid ""
@@ -1998,10 +2001,10 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:4148
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"DJMOD_HAS_DEATH_VESTS_AND_CREW\"]/event/text"
-msgstr ""
-"Член экипажа жертвует собой ради общего блага, мощно активируя модуль!"
+msgstr "Член экипажа жертвует собой ради общего блага, мощно активируя модуль!"
 
 #: src-en/data/events_special_storage.xml.append:4155
 msgid ""
@@ -2107,10 +2110,10 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:4253
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"rk_fireghost\"]/event/text"
-msgstr ""
-"Член экипажа жертвует собой ради общего блага, мощно активируя модуль!"
+msgstr "Член экипажа жертвует собой ради общего блага, мощно активируя модуль!"
 
 #: src-en/data/events_special_storage.xml.append:4260
 msgid ""
@@ -2306,6 +2309,7 @@ msgid ""
 msgstr "Случайный золтан-Монах"
 
 #: src-en/data/events_special_storage.xml.append:4434
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_monk\"]/event/text"
 msgstr ""
@@ -2532,11 +2536,12 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:4637
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"unique_corona\"]/event/text"
 msgstr ""
-"Деворак с радостью приносит себя в жертву ради общего блага, мощно активируя"
-" модуль!"
+"Деворак с радостью приносит себя в жертву ради общего блага, мощно активируя "
+"модуль!"
 
 #: src-en/data/events_special_storage.xml.append:4644
 msgid ""
@@ -2554,11 +2559,12 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:4656
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"unique_corona_masked\"]/event/text"
 msgstr ""
-"Деворак с радостью приносит себя в жертву ради общего блага, мощно активируя"
-" модуль!"
+"Деворак с радостью приносит себя в жертву ради общего блага, мощно активируя "
+"модуль!"
 
 #: src-en/data/events_special_storage.xml.append:4663
 msgid ""
@@ -2692,11 +2698,13 @@ msgid ""
 msgstr "Перейти к битве!"
 
 #: src-en/data/events_special_storage.xml.append:4995
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/text"
 msgstr ""
 "Вы уверены, что хотите это сделать?\n"
-"\t[Попытаться использовать особый взлом с целью задержать флот; отменяется при нанесении урона корпусу более 2 единиц]"
+"\t[Попытаться использовать особый взлом с целью задержать флот; отменяется "
+"при нанесении урона корпусу более 2 единиц]"
 
 #: src-en/data/events_special_storage.xml.append:4999
 msgid ""
@@ -2753,6 +2761,7 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events_special_storage.xml.append:5053
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[5]/text"
 msgstr "Вам нужен более мощный Взломщик, чтобы получить больше возможностей."
@@ -2791,6 +2800,7 @@ msgid ""
 msgstr "Вы решаете ничего не делать и готовитесь к бою."
 
 #: src-en/data/events_special_storage.xml.append:5087
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START\"]/text"
 msgstr ""
@@ -2798,11 +2808,12 @@ msgstr ""
 "выжить, не нанеся слишком большого урона корпусу врага..."
 
 #: src-en/data/events_special_storage.xml.append:5093
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START\"]/triggeredEvent/triggeredEventBox/tooltip"
 msgstr ""
-"За это время хак, задерживающий флот, либо срабатывает, либо терпит неудачу."
-" Если вы нанесете 3 единицы урона корпусу, хак будет отменен."
+"За это время хак, задерживающий флот, либо срабатывает, либо терпит неудачу. "
+"Если вы нанесете 3 единицы урона корпусу, хак будет отменен."
 
 #: src-en/data/events_special_storage.xml.append:5103
 msgid ""
@@ -2820,6 +2831,7 @@ msgid ""
 msgstr "Посмотрим, сработало ли это..."
 
 #: src-en/data/events_special_storage.xml.append:5152
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS1\"]/text"
 msgstr ""
@@ -2827,11 +2839,12 @@ msgstr ""
 "выжить, не нанеся слишком большого урона корпусу врага..."
 
 #: src-en/data/events_special_storage.xml.append:5158
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS1\"]/triggeredEvent/triggeredEventBox/tooltip"
 msgstr ""
-"За это время хак, задерживающий флот, либо срабатывает, либо терпит неудачу."
-" Если вы нанесете 3 единицы урона корпусу, хак будет отменен."
+"За это время хак, задерживающий флот, либо срабатывает, либо терпит неудачу. "
+"Если вы нанесете 3 единицы урона корпусу, хак будет отменен."
 
 #: src-en/data/events_special_storage.xml.append:5168
 msgid ""
@@ -2849,6 +2862,7 @@ msgid ""
 msgstr "Посмотрим, сработало ли это..."
 
 #: src-en/data/events_special_storage.xml.append:5218
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS2\"]/text"
 msgstr ""
@@ -2856,11 +2870,12 @@ msgstr ""
 "выжить, не нанеся слишком большого урона корпусу врага..."
 
 #: src-en/data/events_special_storage.xml.append:5224
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS2\"]/triggeredEvent/triggeredEventBox/tooltip"
 msgstr ""
-"За это время хак, задерживающий флот, либо срабатывает, либо терпит неудачу."
-" Если вы нанесете 3 единицы урона корпусу, хак будет отменен."
+"За это время хак, задерживающий флот, либо срабатывает, либо терпит неудачу. "
+"Если вы нанесете 3 единицы урона корпусу, хак будет отменен."
 
 #: src-en/data/events_special_storage.xml.append:5234
 msgid ""
@@ -3932,6 +3947,7 @@ msgstr ""
 "корабль РадиКал Бам (или БПС)."
 
 #: src-en/data/events_special_storage.xml.append:7127
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CALIBRATOR\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
 " and @lvl=\"1\"]/text"
