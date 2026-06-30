@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-06-30 19:43+0000\n"
-"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "dataevents_sector_radikalxml/ru/>\n"
 "Language: ru\n"
@@ -156,12 +156,14 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events_sector_radikal.xml:244
+#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"NEBULA_LIGHT_RKS_FIGHT_LEAD_TITANS\"]/choice[@req=\"cloaking\""
 " and not(@lvl)]/text"
 msgstr "(Маскировка) Спрятаться и улететь, пока они не успели нацелиться."
 
 #: src-en/data/events_sector_radikal.xml:249
+#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"NEBULA_LIGHT_RKS_FIGHT_LEAD_TITANS\"]/choice[@req=\"cloaking\""
 " and @lvl=\"3\"]/text"
@@ -329,6 +331,7 @@ msgid ""
 msgstr "Защищаться!"
 
 #: src-en/data/events_sector_radikal.xml:407
+#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_GRAVESPRED\"]/choice[2]/event/text"
 msgstr ""
@@ -340,12 +343,14 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events_sector_radikal.xml:418
+#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_GRAVESPRED\"]/choice[@req=\"cloaking\""
 " and not(@lvl)]/text"
 msgstr "(Маскировка) Спрятаться и улететь, пока они не успели нацелиться."
 
 #: src-en/data/events_sector_radikal.xml:422
+#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_GRAVESPRED\"]/choice[@req=\"cloaking\""
 " and @lvl=\"3\"]/text"
@@ -504,12 +509,14 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events_sector_radikal.xml:565
+#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_WOF\"]/choice[@req=\"cloaking\""
 " and not(@lvl)]/text"
 msgstr "(Маскировка) Спрятаться и улететь, пока они не успели нацелиться."
 
 #: src-en/data/events_sector_radikal.xml:569
+#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_FIGHT_WOF\"]/choice[@req=\"cloaking\""
 " and @lvl=\"3\"]/text"
@@ -1120,6 +1127,7 @@ msgid ""
 msgstr "Уйти."
 
 #: src-en/data/events_sector_radikal.xml:1234
+#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_RECRUIT\"]/event/choice[@req=\"rks_hideout_morechoices_1\"]/text"
 msgstr "Выбрать экипаж #1"
@@ -1140,6 +1148,7 @@ msgid ""
 msgstr "Уйти."
 
 #: src-en/data/events_sector_radikal.xml:1250
+#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_RECRUIT\"]/event/choice[@req=\"rks_hideout_morechoices_2\"]/text"
 msgstr "Выбрать экипаж #1"
@@ -1160,6 +1169,7 @@ msgid ""
 msgstr "Уйти."
 
 #: src-en/data/events_sector_radikal.xml:1267
+#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_RECRUIT\"]/event/choice[5]/text"
 msgstr "Уйти."
@@ -1305,12 +1315,17 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_sector_radikal.xml:1415
+#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[13]/event/text"
 msgstr ""
-"Вы сосредотачиваетесь на том, чтобы попросить таинственное божество, пригласившее вас сюда, вернуть ваше убежище в прошлое. Оно отвечает так, как будто это его позабавило.\n"
+"Вы сосредотачиваетесь на том, чтобы попросить таинственное божество, "
+"пригласившее вас сюда, вернуть ваше убежище в прошлое. Оно отвечает так, как "
+"будто это его позабавило.\n"
 "\t\t\t\t\n"
-"\t\t\t\tТы уверен, что хочешь это сделать? Твое убежище лишится всех улучшений, перестанет принадлежать тебе, и ты ничего не получишь взамен. Но ты сможешь сражаться, чтобы вернуть его, а я при этом от души посмеюсь!\""
+"\t\t\t\tТы уверен, что хочешь это сделать? Твое убежище лишится всех "
+"улучшений, перестанет принадлежать тебе, и ты ничего не получишь взамен. Но "
+"ты сможешь сражаться, чтобы вернуть его, а я при этом от души посмеюсь!\""
 
 #: src-en/data/events_sector_radikal.xml:1421
 msgid ""
@@ -2223,6 +2238,7 @@ msgstr ""
 "\t\tВы смотрите на то, чем они занимаются, и начинаете лучше понимать, почему эти парни фигурируют в стольких списках на уничтожение. Однако миссия превыше всего, верно?"
 
 #: src-en/data/events_sector_radikal.xml:2307
+#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM_2\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_LANIUS\"]/text"
 msgstr ""
@@ -2635,6 +2651,7 @@ msgstr ""
 "\t\tВы просматриваешь список востребованных \"заготовок\", и то, что вы только что услышали, становится еще более жутким."
 
 #: src-en/data/events_sector_radikal.xml:2705
+#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_LEECH\"]/text"
 msgstr ""
@@ -3040,6 +3057,7 @@ msgstr ""
 "себя)."
 
 #: src-en/data/events_sector_radikal.xml:3074
+#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ZOLTAN\"]/text"
 msgstr ""
@@ -3195,6 +3213,7 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_sector_radikal.xml:3221
+#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"zoltan\"]/event/text"
 msgstr ""
@@ -3220,6 +3239,7 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_sector_radikal.xml:3243
+#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"zoltan_devotee\"]/event/text"
 msgstr ""
