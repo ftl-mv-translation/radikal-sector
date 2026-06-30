@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-06-30 19:44+0000\n"
+"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/radikal-sector/datahyperspace-xml-append/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/hyperspace.xml.append:245
 msgid "data/hyperspace.xml.append$//human_soldier[@name=\"Rammerman\"]/@name"
@@ -152,14 +159,18 @@ msgstr ""
 "\t\t\t这艘飞船的所有船员获得固定 +40% 的移动速度。"
 
 #: src-en/data/hyperspace.xml.append:726
+#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[3]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
 "持久护盾：\n"
-"\t\t\t此敌人受到能量护盾的保护。黑客、心灵控制、传送、登舰无人机以及所有造成船体伤害的武器或离子武器都将被阻挡，直至护盾被禁用。这面特殊的超盾还能提高护盾充能速率，且敌人能够再生一次他们的能量护盾！"
+"\t\t\t此敌人受到能量护盾的保护。黑客、心灵控制、传送、登舰无人机以及所有造成"
+"船体伤害的武器或离子武器都将被阻挡，直至护盾被禁用。这面特殊的超盾还能提高护"
+"盾充能速率，且敌人能够再生一次他们的能量护盾！"
 
 #: src-en/data/hyperspace.xml.append:734
+#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[4]/mod-"
 "append:shipIcon/tooltip"
@@ -175,13 +186,15 @@ msgid ""
 msgstr ""
 
 #: src-en/data/hyperspace.xml.append:750
+#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[6]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
 "朋克谐合：\n"
 "\t\t\t这艘飞船的半械族抵抗力更强，且免疫心灵控制。\n"
-"\t\t\t根据飞船上黑客和心灵控制的每个激活等级，他们的维修能力会呈指数级提升，速度更快，战斗力更强！"
+"\t\t\t根据飞船上黑客和心灵控制的每个激活等级，他们的维修能力会呈指数级提升，"
+"速度更快，战斗力更强！"
 
 #: src-en/data/hyperspace.xml.append:758
 msgid ""
@@ -401,6 +414,7 @@ msgid ""
 msgstr "耀斑"
 
 #: src-en/data/hyperspace.xml.append:2124
+#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$//mod-"
 "append:race[@name=\"rk_fireghost\"]/powerEffect/tooltip"
