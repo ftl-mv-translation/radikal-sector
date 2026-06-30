@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-06-30 19:43+0000\n"
+"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/radikal-sector/dataevents_special_storagexmlappend/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events_special_storage.xml.append:396
 msgid ""
@@ -12,6 +19,7 @@ msgid ""
 msgstr "（噬舰冲角）冲撞敌人以进行修复！"
 
 #: src-en/data/events_special_storage.xml.append:404
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[2]/mod-"
 "append:choice/text"
@@ -60,6 +68,7 @@ msgid ""
 msgstr "（增氧器）创造大气环境！"
 
 #: src-en/data/events_special_storage.xml.append:493
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[8]/mod-"
 "append:choice/text"
@@ -115,6 +124,7 @@ msgid ""
 msgstr "（焦土系列）点燃你的飞船以对抗登舰者！"
 
 #: src-en/data/events_special_storage.xml.append:557
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[15]/mod-"
 "append:choice/text"
@@ -218,6 +228,7 @@ msgid ""
 msgstr "（焦土）升级为烈焰大地。"
 
 #: src-en/data/events_special_storage.xml.append:691
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[19]/mod-"
 "append:choice/text"
@@ -284,6 +295,7 @@ msgid ""
 msgstr "燃料回收器）是，不消耗燃料。"
 
 #: src-en/data/events_special_storage.xml.append:808
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCED\"]/text"
 msgstr ""
@@ -301,6 +313,7 @@ msgid ""
 msgstr "开始战斗！"
 
 #: src-en/data/events_special_storage.xml.append:826
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED\"]/text"
 msgstr ""
@@ -387,6 +400,7 @@ msgid ""
 msgstr "已完全准备好冲撞！是否进行？"
 
 #: src-en/data/events_special_storage.xml.append:942
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCED_AT_FULL_POWER\"]/text"
 msgstr "（满功率）全力以赴！[你将失去增强部件的强化效果。]"
@@ -402,6 +416,7 @@ msgid ""
 msgstr "继续。"
 
 #: src-en/data/events_special_storage.xml.append:958
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED_AT_FULL_POWER\"]/text"
 msgstr "（满功率）全力以赴！[在空信标处加固增强部件，使其不会瓦解。]"
@@ -417,6 +432,7 @@ msgid ""
 msgstr "继续。"
 
 #: src-en/data/events_special_storage.xml.append:975
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[@req=\"locked_shipvore_ram_full_power\"]/text"
 msgstr "（满功率）不是你死就是我亡！[在跃迁之前无法再次冲撞。]"
@@ -1353,6 +1369,7 @@ msgid ""
 msgstr "开始战斗！"
 
 #: src-en/data/events_special_storage.xml.append:2274
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED\"]/text"
 msgstr ""
@@ -1370,6 +1387,7 @@ msgid ""
 msgstr "开始战斗！"
 
 #: src-en/data/events_special_storage.xml.append:2292
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"LOCKED_DJMOD_COMBAT_SHIPVORE_RAM\"]/text"
 msgstr ""
@@ -2583,6 +2601,7 @@ msgid ""
 msgstr "继续。"
 
 #: src-en/data/events_special_storage.xml.append:5053
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[5]/text"
 msgstr "算了，直接战斗！"
@@ -2736,12 +2755,14 @@ msgid ""
 msgstr "开始战斗！"
 
 #: src-en/data/events_special_storage.xml.append:5347
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_OUTCOME_BOSS\"]/text"
 msgstr ""
 "这次入侵本该延缓舰队，但却没有……\n"
 "\t\t\n"
-"\t\t有人干扰了这次行动，并给我们发送了奇怪的坐标，附带着一条信息：“菜鸟！！1！”。"
+"\t\t有人干扰了这次行动，并给我们发送了奇怪的坐标，附带着一条信息：“菜鸟！！1"
+"！”。"
 
 #: src-en/data/events_special_storage.xml.append:5354
 msgid ""
@@ -2754,16 +2775,21 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:5387
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/text"
 msgstr ""
-"这里有一艘外观非常凶恶的精英叛军舰船。它的船长正盯着你，眼中闪烁着一丝火花。\n"
+"这里有一艘外观非常凶恶的精英叛军舰船。它的船长正盯着你，眼中闪烁着一丝火花"
+"。\n"
 "\n"
-"\t\t“当我听说有人胆敢在舰队的通讯上耍花招时，我就知道我得会会这些蠢货！你们果然在这儿，菜鸟们！\n"
-"\t\t我希望你们不介意我这么叫你们，菜鸟们。告诉你们也无妨，我们都挺佩服这种胆量的，敢惹怒宇宙这边最庞大的军队，那个用舰队阴影覆盖整个星区的军队。\n"
+"\t\t“当我听说有人胆敢在舰队的通讯上耍花招时，我就知道我得会会这些蠢货！你们果"
+"然在这儿，菜鸟们！\n"
+"\t\t我希望你们不介意我这么叫你们，菜鸟们。告诉你们也无妨，我们都挺佩服这种胆"
+"量的，敢惹怒宇宙这边最庞大的军队，那个用舰队阴影覆盖整个星区的军队。\n"
 "\t\t但我和我这儿的朋友们可没因此而心慈手软变成 MFK，想必你也猜得到。\n"
 "\n"
-"\t\t所以，作为友好较量的表示，让我来给你们示范一下该怎么做！就在我们宰了你们之前。”"
+"\t\t所以，作为友好较量的表示，让我来给你们示范一下该怎么做！就在我们宰了你们"
+"之前。”"
 
 #: src-en/data/events_special_storage.xml.append:5398
 msgid ""
@@ -2771,11 +2797,13 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:5400
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/choice[1]/event/text"
 msgstr ""
 "敌方船长脸上恶毒的笑容更深了。“哈哈哈，尝尝这个！”\n"
-"\t\t\t\t你立即注意到舰船的许多系统出现了故障！他们一定在使用某种战斗装置！你大概也料到一艘黑客舰船不会公平作战，但如果你没料到，或许该考虑赶紧逃跑了。"
+"\t\t\t\t你立即注意到舰船的许多系统出现了故障！他们一定在使用某种战斗装置！你"
+"大概也料到一艘黑客舰船不会公平作战，但如果你没料到，或许该考虑赶紧逃跑了。"
 
 #: src-en/data/events_special_storage.xml.append:5415
 msgid ""
