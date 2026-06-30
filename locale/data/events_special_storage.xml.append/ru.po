@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-06-30 19:44+0000\n"
+"PO-Revision-Date: 2026-07-01 20:36+0000\n"
 "Last-Translator: Aleev <aleev1414@gmail.com>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "dataevents_special_storagexmlappend/ru/>\n"
@@ -538,11 +538,10 @@ msgid ""
 msgstr "...тоже самое происходит и на вашем корабле (шанс на успех 80%)."
 
 #: src-en/data/events_special_storage.xml.append:1153
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_6DMG_BREACH_1DMG_BREACH\"]/text"
 msgstr ""
-"Вы на полной мощности сталкиваетесь с вражеским кораблем, нанося ему 6 "
+"Вы на полной мощности сталкиваетесь с вражеским кораблем, нанося ему 7 "
 "единиц урона..."
 
 #: src-en/data/events_special_storage.xml.append:1158
@@ -551,11 +550,10 @@ msgid ""
 msgstr "...тоже самое происходит и на вашем корабле (шанс на успех 80%)."
 
 #: src-en/data/events_special_storage.xml.append:1163
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_5DMG_BREACH_2DMG_BREACH\"]/text"
 msgstr ""
-"Вы на полной мощности сталкиваетесь с вражеским кораблем, нанося ему 6 "
+"Вы на полной мощности сталкиваетесь с вражеским кораблем, нанося ему 7 "
 "единиц урона..."
 
 #: src-en/data/events_special_storage.xml.append:1168
@@ -3905,14 +3903,13 @@ msgid ""
 msgstr "Успокоитель разума. [Цена: 30~, 1|]"
 
 #: src-en/data/events_special_storage.xml.append:7046
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_IN_FIRE_CREWBOOSTS\""
 " and @lvl=\"1\"]/text"
 msgstr ""
-"РК Скорч \"Огненные повязки\": 2х скорость передвижения и скорость саботажа "
-"вашего экипажа в условиях пожар, а наносимый урон увеличен до 2х на обоих "
-"кораблях. [УЖЕ УСТАНОВЛЕНО]"
+"РК Скорч \"Огненные повязки\": 1.75x скорость передвижения и скорость "
+"саботажа вашего экипажа в условиях пожар, а урон в бою и по дверям увеличен "
+"до 1.75x на обоих кораблях. [УЖЕ УСТАНОВЛЕНО]"
 
 #: src-en/data/events_special_storage.xml.append:7050
 msgid ""
@@ -4127,13 +4124,13 @@ msgid ""
 msgstr "Неважно."
 
 #: src-en/data/events_special_storage.xml.append:7287
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_IN_FIRE_CREWBOOSTS\"]/text"
 msgstr ""
 "Вы собираетесь установить Огненные повязки.\n"
-"\t[Эффекты: 2х скорость передвижения и скорость саботажа вашего экипажа в "
-"условиях пожар, а наносимый урон увеличен до 2х на обоих кораблях.]"
+"\t[Эффекты: 1.75x скорость передвижения и скорость саботажа вашего экипажа в "
+"условиях пожара, а урон в бою и по дверям увеличен до 1.75x на обоих "
+"кораблях.]"
 
 #: src-en/data/events_special_storage.xml.append:7291
 msgid ""
