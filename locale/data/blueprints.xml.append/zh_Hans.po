@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-06-30 19:44+0000\n"
-"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/radikal-sector/datablueprintsxmlappend/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -83,6 +83,7 @@ msgid ""
 msgstr "主动能力：每跃迁一次，立即引爆一枚炸弹"
 
 #: src-en/data/blueprints.xml.append:107
+#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/powerList/power[3]"
 msgstr "75点最大生命值"
@@ -431,11 +432,15 @@ msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_SCORCH_SELF\"]/title
 msgstr "焦土（T1）"
 
 #: src-en/data/blueprints.xml.append:538
+#, fuzzy
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_SCORCH_SELF\"]/desc"
 msgstr ""
-"在双方飞船上，这款拉迪卡尔·灼烧增强部件使你的船员受到的火焰伤害降低 40%，并获得 3 倍的灭火速度。在灭火时，他们还会每秒恢复 2 生命值，再加上氧气系统每升级一级 +2。\n"
+"在双方飞船上，这款拉迪卡尔·灼烧增强部件使你的船员受到的火焰伤害降低 40%，并获"
+"得 3 倍的灭火速度。在灭火时，他们还会每秒恢复 2 生命值，再加上氧气系统每升级"
+"一级 +2。\n"
 "\t\n"
-"\t从切换菜单中激活，可将你飞船上的任意系统舱室（或整艘飞船）点燃，以对抗登舰者。\n"
+"\t从切换菜单中激活，可将你飞船上的任意系统舱室（或整艘飞船）点燃，以对抗登舰"
+"者。\n"
 "\t\n"
 "\t组合：等离子传送器可将此增强部件引发的火焰转移到敌舰上。\n"
 "\t\n"
@@ -475,14 +480,17 @@ msgid ""
 msgstr "易燃器 - 免疫"
 
 #: src-en/data/blueprints.xml.append:606
+#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_ENEMIES_CAN_BURN\"]/desc"
 msgstr ""
-"这款拉迪卡尔·灼烧增强部件可以移除敌人的火焰免疫，并将其火焰抗性限制为 0%。那些会反转火焰伤害的敌人不再具有该能力。脆弱敌人（如燃灵）不受影响。\n"
+"这款拉迪卡尔·灼烧增强部件可以移除敌人的火焰免疫，并将其火焰抗性限制为 0%。那"
+"些会反转火焰伤害的敌人不再具有该能力。脆弱敌人（如燃灵）不受影响。\n"
 "\t对双方飞船都有效。\n"
 "\n"
 "\t可随时切换，使非防火敌人转而受到更高的火焰伤害。\n"
-"\t两种切换模式下，敌人在火焰中的移动速度都会降低 20%（氧气系统投入 3 点电力时最高可达 80%）。"
+"\t两种切换模式下，敌人在火焰中的移动速度都会降低 20%（氧气系统投入 3 点电力时"
+"最高可达 80%）。"
 
 #: src-en/data/blueprints.xml.append:617
 msgid ""
@@ -490,14 +498,17 @@ msgid ""
 msgstr "易燃器 - 伤害"
 
 #: src-en/data/blueprints.xml.append:618
+#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_ENEMIES_BURN_MORE\"]/desc"
 msgstr ""
-"这款拉迪卡尔·灼烧增强部件使能够燃烧的敌人受到的火焰伤害提高 75%，随着你的生命维持（氧气）系统投入 4 点电力，最高可提升至 375%。\n"
+"这款拉迪卡尔·灼烧增强部件使能够燃烧的敌人受到的火焰伤害提高 75%，随着你的生命"
+"维持（氧气）系统投入 4 点电力，最高可提升至 375%。\n"
 "\t对双方飞船都有效。\n"
 "\t\n"
 "\t可随时切换，使防火和抗火的敌人转而变得对火焰脆弱。\n"
-"\t两种切换模式下，敌人在火焰中的移动速度都会降低 20%（氧气系统投入 3 点电力时最高可达 80%）。"
+"\t两种切换模式下，敌人在火焰中的移动速度都会降低 20%（氧气系统投入 3 点电力时"
+"最高可达 80%）。"
 
 #: src-en/data/blueprints.xml.append:630
 msgid ""
@@ -505,11 +516,14 @@ msgid ""
 msgstr "增氧器"
 
 #: src-en/data/blueprints.xml.append:631
+#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_COMBAT_OXYGENIZER\"]/desc"
 msgstr ""
-"这款拉迪卡尔·灼烧战斗增强部件基本上可以在战斗开始时射出巨大的超压缩氧气罐，以填补太空的虚空。\n"
-"\t使双方飞船都处于氧气环境中，让破舱和开启的通风口填充氧气而非消耗氧气。各种骚操作随之而来。[消耗 2}]"
+"这款拉迪卡尔·灼烧战斗增强部件基本上可以在战斗开始时射出巨大的超压缩氧气罐，以"
+"填补太空的虚空。\n"
+"\t使双方飞船都处于氧气环境中，让破舱和开启的通风口填充氧气而非消耗氧气。各种"
+"骚操作随之而来。[消耗 2}]"
 
 #: src-en/data/blueprints.xml.append:640
 msgid ""
