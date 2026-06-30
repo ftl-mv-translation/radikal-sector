@@ -1,25 +1,312 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<FTL>	<!-- Bag of Dumb Fixed doesn't use any FTL tags in this file. Lily's Beam Emporium doesn't even have the file. -->
+<!-- 
+"Bag of Dumb Fixed" & "Darkest Desire" don't use any FTL tags in this file. 
+Lily's Beam Emporium doesn't even have the file.
+Remove in case of bug.
+-->
+<FTL>
 
 <!-- 
-Coords are obtained in events_special_standard.xml.append , random shops, or revisit event append.
+RK Coords are obtained in events_special_standard.xml.append , random shops, or revisit event append.
+MV coords are from an event or event chain. Ghost sector might also be baked into Spook Chaser ship?
+
+Fix bug "On S7->S8 jump, this add-on disables rerouting to any sectors at all."
+SEEMS FIXED BY REMOVING THE DREADED "max_group" FROM REROUTE_MENU_LASTSTAND and REROUTE_MENU!
+
+TODO: Fix bug "On S7->S8 jump, this add-on disables rerouting to any sectors at all unless you have 2+ coords ready, 
+1 of which might need to be RK coords."
+-->
+
+<!-- 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////		"ATLAS" SECTION - Not to be confused with "REROUTE" SECTION BELOW
+HAS: "ATLAS_MENU", "ATLAS_MENU_NOEQUIPMENT", "ENTER_..." and "..._WARP" events.
+ALSO CALLS: "LOAD_ATLAS_MARKER" and "START_..." events.
+
+Seems needed to fix "On S7->S8 jump, this add-on disables rerouting to any sectors, unless you have 2+ coords ready,
+and 1 of them might need to be RK coords."
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+
+<!-- . -->
+<mod:findName type="event" name="ATLAS_MENU">
+	<mod-append:choice hidden="true" req="SEC SECRET_RADIKAL" blue="false">
+		<text>Proceed to the RadiKal Sector.</text>
+		<event load="RADIKAL_WARP"/>
+	</mod-append:choice>
+</mod:findName>
+<mod:findName type="event" name="ATLAS_MENU_NOEQUIPMENT">
+	<mod-append:choice hidden="true" req="SEC SECRET_RADIKAL" blue="false">
+		<text>Proceed to the RadiKal Sector.</text>
+		<event load="RADIKAL_WARP"/>
+	</mod-append:choice>
+</mod:findName>
+<!-- REFS: Darkest Desire v4.1.4 for MV v5.5.1:
+<mod:findName type="event" name="ATLAS_MENU">
+	<mod-append:choice hidden="true" req="SEC SECTOR_DEEPONE" blue="false">
+		<text>Proceed to the Deep One Sector.</text>
+		<event load="DEEPONE_WARP"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="SEC SECTOR_DISPARITY_UNIQUE" blue="false">
+		<text>Proceed to the Harmony(?) Sector.</text>
+		<event load="DISPARITY_WARP"/>
+	</mod-append:choice>
+	(...)
+</mod:findName> 
+
+<mod:findName type="event" name="ATLAS_MENU_NOEQUIPMENT">
+	<mod-append:choice hidden="true" req="SEC SECTOR_DEEPONE" blue="false">
+		<text>Proceed to the Deep One sector.</text>
+		<event load="DEEPONE_WARP"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="SEC SECTOR_DISPARITY_UNIQUE" blue="false">
+		<text>Proceed to the Harmony(?) sector.</text>
+		<event load="DISPARITY_WARP"/>
+	</mod-append:choice>
+	(...)
+</mod:findName>
+-->
+<!-- REFS: MV v5.5.1:
+<event name="ATLAS_MENU">
+	<text>While in hyperspeed, you have several options. You can proceed to your next sector or do something aboard the ship first.</text>
+	<variable name="loc_has_salvaged" op="set" val="0"/>
+	<choice hidden="true" req="CURA_TASK_AND_LIGHTSPEED">
+		<text>View available tasks from C.U.R.A. and use a jumpspeed augment.</text>
+		<event load="CURA_TASK_MENU"/>
+	</choice>
+	<choice hidden="true" req="CURA_TASK_CHECK">
+		<text>View available tasks from C.U.R.A.</text>
+		<event load="CURA_TASK_MENU"/>
+	</choice>
+	<choice hidden="true" req="LIST_JUMPSPACE_EQUIPMENT">
+		<text>Use a jumpspeed augment.</text>
+		<event load="ATLAS_EQUIPMENT"/>
+	</choice>
+	<choice hidden="true" req="FEDERATION_DATABASE">
+		<text>[Federation Database] Learn about the Atlas.</text>
+		<event load="ATLAS_MENU_LEARN"/>
+	</choice>
+	
+	<choice hidden="true" req="SEC FINAL" blue="false">
+		<text>Proceed to the Federation Capital.</text>
+		<event load="LASTSTAND_WARP"/>
+	</choice>
+	<choice hidden="true" req="SEC SECTOR_ASTEROID_GENERIC" blue="false">
+		<text>Proceed to the Mining Sector.</text>
+		<event load="ASTEROID_WARP"/>
+	</choice>
+	(...)
+	<choice hidden="true" req="SEC SECRET_AUGMENTED" blue="false">
+		<text>Proceed to the Ancient Recovery Site.</text>
+		<event load="AUGMENTED_WARP"/>
+	</choice> 
+	(...)
+	<choice hidden="true" req="SEC SECRET_ORIGINS" blue="false">
+		<text>Proceed to the Crystalline Origins.</text>
+		<event load="ORIGINS_WARP"/>
+	</choice>
+	(...)
+</event>
+
+<event name="ATLAS_MENU_NOEQUIPMENT">
+	<text>You can now proceed to your next sector.</text>
+	<choice hidden="true" req="SEC FINAL" blue="false">
+		<text>Proceed to the Federation Capital.</text>
+		<event load="LASTSTAND_WARP"/>
+	</choice>
+	<choice hidden="true" req="SEC SECTOR_ASTEROID_GENERIC" blue="false">
+		<text>Proceed to the Mining Sector.</text>
+		<event load="ASTEROID_WARP"/>
+	</choice>
+	(...)
+	<choice hidden="true" req="SEC SECRET_AUGMENTED" blue="false">
+		<text>Proceed to the Ancient Recovery Site.</text>
+		<event load="AUGMENTED_WARP"/>
+	</choice>
+	(...)
+	<choice hidden="true" req="SEC SECRET_ORIGINS" blue="false">
+		<text>Proceed to the Crystalline Origins.</text>
+		<event load="ORIGINS_WARP"/>
+	</choice>
+	(...)
+</event>
+-->
+
+<event name="ENTER_RADIKAL">
+	<text load="TEXT_LIGHTSPEED"/>
+	<img back="BACKGROUND_LIGHTSPEED" planet="NONE"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="LOAD_ATLAS_MARKER"/>
+	</choice>
+</event>
+<!-- REF: Darkest Desire v4.1.4 for MV v5.5.1
+<event name="ENTER_DEEPONE">
+	<text load="TEXT_LIGHTSPEED"/>
+	<img back="BACKGROUND_LIGHTSPEED" planet="NONE"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="LOAD_ATLAS_MARKER"/>
+	</choice>
+</event> -->
+<!-- REFS: MV v5.5.1
+ <event name="ENTER_AUGMENTED">
+	<text load="TEXT_LIGHTSPEED"/>
+	<img back="BACKGROUND_LIGHTSPEED" planet="NONE"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="LOAD_ATLAS_MARKER"/>
+	</choice>
+</event>
+
+<event name="ENTER_ORIGINS">
+	<text load="TEXT_LIGHTSPEED"/>
+	<img back="BACKGROUND_LIGHTSPEED" planet="NONE"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event load="LOAD_ATLAS_MARKER"/>
+	</choice>
+</event>
+-->
+
+<event name="RADIKAL_WARP">
+	<text>Name: RadiKal Sector
+	Type: Neutral
+	Dominant Faction: RK Bam, RK Punk, RK Scorch
+	Rebel Threat Level: Very Low
+	Locations of Interest: RK Labs, Scorch BIL, Pirate Trinity, Hideout
+	
+	The [style[color:ff3377]]dangerous[[/style]] sector where RadiKal subfactions develop illegal equipment. Specialists from everywhere secretly come to keep up with the tech, regulate its trade or steal it. Mind whatever Radikal (RK) equipment you have in there!
+	[Feedback? @Dj0z on discord.]</text>
+	<choice hidden="true">
+		<text>Exit hyperspeed.</text>
+		<event load="START_RADIKAL"/>
+	</choice>
+	<choice hidden="true" req="COORDS" blue="false">
+		<text>Reroute.</text>
+		<event load="REROUTE_MENU"/>
+	</choice>
+</event>
+<!-- REF: Darkest Desire v4.1.4 for MV v5.5.1
+<event name="DEEPONE_WARP">
+	<text>Name: Deep One Territory
+	Type: Neutral
+	Unique: False
+	Dominant Faction: The Deep Ones
+	Rebel Threat Level: Medium-Low
+	
+	Not much is known about the secretive Deep Ones, they simply one day arose from Old Earth's oceans within a fleet of spaceships and took to the stars; their existence prior allegedly unknown to the humans who dwelled on the surface. They're a hot-headed race that often suffers when it comes to communicating to outsiders, but there's no bad blood between them and the Federation. The same can't be said about the Theocracy, however, who finds the Deep One's religious beliefs to be heinously blasphemous.</text>
+	<choice hidden="true">
+		<text>Exit hyperspeed.</text>
+		<event load="START_DEEPONE"/>
+	</choice>
+	<choice hidden="true" req="COORDS" blue="false">
+		<text>Reroute.</text>
+		<event load="REROUTE_MENU"/>
+	</choice>
+</event> 
+-->
+<!-- REFS: MV v5.5.1:
+<event name="AUGMENTED_WARP">
+	<text>Name: Ancient Recovery Site
+	Type: Neutral
+	Dominant Faction: Augmented Lanius
+	Rebel Threat Level: Low
+
+	There is little information on this sector. It seems the ruins of some ancient race have been uncovered here, and it was promptly swarmed by a band of Lanius known as the Augmented.</text>
+	<choice hidden="true">
+		<text>Exit hyperspeed.</text>
+		<event load="START_AUGMENTED"/>
+	</choice>
+	<choice hidden="true" req="loc_task_accepted" blue="false">
+		<text>Your connection with C.U.R.A. is currently unavailable.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="COORDS" blue="false">
+		<text>You cannot reroute during this jump.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+</event>
+
+<event name="ORIGINS_WARP">
+	<text>Name: Crystalline Origins
+	Type: ???
+	Dominant Faction: ???
+	Rebel Threat Level: ???
+
+	There is next to no information about this sector in your Atlas. What little data there is suggests this was the old homeworlds of the Crystalline Empire before they were forced about by greedy "pioneers".</text>
+	<choice hidden="true">
+		<text>Exit hyperspeed.</text>
+		<event load="START_ORIGINS"/>
+	</choice>
+	<choice hidden="true" req="loc_task_accepted" blue="false">
+		<text>Your connection with C.U.R.A. is currently unavailable.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice hidden="true" req="COORDS" blue="false">
+		<text>You cannot reroute during this jump.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+</event> 
+-->
+
+<!-- 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////		"REROUTE" SECTION - Not to be confused with "ATLAS" SECTION ABOVE
+HAS: "REROUTE_MENU", "REROUTE_MENU_LASTSTAND", "REROUTE_MENU_HAT", 
+	"LIGHTSPEED_SECTOR_WARP_...", "LIGHTSPEED_SECTOR_WARP_..._BOSS" events.
+ALSO CALLS: "JUMP_TO_..." event.
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
 
 <mod:findName type="event" name="REROUTE_MENU">
 	<!-- <mod-append:choice hidden="true" req="coords_radikal" lvl="1" blue="false" max_group="999"> -->
-    <mod-append:choice hidden="true" req="DJMOD_CAN_REROUTE_TO_RADIKAL_SECTOR" lvl="1" blue="false" max_group="999">
+    <!-- <mod-append:choice hidden="true" req="DJMOD_CAN_REROUTE_TO_RADIKAL_SECTOR" lvl="1" blue="false" max_group="999"> -->
+	<mod-append:choice hidden="true" req="DJMOD_CAN_REROUTE_TO_RADIKAL_SECTOR" lvl="1" blue="false">
         <text>Jump to the RadiKal Sector.</text>
         <event load="LIGHTSPEED_SECTOR_WARP_RADIKAL"/>
     </mod-append:choice>
 </mod:findName>
 
 <mod:findName type="event" name="REROUTE_MENU_LASTSTAND">
-    <mod-append:choice hidden="true" req="DJMOD_CAN_REROUTE_TO_RADIKAL_SECTOR" lvl="1" blue="false" max_group="999">
+	<mod-append:choice hidden="true" req="DJMOD_CAN_REROUTE_TO_RADIKAL_SECTOR" lvl="1" blue="false">
         <text>Jump to the RadiKal Sector.</text>
         <event load="LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS"/>
     </mod-append:choice>
 </mod:findName>
+
+<!-- REFS: Darkest Desire v4.1.4 for MV v5.5.1 - NOTE only one sector in REROUTE_MENU_LASTSTAND !
+<mod:findName type="event" name="REROUTE_MENU">
+	<mod-append:choice hidden="true" req="coords_enlightened" blue="false">
+		<text>Proceed to the unknown sector.</text>
+		<event load="LIGHTSPEED_SECTOR_WARP_ENLIGHTENED"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="coords_dddeepone" blue="false">
+		<text>Proceed to the Deep One Sector.</text>
+		<event load="LIGHTSPEED_SECTOR_WARP_DDDEEPONE"/>
+	</mod-append:choice>
+</mod:findName>
+
+<mod:findName type="event" name="REROUTE_MENU_LASTSTAND">
+	<mod-append:choice hidden="true" req="coords_enlightened" blue="false">
+		<text>Proceed to the unknown sector.</text>
+		<event load="LIGHTSPEED_SECTOR_WARP_ENLIGHTENED_BOSS"/>
+	</mod-append:choice>
+</mod:findName> 
+-->
+<!-- REF: Forgotten Races v17.0.23 for MV v5.5.1:
+<mod:findName type="event" name="REROUTE_MENU_LASTSTAND">
+	<mod-append:choice req="FR_REQUIREMENT_TARTARUS_COORDINATES_OR_SPOOK_CHASERS" lvl="1" blue="false" hidden="true">
+		<text>Jump to the Ghost Bounty Sector.</text>
+		<event load="FR_LIGHTSPEED_SECTOR_WARP_TARTARUS_BOSS"/>
+	</mod-append:choice>
+</mod:findName>
+-->
 
 <!-- Magic Hat bypasses coords requirement. -->
 <mod:findName type="event" name="REROUTE_MENU_HAT">
@@ -32,7 +319,20 @@ Coords are obtained in events_special_standard.xml.append , random shops, or rev
 		<event load="OPTION_INVALID" />
 	</mod-append:choice>
 </mod:findName>
-<!-- REF: The Old Guard v2.10 for MV v5.5.1
+<!-- REFS: Darkest Desire v4.1.4 for MV v5.5.1:
+<mod:findName type="event" name="REROUTE_MENU_HAT">
+	(...)
+	<mod-append:choice hidden="true" req="sec_unique_ddsoulplague" lvl="0" max_lvl="0" blue="false">
+		<text>Go to the Nebulous Dead Zone.</text>
+		<event load="LIGHTSPEED_SECTOR_WARP_DDSOULPLAGUE"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="sec_unique_ddsoulplague" lvl="1" blue="false">
+		<text>The Nebulous Dead Zone is behind you.</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
+</mod:findName> 
+-->
+<!-- REFS: The Old Guard v2.10 for MV v5.5.1
 <mod:findName type="event" name="REROUTE_MENU_HAT">
 	<mod-append:choice hidden="true" req="sec_unique_og_dawn" lvl="0" max_lvl="0" blue="false">
 		<text>Go to the New Dawn Forward Operating Base.</text>
@@ -99,16 +399,16 @@ Coords are obtained in events_special_standard.xml.append , random shops, or rev
 </event>
 -->
 
-
 <event name="LIGHTSPEED_SECTOR_WARP_RADIKAL">
 	<text>You are about to reroute. Below is the Atlas entry for this sector.
 	Name: RadiKal Sector
 	Type: Neutral
 	Dominant Faction: RK Bam, RK Punk, RK Scorch
 	Rebel Threat Level: Very Low
-	Locations of Interest: Bam HQ, Punk HQ, Scorch HQ
+	Locations of Interest: RK Labs, Scorch BIL, Pirate Trinity, Hideout
 	
-	The dangerous sector where RadiKal subfactions develop illegal equipment. Specialists from everywhere secretly come to keep up with the tech, regulate its trade or steal it. Mind whatever Radikal (RK) equipment you have in there!
+	The [style[color:ff3377]]dangerous[[/style]] sector where RadiKal subfactions develop illegal equipment. Rumors say eldritch forces might be involved. Still, specialists from everywhere secretly come to keep up with the tech, attempt to regulate its trade, or steal it.
+	Mind whatever Radikal (RK) equipment you have in there!
 	[Feedback? @Dj0z on discord.]</text>
 	<choice hidden="true">
 		<text>Continue with the jump.</text>
@@ -116,6 +416,9 @@ Coords are obtained in events_special_standard.xml.append , random shops, or rev
 			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
 			<variable name="coords_radikal" op="set" val="0"/>
 			<variable name="visited_radikal_sector" op="set" val="1"/>
+
+			<variable name="loc_sector_count" op="add" val="-1"/>
+
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event load="JUMP_TO_RADIKAL"/>
@@ -129,17 +432,77 @@ Coords are obtained in events_special_standard.xml.append , random shops, or rev
 		</event>
 	</choice>
 </event>
+<!-- REF: Forgotten Races v17.0.23 for MV v5.5.1:
+<event name="FR_LIGHTSPEED_SECTOR_WARP_TARTARUS">
+	<text>You are about to reroute. Below is the Atlas entry for this sector.
+	Name: Tartarus
+	Type: Hostile
+	Unique: True
+	Dominant Faction: The Revenants
+	Rebel Threat Level: None
+	
+	Most of the information on this distant sector is completely blank. All you can make out is a list of bizarre names from the bounty, and a foreboding title offered to the sector: Tartarus. The Spook Chasers told you this stretch of space was home to actual undead, but that can't possibly be true... right?</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new coordinates, and change your flight path accordingly.</text>
+			<variable name="coords_fr_ghosts" op="set" val="0"/>
+			<variable name="fish_sector" op="set" val="16"/>
+			<choice req="chaos_mode" lvl="1" max_lvl="1" max_group="0" blue="false" hidden="true">
+				<text>Continue...</text>
+				<event load="FR_JUMP_TO_TARTARUS_CHAOS"/>
+			</choice>
+			<choice req="chaos_mode" lvl="0" max_lvl="0" max_group="0" blue="false" hidden="true">
+				<text>Continue...</text>
+				<event load="FR_JUMP_TO_TARTARUS"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+-->
+<!-- REFS: MV v5.5.1:
+<event name="LIGHTSPEED_SECTOR_WARP_HIVE">
+	<text id="atlas_hive"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="magical_hat_active" op="set" val="0"/>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<variable name="coords_hive" op="set" val="0"/> 			MV SAYS: in case you have reroute coords instead
+			<replaceSector name="SECTOR_HIVE_UNIQUE">SECTOR_HIVE</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_HIVE_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+-->
 
-<!-- At end of Sector 7 -->
+<!-- At end of Sector 7 IN THEORY. -->
 <event name="LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS">
 	<text>You are about to reroute. Below is the Atlas entry for this sector.
 	Name: RadiKal Sector
 	Type: Neutral
 	Dominant Faction: RK Bam, RK Punk, RK Scorch
 	Rebel Threat Level: Very Low
-	Locations of Interest: Bam HQ, Punk HQ, Scorch HQ
+	Locations of Interest: RK Labs, Scorch BIL, Pirate Trinity, Hideout
 	
-	The dangerous sector where RadiKal subfactions develop illegal equipment. Specialists from everywhere secretly come to keep up with the tech, regulate its trade or steal it. Mind whatever Radikal (RK) equipment you have in there!
+	The [style[color:ff3377]]dangerous[[/style]] sector where RadiKal subfactions develop illegal equipment. Rumors say eldritch forces might be involved. Still, specialists from everywhere secretly come to keep up with the tech, attempt to regulate its trade, or steal it.
+	Mind whatever Radikal (RK) equipment you have in there!
 	[Feedback? @Dj0z on discord.]</text>
 	<choice hidden="true">
 		<text>Continue with the jump.</text>
@@ -147,7 +510,9 @@ Coords are obtained in events_special_standard.xml.append , random shops, or rev
 			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
 			<variable name="coords_radikal" op="set" val="0"/>
 			<variable name="visited_radikal_sector" op="set" val="1"/>
+
 			<variable name="loc_laststand" op="add" val="1"/>		<!-- this is the only difference. -->
+			
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event load="JUMP_TO_RADIKAL"/>
@@ -161,6 +526,64 @@ Coords are obtained in events_special_standard.xml.append , random shops, or rev
 		</event>
 	</choice>
 </event>
+<!-- REF: Forgotten Races v17.0.23 for MV v5.5.1:
+<event name="FR_LIGHTSPEED_SECTOR_WARP_TARTARUS_BOSS">
+	<text>You are about to reroute. Below is the Atlas entry for this sector.
+	Name: Tartarus
+	Type: Hostile
+	Unique: True
+	Dominant Faction: The Revenants
+	Rebel Threat Level: None
+	
+	Most of the information on this distant sector is completely blank. All you can make out is a list of bizarre names from the bounty, and a foreboding title offered to the sector: Tartarus. The Spook Chasers told you this stretch of space was home to actual undead, but that can't possibly be true... right?</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new coordinates, and change your flight path accordingly.</text>
+			<variable name="coords_fr_ghosts" op="set" val="0"/>
+			<variable name="loc_laststand" op="add" val="1"/>
+			<variable name="fish_sector" op="set" val="16"/>
+			<choice req="chaos_mode" lvl="1" max_lvl="1" max_group="0" blue="false" hidden="true">
+				<text>Continue...</text>
+				<event load="FR_JUMP_TO_TARTARUS_CHAOS"/>
+			</choice>
+			<choice req="chaos_mode" lvl="0" max_lvl="0" max_group="0" blue="false" hidden="true">
+				<text>Continue...</text>
+				<event load="FR_JUMP_TO_TARTARUS"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event> 
+-->
+<!-- REF: MV v5.5.1:
+<event name="LIGHTSPEED_SECTOR_WARP_HIVE_BOSS"> 		MV SAYS: cannot use hat in s8 transition
+	<text id="atlas_hive"/>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="coords_hive" op="set" val="0"/>
+			<variable name="loc_laststand" op="add" val="1"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_HIVE_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event> 
+-->
 
 <!-- Using Nexus Magic Hat -->
 <event name="LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT">
@@ -169,9 +592,10 @@ Coords are obtained in events_special_standard.xml.append , random shops, or rev
 	Type: Neutral
 	Dominant Faction: RK Bam, RK Punk, RK Scorch
 	Rebel Threat Level: Very Low
-	Locations of Interest: Bam HQ, Punk HQ, Scorch HQ
+	Locations of Interest: RK Labs, Scorch BIL, Pirate Trinity, Hideout
 	
-	The dangerous sector where RadiKal subfactions develop illegal equipment. Specialists from everywhere secretly come to keep up with the tech, regulate its trade or steal it. Mind whatever Radikal (RK) equipment you have in there!
+	The [style[color:ff3377]]dangerous[[/style]] sector where RadiKal subfactions develop illegal equipment. Rumors say eldritch forces might be involved. Still, specialists from everywhere secretly come to keep up with the tech, attempt to regulate its trade, or steal it.
+	Mind whatever Radikal (RK) equipment you have in there!
 	[Feedback? @Dj0z on discord.]</text>
 	<choice hidden="true">
 		<text>Continue with the jump.</text>
@@ -179,7 +603,9 @@ Coords are obtained in events_special_standard.xml.append , random shops, or rev
 			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
 			<variable name="coords_radikal" op="set" val="0"/>
 			<variable name="visited_radikal_sector" op="set" val="1"/>
+
 			<variable name="magical_hat_active" op="set" val="0"/>		<!-- this is the only difference. -->
+			
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event load="JUMP_TO_RADIKAL"/>
@@ -193,20 +619,100 @@ Coords are obtained in events_special_standard.xml.append , random shops, or rev
 		</event>
 	</choice>
 </event>
+<!-- REFS: Darkest Desire v4.1.4 for MV v5.5.1 - NOTE: theses are both secretly ..._HAT REROUTES!!!
+<event name="LIGHTSPEED_SECTOR_WARP_DDSOULPLAGUE">
+	<text>Name: Nebulous Dead Zone
+	Type: Uncolonized
+	Unique: True
+	Dominant Faction: None
+	Rebel Threat Level: Medium (Auto)
+	
+	Aside from a brief history of Shell occupation prior to its abandonment, this sector remains entirely uncolonized by the galaxy at large. Notable, though, is that this unoccupation is not from a lack of trying. Several factions, and many more minor parties, have attempted to enter this nebulous mass; yet no reports back have ever officially been documented. Rumors point to many things: Slug pirates hunting within the clouds, secret Shell experiments gone wrong, even talk of illegal Duskbringer activity... but nobody has ever returned to say for certain. Thus has this mysterious sector earned its name: the Nebulous Dead Zone. You should stay vigilant, lest you become its next victim.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="magical_hat_active" op="set" val="0"/>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_DDSOULPLAGUE_UNIQUE">SECTOR_GENIOCRACY</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_DDSOULPLAGUE_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event> 
+
+<event name="LIGHTSPEED_SECTOR_WARP_DISPARITY">
+	<text>Name: S-62 [DISPARITY ASSAULT IN PROGRESS, REQUEST: ASSISTANCE.]
+	Type: Hostile
+	Unique: True
+	Dominant Faction: The Harmony(?)
+	Rebel Threat Level: Low
+	
+	While this sector belongs to the Harmony, you can't help but notice the request for assistance within the Atlas entry. You don't recognize the name of their assailants, but any enemy of the Harmony is likely an enemy of the Federation. Best be on your guard.</text>
+	<choice hidden="true">
+		<text>Continue with the jump.</text>
+		<event>
+			<text>You prepare to jump to the new co-ordinates, and change your flight path accordingly.</text>
+			<variable name="magical_hat_active" op="set" val="0"/>
+			<variable name="loc_sector_count" op="add" val="-1"/>
+			<replaceSector name="SECTOR_DISPARITY_UNIQUE">SECTOR_ABANDONED_GENERIC</replaceSector>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event><secretSector>SECTOR_DISPARITY_UNIQUE</secretSector></event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Nevermind.</text>
+		<event>
+			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
+		</event>
+	</choice>
+</event>
+-->
 
 <event name="JUMP_TO_RADIKAL">
 	<secretSector>SECRET_RADIKAL</secretSector> 	
-	<!-- Bag of Dumb Fixed uses SECTOR_MITHRA here, not SECRET_ . Lily's Beam Emporium uses SECRET_ . -->
+	<!-- "Bag of Dumb Fixed" uses SECTOR_MITHRA here, not SECRET_ . Lily's Beam Emporium uses SECRET_ . -->
 </event>
+<!-- REF: Darkest Desire v4.1.4 for MV v5.5.1
+<event name="JUMP_TO_DDDEEPONE">
+	<secretSector>SECTOR_DEEPONE</secretSector>
+</event> 
+-->
+<!-- REFS: Forgotten Races v17.0.23 for MV v5.5.1
+<event name="FR_JUMP_TO_TARTARUS">
+	<secretSector>SECTOR_FR_TARTARUS</secretSector>
+</event>
+<event name="FR_JUMP_TO_TARTARUS_CHAOS">
+	<secretSector>SECTOR_FR_CHAOTIC_TARTARUS</secretSector>
+</event> -->
+
 </FTL>
 
 <!-- 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////// TOOLBOX
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////
-REFS v5.5.1
+REFS MV v5.5.1
 /////////////////////////////////////////////////////////////
 
 <event name="REROUTE_MENU">
@@ -218,16 +724,18 @@ REFS v5.5.1
 			<loadEvent>ATLAS_MENU_NOEQUIPMENT</loadEvent>
 		</event>
 	</choice>
-	...
+	(...)
 	<choice hidden="true" req="coords_spider" blue="false">
 		<text>Jump to the Infested Sector.</text>
 		<event load="LIGHTSPEED_SECTOR_WARP_SPIDER"/>
 	</choice>
-	...
+	(...)
 	<choice hidden="true" req="coords_hektar" blue="false">
 		<text>Jump to the Hektar Mega-Market.</text>
 		<event load="LIGHTSPEED_SECTOR_WARP_HEKTAR"/>
 	</choice>
+	(...)
+</event>
 
 
 <event name="REROUTE_MENU_LASTSTAND">
@@ -245,11 +753,13 @@ Where do you want to reroute to?
 		<text>Jump to the Infested Sector.</text>
 		<event load="LIGHTSPEED_SECTOR_WARP_SPIDER_BOSS"/>
 	</choice>
-	...
+	(...)
 	<choice hidden="true" req="coords_hektar" blue="false" max_group="4">
 		<text>Jump to the Hektar Mega-Market.</text>
 		<event load="LIGHTSPEED_SECTOR_WARP_HEKTAR_BOSS"/>
 	</choice>
+	(...)
+</event>
 
 
 <event name="LIGHTSPEED_SECTOR_WARP_HEKTAR">

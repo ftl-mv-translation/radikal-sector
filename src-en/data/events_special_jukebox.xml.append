@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mod:findName type="event" name="STORAGE_CHECK_JUKEBOX">
+	<mod-append:choice hidden="true" req="juke_rktrackradikal">
+		<text>RK: RadiKal Track</text>
+		<event>
+			<playMusic>rktrackradikal</playMusic>
+			<loadEvent>STORAGE_CHECK_JUKEBOX</loadEvent>
+		</event>
+	</mod-append:choice>
+</mod:findName>
+<!-- REF: Darkest Desire v4.1.4 for MV v5.5.1
+<mod:findName type="event" name="STORAGE_CHECK_JUKEBOX">
+	<mod-append:choice hidden="true" req="juke_dddemiurgicoblivion">
+		<text>DD: Demiurgic Oblivion</text>
+		<event>
+			<playMusic>dddemiurgicoblivion</playMusic>
+			<loadEvent>STORAGE_CHECK_JUKEBOX</loadEvent>
+		</event>
+	</mod-append:choice>
+    (...)
+	<mod-append:choice hidden="true" req="juke_ddtracklightslament">
+		<text>DD: Light's Lament</text>
+		<event>
+			<playMusic>ddtracklightslament</playMusic>
+			<loadEvent>STORAGE_CHECK_JUKEBOX</loadEvent>
+		</event>
+	</mod-append:choice>
+    (...)
+</mod:findName> -->

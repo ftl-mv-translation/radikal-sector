@@ -385,75 +385,75 @@ and this isn't detected by Slipstream and doesn't cause a crash! -->
 
 <!-- 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////// COMBAT CHECKS 
-///////////////////////////////////////////// NB: COMBAT_CHECK_FAIL_REAL also exists but doesn't seem necessary.
+///////////////////////////////////// COMBAT CHECKS 
+///////////////////////////////////// NB: COMBAT_CHECK_FAIL_REAL also exists but doesn't seem necessary.
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
 
 <mod:findName type = "event" name = "COMBAT_CHECK_REAL">
-<mod-append:choice req="DJMOD_COMBAT_SHIPVORE_RAM_ANY" blue="false" max_group="0">			<!--adds the choice to the menu, "req" is the Blueprints name of the augment-->
-	<text>(Shipvore Ram) Ram the enemy for repairs!</text> 
-	<event load="DJMOD_COMBAT_CHECK_SHIPVORE_RAM"/>  <!--Loads the event you want to happen next. Using load can make code more organized, as well as saving a trace amount of loading time each sector-->
-</mod-append:choice>
+	<!--adds the choice to the menu, "req" is the Blueprints name of the augment-->
+	<mod-append:choice req="DJMOD_COMBAT_SHIPVORE_RAM_ANY" blue="true">
+		<text>(Shipvore Ram) Ram the enemy for repairs!</text> 
+		<event load="DJMOD_COMBAT_CHECK_SHIPVORE_RAM"/>  <!--Loads the event you want to happen next. Using load can make code more organized, as well as saving a trace amount of loading time each sector-->
+	</mod-append:choice>
 </mod:findName>
 <!-- LOCKED_ version code is only different for disintegration. -->
 
-
-
 <mod:findName type = "event" name = "COMBAT_CHECK_REAL">
-<mod-append:choice req="DJMOD_AUG_AUTO_SYS_REPAIR" blue="false">
-	<text>(AERA Second Wind) Activate the emergency autorepair!</text>
-	<event load="DJMOD_COMBAT_CHECK_AUTO_SYS_REPAIR"/>
-</mod-append:choice>
+	<mod-append:choice req="RK_COMBAT_AUTO_SYS_REPAIR" blue="true">
+		<text>(AERA Second Wind) Activate the emergency auto-repair!</text>
+		<event load="RK_COMBAT_CHECK_AUTO_SYS_REPAIR"/>
+	</mod-append:choice>
 </mod:findName>
 
 <mod:findName type = "event" name = "COMBAT_CHECK_REAL">
-<mod-append:choice req="HAS_RK_COMBAT_HACK_FLEET_IN_S8" hidden="true" blue="false">
-	<text>(Enigmashin) The rebels are already here, with Enigmashin jammers. No reason to keep it.</text>
-	<event load="OPTION_INVALID"/>
-</mod-append:choice>
-<mod-append:choice req="HAS_RK_COMBAT_HACK_FLEET_NOT_IN_S8" blue="false">
-	<text>(Enigmashin) Try to delay the rebels!</text>
-	<event load="RK_COMBAT_HACK_FLEET_ACTIVATE"/>
-</mod-append:choice>
-	<!-- <choice hidden="true" req="loc_laststand" lvl="1" max_group="0" blue="false">
-		<text id="storage_not_enough_time"/>
+	<mod-append:choice req="HAS_RK_COMBAT_HACK_FLEET_IN_S8" hidden="true" blue="false">
+		<text>(Enigmashin) The rebels are already here, with Enigmashin jammers. No reason to keep it.</text>
 		<event load="OPTION_INVALID"/>
-	</choice> -->
+	</mod-append:choice>
+	<mod-append:choice req="HAS_RK_COMBAT_HACK_FLEET_NOT_IN_S8" blue="true">
+		<text>(Enigmashin) Try to delay the rebels!</text>
+		<event load="RK_COMBAT_HACK_FLEET_ACTIVATE"/>
+	</mod-append:choice>
+
+	<mod-append:choice req="RK_COMBAT_ACE_CONSOLE" blue="true">
+		<text>(H.A.C.) Limit multiple enemy systems!</text>
+		<event load="RK_COMBAT_ACE_CONSOLE_ACTIVATE"/>
+	</mod-append:choice>
 </mod:findName>
 
-<!--TODO v5.5.1: hide if the enemy has none of the affected systems. 
+<!-- Hide if the enemy has none of the affected systems?
 See specific system hack refs in MV's events_special_storage.xml and the reqs themselves in hyperspace.xml-->
 <mod:findName type = "event" name = "COMBAT_CHECK_REAL">
-<mod-append:choice req="DJMOD_COMBAT_OFFENSE_DISABLER" blue="false">
-	<text>(Offense Disabler) Disable the enemy's offense!</text>
-	<event load="DJMOD_COMBAT_CHECK_OFFENSE_DISABLER"/>
-</mod-append:choice>
+	<mod-append:choice req="RK_COMBAT_OFFENSE_DISABLER" blue="true">
+		<text>(Offense Disabler) Disable the enemy's offense!</text>
+		<event load="DJMOD_COMBAT_CHECK_OFFENSE_DISABLER"/>
+	</mod-append:choice>
 </mod:findName>
 
-<!--TODO v5.5.1: hide if the enemy has none of the affected systems. 
+<!-- Hide if the enemy has none of the affected systems?
 See specific system hack refs in MV's events_special_storage.xml and the reqs themselves in hyperspace.xml-->
 <mod:findName type = "event" name = "COMBAT_CHECK_REAL">
-<mod-append:choice req="DJMOD_DEFENSE_REMOVER" blue="false">
-	<text>(Vulnerabilizer) Start removing the enemy's defense!</text>
-	<event load="DJMOD_COMBAT_CHECK_DEFENSE_REMOVER"/>
-</mod-append:choice>
+	<mod-append:choice req="RK_COMBAT_DEFENSE_REMOVER" blue="true">
+		<text>(Vulnerabilizer) Start removing the enemy's defense!</text>
+		<event load="DJMOD_COMBAT_CHECK_DEFENSE_REMOVER"/>
+	</mod-append:choice>
 </mod:findName>
 
 
 <!-- INSTANT FIRE -->
 <mod:findName type = "event" name = "COMBAT_CHECK_REAL">
-<mod-append:choice req="DJMOD_COMBAT_SCORCH_ENEMY" blue="false">
-	<text>(Plasma Teleporter) Set the enemy ship on fire!</text>
-	<event load="DJMOD_COMBAT_CHECK_SCORCH_ENEMY"/>
-</mod-append:choice>
+	<mod-append:choice req="RK_COMBAT_SCORCH_ENEMY" blue="true">
+		<text>(Plasma Teleporter) Set the enemy ship on fire!</text>
+		<event load="COMBAT_CHECK_RK_COMBAT_SCORCH_ENEMY"/>
+	</mod-append:choice>
 </mod:findName>
 
 <mod:findName type = "event" name = "COMBAT_CHECK_REAL">
-<mod-append:choice req="RK_COMBAT_OXYGENIZER" blue="false">
-	<text>(Oxygenizer) Create an atmosphere!</text>
-	<event load="RK_COMBAT_OXYGENIZER_ACTIVATE"/>
-</mod-append:choice>
+	<mod-append:choice req="RK_COMBAT_OXYGENIZER" blue="true">
+		<text>(Oxygenizer) Create an atmosphere!</text>
+		<event load="RK_COMBAT_OXYGENIZER_ACTIVATE"/>
+	</mod-append:choice>
 </mod:findName>
 
 <!-- JUMP EVENTS WORK! But clunky.
@@ -478,54 +478,47 @@ REFS
 <!-- 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////// TOGGLES 
+///////////////////////////		 REAL TOGGLES (see below for actives used through Toggle Menu)
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
-
 <!-- 
 REFS:
 Now COMBAT_CHECK_TOGGLE in events_special_storage.xml . And probably 1 other place.
 No longer LIST_CHECK_TOGGLES_AND_AMPS in autoblueprints.xml.append with blueprintList as the type.
 -->
 
-<!-- <mod:findName type = "event" name = "COMBAT_CHECK_TOGGLE">
-<mod-append:choice req="DJMOD_OWN_HARMONY_ON" blue="false">
-     <text>(Charged Belts) Set the state of the augment. [Current mode: On]</text> 
-     <event load="DJMOD_TOGGLE_HARMONY_ON"/>
-</mod-append:choice>
-</mod:findName> -->
 <mod:findName type = "event" name = "COMBAT_CHECK_TOGGLE">
-<mod-append:choice req="DJMOD_CREW_ARE_BOMBS_OFF" blue="false">
-     <text>(Charged Belts) Set the state of the augment. [Current mode: Off]</text> 
-     <event load="DJMOD_TOGGLE_CREW_ARE_BOMBS_OFF"/>
-</mod-append:choice>
+	<mod-append:choice req="RK_CREW_ARE_BOMBS_OFF" blue="true">
+		<text>(Charged Belts) Turn it On. [style[color:ff3377]][Can't be turned Off!][[/style]] [Current mode: Off]</text> 
+		<event load="DJMOD_TOGGLE_CREW_ARE_BOMBS_OFF"/>
+	</mod-append:choice>
 </mod:findName>
 
 <mod:findName type = "event" name = "COMBAT_CHECK_TOGGLE">
-<mod-append:choice req="DJMOD_OWN_HARMONY_ON" blue="false">
-     <text>(Punk Harmony) Set the state of the augment. [Current mode: On]</text> 
-     <event load="DJMOD_TOGGLE_HARMONY_ON"/>
-</mod-append:choice>
+	<mod-append:choice req="RK_OWN_HARMONY_ON" blue="false">
+		<text>(Punk Harmony) Set the state of the augment. [Current mode: On]</text> 
+		<event load="DJMOD_TOGGLE_HARMONY_ON"/>
+	</mod-append:choice>
 </mod:findName>
 <mod:findName type = "event" name = "COMBAT_CHECK_TOGGLE">
-<mod-append:choice req="DJMOD_OWN_HARMONY_OFF" blue="false">
-     <text>(Punk Harmony) Set the state of the augment. [Current mode: Off]</text> 
-     <event load="DJMOD_TOGGLE_HARMONY_OFF"/>
-</mod-append:choice>
+	<mod-append:choice req="RK_OWN_HARMONY_OFF" blue="false">
+		<text>(Punk Harmony) Set the state of the augment. [Current mode: Off]</text> 
+		<event load="DJMOD_TOGGLE_HARMONY_OFF"/>
+	</mod-append:choice>
 </mod:findName>
 
 <mod:findName type = "event" name = "COMBAT_CHECK_TOGGLE">
-<mod-append:choice req="DJMOD_ENEMIES_CAN_BURN" blue="false">
-     <text>(Flammabilizer) Set the state of the augment. [Current mode: Immune]</text> 
-     <event load="DJMOD_TOGGLE_FLAMMABILIZER_IMMUNE"/>
-</mod-append:choice>
+	<mod-append:choice req="RK_ENEMIES_CAN_BURN" blue="false">
+		<text>(Flammabilizer) Set the state of the augment. [Current mode: Immune]</text> 
+		<event load="DJMOD_TOGGLE_FLAMMABILIZER_IMMUNE"/>
+	</mod-append:choice>
 </mod:findName>
 <mod:findName type = "event" name = "COMBAT_CHECK_TOGGLE">
-<mod-append:choice req="DJMOD_ENEMIES_BURN_MORE" blue="false">
-     <text>(Flammabilizer) Set the state of the augment. [Current mode: Damage]</text> 
-     <event load="DJMOD_TOGGLE_FLAMMABILIZER_DAMAGE"/>
-</mod-append:choice>
+	<mod-append:choice req="RK_ENEMIES_BURN_MORE" blue="false">
+		<text>(Flammabilizer) Set the state of the augment. [Current mode: Damage]</text> 
+		<event load="DJMOD_TOGGLE_FLAMMABILIZER_DAMAGE"/>
+	</mod-append:choice>
 </mod:findName>
 
 <!-- 
@@ -533,99 +526,230 @@ No longer LIST_CHECK_TOGGLES_AND_AMPS in autoblueprints.xml.append with blueprin
 ///////////////////		 ACTIVES USED THROUGH TOGGLES MENU (PSEUDO-TOGGLES)
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
-<!-- TODO: fix Supershields being invulnerable after regeneration until you jump. -->
 <mod:findName type = "event" name = "COMBAT_CHECK_TOGGLE">
-<mod-append:choice req="RK_PERSISTENCE_SHIELD" blue="true">
-    <text>(Persistence Shield) Regenerate your Supershields!</text> 
-	<event load="TOGGLEMENU_RK_PERSISTENCE_SHIELD"/>
-</mod-append:choice>
+	<mod-append:choice req="RK_COMBAT_AUTO_SYS_REPAIR"  hidden="false" blue="true">
+		<!-- <text>(AERA Second Wind) Immediately repair for 1{. [style[color:8a0a25]][Destroys the augment!][[/style]]</text> NO WORK color tags -->
+		<text>(AERA Second Wind) Immediately repair for 1{. [style[color:ff3377]][Destroys the augment!][[/style]]</text>
+		<!-- <event load="RK_COMBAT_AUTO_SYS_REPAIR_TRIGGERED"/> -->
+		<event>
+			<text>You jumpstart the augment with fuel...</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+
+			<choice>
+				<text>Continue...</text>
+				<event load="RK_COMBAT_AUTO_SYS_REPAIR_TRIGGERED"/>
+			</choice>
+		</event>
+	</mod-append:choice>
 </mod:findName>
-<!-- Making Scorched Earth series use Toggles menu for activation -->
+
 <mod:findName type = "event" name = "COMBAT_CHECK_TOGGLE">
-<mod-append:choice req="DJMOD_COMBAT_SELF_FIRE" blue="true">		<!-- A req list takes less maintenance than doing 1 block for each. -->
-    <text>(Scorched Earth series) Set your ship on fire to fight boarders!</text> 
-	<event load="DJMOD_TOGGLEMENU_SCORCH_SELF"/>
-</mod-append:choice>
+	<mod-append:choice req="RK_PERSISTENCE_SHIELD" blue="true">
+		<text>(Persistence Shield) Regenerate your Supershields!</text> 
+		<event load="TOGGLEMENU_RK_PERSISTENCE_SHIELD"/>
+	</mod-append:choice>
+</mod:findName>
+
+<mod:findName type = "event" name = "COMBAT_CHECK_TOGGLE">
+	<mod-append:choice req="DJMOD_COMBAT_SELF_FIRE" blue="true">		<!-- A req list takes less maintenance than doing 1 block for each. -->
+		<text>(Scorched Earth series) Select what part of your ship to set on fire!</text> 
+		<event load="DJMOD_TOGGLEMENU_SCORCH_SELF"/>
+	</mod-append:choice>
 </mod:findName>
 
 <!-- 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////// NON-COMBAT STORAGE CHECK Use An Augment
+///////////////////		 OTHER USES OF TOGGLES MENU (INFORMATION ETC)
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
 
-<!-- 
-REFS:
-No longer LIST_CHECK_AUGMENTS in autoblueprints.xml.append with blueprintList as the type. Now hyperspace.xml.
+<mod:findName type = "event" name = "COMBAT_CHECK_TOGGLE">
+	<mod-append:choice req="DJMOD_COMBAT_SHIPVORE_RAM_ANY" blue="true">
+		<text>(Shipvore Ram) See current bonuses and Combos</text> 
+		<event load="TOGGLEMENU_RK_SHIPVORE_RAM"/>
+	</mod-append:choice>
+</mod:findName>
 
-<choice req="RECYCLER_REVERSE">
-	<text>(Deconstructor) Recycle some resources.</text>
-	<event load="STORAGE_CHECK_AUG_RECYCLER_REVERSE"/>
-</choice>
+<event name="TOGGLEMENU_RK_SHIPVORE_RAM">
+	<text>Currently active Shipvore Ram bonuses and Combos below. (FP = Full Power)</text>
+	
+	<choice req="cloaking" lvl="2" hidden="true">
+		<text>(Cloaking 2) More chances to deal high damage.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="cloaking" lvl="3" hidden="true">
+		<text>(Cloaking 3) More chances to deal high damage.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+
+	<choice req="engines" lvl="2" hidden="true">
+		<text>(Engines 2) Max damage +1. FP max damage +1.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="engines" lvl="4" hidden="true">
+		<text>(Engines 4) Minimum damage +1. FP minimum damage +1.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="engines" lvl="6" hidden="true">
+		<text>(Engines 6) Max damage +1. FP max damage +1.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="engines" lvl="8" hidden="true">
+		<text>(Engines 8) More chances to deal high damage.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	
+	<choice req="mind" hidden="true">
+		<text>(Mind Control) Crew can't refuse to ram again (or betray you) when scared.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+
+	<choice req="pilot" lvl="2" hidden="true">
+		<text>(Piloting 2) Rarer bad outcomes.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="pilot" lvl="3" hidden="true">
+		<text>(Piloting 3) No resource loss bad outcomes. Rarer FP bad outcomes.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	
+	<choice req="DEBUG_GENERATOR" hidden="true">
+		<text>(Emergency Generator) Normal ramming is free (initial strike).</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="FUEL_CONSERVER" hidden="true">
+		<text>(Fuel Conserver) Normal ramming is free (initial and repeat strikes).</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+
+	<choice req="DJMOD_ANY_RESCUE_ARM" hidden="true">
+		<text>(Ship Arm) Can retrieve ejected crew.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+
+	<choice hidden="true">
+		<text>Return to the toggle menu.</text>
+		<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
+	</choice>
+	
+	<!-- <choice req="shipvore_ram_used_fuel" lvl="0" max_lvl="0" blue="false">
+		<text>Abort. (No { was used)</text>
+		<event>			
+			<variable name="shipvore_ram_full_power" op="set" val="0"/>
+			<variable name="locked_shipvore_ram_full_power" op="set" val="0"/>
+		</event>
+	</choice> -->
+</event>
+
+<!-- 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////				NON-COMBAT STORAGE CHECK "Use An Augment"
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+"No longer LIST_CHECK_AUGMENTS in autoblueprints.xml.append with blueprintList as the type.
+Now MUST APPEND to LIST_CHECK_AUGMENTS in hyperspace.xml.
+
+Delete below comment if works after append:
+IF menu won't show up, but with some OTHER req fulfilled it does show up and all expected choices are there
+including those that don't make the menu show up by themselves: APPEND to LIST_CHECK_AUGMENTS in hyperspace.xml.
+-->
+<!-- REFS MV v5.5.1:
+
+	<choice req="RECYCLER_REVERSE">
+		<text>(Deconstructor) Recycle some resources.</text>
+		<event load="STORAGE_CHECK_AUG_RECYCLER_REVERSE"/>
+	</choice>
+	...
+    <choice req="BLUELIST_OBSIDIAN_UPGRADE">
+        <text>(Obsidian Armor) Upgrade the armor.</text>
+        <event load="STORAGE_CHECK_AUG_OBSIDIAN"/>
+    </choice>
+	...
+    <choice req="LIST_CHECK_PROTONPACK">
+        <text>(Proton Pack) Check the Database.</text>
+        <event load="STORAGE_CHECK_PROTONPACK"/>
+    </choice>
 -->
 <mod:findName type = "event" name = "STORAGE_CHECK_AUG">
-<mod-append:choice req="DJMOD_COMBAT_SHIPVORE_RAM" blue="false">
-     <text>(Shipvore Ram) Reinforce to resist Full Power use.</text>
-     <event load="DJMOD_COMBAT_SHIPVORE_RAM_REINFORCE"/>
-</mod-append:choice>
+	<mod-append:choice req="DJMOD_COMBAT_SHIPVORE_RAM" blue="true">
+		<text>(Shipvore Ram) Reinforce to resist Full Power use.</text>
+		<event load="DJMOD_COMBAT_SHIPVORE_RAM_REINFORCE"/>
+	</mod-append:choice>
 </mod:findName>
 
 <mod:findName type = "event" name = "STORAGE_CHECK_AUG">
-<mod-append:choice req="DJMOD_CREW_ARE_BOMBS_ON" blue="false">
-     <text>(Charged Belts) Scrap it.</text>
-     <event load="DJMOD_CREW_ARE_BOMBS_ON_SELFSCRAP"/>
-</mod-append:choice>
+	<mod-append:choice req="RK_CREW_ARE_BOMBS_ON" blue="true">
+		<text>(Charged Belts) Scrap it.</text>
+		<event load="RK_CREW_ARE_BOMBS_ON_SELFSCRAP"/>
+	</mod-append:choice>
 </mod:findName>
 
 <mod:findName type = "event" name = "STORAGE_CHECK_AUG">
-<mod-append:choice req="RK_PERSISTENCE_SHIELD" blue="false">
-     <text>(Persistence Shield) Rebuild the capacitor.</text>
-     <event load="RK_PERSISTENCE_SHIELD_REBUILD_CAPACITOR"/>
-</mod-append:choice>
+	<mod-append:choice req="RK_LEAD_TITANS" blue="true">
+		<text>(Lead Titans) Scrap it.</text>
+		<event load="RK_LEAD_TITANS_SELFSCRAP"/>
+	</mod-append:choice>
 </mod:findName>
 
-
 <mod:findName type = "event" name = "STORAGE_CHECK_AUG">
-<mod-append:choice req="RK_SCORCH_SELF" blue="false">
-     <text>(Scorched Earth) Upgrade to Blazing Earth.</text>
-     <event load="RK_SCORCH_SELF_UPGRADE"/>
-</mod-append:choice>
-</mod:findName>
-<mod:findName type = "event" name = "STORAGE_CHECK_AUG">
-<mod-append:choice req="RK_SCORCH_SELF_2" blue="false">
-     <text>(Blazing Earth) Upgrade to Erupting Earth.</text> 
-     <event load="RK_SCORCH_SELF_UPGRADE_2"/>
-</mod-append:choice>
+	<mod-append:choice req="RK_PERSISTENCE_SHIELD" blue="true">
+		<text>(Persistence Shield) Rebuild the capacitor.</text>
+		<event load="RK_PERSISTENCE_SHIELD_REBUILD_CAPACITOR"/>
+	</mod-append:choice>
 </mod:findName>
 
 
 <mod:findName type = "event" name = "STORAGE_CHECK_AUG">
-<mod-append:choice req="RK_BPS_SURVEYOR" blue="false">
-     <text>(Surveyor) Deep-search the beacon.</text> 
-     <event load="RK_BPS_SURVEYOR_ACTIVATE"/>
-</mod-append:choice>
+	<mod-append:choice req="RK_OWN_HARMONY_ANY" blue="true">
+		<text>(Punk Harmony) Grow a Separatist Engi.</text>
+		<event load="RK_OWN_HARMONY_GROW_ENGI_SEPARATIST"/>
+	</mod-append:choice>
+</mod:findName>
+
+
+<mod:findName type = "event" name = "STORAGE_CHECK_AUG">
+	<mod-append:choice req="RK_SCORCH_SELF" blue="true">
+		<text>(Scorched Earth) Upgrade to Blazing Earth (Tier 2).</text>
+		<event load="RK_SCORCH_SELF_UPGRADE"/>
+	</mod-append:choice>
+</mod:findName>
+<mod:findName type = "event" name = "STORAGE_CHECK_AUG">
+	<mod-append:choice req="RK_SCORCH_SELF_2" blue="true">
+		<text>(Blazing Earth) Upgrade to Erupting Earth (Max Tier).</text> 
+		<event load="RK_SCORCH_SELF_UPGRADE_2"/>
+	</mod-append:choice>
+</mod:findName>
+
+
+<mod:findName type = "event" name = "STORAGE_CHECK_AUG">
+	<mod-append:choice req="RK_BPS_SURVEYOR" blue="true">
+		<text>(Surveyor) Deep-search the beacon.</text> 
+		<event load="RK_BPS_SURVEYOR_ACTIVATE"/>
+	</mod-append:choice>
 </mod:findName>
 
 <!-- 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////// POST-COMBAT augments
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
-TODO: Zoltan Shield Extractor: 1 fleet accel, replace with the shield. in events_special_defeat !
+.
 -->
 
 
 
 
 <!--
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+********************************************************************************************************************************
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////// COMBAT AUGMENTS
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+********************************************************************************************************************************
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
 
 <!--
@@ -636,15 +760,14 @@ TODO: Zoltan Shield Extractor: 1 fleet accel, replace with the shield. in events
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 The Shipvore Ram COMBAT_ augment tries to eat the enemy ship (deals damage) after a delay, 
-and usually repairs yours or finds something useful.
-This can promote a stalling playstyle followed by a supposedly finisher move, to benefit from the free repairs and goodies.
+and usually repairs yours or finds something useful. Rarely, fucks you up.
+This can promote a brief stalling playstyle followed by a supposedly finisher move, to benefit from the free repairs and goodies.
 
 Effects on player ship can't be done in the same step as effects on the enemy, so split them.
 Events need unique names, else it might crash the game!
 
 TODO: 
 -Debug the Lua checking for enemy HP before asking for repeat ram. It causes the random outcome to always be BAD CREW 2.
--Make outcomes more influenced by ship composition (levels of Engines, Doors, Cloaking, Piloting. Clonebay and MC already included.)
 -->
 
 <event name="DJMOD_COMBAT_CHECK_SHIPVORE_RAM">
@@ -672,7 +795,6 @@ TODO:
 			</choice>
 		</event>
 	</choice>
-
 	<choice req="DEBUG_GENERATOR">
 		<text>(Emergency generator) Yes, using no fuel.</text>
 		<event load="DJMOD_COMBAT_SHIPVORE_RAM_TIMER_START"/>
@@ -682,10 +804,9 @@ TODO:
 		<event load="DJMOD_COMBAT_SHIPVORE_RAM_TIMER_START"/>
 	</choice>
 
-
 	<choice req="DJMOD_COMBAT_SHIPVORE_RAM_REINFORCED" blue="true"> 
 		<text>(Reinforced Shipvore Ram) Yes, at full power!
-		[You'll lose the reinforcement. Can't ram again until next jump. Needs 7 seconds.]</text>
+		[You'll [style[color:ff3377]]lose the reinforcement[[/style]]. [style[color:ff3377]]Can't ram again[[/style]] until you jump. Needs 7 seconds.]</text>
 		<event>
 			<text>You activate the augment at full power...</text>
 			
@@ -703,7 +824,7 @@ TODO:
 	</choice>
 	<choice req="DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED" blue="false"> 
 		<text>Yes, at full power!
-		[The augment will disintegrate. Needs 7 seconds.]</text>
+		[The augment will [style[color:ff3377]]disintegrate[[/style]]. Needs 7 seconds.]</text>
 		<event>
 			<text>You activate the augment at full power...</text>
 			
@@ -818,7 +939,7 @@ TODO:
 	<text>Fully ready to ram! Proceed?</text>
 	
 	<choice req="DJMOD_COMBAT_SHIPVORE_RAM_REINFORCED_AT_FULL_POWER" lvl="1" hidden="true">
-		<text>(Full power) Give it your all! [You'll lose reinforcement on the augment.]</text>
+		<text>(Full power) Give it your all! [You'll [style[color:ff3377]]lose reinforcement[[/style]] on the augment.]</text>
 		
 		<event>
 			<text>Your augment's reinforcement melts away...</text>
@@ -834,7 +955,7 @@ TODO:
 		</event>
 	</choice>
 	<choice req="DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED_AT_FULL_POWER" lvl="1" hidden="false">
-		<text>(Full power) Give it your all! [Reinforce the augment at empty beacons so it doesn't disintegrate.]</text>
+		<text>(Full power) Give it your all! [Reinforce the augment at empty beacons first, or use it right now but it will [style[color:ff3377]]disintegrate[[/style]].]</text>
 		
 		<event>
 			<text>Your augment disintegrates...</text>
@@ -851,7 +972,7 @@ TODO:
 	</choice>
 
 	<choice req="locked_shipvore_ram_full_power" lvl="1" hidden="true">
-		<text>(Full power) It's us or them! [Cannot ram again until you jump.]</text>
+		<text>(Full power) It's us or them! [[style[color:ff3377]]Cannot ram again[[/style]] until you jump.]</text>
 		
 		<event>
 			<text>You strongly feel your engines charging up...</text>
@@ -894,38 +1015,99 @@ Instead we use jank like this, which DOES NOT KILL ships if the damage brings th
 An event list can be used to add randomness, the game will attempt to pick 
 any one of these events from the list if it is loaded by a previous event.
 Adding multiple copies of an outcome increases its likelihood!-->
-<eventList name="SHIPVORE_RAM_ATTACK_OUTCOMES">
-	<event load="SHIPVORE_RAM_ATTACK_OUTCOME_GOOD_1"/>
-	<event load="SHIPVORE_RAM_ATTACK_OUTCOME_GOOD_1"/>
-	
-	<event load="SHIPVORE_RAM_ATTACK_OUTCOME_GOOD_2"/>
 
-	<event load="SHIPVORE_RAM_ATTACK_OUTCOME_GOOD_3"/>
-	
-	<event load="SHIPVORE_RAM_ATTACK_OUTCOME_BAD_1"/>
+<!-- REF MV v5.5.1: Event with reqs!
+<event name="NEBULA_SLUG_O2_JAM" unique="true">
+	<loadEventList seeded="false" first="false" generate="false">
+		<event name="NEBULA_ENCOUNTER_SLUG_REGULAR" req="oxygen" lvl="0" max_lvl="0"/>
+		<event name="NEBULA_SLUG_OXYGEN" req="oxygen" lvl="1"/>
+	</loadEventList>
+</event> -->
+<event name="SHIPVORE_RAM_ATTACK_OUTCOMES">
+	<loadEventList seeded="false" first="false" generate="false">
+		<event name="SHIPVORE_RAM_ATTACK_2DMG_NOTHING" req="engines" max_lvl="3"/>
+		
+		<event name="SHIPVORE_RAM_ATTACK_3DMG_NOTHING" req="RK_ENGINES2_AND_CLOAKING3" lvl="0" max_lvl="0"/>
+		<event name="SHIPVORE_RAM_ATTACK_3DMG_NOTHING"/>
+		
+		<event name="SHIPVORE_RAM_ATTACK_3DMG_BREACH"/>
+		<event name="SHIPVORE_RAM_ATTACK_3DMG_BREACH"/>
+		
+		<event name="SHIPVORE_RAM_ATTACK_4DMG_BREACH" req="engines" lvl="2"/>
+		<event name="SHIPVORE_RAM_ATTACK_4DMG_BREACH" req="engines" lvl="8"/>
+		<event name="SHIPVORE_RAM_ATTACK_4DMG_BREACH" req="RK_ENGINES2_AND_CLOAKING2"/>
+		
+		<event name="SHIPVORE_RAM_ATTACK_5DMG_BREACH" req="engines" lvl="6"/>
+		<event name="SHIPVORE_RAM_ATTACK_5DMG_BREACH" req="engines" lvl="8"/>
+		<event name="SHIPVORE_RAM_ATTACK_5DMG_BREACH" req="RK_ENGINES6_AND_CLOAKING3"/>
+	</loadEventList>
+</event>
+<!-- <eventList name="SHIPVORE_RAM_ATTACK_OUTCOMES">
+	<event load="SHIPVORE_RAM_ATTACK_2DMG_NOTHING"/>
 
-	<event load="SHIPVORE_RAM_ATTACK_OUTCOME_BAD_2"/>
-</eventList>
+	<event load="SHIPVORE_RAM_ATTACK_3DMG_NOTHING"/>
+
+	<event load="SHIPVORE_RAM_ATTACK_3DMG_BREACH"/>
+	<event load="SHIPVORE_RAM_ATTACK_3DMG_BREACH"/>
+	
+	<event load="SHIPVORE_RAM_ATTACK_4DMG_BREACH"/>
+
+	<event load="SHIPVORE_RAM_ATTACK_5DMG_BREACH"/>
+</eventList> -->
 
 <!-- Full power outcomes on the enemy don't need to be separate, they're just greater. -->
-<eventList name="SHIPVORE_RAM_ATTACK_OUTCOMES_FULL_POWER">
-	<event load="SHIPVORE_RAM_ATTACK_FP_OUTCOME_GOOD_1"/>
-	<event load="SHIPVORE_RAM_ATTACK_FP_OUTCOME_GOOD_1"/>
+<event name="SHIPVORE_RAM_ATTACK_OUTCOMES_FULL_POWER">
+	<loadEventList seeded="false" first="false" generate="false">
+		<event name="SHIPVORE_RAM_ATTACK_5DMG_BREACH_1DMG_BREACH" req="engines" max_lvl="3"/>
+		<event name="SHIPVORE_RAM_ATTACK_5DMG_BREACH_1DMG_BREACH" req="engines" max_lvl="3"/>
+		
+		<event name="SHIPVORE_RAM_ATTACK_6DMG_BREACH_1DMG_BREACH" req="RK_ENGINES2_AND_CLOAKING3" lvl="0" max_lvl="0"/>
+		<event name="SHIPVORE_RAM_ATTACK_6DMG_BREACH_1DMG_BREACH" req="RK_ENGINES2_AND_CLOAKING3" lvl="0" max_lvl="0"/>
+		<event name="SHIPVORE_RAM_ATTACK_6DMG_BREACH_1DMG_BREACH"/>
+		<event name="SHIPVORE_RAM_ATTACK_6DMG_BREACH_1DMG_BREACH"/>
+			<event name="SHIPVORE_RAM_ATTACK_5DMG_BREACH_2DMG_BREACH" req="RK_ENGINES2_AND_CLOAKING3" lvl="0" max_lvl="0"/>
+			<event name="SHIPVORE_RAM_ATTACK_5DMG_BREACH_2DMG_BREACH"/>
+		
+		<event name="SHIPVORE_RAM_ATTACK_6DMG_ALL_2DMG_BREACH" req="engines" lvl="2"/>
+		<event name="SHIPVORE_RAM_ATTACK_6DMG_ALL_2DMG_BREACH" req="engines" lvl="8"/>
+		<event name="SHIPVORE_RAM_ATTACK_6DMG_ALL_2DMG_BREACH" req="RK_ENGINES2_AND_CLOAKING2"/>
+			<event name="SHIPVORE_RAM_ATTACK_5DMG_ALL_3DMG_BREACH" req="engines" lvl="2"/>
+			<event name="SHIPVORE_RAM_ATTACK_5DMG_ALL_3DMG_BREACH" req="engines" lvl="8"/>
+			<event name="SHIPVORE_RAM_ATTACK_5DMG_ALL_3DMG_BREACH" req="RK_ENGINES2_AND_CLOAKING2"/>
+		
+		<event name="SHIPVORE_RAM_ATTACK_6DMG_ALL_3DMG_BREACH" req="engines" lvl="6"/>
+		<event name="SHIPVORE_RAM_ATTACK_6DMG_ALL_3DMG_BREACH" req="engines" lvl="8"/>
+		<event name="SHIPVORE_RAM_ATTACK_6DMG_ALL_3DMG_BREACH" req="RK_ENGINES6_AND_CLOAKING3"/>
+			<event name="SHIPVORE_RAM_ATTACK_5DMG_ALL_4DMG_BREACH" req="engines" lvl="6"/>
+			<event name="SHIPVORE_RAM_ATTACK_5DMG_ALL_4DMG_BREACH" req="engines" lvl="8"/>
+			<event name="SHIPVORE_RAM_ATTACK_5DMG_ALL_4DMG_BREACH" req="RK_ENGINES6_AND_CLOAKING3"/>
+		<event name="SHIPVORE_RAM_ATTACK_3DMG_ALL_3DMG_BREACH_3DMG_BREACH" req="engines" lvl="8"/>
+		<event name="SHIPVORE_RAM_ATTACK_3DMG_ALL_3DMG_BREACH_3DMG_BREACH" req="RK_ENGINES6_AND_CLOAKING3"/>
+	</loadEventList>
+</event>
+
+<!-- TODO: Give worse outcome odds against enemies with stronger engines than Player, unless the code for that is horrible?
+If yes, include a warning about that in the text. -->
+<event name="SHIPVORE_RAM_ATTACK_2DMG_NOTHING">
+	<text>You barely manage to hit the enemy, dealing 2 damage...</text>
+	<enemyDamage amount="2"/>
 	
-	<event load="SHIPVORE_RAM_ATTACK_FP_OUTCOME_GOOD_2"/>
-	<event load="SHIPVORE_RAM_ATTACK_FP_OUTCOME_GOOD_2"/>
-
-	<event load="SHIPVORE_RAM_ATTACK_FP_OUTCOME_GOOD_3"/>
+	<choice hidden="true">
+		<text>...with this result on your own ship (75% chance good).</text>
+		<event load="SHIPVORE_RAM_OWN_OUTCOMES"/>
+	</choice>
+</event>
+<event name="SHIPVORE_RAM_ATTACK_3DMG_NOTHING">
+	<text>You catch a small part of the enemy ship, dealing 3 damage...</text>
+	<enemyDamage amount="3"/>
 	
-	<event load="SHIPVORE_RAM_ATTACK_FP_OUTCOME_GOOD_3B"/>
+	<choice hidden="true">
+		<text>...with this result on your own ship (75% chance good).</text>
+		<event load="SHIPVORE_RAM_OWN_OUTCOMES"/>
+	</choice>
+</event>
 
-	<event load="SHIPVORE_RAM_ATTACK_FP_OUTCOME_GOOD_4"/>
-
-	<event load="SHIPVORE_RAM_ATTACK_FP_OUTCOME_GOOD_4B"/>
-</eventList>
-
-
-<event name="SHIPVORE_RAM_ATTACK_OUTCOME_GOOD_1">
+<event name="SHIPVORE_RAM_ATTACK_3DMG_BREACH">
 	<text>You rip out a small part of the enemy ship, dealing 3 damage...</text>
 	<enemyDamage amount="3" system="random" effect="breach" force="true"/>
 	<!-- <enemyDamage amount="1" system="sys" effect="eff" force="false" damageHull="true"/>
@@ -936,7 +1118,7 @@ Adding multiple copies of an outcome increases its likelihood!-->
 		<event load="SHIPVORE_RAM_OWN_OUTCOMES"/>
 	</choice>
 </event>
-<event name="SHIPVORE_RAM_ATTACK_OUTCOME_GOOD_2">
+<event name="SHIPVORE_RAM_ATTACK_4DMG_BREACH">
 	<text>You tear through the enemy ship's hull for a solid 4 damage...</text>
 	<enemyDamage amount="4" system="room" effect="breach" force="true"/>
 	
@@ -945,7 +1127,7 @@ Adding multiple copies of an outcome increases its likelihood!-->
 		<event load="SHIPVORE_RAM_OWN_OUTCOMES"/>
 	</choice>
 </event>
-<event name="SHIPVORE_RAM_ATTACK_OUTCOME_GOOD_3">
+<event name="SHIPVORE_RAM_ATTACK_5DMG_BREACH">
 	<text>You slam into the enemy ship's hull for a serious 5 damage...</text>
 	<enemyDamage amount="5" system="room" effect="breach" force="true"/>
 	
@@ -955,30 +1137,10 @@ Adding multiple copies of an outcome increases its likelihood!-->
 	</choice>
 </event>
 
-
-<event name="SHIPVORE_RAM_ATTACK_FP_OUTCOME_GOOD_1">
-	<text>You smash into the enemy ship at full power for a massive 6 damage...</text>
-	<enemyDamage amount="6" system="random" effect="breach" force="true"/>
-	<enemyDamage amount="0" system="random" effect="breach" force="true"/>
-	
-	<choice hidden="true">
-		<text>...with this result on your own ship (80% chance good).</text>
-		<event load="SHIPVORE_RAM_FULL_POWER_OWN_OUTCOMES"/>
-	</choice>
-</event>
-<event name="SHIPVORE_RAM_ATTACK_FP_OUTCOME_GOOD_2">
-	<text>You smash into the enemy ship at full power for a devastating 7 damage...</text>
-	<enemyDamage amount="7" system="random" effect="all" force="true"/>
-	<enemyDamage amount="0" system="random" effect="breach" force="true"/>
-	
-	<choice hidden="true">
-		<text>...with this result on your own ship (80% chance good).</text>
-		<event load="SHIPVORE_RAM_FULL_POWER_OWN_OUTCOMES"/>
-	</choice>
-</event>
-<event name="SHIPVORE_RAM_ATTACK_FP_OUTCOME_GOOD_3">
-	<text>You shatter the enemy's hull at full power for a critical 8 damage...</text>
-	<enemyDamage amount="7" system="random" effect="all" force="true"/>
+<!-- 6+ damage outcomes that hit 2+ rooms -->
+<event name="SHIPVORE_RAM_ATTACK_5DMG_BREACH_1DMG_BREACH">
+	<text>You smash into the enemy ship at full power for 6 damage...</text>
+	<enemyDamage amount="5" system="random" effect="breach" force="true"/>
 	<enemyDamage amount="1" system="random" effect="breach" force="true"/>
 	
 	<choice hidden="true">
@@ -986,8 +1148,30 @@ Adding multiple copies of an outcome increases its likelihood!-->
 		<event load="SHIPVORE_RAM_FULL_POWER_OWN_OUTCOMES"/>
 	</choice>
 </event>
-<event name="SHIPVORE_RAM_ATTACK_FP_OUTCOME_GOOD_3B">
-	<text>You shatter the enemy's hull at full power for a critical 8 damage...</text>
+
+<event name="SHIPVORE_RAM_ATTACK_6DMG_BREACH_1DMG_BREACH">
+	<text>You smash into the enemy ship at full power for a massive 7 damage...</text>
+	<enemyDamage amount="6" system="random" effect="breach" force="true"/>
+	<enemyDamage amount="1" system="random" effect="breach" force="true"/>
+	
+	<choice hidden="true">
+		<text>...with this result on your own ship (80% chance good).</text>
+		<event load="SHIPVORE_RAM_FULL_POWER_OWN_OUTCOMES"/>
+	</choice>
+</event>
+<event name="SHIPVORE_RAM_ATTACK_5DMG_BREACH_2DMG_BREACH">
+	<text>You smash into the enemy ship at full power for a massive 7 damage...</text>
+	<enemyDamage amount="5" system="random" effect="all" force="true"/>
+	<enemyDamage amount="2" system="random" effect="breach" force="true"/>
+	
+	<choice hidden="true">
+		<text>...with this result on your own ship (80% chance good).</text>
+		<event load="SHIPVORE_RAM_FULL_POWER_OWN_OUTCOMES"/>
+	</choice>
+</event>
+
+<event name="SHIPVORE_RAM_ATTACK_6DMG_ALL_2DMG_BREACH">
+	<text>You shatter the enemy's hull at full power for a devastating 8 damage...</text>
 	<enemyDamage amount="6" system="random" effect="all" force="true"/>
 	<enemyDamage amount="2" system="random" effect="breach" force="true"/>
 	
@@ -996,17 +1180,18 @@ Adding multiple copies of an outcome increases its likelihood!-->
 		<event load="SHIPVORE_RAM_FULL_POWER_OWN_OUTCOMES"/>
 	</choice>
 </event>
-<event name="SHIPVORE_RAM_ATTACK_FP_OUTCOME_GOOD_4">
-	<text>You plow through the enemy ship at full power like a missile for a critical 9 damage...</text>
-	<enemyDamage amount="7" system="random" effect="all" force="true"/>
-	<enemyDamage amount="2" system="random" effect="breach" force="true"/>
+<event name="SHIPVORE_RAM_ATTACK_5DMG_ALL_3DMG_BREACH">
+	<text>You shatter the enemy's hull at full power for a devastating 8 damage...</text>
+	<enemyDamage amount="5" system="random" effect="all" force="true"/>
+	<enemyDamage amount="3" system="random" effect="breach" force="true"/>
 	
 	<choice hidden="true">
 		<text>...with this result on your own ship (80% chance good).</text>
 		<event load="SHIPVORE_RAM_FULL_POWER_OWN_OUTCOMES"/>
 	</choice>
 </event>
-<event name="SHIPVORE_RAM_ATTACK_FP_OUTCOME_GOOD_4B">
+
+<event name="SHIPVORE_RAM_ATTACK_6DMG_ALL_3DMG_BREACH">
 	<text>You plow through the enemy ship at full power like a missile for a critical 9 damage...</text>
 	<enemyDamage amount="6" system="random" effect="all" force="true"/>
 	<enemyDamage amount="3" system="random" effect="breach" force="true"/>
@@ -1016,36 +1201,90 @@ Adding multiple copies of an outcome increases its likelihood!-->
 		<event load="SHIPVORE_RAM_FULL_POWER_OWN_OUTCOMES"/>
 	</choice>
 </event>
-
-
-<!-- TODO: Give worse outcome odds against enemies with stronger engines than Player, unless the code for that is horrible?
-If yes, include a warning about that in the text. -->
-<event name="SHIPVORE_RAM_ATTACK_OUTCOME_BAD_1">
-	<text>You barely manage to hit the enemy, dealing 2 damage...</text>
-	<enemyDamage amount="2"/>
+<event name="SHIPVORE_RAM_ATTACK_5DMG_ALL_4DMG_BREACH">
+	<text>You plow through the enemy ship at full power like a missile for a critical 9 damage...</text>
+	<enemyDamage amount="5" system="random" effect="all" force="true"/>
+	<enemyDamage amount="4" system="random" effect="breach" force="true"/>
 	
 	<choice hidden="true">
-		<text>...with this result on your own ship (75% chance good).</text>
-		<event load="SHIPVORE_RAM_OWN_OUTCOMES"/>
+		<text>...with this result on your own ship (80% chance good).</text>
+		<event load="SHIPVORE_RAM_FULL_POWER_OWN_OUTCOMES"/>
 	</choice>
 </event>
-<event name="SHIPVORE_RAM_ATTACK_OUTCOME_BAD_2">
-	<text>You catch a small part of the enemy ship, dealing 3 damage...</text>
-	<enemyDamage amount="3"/>
+<event name="SHIPVORE_RAM_ATTACK_3DMG_ALL_3DMG_BREACH_3DMG_BREACH">
+	<text>You plow through the enemy ship at full power like a missile for a critical 9 damage...</text>
+	<enemyDamage amount="3" system="random" effect="all" force="true"/>
+	<enemyDamage amount="3" system="random" effect="breach" force="true"/>
+	<enemyDamage amount="3" system="random" effect="breach" force="true"/>
 	
 	<choice hidden="true">
-		<text>...with this result on your own ship (75% chance good).</text>
-		<event load="SHIPVORE_RAM_OWN_OUTCOMES"/>
+		<text>...with this result on your own ship (80% chance good).</text>
+		<event load="SHIPVORE_RAM_FULL_POWER_OWN_OUTCOMES"/>
 	</choice>
 </event>
+
 
 <!-- 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 Player's own ship outcomes. 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
  -->
+<event name="SHIPVORE_RAM_OWN_OUTCOMES">
+	<loadEventList seeded="false" first="false" generate="false">
+    	<!-- Total good 4+6+7+4 + 3*2 = 27 chances -->
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_1"/>
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_1"/>
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_1"/>
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_1"/>
+		
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_2"/>
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_2"/>
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_2"/>
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_2"/>
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_2"/>
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_2"/>
+		
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_3_SCRAP"/>
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_3_SCRAP"/>
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_3_SCRAP"/>
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_3_SCRAP"/>
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_3_SCRAP"/>
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_3_SCRAP"/>
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_3_SCRAP"/>
+		
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_4_SCRAP"/>
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_4_SCRAP"/>
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_4_SCRAP"/>
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_4_SCRAP"/>
+		
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_GETMISSILES"/>
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_GETMISSILES"/>
+		
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_GETDRONEPARTS"/>
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_GETDRONEPARTS"/>
 
-<eventList name="SHIPVORE_RAM_OWN_OUTCOMES">
+		<!-- Total bad 2 + 7*1 = 9 chances. 9/36 = 25% -->
+		<!-- TODO: Use "req" with Rock Armor augments etc. to limit the bad outcomes. -->
+		
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_BAD_ENGINES_OVERHEAT" req="pilot" max_lvl="1"/>
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_BAD_ENGINES_OVERHEAT"/>
+		
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_BAD_HULL_ENGINE"/>
+		
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_BAD_BREACHES"/>
+		
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_BAD_ENGINES"/>
+		
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_BAD_HULL_2"/>
+		
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_BAD_MISSILES" req="pilot" max_lvl="2"/>
+		
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_BAD_DRONEPARTS" req="pilot" max_lvl="2"/>
+		
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW"/>
+	</loadEventList>
+</event>
+<eventList name="SHIPVORE_RAM_OWN_OUTCOMES_OLDREF_TOBEDELETED">
     <!-- Total good 4+6+7+4 + 3*2 = 27 chances -->
 	<event load="SHIPVORE_RAM_OWN_OUTCOME_GOOD_1"/>
 	<event load="SHIPVORE_RAM_OWN_OUTCOME_GOOD_1"/>
@@ -1082,10 +1321,10 @@ Player's own ship outcomes.
 	<event load="SHIPVORE_RAM_OWN_OUTCOME_GOOD_GETDRONEPARTS"/>
 
 	<!-- Total bad 2 + 7*1 = 9 chances. 9/36 = 25% -->
-	<!-- TODO: Use "req" with Rock Armor augments to limit the bad outcomes? Must be done before this point since reqs are "choice" arguments, not "event" arguments. -->
+	<!-- TODO: Use "req" with Rock Armor augments etc. to limit the bad outcomes. -->
 	
-	<event load="SHIPVORE_RAM_OWN_OUTCOME_BAD_1"/>
-	<event load="SHIPVORE_RAM_OWN_OUTCOME_BAD_1"/>
+	<event load="SHIPVORE_RAM_OWN_OUTCOME_BAD_ENGINES_OVERHEAT"/>
+	<event load="SHIPVORE_RAM_OWN_OUTCOME_BAD_ENGINES_OVERHEAT"/>
 	
 	<event load="SHIPVORE_RAM_OWN_OUTCOME_BAD_HULL_ENGINE"/>
 	
@@ -1111,7 +1350,7 @@ Player's own ship outcomes.
 		<text>(Shipvore Ram) Maybe we can go again.</text>
 		<event load="DJMOD_COMBAT_SHIPVORE_RAM_REPEAT"/>
 	</choice>
-	<!-- <choice req="pilot" lvl="1" blue="false" max_group="2"> -->
+	
 	<choice>
 		<text>That's enough.</text>
 		<event/>
@@ -1216,7 +1455,7 @@ Player's own ship outcomes.
 BAD OUTCOMES
 *************************************** -->
 
-<event name="SHIPVORE_RAM_OWN_OUTCOME_BAD_1">
+<event name="SHIPVORE_RAM_OWN_OUTCOME_BAD_ENGINES_OVERHEAT">
 	<text>This debris is too bad for repairs, and our engines overheated.</text>
 	<damage amount="0" system="engines" effect="fire"/>
 		
@@ -1390,7 +1629,7 @@ BAD OUTCOMES
 	</choice>
 
 	<choice req="DJMOD_ANY_RESCUE_ARM" hidden="false">
-		<text>(Appropriate ship Arm) Grab them with a makeshift lasso!</text>
+		<text>(Ship Arm) Grab them with a makeshift lasso!</text>
 		<event>
 			<text>With dubious logic, you get your crew back in through the same breach!</text>
 			<item_modify>
@@ -1404,7 +1643,7 @@ BAD OUTCOMES
 		</event>
 	</choice>
 	<choice req="DJMOD_ANY_RESCUE_ARM" lvl="0" max_lvl="0" hidden="true" blue="false">
-		<text>Your ship does not have an appropriate Arm.</text>
+		<text>Your ship does not have an Arm.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
 
@@ -1435,7 +1674,7 @@ BAD OUTCOMES
 			<text>As your crew is lost alone in the void, the others refuse to ram that ship again!</text>
 
 			<removeCrew>	<!--No class argument means it's a random crewmember. 
-				Unique crew are naturally immune as long as there are non-uniques. Simple Human lab upgrade protects other races. -->
+				Unique crew are naturally immune as long as there are non-uniques. "Simple Human" lab upgrade protects other races. -->
 				<clone>true</clone>
 				<text>Your clonebay successfully revived your crew.</text>
 			</removeCrew>
@@ -1462,44 +1701,6 @@ BAD OUTCOMES
 		</event>
 	</choice>
 </event>
-<!-- MOVED TO FULL POWER BAD OUTCOMES.
-<event name="SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW2">	
-	<text>Captain... the shock was terrible, and our crew was thrown into space!
-	The others refuse to ram that ship again.</text>
-	<damage amount="1" system="engines" effect="breach" force="false"/>
-	<damage amount="1" system="random" effect="breach" force="false"/>
-	<damage amount="-2"/>
-	
-	<removeCrew>
-		<clone>true</clone>
-		<text>Your clonebay successfully revived your crew.</text>
-	</removeCrew>
-
-	<choice req="mind" lvl="1" hidden="true" blue="true">
-		<text>(Mind Control) Prepare for the worst...</text>
-		<event>
-			<text>What's more, a friend of the victim has lost all trust in you!
-			This could have been worse, but your Mind Control system prevented treason.</text>
-			<choice>
-				<text>Not good, but not terrible either.</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-	
-	<choice>
-		<text>This is bad...</text>
-		<event>
-			<text>What's more, a friend of the victim has lost all trust in you, and turns to violence!
-			This could probably have been avoided with the appropriate control system...</text>
-			<crewMember amount="-1" class="traitor"/>
-			<choice>
-				<text>This has to be the worst that could happen!</text>
-				<event/>
-			</choice>
-		</event>
-	</choice>
-</event> -->
 
 <event name="SHIPVORE_RAM_OWN_OUTCOME_BAD_BREACHES">	
 	<text>We tore open our hull on a sharp piece of debris!
@@ -1513,22 +1714,6 @@ BAD OUTCOMES
 		<text>(Shipvore Ram) Maybe we can go again.</text>
 		<event load="DJMOD_COMBAT_SHIPVORE_RAM_REPEAT"/>
 	</choice>
-	
-	<!-- <choice req="mind" lvl="1" hidden="true" blue="true">
-		<text>(Mind Control) They will obey their captain.</text>
-		<event>
-			<text>The pre-programmed mind pulse is released and the crew stops complaining.</text>
-			<choice req="DJMOD_COMBAT_SHIPVORE_RAM_ANY" blue="false">
-				<text>That's more like it.</text>
-				<event load="DJMOD_COMBAT_SHIPVORE_RAM_REPEAT"/>
-			</choice>
-			
-			<choice>
-				<text>Actually I'm feeling bad about this now, forget it.</text>
-				<event/>
-			</choice>
-		</event>
-	</choice> -->
 </event>
 
 <!-- 
@@ -1536,7 +1721,65 @@ BAD OUTCOMES
 Full Power player's ship outcomes are completely separate! They end ramming for this fight.
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
  -->
-<eventList name="SHIPVORE_RAM_FULL_POWER_OWN_OUTCOMES">
+<event name="SHIPVORE_RAM_FULL_POWER_OWN_OUTCOMES">
+	<loadEventList seeded="false" first="false" generate="false">
+		<!-- Total good 7+6+1+6+2 + 2*4 + 2 = 32 chances -->
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETHEAL"/>
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETHEAL"/>
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETHEAL"/>
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETHEAL"/>
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETHEAL"/>
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETHEAL"/>
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETHEAL"/>
+		
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETSCRAP"/>
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETSCRAP"/>
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETSCRAP"/>
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETSCRAP"/>
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETSCRAP"/>
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETSCRAP"/>
+		
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETSCRAP_2"/>
+
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETSCRAP_SCALING"/>
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETSCRAP_SCALING"/>
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETSCRAP_SCALING"/>
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETSCRAP_SCALING"/>
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETSCRAP_SCALING"/>
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETSCRAP_SCALING"/>
+		
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETFUEL"/>
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETFUEL_SCALING"/>
+		
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_GETMISSILES"/>
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_GETMISSILES"/>
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_GETMISSILES_SCALING"/>
+		<event name="SHIPVORE_RAM_OWN_OUTCOME_GOOD_GETMISSILES_SCALING"/>
+		
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETDRONEPARTS"/>
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETDRONEPARTS"/>
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETDRONEPARTS_SCALING"/>
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETDRONEPARTS_SCALING"/>
+
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETWEAPON"/>
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_GETWEAPON_2"/>
+
+		<!-- Total bad 3 + 2*2 + 1 = 8 chances. 8/40 = 20% -->
+		
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_NOTHING" req="pilot" max_lvl="1"/>
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_NOTHING" req="pilot" max_lvl="2"/>
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_NOTHING"/>
+		
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_FUEL_DAMAGE" req="pilot" max_lvl="1"/>
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_FUEL_DAMAGE"/>
+		
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_CRITICAL" req="pilot" max_lvl="2"/>
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_CRITICAL"/>
+		
+		<event name="SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR"/>
+	</loadEventList>
+</event>
+<eventList name="SHIPVORE_RAM_FULL_POWER_OWN_OUTCOMES_OLDREF_TOBEDELETED">
 	<!-- Total good 7+6+1+6+2 + 2*4 + 2 = 32 chances -->
 	<event load="SHIPVORE_RAM_FP_OWN_OUTCOME_GETHEAL"/>
 	<event load="SHIPVORE_RAM_FP_OWN_OUTCOME_GETHEAL"/>
@@ -2029,7 +2272,7 @@ TODO: disable if enemy current hull == 0 (TEST Lua!)
 	</choice>
 	<choice req="DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED" blue="false"> 
 		<text>Yes, at full power!
-		[The augment will disintegrate. Needs 7 seconds.]</text>
+		[The augment will [style[color:ff3377]]disintegrate[[/style]]. Needs 7 seconds.]</text>
 		<event>
 			<text>You activate the augment at full power...</text>
 			
@@ -2047,7 +2290,7 @@ TODO: disable if enemy current hull == 0 (TEST Lua!)
 	</choice>
 	<choice req="LOCKED_DJMOD_COMBAT_SHIPVORE_RAM" blue="false">  
 		<text>Yes, at full power!
-		[Can't ram again until next jump. Needs 7 seconds.]</text>
+		[[style[color:ff3377]]Cannot ram again[[/style]] until you jump. Needs 7 seconds.]</text>
 		<event>
 			<text>You activate the augment at full power...</text>
 			
@@ -2204,9 +2447,9 @@ It's an issue when a room never gets ignited and that's where you get boarded, d
 So we spam fires.
 -->
 <event name="DJMOD_TOGGLEMENU_SCORCH_SELF">
-	<text>Are you sure you want to do this?	[Set your own ship on fire! Usually to repel boarders.]
-		Burn them out of...
-	</text>
+	<text>Are you sure you want to do this?
+		[Set your own ship on fire! Usually to repel boarders.]
+		Burn them out of...</text>
 	
 	<choice req="artillery" hidden="true" blue="false">
 		<text>The Artillery room!</text>
@@ -2282,32 +2525,86 @@ So we spam fires.
 	=======================
 	-->
 	<choice req="lily_ablative_armor" hidden="true" blue="false">
-		<text>The Ablative Armor room!</text>
+		<text>(LI) The Ablative Armor room!</text>
 		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_LILY_ABLATIVE_ARMOR"/>
 	</choice>
-	<choice req="lily_system_bracers" hidden="true" blue="false">
-		<text>The System Bracers room!</text>
-		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_LILY_SYSTEM_BRACERS"/>
+
+	<choice req="aea_super_shields" hidden="true" blue="false">
+		<text>(OE) The Auxiliary Shields room!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_AEA_SUPER_SHIELDS"/>
 	</choice>
-	<choice req="lily_targeting_core" hidden="true" blue="false">
-		<text>The Targeting Core room!</text>
-		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_LILY_TARGETING_CORE"/>
+
+	<choice req="dd_corruptor" hidden="true" blue="false">
+		<text>(DD) The Corruptor room!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_DD_CORRUPTOR"/>
 	</choice>
-	<choice req="lily_shock_neutralizer" hidden="true" blue="false">
-		<text>The Shock Neutralizer room!</text>
-		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_LILY_SHOCK_NEUTRALIZER"/>
-	</choice>
-	<choice req="lily_infusion_bay" hidden="true" blue="false">
-		<text>The Infusion Bay!</text>
-		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_LILY_INFUSION_BAY"/>
-	</choice>
+
 	<choice req="lily_ecm_suite" hidden="true" blue="false">
-		<text>The ECM Suite room!</text>
+		<text>(LI) The ECM Suite room!</text>
 		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_LILY_ECM_SUITE"/>
 	</choice>
 	<choice req="lily_fiber_liner" hidden="true" blue="false">
-		<text>The Fiber Liner room!</text>
+		<text>(LI) The Fiber Liner room!</text>
 		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_LILY_FIBER_LINER"/>
+	</choice>
+	<choice req="lily_infusion_bay" hidden="true" blue="false">
+		<text>(LI) The Infusion Bay!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_LILY_INFUSION_BAY"/>
+	</choice>
+	<choice req="lily_shock_neutralizer" hidden="true" blue="false">
+		<text>(LI) The Shock Neutralizer room!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_LILY_SHOCK_NEUTRALIZER"/>
+	</choice>
+	<choice req="lily_system_bracers" hidden="true" blue="false">
+		<text>(LI) The System Bracers room!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_LILY_SYSTEM_BRACERS"/>
+	</choice>
+	<choice req="lily_targeting_core" hidden="true" blue="false">
+		<text>(LI) The Targeting Core room!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_LILY_TARGETING_CORE"/>
+	</choice>
+
+	<choice req="og_turret_adaptive" hidden="true" blue="false">
+		<text>(OG) The adaptive Turret Control room #1!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_OG_TURRET_ADAPTIVE"/>
+	</choice>
+	<choice req="og_turret_adaptive_2" hidden="true" blue="false">
+		<text>(OG) The adaptive Turret Control room #2!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_OG_TURRET_ADAPTIVE_2"/>
+	</choice>
+
+	<choice req="og_turret_mini" hidden="true" blue="false">
+		<text>(OG) The micro-Turret Control room #1!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_OG_TURRET_MINI"/>
+	</choice>
+	<choice req="og_turret_mini_2" hidden="true" blue="false">
+		<text>(OG) The micro-Turret Control room #2!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_OG_TURRET_MINI_2"/>
+	</choice>
+	<choice req="og_turret_mini_3" hidden="true" blue="false">
+		<text>(OG) The micro-Turret Control room #3!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_OG_TURRET_MINI_3"/>
+	</choice>
+	<choice req="og_turret_mini_4" hidden="true" blue="false">
+		<text>(OG) The micro-Turret Control room #4!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_OG_TURRET_MINI_4"/>
+	</choice>
+	
+	<choice req="og_turret" hidden="true" blue="false">
+		<text>(OG) The Turret Control room #1!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_OG_TURRET"/>
+	</choice>
+	<choice req="og_turret_2" hidden="true" blue="false">
+		<text>(OG) The Turret Control room #2!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_OG_TURRET_2"/>
+	</choice>
+	<choice req="og_turret_3" hidden="true" blue="false">
+		<text>(OG) The Turret Control room #3!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_OG_TURRET_3"/>
+	</choice>
+	<choice req="og_turret_4" hidden="true" blue="false">
+		<text>(OG) The Turret Control room #4!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_OG_TURRET_4"/>
 	</choice>
 
 
@@ -2325,8 +2622,7 @@ So we spam fires.
 			<loadEvent>DJMOD_SPAWN_FIRES_OWN_SHIP_NUCLEAR</loadEvent>
 		</event>
 
-		<!-- 
-		REFS from MV:
+		<!-- REFS from MV:
 
 		<loadEvent ignoreUnique="true" seeded="false" generate="false">ORCHID_CHILDREN_MAYEB_LOOP</loadEvent>
 		
@@ -2593,54 +2889,33 @@ ADD-ONS
 	<damage amount="0" system="lily_ablative_armor" effect="fire"/>
 	<damage amount="0" system="lily_ablative_armor" effect="fire"/>
 </event>
-<event name="DJMOD_SPAWN_FIRES_OWN_SHIP_LILY_SYSTEM_BRACERS">
+
+<event name="DJMOD_SPAWN_FIRES_OWN_SHIP_AEA_SUPER_SHIELDS">
 	<playSound>dj_scorchedEarth</playSound>
-	<damage amount="0" system="lily_system_bracers" effect="fire"/>
-	<damage amount="0" system="lily_system_bracers" effect="fire"/>
-	<damage amount="0" system="lily_system_bracers" effect="fire"/>
-	<damage amount="0" system="lily_system_bracers" effect="fire"/>
-	<damage amount="0" system="lily_system_bracers" effect="fire"/>
-	<damage amount="0" system="lily_system_bracers" effect="fire"/>
-	<damage amount="0" system="lily_system_bracers" effect="fire"/>
-	<damage amount="0" system="lily_system_bracers" effect="fire"/>
-	<damage amount="0" system="lily_system_bracers" effect="fire"/>
+	<damage amount="0" system="aea_super_shields" effect="fire"/>
+	<damage amount="0" system="aea_super_shields" effect="fire"/>
+	<damage amount="0" system="aea_super_shields" effect="fire"/>
+	<damage amount="0" system="aea_super_shields" effect="fire"/>
+	<damage amount="0" system="aea_super_shields" effect="fire"/>
+	<damage amount="0" system="aea_super_shields" effect="fire"/>
+	<damage amount="0" system="aea_super_shields" effect="fire"/>
+	<damage amount="0" system="aea_super_shields" effect="fire"/>
+	<damage amount="0" system="aea_super_shields" effect="fire"/>
 </event>
-<event name="DJMOD_SPAWN_FIRES_OWN_SHIP_LILY_TARGETING_CORE">
+
+<event name="DJMOD_SPAWN_FIRES_OWN_SHIP_DD_CORRUPTOR">
 	<playSound>dj_scorchedEarth</playSound>
-	<damage amount="0" system="lily_targeting_core" effect="fire"/>
-	<damage amount="0" system="lily_targeting_core" effect="fire"/>
-	<damage amount="0" system="lily_targeting_core" effect="fire"/>
-	<damage amount="0" system="lily_targeting_core" effect="fire"/>
-	<damage amount="0" system="lily_targeting_core" effect="fire"/>
-	<damage amount="0" system="lily_targeting_core" effect="fire"/>
-	<damage amount="0" system="lily_targeting_core" effect="fire"/>
-	<damage amount="0" system="lily_targeting_core" effect="fire"/>
-	<damage amount="0" system="lily_targeting_core" effect="fire"/>
+	<damage amount="0" system="dd_corruptor" effect="fire"/>
+	<damage amount="0" system="dd_corruptor" effect="fire"/>
+	<damage amount="0" system="dd_corruptor" effect="fire"/>
+	<damage amount="0" system="dd_corruptor" effect="fire"/>
+	<damage amount="0" system="dd_corruptor" effect="fire"/>
+	<damage amount="0" system="dd_corruptor" effect="fire"/>
+	<damage amount="0" system="dd_corruptor" effect="fire"/>
+	<damage amount="0" system="dd_corruptor" effect="fire"/>
+	<damage amount="0" system="dd_corruptor" effect="fire"/>
 </event>
-<event name="DJMOD_SPAWN_FIRES_OWN_SHIP_LILY_SHOCK_NEUTRALIZER">
-	<playSound>dj_scorchedEarth</playSound>
-	<damage amount="0" system="lily_shock_neutralizer" effect="fire"/>
-	<damage amount="0" system="lily_shock_neutralizer" effect="fire"/>
-	<damage amount="0" system="lily_shock_neutralizer" effect="fire"/>
-	<damage amount="0" system="lily_shock_neutralizer" effect="fire"/>
-	<damage amount="0" system="lily_shock_neutralizer" effect="fire"/>
-	<damage amount="0" system="lily_shock_neutralizer" effect="fire"/>
-	<damage amount="0" system="lily_shock_neutralizer" effect="fire"/>
-	<damage amount="0" system="lily_shock_neutralizer" effect="fire"/>
-	<damage amount="0" system="lily_shock_neutralizer" effect="fire"/>
-</event>
-<event name="DJMOD_SPAWN_FIRES_OWN_SHIP_LILY_INFUSION_BAY">
-	<playSound>dj_scorchedEarth</playSound>
-	<damage amount="0" system="lily_infusion_bay" effect="fire"/>
-	<damage amount="0" system="lily_infusion_bay" effect="fire"/>
-	<damage amount="0" system="lily_infusion_bay" effect="fire"/>
-	<damage amount="0" system="lily_infusion_bay" effect="fire"/>
-	<damage amount="0" system="lily_infusion_bay" effect="fire"/>
-	<damage amount="0" system="lily_infusion_bay" effect="fire"/>
-	<damage amount="0" system="lily_infusion_bay" effect="fire"/>
-	<damage amount="0" system="lily_infusion_bay" effect="fire"/>
-	<damage amount="0" system="lily_infusion_bay" effect="fire"/>
-</event>
+
 <event name="DJMOD_SPAWN_FIRES_OWN_SHIP_LILY_ECM_SUITE">
 	<playSound>dj_scorchedEarth</playSound>
 	<damage amount="0" system="lily_ecm_suite" effect="fire"/>
@@ -2665,7 +2940,177 @@ ADD-ONS
 	<damage amount="0" system="lily_fiber_liner" effect="fire"/>
 	<damage amount="0" system="lily_fiber_liner" effect="fire"/>
 </event>
+<event name="DJMOD_SPAWN_FIRES_OWN_SHIP_LILY_INFUSION_BAY">
+	<playSound>dj_scorchedEarth</playSound>
+	<damage amount="0" system="lily_infusion_bay" effect="fire"/>
+	<damage amount="0" system="lily_infusion_bay" effect="fire"/>
+	<damage amount="0" system="lily_infusion_bay" effect="fire"/>
+	<damage amount="0" system="lily_infusion_bay" effect="fire"/>
+	<damage amount="0" system="lily_infusion_bay" effect="fire"/>
+	<damage amount="0" system="lily_infusion_bay" effect="fire"/>
+	<damage amount="0" system="lily_infusion_bay" effect="fire"/>
+	<damage amount="0" system="lily_infusion_bay" effect="fire"/>
+	<damage amount="0" system="lily_infusion_bay" effect="fire"/>
+</event>
+<event name="DJMOD_SPAWN_FIRES_OWN_SHIP_LILY_SHOCK_NEUTRALIZER">
+	<playSound>dj_scorchedEarth</playSound>
+	<damage amount="0" system="lily_shock_neutralizer" effect="fire"/>
+	<damage amount="0" system="lily_shock_neutralizer" effect="fire"/>
+	<damage amount="0" system="lily_shock_neutralizer" effect="fire"/>
+	<damage amount="0" system="lily_shock_neutralizer" effect="fire"/>
+	<damage amount="0" system="lily_shock_neutralizer" effect="fire"/>
+	<damage amount="0" system="lily_shock_neutralizer" effect="fire"/>
+	<damage amount="0" system="lily_shock_neutralizer" effect="fire"/>
+	<damage amount="0" system="lily_shock_neutralizer" effect="fire"/>
+	<damage amount="0" system="lily_shock_neutralizer" effect="fire"/>
+</event>
+<event name="DJMOD_SPAWN_FIRES_OWN_SHIP_LILY_SYSTEM_BRACERS">
+	<playSound>dj_scorchedEarth</playSound>
+	<damage amount="0" system="lily_system_bracers" effect="fire"/>
+	<damage amount="0" system="lily_system_bracers" effect="fire"/>
+	<damage amount="0" system="lily_system_bracers" effect="fire"/>
+	<damage amount="0" system="lily_system_bracers" effect="fire"/>
+	<damage amount="0" system="lily_system_bracers" effect="fire"/>
+	<damage amount="0" system="lily_system_bracers" effect="fire"/>
+	<damage amount="0" system="lily_system_bracers" effect="fire"/>
+	<damage amount="0" system="lily_system_bracers" effect="fire"/>
+	<damage amount="0" system="lily_system_bracers" effect="fire"/>
+</event>
+<event name="DJMOD_SPAWN_FIRES_OWN_SHIP_LILY_TARGETING_CORE">
+	<playSound>dj_scorchedEarth</playSound>
+	<damage amount="0" system="lily_targeting_core" effect="fire"/>
+	<damage amount="0" system="lily_targeting_core" effect="fire"/>
+	<damage amount="0" system="lily_targeting_core" effect="fire"/>
+	<damage amount="0" system="lily_targeting_core" effect="fire"/>
+	<damage amount="0" system="lily_targeting_core" effect="fire"/>
+	<damage amount="0" system="lily_targeting_core" effect="fire"/>
+	<damage amount="0" system="lily_targeting_core" effect="fire"/>
+	<damage amount="0" system="lily_targeting_core" effect="fire"/>
+	<damage amount="0" system="lily_targeting_core" effect="fire"/>
+</event>
 
+<event name="DJMOD_SPAWN_FIRES_OWN_SHIP_OG_TURRET_ADAPTIVE">
+	<playSound>dj_scorchedEarth</playSound>
+	<damage amount="0" system="og_turret_adaptive" effect="fire"/>
+	<damage amount="0" system="og_turret_adaptive" effect="fire"/>
+	<damage amount="0" system="og_turret_adaptive" effect="fire"/>
+	<damage amount="0" system="og_turret_adaptive" effect="fire"/>
+	<damage amount="0" system="og_turret_adaptive" effect="fire"/>
+	<damage amount="0" system="og_turret_adaptive" effect="fire"/>
+	<damage amount="0" system="og_turret_adaptive" effect="fire"/>
+	<damage amount="0" system="og_turret_adaptive" effect="fire"/>
+	<damage amount="0" system="og_turret_adaptive" effect="fire"/>
+</event>
+<event name="DJMOD_SPAWN_FIRES_OWN_SHIP_OG_TURRET_ADAPTIVE_2">
+	<playSound>dj_scorchedEarth</playSound>
+	<damage amount="0" system="og_turret_adaptive_2" effect="fire"/>
+	<damage amount="0" system="og_turret_adaptive_2" effect="fire"/>
+	<damage amount="0" system="og_turret_adaptive_2" effect="fire"/>
+	<damage amount="0" system="og_turret_adaptive_2" effect="fire"/>
+	<damage amount="0" system="og_turret_adaptive_2" effect="fire"/>
+	<damage amount="0" system="og_turret_adaptive_2" effect="fire"/>
+	<damage amount="0" system="og_turret_adaptive_2" effect="fire"/>
+	<damage amount="0" system="og_turret_adaptive_2" effect="fire"/>
+	<damage amount="0" system="og_turret_adaptive_2" effect="fire"/>
+</event>
+
+<event name="DJMOD_SPAWN_FIRES_OWN_SHIP_OG_TURRET_MINI">
+	<playSound>dj_scorchedEarth</playSound>
+	<damage amount="0" system="og_turret_mini" effect="fire"/>
+	<damage amount="0" system="og_turret_mini" effect="fire"/>
+	<damage amount="0" system="og_turret_mini" effect="fire"/>
+	<damage amount="0" system="og_turret_mini" effect="fire"/>
+	<damage amount="0" system="og_turret_mini" effect="fire"/>
+	<damage amount="0" system="og_turret_mini" effect="fire"/>
+	<damage amount="0" system="og_turret_mini" effect="fire"/>
+	<damage amount="0" system="og_turret_mini" effect="fire"/>
+	<damage amount="0" system="og_turret_mini" effect="fire"/>
+</event>
+<event name="DJMOD_SPAWN_FIRES_OWN_SHIP_OG_TURRET_MINI_2">
+	<playSound>dj_scorchedEarth</playSound>
+	<damage amount="0" system="og_turret_mini_2" effect="fire"/>
+	<damage amount="0" system="og_turret_mini_2" effect="fire"/>
+	<damage amount="0" system="og_turret_mini_2" effect="fire"/>
+	<damage amount="0" system="og_turret_mini_2" effect="fire"/>
+	<damage amount="0" system="og_turret_mini_2" effect="fire"/>
+	<damage amount="0" system="og_turret_mini_2" effect="fire"/>
+	<damage amount="0" system="og_turret_mini_2" effect="fire"/>
+	<damage amount="0" system="og_turret_mini_2" effect="fire"/>
+	<damage amount="0" system="og_turret_mini_2" effect="fire"/>
+</event>
+<event name="DJMOD_SPAWN_FIRES_OWN_SHIP_OG_TURRET_MINI_3">
+	<playSound>dj_scorchedEarth</playSound>
+	<damage amount="0" system="og_turret_mini_3" effect="fire"/>
+	<damage amount="0" system="og_turret_mini_3" effect="fire"/>
+	<damage amount="0" system="og_turret_mini_3" effect="fire"/>
+	<damage amount="0" system="og_turret_mini_3" effect="fire"/>
+	<damage amount="0" system="og_turret_mini_3" effect="fire"/>
+	<damage amount="0" system="og_turret_mini_3" effect="fire"/>
+	<damage amount="0" system="og_turret_mini_3" effect="fire"/>
+	<damage amount="0" system="og_turret_mini_3" effect="fire"/>
+	<damage amount="0" system="og_turret_mini_3" effect="fire"/>
+</event>
+<event name="DJMOD_SPAWN_FIRES_OWN_SHIP_OG_TURRET_MINI_4">
+	<playSound>dj_scorchedEarth</playSound>
+	<damage amount="0" system="og_turret_mini_4" effect="fire"/>
+	<damage amount="0" system="og_turret_mini_4" effect="fire"/>
+	<damage amount="0" system="og_turret_mini_4" effect="fire"/>
+	<damage amount="0" system="og_turret_mini_4" effect="fire"/>
+	<damage amount="0" system="og_turret_mini_4" effect="fire"/>
+	<damage amount="0" system="og_turret_mini_4" effect="fire"/>
+	<damage amount="0" system="og_turret_mini_4" effect="fire"/>
+	<damage amount="0" system="og_turret_mini_4" effect="fire"/>
+	<damage amount="0" system="og_turret_mini_4" effect="fire"/>
+</event>
+
+<event name="DJMOD_SPAWN_FIRES_OWN_SHIP_OG_TURRET">
+	<playSound>dj_scorchedEarth</playSound>
+	<damage amount="0" system="og_turret" effect="fire"/>
+	<damage amount="0" system="og_turret" effect="fire"/>
+	<damage amount="0" system="og_turret" effect="fire"/>
+	<damage amount="0" system="og_turret" effect="fire"/>
+	<damage amount="0" system="og_turret" effect="fire"/>
+	<damage amount="0" system="og_turret" effect="fire"/>
+	<damage amount="0" system="og_turret" effect="fire"/>
+	<damage amount="0" system="og_turret" effect="fire"/>
+	<damage amount="0" system="og_turret" effect="fire"/>
+</event>
+<event name="DJMOD_SPAWN_FIRES_OWN_SHIP_OG_TURRET_2">
+	<playSound>dj_scorchedEarth</playSound>
+	<damage amount="0" system="og_turret_2" effect="fire"/>
+	<damage amount="0" system="og_turret_2" effect="fire"/>
+	<damage amount="0" system="og_turret_2" effect="fire"/>
+	<damage amount="0" system="og_turret_2" effect="fire"/>
+	<damage amount="0" system="og_turret_2" effect="fire"/>
+	<damage amount="0" system="og_turret_2" effect="fire"/>
+	<damage amount="0" system="og_turret_2" effect="fire"/>
+	<damage amount="0" system="og_turret_2" effect="fire"/>
+	<damage amount="0" system="og_turret_2" effect="fire"/>
+</event>
+<event name="DJMOD_SPAWN_FIRES_OWN_SHIP_OG_TURRET_3">
+	<playSound>dj_scorchedEarth</playSound>
+	<damage amount="0" system="og_turret_3" effect="fire"/>
+	<damage amount="0" system="og_turret_3" effect="fire"/>
+	<damage amount="0" system="og_turret_3" effect="fire"/>
+	<damage amount="0" system="og_turret_3" effect="fire"/>
+	<damage amount="0" system="og_turret_3" effect="fire"/>
+	<damage amount="0" system="og_turret_3" effect="fire"/>
+	<damage amount="0" system="og_turret_3" effect="fire"/>
+	<damage amount="0" system="og_turret_3" effect="fire"/>
+	<damage amount="0" system="og_turret_3" effect="fire"/>
+</event>
+<event name="DJMOD_SPAWN_FIRES_OWN_SHIP_OG_TURRET_4">
+	<playSound>dj_scorchedEarth</playSound>
+	<damage amount="0" system="og_turret_4" effect="fire"/>
+	<damage amount="0" system="og_turret_4" effect="fire"/>
+	<damage amount="0" system="og_turret_4" effect="fire"/>
+	<damage amount="0" system="og_turret_4" effect="fire"/>
+	<damage amount="0" system="og_turret_4" effect="fire"/>
+	<damage amount="0" system="og_turret_4" effect="fire"/>
+	<damage amount="0" system="og_turret_4" effect="fire"/>
+	<damage amount="0" system="og_turret_4" effect="fire"/>
+	<damage amount="0" system="og_turret_4" effect="fire"/>
+</event>
 
 
 <event name="DJMOD_SPAWN_FIRES_OWN_SHIP_NUCLEAR">
@@ -3572,27 +4017,27 @@ REF (Hyperspace 1.0 changelog) : -Events: <choiceRequiresCrew/> to make a choice
 
 -->
 
-<event name="DJMOD_COMBAT_CHECK_SCORCH_ENEMY">
+<event name="COMBAT_CHECK_RK_COMBAT_SCORCH_ENEMY">
 	<text>Are you sure you want to do this? (Requires a source of fire)
-	[Creates fire in your ship and O2 room, then teleports some to the enemy ship. Uses {]</text>
+	[Starts a fire in your Life Support (O2) room if you have one, and more random fires in the enemy ship (mostly systems). Uses {]</text>
 	
 	<choice req="DJMOD_COMBAT_SELF_FIRE" lvl="0" max_lvl="0" hidden="true" blue="false">
-		<text>You do not have any tier of the Scorched Earth augment.</text>
+		<text>You do not have any tier of the Scorched Earth augment for free activation.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
 	
 	<choice req="DJMOD_SELF_SCORCH_MOVER_COMBO" hidden ="false">
 		<text>(Scorched Earth) Yes! [A few fires in the enemy ship]</text>
-		<event load="DJMOD_COMBAT_SCORCH_ENEMY_EFFECT"/>
+		<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_WEAK"/>
 	</choice>
 	<choice req="DJMOD_SELF_SCORCH_MOVER_COMBO" hidden ="false">
-		<text>(Scorched Earth) Yes! [Many fires in both ships]</text>
-		<event load="DJMOD_COMBAT_SCORCH_BOTH_EFFECT"/>
+		<text>(Scorched Earth) Strong activation! [More fires in both ships]</text>
+		<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
 	</choice>
 	
-	<choice req="DJMOD_COMBAT_SCORCH_ENEMY" hidden ="false" blue="false">
+	<choice req="RK_COMBAT_SCORCH_ENEMY" hidden ="false" blue="false">
 		<text>Yes [Requires a fire source which may be consumed]</text>
-		<event load="DJMOD_SCORCH_ENEMY_PAY"/>
+		<event load="RK_COMBAT_SCORCH_ENEMY_PAY"/>
 	</choice>
 	
 	<choice>
@@ -3608,35 +4053,30 @@ REF (Hyperspace 1.0 changelog) : -Events: <choiceRequiresCrew/> to make a choice
 </event>
 
 <!-- Payment options -->
-<!-- DEPRECATE MOST OF THIS - TOO MUCH MAINTENANCE NEEDED especially regarding ADD-ONS
-EXCEPT for RK GEAR since i'll always know what's in it, and it's possible to have unwanted dupes,
-AND the CREW_ARE_BOMBS option,
+<!-- MAINTENANCE NEEDED especially regarding ADD-ON CREW.
+EXCEPT for the CREW_ARE_BOMBS / Martyr Vests option,
 AND relevant Unique crew, that's easier to keep track of and we can always pretend the newer ones just refused. -->
 
-<event name="DJMOD_SCORCH_ENEMY_PAY">
+<event name="RK_COMBAT_SCORCH_ENEMY_PAY">
 	<text>What fire source shall we use?</text>
 
-	<choice req="DJMOD_HAS_FIRE_ITEMS" hidden="true"> 
-		<text>Fire equipment. [50% chance to be consumed]</text>
-		<event load="DJMOD_SCORCH_ENEMY_PAY_FIRE_WEAPON"/>
-	</choice>
-
 	<choice req="DJMOD_HAS_COMBUSTIBLE_CREW" hidden="true"> 
-		<text>Fire-starting crew. [Will be consumed, can be cloned]</text>
-		<event load="DJMOD_SCORCH_ENEMY_PAY_CREW"/>
+		<text>Fire-starting crew for a strong activation! [Will die, can be cloned]</text>
+		<event load="RK_COMBAT_SCORCH_ENEMY_PAY_CREW"/>
 	</choice>
 	
 	<choice hidden="true" blue="false"> 
-		<text>3 }. Inefficient, but it will do.</text>
+		<text>1{ + 1}. Weak activation, but it will do.</text>
 		<event>
 			<text>You insert the missiles...</text>
 			<item_modify>
-				<item type="missiles" min="-3" max="-3"/>
+				<item type="fuel" min="-1" max="-1"/>
+				<item type="missiles" min="-1" max="-1"/>
 			</item_modify>
 			
 			<choice hidden="true" blue="false"> 
 				<text>Continue...</text>
-				<event load="DJMOD_COMBAT_SCORCH_ENEMY_EFFECT"/>
+				<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_WEAK"/>
 			</choice>
 		</event>
 	</choice>
@@ -3653,15 +4093,9 @@ AND relevant Unique crew, that's easier to keep track of and we can always prete
 	</choice>	
 </event>
 
-<!-- Keep this list reasonably short for UI reasons. No need to subdivide into categories.
-	Player will NORMALLY have at most 8 weapons at any time 
-	(4 equipped, 4 stored - but Lily's "cargo expander / increased capacity" can make it 12+) 
-	And if they're all fire, player's probably got bigger problems.
-	So they'll never see all of these at once!
-	
+<!-- OBSO - KEPT FOR REFERENCE. REF:
+ 	Weapons list reasonably short for UI reasons. No need to subdivide into categories.
 	Also just make 2 lists with strictly identical texts (one fail, one survive) instead of 1 eventList per weapon. 
-	
-REF:
 	
 <text>What weapon? [50% chance to be consumed]</text>
 
@@ -3673,144 +4107,30 @@ REF:
 		
 		<choice hidden="true"> 
 			<text>Continue...</text>
-			<event load="DJMOD_COMBAT_SCORCH_ENEMY_EFFECT"/>
+			<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_WEAK"/>
 		</choice>
 	</event>
 	<event>
 		<text>The weapon resists, activating the augment!</text>
 		<choice hidden="true"> 
 			<text>Continue...</text>
-			<event load="DJMOD_COMBAT_SCORCH_ENEMY_EFFECT"/>
+			<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_WEAK"/>
 		</choice>
 	</event>
 </choice>
 -->
 
-<eventList name="DJMOD_SCORCH_ENEMY_PAY_FIRE_WEAPON">
-	<event load="DJMOD_SCORCH_ENEMY_PAY_FIRE_WEAPON_BAD"/>
-	<event load="DJMOD_SCORCH_ENEMY_PAY_FIRE_WEAPON_GOOD"/>
-</eventList>
-
-<event name="DJMOD_SCORCH_ENEMY_PAY_FIRE_WEAPON_BAD">
-	<text>What equipment? [50% chance to be consumed]</text>
+<event name="RK_COMBAT_SCORCH_ENEMY_PAY_CREW">
+	<text>What type of crew?</text>
 	
-	<choice req="MODULE_FIRE" hidden="true"> 
-		<text>Fire module</text>
+	<choice req="DJMOD_HAS_CREW_ARE_BOMBS_AND_CREW" hidden="false"> 
+		<text>(Charged Belts) Anyone! Draw straws.</text>
 		<event>
-			<text>The equipment melts, activating the augment!</text>
-			<remove name="MODULE_FIRE"/>
+			<text>The least lucky crew is consumed for the greater good, strongly activating the augment!</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
 			
-			<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DJMOD_COMBAT_SCORCH_ENEMY_EFFECT"/>
-			</choice>
-		</event>
-	</choice>
-
-	<!-- *******************************
-	Strong (big both ships fire) options 
-	******************************* 
-	-->
-	<choice req="DJMOD_RAIN_OF_FIRE" hidden="true"> 
-		<text>Rain of Fire</text>
-		<event>
-			<text>The equipment melts, strongly activating the augment!</text>
-			<remove name="DJMOD_RAIN_OF_FIRE"/>
-			
-			<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DJMOD_COMBAT_SCORCH_BOTH_EFFECT"/>
-			</choice>
-		</event>
-	</choice>
-	
-	<choice req="DJMOD_ENEMIES_CAN_BURN" hidden="true"> 
-		<text>Flammabilizer-Immune</text>
-		<event>
-			<text>The equipment melts, strongly activating the augment!</text>
-			<remove name="DJMOD_ENEMIES_CAN_BURN"/>
-			
-			<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DJMOD_COMBAT_SCORCH_BOTH_EFFECT"/>
-			</choice>
-		</event>
-	</choice>
-	<choice req="DJMOD_ENEMIES_BURN_MORE" hidden="true"> 
-		<text>Flammabilizer-Damage</text>
-		<event>
-			<text>The equipment melts, strongly activating the augment!</text>
-			<remove name="DJMOD_ENEMIES_BURN_MORE"/>
-			
-			<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DJMOD_COMBAT_SCORCH_BOTH_EFFECT"/>
-			</choice>
-		</event>
-	</choice>
-	
-	<choice>
-        <text>Do something else instead.</text>
-        <event load="COMBAT_CHECK"/>
-    </choice>
-</event>
-
-<event name="DJMOD_SCORCH_ENEMY_PAY_FIRE_WEAPON_GOOD">
-	<text>What weapon? [50% chance to be consumed]</text>
-	
-	<choice req="MODULE_FIRE" hidden="true"> 
-		<text>Fire Module</text>
-		<event load="DJMOD_PAY_WEAPON_RESISTS"/>
-	</choice>
-	
-	<!-- *******************************
-	Strong (big both ships fire) options 
-	******************************* 
-	-->	
-
-	<choice req="DJMOD_RAIN_OF_FIRE" hidden="true"> 
-		<text>Rain of Fire</text>
-		<event load="DJMOD_PAY_WEAPON_RESISTS_STRONG"/>
-	</choice>
-	
-	<choice req="DJMOD_ENEMIES_CAN_BURN" hidden="true"> 
-		<text>Flammabilizer-Immune</text>
-		<event load="DJMOD_PAY_WEAPON_RESISTS_STRONG"/>
-	</choice>
-	<choice req="DJMOD_ENEMIES_BURN_MORE" hidden="true"> 
-		<text>Flammabilizer-Damage</text>
-		<event load="DJMOD_PAY_WEAPON_RESISTS_STRONG"/>
-	</choice>
-	
-	<choice>
-        <text>Do something else instead.</text>
-        <event load="COMBAT_CHECK"/>
-    </choice>
-</event>
-
-<event name="DJMOD_PAY_WEAPON_RESISTS">
-	<text>The equipment resists, activating the augment!</text>
-	<choice hidden="true"> 
-		<text>Continue...</text>
-		<event load="DJMOD_COMBAT_SCORCH_ENEMY_EFFECT"/>
-	</choice>
-</event>
-<event name="DJMOD_PAY_WEAPON_RESISTS_STRONG">
-	<text>The equipment resists, strongly activating the augment!</text>
-	<choice hidden="true"> 
-		<text>Continue...</text>
-		<event load="DJMOD_COMBAT_SCORCH_BOTH_EFFECT"/>
-	</choice>
-</event>
-
-
-<event name="DJMOD_SCORCH_ENEMY_PAY_CREW">
-	<text>What type of crew? [Will be consumed, can be cloned]</text>
-	
-	<choice req="DJMOD_HAS_CREW_ARE_BOMBS_AND_CREW" hidden="true"> 
-		<text>(Charged Belts) Anyone!</text>
-		<event>
-			<text>The closest crew is consumed for the greater good, activating the augment!</text>
 			<removeCrew>														<!--No class argument means it's a random crewmember.-->
 				<clone>true</clone>
 				<text>Your clonebay successfully revived your crew.</text>		<!--Since this is event-based, it's instant. There is still a cost in the skill loss though.-->
@@ -3818,14 +4138,18 @@ REF:
 			
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="DJMOD_COMBAT_SCORCH_ENEMY_EFFECT"/>
+				<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
 			</choice>
 		</event>
 	</choice>
-	<choice req="DJMOD_HAS_DEATH_VESTS_AND_CREW" hidden="true"> 
-		<text>(Martyr Vests) Anybody!</text>
+	<choice req="DJMOD_HAS_DEATH_VESTS_AND_CREW" hidden="false"> 
+		<text>(Martyr Vests) Anybody! Draw straws.</text>
 		<event>
-			<text>The closest crew is consumed for the greater good, activating the augment!</text>
+			<text>The least lucky crew is consumed for the greater good, strongly activating the augment!</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+			
 			<removeCrew>														<!--No class argument means it's a random crewmember.-->
 				<clone>true</clone>
 				<text>Your clonebay successfully revived your crew.</text>		<!--Since this is event-based, it's instant. There is still a cost in the skill loss though.-->
@@ -3833,7 +4157,7 @@ REF:
 			
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="DJMOD_COMBAT_SCORCH_ENEMY_EFFECT"/>
+				<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
 			</choice>
 		</event>
 	</choice>
@@ -3842,22 +4166,27 @@ REF:
 	Sub-lists
 	******************************* -->
 	<choice req="LIST_CREW_SHELL" hidden="true"> 
-		<text>A shell...</text>
-		<event load="DJMOD_SCORCH_ENEMY_PAY_CREW_SHELLS"/>
+		<text>A Shell (choose a type)</text>
+		<event load="RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS"/>
 	</choice>
 	<choice req="LIST_CREW_ZOLTAN" hidden="true"> 
-		<text>A zoltan...</text>
-		<event load="DJMOD_SCORCH_ENEMY_PAY_CREW_ZOLTANS"/>
+		<text>A Zoltan (choose a type)</text>
+		<event load="RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS"/>
+	</choice>
+	<!-- ADD-ON "Cosmic Metalloid Expansion (CME)": Fire Lanius -->
+	<choice req="LIST_CREW_SOLAR" hidden="true"> 
+		<text>An Enkindled Lanius (choose a type)</text>
+		<event load="RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE"/>
 	</choice>
 	
-	<!-- *******************************
-	Strong (big both ships fire) options 
-	******************************* 
-	-->
-	<choice req="rock_commando" hidden="true"> 
+	<choice req="rock_commando" hidden="false"> 
 		<text>A random Lost Sun Commando</text>
 		<event>
 			<text>The crew is consumed for the greater good, strongly activating the augment!</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+			
 			<removeCrew class="rock_commando">
 				<clone>true</clone>
 				<text>Your clonebay successfully revived your crew.</text>
@@ -3865,14 +4194,19 @@ REF:
 			
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="DJMOD_COMBAT_SCORCH_BOTH_EFFECT"/>
+				<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
 			</choice>
 		</event>
 	</choice>
-	<choice req="phantom_goul" hidden="true"> 
+
+	<choice req="phantom_goul" hidden="false"> 
 		<text>A random Goul</text>
 		<event>
 			<text>The crew is consumed for the greater good, strongly activating the augment!</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+			
 			<removeCrew class="phantom_goul">
 				<clone>true</clone>
 				<text>Your clonebay successfully revived your crew.</text>
@@ -3880,17 +4214,19 @@ REF:
 			
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="DJMOD_COMBAT_SCORCH_BOTH_EFFECT"/>
+				<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
 			</choice>
 		</event>
 	</choice>
-	<!-- *******************************
-	Strong (big, both ships fire) options 
-	******************************* -->
-	<choice req="phantom_goul_alpha" hidden="true"> 
-		<text>An Alpha Goul</text>
+	
+	<choice req="phantom_goul_alpha" hidden="false"> 
+		<text>A random Alpha Goul</text>
 		<event>
 			<text>The Alpha Goul is consumed for the greater good, strongly activating the augment!</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+			
 			<removeCrew class="phantom_goul_alpha">
 				<clone>true</clone>
 				<text>Your clonebay successfully revived your crew.</text>
@@ -3904,7 +4240,35 @@ REF:
 
 					<choice hidden="true">
 						<text>Continue...</text>
-						<event load="DJMOD_COMBAT_SCORCH_BOTH_EFFECT"/>
+						<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+
+	<choice req="rk_fireghost" hidden="false"> 
+		<text>A random RK Uptor</text>
+		<event>
+			<text>The Uptor is consumed for the greater good, strongly activating the augment!</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+			
+			<removeCrew class="rk_fireghost">
+				<clone>true</clone>
+				<text>Your clonebay successfully revived your crew.</text>
+			</removeCrew>
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>An Alpha Goul is also produced!</text>
+					<crewMember amount="1" class="phantom_goul_alpha"/>
+
+					<choice hidden="true">
+						<text>Continue...</text>
+						<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
 					</choice>
 				</event>
 			</choice>
@@ -3918,132 +4282,17 @@ REF:
     </choice>	
 </event>
 
-<event name="DJMOD_SCORCH_ENEMY_PAY_CREW_ZOLTANS">
-	<text>What type of zoltan? [Will be consumed, can be cloned]</text>
-		
-	<choice req="zoltan" hidden="true"> 
-		<text>A random normal zoltan</text>
-		<event>
-			<text>The crew is consumed for the greater good, activating the augment!</text>
-			<removeCrew class="zoltan">
-				<clone>true</clone>
-				<text>Your clonebay successfully revived your crew.</text>
-			</removeCrew>
-			
-			<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DJMOD_COMBAT_SCORCH_ENEMY_EFFECT"/>
-			</choice>
-		</event>
-	</choice>
-	<choice req="zoltan_monk" hidden="true"> 
-		<text>A random zoltan monk</text>
-		<event>
-			<text>The crew is peacefully consumed for the greater good, activating the augment!</text>
-			<removeCrew class="zoltan_monk">
-				<clone>true</clone>
-				<text>Your clonebay successfully revived your crew.</text>
-			</removeCrew>
-			
-			<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DJMOD_COMBAT_SCORCH_ENEMY_EFFECT"/>
-			</choice>
-		</event>
-	</choice>
-	
-	<!-- *******************************
-	Strong (big, both ships fire) options 
-	******************************* -->
-	<choice req="zoltan_peacekeeper" hidden="true"> 
-		<text>A random Zoltan Peacekeeper</text>
-		<event>
-			<text>The crew is consumed for the greater good, strongly activating the augment!</text>
-			<removeCrew class="zoltan_peacekeeper">
-				<clone>true</clone>
-				<text>Your clonebay successfully revived your crew.</text>
-			</removeCrew>
-			
-			<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DJMOD_COMBAT_SCORCH_BOTH_EFFECT"/>
-			</choice>
-		</event>
-	</choice>
-	<choice req="zoltan_devotee" hidden="true"> 
-		<text>A random Duskbringer</text>
-		<event>
-			<text>The crew is gladly consumed for the greater good, strongly activating the augment!</text>
-			<removeCrew class="zoltan_devotee">
-				<clone>true</clone>
-				<text>Your clonebay successfully revived your crew.</text>
-			</removeCrew>
-			
-			<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DJMOD_COMBAT_SCORCH_BOTH_EFFECT"/>
-			</choice>
-		</event>
-	</choice>
-	<choice req="zoltan_martyr" hidden="true"> 
-		<text>A random Duskbringer Martyr</text>
-		<event>
-			<text>The crew is gladly consumed for the greater good, strongly activating the augment!</text>
-			<removeCrew class="zoltan_martyr">
-				<clone>true</clone>
-				<text>Your clonebay successfully revived your crew.</text>
-			</removeCrew>
-			
-			<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DJMOD_COMBAT_SCORCH_BOTH_EFFECT"/>
-			</choice>
-		</event>
-	</choice>
-	<choice req="unique_devorak" hidden="true"> 
-		<text>Devorak</text>
-		<event>
-			<text>Devorak is gladly consumed for the greater good, strongly activating the augment!</text>
-			<removeCrew class="unique_devorak">
-				<clone>true</clone>
-				<text>Your clonebay successfully revived your crew.</text>
-			</removeCrew>
-			
-			<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DJMOD_COMBAT_SCORCH_BOTH_EFFECT"/>
-			</choice>
-		</event>
-	</choice>
-	<choice req="symbiote" hidden="true"> 
-		<text>Symbiote</text>
-		<event>
-			<text>The symbiotic horror lets out a sigh of relief as they are consumed for the greater good, strongly activating the augment!</text>
-			<removeCrew class="symbiote">
-				<clone>true</clone>
-				<text>Your clonebay successfully revived your crew.</text>
-			</removeCrew>
-			
-			<choice hidden="true">
-				<text>Continue...</text>
-				<event load="DJMOD_COMBAT_SCORCH_BOTH_EFFECT"/>
-			</choice>
-		</event>
-	</choice>
-	
-	<choice>
-        <text>Do something else instead.</text>
-        <event load="COMBAT_CHECK"/>
-    </choice>
-</event>
-
-<event name="DJMOD_SCORCH_ENEMY_PAY_CREW_SHELLS">
+<event name="RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS">
 	<text>What type of shell? [Will be consumed, can be cloned]</text>
 		
-	<choice req="shell" hidden="true"> 
+	<choice req="shell" hidden="false"> 
 		<text>A random normal shell</text>
 		<event>
-			<text>The crew is consumed for the greater good, activating the augment!</text>
+			<text>The crew is consumed for the greater good, strongly activating the augment!</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+			
 			<removeCrew class="shell">
 				<clone>true</clone>
 				<text>Your clonebay successfully revived your crew.</text>
@@ -4051,18 +4300,18 @@ REF:
 			
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="DJMOD_COMBAT_SCORCH_ENEMY_EFFECT"/>
+				<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
 			</choice>
 		</event>
 	</choice>
-	
-	<!-- *******************************
-	Strong (big, both ships fire) options 
-	******************************* -->
-	<choice req="shell_mechanic" hidden="true"> 
+	<choice req="shell_mechanic" hidden="false"> 
 		<text>A random Shell Mechanic</text>
 		<event>
 			<text>The crew is consumed for the greater good, strongly activating the augment!</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+			
 			<removeCrew class="shell_mechanic">
 				<clone>true</clone>
 				<text>Your clonebay successfully revived your crew.</text>
@@ -4070,14 +4319,18 @@ REF:
 			
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="DJMOD_COMBAT_SCORCH_BOTH_EFFECT"/>
+				<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
 			</choice>
 		</event>
 	</choice>
-	<choice req="shell_scientist" hidden="true"> 
+	<choice req="shell_scientist" hidden="false"> 
 		<text>A random Shell Scientist</text>
 		<event>
 			<text>The crew is consumed for the greater good, strongly activating the augment!</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+			
 			<removeCrew class="shell_scientist">
 				<clone>true</clone>
 				<text>Your clonebay successfully revived your crew.</text>
@@ -4085,14 +4338,18 @@ REF:
 			
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="DJMOD_COMBAT_SCORCH_BOTH_EFFECT"/>
+				<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
 			</choice>
 		</event>
 	</choice>
-	<choice req="shell_guardian" hidden="true"> 
+	<choice req="shell_guardian" hidden="false"> 
 		<text>A random Shell Guardian</text>
 		<event>
 			<text>The crew is consumed for the greater good, strongly activating the augment!</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+			
 			<removeCrew class="shell_guardian">
 				<clone>true</clone>
 				<text>Your clonebay successfully revived your crew.</text>
@@ -4100,14 +4357,18 @@ REF:
 			
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="DJMOD_COMBAT_SCORCH_BOTH_EFFECT"/>
+				<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
 			</choice>
 		</event>
 	</choice>
-	<choice req="shell_radiant" hidden="true"> 
+	<choice req="shell_radiant" hidden="false"> 
 		<text>A random Shell Radiant</text>
 		<event>
 			<text>The crew is consumed for the greater good, strongly activating the augment!</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+			
 			<removeCrew class="shell_radiant">
 				<clone>true</clone>
 				<text>Your clonebay successfully revived your crew.</text>
@@ -4115,14 +4376,18 @@ REF:
 			
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="DJMOD_COMBAT_SCORCH_BOTH_EFFECT"/>
+				<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
 			</choice>
 		</event>
 	</choice>
-	<choice req="unique_alkali" hidden="true"> 
+	<choice req="unique_alkali" hidden="false"> 
 		<text>Alkali</text>
 		<event>
 			<text>Alkali is reluctantly consumed for the greater good, strongly activating the augment!</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+
 			<removeCrew class="unique_alkali">
 				<clone>true</clone>
 				<text>Your clonebay successfully revived your crew.</text>
@@ -4130,7 +4395,7 @@ REF:
 			
 			<choice hidden="true">
 				<text>Continue...</text>
-				<event load="DJMOD_COMBAT_SCORCH_BOTH_EFFECT"/>
+				<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
 			</choice>
 		</event>
 	</choice>
@@ -4141,36 +4406,314 @@ REF:
     </choice>
 </event>
 
+<event name="RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS">
+	<text>What type of zoltan? [Will be consumed, can be cloned]</text>
+		
+	<choice req="zoltan" hidden="false"> 
+		<text>A random common zoltan</text>
+		<event>
+			<text>The crew is consumed for the greater good, strongly activating the augment!</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+			
+			<removeCrew class="zoltan">
+				<clone>true</clone>
+				<text>Your clonebay successfully revived your crew.</text>
+			</removeCrew>
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="zoltan_monk" hidden="false"> 
+		<text>A random zoltan monk</text>
+		<event>
+			<text>The crew is peacefully consumed for the greater good, strongly activating the augment!</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+			
+			<removeCrew class="zoltan_monk">
+				<clone>true</clone>
+				<text>Your clonebay successfully revived your crew.</text>
+			</removeCrew>
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="zoltan_peacekeeper" hidden="false"> 
+		<text>A random Zoltan Peacekeeper</text>
+		<event>
+			<text>The crew is consumed for the greater good, strongly activating the augment!</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+			
+			<removeCrew class="zoltan_peacekeeper">
+				<clone>true</clone>
+				<text>Your clonebay successfully revived your crew.</text>
+			</removeCrew>
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="zoltan_devotee" hidden="false"> 
+		<text>A random Duskbringer</text>
+		<event>
+			<text>The crew is gladly consumed for the greater good, strongly activating the augment!</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+			
+			<removeCrew class="zoltan_devotee">
+				<clone>true</clone>
+				<text>Your clonebay successfully revived your crew.</text>
+			</removeCrew>
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="zoltan_martyr" hidden="false"> 
+		<text>A random Duskbringer Martyr</text>
+		<event>
+			<text>The crew is gladly consumed for the greater good, strongly activating the augment!</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+			
+			<removeCrew class="zoltan_martyr">
+				<clone>true</clone>
+				<text>Your clonebay successfully revived your crew.</text>
+			</removeCrew>
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="zoltan_infernum" hidden="false"> 
+		<text>A random Infernum Monk</text>
+		<event>
+			<text>The crew is gladly consumed for the greater good, strongly activating the augment!</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+			
+			<removeCrew class="zoltan_infernum">
+				<clone>true</clone>
+				<text>Your clonebay successfully revived your crew.</text>
+			</removeCrew>
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="unique_devorak" hidden="false"> 
+		<text>Devorak</text>
+		<event>
+			<text>Devorak is gladly consumed for the greater good, strongly activating the augment!</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+			
+			<removeCrew class="unique_devorak">
+				<clone>true</clone>
+				<text>Your clonebay successfully revived your crew.</text>
+			</removeCrew>
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="symbiote" hidden="false"> 
+		<text>Symbiote</text>
+		<event>
+			<text>The symbiotic horror lets out a sigh of relief as they are consumed for the greater good, strongly activating the augment!</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+			
+			<removeCrew class="symbiote">
+				<clone>true</clone>
+				<text>Your clonebay successfully revived your crew.</text>
+			</removeCrew>
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice>
+        <text>Do something else instead.</text>
+        <event load="COMBAT_CHECK"/>
+    </choice>
+</event>
 
+<event name="RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE">
+	<text>What type of Enkindled? [Will be consumed, can be cloned]</text>
+		
+	<choice req="solar_lanius" hidden="false"> 
+		<text>A random common Enkindled</text>
+		<event>
+			<text>The crew is consumed for the greater good, strongly activating the augment!</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+			
+			<removeCrew class="solar_lanius">
+				<clone>true</clone>
+				<text>Your clonebay successfully revived your crew.</text>
+			</removeCrew>
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
+			</choice>
+		</event>
+	</choice>
 
-<event name="DJMOD_COMBAT_SCORCH_ENEMY_EFFECT">
-	<text>You make fire that the Plasma Teleporter immediately moves to the enemy.
-	Their ship is ablaze!</text>
+	<!-- Both "Luminary" are the same crew, one is lab-upgrade-modified. -->
+	<choice req="midnight_lanius" hidden="false"> 
+		<text>A random Luminary</text>
+		<event>
+			<text>The crew is consumed for the greater good, strongly activating the augment!</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+			
+			<removeCrew class="midnight_lanius">
+				<clone>true</clone>
+				<text>Your clonebay successfully revived your crew.</text>
+			</removeCrew>
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="midnight_lantern" hidden="false"> 
+		<text>A random Luminary</text>
+		<event>
+			<text>The crew is consumed for the greater good, strongly activating the augment!</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+			
+			<removeCrew class="midnight_lantern">
+				<clone>true</clone>
+				<text>Your clonebay successfully revived your crew.</text>
+			</removeCrew>
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice req="unique_corona" hidden="false"> 
+		<text>Corona</text>
+		<event>
+			<text>Corona is gladly consumed for the greater good, strongly activating the augment!</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+			
+			<removeCrew class="unique_corona">
+				<clone>true</clone>
+				<text>Your clonebay successfully revived your crew.</text>
+			</removeCrew>
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="unique_corona_masked" hidden="false"> 
+		<text>Corona</text>
+		<event>
+			<text>Corona is gladly consumed for the greater good, strongly activating the augment!</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+			
+			<removeCrew class="unique_corona_masked">
+				<clone>true</clone>
+				<text>Your clonebay successfully revived your crew.</text>
+			</removeCrew>
+			
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG"/>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice>
+        <text>Do something else instead.</text>
+        <event load="COMBAT_CHECK"/>
+    </choice>
+</event>
+
+<!-- 
+/////////////////////////////////////////////////
+Plasma Teleporter activation effects
+/////////////////////////////////////////////////
+ -->
+
+<event name="RK_COMBAT_SCORCH_ENEMY_EFFECT_WEAK">
+	<!-- textless -->
 	<playSound>dj_plasmaTeleporter</playSound>
 	
-	<item_modify>
-		<item type="fuel" min="-1" max="-1"/>
-	</item_modify>
-	
 	<damage amount="0" system="oxygen" effect="fire"/>
-		
-	<choice>
-		<text>It's awful, but it will give us an edge. Continue to the fight!</text>
-		<event>
-			<enemyDamage amount="0" system="random" effect="fire"/>
-			<enemyDamage amount="0" system="random" effect="fire"/>
-			<enemyDamage amount="0" system="random" effect="fire"/>
-		</event>
-	</choice>	
+
+	<enemyDamage amount="0" system="random" effect="fire"/>
+	<enemyDamage amount="0" system="random" effect="fire"/>
+
+	<enemyDamage amount="0" system="room" effect="fire"/>
 </event>
-<event name="DJMOD_COMBAT_SCORCH_BOTH_EFFECT">
-	<text>A lot of fire is produced and mostly funneled through the Plasma Teleporter onto the enemy ship.
-	Both ships are ablaze!</text>
+<event name="RK_COMBAT_SCORCH_ENEMY_EFFECT_STRONG">
+	<!-- textless -->
 	<playSound>dj_plasmaTeleporter_S</playSound>
 	
-	<item_modify>
-		<item type="fuel" min="-1" max="-1"/>
-	</item_modify>
+	<damage amount="0" system="oxygen" effect="fire"/>
+	
+	<damage amount="0" system="room" effect="fire"/>
+	<damage amount="0" system="room" effect="fire"/>
+		 
+	<enemyDamage amount="0" system="random" effect="fire"/>
+	<enemyDamage amount="0" system="random" effect="fire"/>
+	<enemyDamage amount="0" system="random" effect="fire"/>
+	<enemyDamage amount="0" system="random" effect="fire"/>
+	<enemyDamage amount="0" system="random" effect="fire"/>
+	
+	<enemyDamage amount="0" system="room" effect="fire"/>
+	<enemyDamage amount="0" system="room" effect="fire"/>
+	<enemyDamage amount="0" system="room" effect="fire"/>
+	<!-- <text>A lot of fire is produced and mostly funneled through the Plasma Teleporter onto the enemy ship.
+	Both ships are ablaze!</text>
+	<playSound>dj_plasmaTeleporter_S</playSound>
 	
 	<damage amount="0" system="oxygen" effect="fire"/>
 	
@@ -4178,7 +4721,7 @@ REF:
 	<damage amount="0" system="room" effect="fire"/>
 		 
 	<choice>
-		<text>Deal with the fire, but keep an eye on the enemy. Continue to the fight!</text>
+		<text>Deal with the fire and continue to the fight!</text>
 		<event>
 			<enemyDamage amount="0" system="random" effect="fire"/>
 			<enemyDamage amount="0" system="random" effect="fire"/>
@@ -4190,10 +4733,82 @@ REF:
 			<enemyDamage amount="0" system="random" effect="fire"/>
 			<enemyDamage amount="0" system="random" effect="fire"/>	
 		</event>
-	</choice>
+	</choice> -->
 </event>
 
-<!-- Spawns the "O2 Atmosphere" hazard to make fires unventable. MV Lua code means must change background.
+<!-- REF: Scorched Earth targeted activation:
+	<choice req="artillery" hidden="true" blue="false">
+		<text>The Artillery room!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_ARTILLERY"/>
+	</choice>
+	<choice req="battery" hidden="true" blue="false">
+		<text>The Battery room!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_BATTERY"/>
+	</choice>
+	<choice req="cloaking" hidden="true" blue="false">
+		<text>The Cloaking room!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_CLOAKING"/>
+	</choice>
+	<choice req="clonebay" hidden="true" blue="false">
+		<text>The Clonebay!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_CLONEBAY"/>
+	</choice>
+	<choice req="doors" hidden="true" blue="false">
+		<text>The Door Control room!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_DOORS"/>
+	</choice>
+	<choice req="drones" hidden="true" blue="false">
+		<text>The Drone Control room!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_DRONES"/>
+	</choice>
+	<choice req="engines" hidden="true" blue="false">
+		<text>The Engines room!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_ENGINES"/>
+	</choice>
+	<choice req="hacking" hidden="true" blue="false">
+		<text>The Hacking room!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_HACKING"/>
+	</choice>
+	<choice req="medbay" hidden="true" blue="false">
+		<text>The Medbay!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_MEDBAY"/>
+	</choice>
+	<choice req="mind" hidden="true" blue="false">
+		<text>The Mind Control room!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_MIND"/>
+	</choice>
+	<choice req="oxygen" hidden="true" blue="false">
+		<text>The Life Support (O2) room!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_OXYGEN"/>
+	</choice>
+	<choice req="pilot" hidden="true" blue="false">
+		<text>The Piloting room!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_PILOT"/>
+	</choice>
+	<choice req="sensors" hidden="true" blue="false">
+		<text>The Sensors room!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_SENSORS"/>
+	</choice>
+	<choice req="shields" hidden="true" blue="false">
+		<text>The Shields room!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_SHIELDS"/>
+	</choice>
+	<choice req="teleporter" hidden="true" blue="false">
+		<text>The Teleporter room!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_TELEPORTER"/>
+	</choice>
+	<choice req="temporal" hidden="true" blue="false">
+		<text>The Temporal room!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_TEMPORAL"/>
+	</choice>
+	<choice req="weapons" hidden="true" blue="false">
+		<text>The Weapons room!</text>
+		<event load="DJMOD_SPAWN_FIRES_OWN_SHIP_WEAPONS"/>
+	</choice>
+-->
+
+
+<!-- Oxygenizer spawns the "O2 Atmosphere hazard" to make fires unventable. MV Lua code means: must change background.
 See events_imageList.xml.append -->
 <event name="RK_COMBAT_OXYGENIZER_ACTIVATE">
 	<text>Are you sure you want to do this?
@@ -4207,6 +4822,7 @@ See events_imageList.xml.append -->
 			<item_modify>
 				<item type="missiles" min="-2" max="-2"/>
 			</item_modify>
+			<playSound>dj_oxygenizer</playSound>
 			
 			<!-- Extra pop-up screen needed for the O2 atmo to actually trigger. -->
 			<choice>
@@ -4263,13 +4879,13 @@ See events_imageList.xml.append -->
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 TODO
--Visual reminder that it's activated, for people who load the game into a fight.
+-Visual reminder that it's activated, for people who load the game into a fight where this is On.
 -Fix calling this event, since tests revealed it works just fine when called from console with LOADEVENT. (wtf did i mean here?)
 -->
 
-<event name="DJMOD_COMBAT_CHECK_AUTO_SYS_REPAIR">
+<event name="RK_COMBAT_CHECK_AUTO_SYS_REPAIR">
 	<text>Are you sure you want to do this?
-	[If hull reaches 5 points or less, you get repairs and lose the augment. Uses 1 power.]</text>
+	[If hull reaches 9 points or less, get full system repairs, 15 hull repair, and lose the augment. Uses 1 power.]</text>
 	
 	<choice req="reactor" lvl="1" hidden="true" blue="false"> <!--It will require reserved reactor bars, so reactor needs at least this many bars.-->
 		<text>Yes</text>
@@ -4281,9 +4897,8 @@ TODO
 			-->
 			
 			<!--<triggeredEvent event="CALLIE_PROBLEM" seeded="false" thisFight="true" clearOnJump="true" minTime="20.0" maxTime="20.0" loops="999"/>-->
-			<triggeredEvent event="DJMOD_AUTO_SYS_REPAIR_TRIGGERED" thisFight="true">
-				<!-- TODO : visual reminder that it's active, for people who load the game into a fight where this is On. -->
-				<playerHull amount="5"/>
+			<triggeredEvent event="RK_COMBAT_AUTO_SYS_REPAIR_TRIGGERED" thisFight="true">
+				<playerHull amount="9"/>
 			</triggeredEvent>
 			
 			<choice>
@@ -4294,15 +4909,14 @@ TODO
 	</choice>
 	
 	<!-- An option for the Emergency Generator. 
-	Reduces the power limited for the player (if any) and the Fuel consumption. (TEST) -->
+	Reduces the power limited for the player (if any) and the Fuel consumption. -->
 	<choice req="DEBUG_GENERATOR">  
 		<text>Power the augment with the Emergency Generator.</text>
 		<event>
 			<text>You activate the augment, fully powered by the Emergency Generator...</text>
 			
-			<triggeredEvent event="DJMOD_AUTO_SYS_REPAIR_TRIGGERED" thisFight="true">
-				<!-- TODO : visual reminder that it's active, for people who load the game into a fight. -->
-				<playerHull amount="5"/>
+			<triggeredEvent event="RK_COMBAT_AUTO_SYS_REPAIR_TRIGGERED" thisFight="true">
+				<playerHull amount="9"/>
 			</triggeredEvent>
 			
 			<choice>
@@ -4325,9 +4939,19 @@ TODO
 </event>
 
 <!-- v5.5.1 STILL WORKS. 
-But test what happens if it DOESN'T trigger this fight and you don't reactivate before next fight (intended: no trigger) -->
-<event name="DJMOD_AUTO_SYS_REPAIR_TRIGGERED">
-	<text>All throughout your ship, you suddenly hear the reassuring sound of nanomachine bursts instantly repairing your systems!</text>
+But test what happens if it DOESN'T trigger this fight and you don't reactivate before next fight (intended: no trigger) 
+Now using eventList to prevent combat check activation + manual activation abuse. WORKS
+-->
+<event name="RK_COMBAT_AUTO_SYS_REPAIR_TRIGGERED">
+	<!-- <loadEventList seeded="false" first="false" generate="false"> 	generate=true needed to spawn the map marker. -->
+	<loadEventList seeded="false" first="false" generate="false">
+		<event name="RK_COMBAT_AUTO_SYS_REPAIR_TRIGGERED_FAIL" req="RK_COMBAT_AUTO_SYS_REPAIR" lvl="0" max_lvl="0"/>
+		<event name="RK_COMBAT_AUTO_SYS_REPAIR_TRIGGERED_SUCCESS" req="RK_COMBAT_AUTO_SYS_REPAIR" lvl="1"/>
+	</loadEventList>
+</event>
+<!-- <event name="RK_COMBAT_AUTO_SYS_REPAIR_TRIGGERED"> -->
+<event name="RK_COMBAT_AUTO_SYS_REPAIR_TRIGGERED_SUCCESS">
+	<text>All throughout your ship, you suddenly hear the reassuring sound of "A.E.R.A Second Wind" nanomachine bursts instantly repairing your systems!</text>
 	
 	<repairAllSystems/>
 	<status type="clear" target="player" system="reactor" amount="100"/>
@@ -4338,8 +4962,8 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 		<event>
 			<text>The rest of the nanomachines hastily patch up your hull before ceasing to function.</text>
 
-			<damage amount="-8"/>
-			<remove name="DJMOD_AUG_AUTO_SYS_REPAIR"/>
+			<damage amount="-15"/>
+			<remove name="RK_COMBAT_AUTO_SYS_REPAIR"/>
 			
 			<choice>
 				<text>Continue to the fight!</text>
@@ -4348,6 +4972,14 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 			
 		</event>
 	</choice>
+</event>
+<event name="RK_COMBAT_AUTO_SYS_REPAIR_TRIGGERED_FAIL">
+	<!-- Textless except for debugging -->
+	<!-- <text>"A.E.R.A Second Wind" would have triggered due to your hull damage, but you somehow lost it after activation.</text>
+	<choice>
+		<text>Continue to the fight!</text>
+		<event/>
+	</choice> -->
 </event>
 
 
@@ -4361,7 +4993,7 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 
 <event name="RK_COMBAT_HACK_FLEET_ACTIVATE">
 	<text>Are you sure you want to do this?
-	[Attempt special hacking to delay the fleet, cancelled by dealing more than 2 hull damage.]</text>
+	[Attempt special hacking to delay the Rebel fleet]</text>
 	
 	<choice hidden="true">
 		<text>Yes, free 17 seconds hack.</text>
@@ -4375,12 +5007,13 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 		</event>
 	</choice>
 
-	<choice hidden="true" req="hacking" lvl="0" max_lvl="0">
-		<text>Install a Hacking system for more options.</text>
+	<choice hidden="true" req="HAS_HACKING_OR_LILY_ECM" lvl="0" max_lvl="0">
+		<text>Install a Hacking system (or ECM Suite from "Lily's Innovations") for more options.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
 
-	<choice req="hacking" lvl="1" hidden="true" blue="true">
+	<!-- <choice req="hacking" lvl="1" hidden="true" blue="true"> -->
+	<choice req="HAS_HACKING_OR_LILY_ECM" lvl="1" hidden="true" blue="true">
 		<text>(Hacking level 1, 1|) 14 seconds hack.</text>
 		<event>
 			<text>You activate the augment...</text>
@@ -4389,6 +5022,7 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 			</item_modify>
 			
 			<status type="loss" target="player" system="hacking" amount="1"/>
+			<status type="loss" target="player" system="lily_ecm_suite" amount="1"/>
 			
 			<choice>
 				<text>Continue...</text>
@@ -4397,7 +5031,7 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 		</event>
 	</choice>
 
-	<choice req="hacking" lvl="2" hidden="true" blue="true">
+	<choice req="HAS_HACKING_OR_LILY_ECM" lvl="2" hidden="true" blue="true">
 		<text>(Hacking level 2, 2|) 9 seconds hack.</text>
 		<event>
 			<text>You activate the augment...</text>
@@ -4406,6 +5040,7 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 			</item_modify>
 			
 			<status type="loss" target="player" system="hacking" amount="2"/>
+			<status type="loss" target="player" system="lily_ecm_suite" amount="2"/>
 			
 			<choice>
 				<text>Continue...</text>
@@ -4414,13 +5049,12 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 		</event>
 	</choice>
 
-	<!-- <choice hidden="true" req="hacking" lvl="2" max_lvl="2"> -->
-	<choice hidden="true" req="hacking" lvl="1" max_lvl="2">
-		<text>You need a stronger Hacking system for more options.</text>
+	<choice hidden="true" req="HAS_HACKING_OR_LILY_ECM" lvl="1" max_lvl="2">
+		<text>You need a stronger Hacking (or ECM Suite) system for more options.</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
 
-	<choice req="hacking" lvl="3" hidden="true" blue="true">
+	<choice req="HAS_HACKING_OR_LILY_ECM" lvl="3" hidden="true" blue="true">
 		<text>(Hacking level 3, 3|) instant hack.</text>
 		<event>
 			<text>You activate the augment...</text>
@@ -4428,12 +5062,10 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 				<item type="drones" min="-3" max="-3"/>
 			</item_modify>
 			
-			<!-- <status type="loss" target="player" system="hacking" amount="3"/> -->
 			<playSound>dj_hackingZap2</playSound>
 			
 			<choice>
 				<text>Continue...</text>
-				<!-- <event load="RK_COMBAT_HACK_FLEET_TIMER_START_BONUS3"/> -->
 				 <event load="RK_COMBAT_HACK_FLEET_OUTCOMES_BONUS3"/>
 			</choice>
 		</event>
@@ -4452,19 +5084,19 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 </event>
 
 <event name="RK_COMBAT_HACK_FLEET_TIMER_START">
-	<text>You start breaking into the enemy's comms. Now survive without damaging the enemy's hull too much...</text>
+	<text>You start breaking into the enemy's comms. Now survive without defeating the enemy too fast...</text>
 	
 	<triggeredEvent event="RK_COMBAT_HACK_FLEET_TIMER_END" time="17" thisFight="true"> <!--intended delay is 17s-->
 		<triggeredEventBox load="DEFAULT_SMALL">
 			<image r="255" g="50" b="255" a="0.6"/>
 			<image2  r="255" g="50" b="255" a="0.6"/>
-			<tooltip>The fleet delaying hack succeeds or fails in this amount of time. Cancelled if you deal 3 hull damage.</tooltip>
+			<tooltip>The fleet delaying hack succeeds or fails in this amount of time. Cancelled if you defeat the enemy.</tooltip>
 		</triggeredEventBox>
 		<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
 	</triggeredEvent>
-	<triggeredEvent event="RK_COMBAT_HACK_FLEET_STOP" thisFight="true">
+	<!-- <triggeredEvent event="RK_COMBAT_HACK_FLEET_STOP" thisFight="true">
 		<enemyDamage amount="3" countRepairs="true"/>
-	</triggeredEvent>
+	</triggeredEvent> -->
 
 	<playSound>dj_hackingZap2</playSound>
 	<choice>
@@ -4474,9 +5106,10 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 </event>
 <event name="RK_COMBAT_HACK_FLEET_TIMER_END">
 	<text>The process is complete!</text>
-	<clearTriggeredEvent name="RK_COMBAT_HACK_FLEET_STOP"/>
+	<!-- <clearTriggeredEvent name="RK_COMBAT_HACK_FLEET_STOP"/> -->
 	
 	<status type="clear" target="player" system="hacking" amount="100"/>
+	<status type="clear" target="player" system="lily_ecm_suite" amount="100"/>
 	
 	<choice hidden="true">
 		<text> Let's see if it worked...</text>
@@ -4516,19 +5149,19 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 
 
 <event name="RK_COMBAT_HACK_FLEET_TIMER_START_BONUS1">
-	<text>You start breaking into the enemy's comms. Now survive without damaging the enemy's hull too much...</text>
+	<text>You start breaking into the enemy's comms. Now survive without defeating the enemy too fast...</text>
 	
 	<triggeredEvent event="RK_COMBAT_HACK_FLEET_TIMER_END_BONUS1" time="14" thisFight="true"> <!-- base delay is 17s-->
 		<triggeredEventBox load="DEFAULT_SMALL">
 			<image r="255" g="50" b="255" a="0.6"/>
 			<image2  r="255" g="50" b="255" a="0.6"/>
-			<tooltip>The fleet delaying hack succeeds or fails in this amount of time. Cancelled if you deal 3 hull damage.</tooltip>
+			<tooltip>The fleet delaying hack succeeds or fails in this amount of time. Cancelled if you defeat the enemy.</tooltip>
 		</triggeredEventBox>
 		<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
 	</triggeredEvent>
-	<triggeredEvent event="RK_COMBAT_HACK_FLEET_STOP" thisFight="true">
+	<!-- <triggeredEvent event="RK_COMBAT_HACK_FLEET_STOP" thisFight="true">
 		<enemyDamage amount="3" countRepairs="true"/>
-	</triggeredEvent>
+	</triggeredEvent> -->
 
 	<playSound>dj_hackingZap2</playSound>
 	<choice>
@@ -4538,9 +5171,10 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 </event>
 <event name="RK_COMBAT_HACK_FLEET_TIMER_END_BONUS1">
 	<text>The process is complete!</text>
-	<clearTriggeredEvent name="RK_COMBAT_HACK_FLEET_STOP"/>
+	<!-- <clearTriggeredEvent name="RK_COMBAT_HACK_FLEET_STOP"/> -->
 	
 	<status type="clear" target="player" system="hacking" amount="100"/>
+	<status type="clear" target="player" system="lily_ecm_suite" amount="100"/>
 	
 	<choice hidden="true">
 		<text> Let's see if it worked...</text>
@@ -4581,19 +5215,19 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 
 
 <event name="RK_COMBAT_HACK_FLEET_TIMER_START_BONUS2">
-	<text>You start breaking into the enemy's comms. Now survive without damaging the enemy's hull too much...</text>
+	<text>You start breaking into the enemy's comms. Now survive without defeating the enemy too fast...</text>
 	
 	<triggeredEvent event="RK_COMBAT_HACK_FLEET_TIMER_END_BONUS2" time="9" thisFight="true"> <!-- base delay is 17s-->
 		<triggeredEventBox load="DEFAULT_SMALL">
 			<image r="255" g="50" b="255" a="0.6"/>
 			<image2  r="255" g="50" b="255" a="0.6"/>
-			<tooltip>The fleet delaying hack succeeds or fails in this amount of time. Cancelled if you deal 3 hull damage.</tooltip>
+			<tooltip>The fleet delaying hack succeeds or fails in this amount of time. Cancelled if you defeat the enemy.</tooltip>
 		</triggeredEventBox>
 		<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
 	</triggeredEvent>
-	<triggeredEvent event="RK_COMBAT_HACK_FLEET_STOP" thisFight="true">
+	<!-- <triggeredEvent event="RK_COMBAT_HACK_FLEET_STOP" thisFight="true">
 		<enemyDamage amount="3" countRepairs="true"/>
-	</triggeredEvent>
+	</triggeredEvent> -->
 
 	<playSound>dj_hackingZap2</playSound>
 	<choice>
@@ -4603,9 +5237,10 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 </event>
 <event name="RK_COMBAT_HACK_FLEET_TIMER_END_BONUS2">
 	<text>The process is complete!</text>
-	<clearTriggeredEvent name="RK_COMBAT_HACK_FLEET_STOP"/>
+	<!-- <clearTriggeredEvent name="RK_COMBAT_HACK_FLEET_STOP"/> -->
 	
 	<status type="clear" target="player" system="hacking" amount="100"/>
+	<status type="clear" target="player" system="lily_ecm_suite" amount="100"/>
 	
 	<choice hidden="true">
 		<text> Let's see if it worked...</text>
@@ -4644,39 +5279,6 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 	<!-- Average = -18 fleet chances / 20 = 90% delaying, 80% good outcomes, 5% BOSS -->
 </eventList>
 
-
-<!-- <event name="RK_COMBAT_HACK_FLEET_TIMER_START_BONUS3">
-	<text>You start breaking into the enemy's comms. Now survive without damaging the enemy's hull too much...</text>
-	
-	<triggeredEvent event="RK_COMBAT_HACK_FLEET_TIMER_END_BONUS3" time="2" thisFight="true">
-		<triggeredEventBox load="DEFAULT_SMALL">
-			<image r="255" g="50" b="255" a="0.6"/>
-			<image2  r="255" g="50" b="255" a="0.6"/>
-			<tooltip>The fleet delaying hack succeeds or fails in this amount of time. Cancelled if you deal 3 hull damage.</tooltip>
-		</triggeredEventBox>
-		<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
-	</triggeredEvent>
-	<triggeredEvent event="RK_COMBAT_HACK_FLEET_STOP" thisFight="true">
-		<enemyDamage amount="3" countRepairs="true"/>
-	</triggeredEvent>
-
-	<playSound>dj_hackingZap2</playSound>
-	<choice>
-		<text>Continue to the fight!</text>
-		<event/>
-	</choice>
-</event>
-<event name="RK_COMBAT_HACK_FLEET_TIMER_END_BONUS3">
-	<text>The process is complete!</text>
-	<clearTriggeredEvent name="RK_COMBAT_HACK_FLEET_STOP"/>
-	
-	<status type="clear" target="player" system="hacking" amount="100"/>
-	
-	<choice hidden="true">
-		<text> Let's see if it worked...</text>
-		<event load="RK_COMBAT_HACK_FLEET_OUTCOMES_BONUS3"/>
-	</choice>
-</event> -->
 
 <eventList name="RK_COMBAT_HACK_FLEET_OUTCOMES_BONUS3">
 	<!-- Total good = -21 fleet chances / 18 -->
@@ -4742,9 +5344,10 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 	</choice>
 </event>
 <event name="RK_COMBAT_HACK_FLEET_OUTCOME_BOSS">
-	<text>This hack should have, but didn't delay the fleet... 
+	<text>This hack should have delayed the fleet a lot, but the effect was weaker than expected...
 		
 		Someone interfered, and sent us strange coordinates with this attached: "N00bs!!1!".</text>
+	<modifyPursuit amount="-1"/>
 	<quest event="RK_HACK_FLEET_BOSS"/>
 
 	<choice>
@@ -4753,7 +5356,7 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 	</choice>
 </event>
 
-<event name="RK_COMBAT_HACK_FLEET_STOP">
+<!-- <event name="RK_COMBAT_HACK_FLEET_STOP">
 	<text>Excess damage to the enemy's hull ruined our hacking attempt to delay the rebel fleet. These things require subtlety!</text>
 	<clearTriggeredEvent name="RK_COMBAT_HACK_FLEET_TIMER_END"/>
 	<clearTriggeredEvent name="RK_COMBAT_HACK_FLEET_TIMER_END_BONUS1"/>
@@ -4766,7 +5369,7 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 		<text>What a waste. But continue to the fight!</text>
 		<event/>
 	</choice>
-</event>
+</event> -->
 
 <!-- Repeatable, for now at least. More variants planned. -->
 <event name="RK_HACK_FLEET_BOSS">
@@ -4783,7 +5386,7 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 	
 	<text>A very mean-looking elite rebel ship is here. Its captain is staring you down, with just a hint of a spark in the eye.
 
-		"When i heard someone was playing games big time with the fleet's comms, I knew i had to meet the fools! And here you are, noobs!
+		"When I heard someone was playing games big time with the fleet's comms, I knew I had to meet the fools! And here you are, noobs!
 		I hope you don't mind that I'm calling you that, noobs. There's no harm in telling you that we all even respect the gumption, pissing off the largest army this side of the universe, that blankets entire sectors in the shadow of fleet ships.
 		But me and my friends here didn't become MFKs by going all soft for that much, as one would guess.
 
@@ -4795,11 +5398,17 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 		<text>A challenge, then? Let's go!</text>
 		<event>
 			<text>The vicious smile on the enemy captain's face widens. "Nyahaha, Here's a taste!"
-				You immediately notice malfunctions in many of your ship's systems! They must be using a combat augment! You probably expected that a hacker ship wouldn't play fair, but if you didn't, it might be time to consider a quick escape.</text>
+
+				You immediately notice malfunctions in many of your ship's systems! They must be using a combat augment! You probably expected that a hacker ship wouldn't play fair, but if you didn't, it's high time to consider a quick escape before something [style[color:ff3377]]worse[[/style]] happens.</text>
+			
 			<status type="loss" target="player" system="engines" amount="1"/>
-			<status type="loss" target="player" system="pilot" amount="1"/>
+
 			<status type="loss" target="player" system="shields" amount="1"/>
+			<!-- Ablative Armor from mod Lily's Innovations, a Shields equivalent. -->
+			<status type="loss" target="player" system="lily_ablative_armor" amount="1"/>
+			
 			<status type="loss" target="player" system="weapons" amount="1"/>
+
 			<ship hostile="true"/>
 			
 			<choice hidden="true">
@@ -4812,9 +5421,13 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 				<event>
 					<text>Your systems are restored to full power.</text>
 					<status type="clear" target="player" system="engines" amount="100"/>
-					<status type="clear" target="player" system="pilot" amount="100"/>
+
 					<status type="clear" target="player" system="shields" amount="100"/>
+					<!-- Ablative Armor from mod Lily's Innovations, a Shields equivalent. -->
+					<status type="clear" target="player" system="lily_ablative_armor" amount="100"/>
+					
 					<status type="clear" target="player" system="weapons" amount="100"/>
+
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK"/>
@@ -4825,7 +5438,7 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 	</choice>
 
 	<choice>
-		<text>We have learned our lesson, we beg you to let us go! Here's fuel for the rebellion as proof.</text>
+		<text>We have learned our lesson, we beg you to let us go! Here's tribute for you and the Rebellion as proof.</text>
 		<event>
 			<item_modify>
 				<item type="scrap" min="-75" max="-75"/>
@@ -4836,19 +5449,44 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 
 <!-- Use and reward BEAM_HACK -->
 <ship name="SHIP_RK_HACK_FLEET_BOSS" auto_blueprint="RK_HACK_FLEET_BOSS_MFK">
-	<surrender min="6" max="7">
+	<surrender min="1" max="9">
 		<text>"Playing tough huh! How do you like this?"
-			Stronger malfunctions affect your ship's systems!</text>
-		<status type="loss" target="player" system="engines" amount="2"/>
-		<status type="loss" target="player" system="pilot" amount="2"/>
-		<status type="loss" target="player" system="shields" amount="3"/>
-		<status type="loss" target="player" system="weapons" amount="2"/>
 
+			Stronger malfunctions affect even more of your ship's systems!</text>
+
+		<status type="loss" target="player" system="shields" amount="3"/>
+		<!-- Ablative Armor from mod "Lily's Innovations", a Shields equivalent. -->
+		<status type="loss" target="player" system="lily_ablative_armor" amount="3"/>
+
+		<status type="loss" target="player" system="engines" amount="2"/>
+		<status type="loss" target="player" system="weapons" amount="2"/>
+			
 		<status type="loss" target="player" system="cloaking" amount="1"/>
+		<!-- Auxiliary Shields from "mod The Outer Expansion", a Cloaking equivalent. -->
+		<status type="loss" target="player" system="aea_super_shields" amount="1"/>
+
+		<!-- Corruptor from mod "Darkest Desire", no equivalent. -->
+		<status type="loss" target="player" system="dd_corruptor" amount="1"/>
+
 		<status type="loss" target="player" system="drones" amount="1"/>
 		<!-- <status type="loss" target="player" system="hacking" amount="1"/> -->
+		<status type="loss" target="player" system="mind" amount="1"/>
 		<status type="loss" target="player" system="oxygen" amount="1"/>
-		<ship hostile="true"/>
+		<status type="loss" target="player" system="pilot" amount="1"/>
+		
+		<!-- Turret Control from mod "The Old Guard". The additional one on non-OG ships is a Drone Control equivalent,
+		but enemies and OG player ships can have all sorts of combinations of big and small turrets, so blanket it.
+		("micro" in-game is "mini" in code.) -->
+		<status type="loss" target="player" system="og_turret_mini" amount="1"/>
+		<status type="loss" target="player" system="og_turret_mini_2" amount="1"/>
+		<status type="loss" target="player" system="og_turret_mini_3" amount="1"/>
+		<status type="loss" target="player" system="og_turret_mini_4" amount="1"/>
+		<status type="loss" target="player" system="og_turret" amount="1"/>
+		<status type="loss" target="player" system="og_turret_2" amount="1"/>
+		<status type="loss" target="player" system="og_turret_3" amount="1"/>
+		<status type="loss" target="player" system="og_turret_4" amount="1"/>
+
+		<!-- <ship hostile="true"/> -->
 		
 		<choice hidden="true">
 			<text>Continue...</text>
@@ -4859,15 +5497,38 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 			<text>(Anti-Virus) Restore your systems.</text>
 			<event>
 				<text>Your systems are restored to full power.</text>
-				<status type="clear" target="player" system="engines" amount="100"/>
-				<status type="clear" target="player" system="pilot" amount="100"/>
 				<status type="clear" target="player" system="shields" amount="100"/>
-				<status type="clear" target="player" system="weapons" amount="100"/>
+				<!-- Ablative Armor from mod Lily's Innovations, a Shields equivalent. -->
+				<status type="clear" target="player" system="lily_ablative_armor" amount="100"/>
 
+				<status type="clear" target="player" system="engines" amount="100"/>
+				<status type="clear" target="player" system="weapons" amount="100"/>
+				
 				<status type="clear" target="player" system="cloaking" amount="100"/>
+				<!-- Auxiliary Shields from mod The Outer Expansion, a Cloaking equivalent. -->
+				<status type="clear" target="player" system="aea_super_shields" amount="100"/>
+
+				<!-- Corruptor from mod "Darkest Desire", no equivalent. -->
+				<status type="clear" target="player" system="dd_corruptor" amount="100"/>
+
 				<status type="clear" target="player" system="drones" amount="100"/>
 				<!-- <status type="clear" target="player" system="hacking" amount="100"/> -->
+				<status type="clear" target="player" system="mind" amount="100"/>
 				<status type="clear" target="player" system="oxygen" amount="100"/>
+				<status type="clear" target="player" system="pilot" amount="100"/>
+
+				<!-- Turret Control from mod "The Old Guard". The additional one on non-OG ships is a Drone Control equivalent,
+				but enemies and OG player ships can have all sorts of combinations of big and small turrets, so blanket it.
+				("micro" in-game is "mini" in code.) -->
+				<status type="clear" target="player" system="og_turret_mini" amount="100"/>
+				<status type="clear" target="player" system="og_turret_mini_2" amount="100"/>
+				<status type="clear" target="player" system="og_turret_mini_3" amount="100"/>
+				<status type="clear" target="player" system="og_turret_mini_4" amount="100"/>
+				<status type="clear" target="player" system="og_turret" amount="100"/>
+				<status type="clear" target="player" system="og_turret_2" amount="100"/>
+				<status type="clear" target="player" system="og_turret_3" amount="100"/>
+				<status type="clear" target="player" system="og_turret_4" amount="100"/>
+
 				<choice hidden="true">
 					<text>Continue...</text>
 					<event/>
@@ -4876,54 +5537,255 @@ But test what happens if it DOESN'T trigger this fight and you don't reactivate 
 		</choice>
 	</surrender>
 	<destroyed>
-		<text>The hacker MFK breaks apart and you quickly salvage what you can. You find a very peculiar weapon!</text>
-		<status type="clear" target="player" system="engines" amount="100"/>
-		<status type="clear" target="player" system="pilot" amount="100"/>
+		<text>The hacker MFK breaks apart and you quickly salvage what you can. You find very peculiar equipment!</text>
 		<status type="clear" target="player" system="shields" amount="100"/>
-		<status type="clear" target="player" system="weapons" amount="100"/>
+		<!-- Ablative Armor from mod Lily's Innovations, a Shields equivalent. -->
+		<status type="clear" target="player" system="lily_ablative_armor" amount="100"/>
 
+		<status type="clear" target="player" system="engines" amount="100"/>
+		<status type="clear" target="player" system="weapons" amount="100"/>
+		
 		<status type="clear" target="player" system="cloaking" amount="100"/>
+		<!-- Auxiliary Shields from mod The Outer Expansion, a Cloaking equivalent. -->
+		<status type="clear" target="player" system="aea_super_shields" amount="100"/>
+
+		<!-- Corruptor from mod "Darkest Desire", no equivalent. -->
+		<status type="clear" target="player" system="dd_corruptor" amount="100"/>
+
 		<status type="clear" target="player" system="drones" amount="100"/>
 		<!-- <status type="clear" target="player" system="hacking" amount="100"/> -->
+		<status type="clear" target="player" system="mind" amount="100"/>
 		<status type="clear" target="player" system="oxygen" amount="100"/>
+		<status type="clear" target="player" system="pilot" amount="100"/>
 
-		<autoReward level="MED">standard</autoReward>
-		<weapon name="BEAM_HACK"/>
+		<!-- Turret Control from mod "The Old Guard". The additional one on non-OG ships is a Drone Control equivalent,
+		but enemies and OG player ships can have all sorts of combinations of big and small turrets, so blanket it.
+		("micro" in-game is "mini" in code.) -->
+		<status type="clear" target="player" system="og_turret_mini" amount="100"/>
+		<status type="clear" target="player" system="og_turret_mini_2" amount="100"/>
+		<status type="clear" target="player" system="og_turret_mini_3" amount="100"/>
+		<status type="clear" target="player" system="og_turret_mini_4" amount="100"/>
+		<status type="clear" target="player" system="og_turret" amount="100"/>
+		<status type="clear" target="player" system="og_turret_2" amount="100"/>
+		<status type="clear" target="player" system="og_turret_3" amount="100"/>
+		<status type="clear" target="player" system="og_turret_4" amount="100"/>
+
+		<autoReward level="HIGH">standard</autoReward>
+		<!-- <weapon name="BEAM_HACK"/> -->
 		<achievement silent="false">ACH_RK_EVENT_HACK_FLEET_BOSS_REBEL</achievement>
 		
 		<choice hidden="true">
 			<text>Continue...</text>
-			<event/>
+			<event name="SHIP_RK_HACK_FLEET_BOSS_REWARD_CHOICES">
+				<text>With the ship defeated, you quickly salvage a great amount of things.
+					
+					Analyzing the wreck, you understand that an internal apparatus can let you extract equipment from the ship, but then everything will blow up.
+					Which one do you pick?</text>
+				<autoReward level="LOW">standard_no_item</autoReward>
+
+				<choice>
+					<text>"Gungnir"</text>
+					<event>
+						<text>You extract the weapon and get away before everything blows up.</text>
+						<weapon name="BEAM_HACK"/>
+
+						<choice hidden="true">
+							<text>Continue...</text>
+							<event/>
+						</choice>
+					</event>
+				</choice>
+
+				<choice>
+					<text>"Hacker Ace's Console"</text>
+					<event>
+						<text>You extract the augment and get away before everything blows up.</text>
+						<augment name="RK_COMBAT_ACE_CONSOLE"/>
+
+						<choice hidden="true">
+							<text>Continue...</text>
+							<event/>
+						</choice>
+					</event>
+				</choice>
+				
+				<choice>
+					<text>Nothing</text>
+					<event/>
+				</choice>
+			</event>
 		</choice>
 	</destroyed>
 	<deadCrew>
-		<text>With the crew dead you quickly salvage what you can from the hacker MFK ship. You find a very peculiar weapon!</text>
-		<status type="clear" target="player" system="engines" amount="100"/>
-		<status type="clear" target="player" system="pilot" amount="100"/>
+		<text>With the crew dead you quickly salvage what you can from the hacker MFK ship. You find very peculiar equipment!</text>
 		<status type="clear" target="player" system="shields" amount="100"/>
-		<status type="clear" target="player" system="weapons" amount="100"/>
+		<!-- Ablative Armor from mod Lily's Innovations, a Shields equivalent. -->
+		<status type="clear" target="player" system="lily_ablative_armor" amount="100"/>
 
+		<status type="clear" target="player" system="engines" amount="100"/>
+		<status type="clear" target="player" system="weapons" amount="100"/>
+		
 		<status type="clear" target="player" system="cloaking" amount="100"/>
+		<!-- Auxiliary Shields from mod The Outer Expansion, a Cloaking equivalent. -->
+		<status type="clear" target="player" system="aea_super_shields" amount="100"/>
+
+		<!-- Corruptor from mod "Darkest Desire", no equivalent. -->
+		<status type="clear" target="player" system="dd_corruptor" amount="100"/>
+
 		<status type="clear" target="player" system="drones" amount="100"/>
 		<!-- <status type="clear" target="player" system="hacking" amount="100"/> -->
+		<status type="clear" target="player" system="mind" amount="100"/>
 		<status type="clear" target="player" system="oxygen" amount="100"/>
+		<status type="clear" target="player" system="pilot" amount="100"/>
+
+		<!-- Turret Control from mod "The Old Guard". The additional one on non-OG ships is a Drone Control equivalent,
+		but enemies and OG player ships can have all sorts of combinations of big and small turrets, so blanket it.
+		("micro" in-game is "mini" in code.) -->
+		<status type="clear" target="player" system="og_turret_mini" amount="100"/>
+		<status type="clear" target="player" system="og_turret_mini_2" amount="100"/>
+		<status type="clear" target="player" system="og_turret_mini_3" amount="100"/>
+		<status type="clear" target="player" system="og_turret_mini_4" amount="100"/>
+		<status type="clear" target="player" system="og_turret" amount="100"/>
+		<status type="clear" target="player" system="og_turret_2" amount="100"/>
+		<status type="clear" target="player" system="og_turret_3" amount="100"/>
+		<status type="clear" target="player" system="og_turret_4" amount="100"/>
 
 		<autoReward level="HIGH">standard</autoReward>
-		<weapon name="BEAM_HACK"/>
+		<!-- <weapon name="BEAM_HACK"/> -->
 		<achievement silent="false">ACH_RK_EVENT_HACK_FLEET_BOSS_REBEL</achievement>
 
 		<choice hidden="true">
 			<text>Continue...</text>
-			<event/>
+			<event><loadEvent>SHIP_RK_HACK_FLEET_BOSS_REWARD_CHOICES</loadEvent></event>
 		</choice>
 	</deadCrew>
 
 	<crew>
-		<crewMember type="human_mfk" prop="0.5"/>
-		<crewMember type="human_soldier" prop="0.5"/>
+		<crewMember type="human_mfk" prop="0.3"/>
+		<crewMember type="human_legion" prop="0.2"/>
+		<crewMember type="human_soldier" prop="0.2"/>
+		<crewMember type="human_engineer" prop="0.1"/>
+		<crewMember type="human_technician" prop="0.2"/>
 	</crew>
 </ship>
 
+<!-- Exclusive loot from the boss above, doing the same things it did -->
+<event name="RK_COMBAT_ACE_CONSOLE_ACTIVATE">
+	<text>Are you sure you want to do this?
+	[Limit multiple enemy systems for the rest of the fight]</text>
+	
+	<choice hidden="true">
+		<text>Yes, free limiting.</text>
+		<event>
+			<text>You activate the augment...</text>
+			
+			<choice>
+				<text>Continue...</text>
+				<event load="RK_COMBAT_ACE_CONSOLE_EFFECT_WEAK"/>
+			</choice>
+		</event>
+	</choice>
+
+	<!-- <choice req="hacking" lvl="1" hidden="true" blue="true"> -->
+	<choice hidden="false">
+		<text>Yes, strong limiting! [Uses 3| and 2 reactor power]</text>
+		<event>
+			<text>You activate the augment...</text>
+			<item_modify>
+				<item type="drones" min="-3" max="-3"/>
+			</item_modify>
+			
+			<status type="loss" target="player" system="reactor" amount="2"/>
+
+			<choice>
+				<text>Continue...</text>
+				<event load="RK_COMBAT_ACE_CONSOLE_EFFECT_STRONG"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="DEBUG_GENERATOR" hidden="false">
+		<text>Power the augment with the Emergency Generator.</text>
+		<event>
+			<text>You activate the augment...</text>
+			<item_modify>
+				<item type="drones" min="-3" max="-3"/>
+			</item_modify>
+			
+			<choice>
+				<text>Continue...</text>
+				<event load="RK_COMBAT_ACE_CONSOLE_EFFECT_STRONG"/>
+			</choice>
+		</event>
+	</choice>
+
+	<choice>
+        <text>Do something else instead.</text>
+        <event load="COMBAT_CHECK"/>
+    </choice>	
+	<choice>
+		<text>Nevermind, let's fight!</text>
+		<event>
+			<text>You decide not to do anything and prepare to fight.</text>
+		</event>
+	</choice>
+</event>
+
+<event name="RK_COMBAT_ACE_CONSOLE_EFFECT_WEAK">
+	<status type="loss" target="enemy" system="engines" amount="1"/>
+
+	<status type="loss" target="enemy" system="shields" amount="1"/>
+	<!-- Ablative Armor from mod Lily's Innovations, a Shields equivalent. -->
+	<status type="loss" target="enemy" system="lily_ablative_armor" amount="1"/>
+
+	<status type="loss" target="enemy" system="weapons" amount="1"/>
+	
+	<playSound>dj_hackingZap1</playSound>
+	<!-- <triggeredEvent event="DJMOD_OFFENSE_DISABLER_STEP_2" time="6" thisFight="true"/> -->
+</event>
+
+<event name="RK_COMBAT_ACE_CONSOLE_EFFECT_STRONG">
+	<status type="loss" target="enemy" system="shields" amount="3"/>
+	<!-- Ablative Armor from mod "Lily's Innovations", a Shields equivalent. -->
+	<status type="loss" target="enemy" system="lily_ablative_armor" amount="3"/>
+
+	<status type="loss" target="enemy" system="engines" amount="2"/>
+	<status type="loss" target="enemy" system="weapons" amount="2"/>
+
+	<status type="loss" target="enemy" system="cloaking" amount="1"/>
+	<!-- Auxiliary Shields from mod "The Outer Expansion", a Cloaking equivalent. -->
+	<status type="loss" target="enemy" system="aea_super_shields" amount="1"/>
+
+	<!-- Corruptor from mod "Darkest Desire", no equivalent. -->
+	<status type="loss" target="enemy" system="dd_corruptor" amount="1"/>
+
+	<status type="loss" target="enemy" system="drones" amount="1"/>
+	<!-- <status type="loss" target="enemy" system="hacking" amount="1"/> -->
+	<status type="loss" target="enemy" system="mind" amount="1"/>
+	<status type="loss" target="enemy" system="oxygen" amount="1"/>
+	<status type="loss" target="enemy" system="pilot" amount="1"/>
+
+	<!-- Turret Control from mod "The Old Guard". The additional one on non-OG ships is a Drone Control equivalent,
+	but enemies and OG player ships can have all sorts of combinations of big and small turrets, so blanket it.
+	("micro" in-game is "mini" in code.) -->
+	<status type="loss" target="enemy" system="og_turret_mini" amount="1"/>
+	<status type="loss" target="enemy" system="og_turret_mini_2" amount="1"/>
+	<status type="loss" target="enemy" system="og_turret_mini_3" amount="1"/>
+	<status type="loss" target="enemy" system="og_turret_mini_4" amount="1"/>
+	<status type="loss" target="enemy" system="og_turret" amount="1"/>
+	<status type="loss" target="enemy" system="og_turret_2" amount="1"/>
+	<status type="loss" target="enemy" system="og_turret_3" amount="1"/>
+	<status type="loss" target="enemy" system="og_turret_4" amount="1"/>
+
+	<playSound>dj_hackingZap2</playSound>
+	<triggeredEvent event="RK_COMBAT_ACE_CONSOLE_EFFECT_FINAL" time="999" thisFight="true"></triggeredEvent>
+</event>
+
+<event name="RK_COMBAT_ACE_CONSOLE_EFFECT_FINAL">
+	<!-- <status type="clear" target="enemy" system="weapons" amount="100"/>
+	... 
+	-->
+	<status type="clear" target="player" system="reactor" amount="100"/>
+</event>
 <!--
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -4947,16 +5809,16 @@ From "TGH - YAP 0.3.20" in events_tgh_combat_augments.xml - WORKS SILENTLY BECAU
 -->
 
 <!--
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 				OFFENSE DISABLER
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 -->
 
 <event name="DJMOD_COMBAT_CHECK_OFFENSE_DISABLER">
 	<text>Are you sure you want to do this?
-	[Disables enemy offense, they get it back increasingly quickly. Uses 2 | and 3 reactor power]</text>
+	[Disables enemy offensive systems, then the effect weakens increasingly quickly. Uses 2 | and 3 reactor power]</text>
 		
 	<choice req="reactor" lvl="3" blue="false">
 		<text>Yes</text>
@@ -4979,7 +5841,7 @@ From "TGH - YAP 0.3.20" in events_tgh_combat_augments.xml - WORKS SILENTLY BECAU
 		<event>
 			<text>You activate the augment...</text>
 			<item_modify>
-				<item type="drones" min="-3" max="-3"/>
+				<item type="drones" min="-2" max="-2"/>
 			</item_modify>
 			
 			<choice>
@@ -5035,6 +5897,21 @@ From "TGH - YAP 0.3.20" in events_tgh_combat_augments.xml - WORKS SILENTLY BECAU
 	<status type="limit" target="enemy" system="artillery" amount="0"/>
 	
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
+
+	<!-- Corruptor from mod "Darkest Desire" -->
+	<status type="limit" target="enemy" system="dd_corruptor" amount="0"/>
+
+	<!-- Turret Control from mod "The Old Guard". The additional one on non-OG ships is a Drone Control equivalent,
+	but enemies and OG player ships can have all sorts of combinations of big and small turrets, so blanket it.
+	("micro" in-game is "mini" in code.) -->
+	<status type="limit" target="enemy" system="og_turret_mini" amount="0"/>
+	<status type="limit" target="enemy" system="og_turret_mini_2" amount="0"/>
+	<status type="limit" target="enemy" system="og_turret_mini_3" amount="0"/>
+	<status type="limit" target="enemy" system="og_turret_mini_4" amount="0"/>
+	<status type="limit" target="enemy" system="og_turret" amount="0"/>
+	<status type="limit" target="enemy" system="og_turret_2" amount="0"/>
+	<status type="limit" target="enemy" system="og_turret_3" amount="0"/>
+	<status type="limit" target="enemy" system="og_turret_4" amount="0"/>
 	
 	<triggeredEvent event="DJMOD_OFFENSE_DISABLER_STEP_2" time="6" thisFight="true"/>
 </event>
@@ -5047,6 +5924,22 @@ From "TGH - YAP 0.3.20" in events_tgh_combat_augments.xml - WORKS SILENTLY BECAU
 	<status type="limit" target="enemy" system="artillery" amount="1"/>
 	
 	<status type="limit" target="enemy" system="teleporter" amount="1"/>
+
+	<!-- Corruptor from mod "Darkest Desire" -->
+	<status type="limit" target="enemy" system="dd_corruptor" amount="1"/>
+	
+	<!-- Turret Control from mod "The Old Guard". The additional one on non-OG ships is a Drone Control equivalent,
+	but enemies and OG player ships can have all sorts of combinations of big and small turrets, so blanket it.
+	("micro" in-game is "mini" in code.) -->
+	<status type="limit" target="enemy" system="og_turret_mini" amount="1"/>
+	<status type="limit" target="enemy" system="og_turret_mini_2" amount="1"/>
+	<status type="limit" target="enemy" system="og_turret_mini_3" amount="1"/>
+	<status type="limit" target="enemy" system="og_turret_mini_4" amount="1"/>
+	<status type="limit" target="enemy" system="og_turret" amount="1"/>
+	<status type="limit" target="enemy" system="og_turret_2" amount="1"/>
+	<status type="limit" target="enemy" system="og_turret_3" amount="1"/>
+	<status type="limit" target="enemy" system="og_turret_4" amount="1"/>
+
 	<playSound>dj_hackingZap1</playSound>
 	<triggeredEvent event="DJMOD_OFFENSE_DISABLER_STEP_3" time="5" thisFight="true"/>
 </event>
@@ -5059,6 +5952,22 @@ From "TGH - YAP 0.3.20" in events_tgh_combat_augments.xml - WORKS SILENTLY BECAU
 	<status type="limit" target="enemy" system="artillery" amount="2"/>
 	
 	<status type="limit" target="enemy" system="teleporter" amount="2"/>
+
+	<!-- Corruptor from mod "Darkest Desire" -->
+	<status type="limit" target="enemy" system="dd_corruptor" amount="2"/>
+
+	<!-- Turret Control from mod "The Old Guard". The additional one on non-OG ships is a Drone Control equivalent,
+	but enemies and OG player ships can have all sorts of combinations of big and small turrets, so blanket it.
+	("micro" in-game is "mini" in code.) -->
+	<status type="limit" target="enemy" system="og_turret_mini" amount="2"/>
+	<status type="limit" target="enemy" system="og_turret_mini_2" amount="2"/>
+	<status type="limit" target="enemy" system="og_turret_mini_3" amount="2"/>
+	<status type="limit" target="enemy" system="og_turret_mini_4" amount="2"/>
+	<status type="limit" target="enemy" system="og_turret" amount="2"/>
+	<status type="limit" target="enemy" system="og_turret_2" amount="2"/>
+	<status type="limit" target="enemy" system="og_turret_3" amount="2"/>
+	<status type="limit" target="enemy" system="og_turret_4" amount="2"/>
+
 	<playSound>dj_hackingZap1</playSound>
 	<triggeredEvent event="DJMOD_OFFENSE_DISABLER_STEP_4" time="4" thisFight="true"/>
 </event>
@@ -5068,10 +5977,27 @@ From "TGH - YAP 0.3.20" in events_tgh_combat_augments.xml - WORKS SILENTLY BECAU
 	<status type="limit" target="enemy" system="drones" amount="4"/>
 	<status type="limit" target="enemy" system="artillery" amount="4"/>
 	
+	<!-- Systems that max at 3 can clear. Should maybe just be like above, in case of higher system limit ships? -->
 	<status type="clear" target="enemy" system="hacking" amount="100"/>
 	<status type="clear" target="enemy" system="mind" amount="100"/>
 	
 	<status type="clear" target="enemy" system="teleporter" amount="100"/>
+
+	<!-- Corruptor from mod "Darkest Desire" -->
+	<status type="limit" target="enemy" system="dd_corruptor" amount="4"/>
+
+	<!-- Turret Control from mod "The Old Guard". The additional one on non-OG ships is a Drone Control equivalent,
+	but enemies and OG player ships can have all sorts of combinations of big and small turrets, so blanket it.
+	("micro" in-game is "mini" in code.) -->
+	<status type="limit" target="enemy" system="og_turret_mini" amount="4"/>
+	<status type="limit" target="enemy" system="og_turret_mini_2" amount="4"/>
+	<status type="limit" target="enemy" system="og_turret_mini_3" amount="4"/>
+	<status type="limit" target="enemy" system="og_turret_mini_4" amount="4"/>
+	<status type="limit" target="enemy" system="og_turret" amount="4"/>
+	<status type="limit" target="enemy" system="og_turret_2" amount="4"/>
+	<status type="limit" target="enemy" system="og_turret_3" amount="4"/>
+	<status type="limit" target="enemy" system="og_turret_4" amount="4"/>
+
 	<playSound>dj_hackingZap1</playSound>
 	<!-- <triggeredEvent event="DJMOD_OFFENSE_DISABLER_STEP_FINAL" time="3" thisFight="true"/> 		Initial timer does it. -->
 </event>
@@ -5086,6 +6012,21 @@ From "TGH - YAP 0.3.20" in events_tgh_combat_augments.xml - WORKS SILENTLY BECAU
 	<status type="clear" target="enemy" system="mind" amount="100"/>
 	
 	<status type="clear" target="enemy" system="teleporter" amount="100"/>
+
+	<!-- Corruptor from mod "Darkest Desire" -->
+	<status type="clear" target="enemy" system="dd_corruptor" amount="100"/>
+
+	<!-- Turret Control from mod "The Old Guard". The additional one on non-OG ships is a Drone Control equivalent,
+	but enemies and OG player ships can have all sorts of combinations of big and small turrets, so blanket it.
+	("micro" in-game is "mini" in code.) -->
+	<status type="clear" target="enemy" system="og_turret_mini" amount="100"/>
+	<status type="clear" target="enemy" system="og_turret_mini_2" amount="100"/>
+	<status type="clear" target="enemy" system="og_turret_mini_3" amount="100"/>
+	<status type="clear" target="enemy" system="og_turret_mini_4" amount="100"/>
+	<status type="clear" target="enemy" system="og_turret" amount="100"/>
+	<status type="clear" target="enemy" system="og_turret_2" amount="100"/>
+	<status type="clear" target="enemy" system="og_turret_3" amount="100"/>
+	<status type="clear" target="enemy" system="og_turret_4" amount="100"/>
 	
 	<status type="clear" target="player" system="reactor" amount="100"/>
 </event>
@@ -5106,7 +6047,7 @@ REFS:
 
 <event name="DJMOD_COMBAT_CHECK_DEFENSE_REMOVER">
 	<text>Are you sure you want to do this?
-	[Reduces enemy defenses at random intervals. Uses 3 reactor power]</text>
+	[Reduces both enemy Engines and Shields every 3 to 7 seconds (at random). Uses 3 reactor power]</text>
 		
 	<choice req="DEBUG_GENERATOR">
 		<text>Power the augment with the Emergency Generator, for 40 seconds.</text>
@@ -5118,7 +6059,7 @@ REFS:
 			
 			<choice>
 				<text>Continue...</text>
-				<event load="DJMOD_DEFENSE_REMOVER_TIMER_START_LOW"/>
+				<event load="RK_COMBAT_DEFENSE_REMOVER_TIMER_START_LOW"/>
 			</choice>
 		</event>
 	</choice>
@@ -5134,7 +6075,7 @@ REFS:
 			
 			<choice>
 				<text>Continue...</text>
-				<event load="DJMOD_DEFENSE_REMOVER_TIMER_START_LOW"/>
+				<event load="RK_COMBAT_DEFENSE_REMOVER_TIMER_START_LOW"/>
 			</choice>
 		</event>
 	</choice>
@@ -5149,7 +6090,7 @@ REFS:
 			
 			<choice>
 				<text>Continue...</text>
-				<event load="DJMOD_DEFENSE_REMOVER_TIMER_START_HIGH"/>
+				<event load="RK_COMBAT_DEFENSE_REMOVER_TIMER_START_HIGH"/>
 			</choice>
 		</event>
 	</choice>
@@ -5165,7 +6106,7 @@ REFS:
 			
 			<choice>
 				<text>Continue...</text>
-				<event load="DJMOD_DEFENSE_REMOVER_TIMER_START_HIGH"/>
+				<event load="RK_COMBAT_DEFENSE_REMOVER_TIMER_START_HIGH"/>
 			</choice>
 		</event>
 	</choice>
@@ -5182,10 +6123,10 @@ REFS:
 	</choice>
 </event>
 
-<event name="DJMOD_DEFENSE_REMOVER_TIMER_START_LOW">
+<event name="RK_COMBAT_DEFENSE_REMOVER_TIMER_START_LOW">
 	<text>The enemy's defense will slowly be removed. Survive!</text>
 	
-	<triggeredEvent event="DJMOD_DEFENSE_REMOVER_STEP_FINAL" time="40" thisFight="true">		<!-- worst effect 7*6s = 42s -->
+	<triggeredEvent event="RK_COMBAT_DEFENSE_REMOVER_STEP_FINAL" time="40" thisFight="true">		<!-- worst effect 7*6s = 42s -->
 	<!-- <triggeredEvent event="CALLIE_PROBLEM" seeded="false" thisFight="true" clearOnJump="true" minTime="20.0" maxTime="20.0" loops="999"/> -->
 		<triggeredEventBox load="DEFAULT_SMALL">
 			<image r="255" g="50" b="255" a="0.6"/>
@@ -5201,15 +6142,15 @@ REFS:
 	<choice hidden="true">
 		<text>Continue to the fight!</text>
 		<event>
-			<!-- <triggeredEvent event="DJMOD_DEFENSE_REMOVER_STEP_OUTCOMES" time="10" thisFight="true" loops="5"/> -->
-			<triggeredEvent event="DJMOD_DEFENSE_REMOVER_STEP_BOTH_1" minTime="3.0" maxTime="7.0" thisFight="true"/>
+			<!-- <triggeredEvent event="RK_COMBAT_DEFENSE_REMOVER_STEP_OUTCOMES" time="10" thisFight="true" loops="5"/> -->
+			<triggeredEvent event="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_1" minTime="3.0" maxTime="7.0" thisFight="true"/>
 		</event>
 	</choice>
 </event>
-<event name="DJMOD_DEFENSE_REMOVER_TIMER_START_HIGH">
+<event name="RK_COMBAT_DEFENSE_REMOVER_TIMER_START_HIGH">
 	<text>The enemy's defense will slowly be removed. Survive!</text>
 		
-	<triggeredEvent event="DJMOD_DEFENSE_REMOVER_STEP_FINAL" time="75" thisFight="true">		<!-- worst effect 7*11s = 77s -->
+	<triggeredEvent event="RK_COMBAT_DEFENSE_REMOVER_STEP_FINAL" time="75" thisFight="true">		<!-- worst effect 7*11s = 77s -->
 	<!-- <triggeredEvent event="CALLIE_PROBLEM" seeded="false" thisFight="true" clearOnJump="true" minTime="20.0" maxTime="20.0" loops="999"/> -->
 		<triggeredEventBox load="DEFAULT_SMALL">
 			<image r="255" g="50" b="255" a="0.6"/>
@@ -5225,121 +6166,153 @@ REFS:
 	<choice hidden="true">
 		<text>Continue to the fight!</text>
 		<event>
-			<!-- <triggeredEvent event="DJMOD_DEFENSE_REMOVER_STEP_OUTCOMES" time="10" thisFight="true" loops="10"/> Try seeded="false" -->
-			<triggeredEvent event="DJMOD_DEFENSE_REMOVER_STEP_BOTH_1" minTime="3.0" maxTime="7.0" thisFight="true"/>
+			<!-- <triggeredEvent event="RK_COMBAT_DEFENSE_REMOVER_STEP_OUTCOMES" time="10" thisFight="true" loops="10"/> Try seeded="false" -->
+			<triggeredEvent event="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_1" minTime="3.0" maxTime="7.0" thisFight="true"/>
 		</event>
 	</choice>
 </event>
 
 <!-- This will be random once, then always give that same outcome. maybe seeded="false" can fix, see references.
- <eventList name="DJMOD_DEFENSE_REMOVER_STEP_OUTCOMES">
-	<event load="DJMOD_DEFENSE_REMOVER_STEP_ENGINES"/>
-	<event load="DJMOD_DEFENSE_REMOVER_STEP_SHIELDS"/>
+ <eventList name="RK_COMBAT_DEFENSE_REMOVER_STEP_OUTCOMES">
+	<event load="RK_COMBAT_DEFENSE_REMOVER_STEP_ENGINES"/>
+	<event load="RK_COMBAT_DEFENSE_REMOVER_STEP_SHIELDS"/>
 </eventList> -->
 
 <!-- 
-<event name="DJMOD_DEFENSE_REMOVER_STEP_ENGINES">
+<event name="RK_COMBAT_DEFENSE_REMOVER_STEP_ENGINES">
 	"loss" does not stack, it will stay at 2 bars.
 	<status type="loss" target="enemy" system="engines" amount="2"/>
 </event> -->
 
-<event name="DJMOD_DEFENSE_REMOVER_STEP_BOTH_1">
+<event name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_1">
 	<status type="loss" target="enemy" system="engines" amount="1"/>
 	<status type="loss" target="enemy" system="shields" amount="1"/>
 	<!-- <item_modify>
 		<item type="drones" min="-1" max="-1"/>
 	</item_modify> -->
 	<playSound>dj_hackingZap3</playSound>
-	<triggeredEvent event="DJMOD_DEFENSE_REMOVER_STEP_BOTH_2" minTime="3.0" maxTime="7.0" thisFight="true"/>
+	<triggeredEvent event="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_2" minTime="3.0" maxTime="7.0" thisFight="true"/>
 </event>
-<event name="DJMOD_DEFENSE_REMOVER_STEP_BOTH_2">
+<event name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_2">
 	<status type="loss" target="enemy" system="engines" amount="2"/>
 	<status type="loss" target="enemy" system="shields" amount="2"/>
 	
 	<playSound>dj_hackingZap3</playSound>
-	<triggeredEvent event="DJMOD_DEFENSE_REMOVER_STEP_BOTH_3" minTime="3.0" maxTime="7.0" thisFight="true"/>
+	<triggeredEvent event="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_3" minTime="3.0" maxTime="7.0" thisFight="true"/>
 </event>
-<event name="DJMOD_DEFENSE_REMOVER_STEP_BOTH_3">
+<event name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_3">
 	<status type="loss" target="enemy" system="engines" amount="3"/>
 	<status type="loss" target="enemy" system="shields" amount="3"/>
 	
 	<playSound>dj_hackingZap3</playSound>
-	<triggeredEvent event="DJMOD_DEFENSE_REMOVER_STEP_BOTH_4" minTime="3.0" maxTime="7.0" thisFight="true"/>
+	<triggeredEvent event="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_4" minTime="3.0" maxTime="7.0" thisFight="true"/>
 </event>
-<event name="DJMOD_DEFENSE_REMOVER_STEP_BOTH_4">
+<event name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_4">
 	<status type="loss" target="enemy" system="engines" amount="4"/>
 	<status type="loss" target="enemy" system="shields" amount="4"/>
 	
 	<playSound>dj_hackingZap3</playSound>
-	<triggeredEvent event="DJMOD_DEFENSE_REMOVER_STEP_BOTH_5" minTime="3.0" maxTime="7.0" thisFight="true"/>
+	<triggeredEvent event="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_5" minTime="3.0" maxTime="7.0" thisFight="true"/>
 </event>
-<event name="DJMOD_DEFENSE_REMOVER_STEP_BOTH_5">
+<event name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_5">
 	<status type="loss" target="enemy" system="engines" amount="5"/>
 	<status type="loss" target="enemy" system="shields" amount="5"/>
 	
 	<playSound>dj_hackingZap3</playSound>
-	<triggeredEvent event="DJMOD_DEFENSE_REMOVER_STEP_BOTH_6" minTime="3.0" maxTime="7.0" thisFight="true"/>
+	<triggeredEvent event="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_6" minTime="3.0" maxTime="7.0" thisFight="true"/>
 </event>
-<event name="DJMOD_DEFENSE_REMOVER_STEP_BOTH_6">
+<event name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_6">
 	<status type="loss" target="enemy" system="engines" amount="6"/>
 	<status type="loss" target="enemy" system="shields" amount="6"/>
 	
 	<playSound>dj_hackingZap3</playSound>
-	<triggeredEvent event="DJMOD_DEFENSE_REMOVER_STEP_BOTH_7" minTime="3.0" maxTime="7.0" thisFight="true"/>
+	<triggeredEvent event="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_7" minTime="3.0" maxTime="7.0" thisFight="true"/>
 </event>
-<event name="DJMOD_DEFENSE_REMOVER_STEP_BOTH_7">
+<event name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_7">
 	<status type="loss" target="enemy" system="engines" amount="7"/>
 	<status type="loss" target="enemy" system="shields" amount="7"/>
 	
 	<playSound>dj_hackingZap3</playSound>
-	<triggeredEvent event="DJMOD_DEFENSE_REMOVER_STEP_BOTH_8" minTime="3.0" maxTime="7.0" thisFight="true"/>
+	<triggeredEvent event="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_8" minTime="3.0" maxTime="7.0" thisFight="true"/>
 </event>
-<event name="DJMOD_DEFENSE_REMOVER_STEP_BOTH_8">
+<event name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_8">
 	<status type="loss" target="enemy" system="engines" amount="8"/>
 	<status type="loss" target="enemy" system="shields" amount="8"/>
 	
 	<playSound>dj_hackingZap3</playSound>
-	<triggeredEvent event="DJMOD_DEFENSE_REMOVER_STEP_BOTH_9" minTime="3.0" maxTime="7.0" thisFight="true"/>
+	<triggeredEvent event="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_9" minTime="3.0" maxTime="7.0" thisFight="true"/>
 </event>
-<event name="DJMOD_DEFENSE_REMOVER_STEP_BOTH_9">
+<event name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_9">
 	<status type="loss" target="enemy" system="engines" amount="9"/>
 	<status type="loss" target="enemy" system="shields" amount="9"/>
 	
 	<playSound>dj_hackingZap3</playSound>
-	<triggeredEvent event="DJMOD_DEFENSE_REMOVER_STEP_BOTH_10" minTime="3.0" maxTime="7.0" thisFight="true"/>
+	<triggeredEvent event="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_10" minTime="3.0" maxTime="7.0" thisFight="true"/>
 </event>
-<event name="DJMOD_DEFENSE_REMOVER_STEP_BOTH_10">
+<event name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_10">
 	<status type="loss" target="enemy" system="engines" amount="10"/>
 	<status type="loss" target="enemy" system="shields" amount="10"/>
 	
 	<playSound>dj_hackingZap3</playSound>
-	<triggeredEvent event="DJMOD_DEFENSE_REMOVER_STEP_BOTH_11" minTime="3.0" maxTime="7.0" thisFight="true"/>
+	<triggeredEvent event="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_11" minTime="3.0" maxTime="7.0" thisFight="true"/>
 </event>
-<event name="DJMOD_DEFENSE_REMOVER_STEP_BOTH_11">
+<event name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_11">
 	<status type="loss" target="enemy" system="engines" amount="11"/>
 	<status type="loss" target="enemy" system="shields" amount="11"/>
 	
 	<playSound>dj_hackingZap3</playSound>
-	<triggeredEvent event="DJMOD_DEFENSE_REMOVER_STEP_BOTH_12" minTime="3.0" maxTime="7.0" thisFight="true"/>
+	<triggeredEvent event="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_12" minTime="3.0" maxTime="7.0" thisFight="true"/>
 </event>
-<event name="DJMOD_DEFENSE_REMOVER_STEP_BOTH_12">
+<event name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_12">
 	<status type="loss" target="enemy" system="engines" amount="12"/>
 	<status type="loss" target="enemy" system="shields" amount="12"/>
 	
 	<playSound>dj_hackingZap3</playSound>
 </event>
+<event name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_13">
+	<status type="loss" target="enemy" system="engines" amount="13"/>
+	<status type="loss" target="enemy" system="shields" amount="13"/>
+	
+	<playSound>dj_hackingZap3</playSound>
+</event>
+<event name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_14">
+	<status type="loss" target="enemy" system="engines" amount="14"/>
+	<status type="loss" target="enemy" system="shields" amount="14"/>
+	
+	<playSound>dj_hackingZap3</playSound>
+</event>
+<event name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_15">
+	<status type="loss" target="enemy" system="engines" amount="15"/>
+	<status type="loss" target="enemy" system="shields" amount="15"/>
+	
+	<playSound>dj_hackingZap3</playSound>
+</event>
+<event name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_16">
+	<status type="loss" target="enemy" system="engines" amount="16"/>
+	<status type="loss" target="enemy" system="shields" amount="16"/>
+	
+	<playSound>dj_hackingZap3</playSound>
+</event>
 
-<event name="DJMOD_DEFENSE_REMOVER_STEP_FINAL">
-	<!-- <clearTriggeredEvent name="DJMOD_DEFENSE_REMOVER_STEP"/> -->
-	<!-- <clearTriggeredEvent name="DJMOD_DEFENSE_REMOVER_STEP_OUTCOMES"/> -->
-	<clearTriggeredEvent name="DJMOD_DEFENSE_REMOVER_STEP_BOTH_1"/>
-	<clearTriggeredEvent name="DJMOD_DEFENSE_REMOVER_STEP_BOTH_2"/>
-	<clearTriggeredEvent name="DJMOD_DEFENSE_REMOVER_STEP_BOTH_3"/>
-	<clearTriggeredEvent name="DJMOD_DEFENSE_REMOVER_STEP_BOTH_4"/>
-	<clearTriggeredEvent name="DJMOD_DEFENSE_REMOVER_STEP_BOTH_5"/>
-	<clearTriggeredEvent name="DJMOD_DEFENSE_REMOVER_STEP_BOTH_6"/>
-	<clearTriggeredEvent name="DJMOD_DEFENSE_REMOVER_STEP_BOTH_7"/>
-	<clearTriggeredEvent name="DJMOD_DEFENSE_REMOVER_STEP_BOTH_8"/>
+<event name="RK_COMBAT_DEFENSE_REMOVER_STEP_FINAL">
+	<!-- <clearTriggeredEvent name="RK_COMBAT_DEFENSE_REMOVER_STEP"/> -->
+	<!-- <clearTriggeredEvent name="RK_COMBAT_DEFENSE_REMOVER_STEP_OUTCOMES"/> -->
+	<clearTriggeredEvent name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_1"/>
+	<clearTriggeredEvent name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_2"/>
+	<clearTriggeredEvent name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_3"/>
+	<clearTriggeredEvent name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_4"/>
+	<clearTriggeredEvent name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_5"/>
+	<clearTriggeredEvent name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_6"/>
+	<clearTriggeredEvent name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_7"/>
+	<clearTriggeredEvent name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_8"/>
+	<clearTriggeredEvent name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_9"/>
+	<clearTriggeredEvent name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_10"/>
+	<clearTriggeredEvent name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_11"/>
+	<clearTriggeredEvent name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_12"/>
+	<clearTriggeredEvent name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_13"/>
+	<clearTriggeredEvent name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_14"/>
+	<clearTriggeredEvent name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_15"/>
+	<clearTriggeredEvent name="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_16"/>
 	
 	<status type="clear" target="enemy" system="engines" amount="100"/>
 	<status type="clear" target="enemy" system="shields" amount="100"/>
@@ -5378,24 +6351,16 @@ REFS:
 		<text>Set the augment to Damage Mode. [Enemies take more fire damage]</text>
 		<event>
 			<text>You start calibrating the augment...</text>
-			<remove name="DJMOD_ENEMIES_CAN_BURN"/>
+			<remove name="RK_ENEMIES_CAN_BURN"/>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
 					<text>You finish calibrating the augment successfully.</text>
-					<augment name="DJMOD_ENEMIES_BURN_MORE"/>
+					<augment name="RK_ENEMIES_BURN_MORE"/>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
 					</choice>
-					<!--
-					<text>You finish calibrating the augment successfully.</text>
-					<augment name="DJMOD_ENEMIES_BURN_MORE"/>
-					<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
-						<text>Continue...</text>
-						<event load="COMBAT_CHECK"/>
-					</choice>
-					-->
 				</event>
 			</choice>
 		</event>
@@ -5412,24 +6377,16 @@ REFS:
 		<text>Set the augment to Immune Mode. [Removes fire immunity]</text>
 		<event>
 			<text>You start calibrating the augment...</text>
-			<remove name="DJMOD_ENEMIES_BURN_MORE"/>
+			<remove name="RK_ENEMIES_BURN_MORE"/>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
 					<text>You finish calibrating the augment successfully.</text>
-					<augment name="DJMOD_ENEMIES_CAN_BURN"/>
+					<augment name="RK_ENEMIES_CAN_BURN"/>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
 					</choice>
-					<!--
-					<text>You finish calibrating the augment successfully.</text>
-					<augment name="DJMOD_ENEMIES_CAN_BURN"/>
-					<choice blue="false" req="loc_flagship" lvl="0" max_group="1">
-						<text>Continue...</text>
-						<event load="COMBAT_CHECK"/>
-					</choice>
-					-->
 				</event>
 			</choice>
 		</event>
@@ -5457,12 +6414,12 @@ REFS:
 		<text>Turn off the augment.</text>
 		<event>
 			<text>You start calibrating the augment...</text>
-			<remove name="DJMOD_OWN_HARMONY_ON"/>
+			<remove name="RK_OWN_HARMONY_ON"/>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
 					<text>You finish calibrating the augment successfully.</text>
-					<augment name="DJMOD_OWN_HARMONY_OFF"/>
+					<augment name="RK_OWN_HARMONY_OFF"/>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
@@ -5484,12 +6441,12 @@ REFS:
 		<text>Turn on the augment.</text>
 		<event>
 			<text>You start calibrating the augment...</text>
-			<remove name="DJMOD_OWN_HARMONY_OFF"/>
+			<remove name="RK_OWN_HARMONY_OFF"/>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
 					<text>You finish calibrating the augment successfully.</text>
-					<augment name="DJMOD_OWN_HARMONY_ON"/>
+					<augment name="RK_OWN_HARMONY_ON"/>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
@@ -5505,6 +6462,81 @@ REFS:
 	</choice>
 </event>
 
+
+<event name="RK_OWN_HARMONY_GROW_ENGI_SEPARATIST">
+	<text>Are you sure you want to grow a Separatist Engi crew?
+	[The Rebel fleet accelerates for 1 turn.]</text>
+	
+	<choice req="RK_OWN_HARMONY_ANY" hidden="false" blue="false">
+		<text>Yes</text>
+		<event>
+			<text>You take the time to speed-grow your new crew, ready to be automated by your ship's Harmony!</text>
+			<item_modify>
+				<item type="scrap" min="-15" max="-15"/>
+				<item type="fuel" min="-1" max="-1"/>
+				<item type="drones" min="-1" max="-1"/>
+			</item_modify>
+			
+			<modifyPursuit amount="1"/>
+
+			<crewMember amount="1" class="engi_separatist">Starboy</crewMember>
+			
+			<choice>
+				<text>This will bolster our ranks nicely.</text>
+				<event/>
+			</choice>
+			<!-- <choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>Your finish upgrading the augment successfully.</text>
+					<augment name="RK_SCORCH_SELF_2"/>
+					<choice>
+						<text>Success!</text>
+						<event/>
+					</choice>
+				</event>
+			</choice> -->
+		</event>
+	</choice>
+
+	<choice req="RK_OWN_HARMONY_ANY" hidden="false" blue="false">
+		<text>Make it 2 since that takes the same amount of time</text>
+		<event>
+			<text>You take the time to speed-grow your new crew, to be automated by your ship's Harmony...</text>
+			<item_modify>
+				<item type="scrap" min="-30" max="-30"/>
+				<item type="fuel" min="-1" max="-1"/>
+				<item type="drones" min="-2" max="-2"/>
+			</item_modify>
+			
+			<modifyPursuit amount="1"/>
+
+			<crewMember amount="1" class="engi_separatist">MTFKN</crewMember>
+			
+			<!-- <choice>
+				<text>This will bolster our ranks nicely.</text>
+				<event/>
+			</choice> -->
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event>
+					<text>Both of your new crew are ready!</text>
+					<crewMember amount="1" class="engi_separatist">Starboy</crewMember>
+
+					<choice>
+						<text>Automation rising!</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+
+	<choice>
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+</event>
 
 <!--
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -5521,12 +6553,12 @@ REFS:
 		<text>Turn on the augment.</text>
 		<event>
 			<text>You start calibrating the augment...</text>
-			<remove name="DJMOD_CREW_ARE_BOMBS_OFF"/>
+			<remove name="RK_CREW_ARE_BOMBS_OFF"/>
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
 					<text>You finish calibrating the augment successfully.</text>
-					<augment name="DJMOD_CREW_ARE_BOMBS_ON"/>
+					<augment name="RK_CREW_ARE_BOMBS_ON"/>
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event load="COMBAT_CHECK_TOGGLE_LOAD"/>
@@ -5542,11 +6574,11 @@ REFS:
 	</choice>
 </event>
 
-<event name="DJMOD_CREW_ARE_BOMBS_ON_SELFSCRAP">
+<event name="RK_CREW_ARE_BOMBS_ON_SELFSCRAP">
 	<text>Are you sure you want to scrap this augment for half value?
 	[Only way to turn it Off if you can't sell or discard it right now.]</text>
 	
-	<choice req="DJMOD_CREW_ARE_BOMBS_ON" hidden="false" blue="false">
+	<choice req="RK_CREW_ARE_BOMBS_ON" hidden="false" blue="false">
 		<text>Yes, it's too dangerous.</text>
 		<event>
 			<!-- textless -->
@@ -5554,19 +6586,57 @@ REFS:
 				<item type="scrap" min="25" max="25"/>
 			</item_modify>
 			
-			<remove name="DJMOD_CREW_ARE_BOMBS_ON"/>
+			<remove name="RK_CREW_ARE_BOMBS_ON"/>
 		</event>
 	</choice>
-	<choice req="DJMOD_CREW_ARE_BOMBS_ON" hidden="false" blue="false">
+	<choice req="RK_CREW_ARE_BOMBS_ON" hidden="false" blue="false">
 		<text>Yes, but turn it into explosives.</text>
 		<event>
 			<item_modify>
 				<item type="missiles" min="4" max="4"/>
 			</item_modify>
 			
-			<remove name="DJMOD_CREW_ARE_BOMBS_ON"/>
+			<remove name="RK_CREW_ARE_BOMBS_ON"/>
 		</event>
 	</choice>
+	<choice>
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+</event>
+
+<!--
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+				LEAD TITANS - self-scrapping.
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+-->
+<event name="RK_LEAD_TITANS_SELFSCRAP">
+	<text>Are you sure you want to scrap this augment for half value?
+	[Only way to turn it Off if you can't sell or discard it right now.]</text>
+	
+	<choice req="RK_LEAD_TITANS" hidden="false" blue="false">
+		<text>Yes, it's too dangerous.</text>
+		<event>
+			<!-- textless -->
+			<item_modify>
+				<item type="scrap" min="35" max="35"/>
+			</item_modify>
+			
+			<remove name="RK_LEAD_TITANS"/>
+		</event>
+	</choice>
+	<!-- <choice req="RK_LEAD_TITANS" hidden="false" blue="false">
+		<text>Yes, but turn it into explosives.</text>
+		<event>
+			<item_modify>
+				<item type="missiles" min="6" max="6"/>
+			</item_modify>
+			
+			<remove name="RK_LEAD_TITANS"/>
+		</event>
+	</choice> -->
 	<choice>
 		<text>Nevermind, do something else.</text>
 		<event load="STORAGE_CHECK"/>
@@ -5814,7 +6884,13 @@ REFS Darkest Desires for MV 5.5.1
 </event>
 -->
 <mod:findName type="event" name="STORAGE_CHECK_SYSTEM">
-	<mod-append:choice req="pilot" hidden="true" blue="true">
+	<mod-append:choice req="DJMOD_HAS_RADIKAL_GEAR" lvl="0" max_lvl="0" hidden="true" blue="false">
+		<text>RadiKal tech. [You have none. Open to see requirements]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL"/>
+	</mod-append:choice>
+</mod:findName>
+<mod:findName type="event" name="STORAGE_CHECK_SYSTEM">
+	<mod-append:choice req="DJMOD_HAS_RADIKAL_GEAR" lvl="1" hidden="true" blue="true">
 		<text>RadiKal tech.</text>
 		<event load="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL"/>
 	</mod-append:choice>
@@ -5822,6 +6898,36 @@ REFS Darkest Desires for MV 5.5.1
 
 
 <mod:findName type="event" name="STORAGE_CHECK_INVENTORY_UPGRADES">
+	<!-- REF MV v5.5.1:
+	<choice hidden="true" req="UPG_SHIELDS_PERFORMANCE" lvl="3" blue="false">
+		<text>Shields Performance Upgrades [X3]</text>
+		<event load="STORAGE_CHECK_SYSTEM_SHIELDS"/>
+	</choice>
+	<choice hidden="true" req="UPG_SHIELDS_PERFORMANCE" lvl="2" max_lvl="2" blue="false">
+		<text>Shields Performance Upgrades [X2]</text>
+		<event load="STORAGE_CHECK_SYSTEM_SHIELDS"/>
+	</choice>
+	<choice hidden="true" req="UPG_SHIELDS_PERFORMANCE" lvl="1" max_lvl="1" blue="false">
+		<text>Shields Performance Upgrades [X1]</text>
+		<event load="STORAGE_CHECK_SYSTEM_SHIELDS"/>
+	</choice>
+	<choice hidden="true" req="UPG_SHIELDS_PERFORMANCE" lvl="0" max_lvl="0" blue="false">
+		<text>Shields Performance Upgrades [Not Installed]</text>
+		<event load="OPTION_INVALID"/>
+	</choice> -->	
+	
+	<mod-append:choice hidden="true" req="INTERNAL_RK_CALIBRATOR" lvl="2" max_lvl="2" blue="false">
+		<text>Calibrator [X2]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="INTERNAL_RK_CALIBRATOR" lvl="1" max_lvl="1" blue="false">
+		<text>Calibrator [X1]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL"/>
+	</mod-append:choice>
+	<mod-append:choice hidden="true" req="INTERNAL_RK_CALIBRATOR" lvl="0" max_lvl="0" blue="false">
+		<text>Calibrator [Not Installed]</text>
+		<event load="OPTION_INVALID"/>
+	</mod-append:choice>
 
 	<mod-append:choice hidden="true" req="INTERNAL_RK_CHOKING_IS_FINE" lvl="1" blue="false">
 		<text>Choking F.I.N.E. [Installed]</text>
@@ -5876,10 +6982,38 @@ REFS Darkest Desires for MV 5.5.1
 <event name="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL">
 	<text>What upgrade do you want to install?</text>
 
+	<!-- REF MV v5.5.1:
+	<choice req="UPG_SHIELDS_PERFORMANCE" lvl="3" max_group="1" blue="false" hidden="true">
+		<text>Performance Upgrade. [UNAVAILABLE: You already have the max of this upgrade]</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="UPG_SHIELDS_PERFORMANCE" lvl="2" max_lvl="2" max_group="1" blue="false" hidden="true">
+		<text>Performance Upgrade LvL 3. [Cost: 40~, 3{]</text>
+		<event load="STORAGE_CHECK_SYSTEM_SHIELD_PERFORMANCE"/>
+	</choice>
+	...
+	<choice req="UPG_SHIELDS_PERFORMANCE" lvl="0" max_lvl="2" max_group="1" blue="false" hidden="true">
+		<text>Performance Upgrade LvL 1. [Cost: 40~, 3{]</text>
+		<event load="STORAGE_CHECK_SYSTEM_SHIELD_PERFORMANCE"/>
+	</choice> -->
+
+	<choice req="INTERNAL_RK_CALIBRATOR" lvl="2" blue="false" hidden="true">
+		<text>RK Bam "Calibrator": Your weapons have +10% accuracy and 4% increased fire rate.
+			Can be installed twice. [ALREADY INSTALLED: You already have the max of this upgrade]</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	<choice req="INTERNAL_RK_CALIBRATOR" lvl="1" max_lvl="1" blue="false" hidden="true">
+		<text>Calibrator Lvl 2. [Cost: 40~]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CALIBRATOR"/>
+	</choice>
+	<choice req="INTERNAL_RK_CALIBRATOR" lvl="0" max_lvl="0" blue="false" hidden="true">
+		<text>Calibrator Lvl 1. [Cost: 40~]</text>
+		<event load="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CALIBRATOR"/>
+	</choice>
+
 	<choice req="INTERNAL_RK_CHOKING_IS_FINE" lvl="1" blue="false" hidden="true">
 		<text>RK Bam "Choking F.I.N.E.": Your crew take 0.75x suffocation damage.
-		While suffocating, they move, sabotage, repair and fight 1.5x better. [ALREADY INSTALLED]
-		</text>
+		While suffocating, they move, sabotage, repair and fight 1.5x better. [ALREADY INSTALLED]</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
 	<choice req="INTERNAL_RK_CHOKING_IS_FINE" lvl="0" max_lvl="0" blue="false" hidden="true">
@@ -5889,8 +7023,7 @@ REFS Darkest Desires for MV 5.5.1
 
 	<choice req="INTERNAL_DJMOD_DEMICLONER" lvl="1" blue="false" hidden="true">
 		<text>RK Punk "Demicloners": With no Clonebay, your dying crew resurrect as a lesser version (Soldier = default Human, etc.)
-			If none exists, they become Morphs. When Morphs die, nothing happens. Does not work for event deaths. [ALREADY INSTALLED]
-		</text>
+			If none exists, they become Morphs. When Morphs die, nothing happens. Does not work for event deaths. [ALREADY INSTALLED]</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
 	<choice req="INTERNAL_DJMOD_DEMICLONER" lvl="0" max_lvl="0" blue="false" hidden="true">
@@ -5909,7 +7042,7 @@ REFS Darkest Desires for MV 5.5.1
 	
 
 	<choice req="INTERNAL_RK_IN_FIRE_CREWBOOSTS" lvl="1" blue="false" hidden="true">
-		<text>RK Scorch "Hellion Wraps": In fire, your crew have 2x movement and sabotage speed, and deal 2x damage, on both ships. [ALREADY INSTALLED]</text>
+		<text>RK Scorch "Hellion Wraps": In fire, your crew have 1.75x movement and sabotage speed, and deal 1.75x combat and door damage, on both ships. [ALREADY INSTALLED]</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
 	<choice req="INTERNAL_RK_IN_FIRE_CREWBOOSTS" lvl="0" max_lvl="0" blue="false" hidden="true">
@@ -5931,18 +7064,6 @@ REFS Darkest Desires for MV 5.5.1
 		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
 	</choice>
 </event>
-<!-- 
-<mod:findName type="event" name="STORAGE_CHECK_SYSTEM_TECH"> 	No work, never shows up in there.
-
-	<mod-append:choice req="INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE" lvl="1" max_group="1" blue="false" hidden="true">
-		<text>Mind Heater. [ALREADY INSTALLED]</text>
-		<event load="OPTION_INVALID"/>
-	</mod-append:choice>
-	<mod-append:choice req="INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE" lvl="0" max_group="1" blue="false" hidden="true">
-		<text>Mind Heater. [Cost: 25~, 1{]</text>
-		<event load="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE"/>
-	</mod-append:choice>
-</mod:findName> -->
 
 
 <!-- REF MV v5.5.1
@@ -5979,11 +7100,57 @@ REFS Darkest Desires for MV 5.5.1
 		</event>
 	</choice>
 -->
+<event name="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CALIBRATOR">
+	<text>You are about to install the Calibrator upgrade.
+	[Effects: Your weapons have +10 accuracy and 4% increased fire rate. 
+	Can be installed twice.]</text>
+
+	<!-- <choice req="EX_RK_CALIBRATOR" blue="true" hidden="true">
+		<text>Install the External Augment internally.</text>
+		<event>
+			<text>You install the upgrade.</text>
+			<remove name="EX_RK_CALIBRATOR"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="INSTALL_INTERNAL_RK_CALIBRATOR"/>
+			</choice>
+		</event>
+	</choice> -->
+	
+	<choice req="DJMOD_HAS_RADIKAL_BAM_GEAR" lvl="0" max_lvl="0" blue="false" hidden="true">
+		<text>This upgrade is unavailable. You need any RadiKal Bam (or BPS) weapon/augment/crew/ship.</text>
+		<event load="OPTION_INVALID"/>
+	</choice>
+	
+	<choice req="DJMOD_HAS_RADIKAL_BAM_GEAR" lvl="1" blue="false" hidden="true">
+		<text>Perform the upgrade. [Cost: 40~]</text>
+		<event>
+			<text>You install the upgrade.</text>
+			<item_modify>
+				<item type="scrap" min="-40" max="-40"/>
+			</item_modify>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="INSTALL_INTERNAL_RK_CALIBRATOR"/>
+			</choice>
+		</event>
+	</choice>
+	<!-- <choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true"> -->
+	<choice req="pilot" lvl="1" blue="false" hidden="true">
+		<text>Nevermind.</text>
+		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
+	</choice>
+</event>
+<event name="INSTALL_INTERNAL_RK_CALIBRATOR">
+	<variable name="loc_internal_upgrades" op="add" val="1"/>
+	<hiddenAug>INTERNAL_RK_CALIBRATOR</hiddenAug>
+	<loadEvent>STORAGE_CHECK_SYSTEM</loadEvent>
+</event>
+
 <event name="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE">
 	<text>You are about to install the Choking F.I.N.E. upgrade.
 	[Effects: Your crew take 0.75x suffocation damage.
-		While suffocating, they move, sabotage, repair and fight 1.5x better.]
-	</text>
+		While suffocating, they move, sabotage, repair and fight 1.5x better.]</text>
 
 	<choice req="EX_RK_CHOKING_IS_FINE" blue="true" hidden="true">
 		<text>Install the External Augment internally.</text>
@@ -6017,7 +7184,8 @@ REFS Darkest Desires for MV 5.5.1
 			</choice>
 		</event>
 	</choice>
-	<choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true">
+	<!-- <choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true"> -->
+	<choice req="pilot" lvl="1" blue="false" hidden="true">
 		<text>Nevermind.</text>
 		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
 	</choice>
@@ -6065,7 +7233,9 @@ REFS Darkest Desires for MV 5.5.1
 			</choice>
 		</event>
 	</choice>
-	<choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true">
+	
+	<!-- <choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true"> -->
+	<choice req="pilot" lvl="1" blue="false" hidden="true">
 		<text>Nevermind.</text>
 		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
 	</choice>
@@ -6098,7 +7268,9 @@ REFS Darkest Desires for MV 5.5.1
 			</choice>
 		</event>
 	</choice>
-	<choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true">
+	
+	<!-- <choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true"> -->
+	<choice req="pilot" lvl="1" blue="false" hidden="true">
 		<text>Nevermind.</text>
 		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
 	</choice>
@@ -6112,7 +7284,7 @@ REFS Darkest Desires for MV 5.5.1
 
 <event name="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_IN_FIRE_CREWBOOSTS">
 	<text>You are about to install the Hellion Wraps upgrade.
-	[Effects: In fire, your crew have 2x movement and sabotage speed, and deal 2x damage, on both ships.]</text>
+	[Effects: In fire, your crew have 1.75x movement and sabotage speed, and deal 1.75x combat and door damage, on both ships.]</text>
 	
 	<choice req="DJMOD_HAS_RADIKAL_SCORCH_GEAR" lvl="0" max_lvl="0" blue="false" hidden="true">
 		<text>This upgrade is unavailable. You need any RadiKal Scorch (or BPS) weapon/augment/crew/ship.</text>
@@ -6133,7 +7305,9 @@ REFS Darkest Desires for MV 5.5.1
 			</choice>
 		</event>
 	</choice>
-	<choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true">
+	
+	<!-- <choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true"> -->
+	<choice req="pilot" lvl="1" blue="false" hidden="true">
 		<text>Nevermind.</text>
 		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
 	</choice>
@@ -6167,7 +7341,9 @@ REFS Darkest Desires for MV 5.5.1
 			</choice>
 		</event>
 	</choice>
-	<choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true">
+	
+	<!-- <choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true"> -->
+	<choice req="pilot" lvl="1" blue="false" hidden="true">
 		<text>Nevermind.</text>
 		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
 	</choice>

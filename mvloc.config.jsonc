@@ -15,6 +15,8 @@
 		"data/events_special_filler.xml.append",
 
 		"data/events_special_lightspeed.xml.append",
+		"data/events_special_boons.xml.append",
+		"data/events_special_jukebox.xml.append",
 
 		"data/events_special_morality.xml.append",
 		"data/events_special_multiverse.xml.append",
@@ -71,7 +73,12 @@
 		"//mod:findLike/mod-append:customShip/crew/*/@name",
 		"//mod:findLike/mod:findLike/mod-append:category/customTitle",
 		"//mod:findLike/mod-append:customStore/category/customTitle",
-
+        "//mod:findLike/mod-append:page/section/@text",
+        "//achievement/name",
+        "//achievement/description",
+        "//achievement/header",
+        "//achievement/secretName",
+        "//achievement/secretDescription",
 		// sector
 		"//sectorDescription/nameList/name",
 	
@@ -106,10 +113,10 @@
     "packaging": {
         "fullOriginal": [
 		    //assets1
-            "https://github.com/ftl-mv-translation/radikal-sector/raw/radikal-sector-english/RadiKal_Sector_v5.98e.zip",
+            "https://github.com/ftl-mv-translation/radikal-sector/raw/radikal-sector-english/RadiKal_Sector_v6.10f.zip",
 
         ],
         "prefix": "Radikal-sector",
-        "version": "5.98e"
+        "version": "6.10f"
     }
 }

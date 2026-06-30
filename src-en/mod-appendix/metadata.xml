@@ -15,13 +15,15 @@
 	<threadUrl><![CDATA[ https://ftlmultiverse.boards.net/thread/214/mv-radikal-sector-equipment-ships ]]></threadUrl>
 	<!-- Your forum user name. -->
 	<author><![CDATA[ Dj0z ]]></author>
-	<version><![CDATA[ 5.98e ]]></version>
+	<version><![CDATA[ 6.10f ]]></version>
 	<description>
 <![CDATA[
-(Patching: put Forgotten Races above RK to avoid populating their stores.)
+(Patching order:
+-Judge Blue Options above RK because it's already built-in
+-Forgotten Races above RK to avoid populating their stores.)
 
 An add-on for FTL: Multiverse v5.5.1, which adds a secret sector, multiple spicy augments (multi-ramming, extensive fire effects, special hacking, repair, internal...), including upgrades and combos!
-Also features a few weapons and 5 ships (4 unlockable) with specific gimmicks.
+Also features a few weapons and 7 ships (6 unlockable) with specific gimmicks, and judge boons.
 The general theme is powerful but potentially dangerous (to you) experimental tech. More content coming soon!
 
 ****** CONTENT ******
@@ -30,6 +32,7 @@ The secret RadiKal Sector:
 -Weapons, augments and some other things are rarely accessible from the outside.
 -Get coordinates rarely during normal play or from double agents in stores, then reroute. There might be other ways too.
 -Original content, events, enemies, quests and specialized shops.
+-A player Hideout you can build over multiple runs for permanent benefits!
 -Danger everywhere. You might trade crew, gear, reputation or something else for even better things. Will you dare?
 
 Resource-hungry Combat Augments:
@@ -49,6 +52,7 @@ Other offensive Augments:
 Other defensive augments:
 -Persistence Shield gives Super Shields, a way to recharge them instantly, and regular shield recharge speed!
 -Thicker Hull can negate low damage hits, and always reduces high damage ones, with a drawback.
+-Arrogance Shield: high Super Shields, but reduced shield recharge rate. Also influences drones on your ship.
 -Punk Harmony uses a bootleg Harmony to automate and empower your Engi, scaling with Mind Control and Hacking.
 -Dread deck: indirectly makes your ship much deadlier to invaders while making your crew antisocials clinging to life.
 -Defense Kits make your crew much sturdier on your ship.
@@ -64,19 +68,25 @@ Upgradable. Combo with Plasma Teleporter.
 -Surveyor: deep-search empty beacons for random loot.
 
 Internal augments:
+-Calibrator: Increases the accuracy and fire rate of all of your weapons!
 -Choking F.I.N.E.: protects from suffocation and gives boosts while suffocating.
 -Demicloners: provides a semblance of cloning when your crew dies without a Clonebay.
 -Mind Cooler: greatly reduces the impact of having your crew mind controlled.
--Hellion Wraps: in fire, your crew is combat boosted.
+-Hellion Wraps: in fire, your crew is combat boosted!
 -Mind Heater: in fire, makes your crew resist Mind Control and stun, and also reveal adjacent rooms.
 
 Efficient weapons:
 -'Bada' fissure beam can deal massive damage to large systems, or blow up ships!
+-'Heavy Popper MK II' shoots superheavy shield-popping lasers, at your own risk.
 -'Unloader' can quickly throw your whole stock of missiles at the enemy.
 -'Gravespred' radiation beam can be lethal including on your ship.
--'Shotphaser' shotguns accelerated phase ions with high stun.
+-'Battery Artemis' reworks the classic design to power the next weapon.
+-'Shotphaser' shotguns accelerated phase ions with high stun chance.
 -'Rain of Ions' shoots all kinds of ions at once!
--'Rain of Fire' can eventually maintain full strength fires against any ship!
+-'Chimney' missile launcher starts strong fires and sustains them with oxygen!
+-'Hot Poker' fireblast beam can destroy enemy systems while spreading fire all around!
+-'Oxygen-Bomb' refills oxygen on any ship. Can detonate for a little damage and fire.
+-'Rain of Fire' can eventually maintain full strength fires anywhere!
 -'BPS Messenger' heavy laser combines the strengths of all 3 RK subfactions.
 
 New crew:
@@ -84,36 +94,55 @@ New crew:
 -Uptors are made out of Alpha Gouls to fit the fiery needs of the RK Scorch.
 -Unique crew!
 
-Player ships with unique gimmicks!
+Player ships with unique gimmicks:
 -Embark on a wild ride with the Rammer, boasting a superior locked version of the Shipvore Ram.
 -The Punker plays around its massive reactor, particle accelerator, and special hacking.
 -The Scorcher is outfitted with what you need to burn down any enemy.
 
+Plus a few secrets!
+
 
 ************ Changelog ******************
-CHANGELOG RadiKal Sector v5.98e
+CHANGELOG RadiKal Sector v6.10f "Hack-compatibility"
 
--Improved some texts.
+-Improved some texts. <credit: Cerebralcloud92>
 
 * Augments
--"Lead Titans": now also applies to Saltmen.
--"Weapons On Fire":
-Now has combo with "Scorch Preigniter" for higher extra stacks!
-Base bonus fire rate increased to 25% (was 20%).
-Scrap cost slightly increased.
-Fixed it potentially not working for enemy ships.
+-"Enigmashin":
+The "???" outcome: now gives 1 delay still, just not more.
+Fixed ECM Suite from add-on "Lily's Innovations" not being cleared at the end of hack delays. <credit: Mr. Do>
+-A certain enemy:
+Purchased better antennas to also limit Mind Control, Ablative Armor (from add-on "Lily's Innovations"), Auxiliary Shields (from add-on "The Outer Expansion"), Corruptor (from add-on "Darkest Desire"), and Turret Control (from add-on "The Old Guard").
+No longer limits Piloting by default.
+Reaction comes slightly sooner. In theory that reaction also had a chance to never happen, which should be fixed now. It also now limits Piloting by 1 (was 2).
+Baseline reward was increased, and another round of reward that cannot give items was added. This other round lets you choose between the previously guaranteed item drop, and a new powerful exclusive augment!
+-"Offense Disabler":
+Now supports systems from add-ons "Darkest Desire" and "The Old Guard"!
+Fixed description saying the complete disable lasted 5 seconds, while it really lasts 6.
+-"Flammabilizer":
+Both toggles now have a faint overhead debuff visual so it's easier to tell they're active.
+Nerfed the "Damage" toggle to 160% +60%  per power in O2 (was 175% +75%).
+Fixed the slowing effect common to both toggles being able to stack when you have both at once, as that was never intended and grossly overpowered. <credit: prophet_of_the_grand_schnitzel>
+-"Scorched Earth" series:
+Now supports systems from add-ons "Darkest Desire", "The Old Guard" and "The Outer Expansion"!
 
 * Weapons
--Max chained values for "Gravespred" now displayed in the description so you don't need to do math.
+-New RK Punk "Battery Artemis". Does what you think. <idea: Cerebralcloud92>
+-"Heavy Popper MK II": Shooting animation length increased to 0.45 seconds (was 0.25) for more "oomph". Skilled users might exploit that to optimize shield removal in tandem with other weapons.
 
 * The RadiKal Sector
--Now accessible by using the "Magic Hat"!
--New hardly skippable fight with a quick RK Scorch.
--In dedicated RK Scorch store: more Uptors and fewer Gouls, expanded augments section.
--Sniper Store prices increased on some stronger weapons.
+-"RK Punk Auto-Depopulator":
+Now has a much more consistent weapon loadout. <credit: Cerebralcloud92>
+Lower minimum Weapons power.
+Now has and can use 4 weapons in later sectors.
+Modified one of the rewards you can choose from.
+Probably reduced chance of a bug where it would sometimes use Gravespred like a pinpoint, by modifying its AI targeting.
+-Added the option to take nothing from RK enemies that give a choice of gear on defeat. Might be useful for speedrunning or challenges, idk.
+
+HOTFIX v6.10f: Fixed Gravespred cooldown being 5s instead of 11s. That was for faster testing, forgot to revert. Whoops.
 
 
-Special thanks to (in no particular order) Fajdek, Aleev, Zuggo, LoudMute, Arc, Lizzard, codyfun, Qaser7, bamalf, Dr. Nauter, Witherbottom, Chooseche, Eschaton, Pepper, Untitled, Pupi, vertaalfout, Dalvest, Alder, Kix, [Enchanter], Pedrosian96, Royal Slime, [yenlo]R4V3-0N, robinthedragon2, Ehtya (Laythe), Blizz/mr_easy_money, Skye[NikoMaster], Julk, Felipe, marcrusian, Abstrusity and other people who helped on the FTL:MV Discord, for streaming the mod, and valuable information on balance, modding, coding and art.
+Special thanks to (in no particular order) Wooden Bench Acolyte, Mr Do, Waffle, Cerebralcloud92, dirt block, aktoja, Harmony, Fajdek, Aleev, Zuggo, LoudMute, Arc, Lizzard, codyfun, Qaser7, bamalf, Dr. Nauter, Witherbottom, Chooseche, Eschaton, Pepper, Untitled, Pupi, vertaalfout, Dalvest, Alder, Kix, [Enchanter], Pedrosian96, Royal Slime, [yenlo]R4V3-0N, robinthedragon2, Ehtya (Laythe), Blizz/mr_easy_money, Skye[NikoMaster], Julk, Felipe, marcrusian, Abstrusity and other people who helped on the FTL:MV Discord, for streaming the mod, and valuable information on balance, modding, coding and art.
 
 Feedback? Questions? @Dj0z in the Multiverse server on Discord
 

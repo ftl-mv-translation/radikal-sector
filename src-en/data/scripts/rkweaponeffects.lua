@@ -1,5 +1,47 @@
 local vter = mods.multiverse.vter
 
+local function get_room_at_location(shipManager, location, includeWalls)
+    return Hyperspace.ShipGraph.GetShipInfo(shipManager.iShipId):GetSelectedRoom(location.x, location.y, includeWalls)
+end
+
+local function get_adjacent_rooms(shipId, roomId, diagonals)
+    local shipGraph = Hyperspace.ShipGraph.GetShipInfo(shipId)
+    local roomShape = shipGraph:GetRoomShape(roomId)
+    local adjacentRooms = {}
+    local currentRoom = nil
+    local function check_for_room(x, y)
+        currentRoom = shipGraph:GetSelectedRoom(x, y, false)
+        if currentRoom > -1 and not adjacentRooms[currentRoom] then
+            adjacentRooms[currentRoom] = Hyperspace.Pointf(x, y)
+        end
+    end
+    for offset = 0, roomShape.w - 35, 35 do
+        check_for_room(roomShape.x + offset + 17, roomShape.y - 17)
+        check_for_room(roomShape.x + offset + 17, roomShape.y + roomShape.h + 17)
+    end
+    for offset = 0, roomShape.h - 35, 35 do
+        check_for_room(roomShape.x - 17,               roomShape.y + offset + 17)
+        check_for_room(roomShape.x + roomShape.w + 17, roomShape.y + offset + 17)
+    end
+    if diagonals then
+        check_for_room(roomShape.x - 17,               roomShape.y - 17)
+        check_for_room(roomShape.x + roomShape.w + 17, roomShape.y - 17)
+        check_for_room(roomShape.x + roomShape.w + 17, roomShape.y + roomShape.h + 17)
+        check_for_room(roomShape.x - 17,               roomShape.y + roomShape.h + 17)
+    end
+    return adjacentRooms
+end
+
+local function has_value (tab, val)
+    for index, value in ipairs(tab) do
+        if value == val then
+            return true
+        end
+    end
+
+    return false
+end
+
 --[[ REF: ARS+ Challenges. "varr" is a GIGANTIFIC thing, i only pasted the one line needed.
 function clear_LaunchOrder()
 	--print('clean')
@@ -42,6 +84,82 @@ end ]]
 
 script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projectile, weapon)
 
+    -- Calibrator: bonus accuracy. WORKS. Even when Beams shoot, FWIW.
+    if projectile then
+        local shipManager = Hyperspace.ships(projectile.ownerId)
+
+        if shipManager then
+            local accuAugCount = shipManager:HasAugmentation("INTERNAL_RK_CALIBRATOR")
+            --print("Calibrators: " .. accuAugCount)
+
+            if accuAugCount > 0 then
+                -- intended: 10. WORKS
+                accuBoost = 10 * accuAugCount
+                --print("Calib accuBoost: " .. accuBoost)
+                projectile.extend.customDamage.accuracyMod = projectile.extend.customDamage.accuracyMod + accuBoost
+                --print("Calib newAccu: " .. projectile.extend.customDamage.accuracyMod)
+            end
+        end
+    end
+--[[ REF: Lily's Innovations: "ECM Suite" internal upgrade "Jamming Screen".
+
+script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projectile, weapon)
+    if projectile then
+        local shipManager = Hyperspace.ships(projectile.ownerId)
+        local otherShipManager = Hyperspace.ships(1 - projectile.ownerId)
+        if shipManager and otherShipManager then
+            if otherShipManager:HasSystem(Hyperspace.ShipSystem.NameToSystemId("lily_ecm_suite")) and otherShipManager:GetSystem(Hyperspace.ShipSystem.NameToSystemId("lily_ecm_suite")):Functioning() and (otherShipManager:HasAugmentation("UPG_LILY_ECM_JAMMER_FIELD") > 0 or otherShipManager:HasAugmentation("EX_LILY_ECM_JAMMER_FIELD") > 0) then
+                projectile.extend.customDamage.accuracyMod = projectile.extend.customDamage.accuracyMod - 10
+            end
+            if otherShipManager:HasSystem(Hyperspace.ShipSystem.NameToSystemId("lily_ecm_suite")) and (uecmCache[1 - shipManager.iShipId]) then
+                projectile.extend.customDamage.accuracyMod = projectile.extend.customDamage.accuracyMod - 15
+            end
+
+            if otherShipManager and otherShipManager:HasSystem(Hyperspace.ShipSystem.NameToSystemId("lily_ecm_suite")) then
+                if mods.lilyinno.ecmsuite.getState(otherShipManager, "jammer") > 0 then
+                    local targetroom = userdata_table(otherShipManager, "mods.lilyinno.ecmsuite").jammerTargetroom or -1
+                    local strength = userdata_table(otherShipManager, "mods.lilyinno.ecmsuite").jammerStrength or 1
+                    local system = shipManager:GetSystemInRoom(targetroom)
+                    if system then
+                        local id = system:GetId()
+
+                        if id == Hyperspace.ShipSystem.NameToSystemId("artillery") then
+                            projectile.extend.customDamage.accuracyMod = projectile.extend.customDamage.accuracyMod - 10 * strength
+                        elseif id == Hyperspace.ShipSystem.NameToSystemId("weapons") then
+                            projectile.extend.customDamage.accuracyMod = projectile.extend.customDamage.accuracyMod - 5 * strength
+                        end
+                    end
+                end
+            end
+        end
+    end
+end, 64) ]]
+
+    -- Heavy Popper MK II laser. REF: Gravespred, Weapons On Fire (both below).
+    local shipId = projectile.ownerId
+    local shipManager = Hyperspace.Global.GetInstance():GetShipManager(shipId)
+
+    if weapon.blueprint and weapon.blueprint.name == "RK_HEAVY_POPPER_2" then
+        -- Systems self-damage
+
+        --WORKS
+        for system in vter(shipManager.vSystemList) do
+            -- print("heavy_popper_2: 1 vter loop")
+
+            local roomId = shipManager:GetSystemRoom(system:GetId())
+            local location = shipManager:GetRoomCenter(roomId)
+            local sysDmg = Hyperspace.Damage()
+            
+            sysDmg.iSystemDamage = 1
+
+            -- Chance system dmg - WORKS
+            if math.random() < 0.03 then        --intended: 0.03
+                -- print("heavy popper self-dmg triggered")
+                shipManager:DamageArea(location, sysDmg, true)
+            end
+        end
+    end
+
     -- Gravespred beam.
     --[[ REF Lily's Beam Emporium:
 
@@ -80,13 +198,11 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projec
         -- Scaling piercing
         local damage = projectile.damage
         -- damage.iShieldPiercing = damage.iPersDamage - 1     -- Somehow this is always 1 lower than expected.
-        damage.iShieldPiercing = damage.iPersDamage
+        damage.iShieldPiercing = damage.iPersDamage             -- Actually 1 lower than iPersDamage.
         -- print(projectile.damage.iShieldPiercing)
         -- print(projectile.damage.iPersDamage)
 
         -- Crew self-damage
-        --[[ local shipId = projectile.ownerId
-        local shipManager = Hyperspace.Global.GetInstance():GetShipManager(shipId) ]]
 
         for room in vter(shipManager.ship.vRoomList) do
             -- print("killall_beam: 1 vter loop")
@@ -125,8 +241,6 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projec
     if shipManager:HasAugmentation("RK_SCORCH_PREIGNITER") > 0 then
         local roomId = shipManager.weaponSystem.roomId
         if roomId then
-            -- REF: NoConsole by Pepper
-            -- ship:StartFire(roomId)
             shipManager:StartFire(roomId)
         end
     end
@@ -152,8 +266,7 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projec
         end
 
         -- Stack fire rate - clear on jump.
-        -- WORKS but try version that works for enemies too.
-        -- local augCount = Hyperspace.ships.player:HasAugmentation(stackAugName)
+        -- WORKS
         local augCount = shipManager:HasAugmentation(stackAugName)
         -- print("aug count for adding:"..augCount)
         
@@ -177,4 +290,119 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projec
         end
 
     end
+end)
+
+-- REF: Lizzard's Variety: LV_RECOIL_MISSILES
+-- script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(shipManager, projectile, location, damage, shipFriendlyFire)
+script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(shipManager, projectile, location, damage, realNewTile, beamHitType)
+    -- Antibug "Triggers exactly 5 times every shot no matter what."
+    if beamHitType ~= Defines.BeamHit.NEW_ROOM then return Defines.Chain.CONTINUE, beamHitType end
+    
+    local weaponName = nil
+    pcall(function() weaponName = Hyperspace.Get_Projectile_Extend(projectile).name end)
+
+    if weaponName == "RK_FOCUS_FIRE" then
+
+        -- print("Poker detected")
+
+        local roomId = get_room_at_location(shipManager, location, false)
+        local fireCount = shipManager:GetFireCount(get_room_at_location(shipManager, location, true))
+        if fireCount > 0 then
+            
+            -- print("Poker Fire-Blast checked")
+            
+            local touchedRooms = {}
+            table.insert(touchedRooms, roomId)
+
+            for i, k in pairs(get_adjacent_rooms(shipManager.iShipId, roomId, true)) do
+
+                -- Still counts as damage from the weapon: if weapon spawns crew, will spawn for each of these.
+                if (not has_value(touchedRooms, i)) then
+                    shipManager:StartFire(i)                -- WORKS
+                    -- If above doesn't work, try this:
+                    -- local adjacentRoomId = get_room_at_location(shipManager, k, false)
+                    -- shipManager:StartFire(adjacentRoomId)
+
+                    local secondDamage = Hyperspace.Damage()
+                    -- secondDamage.iStun = 4
+                    secondDamage.iSystemDamage = 1
+                    secondDamage.iPersDamage = 1
+                    -- print(secondDamage.iSystemDamage)
+                    shipManager:DamageArea(k, secondDamage, true)
+                    table.insert(touchedRooms, i)
+                end
+
+            end
+        else
+            -- Room had no fire. Manually fire-fill. Default fire-fill makes fire detection always true.
+            shipManager:StartFire(roomId)
+            shipManager:StartFire(roomId)
+            shipManager:StartFire(roomId)
+            shipManager:StartFire(roomId)
+            shipManager:StartFire(roomId)
+            shipManager:StartFire(roomId)
+            shipManager:StartFire(roomId)
+            shipManager:StartFire(roomId)
+            shipManager:StartFire(roomId)
+        end
+
+    end
+    --[[ if weaponName == "LV_RECOIL_MISSILES" then
+
+        local roomId = get_room_at_location(shipManager, location, false)
+        Hyperspace.Get_Projectile_Extend(projectile).name = ""
+
+        local firstDamage = Hyperspace.Damage()
+        firstDamage.iStun = 6
+        shipManager:DamageArea(location, firstDamage, true)
+
+        local touchedRooms = {}
+        table.insert(touchedRooms, roomId)
+
+        for i, k in pairs(get_adjacent_rooms(shipManager.iShipId, roomId, true)) do
+
+                if (not has_value(touchedRooms, i)) then
+                    local secondDamage = Hyperspace.Damage()
+                    secondDamage.iStun = 4
+                    shipManager:DamageArea(k, secondDamage, true)
+                    table.insert(touchedRooms, i)
+                end
+
+            for j, s in pairs(get_adjacent_rooms(shipManager.iShipId, i, true)) do
+
+                    if (not has_value(touchedRooms, j)) then
+                        local thirdDamage = Hyperspace.Damage()
+                        thirdDamage.iStun = 3
+                        shipManager:DamageArea(s, thirdDamage, true)
+                        table.insert(touchedRooms, j)
+                    end
+
+                for b, c in pairs(get_adjacent_rooms(shipManager.iShipId, j, true)) do
+
+                        if (not has_value(touchedRooms, b)) then
+                            local fourthDamage = Hyperspace.Damage()
+                            fourthDamage.iStun = 2
+                            shipManager:DamageArea(c, fourthDamage, true)
+                            table.insert(touchedRooms, b)
+                        end
+                    for g, w in pairs(get_adjacent_rooms(shipManager.iShipId, b, true)) do
+
+                            if (not has_value(touchedRooms, g)) then
+                                local fifthDamage = Hyperspace.Damage()
+                                fifthDamage.iStun = 1
+                                shipManager:DamageArea(w, fifthDamage, true)
+                                table.insert(touchedRooms, g)
+                            end
+                    end
+
+                end
+
+            end
+
+        end
+
+    end ]]
+
+    -- REF: MV v5.5.1's mind-control.lua
+    return Defines.Chain.CONTINUE, beamHitType      -- Doesn't fix "Triggers 5 times per shot". The Antibug line does.
 end)

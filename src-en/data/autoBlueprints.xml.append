@@ -124,7 +124,26 @@ SEE ALSO: MV's BLUELIST_CREW_NOFIRE in hyperspace.xml
 
 	<name>rk_fireghost</name>
 </blueprintList>
+<blueprintList name="RK_LIST_CREW_RADIKALS_NO_UNIQUES">
+	<name>rk_weaponlike</name>
 
+	<name>rk_fireghost</name>
+</blueprintList>
+<blueprintList name="RK_LIST_CREW_RK_BAM">
+	<name>rk_weaponlike</name>
+</blueprintList>
+<blueprintList name="RK_LIST_CREW_RK_BAM_NO_UNIQUES">
+	<name>rk_weaponlike</name>
+</blueprintList>
+<blueprintList name="RK_LIST_CREW_RK_PUNK">
+	<name>unique_rk_defromorius</name>
+</blueprintList>
+<blueprintList name="RK_LIST_CREW_RK_SCORCH">
+	<name>rk_fireghost</name>
+</blueprintList>
+<blueprintList name="RK_LIST_CREW_RK_SCORCH_NO_UNIQUES">
+	<name>rk_fireghost</name>
+</blueprintList>
 <!-- 
 /////////////////////////////////////////////////////////////////////////////
 For Lead Titans aug. - see MV's LIST_CREW_... in MV's autoblueprints.xml.
@@ -200,6 +219,7 @@ Alphabetical order, not strength level order. Free Mantis and some others are se
 	<name>unique_rk_defromorius</name>
 </blueprintList>
 <blueprintList name="RK_LIST_BETTER_HUMAN">
+	<name>human_medic</name>
 	<name>human_soldier</name>
 	<name>human_angel</name>
 	<name>unique_haynes</name>
@@ -212,6 +232,9 @@ Alphabetical order, not strength level order. Free Mantis and some others are se
 	<name>unique_ellie_lvl5</name>
 	<name>unique_ellie_lvl6</name>
 	<name>unique_ellie_stephan</name>
+
+	<!-- The Old Guard: New Dawn Soldier -->
+	<name>human_og_dawn</name>
 </blueprintList>
 <blueprintList name="RK_LIST_BETTER_HUMAN_ENGINEER">
 	<name>human_technician</name>
@@ -228,18 +251,44 @@ Alphabetical order, not strength level order. Free Mantis and some others are se
 	<name>unique_jerry_pony</name>
 	<name>unique_jerry_pony_crystal</name>
 </blueprintList>
+
 <blueprintList name="RK_LIST_BETTER_LANIUS">
 	<name>lanius_welder</name>
 	<name>lanius_augmented</name>
 	
 	<name>unique_rk_defromorius</name>
+
+	<!-- Cosmic Metalloid Expansion (CME): Enkindled Lanius -->
+	<name>solar_lanius</name>
 </blueprintList>
 <blueprintList name="RK_LIST_BETTER_LANIUS_AUGMENTED">
 	<name>unique_anointed</name>
+	
+	<!-- Cosmic Metalloid Expansion (CME): ??? -->
+	<name>solar_anointed</name>
+	<name>solar_anointed_2</name>
+	<name>solar_anointed_3</name>
+	<name>solar_anointed_royal</name>
+	<name>solar_anointed_lightbringer</name>
+	<name>solar_anointed_bacon</name>
+	<name>solar_anointed_ionized</name>
+	<name>solar_anointed_withered</name>
+	<name>solar_anointed_necro</name>
+	<name>solar_anointed_absolute</name>
 </blueprintList>
 <blueprintList name="RK_LIST_BETTER_LANIUS_WELDER">
 	<name>unique_eater</name>
 </blueprintList>
+<!-- Cosmic Metalloid Expansion (CME): Enkindled Lanius -->
+<blueprintList name="RK_LIST_BETTER_LANIUS_ENKINDLED">
+	<name>midnight_lanius</name>
+	<name>midnight_lantern</name>
+</blueprintList>
+<blueprintList name="RK_LIST_BETTER_LANIUS_LUMINARY">
+	<name>unique_corona</name>
+	<name>unique_corona_masked</name>
+</blueprintList>
+
 <blueprintList name="RK_LIST_BETTER_LEECH">
 	<name>leech_ampere</name>
 	<name>unique_alkram</name>
@@ -448,6 +497,7 @@ Debated using a blacklist instead, to make it auto-work on modded crew, but soun
 	<name>obelisk</name>
 
 	<name>orchid</name>
+	<name>orchid_vampweed</name>
 
 	<name>phantom</name>
 	<name>phantom_goul</name>
@@ -478,6 +528,138 @@ Debated using a blacklist instead, to make it auto-work on modded crew, but soun
 	<name>zoltan_monk</name>
 	<name>zoltan_osmian</name>
 	<!-- <name>zoltan_infernum_defector</name>		wtf is this? -->
+	 
+	<!-- The Old Guard: Iron Watch Technician -->
+	<name>human_og_raider</name>
+
+	<!-- The Outer Expansion: All 66 crew for now, I'm not digging through all that today. -->
+	<name>aea_acid_soldier</name>
+	<name>aea_acid_captain</name>
+	<name>aea_acid_bill</name>
+
+	<name>aea_necro_engi</name>
+	<name>aea_necro_lich</name>
+	<name>aea_necro_king</name>
+
+	<name>aea_old_1</name>
+	<name>aea_old_unique_1</name>
+	<name>aea_old_unique_2</name>
+	<name>aea_old_unique_3</name>
+	<name>aea_old_unique_4</name>
+	<name>aea_old_unique_5</name>
+	
+	<name>aea_cult_wizard</name>
+	<name>aea_cult_wizard_a01</name>
+	<name>aea_cult_wizard_a02</name>
+	<name>aea_cult_wizard_s03</name>
+	<name>aea_cult_wizard_s04</name>
+	<name>aea_cult_wizard_s05</name>
+	<name>aea_cult_wizard_s06</name>
+	<name>aea_cult_wizard_a07</name>
+	<name>aea_cult_wizard_s08</name>
+	<name>aea_cult_wizard_s09</name>
+	<name>aea_cult_wizard_a10</name>
+	<name>aea_cult_wizard_a11</name>
+	<name>aea_cult_wizard_s12</name>
+	<name>aea_cult_wizard_s13</name>
+	<name>aea_cult_wizard_s14</name>
+	<name>aea_cult_wizard_s15</name>
+
+	<name>aea_cult_priest_sup</name>
+	<name>aea_cult_priest_off</name>
+	<name>aea_cult_priest_bor</name>
+
+	<name>aea_cult_tiny</name>
+	<name>aea_cult_tiny_a01</name>
+	<name>aea_cult_tiny_a02</name>
+	<name>aea_cult_tiny_s03</name>
+	<name>aea_cult_tiny_s04</name>
+	<name>aea_cult_tiny_s05</name>
+	<name>aea_cult_tiny_s06</name>
+	<name>aea_cult_tiny_a07</name>
+	<name>aea_cult_tiny_s08</name>
+	<name>aea_cult_tiny_s09</name>
+	<name>aea_cult_tiny_a10</name>
+	<name>aea_cult_tiny_a11</name>
+	<name>aea_cult_tiny_s12</name>
+	<name>aea_cult_tiny_s13</name>
+	<name>aea_cult_tiny_s14</name>
+	<name>aea_cult_tiny_s15</name>
+	
+	<name>aea_bird_avali</name>
+	<name>aea_bird_illuminant</name>
+	<name>aea_bird_unique</name>
+	
+	<name>aea_shleg_slug</name>
+	<name>aea_shleg_shell</name>
+	<name>aea_shleg_sickle</name>
+	<name>aea_shleg_sorrow</name>
+	
+	<name>aea_shard_breaker</name>
+	<name>aea_shard_smasher</name>
+	<name>aea_shard_dawn</name>
+	
+	<name>aea_dark_justicier</name>
+	<!-- REF: The Outer Expansion for MV v5.5.1
+<mod:findName type="blueprintList" name="LIST_CREW_ALIENS">
+    <mod-append:name>aea_acid_soldier</mod-append:name>
+    <mod-append:name>aea_acid_captain</mod-append:name>
+	<mod-append:name>aea_acid_bill</mod-append:name>
+    <mod-append:name>aea_necro_engi</mod-append:name>
+    <mod-append:name>aea_necro_lich</mod-append:name>
+    <mod-append:name>aea_necro_king</mod-append:name>
+    <mod-append:name>aea_old_1</mod-append:name>
+    <mod-append:name>aea_old_unique_1</mod-append:name>
+    <mod-append:name>aea_old_unique_2</mod-append:name>
+    <mod-append:name>aea_old_unique_3</mod-append:name>
+    <mod-append:name>aea_old_unique_4</mod-append:name>
+    <mod-append:name>aea_old_unique_5</mod-append:name>
+    <mod-append:name>aea_cult_wizard</mod-append:name>
+    <mod-append:name>aea_cult_wizard_a01</mod-append:name>
+    <mod-append:name>aea_cult_wizard_a02</mod-append:name>
+    <mod-append:name>aea_cult_wizard_s03</mod-append:name>
+    <mod-append:name>aea_cult_wizard_s04</mod-append:name>
+    <mod-append:name>aea_cult_wizard_s05</mod-append:name>
+    <mod-append:name>aea_cult_wizard_s06</mod-append:name>
+    <mod-append:name>aea_cult_wizard_a07</mod-append:name>
+    <mod-append:name>aea_cult_wizard_s08</mod-append:name>
+    <mod-append:name>aea_cult_wizard_s09</mod-append:name>
+    <mod-append:name>aea_cult_wizard_a10</mod-append:name>
+    <mod-append:name>aea_cult_wizard_a11</mod-append:name>
+    <mod-append:name>aea_cult_wizard_s12</mod-append:name>
+    <mod-append:name>aea_cult_wizard_s13</mod-append:name>
+    <mod-append:name>aea_cult_wizard_s14</mod-append:name>
+    <mod-append:name>aea_cult_wizard_s15</mod-append:name>
+    <mod-append:name>aea_cult_priest_sup</mod-append:name>
+    <mod-append:name>aea_cult_priest_off</mod-append:name>
+    <mod-append:name>aea_cult_priest_bor</mod-append:name>
+    <mod-append:name>aea_cult_tiny</mod-append:name>
+    <mod-append:name>aea_cult_tiny_a01</mod-append:name>
+    <mod-append:name>aea_cult_tiny_a02</mod-append:name>
+    <mod-append:name>aea_cult_tiny_s03</mod-append:name>
+    <mod-append:name>aea_cult_tiny_s04</mod-append:name>
+    <mod-append:name>aea_cult_tiny_s05</mod-append:name>
+    <mod-append:name>aea_cult_tiny_s06</mod-append:name>
+    <mod-append:name>aea_cult_tiny_a07</mod-append:name>
+    <mod-append:name>aea_cult_tiny_s08</mod-append:name>
+    <mod-append:name>aea_cult_tiny_s09</mod-append:name>
+    <mod-append:name>aea_cult_tiny_a10</mod-append:name>
+    <mod-append:name>aea_cult_tiny_a11</mod-append:name>
+    <mod-append:name>aea_cult_tiny_s12</mod-append:name>
+    <mod-append:name>aea_cult_tiny_s13</mod-append:name>
+    <mod-append:name>aea_cult_tiny_s14</mod-append:name>
+    <mod-append:name>aea_cult_tiny_s15</mod-append:name>
+    <mod-append:name>aea_bird_avali</mod-append:name>
+    <mod-append:name>aea_bird_illuminant</mod-append:name>
+    <mod-append:name>aea_bird_unique</mod-append:name>
+    <mod-append:name>aea_shleg_slug</mod-append:name>
+    <mod-append:name>aea_shleg_shell</mod-append:name>
+    <mod-append:name>aea_shleg_sickle</mod-append:name>
+    <mod-append:name>aea_shleg_sorrow</mod-append:name>
+    <mod-append:name>aea_shard_breaker</mod-append:name>
+    <mod-append:name>aea_shard_smasher</mod-append:name>
+    <mod-append:name>aea_shard_dawn</mod-append:name>
+    <mod-append:name>aea_dark_justicier</mod-append:name> -->
 </blueprintList>
 <!-- 
 /////////////////////////////////////////////////////////////////////////////
@@ -505,13 +687,13 @@ For Demicloners End.
 
 <blueprintList name="GIFTLIST_RADIKAL_GUARD">
 	<name>DJMOD_COMBAT_SHIPVORE_RAM</name>
-	<name>DJMOD_AUG_AUTO_SYS_REPAIR</name>
+	<name>RK_COMBAT_AUTO_SYS_REPAIR</name>
 	
+	<name>RK_COMBAT_OFFENSE_DISABLER</name>
+	<name>RK_SUPER_DEFENDERS</name>
+
 	<name>RK_SCORCH_SELF_2</name>
-	<name>DJMOD_COMBAT_SCORCH_ENEMY</name>
-	
-	<name>DJMOD_COMBAT_OFFENSE_DISABLER</name>
-	<name>DJMOD_SUPER_DEFENDERS</name>
+	<name>RK_COMBAT_SCORCH_ENEMY</name>
 	
 	<!-- <name>DJMOD_LASER_BPS</name>	GIFTLISTS WITH MIXED TYPES DONT WORK, NEVER DID. -->
 </blueprintList>
@@ -522,60 +704,62 @@ For Demicloners End.
 	
 	<name>RK_COMBAT_HACK_FLEET</name>
 	
-	<name>DJMOD_COMBAT_SCORCH_ENEMY</name>
+	<name>RK_COMBAT_SCORCH_ENEMY</name>
 </blueprintList>
 
 <!-- For non-rares see the RK shop -->
 <blueprintList name="SHOP_ITEM_RARE_RK_AUGMENTS">
-	<name>DJMOD_CREW_ARE_BOMBS_OFF</name>
-	<name>DJMOD_LEAD_TITANS</name>
+	<name>RK_CREW_ARE_BOMBS_OFF</name>
+	<name>RK_LEAD_TITANS</name>
 	
-	<name>DJMOD_SUPER_DEFENDERS</name>
-	<name>DJMOD_OWN_HARMONY_ON</name>
+	<name>RK_SUPER_DEFENDERS</name>
+	<name>RK_OWN_HARMONY_ON</name>
 	
 	<name>RK_SCORCH_SELF_2</name>
-	<name>DJMOD_COMBAT_SCORCH_ENEMY</name>
+	<name>RK_COMBAT_SCORCH_ENEMY</name>
 	<name>RK_COMBAT_OXYGENIZER</name>
 	
 	<name>RK_BPS_SURVEYOR</name>
 </blueprintList>
 <blueprintList name="SHOP_ITEM_RARE_RK_AUGMENTS_2">
-	<name>DJMOD_AUG_AUTO_SYS_REPAIR</name>
+	<name>RK_COMBAT_AUTO_SYS_REPAIR</name>
 	<name>RK_BAM_DIVINE_ARMOR</name>
 	<name>RK_PERSISTENCE_SHIELD</name>
 	
-	<name>DJMOD_DEFENSE_REMOVER</name>
-	<name>DJMOD_COMBAT_OFFENSE_DISABLER</name>
+	<name>RK_ARROGANCE_SHIELD</name>
+	<name>RK_COMBAT_DEFENSE_REMOVER</name>
+	<name>RK_COMBAT_OFFENSE_DISABLER</name>
 	<name>RK_DREAD_DECK</name>
 	<name>EX_DJMOD_DEMICLONER</name>
 
 	<name>RK_SCORCH_SELF_3</name>
-	<name>DJMOD_ENEMIES_BURN_MORE</name>
-	<name>DJMOD_ENEMIES_CAN_BURN</name>
+	<name>RK_ENEMIES_BURN_MORE</name>
+	<name>RK_ENEMIES_CAN_BURN</name>
 	<name>RK_SCORCH_PREIGNITER</name>
 	<name>RK_WEAPONS_ON_FIRE</name>
 </blueprintList>
 
  <!-- By subfaction  -->
   <blueprintList name="SHOP_ITEM_RK_ALL_AUGMENTS">
-	<name>DJMOD_AUG_AUTO_SYS_REPAIR</name>
+	<name>RK_COMBAT_AUTO_SYS_REPAIR</name>
 	<name>RK_BAM_DIVINE_ARMOR</name>
 	<name>DJMOD_COMBAT_SHIPVORE_RAM</name>
-	<name>DJMOD_CREW_ARE_BOMBS_OFF</name>
-	<name>DJMOD_LEAD_TITANS</name>
+	<name>RK_CREW_ARE_BOMBS_OFF</name>
+	<name>RK_LEAD_TITANS</name>
 	<name>RK_PERSISTENCE_SHIELD</name>
 	<name>EX_RK_CHOKING_IS_FINE</name>
 
-	<name>DJMOD_COMBAT_OFFENSE_DISABLER</name>
-	<name>DJMOD_DEFENSE_REMOVER</name>
+	<name>RK_ARROGANCE_SHIELD</name>
+	<name>RK_COMBAT_OFFENSE_DISABLER</name>
+	<name>RK_COMBAT_DEFENSE_REMOVER</name>
 	<name>RK_COMBAT_HACK_FLEET</name>
 	<name>RK_DREAD_DECK</name>
-	<name>DJMOD_OWN_HARMONY_ON</name>
-	<name>DJMOD_SUPER_DEFENDERS</name>
+	<name>RK_OWN_HARMONY_ON</name>
+	<name>RK_SUPER_DEFENDERS</name>
 	<name>EX_DJMOD_DEMICLONER</name>
 
-	<name>DJMOD_ENEMIES_CAN_BURN</name>
-	<name>DJMOD_COMBAT_SCORCH_ENEMY</name>
+	<name>RK_ENEMIES_CAN_BURN</name>
+	<name>RK_COMBAT_SCORCH_ENEMY</name>
 	<name>RK_SCORCH_SELF</name>
 	<name>RK_SCORCH_SELF_2</name>
 	<name>RK_SCORCH_SELF_3</name>
@@ -586,30 +770,31 @@ For Demicloners End.
 	<name>RK_BPS_SURVEYOR</name>
 </blueprintList>
 <blueprintList name="SHOP_ITEM_RK_BAM_AUGMENTS">
-	<name>DJMOD_AUG_AUTO_SYS_REPAIR</name>
+	<name>RK_COMBAT_AUTO_SYS_REPAIR</name>
 	<name>RK_BAM_DIVINE_ARMOR</name>
 	<name>DJMOD_COMBAT_SHIPVORE_RAM</name>
-	<name>DJMOD_CREW_ARE_BOMBS_OFF</name>
-	<name>DJMOD_LEAD_TITANS</name>
+	<name>RK_CREW_ARE_BOMBS_OFF</name>
+	<name>RK_LEAD_TITANS</name>
 	<name>RK_PERSISTENCE_SHIELD</name>
 	<name>EX_RK_CHOKING_IS_FINE</name>
 </blueprintList>
 <blueprintList name="SHOP_ITEM_RK_PUNK_AUGMENTS">
-	<name>DJMOD_DEFENSE_REMOVER</name>
-	<name>DJMOD_COMBAT_OFFENSE_DISABLER</name>
+	<name>RK_ARROGANCE_SHIELD</name>
+	<name>RK_COMBAT_DEFENSE_REMOVER</name>
+	<name>RK_COMBAT_OFFENSE_DISABLER</name>
 	<name>RK_COMBAT_HACK_FLEET</name>
 	<name>RK_DREAD_DECK</name>
-	<name>DJMOD_OWN_HARMONY_ON</name>
-	<name>DJMOD_SUPER_DEFENDERS</name>
+	<name>RK_OWN_HARMONY_ON</name>
+	<name>RK_SUPER_DEFENDERS</name>
 	<name>EX_DJMOD_DEMICLONER</name>
 </blueprintList>
 <blueprintList name="SHOP_ITEM_RK_SCORCH_AUGMENTS">
-	<name>DJMOD_COMBAT_SCORCH_ENEMY</name>
+	<name>RK_COMBAT_SCORCH_ENEMY</name>
 	<name>RK_SCORCH_SELF</name>
 	<name>RK_SCORCH_SELF_2</name>
 	<name>RK_SCORCH_SELF_3</name>
-	<name>DJMOD_ENEMIES_BURN_MORE</name>
-	<name>DJMOD_ENEMIES_CAN_BURN</name>
+	<name>RK_ENEMIES_BURN_MORE</name>
+	<name>RK_ENEMIES_CAN_BURN</name>
 	<name>RK_COMBAT_OXYGENIZER</name>
 	<name>RK_SCORCH_PREIGNITER</name>
 	<name>RK_WEAPONS_ON_FIRE</name>
@@ -617,18 +802,19 @@ For Demicloners End.
 
 <blueprintList name="LIST_RK_AUGS_ENEMIES_CAN_USE_GENERICALLY">
 	<name>RK_BAM_DIVINE_ARMOR</name>
-	<name>DJMOD_CREW_ARE_BOMBS_ON</name>
+	<name>RK_CREW_ARE_BOMBS_ON</name>
 	<name>RK_PERSISTENCE_SHIELD</name>
 	<name>EX_RK_CHOKING_IS_FINE</name>
 	
+	<name>RK_ARROGANCE_SHIELD</name>
 	<name>RK_DREAD_DECK</name>
-	<name>DJMOD_SUPER_DEFENDERS</name>
+	<name>RK_SUPER_DEFENDERS</name>
 
 	<name>RK_SCORCH_SELF</name>
 	<name>RK_SCORCH_SELF_2</name>
 	<name>RK_SCORCH_SELF_3</name>
-	<name>DJMOD_ENEMIES_BURN_MORE</name>
-	<name>DJMOD_ENEMIES_CAN_BURN</name>
+	<name>RK_ENEMIES_BURN_MORE</name>
+	<name>RK_ENEMIES_CAN_BURN</name>
 	<name>RK_SCORCH_PREIGNITER</name>
 	<name>RK_WEAPONS_ON_FIRE</name>
 </blueprintList>
@@ -638,12 +824,17 @@ RK-thematic WEAPON lists
 ============================================================= -->
 <blueprintList name="LIST_WEAPONS_RADIKAL">
 	<name>DJMOD_BAM_FISSUREBEAM</name>
+	<name>RK_HEAVY_POPPER_2</name>
 	<name>RK_UNLOADER</name>
 	
 	<name>RK_KILLALL_BEAM</name>
+	<name>RK_MISSLAUNCHER_2_BATTERY</name>
 	<name>RK_RAIN_OF_ION</name>
 	<name>RK_SHOTPHASER</name>
 
+	<name>RK_BOMBLAUNCHER_OXYBOTTLE</name>
+	<name>RK_FOCUS_FIRE</name>
+	<name>RK_OXY_FIREFILL_MISSILES</name>
 	<name>DJMOD_RAIN_OF_FIRE</name>
 	
 	<name>DJMOD_LASER_BPS</name>
@@ -652,13 +843,52 @@ RK-thematic WEAPON lists
 <!-- No multifaction weapons. -->
 <blueprintList name="LIST_WEAPONS_RK_SUBFACTIONS">
 	<name>DJMOD_BAM_FISSUREBEAM</name>
+	<name>RK_HEAVY_POPPER_2</name>
 	<name>RK_UNLOADER</name>
 	
 	<name>RK_KILLALL_BEAM</name>
+	<name>RK_MISSLAUNCHER_2_BATTERY</name>
 	<name>RK_RAIN_OF_ION</name>
 	<name>RK_SHOTPHASER</name>
 
+	<name>RK_BOMBLAUNCHER_OXYBOTTLE</name>
+	<name>RK_FOCUS_FIRE</name>
+	<name>RK_OXY_FIREFILL_MISSILES</name>
 	<name>DJMOD_RAIN_OF_FIRE</name>
+</blueprintList>
+
+<blueprintList name="LIST_WEAPONS_RK_BAM">
+	<name>DJMOD_BAM_FISSUREBEAM</name>
+	<name>RK_HEAVY_POPPER_2</name>
+	<name>RK_UNLOADER</name>
+</blueprintList>
+
+<blueprintList name="LIST_WEAPONS_RK_PUNK">
+	<name>RK_KILLALL_BEAM</name>
+	<name>RK_MISSLAUNCHER_2_BATTERY</name>
+	<name>RK_RAIN_OF_ION</name>
+	<name>RK_SHOTPHASER</name>
+</blueprintList>
+
+<blueprintList name="LIST_WEAPONS_RK_SCORCH">
+	<name>RK_BOMBLAUNCHER_OXYBOTTLE</name>
+	<name>RK_FOCUS_FIRE</name>
+	<name>RK_OXY_FIREFILL_MISSILES</name>
+	<name>DJMOD_RAIN_OF_FIRE</name>
+</blueprintList>
+
+<blueprintList name="LIST_RK_WEAPONS_ENEMIES_CAN_USE_GENERICALLY">
+	<name>DJMOD_BAM_FISSUREBEAM</name>
+	<name>RK_HEAVY_POPPER_2</name>
+
+	<name>RK_MISSLAUNCHER_2_BATTERY</name>
+	<name>RK_RAIN_OF_ION</name>
+	<name>RK_SHOTPHASER</name>
+
+	<name>RK_FOCUS_FIRE</name>
+	<name>RK_OXY_FIREFILL_MISSILES</name>
+	
+	<name>DJMOD_LASER_BPS</name>
 </blueprintList>
 
 <!-- For events etc. Make these general lists by copy-pasting from the more specific lists below. -->
@@ -828,6 +1058,63 @@ RK-thematic WEAPON lists
 	<name>BEAM_ADAPT_2</name>
 </blueprintList>
 
+
+<!-- 
+============================================================
+		RKS Hideout lists
+============================================================
+-->
+<blueprintList name="RK_LIST_HIDEOUT_RECRUITS_BASIC">
+	<name>crystal</name>
+	<name>crystal</name>
+
+	<name>engi</name>
+	<name>engi_separatist</name>
+
+	<name>human</name>
+	<name>human</name>
+
+	<name>lanius</name>
+	<name>lanius</name>
+
+	<name>leech</name>
+	<name>leech</name>
+
+	<name>lizard</name>
+	<name>lizard</name>
+
+	<name>mantis</name>
+	<name>mantis_free</name>
+
+	<name>orchid</name>
+	<name>orchid_vampweed</name>
+
+	<name>phantom</name>
+	<name>phantom_goul</name>
+	<name>phantom_mare</name>
+	<name>phantom_wraith</name>
+
+	<name>rock</name>
+	<name>rock_outcast</name>
+
+	<name>shell</name>
+	<name>shell</name>
+
+	<name>siren</name>
+
+	<name>slug</name>
+	<name>slug_clansman</name>
+	<name>slug_hektar</name>
+	
+	<name>spider</name>
+	<name>spider</name>
+
+	<name>zoltan</name>
+	<name>zoltan_devotee</name>
+	<name>zoltan_monk</name>
+	<name>zoltan_osmian</name>
+</blueprintList>
+
 <!-- 
 ==================================================================================================================================
 ==================================================================================================================================
@@ -856,16 +1143,15 @@ RK-thematic WEAPON lists
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>0</droneSlots>
-	<!-- <weaponList missiles="10" count="4" load="LIST_WEAPONS_HEKTAR" /> -->
 	<weaponList missiles="7" count="4" load="LIST_WEAPONS_RADIKAL" />
 	<droneList drones="0" count="0" />
 	<health amount="14" />				<!-- This seems to be a MAX, it can spawn with less! -->
-	<maxPower amount="22" />			<!-- Will be auto-added if random gen adds system levels. -->
+	<maxPower amount="15" />			<!-- Will be auto-added if random gen adds system levels. -->
 	<crewCount amount="5" max="10" class="phantom" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="SLUG_GEL" />
 	<aug name="ROCK_ARMOR" />
-	<aug name="DJMOD_COMBAT_SCORCH_ENEMY" />	<!-- Last one shows up topmost ingame. -->
+	<aug name="RK_COMBAT_SCORCH_ENEMY" />	<!-- Last one shows up topmost ingame. -->
 </shipBlueprint>
 
 <!-- Random beacon hardly skippable fight based on MU_SLUG_ABDUCTOR, changed most room spots & added/removed some -->
@@ -889,7 +1175,7 @@ RK-thematic WEAPON lists
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>4</droneSlots>
 	<!-- Weapon powercosts: 2, 1, 2, ? -->
-	<weaponList missiles="10" count="4">
+	<weaponList missiles="7" count="4">
 		<weapon name="DJMOD_LASER_BPS" />
 		<weapon name="BOMB_BREACH_1" />
 		<weapon name="BEAM_STUN" />
@@ -903,14 +1189,14 @@ RK-thematic WEAPON lists
 		<drone name="DOCTOR_BOARDER" />
 	</droneList>
 	<health amount="12" />
-	<maxPower amount="12" />
+	<maxPower amount="14" />
 	<!-- Seems semi-ignored: if you list 5 crew types in "ship name=..." block, minimum crew will be these 5! -->
-	<crewCount amount="4" max="8" class="crystal" />
+	<crewCount amount="3" max="5" class="crystal" />
 	<boardingAI>invasion</boardingAI>
 	<!-- <aug name="SLUG_GEL" /> -->
 	<aug name="REGEN_ARMOR" />
 	<aug name="EX_RK_CHOKING_IS_FINE" />
-	<aug name="DJMOD_LEAD_TITANS" />
+	<aug name="RK_LEAD_TITANS" />
 </shipBlueprint>
 <!-- <shipBlueprint name="MU_SLUG_ABDUCTOR" layout="mu_slug_abductor_a" img="mu_slug_abductor_a">
 	<class>Kleptocracy Abductor</class>
@@ -939,21 +1225,71 @@ RK-thematic WEAPON lists
 </shipBlueprint> -->
 
 <!-- Random beacon hardly skippable fight -->
+<shipBlueprint name="RKS_GRAVESPRED_USER_REBELAUTO" layout="mu_auto_instigator" img="rke_auto_gravespred_user">
+	<class>RK Punk Auto-Depopulator</class>
+	<systemList>
+		<doors power="2" max="3" room="3" start="true" />
+		<engines power="1" max="3" room="4" start="true" />
+		<hacking power="1" max="2" room="5" start="false" />
+		<mind power="1" max="2" room="6" start="false" />
+		<pilot power="1" max="2" room="2" start="true" />
+		<shields power="4" max="8" room="1" start="true" />
+		<weapons power="3" max="8" room="0" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<!-- Weapon powercosts: -2, 3, 2, 2 -->
+	<weaponList missiles="12" count="4">
+		<weapon name="RK_MISSLAUNCHER_2_BATTERY" />
+		<weapon name="RK_KILLALL_BEAM" />
+		<weapon name="MINELAUNCHER_STUN" />
+		<weapon name="CRYSTAL_BURST_2_RED" />
+	</weaponList>
+	<droneList drones="4" count="0" />
+	<health amount="14" />
+	<maxPower amount="10" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="NO_GHOST" />
+	<aug name="UPG_WEAPONS_PERFORMANCE" />		<!-- NOT the right one for player, but has enemy combat icon. -->
+	<aug name="RK_ARROGANCE_SHIELD" />
+</shipBlueprint>
+<!-- <shipBlueprint name="MU_AUTO_INSTIGATOR" layout="mu_auto_instigator" img="mu_auto_instigator">
+	<class>Auto-Instigator</class>
+	<systemList>
+		<doors power="1" max="3" room="3" start="false" />
+		<engines power="1" max="1" room="4" start="true" />
+		<hacking power="1" max="2" room="5" start="false" />
+		<mind power="1" max="2" room="6" start="false" />
+		<pilot power="1" max="1" room="2" start="true" />
+		<shields power="2" max="8" room="1" start="true" />
+		<weapons power="2" max="8" room="0" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="7" count="4" load="LIST_WEAPONS_AUTO" />
+	<droneList drones="3" count="0" />
+	<health amount="9" />
+	<maxPower amount="7" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="NO_GHOST" />
+</shipBlueprint> -->
+
+<!-- Random beacon hardly skippable fight -->
 <shipBlueprint name="RKS_WOF_USER_UNION" layout="mt_union_5" img="djmode_rk_wof_user_union">
-	<class>RK Scorch Fighter</class>
+	<class>RK Scorch Speedster Fighter</class>
 	<systemList>
 		<clonebay power="1" max="2" room="5" start="false" />
-		<engines power="1" max="5" room="3" start="true" />
+		<engines power="1" max="4" room="3" start="true" />
 		<!-- <hacking power="1" max="3" room="4" start="false" /> -->
 		<oxygen power="2" max="2" room="6" start="true" />
 		<pilot power="1" max="3" room="2" start="true" />
-		<shields power="5" max="7" room="0" start="true" />
-		<weapons power="6" max="8" room="1" start="true" />
+		<shields power="4" max="7" room="0" start="true" />
+		<weapons power="3" max="8" room="1" start="true" />
 
-		<drones power="5" max="6" room="4" start="true" />
+		<drones power="4" max="7" room="4" start="true" />
 	</systemList>
 	<weaponSlots>4</weaponSlots>
-	<droneSlots>2</droneSlots>
+	<droneSlots>3</droneSlots>
 	<!-- Weapon powercosts: 2, 1, 1, 2 -->
 	<weaponList missiles="0" count="4">
 		<weapon name="DJMOD_LASER_BPS" />
@@ -961,15 +1297,16 @@ RK-thematic WEAPON lists
 		<weapon name="LASER_FIRE_PLAYER" />
 		<weapon name="LASER_FIRE_SPECIAL" />
 		<!-- <weapon name="MODULAR_LASER_FIRE_BIO" />	Can't pop shields -->
+
 	</weaponList>
-	<!-- Drone powercosts: 1, 1, 3 -->
-	<droneList drones="5" count="2">
+	<!-- Drone powercosts: 1, 2, 3 -->
+	<droneList drones="5" count="3">
 		<drone name="REPAIR" />
-		<drone name="REPAIR" />
+		<drone name="BATTLETOG_DEFEND" />				<!-- THAT's the default defense crewdrone -->
 		<drone name="DEFENSE_2" />
 	</droneList>
 	<health amount="12" />
-	<maxPower amount="15" />
+	<maxPower amount="14" />
 	<crewCount amount="5" max="5" class="goul" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="UPG_WEAPONS_PERFORMANCE" />		<!-- NOT the right one for player, but has enemy combat icon. -->
@@ -1004,16 +1341,16 @@ RK-thematic WEAPON lists
 	<class>R.U.E.S. Destroyer</class>
 	<!-- <minSector>4</minSector> -->
 	<systemList>
-		<clonebay power="1" max="3" room="5" start="false" />
+		<clonebay power="1" max="2" room="5" start="false" />
 		<engines power="1" max="2" room="1" start="true" />
-		<hacking power="1" max="3" room="10" start="false" />
-		<medbay power="1" max="3" room="5" start="false" />
+		<hacking power="1" max="2" room="10" start="false" />
+		<medbay power="1" max="2" room="5" start="false" />
 		<mind power="1" max="2" room="9" start="false" />
 		<oxygen power="1" max="2" room="6" start="true" />
 		<pilot power="1" max="2" room="0" start="true" />
-		<shields power="4" max="8" room="7" start="true" />
-		<teleporter power="1" max="3" room="8" start="false" />
-		<weapons power="6" max="10" room="4" start="true" />
+		<shields power="3" max="8" room="7" start="true" />
+		<teleporter power="1" max="2" room="8" start="false" />
+		<weapons power="6" max="8" room="4" start="true" />
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>0</droneSlots>
@@ -1026,7 +1363,7 @@ RK-thematic WEAPON lists
 	</weaponList>
 	<droneList drones="3" count="0" />
 	<health amount="13" />
-	<maxPower amount="20" />
+	<maxPower amount="13" />
 	<crewCount amount="4" max="8" class="slug_saboteur" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="CREW_STIMS" />
@@ -1061,6 +1398,63 @@ RK-thematic WEAPON lists
 	<aug name="SLUG_GEL" />
 </shipBlueprint> -->
 
+
+<!-- Fully skippable fight unless player buygs mega upgrade but that sets player on fire -->
+<shipBlueprint name="RKS_BIL_FIREBLASTER_PIRATE" layout="mu_rock_destroyer" img="mu_pirate_rock_destroyer">
+	<class>Pirate Fireblaster</class>
+	<systemList>
+		<doors power="1" max="2" room="7" start="false" />
+		<engines power="1" max="1" room="1" start="true" />
+		<medbay power="1" max="2" room="10" start="false" />
+		<oxygen power="1" max="2" room="6" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="3" max="8" room="2" start="true" />
+		<teleporter power="1" max="2" room="8" start="true" />
+		<weapons power="5" max="8" room="3" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<!-- <weaponList missiles="12" count="4" load="LIST_WEAPONS_ROCK" /> -->
+	<!-- Weapon powercosts: 2, 3, 1, ? -->
+	<weaponList missiles="7" count="4">
+		<weapon name="SHOTGUN_CHAIN" />
+		<weapon name="RK_FOCUS_FIRE" />
+		<weapon name="ION_STUN_CHARGEGUN_PLAYER" />
+		<weapon name="LIST_WEAPONS_COALITION" />
+	</weaponList>
+	<droneList drones="0" count="0" />
+	<health amount="16" />
+	<maxPower amount="12" />
+	<!-- <crewCount amount="5" max="10" class="LIST_CREW_PIRATE_RANDOM" /> -->
+	<crewCount amount="4" max="10" class="goul" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="ROCK_ARMOR" />
+	<aug name="UPG_WEAPONS_PERFORMANCE" />
+</shipBlueprint>
+<!-- <shipBlueprint name="MU_PIRATE_ROCK_DESTROYER" layout="mu_rock_destroyer" img="mu_pirate_rock_destroyer">
+	<class>Pirate Destroyer</class>
+	<systemList>
+		<doors power="1" max="3" room="7" start="false" />
+		<engines power="1" max="1" room="1" start="true" />
+		<medbay power="1" max="3" room="10" start="false" />
+		<oxygen power="1" max="3" room="6" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="2" start="true" />
+		<teleporter power="1" max="2" room="8" start="false" />
+		<weapons power="2" max="10" room="3" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="12" count="4" load="LIST_WEAPONS_ROCK" />
+	<droneList drones="0" count="0" />
+	<health amount="12" />
+	<maxPower amount="8" />
+	<crewCount amount="5" max="10" class="LIST_CREW_PIRATE_RANDOM" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="ROCK_ARMOR" />
+</shipBlueprint> -->
+
+
 <!-- 
 ================================================================================================================
 ================================================================================================================
@@ -1082,8 +1476,8 @@ QUEST BOSSES
 		<mind power="1" max="1" room="5" start="false" />
 		<oxygen power="2" max="3" room="6" start="true" />
 		<pilot power="1" max="2" room="0" start="true" />
-		<shields power="5" max="10" room="3" start="true" />
-		<weapons power="5" max="8" room="8" start="true" />
+		<shields power="4" max="10" room="3" start="true" />
+		<weapons power="4" max="8" room="8" start="true" />
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>0</droneSlots>
@@ -1095,7 +1489,7 @@ QUEST BOSSES
 		<weapon name="LIST_WEAPONS_SHELL" />
 	</weaponList>
 	<droneList drones="0" count="0" />
-	<health amount="18" />
+	<health amount="20" />
 	<maxPower amount="16" />
 	<crewCount amount="5" max="10" class="shell" />
 	<boardingAI>sabotage</boardingAI>
@@ -1112,11 +1506,11 @@ QUEST BOSSES
 		<!-- <clonebay power="1" max="3" room="5" start="true" />	Can this ship have medbay instead? -->
 		<engines power="1" max="3" room="1" start="true" />
 		<mind power="1" max="2" room="8" start="false" />
-		<oxygen power="1" max="3" room="10" start="true" />
+		<oxygen power="1" max="2" room="10" start="true" />
 		<pilot power="2" max="3" room="0" start="true" />
 		<shields power="4" max="8" room="3" start="true" />
 		<teleporter power="2" max="3" room="4" start="true" />
-		<weapons power="5" max="7" room="2" start="true" />
+		<weapons power="4" max="7" room="2" start="true" />
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>0</droneSlots>
@@ -1128,7 +1522,7 @@ QUEST BOSSES
 		<weapon name="LIST_WEAPONS_FREEMANTIS" />
 	</weaponList>
 	<droneList drones="0" count="0" />
-	<health amount="14" />
+	<health amount="16" />
 	<maxPower amount="14" />
 	<crewCount amount="8" max="16" class="mantis_warlord" />
 	<boardingAI>invasion</boardingAI>
@@ -1146,21 +1540,22 @@ QUEST BOSSES
 		<engines power="1" max="3" room="10" start="true" />
 		<medbay power="1" max="3" room="9" start="true" />
 		<oxygen power="1" max="1" room="1" start="true" />
-		<pilot power="1" max="3" room="0" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
 		<shields power="4" max="8" room="5" start="true" />
-		<weapons power="5" max="8" room="4" start="true" />
+		<weapons power="4" max="8" room="4" start="true" />
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>4</droneSlots>
 	<weaponList missiles="12" count="4" load="LIST_WEAPONS_ORCHID_ELITE" />
+	<!-- Drone powercosts: 1, 2, 2, ? -->
 	<droneList drones="10" count="4">
 		<drone name="REPAIR" />
 		<drone name="DOCTOR_DEFENSE" />
 		<drone name="COMBAT_1_LASER" />
 		<drone name="LIST_DRONES_ENEMY_STANDARD" />
 	</droneList>
-	<health amount="14" />
-	<maxPower amount="22" />
+	<health amount="16" />
+	<maxPower amount="18" />
 	<crewCount amount="4" max="8" class="orchid" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="EX_AUTO_COOLDOWN" />
@@ -1203,7 +1598,7 @@ TODO: add drones (start=true), 1 combat 1 overshielder, in a suitable room. -->
 	<class>RK Bam Gatekeeper</class>
 	<systemList>
 		<doors power="1" max="3" room="8" start="false" />
-		<engines power="4" max="8" room="6" start="true" />
+		<engines power="3" max="6" room="6" start="true" />
 		<clonebay power="1" max="3" room="7" start="true" />
 		<!-- <medbay power="1" max="3" room="7" start="false" /> -->
 		<oxygen power="1" max="2" room="2" start="true" />
@@ -1222,11 +1617,12 @@ TODO: add drones (start=true), 1 combat 1 overshielder, in a suitable room. -->
 	</weaponList>
 	<droneList drones="0" count="0" />
 	<health amount="18" />
-	<maxPower amount="25" />
+	<maxPower amount="19" />
 	<crewCount amount="5" max="10" class="rock" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="ROCK_ARMOR" />
-	<aug name="EX_AUTO_COOLDOWN" />
+	<!-- <aug name="EX_AUTO_COOLDOWN" /> -->
+	<aug name="INTERNAL_RK_CALIBRATOR" />
 	<aug name="RK_PERSISTENCE_SHIELD" />
 </shipBlueprint>
 
@@ -1235,14 +1631,14 @@ TODO: Add hacking somewhere (via custom event-aug probably). -->
 <shipBlueprint name="DJMOD_RADIKAL_BOSS_PUNK" layout="mu_shell_donut" img="djmode_rk_gatekeeper_punk">
 	<class>RK Punk Gatekeeper</class>
 	<systemList>
-		<battery power="1" max="2" room="3" start="false" />
-		<cloaking power="1" max="3" room="16" start="true" />
+		<battery power="1" max="2" room="3" start="true" />
+		<cloaking power="1" max="2" room="16" start="true" />
 		<!-- <clonebay power="2" max="2" room="7" start="true" /> -->
 		<medbay power="1" max="3" room="7" start="true" />
 		<doors power="2" max="3" room="21" start="true" />
-		<mind power="1" max="3" room="2" start="false" />
+		<mind power="1" max="2" room="2" start="false" />
 		<oxygen power="1" max="2" room="5" start="true" />
-		<shields power="6" max="12" room="25" start="true" />
+		<shields power="5" max="11" room="25" start="true" />
 		<!-- <teleporter power="2" max="2" room="0" start="true" />		see where it is then replace with fitting. -->
 		<drones power="2" max="6" room="0" start="true" />
 		<weapons power="8" max="9" room="1" start="true" />
@@ -1256,17 +1652,18 @@ TODO: Add hacking somewhere (via custom event-aug probably). -->
 		<weapon name="BEAM_BIO_CHAIN" />
 		<!-- <weapon name="BOMB_1_ENEMY" /> -->
 	</weaponList>
+	<!-- Drone powercosts: 2, 2 -->
 	<droneList drones="10" count="2">
 		<drone name="COMBAT_RANDOM" />
 		<drone name="GUARDIAN_1_MISSILE" />
 	</droneList>
 	<health amount="14" />
-	<maxPower amount="25" />
+	<maxPower amount="18" />
 	<crewCount amount="5" max="5" class="shell" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="SLUG_GEL" />
 	<aug name="UPG_SHIELD_ION" />
-	<aug name="DJMOD_SUPER_DEFENDERS" />
+	<aug name="RK_SUPER_DEFENDERS" />
 </shipBlueprint>
 
 <!-- Both medbay and clonebay? Probably picks at random. -->
@@ -1276,7 +1673,7 @@ TODO: Add hacking somewhere (via custom event-aug probably). -->
 		<doors power="2" max="3" room="4" start="false" />
 		<engines power="1" max="3" room="6" start="true" />
 		<clonebay power="1" max="3" room="11" start="true" />
-		<medbay power="1" max="3" room="11" start="true" />
+		<medbay power="1" max="2" room="11" start="true" />
 		<oxygen power="2" max="3" room="10" start="true" />
 		<pilot power="1" max="1" room="0" start="true" />
 		<shields power="4" max="8" room="2" start="true" />
@@ -1295,12 +1692,12 @@ TODO: Add hacking somewhere (via custom event-aug probably). -->
 	</weaponList>
 	<droneList drones="0" count="0" />
 	<health amount="14" />
-	<maxPower amount="25" />
+	<maxPower amount="17" />
 	<crewCount amount="5" max="10" class="phantom" />
 	<boardingAI>sabotage</boardingAI>
 	<!-- <aug name="EX_AUTO_COOLDOWN" /> -->
 	<aug name="RK_SCORCH_SELF_2" />
-	<aug name="DJMOD_ENEMIES_CAN_BURN" />
+	<aug name="RK_ENEMIES_CAN_BURN" />
 </shipBlueprint>
 
 <!-- 
@@ -1317,12 +1714,12 @@ ENIGMASHIN BOSS based on MU_MFK_GUNBOAT.
 		<artillery power="1" max="2" room="8" start="true" weapon="LIST_ARTILLERY_MFK" />
 		<cloaking power="1" max="1" room="5" start="true" />
 		<doors power="1" max="3" room="9" start="true" />
-		<engines power="2" max="4" room="1" start="true" />
-		<medbay power="2" max="3" room="7" start="true" />
+		<engines power="1" max="4" room="1" start="true" />
+		<medbay power="1" max="2" room="7" start="true" />
 		<oxygen power="1" max="2" room="10" start="true" />
-		<pilot power="2" max="2" room="0" start="true" />
-		<shields power="3" max="9" room="4" start="true" />
-		<weapons power="7" max="8" room="6" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="4" max="8" room="4" start="true" />
+		<weapons power="5" max="8" room="6" start="true" />
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>0</droneSlots>
@@ -1335,9 +1732,9 @@ ENIGMASHIN BOSS based on MU_MFK_GUNBOAT.
 		<weapon name="LASER_BURST_2" />
 	</weaponList>
 	<droneList drones="0" count="0" />
-	<health amount="12" />
-	<maxPower amount="18" />
-	<crewCount amount="4" max="8" class="human_soldier" />
+	<health amount="14" />
+	<maxPower amount="14" />
+	<crewCount amount="10" max="10" class="human_soldier" />		<!-- real crew in the event call as usual -->
 	<boardingAI>sabotage</boardingAI>
 	<aug name="UPG_TECH_RESPIRATOR" />
 	<aug name="ENERGY_SHIELD" />
@@ -1380,6 +1777,7 @@ ENIGMASHIN BOSS based on MU_MFK_GUNBOAT.
 ================================================================================================================
 ================================================================================================================
 ================================================================================================================
+TODO: Update.
 -->
 <blueprintList name="LIST_SHIPS_RADIKAL_ALL">
 	<name>MU_HEKTAR_MERCHANDISER</name>
@@ -1394,7 +1792,6 @@ ENIGMASHIN BOSS based on MU_MFK_GUNBOAT.
 	
 	<name>MU_HEKTAR_TRANSPORT</name>
 	
-
 	<name>DJMOD_RADIKAL_GUARD</name>
 	
 	<name>DJMOD_RADIKAL_BOSS_BAM</name>
@@ -1412,6 +1809,7 @@ ENIGMASHIN BOSS based on MU_MFK_GUNBOAT.
 	<name>MU_HEKTAR_HR</name>
 	<name>MU_HEKTAR_TRANSPORT</name>
 </blueprintList>
+<!-- I think these guys can just show up in any "revenge for guard kill" fight? -->
 <blueprintList name="LIST_SHIPS_RADIKAL_FIGHT">
 	<name>MU_HEKTAR_MERCHANDISER</name>
 	<name>MU_HEKTAR_CLERK</name>
@@ -1423,9 +1821,9 @@ ENIGMASHIN BOSS based on MU_MFK_GUNBOAT.
 	<name>MU_HEKTAR_MANAGER</name>
 	<name>MU_HEKTAR_HR</name>
 	
-	<name>DJMOD_RADIKAL_BOSS_BAM</name>
+	<!-- <name>DJMOD_RADIKAL_BOSS_BAM</name>
 	<name>DJMOD_RADIKAL_BOSS_PUNK</name>
-	<name>DJMOD_RADIKAL_BOSS_SCORCH</name>
+	<name>DJMOD_RADIKAL_BOSS_SCORCH</name> -->
 </blueprintList>
 <blueprintList name="LIST_SHIPS_RADIKAL_SHOP">
 	<name>MU_HEKTAR_MERCHANDISER</name>
@@ -1766,14 +2164,78 @@ LIST_CREW_MORPH and all the other morph lists...
 	<mod-append:name>unique_rk_defromorius</mod-append:name>
 </mod:findName>
 
-<!-- (Marker straight from MV)
-//////////////////////////////////
-JUDGE LISTS
-//////////////////////////////////
+<!-- (Marker straight from MV - then made thicker.)
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+////////	JUDGE LISTS
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
 -->
 <mod:findName type="blueprintList" name="JUDGELIST_ZOLTAN_UNIQUE">
 	<mod-append:name>unique_rk_defromorius</mod-append:name>
 </mod:findName>
+
+<blueprintList name="JUDGELIST_ROCK_RK_BAM_EQUIPMENT">
+	<name>RK_COMBAT_AUTO_SYS_REPAIR</name>
+	<name>DJMOD_COMBAT_SHIPVORE_RAM</name>
+	<name>LOCKED_DJMOD_COMBAT_SHIPVORE_RAM</name>
+	<name>RK_CREW_ARE_BOMBS_OFF</name>
+	<name>RK_CREW_ARE_BOMBS_ON</name>
+	<name>RK_LEAD_TITANS</name>
+	<name>RK_PERSISTENCE_SHIELD</name>
+	<name>EX_RK_CHOKING_IS_FINE</name>
+	
+	<name>DJMOD_BAM_FISSUREBEAM</name>
+	<name>RK_HEAVY_POPPER_2</name>
+	<name>RK_UNLOADER</name>
+</blueprintList>
+<blueprintList name="JUDGELIST_ROCK_RK_PUNK_EQUIPMENT">
+    <name>RK_ARROGANCE_SHIELD</name>
+	<name>RK_COMBAT_DEFENSE_REMOVER</name>
+    <name>RK_COMBAT_HACK_FLEET</name>
+	<name>RK_COMBAT_OFFENSE_DISABLER</name>
+	<name>RK_DREAD_DECK</name>
+	<name>RK_OWN_HARMONY_OFF</name>
+	<name>RK_OWN_HARMONY_ON</name>
+	<name>RK_SUPER_DEFENDERS</name>
+	<name>EX_DJMOD_DEMICLONER</name>
+	
+	<name>RK_KILLALL_BEAM</name>
+	<name>RK_MISSLAUNCHER_2_BATTERY</name>
+	<name>RK_RAIN_OF_ION</name>
+	<name>RK_SHOTPHASER</name>
+</blueprintList>
+<blueprintList name="JUDGELIST_ROCK_RK_SCORCH_EQUIPMENT">
+	<name>RK_COMBAT_OXYGENIZER</name>
+    <name>RK_COMBAT_SCORCH_ENEMY</name>
+	<name>RK_ENEMIES_BURN_MORE</name>
+	<name>RK_ENEMIES_CAN_BURN</name>
+	<name>RK_SCORCH_PREIGNITER</name>
+	<name>RK_SCORCH_SELF</name>
+	<name>RK_SCORCH_SELF_2</name>
+	<name>RK_SCORCH_SELF_3</name>
+	<name>RK_WEAPONS_ON_FIRE</name>
+	
+	<name>RK_BOMBLAUNCHER_OXYBOTTLE</name>
+	<name>RK_FOCUS_FIRE</name>
+	<name>RK_OXY_FIREFILL_MISSILES</name>
+	<name>DJMOD_RAIN_OF_FIRE</name>
+</blueprintList>
+<blueprintList name="JUDGELIST_ROCK_RK_BPS_EQUIPMENT">
+	<name>RK_BPS_SURVEYOR</name>
+	<name>DJMOD_LASER_BPS</name>
+</blueprintList>
+
+<!-- REF: Darkest Desire v4.1.4 for MV v5.5.1:
+<blueprintList name="JUDGELIST_ROCK_DEEPONE_GEAR">
+	<name>DEEPONE_JELLYFISH</name>
+	<name>DEEPONE_JELLYFISH_ELITE</name>
+	<name>TWILIGHT_INEXORABLE</name>
+	<name>TWILIGHT_INEXORABLE_PLAYER</name>
+	<name>SHOTGUN_DARKGOD</name>
+	<name>LASER_DARKGOD</name>
+	...
+</blueprintList> -->
 
 <!-- (Marker straight from MV)
 ////////////////////////////////////////////////////////////////////////////////////
@@ -1797,6 +2259,8 @@ and others...
 end of giftlists, start of weapons.
 -->
 <mod:findName type="blueprintList" name="GIFTLIST_MISSILES">
+	<mod-append:name>RK_MISSLAUNCHER_2_BATTERY</mod-append:name>
+	<mod-append:name>RK_OXY_FIREFILL_MISSILES</mod-append:name>
 	<mod-append:name>DJMOD_RAIN_OF_FIRE</mod-append:name>
 </mod:findName>
 <!--
@@ -1832,11 +2296,19 @@ LIST_SLAVES_GREAT
 -->
 <mod:findName type="blueprintList" name="LIST_CONTRABAND_WEP_SMUGGLER">
 	<mod-append:name>DJMOD_BAM_FISSUREBEAM</mod-append:name>
+	<mod-append:name>RK_HEAVY_POPPER_2</mod-append:name>
 	<mod-append:name>RK_UNLOADER</mod-append:name>
+
 	<mod-append:name>RK_KILLALL_BEAM</mod-append:name>
+	<mod-append:name>RK_MISSLAUNCHER_2_BATTERY</mod-append:name>
 	<mod-append:name>RK_RAIN_OF_ION</mod-append:name>
 	<mod-append:name>RK_SHOTPHASER</mod-append:name>
+
+	<mod-append:name>RK_BOMBLAUNCHER_OXYBOTTLE</mod-append:name>
+	<mod-append:name>RK_FOCUS_FIRE</mod-append:name>
+	<mod-append:name>RK_OXY_FIREFILL_MISSILES</mod-append:name>
 	<mod-append:name>DJMOD_RAIN_OF_FIRE</mod-append:name>
+
 	<mod-append:name>DJMOD_LASER_BPS</mod-append:name>
 </mod:findName>
 <!-- 
@@ -1844,16 +2316,16 @@ LIST_CONTRABAND_DRONE_SMUGGLER
 -->
 <mod:findName type="blueprintList" name="LIST_CONTRABAND_AUGMENT_SMUGGLER">
 	<mod-append:name>DJMOD_COMBAT_SHIPVORE_RAM</mod-append:name>
-	<mod-append:name>DJMOD_AUG_AUTO_SYS_REPAIR</mod-append:name>
-	<mod-append:name>DJMOD_LEAD_TITANS</mod-append:name>
+	<mod-append:name>RK_COMBAT_AUTO_SYS_REPAIR</mod-append:name>
+	<mod-append:name>RK_LEAD_TITANS</mod-append:name>
 
-	<mod-append:name>DJMOD_COMBAT_OFFENSE_DISABLER</mod-append:name>
+	<mod-append:name>RK_COMBAT_OFFENSE_DISABLER</mod-append:name>
 	<mod-append:name>RK_COMBAT_HACK_FLEET</mod-append:name>
 	<mod-append:name>RK_DREAD_DECK</mod-append:name>
-	<mod-append:name>DJMOD_SUPER_DEFENDERS</mod-append:name>
+	<mod-append:name>RK_SUPER_DEFENDERS</mod-append:name>
 	
 	<mod-append:name>RK_SCORCH_SELF</mod-append:name>
-	<mod-append:name>DJMOD_COMBAT_SCORCH_ENEMY</mod-append:name>
+	<mod-append:name>RK_COMBAT_SCORCH_ENEMY</mod-append:name>
 	
 	<mod-append:name>RK_BPS_SURVEYOR</mod-append:name>
 
@@ -1925,11 +2397,19 @@ LIST_CONTRABAND_WEP_SMUGGLER_DELUXE
 -->
 <mod:findName type="blueprintList" name="LIST_WEAPONS_ALL">
 	<mod-append:name>DJMOD_BAM_FISSUREBEAM</mod-append:name>
+	<mod-append:name>RK_HEAVY_POPPER_2</mod-append:name>
 	<mod-append:name>RK_UNLOADER</mod-append:name>
+
 	<mod-append:name>RK_KILLALL_BEAM</mod-append:name>
+	<mod-append:name>RK_MISSLAUNCHER_2_BATTERY</mod-append:name>
 	<mod-append:name>RK_RAIN_OF_ION</mod-append:name>
 	<mod-append:name>RK_SHOTPHASER</mod-append:name>
+
+	<mod-append:name>RK_BOMBLAUNCHER_OXYBOTTLE</mod-append:name>
+	<mod-append:name>RK_FOCUS_FIRE</mod-append:name>
+	<mod-append:name>RK_OXY_FIREFILL_MISSILES</mod-append:name>
 	<mod-append:name>DJMOD_RAIN_OF_FIRE</mod-append:name>
+
 	<mod-append:name>DJMOD_LASER_BPS</mod-append:name>
 </mod:findName>
 
@@ -1937,23 +2417,33 @@ LIST_CONTRABAND_WEP_SMUGGLER_DELUXE
 <!-- MV says: "doesnt include enemy weapons, god killer, or alternative variants of weapons with multiple kinds" -->
 <mod:findName type="blueprintList" name="LIST_WEAPONS_ALL_CRAPBUCKET">
 	<mod-append:name>DJMOD_BAM_FISSUREBEAM</mod-append:name>
+	<mod-append:name>RK_HEAVY_POPPER_2</mod-append:name>
 	<mod-append:name>RK_UNLOADER</mod-append:name>
+
 	<mod-append:name>RK_KILLALL_BEAM</mod-append:name>
+	<mod-append:name>RK_MISSLAUNCHER_2_BATTERY</mod-append:name>
 	<mod-append:name>RK_RAIN_OF_ION</mod-append:name>
 	<mod-append:name>RK_SHOTPHASER</mod-append:name>
+
+	<mod-append:name>RK_BOMBLAUNCHER_OXYBOTTLE</mod-append:name>
+	<mod-append:name>RK_FOCUS_FIRE</mod-append:name>
+	<mod-append:name>RK_OXY_FIREFILL_MISSILES</mod-append:name>
 	<mod-append:name>DJMOD_RAIN_OF_FIRE</mod-append:name>
+
 	<mod-append:name>DJMOD_LASER_BPS</mod-append:name>
 </mod:findName>
 
 <!-- MV just says: "blast proof augment". Huh? -->
 <mod:findName type="blueprintList" name="LIST_WEAPONS_MISSILE">
-	<mod-append:name>DJMOD_RAIN_OF_FIRE</mod-append:name>
 	<mod-append:name>RK_UNLOADER</mod-append:name>
+	<mod-append:name>RK_MISSLAUNCHER_2_BATTERY</mod-append:name>
+	<mod-append:name>RK_OXY_FIREFILL_MISSILES</mod-append:name>
+	<mod-append:name>DJMOD_RAIN_OF_FIRE</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="LIST_CHECK_TOGGLES_AND_AMPS">
-	<mod-append:name>DJMOD_ENEMIES_CAN_BURN</mod-append:name>
-    <mod-append:name>DJMOD_ENEMIES_BURN_MORE</mod-append:name>
+	<mod-append:name>RK_ENEMIES_CAN_BURN</mod-append:name>
+    <mod-append:name>RK_ENEMIES_BURN_MORE</mod-append:name>
 </mod:findName>
 
 <!-- *********************************************************************************************
@@ -1980,23 +2470,35 @@ BLUELIST_RIFT
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_MISSILES_ALL">
-	<mod-append:name>DJMOD_RAIN_OF_FIRE</mod-append:name>
 	<mod-append:name>RK_UNLOADER</mod-append:name>
+	<mod-append:name>RK_MISSLAUNCHER_2_BATTERY</mod-append:name>
+	<mod-append:name>RK_BOMBLAUNCHER_OXYBOTTLE</mod-append:name>
+	<mod-append:name>RK_OXY_FIREFILL_MISSILES</mod-append:name>
+	<mod-append:name>DJMOD_RAIN_OF_FIRE</mod-append:name>
 </mod:findName>
 
 <!-- Guess for MISSILES_BIO, Asclepius is in there because it does 3 hull damage. -->
 <mod:findName type="blueprintList" name="BLUELIST_MISSILES_DAMAGE">
 	<mod-append:name>RK_UNLOADER</mod-append:name>
+	<mod-append:name>RK_MISSLAUNCHER_2_BATTERY</mod-append:name>
 </mod:findName>
-
 <!-- 
 BLUELIST_MISSILES_POWERFUL
-BLUELIST_ACCURATE_BALLISTIC
+BLUELIST_ACCURATE_BALLISTIC			(100 accuracy)
 BLUELIST_MINELAUNCHERS_ALL
 BLUELIST_BOMBS (see note in MV)
-BLUELIST_BOMBS_CREWDAMAGE
+-->
+<mod:findName type="blueprintList" name="BLUELIST_BOMBS_CREWDAMAGE">
+	<mod-append:name>RK_BOMBLAUNCHER_OXYBOTTLE</mod-append:name>
+</mod:findName>
+<!-- 
 BLUELIST_BOMBS_HEAL
-BLUELIST_SUPPORT
+-->
+<mod:findName type="blueprintList" name="BLUELIST_SUPPORT">
+	<mod-append:name>RK_MISSLAUNCHER_2_BATTERY</mod-append:name>
+	<mod-append:name>RK_BOMBLAUNCHER_OXYBOTTLE</mod-append:name>
+</mod:findName>
+<!-- 
 BLUELIST_WEAPONS_RECYCLER
 -->
 
@@ -2009,8 +2511,11 @@ BLUELIST_WEAPONS_RECYCLER
 <mod:findName type="blueprintList" name="BLUELIST_BEAMS_DAMAGE">
 	<mod-append:name>DJMOD_BAM_FISSUREBEAM</mod-append:name>
 </mod:findName>
+
+<mod:findName type="blueprintList" name="BLUELIST_FOCUS_ALL">
+	<mod-append:name>RK_FOCUS_FIRE</mod-append:name>
+</mod:findName>
 <!-- 
-BLUELIST_FOCUS_ALL
 BLUELIST_FOCUS_DAMAGE
  -->
 <mod:findName type="blueprintList" name="BLUELIST_WEAPONS_BEAM_POWERFUL">
@@ -2019,11 +2524,17 @@ BLUELIST_FOCUS_DAMAGE
 
 <mod:findName type="blueprintList" name="BLUELIST_WEAPONS_HEAVY">
 	<mod-append:name>DJMOD_BAM_FISSUREBEAM</mod-append:name>
+	<mod-append:name>RK_HEAVY_POPPER_2</mod-append:name>
 	<mod-append:name>DJMOD_LASER_BPS</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_WEAPONS_FIRE_ALL">
+	<mod-append:name>DJMOD_BAM_FISSUREBEAM</mod-append:name>
+	<mod-append:name>RK_HEAVY_POPPER_2</mod-append:name>
 	<mod-append:name>RK_RAIN_OF_ION</mod-append:name>
+	<mod-append:name>RK_BOMBLAUNCHER_OXYBOTTLE</mod-append:name>
+	<mod-append:name>RK_FOCUS_FIRE</mod-append:name>
+	<mod-append:name>RK_OXY_FIREFILL_MISSILES</mod-append:name>
 	<mod-append:name>DJMOD_RAIN_OF_FIRE</mod-append:name>
 	<mod-append:name>DJMOD_LASER_BPS</mod-append:name>
 	
@@ -2033,6 +2544,8 @@ BLUELIST_FOCUS_DAMAGE
 
 <mod:findName type="blueprintList" name="BLUELIST_WEAPONS_FIRE_NODAMAGE">
 	<mod-append:name>RK_RAIN_OF_ION</mod-append:name>
+	<mod-append:name>RK_BOMBLAUNCHER_OXYBOTTLE</mod-append:name>
+	<mod-append:name>RK_FOCUS_FIRE</mod-append:name>
 	<mod-append:name>DJMOD_RAIN_OF_FIRE</mod-append:name>
 </mod:findName>
 
@@ -2040,6 +2553,7 @@ BLUELIST_FOCUS_DAMAGE
 <mod:findName type="blueprintList" name="BLUELIST_ANTIBIO">
 	<mod-append:name>RK_KILLALL_BEAM</mod-append:name>
 	<mod-append:name>RK_RAIN_OF_ION</mod-append:name>
+	<mod-append:name>RK_BOMBLAUNCHER_OXYBOTTLE</mod-append:name>
 	<mod-append:name>DJMOD_LASER_BPS</mod-append:name>
 </mod:findName>
 
@@ -2052,17 +2566,24 @@ BLUELIST_FOCUS_DAMAGE
 <mod:findName type="blueprintList" name="BLUELIST_ANTIBIO_NODAMAGE">
 	<mod-append:name>RK_KILLALL_BEAM</mod-append:name>
 	<mod-append:name>RK_RAIN_OF_ION</mod-append:name>
+	<mod-append:name>RK_BOMBLAUNCHER_OXYBOTTLE</mod-append:name>
 </mod:findName>
 <!-- 
 BLUELIST_BOMB_REPAIR
 -->
 <mod:findName type="blueprintList" name="BLUELIST_PARTICLE">
+	<mod-append:name>RK_FOCUS_FIRE</mod-append:name>
 	<mod-append:name>DJMOD_ARTILLERY_LASER_PARTICLE</mod-append:name>
 </mod:findName>
 
 <!-- Seems redundant with BLUELIST_WEAPONS_FIRE_ALL above, especially since both include artilleries... -->
 <mod:findName type="blueprintList" name="BLUELIST_FIRE_ALL">
+	<mod-append:name>DJMOD_BAM_FISSUREBEAM</mod-append:name>
+	<mod-append:name>RK_HEAVY_POPPER_2</mod-append:name>
 	<mod-append:name>RK_RAIN_OF_ION</mod-append:name>
+	<mod-append:name>RK_BOMBLAUNCHER_OXYBOTTLE</mod-append:name>
+	<mod-append:name>RK_FOCUS_FIRE</mod-append:name>
+	<mod-append:name>RK_OXY_FIREFILL_MISSILES</mod-append:name>
 	<mod-append:name>DJMOD_RAIN_OF_FIRE</mod-append:name>
 	<mod-append:name>DJMOD_LASER_BPS</mod-append:name>
 
@@ -2072,11 +2593,16 @@ BLUELIST_BOMB_REPAIR
 
 <!-- Here we go again?... -->
 <mod:findName type="blueprintList" name="BLUELIST_FIRE_NONBALLISTIC">
+	<mod-append:name>DJMOD_BAM_FISSUREBEAM</mod-append:name>
+	<mod-append:name>RK_HEAVY_POPPER_2</mod-append:name>
 	<mod-append:name>RK_RAIN_OF_ION</mod-append:name>
+	<mod-append:name>RK_FOCUS_FIRE</mod-append:name>
 	<mod-append:name>DJMOD_LASER_BPS</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="BLUELIST_FIRE_BALLISTIC">
+	<mod-append:name>RK_BOMBLAUNCHER_OXYBOTTLE</mod-append:name>
+	<mod-append:name>RK_OXY_FIREFILL_MISSILES</mod-append:name>
 	<mod-append:name>DJMOD_RAIN_OF_FIRE</mod-append:name>
 
 	<mod-append:name>DJMOD_ARTILLERY_MISSILE_FIRE</mod-append:name>
@@ -2117,11 +2643,13 @@ BLUELIST_PHEROMONES
 (Ignoring all default race shops since this is illegal gear.)
 -->
 
-<!-- That's Nexus Sylvan -->
+<!-- That's Nexus Sylvan who wants 'realistic weapons' -->
 <mod:findName type="blueprintList" name="SHOP_HARDSCIFI">
 	<!-- <mod-append:name>DJMOD_BAM_FISSUREBEAM</mod-append:name> -->
 	<mod-append:name>RK_UNLOADER</mod-append:name>
+	<mod-append:name>RK_MISSLAUNCHER_2_BATTERY</mod-append:name>
 	<!-- <mod-append:name>RK_RAIN_OF_ION</mod-append:name> -->
+	<mod-append:name>RK_OXY_FIREFILL_MISSILES</mod-append:name>
 	<mod-append:name>DJMOD_RAIN_OF_FIRE</mod-append:name>
 	<!-- <mod-append:name>DJMOD_LASER_BPS</mod-append:name> -->
 </mod:findName>
@@ -2140,9 +2668,12 @@ BLUELIST_PHEROMONES
 	<mod-append:name>DJMOD_BAM_FISSUREBEAM</mod-append:name>
 	<mod-append:name>DJMOD_LASER_BPS</mod-append:name>
 </mod:findName>
-<!-- 
-SHOP_ITEM_SYLVAN_CONSERVATIVE
- -->
+
+<mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_CONSERVATIVE">
+	<mod-append:name>RK_MISSLAUNCHER_2_BATTERY</mod-append:name>
+	<mod-append:name>RK_BOMBLAUNCHER_OXYBOTTLE</mod-append:name>
+</mod:findName>
+
 <mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_CHAIN">
 	<mod-append:name>RK_KILLALL_BEAM</mod-append:name>
 	<mod-append:name>RK_RAIN_OF_ION</mod-append:name>
@@ -2160,25 +2691,33 @@ SHOP_ITEM_SYLVAN_RECYCLER
 
 <mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_FIRE">
 	<mod-append:name>RK_RAIN_OF_ION</mod-append:name>
+	<mod-append:name>RK_BOMBLAUNCHER_OXYBOTTLE</mod-append:name>
+	<mod-append:name>RK_FOCUS_FIRE</mod-append:name>
+	<mod-append:name>RK_OXY_FIREFILL_MISSILES</mod-append:name>
 	<mod-append:name>DJMOD_RAIN_OF_FIRE</mod-append:name>
 	<mod-append:name>DJMOD_LASER_BPS</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_BREACH">
 	<mod-append:name>DJMOD_BAM_FISSUREBEAM</mod-append:name>
+	<mod-append:name>RK_HEAVY_POPPER_2</mod-append:name>
 </mod:findName>
-<!-- 
-SHOP_ITEM_SYLVAN_SYSTEM
-SHOP_ITEM_SYLVAN_BIO
- -->
+
+<mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_SYSTEM">
+	<mod-append:name>RK_FOCUS_FIRE</mod-append:name>
+</mod:findName>
+
 <mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_BIO">
 	<mod-append:name>RK_KILLALL_BEAM</mod-append:name>
+	<mod-append:name>RK_BOMBLAUNCHER_OXYBOTTLE</mod-append:name>
 	<mod-append:name>DJMOD_LASER_BPS</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_STUN">
+	<mod-append:name>RK_HEAVY_POPPER_2</mod-append:name>
 	<mod-append:name>RK_KILLALL_BEAM</mod-append:name>
 	<mod-append:name>RK_RAIN_OF_ION</mod-append:name>
+	<mod-append:name>RK_OXY_FIREFILL_MISSILES</mod-append:name>
 	<mod-append:name>DJMOD_LASER_BPS</mod-append:name>
 </mod:findName>
 <!-- 
@@ -2187,6 +2726,7 @@ SHOP_ITEM_SYLVAN_LASERS_BURST
 SHOP_ITEM_SYLVAN_LASERS_BURST_AND_LIGHT
  -->
 <mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_LASERS_HEAVY">
+	<mod-append:name>RK_HEAVY_POPPER_2</mod-append:name>
 	<mod-append:name>DJMOD_LASER_BPS</mod-append:name>
 </mod:findName>
 
@@ -2195,6 +2735,7 @@ SHOP_ITEM_SYLVAN_LASERS_BURST_AND_LIGHT
 </mod:findName>
 
 <mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_LASERS_HEAVY_AND_HULL">
+	<mod-append:name>RK_HEAVY_POPPER_2</mod-append:name>
 	<mod-append:name>DJMOD_LASER_BPS</mod-append:name>
 </mod:findName>
 
@@ -2223,8 +2764,11 @@ SHOP_ITEM_SYLVAN_BEAM_UTILITY
 </mod:findName>
 <!-- 
 SHOP_ITEM_SYLVAN_FOCUS_STANDARD
-SHOP_ITEM_SYLVAN_FOCUS_SPECIAL
 -->
+<mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_FOCUS_SPECIAL">
+	<mod-append:name>RK_FOCUS_FIRE</mod-append:name>
+</mod:findName>
+
 <mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_ION_STANDARD">
 	<mod-append:name>RK_RAIN_OF_ION</mod-append:name>
 	<mod-append:name>RK_SHOTPHASER</mod-append:name>
@@ -2247,18 +2791,35 @@ SHOP_ITEM_SYLVAN_ENERGY_STANDARD
 <mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_ENERGY_ATTRIBUTE">
 	<mod-append:name>DJMOD_LASER_BPS</mod-append:name>
 </mod:findName>
+
+<mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_MISSILES_HEAVY">
+	<!-- MV list starts at MISSILE_2 -->
+	<mod-append:name>RK_MISSLAUNCHER_2_BATTERY</mod-append:name>
+	<mod-append:name>RK_OXY_FIREFILL_MISSILES</mod-append:name>
+</mod:findName>
 <!-- 
-SHOP_ITEM_SYLVAN_MISSILES_HEAVY
 SHOP_ITEM_SYLVAN_MISSILES_BURST
  -->
 <mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_MISSILES_SPECIAL">
 	<mod-append:name>RK_UNLOADER</mod-append:name>
+	<mod-append:name>RK_MISSLAUNCHER_2_BATTERY</mod-append:name>
+	<mod-append:name>RK_OXY_FIREFILL_MISSILES</mod-append:name>
 	<mod-append:name>DJMOD_RAIN_OF_FIRE</mod-append:name>
 </mod:findName>
-<!-- the desert...
-SHOP_ITEM_SYLVAN_BOMB
-SHOP_ITEM_SYLVAN_BOMB_SPECIAL
-SHOP_ITEM_SYLVAN_UTILITY
+
+<mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_BOMB">
+	<mod-append:name>RK_BOMBLAUNCHER_OXYBOTTLE</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_BOMB_SPECIAL">
+	<mod-append:name>RK_BOMBLAUNCHER_OXYBOTTLE</mod-append:name>
+</mod:findName>
+
+<mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_UTILITY">
+	<!-- <mod-append:name>RK_MISSLAUNCHER_2_BATTERY</mod-append:name> -->
+	<mod-append:name>RK_BOMBLAUNCHER_OXYBOTTLE</mod-append:name>
+</mod:findName>
+<!-- the desert starts receding...
 SHOP_ITEM_SYLVAN_MINELAUNCHER
 SHOP_ITEM_SYLVAN_FLAK
 SHOP_ITEM_SYLVAN_FLAK_ELEMENTAL
@@ -2294,20 +2855,20 @@ SHOP_ITEM_SYLVAN_DRONES_CREW
 <!-- BACK TO BUSINESS! 
 Keep these 3 aug lists customized so that COMBO pieces can be present at the same time, as much as possible. -->
 <mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_AUGMENTS_COMBAT_1">
-	<mod-append:name>DJMOD_AUG_AUTO_SYS_REPAIR</mod-append:name>
-	<mod-append:name>DJMOD_COMBAT_OFFENSE_DISABLER</mod-append:name>
+	<mod-append:name>RK_COMBAT_AUTO_SYS_REPAIR</mod-append:name>
+	<mod-append:name>RK_COMBAT_OFFENSE_DISABLER</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_AUGMENTS_COMBAT_2">
 	<mod-append:name>DJMOD_COMBAT_SHIPVORE_RAM</mod-append:name>
-	<mod-append:name>DJMOD_DEFENSE_REMOVER</mod-append:name>
+	<mod-append:name>RK_COMBAT_DEFENSE_REMOVER</mod-append:name>
 	<mod-append:name>RK_SCORCH_SELF</mod-append:name>
 	<mod-append:name>RK_COMBAT_OXYGENIZER</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_AUGMENTS_COMBAT_3">
 	<mod-append:name>RK_COMBAT_HACK_FLEET</mod-append:name>
-	<mod-append:name>DJMOD_COMBAT_SCORCH_ENEMY</mod-append:name>
+	<mod-append:name>RK_COMBAT_SCORCH_ENEMY</mod-append:name>
 </mod:findName>
 <!-- 
 SHOP_ITEM_SYLVAN_AUGMENTS_HYPERSPEED

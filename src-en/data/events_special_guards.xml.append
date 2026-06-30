@@ -20,13 +20,16 @@
 	</text>
 </textList>
 
-<!-- Called by sector_data -->
+<!-- Called by sector or Lightspeed stuff. -->
 <event name="START_RADIKAL">
 	<preventQuest/>
 	<beaconType id="map_icon_start" global="false">
 		<color r="46" g="252" b="51" a="1"/>
 	</beaconType>
 	<text load="TEXT_START_RADIKAL"/>
+
+	<metaVariable name="juke_rktrackradikal" op="set" val="1"/>
+	
 	<modifyPursuit amount="-2"/>
 	<ship load="SHIP_GUARD_RADIKAL" hostile="false"/>
 
@@ -45,10 +48,28 @@
 		The guard is hailing you.</text>
 	<choice hidden="true">
 		<text>Take the hail.</text>
-		<event>
+		<event name="GUARD_RADIKAL_HAIL">
 			<text>"Hey there. Rook or reg?" The guard is nonchalantly awaiting your answer.
 				This seems to be about your familiarity with this sector.
 			</text>
+
+			<choice hidden="false">
+				<text>Humbly ask for cheap repairs.</text>
+				<event>
+					<text>"So you had some trouble getting here in one piece, huh? I feel you, we've all been there. Here's our customer-friendly welcome, you will need it!"
+						For a symbolic price, the RadiKals quickly perform extensive repairs on your ship! Apparently they'll do it as many times as you need.
+					</text>
+					<item_modify>
+						<item type="scrap" min="-3" max="-3"/>
+					</item_modify>
+					<damage amount="-6"/>
+
+					<choice>
+						<text>Continue...</text>
+						<event><loadEvent>GUARD_RADIKAL_HAIL</loadEvent></event>
+					</choice>
+				</event>
+			</choice>
 
 			<choice req="DJMOD_HAS_RADIKAL_GEAR" hidden="true">
 				<text>(Any piece of RK gear) Reg. Hit me up!</text>
@@ -57,7 +78,7 @@
 					<choice hidden="true">
 						<text>Continue...</text>
 						<event>
-							<text>"Here's the current location of the RadiKal Bam lab, if you have explodey stuff, or need more, you know they'll be happy to see you."</text>
+							<text>"Here's the current location of the RK Bam lab. if you have explodey stuff, need more, or want to toughen up your ship, you know they'll be happy to see you."</text>
 							<quest event="RKS_QUEST_LAB_BAM">
 								<!-- <nextSector>false</nextSector>
 								<aggressive>2</aggressive> -->
@@ -67,7 +88,7 @@
 							<choice hidden="true">
 								<text>Continue...</text>
 								<event>
-									<text>"Sly as always, the Punk have set camp at this beacon. For all your fancy needs."</text>
+									<text>"Sly as always, the RK Punk have set camp at this beacon. For all your fancy electric, bio, murderous needs and so on."</text>
 									<quest event="RKS_QUEST_LAB_PUNK">
 										<!-- <nextSector>false</nextSector>
 										<aggressive>2</aggressive> -->

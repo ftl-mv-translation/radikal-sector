@@ -54,7 +54,34 @@
 	<computerGlow name="computer1_glow" x="33" y="-2" dir="UP" />
 </roomLayout>
 
-<!-- scorcher -->
+<!-- scorcher A -->
+<roomLayout name="engines_5">
+	<computerGlow x="5" y="1" dir="UP" />
+</roomLayout>
+<roomLayout name="pilot">
+	<computerGlow name="glow_pilot" x="19" y="9" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="shields">
+	<computerGlow name="computer1_glow" x="-1" y="3" dir="LEFT" />
+</roomLayout>
+<roomLayout name="weapons_8">
+	<computerGlow x="40" y="0" dir="UP" />
+</roomLayout>
+<!-- scorcher B -->
+<roomLayout name="engines">
+	<computerGlow x="5" y="53" dir="DOWN" />
+</roomLayout>
+<roomLayout name="pilot">
+	<computerGlow name="glow_pilot" x="19" y="9" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="shields_2">
+	<computerGlow name="computer1_glow" x="-1" y="3" dir="LEFT" />
+</roomLayout>
+<roomLayout name="weapons_rk_6b">
+	<computerGlow x="40" y="54" dir="DOWN" />
+</roomLayout>
+
+<!-- beta Scorch -->
 <roomLayout name="engines_8">
 	<computerGlow x="6" y="42" dir="LEFT" />
 </roomLayout>
@@ -65,5 +92,19 @@
 	<computerGlow x="36" y="18" dir="DOWN" />
 </roomLayout>
 <roomLayout name="weapons_6">
+	<computerGlow x="40" y="0" dir="UP" />
+</roomLayout>
+
+<!-- lead_titans_user aka Titan Dropship -->
+<roomLayout name="engines_3">
+	<computerGlow x="53" y="7" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="pilot_3">
+	<computerGlow name="glow_pilot" x="54" y="8" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="shields_11">
+	<computerGlow name="computer1_glow" x="30" y="2" dir="DOWN" />
+</roomLayout>
+<roomLayout name="weapons_8">
 	<computerGlow x="40" y="0" dir="UP" />
 </roomLayout>

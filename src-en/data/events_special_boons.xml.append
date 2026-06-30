@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FTL>
+
+<!--THEST the Zoltan -->
+<event name="BOON_SELECT_RK_BAM_CREW">
+	<text>From nowhere, you hear a voice speaking to you. "The Boon... of the RadiKal Bam. Your RadiKal crew will gain... 29 health and 1.1x combat damage. You may... thank the previous challenger. Or maybe you... do not? Who can say..."</text>
+	<hiddenAug>JUDGE_BOON_RK_BAM_CREW</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="BOON_SELECT_RK_PUNK_CREW">
+	<text>From nowhere, you hear a voice speaking to you. "The Boon... of the RadiKal Punk. Your RadiKal crew will gain... 40% faster healing and cloning. You may... thank the previous challenger. Or maybe you... do not? Who can say..."</text>
+	<hiddenAug>JUDGE_BOON_RK_PUNK_CREW</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="BOON_SELECT_RK_SCORCH_CREW">
+	<text>From nowhere, you hear a voice speaking to you. "The Boon... of the RadiKal Scorch. Your RadiKal crew will gain... 1.3x movement speed and combat damage, in fire. You may... thank the previous challenger. Or maybe you... do not? Who can say..."</text>
+	<hiddenAug>JUDGE_BOON_RK_SCORCH_CREW</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<!--WAKESON the Rockman-->
+<event name="BOON_SELECT_RK_BAM_EQUIPMENT">
+	<text>From nowhere, you hear a voice speaking to you. "CHALLENGER! For you, I grant the BLESSING OF RADIKAL TOUGHNESS! Your ship will have +8% chance to resist hull, system and ion damage from enemy weapons, and may your travels be BLESSED! For whom do you thank? Why, the PREVIOUS CHALLENGER! Hahah!"</text>
+	<hiddenAug>JUDGE_BOON_RK_BAM_EQUIPMENT</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="BOON_SELECT_RK_PUNK_EQUIPMENT">
+	<text>From nowhere, you hear a voice speaking to you. "CHALLENGER! For you, I grant the BLESSING OF RADIKAL CUNNING! Your systems will be repaired at x1.3 speed, and may your travels be BLESSED! For whom do you thank? Why, the PREVIOUS CHALLENGER! Hahah!"</text>
+	<hiddenAug>JUDGE_BOON_RK_PUNK_EQUIPMENT</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="BOON_SELECT_RK_SCORCH_EQUIPMENT">
+	<text>From nowhere, you hear a voice speaking to you. "CHALLENGER! For you, I grant the BLESSING OF RADIKAL FEVER! You will have +8% weapon charge speed and evasion, and may your travels be BLESSED! For whom do you thank? Why, the PREVIOUS CHALLENGER! Hahah!"</text>
+	<hiddenAug>JUDGE_BOON_RK_SCORCH_EQUIPMENT</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="BOON_SELECT_RK_BPS_EQUIPMENT">
+	<text>From nowhere, you hear a voice speaking to you. "CHALLENGER! For you, I grant the BLESSING OF RADIKAL PROJECTS! Your ship will have +4% chance to resist hull, system and ion damage from enemy weapons, your systems will be repaired at x1.15 speed, you will have +4% weapon charge speed and evasion, and may your travels be BLESSED! For whom do you thank? Why, the PREVIOUS CHALLENGER! Hahah!"</text>
+	<hiddenAug>JUDGE_BOON_RK_BPS_EQUIPMENT</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+</FTL>
+
+<!-- REF: TCC v1.2.7 for MV v5.5.1:
+
+<FTL>
+    <event name="BOON_SELECT_TCC_SCRAPPER">
+        <text>From nowhere, you hear a voice speaking to you. "The Boon... of Scrapping. You will gain a... 5% increase in scrap gains. You may... thank the previous challenger. Or maybe you... do not? Who can say..."</text>
+        <hiddenAug>BOON_TCC_SCRAPPER</hiddenAug>
+        <choice hidden="true">
+            <text>Continue...</text>
+            <event>
+                <loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+            </event>
+        </choice>
+    </event>
+</FTL> -->
+
+<!-- REFS: MV v5.5.1:
+
+<event name="BOON_SELECT_CHAOS">
+	<text>From nowhere, you hear a voice speaking to you. "The Boon... of Chaos. We... ill advise your interactions with... these forces, but we will... provide you this boon regardless. Your resources will... constantly fluctuate at... all times. But please... take our warning. Do not... abuse these eldritch things."</text>
+	<triggeredEvent event="BOON_CHAOS" seeded="false" thisFight="false" loops="999999999" time="0.5"/>
+	<achievement silent="false">ACH_BOON_CHAOS</achievement>
+	<variable name="chaos_boon_active" op="set" val="1"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="BOON_CHAOS">
+	<item_modify>
+		<item type="fuel" min="-7" max="5"/>
+		<item type="missiles" min="-7" max="5"/>
+		<item type="drones" min="-7" max="5"/>
+	</item_modify>
+</event>
+
+MV SAYS: THEST
+<event name="BOON_SELECT_HUMAN">
+	<text>From nowhere, you hear a voice speaking to you. "The Boon... of Humanity. Your Human crew will gain a... 20% resistance to hazards. You may... thank the previous challenger. Or maybe you... do not? Who can say..."</text>
+	<hiddenAug>JUDGE_BOON_HUMAN</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="BOON_SELECT_HUMAN_2">
+	<text>From nowhere, you hear a voice speaking to you. "The Greater Boon... of Humanity. Your Human crew will gain a... 20% resistance to hazards, and a... 10% boost to their damage, repair, health, and movement. You may... thank the previous challenger. Or maybe you... do not? Who can say..."</text>
+	<hiddenAug>JUDGE_BOON_HUMAN_2</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+<event name="BOON_SELECT_ENGI">
+	<text>From nowhere, you hear a voice speaking to you. "The Boon... of Nanites. Your Engi crew will gain a... 20% boost to repair speed. You may... thank the previous challenger. Or maybe you... do not? Who can say..."</text>
+	<hiddenAug>JUDGE_BOON_ENGI</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+...
+
+MV SAYS: CORBY
+<event name="BOON_SELECT_WEAPONS">
+	<text>From nowhere, you hear a voice speaking to you. "Grant of [Weaponry] i-i-installed. Installed! Grant provides: repairs to Weapon system 50% faster. If -you- witness p-p-previous challenger; provide thanks. I advise you -visit- me as well."</text>
+	<hiddenAug>JUDGE_BOON_WEAPONS</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+...
+<event name="BOON_SELECT_REACTOR">
+	<text>From nowhere, you hear a voice speaking to you. "Grant of [Power] i-i-installed. Installed! Grant provides: one bonus reactor. If -you- witness p-p-previous challenger; provide thanks. I advise you -visit- me as well."</text>
+	<upgrade amount="1" system="reactor"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+
+MV SAYS: WAKESON
+<event name="BOON_SELECT_STARTER">
+	<text>From nowhere, you hear a voice speaking to you. "CHALLENGER! For you, I grant the BLESSING OF BEGINNINGS! Take this gift, and may your travels be BLESSED! For whom do you thank? Why, the PREVIOUS CHALLENGER! Hahah!"</text>
+	<item_modify>
+		<item type="scrap" min="15" max="15"/>
+		<item type="fuel" min="3" max="3"/>
+		<item type="missiles" min="3" max="3"/>
+		<item type="drones" min="3" max="3"/>
+	</item_modify>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="BOON_SELECT_KERNELELITE">
+	<text>From nowhere, you hear a voice speaking to you. "CHALLENGER! For you, I grant the BLESSING OF GROWTH! You will receive 6 MISSILES to fuel your weapons, and may your travels be BLESSED! For whom do you thank? Why, the PREVIOUS CHALLENGER! Hahah!"</text>
+	<item_modify>
+		<item type="missiles" min="6" max="6"/>
+	</item_modify>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="BOON_SELECT_CRYSTALELITE">
+	<text>From nowhere, you hear a voice speaking to you. "CHALLENGER! For you, I grant the BLESSING OF CRYSTALS! You will have a 15% chance to break off a crystal shard each time you take damage, and may your travels be BLESSED! For whom do you thank? Why, the PREVIOUS CHALLENGER! Hahah!"</text>
+	<hiddenAug>JUDGE_BOON_CRYSTALELITE</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="BOON_SELECT_MINELAUNCHER">
+	<text>From nowhere, you hear a voice speaking to you. "CHALLENGER! For you, I grant the BLESSING OF TRAPS! I shall see to it the fleet is slowed, and may your travels be BLESSED! For whom do you thank? Why, the PREVIOUS CHALLENGER! Hahah!"</text>
+	<modifyPursuit amount="-2"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="BOON_SELECT_NEWGEN">
+	<text>From nowhere, you hear a voice speaking to you. "CHALLENGER! For you, I grant the BLESSING OF GENERATIONS! All new crew you gain will start at lvl 1 in all skills, and may your travels be BLESSED! For whom do you thank? Why, the PREVIOUS CHALLENGER! Hahah!"</text>
+	<hiddenAug>JUDGE_BOON_NEWGEN</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="BOON_SELECT_AETHER">
+	<text>From nowhere, you hear a voice speaking to you. "CHALLENGER! For you, I grant the BLESSING OF AETHER! Precursor ruins shall now display on your map whenever present, and may your travels be BLESSED! For whom do you thank? Why, the PREVIOUS CHALLENGER! Hahah!"</text>
+	<hiddenAug>JUDGE_BOON_AETHER</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="BOON_SELECT_MERCHANTS"> 		MV SAYS: both riftwaker and the nexus
+	<text>From nowhere, you hear a voice speaking to you. "CHALLENGER! For you, I grant the BLESSING OF MERCHANTS! The traveling merchant will now give you multiple selections of trades, and may your travels be BLESSED! For whom do you thank? Why, the PREVIOUS CHALLENGER! Hahah!"</text>
+	<eventAlias name="SYLVAN_TRADES_DROPPOINT">SYLVAN_TRADES_CHOICE</eventAlias>
+	<eventAlias name="SYLVAN_TRADES_LASTSTAND">SYLVAN_TRADES_CHOICE</eventAlias>
+	<eventAlias name="SYLVAN_TRADES">SYLVAN_TRADES_CHOICE</eventAlias>
+	<variable name="merchant_boon_active" op="set" val="1"/>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event>
+
+<event name="BOON_SELECT_SPECIAL">
+	<text>From nowhere, you hear a voice speaking to you. "CHALLENGER! For you, I grant the BLESSING OF SPECIALITY! Your weapons will now charge 5% faster, and may your travels be BLESSED! For whom do you thank? Why, the PREVIOUS CHALLENGER! Hahah!"</text>
+	<hiddenAug>JUDGE_BOON_SPECIAL</hiddenAug>
+	<choice hidden="true">
+		<text>Continue...</text>
+		<event>
+			<loadEvent>BOON_SELECT_CONTINUE</loadEvent>
+		</event>
+	</choice>
+</event> 
+-->

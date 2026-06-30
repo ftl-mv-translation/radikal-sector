@@ -300,6 +300,19 @@ REF MV v5.5.1: <transformRace class="leech">leech_ampere</transformRace>
 	<text>RadiKal Sector coordinates get.</text>
 	<variable name="coords_radikal" op="set" val="1"/>
 </event>
+<event name="DJCOORDS_E">
+	<text>Estate/WentworthInnovationsHQ coordinates get.</text>
+	<variable name="coords_estate" op="set" val="1"/>
+</event>
+<event name="DJCOORDS_J">
+	<text>Jerry/JeromeProtectorate coordinates get.</text>
+	<variable name="coords_jerry" op="set" val="1"/>
+</event>
+<event name="DJCOORDS_N">
+	<text>Nights/RoyalSlug coordinates get.</text>
+	<variable name="coords_nights" op="set" val="1"/>
+</event>
+
 
 <event name="DJSECTOR">
 	<text>opening reroute menu.</text>
@@ -308,6 +321,29 @@ REF MV v5.5.1: <transformRace class="leech">leech_ampere</transformRace>
 
 <event name="DJNOHAZARDS">
 	<removeHazards/>
+</event>
+
+<!-- Console: "ACH_LOCK ACH_BOON_RK_BAM_CREW" in ALLCAPS even if the variable is NOT CAPITALIZED!!! -->
+<event name="RESET_RK_BOONS">
+	<text>DEBUG: Re-locking all RK Judge Boons.</text>
+	<metaVariable name="prof_z_boon_rk_bam_crew" op="set" val="0"/>
+	<metaVariable name="prof_z_boon_rk_punk_crew" op="set" val="0"/>
+	<metaVariable name="prof_z_boon_rk_scorch_crew" op="set" val="0"/>
+	
+	<metaVariable name="prof_r_boon_rk_bam_equipment" op="set" val="0"/>
+	<metaVariable name="prof_r_boon_rk_punk_equipment" op="set" val="0"/>
+	<metaVariable name="prof_r_boon_rk_scorch_equipment" op="set" val="0"/>
+	<metaVariable name="prof_r_boon_rk_bps_equipment" op="set" val="0"/>
+
+	<!-- NO WORK
+	<variable name="ach_boon_rk_bam_crew" op="set" val="0"/>
+	<variable name="ach_boon_rk_punk_crew" op="set" val="0"/>
+	<variable name="ach_boon_rk_scorch_crew" op="set" val="0"/>
+
+	<variable name="ach_boon_rk_bam_equipment" op="set" val="0"/>
+	<variable name="ach_boon_rk_punk_equipment" op="set" val="0"/>
+	<variable name="ach_boon_rk_scorch_equipment" op="set" val="0"/>
+	<variable name="ach_boon_rk_bps_equipment" op="set" val="0"/> -->
 </event>
 </FTL>
 
@@ -343,8 +379,9 @@ REF MV v5.5.1: <transformRace class="leech">leech_ampere</transformRace>
 	<choice req="visited_radikal_sector">
 		<text>We've already visited the RadiKal Sector. Rest in peace, soldier.</text>
 		<event>
-			<text>"Progress sha- shall continue... this does bring me comfort... Thank you." He dies with a faint smile on his face.
-			As usual this agent had an incurable disease and volunteered to spread awareness for RK funding and recruit reckless captains, so you're not surprised. You proceed to loot his valuable tech and dispose of the body.</text>
+			<text>"Progress sha- shall continue... it does bring me comfort... to die among friends... Thank you." He dies with a faint smile on his face.
+			
+				As usual this agent had an incurable disease and volunteered to spread awareness for RK funding and recruit reckless captains, so you're not surprised. You proceed to loot his valuable tech and dispose of the body.</text>
 			<item_modify>
 				<item type="scrap" min="55" max="75"/>		<!-- Net gain reward. -->
 			</item_modify>
@@ -643,7 +680,7 @@ If used in eventList, list must have a non-unique option!-->
 	<choice hidden="true">
 		<text>Take the hail.</text>
 		<event>
-			<text>"Greetings, pagan. We buy RadiKal weapons, and we believe you have some."</text>
+			<text>"Greetings, pagan. We buy RadiKal weapons, and we believe you have some. We pay even more than their usual buy price."</text>
 			
 			<choice>
 				<text>"Is that so?"</text>
@@ -659,7 +696,7 @@ If used in eventList, list must have a non-unique option!-->
 								<text>"... ... ..."</text>
 								<event>
 									<text>You realize they are not going to elaborate, and start considering it. What do you decide?</text>
-									<!-- Sell for 150% of value, except BPS Messenger which passes all checks so 200%. -->
+									<!-- Sell for 150% of value, except BPS weapons, which pass all checks so 200%. -->
 
 									<choice req="DJMOD_BAM_FISSUREBEAM" hidden="true">
 										<text>Sell them your Bada beam for 165~.</text>
@@ -671,13 +708,23 @@ If used in eventList, list must have a non-unique option!-->
 											</item_modify>
 										</event>
 									</choice>
+									<choice req="RK_HEAVY_POPPER_2" hidden="true">
+										<text>Sell them your Heavy Popper MK II laser for 120~.</text>
+										<event>
+											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
+											<remove name="RK_HEAVY_POPPER_2"/>
+											<item_modify>
+												<item type="scrap" min="120" max="120"/>
+											</item_modify>
+										</event>
+									</choice>
 									<choice req="RK_UNLOADER" hidden="true">
-										<text>Sell them your Unloader launcher for 135~.</text>
+										<text>Sell them your Unloader launcher for 105~.</text>
 										<event>
 											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
 											<remove name="RK_UNLOADER"/>
 											<item_modify>
-												<item type="scrap" min="135" max="135"/>
+												<item type="scrap" min="105" max="105"/>
 											</item_modify>
 										</event>
 									</choice>
@@ -689,6 +736,16 @@ If used in eventList, list must have a non-unique option!-->
 											<remove name="RK_KILLALL_BEAM"/>
 											<item_modify>
 												<item type="scrap" min="135" max="135"/>
+											</item_modify>
+										</event>
+									</choice>
+									<choice req="RK_MISSLAUNCHER_2_BATTERY" hidden="true">
+										<text>Sell them your Battery Artemis missile launcher for 120~.</text>
+										<event>
+											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
+											<remove name="RK_MISSLAUNCHER_2_BATTERY"/>
+											<item_modify>
+												<item type="scrap" min="120" max="120"/>
 											</item_modify>
 										</event>
 									</choice>
@@ -709,6 +766,39 @@ If used in eventList, list must have a non-unique option!-->
 											<remove name="RK_SHOTPHASER"/>
 											<item_modify>
 												<item type="scrap" min="105" max="105"/>
+											</item_modify>
+										</event>
+									</choice>
+
+									<choice req="RK_BOMBLAUNCHER_OXYBOTTLE" hidden="true">
+										<text>Sell them your Oxygen-Bomb launcher for 75~.</text>
+										<event>
+											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
+											<remove name="RK_BOMBLAUNCHER_OXYBOTTLE"/>
+											<item_modify>
+												<item type="scrap" min="75" max="75"/>
+											</item_modify>
+										</event>
+									</choice>
+
+									<choice req="RK_OXY_FIREFILL_MISSILES" hidden="true">
+										<text>Sell them your Chimney launcher for 120~.</text>
+										<event>
+											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
+											<remove name="RK_OXY_FIREFILL_MISSILES"/>
+											<item_modify>
+												<item type="scrap" min="120" max="120"/>
+											</item_modify>
+										</event>
+									</choice>
+
+									<choice req="RK_FOCUS_FIRE" hidden="true">
+										<text>Sell them your Hot Poker pinpoint for 135~.</text>
+										<event>
+											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
+											<remove name="RK_FOCUS_FIRE"/>
+											<item_modify>
+												<item type="scrap" min="135" max="135"/>
 											</item_modify>
 										</event>
 									</choice>
@@ -811,8 +901,8 @@ If used in eventList, list must have a non-unique option!-->
 							<choice>
 								<text>Ask them why they're telling you this.</text>
 								<event>
-									<text>"Well if you have any, sell us some. Please?"</text>
-									<!-- Sell for 150% of value, except BPS Messenger which passes all checks so 200%. -->
+									<text>"Well if you have any, sell us some. We even pay more than you probably bought them for. Please?"</text>
+									<!-- Sell for 150% of value, except BPS weapons, which pass all checks so 200%. -->
 
 									<choice req="DJMOD_BAM_FISSUREBEAM" hidden="true">
 										<text>Sell them your Bada beam for 165~.</text>
@@ -824,13 +914,23 @@ If used in eventList, list must have a non-unique option!-->
 											</item_modify>
 										</event>
 									</choice>
+									<choice req="RK_HEAVY_POPPER_2" hidden="true">
+										<text>Sell them your Heavy Popper MK II laser for 120~.</text>
+										<event>
+											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
+											<remove name="RK_HEAVY_POPPER_2"/>
+											<item_modify>
+												<item type="scrap" min="120" max="120"/>
+											</item_modify>
+										</event>
+									</choice>
 									<choice req="RK_UNLOADER" hidden="true">
-										<text>Sell them your Unloader launcher for 135~.</text>
+										<text>Sell them your Unloader launcher for 105~.</text>
 										<event>
 											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
 											<remove name="RK_UNLOADER"/>
 											<item_modify>
-												<item type="scrap" min="135" max="135"/>
+												<item type="scrap" min="105" max="105"/>
 											</item_modify>
 										</event>
 									</choice>
@@ -842,6 +942,16 @@ If used in eventList, list must have a non-unique option!-->
 											<remove name="RK_KILLALL_BEAM"/>
 											<item_modify>
 												<item type="scrap" min="135" max="135"/>
+											</item_modify>
+										</event>
+									</choice>
+									<choice req="RK_MISSLAUNCHER_2_BATTERY" hidden="true">
+										<text>Sell them your Battery Artemis missile launcher for 120~.</text>
+										<event>
+											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
+											<remove name="RK_MISSLAUNCHER_2_BATTERY"/>
+											<item_modify>
+												<item type="scrap" min="120" max="120"/>
 											</item_modify>
 										</event>
 									</choice>
@@ -862,6 +972,39 @@ If used in eventList, list must have a non-unique option!-->
 											<remove name="RK_SHOTPHASER"/>
 											<item_modify>
 												<item type="scrap" min="105" max="105"/>
+											</item_modify>
+										</event>
+									</choice>
+									
+									<choice req="RK_BOMBLAUNCHER_OXYBOTTLE" hidden="true">
+										<text>Sell them your Oxygen-Bomb launcher for 75~.</text>
+										<event>
+											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
+											<remove name="RK_BOMBLAUNCHER_OXYBOTTLE"/>
+											<item_modify>
+												<item type="scrap" min="75" max="75"/>
+											</item_modify>
+										</event>
+									</choice>
+									
+									<choice req="RK_OXY_FIREFILL_MISSILES" hidden="true">
+										<text>Sell them your Chimney launcher for 120~.</text>
+										<event>
+											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
+											<remove name="RK_OXY_FIREFILL_MISSILES"/>
+											<item_modify>
+												<item type="scrap" min="120" max="120"/>
+											</item_modify>
+										</event>
+									</choice>
+
+									<choice req="RK_FOCUS_FIRE" hidden="true">
+										<text>Sell them your Hot Poker pinpoint for 135~.</text>
+										<event>
+											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
+											<remove name="RK_FOCUS_FIRE"/>
+											<item_modify>
+												<item type="scrap" min="135" max="135"/>
 											</item_modify>
 										</event>
 									</choice>
@@ -1222,10 +1365,10 @@ About 900 lines, minimize if not interested. -->
 	<choice hidden="true">
 		<text>Answer it.</text>
 		<event>
-			<text>"As you may know if you're not a brainless savage, this lawless sector has been providing armament to the Duskbringers. We have recently started tackling this problem.
+			<text>"As you may know if you're not a brainless savage, this sector has been providing armament to the Duskbringers. We have recently started tackling this problem.
 				Like any vessel in transit in a lawless armament-manufacturing area like this one, you will be subjected to the mandatory thorough search for said armament. The fight against illegal weapon proliferation starts with you. Do not resist."
 				
-				Zoltans consider this area a very serious issue. If they find any RadiKal equipment a fine must be paid, based on how many you're carrying.
+				The Zoltan Ministry considers this area a very serious issue. If they find any RadiKal equipment a fine must be paid, based on how many you're carrying.
 			</text>
 
 			<choice req="zoltan_peacekeeper" hidden="true">
@@ -1233,8 +1376,7 @@ About 900 lines, minimize if not interested. -->
 				<event>
 					<text>"At last, the reinforcements. Here is your warrant. You'll find criminals in this sector, usually hiding in hazardous beacons. Seize their illegal gear and drop it off at the station. The coordinates are on the back."
 						
-						It's safe to assume that not every "criminal" will relinquish their RK gear without a fight, but this could greatly benefit your mission.
-					</text>
+						It's safe to assume that not every "criminal" will relinquish their RK gear without a fight, but this could greatly benefit your mission.</text>
 
 					<augment name="RKS_POLICE_WARRANT"/>
 					
@@ -1254,8 +1396,7 @@ About 900 lines, minimize if not interested. -->
 				<event>
 					<text>"At last, the reinforcements. Here is your warrant. You'll find criminals in this sector, usually hiding in hazardous beacons. Seize their illegal gear and drop it off at the station. The coordinates are on the back."
 						
-						It's safe to assume that not every "criminal" will relinquish their RK gear without a fight, but this could greatly benefit your mission.
-					</text>
+						It's safe to assume that not every "criminal" will relinquish their RK gear without a fight, but this could greatly benefit your mission.</text>
 
 					<augment name="RKS_POLICE_WARRANT"/>
 					
@@ -1278,7 +1419,7 @@ About 900 lines, minimize if not interested. -->
 			<choice hidden="true">
 				<text>Ask what happens if you refuse.</text>
 				<event>
-					<text>"Thanks to the merciful recent amendment 3473-B delta, captains may choose to participate in the funding of control vessels like this one, and report to the closest Zoltan police station within 12 jump cycles instead of immediately submitting to the search."
+					<text>"Thanks to the merciful recent amendment 3473-B delta, captains may choose to participate in the funding of control vessels like this one, and report to the closest Zoltan police station within 72 cycles instead of immediately submitting to the search."
 						Even though you have no intention of taking that detour, they would leave you alone for now.
 					</text>
 					
@@ -1360,7 +1501,7 @@ About 900 lines, minimize if not interested. -->
 
 <event name="ZOLTAN_POLICECHECK_RK_FINED">
 	<text>Maybe you forgot you were carrying RadiKal gear, or maybe you just didn't find a way to avoid the search. Regardless, they are now fining you for each piece!</text>
-	<choice req="DJMOD_SUM_RADIKAL_GEAR" lvl="1" max_lvl="1" hidden="true">
+	<choice req="DJMOD_SUM_RADIKAL_EQUIPMENT" lvl="1" max_lvl="1" hidden="true">
 		<text>Let them calculate your total fine.</text>
 		<event>
 			<text>"One illegal piece of gear, take this minimal fine as a warning. If you had any more "RadiKal" gear than that, we would have been forced to direct you to the local Police Station for processing."</text>
@@ -1372,7 +1513,7 @@ About 900 lines, minimize if not interested. -->
 		</event>
 	</choice>
 	<!-- From here, unlocks police station quest. MAKE THIS START AT ... one piece!? -->
-	<choice req="DJMOD_SUM_RADIKAL_GEAR" lvl="2" max_lvl="2" hidden="true">
+	<choice req="DJMOD_SUM_RADIKAL_EQUIPMENT" lvl="2" max_lvl="2" hidden="true">
 		<text>Let them calculate your total fine.</text>
 		<event>
 			<text>"Two illegal pieces of gear. You should really know better than to give up ethics for power."
@@ -1385,7 +1526,7 @@ About 900 lines, minimize if not interested. -->
 			<quest event="ZOLTAN_POLICESTATION_RK"/>
 		</event>
 	</choice>
-	<choice req="DJMOD_SUM_RADIKAL_GEAR" lvl="3" max_lvl="3" hidden="true">
+	<choice req="DJMOD_SUM_RADIKAL_EQUIPMENT" lvl="3" max_lvl="3" hidden="true">
 		<text>Let them calculate your total fine.</text>
 		<event>
 			<text>"Three illegal pieces of gear... The federation really hires any random scum these days."
@@ -1399,7 +1540,7 @@ About 900 lines, minimize if not interested. -->
 			<quest event="ZOLTAN_POLICESTATION_RK"/>
 		</event>
 	</choice>
-	<choice req="DJMOD_SUM_RADIKAL_GEAR" lvl="4" hidden="true">
+	<choice req="DJMOD_SUM_RADIKAL_EQUIPMENT" lvl="4" hidden="true">
 		<text>Let them calculate your total fine.</text>
 		<event>
 			<text>"AT LEAST FOUR illegal pieces of gear! What th-... I do not even wish to know. What a horrible person you must be. Luckily for you, this is the maximum fine stipulated in the applicable regulation. I suppose nobody foresaw that anyone would make themselves any more of a wretched menace to society than that."
@@ -1547,7 +1688,7 @@ _LASERS version updated 5.5.1, re-copypaste the others completely, based on this
 -->
 <FTL>
 <event name="THIEVES_RK_LASERS">
-	<text>It appears a damaged laser-wielding RadiKal ship is under attack by an Argeonn smuggler, certainly to steal their special tech. They are on their last legs but their trajectory forces them to pass you by for a slim chance at escaping.</text>
+	<text>It appears a heavily damaged laser-wielding RadiKal ship is under attack by an Argeonn smuggler, certainly to steal their special tech. They are on their last legs but their trajectory forces them to pass you by for a slim chance at escaping.</text>
 	<ship load="SHIP_SMUGGLER_RK_LASERS" hostile="false"/>
 	
 	<choice>
@@ -1668,10 +1809,14 @@ _LASERS version updated 5.5.1, re-copypaste the others completely, based on this
 </event>
 
 <event name="THIEVES_RK_LASERS_END">
-	<text>"The usual, local tech. Surely you understand that we can't just give it to you either. However we can provide you one laser weapon from our cargo that fits your preferred RadiKal subfaction, that would only be fair. Which one is it?"</text> 
+	<text>"The usual, local tech. Surely you understand that we can't just give it to you either."
+		A voice in the back of your head tells you that you should have killed them then... but you keep your greed in check and dismiss the intrusive thoughts.
+		
+		"However we can provide you one non-RadiKal laser weapon that fits the style of an RK subfaction, that would only be fair. Which one is it?"
+	</text> 
 	
 	<choice hidden="true">
-		<text>Bam!</text>
+		<text>Bam</text>
 		<event>
 			<text>They transfer the weapon and wish you safe travels.</text> 
 			<weapon name="GIFTLIST_FITTING_LASER_BAM"/>
@@ -1683,7 +1828,7 @@ _LASERS version updated 5.5.1, re-copypaste the others completely, based on this
 	</choice>
 	
 	<choice hidden="true">
-		<text>Punk!</text>
+		<text>Punk</text>
 		<event>
 			<text>They transfer the weapon and wish you safe travels.</text> 
 			<weapon name="GIFTLIST_FITTING_LASER_PUNK"/>
@@ -1695,7 +1840,7 @@ _LASERS version updated 5.5.1, re-copypaste the others completely, based on this
 	</choice>
 	
 	<choice hidden="true">
-		<text>Scorch!</text>
+		<text>Scorch</text>
 		<event>
 			<text>They transfer the weapon and wish you safe travels.</text> 
 			<weapon name="GIFTLIST_FITTING_LASER_SCORCH"/>
@@ -1808,7 +1953,7 @@ _LASERS version updated 5.5.1, re-copypaste the others completely, based on this
 	<text>"The usual, local tech. Surely you understand that we can't just give it to you either. However we can provide you one missile weapon from our cargo that fits your preferred RadiKal subfaction, that would only be fair. Which one is it?"</text> 
 	
 	<choice hidden="true">
-		<text>Bam!</text>
+		<text>Bam</text>
 		<event>
 			<text>They transfer the weapon and wish you safe travels.</text> 
 			<weapon name="GIFTLIST_FITTING_MISSILE_BAM"/>
@@ -1820,7 +1965,7 @@ _LASERS version updated 5.5.1, re-copypaste the others completely, based on this
 	</choice>
 	
 	<choice hidden="true">
-		<text>Punk!</text>
+		<text>Punk</text>
 		<event>
 			<text>They transfer the weapon and wish you safe travels.</text> 
 			<weapon name="GIFTLIST_FITTING_MISSILE_PUNK"/>
@@ -1832,7 +1977,7 @@ _LASERS version updated 5.5.1, re-copypaste the others completely, based on this
 	</choice>
 	
 	<choice hidden="true">
-		<text>Scorch!</text>
+		<text>Scorch</text>
 		<event>
 			<text>They transfer the weapon and wish you safe travels.</text> 
 			<weapon name="GIFTLIST_FITTING_MISSILE_SCORCH"/>
@@ -1945,7 +2090,7 @@ _LASERS version updated 5.5.1, re-copypaste the others completely, based on this
 	<text>"The usual, local tech. Surely you understand that we can't just give it to you either. However we can provide you one ion weapon from our cargo that fits your preferred RadiKal subfaction, that would only be fair. Which one is it?"</text> 
 	
 	<choice hidden="true">
-		<text>Bam!</text>
+		<text>Bam</text>
 		<event>
 			<text>They transfer the weapon and wish you safe travels.</text> 
 			<weapon name="GIFTLIST_FITTING_ION_BAM"/>
@@ -1957,7 +2102,7 @@ _LASERS version updated 5.5.1, re-copypaste the others completely, based on this
 	</choice>
 	
 	<choice hidden="true">
-		<text>Punk!</text>
+		<text>Punk</text>
 		<event>
 			<text>They transfer the weapon and wish you safe travels.</text> 
 			<weapon name="GIFTLIST_FITTING_ION_PUNK"/>
@@ -1969,7 +2114,7 @@ _LASERS version updated 5.5.1, re-copypaste the others completely, based on this
 	</choice>
 	
 	<choice hidden="true">
-		<text>Scorch!</text>
+		<text>Scorch</text>
 		<event>
 			<text>They transfer the weapon and wish you safe travels.</text> 
 			<weapon name="GIFTLIST_FITTING_ION_SCORCH"/>
@@ -2082,7 +2227,7 @@ _LASERS version updated 5.5.1, re-copypaste the others completely, based on this
 	<text>"The usual, local tech. Surely you understand that we can't just give it to you either. However we can provide you one beam weapon from our cargo that fits your preferred RadiKal subfaction, that would only be fair. Which one is it?"</text> 
 	
 	<choice hidden="true">
-		<text>Bam!</text>
+		<text>Bam</text>
 		<event>
 			<text>They transfer the weapon and wish you safe travels.</text> 
 			<weapon name="GIFTLIST_FITTING_BEAM_BAM"/>
@@ -2094,7 +2239,7 @@ _LASERS version updated 5.5.1, re-copypaste the others completely, based on this
 	</choice>
 	
 	<choice hidden="true">
-		<text>Punk!</text>
+		<text>Punk</text>
 		<event>
 			<text>They transfer the weapon and wish you safe travels.</text> 
 			<weapon name="GIFTLIST_FITTING_BEAM_PUNK"/>
@@ -2106,7 +2251,7 @@ _LASERS version updated 5.5.1, re-copypaste the others completely, based on this
 	</choice>
 	
 	<choice hidden="true">
-		<text>Scorch!</text>
+		<text>Scorch</text>
 		<event>
 			<text>They transfer the weapon and wish you safe travels.</text> 
 			<weapon name="GIFTLIST_FITTING_BEAM_SCORCH"/>

@@ -1,6 +1,15 @@
 -- This is not to be added in the hyperspace.xml, so it should do nothing.
 -- Meant to keep a trace of code i could use in the future.
 
+-- Lua Damage Types
+damage.iDamage       = 0
+damage.iSystemDamage = 0
+damage.iIonDamage    = 0
+damage.iPersDamage   = 0
+damage.fireChance    = 0
+damage.breachChance  = 0
+damage.stunChance    = 0
+
 function chal_jumped_away() -- The file this is in actually contains ALL of the addon's Lua.
 
     -- REF ARS+ challenges, challenge "Queen Bee to keep alive" aka "gusq".

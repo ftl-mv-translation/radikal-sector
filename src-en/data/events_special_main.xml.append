@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FTL>
+<mod:findName type="event" name="BOON_SELECT">
+    <mod:findLike type="loadEventList">
+        <mod-append:event name="BOON_SELECT_RK_BAM_CREW" req="prof_z_boon_rk_bam_crew"/>
+        <mod-append:event name="BOON_SELECT_RK_PUNK_CREW" req="prof_z_boon_rk_punk_crew"/>
+		<mod-append:event name="BOON_SELECT_RK_SCORCH_CREW" req="prof_z_boon_rk_scorch_crew"/>
+        <mod-append:event name="BOON_SELECT_RK_BAM_EQUIPMENT" req="prof_r_boon_rk_bam_equipment"/>
+        <mod-append:event name="BOON_SELECT_RK_PUNK_EQUIPMENT" req="prof_r_boon_rk_punk_equipment"/>
+		<mod-append:event name="BOON_SELECT_RK_SCORCH_EQUIPMENT" req="prof_r_boon_rk_scorch_equipment"/>
+		<mod-append:event name="BOON_SELECT_RK_BPS_EQUIPMENT" req="prof_r_boon_rk_bps_equipment"/>
+    </mod:findLike>
+</mod:findName>
+</FTL>
+<!-- REF: Darkest Desire v4.1.4 for MV v5.5.1:
+
+<mod:findName type="event" name="BOON_SELECT">
+    <mod:findLike type="loadEventList">
+        <mod-append:event name="BOON_SELECT_DEEPONE" req="prof_z_boon_deepone"/>
+		<mod-append:event name="BOON_SELECT_DDSOULPLAGUE_CREW" req="prof_z_boon_ddsoulplague"/>
+		<mod-append:event name="BOON_SELECT_DDDEEPONE_ELITE" req="prof_z_boon_dddeepone_elite"/>
+		...
+    </mod:findLike>
+</mod:findName> 
+
+REF: TCC v1.2.7 for MV v5.5.1:
+<FTL>
+    <mod:findName type="event" name="BOON_SELECT">
+        <mod:findLike type="loadEventList">
+            <mod-append:event name="BOON_SELECT_TCC_SCRAPPER" req="prof_z_boon_tcc_scrapper" />
+        </mod:findLike>
+    </mod:findName>
+</FTL>
+-->

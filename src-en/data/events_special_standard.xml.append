@@ -31,7 +31,7 @@ scrap ~ , fuel { , missiles } , drones |
 <mod:findName type = "event" name = "REVISIT">
 <!-- <mod-append:choice req="coords_radikal" lvl="0" max_lvl="0" hidden="true" blue="true"> -->
  <mod-append:choice req="DJMOD_NO_COORDS_NO_VISIT_RADIKAL_SECTOR" lvl="1" hidden="true" blue="true">
-     <text>Construct a dummy to practice shooting in space, for 5~, and 1}.</text>
+     <text>(Revisited beacon) Construct a dummy to practice shooting in space, for 5~, and 1}.</text>
      <event load="TRYGET_COORDS_RADIKAL"/>
 </mod-append:choice>
 </mod:findName>
