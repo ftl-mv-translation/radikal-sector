@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-06-30 19:44+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: Aleev <aleev1414@gmail.com>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "dataevents_special_storagexmlappend/ru/>\n"
 "Language: ru\n"
@@ -1617,10 +1617,12 @@ msgid ""
 msgstr "Не нужно. Вернуться в меню переключения."
 
 #: src-en/data/events_special_storage.xml.append:2450
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/text"
 msgstr ""
-"Вы уверены, что хотите это сделать?\t[Поджигает свой собственный корабль! Обычно для отражения абордажа]\n"
+"Вы уверены, что хотите это сделать?\t[Поджигает свой собственный корабль! "
+"Обычно для отражения абордажа]\n"
 "\t\tВыкурить их из..."
 
 #: src-en/data/events_special_storage.xml.append:2455
@@ -1709,6 +1711,7 @@ msgid ""
 msgstr "Отсека Оружия!"
 
 #: src-en/data/events_special_storage.xml.append:2528
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_ablative_armor\"]/text"
 msgstr "Отсека Абляционной брони!"
@@ -1724,6 +1727,7 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:2543
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_ecm_suite\"]/text"
 msgstr "Отсека Комплекс РЭБ!"
@@ -1735,21 +1739,25 @@ msgid ""
 msgstr "Помещение с волокнистым покрытием!"
 
 #: src-en/data/events_special_storage.xml.append:2551
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_infusion_bay\"]/text"
 msgstr "Инфузионного отсека!"
 
 #: src-en/data/events_special_storage.xml.append:2555
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_shock_neutralizer\"]/text"
 msgstr "Шокового нейтрализатора!"
 
 #: src-en/data/events_special_storage.xml.append:2559
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_system_bracers\"]/text"
 msgstr "Отсека Систем наручи!"
 
 #: src-en/data/events_special_storage.xml.append:2563
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_targeting_core\"]/text"
 msgstr "Отсека Ядра целенаведения!"
