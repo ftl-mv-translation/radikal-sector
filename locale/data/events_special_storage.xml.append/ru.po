@@ -1,9 +1,17 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-06-30 19:44+0000\n"
+"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
+"Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
+"dataevents_special_storagexmlappend/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events_special_storage.xml.append:396
 msgid ""
@@ -12,6 +20,7 @@ msgid ""
 msgstr "(Кораблепожиратель) Протаранить врага, чтобы починить корабль!"
 
 #: src-en/data/events_special_storage.xml.append:404
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[2]/mod-"
 "append:choice/text"
@@ -62,6 +71,7 @@ msgid ""
 msgstr "(Оксигенатор) Создать атмосферу!"
 
 #: src-en/data/events_special_storage.xml.append:493
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[8]/mod-"
 "append:choice/text"
@@ -93,6 +103,7 @@ msgid ""
 msgstr "(Фламмабилизатор) Настроить состояние модуля. [Текущий режим: Урон]"
 
 #: src-en/data/events_special_storage.xml.append:532
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[13]/mod-"
 "append:choice/text"
@@ -117,6 +128,7 @@ msgid ""
 msgstr "(Щит стойкости) Восстановить свои суперщиты!"
 
 #: src-en/data/events_special_storage.xml.append:557
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[15]/mod-"
 "append:choice/text"
@@ -125,6 +137,7 @@ msgstr ""
 "применения Полной мощности."
 
 #: src-en/data/events_special_storage.xml.append:570
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[16]/mod-"
 "append:choice/text"
@@ -292,11 +305,13 @@ msgid ""
 msgstr "(Переработчик топлива) Да, без использования топлива."
 
 #: src-en/data/events_special_storage.xml.append:808
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCED\"]/text"
 msgstr ""
 "(Укрепленный Кораблепожиратель) Да, на полную мощность!\n"
-"\t\t[Вы потеряете укрепление. Не сможете таранить снова до следующего прыжка. Требуется 7 секунд]"
+"\t\t[Вы потеряете укрепление. Не сможете таранить снова до следующего "
+"прыжка. Требуется 7 секунд]"
 
 #: src-en/data/events_special_storage.xml.append:811
 msgid ""
@@ -309,6 +324,7 @@ msgid ""
 msgstr "Перейти к битве!"
 
 #: src-en/data/events_special_storage.xml.append:826
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED\"]/text"
 msgstr ""
@@ -397,6 +413,7 @@ msgid ""
 msgstr "Все готово к тарану! Продолжить?"
 
 #: src-en/data/events_special_storage.xml.append:942
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCED_AT_FULL_POWER\"]/text"
 msgstr ""
@@ -414,6 +431,7 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events_special_storage.xml.append:958
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED_AT_FULL_POWER\"]/text"
 msgstr ""
@@ -431,6 +449,7 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events_special_storage.xml.append:975
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[@req=\"locked_shipvore_ram_full_power\"]/text"
 msgstr ""
@@ -1445,6 +1464,7 @@ msgid ""
 msgstr "Перейти к битве!"
 
 #: src-en/data/events_special_storage.xml.append:2274
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED\"]/text"
 msgstr ""
@@ -1462,6 +1482,7 @@ msgid ""
 msgstr "Перейти к битве!"
 
 #: src-en/data/events_special_storage.xml.append:2292
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"LOCKED_DJMOD_COMBAT_SHIPVORE_RAM\"]/text"
 msgstr ""
@@ -1705,6 +1726,7 @@ msgid ""
 msgstr "Отсека Комплекс РЭБ!"
 
 #: src-en/data/events_special_storage.xml.append:2547
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_fiber_liner\"]/text"
 msgstr "Помещение с волокнистым покрытием!"
@@ -2900,12 +2922,14 @@ msgid ""
 msgstr "Перейти к битве!"
 
 #: src-en/data/events_special_storage.xml.append:5347
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_OUTCOME_BOSS\"]/text"
 msgstr ""
 "Этот взлом должен был задержать флот, но не задержал... \n"
 "\t\t\n"
-"\t\tКто-то вмешался и прислал нам странные координаты с такой надписью: \"Нубы!!1!\"."
+"\t\tКто-то вмешался и прислал нам странные координаты с такой надписью: "
+"\"Нубы!!1!\"."
 
 #: src-en/data/events_special_storage.xml.append:5354
 msgid ""
@@ -2920,16 +2944,25 @@ msgstr ""
 "Энигмашин и бросить вам вызов!"
 
 #: src-en/data/events_special_storage.xml.append:5387
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/text"
 msgstr ""
-"Здесь появился корабль элитных повстанцев с очень зловещим видом. Его капитан пристально смотрит на вас, с легким блеском в глазах.\n"
+"Здесь появился корабль элитных повстанцев с очень зловещим видом. Его "
+"капитан пристально смотрит на вас, с легким блеском в глазах.\n"
 "\n"
-"\t\t\"Когда я услышал, что кто-то серьезно балуется с системой связи флота, я сразу понял, что должен познакомиться с этими дураками! И вот вы здесь, нубы!\n"
-"\t\tНадеюсь, вы не против, что я вас так называю, нубы. Нет ничего плохого в том, чтобы сказать вам, что мы все даже уважаем вашу смелость, раздражающую самую большую армию в этой части вселенной, которая окутывает целые сектора тенью кораблей флота.\n"
-"Но я и мои друзья здесь не стали МФК, потому что так легко сдались, как можно было бы подумать.\n"
+"\t\t\"Когда я услышал, что кто-то серьезно балуется с системой связи флота, "
+"я сразу понял, что должен познакомиться с этими дураками! И вот вы здесь, "
+"нубы!\n"
+"\t\tНадеюсь, вы не против, что я вас так называю, нубы. Нет ничего плохого в "
+"том, чтобы сказать вам, что мы все даже уважаем вашу смелость, раздражающую "
+"самую большую армию в этой части вселенной, которая окутывает целые сектора "
+"тенью кораблей флота.\n"
+"Но я и мои друзья здесь не стали МФК, потому что так легко сдались, как "
+"можно было бы подумать.\n"
 "\n"
-"\t\tТак что в знак дружеского соперничества позвольте мне показать вам, как это делается! Прямо перед тем, как мы вас убьем\"."
+"\t\tТак что в знак дружеского соперничества позвольте мне показать вам, как "
+"это делается! Прямо перед тем, как мы вас убьем\"."
 
 #: src-en/data/events_special_storage.xml.append:5398
 msgid ""
@@ -2937,11 +2970,16 @@ msgid ""
 msgstr "Значит, это вызов? Вперед!"
 
 #: src-en/data/events_special_storage.xml.append:5400
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/choice[1]/event/text"
 msgstr ""
-"Злобная улыбка на лице капитана противника становится еще шире. \"Ня-ха-ха, вот тебе небольшой подарок!\"\n"
-"\t\t\t\tВы сразу же замечаете сбои во многих системах своего корабля! Наверняка они используют боевой модуль! Вы, конечно, предполагали, что хакерский корабль не будет играть по правилам, но если вы этого не ожидали, то, возможно, пора подумать о быстром бегстве."
+"Злобная улыбка на лице капитана противника становится еще шире. \"Ня-ха-ха, "
+"вот тебе небольшой подарок!\"\n"
+"\t\t\t\tВы сразу же замечаете сбои во многих системах своего корабля! "
+"Наверняка они используют боевой модуль! Вы, конечно, предполагали, что "
+"хакерский корабль не будет играть по правилам, но если вы этого не ожидали, "
+"то, возможно, пора подумать о быстром бегстве."
 
 #: src-en/data/events_special_storage.xml.append:5415
 msgid ""
@@ -2964,6 +3002,7 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events_special_storage.xml.append:5441
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/choice[2]/text"
 msgstr ""
@@ -2971,6 +3010,7 @@ msgstr ""
 "доказательства."
 
 #: src-en/data/events_special_storage.xml.append:5453
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//ship[@name=\"SHIP_RK_HACK_FLEET_BOSS\"]/surrender/text"
 msgstr ""
@@ -2998,6 +3038,7 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events_special_storage.xml.append:5540
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//ship[@name=\"SHIP_RK_HACK_FLEET_BOSS\"]/destroyed/text"
 msgstr ""
@@ -3050,6 +3091,7 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:5620
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//ship[@name=\"SHIP_RK_HACK_FLEET_BOSS\"]/deadCrew/text"
 msgstr ""
@@ -3127,11 +3169,13 @@ msgid ""
 msgstr "Вы решаете ничего не делать и готовитесь к бою."
 
 #: src-en/data/events_special_storage.xml.append:5821
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_OFFENSE_DISABLER\"]/text"
 msgstr ""
 "Вы уверены, что хотите это сделать?\n"
-"\t[Отключает оружейный отсек врагов; они восстанавливают его работу все быстрее. Потребляет 2 | и 3 единицы энергии реактора]"
+"\t[Отключает оружейный отсек врагов; они восстанавливают его работу все "
+"быстрее. Потребляет 2 | и 3 единицы энергии реактора]"
 
 #: src-en/data/events_special_storage.xml.append:5825
 msgid ""
@@ -3194,11 +3238,13 @@ msgid ""
 msgstr "Перейти к битве!"
 
 #: src-en/data/events_special_storage.xml.append:6050
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/text"
 msgstr ""
 "Вы уверены, что хотите это сделать?\n"
-"\t[Ослабевает защиту противника через случайные промежутки времени. Потребляет 3 единицы энергии реактора]"
+"\t[Ослабевает защиту противника через случайные промежутки времени. "
+"Потребляет 3 единицы энергии реактора]"
 
 #: src-en/data/events_special_storage.xml.append:6054
 msgid ""
@@ -3686,18 +3732,21 @@ msgid ""
 msgstr "Технология РадиКал."
 
 #: src-en/data/events_special_storage.xml.append:6921
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[1]/text"
 msgstr "Удушонайзер Н.С.В.Ф.У. [Установлено]"
 
 #: src-en/data/events_special_storage.xml.append:6925
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[2]/text"
 msgstr "Удушонайзер Н.С.В.Ф.У. [Не установлено]"
 
 #: src-en/data/events_special_storage.xml.append:6929
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[3]/text"
@@ -3787,12 +3836,15 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:7016
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_CHOKING_IS_FINE\""
 " and @lvl=\"1\"]/text"
 msgstr ""
-"РК Бам \"Удушонайзер Н.С.В.Ф.У.\": ваш экипаж получает 0.75х урон от удушья.\n"
-"\t\tВ состоянии удушья они передвигаются, саботируют, ремонтируют и сражаются в 1.5х эффективнее. [УЖЕ УСТАНОВЛЕНО]"
+"РК Бам \"Удушонайзер Н.С.В.Ф.У.\": ваш экипаж получает 0.75х урон от "
+"удушья.\n"
+"\t\tВ состоянии удушья они передвигаются, саботируют, ремонтируют и "
+"сражаются в 1.5х эффективнее. [УЖЕ УСТАНОВЛЕНО]"
 
 #: src-en/data/events_special_storage.xml.append:7021
 msgid ""
@@ -3830,6 +3882,7 @@ msgid ""
 msgstr "Успокоитель разума. [Цена: 30~, 1|]"
 
 #: src-en/data/events_special_storage.xml.append:7046
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_IN_FIRE_CREWBOOSTS\""
 " and @lvl=\"1\"]/text"
@@ -3902,12 +3955,14 @@ msgid ""
 msgstr "Неважно."
 
 #: src-en/data/events_special_storage.xml.append:7152
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE\"]/text"
 msgstr ""
 "Вы собираетесь установить Удушонайзер Н.С.В.Ф.У.\n"
 "\t[Эффекты: ваш экипаж получает 0.75х урон от удушья.\n"
-"\t\tВ состоянии удушья они передвигаются, саботируют, ремонтируют и сражаются в 1.5х эффективнее]"
+"\t\tВ состоянии удушья они передвигаются, саботируют, ремонтируют и "
+"сражаются в 1.5х эффективнее]"
 
 #: src-en/data/events_special_storage.xml.append:7157
 msgid ""
@@ -4048,11 +4103,13 @@ msgid ""
 msgstr "Неважно."
 
 #: src-en/data/events_special_storage.xml.append:7287
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_IN_FIRE_CREWBOOSTS\"]/text"
 msgstr ""
 "Вы собираетесь установить Огненные повязки.\n"
-"\t[Эффекты: 2х скорость передвижения и скорость саботажа вашего экипажа в условиях пожар, а наносимый урон увеличен до 2х на обоих кораблях.]"
+"\t[Эффекты: 2х скорость передвижения и скорость саботажа вашего экипажа в "
+"условиях пожар, а наносимый урон увеличен до 2х на обоих кораблях.]"
 
 #: src-en/data/events_special_storage.xml.append:7291
 msgid ""
