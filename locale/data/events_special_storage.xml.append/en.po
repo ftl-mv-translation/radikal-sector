@@ -15,7 +15,7 @@ msgstr "(Shipvore Ram) Ram the enemy for repairs!"
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[2]/mod-"
 "append:choice/text"
-msgstr "(AERA Second Wind) Activate the emergency autorepair!"
+msgstr "(AERA Second Wind) Activate the emergency auto-repair!"
 
 #: src-en/data/events_special_storage.xml.append:411
 msgid ""
@@ -65,7 +65,9 @@ msgstr "(Oxygenizer) Create an atmosphere!"
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[8]/mod-"
 "append:choice/text"
-msgstr "(Charged Belts) Set the state of the augment. [Current mode: Off]"
+msgstr ""
+"(Charged Belts) Turn it On. [style[color:ff3377]][Can't be turned "
+"Off!][[/style]] [Current mode: Off]"
 
 #: src-en/data/events_special_storage.xml.append:500
 msgid ""
@@ -95,7 +97,9 @@ msgstr "(Flammabilizer) Set the state of the augment. [Current mode: Damage]"
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[13]/mod-"
 "append:choice/text"
-msgstr "(Persistence Shield) Regenerate your Supershields!"
+msgstr ""
+"(AERA Second Wind) Immediately repair for 1{. [style[color:ff3377]][Destroys"
+" the augment!][[/style]]"
 
 #: src-en/data/events_special_storage.xml.append:535
 msgid ""
@@ -119,13 +123,13 @@ msgstr "(Persistence Shield) Regenerate your Supershields!"
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[15]/mod-"
 "append:choice/text"
-msgstr "(Shipvore Ram) Reinforce to resist Full Power use."
+msgstr "(Scorched Earth series) Select what part of your ship to set on fire!"
 
 #: src-en/data/events_special_storage.xml.append:570
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[16]/mod-"
 "append:choice/text"
-msgstr "(Charged Belts) Scrap it."
+msgstr "(Shipvore Ram) See current bonuses and Combos"
 
 #: src-en/data/events_special_storage.xml.append:576
 msgid ""
@@ -223,7 +227,7 @@ msgstr "(Charged Belts) Scrap it."
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[19]/mod-"
 "append:choice/text"
-msgstr "(Blazing Earth) Upgrade to Erupting Earth."
+msgstr "(Lead Titans) Scrap it."
 
 #: src-en/data/events_special_storage.xml.append:698
 msgid ""
@@ -293,7 +297,7 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCED\"]/text"
 msgstr ""
 "(Reinforced Shipvore Ram) Yes, at full power!\n"
-"\t\t[You'll lose the reinforcement. Can't ram again until next jump. Needs 7 seconds.]"
+"\t\t[You'll [style[color:ff3377]]lose the reinforcement[[/style]]. [style[color:ff3377]]Can't ram again[[/style]] until you jump. Needs 7 seconds.]"
 
 #: src-en/data/events_special_storage.xml.append:811
 msgid ""
@@ -310,7 +314,7 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED\"]/text"
 msgstr ""
 "Yes, at full power!\n"
-"\t\t[The augment will disintegrate. Needs 7 seconds.]"
+"\t\t[The augment will [style[color:ff3377]]disintegrate[[/style]]. Needs 7 seconds.]"
 
 #: src-en/data/events_special_storage.xml.append:829
 msgid ""
@@ -396,7 +400,8 @@ msgstr "Fully ready to ram! Proceed?"
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCED_AT_FULL_POWER\"]/text"
 msgstr ""
-"(Full power) Give it your all! [You'll lose reinforcement on the augment.]"
+"(Full power) Give it your all! [You'll [style[color:ff3377]]lose "
+"reinforcement[[/style]] on the augment.]"
 
 #: src-en/data/events_special_storage.xml.append:945
 msgid ""
@@ -412,8 +417,9 @@ msgstr "Continue..."
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED_AT_FULL_POWER\"]/text"
 msgstr ""
-"(Full power) Give it your all! [Reinforce the augment at empty beacons so it"
-" doesn't disintegrate.]"
+"(Full power) Give it your all! [Reinforce the augment at empty beacons "
+"first, or use it right now but it will "
+"[style[color:ff3377]]disintegrate[[/style]].]"
 
 #: src-en/data/events_special_storage.xml.append:961
 msgid ""
@@ -428,7 +434,9 @@ msgstr "Continue..."
 #: src-en/data/events_special_storage.xml.append:975
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[@req=\"locked_shipvore_ram_full_power\"]/text"
-msgstr "(Full power) It's us or them! [Cannot ram again until you jump.]"
+msgstr ""
+"(Full power) It's us or them! [[style[color:ff3377]]Cannot ram "
+"again[[/style]] until you jump.]"
 
 #: src-en/data/events_special_storage.xml.append:978
 msgid ""
@@ -508,7 +516,7 @@ msgstr "...with this result on your own ship (80% chance good)."
 #: src-en/data/events_special_storage.xml.append:1153
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_6DMG_BREACH_1DMG_BREACH\"]/text"
-msgstr "You smash into the enemy ship at full power for a massive 6 damage..."
+msgstr "You smash into the enemy ship at full power for a massive 7 damage..."
 
 #: src-en/data/events_special_storage.xml.append:1158
 msgid ""
@@ -518,7 +526,7 @@ msgstr "...with this result on your own ship (80% chance good)."
 #: src-en/data/events_special_storage.xml.append:1163
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_5DMG_BREACH_2DMG_BREACH\"]/text"
-msgstr "You smash into the enemy ship at full power for a massive 6 damage..."
+msgstr "You smash into the enemy ship at full power for a massive 7 damage..."
 
 #: src-en/data/events_special_storage.xml.append:1168
 msgid ""
@@ -1413,7 +1421,7 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED\"]/text"
 msgstr ""
 "Yes, at full power!\n"
-"\t\t[The augment will disintegrate. Needs 7 seconds.]"
+"\t\t[The augment will [style[color:ff3377]]disintegrate[[/style]]. Needs 7 seconds.]"
 
 #: src-en/data/events_special_storage.xml.append:2277
 msgid ""
@@ -1430,7 +1438,7 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"LOCKED_DJMOD_COMBAT_SHIPVORE_RAM\"]/text"
 msgstr ""
 "Yes, at full power!\n"
-"\t\t[Can't ram again until next jump. Needs 7 seconds.]"
+"\t\t[[style[color:ff3377]]Cannot ram again[[/style]] until you jump. Needs 7 seconds.]"
 
 #: src-en/data/events_special_storage.xml.append:2295
 msgid ""
@@ -1559,7 +1567,8 @@ msgstr "No need. Return to the toggle menu."
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/text"
 msgstr ""
-"Are you sure you want to do this?\t[Set your own ship on fire! Usually to repel boarders.]\n"
+"Are you sure you want to do this?\n"
+"\t\t[Set your own ship on fire! Usually to repel boarders.]\n"
 "\t\tBurn them out of..."
 
 #: src-en/data/events_special_storage.xml.append:2455
@@ -1650,7 +1659,7 @@ msgstr "The Weapons room!"
 #: src-en/data/events_special_storage.xml.append:2528
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_ablative_armor\"]/text"
-msgstr "The Ablative Armor room!"
+msgstr "(LI) The Ablative Armor room!"
 
 #: src-en/data/events_special_storage.xml.append:2533
 msgid ""
@@ -1665,32 +1674,32 @@ msgstr "(DD) The Corruptor room!"
 #: src-en/data/events_special_storage.xml.append:2543
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_ecm_suite\"]/text"
-msgstr "The ECM Suite room!"
+msgstr "(LI) The ECM Suite room!"
 
 #: src-en/data/events_special_storage.xml.append:2547
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_fiber_liner\"]/text"
-msgstr "The Fiber Liner room!"
+msgstr "(LI) The Fiber Liner room!"
 
 #: src-en/data/events_special_storage.xml.append:2551
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_infusion_bay\"]/text"
-msgstr "The Infusion Bay!"
+msgstr "(LI) The Infusion Bay!"
 
 #: src-en/data/events_special_storage.xml.append:2555
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_shock_neutralizer\"]/text"
-msgstr "The Shock Neutralizer room!"
+msgstr "(LI) The Shock Neutralizer room!"
 
 #: src-en/data/events_special_storage.xml.append:2559
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_system_bracers\"]/text"
-msgstr "The System Bracers room!"
+msgstr "(LI) The System Bracers room!"
 
 #: src-en/data/events_special_storage.xml.append:2563
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_targeting_core\"]/text"
-msgstr "The Targeting Core room!"
+msgstr "(LI) The Targeting Core room!"
 
 #: src-en/data/events_special_storage.xml.append:2568
 msgid ""
@@ -1923,7 +1932,8 @@ msgstr "(Charged Belts) Anyone! Draw straws."
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"DJMOD_HAS_CREW_ARE_BOMBS_AND_CREW\"]/event/text"
 msgstr ""
-"The crew is consumed for the greater good, strongly activating the augment!"
+"The least lucky crew is consumed for the greater good, strongly activating "
+"the augment!"
 
 #: src-en/data/events_special_storage.xml.append:4136
 msgid ""
@@ -1944,7 +1954,8 @@ msgstr "(Martyr Vests) Anybody! Draw straws."
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"DJMOD_HAS_DEATH_VESTS_AND_CREW\"]/event/text"
 msgstr ""
-"The crew is consumed for the greater good, strongly activating the augment!"
+"The least lucky crew is consumed for the greater good, strongly activating "
+"the augment!"
 
 #: src-en/data/events_special_storage.xml.append:4155
 msgid ""
@@ -2054,7 +2065,7 @@ msgstr "A random RK Uptor"
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"rk_fireghost\"]/event/text"
 msgstr ""
-"The crew is consumed for the greater good, strongly activating the augment!"
+"The Uptor is consumed for the greater good, strongly activating the augment!"
 
 #: src-en/data/events_special_storage.xml.append:4260
 msgid ""
@@ -2253,8 +2264,8 @@ msgstr "A random zoltan monk"
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_monk\"]/event/text"
 msgstr ""
-"The crew is peacefully consumed for the greater good, activating the "
-"augment!"
+"The crew is peacefully consumed for the greater good, strongly activating "
+"the augment!"
 
 #: src-en/data/events_special_storage.xml.append:4441
 msgid ""
@@ -2479,7 +2490,7 @@ msgstr "Corona"
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"unique_corona\"]/event/text"
 msgstr ""
-"Devorak is gladly consumed for the greater good, strongly activating the "
+"Corona is gladly consumed for the greater good, strongly activating the "
 "augment!"
 
 #: src-en/data/events_special_storage.xml.append:4644
@@ -2501,7 +2512,7 @@ msgstr "Corona"
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"unique_corona_masked\"]/event/text"
 msgstr ""
-"Devorak is gladly consumed for the greater good, strongly activating the "
+"Corona is gladly consumed for the greater good, strongly activating the "
 "augment!"
 
 #: src-en/data/events_special_storage.xml.append:4663
@@ -2643,7 +2654,7 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/text"
 msgstr ""
 "Are you sure you want to do this?\n"
-"\t[Attempt special hacking to delay the fleet, cancelled by dealing more than 2 hull damage.]"
+"\t[Attempt special hacking to delay the Rebel fleet]"
 
 #: src-en/data/events_special_storage.xml.append:4999
 msgid ""
@@ -2704,7 +2715,7 @@ msgstr "Continue..."
 #: src-en/data/events_special_storage.xml.append:5053
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[5]/text"
-msgstr "You need a stronger Hacking system for more options."
+msgstr "You need a stronger Hacking (or ECM Suite) system for more options."
 
 #: src-en/data/events_special_storage.xml.append:5058
 msgid ""
@@ -2743,15 +2754,15 @@ msgstr "You decide not to do anything and prepare to fight."
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START\"]/text"
 msgstr ""
-"You start breaking into the enemy's comms. Now survive without damaging the "
-"enemy's hull too much..."
+"You start breaking into the enemy's comms. Now survive without defeating the"
+" enemy too fast..."
 
 #: src-en/data/events_special_storage.xml.append:5093
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START\"]/triggeredEvent/triggeredEventBox/tooltip"
 msgstr ""
 "The fleet delaying hack succeeds or fails in this amount of time. Cancelled "
-"if you deal 3 hull damage."
+"if you defeat the enemy."
 
 #: src-en/data/events_special_storage.xml.append:5103
 msgid ""
@@ -2772,15 +2783,15 @@ msgstr "Let's see if it worked..."
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS1\"]/text"
 msgstr ""
-"You start breaking into the enemy's comms. Now survive without damaging the "
-"enemy's hull too much..."
+"You start breaking into the enemy's comms. Now survive without defeating the"
+" enemy too fast..."
 
 #: src-en/data/events_special_storage.xml.append:5158
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS1\"]/triggeredEvent/triggeredEventBox/tooltip"
 msgstr ""
 "The fleet delaying hack succeeds or fails in this amount of time. Cancelled "
-"if you deal 3 hull damage."
+"if you defeat the enemy."
 
 #: src-en/data/events_special_storage.xml.append:5168
 msgid ""
@@ -2801,15 +2812,15 @@ msgstr "Let's see if it worked..."
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS2\"]/text"
 msgstr ""
-"You start breaking into the enemy's comms. Now survive without damaging the "
-"enemy's hull too much..."
+"You start breaking into the enemy's comms. Now survive without defeating the"
+" enemy too fast..."
 
 #: src-en/data/events_special_storage.xml.append:5224
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS2\"]/triggeredEvent/triggeredEventBox/tooltip"
 msgstr ""
 "The fleet delaying hack succeeds or fails in this amount of time. Cancelled "
-"if you deal 3 hull damage."
+"if you defeat the enemy."
 
 #: src-en/data/events_special_storage.xml.append:5234
 msgid ""
@@ -2872,7 +2883,7 @@ msgstr "Continue to the fight!"
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_OUTCOME_BOSS\"]/text"
 msgstr ""
-"This hack should have, but didn't delay the fleet... \n"
+"This hack should have delayed the fleet a lot, but the effect was weaker than expected...\n"
 "\t\t\n"
 "\t\tSomeone interfered, and sent us strange coordinates with this attached: \"N00bs!!1!\"."
 
@@ -2894,7 +2905,7 @@ msgid ""
 msgstr ""
 "A very mean-looking elite rebel ship is here. Its captain is staring you down, with just a hint of a spark in the eye.\n"
 "\n"
-"\t\t\"When i heard someone was playing games big time with the fleet's comms, I knew i had to meet the fools! And here you are, noobs!\n"
+"\t\t\"When I heard someone was playing games big time with the fleet's comms, I knew I had to meet the fools! And here you are, noobs!\n"
 "\t\tI hope you don't mind that I'm calling you that, noobs. There's no harm in telling you that we all even respect the gumption, pissing off the largest army this side of the universe, that blankets entire sectors in the shadow of fleet ships.\n"
 "\t\tBut me and my friends here didn't become MFKs by going all soft for that much, as one would guess.\n"
 "\n"
@@ -2910,7 +2921,8 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/choice[1]/event/text"
 msgstr ""
 "The vicious smile on the enemy captain's face widens. \"Nyahaha, Here's a taste!\"\n"
-"\t\t\t\tYou immediately notice malfunctions in many of your ship's systems! They must be using a combat augment! You probably expected that a hacker ship wouldn't play fair, but if you didn't, it might be time to consider a quick escape."
+"\n"
+"\t\t\t\tYou immediately notice malfunctions in many of your ship's systems! They must be using a combat augment! You probably expected that a hacker ship wouldn't play fair, but if you didn't, it's high time to consider a quick escape before something [style[color:ff3377]]worse[[/style]] happens."
 
 #: src-en/data/events_special_storage.xml.append:5415
 msgid ""
@@ -2936,15 +2948,16 @@ msgstr "Continue..."
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/choice[2]/text"
 msgstr ""
-"We have learned our lesson, we beg you to let us go! Here's fuel for the "
-"rebellion as proof."
+"We have learned our lesson, we beg you to let us go! Here's tribute for you "
+"and the Rebellion as proof."
 
 #: src-en/data/events_special_storage.xml.append:5453
 msgid ""
 "data/events_special_storage.xml.append$//ship[@name=\"SHIP_RK_HACK_FLEET_BOSS\"]/surrender/text"
 msgstr ""
 "\"Playing tough huh! How do you like this?\"\n"
-"\t\t\tStronger malfunctions affect your ship's systems!"
+"\n"
+"\t\t\tStronger malfunctions affect even more of your ship's systems!"
 
 #: src-en/data/events_special_storage.xml.append:5492
 msgid ""
@@ -2970,8 +2983,8 @@ msgstr "Continue..."
 msgid ""
 "data/events_special_storage.xml.append$//ship[@name=\"SHIP_RK_HACK_FLEET_BOSS\"]/destroyed/text"
 msgstr ""
-"The hacker MFK breaks apart and you quickly salvage what you can. You find a"
-" very peculiar weapon!"
+"The MFK Hacker breaks apart and you quickly salvage a great amount of "
+"things!"
 
 #: src-en/data/events_special_storage.xml.append:5578
 msgid ""
@@ -3026,8 +3039,8 @@ msgstr "Nothing"
 msgid ""
 "data/events_special_storage.xml.append$//ship[@name=\"SHIP_RK_HACK_FLEET_BOSS\"]/deadCrew/text"
 msgstr ""
-"With the crew dead you quickly salvage what you can from the hacker MFK "
-"ship. You find a very peculiar weapon!"
+"With the crew dead you quickly salvage a great amount of things from the MFK"
+" Hacker ship!"
 
 #: src-en/data/events_special_storage.xml.append:5658
 msgid ""
@@ -3106,7 +3119,7 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_OFFENSE_DISABLER\"]/text"
 msgstr ""
 "Are you sure you want to do this?\n"
-"\t[Disables enemy offense, they get it back increasingly quickly. Uses 2 | and 3 reactor power]"
+"\t[Disables enemy offensive systems, then the effect weakens increasingly quickly. Uses 2 | and 3 reactor power]"
 
 #: src-en/data/events_special_storage.xml.append:5825
 msgid ""
@@ -3173,7 +3186,7 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/text"
 msgstr ""
 "Are you sure you want to do this?\n"
-"\t[Reduces enemy defenses at random intervals. Uses 3 reactor power]"
+"\t[Reduces both enemy Engines and Shields every 3 to 7 seconds (at random). Uses 3 reactor power]"
 
 #: src-en/data/events_special_storage.xml.append:6054
 msgid ""
@@ -3665,19 +3678,19 @@ msgstr "RadiKal tech."
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[1]/text"
-msgstr "Choking F.I.N.E. [Installed]"
+msgstr "Calibrator [X2]"
 
 #: src-en/data/events_special_storage.xml.append:6925
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[2]/text"
-msgstr "Choking F.I.N.E. [Not Installed]"
+msgstr "Calibrator [X1]"
 
 #: src-en/data/events_special_storage.xml.append:6929
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[3]/text"
-msgstr "Demicloners [Installed]"
+msgstr "Calibrator [Not Installed]"
 
 #: src-en/data/events_special_storage.xml.append:6934
 msgid ""
@@ -3770,7 +3783,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "RK Bam \"Choking F.I.N.E.\": Your crew take 0.75x suffocation damage.\n"
-"\t\tWhile suffocating, they move, sabotage, repair and fight 1.5x better. [ALREADY INSTALLED]"
+"\t\tWhile suffocating, they move, sabotage, repair and fight 1.5x better. Suffocation immune can't suffocate. [ALREADY INSTALLED]"
 
 #: src-en/data/events_special_storage.xml.append:7021
 msgid ""
@@ -3812,8 +3825,9 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_IN_FIRE_CREWBOOSTS\""
 " and @lvl=\"1\"]/text"
 msgstr ""
-"RK Scorch \"Hellion Wraps\": In fire, your crew have 2x movement and "
-"sabotage speed, and deal 2x damage, on both ships. [ALREADY INSTALLED]"
+"RK Scorch \"Hellion Wraps\": In fire, your crew have 1.75x movement and "
+"sabotage speed, and deal 1.75x combat and door damage, on both ships. "
+"[ALREADY INSTALLED]"
 
 #: src-en/data/events_special_storage.xml.append:7050
 msgid ""
@@ -3861,7 +3875,7 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CALIBRATOR\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
 " and @lvl=\"1\"]/text"
-msgstr "Perform the upgrade. [Cost: 30~, 1|]"
+msgstr "Perform the upgrade. [Cost: 40~]"
 
 #: src-en/data/events_special_storage.xml.append:7129
 msgid ""
@@ -3886,7 +3900,7 @@ msgid ""
 msgstr ""
 "You are about to install the Choking F.I.N.E. upgrade.\n"
 "\t[Effects: Your crew take 0.75x suffocation damage.\n"
-"\t\tWhile suffocating, they move, sabotage, repair and fight 1.5x better.]"
+"\t\tWhile suffocating, they move, sabotage, repair and fight 1.5x better. Suffocation immune can't suffocate.]"
 
 #: src-en/data/events_special_storage.xml.append:7157
 msgid ""
@@ -4031,7 +4045,7 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_IN_FIRE_CREWBOOSTS\"]/text"
 msgstr ""
 "You are about to install the Hellion Wraps upgrade.\n"
-"\t[Effects: In fire, your crew have 2x movement and sabotage speed, and deal 2x damage, on both ships.]"
+"\t[Effects: In fire, your crew have 1.75x movement and sabotage speed, and deal 1.75x combat and door damage, on both ships.]"
 
 #: src-en/data/events_special_storage.xml.append:7291
 msgid ""

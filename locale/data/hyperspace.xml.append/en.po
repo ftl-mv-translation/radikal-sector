@@ -156,43 +156,44 @@ msgid ""
 "append:shipIcon/tooltip"
 msgstr ""
 "PERSISTENCE SHIELD:\n"
-"\t\t\tThis enemy is protected by an Energy Shield. Hacking, Mind Control, Teleportation, Boarding Drones, and all hull-damaging or ion weapons will all be blocked until disabled. This specific shield also increased shield recharge rate, and the enemy is capable of regenerating their Energy Shield once!"
+"\t\t\tThis enemy is protected by an Energy Shield. Hacking, Mind Control, Teleportation, Boarding Drones, and all hull-damaging or ion weapons will all be blocked until disabled.\n"
+"\t\t\tThis specific shield also increased shield recharge rate, and the enemy is capable of regenerating their Energy Shield once!"
 
 #: src-en/data/hyperspace.xml.append:734
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[4]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"CHOKING F.I.N.E.:\n"
-"\t\t\tThis ship's crew take 0.75x suffocation damage.\n"
-"\t\t\tWhile suffocating, they move, sabotage, repair and fight 1.5x better."
+"CALIBRATOR:\n"
+"\t\t\tThis ship's weapons have +10% accuracy and 4% increased fire rate."
 
 #: src-en/data/hyperspace.xml.append:741
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[5]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"DREAD DECK:\n"
-"\t\t\tEnemies invading this ship take 1.5x damage from everything.\n"
-"\t\t\tThis ship's crew have 2x cloning speed and healing from most sources. They lose no skills from cloning.\n"
-"\t\t\tAll crew in the same room as any of this ship's crew cannot be cloned."
+"CHOKING F.I.N.E.:\n"
+"\t\t\tThis ship's crew take 0.75x suffocation damage.\n"
+"\t\t\tWhile suffocating, they move, sabotage, repair and fight 1.5x better. Suffocation immune can't suffocate."
 
 #: src-en/data/hyperspace.xml.append:750
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[6]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"PUNK HARMONY:\n"
-"\t\t\tThis ship's Engis are more resistant and immune to Mind Control.\n"
-"\t\t\tThey're also exponentially better at repairs, faster and stronger for each active level of Hacking and Mind Control on their ship!"
+"ARROGANCE SHIELD:\n"
+"\t\t\tThis enemy is protected by an Energy Shield. Hacking, Mind Control, Teleportation, Boarding Drones, and all hull-damaging or ion weapons will all be blocked until disabled.\n"
+"\t\t\tThis specific shield also makes shield recharge and  weapon charge worse, but heals friendly drones and damages enemy drones."
 
 #: src-en/data/hyperspace.xml.append:758
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[7]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"DEFENSE KITS:\n"
-"\t\t\tOn their ship, this ship's crew resist combat damage, repair and move faster, and heal over time if they are idle (and not manning)."
+"DREAD DECK:\n"
+"\t\t\tEnemies invading this ship take 1.7x damage from everything.\n"
+"\t\t\tThis ship's crew have 2.5x healing from most sources, 2x cloning speed, and lose no skills from cloning.\n"
+"\t\t\t[style[color:ff3377]]WARNING: All crew in the same room as any of this ship's crew has 0.5x healing (does not stack) and cannot be cloned![[/style]] [This debuff is purple smoke]"
 
 #: src-en/data/hyperspace.xml.append:768
 msgid ""
@@ -249,16 +250,16 @@ msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[14]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"FLAMMABILIZER-I:\n"
-"\t\t\tYour crew's fire immunity, resistance or direct healing from fire (not extinguishing) are removed! Your crew also move slower in fire, even more for each active level of Life Support (O2) on the enemy ship!"
+"BLAZING EARTH:\n"
+"\t\t\tThis ship's crew resists fire, is boosted in it and generates O2 in fire, and heals while extinguishing."
 
 #: src-en/data/hyperspace.xml.append:821
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[15]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"FLAMMABILIZER-D:\n"
-"\t\t\tYour crew takes more fire damage and move slower in fire. These effects are stronger for each active level of Life Support (O2) on the enemy ship!"
+"ERUPTING EARTH:\n"
+"\t\t\tThis ship's crew resists fire, is boosted in it and generates much O2 in fire, and heals while extinguishing."
 
 #: src-en/data/hyperspace.xml.append:828
 msgid ""
@@ -266,7 +267,7 @@ msgid ""
 "append:shipIcon/tooltip"
 msgstr ""
 "FLAMMABILIZER-I:\n"
-"\t\t\tYour crew's fire immunity, resistance or direct healing from fire (not extinguishing) are removed! Your crew also move slower in fire, even more for each active level of Life Support (O2) on the enemy ship!"
+"\t\t\tYour crew's fire immunity, resistance or direct healing from fire (not extinguishing) are removed! Your crew also move slower in fire, even more for each active level of Life Support (O2) on this ship!"
 
 #: src-en/data/hyperspace.xml.append:835
 msgid ""
@@ -274,7 +275,7 @@ msgid ""
 "append:shipIcon/tooltip"
 msgstr ""
 "FLAMMABILIZER-D:\n"
-"\t\t\tYour crew takes more fire damage and move slower in fire. These effects are stronger for each active level of Life Support (O2) on the enemy ship!"
+"\t\t\tYour crew takes more fire damage and move slower in fire. These effects are stronger for each active level of Life Support (O2) on this ship!"
 
 #: src-en/data/hyperspace.xml.append:842
 msgid ""
@@ -282,7 +283,7 @@ msgid ""
 "append:shipIcon/tooltip"
 msgstr ""
 "WEAPONS ON FIRE:\n"
-"\t\t\tThe fire rate of this ship's Weapons and Artilleries is improved by 25%. It gain an extra 1% fire rate every time they shoot a projectile or beam (up to 10%), but at the same time there's a 10% chance to light a fire in the Weapon Control and any Artillery rooms.\n"
+"\t\t\tThe fire rate of this ship's Weapons and Artilleries is improved by 25%. It gains an extra 1% fire rate every time they shoot a projectile or beam (up to 10%), but at the same time there's a 10% chance to light a fire in the Weapon Control and any Artillery rooms.\n"
 "\t\t\tCOMBO: Scorch Preigniter increases max extra bonus to 20%."
 
 #: src-en/data/hyperspace.xml.append:1319
@@ -424,7 +425,7 @@ msgid ""
 "data/hyperspace.xml.append$//mod-"
 "append:race[@name=\"rk_fireghost\"]/powerEffect/tooltip"
 msgstr ""
-"[COOLDOWN:9s -20HP]\n"
+"[COOLDOWN:10s -20HP]\n"
 "\t\t\t\tStarts a fire in a random room on both ships."
 
 #: src-en/data/hyperspace.xml.append:2185
@@ -458,7 +459,7 @@ msgstr ""
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[1]/category[1]/customTitle"
-msgstr "RADIKAL WEAPONS"
+msgstr "BPS WEAPON"
 
 #: src-en/data/hyperspace.xml.append:3182
 msgid ""
@@ -470,7 +471,7 @@ msgstr "RADIKAL WEAPONS"
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[1]/category[3]/customTitle"
-msgstr "RADIKALS"
+msgstr "BPS AUGMENTS"
 
 #: src-en/data/hyperspace.xml.append:3213
 msgid ""
@@ -656,7 +657,7 @@ msgstr "RK PUNK AUGMENTS"
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[4]/category[10]/customTitle"
-msgstr "TOP RK PUNK AUGMENTS"
+msgstr "SET PUNK AUGMENTS"
 
 #: src-en/data/hyperspace.xml.append:3987
 msgid ""
@@ -1359,7 +1360,7 @@ msgstr "RadiKal Events"
 #: src-en/data/hyperspace.xml.append:9292
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_RK_EVENT_HIDEOUT\"]/name"
-msgstr "Radikal Hideouts"
+msgstr "RadiKal Hideout"
 
 #: src-en/data/hyperspace.xml.append:9293
 msgid ""
