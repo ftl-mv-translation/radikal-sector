@@ -1,27 +1,18 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-05-28 15:03+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
-"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
-"projects/radikal-sector/dataevents_special_guardsxmlappend/zh_Hans/>\n"
-"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events_special_guards.xml.append:6
 #, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//textList[@name=\"TEXT_START_RADIKAL\"]/text[1]"
 msgstr ""
-"你已抵达拉迪卡尔星区，来自各地的专家们都会来到这里，寻找高效的非法规格装备"
-"。\n"
+"你已抵达拉迪卡尔星区，来自各地的专家们都会来到这里，寻找高效的非法规格装备。\n"
 "\t\t\n"
-"\t\t尽管个别叛军或小团体确实与拉迪卡尔有合作，但叛军舰队要到达这里会非常困难"
-"，这给了你一些时间，为活着离开这里做好准备。\n"
+"\t\t尽管个别叛军或小团体确实与拉迪卡尔有合作，但叛军舰队要到达这里会非常困难，这给了你一些时间，为活着离开这里做好准备。\n"
 "\t\t而且你确实应该做好准备。"
 
 #: src-en/data/events_special_guards.xml.append:11
@@ -29,11 +20,9 @@ msgstr ""
 msgid ""
 "data/events_special_guards.xml.append$//textList[@name=\"TEXT_START_RADIKAL\"]/text[2]"
 msgstr ""
-"你已抵达拉迪卡尔星区。只要准备好做出牺牲，就能在这里找到威力巨大但充满危险的"
-"装备。\n"
+"你已抵达拉迪卡尔星区。只要准备好做出牺牲，就能在这里找到威力巨大但充满危险的装备。\n"
 "\t\t\n"
-"\t\t尽管个别叛军或小团体确实与拉迪卡尔有合作，但叛军舰队要到达这里会非常困难"
-"，这给了你一些时间，为活着离开这里做好准备。\n"
+"\t\t尽管个别叛军或小团体确实与拉迪卡尔有合作，但叛军舰队要到达这里会非常困难，这给了你一些时间，为活着离开这里做好准备。\n"
 "\t\t而且你确实应该做好准备。"
 
 #: src-en/data/events_special_guards.xml.append:16
@@ -41,13 +30,13 @@ msgid ""
 "data/events_special_guards.xml.append$//textList[@name=\"TEXT_START_RADIKAL\"]/text[3]"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:36
+#: src-en/data/events_special_guards.xml.append:39
 #, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"START_RADIKAL\"]/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_guards.xml.append:43
+#: src-en/data/events_special_guards.xml.append:46
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/text"
 msgstr ""
@@ -55,67 +44,83 @@ msgstr ""
 "\t\t\n"
 "\t\t守卫正在呼叫你。"
 
-#: src-en/data/events_special_guards.xml.append:47
+#: src-en/data/events_special_guards.xml.append:50
 #, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/text"
 msgstr "回应呼叫。"
 
-#: src-en/data/events_special_guards.xml.append:49
+#: src-en/data/events_special_guards.xml.append:52
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/text"
 msgstr ""
 "“嘿，那边。是新来的还是常客？”守卫漫不经心地等着你的回答。\n"
 "\t\t\t\t这似乎是在问你对这个星区的熟悉程度。"
 
-#: src-en/data/events_special_guards.xml.append:54
+#: src-en/data/events_special_guards.xml.append:57
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
-" and not(@lvl)]/text"
-msgstr "（任何一件 RK 装备）常客。给我安排上！"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[1]/text"
+msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:56
+#: src-en/data/events_special_guards.xml.append:59
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
-" and not(@lvl)]/event/text"
-msgstr "“好装备！既然你已经是我们中的一员了，这是所有最新的坐标，供你多元化选择。”"
-
-#: src-en/data/events_special_guards.xml.append:58
-#, fuzzy
-msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
-" and not(@lvl)]/event/choice/text"
-msgstr "继续。"
-
-#: src-en/data/events_special_guards.xml.append:60
-msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
-" and not(@lvl)]/event/choice/event/text"
-msgstr "“这是拉迪卡尔·巴姆实验室的当前位置。如果你有爆炸物，或者需要更多，你知道他们会很高兴见到你的。”"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[1]/event/text"
+msgstr ""
 
 #: src-en/data/events_special_guards.xml.append:68
 #, fuzzy
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[1]/event/choice/text"
+msgstr "继续。"
+
+#: src-en/data/events_special_guards.xml.append:75
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/text"
+msgstr "（任何一件 RK 装备）常客。给我安排上！"
+
+#: src-en/data/events_special_guards.xml.append:77
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/event/text"
+msgstr "“好装备！既然你已经是我们中的一员了，这是所有最新的坐标，供你多元化选择。”"
+
+#: src-en/data/events_special_guards.xml.append:79
+#, fuzzy
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/event/choice/text"
+msgstr "继续。"
+
+#: src-en/data/events_special_guards.xml.append:81
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/event/choice/event/text"
+msgstr ""
+
+#: src-en/data/events_special_guards.xml.append:89
+#, fuzzy
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_guards.xml.append:70
+#: src-en/data/events_special_guards.xml.append:91
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/event/text"
-msgstr "“朋克一如既往地狡猾，他们在这个信标处扎了营。满足你所有花哨的需求。”"
+msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:78
+#: src-en/data/events_special_guards.xml.append:99
 #, fuzzy
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_guards.xml.append:80
+#: src-en/data/events_special_guards.xml.append:101
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/event/choice/event/text"
 msgstr ""
 "“……这里是灼烧实验室。他们需要补给。你懂的，就是那种特别烧的补给……\n"
@@ -124,139 +129,139 @@ msgstr ""
 "\t\t\t\t\t\t\t\t\t\t\t\t如果你猜一下，所谓的“补给”可能指的是活物，这意味着各种各样的麻烦。\n"
 "\t\t\t\t\t\t\t\t\t\t\t\t你会在路上决定怎么做，这里除了做些维护外，没什么别的事可做了。"
 
-#: src-en/data/events_special_guards.xml.append:93
+#: src-en/data/events_special_guards.xml.append:114
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/event/choice/event/choice[1]/text"
 msgstr "检查仓库。"
 
-#: src-en/data/events_special_guards.xml.append:97
+#: src-en/data/events_special_guards.xml.append:118
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/event/choice/event/choice[2]/text"
 msgstr "跳过。"
 
-#: src-en/data/events_special_guards.xml.append:110
+#: src-en/data/events_special_guards.xml.append:131
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and @lvl=\"0\"]/text"
 msgstr "你没有任何拉迪卡尔装备。你驾驶的也不是拉迪卡尔飞船。"
 
-#: src-en/data/events_special_guards.xml.append:115
+#: src-en/data/events_special_guards.xml.append:136
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/text"
 msgstr "新来的。"
 
-#: src-en/data/events_special_guards.xml.append:117
+#: src-en/data/events_special_guards.xml.append:138
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/text"
 msgstr "“啊，难怪。你的飞船看起来真该好好升级一下了。你到底知不知道来这里要找什么？”"
 
-#: src-en/data/events_special_guards.xml.append:119
+#: src-en/data/events_special_guards.xml.append:140
 #, fuzzy
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/text"
 msgstr "是。"
 
-#: src-en/data/events_special_guards.xml.append:121
+#: src-en/data/events_special_guards.xml.append:142
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/text"
 msgstr ""
 "“好吧，你想去哪儿？”守卫在通讯器上调出了一份简短的目的地列表，上面只有代号，所有通常的详细信息都缺失了。你开始琢磨，自己刚到的这个地方到底有多见不得光。"
 
-#: src-en/data/events_special_guards.xml.append:123
+#: src-en/data/events_special_guards.xml.append:144
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[1]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[1]/text"
 msgstr "选择“巴姆”。"
 
-#: src-en/data/events_special_guards.xml.append:125
+#: src-en/data/events_special_guards.xml.append:146
 #, fuzzy
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[1]/event/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[1]/event/text"
 msgstr "“经典之选，总是那么可靠。明智的选择。”守卫把坐标传给了你，然后在你还没来得及回答之前就迅速切断了通讯。"
 
-#: src-en/data/events_special_guards.xml.append:133
+#: src-en/data/events_special_guards.xml.append:154
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[1]/event/choice[1]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[1]/event/choice[1]/text"
 msgstr "检查仓库。"
 
-#: src-en/data/events_special_guards.xml.append:137
+#: src-en/data/events_special_guards.xml.append:158
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[1]/event/choice[2]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[1]/event/choice[2]/text"
 msgstr "跳过。"
 
-#: src-en/data/events_special_guards.xml.append:143
+#: src-en/data/events_special_guards.xml.append:164
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[2]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[2]/text"
 msgstr "选择“朋克”。"
 
-#: src-en/data/events_special_guards.xml.append:145
+#: src-en/data/events_special_guards.xml.append:166
 #, fuzzy
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[2]/event/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[2]/event/text"
 msgstr "“选得真及时，我听说他们那搞到了一些新货。”守卫把坐标传给了你，然后在你还没来得及回答之前就迅速切断了通讯。"
 
-#: src-en/data/events_special_guards.xml.append:151
+#: src-en/data/events_special_guards.xml.append:172
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[2]/event/choice[1]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[2]/event/choice[1]/text"
 msgstr "检查仓库。"
 
-#: src-en/data/events_special_guards.xml.append:155
+#: src-en/data/events_special_guards.xml.append:176
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[2]/event/choice[2]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[2]/event/choice[2]/text"
 msgstr "跳过。"
 
-#: src-en/data/events_special_guards.xml.append:161
+#: src-en/data/events_special_guards.xml.append:182
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[3]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[3]/text"
 msgstr "选择“灼烧”。"
 
-#: src-en/data/events_special_guards.xml.append:163
+#: src-en/data/events_special_guards.xml.append:184
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[3]/event/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[3]/event/text"
 msgstr "“看来是在找热门货啊。”守卫把坐标传给了你，然后在你还没来得及回答之前就迅速切断了通讯。"
 
-#: src-en/data/events_special_guards.xml.append:169
+#: src-en/data/events_special_guards.xml.append:190
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[3]/event/choice[1]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[3]/event/choice[1]/text"
 msgstr "检查仓库。"
 
-#: src-en/data/events_special_guards.xml.append:173
+#: src-en/data/events_special_guards.xml.append:194
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[3]/event/choice[2]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[3]/event/choice[2]/text"
 msgstr "跳过。"
 
-#: src-en/data/events_special_guards.xml.append:181
+#: src-en/data/events_special_guards.xml.append:202
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[2]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[2]/text"
 msgstr "当然不是。"
 
-#: src-en/data/events_special_guards.xml.append:183
+#: src-en/data/events_special_guards.xml.append:204
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[2]/event/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[2]/event/text"
 msgstr ""
 "守卫皱了皱眉头。“不知道你们这些人是怎么到这儿的，但这里不是旅游景点。你们最好别绕路，直接往出口走，这样就不会有麻烦。”接着你听到守卫嘟囔着什么“需要再次加强安保”的话，然后通讯就断了，你意识到他们已经忙着处理下一批到访者了。\n"
 "\t\t\t\t\t\t\t\n"
 "\t\t\t\t\t\t\t你继续前行，满心困惑，还有一丝担忧。"
 
-#: src-en/data/events_special_guards.xml.append:187
+#: src-en/data/events_special_guards.xml.append:208
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[2]/event/choice[1]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[2]/event/choice[1]/text"
 msgstr "检查仓库。"
 
-#: src-en/data/events_special_guards.xml.append:191
+#: src-en/data/events_special_guards.xml.append:212
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[2]/event/choice[2]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[2]/event/choice[2]/text"
 msgstr "跳过。"
 
-#: src-en/data/events_special_guards.xml.append:200
+#: src-en/data/events_special_guards.xml.append:221
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[4]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[5]/text"
 msgstr "这儿就是海盗的老巢，对吧？我们来做点买卖。*Spit*"
 
-#: src-en/data/events_special_guards.xml.append:202
+#: src-en/data/events_special_guards.xml.append:223
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[4]/event/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[5]/event/text"
 msgstr ""
 "“哦。”守卫似乎有点恼火，要么是厌倦了每次都费劲解释，要么是对你过火的态度不以为然。“你稍微有点搞错了，海盗勾当不是我们的重点，追求不受束缚的进步才更像那么回事。但没错，你可以在这里进行别人口中的非法交易。这对获取我们需要的那种东西非常有用。\n"
 "\t\t\t\t\t\t我会把你的请求告知所有相关方，而你……务必要带够废料。我们喜欢避免不必要的麻烦。”\n"
@@ -264,138 +269,138 @@ msgstr ""
 "\t\t\t\t\t\t\n"
 "\t\t\t\t\t\t他们把坐标发给你，然后放你过去了。尽管这个星区行事隐秘，但你心里已经清楚，这将会对你的整体声誉产生负面影响。不过，如果你能自己从海盗那里搞到所需的一切，那倒也无关紧要。"
 
-#: src-en/data/events_special_guards.xml.append:214
+#: src-en/data/events_special_guards.xml.append:235
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[4]/event/choice/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[5]/event/choice/text"
 msgstr "海盗行径挺带劲的。值了。"
 
-#: src-en/data/events_special_guards.xml.append:222
+#: src-en/data/events_special_guards.xml.append:243
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/text"
 msgstr "无视他们，试图飞越过去。"
 
-#: src-en/data/events_special_guards.xml.append:224
+#: src-en/data/events_special_guards.xml.append:245
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/event/text"
 msgstr ""
 "他们的武器立刻进入战备状态，显然早料到会有这种情况。也许说几句话就能避免冲突，但他们已经呼叫了增援。\n"
 "\t\t\t令人惊讶的是，他们的飞船氧气系统似乎起火了……"
 
-#: src-en/data/events_special_guards.xml.append:234
+#: src-en/data/events_special_guards.xml.append:255
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/event/choice/text"
 msgstr "哈！真是个白痴——"
 
-#: src-en/data/events_special_guards.xml.append:236
+#: src-en/data/events_special_guards.xml.append:257
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/event/choice/event/text"
 msgstr ""
 "突然间，你听到飞船里传来奇怪的传送声，但没有探测到登舰者，只有热源信号……你的飞船也起火了！而且火势比他们的还要猛烈不少。\n"
 "\t\t\t\t\t如果你能挺过这一劫，或许就能弄明白到底发生了什么，以及如何利用这种情况。"
 
-#: src-en/data/events_special_guards.xml.append:245
+#: src-en/data/events_special_guards.xml.append:266
 #, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/event/choice/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_guards.xml.append:269
+#: src-en/data/events_special_guards.xml.append:290
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DESTROY\"]/text"
 msgstr "你击败了拉迪卡尔守卫。他们货物里的东西肯定是被毁了，但你至少还能从飞船上打捞到一些补给品。"
 
-#: src-en/data/events_special_guards.xml.append:272
+#: src-en/data/events_special_guards.xml.append:293
 #, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DESTROY\"]/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_guards.xml.append:277
+#: src-en/data/events_special_guards.xml.append:298
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/text"
 msgstr "你击败了拉迪卡尔守卫。没有船员的阻拦，你可以去调查他们的货物。你找到了一些战利品带回飞船，然后继续去拆解他们的船体。"
 
-#: src-en/data/events_special_guards.xml.append:283
+#: src-en/data/events_special_guards.xml.append:304
 #, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_guards.xml.append:285
+#: src-en/data/events_special_guards.xml.append:306
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/choice/event/text"
 msgstr "你找到了备用的拉迪卡尔装备！"
 
-#: src-en/data/events_special_guards.xml.append:288
+#: src-en/data/events_special_guards.xml.append:309
 #, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/choice/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_guards.xml.append:310
+#: src-en/data/events_special_guards.xml.append:331
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_FOLLOWUP\"]/text"
 msgstr "杀死拉迪卡尔守卫无疑会促使他们派出增援来追捕你。在探索这个星区时，务必小心行事。"
 
-#: src-en/data/events_special_guards.xml.append:318
+#: src-en/data/events_special_guards.xml.append:339
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_FOLLOWUP\"]/choice[1]/text"
 msgstr "星舰管理。"
 
-#: src-en/data/events_special_guards.xml.append:322
+#: src-en/data/events_special_guards.xml.append:343
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_FOLLOWUP\"]/choice[2]/text"
 msgstr "跳过。"
 
-#: src-en/data/events_special_guards.xml.append:331
+#: src-en/data/events_special_guards.xml.append:352
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/beaconType/unvisitedTooltip"
 msgstr "未探索的信标。"
 
-#: src-en/data/events_special_guards.xml.append:332
+#: src-en/data/events_special_guards.xml.append:353
 #, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/beaconType/visitedTooltip"
 msgstr "已探索的信标，没什么值得注意。"
 
-#: src-en/data/events_special_guards.xml.append:333
+#: src-en/data/events_special_guards.xml.append:354
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/beaconType/undiscoveredTooltip"
 msgstr "未探索的信标。"
 
-#: src-en/data/events_special_guards.xml.append:335
+#: src-en/data/events_special_guards.xml.append:356
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/text"
 msgstr "“总得有人来当这个守卫。他们只是在尽职尽责，也知道其中的风险。但你也一样！”拉迪卡尔飞船发起了攻击！"
 
-#: src-en/data/events_special_guards.xml.append:339
+#: src-en/data/events_special_guards.xml.append:360
 #, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_guards.xml.append:347
+#: src-en/data/events_special_guards.xml.append:368
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/beaconType/unvisitedTooltip"
 msgstr "未探索的信标。"
 
-#: src-en/data/events_special_guards.xml.append:348
+#: src-en/data/events_special_guards.xml.append:369
 #, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/beaconType/visitedTooltip"
 msgstr "已探索的信标，没什么值得注意。"
 
-#: src-en/data/events_special_guards.xml.append:349
+#: src-en/data/events_special_guards.xml.append:370
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/beaconType/undiscoveredTooltip"
 msgstr "未探索的信标。"
 
-#: src-en/data/events_special_guards.xml.append:351
+#: src-en/data/events_special_guards.xml.append:372
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/text"
 msgstr "“总得有人来当这个守卫，他们只是在尽职尽责，也知道其中的风险。但你也一样！”拉迪卡尔飞船发起了攻击！"
 
-#: src-en/data/events_special_guards.xml.append:357
+#: src-en/data/events_special_guards.xml.append:378
 #, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/choice/text"

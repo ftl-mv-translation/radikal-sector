@@ -20,323 +20,338 @@ msgid ""
 "data/events_special_guards.xml.append$//textList[@name=\"TEXT_START_RADIKAL\"]/text[3]"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:36
+#: src-en/data/events_special_guards.xml.append:39
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"START_RADIKAL\"]/choice/text"
 msgstr "Continuer..."
 
-#: src-en/data/events_special_guards.xml.append:43
+#: src-en/data/events_special_guards.xml.append:46
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:47
+#: src-en/data/events_special_guards.xml.append:50
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:49
+#: src-en/data/events_special_guards.xml.append:52
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:54
+#: src-en/data/events_special_guards.xml.append:57
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
-" and not(@lvl)]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[1]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:56
+#: src-en/data/events_special_guards.xml.append:59
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
-" and not(@lvl)]/event/text"
-msgstr ""
-
-#: src-en/data/events_special_guards.xml.append:58
-msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
-" and not(@lvl)]/event/choice/text"
-msgstr "Continuer..."
-
-#: src-en/data/events_special_guards.xml.append:60
-msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
-" and not(@lvl)]/event/choice/event/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[1]/event/text"
 msgstr ""
 
 #: src-en/data/events_special_guards.xml.append:68
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[1]/event/choice/text"
+msgstr "Continuer..."
+
+#: src-en/data/events_special_guards.xml.append:75
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/text"
+msgstr ""
+
+#: src-en/data/events_special_guards.xml.append:77
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/event/text"
+msgstr ""
+
+#: src-en/data/events_special_guards.xml.append:79
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/event/choice/text"
+msgstr "Continuer..."
+
+#: src-en/data/events_special_guards.xml.append:81
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/event/choice/event/text"
+msgstr ""
+
+#: src-en/data/events_special_guards.xml.append:89
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/text"
 msgstr "Continuer..."
 
-#: src-en/data/events_special_guards.xml.append:70
+#: src-en/data/events_special_guards.xml.append:91
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/event/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:78
+#: src-en/data/events_special_guards.xml.append:99
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/event/choice/text"
 msgstr "Continuer..."
 
-#: src-en/data/events_special_guards.xml.append:80
+#: src-en/data/events_special_guards.xml.append:101
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/event/choice/event/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:93
+#: src-en/data/events_special_guards.xml.append:114
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/event/choice/event/choice[1]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:97
+#: src-en/data/events_special_guards.xml.append:118
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/event/choice/event/choice[2]/text"
 msgstr "Ne rien faire."
 
-#: src-en/data/events_special_guards.xml.append:110
+#: src-en/data/events_special_guards.xml.append:131
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and @lvl=\"0\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:115
+#: src-en/data/events_special_guards.xml.append:136
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:117
+#: src-en/data/events_special_guards.xml.append:138
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:119
+#: src-en/data/events_special_guards.xml.append:140
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/text"
 msgstr "Oui."
 
-#: src-en/data/events_special_guards.xml.append:121
+#: src-en/data/events_special_guards.xml.append:142
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:123
+#: src-en/data/events_special_guards.xml.append:144
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[1]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[1]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:125
+#: src-en/data/events_special_guards.xml.append:146
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[1]/event/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[1]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:133
+#: src-en/data/events_special_guards.xml.append:154
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[1]/event/choice[1]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[1]/event/choice[1]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:137
+#: src-en/data/events_special_guards.xml.append:158
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[1]/event/choice[2]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[1]/event/choice[2]/text"
 msgstr "Ne rien faire."
 
-#: src-en/data/events_special_guards.xml.append:143
+#: src-en/data/events_special_guards.xml.append:164
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[2]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:145
+#: src-en/data/events_special_guards.xml.append:166
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[2]/event/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[2]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:151
+#: src-en/data/events_special_guards.xml.append:172
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[2]/event/choice[1]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[2]/event/choice[1]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:155
+#: src-en/data/events_special_guards.xml.append:176
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[2]/event/choice[2]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[2]/event/choice[2]/text"
 msgstr "Ne rien faire."
 
-#: src-en/data/events_special_guards.xml.append:161
+#: src-en/data/events_special_guards.xml.append:182
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[3]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[3]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:163
+#: src-en/data/events_special_guards.xml.append:184
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[3]/event/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[3]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:169
+#: src-en/data/events_special_guards.xml.append:190
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[3]/event/choice[1]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[3]/event/choice[1]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:173
+#: src-en/data/events_special_guards.xml.append:194
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[3]/event/choice[2]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[3]/event/choice[2]/text"
 msgstr "Ne rien faire."
-
-#: src-en/data/events_special_guards.xml.append:181
-msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[2]/text"
-msgstr ""
-
-#: src-en/data/events_special_guards.xml.append:183
-msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[2]/event/text"
-msgstr ""
-
-#: src-en/data/events_special_guards.xml.append:187
-msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[2]/event/choice[1]/text"
-msgstr ""
-
-#: src-en/data/events_special_guards.xml.append:191
-msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[2]/event/choice[2]/text"
-msgstr "Ne rien faire."
-
-#: src-en/data/events_special_guards.xml.append:200
-msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[4]/text"
-msgstr ""
 
 #: src-en/data/events_special_guards.xml.append:202
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[4]/event/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:214
+#: src-en/data/events_special_guards.xml.append:204
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[4]/event/choice/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[2]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:222
+#: src-en/data/events_special_guards.xml.append:208
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[2]/event/choice[1]/text"
+msgstr ""
+
+#: src-en/data/events_special_guards.xml.append:212
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[2]/event/choice[2]/text"
+msgstr "Ne rien faire."
+
+#: src-en/data/events_special_guards.xml.append:221
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[5]/text"
+msgstr ""
+
+#: src-en/data/events_special_guards.xml.append:223
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[5]/event/text"
+msgstr ""
+
+#: src-en/data/events_special_guards.xml.append:235
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[5]/event/choice/text"
+msgstr ""
+
+#: src-en/data/events_special_guards.xml.append:243
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:224
+#: src-en/data/events_special_guards.xml.append:245
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:234
+#: src-en/data/events_special_guards.xml.append:255
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:236
+#: src-en/data/events_special_guards.xml.append:257
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/event/choice/event/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:245
+#: src-en/data/events_special_guards.xml.append:266
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/event/choice/event/choice/text"
 msgstr "Continuer..."
 
-#: src-en/data/events_special_guards.xml.append:269
+#: src-en/data/events_special_guards.xml.append:290
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DESTROY\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:272
+#: src-en/data/events_special_guards.xml.append:293
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DESTROY\"]/choice/text"
 msgstr "Continuer..."
 
-#: src-en/data/events_special_guards.xml.append:277
+#: src-en/data/events_special_guards.xml.append:298
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:283
+#: src-en/data/events_special_guards.xml.append:304
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/choice/text"
 msgstr "Continuer..."
 
-#: src-en/data/events_special_guards.xml.append:285
+#: src-en/data/events_special_guards.xml.append:306
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/choice/event/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:288
+#: src-en/data/events_special_guards.xml.append:309
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/choice/event/choice/text"
 msgstr "Continuer..."
 
-#: src-en/data/events_special_guards.xml.append:310
+#: src-en/data/events_special_guards.xml.append:331
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_FOLLOWUP\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:318
+#: src-en/data/events_special_guards.xml.append:339
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_FOLLOWUP\"]/choice[1]/text"
 msgstr "Faire quelque chose à bord du vaisseau."
 
-#: src-en/data/events_special_guards.xml.append:322
+#: src-en/data/events_special_guards.xml.append:343
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_FOLLOWUP\"]/choice[2]/text"
 msgstr "Ne rien faire."
 
-#: src-en/data/events_special_guards.xml.append:331
+#: src-en/data/events_special_guards.xml.append:352
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/beaconType/unvisitedTooltip"
 msgstr "Endroit non exploré."
 
-#: src-en/data/events_special_guards.xml.append:332
+#: src-en/data/events_special_guards.xml.append:353
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/beaconType/visitedTooltip"
 msgstr "Emplacement déjà exploré. Il n'y reste rien d'intéressant."
 
-#: src-en/data/events_special_guards.xml.append:333
+#: src-en/data/events_special_guards.xml.append:354
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/beaconType/undiscoveredTooltip"
 msgstr "Endroit non exploré."
 
-#: src-en/data/events_special_guards.xml.append:335
+#: src-en/data/events_special_guards.xml.append:356
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:339
+#: src-en/data/events_special_guards.xml.append:360
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/choice/text"
 msgstr "Continuer..."
 
-#: src-en/data/events_special_guards.xml.append:347
+#: src-en/data/events_special_guards.xml.append:368
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/beaconType/unvisitedTooltip"
 msgstr "Endroit non exploré."
 
-#: src-en/data/events_special_guards.xml.append:348
+#: src-en/data/events_special_guards.xml.append:369
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/beaconType/visitedTooltip"
 msgstr "Emplacement déjà exploré. Il n'y reste rien d'intéressant."
 
-#: src-en/data/events_special_guards.xml.append:349
+#: src-en/data/events_special_guards.xml.append:370
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/beaconType/undiscoveredTooltip"
 msgstr "Endroit non exploré."
 
-#: src-en/data/events_special_guards.xml.append:351
+#: src-en/data/events_special_guards.xml.append:372
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:357
+#: src-en/data/events_special_guards.xml.append:378
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/choice/text"
 msgstr "Continuer..."
