@@ -1,9 +1,17 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-07-01 20:36+0000\n"
+"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
+"Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
+"dataevents_special_guardsxmlappend/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events_special_guards.xml.append:6
 msgid ""
@@ -55,17 +63,23 @@ msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/text"
 msgstr ""
 "\"Эй. Новенький или бывалый?\" Охранник невозмутимо ждет вашего ответа.\n"
-"Похоже, речь о том, насколько вы знакомы с этим сектором."
+"\t\t\t\tПохоже, речь о том, насколько вы знакомы с этим сектором."
 
 #: src-en/data/events_special_guards.xml.append:57
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[1]/text"
-msgstr ""
+msgstr "Скромно попросить провести ремонт по низкой цене."
 
 #: src-en/data/events_special_guards.xml.append:59
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[1]/event/text"
 msgstr ""
+"\"Значит, по пути сюда тебе пришлось несладко, да? Понимаю, все через это "
+"проходили. Сейчас организуем наш фирменный сервис - вам он явно не "
+"помешает!\".\n"
+"\t\t\t\t\t\tЗа символическую плату РадиКалы быстро проводят капитальный "
+"ремонт вашего корабля! Судя по всему, они будут делать это столько раз, "
+"сколько вам понадобится."
 
 #: src-en/data/events_special_guards.xml.append:68
 msgid ""
@@ -83,8 +97,8 @@ msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/text"
 msgstr ""
-"\"Отличная находка! Раз вы уже один из нас, вот все свежие координаты - на "
-"случай, если захотите разнообразить свои варианты\"."
+"\"Отлично! Раз вы уже один из нас, вот все свежие координаты - на случай, "
+"если захотите разнообразить свои варианты\"."
 
 #: src-en/data/events_special_guards.xml.append:79
 msgid ""
@@ -97,6 +111,9 @@ msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/text"
 msgstr ""
+"\"Вот где сейчас находится лаборатория РК Бам. Если у вас есть взрывчатка, "
+"вам нужно пополнить запасы или вы хотите усилить свой корабль, то знайте: "
+"там будут рады вас видеть\"."
 
 #: src-en/data/events_special_guards.xml.append:89
 msgid ""
@@ -109,6 +126,9 @@ msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/event/text"
 msgstr ""
+"\"Как всегда хитрые,РК Панк разбили лагерь у этого маяка. Здесь вы найдете "
+"все, что душе угодно: электронику, биотехнологии, кровавые развлечения и так "
+"далее\"."
 
 #: src-en/data/events_special_guards.xml.append:99
 msgid ""
