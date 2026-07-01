@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-07-01 20:36+0000\n"
-"Last-Translator: Aleev <aleev1414@gmail.com>\n"
+"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "dataeventsxmlappend/ru/>\n"
 "Language: ru\n"
@@ -97,15 +97,15 @@ msgstr "Получить координаты сектора РадиКал."
 
 #: src-en/data/events.xml.append:308
 msgid "data/events.xml.append$//event[@name=\"DJCOORDS_E\"]/text"
-msgstr ""
+msgstr "Координирует получены: Поместье/Штаб-квартира \"Инноваций Вентворта\"."
 
 #: src-en/data/events.xml.append:312
 msgid "data/events.xml.append$//event[@name=\"DJCOORDS_J\"]/text"
-msgstr ""
+msgstr "Координаты получены: Джерри/Протекторат Джерома."
 
 #: src-en/data/events.xml.append:316
 msgid "data/events.xml.append$//event[@name=\"DJCOORDS_N\"]/text"
-msgstr ""
+msgstr "Координаты получены: Туман/Королевская туманность слизней."
 
 #: src-en/data/events.xml.append:322
 msgid "data/events.xml.append$//event[@name=\"DJSECTOR\"]/text"
@@ -113,7 +113,7 @@ msgstr "открытие меню перенаправления."
 
 #: src-en/data/events.xml.append:332
 msgid "data/events.xml.append$//event[@name=\"RESET_RK_BOONS\"]/text"
-msgstr ""
+msgstr "ДЕБАГ: Повторная блокировка всех благ РК судей."
 
 #: src-en/data/events.xml.append:361
 msgid "data/events.xml.append$//event[@name=\"DJMOD_OPERATIVE_DIES\"]/text"
@@ -149,13 +149,13 @@ msgid ""
 msgstr "Мы уже побывали в секторе РадиКал. Покойся с миром, солдат."
 
 #: src-en/data/events.xml.append:386
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"DJMOD_OPERATIVE_DIES\"]/choice[@req=\"visited_radikal_sector\"]/event/text"
 msgstr ""
-"\"Дело рак... ракушек продолжится... это меня утешает... Спасибо\". Он "
-"умирает с едва заметной улыбкой на лице.\n"
-"            Как обычно, у этого агента была неизлечимая болезнь, и он "
+"\"Дело рак... ракушек продолжится... меня утешает... умереть в кругу "
+"друзей... Спасибо\". Он умирает с едва заметной улыбкой на лице.\n"
+"\t\t\t\n"
+"\t\t\t\tКак обычно, у этого агента была неизлечимая болезнь, и он "
 "добровольно взялся за агитацию ради того, чтобы найти финансирование РК и на "
 "вербовку безрассудных капитанов, так что вы не удивлены. Вы приступаете к "
 "изъятию его ценных технологий и утилизации тела."
@@ -462,12 +462,11 @@ msgid ""
 msgstr "Принять их вызов."
 
 #: src-en/data/events.xml.append:687
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/text"
 msgstr ""
 "\"Приветствую, неверный. Мы покупаем оружие РадиКал, и, как нам известно, у "
-"вас оно есть\"."
+"вас оно есть. Мы заплатим даже больше, чем их обычная цена покупки\"."
 
 #: src-en/data/events.xml.append:690
 msgid ""
@@ -518,7 +517,7 @@ msgstr ""
 #: src-en/data/events.xml.append:716
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/choice[@req=\"RK_HEAVY_POPPER_2\"]/text"
-msgstr ""
+msgstr "Продать им свой Тяжелый поппер лазер мод. II за 120~."
 
 #: src-en/data/events.xml.append:718
 msgid ""
@@ -560,7 +559,7 @@ msgstr ""
 #: src-en/data/events.xml.append:747
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/choice[@req=\"RK_MISSLAUNCHER_2_BATTERY\"]/text"
-msgstr ""
+msgstr "Продать им свою ракетную установку \"Артемида\" с батареей за 120~."
 
 #: src-en/data/events.xml.append:749
 msgid ""
@@ -602,7 +601,7 @@ msgstr ""
 #: src-en/data/events.xml.append:778
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/choice[@req=\"RK_BOMBLAUNCHER_OXYBOTTLE\"]/text"
-msgstr ""
+msgstr "Продать им свою Кислородную бомбу за 75~."
 
 #: src-en/data/events.xml.append:780
 msgid ""
@@ -616,7 +615,7 @@ msgstr ""
 #: src-en/data/events.xml.append:789
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/choice[@req=\"RK_OXY_FIREFILL_MISSILES\"]/text"
-msgstr ""
+msgstr "Продать им свою ракетную установку \"Дымоход\" за 120~."
 
 #: src-en/data/events.xml.append:791
 msgid ""
@@ -630,7 +629,7 @@ msgstr ""
 #: src-en/data/events.xml.append:800
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/choice[@req=\"RK_FOCUS_FIRE\"]/text"
-msgstr ""
+msgstr "Продать им свой точечный луч \"Горячий покер\" за 135~."
 
 #: src-en/data/events.xml.append:802
 msgid ""
@@ -779,12 +778,11 @@ msgid ""
 msgstr "Спросить их, почему они вам это рассказывают."
 
 #: src-en/data/events.xml.append:908
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[1]/event/text"
 msgstr ""
-"\"Ну, а если у вас оно есть, то не могли бы вы нам немного продать. "
-"Пожалуйста?\""
+"\"Ну, а если у вас оно есть, то не могли бы вы нам немного продать. Мы даже "
+"готовы заплатить больше, чем вы, наверное, за это заплатили. Пожалуйста?\""
 
 #: src-en/data/events.xml.append:912
 msgid ""
@@ -803,7 +801,7 @@ msgstr ""
 #: src-en/data/events.xml.append:922
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[1]/event/choice[@req=\"RK_HEAVY_POPPER_2\"]/text"
-msgstr ""
+msgstr "Продать им свой Тяжелый поппер лазер мод. II за 120~."
 
 #: src-en/data/events.xml.append:924
 msgid ""
@@ -845,7 +843,7 @@ msgstr ""
 #: src-en/data/events.xml.append:953
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[1]/event/choice[@req=\"RK_MISSLAUNCHER_2_BATTERY\"]/text"
-msgstr ""
+msgstr "Продать им свою ракетную установку \"Артемида\" с батареей за 120~."
 
 #: src-en/data/events.xml.append:955
 msgid ""
@@ -887,7 +885,7 @@ msgstr ""
 #: src-en/data/events.xml.append:984
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[1]/event/choice[@req=\"RK_BOMBLAUNCHER_OXYBOTTLE\"]/text"
-msgstr ""
+msgstr "Продать им свою Кислородную бомбу за 75~."
 
 #: src-en/data/events.xml.append:986
 msgid ""
@@ -901,7 +899,7 @@ msgstr ""
 #: src-en/data/events.xml.append:995
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[1]/event/choice[@req=\"RK_OXY_FIREFILL_MISSILES\"]/text"
-msgstr ""
+msgstr "Продать им свою ракетную установку \"Дымоход\" за 120~."
 
 #: src-en/data/events.xml.append:997
 msgid ""
@@ -915,7 +913,7 @@ msgstr ""
 #: src-en/data/events.xml.append:1006
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[1]/event/choice[@req=\"RK_FOCUS_FIRE\"]/text"
-msgstr ""
+msgstr "Продать им свой точечный луч \"Горячий покер\" за 135~."
 
 #: src-en/data/events.xml.append:1008
 msgid ""
@@ -1327,21 +1325,20 @@ msgid ""
 msgstr "Ответить."
 
 #: src-en/data/events.xml.append:1372
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"ZOLTAN_POLICECHECK_RK\"]/choice[1]/event/text"
 msgstr ""
-"\"Как вы, возможно, знаете, если только вы не безмозглый дикарь, этот "
-"преступный сектор поставляет оружие Вестникам Заката. Недавно мы приступили "
-"к решению этой проблемы.\n"
+"\"Как вы, возможно, знаете, если только вы не безмозглый дикарь, этот сектор "
+"поставляет оружие Вестникам Заката. Недавно мы приступили к решению этой "
+"проблемы.\n"
 "\t\t\t\tКак и любое судно, проходящее транзитом через такую беззаконную зону "
 "производства оружия, как эта, вы будете подвергнуты обязательному "
 "тщательному досмотру на наличие указанного оружия. Борьба с незаконным "
 "распространением оружия начинается с вас. Не сопротивляйтесь\".\n"
 "\t\t\t\t\n"
-"\t\t\t\tЗолтаны относятся к этой зоне очень серьезно. Если они у вас "
-"обнаружат какое-либо оборудование РадиКалов, вам придется заплатить штраф, "
-"размер которого зависит от количества найденных предметов."
+"\t\t\t\tМинистерство золтан относятся к этой зоне очень серьезно. Если они у "
+"вас обнаружат какое-либо оборудование РадиКалов, вам придется заплатить "
+"штраф, размер которого зависит от количества найденных предметов."
 
 #: src-en/data/events.xml.append:1379
 msgid ""
@@ -1700,10 +1697,9 @@ msgstr ""
 "преимущества."
 
 #: src-en/data/events.xml.append:1695
-#, fuzzy
 msgid "data/events.xml.append$//event[@name=\"THIEVES_RK_LASERS\"]/text"
 msgstr ""
-"Похоже, поврежденный корабль РадиКал, вооруженный лазерами, подвергся "
+"Похоже, сильно поврежденный корабль РадиКал, вооруженный лазерами, подвергся "
 "нападению со стороны контрабандистов из Арджонн, которые, несомненно, хотят "
 "похитить их уникальные технологии. Корабль находится на грани гибели, но его "
 "траектория движения заставляет его пролететь мимо вас в надежде на небольшой "
