@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-07-01 20:36+0000\n"
+"PO-Revision-Date: 2026-07-03 08:36+0000\n"
 "Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "dataeventsxmlappend/ru/>\n"
@@ -559,7 +559,7 @@ msgstr ""
 #: src-en/data/events.xml.append:747
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/choice[@req=\"RK_MISSLAUNCHER_2_BATTERY\"]/text"
-msgstr "Продать им свою ракетную установку \"Артемида\" с батареей за 120~."
+msgstr "Продать им свою ракетную установку \"Артемида с батареей\" за 120~."
 
 #: src-en/data/events.xml.append:749
 msgid ""
@@ -843,7 +843,7 @@ msgstr ""
 #: src-en/data/events.xml.append:953
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice/event/choice/event/choice[1]/event/choice[@req=\"RK_MISSLAUNCHER_2_BATTERY\"]/text"
-msgstr "Продать им свою ракетную установку \"Артемида\" с батареей за 120~."
+msgstr "Продать им свою ракетную установку \"Артемида с батареей\" за 120~."
 
 #: src-en/data/events.xml.append:955
 msgid ""
@@ -1824,19 +1824,22 @@ msgid ""
 msgstr "Что они от вас хотели?"
 
 #: src-en/data/events.xml.append:1816
-#, fuzzy
 msgid "data/events.xml.append$//event[@name=\"THIEVES_RK_LASERS_END\"]/text"
 msgstr ""
 "\"Обычное местное техническое оборудование. Вы же понимаете, что мы не можем "
-"просто так отдать его вам. Однако мы можем предоставить вам одно лазерное "
-"оружие из нашего груза, соответствующее вашей предпочитаемой подфракции "
-"РадиКал - это будет справедливо. Какое вы выберете?\""
+"просто так отдать его вам\".\n"
+"\t\tГолос где-то в глубине сознания подсказывает вам, что тогда вам "
+"следовало бы их убить... но вы сдерживаете свою жадность и отгоняете эти "
+"навязчивые мысли.\n"
+"\t\t\n"
+"\t\t\"Однако мы можем предложить вам одно лазерное орудие, не относящееся к "
+"РадиКалам, которое соответствует стилю подфракции РК - это будет "
+"справедливо. Какое именно?\""
 
 #: src-en/data/events.xml.append:1823
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"THIEVES_RK_LASERS_END\"]/choice[1]/text"
-msgstr "Бам!"
+msgstr "Бам"
 
 #: src-en/data/events.xml.append:1825
 msgid ""
@@ -1849,10 +1852,9 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events.xml.append:1835
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"THIEVES_RK_LASERS_END\"]/choice[2]/text"
-msgstr "Панк!"
+msgstr "Панк"
 
 #: src-en/data/events.xml.append:1837
 msgid ""
@@ -1865,10 +1867,9 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events.xml.append:1847
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"THIEVES_RK_LASERS_END\"]/choice[3]/text"
-msgstr "Скорч!"
+msgstr "Скорч"
 
 #: src-en/data/events.xml.append:1849
 msgid ""
@@ -1993,10 +1994,9 @@ msgstr ""
 "РадиКал - это будет справедливо. Какую вы выберете?\""
 
 #: src-en/data/events.xml.append:1960
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"THIEVES_RK_MISSILES_END\"]/choice[1]/text"
-msgstr "Бам!"
+msgstr "Бам"
 
 #: src-en/data/events.xml.append:1962
 msgid ""
@@ -2009,10 +2009,9 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events.xml.append:1972
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"THIEVES_RK_MISSILES_END\"]/choice[2]/text"
-msgstr "Панк!"
+msgstr "Панк"
 
 #: src-en/data/events.xml.append:1974
 msgid ""
@@ -2025,10 +2024,9 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events.xml.append:1984
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"THIEVES_RK_MISSILES_END\"]/choice[3]/text"
-msgstr "Скорч!"
+msgstr "Скорч"
 
 #: src-en/data/events.xml.append:1986
 msgid ""
@@ -2152,10 +2150,9 @@ msgstr ""
 "РадиКал - это будет справедливо. Какое вы выберете?\""
 
 #: src-en/data/events.xml.append:2097
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"THIEVES_RK_IONS_END\"]/choice[1]/text"
-msgstr "Бам!"
+msgstr "Бам"
 
 #: src-en/data/events.xml.append:2099
 msgid ""
@@ -2168,10 +2165,9 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events.xml.append:2109
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"THIEVES_RK_IONS_END\"]/choice[2]/text"
-msgstr "Панк!"
+msgstr "Панк"
 
 #: src-en/data/events.xml.append:2111
 msgid ""
@@ -2184,10 +2180,9 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events.xml.append:2121
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"THIEVES_RK_IONS_END\"]/choice[3]/text"
-msgstr "Скорч!"
+msgstr "Скорч"
 
 #: src-en/data/events.xml.append:2123
 msgid ""
@@ -2311,10 +2306,9 @@ msgstr ""
 "РадиКал - это будет справедливо. Какое вы выберете?\""
 
 #: src-en/data/events.xml.append:2234
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"THIEVES_RK_BEAMS_END\"]/choice[1]/text"
-msgstr "Бам!"
+msgstr "Бам"
 
 #: src-en/data/events.xml.append:2236
 msgid ""
@@ -2327,10 +2321,9 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events.xml.append:2246
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"THIEVES_RK_BEAMS_END\"]/choice[2]/text"
-msgstr "Панк!"
+msgstr "Панк"
 
 #: src-en/data/events.xml.append:2248
 msgid ""
@@ -2343,10 +2336,9 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events.xml.append:2258
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"THIEVES_RK_BEAMS_END\"]/choice[3]/text"
-msgstr "Скорч!"
+msgstr "Скорч"
 
 #: src-en/data/events.xml.append:2260
 msgid ""
