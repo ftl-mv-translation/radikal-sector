@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-07-01 20:36+0000\n"
+"PO-Revision-Date: 2026-07-03 08:36+0000\n"
 "Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "datahyperspace-xml-append/ru/>\n"
@@ -76,40 +76,40 @@ msgstr "Лог"
 
 #: src-en/data/hyperspace.xml.append:404
 msgid "data/hyperspace.xml.append$//rk_fireghost[@name=\"Aldebaran\"]/@name"
-msgstr ""
+msgstr "Альдебаран"
 
 #: src-en/data/hyperspace.xml.append:405
 msgid "data/hyperspace.xml.append$//rk_fireghost[@name=\"Betelgeuse\"]/@name"
-msgstr ""
+msgstr "Бетельгейзе"
 
 #: src-en/data/hyperspace.xml.append:406
 msgid "data/hyperspace.xml.append$//rk_fireghost[@name=\"Copernicus\"]/@name"
-msgstr ""
+msgstr "Коперник"
 
 #: src-en/data/hyperspace.xml.append:407
 msgid ""
 "data/hyperspace.xml.append$//engi_separatist_nano[@name=\"Concierge\"]/@name"
-msgstr ""
+msgstr "Консьерж"
 
 #: src-en/data/hyperspace.xml.append:417
 msgid "data/hyperspace.xml.append$//human_rebel_medic[@name=\"Druidess\"]/@name"
-msgstr ""
+msgstr "Друидесса"
 
 #: src-en/data/hyperspace.xml.append:418
 msgid "data/hyperspace.xml.append$//human_technician[@name=\"Summoner\"]/@name"
-msgstr ""
+msgstr "Призыватель"
 
 #: src-en/data/hyperspace.xml.append:419
 msgid "data/hyperspace.xml.append$//human_legion_pyro[@name=\"Paladin\"]/@name"
-msgstr ""
+msgstr "Паладин"
 
 #: src-en/data/hyperspace.xml.append:420
 msgid "data/hyperspace.xml.append$//rk_fireghost[@name=\"Fire Mage\"]/@name"
-msgstr ""
+msgstr "Маг огня"
 
 #: src-en/data/hyperspace.xml.append:421
 msgid "data/hyperspace.xml.append$//zoltan_infernum[@name=\"Rogue\"]/@name"
-msgstr ""
+msgstr "Плут"
 
 #: src-en/data/hyperspace.xml.append:454
 msgid ""
@@ -125,19 +125,19 @@ msgstr "Лог"
 
 #: src-en/data/hyperspace.xml.append:476
 msgid "data/hyperspace.xml.append$//phantom[@name=\"Pixis\"]/@name"
-msgstr ""
+msgstr "Пикси"
 
 #: src-en/data/hyperspace.xml.append:477
 msgid "data/hyperspace.xml.append$//crystal[@name=\"Eren\"]/@name"
-msgstr ""
+msgstr "Ерен"
 
 #: src-en/data/hyperspace.xml.append:478
 msgid "data/hyperspace.xml.append$//rk_weaponlike[@name=\"Connie\"]/@name"
-msgstr ""
+msgstr "Конни"
 
 #: src-en/data/hyperspace.xml.append:480
 msgid "data/hyperspace.xml.append$//rk_weaponlike[@name=\"Zoe\"]/@name"
-msgstr ""
+msgstr "Зои"
 
 #: src-en/data/hyperspace.xml.append:707
 msgid ""
@@ -159,7 +159,6 @@ msgstr ""
 "\t\t\tВсе члены экипажа этого корабля получают увеличение скорости передвижения на 40%."
 
 #: src-en/data/hyperspace.xml.append:726
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[3]/mod-"
 "append:shipIcon/tooltip"
@@ -167,59 +166,59 @@ msgstr ""
 "ЩИТ СТОЙКОСТИ:\n"
 "\t\t\tЭтот враг защищен энергетическим щитом. Взлом, контроль разума, "
 "телепортация, абордажные дроны и все повреждающее корпус или ионное оружие "
-"будут заблокированы до тех пор, пока не будет отключен. Этот особый щит "
-"также обладает повышенной скоростью перезарядки, и противник способен "
-"восстановить свой энергетический щит один раз!"
+"будут заблокированы до тех пор, пока не будет отключен.\n"
+"\t\t\tЭтот особый щит также обладает повышенной скоростью перезарядки, и "
+"противник способен восстановить свой энергетический щит один раз!"
 
 #: src-en/data/hyperspace.xml.append:734
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[4]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"Удушонайзер Н.С.В.Ф.У.:\n"
-"\t\t\tЭкипаж этого корабля получает 0.75х урон от удушья.\n"
-"\t\t\tВ состоянии удушья они передвигаются, саботируют, ремонтируют и "
-"сражаются в 1.5х эффективнее."
+"КАЛИБРАТОР:\n"
+"\t\t\tОружие этого корабля обладает +10% к точности и увеличенной "
+"скорострельностью на 4%."
 
 #: src-en/data/hyperspace.xml.append:741
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[5]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"ПАЛУБА УЖАСА:\n"
-"\t\t\tВраги, проникшие на этот корабль, получают 1.5х урона от всех "
-"источников.\n"
-"\t\t\t2х скорость клонирования и лечения у членов экипажа этого корабля. При "
-"клонировании они не теряют навыки.\n"
-"\t\t\tВсе члены экипажа, находящиеся в одном помещении с кем-либо из экипажа "
-"этого корабля, не могут быть клонированы."
+"УДУШОНАЙЗЕР Н.С.В.Ф.У.\n"
+"\t\t\tЭкипаж этого корабля получает урон от удушья в размере 0.75x.\n"
+"\t\t\tВ состоянии удушья экипаж передвигается, занимаются саботажем, "
+"ремонтом и сражаются в 1.5х эффективнее. Персонажи, обладающие иммунитетом к "
+"удушью, не могут задыхаться."
 
 #: src-en/data/hyperspace.xml.append:750
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[6]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"ПАНК-ГАРМОНИЯ:\n"
-"\t\t\tИнженеры на этом корабле обладают повышенной сопротивляемостью и "
-"иммунитетом Контролю разума.\n"
-"\t\t\tКроме того, их эффективность при ремонте растет в геометрической "
-"прогрессии: чем больше активных уровней Взломщика и Контроля разума на "
-"корабле, тем быстрее и эффективнее они работают!"
+"ЩИТ ВЫСОКОМЕРИЯ:\n"
+"\t\t\tЭтот противник защищен энергетическим щитом. Взлом, контроль разума, "
+"телепортация, абордажные дроны, а также все оружие, наносящее урон корпусу "
+"или ионное оружие, будут блокироваться до тех пор, пока щит не будет выведен "
+"из строя.\n"
+"\t\t\tКроме того, этот щит замедляет перезарядку щитов и оружия, но при этом "
+"восстанавливает здоровье дружественных дронов и наносит урон вражеским "
+"дронам."
 
 #: src-en/data/hyperspace.xml.append:758
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[7]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"НАБОРЫ ЗАЩИТЫ:\n"
-"\t\t\tНаходясь на своем корабле, экипаж этого судна получает защиту от урона "
-"в бою, быстрее ремонтирует корабль и перемещается, а также постепенно "
-"восстанавливает здоровье, если находится в режиме ожидания и не заняты "
-"обслуживанием систем."
+"ПАЛУБА УЖАСА:\n"
+"\t\t\tВраги, вторгшиеся на этот корабль, получают 1.7х урона от всех "
+"источников.\n"
+"\t\t\tЭкипаж этого корабля получает 2.5х исцеления от большинства "
+"источников, 2х скорость клонирования, и экипаж не теряет навыки при "
+"клонировании.\n"
+"\t\t\t[style[color:ff3377]]ПРЕДУПРЕЖДЕНИЕ: Все члены экипажа, находящиеся в "
+"одном помещении с любым членом экипажа этого корабля, получают 0.5х меньше "
+"лечения (эффект не суммируется) и не могут быть клонированы![[/style]] [Этот "
+"дебафф отображается в виде фиолетового дыма]"
 
 #: src-en/data/hyperspace.xml.append:768
 msgid ""
@@ -272,30 +271,26 @@ msgstr ""
 "\t\t\tЭкипаж этого корабля обладает сопротивляемостью к огню и исцеляется во время тушения пожара."
 
 #: src-en/data/hyperspace.xml.append:814
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[14]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"ФЛАММАБИЛИЗАТОР-И:\n"
-"\t\t\tУ вашего экипажа снимается иммунитет к огню, сопротивляемость огню или "
-"прямое исцеление от огня (не тушение)! Кроме того, ваш экипаж передвигается "
-"в огне медленнее, причем скорость снижается еще больше за каждый активный "
-"уровень системы жизнеобеспечения (O2) на вражеском корабле!"
+"ПЫЛАЮЩАЯ ЗЕМЛЯ:\n"
+"\t\t\tЭкипаж этого корабля обладает устойчивостью к огню, получает бонус в "
+"условиях пожара: вырабатывает кислород во время пожара и восстанавливает "
+"здоровье при тушении."
 
 #: src-en/data/hyperspace.xml.append:821
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[15]/mod-"
 "append:shipIcon/tooltip"
 msgstr ""
-"ФЛАММАБИЛИЗАТОР-У:\n"
-"\t\t\tВаш экипаж получает больше урона от огня и передвигается медленнее в "
-"условиях пожара. Эти эффекты усиливаются с каждым активным уровнем системы "
-"жизнеобеспечения (O2) на вражеском корабле!"
+"ИЗВЕРГАЮЩАЯСЯ ЗЕМЛЯ:\n"
+"\t\t\tЭкипаж этого корабля устойчив к огню, получает бонус в условиях "
+"пожара: вырабатывает значительное количество кислорода во время пожара и "
+"восстанавливает здоровье во время тушения."
 
 #: src-en/data/hyperspace.xml.append:828
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[16]/mod-"
 "append:shipIcon/tooltip"
@@ -304,10 +299,9 @@ msgstr ""
 "\t\t\tУ вашего экипажа снимается иммунитет к огню, сопротивляемость огню или "
 "прямое исцеление от огня (не тушение)! Кроме того, ваш экипаж передвигается "
 "в огне медленнее, причем скорость снижается еще больше за каждый активный "
-"уровень системы жизнеобеспечения (O2) на вражеском корабле!"
+"уровень системы жизнеобеспечения (O2) на этом корабле!"
 
 #: src-en/data/hyperspace.xml.append:835
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[17]/mod-"
 "append:shipIcon/tooltip"
@@ -315,10 +309,9 @@ msgstr ""
 "ФЛАММАБИЛИЗАТОР-У:\n"
 "\t\t\tВаш экипаж получает больше урона от огня и передвигается медленнее в "
 "условиях пожара. Эти эффекты усиливаются с каждым активным уровнем системы "
-"жизнеобеспечения (O2) на вражеском корабле!"
+"жизнеобеспечения (O2) на этом корабле!"
 
 #: src-en/data/hyperspace.xml.append:842
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[18]/mod-"
 "append:shipIcon/tooltip"
@@ -478,32 +471,36 @@ msgstr ""
 msgid ""
 "data/hyperspace.xml.append$//mod-"
 "append:race[@name=\"rk_bottledoxygen\"]/powerEffect[1]/buttonText"
-msgstr ""
+msgstr "УТЕЧКА ВОЗДУХА"
 
 #: src-en/data/hyperspace.xml.append:2186
 msgid ""
 "data/hyperspace.xml.append$//mod-"
 "append:race[@name=\"rk_bottledoxygen\"]/powerEffect[1]/tooltip"
-msgstr ""
+msgstr "ВЫ НИКОГДА НЕ ДОЛЖНЫ ЭТО ВИДЕТЬ, показывает, как рассеивается облако."
 
 #: src-en/data/hyperspace.xml.append:2216
 msgid ""
 "data/hyperspace.xml.append$//mod-"
 "append:race[@name=\"rk_bottledoxygen\"]/powerEffect[2]/buttonText"
-msgstr ""
+msgstr "ПОДРЫВ"
 
 #: src-en/data/hyperspace.xml.append:2217
 msgid ""
 "data/hyperspace.xml.append$//mod-"
 "append:race[@name=\"rk_bottledoxygen\"]/powerEffect[2]/tooltip"
 msgstr ""
+"[ПЕРЕЗАРЯДКА: 3с]\n"
+"\t\t\t\tВзрывается, нанося 30 урона всем членам экипажа в помещении, с "
+"вероятностью 60% вызывая пожар.\n"
+"\t\t\t\tНевозможно активировать во время телепортации или при здоровье ниже "
+"15."
 
 #: src-en/data/hyperspace.xml.append:3174
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[1]/category[1]/customTitle"
-msgstr "ОРУЖИЕ РАДИКАЛ"
+msgstr "БПС ОРУЖИЕ"
 
 #: src-en/data/hyperspace.xml.append:3182
 msgid ""
@@ -512,11 +509,10 @@ msgid ""
 msgstr "ОРУЖИЕ РАДИКАЛ"
 
 #: src-en/data/hyperspace.xml.append:3200
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[1]/category[3]/customTitle"
-msgstr "РАДИКАЛЫ"
+msgstr "БПС МОДУЛИ"
 
 #: src-en/data/hyperspace.xml.append:3213
 msgid ""
@@ -699,17 +695,16 @@ msgid ""
 msgstr "РК ПАНК МОДУЛИ"
 
 #: src-en/data/hyperspace.xml.append:3968
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[4]/category[10]/customTitle"
-msgstr "ТОП РК ПАНК МОДУЛИ"
+msgstr "НАБОР ПАНК МОДУЛЕЙ"
 
 #: src-en/data/hyperspace.xml.append:3987
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[4]/category[11]/customTitle"
-msgstr ""
+msgstr "ТОП ПАНК МОДУЛИ"
 
 #: src-en/data/hyperspace.xml.append:4030
 msgid ""
@@ -1098,13 +1093,11 @@ msgid ""
 msgstr "Демиклонер"
 
 #: src-en/data/hyperspace.xml.append:7078
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$//aug[@name=\"EX_DJMOD_DEMICLONER\"]/statBoosts/statBoost[57]/deathEffect/spawnCrew/name"
 msgstr "Демиклонер"
 
 #: src-en/data/hyperspace.xml.append:7106
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$//aug[@name=\"EX_DJMOD_DEMICLONER\"]/statBoosts/statBoost[58]/deathEffect/spawnCrew/name"
 msgstr "Демиклонер"
@@ -1390,13 +1383,11 @@ msgid ""
 msgstr "Демиклонер"
 
 #: src-en/data/hyperspace.xml.append:8622
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$//aug[@name=\"INTERNAL_DJMOD_DEMICLONER\"]/statBoosts/statBoost[57]/deathEffect/spawnCrew/name"
 msgstr "Демиклонер"
 
 #: src-en/data/hyperspace.xml.append:8650
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$//aug[@name=\"INTERNAL_DJMOD_DEMICLONER\"]/statBoosts/statBoost[58]/deathEffect/spawnCrew/name"
 msgstr "Демиклонер"
@@ -1405,10 +1396,9 @@ msgstr "Демиклонер"
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[11]/mod-"
 "append:page/section[1]/@text"
-msgstr ""
+msgstr "События РадиКалов"
 
 #: src-en/data/hyperspace.xml.append:9292
-#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_RK_EVENT_HIDEOUT\"]/name"
 msgstr "Убежище РадиКалов"
@@ -1416,17 +1406,19 @@ msgstr "Убежище РадиКалов"
 #: src-en/data/hyperspace.xml.append:9293
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_RK_EVENT_HIDEOUT\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-en/data/hyperspace.xml.append:9294
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_RK_EVENT_HIDEOUT\"]/description"
 msgstr ""
+"Заключите сделку с таинственным жутким, чтобы получить собственное место в "
+"секторе РадиКал."
 
 #: src-en/data/hyperspace.xml.append:9295
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_RK_EVENT_HIDEOUT\"]/secretDescription"
-msgstr ""
+msgstr "Свяжитесь с темными силами ради комфорта."
 
 #: src-en/data/hyperspace.xml.append:9301
 msgid ""
@@ -1436,158 +1428,169 @@ msgstr "Мучительный амальгам"
 #: src-en/data/hyperspace.xml.append:9302
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_RK_EVENT_DEFROMORIUS\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-en/data/hyperspace.xml.append:9303
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_RK_EVENT_DEFROMORIUS\"]/description"
-msgstr ""
+msgstr "Спасите РК Дефромориуса от гибели от удушья в космосе."
 
 #: src-en/data/hyperspace.xml.append:9304
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_RK_EVENT_DEFROMORIUS\"]/secretDescription"
-msgstr ""
+msgstr "Спасите странное существо в секторе РК."
 
 #: src-en/data/hyperspace.xml.append:9317
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_RK_EVENT_HACK_FLEET_BOSS_REBEL\"]/name"
-msgstr ""
+msgstr "Хакер флота"
 
 #: src-en/data/hyperspace.xml.append:9318
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_RK_EVENT_HACK_FLEET_BOSS_REBEL\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-en/data/hyperspace.xml.append:9319
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_RK_EVENT_HACK_FLEET_BOSS_REBEL\"]/description"
 msgstr ""
+"Привлеките внимание хакера МФК с помощью Энигмашин, а затем победите его."
 
 #: src-en/data/hyperspace.xml.append:9320
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_RK_EVENT_HACK_FLEET_BOSS_REBEL\"]/secretDescription"
-msgstr ""
+msgstr "Злоупотребляйте флотом - и ответьте за последствия."
 
 #: src-en/data/hyperspace.xml.append:9326
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_RK_EVENT_SHIPVORE_RAM_SCRAP\"]/name"
-msgstr ""
+msgstr "Кораблепожиратель"
 
 #: src-en/data/hyperspace.xml.append:9327
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_RK_EVENT_SHIPVORE_RAM_SCRAP\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-en/data/hyperspace.xml.append:9328
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_RK_EVENT_SHIPVORE_RAM_SCRAP\"]/description"
 msgstr ""
+"Получите огромную и очень редкую выплату в виде лома от Кораблепожирателя."
 
 #: src-en/data/hyperspace.xml.append:9329
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_RK_EVENT_SHIPVORE_RAM_SCRAP\"]/secretDescription"
-msgstr ""
+msgstr "Станьте по-настоящему удачливым, поглощая корабли."
 
 #: src-en/data/hyperspace.xml.append:9336
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"MUSIC_RKTRACKRADIKAL\"]/name"
-msgstr ""
+msgstr "РадиКал трек"
 
 #: src-en/data/hyperspace.xml.append:9337
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"MUSIC_RKTRACKRADIKAL\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-en/data/hyperspace.xml.append:9358
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[11]/mod-"
 "append:page/section[2]/@text"
-msgstr ""
+msgstr "РадиКал благо"
 
 #: src-en/data/hyperspace.xml.append:9360
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_BAM_CREW\"]/secretName"
-msgstr ""
+msgstr "Благо ???"
 
 #: src-en/data/hyperspace.xml.append:9361
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_BAM_CREW\"]/secretDescription"
-msgstr ""
+msgstr "Получите благо ??? от Сеста."
 
 #: src-en/data/hyperspace.xml.append:9362
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_BAM_CREW\"]/name"
-msgstr ""
+msgstr "Благо РадиКал Бам"
 
 #: src-en/data/hyperspace.xml.append:9363
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_BAM_CREW\"]/description"
 msgstr ""
+"Покажите Сесту экипаж РК Бам.\n"
+"\t\t\t\tПока эффект действует, ваши РадиКалы получают на 29 здоровья больше "
+"и наносят 1.1х урона в бою."
 
 #: src-en/data/hyperspace.xml.append:9365
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_BAM_CREW\"]/header"
-msgstr ""
+msgstr "Благо получено"
 
 #: src-en/data/hyperspace.xml.append:9371
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_PUNK_CREW\"]/secretName"
-msgstr ""
+msgstr "Благо ???"
 
 #: src-en/data/hyperspace.xml.append:9372
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_PUNK_CREW\"]/secretDescription"
-msgstr ""
+msgstr "Получите благо ??? от Сеста."
 
 #: src-en/data/hyperspace.xml.append:9373
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_PUNK_CREW\"]/name"
-msgstr ""
+msgstr "Благо РадиКал Панк"
 
 #: src-en/data/hyperspace.xml.append:9374
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_PUNK_CREW\"]/description"
 msgstr ""
+"Покажите Сесту экипаж РК Панк.\n"
+"\t\t\t\tПока эффект действует, ваши РадиКалы лечатся и клонируются на 40% "
+"быстрее."
 
 #: src-en/data/hyperspace.xml.append:9376
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_PUNK_CREW\"]/header"
-msgstr ""
+msgstr "Благо получено"
 
 #: src-en/data/hyperspace.xml.append:9382
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_SCORCH_CREW\"]/secretName"
-msgstr ""
+msgstr "Благо ???"
 
 #: src-en/data/hyperspace.xml.append:9383
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_SCORCH_CREW\"]/secretDescription"
-msgstr ""
+msgstr "Получите благо ??? от Сеста."
 
 #: src-en/data/hyperspace.xml.append:9384
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_SCORCH_CREW\"]/name"
-msgstr ""
+msgstr "Благо РадиКал Скорч"
 
 #: src-en/data/hyperspace.xml.append:9385
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_SCORCH_CREW\"]/description"
 msgstr ""
+"Покажите Сесту экипаж РК Скорч.\n"
+"\t\t\t\tПока эффект действует, находясь в огне, ваши РадиКалы получают "
+"увеличение скорости передвижения и наносят 1.3х урона в бою."
 
 #: src-en/data/hyperspace.xml.append:9387
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_SCORCH_CREW\"]/header"
-msgstr ""
+msgstr "Благо получено"
 
 #: src-en/data/hyperspace.xml.append:9394
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_BAM_EQUIPMENT\"]/secretName"
-msgstr ""
+msgstr "Благословение ???"
 
 #: src-en/data/hyperspace.xml.append:9395
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_BAM_EQUIPMENT\"]/secretDescription"
-msgstr ""
+msgstr "Получите благословение ??? от Уэйксона."
 
 #: src-en/data/hyperspace.xml.append:9396
 msgid ""
@@ -1598,21 +1601,24 @@ msgstr "Благословение радикальной стойкости"
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_BAM_EQUIPMENT\"]/description"
 msgstr ""
+"Покажите Уэйксону снаряжение РК Бам.\n"
+"\t\t\t\tПока эффект действует, шанс сопротивления урону корпусу, системам и "
+"ионному урону от вражеского оружия увеличивается на 8%."
 
 #: src-en/data/hyperspace.xml.append:9399
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_BAM_EQUIPMENT\"]/header"
-msgstr ""
+msgstr "Благословение получено"
 
 #: src-en/data/hyperspace.xml.append:9405
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_PUNK_EQUIPMENT\"]/secretName"
-msgstr ""
+msgstr "Благословение ???"
 
 #: src-en/data/hyperspace.xml.append:9406
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_PUNK_EQUIPMENT\"]/secretDescription"
-msgstr ""
+msgstr "Получите благословение ??? от Уэйксона."
 
 #: src-en/data/hyperspace.xml.append:9407
 msgid ""
@@ -1623,21 +1629,23 @@ msgstr "Благословение радикальной хитрости"
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_PUNK_EQUIPMENT\"]/description"
 msgstr ""
+"Покажите Уэйксону снаряжение РК Панк.\n"
+"\t\t\t\tПока эффект действует, ваши системы чинятся со скоростью 1.3х."
 
 #: src-en/data/hyperspace.xml.append:9410
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_PUNK_EQUIPMENT\"]/header"
-msgstr ""
+msgstr "Благословение получено"
 
 #: src-en/data/hyperspace.xml.append:9416
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_SCORCH_EQUIPMENT\"]/secretName"
-msgstr ""
+msgstr "Благословение ???"
 
 #: src-en/data/hyperspace.xml.append:9417
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_SCORCH_EQUIPMENT\"]/secretDescription"
-msgstr ""
+msgstr "Получите благословение ??? от Уэйксона."
 
 #: src-en/data/hyperspace.xml.append:9418
 msgid ""
@@ -1648,21 +1656,24 @@ msgstr "Благословение радикального жара"
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_SCORCH_EQUIPMENT\"]/description"
 msgstr ""
+"Покажите Уэйксону снаряжение РК Скорч.\n"
+"\t\t\t\tПока эффект действует, скорость перезарядки оружия и уклонение "
+"увеличиваются на 8%."
 
 #: src-en/data/hyperspace.xml.append:9421
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_SCORCH_EQUIPMENT\"]/header"
-msgstr ""
+msgstr "Благословение получено"
 
 #: src-en/data/hyperspace.xml.append:9427
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_BPS_EQUIPMENT\"]/secretName"
-msgstr ""
+msgstr "Благословение ???"
 
 #: src-en/data/hyperspace.xml.append:9428
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_BPS_EQUIPMENT\"]/secretDescription"
-msgstr ""
+msgstr "Получите благословение ??? от Уэйксона."
 
 #: src-en/data/hyperspace.xml.append:9429
 msgid ""
@@ -1673,8 +1684,12 @@ msgstr "Благословение радикальных проектов"
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_BPS_EQUIPMENT\"]/description"
 msgstr ""
+"Покажите Уэйксону оборудование РК БПС.\n"
+"\t\t\t\tПока эффект действует: +4% к шансу сопротивления урону корпусу, "
+"системам и ионному урону от вражеского оружия; ваши системы чинятся со "
+"скоростью 1.15х; +4% к скорости перезарядки оружия и уклонению."
 
 #: src-en/data/hyperspace.xml.append:9432
 msgid ""
 "data/hyperspace.xml.append$//achievement[@name=\"ACH_BOON_RK_BPS_EQUIPMENT\"]/header"
-msgstr ""
+msgstr "Благословение получено"
