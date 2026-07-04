@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-06-30 19:43+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-07-04 11:36+0000\n"
+"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/radikal-sector/dataevents_special_storagexmlappend/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -124,11 +124,10 @@ msgid ""
 msgstr "（焦土系列）点燃你的飞船以对抗登舰者！"
 
 #: src-en/data/events_special_storage.xml.append:557
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[15]/mod-"
 "append:choice/text"
-msgstr "（噬舰冲击）加固以承受满功率使用。"
+msgstr "（焦土系列）选择点燃你飞船的哪个部位！"
 
 #: src-en/data/events_special_storage.xml.append:570
 msgid ""
@@ -513,10 +512,9 @@ msgid ""
 msgstr "……在你自己的飞船上产生了这个结果（80% 几率良好）。"
 
 #: src-en/data/events_special_storage.xml.append:1153
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_6DMG_BREACH_1DMG_BREACH\"]/text"
-msgstr "你以满功率猛撞敌舰，造成了巨大的 6 点伤害……"
+msgstr "你以满功率猛撞敌舰，造成了巨大的7点伤害……"
 
 #: src-en/data/events_special_storage.xml.append:1158
 msgid ""
@@ -524,10 +522,9 @@ msgid ""
 msgstr "……在你自己的飞船上产生了这个结果（80% 几率良好）。"
 
 #: src-en/data/events_special_storage.xml.append:1163
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_5DMG_BREACH_2DMG_BREACH\"]/text"
-msgstr "你以满功率猛撞敌舰，造成了巨大的 6 点伤害……"
+msgstr "你以满功率猛撞敌舰，造成了巨大的7点伤害……"
 
 #: src-en/data/events_special_storage.xml.append:1168
 msgid ""
@@ -2606,10 +2603,9 @@ msgid ""
 msgstr "继续。"
 
 #: src-en/data/events_special_storage.xml.append:5053
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[5]/text"
-msgstr "算了，直接战斗！"
+msgstr "你需要更强大的黑客（或ECM套件）系统来获得更多选项。"
 
 #: src-en/data/events_special_storage.xml.append:5058
 msgid ""
@@ -2820,13 +2816,13 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:5400
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/choice[1]/event/text"
 msgstr ""
 "敌方船长脸上恶毒的笑容更深了。“哈哈哈，尝尝这个！”\n"
-"\t\t\t\t你立即注意到舰船的许多系统出现了故障！他们一定在使用某种战斗装置！你"
-"大概也料到一艘黑客舰船不会公平作战，但如果你没料到，或许该考虑赶紧逃跑了。"
+"\t\t\t\t你立刻注意到舰船的许多系统出现了故障！他们一定在使用某种战斗增强部件"
+"！你可能早就料到一艘黑客舰船不会公平作战，但如果你没料到，现在正是时候考虑"
+"在[style[color:ff3377]]更糟[[/style]]的事情发生之前快速逃离。"
 
 #: src-en/data/events_special_storage.xml.append:5415
 msgid ""
@@ -3810,7 +3806,7 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"1\"]/text"
-msgstr "执行升级。[消耗：50~，1{]"
+msgstr "执行升级。[消耗：35~，2{]"
 
 #: src-en/data/events_special_storage.xml.append:7226
 msgid ""
@@ -3844,7 +3840,7 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"1\"]/text"
-msgstr "执行升级。[消耗：50~，1{]"
+msgstr "执行升级。[消耗：30~，1{]"
 
 #: src-en/data/events_special_storage.xml.append:7261
 msgid ""
