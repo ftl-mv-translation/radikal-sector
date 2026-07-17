@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-07-17 19:19+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/radikal-sector/dataevents_special_storagexmlappend/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events_special_storage.xml.append:396
 msgid ""
@@ -451,6 +458,7 @@ msgid ""
 msgstr "中止，并收回任何未消耗的 {。"
 
 #: src-en/data/events_special_storage.xml.append:1098
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_2DMG_NOTHING\"]/text"
 msgstr "你勉强击中了敌人，造成了 2 点伤害……"
@@ -461,6 +469,7 @@ msgid ""
 msgstr "……在你自己的飞船上产生了这个结果（75% 几率良好）。"
 
 #: src-en/data/events_special_storage.xml.append:1107
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_3DMG_NOTHING\"]/text"
 msgstr "你擦中了敌舰的一小部分，造成了 3 点伤害……"
@@ -3684,6 +3693,7 @@ msgid ""
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:7133
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CALIBRATOR\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
 " and @lvl=\"1\"]/text"
