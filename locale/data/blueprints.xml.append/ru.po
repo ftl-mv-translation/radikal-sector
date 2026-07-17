@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-07-17 19:19+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-07-18 21:36+0000\n"
+"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "datablueprintsxmlappend/ru/>\n"
 "Language: ru\n"
@@ -56,43 +56,39 @@ msgid ""
 msgstr "Осваивает навыки гораздо быстрее"
 
 #: src-en/data/blueprints.xml.append:96
-#, fuzzy
 msgid "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/desc"
 msgstr ""
-"(РК Бам) Создан путем воздействия электрошоком на Технопата, погруженного в "
-"кислоту и начиненного бомбой. Это сводит его с ума и лишает способности "
-"менять форму, но позволяет ему запускать бомбы. \n"
-"Больше не считается ни Технопатом, ни морфом.\n"
+"(РК Бам) Вексопаты создаются путем воздействия электрошоком на Технопата, "
+"погруженного в кислоту и начиненного бомбой. Это сводит его с ума и лишает "
+"способности менять форму, но позволяет ему запускать бомбы. \n"
+"\t\tБольше не считается ни Технопатом, ни морфом.\n"
 "\n"
 "\tНаследует характеристики: занимает 0.5 места в экипаже, иммунитет к "
 "удушению, 75% сопротивляемости огню у и оглушению, 0.8х скорость "
 "передвижения."
 
 #: src-en/data/blueprints.xml.append:101
-#, fuzzy
 msgid "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/title"
-msgstr "Сквирт"
+msgstr "Вексо"
 
 #: src-en/data/blueprints.xml.append:102
-#, fuzzy
 msgid "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/short"
-msgstr "Сквирт"
+msgstr "Вексо"
 
 #: src-en/data/blueprints.xml.append:105
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/powerList/power[1]"
 msgstr ""
-"Активная способность: телепортирует бомбу на корабль противника, один раз за "
-"прыжок"
+"Активная способность: телепортирует бомбу на корабль противника, которая "
+"наносит 1 урон один раз за прыжок"
 
 #: src-en/data/blueprints.xml.append:106
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/powerList/power[2]"
 msgstr ""
-"Активная способность: немедленно взрывает бомбу прямо здесь, один раз за "
-"прыжок [style[color:ff3377]](возможен дружественный огонь)[[/style]]"
+"Активная способность: немедленно взрывает бомбу прямо здесь, которая наносит "
+"1 урон один раз за прыжок [style[color:ff3377]](возможен дружественный огонь)"
+"[[/style]]"
 
 #: src-en/data/blueprints.xml.append:107
 msgid ""
@@ -154,7 +150,7 @@ msgstr "2х скорость ближнего боя"
 #: src-en/data/blueprints.xml.append:140
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"unique_rk_defromorius\"]/powerList/power[5]"
-msgstr ""
+msgstr "Остается управляемым с помощью Панк-Гармонии"
 
 #: src-en/data/blueprints.xml.append:156
 msgid "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/desc"
@@ -190,18 +186,16 @@ msgid ""
 msgstr "Невозможно разделить, не может ремонтировать или потушить."
 
 #: src-en/data/blueprints.xml.append:170
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/powerList/power[4]"
 msgstr ""
 "Текущая система невосприимчива к огню. Вместо этого текущая система "
-"противника получает 2х урона от огня"
+"противника получает 1.6х урона от огня"
 
 #: src-en/data/blueprints.xml.append:171
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/powerList/power[5]"
-msgstr "1.2x скорость передвижения"
+msgstr "1.1x скорость передвижения"
 
 #: src-en/data/blueprints.xml.append:172
 msgid ""
@@ -463,7 +457,6 @@ msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_DREAD_DECK\"]/title"
 msgstr "Палуба ужаса"
 
 #: src-en/data/blueprints.xml.append:463
-#, fuzzy
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_DREAD_DECK\"]/desc"
 msgstr ""
 "(Оборудование РК Панк) Сам по себе он ничего не делает, но опытные члены "
@@ -471,12 +464,12 @@ msgstr ""
 "появляется этот модуль.\n"
 "\n"
 "\t\tВраги на борту вашего корабля получают 1.7х урона от всех источников.\n"
-"\t\tВаш экипаж получает 2.5х исцеление от большинства источников, 2х "
+"\t\tВаш экипаж получает 1.6х исцеление от большинства источников, 2х "
 "скорость клонирования и не теряет навыки при клонировании.\n"
 "\t\t[style[color:ff3377]]ПРЕДУПРЕЖДЕНИЕ: Все члены экипажа, находящиеся в "
-"одном помещении с кем-либо из вашей команды, получают 0.5х исцеления (эффект "
-"не суммируется) и не могут быть клонированы![[/style]] [Этот дебафф "
-"отображается в виде фиолетового дыма]"
+"одном помещении с кем-либо из вашей команды, получают 0.5х исцеления [[/"
+"style]](эффект не суммируется)[style[color:ff3377]] и не могут быть "
+"клонированы![[/style]] [Этот дебафф отображается в виде фиолетового дыма]"
 
 #: src-en/data/blueprints.xml.append:474
 msgid ""
@@ -497,7 +490,6 @@ msgid ""
 msgstr "Панк-Гармония"
 
 #: src-en/data/blueprints.xml.append:486
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_OWN_HARMONY_ON\"]/desc"
 msgstr ""
@@ -513,7 +505,7 @@ msgstr ""
 "\t\n"
 "\tМожно отключить в любой момент.\n"
 "\n"
-"\tУ пустых маяков можно вырастить Сепаратиста за 15~, 1{ и 1|, но "
+"\tУ пустых маяков можно вырастить Сепаратиста за 25~, 1{ и 1|, но "
 "[style[color:ff3377]]флот повстанцев ускорится на 1 прыжок[[/style]]"
 
 #: src-en/data/blueprints.xml.append:498
@@ -522,7 +514,6 @@ msgid ""
 msgstr "Панк-Гармония (ВЫКЛ)"
 
 #: src-en/data/blueprints.xml.append:499
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_OWN_HARMONY_OFF\"]/desc"
 msgstr ""
@@ -538,7 +529,7 @@ msgstr ""
 "\t\n"
 "\tМожно включить в любой момент.\n"
 "\n"
-"\tУ пустых маяков можно вырастить Сепаратиста за 15~, 1{ и 1|, но "
+"\tУ пустых маяков можно вырастить Сепаратиста за 25~, 1{ и 1|, но "
 "[style[color:ff3377]]флот повстанцев ускорится на 1 прыжок[[/style]]"
 
 #: src-en/data/blueprints.xml.append:526
@@ -637,7 +628,6 @@ msgid ""
 msgstr "Фламмабилизатор-Урон"
 
 #: src-en/data/blueprints.xml.append:619
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_ENEMIES_BURN_MORE\"]/desc"
 msgstr ""
@@ -647,8 +637,9 @@ msgstr ""
 "жизнеобеспечения (кислород).\n"
 "\tДействует на обоих кораблях.\n"
 "\t\n"
-"\tЭту возможность можно включить в любой момент, чтобы враги, не обладающие "
-"огнестойкостью, получали больше урона от огня.\n"
+"\tЭту возможность можно включить или выключить в любой момент, чтобы сделать "
+"врагов, обладающих огнестойкостью и способностью восстанавливаться от огня, "
+"уязвимыми к огню.\n"
 "\n"
 "\tОба режима переключения замедляют передвижение врагов в зоне огня на 20% "
 "(до 80% при 3 уровнях Кислородной установки) [Не суммируется]."
@@ -810,7 +801,6 @@ msgid ""
 msgstr "[В] Удушонайзер Н.С.В.Ф.У."
 
 #: src-en/data/blueprints.xml.append:884
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"EX_RK_CHOKING_IS_FINE\"]/desc"
 msgstr ""
@@ -819,9 +809,9 @@ msgstr ""
 "этом часто пользуются спросом.\n"
 "\t\t\n"
 "\t\tВаш экипаж получает 0.75х урона от удушья.\n"
-"\t\tВ состоянии удушья члены вашего экипажа получают 1.5х скорость "
-"передвижения, саботажа, ремонта и сражения. Иммунитет к удушению исключает "
-"возможность удушения.\n"
+"\t\tВ состоянии удушья члены вашего экипажа получают 1.4х скорость "
+"передвижения, саботажа, ремонта и сражения. Не влияет на экипаж, обладающий "
+"иммунитетом к удушению.\n"
 "\t\t\n"
 "\tТак как это улучшение - [В]нешнее, оно предоставляет свой обычный эффект, "
 "но занимает слот модуля. Может быть бесплатно конвертировано во внутреннюю "
@@ -834,7 +824,6 @@ msgid ""
 msgstr "Удушонайзер Н.С.В.Ф.У."
 
 #: src-en/data/blueprints.xml.append:897
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"INTERNAL_RK_CHOKING_IS_FINE\"]/desc"
 msgstr ""
@@ -844,7 +833,7 @@ msgstr ""
 "\t\t\n"
 "\t\tВаш экипаж получает 0.75х урона от удушья.\n"
 "\t\tВ состоянии удушья они двигаются, саботируют, ремонтируют и сражаются в "
-"1.5х эффективнее. Иммунитет к удушению исключает возможность удушения."
+"1.4х эффективнее. Не влияет на экипаж, обладающий иммунитетом к удушению."
 
 #: src-en/data/blueprints.xml.append:907
 msgid ""
@@ -1005,21 +994,25 @@ msgstr ""
 "\t\tРасщепляющие лучи наносят урон за каждую ячейку, а не за каждый отсек."
 
 #: src-en/data/blueprints.xml.append:1254
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_HEAVY_POPPER_1\"]/title"
-msgstr "Тяжелый поппер мод. II"
+msgstr "Тяжелый поппер мод. I"
 
 #: src-en/data/blueprints.xml.append:1255
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_HEAVY_POPPER_1\"]/short"
-msgstr "Тяж. поп. II"
+msgstr "Тяж. поп. I"
 
 #: src-en/data/blueprints.xml.append:1256
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_HEAVY_POPPER_1\"]/desc"
 msgstr ""
+"(Оборудование РК Бам) Урон в секунду от Импульсного лазера мод. III при "
+"мощности 1!\n"
+"\t\t[style[color:ff3377]]Ваши системы имеют 4% вероятность получить 1 урон "
+"при каждом выстреле![[/style]]\n"
+"\t\tТяжелые попперы неточны и медлительны, но пробивают 2 щита и могут "
+"создавать пробоину."
 
 #: src-en/data/blueprints.xml.append:1312
 msgid ""
@@ -1027,13 +1020,11 @@ msgid ""
 msgstr "Тяжелый поппер мод. II"
 
 #: src-en/data/blueprints.xml.append:1313
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_HEAVY_POPPER_2\"]/short"
 msgstr "Тяж. поп. II"
 
 #: src-en/data/blueprints.xml.append:1314
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_HEAVY_POPPER_2\"]/desc"
 msgstr ""
@@ -1041,24 +1032,29 @@ msgstr ""
 "врагов и/или нанести им серьезный урон.\n"
 "\t\t[style[color:ff3377]]Ваши системы имеют 3% шанс получить 1 урон при "
 "каждом выстреле![[/style]]\n"
-"\t\tТяжелые попперы — это неточные и более медленные тяжелые лазеры, "
-"способные убрать 2 щита."
+"\t\tТяжелые попперы неточны и медлительны, но пробивают сразу 2 щита и могут "
+"создавать пробоины."
 
 #: src-en/data/blueprints.xml.append:1412
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_HEAVY_POPPER_3\"]/title"
-msgstr "Тяжелый поппер мод. II"
+msgstr "Тяжелый поппер мод. III"
 
 #: src-en/data/blueprints.xml.append:1413
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_HEAVY_POPPER_3\"]/short"
-msgstr ""
+msgstr "Тяж. Поп. III"
 
 #: src-en/data/blueprints.xml.append:1414
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_HEAVY_POPPER_3\"]/desc"
 msgstr ""
+"(Оборудование РК Бам) Мощь, подобная артиллерии флота, чтобы разбивать щиты "
+"и сокрушать. Убивать. Уничтожать.\n"
+"\t\t[style[color:ff3377]]Ваши системы имеют 2% вероятность получить 1 урон "
+"при каждом выстреле![[/style]]\n"
+"\t\tТяжелые попперы неточны и медлительны, но пробивают 2 щита и могут "
+"создавать пробоину."
 
 #: src-en/data/blueprints.xml.append:1470
 msgid "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_UNLOADER\"]/title"
@@ -1078,17 +1074,23 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:1518
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_BOMBLAUNCHER_ANTIBIO_REPAIR\"]/title"
-msgstr ""
+msgstr "Радиационная ремонтная бомба"
 
 #: src-en/data/blueprints.xml.append:1519
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_BOMBLAUNCHER_ANTIBIO_REPAIR\"]/short"
-msgstr ""
+msgstr "Рад. рем. б."
 
 #: src-en/data/blueprints.xml.append:1521
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_BOMBLAUNCHER_ANTIBIO_REPAIR\"]/desc"
 msgstr ""
+"(Оборудование РК Панк) Использует запрещенные соединения для ремонта систем, "
+"но [style[color:ff3377]]наносит урон экипажу, временно выводя его из строя[[/"
+"style]].\n"
+"\t\t\n"
+"\t\tМожет нацеливаться на собственный корабль. Консервативное оружие само по "
+"себе не потребляет энергии, но требует питания самой системы."
 
 #: src-en/data/blueprints.xml.append:1767
 msgid ""
@@ -1137,14 +1139,13 @@ msgid ""
 msgstr "Дождь ионов"
 
 #: src-en/data/blueprints.xml.append:2023
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_RAIN_OF_ION\"]/desc"
 msgstr ""
 "(Оборудование РК Панк) Этот сверхмощная пушка одновременно выпускает "
 "ускоренные ионы, тяжелые ионы, зажигающие ионы, обычные ионы, оглушающие "
-"ионы и рад-ионы (в порядке от самого быстрого к самому медленному). Время "
-"перезарядки цепи сокращается до 4 раз.\n"
+"ионы и рад-ионы (в порядке от самого быстрого к самому медленному). Цепь "
+"ускоряет перезарядку.\n"
 "\t\tСиние варианты выбора, которые стоят целого арсенала оружия!"
 
 #: src-en/data/blueprints.xml.append:2093
@@ -1293,13 +1294,12 @@ msgid ""
 msgstr "Артиллерия"
 
 #: src-en/data/blueprints.xml.append:2651
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_ARTILLERY_FLAK_QUICK\"]/desc"
 msgstr ""
-"Артиллерия: Выпускает серию из 4 осколочных снарядов, каждый из которых "
-"наносит 1 единицу урона.\n"
-"\tБазовая перезарядка: 16"
+"Артиллерия: Выпускает 4 осколочных снаряда, каждый из которых наносит 1 урон "
+"в радиусе 50.\n"
+"\tБазовая перезарядка: 20"
 
 #: src-en/data/blueprints.xml.append:2697
 msgid ""
@@ -1312,22 +1312,20 @@ msgid ""
 msgstr "Артиллерия"
 
 #: src-en/data/blueprints.xml.append:2699
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_LASER_PARTICLE\"]/desc"
 msgstr ""
-"Артиллерия: Выпускает 6 частичных лазеров, каждый из которых наносит 3 "
-"единицы урона системе, пробивает 1 щит и никогда не промахивается.\n"
-"\tБазовая перезарядка: 20"
+"Артиллерия: Выпускает 6 частичных лазеров, каждый из которых наносит 2 урона "
+"системам и 15 урона экипажу, пробивает 1 щит и никогда не промахивается.\n"
+"\tБазовая перезарядка: 25"
 
 #: src-en/data/blueprints.xml.append:2701
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_LASER_PARTICLE\"]/tooltip"
 msgstr ""
-"Артиллерия: [Перезарядка: 20с] Выпускает 6 частичных лазеров, каждый из "
-"которых наносит 3 единицы системного урона, пробивает 1 щит и никогда не "
-"промахивается."
+"Артиллерия: [Перезарядка: 25с] Выпускает 6 частичных лазеров, каждый из "
+"которых наносит 2 системного урона и 15 урона экипажу, пробивает 1 щит и "
+"никогда не промахивается."
 
 #: src-en/data/blueprints.xml.append:2740
 msgid ""
