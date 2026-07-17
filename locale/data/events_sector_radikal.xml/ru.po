@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-07-17 19:19+0000\n"
+"PO-Revision-Date: 2026-07-18 21:36+0000\n"
 "Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "dataevents_sector_radikalxml/ru/>\n"
@@ -80,7 +80,6 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events_sector_radikal.xml:142
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_STORE_SNIPER_WIN\"]/text"
 msgstr ""
@@ -91,8 +90,11 @@ msgstr ""
 "нибудь, чтобы подбодрить ее, но она перебивает вас: \"Потому что в этой "
 "вселенной нет НИКАКОГО лучшего магазина снаряжения для скрытности! Оно "
 "настолько эффективно, что пираты мечтают о нем, коалиции строят планы по его "
-"приобретению, а Ренегаты пытаются его украсть! Покупайте, пока еще "
-"можете!\".\n"
+"приобретению, а Ренегаты пытаются его украсть! Покупайте, пока еще можете!.\n"
+"\t\tЗнаете ли вы, что при начале стрельбы из большинства видов оружия "
+"продолжительность действия вашей Маскировки сокращается на 20% от "
+"максимальной?\".\n"
+"\t\t\n"
 "\t\tОказывается, она все еще в роли. Профессионалы сектора РК, должно быть, "
 "повидали всякое, думаете вы про себя.\n"
 "\n"
@@ -1537,10 +1539,9 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events_sector_radikal.xml:1609
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_BIL_SCORCH_REACTOR\"]/choice[2]/text"
-msgstr "Вместо этого осмотреться вокруг маяка."
+msgstr "Забыть об этом и вместо этого тщательно осмотреть окрестности маяка."
 
 #: src-en/data/events_sector_radikal.xml:1611
 msgid ""
@@ -1790,7 +1791,6 @@ msgid ""
 msgstr "Ладно, тогда кто это сделал?"
 
 #: src-en/data/events_sector_radikal.xml:1878
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_DEFROMORIUS_SUSPICIOUS\"]/surrender/choice[1]/event/text"
 msgstr ""
@@ -1880,7 +1880,6 @@ msgid ""
 msgstr "Попробовать установить с ними контакт."
 
 #: src-en/data/events_sector_radikal.xml:1958
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[1]/event/text"
 msgstr ""
@@ -1888,7 +1887,8 @@ msgstr ""
 "определенно отвечает вам как таковой.\n"
 "\t\t\t\t\n"
 "\t\t\t\t\"Я нахожусь в опасности, но знаю, что вы - из Федерации. --"
-"ОБРАБОТКА-- Этот маяк, скорее всего, не имеет отношения к вашей миссии. Ваше "
+"ОБРАБОТКА-- \n"
+"\t\t\t\tЭтот маяк, скорее всего, не имеет отношения к вашей миссии. Ваше "
 "присутствие здесь: цель?\""
 
 #: src-en/data/events_sector_radikal.xml:1964
@@ -1913,7 +1913,6 @@ msgid ""
 msgstr "Мы могли бы защитить вас от Гармонии."
 
 #: src-en/data/events_sector_radikal.xml:1977
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[1]/event/choice/event/choice[1]/event/text"
 msgstr ""
@@ -1921,9 +1920,9 @@ msgstr ""
 "перестану функционировать через: [time.short]\"\n"
 "\n"
 "\t\t\t\t\t\t\t\tСущество действительно выглядит так, будто ему срочно нужен "
-"кислород, хотя это заняло больше времени, чем можно было бы предположить. "
-"Пока что вы не можете рисковать и затащить его внутрь, но, возможно, сможете "
-"помочь ему удаленно и посмотреть, что из этого выйдет."
+"кислород, хотя это заняло гораздо больше времени, чем можно было бы "
+"предположить. Пока что вы не можете рисковать и затащить его внутрь, но, "
+"возможно, сможете помочь ему удаленно и посмотреть, что из этого выйдет."
 
 #: src-en/data/events_sector_radikal.xml:1982
 msgid ""
@@ -2024,10 +2023,9 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events_sector_radikal.xml:2067
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[1]/event/choice/event/choice[2]/text"
-msgstr "Мы отомстим за наших союзников."
+msgstr "Мы отомстим за наших союзников!"
 
 #: src-en/data/events_sector_radikal.xml:2069
 msgid ""
@@ -3647,7 +3645,6 @@ msgid ""
 msgstr "Знаешь, что, самое смешное, что мы на мели..."
 
 #: src-en/data/events_sector_radikal.xml:3618
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SLAVER\"]/choice/event/choice[4]/event/text"
 msgstr ""
@@ -3720,7 +3717,6 @@ msgid ""
 msgstr "Знаешь, что, самое смешное, что мы на мели..."
 
 #: src-en/data/events_sector_radikal.xml:3683
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_MERCENARY\"]/choice/event/choice[3]/event/text"
 msgstr ""
@@ -3807,7 +3803,6 @@ msgid ""
 msgstr "Знаешь, что, самое смешное, что мы на мели..."
 
 #: src-en/data/events_sector_radikal.xml:3764
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_PIRATE_TRINITY_CHOOSE_SMUGGLER\"]/choice/event/choice[4]/event/text"
 msgstr ""
