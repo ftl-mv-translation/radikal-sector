@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-07-17 19:19+0000\n"
+"PO-Revision-Date: 2026-07-18 21:36+0000\n"
 "Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "dataevents_special_storagexmlappend/ru/>\n"
@@ -485,10 +485,11 @@ msgid ""
 msgstr "Отменить и вернуть все неиспользованные {."
 
 #: src-en/data/events_special_storage.xml.append:1098
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_2DMG_NOTHING\"]/text"
-msgstr "Вы едва умудряетесь поразить противника, нанеся 2 единицы урона..."
+msgstr ""
+"Вам едва удается попасть в корпус противника (и [style[color:ff3377]]не "
+"задеть ни одну из систем[[/style]]), нанеся 2 урона..."
 
 #: src-en/data/events_special_storage.xml.append:1102
 msgid ""
@@ -496,11 +497,12 @@ msgid ""
 msgstr "...тоже самое происходит и на вашем корабле (вероятность успеха 75%)."
 
 #: src-en/data/events_special_storage.xml.append:1107
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_3DMG_NOTHING\"]/text"
 msgstr ""
-"Вы попадаете в небольшую часть вражеского корабля, нанося 3 единицы урона..."
+"Вы попадаете в небольшую часть вражеского корабля (но "
+"[style[color:ff3377]]не затронули ни одну систему[[/style]]), нанося 3 "
+"урона..."
 
 #: src-en/data/events_special_storage.xml.append:1111
 msgid ""
@@ -3849,21 +3851,18 @@ msgstr ""
 "\t\t\tМожно установить дважды. [УЖЕ УСТАНОВЛЕНО: у вас уже установлено максимальное количество этого улучшения]"
 
 #: src-en/data/events_special_storage.xml.append:7013
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_CALIBRATOR\""
 " and @lvl=\"1\"]/text"
-msgstr "Калибратор 2-го уровня. [Цена: 40~]"
+msgstr "Калибратор 2-го уровня. [Цена: 45~, 1|]"
 
 #: src-en/data/events_special_storage.xml.append:7017
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_CALIBRATOR\""
 " and @lvl=\"0\"]/text"
-msgstr "Калибратор 1-го уровня. [Цена: 40~]"
+msgstr "Калибратор 1-го уровня. [Цена: 45~ 1|]"
 
 #: src-en/data/events_special_storage.xml.append:7022
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_CHOKING_IS_FINE\""
 " and @lvl=\"1\"]/text"
@@ -3871,8 +3870,8 @@ msgstr ""
 "РК Бам \"Удушонайзер Н.С.В.Ф.У.\": ваш экипаж получает 0.75х урон от "
 "удушья.\n"
 "\t\tВ состоянии удушья они передвигаются, саботируют, ремонтируют и "
-"сражаются в 1.5х эффективнее. Иммунитет к удушению исключает возможность "
-"удушения. [УЖЕ УСТАНОВЛЕНО]"
+"сражаются в 1.4х эффективнее. Не влияет на экипаж, обладающий иммунитетом к "
+"удушью. [УЖЕ УСТАНОВЛЕНО]"
 
 #: src-en/data/events_special_storage.xml.append:7027
 msgid ""
@@ -3962,11 +3961,10 @@ msgstr ""
 "корабль РадиКал Бам (или БПС)."
 
 #: src-en/data/events_special_storage.xml.append:7133
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CALIBRATOR\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
 " and @lvl=\"1\"]/text"
-msgstr "Установить улучшение. [Цена: 35~, 2|]"
+msgstr "Установить улучшение. [Цена: 45~, 1|]"
 
 #: src-en/data/events_special_storage.xml.append:7135
 msgid ""
@@ -3986,14 +3984,14 @@ msgid ""
 msgstr "Неважно."
 
 #: src-en/data/events_special_storage.xml.append:7159
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE\"]/text"
 msgstr ""
 "Вы собираетесь установить Удушонайзер Н.С.В.Ф.У.\n"
 "\t[Эффекты: ваш экипаж получает 0.75х урон от удушья.\n"
 "\t\tВ состоянии удушья они передвигаются, саботируют, ремонтируют и "
-"сражаются в 1.5х эффективнее. Иммунитет к удушению - невозможно задохнуться]"
+"сражаются в 1.4х эффективнее. Не влияет на экипаж, обладающий иммунитетом к "
+"удушению.]"
 
 #: src-en/data/events_special_storage.xml.append:7164
 msgid ""
