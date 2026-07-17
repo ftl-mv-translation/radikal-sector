@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-07-17 19:19+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "dataevents_special_storagexmlappend/ru/>\n"
 "Language: ru\n"
@@ -3849,24 +3849,30 @@ msgstr ""
 "\t\t\tМожно установить дважды. [УЖЕ УСТАНОВЛЕНО: у вас уже установлено максимальное количество этого улучшения]"
 
 #: src-en/data/events_special_storage.xml.append:7013
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_CALIBRATOR\""
 " and @lvl=\"1\"]/text"
 msgstr "Калибратор 2-го уровня. [Цена: 40~]"
 
 #: src-en/data/events_special_storage.xml.append:7017
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_CALIBRATOR\""
 " and @lvl=\"0\"]/text"
 msgstr "Калибратор 1-го уровня. [Цена: 40~]"
 
 #: src-en/data/events_special_storage.xml.append:7022
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_CHOKING_IS_FINE\""
 " and @lvl=\"1\"]/text"
 msgstr ""
-"РК Бам \"Удушонайзер Н.С.В.Ф.У.\": ваш экипаж получает 0.75х урон от удушья.\n"
-"\t\tВ состоянии удушья они передвигаются, саботируют, ремонтируют и сражаются в 1.5х эффективнее. Иммунитет к удушению исключает возможность удушения. [УЖЕ УСТАНОВЛЕНО]"
+"РК Бам \"Удушонайзер Н.С.В.Ф.У.\": ваш экипаж получает 0.75х урон от "
+"удушья.\n"
+"\t\tВ состоянии удушья они передвигаются, саботируют, ремонтируют и "
+"сражаются в 1.5х эффективнее. Иммунитет к удушению исключает возможность "
+"удушения. [УЖЕ УСТАНОВЛЕНО]"
 
 #: src-en/data/events_special_storage.xml.append:7027
 msgid ""
@@ -3956,6 +3962,7 @@ msgstr ""
 "корабль РадиКал Бам (или БПС)."
 
 #: src-en/data/events_special_storage.xml.append:7133
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CALIBRATOR\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
 " and @lvl=\"1\"]/text"
@@ -3979,12 +3986,14 @@ msgid ""
 msgstr "Неважно."
 
 #: src-en/data/events_special_storage.xml.append:7159
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE\"]/text"
 msgstr ""
 "Вы собираетесь установить Удушонайзер Н.С.В.Ф.У.\n"
 "\t[Эффекты: ваш экипаж получает 0.75х урон от удушья.\n"
-"\t\tВ состоянии удушья они передвигаются, саботируют, ремонтируют и сражаются в 1.5х эффективнее. Иммунитет к удушению - невозможно задохнуться]"
+"\t\tВ состоянии удушья они передвигаются, саботируют, ремонтируют и "
+"сражаются в 1.5х эффективнее. Иммунитет к удушению - невозможно задохнуться]"
 
 #: src-en/data/events_special_storage.xml.append:7164
 msgid ""
