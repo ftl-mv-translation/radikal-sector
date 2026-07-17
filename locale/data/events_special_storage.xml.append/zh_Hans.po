@@ -1,16 +1,9 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-07-04 11:36+0000\n"
-"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
-"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
-"projects/radikal-sector/dataevents_special_storagexmlappend/zh_Hans/>\n"
-"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events_special_storage.xml.append:396
 msgid ""
@@ -239,13 +232,13 @@ msgid ""
 "append:choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:706
+#: src-en/data/events_special_storage.xml.append:704
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[21]/mod-"
 "append:choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:714
+#: src-en/data/events_special_storage.xml.append:712
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[22]/mod-"
 "append:choice/text"
@@ -257,43 +250,49 @@ msgid ""
 "append:choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:728
+#: src-en/data/events_special_storage.xml.append:726
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[24]/mod-"
 "append:choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:774
+#: src-en/data/events_special_storage.xml.append:734
+msgid ""
+"data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[25]/mod-"
+"append:choice/text"
+msgstr ""
+
+#: src-en/data/events_special_storage.xml.append:780
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:783
+#: src-en/data/events_special_storage.xml.append:789
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[1]/text"
 msgstr "是 [需要 10 秒。]"
 
-#: src-en/data/events_special_storage.xml.append:785
+#: src-en/data/events_special_storage.xml.append:791
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[1]/event/text"
 msgstr "你激活了增强部件……"
 
-#: src-en/data/events_special_storage.xml.append:793
+#: src-en/data/events_special_storage.xml.append:799
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[1]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:799
+#: src-en/data/events_special_storage.xml.append:805
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[@req=\"DEBUG_GENERATOR\"]/text"
 msgstr "（应急供能器）是，不消耗燃料。"
 
-#: src-en/data/events_special_storage.xml.append:803
+#: src-en/data/events_special_storage.xml.append:809
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[@req=\"FUEL_CONSERVER\"]/text"
 msgstr "燃料回收器）是，不消耗燃料。"
 
-#: src-en/data/events_special_storage.xml.append:808
+#: src-en/data/events_special_storage.xml.append:814
 #, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCED\"]/text"
@@ -301,17 +300,17 @@ msgstr ""
 "（强化型噬舰冲击）是，以满功率进行！\n"
 "[你将失去强化效果。下次跃迁前无法再次冲撞。需要 7 秒。]"
 
-#: src-en/data/events_special_storage.xml.append:811
+#: src-en/data/events_special_storage.xml.append:817
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCED\"]/event/text"
 msgstr "你以满功率激活了增强部件……"
 
-#: src-en/data/events_special_storage.xml.append:820
+#: src-en/data/events_special_storage.xml.append:826
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCED\"]/event/choice/text"
 msgstr "开始战斗！"
 
-#: src-en/data/events_special_storage.xml.append:826
+#: src-en/data/events_special_storage.xml.append:832
 #, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED\"]/text"
@@ -319,979 +318,979 @@ msgstr ""
 "是，以满功率进行！\n"
 "[增强部件将会瓦解。需要 7 秒。]"
 
-#: src-en/data/events_special_storage.xml.append:829
+#: src-en/data/events_special_storage.xml.append:835
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED\"]/event/text"
 msgstr "你以满功率激活了增强部件……"
 
-#: src-en/data/events_special_storage.xml.append:838
+#: src-en/data/events_special_storage.xml.append:844
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED\"]/event/choice/text"
 msgstr "开始战斗！"
 
-#: src-en/data/events_special_storage.xml.append:844
+#: src-en/data/events_special_storage.xml.append:850
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[@req=\"LOCKED_DJMOD_COMBAT_SHIPVORE_RAM\"]/text"
 msgstr ""
 "是，以满功率进行！\n"
 "[下次跳跃前无法再次冲撞。需要 7 秒。]"
 
-#: src-en/data/events_special_storage.xml.append:847
+#: src-en/data/events_special_storage.xml.append:853
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[@req=\"LOCKED_DJMOD_COMBAT_SHIPVORE_RAM\"]/event/text"
 msgstr "你以满功率激活了增强部件……"
 
-#: src-en/data/events_special_storage.xml.append:857
+#: src-en/data/events_special_storage.xml.append:863
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[@req=\"LOCKED_DJMOD_COMBAT_SHIPVORE_RAM\"]/event/choice/text"
 msgstr "开始战斗！"
 
-#: src-en/data/events_special_storage.xml.append:864
+#: src-en/data/events_special_storage.xml.append:870
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[7]/text"
 msgstr "执行其他操作。"
 
-#: src-en/data/events_special_storage.xml.append:868
+#: src-en/data/events_special_storage.xml.append:874
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[8]/text"
 msgstr "算了，直接战斗！"
 
-#: src-en/data/events_special_storage.xml.append:870
+#: src-en/data/events_special_storage.xml.append:876
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[8]/event/text"
 msgstr "你决定什么都不做，准备战斗。"
 
-#: src-en/data/events_special_storage.xml.append:883
+#: src-en/data/events_special_storage.xml.append:889
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_START\"]/triggeredEvent/triggeredEventBox/tooltip"
 msgstr "你将在这段时间后准备好冲撞敌舰。"
 
-#: src-en/data/events_special_storage.xml.append:897
+#: src-en/data/events_special_storage.xml.append:903
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_START_FULL_POWER\"]/triggeredEvent/triggeredEventBox/tooltip"
 msgstr "你将在这段时间后以满功率状态准备好冲撞敌舰。"
 
-#: src-en/data/events_special_storage.xml.append:911
+#: src-en/data/events_special_storage.xml.append:917
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END\"]/text"
 msgstr "已准备好冲撞！是否进行？"
 
-#: src-en/data/events_special_storage.xml.append:914
+#: src-en/data/events_special_storage.xml.append:920
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END\"]/choice[1]/text"
 msgstr "冲刺！冲！"
 
-#: src-en/data/events_special_storage.xml.append:919
+#: src-en/data/events_special_storage.xml.append:925
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END\"]/choice[@req=\"shipvore_ram_used_fuel\""
 " and @lvl=\"0\"]/text"
 msgstr "中止。（不消耗 {）"
 
-#: src-en/data/events_special_storage.xml.append:926
+#: src-en/data/events_special_storage.xml.append:932
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END\"]/choice[@req=\"shipvore_ram_used_fuel\""
 " and @lvl=\"1\"]/text"
 msgstr "中止，并收回任何未消耗的 {。"
 
-#: src-en/data/events_special_storage.xml.append:939
+#: src-en/data/events_special_storage.xml.append:945
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/text"
 msgstr "已完全准备好冲撞！是否进行？"
 
-#: src-en/data/events_special_storage.xml.append:942
+#: src-en/data/events_special_storage.xml.append:948
 #, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCED_AT_FULL_POWER\"]/text"
 msgstr "（满功率）全力以赴！[你将失去增强部件的强化效果。]"
 
-#: src-en/data/events_special_storage.xml.append:945
+#: src-en/data/events_special_storage.xml.append:951
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCED_AT_FULL_POWER\"]/event/text"
 msgstr "你增强部件的强化效果消融殆尽……"
 
-#: src-en/data/events_special_storage.xml.append:952
+#: src-en/data/events_special_storage.xml.append:958
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCED_AT_FULL_POWER\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:958
+#: src-en/data/events_special_storage.xml.append:964
 #, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED_AT_FULL_POWER\"]/text"
 msgstr "（满功率）全力以赴！[在空信标处加固增强部件，使其不会瓦解。]"
 
-#: src-en/data/events_special_storage.xml.append:961
+#: src-en/data/events_special_storage.xml.append:967
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED_AT_FULL_POWER\"]/event/text"
 msgstr "你的增强部件瓦解了……"
 
-#: src-en/data/events_special_storage.xml.append:968
+#: src-en/data/events_special_storage.xml.append:974
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED_AT_FULL_POWER\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:975
+#: src-en/data/events_special_storage.xml.append:981
 #, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[@req=\"locked_shipvore_ram_full_power\"]/text"
 msgstr "（满功率）不是你死就是我亡！[在跃迁之前无法再次冲撞。]"
 
-#: src-en/data/events_special_storage.xml.append:978
+#: src-en/data/events_special_storage.xml.append:984
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[@req=\"locked_shipvore_ram_full_power\"]/event/text"
 msgstr "你强烈地感觉到你的引擎正在蓄能……"
 
-#: src-en/data/events_special_storage.xml.append:984
+#: src-en/data/events_special_storage.xml.append:990
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[@req=\"locked_shipvore_ram_full_power\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:991
+#: src-en/data/events_special_storage.xml.append:997
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[4]/text"
 msgstr "中止，并收回任何未消耗的 {。"
 
-#: src-en/data/events_special_storage.xml.append:1092
+#: src-en/data/events_special_storage.xml.append:1098
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_2DMG_NOTHING\"]/text"
 msgstr "你勉强击中了敌人，造成了 2 点伤害……"
 
-#: src-en/data/events_special_storage.xml.append:1096
+#: src-en/data/events_special_storage.xml.append:1102
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_2DMG_NOTHING\"]/choice/text"
 msgstr "……在你自己的飞船上产生了这个结果（75% 几率良好）。"
 
-#: src-en/data/events_special_storage.xml.append:1101
+#: src-en/data/events_special_storage.xml.append:1107
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_3DMG_NOTHING\"]/text"
 msgstr "你擦中了敌舰的一小部分，造成了 3 点伤害……"
 
-#: src-en/data/events_special_storage.xml.append:1105
+#: src-en/data/events_special_storage.xml.append:1111
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_3DMG_NOTHING\"]/choice/text"
 msgstr "……在你自己的飞船上产生了这个结果（75% 几率良好）。"
 
-#: src-en/data/events_special_storage.xml.append:1111
+#: src-en/data/events_special_storage.xml.append:1117
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_3DMG_BREACH\"]/text"
 msgstr "你从敌舰上撕下了一小块，造成了 3 点伤害……"
 
-#: src-en/data/events_special_storage.xml.append:1117
+#: src-en/data/events_special_storage.xml.append:1123
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_3DMG_BREACH\"]/choice/text"
 msgstr "……在你自己的飞船上产生了这个结果（75% 几率良好）……"
 
-#: src-en/data/events_special_storage.xml.append:1122
+#: src-en/data/events_special_storage.xml.append:1128
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_4DMG_BREACH\"]/text"
 msgstr "你猛力撕开敌舰的船体，造成了整整 4 点伤害……"
 
-#: src-en/data/events_special_storage.xml.append:1126
+#: src-en/data/events_special_storage.xml.append:1132
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_4DMG_BREACH\"]/choice/text"
 msgstr "……在你自己的飞船上产生了这个结果（75% 几率良好）。"
 
-#: src-en/data/events_special_storage.xml.append:1131
+#: src-en/data/events_special_storage.xml.append:1137
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_5DMG_BREACH\"]/text"
 msgstr "你猛烈撞击敌舰船体，造成了严重的 5 点伤害……"
 
-#: src-en/data/events_special_storage.xml.append:1135
+#: src-en/data/events_special_storage.xml.append:1141
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_5DMG_BREACH\"]/choice/text"
 msgstr "……在你自己的飞船上产生了这个结果（75% 几率良好）。"
 
-#: src-en/data/events_special_storage.xml.append:1142
+#: src-en/data/events_special_storage.xml.append:1148
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_5DMG_BREACH_1DMG_BREACH\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:1147
+#: src-en/data/events_special_storage.xml.append:1153
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_5DMG_BREACH_1DMG_BREACH\"]/choice/text"
 msgstr "……在你自己的飞船上产生了这个结果（80% 几率良好）。"
 
-#: src-en/data/events_special_storage.xml.append:1153
+#: src-en/data/events_special_storage.xml.append:1159
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_6DMG_BREACH_1DMG_BREACH\"]/text"
 msgstr "你以满功率猛撞敌舰，造成了巨大的7点伤害……"
 
-#: src-en/data/events_special_storage.xml.append:1158
+#: src-en/data/events_special_storage.xml.append:1164
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_6DMG_BREACH_1DMG_BREACH\"]/choice/text"
 msgstr "……在你自己的飞船上产生了这个结果（80% 几率良好）。"
 
-#: src-en/data/events_special_storage.xml.append:1163
+#: src-en/data/events_special_storage.xml.append:1169
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_5DMG_BREACH_2DMG_BREACH\"]/text"
 msgstr "你以满功率猛撞敌舰，造成了巨大的7点伤害……"
 
-#: src-en/data/events_special_storage.xml.append:1168
+#: src-en/data/events_special_storage.xml.append:1174
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_5DMG_BREACH_2DMG_BREACH\"]/choice/text"
 msgstr "……在你自己的飞船上产生了这个结果（80% 几率良好）。"
 
-#: src-en/data/events_special_storage.xml.append:1174
+#: src-en/data/events_special_storage.xml.append:1180
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_6DMG_ALL_2DMG_BREACH\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:1179
+#: src-en/data/events_special_storage.xml.append:1185
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_6DMG_ALL_2DMG_BREACH\"]/choice/text"
 msgstr "……在你自己的飞船上产生了这个结果（80% 几率良好）。"
 
-#: src-en/data/events_special_storage.xml.append:1184
+#: src-en/data/events_special_storage.xml.append:1190
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_5DMG_ALL_3DMG_BREACH\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:1189
+#: src-en/data/events_special_storage.xml.append:1195
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_5DMG_ALL_3DMG_BREACH\"]/choice/text"
 msgstr "……在你自己的飞船上产生了这个结果（80% 几率良好）。"
 
-#: src-en/data/events_special_storage.xml.append:1195
+#: src-en/data/events_special_storage.xml.append:1201
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_6DMG_ALL_3DMG_BREACH\"]/text"
 msgstr "你以满功率像导弹一样犁穿了敌舰，造成了致命的 9 点伤害……"
 
-#: src-en/data/events_special_storage.xml.append:1200
+#: src-en/data/events_special_storage.xml.append:1206
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_6DMG_ALL_3DMG_BREACH\"]/choice/text"
 msgstr "……在你自己的飞船上产生了这个结果（80% 几率良好）。"
 
-#: src-en/data/events_special_storage.xml.append:1205
+#: src-en/data/events_special_storage.xml.append:1211
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_5DMG_ALL_4DMG_BREACH\"]/text"
 msgstr "你以满功率像导弹一样犁穿了敌舰，造成了致命的 9 点伤害……"
 
-#: src-en/data/events_special_storage.xml.append:1210
+#: src-en/data/events_special_storage.xml.append:1216
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_5DMG_ALL_4DMG_BREACH\"]/choice/text"
 msgstr "……在你自己的飞船上产生了这个结果（80% 几率良好）。"
 
-#: src-en/data/events_special_storage.xml.append:1215
+#: src-en/data/events_special_storage.xml.append:1221
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_3DMG_ALL_3DMG_BREACH_3DMG_BREACH\"]/text"
 msgstr "你以满功率像导弹一样犁穿了敌舰，造成了致命的 9 点伤害……"
 
-#: src-en/data/events_special_storage.xml.append:1221
+#: src-en/data/events_special_storage.xml.append:1227
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_3DMG_ALL_3DMG_BREACH_3DMG_BREACH\"]/choice/text"
 msgstr "……在你自己的飞船上产生了这个结果（80% 几率良好）。"
 
-#: src-en/data/events_special_storage.xml.append:1346
+#: src-en/data/events_special_storage.xml.append:1352
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_1\"]/text"
 msgstr "我们几乎没从中获得任何修复。"
 
-#: src-en/data/events_special_storage.xml.append:1350
+#: src-en/data/events_special_storage.xml.append:1356
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_1\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
 msgstr "（噬舰冲击）也许我们可以再来一次。"
 
-#: src-en/data/events_special_storage.xml.append:1355
+#: src-en/data/events_special_storage.xml.append:1361
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_1\"]/choice[2]/text"
 msgstr "够了。"
 
-#: src-en/data/events_special_storage.xml.append:1360
+#: src-en/data/events_special_storage.xml.append:1366
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_2\"]/text"
 msgstr "这次攻击为我们带来了可观的修复。"
 
-#: src-en/data/events_special_storage.xml.append:1364
+#: src-en/data/events_special_storage.xml.append:1370
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_2\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
 msgstr "（噬舰冲击）也许我们可以再来一次。"
 
-#: src-en/data/events_special_storage.xml.append:1368
+#: src-en/data/events_special_storage.xml.append:1374
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_2\"]/choice[2]/text"
 msgstr "够了。"
 
-#: src-en/data/events_special_storage.xml.append:1374
+#: src-en/data/events_special_storage.xml.append:1380
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_3_SCRAP\"]/text"
 msgstr "我们设法从这些残骸中获得了相当不错的修复。"
 
-#: src-en/data/events_special_storage.xml.append:1381
+#: src-en/data/events_special_storage.xml.append:1387
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_3_SCRAP\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
 msgstr "（噬舰冲击）也许我们可以再来一次。"
 
-#: src-en/data/events_special_storage.xml.append:1385
+#: src-en/data/events_special_storage.xml.append:1391
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_3_SCRAP\"]/choice[2]/text"
 msgstr "够了。"
 
-#: src-en/data/events_special_storage.xml.append:1390
+#: src-en/data/events_special_storage.xml.append:1396
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_4_SCRAP\"]/text"
 msgstr "我们从那艘飞船的残骸中获得了极好的修复！"
 
-#: src-en/data/events_special_storage.xml.append:1397
+#: src-en/data/events_special_storage.xml.append:1403
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_4_SCRAP\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
 msgstr "（噬舰冲击）也许我们可以再来一次。"
 
-#: src-en/data/events_special_storage.xml.append:1401
+#: src-en/data/events_special_storage.xml.append:1407
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_4_SCRAP\"]/choice[2]/text"
 msgstr "够了。"
 
-#: src-en/data/events_special_storage.xml.append:1406
+#: src-en/data/events_special_storage.xml.append:1412
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_5_SCRAP\"]/text"
 msgstr "我们的船正在吞噬船体！！"
 
-#: src-en/data/events_special_storage.xml.append:1413
+#: src-en/data/events_special_storage.xml.append:1419
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_5_SCRAP\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
 msgstr "（噬舰冲击）也许我们可以再来一次。"
 
-#: src-en/data/events_special_storage.xml.append:1417
+#: src-en/data/events_special_storage.xml.append:1423
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_5_SCRAP\"]/choice[2]/text"
 msgstr "够了。"
 
-#: src-en/data/events_special_storage.xml.append:1422
+#: src-en/data/events_special_storage.xml.append:1428
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_GETMISSILES\"]/text"
 msgstr "除了修复之外，我们还从他们的货物中偷到了一些导弹！"
 
-#: src-en/data/events_special_storage.xml.append:1429
+#: src-en/data/events_special_storage.xml.append:1435
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_GETMISSILES\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
 msgstr "（噬舰冲击）也许我们可以再来一次。"
 
-#: src-en/data/events_special_storage.xml.append:1433
+#: src-en/data/events_special_storage.xml.append:1439
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_GETMISSILES\"]/choice[2]/text"
 msgstr "够了。"
 
-#: src-en/data/events_special_storage.xml.append:1438
+#: src-en/data/events_special_storage.xml.append:1444
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_GETDRONEPARTS\"]/text"
 msgstr "除了修复之外，我们还从他们的货物中偷到了一些无人机零件！"
 
-#: src-en/data/events_special_storage.xml.append:1445
+#: src-en/data/events_special_storage.xml.append:1451
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_GETDRONEPARTS\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
 msgstr "（噬舰冲击）也许我们可以再来一次。"
 
-#: src-en/data/events_special_storage.xml.append:1449
+#: src-en/data/events_special_storage.xml.append:1455
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_GETDRONEPARTS\"]/choice[2]/text"
 msgstr "够了。"
 
-#: src-en/data/events_special_storage.xml.append:1459
+#: src-en/data/events_special_storage.xml.append:1465
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_ENGINES_OVERHEAT\"]/text"
 msgstr "这些残骸太糟糕了，无法用于修复，而且我们的引擎过热了。"
 
-#: src-en/data/events_special_storage.xml.append:1463
+#: src-en/data/events_special_storage.xml.append:1469
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_ENGINES_OVERHEAT\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
 msgstr "（噬舰冲击）也许我们可以再来一次。"
 
-#: src-en/data/events_special_storage.xml.append:1467
+#: src-en/data/events_special_storage.xml.append:1473
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_ENGINES_OVERHEAT\"]/choice[2]/text"
 msgstr "够了。"
 
-#: src-en/data/events_special_storage.xml.append:1472
+#: src-en/data/events_special_storage.xml.append:1478
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_HULL_ENGINE\"]/text"
 msgstr "撞上了敌舰船体的坚固部位，让我们净亏损。毕竟冲撞是有风险的……"
 
-#: src-en/data/events_special_storage.xml.append:1476
+#: src-en/data/events_special_storage.xml.append:1482
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_HULL_ENGINE\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
 msgstr "（噬舰冲击）也许我们可以再来一次。"
 
-#: src-en/data/events_special_storage.xml.append:1480
+#: src-en/data/events_special_storage.xml.append:1486
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_HULL_ENGINE\"]/choice[2]/text"
 msgstr "够了。"
 
-#: src-en/data/events_special_storage.xml.append:1485
+#: src-en/data/events_special_storage.xml.append:1491
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_ENGINES\"]/text"
 msgstr "最后一刻的闪避尝试让我们的引擎承受了极大压力，但我们确实避免了船体损伤。"
 
-#: src-en/data/events_special_storage.xml.append:1490
+#: src-en/data/events_special_storage.xml.append:1496
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_ENGINES\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
 msgstr "（噬舰冲击）也许我们可以再来一次。"
 
-#: src-en/data/events_special_storage.xml.append:1494
+#: src-en/data/events_special_storage.xml.append:1500
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_ENGINES\"]/choice[2]/text"
 msgstr "够了。"
 
-#: src-en/data/events_special_storage.xml.append:1500
+#: src-en/data/events_special_storage.xml.append:1506
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_HULL_2\"]/text"
 msgstr "这次撞击太糟了，我们对自己飞船造成的损害可能和对敌方的一样大。"
 
-#: src-en/data/events_special_storage.xml.append:1506
+#: src-en/data/events_special_storage.xml.append:1512
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_HULL_2\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
 msgstr "（噬舰冲击）也许我们可以再来一次。"
 
-#: src-en/data/events_special_storage.xml.append:1510
+#: src-en/data/events_special_storage.xml.append:1516
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_HULL_2\"]/choice[2]/text"
 msgstr "够了。"
 
-#: src-en/data/events_special_storage.xml.append:1516
+#: src-en/data/events_special_storage.xml.append:1522
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_MISSILES\"]/text"
 msgstr "我们货物中的一些弹药被从破舱处抛了出去……"
 
-#: src-en/data/events_special_storage.xml.append:1524
+#: src-en/data/events_special_storage.xml.append:1530
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_MISSILES\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
 msgstr "（噬舰冲击）也许我们可以再来一次。"
 
-#: src-en/data/events_special_storage.xml.append:1528
+#: src-en/data/events_special_storage.xml.append:1534
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_MISSILES\"]/choice[2]/text"
 msgstr "够了。"
 
-#: src-en/data/events_special_storage.xml.append:1534
+#: src-en/data/events_special_storage.xml.append:1540
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_DRONEPARTS\"]/text"
 msgstr "我们货物中的一个无人机零件被从破舱处抛了出去……"
 
-#: src-en/data/events_special_storage.xml.append:1542
+#: src-en/data/events_special_storage.xml.append:1548
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_DRONEPARTS\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
 msgstr "（噬舰冲击）也许我们可以再来一次。"
 
-#: src-en/data/events_special_storage.xml.append:1546
+#: src-en/data/events_special_storage.xml.append:1552
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_DRONEPARTS\"]/choice[2]/text"
 msgstr "够了。"
 
-#: src-en/data/events_special_storage.xml.append:1553
+#: src-en/data/events_special_storage.xml.append:1559
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/text"
 msgstr "冲击太可怕了……似乎我们的船员被从一处破舱抛入了太空！"
 
-#: src-en/data/events_special_storage.xml.append:1559
+#: src-en/data/events_special_storage.xml.append:1565
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_CAN_TELEPORT_EJECTED_CREW\""
 " and @lvl=\"1\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:1561
+#: src-en/data/events_special_storage.xml.append:1567
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_CAN_TELEPORT_EJECTED_CREW\""
 " and @lvl=\"1\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:1564
+#: src-en/data/events_special_storage.xml.append:1570
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_CAN_TELEPORT_EJECTED_CREW\""
 " and @lvl=\"1\"]/event/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
 msgstr "小菜一碟！也许我们可以再来一次？"
 
-#: src-en/data/events_special_storage.xml.append:1570
+#: src-en/data/events_special_storage.xml.append:1576
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_CAN_TELEPORT_EJECTED_CREW\""
 " and @lvl=\"0\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:1575
+#: src-en/data/events_special_storage.xml.append:1581
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_SUFFICIENT_PILOTING_AND_SENSORS\""
 " and not(@lvl)]/text"
-msgstr ""
-
-#: src-en/data/events_special_storage.xml.append:1577
-msgid ""
-"data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_SUFFICIENT_PILOTING_AND_SENSORS\""
-" and not(@lvl)]/event/text"
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:1583
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_SUFFICIENT_PILOTING_AND_SENSORS\""
+" and not(@lvl)]/event/text"
+msgstr ""
+
+#: src-en/data/events_special_storage.xml.append:1589
+msgid ""
+"data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_SUFFICIENT_PILOTING_AND_SENSORS\""
 " and not(@lvl)]/event/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
 msgstr "好险！也许我们还能再来一次？"
 
-#: src-en/data/events_special_storage.xml.append:1589
+#: src-en/data/events_special_storage.xml.append:1595
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_SUFFICIENT_PILOTING_AND_SENSORS\""
 " and @lvl=\"0\"]/text"
 msgstr "你的驾驶或传感器系统太弱了。"
 
-#: src-en/data/events_special_storage.xml.append:1594
+#: src-en/data/events_special_storage.xml.append:1600
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"engines\""
 " and @lvl=\"5\"]/text"
 msgstr "（引擎 5 级）快，急转弯！"
 
-#: src-en/data/events_special_storage.xml.append:1596
+#: src-en/data/events_special_storage.xml.append:1602
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"engines\""
 " and @lvl=\"5\"]/event/text"
 msgstr "你以极快的速度在半空中接住了你的船员！"
 
-#: src-en/data/events_special_storage.xml.append:1602
+#: src-en/data/events_special_storage.xml.append:1608
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"engines\""
 " and @lvl=\"5\"]/event/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
 msgstr "好险！也许我们还能再来一次？"
 
-#: src-en/data/events_special_storage.xml.append:1608
+#: src-en/data/events_special_storage.xml.append:1614
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"engines\""
 " and not(@lvl)]/text"
 msgstr "你的引擎系统太弱了。"
 
-#: src-en/data/events_special_storage.xml.append:1613
+#: src-en/data/events_special_storage.xml.append:1619
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[7]/text"
 msgstr "（医疗无人机）快，无人机救援！"
 
-#: src-en/data/events_special_storage.xml.append:1615
+#: src-en/data/events_special_storage.xml.append:1621
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[7]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:1621
+#: src-en/data/events_special_storage.xml.append:1627
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[7]/event/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
 msgstr "好险！也许我们还能再来一次？"
 
-#: src-en/data/events_special_storage.xml.append:1627
+#: src-en/data/events_special_storage.xml.append:1633
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[8]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:1632
+#: src-en/data/events_special_storage.xml.append:1638
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_ANY_RESCUE_ARM\""
 " and not(@lvl)]/text"
-msgstr ""
-
-#: src-en/data/events_special_storage.xml.append:1634
-msgid ""
-"data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_ANY_RESCUE_ARM\""
-" and not(@lvl)]/event/text"
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:1640
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_ANY_RESCUE_ARM\""
+" and not(@lvl)]/event/text"
+msgstr ""
+
+#: src-en/data/events_special_storage.xml.append:1646
+msgid ""
+"data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_ANY_RESCUE_ARM\""
 " and not(@lvl)]/event/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
 msgstr "好险！也许我们还能再来一次？"
 
-#: src-en/data/events_special_storage.xml.append:1646
+#: src-en/data/events_special_storage.xml.append:1652
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_ANY_RESCUE_ARM\""
 " and @lvl=\"0\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:1651
+#: src-en/data/events_special_storage.xml.append:1657
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_SUM_ENGINEERS\""
 " and @lvl=\"2\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:1653
+#: src-en/data/events_special_storage.xml.append:1659
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_SUM_ENGINEERS\""
 " and @lvl=\"2\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:1661
+#: src-en/data/events_special_storage.xml.append:1667
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_SUM_ENGINEERS\""
 " and @lvl=\"2\"]/event/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
 msgstr "好险！也许我们还能再来一次？"
 
-#: src-en/data/events_special_storage.xml.append:1667
+#: src-en/data/events_special_storage.xml.append:1673
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_SUM_ENGINEERS\""
 " and not(@lvl)]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:1672
+#: src-en/data/events_special_storage.xml.append:1678
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[13]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:1674
+#: src-en/data/events_special_storage.xml.append:1680
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[13]/event/text"
 msgstr "当你的船员孤身迷失在虚空中时，其他船员拒绝再次冲撞那艘船！"
 
-#: src-en/data/events_special_storage.xml.append:1679
+#: src-en/data/events_special_storage.xml.append:1685
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[13]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:1683
+#: src-en/data/events_special_storage.xml.append:1689
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[13]/event/choice[@req=\"mind\""
 " and @lvl=\"1\"]/text"
 msgstr "（心灵控制）服从你的船长！"
 
-#: src-en/data/events_special_storage.xml.append:1685
+#: src-en/data/events_special_storage.xml.append:1691
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[13]/event/choice[@req=\"mind\""
 " and @lvl=\"1\"]/event/text"
 msgstr "预先编好的心灵脉冲释放了，船员们停止了抱怨。你的方法不道德，但很有效。"
 
-#: src-en/data/events_special_storage.xml.append:1687
+#: src-en/data/events_special_storage.xml.append:1693
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[13]/event/choice[@req=\"mind\""
 " and @lvl=\"1\"]/event/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
 msgstr "这才像话。"
 
-#: src-en/data/events_special_storage.xml.append:1692
+#: src-en/data/events_special_storage.xml.append:1698
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[13]/event/choice[@req=\"mind\""
 " and @lvl=\"1\"]/event/choice[2]/text"
 msgstr "事实上，我现在对此感到内疚，算了。"
 
-#: src-en/data/events_special_storage.xml.append:1698
+#: src-en/data/events_special_storage.xml.append:1704
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[13]/event/choice[@req=\"mind\""
 " and @lvl=\"0\"]/text"
 msgstr "某种能控制船员思想的方法在这种时候会帮上忙……"
 
-#: src-en/data/events_special_storage.xml.append:1706
+#: src-en/data/events_special_storage.xml.append:1712
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_BREACHES\"]/text"
 msgstr ""
 "我们船体的尖锐碎片被撕开了一个口子！\n"
 "损伤是表面的，但船员们现在非常害怕通过破口被抛入太空……"
 
-#: src-en/data/events_special_storage.xml.append:1714
+#: src-en/data/events_special_storage.xml.append:1720
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_BREACHES\"]/choice/text"
 msgstr "（噬舰冲击）也许我们可以再来一次。"
 
-#: src-en/data/events_special_storage.xml.append:1841
+#: src-en/data/events_special_storage.xml.append:1847
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETHEAL\"]/text"
 msgstr "这些碎片非常适合进行快速但全面的维修！"
 
-#: src-en/data/events_special_storage.xml.append:1844
+#: src-en/data/events_special_storage.xml.append:1850
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETHEAL\"]/choice/text"
 msgstr "好！"
 
-#: src-en/data/events_special_storage.xml.append:1850
+#: src-en/data/events_special_storage.xml.append:1856
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETSCRAP\"]/text"
 msgstr "看来我们撞开了一个废料箱！"
 
-#: src-en/data/events_special_storage.xml.append:1853
+#: src-en/data/events_special_storage.xml.append:1859
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETSCRAP\"]/choice/text"
 msgstr "好！"
 
-#: src-en/data/events_special_storage.xml.append:1862
+#: src-en/data/events_special_storage.xml.append:1868
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETSCRAP_2\"]/text"
 msgstr ""
 "坏消息是，我们没能进行任何维修。\n"
 "好消息是，我们撞开了一个巨大的废料箱！！一个极好的结果，尽管有些废料飘失在了太空中。"
 
-#: src-en/data/events_special_storage.xml.append:1866
+#: src-en/data/events_special_storage.xml.append:1872
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETSCRAP_2\"]/choice/text"
 msgstr "好！"
 
-#: src-en/data/events_special_storage.xml.append:1877
+#: src-en/data/events_special_storage.xml.append:1883
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETSCRAP_SCALING\"]/text"
 msgstr "大部分碎片都是上好的废料！"
 
-#: src-en/data/events_special_storage.xml.append:1880
+#: src-en/data/events_special_storage.xml.append:1886
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETSCRAP_SCALING\"]/choice/text"
 msgstr "好！"
 
-#: src-en/data/events_special_storage.xml.append:1888
+#: src-en/data/events_special_storage.xml.append:1894
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETFUEL\"]/text"
 msgstr "看来我们撞开了一个燃料箱！"
 
-#: src-en/data/events_special_storage.xml.append:1891
+#: src-en/data/events_special_storage.xml.append:1897
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETFUEL\"]/choice/text"
 msgstr "好！"
 
-#: src-en/data/events_special_storage.xml.append:1901
+#: src-en/data/events_special_storage.xml.append:1907
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETFUEL_SCALING\"]/text"
 msgstr "幸运的是，碎片中有燃料！"
 
-#: src-en/data/events_special_storage.xml.append:1904
+#: src-en/data/events_special_storage.xml.append:1910
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETFUEL_SCALING\"]/choice/text"
 msgstr "好！"
 
-#: src-en/data/events_special_storage.xml.append:1912
+#: src-en/data/events_special_storage.xml.append:1918
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETMISSILES\"]/text"
 msgstr "看来我们撞开了一个弹药箱！"
 
-#: src-en/data/events_special_storage.xml.append:1915
+#: src-en/data/events_special_storage.xml.append:1921
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETMISSILES\"]/choice/text"
 msgstr "好！"
 
-#: src-en/data/events_special_storage.xml.append:1925
+#: src-en/data/events_special_storage.xml.append:1931
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETMISSILES_SCALING\"]/text"
 msgstr "其中一些碎片还是未爆炸的弹药！"
 
-#: src-en/data/events_special_storage.xml.append:1928
+#: src-en/data/events_special_storage.xml.append:1934
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETMISSILES_SCALING\"]/choice/text"
 msgstr "好！"
 
-#: src-en/data/events_special_storage.xml.append:1936
+#: src-en/data/events_special_storage.xml.append:1942
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETDRONEPARTS\"]/text"
 msgstr "看起来我们打开了一个无人机零件箱！"
 
-#: src-en/data/events_special_storage.xml.append:1939
+#: src-en/data/events_special_storage.xml.append:1945
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETDRONEPARTS\"]/choice/text"
 msgstr "好！"
 
-#: src-en/data/events_special_storage.xml.append:1949
+#: src-en/data/events_special_storage.xml.append:1955
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETDRONEPARTS_SCALING\"]/text"
 msgstr "其中一些残骸是还能用的无人机零件！"
 
-#: src-en/data/events_special_storage.xml.append:1952
+#: src-en/data/events_special_storage.xml.append:1958
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETDRONEPARTS_SCALING\"]/choice/text"
 msgstr "好！"
 
-#: src-en/data/events_special_storage.xml.append:1960
+#: src-en/data/events_special_storage.xml.append:1966
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETWEAPON\"]/text"
 msgstr "残骸中的一个箱子里有一把备用武器！"
 
-#: src-en/data/events_special_storage.xml.append:1963
+#: src-en/data/events_special_storage.xml.append:1969
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETWEAPON\"]/choice/text"
 msgstr "好！"
 
-#: src-en/data/events_special_storage.xml.append:1975
+#: src-en/data/events_special_storage.xml.append:1981
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETWEAPON_2\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:1978
+#: src-en/data/events_special_storage.xml.append:1984
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETWEAPON_2\"]/choice/text"
 msgstr "好！"
 
-#: src-en/data/events_special_storage.xml.append:1988
+#: src-en/data/events_special_storage.xml.append:1994
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_NOTHING\"]/text"
 msgstr "全力冲撞不幸导致碎片散落得太远了……我们什么也没捞回来"
 
-#: src-en/data/events_special_storage.xml.append:1993
+#: src-en/data/events_special_storage.xml.append:1999
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_NOTHING\"]/choice/text"
 msgstr "下次运气会更好的。"
 
-#: src-en/data/events_special_storage.xml.append:1999
+#: src-en/data/events_special_storage.xml.append:2005
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_FUEL_DAMAGE\"]/text"
 msgstr "最后我们找到了一点燃料，但损失的船体比修复的还要多。"
 
-#: src-en/data/events_special_storage.xml.append:2005
+#: src-en/data/events_special_storage.xml.append:2011
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_FUEL_DAMAGE\"]/choice/text"
 msgstr "不太妙"
 
-#: src-en/data/events_special_storage.xml.append:2015
+#: src-en/data/events_special_storage.xml.append:2021
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_CRITICAL\"]/text"
 msgstr "这种情况发生的概率极低，但我们还是以全速从糟糕的角度撞上了它们，导致飞船多处受损。"
 
-#: src-en/data/events_special_storage.xml.append:2023
+#: src-en/data/events_special_storage.xml.append:2029
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_CRITICAL\"]/choice/text"
 msgstr "快修！赶紧的！"
 
-#: src-en/data/events_special_storage.xml.append:2029
+#: src-en/data/events_special_storage.xml.append:2035
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/text"
 msgstr "舰长……由于运气实在太差，我们的飞船遭受了剧烈冲击，全体船员直接被甩进了太空！"
 
-#: src-en/data/events_special_storage.xml.append:2035
+#: src-en/data/events_special_storage.xml.append:2041
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_CAN_TELEPORT_EJECTED_CREW\""
 " and @lvl=\"1\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2037
+#: src-en/data/events_special_storage.xml.append:2043
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_CAN_TELEPORT_EJECTED_CREW\""
 " and @lvl=\"1\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2040
+#: src-en/data/events_special_storage.xml.append:2046
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_CAN_TELEPORT_EJECTED_CREW\""
 " and @lvl=\"1\"]/event/choice/text"
 msgstr "危机解除！"
 
-#: src-en/data/events_special_storage.xml.append:2046
+#: src-en/data/events_special_storage.xml.append:2052
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_CAN_TELEPORT_EJECTED_CREW\""
 " and @lvl=\"0\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2051
+#: src-en/data/events_special_storage.xml.append:2057
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_SUFFICIENT_PILOTING_AND_SENSORS\""
 " and not(@lvl)]/text"
-msgstr ""
-
-#: src-en/data/events_special_storage.xml.append:2053
-msgid ""
-"data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_SUFFICIENT_PILOTING_AND_SENSORS\""
-" and not(@lvl)]/event/text"
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:2059
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_SUFFICIENT_PILOTING_AND_SENSORS\""
+" and not(@lvl)]/event/text"
+msgstr ""
+
+#: src-en/data/events_special_storage.xml.append:2065
+msgid ""
+"data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_SUFFICIENT_PILOTING_AND_SENSORS\""
 " and not(@lvl)]/event/choice/text"
 msgstr "危机解除！"
 
-#: src-en/data/events_special_storage.xml.append:2065
+#: src-en/data/events_special_storage.xml.append:2071
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_SUFFICIENT_PILOTING_AND_SENSORS\""
 " and @lvl=\"0\"]/text"
 msgstr "你的驾驶或传感器系统太弱了。"
 
-#: src-en/data/events_special_storage.xml.append:2070
+#: src-en/data/events_special_storage.xml.append:2076
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"engines\""
 " and @lvl=\"6\"]/text"
 msgstr "（引擎6级）快，急转弯！"
 
-#: src-en/data/events_special_storage.xml.append:2072
+#: src-en/data/events_special_storage.xml.append:2078
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"engines\""
 " and @lvl=\"6\"]/event/text"
 msgstr "你以极快的速度在半空中接住了你的船员！"
 
-#: src-en/data/events_special_storage.xml.append:2078
+#: src-en/data/events_special_storage.xml.append:2084
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"engines\""
 " and @lvl=\"6\"]/event/choice/text"
 msgstr "危机解除！"
 
-#: src-en/data/events_special_storage.xml.append:2084
+#: src-en/data/events_special_storage.xml.append:2090
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"engines\""
 " and not(@lvl)]/text"
 msgstr "你的引擎系统太弱了。"
 
-#: src-en/data/events_special_storage.xml.append:2089
+#: src-en/data/events_special_storage.xml.append:2095
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[7]/text"
 msgstr "（医疗无人机）快，无人机救援！"
 
-#: src-en/data/events_special_storage.xml.append:2091
+#: src-en/data/events_special_storage.xml.append:2097
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[7]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2097
+#: src-en/data/events_special_storage.xml.append:2103
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[7]/event/choice/text"
 msgstr "危机解除！"
 
-#: src-en/data/events_special_storage.xml.append:2103
+#: src-en/data/events_special_storage.xml.append:2109
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[8]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2108
+#: src-en/data/events_special_storage.xml.append:2114
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_ANY_RESCUE_ARM\""
 " and not(@lvl)]/text"
-msgstr ""
-
-#: src-en/data/events_special_storage.xml.append:2110
-msgid ""
-"data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_ANY_RESCUE_ARM\""
-" and not(@lvl)]/event/text"
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:2116
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_ANY_RESCUE_ARM\""
+" and not(@lvl)]/event/text"
+msgstr ""
+
+#: src-en/data/events_special_storage.xml.append:2122
+msgid ""
+"data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_ANY_RESCUE_ARM\""
 " and not(@lvl)]/event/choice/text"
 msgstr "危机解除！"
 
-#: src-en/data/events_special_storage.xml.append:2122
+#: src-en/data/events_special_storage.xml.append:2128
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_ANY_RESCUE_ARM\""
 " and @lvl=\"0\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2127
+#: src-en/data/events_special_storage.xml.append:2133
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_SUM_ENGINEERS\""
 " and @lvl=\"2\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2129
+#: src-en/data/events_special_storage.xml.append:2135
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_SUM_ENGINEERS\""
 " and @lvl=\"2\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2137
+#: src-en/data/events_special_storage.xml.append:2143
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_SUM_ENGINEERS\""
 " and @lvl=\"2\"]/event/choice/text"
 msgstr "危机解除！"
 
-#: src-en/data/events_special_storage.xml.append:2143
+#: src-en/data/events_special_storage.xml.append:2149
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_SUM_ENGINEERS\""
 " and not(@lvl)]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2148
+#: src-en/data/events_special_storage.xml.append:2154
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[13]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2150
+#: src-en/data/events_special_storage.xml.append:2156
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[13]/event/text"
 msgstr "当你的船员孤零零地消失在太空中时，其他人脸上都露出了恐惧的神色。"
 
-#: src-en/data/events_special_storage.xml.append:2153
+#: src-en/data/events_special_storage.xml.append:2159
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[13]/event/choice[@req=\"mind\""
 " and @lvl=\"1\"]/text"
 msgstr "（心灵控制）做好最坏的打算……"
 
-#: src-en/data/events_special_storage.xml.append:2155
+#: src-en/data/events_special_storage.xml.append:2161
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[13]/event/choice[@req=\"mind\""
 " and @lvl=\"1\"]/event/text"
@@ -1299,19 +1298,19 @@ msgstr ""
 "更糟糕的是，受害者的一个朋友已经完全失去了对你的信任！\n"
 "情况原本可能会更糟，但你的心灵控制系统阻止了叛变的发生。"
 
-#: src-en/data/events_special_storage.xml.append:2158
+#: src-en/data/events_special_storage.xml.append:2164
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[13]/event/choice[@req=\"mind\""
 " and @lvl=\"1\"]/event/choice/text"
 msgstr "不算好，但也不算太糟。"
 
-#: src-en/data/events_special_storage.xml.append:2166
+#: src-en/data/events_special_storage.xml.append:2172
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[13]/event/choice[@req=\"mind\""
 " and @lvl=\"0\"]/text"
 msgstr "这下糟了……"
 
-#: src-en/data/events_special_storage.xml.append:2168
+#: src-en/data/events_special_storage.xml.append:2174
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[13]/event/choice[@req=\"mind\""
 " and @lvl=\"0\"]/event/text"
@@ -1319,55 +1318,55 @@ msgstr ""
 "更糟的是，受害者的一个朋友气得满脸通红、肾上腺素飙升，直接动了手！\n"
 "如果配备了相应的控制系统，这本来或许是可以避免的……"
 
-#: src-en/data/events_special_storage.xml.append:2173
+#: src-en/data/events_special_storage.xml.append:2179
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[13]/event/choice[@req=\"mind\""
 " and @lvl=\"0\"]/event/choice/text"
 msgstr "这简直就是最糟糕的情况了！"
 
-#: src-en/data/events_special_storage.xml.append:2218
+#: src-en/data/events_special_storage.xml.append:2224
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2230
+#: src-en/data/events_special_storage.xml.append:2236
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
 msgstr "是 [需要10秒。"
 
-#: src-en/data/events_special_storage.xml.append:2232
+#: src-en/data/events_special_storage.xml.append:2238
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/event/text"
 msgstr "你激活了增强部件……"
 
-#: src-en/data/events_special_storage.xml.append:2240
+#: src-en/data/events_special_storage.xml.append:2246
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:2249
+#: src-en/data/events_special_storage.xml.append:2255
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"FUEL_CONSERVER\"]/text"
 msgstr "（燃料回收）确认，不消耗燃料进行。"
 
-#: src-en/data/events_special_storage.xml.append:2254
+#: src-en/data/events_special_storage.xml.append:2260
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCED\"]/text"
 msgstr ""
 "（强化型噬船冲击）是，全速冲撞！\n"
 "　　【失去增强部件效果。下次跃迁前无法再次冲撞。需要7秒。】"
 
-#: src-en/data/events_special_storage.xml.append:2257
+#: src-en/data/events_special_storage.xml.append:2263
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCED\"]/event/text"
 msgstr "你以满功率激活了增强部件……"
 
-#: src-en/data/events_special_storage.xml.append:2268
+#: src-en/data/events_special_storage.xml.append:2274
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCED\"]/event/choice/text"
 msgstr "开始战斗！"
 
-#: src-en/data/events_special_storage.xml.append:2274
+#: src-en/data/events_special_storage.xml.append:2280
 #, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED\"]/text"
@@ -1375,17 +1374,17 @@ msgstr ""
 "是，全速冲撞！\n"
 "　　【该增强部件将会解体。需要7秒。】"
 
-#: src-en/data/events_special_storage.xml.append:2277
+#: src-en/data/events_special_storage.xml.append:2283
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED\"]/event/text"
 msgstr "你以满功率激活了增强部件……"
 
-#: src-en/data/events_special_storage.xml.append:2286
+#: src-en/data/events_special_storage.xml.append:2292
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED\"]/event/choice/text"
 msgstr "开始战斗！"
 
-#: src-en/data/events_special_storage.xml.append:2292
+#: src-en/data/events_special_storage.xml.append:2298
 #, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"LOCKED_DJMOD_COMBAT_SHIPVORE_RAM\"]/text"
@@ -1393,32 +1392,32 @@ msgstr ""
 "是，全速冲撞！\n"
 "　　【下次跃迁前无法再次冲撞。需要7秒。】"
 
-#: src-en/data/events_special_storage.xml.append:2295
+#: src-en/data/events_special_storage.xml.append:2301
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"LOCKED_DJMOD_COMBAT_SHIPVORE_RAM\"]/event/text"
 msgstr "你以满功率激活了增强部件……"
 
-#: src-en/data/events_special_storage.xml.append:2304
+#: src-en/data/events_special_storage.xml.append:2310
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"LOCKED_DJMOD_COMBAT_SHIPVORE_RAM\"]/event/choice/text"
 msgstr "开始战斗！"
 
-#: src-en/data/events_special_storage.xml.append:2311
+#: src-en/data/events_special_storage.xml.append:2317
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[6]/text"
 msgstr "够了。"
 
-#: src-en/data/events_special_storage.xml.append:2318
+#: src-en/data/events_special_storage.xml.append:2324
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_CANT_REPEAT_ENEMY_DEAD\"]/text"
 msgstr "敌舰已被摧毁，没有东西可撞了。"
 
-#: src-en/data/events_special_storage.xml.append:2324
+#: src-en/data/events_special_storage.xml.append:2330
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_CANT_REPEAT_ENEMY_DEAD\"]/choice/text"
 msgstr "好的。"
 
-#: src-en/data/events_special_storage.xml.append:2336
+#: src-en/data/events_special_storage.xml.append:2342
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCE\"]/text"
 msgstr ""
@@ -1426,2099 +1425,2074 @@ msgstr ""
 "[选择满功率运行时，将失去强化效果而非装置本身。\n"
 "在此之后你仍然可以在空信标处进行其他操作。]"
 
-#: src-en/data/events_special_storage.xml.append:2341
+#: src-en/data/events_special_storage.xml.append:2347
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCE\"]/choice[@req=\"shipvore_ram_reinforcement\""
 " and @lvl=\"0\"]/text"
 msgstr "确定"
 
-#: src-en/data/events_special_storage.xml.append:2343
+#: src-en/data/events_special_storage.xml.append:2349
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCE\"]/choice[@req=\"shipvore_ram_reinforcement\""
 " and @lvl=\"0\"]/event/text"
 msgstr "你强化了该增强部件。"
 
-#: src-en/data/events_special_storage.xml.append:2350
+#: src-en/data/events_special_storage.xml.append:2356
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCE\"]/choice[@req=\"shipvore_ram_reinforcement\""
 " and @lvl=\"0\"]/event/choice/text"
 msgstr "这会给我们带来优势！"
 
-#: src-en/data/events_special_storage.xml.append:2357
+#: src-en/data/events_special_storage.xml.append:2363
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCE\"]/choice[@req=\"shipvore_ram_reinforcement\""
 " and @lvl=\"1\"]/text"
 msgstr "你的噬舰冲击已获得加固。"
 
-#: src-en/data/events_special_storage.xml.append:2361
+#: src-en/data/events_special_storage.xml.append:2367
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCE\"]/choice[3]/text"
 msgstr "算了，做点别的。"
 
-#: src-en/data/events_special_storage.xml.append:2368
+#: src-en/data/events_special_storage.xml.append:2374
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_PERSISTENCE_SHIELD_REBUILD_CAPACITOR\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2373
+#: src-en/data/events_special_storage.xml.append:2379
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_PERSISTENCE_SHIELD_REBUILD_CAPACITOR\"]/choice[@req=\"rk_persistence_shield_capacitorneed\""
 " and @lvl=\"0\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2377
+#: src-en/data/events_special_storage.xml.append:2383
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_PERSISTENCE_SHIELD_REBUILD_CAPACITOR\"]/choice[@req=\"rk_persistence_shield_capacitorneed\""
 " and @lvl=\"1\"]/text"
 msgstr "确定"
 
-#: src-en/data/events_special_storage.xml.append:2379
+#: src-en/data/events_special_storage.xml.append:2385
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_PERSISTENCE_SHIELD_REBUILD_CAPACITOR\"]/choice[@req=\"rk_persistence_shield_capacitorneed\""
 " and @lvl=\"1\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2386
+#: src-en/data/events_special_storage.xml.append:2392
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_PERSISTENCE_SHIELD_REBUILD_CAPACITOR\"]/choice[@req=\"rk_persistence_shield_capacitorneed\""
 " and @lvl=\"1\"]/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2393
+#: src-en/data/events_special_storage.xml.append:2399
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_PERSISTENCE_SHIELD_REBUILD_CAPACITOR\"]/choice[3]/text"
 msgstr "算了，做点别的。"
 
-#: src-en/data/events_special_storage.xml.append:2399
+#: src-en/data/events_special_storage.xml.append:2405
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"TOGGLEMENU_RK_PERSISTENCE_SHIELD\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2403
+#: src-en/data/events_special_storage.xml.append:2409
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"TOGGLEMENU_RK_PERSISTENCE_SHIELD\"]/choice[@req=\"rk_persistence_shield_capacitorneed\""
 " and not(@lvl)]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2408
+#: src-en/data/events_special_storage.xml.append:2414
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"TOGGLEMENU_RK_PERSISTENCE_SHIELD\"]/choice[@req=\"rk_persistence_shield_capacitorneed\""
 " and @lvl=\"0\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2423
+#: src-en/data/events_special_storage.xml.append:2429
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"TOGGLEMENU_RK_PERSISTENCE_SHIELD\"]/choice[3]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2450
+#: src-en/data/events_special_storage.xml.append:2456
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2455
+#: src-en/data/events_special_storage.xml.append:2461
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"artillery\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2459
+#: src-en/data/events_special_storage.xml.append:2465
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"battery\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2463
+#: src-en/data/events_special_storage.xml.append:2469
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"cloaking\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2467
+#: src-en/data/events_special_storage.xml.append:2473
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"clonebay\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2471
+#: src-en/data/events_special_storage.xml.append:2477
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"doors\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2475
+#: src-en/data/events_special_storage.xml.append:2481
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"drones\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2479
+#: src-en/data/events_special_storage.xml.append:2485
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"engines\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2483
+#: src-en/data/events_special_storage.xml.append:2489
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"hacking\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2487
+#: src-en/data/events_special_storage.xml.append:2493
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"medbay\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2491
+#: src-en/data/events_special_storage.xml.append:2497
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"mind\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2495
+#: src-en/data/events_special_storage.xml.append:2501
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"oxygen\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2499
+#: src-en/data/events_special_storage.xml.append:2505
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"pilot\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2503
+#: src-en/data/events_special_storage.xml.append:2509
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"sensors\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2507
+#: src-en/data/events_special_storage.xml.append:2513
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"shields\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2511
+#: src-en/data/events_special_storage.xml.append:2517
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"teleporter\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2515
+#: src-en/data/events_special_storage.xml.append:2521
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"temporal\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2519
+#: src-en/data/events_special_storage.xml.append:2525
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"weapons\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2528
+#: src-en/data/events_special_storage.xml.append:2534
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_ablative_armor\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2533
+#: src-en/data/events_special_storage.xml.append:2539
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"aea_super_shields\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2538
+#: src-en/data/events_special_storage.xml.append:2544
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"dd_corruptor\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2543
+#: src-en/data/events_special_storage.xml.append:2549
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_ecm_suite\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2547
+#: src-en/data/events_special_storage.xml.append:2553
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_fiber_liner\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2551
+#: src-en/data/events_special_storage.xml.append:2557
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_infusion_bay\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2555
+#: src-en/data/events_special_storage.xml.append:2561
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_shock_neutralizer\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2559
+#: src-en/data/events_special_storage.xml.append:2565
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_system_bracers\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2563
+#: src-en/data/events_special_storage.xml.append:2569
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_targeting_core\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2568
+#: src-en/data/events_special_storage.xml.append:2574
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"og_turret_adaptive\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2572
+#: src-en/data/events_special_storage.xml.append:2578
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"og_turret_adaptive_2\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2577
+#: src-en/data/events_special_storage.xml.append:2583
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"og_turret_mini\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2581
+#: src-en/data/events_special_storage.xml.append:2587
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"og_turret_mini_2\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2585
+#: src-en/data/events_special_storage.xml.append:2591
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"og_turret_mini_3\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2589
+#: src-en/data/events_special_storage.xml.append:2595
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"og_turret_mini_4\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2594
+#: src-en/data/events_special_storage.xml.append:2600
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"og_turret\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2598
+#: src-en/data/events_special_storage.xml.append:2604
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"og_turret_2\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2602
+#: src-en/data/events_special_storage.xml.append:2608
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"og_turret_3\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2606
+#: src-en/data/events_special_storage.xml.append:2612
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"og_turret_4\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2612
+#: src-en/data/events_special_storage.xml.append:2618
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[37]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:2664
+#: src-en/data/events_special_storage.xml.append:2670
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[38]/text"
 msgstr "返回到切换菜单。"
 
-#: src-en/data/events_special_storage.xml.append:3939
+#: src-en/data/events_special_storage.xml.append:3945
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_SCORCH_SELF_UPGRADE\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:3943
+#: src-en/data/events_special_storage.xml.append:3949
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_SCORCH_SELF_UPGRADE\"]/choice[@req=\"RK_SCORCH_SELF\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:3945
+#: src-en/data/events_special_storage.xml.append:3951
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_SCORCH_SELF_UPGRADE\"]/choice[@req=\"RK_SCORCH_SELF\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:3954
+#: src-en/data/events_special_storage.xml.append:3960
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_SCORCH_SELF_UPGRADE\"]/choice[@req=\"RK_SCORCH_SELF\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:3956
+#: src-en/data/events_special_storage.xml.append:3962
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_SCORCH_SELF_UPGRADE\"]/choice[@req=\"RK_SCORCH_SELF\"]/event/choice/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:3959
+#: src-en/data/events_special_storage.xml.append:3965
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_SCORCH_SELF_UPGRADE\"]/choice[@req=\"RK_SCORCH_SELF\"]/event/choice/event/choice/text"
 msgstr "成功！"
 
-#: src-en/data/events_special_storage.xml.append:3967
+#: src-en/data/events_special_storage.xml.append:3973
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_SCORCH_SELF_UPGRADE\"]/choice[2]/text"
 msgstr "算了，做点别的。"
 
-#: src-en/data/events_special_storage.xml.append:3973
+#: src-en/data/events_special_storage.xml.append:3979
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_SCORCH_SELF_UPGRADE_2\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:3977
+#: src-en/data/events_special_storage.xml.append:3983
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_SCORCH_SELF_UPGRADE_2\"]/choice[@req=\"RK_SCORCH_SELF_2\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:3979
+#: src-en/data/events_special_storage.xml.append:3985
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_SCORCH_SELF_UPGRADE_2\"]/choice[@req=\"RK_SCORCH_SELF_2\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:3989
+#: src-en/data/events_special_storage.xml.append:3995
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_SCORCH_SELF_UPGRADE_2\"]/choice[@req=\"RK_SCORCH_SELF_2\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:3991
+#: src-en/data/events_special_storage.xml.append:3997
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_SCORCH_SELF_UPGRADE_2\"]/choice[@req=\"RK_SCORCH_SELF_2\"]/event/choice/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:3994
+#: src-en/data/events_special_storage.xml.append:4000
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_SCORCH_SELF_UPGRADE_2\"]/choice[@req=\"RK_SCORCH_SELF_2\"]/event/choice/event/choice/text"
 msgstr "成功！"
 
-#: src-en/data/events_special_storage.xml.append:4002
+#: src-en/data/events_special_storage.xml.append:4008
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_SCORCH_SELF_UPGRADE_2\"]/choice[2]/text"
 msgstr "算了，做点别的。"
 
-#: src-en/data/events_special_storage.xml.append:4021
+#: src-en/data/events_special_storage.xml.append:4027
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"COMBAT_CHECK_RK_COMBAT_SCORCH_ENEMY\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4025
+#: src-en/data/events_special_storage.xml.append:4031
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"COMBAT_CHECK_RK_COMBAT_SCORCH_ENEMY\"]/choice[@req=\"DJMOD_COMBAT_SELF_FIRE\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4030
+#: src-en/data/events_special_storage.xml.append:4036
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"COMBAT_CHECK_RK_COMBAT_SCORCH_ENEMY\"]/choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4034
+#: src-en/data/events_special_storage.xml.append:4040
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"COMBAT_CHECK_RK_COMBAT_SCORCH_ENEMY\"]/choice[3]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4039
+#: src-en/data/events_special_storage.xml.append:4045
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"COMBAT_CHECK_RK_COMBAT_SCORCH_ENEMY\"]/choice[@req=\"RK_COMBAT_SCORCH_ENEMY\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4044
+#: src-en/data/events_special_storage.xml.append:4050
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"COMBAT_CHECK_RK_COMBAT_SCORCH_ENEMY\"]/choice[5]/text"
 msgstr "执行其他操作。"
 
-#: src-en/data/events_special_storage.xml.append:4048
+#: src-en/data/events_special_storage.xml.append:4054
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"COMBAT_CHECK_RK_COMBAT_SCORCH_ENEMY\"]/choice[6]/text"
 msgstr "算了，直接战斗！"
 
-#: src-en/data/events_special_storage.xml.append:4050
+#: src-en/data/events_special_storage.xml.append:4056
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"COMBAT_CHECK_RK_COMBAT_SCORCH_ENEMY\"]/choice[6]/event/text"
 msgstr "你决定什么都不做，准备战斗。"
 
-#: src-en/data/events_special_storage.xml.append:4061
+#: src-en/data/events_special_storage.xml.append:4067
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4064
+#: src-en/data/events_special_storage.xml.append:4070
 msgid ""
-"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY\"]/choice[@req=\"DJMOD_HAS_COMBUSTIBLE_CREW\"]/text"
+"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY\"]/choice[1]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4069
+#: src-en/data/events_special_storage.xml.append:4075
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY\"]/choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4071
+#: src-en/data/events_special_storage.xml.append:4077
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY\"]/choice[2]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4078
+#: src-en/data/events_special_storage.xml.append:4084
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY\"]/choice[2]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4085
+#: src-en/data/events_special_storage.xml.append:4091
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY\"]/choice[3]/text"
 msgstr "执行其他操作。"
 
-#: src-en/data/events_special_storage.xml.append:4089
+#: src-en/data/events_special_storage.xml.append:4095
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY\"]/choice[4]/text"
 msgstr "算了，直接战斗！"
 
-#: src-en/data/events_special_storage.xml.append:4091
+#: src-en/data/events_special_storage.xml.append:4097
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY\"]/choice[4]/event/text"
 msgstr "你决定什么都不做，准备战斗。"
 
-#: src-en/data/events_special_storage.xml.append:4124
+#: src-en/data/events_special_storage.xml.append:4130
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4127
+#: src-en/data/events_special_storage.xml.append:4133
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"DJMOD_HAS_CREW_ARE_BOMBS_AND_CREW\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4129
+#: src-en/data/events_special_storage.xml.append:4135
 #, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"DJMOD_HAS_CREW_ARE_BOMBS_AND_CREW\"]/event/text"
 msgstr "为了更伟大的事业，船员被牺牲，强行激活了增强部件！"
 
-#: src-en/data/events_special_storage.xml.append:4136
+#: src-en/data/events_special_storage.xml.append:4142
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"DJMOD_HAS_CREW_ARE_BOMBS_AND_CREW\"]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:4140
+#: src-en/data/events_special_storage.xml.append:4146
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"DJMOD_HAS_CREW_ARE_BOMBS_AND_CREW\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4146
+#: src-en/data/events_special_storage.xml.append:4152
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"DJMOD_HAS_DEATH_VESTS_AND_CREW\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4148
+#: src-en/data/events_special_storage.xml.append:4154
 #, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"DJMOD_HAS_DEATH_VESTS_AND_CREW\"]/event/text"
 msgstr "为了更伟大的事业，船员被牺牲，强行激活了增强部件！"
 
-#: src-en/data/events_special_storage.xml.append:4155
+#: src-en/data/events_special_storage.xml.append:4161
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"DJMOD_HAS_DEATH_VESTS_AND_CREW\"]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:4159
+#: src-en/data/events_special_storage.xml.append:4165
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"DJMOD_HAS_DEATH_VESTS_AND_CREW\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4169
+#: src-en/data/events_special_storage.xml.append:4175
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"LIST_CREW_SHELL\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4173
+#: src-en/data/events_special_storage.xml.append:4179
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"LIST_CREW_ZOLTAN\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4178
+#: src-en/data/events_special_storage.xml.append:4184
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"LIST_CREW_SOLAR\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4183
+#: src-en/data/events_special_storage.xml.append:4189
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"rock_commando\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4185
+#: src-en/data/events_special_storage.xml.append:4191
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"rock_commando\"]/event/text"
 msgstr "为了更伟大的事业，船员被牺牲，强行激活了增强部件！"
 
-#: src-en/data/events_special_storage.xml.append:4192
+#: src-en/data/events_special_storage.xml.append:4198
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"rock_commando\"]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:4196
+#: src-en/data/events_special_storage.xml.append:4202
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"rock_commando\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4203
+#: src-en/data/events_special_storage.xml.append:4209
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"phantom_goul\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4205
+#: src-en/data/events_special_storage.xml.append:4211
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"phantom_goul\"]/event/text"
 msgstr "为了更伟大的事业，船员被牺牲，强行激活了增强部件！"
 
-#: src-en/data/events_special_storage.xml.append:4212
+#: src-en/data/events_special_storage.xml.append:4218
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"phantom_goul\"]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:4216
+#: src-en/data/events_special_storage.xml.append:4222
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"phantom_goul\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4223
+#: src-en/data/events_special_storage.xml.append:4229
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"phantom_goul_alpha\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4225
+#: src-en/data/events_special_storage.xml.append:4231
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"phantom_goul_alpha\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4232
+#: src-en/data/events_special_storage.xml.append:4238
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"phantom_goul_alpha\"]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:4236
+#: src-en/data/events_special_storage.xml.append:4242
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"phantom_goul_alpha\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4238
+#: src-en/data/events_special_storage.xml.append:4244
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"phantom_goul_alpha\"]/event/choice/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4242
+#: src-en/data/events_special_storage.xml.append:4248
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"phantom_goul_alpha\"]/event/choice/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4251
+#: src-en/data/events_special_storage.xml.append:4257
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"rk_fireghost\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4253
+#: src-en/data/events_special_storage.xml.append:4259
 #, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"rk_fireghost\"]/event/text"
 msgstr "为了更伟大的事业，船员被牺牲，强行激活了增强部件！"
 
-#: src-en/data/events_special_storage.xml.append:4260
+#: src-en/data/events_special_storage.xml.append:4266
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"rk_fireghost\"]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:4264
+#: src-en/data/events_special_storage.xml.append:4270
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"rk_fireghost\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4266
+#: src-en/data/events_special_storage.xml.append:4272
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"rk_fireghost\"]/event/choice/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4270
+#: src-en/data/events_special_storage.xml.append:4276
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"rk_fireghost\"]/event/choice/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4280
+#: src-en/data/events_special_storage.xml.append:4286
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[10]/text"
 msgstr "执行其他操作。"
 
-#: src-en/data/events_special_storage.xml.append:4286
+#: src-en/data/events_special_storage.xml.append:4292
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4289
+#: src-en/data/events_special_storage.xml.append:4295
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4291
+#: src-en/data/events_special_storage.xml.append:4297
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell\"]/event/text"
 msgstr "为了更伟大的事业，船员被牺牲，强行激活了增强部件！"
 
-#: src-en/data/events_special_storage.xml.append:4298
+#: src-en/data/events_special_storage.xml.append:4304
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell\"]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:4302
+#: src-en/data/events_special_storage.xml.append:4308
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4308
+#: src-en/data/events_special_storage.xml.append:4314
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell_mechanic\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4310
+#: src-en/data/events_special_storage.xml.append:4316
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell_mechanic\"]/event/text"
 msgstr "为了更伟大的事业，船员被牺牲，强行激活了增强部件！"
 
-#: src-en/data/events_special_storage.xml.append:4317
+#: src-en/data/events_special_storage.xml.append:4323
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell_mechanic\"]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:4321
+#: src-en/data/events_special_storage.xml.append:4327
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell_mechanic\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4327
+#: src-en/data/events_special_storage.xml.append:4333
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell_scientist\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4329
+#: src-en/data/events_special_storage.xml.append:4335
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell_scientist\"]/event/text"
 msgstr "为了更伟大的事业，船员被牺牲，强行激活了增强部件！"
 
-#: src-en/data/events_special_storage.xml.append:4336
+#: src-en/data/events_special_storage.xml.append:4342
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell_scientist\"]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:4340
+#: src-en/data/events_special_storage.xml.append:4346
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell_scientist\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4346
+#: src-en/data/events_special_storage.xml.append:4352
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell_guardian\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4348
+#: src-en/data/events_special_storage.xml.append:4354
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell_guardian\"]/event/text"
 msgstr "为了更伟大的事业，船员被牺牲，强行激活了增强部件！"
 
-#: src-en/data/events_special_storage.xml.append:4355
+#: src-en/data/events_special_storage.xml.append:4361
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell_guardian\"]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:4359
+#: src-en/data/events_special_storage.xml.append:4365
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell_guardian\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4365
+#: src-en/data/events_special_storage.xml.append:4371
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell_radiant\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4367
+#: src-en/data/events_special_storage.xml.append:4373
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell_radiant\"]/event/text"
 msgstr "为了更伟大的事业，船员被牺牲，强行激活了增强部件！"
 
-#: src-en/data/events_special_storage.xml.append:4374
+#: src-en/data/events_special_storage.xml.append:4380
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell_radiant\"]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:4378
+#: src-en/data/events_special_storage.xml.append:4384
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell_radiant\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4384
+#: src-en/data/events_special_storage.xml.append:4390
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"unique_alkali\"]/text"
 msgstr "阿尔科莱"
 
-#: src-en/data/events_special_storage.xml.append:4386
+#: src-en/data/events_special_storage.xml.append:4392
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"unique_alkali\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4393
+#: src-en/data/events_special_storage.xml.append:4399
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"unique_alkali\"]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:4397
+#: src-en/data/events_special_storage.xml.append:4403
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"unique_alkali\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4404
+#: src-en/data/events_special_storage.xml.append:4410
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[7]/text"
 msgstr "执行其他操作。"
 
-#: src-en/data/events_special_storage.xml.append:4410
+#: src-en/data/events_special_storage.xml.append:4416
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4413
+#: src-en/data/events_special_storage.xml.append:4419
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4415
+#: src-en/data/events_special_storage.xml.append:4421
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan\"]/event/text"
 msgstr "为了更伟大的事业，船员被牺牲，强行激活了增强部件！"
 
-#: src-en/data/events_special_storage.xml.append:4422
+#: src-en/data/events_special_storage.xml.append:4428
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan\"]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:4426
+#: src-en/data/events_special_storage.xml.append:4432
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4432
+#: src-en/data/events_special_storage.xml.append:4438
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_monk\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4434
+#: src-en/data/events_special_storage.xml.append:4440
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_monk\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4441
+#: src-en/data/events_special_storage.xml.append:4447
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_monk\"]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:4445
+#: src-en/data/events_special_storage.xml.append:4451
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_monk\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4451
+#: src-en/data/events_special_storage.xml.append:4457
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_peacekeeper\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4453
+#: src-en/data/events_special_storage.xml.append:4459
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_peacekeeper\"]/event/text"
 msgstr "为了更伟大的事业，船员被牺牲，强行激活了增强部件！"
 
-#: src-en/data/events_special_storage.xml.append:4460
+#: src-en/data/events_special_storage.xml.append:4466
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_peacekeeper\"]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:4464
+#: src-en/data/events_special_storage.xml.append:4470
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_peacekeeper\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4470
+#: src-en/data/events_special_storage.xml.append:4476
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_devotee\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4472
+#: src-en/data/events_special_storage.xml.append:4478
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_devotee\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4479
+#: src-en/data/events_special_storage.xml.append:4485
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_devotee\"]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:4483
+#: src-en/data/events_special_storage.xml.append:4489
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_devotee\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4489
+#: src-en/data/events_special_storage.xml.append:4495
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_martyr\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4491
+#: src-en/data/events_special_storage.xml.append:4497
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_martyr\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4498
+#: src-en/data/events_special_storage.xml.append:4504
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_martyr\"]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:4502
+#: src-en/data/events_special_storage.xml.append:4508
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_martyr\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4508
+#: src-en/data/events_special_storage.xml.append:4514
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_infernum\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4510
+#: src-en/data/events_special_storage.xml.append:4516
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_infernum\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4517
+#: src-en/data/events_special_storage.xml.append:4523
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_infernum\"]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:4521
+#: src-en/data/events_special_storage.xml.append:4527
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_infernum\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4527
+#: src-en/data/events_special_storage.xml.append:4533
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"unique_devorak\"]/text"
 msgstr "德沃拉克"
 
-#: src-en/data/events_special_storage.xml.append:4529
+#: src-en/data/events_special_storage.xml.append:4535
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"unique_devorak\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4536
+#: src-en/data/events_special_storage.xml.append:4542
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"unique_devorak\"]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:4540
+#: src-en/data/events_special_storage.xml.append:4546
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"unique_devorak\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4546
+#: src-en/data/events_special_storage.xml.append:4552
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"symbiote\"]/text"
 msgstr "共生体"
 
-#: src-en/data/events_special_storage.xml.append:4548
+#: src-en/data/events_special_storage.xml.append:4554
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"symbiote\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4555
+#: src-en/data/events_special_storage.xml.append:4561
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"symbiote\"]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:4559
+#: src-en/data/events_special_storage.xml.append:4565
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"symbiote\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4566
+#: src-en/data/events_special_storage.xml.append:4572
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[9]/text"
 msgstr "执行其他操作。"
 
-#: src-en/data/events_special_storage.xml.append:4572
+#: src-en/data/events_special_storage.xml.append:4578
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4575
+#: src-en/data/events_special_storage.xml.append:4581
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"solar_lanius\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4577
+#: src-en/data/events_special_storage.xml.append:4583
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"solar_lanius\"]/event/text"
 msgstr "为了更伟大的事业，船员被牺牲，强行激活了增强部件！"
 
-#: src-en/data/events_special_storage.xml.append:4584
+#: src-en/data/events_special_storage.xml.append:4590
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"solar_lanius\"]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:4588
+#: src-en/data/events_special_storage.xml.append:4594
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"solar_lanius\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4596
+#: src-en/data/events_special_storage.xml.append:4602
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"midnight_lanius\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4598
+#: src-en/data/events_special_storage.xml.append:4604
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"midnight_lanius\"]/event/text"
 msgstr "为了更伟大的事业，船员被牺牲，强行激活了增强部件！"
 
-#: src-en/data/events_special_storage.xml.append:4605
+#: src-en/data/events_special_storage.xml.append:4611
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"midnight_lanius\"]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:4609
+#: src-en/data/events_special_storage.xml.append:4615
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"midnight_lanius\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4615
+#: src-en/data/events_special_storage.xml.append:4621
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"midnight_lantern\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4617
+#: src-en/data/events_special_storage.xml.append:4623
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"midnight_lantern\"]/event/text"
 msgstr "为了更伟大的事业，船员被牺牲，强行激活了增强部件！"
 
-#: src-en/data/events_special_storage.xml.append:4624
+#: src-en/data/events_special_storage.xml.append:4630
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"midnight_lantern\"]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:4628
+#: src-en/data/events_special_storage.xml.append:4634
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"midnight_lantern\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4635
+#: src-en/data/events_special_storage.xml.append:4641
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"unique_corona\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4637
+#: src-en/data/events_special_storage.xml.append:4643
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"unique_corona\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4644
+#: src-en/data/events_special_storage.xml.append:4650
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"unique_corona\"]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:4648
+#: src-en/data/events_special_storage.xml.append:4654
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"unique_corona\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4654
+#: src-en/data/events_special_storage.xml.append:4660
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"unique_corona_masked\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4656
+#: src-en/data/events_special_storage.xml.append:4662
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"unique_corona_masked\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4663
+#: src-en/data/events_special_storage.xml.append:4669
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"unique_corona_masked\"]/event/removeCrew/text"
 msgstr "你的克隆舱成功复活了你的船员。"
 
-#: src-en/data/events_special_storage.xml.append:4667
+#: src-en/data/events_special_storage.xml.append:4673
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"unique_corona_masked\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4674
+#: src-en/data/events_special_storage.xml.append:4680
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[6]/text"
 msgstr "执行其他操作。"
 
-#: src-en/data/events_special_storage.xml.append:4814
+#: src-en/data/events_special_storage.xml.append:4820
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4817
+#: src-en/data/events_special_storage.xml.append:4823
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE\"]/choice[@req=\"loc_environment_atmosphere\""
 " and @lvl=\"0\"]/text"
 msgstr "是。"
 
-#: src-en/data/events_special_storage.xml.append:4819
+#: src-en/data/events_special_storage.xml.append:4825
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE\"]/choice[@req=\"loc_environment_atmosphere\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4829
+#: src-en/data/events_special_storage.xml.append:4835
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE\"]/choice[@req=\"loc_environment_atmosphere\""
 " and @lvl=\"0\"]/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4835
+#: src-en/data/events_special_storage.xml.append:4841
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE\"]/choice[@req=\"loc_environment_atmosphere\""
 " and not(@lvl)]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4839
+#: src-en/data/events_special_storage.xml.append:4845
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE\"]/choice[3]/text"
 msgstr "执行其他操作。"
 
-#: src-en/data/events_special_storage.xml.append:4843
+#: src-en/data/events_special_storage.xml.append:4849
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE\"]/choice[4]/text"
 msgstr "算了，直接战斗！"
 
-#: src-en/data/events_special_storage.xml.append:4887
+#: src-en/data/events_special_storage.xml.append:4893
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_CHECK_AUTO_SYS_REPAIR\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4891
+#: src-en/data/events_special_storage.xml.append:4897
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_CHECK_AUTO_SYS_REPAIR\"]/choice[@req=\"reactor\"]/text"
 msgstr "确定"
 
-#: src-en/data/events_special_storage.xml.append:4893
+#: src-en/data/events_special_storage.xml.append:4899
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_CHECK_AUTO_SYS_REPAIR\"]/choice[@req=\"reactor\"]/event/text"
 msgstr "你激活了增强部件……"
 
-#: src-en/data/events_special_storage.xml.append:4905
+#: src-en/data/events_special_storage.xml.append:4911
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_CHECK_AUTO_SYS_REPAIR\"]/choice[@req=\"reactor\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4914
+#: src-en/data/events_special_storage.xml.append:4920
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_CHECK_AUTO_SYS_REPAIR\"]/choice[@req=\"DEBUG_GENERATOR\"]/text"
 msgstr "使用应急供能器来为该部件供能。"
 
-#: src-en/data/events_special_storage.xml.append:4916
+#: src-en/data/events_special_storage.xml.append:4922
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_CHECK_AUTO_SYS_REPAIR\"]/choice[@req=\"DEBUG_GENERATOR\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4923
+#: src-en/data/events_special_storage.xml.append:4929
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_CHECK_AUTO_SYS_REPAIR\"]/choice[@req=\"DEBUG_GENERATOR\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:4930
+#: src-en/data/events_special_storage.xml.append:4936
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_CHECK_AUTO_SYS_REPAIR\"]/choice[3]/text"
 msgstr "执行其他操作。"
 
-#: src-en/data/events_special_storage.xml.append:4934
+#: src-en/data/events_special_storage.xml.append:4940
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_CHECK_AUTO_SYS_REPAIR\"]/choice[4]/text"
 msgstr "算了，直接战斗！"
 
-#: src-en/data/events_special_storage.xml.append:4936
+#: src-en/data/events_special_storage.xml.append:4942
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_CHECK_AUTO_SYS_REPAIR\"]/choice[4]/event/text"
 msgstr "你决定什么都不做，准备战斗。"
 
-#: src-en/data/events_special_storage.xml.append:4954
+#: src-en/data/events_special_storage.xml.append:4960
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"RK_COMBAT_AUTO_SYS_REPAIR_TRIGGERED_SUCCESS\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4960
+#: src-en/data/events_special_storage.xml.append:4966
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"RK_COMBAT_AUTO_SYS_REPAIR_TRIGGERED_SUCCESS\"]/choice[@req=\"pilot\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4963
+#: src-en/data/events_special_storage.xml.append:4969
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"RK_COMBAT_AUTO_SYS_REPAIR_TRIGGERED_SUCCESS\"]/choice[@req=\"pilot\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4969
+#: src-en/data/events_special_storage.xml.append:4975
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"RK_COMBAT_AUTO_SYS_REPAIR_TRIGGERED_SUCCESS\"]/choice[@req=\"pilot\"]/event/choice/text"
 msgstr "开始战斗！"
 
-#: src-en/data/events_special_storage.xml.append:4995
+#: src-en/data/events_special_storage.xml.append:5001
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:4999
+#: src-en/data/events_special_storage.xml.append:5005
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[1]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5001
+#: src-en/data/events_special_storage.xml.append:5007
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[1]/event/text"
 msgstr "你激活了增强部件……"
 
-#: src-en/data/events_special_storage.xml.append:5004
+#: src-en/data/events_special_storage.xml.append:5010
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[1]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:5011
+#: src-en/data/events_special_storage.xml.append:5017
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[@req=\"HAS_HACKING_OR_LILY_ECM\""
 " and @lvl=\"0\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5017
+#: src-en/data/events_special_storage.xml.append:5023
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[3]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5019
+#: src-en/data/events_special_storage.xml.append:5025
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[3]/event/text"
 msgstr "你激活了增强部件……"
 
-#: src-en/data/events_special_storage.xml.append:5028
+#: src-en/data/events_special_storage.xml.append:5034
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[3]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:5035
+#: src-en/data/events_special_storage.xml.append:5041
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[@req=\"HAS_HACKING_OR_LILY_ECM\""
 " and @lvl=\"2\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5037
+#: src-en/data/events_special_storage.xml.append:5043
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[@req=\"HAS_HACKING_OR_LILY_ECM\""
 " and @lvl=\"2\"]/event/text"
 msgstr "你激活了增强部件……"
 
-#: src-en/data/events_special_storage.xml.append:5046
+#: src-en/data/events_special_storage.xml.append:5052
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[@req=\"HAS_HACKING_OR_LILY_ECM\""
 " and @lvl=\"2\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:5053
+#: src-en/data/events_special_storage.xml.append:5059
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[5]/text"
 msgstr "你需要更强大的黑客（或ECM套件）系统来获得更多选项。"
 
-#: src-en/data/events_special_storage.xml.append:5058
+#: src-en/data/events_special_storage.xml.append:5064
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[@req=\"HAS_HACKING_OR_LILY_ECM\""
 " and @lvl=\"3\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5060
+#: src-en/data/events_special_storage.xml.append:5066
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[@req=\"HAS_HACKING_OR_LILY_ECM\""
 " and @lvl=\"3\"]/event/text"
 msgstr "你激活了增强部件……"
 
-#: src-en/data/events_special_storage.xml.append:5068
+#: src-en/data/events_special_storage.xml.append:5074
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[@req=\"HAS_HACKING_OR_LILY_ECM\""
 " and @lvl=\"3\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:5075
+#: src-en/data/events_special_storage.xml.append:5081
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[7]/text"
 msgstr "执行其他操作。"
 
-#: src-en/data/events_special_storage.xml.append:5079
+#: src-en/data/events_special_storage.xml.append:5085
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[8]/text"
 msgstr "算了，直接战斗！"
 
-#: src-en/data/events_special_storage.xml.append:5081
+#: src-en/data/events_special_storage.xml.append:5087
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[8]/event/text"
 msgstr "你决定什么都不做，准备战斗。"
 
-#: src-en/data/events_special_storage.xml.append:5087
-#, fuzzy
-msgid ""
-"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START\"]/text"
-msgstr ""
-"你开始入侵敌人的通讯系统。现在，努力活下去，同时不要对敌人的船体造成太大伤害…"
-"…"
-
 #: src-en/data/events_special_storage.xml.append:5093
 #, fuzzy
 msgid ""
-"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START\"]/triggeredEvent/triggeredEventBox/tooltip"
-msgstr ""
-"拖延叛军舰队的黑客攻击会在这一时长内成功或失败。若你造成 3 点船体伤害，则此过"
-"程取消。"
+"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START\"]/text"
+msgstr "你开始入侵敌人的通讯系统。现在，努力活下去，同时不要对敌人的船体造成太大伤害……"
 
-#: src-en/data/events_special_storage.xml.append:5103
+#: src-en/data/events_special_storage.xml.append:5099
+#, fuzzy
+msgid ""
+"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START\"]/triggeredEvent/triggeredEventBox/tooltip"
+msgstr "拖延叛军舰队的黑客攻击会在这一时长内成功或失败。若你造成 3 点船体伤害，则此过程取消。"
+
+#: src-en/data/events_special_storage.xml.append:5109
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START\"]/choice/text"
 msgstr "开始战斗！"
 
-#: src-en/data/events_special_storage.xml.append:5108
+#: src-en/data/events_special_storage.xml.append:5114
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_END\"]/text"
 msgstr "分裂过程完成！"
 
-#: src-en/data/events_special_storage.xml.append:5115
+#: src-en/data/events_special_storage.xml.append:5121
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_END\"]/choice/text"
 msgstr "让我们看看它是否奏效了……"
 
-#: src-en/data/events_special_storage.xml.append:5152
-#, fuzzy
-msgid ""
-"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS1\"]/text"
-msgstr ""
-"你开始入侵敌人的通讯系统。现在，努力活下去，同时不要对敌人的船体造成太大伤害…"
-"…"
-
 #: src-en/data/events_special_storage.xml.append:5158
 #, fuzzy
 msgid ""
-"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS1\"]/triggeredEvent/triggeredEventBox/tooltip"
-msgstr ""
-"拖延叛军舰队的黑客攻击会在这一时长内成功或失败。若你造成 3 点船体伤害，则此过"
-"程取消。"
+"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS1\"]/text"
+msgstr "你开始入侵敌人的通讯系统。现在，努力活下去，同时不要对敌人的船体造成太大伤害……"
 
-#: src-en/data/events_special_storage.xml.append:5168
+#: src-en/data/events_special_storage.xml.append:5164
+#, fuzzy
+msgid ""
+"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS1\"]/triggeredEvent/triggeredEventBox/tooltip"
+msgstr "拖延叛军舰队的黑客攻击会在这一时长内成功或失败。若你造成 3 点船体伤害，则此过程取消。"
+
+#: src-en/data/events_special_storage.xml.append:5174
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS1\"]/choice/text"
 msgstr "开始战斗！"
 
-#: src-en/data/events_special_storage.xml.append:5173
+#: src-en/data/events_special_storage.xml.append:5179
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_END_BONUS1\"]/text"
 msgstr "分裂过程完成！"
 
-#: src-en/data/events_special_storage.xml.append:5180
+#: src-en/data/events_special_storage.xml.append:5186
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_END_BONUS1\"]/choice/text"
 msgstr "让我们看看它是否奏效了……"
 
-#: src-en/data/events_special_storage.xml.append:5218
-#, fuzzy
-msgid ""
-"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS2\"]/text"
-msgstr ""
-"你开始入侵敌人的通讯系统。现在，努力活下去，同时不要对敌人的船体造成太大伤害…"
-"…"
-
 #: src-en/data/events_special_storage.xml.append:5224
 #, fuzzy
 msgid ""
-"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS2\"]/triggeredEvent/triggeredEventBox/tooltip"
-msgstr ""
-"拖延叛军舰队的黑客攻击会在这一时长内成功或失败。若你造成 3 点船体伤害，则此过"
-"程取消。"
+"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS2\"]/text"
+msgstr "你开始入侵敌人的通讯系统。现在，努力活下去，同时不要对敌人的船体造成太大伤害……"
 
-#: src-en/data/events_special_storage.xml.append:5234
+#: src-en/data/events_special_storage.xml.append:5230
+#, fuzzy
+msgid ""
+"data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS2\"]/triggeredEvent/triggeredEventBox/tooltip"
+msgstr "拖延叛军舰队的黑客攻击会在这一时长内成功或失败。若你造成 3 点船体伤害，则此过程取消。"
+
+#: src-en/data/events_special_storage.xml.append:5240
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS2\"]/choice/text"
 msgstr "开始战斗！"
 
-#: src-en/data/events_special_storage.xml.append:5239
+#: src-en/data/events_special_storage.xml.append:5245
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_END_BONUS2\"]/text"
 msgstr "分裂过程完成！"
 
-#: src-en/data/events_special_storage.xml.append:5246
+#: src-en/data/events_special_storage.xml.append:5252
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_END_BONUS2\"]/choice/text"
 msgstr "让我们看看它是否奏效了……"
 
-#: src-en/data/events_special_storage.xml.append:5316
+#: src-en/data/events_special_storage.xml.append:5322
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_OUTCOME_GOOD_CRITICAL\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5319
+#: src-en/data/events_special_storage.xml.append:5325
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_OUTCOME_GOOD_CRITICAL\"]/choice/text"
 msgstr "开始战斗！"
 
-#: src-en/data/events_special_storage.xml.append:5324
+#: src-en/data/events_special_storage.xml.append:5330
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_OUTCOME_GOOD\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5327
+#: src-en/data/events_special_storage.xml.append:5333
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_OUTCOME_GOOD\"]/choice/text"
 msgstr "开始战斗！"
 
-#: src-en/data/events_special_storage.xml.append:5332
+#: src-en/data/events_special_storage.xml.append:5338
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_OUTCOME_NEUTRAL\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5334
+#: src-en/data/events_special_storage.xml.append:5340
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_OUTCOME_NEUTRAL\"]/choice/text"
 msgstr "开始战斗！"
 
-#: src-en/data/events_special_storage.xml.append:5339
+#: src-en/data/events_special_storage.xml.append:5345
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_OUTCOME_BAD\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5342
+#: src-en/data/events_special_storage.xml.append:5348
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_OUTCOME_BAD\"]/choice/text"
 msgstr "开始战斗！"
 
-#: src-en/data/events_special_storage.xml.append:5347
+#: src-en/data/events_special_storage.xml.append:5353
 #, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_OUTCOME_BOSS\"]/text"
 msgstr ""
 "这次入侵本该延缓舰队，但却没有……\n"
 "\t\t\n"
-"\t\t有人干扰了这次行动，并给我们发送了奇怪的坐标，附带着一条信息：“菜鸟！！1"
-"！”。"
+"\t\t有人干扰了这次行动，并给我们发送了奇怪的坐标，附带着一条信息：“菜鸟！！1！”。"
 
-#: src-en/data/events_special_storage.xml.append:5354
+#: src-en/data/events_special_storage.xml.append:5360
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_OUTCOME_BOSS\"]/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5384
+#: src-en/data/events_special_storage.xml.append:5390
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/beaconType/unvisitedTooltip"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5387
+#: src-en/data/events_special_storage.xml.append:5393
 #, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/text"
 msgstr ""
-"这里有一艘外观非常凶恶的精英叛军舰船。它的船长正盯着你，眼中闪烁着一丝火花"
-"。\n"
+"这里有一艘外观非常凶恶的精英叛军舰船。它的船长正盯着你，眼中闪烁着一丝火花。\n"
 "\n"
-"\t\t“当我听说有人胆敢在舰队的通讯上耍花招时，我就知道我得会会这些蠢货！你们果"
-"然在这儿，菜鸟们！\n"
-"\t\t我希望你们不介意我这么叫你们，菜鸟们。告诉你们也无妨，我们都挺佩服这种胆"
-"量的，敢惹怒宇宙这边最庞大的军队，那个用舰队阴影覆盖整个星区的军队。\n"
+"\t\t“当我听说有人胆敢在舰队的通讯上耍花招时，我就知道我得会会这些蠢货！你们果然在这儿，菜鸟们！\n"
+"\t\t我希望你们不介意我这么叫你们，菜鸟们。告诉你们也无妨，我们都挺佩服这种胆量的，敢惹怒宇宙这边最庞大的军队，那个用舰队阴影覆盖整个星区的军队。\n"
 "\t\t但我和我这儿的朋友们可没因此而心慈手软变成 MFK，想必你也猜得到。\n"
 "\n"
-"\t\t所以，作为友好较量的表示，让我来给你们示范一下该怎么做！就在我们宰了你们"
-"之前。”"
+"\t\t所以，作为友好较量的表示，让我来给你们示范一下该怎么做！就在我们宰了你们之前。”"
 
-#: src-en/data/events_special_storage.xml.append:5398
+#: src-en/data/events_special_storage.xml.append:5404
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/choice[1]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5400
+#: src-en/data/events_special_storage.xml.append:5406
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/choice[1]/event/text"
 msgstr ""
 "敌方船长脸上恶毒的笑容更深了。“哈哈哈，尝尝这个！”\n"
-"\t\t\t\t你立刻注意到舰船的许多系统出现了故障！他们一定在使用某种战斗增强部件"
-"！你可能早就料到一艘黑客舰船不会公平作战，但如果你没料到，现在正是时候考虑"
-"在[style[color:ff3377]]更糟[[/style]]的事情发生之前快速逃离。"
+"\t\t\t\t你立刻注意到舰船的许多系统出现了故障！他们一定在使用某种战斗增强部件！你可能早就料到一艘黑客舰船不会公平作战，但如果你没料到，现在正是时候考虑在[style[color:ff3377]]更糟[[/style]]的事情发生之前快速逃离。"
 
-#: src-en/data/events_special_storage.xml.append:5415
+#: src-en/data/events_special_storage.xml.append:5421
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/choice[1]/event/choice[1]/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:5420
+#: src-en/data/events_special_storage.xml.append:5426
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/choice[1]/event/choice[@req=\"ANTI_VIRUS\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5422
+#: src-en/data/events_special_storage.xml.append:5428
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/choice[1]/event/choice[@req=\"ANTI_VIRUS\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5432
+#: src-en/data/events_special_storage.xml.append:5438
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/choice[1]/event/choice[@req=\"ANTI_VIRUS\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:5441
+#: src-en/data/events_special_storage.xml.append:5447
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5453
+#: src-en/data/events_special_storage.xml.append:5459
 msgid ""
 "data/events_special_storage.xml.append$//ship[@name=\"SHIP_RK_HACK_FLEET_BOSS\"]/surrender/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5492
+#: src-en/data/events_special_storage.xml.append:5498
 msgid ""
 "data/events_special_storage.xml.append$//ship[@name=\"SHIP_RK_HACK_FLEET_BOSS\"]/surrender/choice[1]/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:5497
+#: src-en/data/events_special_storage.xml.append:5503
 msgid ""
 "data/events_special_storage.xml.append$//ship[@name=\"SHIP_RK_HACK_FLEET_BOSS\"]/surrender/choice[@req=\"ANTI_VIRUS\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5499
+#: src-en/data/events_special_storage.xml.append:5505
 msgid ""
 "data/events_special_storage.xml.append$//ship[@name=\"SHIP_RK_HACK_FLEET_BOSS\"]/surrender/choice[@req=\"ANTI_VIRUS\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5533
+#: src-en/data/events_special_storage.xml.append:5539
 msgid ""
 "data/events_special_storage.xml.append$//ship[@name=\"SHIP_RK_HACK_FLEET_BOSS\"]/surrender/choice[@req=\"ANTI_VIRUS\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:5540
+#: src-en/data/events_special_storage.xml.append:5546
 msgid ""
 "data/events_special_storage.xml.append$//ship[@name=\"SHIP_RK_HACK_FLEET_BOSS\"]/destroyed/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5578
+#: src-en/data/events_special_storage.xml.append:5584
 msgid ""
 "data/events_special_storage.xml.append$//ship[@name=\"SHIP_RK_HACK_FLEET_BOSS\"]/destroyed/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:5580
+#: src-en/data/events_special_storage.xml.append:5586
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"SHIP_RK_HACK_FLEET_BOSS_REWARD_CHOICES\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5587
+#: src-en/data/events_special_storage.xml.append:5593
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"SHIP_RK_HACK_FLEET_BOSS_REWARD_CHOICES\"]/choice[1]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5589
+#: src-en/data/events_special_storage.xml.append:5595
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"SHIP_RK_HACK_FLEET_BOSS_REWARD_CHOICES\"]/choice[1]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5593
+#: src-en/data/events_special_storage.xml.append:5599
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"SHIP_RK_HACK_FLEET_BOSS_REWARD_CHOICES\"]/choice[1]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:5600
+#: src-en/data/events_special_storage.xml.append:5606
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"SHIP_RK_HACK_FLEET_BOSS_REWARD_CHOICES\"]/choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5602
+#: src-en/data/events_special_storage.xml.append:5608
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"SHIP_RK_HACK_FLEET_BOSS_REWARD_CHOICES\"]/choice[2]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5606
+#: src-en/data/events_special_storage.xml.append:5612
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"SHIP_RK_HACK_FLEET_BOSS_REWARD_CHOICES\"]/choice[2]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:5613
+#: src-en/data/events_special_storage.xml.append:5619
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"SHIP_RK_HACK_FLEET_BOSS_REWARD_CHOICES\"]/choice[3]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5620
+#: src-en/data/events_special_storage.xml.append:5626
 msgid ""
 "data/events_special_storage.xml.append$//ship[@name=\"SHIP_RK_HACK_FLEET_BOSS\"]/deadCrew/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5658
+#: src-en/data/events_special_storage.xml.append:5664
 msgid ""
 "data/events_special_storage.xml.append$//ship[@name=\"SHIP_RK_HACK_FLEET_BOSS\"]/deadCrew/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:5675
+#: src-en/data/events_special_storage.xml.append:5681
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_ACE_CONSOLE_ACTIVATE\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5679
+#: src-en/data/events_special_storage.xml.append:5685
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_ACE_CONSOLE_ACTIVATE\"]/choice[1]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5681
+#: src-en/data/events_special_storage.xml.append:5687
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_ACE_CONSOLE_ACTIVATE\"]/choice[1]/event/text"
 msgstr "你激活了增强部件……"
 
-#: src-en/data/events_special_storage.xml.append:5684
+#: src-en/data/events_special_storage.xml.append:5690
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_ACE_CONSOLE_ACTIVATE\"]/choice[1]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:5692
+#: src-en/data/events_special_storage.xml.append:5698
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_ACE_CONSOLE_ACTIVATE\"]/choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5694
+#: src-en/data/events_special_storage.xml.append:5700
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_ACE_CONSOLE_ACTIVATE\"]/choice[2]/event/text"
 msgstr "你激活了增强部件……"
 
-#: src-en/data/events_special_storage.xml.append:5702
+#: src-en/data/events_special_storage.xml.append:5708
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_ACE_CONSOLE_ACTIVATE\"]/choice[2]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:5708
+#: src-en/data/events_special_storage.xml.append:5714
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_ACE_CONSOLE_ACTIVATE\"]/choice[@req=\"DEBUG_GENERATOR\"]/text"
 msgstr "使用应急供能器来为该部件供能。"
 
-#: src-en/data/events_special_storage.xml.append:5710
+#: src-en/data/events_special_storage.xml.append:5716
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_ACE_CONSOLE_ACTIVATE\"]/choice[@req=\"DEBUG_GENERATOR\"]/event/text"
 msgstr "你激活了增强部件……"
 
-#: src-en/data/events_special_storage.xml.append:5716
+#: src-en/data/events_special_storage.xml.append:5722
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_ACE_CONSOLE_ACTIVATE\"]/choice[@req=\"DEBUG_GENERATOR\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:5723
+#: src-en/data/events_special_storage.xml.append:5729
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_ACE_CONSOLE_ACTIVATE\"]/choice[4]/text"
 msgstr "执行其他操作。"
 
-#: src-en/data/events_special_storage.xml.append:5727
+#: src-en/data/events_special_storage.xml.append:5733
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_ACE_CONSOLE_ACTIVATE\"]/choice[5]/text"
 msgstr "算了，直接战斗！"
 
-#: src-en/data/events_special_storage.xml.append:5729
+#: src-en/data/events_special_storage.xml.append:5735
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_ACE_CONSOLE_ACTIVATE\"]/choice[5]/event/text"
 msgstr "你决定什么都不做，准备战斗。"
 
-#: src-en/data/events_special_storage.xml.append:5821
+#: src-en/data/events_special_storage.xml.append:5827
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_OFFENSE_DISABLER\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5825
+#: src-en/data/events_special_storage.xml.append:5831
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_OFFENSE_DISABLER\"]/choice[@req=\"reactor\"]/text"
 msgstr "确定"
 
-#: src-en/data/events_special_storage.xml.append:5827
+#: src-en/data/events_special_storage.xml.append:5833
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_OFFENSE_DISABLER\"]/choice[@req=\"reactor\"]/event/text"
 msgstr "你激活了增强部件……"
 
-#: src-en/data/events_special_storage.xml.append:5835
+#: src-en/data/events_special_storage.xml.append:5841
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_OFFENSE_DISABLER\"]/choice[@req=\"reactor\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:5841
+#: src-en/data/events_special_storage.xml.append:5847
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_OFFENSE_DISABLER\"]/choice[@req=\"DEBUG_GENERATOR\"]/text"
 msgstr "使用应急供能器来为该部件供能。"
 
-#: src-en/data/events_special_storage.xml.append:5843
+#: src-en/data/events_special_storage.xml.append:5849
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_OFFENSE_DISABLER\"]/choice[@req=\"DEBUG_GENERATOR\"]/event/text"
 msgstr "你激活了增强部件……"
 
-#: src-en/data/events_special_storage.xml.append:5849
+#: src-en/data/events_special_storage.xml.append:5855
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_OFFENSE_DISABLER\"]/choice[@req=\"DEBUG_GENERATOR\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:5856
+#: src-en/data/events_special_storage.xml.append:5862
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_OFFENSE_DISABLER\"]/choice[3]/text"
 msgstr "执行其他操作。"
 
-#: src-en/data/events_special_storage.xml.append:5860
+#: src-en/data/events_special_storage.xml.append:5866
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_OFFENSE_DISABLER\"]/choice[4]/text"
 msgstr "算了，直接战斗！"
 
-#: src-en/data/events_special_storage.xml.append:5862
+#: src-en/data/events_special_storage.xml.append:5868
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_OFFENSE_DISABLER\"]/choice[4]/event/text"
 msgstr "你决定什么都不做，准备战斗。"
 
-#: src-en/data/events_special_storage.xml.append:5868
+#: src-en/data/events_special_storage.xml.append:5874
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_OFFENSE_DISABLER_TIMER_START\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5878
+#: src-en/data/events_special_storage.xml.append:5884
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_OFFENSE_DISABLER_TIMER_START\"]/triggeredEvent/triggeredEventBox/tooltip"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:5887
+#: src-en/data/events_special_storage.xml.append:5893
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_OFFENSE_DISABLER_TIMER_START\"]/choice/text"
 msgstr "开始战斗！"
 
-#: src-en/data/events_special_storage.xml.append:6050
+#: src-en/data/events_special_storage.xml.append:6056
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6054
+#: src-en/data/events_special_storage.xml.append:6060
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/choice[1]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6056
+#: src-en/data/events_special_storage.xml.append:6062
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/choice[1]/event/text"
 msgstr "你激活了增强部件……"
 
-#: src-en/data/events_special_storage.xml.append:6062
+#: src-en/data/events_special_storage.xml.append:6068
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/choice[1]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:6068
+#: src-en/data/events_special_storage.xml.append:6074
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6070
+#: src-en/data/events_special_storage.xml.append:6076
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/choice[2]/event/text"
 msgstr "你激活了增强部件……"
 
-#: src-en/data/events_special_storage.xml.append:6078
+#: src-en/data/events_special_storage.xml.append:6084
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/choice[2]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:6085
+#: src-en/data/events_special_storage.xml.append:6091
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/choice[3]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6087
+#: src-en/data/events_special_storage.xml.append:6093
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/choice[3]/event/text"
 msgstr "你激活了增强部件……"
 
-#: src-en/data/events_special_storage.xml.append:6093
+#: src-en/data/events_special_storage.xml.append:6099
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/choice[3]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:6099
+#: src-en/data/events_special_storage.xml.append:6105
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/choice[4]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6101
+#: src-en/data/events_special_storage.xml.append:6107
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/choice[4]/event/text"
 msgstr "你激活了增强部件……"
 
-#: src-en/data/events_special_storage.xml.append:6109
+#: src-en/data/events_special_storage.xml.append:6115
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/choice[4]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:6116
+#: src-en/data/events_special_storage.xml.append:6122
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/choice[5]/text"
 msgstr "执行其他操作。"
 
-#: src-en/data/events_special_storage.xml.append:6120
+#: src-en/data/events_special_storage.xml.append:6126
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/choice[6]/text"
 msgstr "算了，直接战斗！"
 
-#: src-en/data/events_special_storage.xml.append:6122
+#: src-en/data/events_special_storage.xml.append:6128
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/choice[6]/event/text"
 msgstr "你决定什么都不做，准备战斗。"
 
-#: src-en/data/events_special_storage.xml.append:6128
+#: src-en/data/events_special_storage.xml.append:6134
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_DEFENSE_REMOVER_TIMER_START_LOW\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6135
+#: src-en/data/events_special_storage.xml.append:6141
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_DEFENSE_REMOVER_TIMER_START_LOW\"]/triggeredEvent/triggeredEventBox/tooltip"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6144
+#: src-en/data/events_special_storage.xml.append:6150
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_DEFENSE_REMOVER_TIMER_START_LOW\"]/choice/text"
 msgstr "开始战斗！"
 
-#: src-en/data/events_special_storage.xml.append:6152
+#: src-en/data/events_special_storage.xml.append:6158
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_DEFENSE_REMOVER_TIMER_START_HIGH\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6159
+#: src-en/data/events_special_storage.xml.append:6165
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_DEFENSE_REMOVER_TIMER_START_HIGH\"]/triggeredEvent/triggeredEventBox/tooltip"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6168
+#: src-en/data/events_special_storage.xml.append:6174
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_DEFENSE_REMOVER_TIMER_START_HIGH\"]/choice/text"
 msgstr "开始战斗！"
 
-#: src-en/data/events_special_storage.xml.append:6349
+#: src-en/data/events_special_storage.xml.append:6355
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_IMMUNE\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6352
+#: src-en/data/events_special_storage.xml.append:6358
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_IMMUNE\"]/choice[1]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6354
+#: src-en/data/events_special_storage.xml.append:6360
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_IMMUNE\"]/choice[1]/event/text"
 msgstr "你开始校准部件..."
 
-#: src-en/data/events_special_storage.xml.append:6357
+#: src-en/data/events_special_storage.xml.append:6363
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_IMMUNE\"]/choice[1]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:6359
+#: src-en/data/events_special_storage.xml.append:6365
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_IMMUNE\"]/choice[1]/event/choice/event/text"
 msgstr "校准部件成功。"
 
-#: src-en/data/events_special_storage.xml.append:6362
+#: src-en/data/events_special_storage.xml.append:6368
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_IMMUNE\"]/choice[1]/event/choice/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:6370
+#: src-en/data/events_special_storage.xml.append:6376
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_IMMUNE\"]/choice[2]/text"
 msgstr "返回到切换菜单。"
 
-#: src-en/data/events_special_storage.xml.append:6375
+#: src-en/data/events_special_storage.xml.append:6381
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_DAMAGE\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6378
+#: src-en/data/events_special_storage.xml.append:6384
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_DAMAGE\"]/choice[1]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6380
+#: src-en/data/events_special_storage.xml.append:6386
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_DAMAGE\"]/choice[1]/event/text"
 msgstr "你开始校准部件..."
 
-#: src-en/data/events_special_storage.xml.append:6383
+#: src-en/data/events_special_storage.xml.append:6389
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_DAMAGE\"]/choice[1]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:6385
+#: src-en/data/events_special_storage.xml.append:6391
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_DAMAGE\"]/choice[1]/event/choice/event/text"
 msgstr "校准部件成功。"
 
-#: src-en/data/events_special_storage.xml.append:6388
+#: src-en/data/events_special_storage.xml.append:6394
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_DAMAGE\"]/choice[1]/event/choice/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:6396
+#: src-en/data/events_special_storage.xml.append:6402
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_DAMAGE\"]/choice[2]/text"
 msgstr "返回到切换菜单。"
 
-#: src-en/data/events_special_storage.xml.append:6412
+#: src-en/data/events_special_storage.xml.append:6418
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_ON\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6415
+#: src-en/data/events_special_storage.xml.append:6421
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_ON\"]/choice[1]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6417
+#: src-en/data/events_special_storage.xml.append:6423
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_ON\"]/choice[1]/event/text"
 msgstr "你开始校准部件..."
 
-#: src-en/data/events_special_storage.xml.append:6420
+#: src-en/data/events_special_storage.xml.append:6426
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_ON\"]/choice[1]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:6422
+#: src-en/data/events_special_storage.xml.append:6428
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_ON\"]/choice[1]/event/choice/event/text"
 msgstr "校准部件成功。"
 
-#: src-en/data/events_special_storage.xml.append:6425
+#: src-en/data/events_special_storage.xml.append:6431
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_ON\"]/choice[1]/event/choice/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:6434
+#: src-en/data/events_special_storage.xml.append:6440
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_ON\"]/choice[2]/text"
 msgstr "返回到切换菜单。"
 
-#: src-en/data/events_special_storage.xml.append:6439
+#: src-en/data/events_special_storage.xml.append:6445
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_OFF\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6442
+#: src-en/data/events_special_storage.xml.append:6448
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_OFF\"]/choice[1]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6444
+#: src-en/data/events_special_storage.xml.append:6450
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_OFF\"]/choice[1]/event/text"
 msgstr "你开始校准部件..."
 
-#: src-en/data/events_special_storage.xml.append:6447
+#: src-en/data/events_special_storage.xml.append:6453
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_OFF\"]/choice[1]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:6449
+#: src-en/data/events_special_storage.xml.append:6455
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_OFF\"]/choice[1]/event/choice/event/text"
 msgstr "校准部件成功。"
 
-#: src-en/data/events_special_storage.xml.append:6452
+#: src-en/data/events_special_storage.xml.append:6458
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_OFF\"]/choice[1]/event/choice/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:6461
+#: src-en/data/events_special_storage.xml.append:6467
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_OFF\"]/choice[2]/text"
 msgstr "返回到切换菜单。"
 
-#: src-en/data/events_special_storage.xml.append:6468
+#: src-en/data/events_special_storage.xml.append:6474
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6472
+#: src-en/data/events_special_storage.xml.append:6478
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/choice[1]/text"
 msgstr "确定"
 
-#: src-en/data/events_special_storage.xml.append:6474
+#: src-en/data/events_special_storage.xml.append:6480
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/choice[1]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6483
+#: src-en/data/events_special_storage.xml.append:6489
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/choice[1]/event/crewMember"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6486
+#: src-en/data/events_special_storage.xml.append:6492
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/choice[1]/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6504
+#: src-en/data/events_special_storage.xml.append:6510
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6506
+#: src-en/data/events_special_storage.xml.append:6512
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/choice[2]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6515
+#: src-en/data/events_special_storage.xml.append:6521
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/choice[2]/event/crewMember"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6522
+#: src-en/data/events_special_storage.xml.append:6528
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/choice[2]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:6524
+#: src-en/data/events_special_storage.xml.append:6530
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/choice[2]/event/choice/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6525
+#: src-en/data/events_special_storage.xml.append:6531
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/choice[2]/event/choice/event/crewMember"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6528
+#: src-en/data/events_special_storage.xml.append:6534
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/choice[2]/event/choice/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6537
+#: src-en/data/events_special_storage.xml.append:6543
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/choice[3]/text"
 msgstr "算了，做点别的。"
 
-#: src-en/data/events_special_storage.xml.append:6551
+#: src-en/data/events_special_storage.xml.append:6557
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_CREW_ARE_BOMBS_OFF\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6554
+#: src-en/data/events_special_storage.xml.append:6560
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_CREW_ARE_BOMBS_OFF\"]/choice[1]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6556
+#: src-en/data/events_special_storage.xml.append:6562
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_CREW_ARE_BOMBS_OFF\"]/choice[1]/event/text"
 msgstr "你开始校准部件..."
 
-#: src-en/data/events_special_storage.xml.append:6559
+#: src-en/data/events_special_storage.xml.append:6565
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_CREW_ARE_BOMBS_OFF\"]/choice[1]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:6561
+#: src-en/data/events_special_storage.xml.append:6567
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_CREW_ARE_BOMBS_OFF\"]/choice[1]/event/choice/event/text"
 msgstr "校准部件成功。"
 
-#: src-en/data/events_special_storage.xml.append:6564
+#: src-en/data/events_special_storage.xml.append:6570
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_CREW_ARE_BOMBS_OFF\"]/choice[1]/event/choice/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:6573
+#: src-en/data/events_special_storage.xml.append:6579
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_CREW_ARE_BOMBS_OFF\"]/choice[2]/text"
 msgstr "返回到切换菜单。"
 
-#: src-en/data/events_special_storage.xml.append:6579
+#: src-en/data/events_special_storage.xml.append:6585
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_CREW_ARE_BOMBS_ON_SELFSCRAP\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6583
+#: src-en/data/events_special_storage.xml.append:6589
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_CREW_ARE_BOMBS_ON_SELFSCRAP\"]/choice[1]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6594
+#: src-en/data/events_special_storage.xml.append:6600
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_CREW_ARE_BOMBS_ON_SELFSCRAP\"]/choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6604
+#: src-en/data/events_special_storage.xml.append:6610
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_CREW_ARE_BOMBS_ON_SELFSCRAP\"]/choice[3]/text"
 msgstr "算了，做点别的。"
 
-#: src-en/data/events_special_storage.xml.append:6617
+#: src-en/data/events_special_storage.xml.append:6623
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_LEAD_TITANS_SELFSCRAP\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6621
+#: src-en/data/events_special_storage.xml.append:6627
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_LEAD_TITANS_SELFSCRAP\"]/choice[@req=\"RK_LEAD_TITANS\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6642
+#: src-en/data/events_special_storage.xml.append:6648
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_LEAD_TITANS_SELFSCRAP\"]/choice[2]/text"
 msgstr "算了，做点别的。"
 
-#: src-en/data/events_special_storage.xml.append:6657
+#: src-en/data/events_special_storage.xml.append:6663
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6662
+#: src-en/data/events_special_storage.xml.append:6668
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/text"
 msgstr "确定"
 
-#: src-en/data/events_special_storage.xml.append:6664
+#: src-en/data/events_special_storage.xml.append:6670
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6679
+#: src-en/data/events_special_storage.xml.append:6685
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/choice[1]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6681
+#: src-en/data/events_special_storage.xml.append:6687
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/choice[1]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6691
+#: src-en/data/events_special_storage.xml.append:6697
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/choice[1]/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6698
+#: src-en/data/events_special_storage.xml.append:6704
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6700
+#: src-en/data/events_special_storage.xml.append:6706
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/choice[2]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6710
+#: src-en/data/events_special_storage.xml.append:6716
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/choice[2]/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6718
+#: src-en/data/events_special_storage.xml.append:6724
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/choice[3]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6720
+#: src-en/data/events_special_storage.xml.append:6726
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/choice[3]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6727
+#: src-en/data/events_special_storage.xml.append:6733
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/choice[3]/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6735
+#: src-en/data/events_special_storage.xml.append:6741
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[2]/text"
 msgstr "算了，做点别的。"
-
-#: src-en/data/events_special_storage.xml.append:6889
-msgid ""
-"data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[25]/mod-"
-"append:choice/text"
-msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:6895
 msgid ""
@@ -3526,403 +3500,408 @@ msgid ""
 "append:choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6921
+#: src-en/data/events_special_storage.xml.append:6901
+msgid ""
+"data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[27]/mod-"
+"append:choice/text"
+msgstr ""
+
+#: src-en/data/events_special_storage.xml.append:6927
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[1]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6925
+#: src-en/data/events_special_storage.xml.append:6931
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6929
+#: src-en/data/events_special_storage.xml.append:6935
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[3]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6934
+#: src-en/data/events_special_storage.xml.append:6940
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[4]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6938
+#: src-en/data/events_special_storage.xml.append:6944
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[5]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6944
+#: src-en/data/events_special_storage.xml.append:6950
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[6]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6948
+#: src-en/data/events_special_storage.xml.append:6954
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[7]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6953
+#: src-en/data/events_special_storage.xml.append:6959
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[8]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6957
+#: src-en/data/events_special_storage.xml.append:6963
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[9]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6963
+#: src-en/data/events_special_storage.xml.append:6969
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[10]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6967
+#: src-en/data/events_special_storage.xml.append:6973
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[11]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6972
+#: src-en/data/events_special_storage.xml.append:6978
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[12]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6976
+#: src-en/data/events_special_storage.xml.append:6982
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[13]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6984
+#: src-en/data/events_special_storage.xml.append:6990
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/text"
 msgstr "你要安装什么升级？"
 
-#: src-en/data/events_special_storage.xml.append:7002
+#: src-en/data/events_special_storage.xml.append:7008
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_CALIBRATOR\""
 " and @lvl=\"2\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7007
+#: src-en/data/events_special_storage.xml.append:7013
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_CALIBRATOR\""
 " and @lvl=\"1\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7011
+#: src-en/data/events_special_storage.xml.append:7017
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_CALIBRATOR\""
 " and @lvl=\"0\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7016
+#: src-en/data/events_special_storage.xml.append:7022
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_CHOKING_IS_FINE\""
 " and @lvl=\"1\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7021
+#: src-en/data/events_special_storage.xml.append:7027
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_CHOKING_IS_FINE\""
 " and @lvl=\"0\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7026
+#: src-en/data/events_special_storage.xml.append:7032
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_DEMICLONER\""
 " and @lvl=\"1\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7031
+#: src-en/data/events_special_storage.xml.append:7037
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_DEMICLONER\""
 " and @lvl=\"0\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7036
+#: src-en/data/events_special_storage.xml.append:7042
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_MC_PARALYZER\""
 " and @lvl=\"1\"]/text"
-msgstr ""
-
-#: src-en/data/events_special_storage.xml.append:7040
-msgid ""
-"data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_MC_PARALYZER\""
-" and @lvl=\"0\"]/text"
 msgstr ""
 
 #: src-en/data/events_special_storage.xml.append:7046
 msgid ""
+"data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_MC_PARALYZER\""
+" and @lvl=\"0\"]/text"
+msgstr ""
+
+#: src-en/data/events_special_storage.xml.append:7052
+msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_IN_FIRE_CREWBOOSTS\""
 " and @lvl=\"1\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7050
+#: src-en/data/events_special_storage.xml.append:7056
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_IN_FIRE_CREWBOOSTS\""
 " and @lvl=\"0\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7055
+#: src-en/data/events_special_storage.xml.append:7061
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\""
 " and @lvl=\"1\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7059
+#: src-en/data/events_special_storage.xml.append:7065
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\""
 " and @lvl=\"0\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7064
+#: src-en/data/events_special_storage.xml.append:7070
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[14]/text"
 msgstr "算了。"
 
-#: src-en/data/events_special_storage.xml.append:7105
+#: src-en/data/events_special_storage.xml.append:7111
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CALIBRATOR\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7122
+#: src-en/data/events_special_storage.xml.append:7128
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CALIBRATOR\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
 " and @lvl=\"0\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7127
-#, fuzzy
+#: src-en/data/events_special_storage.xml.append:7133
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CALIBRATOR\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
 " and @lvl=\"1\"]/text"
-msgstr "执行升级。[消耗：50~，1{]"
+msgstr "执行升级。[消耗：35~，2{]"
 
-#: src-en/data/events_special_storage.xml.append:7129
+#: src-en/data/events_special_storage.xml.append:7135
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CALIBRATOR\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
 " and @lvl=\"1\"]/event/text"
 msgstr "安装完成。"
 
-#: src-en/data/events_special_storage.xml.append:7134
+#: src-en/data/events_special_storage.xml.append:7141
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CALIBRATOR\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
 " and @lvl=\"1\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:7141
+#: src-en/data/events_special_storage.xml.append:7148
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CALIBRATOR\"]/choice[@req=\"pilot\"]/text"
 msgstr "算了。"
 
-#: src-en/data/events_special_storage.xml.append:7152
+#: src-en/data/events_special_storage.xml.append:7159
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7157
+#: src-en/data/events_special_storage.xml.append:7164
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE\"]/choice[@req=\"EX_RK_CHOKING_IS_FINE\"]/text"
 msgstr "将该外置部件内置化。"
 
-#: src-en/data/events_special_storage.xml.append:7159
+#: src-en/data/events_special_storage.xml.append:7166
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE\"]/choice[@req=\"EX_RK_CHOKING_IS_FINE\"]/event/text"
 msgstr "安装完成。"
 
-#: src-en/data/events_special_storage.xml.append:7162
+#: src-en/data/events_special_storage.xml.append:7169
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE\"]/choice[@req=\"EX_RK_CHOKING_IS_FINE\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:7169
+#: src-en/data/events_special_storage.xml.append:7176
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
 " and @lvl=\"0\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7174
+#: src-en/data/events_special_storage.xml.append:7181
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
 " and @lvl=\"1\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7176
+#: src-en/data/events_special_storage.xml.append:7183
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
 " and @lvl=\"1\"]/event/text"
 msgstr "安装完成。"
 
-#: src-en/data/events_special_storage.xml.append:7183
+#: src-en/data/events_special_storage.xml.append:7190
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
 " and @lvl=\"1\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:7190
+#: src-en/data/events_special_storage.xml.append:7197
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE\"]/choice[@req=\"pilot\"]/text"
 msgstr "算了。"
 
-#: src-en/data/events_special_storage.xml.append:7201
+#: src-en/data/events_special_storage.xml.append:7208
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7207
+#: src-en/data/events_special_storage.xml.append:7214
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/choice[@req=\"EX_DJMOD_DEMICLONER\"]/text"
 msgstr "将该外置部件内置化。"
 
-#: src-en/data/events_special_storage.xml.append:7209
+#: src-en/data/events_special_storage.xml.append:7216
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/choice[@req=\"EX_DJMOD_DEMICLONER\"]/event/text"
 msgstr "安装完成。"
 
-#: src-en/data/events_special_storage.xml.append:7212
+#: src-en/data/events_special_storage.xml.append:7219
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/choice[@req=\"EX_DJMOD_DEMICLONER\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:7219
+#: src-en/data/events_special_storage.xml.append:7226
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"0\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7224
+#: src-en/data/events_special_storage.xml.append:7231
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"1\"]/text"
 msgstr "执行升级。[消耗：35~，2{]"
 
-#: src-en/data/events_special_storage.xml.append:7226
+#: src-en/data/events_special_storage.xml.append:7233
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"1\"]/event/text"
 msgstr "安装完成。"
 
-#: src-en/data/events_special_storage.xml.append:7232
+#: src-en/data/events_special_storage.xml.append:7239
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"1\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:7240
+#: src-en/data/events_special_storage.xml.append:7247
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/choice[@req=\"pilot\"]/text"
 msgstr "算了。"
 
-#: src-en/data/events_special_storage.xml.append:7251
+#: src-en/data/events_special_storage.xml.append:7258
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7255
+#: src-en/data/events_special_storage.xml.append:7262
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"0\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7259
+#: src-en/data/events_special_storage.xml.append:7266
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"1\"]/text"
 msgstr "执行升级。[消耗：30~，1{]"
 
-#: src-en/data/events_special_storage.xml.append:7261
+#: src-en/data/events_special_storage.xml.append:7268
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"1\"]/event/text"
 msgstr "安装完成。"
 
-#: src-en/data/events_special_storage.xml.append:7267
+#: src-en/data/events_special_storage.xml.append:7274
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"1\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:7275
+#: src-en/data/events_special_storage.xml.append:7282
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER\"]/choice[@req=\"pilot\"]/text"
 msgstr "算了。"
 
-#: src-en/data/events_special_storage.xml.append:7287
+#: src-en/data/events_special_storage.xml.append:7294
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_IN_FIRE_CREWBOOSTS\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7291
+#: src-en/data/events_special_storage.xml.append:7298
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_IN_FIRE_CREWBOOSTS\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
 " and @lvl=\"0\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7295
+#: src-en/data/events_special_storage.xml.append:7302
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_IN_FIRE_CREWBOOSTS\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
 " and @lvl=\"1\"]/text"
 msgstr ""
-
-#: src-en/data/events_special_storage.xml.append:7297
-msgid ""
-"data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_IN_FIRE_CREWBOOSTS\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
-" and @lvl=\"1\"]/event/text"
-msgstr "安装完成。"
 
 #: src-en/data/events_special_storage.xml.append:7304
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_IN_FIRE_CREWBOOSTS\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
+" and @lvl=\"1\"]/event/text"
+msgstr "安装完成。"
+
+#: src-en/data/events_special_storage.xml.append:7311
+msgid ""
+"data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_IN_FIRE_CREWBOOSTS\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
 " and @lvl=\"1\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:7312
+#: src-en/data/events_special_storage.xml.append:7319
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_IN_FIRE_CREWBOOSTS\"]/choice[@req=\"pilot\"]/text"
 msgstr "算了。"
 
-#: src-en/data/events_special_storage.xml.append:7323
+#: src-en/data/events_special_storage.xml.append:7330
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7327
+#: src-en/data/events_special_storage.xml.append:7334
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
 " and @lvl=\"0\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7331
+#: src-en/data/events_special_storage.xml.append:7338
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
 " and @lvl=\"1\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7333
+#: src-en/data/events_special_storage.xml.append:7340
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
 " and @lvl=\"1\"]/event/text"
 msgstr "安装完成。"
 
-#: src-en/data/events_special_storage.xml.append:7340
+#: src-en/data/events_special_storage.xml.append:7347
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
 " and @lvl=\"1\"]/event/choice/text"
 msgstr "继续。"
 
-#: src-en/data/events_special_storage.xml.append:7348
+#: src-en/data/events_special_storage.xml.append:7355
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/choice[@req=\"pilot\"]/text"
 msgstr "算了。"

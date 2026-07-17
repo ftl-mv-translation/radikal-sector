@@ -27,24 +27,45 @@ msgid ""
 "data/events_ships.xml.append$//ship[@name=\"SHIP_RK_BAM_EXIT_BOSS\"]/deadCrew/text"
 msgstr "既然你已经通过了测试，其他的守卫允许你离开这个星区，并暗示既然你甚至能让飞船完好无损地离开，你会得到一个免费的随机甲板水手！"
 
-#: src-en/data/events_ships.xml.append:64
+#: src-en/data/events_ships.xml.append:63
+msgid ""
+"data/events_ships.xml.append$//ship[@name=\"SHIP_RK_BAM_EXIT_BOSS_CHALLENGE\"]/surrender/text"
+msgstr ""
+
+#: src-en/data/events_ships.xml.append:67
+#, fuzzy
+msgid ""
+"data/events_ships.xml.append$//ship[@name=\"SHIP_RK_BAM_EXIT_BOSS_CHALLENGE\"]/surrender/choice/text"
+msgstr "继续。"
+
+#: src-en/data/events_ships.xml.append:72
+msgid ""
+"data/events_ships.xml.append$//ship[@name=\"SHIP_RK_BAM_EXIT_BOSS_CHALLENGE\"]/destroyed/text"
+msgstr ""
+
+#: src-en/data/events_ships.xml.append:78
+msgid ""
+"data/events_ships.xml.append$//ship[@name=\"SHIP_RK_BAM_EXIT_BOSS_CHALLENGE\"]/deadCrew/text"
+msgstr "既然你已经通过了测试，其他的守卫允许你离开这个星区，并暗示既然你甚至能让飞船完好无损地离开，你会得到一个免费的随机甲板水手！"
+
+#: src-en/data/events_ships.xml.append:99
 msgid ""
 "data/events_ships.xml.append$//ship[@name=\"SHIP_RK_PUNK_EXIT_BOSS\"]/destroyed/text"
 msgstr ""
 "飞船被摧毁了。其他守卫肃然点头。“无论谁把我们的坐标传递给你们，都做出了正确的选择，你们来到这里也是如此。你们可以自由离开了！再免费给你们修修船。”"
 
-#: src-en/data/events_ships.xml.append:70
+#: src-en/data/events_ships.xml.append:105
 msgid ""
 "data/events_ships.xml.append$//ship[@name=\"SHIP_RK_PUNK_EXIT_BOSS\"]/deadCrew/text"
 msgstr "既然你已经通过了测试，其他的守卫允许你离开这个星区，并暗示既然你甚至能让飞船完好无损地离开，你会得到一个免费的随机甲板水手！"
 
-#: src-en/data/events_ships.xml.append:87
+#: src-en/data/events_ships.xml.append:122
 msgid ""
 "data/events_ships.xml.append$//ship[@name=\"SHIP_RK_SCORCH_EXIT_BOSS\"]/destroyed/text"
 msgstr ""
 "飞船被摧毁了。其他守卫肃然点头。“无论谁把我们的坐标传递给你们，都做出了正确的选择，你们来到这里也是如此。你们可以自由离开了！再免费给你们修修船。”"
 
-#: src-en/data/events_ships.xml.append:93
+#: src-en/data/events_ships.xml.append:128
 msgid ""
 "data/events_ships.xml.append$//ship[@name=\"SHIP_RK_SCORCH_EXIT_BOSS\"]/deadCrew/text"
 msgstr "既然你已经通过了测试，其他的守卫允许你离开这个星区，并暗示既然你甚至能让飞船完好无损地离开，你可以从残骸中取回一份特殊的星舰蓝图！"

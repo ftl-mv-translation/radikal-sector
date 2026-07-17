@@ -50,29 +50,30 @@ msgstr "Learns skills much faster"
 #: src-en/data/blueprints.xml.append:96
 msgid "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/desc"
 msgstr ""
-"(RK Bam) Made by applying electroshocks to a technopath bathed in acid and stuffed with a bomb. Makes it mad and unable to change shape, but able to launch bombs.\n"
+"(RK Bam) Vexopaths are made by applying electroshocks to a technopath bathed in acid and stuffed with a bomb. Makes it mad and unable to change shape, but able to launch bombs.\n"
 "\t\tNo longer counts as a Technopath or Morph.\n"
 "\n"
 "\tInherited stats: takes 0.5 crew slot, immune to suffocation, 75% resistance to fire damage and stun, 0.8x movement speed."
 
 #: src-en/data/blueprints.xml.append:101
 msgid "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/title"
-msgstr "Squyrt"
+msgstr "Vexo"
 
 #: src-en/data/blueprints.xml.append:102
 msgid "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/short"
-msgstr "Squyrt"
+msgstr "Vexo"
 
 #: src-en/data/blueprints.xml.append:105
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/powerList/power[1]"
-msgstr "Active Ability: Teleport a bomb to the enemy ship, once per jump"
+msgstr ""
+"Active Ability: Teleport a 1 damage bomb to the enemy ship, once per jump"
 
 #: src-en/data/blueprints.xml.append:106
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/powerList/power[2]"
 msgstr ""
-"Active Ability: Detonate a bomb right here, once per jump "
+"Active Ability: Detonate a 1 damage bomb right here, once per jump "
 "[style[color:ff3377]](Has friendly fire)[[/style]]"
 
 #: src-en/data/blueprints.xml.append:107
@@ -173,13 +174,13 @@ msgstr "Can't split, repair or extinguish"
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/powerList/power[4]"
 msgstr ""
-"Current system is immune to fire. Current enemy system takes 2x fire damage "
-"instead"
+"Current system is immune to fire. Current enemy system takes 1.6x fire "
+"damage instead"
 
 #: src-en/data/blueprints.xml.append:171
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/powerList/power[5]"
-msgstr "Movement speed 1.2x"
+msgstr "Movement speed 1.1x"
 
 #: src-en/data/blueprints.xml.append:172
 msgid ""
@@ -446,8 +447,8 @@ msgstr ""
 "(RK Punk gear) Doesn't directly do anything, but seasoned crew start praying and social distancing whenever this augment shows up.\n"
 "\n"
 "\t\tEnemies aboard your ship take 1.7x damage from everything.\n"
-"\t\tYour crew have 2.5x healing from most sources, 2x cloning speed, and lose no skills from cloning.\n"
-"\t\t[style[color:ff3377]]WARNING: All crew in the same room as any of your crew has 0.5x healing (does not stack) and cannot be cloned![[/style]] [This debuff is purple smoke]"
+"\t\tYour crew have 1.6x healing from most sources, 2x cloning speed, and lose no skills from cloning.\n"
+"\t\t[style[color:ff3377]]WARNING: All crew in the same room as any of your crew has 0.5x healing[[/style]] (does not stack) [style[color:ff3377]]and cannot be cloned![[/style]] [This debuff is purple smoke]"
 
 #: src-en/data/blueprints.xml.append:474
 msgid ""
@@ -477,7 +478,7 @@ msgstr ""
 "\t\n"
 "\tCan be toggled off anytime.\n"
 "\n"
-"\tAt empty beacons, you can grow a Separatist for 15~, 1{ and 1|, but [style[color:ff3377]]the rebel fleet accelerates for 1 turn[[/style]]"
+"\tAt empty beacons, you can grow a Separatist for 25~, 1{ and 1|, but [style[color:ff3377]]the rebel fleet accelerates for 1 turn[[/style]]"
 
 #: src-en/data/blueprints.xml.append:498
 msgid ""
@@ -494,7 +495,7 @@ msgstr ""
 "\t\n"
 "\tCan be toggled on anytime.\n"
 "\n"
-"\tAt empty beacons, you can grow a Separatist for 15~, 1{ and 1|, but [style[color:ff3377]]the rebel fleet accelerates for 1 turn[[/style]]"
+"\tAt empty beacons, you can grow a Separatist for 25~, 1{ and 1|, but [style[color:ff3377]]the rebel fleet accelerates for 1 turn[[/style]]"
 
 #: src-en/data/blueprints.xml.append:526
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"FIRE_IMMUNITY\"]/title"
@@ -598,7 +599,7 @@ msgstr ""
 "(RK Scorch gear) Passively makes enemies who can burn take 60% more fire damage, scaling up to 300% with 4+ power in your Life Support (O2) system.\n"
 "\tWorks on both ships.\n"
 "\t\n"
-"\tCan be toggled anytime to make fireproof and fire-resistant enemies vulnerable to fire instead.\n"
+"\tCan be toggled anytime to make fireproof, fire-resistant and fire-healing enemies vulnerable to fire instead.\n"
 "\n"
 "\tBoth toggle modes make enemies move 20% slower in fire (up to 80% with 3 power in O2) [Does not stack]."
 
@@ -766,7 +767,7 @@ msgstr ""
 "(RK Bam gear) Outlawed in many places like most of RK gear, the \"Choking Fetish-Inducing Neural Entrancers\" are often in-demand.\n"
 "\t\t\n"
 "\t\tYour crew take 0.75x suffocation damage.\n"
-"\t\tWhile suffocating, they move, sabotage, repair and fight 1.5x better. Suffocation immune can't suffocate.\n"
+"\t\tWhile suffocating, they move, sabotage, repair and fight 1.4x better. Does not affect suffocation immune crew.\n"
 "\t\t\n"
 "\t[X] - As an external system upgrade, this augment will provide its normal effect but take up an augment slot. Can be converted for free to the internal version under the internal upgrade menu.\n"
 "\tDoes not stack with itself, but stacks with the internal version..."
@@ -783,7 +784,7 @@ msgstr ""
 "(RK Bam gear) Outlawed in many places like most of RK gear, the \"Choking Fetish-Inducing Neural Entrancers\" are often in-demand.\n"
 "\t\t\n"
 "\t\tYour crew take 0.75x suffocation damage.\n"
-"\t\tWhile suffocating, they move, sabotage, repair and fight 1.5x better. Suffocation immune can't suffocate."
+"\t\tWhile suffocating, they move, sabotage, repair and fight 1.4x better. Does not affect suffocation immune crew."
 
 #: src-en/data/blueprints.xml.append:907
 msgid ""
@@ -940,12 +941,12 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:1254
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_HEAVY_POPPER_1\"]/title"
-msgstr "Heavy Popper MK II"
+msgstr "Heavy Popper MK I"
 
 #: src-en/data/blueprints.xml.append:1255
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_HEAVY_POPPER_1\"]/short"
-msgstr "He. Pop II"
+msgstr "He. Pop. I"
 
 #: src-en/data/blueprints.xml.append:1256
 msgid ""
@@ -963,7 +964,7 @@ msgstr "Heavy Popper MK II"
 #: src-en/data/blueprints.xml.append:1313
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_HEAVY_POPPER_2\"]/short"
-msgstr "He. Pop II"
+msgstr "He. Pop. II"
 
 #: src-en/data/blueprints.xml.append:1314
 msgid ""
@@ -971,12 +972,12 @@ msgid ""
 msgstr ""
 "(RK Bam gear) Enough strength to unshield most enemies, and/or hurt badly.\n"
 "\t\t[style[color:ff3377]]Your systems have 3% chance to take 1 damage each shot![[/style]]\n"
-"\t\tHeavy Poppers are inaccurate slower Heavy Lasers that pop 2 shields."
+"\t\tHeavy Poppers are inaccurate and slow but pop 2 shields and can breach extra."
 
 #: src-en/data/blueprints.xml.append:1412
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_HEAVY_POPPER_3\"]/title"
-msgstr "Heavy Popper MK II"
+msgstr "Heavy Popper MK III"
 
 #: src-en/data/blueprints.xml.append:1413
 msgid ""
@@ -1073,7 +1074,7 @@ msgstr "Rain Ions"
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_RAIN_OF_ION\"]/desc"
 msgstr ""
-"(RK Punk gear) This heavy duty shotgun fires an accelerated phase ion, a heavy ion, a fire ion, a normal ion, a stun ion, and a radion (from fastest to slowest) all at once. Chains cooldown up to 4 times.\n"
+"(RK Punk gear) This heavy duty shotgun fires an accelerated phase ion, a heavy ion, a fire ion, a normal ion, a stun ion, and a radion (from fastest to slowest) all at once. Chains cooldown.\n"
 "\t\tMany weapons worth of blue options!"
 
 #: src-en/data/blueprints.xml.append:2093
@@ -1222,8 +1223,8 @@ msgstr "Artillery"
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_ARTILLERY_FLAK_QUICK\"]/desc"
 msgstr ""
-"Artillery: Fires a burst of 4 flak projectiles that do 1 damage each.\n"
-"\tBase Cooldown: 16"
+"Artillery: Fires 4 flak projectiles that do 1 damage each, in a radius of 50.\n"
+"\tBase Cooldown: 20"
 
 #: src-en/data/blueprints.xml.append:2697
 msgid ""
@@ -1239,15 +1240,15 @@ msgstr "Artillery"
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_LASER_PARTICLE\"]/desc"
 msgstr ""
-"Artillery: Fires 6 particle lasers that do 3 system damage each, pierce 1 shield and never miss.\n"
-"\tBase Cooldown: 20"
+"Artillery: Fires 6 particle lasers that do 2 system and 15 crew damage each, pierce 1 shield and never miss.\n"
+"\tBase Cooldown: 25"
 
 #: src-en/data/blueprints.xml.append:2701
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_LASER_PARTICLE\"]/tooltip"
 msgstr ""
-"Artillery: [Cooldown: 20s] Fires 6 particle lasers that do 3 system damage "
-"each, pierce 1 shield and never miss."
+"Artillery: [Cooldown: 25s] Fires 6 particle lasers that do 2 system and 15 "
+"crew damage each, pierce 1 shield and never miss."
 
 #: src-en/data/blueprints.xml.append:2740
 msgid ""

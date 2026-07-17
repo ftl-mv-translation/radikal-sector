@@ -272,12 +272,14 @@ msgstr "Do nothing."
 
 #: src-en/data/events_special_guards.xml.append:221
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[5]/text"
-msgstr "This here the pirate haven, innit? We'ere for business. *Spit*"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"rks_pirate_trinity_active\"]/text"
+msgstr ""
+"This here the pirate haven, innit? We'ere for business. *Spit* [Stackable, "
+"risky choice]"
 
 #: src-en/data/events_special_guards.xml.append:223
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[5]/event/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"rks_pirate_trinity_active\"]/event/text"
 msgstr ""
 "\"Oh.\" The guard seems slightly annoyed, either tired of clearing things up every time or unimpressed by your overdone attitude. \"You are slightly mistaken, piracy isn't our focus, unbound progress is more like it. But yes you can conduct what others call illegal types of trade here. Very useful to source the kind of things we need.\n"
 "\t\t\t\t\t\tI'll let your request be known to all interested parties, and you... make SURE to bring enough scrap. We like to avoid unnecessary messes.\"\n"
@@ -286,39 +288,51 @@ msgstr ""
 
 #: src-en/data/events_special_guards.xml.append:235
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[5]/event/choice/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"rks_pirate_trinity_active\"]/event/choice/text"
 msgstr "Piracy is kinda poggers. Worth it."
 
-#: src-en/data/events_special_guards.xml.append:243
+#: src-en/data/events_special_guards.xml.append:239
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"DJMOD_REPUTATION_UPDATE_PIRATES_RKS_GUARD\"]/text"
+msgstr ""
+"[REPUTATION INCREASED - PIRATES]\n"
+"\t\t\t\t\t\tYour actions have improved your reputation between pirates. Certain pirate clans might be more willing to offer you better or special deals, and will be more comfortable around you."
+
+#: src-en/data/events_special_guards.xml.append:246
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"DJMOD_REPUTATION_UPDATE_PIRATES_RKS_GUARD\"]/choice/text"
+msgstr "Continue..."
+
+#: src-en/data/events_special_guards.xml.append:256
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/text"
 msgstr "Ignore them and try to fly past."
 
-#: src-en/data/events_special_guards.xml.append:245
+#: src-en/data/events_special_guards.xml.append:258
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/event/text"
 msgstr ""
 "Their weapons immediately come online, they've clearly been expecting this. This could probably have been avoided by exchanging a few words, but they've already called for backup.\n"
 "\t\t\tSurprisingly, it seems that their ship's O2 system has caught fire..."
 
-#: src-en/data/events_special_guards.xml.append:255
+#: src-en/data/events_special_guards.xml.append:268
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/event/choice/text"
 msgstr "Hah! What an idio-"
 
-#: src-en/data/events_special_guards.xml.append:257
+#: src-en/data/events_special_guards.xml.append:270
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/event/choice/event/text"
 msgstr ""
 "Suddenly, you hear strange teleportation sounds in your ship but detect no boarders, just heat signatures... Your ship is also on fire! And quite a bit more than theirs.\n"
 "\t\t\t\t\tIf you survive this, you might just find out how what happened and how to take advantage of it."
 
-#: src-en/data/events_special_guards.xml.append:266
+#: src-en/data/events_special_guards.xml.append:279
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/event/choice/event/choice/text"
 msgstr "Continue..."
 
-#: src-en/data/events_special_guards.xml.append:290
+#: src-en/data/events_special_guards.xml.append:303
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DESTROY\"]/text"
 msgstr ""
@@ -326,12 +340,12 @@ msgstr ""
 " has for certain been destroyed, but you can at least salvage some supplies "
 "from the ship."
 
-#: src-en/data/events_special_guards.xml.append:293
+#: src-en/data/events_special_guards.xml.append:306
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DESTROY\"]/choice/text"
 msgstr "Continue..."
 
-#: src-en/data/events_special_guards.xml.append:298
+#: src-en/data/events_special_guards.xml.append:311
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/text"
 msgstr ""
@@ -339,88 +353,88 @@ msgstr ""
 "can investigate their cargo. You find some loot to bring back to the ship, "
 "and move on to scrap their hull."
 
-#: src-en/data/events_special_guards.xml.append:304
+#: src-en/data/events_special_guards.xml.append:317
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/choice/text"
 msgstr "Continue..."
 
-#: src-en/data/events_special_guards.xml.append:306
+#: src-en/data/events_special_guards.xml.append:319
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/choice/event/text"
 msgstr "You find spare RadiKal equipment!"
 
-#: src-en/data/events_special_guards.xml.append:309
+#: src-en/data/events_special_guards.xml.append:322
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/choice/event/choice/text"
 msgstr "Continue..."
 
-#: src-en/data/events_special_guards.xml.append:331
+#: src-en/data/events_special_guards.xml.append:344
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_FOLLOWUP\"]/text"
 msgstr ""
 "By killing the RadiKal guard, you have no doubt caused them to dispatch "
 "reinforcements to track you down. Watch your step as you explore the sector."
 
-#: src-en/data/events_special_guards.xml.append:339
+#: src-en/data/events_special_guards.xml.append:352
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_FOLLOWUP\"]/choice[1]/text"
 msgstr "Do something onboard the ship."
 
-#: src-en/data/events_special_guards.xml.append:343
+#: src-en/data/events_special_guards.xml.append:356
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_FOLLOWUP\"]/choice[2]/text"
 msgstr "Do nothing."
 
-#: src-en/data/events_special_guards.xml.append:352
+#: src-en/data/events_special_guards.xml.append:365
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/beaconType/unvisitedTooltip"
 msgstr "An unvisited location."
 
-#: src-en/data/events_special_guards.xml.append:353
+#: src-en/data/events_special_guards.xml.append:366
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/beaconType/visitedTooltip"
 msgstr "Explored location. Nothing left of interest."
 
-#: src-en/data/events_special_guards.xml.append:354
+#: src-en/data/events_special_guards.xml.append:367
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/beaconType/undiscoveredTooltip"
 msgstr "An unvisited location."
 
-#: src-en/data/events_special_guards.xml.append:356
+#: src-en/data/events_special_guards.xml.append:369
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/text"
 msgstr ""
 "\"Someone has to be the guard. They were just doing their job, and knew the "
 "risks. But so did you!\" The RadiKal ship attacks!"
 
-#: src-en/data/events_special_guards.xml.append:360
+#: src-en/data/events_special_guards.xml.append:373
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/choice/text"
 msgstr "Continue..."
 
-#: src-en/data/events_special_guards.xml.append:368
+#: src-en/data/events_special_guards.xml.append:381
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/beaconType/unvisitedTooltip"
 msgstr "An unvisited location."
 
-#: src-en/data/events_special_guards.xml.append:369
+#: src-en/data/events_special_guards.xml.append:382
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/beaconType/visitedTooltip"
 msgstr "Explored location. Nothing left of interest."
 
-#: src-en/data/events_special_guards.xml.append:370
+#: src-en/data/events_special_guards.xml.append:383
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/beaconType/undiscoveredTooltip"
 msgstr "An unvisited location."
 
-#: src-en/data/events_special_guards.xml.append:372
+#: src-en/data/events_special_guards.xml.append:385
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/text"
 msgstr ""
 "\"Someone has to be the guard, they were just doing their job and knew the "
 "risks. But so did you!\" The RadiKal ship attacks!"
 
-#: src-en/data/events_special_guards.xml.append:378
+#: src-en/data/events_special_guards.xml.append:391
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/choice/text"
 msgstr "Continue..."

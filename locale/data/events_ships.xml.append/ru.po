@@ -33,7 +33,35 @@ msgstr ""
 "вас и намекают, что, раз вы даже сумели сохранить корабль в целости, вы "
 "получаете в подарок случайного матроса!"
 
-#: src-en/data/events_ships.xml.append:64
+#: src-en/data/events_ships.xml.append:63
+msgid ""
+"data/events_ships.xml.append$//ship[@name=\"SHIP_RK_BAM_EXIT_BOSS_CHALLENGE\"]/surrender/text"
+msgstr ""
+"Внезапно у противника полностью восстанавливаются суперщиты! Скорее всего, "
+"это разовое явление."
+
+#: src-en/data/events_ships.xml.append:67
+msgid ""
+"data/events_ships.xml.append$//ship[@name=\"SHIP_RK_BAM_EXIT_BOSS_CHALLENGE\"]/surrender/choice/text"
+msgstr "Продолжить..."
+
+#: src-en/data/events_ships.xml.append:72
+msgid ""
+"data/events_ships.xml.append$//ship[@name=\"SHIP_RK_BAM_EXIT_BOSS_CHALLENGE\"]/destroyed/text"
+msgstr ""
+"Корабль уничтожен. Остальные охранники торжественно кивают. \"Тот, кто "
+"передал вам наши координаты, сделал правильный выбор, как и вы, придя сюда. "
+"Вы можете пройти! И вам предоставляется бесплатный ремонт\"."
+
+#: src-en/data/events_ships.xml.append:78
+msgid ""
+"data/events_ships.xml.append$//ship[@name=\"SHIP_RK_BAM_EXIT_BOSS_CHALLENGE\"]/deadCrew/text"
+msgstr ""
+"Теперь, когда вы прошли испытание, остальные охранники сектора пропускают "
+"вас и намекают, что, раз вы даже сумели сохранить корабль в целости, вы "
+"получаете в подарок случайного матроса!"
+
+#: src-en/data/events_ships.xml.append:99
 msgid ""
 "data/events_ships.xml.append$//ship[@name=\"SHIP_RK_PUNK_EXIT_BOSS\"]/destroyed/text"
 msgstr ""
@@ -41,7 +69,7 @@ msgstr ""
 "передал вам наши координаты, сделал правильный выбор, как и вы, придя сюда. "
 "Вы можете пройти! И вам предоставляется бесплатный ремонт\"."
 
-#: src-en/data/events_ships.xml.append:70
+#: src-en/data/events_ships.xml.append:105
 msgid ""
 "data/events_ships.xml.append$//ship[@name=\"SHIP_RK_PUNK_EXIT_BOSS\"]/deadCrew/text"
 msgstr ""
@@ -49,7 +77,7 @@ msgstr ""
 "вас и намекают, что, раз вы даже сумели сохранить корабль в целости, вы "
 "получаете в подарок случайного матроса!"
 
-#: src-en/data/events_ships.xml.append:87
+#: src-en/data/events_ships.xml.append:122
 msgid ""
 "data/events_ships.xml.append$//ship[@name=\"SHIP_RK_SCORCH_EXIT_BOSS\"]/destroyed/text"
 msgstr ""
@@ -57,7 +85,7 @@ msgstr ""
 "передал вам наши координаты, сделал правильный выбор, как и вы, придя сюда. "
 "Вы можете пройти! И вам предоставляется бесплатный ремонт\"."
 
-#: src-en/data/events_ships.xml.append:93
+#: src-en/data/events_ships.xml.append:128
 msgid ""
 "data/events_ships.xml.append$//ship[@name=\"SHIP_RK_SCORCH_EXIT_BOSS\"]/deadCrew/text"
 msgstr ""

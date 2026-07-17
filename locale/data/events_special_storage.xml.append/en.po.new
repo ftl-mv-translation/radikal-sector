@@ -462,7 +462,9 @@ msgstr "Abort, and retrieve any non consumed {."
 #: src-en/data/events_special_storage.xml.append:1098
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_2DMG_NOTHING\"]/text"
-msgstr "You barely manage to hit the enemy, dealing 2 damage..."
+msgstr ""
+"You barely manage to hit the enemy hull (and [style[color:ff3377]]missed all"
+" systems[[/style]]), dealing 2 damage..."
 
 #: src-en/data/events_special_storage.xml.append:1102
 msgid ""
@@ -472,7 +474,9 @@ msgstr "...with this result on your own ship (75% chance good)."
 #: src-en/data/events_special_storage.xml.append:1107
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_3DMG_NOTHING\"]/text"
-msgstr "You catch a small part of the enemy ship, dealing 3 damage..."
+msgstr ""
+"You catch a small part of the enemy ship (but [style[color:ff3377]]missed "
+"all systems[[/style]]), dealing 3 damage..."
 
 #: src-en/data/events_special_storage.xml.append:1111
 msgid ""
@@ -3775,13 +3779,13 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_CALIBRATOR\""
 " and @lvl=\"1\"]/text"
-msgstr "Calibrator Lvl 2. [Cost: 40~]"
+msgstr "Calibrator Lvl 2. [Cost: 45~, 1|]"
 
 #: src-en/data/events_special_storage.xml.append:7017
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_CALIBRATOR\""
 " and @lvl=\"0\"]/text"
-msgstr "Calibrator Lvl 1. [Cost: 40~]"
+msgstr "Calibrator Lvl 1. [Cost: 45~ 1|]"
 
 #: src-en/data/events_special_storage.xml.append:7022
 msgid ""
@@ -3789,7 +3793,7 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "RK Bam \"Choking F.I.N.E.\": Your crew take 0.75x suffocation damage.\n"
-"\t\tWhile suffocating, they move, sabotage, repair and fight 1.5x better. Suffocation immune can't suffocate. [ALREADY INSTALLED]"
+"\t\tWhile suffocating, they move, sabotage, repair and fight 1.4x better. Does not affect suffocation immune crew. [ALREADY INSTALLED]"
 
 #: src-en/data/events_special_storage.xml.append:7027
 msgid ""
@@ -3881,7 +3885,7 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CALIBRATOR\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
 " and @lvl=\"1\"]/text"
-msgstr "Perform the upgrade. [Cost: 35~, 2|]"
+msgstr "Perform the upgrade. [Cost: 45~, 1|]"
 
 #: src-en/data/events_special_storage.xml.append:7135
 msgid ""
@@ -3906,7 +3910,7 @@ msgid ""
 msgstr ""
 "You are about to install the Choking F.I.N.E. upgrade.\n"
 "\t[Effects: Your crew take 0.75x suffocation damage.\n"
-"\t\tWhile suffocating, they move, sabotage, repair and fight 1.5x better. Suffocation immune can't suffocate.]"
+"\t\tWhile suffocating, they move, sabotage, repair and fight 1.4x better. Does not affect suffocation immune crew.]"
 
 #: src-en/data/events_special_storage.xml.append:7164
 msgid ""
