@@ -135,30 +135,57 @@ script.on_internal_event(Defines.InternalEvents.PROJECTILE_FIRE, function(projec
     end
 end, 64) ]]
 
-    -- Heavy Popper MK II laser. REF: Gravespred, Weapons On Fire (both below).
+    -- Heavy Popper lasers. REF: Gravespred, Weapons On Fire (both below).
     local shipId = projectile.ownerId
     local shipManager = Hyperspace.Global.GetInstance():GetShipManager(shipId)
-
-    if weapon.blueprint and weapon.blueprint.name == "RK_HEAVY_POPPER_2" then
+    
+    -- Heavy Popper MK I.
+    if weapon.blueprint and weapon.blueprint.name == "RK_HEAVY_POPPER_1" then
         -- Systems self-damage
 
-        --WORKS
         for system in vter(shipManager.vSystemList) do
             -- print("heavy_popper_2: 1 vter loop")
-
             local roomId = shipManager:GetSystemRoom(system:GetId())
             local location = shipManager:GetRoomCenter(roomId)
             local sysDmg = Hyperspace.Damage()
-            
             sysDmg.iSystemDamage = 1
 
             -- Chance system dmg - WORKS
-            if math.random() < 0.03 then        --intended: 0.03
+            if math.random() < 0.04 then        --intended: 0.04
                 -- print("heavy popper self-dmg triggered")
                 shipManager:DamageArea(location, sysDmg, true)
             end
         end
     end
+    -- Heavy Popper MK II.
+    if weapon.blueprint and weapon.blueprint.name == "RK_HEAVY_POPPER_2" then
+        -- Systems self-damage
+        for system in vter(shipManager.vSystemList) do
+            local roomId = shipManager:GetSystemRoom(system:GetId())
+            local location = shipManager:GetRoomCenter(roomId)
+            local sysDmg = Hyperspace.Damage()
+            sysDmg.iSystemDamage = 1
+            -- Chance system dmg
+            if math.random() < 0.03 then        --intended: 0.03
+                shipManager:DamageArea(location, sysDmg, true)
+            end
+        end
+    end
+    -- Heavy Popper MK III. UNCOMMENT when ready.
+    if weapon.blueprint and weapon.blueprint.name == "RK_HEAVY_POPPER_3" then
+        -- Systems self-damage
+        for system in vter(shipManager.vSystemList) do
+            local roomId = shipManager:GetSystemRoom(system:GetId())
+            local location = shipManager:GetRoomCenter(roomId)
+            local sysDmg = Hyperspace.Damage()
+            sysDmg.iSystemDamage = 1
+            -- Chance system dmg
+            if math.random() < 0.02 then        --intended: 0.02
+                shipManager:DamageArea(location, sysDmg, true)
+            end
+        end
+    end
+
 
     -- Gravespred beam.
     --[[ REF Lily's Beam Emporium:
@@ -301,6 +328,18 @@ end, 64) ]]
     end
 end)
 
+
+local function manually_firefill(shipManager, roomId)
+    shipManager:StartFire(roomId)
+    shipManager:StartFire(roomId)
+    shipManager:StartFire(roomId)
+    shipManager:StartFire(roomId)
+    shipManager:StartFire(roomId)
+    shipManager:StartFire(roomId)
+    shipManager:StartFire(roomId)
+    shipManager:StartFire(roomId)
+    shipManager:StartFire(roomId)
+end
 -- REF: Lizzard's Variety: LV_RECOIL_MISSILES
 -- script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(shipManager, projectile, location, damage, shipFriendlyFire)
 script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(shipManager, projectile, location, damage, realNewTile, beamHitType)
@@ -314,13 +353,11 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(shipManage
     pcall(function() weaponName = Hyperspace.Get_Projectile_Extend(projectile).name end)
 
     if weaponName == "RK_FOCUS_FIRE" then
-
         -- print("Poker detected")
 
         local roomId = get_room_at_location(shipManager, location, false)
         local fireCount = shipManager:GetFireCount(get_room_at_location(shipManager, location, true))
         if fireCount > 0 then
-            
             -- print("Poker Fire-Blast checked")
             
             local touchedRooms = {}
@@ -347,6 +384,8 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(shipManage
             end
         else
             -- Room had no fire. Manually fire-fill. Default fire-fill makes fire detection always true.
+            --manually_firefill(shipManager, roomId)
+            --[[ shipManager:StartFire(roomId)
             shipManager:StartFire(roomId)
             shipManager:StartFire(roomId)
             shipManager:StartFire(roomId)
@@ -354,10 +393,9 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(shipManage
             shipManager:StartFire(roomId)
             shipManager:StartFire(roomId)
             shipManager:StartFire(roomId)
-            shipManager:StartFire(roomId)
-            shipManager:StartFire(roomId)
+            shipManager:StartFire(roomId) ]]
         end
-
+        manually_firefill(shipManager, roomId)
     end
     --[[ if weaponName == "LV_RECOIL_MISSILES" then
 
@@ -418,3 +456,55 @@ script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(shipManage
     -- REF: MV v5.5.1's mind-control.lua
     return Defines.Chain.CONTINUE, beamHitType      -- Doesn't fix "Triggers 5 times per shot". The Antibug line does.
 end)
+
+
+-- Heavy Popper lasers "breach extra" effect. REF: MV's fire-fill.lua
+
+--[[ local breachExtraWeapons = {
+    RK_HEAVY_POPPER_1,
+    RK_HEAVY_POPPER_2,
+    RK_HEAVY_POPPER_3
+} ]]
+
+local projectileAlreadyExtraBreached = {}
+
+-- INFINITE LOOP FIXED.
+do
+    local function breach_extra(shipManager, projectile, location)
+        -- print("breach_extra start")
+        
+        -- Stop infinite loop
+        if has_value(projectileAlreadyExtraBreached, projectile) then return end
+
+        -- Don't react to the self-system-damage chance.
+        if projectile then
+            -- REF somewhere higher in this file: 
+            -- local shipManager = Hyperspace.ships(projectile.ownerId)
+            local projectileOwner = Hyperspace.ships(projectile.ownerId)
+            if shipManager ~= projectileOwner then
+                -- print("breach_extra: otherShip")
+        
+                local weaponName = nil
+                pcall(function() weaponName = Hyperspace.Get_Projectile_Extend(projectile).name end)
+
+                -- THIS LINE ALWAYS TRUE
+                -- if weaponName == "RK_HEAVY_POPPER_1" or "RK_HEAVY_POPPER_2" or "RK_HEAVY_POPPER_3" then
+                if (weaponName == "RK_HEAVY_POPPER_1") or (weaponName == "RK_HEAVY_POPPER_2") or (weaponName == "RK_HEAVY_POPPER_3") then
+                    -- print("breach_extra: popper")
+
+                    local roomId = get_room_at_location(shipManager, location, false)
+                    if roomId > -1 then
+                        -- print("breach_extra: room good")
+                        
+                        table.insert(projectileAlreadyExtraBreached, projectile)
+                        local secondDamage = Hyperspace.Damage()
+                        secondDamage.breachChance = 10
+                        shipManager:DamageArea(location, secondDamage, true)
+                    end
+                end
+            end
+        end
+    end
+    -- script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, breach_extra)
+    script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, breach_extra)
+end

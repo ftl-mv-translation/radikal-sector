@@ -9,6 +9,7 @@ damage.iPersDamage   = 0
 damage.fireChance    = 0
 damage.breachChance  = 0
 damage.stunChance    = 0
+secondDamage.iStun = 4          --Found in Lizzard's Variety's AoE stun code.
 
 function chal_jumped_away() -- The file this is in actually contains ALL of the addon's Lua.
 
@@ -52,7 +53,7 @@ script.on_internal_event(Defines.InternalEvents.JUMP_LEAVE, chal_jumped_away)
 
 
 --[[ REF: ARS+ challenges for MV v5.5.1
-Lua defers to XML for adding/removing hidden augments!
+Lua can defer to XML for adding/removing hidden augments. See RK Weapons On Fire for pure Lua removal!
 
 <event name="ADD_DRUNK_CREWQ">
 	<queueEvent>ADD_DRUNK_CREW</queueEvent>
@@ -96,3 +97,12 @@ player:RemoveAugmentation(augName)      -- ... and this should be: player:Remove
 -- -REF Pepper's NoConsole's augment_button
 ship:AddAugmentation(augId)
 notifyOperation("Augment " .. tostring(item.id) .. " was added")
+
+-- REF: Lizzard's Variety, to find the OTHER SHIP:
+script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(shipManager, projectile, location, damage, shipFriendlyFire)
+    local weaponName = nil
+    pcall(function() weaponName = Hyperspace.Get_Projectile_Extend(projectile).name end)
+    local otherShip = Hyperspace.Global.GetInstance():GetShipManager((shipManager.iShipId + 1)%2)
+    if otherShip:HasAugmentation("LV_IONIZATOR") > 0 then
+        -- ...
+    end

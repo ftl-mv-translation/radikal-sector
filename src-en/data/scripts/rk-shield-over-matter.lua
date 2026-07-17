@@ -110,7 +110,7 @@ local function handle_auto_reshield(shipManager, projectile, location, damage, i
                             end ]]
                             
 
-                            -- Seems unneeded
+                            -- Seems unneeded and nonfunctional
                             if immediateDmgMsg == true then
                                 create_damage_message(shipManager.iShipId, damageMessages.NEGATED, location.x, location.y)
                             else
@@ -128,9 +128,10 @@ local function handle_auto_reshield(shipManager, projectile, location, damage, i
 end
 script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, handle_auto_reshield)
 script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(shipManager, projectile, location)
-    if projectile and userdata_table(projectile, "mods.rk.autoReshieldAugs").showMsg then
+    -- HS log says "attempt to call a nil value (upvalue 'userdata_table')" even without the augment.
+    --[[ if projectile and userdata_table(projectile, "mods.rk.autoReshieldAugs").showMsg then
         create_damage_message(shipManager.ishipManagerId, damageMessages.NEGATED, location.x, location.y)
-    end
+    end ]]
 end)
 script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(shipManager, projectile, location, damage, realNewTile, beamHitType)
     if beamHitType == Defines.BeamHit.NEW_ROOM then

@@ -531,6 +531,13 @@ RK Scorch crew
 
 <!-- RK_FIREGHOST based on phantom_goul_alpha -->
 <FTL>
+<animSheet name="rk_fireghost_charge" w="175" h="35" fw="35" fh="35">people/rk_fireghost_charge.png</animSheet>
+<anim name="rk_fireghost_charge">
+	<sheet>rk_fireghost_charge</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>0.35</time>
+</anim>
+
 <animSheet name="rk_fireghost" w="315" h="455" fw="35" fh="35">people/rk_fireghost_base.png</animSheet>
 <anim name="rk_fireghost_clone">
 	<sheet>rk_fireghost</sheet>
@@ -814,13 +821,25 @@ Bam
 	<chargeImage>weapon_beams/beam_hull_2_glow.png</chargeImage>
 </weaponAnim> -->
 
-<!-- Heavy Popper Mk2 based on LASER_HEAVY_3 -->
+
 <animSheet name="rk_laser_heavy_popper" w="45" h="27" fw="45" fh="27">projectiles/rk_laser_heavy_popper.png</animSheet>
 <anim name="rk_laser_heavy_popper">
 	<sheet>rk_laser_heavy_popper</sheet>
 	<desc length="1" x="0" y="0"/>
 	<time>1</time>
 </anim>
+<!-- Heavy Popper MK I based on Heavy Popper MK II -->
+<animSheet name="rk_heavy_popper_1" w="360" h="75" fw="40" fh="75">weapon_radikal/rk_heavy_popper_1.png</animSheet>
+<weaponAnim name="rk_heavy_popper_1">
+	<sheet>rk_heavy_popper_1</sheet>
+	<desc length="9" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="26" y="16"/>
+	<mountPoint x="6" y="60"/>
+	<chargeImage>weapon_radikal/rk_heavy_popper_1_glow.png</chargeImage>
+</weaponAnim>
+<!-- Heavy Popper MK II based on LASER_HEAVY_3 -->
 <animSheet name="rk_heavy_popper_2" w="405" h="93" fw="45" fh="93">weapon_radikal/rk_heavy_popper_2.png</animSheet>
 <weaponAnim name="rk_heavy_popper_2">
 	<sheet>rk_heavy_popper_2</sheet>
@@ -831,6 +850,18 @@ Bam
 	<mountPoint x="11" y="69"/>
 	<chargeImage>weapon_radikal/rk_heavy_popper_2_glow.png</chargeImage>
 </weaponAnim>
+<!-- Heavy Popper MK III based on Heavy Popper MK II -->
+<animSheet name="rk_heavy_popper_3" w="432" h="98" fw="48" fh="98">weapon_radikal/rk_heavy_popper_3.png</animSheet>
+<weaponAnim name="rk_heavy_popper_3">
+	<sheet>rk_heavy_popper_3</sheet>
+	<desc length="9" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>4</fireFrame>
+	<firePoint  x="32" y="19"/>
+	<mountPoint x="11" y="76"/>
+	<chargeImage>weapon_radikal/rk_heavy_popper_3_glow.png</chargeImage>
+</weaponAnim>
+
 
 <animSheet name="rk_unloader_iconreplace" w="109" h="77" fw="109" fh="77">weapon_radikal/rk_unloader_iconreplace.png</animSheet>
 <anim name="rk_unloader_iconreplace">
@@ -854,6 +885,40 @@ Bam
 Punk
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
+
+<!-- Forbidden Repair Bomb, based on Irradiation Bomb aka BOMB_BIO, and BOMB_REPAIR -->
+<animSheet name="rk_bomblauncher_antibio_repair" w="525" h="57" fw="35" fh="57">weapon_radikal/rk_bomblauncher_antibio_repair.png</animSheet>
+<weaponAnim name="rk_bomblauncher_antibio_repair">
+	<sheet>rk_bomblauncher_antibio_repair</sheet>
+	<desc length="15" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>12</fireFrame>
+	<firePoint x="20" y="22" />
+	<mountPoint x="2" y="41" />
+	<chargeImage>weapon_radikal/rk_bomblauncher_antibio_repair_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="rk_bomb_antibio_repair" w="525" h="35" fw="35" fh="35">weapon_radikal/rk_bomb_antibio_repair.png</animSheet>
+<anim name="rk_bomb_antibio_repair">
+	<sheet>rk_bomb_antibio_repair</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<!-- <animSheet name="bomblauncher_bio" w="525" h="44" fw="35" fh="44">weapon_bombs/bomblauncher_bio.png</animSheet>
+<weaponAnim name="bomblauncher_bio">
+	<sheet>bomblauncher_bio</sheet>
+	<desc length="15" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>12</fireFrame>
+	<firePoint x="20" y="22" />
+	<mountPoint x="2" y="23" />
+	<chargeImage>weapon_bombs/bomblauncher_bio_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="bomb_bio" w="525" h="35" fw="35" fh="35">weapon_bombs/bomb_bio.png</animSheet>
+<anim name="bomb_bio">
+	<sheet>bomb_bio</sheet>
+	<desc length="15" x="0" y="0"/>
+	<time>1.0</time>
+</anim> -->
 
 <animSheet name="rk_killall_beam_charge" w="240" h="72" fw="60" fh="72">weapon_radikal/rk_killall_beam_chargeglow.png</animSheet>
 <anim name="rk_killall_beam_charge">
@@ -906,10 +971,17 @@ REF v5.5.1
 	<boost>ion_phase_chaingun_charge</boost>
 </weaponAnim>
 -->
+<!-- the OG chain glow:
 <animSheet name="rk_rain_of_ion_charge" w="200" h="84" fw="50" fh="84">weapon_radikal/rk_rain_of_ion_chargeglow.png</animSheet>
 <anim name="rk_rain_of_ion_charge">
 	<sheet>rk_rain_of_ion_charge</sheet>
 	<desc length="4" x="0" y="0"/>
+	<time>1.0</time>
+</anim> -->
+<animSheet name="rk_rain_of_ion_charge" w="100" h="84" fw="50" fh="84">weapon_radikal/rk_rain_of_ion_chargeglow2.png</animSheet>
+<anim name="rk_rain_of_ion_charge">
+	<sheet>rk_rain_of_ion_charge</sheet>
+	<desc length="2" x="0" y="0"/>
 	<time>1.0</time>
 </anim>
 <animSheet name="rk_rain_of_ion" w="500" h="84" fw="50" fh="84">weapon_radikal/rk_rain_of_ion.png</animSheet>

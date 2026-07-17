@@ -305,7 +305,7 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
 		<systemLimit>9</systemLimit>
 		<crew>
 			<engi_separatist room="0" name="Punkalot"/>  	<!-- pilot -->
-			<phantom_mare_alpha room="33" name="Breathenot"/>  		<!-- engines -->
+			<phantom_wraith_alpha room="33" name="Breathenot"/>  		<!-- engines -->
 			<zoltan_devotee room="30" name="Movalot"/>  			<!-- shields -->
 		</crew>
 
@@ -553,6 +553,7 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
 	<mod-append:customShip name="RKS_LEAD_TITANS_USER_SLUG">
 		<shipIcons>
             <shipIcon>icon_threat</shipIcon>
+			<shipIcon>icon_no2</shipIcon>
 			<shipIcon>rk_icon_radikal_ship</shipIcon>
 			<shipIcon>icon_invasion</shipIcon>
 		</shipIcons>
@@ -675,6 +676,7 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
 			<shipIcon>rk_icon_radikal_ship</shipIcon>
 		</shipIcons>
 		<noFuelStalemate/>
+		<!-- <noJump/> -->
 	</mod-append:customShip>
 	<mod-append:customShip name="DJMOD_RADIKAL_BOSS_PUNK">
 		<shipIcons>
@@ -689,6 +691,16 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
 			<shipIcon>rk_icon_radikal_ship</shipIcon>
 		</shipIcons>
 		<noFuelStalemate/>
+	</mod-append:customShip>
+
+	<mod-append:customShip name="RKS_EXIT_PIRATE_AMBUSHER">
+		<shipIcons>
+			<shipIcon>icon_threat</shipIcon>
+		</shipIcons>
+		<noFuelStalemate/>
+
+		<noJump/>
+
 	</mod-append:customShip>
 </mod:findLike>
 
@@ -710,8 +722,13 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
 		</mod-append:shipIcon>
 	</mod:findLike>
 
-
 	<mod:findLike type="shipIcons">
+		<mod-append:shipIcon>
+			<name>rk_icon_crew_are_bombs</name>
+			<tooltip>CHARGED BELTS:
+			This ship's crew have [style[color:ff3377]]10% reduced HP[[/style]] and explode when they die, causing a fire and dealing damage to the room and ship they're in, with extra damage in systemless rooms. [style[color:ff3377]]Has friendly fire.[[/style]]
+			Stacks upon already existing death effects</tooltip>
+		</mod-append:shipIcon>
 		<mod-append:shipIcon>
 			<name>rk_icon_lead_titans</name>
 			<tooltip>LEAD TITANS:
@@ -719,28 +736,29 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
 			The other crew get a flat +75% repair speed.
 			All of this ship's crew gain a flat +40% movement speed</tooltip>
 		</mod-append:shipIcon>
-	</mod:findLike>
-	<mod:findLike type="shipIcons">
 		<mod-append:shipIcon>
 			<name>rk_icon_persistence_shield</name>
 			<tooltip>PERSISTENCE SHIELD:
 			This enemy is protected by an Energy Shield. Hacking, Mind Control, Teleportation, Boarding Drones, and all hull-damaging or ion weapons will all be blocked until disabled.
 			This specific shield also increased shield recharge rate, and the enemy is capable of regenerating their Energy Shield once!</tooltip>
 		</mod-append:shipIcon>
-	</mod:findLike>
-	<mod:findLike type="shipIcons">
+		<mod-append:shipIcon>
+			<name>rk_icon_rk_bam_divine_armor</name>
+			<tooltip>THICKER HULL:
+			[style[color:ff3377]]Reduces this ship's weapon charge speed by 5%.[[/style]]
+			Impacts on this ship that deal 1 damage have a 40% chance to be negated, and all other damage is reduced by 1.</tooltip>
+		</mod-append:shipIcon>
 		<mod-append:shipIcon>
 			<name>icon_rk_calibrator</name>
 			<tooltip>CALIBRATOR:
 			This ship's weapons have +10% accuracy and 4% increased fire rate.</tooltip>
 		</mod-append:shipIcon>
-	</mod:findLike>
-	<mod:findLike type="shipIcons">
 		<mod-append:shipIcon>
 			<name>rk_icon_choking_is_fine</name>
 			<tooltip>CHOKING F.I.N.E.:
 			This ship's crew take 0.75x suffocation damage.
-			While suffocating, they move, sabotage, repair and fight 1.5x better. Suffocation immune can't suffocate.</tooltip>
+			While suffocating, they move, sabotage, repair and fight 1.4x better.
+			Does not affect suffocation immune crew.</tooltip>
 		</mod-append:shipIcon>
 	</mod:findLike>
 	
@@ -751,8 +769,6 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
 			This enemy is protected by an Energy Shield. Hacking, Mind Control, Teleportation, Boarding Drones, and all hull-damaging or ion weapons will all be blocked until disabled.
 			This specific shield also makes shield recharge and  weapon charge worse, but heals friendly drones and damages enemy drones.</tooltip>
 		</mod-append:shipIcon>
-	</mod:findLike>
-	<mod:findLike type="shipIcons">
 		<mod-append:shipIcon>
 			<name>icon_rk_dread_deck</name>
 			<tooltip>DREAD DECK:
@@ -761,8 +777,6 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
 			[style[color:ff3377]]WARNING: All crew in the same room as any of this ship's crew has 0.5x healing (does not stack) and cannot be cloned![[/style]] [This debuff is purple smoke]
 			</tooltip>
 		</mod-append:shipIcon>
-	</mod:findLike>
-	<mod:findLike type="shipIcons">
 		<mod-append:shipIcon>
 			<name>rk_icon_punk_harmony</name>
 			<tooltip>PUNK HARMONY:
@@ -770,20 +784,21 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
 			They're also exponentially better at repairs, faster and stronger for each active level of Hacking and Mind Control on their ship!
 		</tooltip>
 		</mod-append:shipIcon>
-	</mod:findLike>
-	<mod:findLike type="shipIcons">
 		<mod-append:shipIcon>
 			<name>rk_icon_super_defenders</name>
 			<tooltip>DEFENSE KITS:
 			On their ship, this ship's crew resist combat damage, repair and move faster, and heal over time if they are idle (and not manning).</tooltip>
 		</mod-append:shipIcon>
-	</mod:findLike>
-	<mod:findLike type="shipIcons">
 		<mod-append:shipIcon>
 			<name>rk_icon_demicloner</name>
 			<tooltip>DEMICLONERS:
 			Dark energies try to resurrect this ship's crew if they die (not in events) without a real Clonebay.
 			At best, they become their own lesser version (Soldier = default Human, etc.) If no lesser version exists, they become Morphs. When Morphs die, nothing happens.</tooltip>
+		</mod-append:shipIcon>
+		<mod-append:shipIcon>
+			<name>rk_icon_mind_cooler</name>
+			<tooltip>MIND COOLER:
+			When under the effects of Mind Control, this ship's crew cannot fight, sabotage, or teleport away. Works on both ships.</tooltip>
 		</mod-append:shipIcon>
 	</mod:findLike>
 
@@ -793,55 +808,46 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
 			<tooltip>PLASMA TELEPORTER:
 			This ship can instantly set its enemy on fire when a fight starts!</tooltip>
 		</mod-append:shipIcon>
-	</mod:findLike>
-	<mod:findLike type="shipIcons">
 		<mod-append:shipIcon>
 			<name>rk_icon_scorch_preigniter</name>
 			<tooltip>SCORCH PRE-IGNITER:
 			This ship's weapons are made immediately available after an FTL jump but they light a fire in the Weapons room every time they shoot a projectile or beam!</tooltip>
 		</mod-append:shipIcon>
-	</mod:findLike>
-	<mod:findLike type="shipIcons">
 		<mod-append:shipIcon>
 			<name>rk_icon_scorch_self1</name>
 			<tooltip>SCORCHED EARTH:
 			This ship's crew resists fire, and heals while extinguishing.</tooltip>
 		</mod-append:shipIcon>
-	</mod:findLike>
-	<mod:findLike type="shipIcons">
 		<mod-append:shipIcon>
 			<name>rk_icon_scorch_self2</name>
 			<tooltip>BLAZING EARTH:
 			This ship's crew resists fire, is boosted in it and generates O2 in fire, and heals while extinguishing.</tooltip>
 		</mod-append:shipIcon>
-	</mod:findLike>
-	<mod:findLike type="shipIcons">
 		<mod-append:shipIcon>
 			<name>rk_icon_scorch_self3</name>
 			<tooltip>ERUPTING EARTH:
 			This ship's crew resists fire, is boosted in it and generates much O2 in fire, and heals while extinguishing.</tooltip>
 		</mod-append:shipIcon>
-	</mod:findLike>
-	<mod:findLike type="shipIcons">
 		<mod-append:shipIcon>
 			<name>rk_icon_enemies_can_burn</name>
 			<tooltip>FLAMMABILIZER-I:
 			Your crew's fire immunity, resistance or direct healing from fire (not extinguishing) are removed! Your crew also move slower in fire, even more for each active level of Life Support (O2) on this ship!</tooltip>
 		</mod-append:shipIcon>
-	</mod:findLike>
-	<mod:findLike type="shipIcons">
 		<mod-append:shipIcon>
 			<name>rk_icon_enemies_burn_more</name>
 			<tooltip>FLAMMABILIZER-D:
 			Your crew takes more fire damage and move slower in fire. These effects are stronger for each active level of Life Support (O2) on this ship!</tooltip>
 		</mod-append:shipIcon>
-	</mod:findLike>
-	<mod:findLike type="shipIcons">
 		<mod-append:shipIcon>
 			<name>rk_icon_weapons_on_fire</name>
 			<tooltip>WEAPONS ON FIRE:
 			The fire rate of this ship's Weapons and Artilleries is improved by 25%. It gains an extra 1% fire rate every time they shoot a projectile or beam (up to 10%), but at the same time there's a 10% chance to light a fire in the Weapon Control and any Artillery rooms.
 			COMBO: Scorch Preigniter increases max extra bonus to 20%.</tooltip>
+		</mod-append:shipIcon>
+		<mod-append:shipIcon>
+			<name>rk_icon_hellion_wraps</name>
+			<tooltip>HELLION WRAPS:
+			In fire, this ship's crew have 1.75x movement and sabotage speed, and deal 1.75x combat and door damage, on both ships.</tooltip>
 		</mod-append:shipIcon>
 	</mod:findLike>
 
@@ -958,7 +964,7 @@ REF: Bag of Dumb Fixed:
 			<mod-append:name>coords_radikal</mod-append:name>
 		</mod:findLike>
 	</mod:findName>
-	<!-- This does the "There's no more time for other sectors!" at end of S8 REROUTE when you warp to Flasgship directly. -->
+	<!-- This does the "There's no more time for other sectors!" at end of S8 REROUTE when you warp to Flagship directly. -->
 	<mod:findName type="req" name="COORDS_BOSS_TOOLATE">
 		<mod:findLike type="req" start="0" limit="1">
 			<mod-append:name>coords_radikal</mod-append:name>
@@ -2094,11 +2100,14 @@ REF: Bag of Dumb Fixed:
 		<canRepair>false</canRepair>
 
 		<sabotageSpeedMultiplier>2</sabotageSpeedMultiplier>
-		<moveSpeedMultiplier>1.2</moveSpeedMultiplier>
+		<moveSpeedMultiplier>1.1</moveSpeedMultiplier>
 
 		<damageMultiplier>1.5</damageMultiplier>
 		<damageTakenMultiplier>1</damageTakenMultiplier>
-		<fireDamageMultiplier>0.1</fireDamageMultiplier>	<!-- If immunity is just removed, is very resistant. -->
+		<!-- If immunity is just removed, heals from fire at the rate of LAB_GHOST_FIRE aka "Chemical Proliferation".
+		The only other way to fix "this lab actually makes Uptors slowly burn" would be appending to the hyperspace,
+		because no "LIST_" append is fitting here. -->
+		<fireDamageMultiplier>-2.00</fireDamageMultiplier>
 		<suffocationModifier>0.1</suffocationModifier>
 		<deathSounds>
 			<deathSound>ghostDeath</deathSound>
@@ -2108,7 +2117,8 @@ REF: Bag of Dumb Fixed:
 			<cooldown>10</cooldown>
 			<jumpCooldown>full</jumpCooldown>
 			<powerSounds>
-				<powerSound>fire_blast</powerSound>
+				<!-- <powerSound>fire_blast</powerSound> -->
+				<powerSound>rk_yoctoflare</powerSound>
 			</powerSounds>
 
 			<req type="player">
@@ -2127,6 +2137,22 @@ REF: Bag of Dumb Fixed:
 			<cooldownColor r="235" g="132" b="112"/>
 			<selfHealth>-20</selfHealth>
 
+			<!-- <effectAnim>rk_weaponlike_charge</effectAnim> -->
+			<effectAnim>rk_fireghost_charge</effectAnim>
+			<animFrame>3</animFrame>
+
+			<temporaryEffect>
+				<duration>0.35</duration>
+				<cooldownColor r="255" g="0" b="0"/>
+				
+				<canFight>false</canFight>
+				<canSabotage>false</canSabotage>
+				<canMan>false</canMan>
+
+				<canMove>false</canMove>
+				<snapToSlot>true</snapToSlot>
+			</temporaryEffect>
+			
 			<event load="RK_FIREGHOST_FIRES"/>
 		</powerEffect>
 	</mod-append:race>
@@ -2557,7 +2583,9 @@ I assume the same goes for these lists.
 -->
 
 <!-- 
-RK BAM
+/////////////////////////////////////////////
+		RK BAM
+/////////////////////////////////////////////
  -->
 <req name="DJMOD_COMBAT_SHIPVORE_RAM_ANY" type="any">
     <name>DJMOD_COMBAT_SHIPVORE_RAM</name>
@@ -2666,6 +2694,17 @@ RK BAM
 	<name>EX_TELEPORT_HEAL</name>
 </req>
 
+<req name="RK_CANNOT_REBUILD_CAPACITOR" type="all">
+	<name>RK_PERSISTENCE_SHIELD</name>
+	<req lvl="0" max_lvl="0">
+    	<name>rk_persistence_shield_capacitorneed</name>
+	</req>
+</req>
+<req name="RK_CAN_REBUILD_CAPACITOR" type="all">
+	<name>RK_PERSISTENCE_SHIELD</name>
+    <name>rk_persistence_shield_capacitorneed</name>
+</req>
+
 <req name="RK_CHOKING_IS_FINE_ANY" type="any">
     <name>EX_RK_CHOKING_IS_FINE</name>
     <name>INTERNAL_RK_CHOKING_IS_FINE</name>
@@ -2673,7 +2712,9 @@ RK BAM
 
 
 <!-- 
-RK PUNK
+/////////////////////////////////////////////
+		RK PUNK
+/////////////////////////////////////////////
  -->
 <req name="HAS_RK_COMBAT_HACK_FLEET_IN_S8" type="all">
 	<name>RK_COMBAT_HACK_FLEET</name>
@@ -2700,7 +2741,9 @@ RK PUNK
 
 
 <!-- 
-RK SCORCH
+/////////////////////////////////////////////
+		RK SCORCH
+/////////////////////////////////////////////
  -->
 <req name="DJMOD_COMBAT_SELF_FIRE" type="any">
     <name>RK_SCORCH_SELF</name>
@@ -2744,12 +2787,18 @@ For unique sector 'membership' and other gear checks like Judges.
 	<name>DJMOD_HAS_RADIKAL_SCORCH_GEAR</name>
 	<!-- Add any non-main-subfaction gear here -->
 </req>
+<req name="DJMOD_HAS_RADIKAL_SHIP" type="any">
+	<name>IS_RK_BAM_GEAR</name>
+	<name>IS_RK_PUNK_GEAR</name>
+	<name>IS_RK_SCORCH_GEAR</name>
+</req>
 <req name="DJMOD_HAS_RADIKAL_BAM_GEAR" type="any">
 	<name>DJMOD_HAS_RADIKAL_BAM_EQUIPMENT</name>
 	<name>DJMOD_HAS_RADIKAL_BAM_CREW</name>
 	<name>IS_RK_BAM_GEAR</name>			<!-- hidden, on RK ships -->
 </req>
 <req name="DJMOD_HAS_RADIKAL_BAM_EQUIPMENT" type="any">
+	<name>RK_BAM_DIVINE_ARMOR</name>
 	<name>RK_COMBAT_AUTO_SYS_REPAIR</name>
     <name>DJMOD_COMBAT_SHIPVORE_RAM</name>
 	<name>LOCKED_DJMOD_COMBAT_SHIPVORE_RAM</name>
@@ -2760,7 +2809,9 @@ For unique sector 'membership' and other gear checks like Judges.
 	<name>RK_CHOKING_IS_FINE_ANY</name>
 	
 	<name>DJMOD_BAM_FISSUREBEAM</name>
+	<name>RK_HEAVY_POPPER_1</name>
 	<name>RK_HEAVY_POPPER_2</name>
+	<name>RK_HEAVY_POPPER_3</name>
 	<name>RK_UNLOADER</name>
 
 	<name>RK_HAS_BPS_EQUIPMENT</name>
@@ -2787,6 +2838,7 @@ For unique sector 'membership' and other gear checks like Judges.
 
 	<name>INTERNAL_DJMOD_MC_PARALYZER</name>
 	
+	<name>RK_BOMBLAUNCHER_ANTIBIO_REPAIR</name>
 	<name>RK_KILLALL_BEAM</name>
 	<name>RK_MISSLAUNCHER_2_BATTERY</name>
 	<name>RK_RAIN_OF_ION</name>
@@ -2833,6 +2885,7 @@ For unique sector 'membership' and other gear checks like Judges.
 </req>
 
 <req name="DJMOD_SUM_RADIKAL_EQUIPMENT" type="sum">
+	<name>RK_BAM_DIVINE_ARMOR</name>
 	<name>RK_COMBAT_AUTO_SYS_REPAIR</name>
     <name>DJMOD_COMBAT_SHIPVORE_RAM</name>
 	<name>LOCKED_DJMOD_COMBAT_SHIPVORE_RAM</name>
@@ -2866,9 +2919,12 @@ For unique sector 'membership' and other gear checks like Judges.
 	<name>RK_BPS_SURVEYOR</name>
 
 	<name>DJMOD_BAM_FISSUREBEAM</name>
+	<name>RK_HEAVY_POPPER_1</name>
 	<name>RK_HEAVY_POPPER_2</name>
+	<name>RK_HEAVY_POPPER_3</name>
 	<name>RK_UNLOADER</name>
 	
+	<name>RK_BOMBLAUNCHER_ANTIBIO_REPAIR</name>
 	<name>RK_KILLALL_BEAM</name>
 	<name>RK_MISSLAUNCHER_2_BATTERY</name>
 	<name>RK_RAIN_OF_ION</name>
@@ -3027,31 +3083,13 @@ Other RKSector checks
 ///////////////////////////////////////////////////////////////////////////
 Sector membership end
 ///////////////////////////////////////////////////////////////////////////
- -->
-
- <!-- For Plasma Teleporter
-DEPRECATED many options for MV v5.5.1 - TOO MUCH MAINTENANCE because of MV and ADD-ON changes.
-Any fire equipment from the RKS (and MV?).
 -->
-<!-- <req name="DJMOD_HAS_FIRE_ITEMS" type="any">
-	<name>DJMOD_LASER_BPS</name>
-	
-	<name>RK_BOMBLAUNCHER_OXYBOTTLE</name>
-	<name>RK_FOCUS_FIRE</name>
-	<name>RK_OXY_FIREFILL_MISSILES</name>
-	<name>DJMOD_RAIN_OF_FIRE</name>
-	
-	<name>MODULE_FIRE</name>
-	
-	<name>RK_ENEMIES_CAN_BURN</name>
-	<name>RK_ENEMIES_BURN_MORE</name>
-</req> -->
 
 <!-- 
-DEPRECATE THIS - TOO MUCH MAINTENANCE because of MV and ADD-ON changes.
-Any crew that could nicely start a fire in MV. Complete this list regularly. Add add-on crew names if that doesn't cause crashes.
+DEPRECATED - TOO MUCH MAINTENANCE. But mostly the menu can always be opened now, it has a back out button.
+Any crew that could nicely start a fire in MV. Complete this list regularly. Add add-on crew names whenever if makes sense.
 -->
-<req name="DJMOD_HAS_COMBUSTIBLE_CREW" type="any">
+<!-- <req name="DJMOD_HAS_COMBUSTIBLE_CREW" type="any">
 	<name>DJMOD_HAS_CREW_ARE_BOMBS_AND_CREW</name>
 	
 	<name>rock_commando</name>
@@ -3065,14 +3103,13 @@ Any crew that could nicely start a fire in MV. Complete this list regularly. Add
 	<name>gbpsych</name>
 	<name>gbvinz</name>
 	
-	<!-- <blueprintList name="LIST_CREW_SHELL"> -->
 	<name>shell</name>
 	<name>shell_mechanic</name>
 	<name>shell_scientist</name>
 	<name>shell_guardian</name>
 	<name>shell_radiant</name>
 	<name>unique_alkali</name>
-</req>
+</req> -->
 
 <req name="DJMOD_HAS_CREW_ARE_BOMBS_AND_CREW" type="all">
 	<name>RK_CREW_ARE_BOMBS_ON</name>
@@ -3147,6 +3184,8 @@ REFS MV v5.5.1:
 <bossShip yOffset="90">DJMOD_RADIKAL_BOSS_PUNK</bossShip>
 <bossShip yOffset="150">DJMOD_RADIKAL_BOSS_SCORCH</bossShip>
 
+<!-- <bossShip yOffset="90">RKS_EXIT_PIRATE_AMBUSHER</bossShip> 	Base MV seems to have 65 for this sprite. -->
+<bossShip yOffset="65">RKS_EXIT_PIRATE_AMBUSHER</bossShip>
 
 </events>		<!--Necessary wrapper! All variables and req lists go IN HERE or won't work, silently without giving any error.-->
 
@@ -3171,7 +3210,7 @@ REFS: MV v5.5.1; The Outer Expansion for that MV (STORE_SYLVAN_AEA_WEAPONS)
 	<mod-append:customStore id="STORE_SYLVAN_RK_GEAR">
         <itemPurchaseLimit>2</itemPurchaseLimit>
 		<category type="WEAPONS">
-			<customTitle>BPS WEAPON</customTitle>
+			<customTitle>RADIKAL BPS WEAPONS</customTitle>
             <item>
                 <blueprint>DJMOD_LASER_BPS</blueprint>
                 <modifier min="0.8" max="1.1" flat="false"/>
@@ -3290,7 +3329,7 @@ REFS: MV v5.5.1; The Outer Expansion for that MV (STORE_SYLVAN_AEA_WEAPONS)
 		<category type="WEAPONS">
 			<customTitle>RADIKAL WEAPONS</customTitle>
 			<item>
-				<blueprint>DJMOD_LASER_BPS</blueprint>
+				<blueprint>LIST_WEAPONS_RK_SUBFACTIONS</blueprint>
 				<modifier min="0.80" max="0.90" flat="false"/>
 			</item>
 			<item>
@@ -3304,6 +3343,16 @@ REFS: MV v5.5.1; The Outer Expansion for that MV (STORE_SYLVAN_AEA_WEAPONS)
 			<item/>
 			<chance>100</chance>			
 		</category>
+
+		<category type="WEAPONS">
+			<customTitle>RADIKAL BPS WEAPONS</customTitle>
+            <item>
+                <blueprint>DJMOD_LASER_BPS</blueprint>
+                <modifier min="0.8" max="0.9" flat="false"/>
+                <!-- <price>-1</price> -->
+            </item>
+			<chance>34</chance>
+        </category>
 
 		<category type="WEAPONS">
 			<item/>
@@ -3601,7 +3650,7 @@ REFS: MV v5.5.1; The Outer Expansion for that MV (STORE_SYLVAN_AEA_WEAPONS)
 		<category type="WEAPONS">
 			<customTitle>RK BAM WEAPONS</customTitle>
 			<item>
-				<blueprint>DJMOD_BAM_FISSUREBEAM</blueprint>
+				<blueprint>RK_HEAVY_POPPER_1</blueprint>
 				<modifier flat="false">0.9</modifier>
 			</item>
 			<item>
@@ -3609,16 +3658,32 @@ REFS: MV v5.5.1; The Outer Expansion for that MV (STORE_SYLVAN_AEA_WEAPONS)
 				<modifier flat="false">0.9</modifier>
 			</item>
 			<item>
-				<blueprint>RK_UNLOADER</blueprint>
+				<blueprint>RK_HEAVY_POPPER_3</blueprint>
 				<modifier flat="false">0.9</modifier>
 			</item>
 			<chance>100</chance>
 		</category>
 
 		<category type="WEAPONS">
+			<customTitle>RK BAM WEAPONS</customTitle>
 			<item>
+				<blueprint>DJMOD_BAM_FISSUREBEAM</blueprint>
+				<modifier flat="false">0.9</modifier>
+			</item>
+			<item>
+				<blueprint>RK_UNLOADER</blueprint>
+				<modifier flat="false">0.9</modifier>
+			</item>
+			<!-- <item>
 				<blueprint>DJMOD_LASER_BPS</blueprint>
 				<modifier flat="false">0.9</modifier>
+			</item> -->
+			<chance>100</chance>
+		</category>
+		
+		<category type="WEAPONS">
+			<item>
+				<blueprint>GIFTLIST_FITTING_WEAPON_BAM</blueprint>
 			</item>
 			<item>
 				<blueprint>GIFTLIST_FITTING_WEAPON_BAM</blueprint>
@@ -3628,7 +3693,16 @@ REFS: MV v5.5.1; The Outer Expansion for that MV (STORE_SYLVAN_AEA_WEAPONS)
 			</item>
 			<chance>100</chance>
 		</category>
-		
+
+		<category type="WEAPONS">
+			<customTitle>RADIKAL BPS WEAPONS</customTitle>
+            <item>
+                <blueprint>DJMOD_LASER_BPS</blueprint>
+                <modifier min="0.8" max="0.9" flat="false"/>
+            </item>
+			<chance>34</chance>
+        </category>
+
 		<!-- If total groupchance isn't 100, the difference with 100 is the chance none will show up. -->
 		<category type="SYSTEMS">
 			<customTitle>ESSENTIAL SYSTEMS</customTitle>
@@ -3820,19 +3894,43 @@ REFS: MV v5.5.1; The Outer Expansion for that MV (STORE_SYLVAN_AEA_WEAPONS)
 		</category>
 		
 		<category type="WEAPONS">
+			<customTitle>RK PUNK WEAPONS</customTitle>
+			<item>
+				<blueprint>RK_BOMBLAUNCHER_ANTIBIO_REPAIR</blueprint>
+				<modifier flat="false">0.9</modifier>
+			</item>
 			<item>
 				<blueprint>RK_MISSLAUNCHER_2_BATTERY</blueprint>
 				<modifier flat="false">0.9</modifier>
 			</item>
-			<item>
+			<!-- <item>
 				<blueprint>DJMOD_LASER_BPS</blueprint>
 				<modifier flat="false">0.9</modifier>
+			</item> -->
+			<chance>100</chance>
+		</category>
+
+		<category type="WEAPONS">
+			<item>
+				<blueprint>GIFTLIST_FITTING_WEAPON_PUNK</blueprint>
+			</item>
+			<item>
+				<blueprint>GIFTLIST_FITTING_WEAPON_PUNK</blueprint>
 			</item>
 			<item>
 				<blueprint>GIFTLIST_FITTING_WEAPON_PUNK</blueprint>
 			</item>
 			<chance>100</chance>
 		</category>
+
+		<category type="WEAPONS">
+			<customTitle>RADIKAL BPS WEAPONS</customTitle>
+            <item>
+                <blueprint>DJMOD_LASER_BPS</blueprint>
+                <modifier min="0.8" max="0.9" flat="false"/>
+            </item>
+			<chance>34</chance>
+        </category>
 		
 		<!-- If total groupchance isn't 100, the difference with 100 is the chance none will show up. -->
 		<category type="SYSTEMS">
@@ -4044,19 +4142,39 @@ REFS: MV v5.5.1; The Outer Expansion for that MV (STORE_SYLVAN_AEA_WEAPONS)
 		</category>
 		
 		<category type="WEAPONS">
+			<customTitle>RK SCORCH WEAPONS</customTitle>
 			<item>
 				<blueprint>RK_FOCUS_FIRE</blueprint>
 				<modifier flat="false">0.9</modifier>
 			</item>
-			<item>
+			<!-- <item>
 				<blueprint>DJMOD_LASER_BPS</blueprint>
 				<modifier flat="false">0.9</modifier>
+			</item> -->
+			<chance>100</chance>
+		</category>
+
+		<category type="WEAPONS">
+			<item>
+				<blueprint>GIFTLIST_FITTING_WEAPON_SCORCH</blueprint>
+			</item>
+			<item>
+				<blueprint>GIFTLIST_FITTING_WEAPON_SCORCH</blueprint>
 			</item>
 			<item>
 				<blueprint>GIFTLIST_FITTING_WEAPON_SCORCH</blueprint>
 			</item>
 			<chance>100</chance>
 		</category>
+
+		<category type="WEAPONS">
+			<customTitle>RADIKAL BPS WEAPONS</customTitle>
+            <item>
+                <blueprint>DJMOD_LASER_BPS</blueprint>
+                <modifier min="0.8" max="0.9" flat="false"/>
+            </item>
+			<chance>34</chance>
+        </category>
 		
 		<!-- If total groupchance isn't 100, the difference with 100 is the chance none will show up. -->
 		<category type="SYSTEMS">
@@ -4743,6 +4861,7 @@ plus any cloak-friendly/cloak-like augs. -->
 
 	<aug name="RK_BAM_DIVINE_ARMOR">
 		<function name="AUTO_COOLDOWN" value="-0.05" useForReqs="false" warning="false" />
+		<icon>rk_icon_rk_bam_divine_armor</icon>
 	</aug>
 	
 	
@@ -4898,7 +5017,7 @@ plus any cloak-friendly/cloak-like augs. -->
 	Invaders take more damage on this ship: WORKS
 	allies clone faster and lose no skills: WORKS
 	allies heal faster or better: WORKS 
-	crew in same room as any crew of this ship heal slower, non-stacking: IT'S STACKING
+	crew in same room as any crew of this ship heal slower, non-stacking: WORKS
 	crew in same room as any crew of this ship cant be cloned: WORKS
 	-->
 	<aug name="RK_DREAD_DECK">
@@ -4963,7 +5082,7 @@ plus any cloak-friendly/cloak-like augs. -->
 				<shipTarget>ORIGINAL_SHIP</shipTarget>
 				<crewTarget>ORIGINAL_ALLIES</crewTarget>
 				<droneTarget>CREW</droneTarget>
-				<amount>2.5</amount>
+				<amount>1.6</amount>
 				<priority>9999</priority>
 			</statBoost>
 			<!-- WORKS but NOT ON MEDIC HEAL. NOTHING DOES. intended: 2.5x -->
@@ -4972,7 +5091,7 @@ plus any cloak-friendly/cloak-like augs. -->
 				<shipTarget>ORIGINAL_SHIP</shipTarget>
 				<crewTarget>ORIGINAL_ALLIES</crewTarget>
 				<droneTarget>CREW</droneTarget>
-				<amount>2.5</amount>
+				<amount>1.6</amount>
 				<priority>0</priority>
 			</statBoost>
 			
@@ -8695,6 +8814,10 @@ plus any cloak-friendly/cloak-like augs. -->
 				<priority>0</priority>
 				<whiteList load="LIST_CREW_ENGI"/>
 				<!-- <whiteList load="LIST_CREW_ENGI_EXCEPT_NANO"/> This was the bug, the whitelist doesn't work properly. -->
+				<!-- Defro is in LIST_CREW_ENGI, does the blackList override? -->
+				<blackList>
+					<unique_rk_defromorius/>
+				</blackList>
 			</statBoost>
 			
 			<statBoost name="resistsMindControl">
@@ -8926,6 +9049,7 @@ plus any cloak-friendly/cloak-like augs. -->
 				</blackList>
 			</statBoost>
 		</statBoosts>
+		<icon>rk_icon_crew_are_bombs</icon>
     </aug>
 
 	<aug name="RK_SCORCH_PREIGNITER">
@@ -9042,6 +9166,7 @@ TODO:
 				</extraConditions>
 			</statBoost>
 		</statBoosts>
+		<icon>rk_icon_mind_cooler</icon>
 	</aug>
 
 	<!-- 
@@ -9101,6 +9226,7 @@ TODO:
 				</extraConditions>
 			</statBoost>
 		</statBoosts>
+		<icon>rk_icon_hellion_wraps</icon>
 	</aug>
 
 	<aug name="INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE">

@@ -21,7 +21,8 @@ However, MV's file does not feature player ship CURA's power surges in there. --
  -->
 
 <event name="RK_FIREGHOST_FIRES">
-	<playSound>dj_plasmaTeleporter</playSound>
+	<!-- <playSound>rk_yoctoflare</playSound> -->
+	<playSound>fire_blast</playSound>
 	<damage amount="0" system="room" effect="fire"/>
 	<enemyDamage amount="0" system="random" effect="fire"/>
 </event>

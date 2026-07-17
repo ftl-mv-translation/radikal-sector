@@ -93,18 +93,18 @@ REF MV v5.5.1:
 </crewBlueprint> 
 -->
 <crewBlueprint name="rk_weaponlike">
-    <desc>(RK Bam) Made by applying electroshocks to a technopath bathed in acid and stuffed with a bomb. Makes it mad and unable to change shape, but able to launch bombs.
+    <desc>(RK Bam) Vexopaths are made by applying electroshocks to a technopath bathed in acid and stuffed with a bomb. Makes it mad and unable to change shape, but able to launch bombs.
 		No longer counts as a Technopath or Morph.
 
 	Inherited stats: takes 0.5 crew slot, immune to suffocation, 75% resistance to fire damage and stun, 0.8x movement speed.</desc>
     <cost>55</cost>
-    <title>Squyrt</title>
-    <short>Squyrt</short>
+    <title>Vexo</title>
+    <short>Vexo</short>		<!-- this field doesn't show up anywhere in-game -->
     <rarity>0</rarity>
     <powerList>
-		<power>Active Ability: Teleport a bomb to the enemy ship, once per jump</power>
-		<power>Active Ability: Detonate a bomb right here, once per jump [style[color:ff3377]](Has friendly fire)[[/style]]</power>
-        <power>Max Health is 80. Is cloned at 2x speed</power>
+		<power>Active Ability: Teleport a 1 damage bomb to the enemy ship, once per jump</power>
+		<power>Active Ability: Detonate a 1 damage bomb right here, once per jump [style[color:ff3377]](Has friendly fire)[[/style]]</power>
+		<power>Max Health is 80. Is cloned at 2x speed</power>
 		<power>Can only move, man, fight, sabotage, teleport</power>
 		<power>Learns Weapons and Combat extremely fast</power>
     </powerList>
@@ -137,6 +137,7 @@ RK Punk crew
         <power>Health increased to 311. Is cloned at 0.5x speed</power>
 		<power>Takes 0.2x damage from hazards</power>
 		<power>Attacks in melee combat at 2x speed</power>
+		<power>Remains controllable with Punk Harmony</power>
     </powerList>
     <colorList>
         <layer>
@@ -156,7 +157,7 @@ RK Scorch crew
 		Counts as Ghost but not Goul or Vagabond.
 
 	Inherited Alpha Goul stats: hazard immune, ignores doors, 2x sabotage speed.</desc>
-    <cost>115</cost>
+    <cost>105</cost>
     <title>Uptor</title>
     <short>Uptor</short>
     <rarity>0</rarity>
@@ -166,8 +167,8 @@ RK Scorch crew
 		<power>Active Ability: Start a fire in a random room on both ships. Short cooldown</power> -->
         <power>Max Health is increased to 165</power>
 		<power>Can't split, repair or extinguish</power>
-		<power>Current system is immune to fire. Current enemy system takes 2x fire damage instead</power>
-		<power>Movement speed 1.2x</power>
+		<power>Current system is immune to fire. Current enemy system takes 1.6x fire damage instead</power>
+		<power>Movement speed 1.1x</power>
 		<power>Inflicts 1.5x damage in crew combat</power>
     </powerList>
     <colorList>
@@ -462,8 +463,8 @@ REWORKED JumpDecoy -->
     <desc>(RK Punk gear) Doesn't directly do anything, but seasoned crew start praying and social distancing whenever this augment shows up.
 
 		Enemies aboard your ship take 1.7x damage from everything.
-		Your crew have 2.5x healing from most sources, 2x cloning speed, and lose no skills from cloning.
-		[style[color:ff3377]]WARNING: All crew in the same room as any of your crew has 0.5x healing (does not stack) and cannot be cloned![[/style]] [This debuff is purple smoke]</desc>
+		Your crew have 1.6x healing from most sources, 2x cloning speed, and lose no skills from cloning.
+		[style[color:ff3377]]WARNING: All crew in the same room as any of your crew has 0.5x healing[[/style]] (does not stack) [style[color:ff3377]]and cannot be cloned![[/style]] [This debuff is purple smoke]</desc>
     <cost>120</cost>
     <rarity>5</rarity>
     <stackable>false</stackable>
@@ -488,7 +489,7 @@ REWORKED JumpDecoy -->
 	
 	Can be toggled off anytime.
 
-	At empty beacons, you can grow a Separatist for 15~, 1{ and 1|, but [style[color:ff3377]]the rebel fleet accelerates for 1 turn[[/style]]</desc>
+	At empty beacons, you can grow a Separatist for 25~, 1{ and 1|, but [style[color:ff3377]]the rebel fleet accelerates for 1 turn[[/style]]</desc>
     <cost>55</cost>
     <rarity>5</rarity>
     <stackable>false</stackable>
@@ -501,7 +502,7 @@ REWORKED JumpDecoy -->
 	
 	Can be toggled on anytime.
 
-	At empty beacons, you can grow a Separatist for 15~, 1{ and 1|, but [style[color:ff3377]]the rebel fleet accelerates for 1 turn[[/style]]</desc>
+	At empty beacons, you can grow a Separatist for 25~, 1{ and 1|, but [style[color:ff3377]]the rebel fleet accelerates for 1 turn[[/style]]</desc>
     <cost>55</cost>
     <rarity>0</rarity>
     <stackable>false</stackable>
@@ -618,7 +619,7 @@ The first one allows widespread own ship fire control (removal and creation) and
 	<desc>(RK Scorch gear) Passively makes enemies who can burn take 60% more fire damage, scaling up to 300% with 4+ power in your Life Support (O2) system.
 	Works on both ships.
 	
-	Can be toggled anytime to make fireproof and fire-resistant enemies vulnerable to fire instead.
+	Can be toggled anytime to make fireproof, fire-resistant and fire-healing enemies vulnerable to fire instead.
 
 	Both toggle modes make enemies move 20% slower in fire (up to 80% with 3 power in O2) [Does not stack].</desc>
 	<cost>100</cost>
@@ -883,7 +884,7 @@ REF Darkest Desires for MV 5.5.1:
     <desc>(RK Bam gear) Outlawed in many places like most of RK gear, the "Choking Fetish-Inducing Neural Entrancers" are often in-demand.
 		
 		Your crew take 0.75x suffocation damage.
-		While suffocating, they move, sabotage, repair and fight 1.5x better. Suffocation immune can't suffocate.
+		While suffocating, they move, sabotage, repair and fight 1.4x better. Does not affect suffocation immune crew.
 		
 	[X] - As an external system upgrade, this augment will provide its normal effect but take up an augment slot. Can be converted for free to the internal version under the internal upgrade menu.
 	Does not stack with itself, but stacks with the internal version...</desc>
@@ -896,7 +897,7 @@ REF Darkest Desires for MV 5.5.1:
     <desc>(RK Bam gear) Outlawed in many places like most of RK gear, the "Choking Fetish-Inducing Neural Entrancers" are often in-demand.
 		
 		Your crew take 0.75x suffocation damage.
-		While suffocating, they move, sabotage, repair and fight 1.5x better. Suffocation immune can't suffocate.</desc>
+		While suffocating, they move, sabotage, repair and fight 1.4x better. Does not affect suffocation immune crew.</desc>
     <cost>0</cost>		
     <rarity>0</rarity>
     <stackable>false</stackable>
@@ -1105,7 +1106,7 @@ REF Darkest Desires for MV 5.5.1
 **************************************************************************************************************
 [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
 				WEAPONS (see TOOLBOX at the end of this file for details on each field)
-				NB: if a <tip> is set, <tooltip> field does NOT show!
+				NB: if a <tip> is set, <tooltip> field does NOT show! Neither does any other <tip> above in same weap.
 [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
 **************************************************************************************************************
 [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
@@ -1193,7 +1194,6 @@ REFS (TRC v2.6 for MV v5.5.1) Fangtian, and Goedendag (and it's the art size bas
 <weaponBlueprint name="DJMOD_BAM_FISSUREBEAM">
 	<type>BEAM</type>
 	<!-- <tip>tip_tile_beam</tip> Error if TRC isnt patched in. -->
-	<tip>tip_beams</tip>
 	<title>'Bada' Fissure Beam</title>
 	<short>'Bada' Beam</short>
 	<desc>(RK Bam gear) Can hit 3-5 tiles, hard enough to destroy systems or ships.
@@ -1244,15 +1244,76 @@ REFS (TRC v2.6 for MV v5.5.1) Fangtian, and Goedendag (and it's the art size bas
 	<iconScale>0.9</iconScale>		<!-- Scales the weapon icon in equipment/store/hangar screens. Smaller numbers mean the image will be smaller there. -->
 </weaponBlueprint>
 
+<!-- Based on RK_HEAVY_POPPER_2 below. See its refs -->
+<weaponBlueprint name="RK_HEAVY_POPPER_1">
+	<type>BURST</type>
+
+	<!-- Not targetable: anti-drone/solid... Targetable: Def3, Def2... 
+	 God Killer doesn't use this tag, Gatlings do. Must be for <type>BURST (aka Flak-Like-Radius) lasers. -->
+	<drone_targetable>0</drone_targetable>
+	<title>Heavy Popper MK I</title>
+	<short>He. Pop. I</short>
+	<desc>(RK Bam gear) The damage-per-second of a Burst Laser 3, at 1 power!
+		[style[color:ff3377]]Your systems have 4% chance to take 1 damage each shot![[/style]]
+		Heavy Poppers are inaccurate and slow but pop 2 shields and can breach extra.</desc>
+	<tip>RK_lore_RK_HEAVY_POPPER_1</tip>
+	
+	<radius>21</radius>
+	<damage>3</damage>
+
+	<mv-pop>
+		<count>1</count>
+		<countSuper>1</countSuper>
+	</mv-pop>
+
+	<mv-aiSystemTarget system="any"/>
+
+	<speed>42</speed>				<!-- ref speeds: mine=15 ion=30 missile=50, laser probably 50. -->
+	<shots>1</shots>
+
+	<fireTime>0.45</fireTime>		<!-- Default is 1.0: bombs & charge weapons. 0.25: other weapons. Beams unaffected --> 
+	<sp>0</sp>
+	<fireChance>5</fireChance>
+	<breachChance>10</breachChance>
+
+	<stun>7</stun>
+	<cooldown>12.5</cooldown>		<!-- REFS: Heavy3 17s, Heavy2 13s, Heavy1 9s, BL-2shot 12s, BL-3shot 13s (2pow) -->
+	<power>1</power>
+	<cost>60</cost>
+	<bp>6</bp>
+	<rarity>3</rarity>
+	<projectiles>
+		<projectile count="1" fake="false">rk_laser_heavy_popper</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>heavyLaser1</sound>
+		<sound>heavyLaser2</sound>
+		<sound>heavyLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>rk_heavy_popper_1</weaponArt>
+	<iconImage>heavyL</iconImage>
+</weaponBlueprint>
+
 <!-- Based on LASER_HEAVY_3, Lizzard's Variety's Coquillet. -->
 <weaponBlueprint name="RK_HEAVY_POPPER_2">
 	<type>BURST</type>
-	<tip>tip_laser</tip>
+	<drone_targetable>0</drone_targetable>
 	<title>Heavy Popper MK II</title>
-	<short>He. Pop II</short>
+	<short>He. Pop. II</short>
 	<desc>(RK Bam gear) Enough strength to unshield most enemies, and/or hurt badly.
 		[style[color:ff3377]]Your systems have 3% chance to take 1 damage each shot![[/style]]
-		Heavy Poppers are inaccurate slower Heavy Lasers that pop 2 shields.</desc>
+		Heavy Poppers are inaccurate and slow but pop 2 shields and can breach extra.</desc>
 	<tip>RK_lore_RK_HEAVY_POPPER_2</tip>
 	
 	<radius>26</radius>
@@ -1263,16 +1324,18 @@ REFS (TRC v2.6 for MV v5.5.1) Fangtian, and Goedendag (and it's the art size bas
 		<countSuper>1</countSuper>
 	</mv-pop>
 
+	<mv-aiSystemTarget system="any"/>
+
 	<speed>42</speed>				<!-- ref speeds: mine=15 ion=30 missile=50, laser probably 50. -->
 	<shots>2</shots>
 
 	<fireTime>0.45</fireTime>		<!-- Default is 1.0: bombs & charge weapons. 0.25: other weapons. Beams unaffected --> 
 	<sp>0</sp>
-	<fireChance>4</fireChance>
-	<breachChance>8</breachChance>
+	<fireChance>5</fireChance>
+	<breachChance>10</breachChance>
 
 	<stun>7</stun>
-	<cooldown>14</cooldown>		<!-- REFS: Heavy 3 = 17s / Heavy 2 = 13s -->
+	<cooldown>14</cooldown>		<!-- REFS: Heavy3 17s, Heavy2 13s, Heavy1 9s, BL-2shot 12s, BL-3shot 13s (2pow) -->
 	<power>3</power>
 	<cost>80</cost>
 	<bp>6</bp>
@@ -1302,8 +1365,6 @@ REFS (TRC v2.6 for MV v5.5.1) Fangtian, and Goedendag (and it's the art size bas
 	</missSounds>
 	<weaponArt>rk_heavy_popper_2</weaponArt>
 	<iconImage>heavyL</iconImage>
-	<!-- <iconReplace>djmod_rain_of_fire_iconreplace</iconReplace> -->
-	<!-- <iconScale>0.8</iconScale> -->
 </weaponBlueprint>
 <!-- <weaponBlueprint name="LASER_HEAVY_3"> 		MV SAYS: .35 DPS
 	<type>LASER</type>
@@ -1344,11 +1405,68 @@ REFS (TRC v2.6 for MV v5.5.1) Fangtian, and Goedendag (and it's the art size bas
 	<iconImage>heavyL</iconImage>
 </weaponBlueprint> -->
 
+<!-- Based on RK_HEAVY_POPPER_2 above. See its refs -->
+<weaponBlueprint name="RK_HEAVY_POPPER_3">
+	<type>BURST</type>
+	<drone_targetable>0</drone_targetable>
+	<title>Heavy Popper MK III</title>
+	<short>He. Pop. III</short>
+	<desc>(RK Bam gear) Fleetgun-like power to smash Shields and crush. Kill. Destroy.
+		[style[color:ff3377]]Your systems have 2% chance to take 1 damage each shot![[/style]]
+		Heavy Poppers are inaccurate and slow but pop 2 shields and can breach extra.</desc>
+	<tip>RK_lore_RK_HEAVY_POPPER_3</tip>
+	
+	<radius>36</radius>
+	<damage>3</damage>
+
+	<mv-pop>
+		<count>1</count>
+		<countSuper>1</countSuper>
+	</mv-pop>
+
+	<mv-aiSystemTarget system="any"/>
+
+	<speed>42</speed>				<!-- ref speeds: mine=15 ion=30 missile=50, laser probably 50. -->
+	<shots>4</shots>
+
+	<fireTime>0.45</fireTime>		<!-- Default is 1.0: bombs & charge weapons. 0.25: other weapons. Beams unaffected --> 
+	<sp>0</sp>
+	<fireChance>5</fireChance>
+	<breachChance>10</breachChance>
+
+	<stun>7</stun>
+	<cooldown>19</cooldown>		<!-- REFS: Heavy3 17s, BL-5shots 17s (3pow) BL-8shots 18s (4pow) -->
+	<power>4</power>
+	<cost>140</cost>
+	<bp>6</bp>
+	<rarity>5</rarity>
+	<projectiles>
+		<projectile count="1" fake="false">rk_laser_heavy_popper</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>heavyLaser1</sound>
+		<sound>heavyLaser2</sound>
+		<sound>heavyLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>rk_heavy_popper_3</weaponArt>
+	<iconImage>heavyL</iconImage>
+</weaponBlueprint>
+
 <!-- Based on Leto aka MISSILES_1 -->
 <weaponBlueprint name="RK_UNLOADER">
 	<type>MISSILES</type>
 	<flavorType>'Unloader'</flavorType>
-	<tip>tip_missiles</tip>
 	<title>'Unloader' of Missiles</title>
 	<short>Unloader</short>
 	<desc>(RK Bam gear) People ask "Why all these pre-energized Letos in a supercooling rotary missile loader?" and the Bam answer "We got a great bulk discount."</desc>
@@ -1394,6 +1512,123 @@ REFS (TRC v2.6 for MV v5.5.1) Fangtian, and Goedendag (and it's the art size bas
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
+
+<weaponBlueprint name="RK_BOMBLAUNCHER_ANTIBIO_REPAIR">
+	<type>BOMB</type>
+	<title>Radiation Repair Bomb</title>
+	<short>Rad Rep.</short>
+	<locked>1</locked>
+	<desc>(RK Punk gear) Uses banned compounds to repair systems, but [style[color:ff3377]]deals crew damage, crippling crew temporarily[[/style]].
+		
+		Can target your own ship. Conservative weapons use no power on their own but require the system itself to be powered.</desc>
+	<tip>lore_RK_BOMBLAUNCHER_ANTIBIO_REPAIR</tip>
+
+	<mv-aiSystemTarget system="damaged" ship="enemy"/>
+	<damage>0</damage>
+	<sysDamage>-8</sysDamage>
+	<persDamage>4</persDamage>
+	<accuracyMod>30</accuracyMod>
+	<missiles>1</missiles>
+	<statBoosts>
+        <statBoost name="moveSpeedMultiplier" load="RAD_MOVE"/>
+		<statBoost name="stunMultiplier" load="RAD_STUN"/>
+        <statBoost name="repairSpeed" load="RAD_REPAIR"/>
+    </statBoosts>
+	<shots>1</shots>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+
+	<cooldown>8</cooldown>
+    <power>0</power>
+    <mv-conservative/>
+
+	<cost>50</cost>
+	<bp>4</bp>
+	<rarity>4</rarity>
+	<image>rk_bomb_antibio_repair</image>
+	<explosion>explosion_bio</explosion>
+	<launchSounds>
+		<sound>bombTeleport</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>healBomb</sound>
+	</hitShipSounds>
+	<weaponArt>rk_bomblauncher_antibio_repair</weaponArt>
+	<iconImage>bomb_heal</iconImage>
+</weaponBlueprint>
+<!-- <weaponBlueprint name="BOMB_BIO">
+	<type>BOMB</type>
+	<tip>tip_bio</tip>
+	<title>Irradiation Bomb</title>
+	<short>Rad B.</short>
+	<locked>1</locked>
+	<desc>This Bomb does no hull or system damage, but deals a lot of bio damage and cripples crew temporarily.</desc>
+	<tooltip>No hull or system damage, but deals much bio damage</tooltip>
+	<damage>0</damage>
+	<sysDamage>0</sysDamage>
+	<persDamage>6</persDamage>
+	<accuracyMod>30</accuracyMod>
+	<missiles>1</missiles>
+	<statBoosts>
+        <statBoost name="moveSpeedMultiplier" load="RAD_MOVE"/>
+		<statBoost name="stunMultiplier" load="RAD_STUN"/>
+        <statBoost name="repairSpeed" load="RAD_REPAIR"/>
+    </statBoosts>
+	<shots>1</shots>
+	<fireChance>0</fireChance>
+	<breachChance>3</breachChance>
+	<cooldown>12</cooldown>
+	<power>1</power>
+	<cost>50</cost>
+	<bp>4</bp>
+	<rarity>3</rarity>
+	<image>bomb_bio</image>
+	<explosion>explosion_bio</explosion>
+	<launchSounds>
+		<sound>bombTeleport</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<weaponArt>bomblauncher_bio</weaponArt>
+	<iconImage>bomb</iconImage>
+</weaponBlueprint> -->
+<!-- <weaponBlueprint name="BOMB_HEAL_SYSTEM">
+    <type>BOMB</type>
+    <tip>tip_conservative</tip>
+    <title>Repair Burst</title>
+    <short>Repair B.</short>
+    <locked>1</locked>
+    <desc>Self-teleporting unit that floods a room with nano-bots capable of completely repairing all system damage as well as 2 points of hull damage.</desc>
+    <tooltip>Bomb weapon; requires a Missile; fully repairs system. Can target your own ship.</tooltip>
+    <damage>-2</damage>
+	<mv-aiSystemTarget system="damaged" ship="enemy"/>
+    <sysDamage>-8</sysDamage>
+    <persDamage>0</persDamage>
+	<accuracyMod>30</accuracyMod>
+    <missiles>1</missiles>
+    <shots>1</shots>
+    <sp>0</sp>
+    <fireChance>0</fireChance>
+    <breachChance>0</breachChance>
+    <cooldown>10</cooldown>
+    <power>0</power>
+    <mv-conservative/>
+    <cost>40</cost>
+    <bp>4</bp>
+    <rarity>4</rarity>
+    <image>bomb_repair</image>
+    <explosion>explosion_repair</explosion>
+    <launchSounds>
+        <sound>bombTeleport</sound>
+    </launchSounds>
+    <hitShipSounds>
+        <sound>healBomb</sound>
+    </hitShipSounds>
+    <weaponArt>bomblauncher_repair</weaponArt> 
+    <iconImage>bomb_heal</iconImage>
+</weaponBlueprint> -->
+
 
 <!-- Gravespred, deal chaining Bio damage, at some point start dealing AoE bio to own ship.
 Based on MV's Corbin aka BEAM_BIO_CHAIN.
@@ -1529,7 +1764,6 @@ Shield Piercing: 2</tooltipOverride>
 </weaponBlueprint> -->
 <weaponBlueprint name="RK_KILLALL_BEAM">
 	<type>BEAM</type>
-	<tip>tip_bio</tip>
 	<title>'Gravespred' Rad-Beam</title>
 	<short>Gravespred</short>
 	<desc>(RK Punk gear) This radiation Beam wants everyone dead. Deals +15 crew damage per chain. (Max 105 crew damage)
@@ -1538,7 +1772,7 @@ Shield Piercing: 2</tooltipOverride>
 	<tip>lore_RK_KILLALL_BEAM</tip>
 
 	<!-- <mv-aiCrewTarget>MOST_CREW</mv-aiCrewTarget> -->
-	<!-- Does line below fix bug "AI uses it like a Pinpoint"? -->
+	<!-- Does line below fix bug "AI uses it like a Pinpoint"? A little, apparently.-->
 	<mv-aiCrewTarget>RANDOM</mv-aiCrewTarget>
 	
 	<damage>0</damage>
@@ -1582,9 +1816,9 @@ Shield Piercing: 2</tooltipOverride>
 	<title>'Battery Artemis' Missiles</title>
 	<short>'B. Artemis.'</short>
 	<desc>(RK Punk gear) The classic Artemis improved to provide power, at the cost of some performance.</desc>
-	<tip>RK_lore_RK_MISSLAUNCHER_2_BATTERY</tip>
+	<tip>lore_RK_MISSLAUNCHER_2_BATTERY</tip>
 
-	<!-- <mv-aiSystemTarget system="engines"/>		FIXES WONKY TRAJECTORY? -->
+	<!-- <mv-aiSystemTarget system="engines"/>		VISUAL BUG: makes enemy shoot this backwards on barrel exit. -->
 	<damage>2</damage>
 	<missiles>1</missiles>
 	<speed>50</speed>
@@ -1785,11 +2019,10 @@ Targeting specific systems, even has conditions:
 	<flavorType>Ion Blast</flavorType>
 	<title>Rain of Ions</title>
 	<short>Rain Ions</short>
-	<tip>tip_phase</tip>
 	<locked>1</locked>			<!-- what's that? -->
-	<desc>(RK Punk gear) This heavy duty shotgun fires an accelerated phase ion, a heavy ion, a fire ion, a normal ion, a stun ion, and a radion (from fastest to slowest) all at once. Chains cooldown up to 4 times.
+	<desc>(RK Punk gear) This heavy duty shotgun fires an accelerated phase ion, a heavy ion, a fire ion, a normal ion, a stun ion, and a radion (from fastest to slowest) all at once. Chains cooldown.
 		Many weapons worth of blue options!</desc>
-	<!-- <tooltip>Fires all 6 common ions in a radius; Cooldown 12 seconds.</tooltip>	Tooltips don't show with a <tip> set -->
+	<!-- <tooltip>Fires all 6 common ions in a radius; Cooldown 12 seconds.</tooltip>	Tooltips don't show if <tip> set EXCEPT artillery. -->
 	<tip>lore_RK_RAIN_OF_ION</tip>
 
 	<radius>55</radius>			<!-- REFS: Flak 2 = 45, Trion = 60 -->
@@ -1805,14 +2038,14 @@ Targeting specific systems, even has conditions:
 	<fireChance>0</fireChance>
 	<breachChance>0</breachChance>
 	<stunChance>0</stunChance>
-	<!-- REFS: Ion Charger II 3.75s (1-4dmg), Trion 11s (3dmg), Adaptive ion 13s (1->5dmg), 
-	 Heavy ion 15s (3dmg) Heavy Stunner 16s (3dmg) -->
-	<cooldown>16</cooldown>
+	<!-- REFS: "Ion III" aka ION_4 (yes, _4) 4power: 3s (VERY BAD), Ion Charger II 3.75s (1-4dmg), Trion 11s (3dmg), 
+	Adaptive ion 13s (1->5dmg), Heavy ion 15s (3dmg) Heavy Stunner 16s (3dmg) -->
+	<cooldown>18</cooldown>
 	<power>4</power>
 	<cost>120</cost>
 	<bp>3</bp>
 	<rarity>5</rarity>
-	<!-- REF Trifecta from TRC. -->
+	<!-- REF: Trifecta from TRC. -->
 	<projectiles>
 		<projectile count="1" fake="false">ion_phase</projectile>
 		<projectile count="1" fake="false" blueprint="ION_1">ion_barrage</projectile>
@@ -1826,11 +2059,11 @@ Targeting specific systems, even has conditions:
 	<image>ion_phase</image>
 	<explosion>explosion_small_phase</explosion>
 
-	<!-- intended fully chained: 8s -->
+	<!-- intended fully chained: 12s -->
 	<boost>
 		<type>cooldown</type>
-		<amount>2</amount>
-		<count>4</count>
+		<amount>3</amount>
+		<count>2</count>
 	</boost>
 	<launchSounds>
 		<sound>ionShoot1</sound>
@@ -1859,7 +2092,6 @@ Targeting specific systems, even has conditions:
 	<flavorType>Ion Blast</flavorType>
 	<title>Shotphaser</title>
 	<short>Shotphaser</short>
-	<tip>tip_phase</tip>
 	<locked>1</locked>			<!-- what's that? -->
 	<desc>(RK Punk gear) This shotgun fires 3 greatly accelerated phase ions in a radius, with decent chance to stun.
 		Phasers pierce shields, dealing ion damage for the first layer of shields, as well as additional damage to whatever system hit.</desc>
@@ -1924,7 +2156,6 @@ Targeting specific systems, even has conditions:
 <!-- Oxygen Bottle Bomb Launcher based on TRC_BOMB_SPIDER -->
 <weaponBlueprint name="RK_BOMBLAUNCHER_OXYBOTTLE">
 	<type>BOMB</type>
-	<tip>tip_spawner</tip>
 	<title>Oxygen-Bomb</title>
 	<short>O2 B.</short>
 	<locked>1</locked>
@@ -2025,7 +2256,6 @@ Targeting specific systems, even has conditions:
 
 <weaponBlueprint name="RK_OXY_FIREFILL_MISSILES">
 	<type>MISSILES</type>
-	<tip>tip_missiles</tip>
 	<title>Chimney</title>
 	<short>Chimney</short>
 	<desc>(RK Scorch gear) Missiles loaded to the brim that also drop a Bottled Oxygen.
@@ -2136,7 +2366,6 @@ Targeting specific systems, even has conditions:
 <weaponBlueprint name="RK_FOCUS_FIRE">
 	<type>BEAM</type>
 	<flavorType>Pinpoint</flavorType>
-	<tip>tip_beams</tip>
 	<title>Hot Poker</title>
 	<short>'Hot Poker'</short>
 	<desc>(RK Scorch gear) Who said pinpoints are precision tools? Not whoever made this Fireblast Particle Pinpoint.
@@ -2232,7 +2461,6 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 <weaponBlueprint name="DJMOD_RAIN_OF_FIRE">
 	<type>BURST</type>
 	<flavorType>Rain of Fire</flavorType>
-	<tip>tip_missiles</tip>
 	<title>Rain of Fire</title>
 	<short>Rain Fire</short>
 	<desc>(RK Scorch gear) This launcher roasts so well, it can keep airless rooms on fire when fully chained.
@@ -2297,7 +2525,6 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 	<title>Rain of fire</title>
 	<short>RainFire</short>
 	<desc>YOU SHOULD NEVER SEE THIS. Shots limited to 3 and cooldown reduced to avoid game freeze when: (shots > player ship rooms) due to the way AI targets.</desc>
-	<tooltip>YOU SHOULD NEVER SEE THIS.</tooltip>
 	<drone_targetable>1</drone_targetable>
 	<radius>28</radius>
 	<damage>0</damage>
@@ -2348,13 +2575,11 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 	<type>LASER</type>
 	<title>'BPS Messenger'</title>
 	<short>'BPS Mess.'</short>
-	<tip>tip_chain_laser</tip>
 	<desc>(RK BPS gear) A Piercing Heavy Laser boosted in the RadiKal Sector: the Bam gave it hullbust and better stun, the Punk added ion and crew damage, and the Scorch replaced breach chance with guaranteed fire and chaining.</desc>
-	<tooltip>Cooldown chaining: 3 times.</tooltip>
 	<tip>RK_lore_DJMOD_LASER_BPS</tip>
 	<damage>2</damage>
 	<sysDamage>0</sysDamage>			<!-- Adding any of this makes it an Ancient Ion = Plasma! OP against shields. -->
-	<ion>1</ion>
+	<ion>1</ion>						<!-- ION_1: 1ion/9s, ION_3: 1ion/5s (2pow), Heavy Ion: 3ion/15s -->
 	<persDamage>2</persDamage>
 	<hullBust>1</hullBust>
 	<speed>45</speed>					<!-- ref speeds: mine=15 ion=30 missile=50 -->
@@ -2368,16 +2593,19 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 	<fireChance>10</fireChance>
 	<breachChance>0</breachChance>
 	<!-- <stunChance>9</stunChance> 	"Negates stun duration if you declare this."-->
-	<stun>4</stun>					<!-- Duration. Implies 100% stunChance. -->
-	
-	<cooldown>11</cooldown>			<!-- max chained intended : 5s = 1 ion dissipation time -->
+	<stun>4</stun>					<!-- Duration. Implies 100% stunChance. Heavy Stunner & Neural Laser: 12s -->
+
+	<!-- max chained intended : 5s = 1 ion dissipation time. 
+	Non-chain REFS: Pierce Heavy 11s (1 pow),
+	Fully chained REFS: LASER_HEAVY_CHAINGUN 13s->4s (1 pow) -->
+	<cooldown>12.5</cooldown>
 	<power>2</power>
 	<cost>100</cost>
 	<bp>2</bp>
 	<rarity>5</rarity>
 	<boost>
 		<type>cooldown</type>
-		<amount>2</amount>
+		<amount>2.5</amount>
 		<count>3</count>
 	</boost>
 	<!-- <projectiles> and <image> are mutually exclusive. If you declare one, 
@@ -2413,24 +2641,24 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
 
-<!-- <weaponBlueprint name="ARTILLERY_FLAK"> -->
+<!-- REF: ARTILLERY_FLAK -->
 <weaponBlueprint name="RK_ARTILLERY_FLAK_QUICK">
 	<type>BURST</type>
 	<flavorType>Physical Projectile Blast</flavorType>
 	<drone_targetable>1</drone_targetable>
 	<title>Flak Artillery</title>
 	<short>Artillery</short>
-	<desc>Artillery: Fires a burst of 4 flak projectiles that do 1 damage each.
-	Base Cooldown: 16</desc>
-	<tooltip>Artillery: [Cooldown: 16s] Burst of 4 flak projectiles.</tooltip>
-	<radius>35</radius>
+	<desc>Artillery: Fires 4 flak projectiles that do 1 damage each, in a radius of 50.
+	Base Cooldown: 20</desc>
+	<tooltip>Artillery: [Cooldown: 20s] Fires 4 flak projectiles. Radius 50.</tooltip>
+	<radius>50</radius>
 	<damage>1</damage>
 	<spin>720</spin>
-	<shots>4</shots>
+	<shots>1</shots>		<!-- Apparently does nothing for flak artilleries. 4 here is same as 1. -->
 	<sp>0</sp>
 	<fireChance>0</fireChance>
 	<breachChance>1</breachChance>
-	<cooldown>16</cooldown>
+	<cooldown>20</cooldown>
 	<power>0</power>
 	<cost>75</cost>
 	<bp>10</bp>
@@ -2439,7 +2667,7 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 	<projectiles>
 		<projectile count="2" fake="false">debris_large</projectile>
 		<projectile count="2" fake="false">debris_med</projectile>
-		<projectile count="2" fake="true">debris_small</projectile>
+		<projectile count="4" fake="true">debris_small</projectile>
 	</projectiles>
 	<launchSounds>
 		<sound>flak</sound>
@@ -2462,18 +2690,19 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 	<weaponArt>artillery_fed</weaponArt> 
 </weaponBlueprint>
 
-
+<!-- REFS: ARTILLERY_ANCIENT_B. It's bomb artillery, but system and crew damage are comparable. -->
 <weaponBlueprint name="DJMOD_ARTILLERY_LASER_PARTICLE">
 	<type>LASER</type>
 	<flavorType>Artillery</flavorType>
 	<title>Particle Artillery</title>
 	<short>Artillery</short>
-	<desc>Artillery: Fires 6 particle lasers that do 3 system damage each, pierce 1 shield and never miss.
-	Base Cooldown: 20</desc>
-	<tooltip>Artillery: [Cooldown: 20s] Fires 6 particle lasers that do 3 system damage each, pierce 1 shield and never miss.</tooltip>
+	<desc>Artillery: Fires 6 particle lasers that do 2 system and 15 crew damage each, pierce 1 shield and never miss.
+	Base Cooldown: 25</desc>
+	<tooltip>Artillery: [Cooldown: 25s] Fires 6 particle lasers that do 2 system and 15 crew damage each, pierce 1 shield and never miss.</tooltip>
 	<damage>0</damage>
 	
-	<sysDamage>3</sysDamage>
+	<sysDamage>2</sysDamage>
+	<persDamage>1</persDamage>
 	<accuracyMod>100</accuracyMod>
 	
 	<shots>6</shots>
@@ -2772,10 +3001,9 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 	<class>RadiKal Punk Cruiser</class>
 	<name>Punker</name>
 	<desc>An orbital particle accelerator turned cruiser is the RadiKal Punk flagship. Use its enlarged reactor with cheaper upgrades for hacking and particle artillery, before internal difficulties get you scrapped.</desc>
-	<!-- <unlock>Reach sector 8 with the RadiKal Bam Cruiser (Rammer) OR win with the RadiKal Scorch Cruiser (Scorcher) to unlock this ship.</unlock> -->
 	<unlock id="ship_PLAYER_SHIP_DJMOD_PUNKER_unlock"/>
 	<systemList>
-		<artillery power="2" max="4" room="25" start="true" weapon="DJMOD_ARTILLERY_LASER_PARTICLE" img="room_artillery_3" />
+		<artillery power="2" max="3" room="25" start="true" weapon="DJMOD_ARTILLERY_LASER_PARTICLE" img="room_artillery_3" />
 		<battery power="1" max="2" room="34" start="true" img="room_battery_8" />
 		<cloaking power="1" room="14" start="false" img="room_cloaking" />
 		<clonebay power="1" room="28" start="false">
@@ -2849,11 +3077,10 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 	<class>RadiKal Punk Cruiser</class>
 	<name>NuH4RM0NY</name>
 	<desc>The bootleg Harmony that redesigned this ship unprompted insists that it's "Peak design that it's sad you bio-stains can't appreciate!!". Keep away from the actual Engi Harmony. Delete after victory.</desc>
-	<!-- <unlock>Win with layout A to unlock this ship.</unlock> -->
 	<unlock id="ship_PLAYER_SHIP_DJMOD_PUNKER_2_unlock"/>
 	<systemList>
-		<artillery power="1" max="4" room="17" start="true" weapon="DJMOD_ARTILLERY_LASER_PARTICLE" img="room_artillery_2" />
-		<battery power="1" room="18" start="false" img="room_battery_14" />
+		<artillery power="1" max="3" room="17" start="true" weapon="DJMOD_ARTILLERY_LASER_PARTICLE" img="room_artillery_2" />
+		<battery power="1" max="4" room="18" start="false" img="room_battery_14" />
 		<cloaking power="1" room="23" start="true" img="room_cloaking_13" />
 		<clonebay power="1" room="5" start="false">
 			<slot>
@@ -2866,7 +3093,7 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 				<number>1</number>
 			</slot>
 		</doors>
-		<drones max="8" power="1" room="21" start="true" img="room_drones_16" />
+		<drones power="1" max="8" room="1" start="true" img="room_drones_rk_2x4" />
 		<engines power="1" room="7" start="true" img="room_engines_11">
 			<slot>
 				<direction>down</direction>
@@ -2901,10 +3128,10 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 		</shields>
 		<teleporter power="1" room="15" start="false" />
 		<temporal power="1" max="3" room="2" start="false" img="room_temporal_5" />
-		<weapons power="2" max="8" room="1" start="true" img="room_weapons_13">
+		<weapons power="2" max="8" room="21" start="true" img="room_weapons_rk_6b">
 			<slot>
-				<direction>up</direction>
-				<number>1</number>
+				<direction>down</direction>
+				<number>3</number>
 			</slot>
 		</weapons>
 	</systemList>

@@ -49,7 +49,7 @@
 	<choice hidden="true">
 		<text>Take the hail.</text>
 		<event name="GUARD_RADIKAL_HAIL">
-			<text>"Hey there. Rook or reg?" The guard is nonchalantly awaiting your answer.
+			<text>"So. Rook or reg?" The guard is nonchalantly awaiting your answer.
 				This seems to be about your familiarity with this sector.
 			</text>
 
@@ -217,8 +217,8 @@
 				</event>
 			</choice>
 			
-			<choice hidden="true">
-				<text>This here the pirate haven, innit? We'ere for business. *Spit*</text>
+			<choice req="rks_pirate_trinity_active" lvl="0" max_lvl="0" hidden="true">
+				<text>This here the pirate haven, innit? We'ere for business. *Spit* [Stackable, risky choice]</text>
 				<event>
 					<text>"Oh." The guard seems slightly annoyed, either tired of clearing things up every time or unimpressed by your overdone attitude. "You are slightly mistaken, piracy isn't our focus, unbound progress is more like it. But yes you can conduct what others call illegal types of trade here. Very useful to source the kind of things we need.
 						I'll let your request be known to all interested parties, and you... make SURE to bring enough scrap. We like to avoid unnecessary messes."
@@ -233,7 +233,20 @@
 					
 					<choice>
 						<text>Piracy is kinda poggers. Worth it.</text>
-						<event load="REPUTATION_UPDATE_PIRATES"/>
+						<!-- <event load="REPUTATION_UPDATE_PIRATES"/> -->
+						
+						<event name="DJMOD_REPUTATION_UPDATE_PIRATES_RKS_GUARD">
+							<text>[REPUTATION INCREASED - PIRATES]
+						Your actions have improved your reputation between pirates. Certain pirate clans might be more willing to offer you better or special deals, and will be more comfortable around you.
+							</text>
+							<variable name="rep_pirate" op="add" val="1"/>
+							<!-- <variable name="rep_general" op="add" val="1"/> -->
+
+							<choice>
+								<text>Continue...</text>
+								<event><loadEvent>GUARD_RADIKAL_HAIL</loadEvent></event>
+							</choice>
+						</event>
 					</choice>
 				</event>
 			</choice>

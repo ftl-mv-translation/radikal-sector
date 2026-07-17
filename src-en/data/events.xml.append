@@ -712,6 +712,16 @@ If used in eventList, list must have a non-unique option!-->
 											</item_modify>
 										</event>
 									</choice>
+									<choice req="RK_HEAVY_POPPER_1" hidden="true">
+										<text>Sell them your Heavy Popper MK I laser for 90~.</text>
+										<event>
+											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
+											<remove name="RK_HEAVY_POPPER_1"/>
+											<item_modify>
+												<item type="scrap" min="90" max="90"/>
+											</item_modify>
+										</event>
+									</choice>
 									<choice req="RK_HEAVY_POPPER_2" hidden="true">
 										<text>Sell them your Heavy Popper MK II laser for 120~.</text>
 										<event>
@@ -719,6 +729,16 @@ If used in eventList, list must have a non-unique option!-->
 											<remove name="RK_HEAVY_POPPER_2"/>
 											<item_modify>
 												<item type="scrap" min="120" max="120"/>
+											</item_modify>
+										</event>
+									</choice>
+									<choice req="RK_HEAVY_POPPER_3" hidden="true">
+										<text>Sell them your Heavy Popper MK III laser for 210~.</text>
+										<event>
+											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
+											<remove name="RK_HEAVY_POPPER_3"/>
+											<item_modify>
+												<item type="scrap" min="210" max="210"/>
 											</item_modify>
 										</event>
 									</choice>
@@ -733,6 +753,16 @@ If used in eventList, list must have a non-unique option!-->
 										</event>
 									</choice>
 
+									<choice req="RK_BOMBLAUNCHER_ANTIBIO_REPAIR" hidden="true">
+										<text>Sell them your Radiation Repair bomb for 75~.</text>
+										<event>
+											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
+											<remove name="RK_BOMBLAUNCHER_ANTIBIO_REPAIR"/>
+											<item_modify>
+												<item type="scrap" min="75" max="75"/>
+											</item_modify>
+										</event>
+									</choice>
 									<choice req="RK_KILLALL_BEAM" hidden="true">
 										<text>Sell them your Gravespred beam for 135~.</text>
 										<event>
@@ -891,7 +921,8 @@ If used in eventList, list must have a non-unique option!-->
 	<choice hidden="true">
 		<text>Hail them.</text>
 		<event>
-			<text>"Hello, military ship. Um... You don't look like a RadiKal".</text> 
+			<text>"Hello, military ship. Um... You don't look like a RadiKal".</text>
+
 			<choice>
 				<text>Neither do you. What does it matter?.</text>
 				<event>
@@ -918,6 +949,16 @@ If used in eventList, list must have a non-unique option!-->
 											</item_modify>
 										</event>
 									</choice>
+									<choice req="RK_HEAVY_POPPER_1" hidden="true">
+										<text>Sell them your Heavy Popper MK I laser for 90~.</text>
+										<event>
+											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
+											<remove name="RK_HEAVY_POPPER_1"/>
+											<item_modify>
+												<item type="scrap" min="90" max="90"/>
+											</item_modify>
+										</event>
+									</choice>
 									<choice req="RK_HEAVY_POPPER_2" hidden="true">
 										<text>Sell them your Heavy Popper MK II laser for 120~.</text>
 										<event>
@@ -925,6 +966,16 @@ If used in eventList, list must have a non-unique option!-->
 											<remove name="RK_HEAVY_POPPER_2"/>
 											<item_modify>
 												<item type="scrap" min="120" max="120"/>
+											</item_modify>
+										</event>
+									</choice>
+									<choice req="RK_HEAVY_POPPER_3" hidden="true">
+										<text>Sell them your Heavy Popper MK III laser for 210~.</text>
+										<event>
+											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
+											<remove name="RK_HEAVY_POPPER_3"/>
+											<item_modify>
+												<item type="scrap" min="210" max="210"/>
 											</item_modify>
 										</event>
 									</choice>
@@ -939,6 +990,16 @@ If used in eventList, list must have a non-unique option!-->
 										</event>
 									</choice>
 									
+									<choice req="RK_BOMBLAUNCHER_ANTIBIO_REPAIR" hidden="true">
+										<text>Sell them your Radiation Repair bomb for 75~.</text>
+										<event>
+											<text>You try to hide your satisfaction while they transfer the excessive payment, but also hope some unfortunate encounter won't make you regret the sale in the near future. They leave without a word.</text>
+											<remove name="RK_BOMBLAUNCHER_ANTIBIO_REPAIR"/>
+											<item_modify>
+												<item type="scrap" min="75" max="75"/>
+											</item_modify>
+										</event>
+									</choice>
 									<choice req="RK_KILLALL_BEAM" hidden="true">
 										<text>Sell them your Gravespred beam for 135~.</text>
 										<event>
@@ -1083,6 +1144,28 @@ If used in eventList, list must have a non-unique option!-->
 					</choice>
 				</event>
 			</choice>
+
+			<choice req="DJMOD_HAS_RADIKAL_SHIP" hidden="true">
+				<text>That's funny. How did you get here without ever seeing an RK ship?</text>
+				<event>
+					<text>What? Wait how would you know that?.. Oh I see, this must in fact be a RadiKal ship! Can we... have it? We will compensate you greatly.</text>
+
+					<choice hidden="true">
+						<text>Hmmmmm, no.</text>
+						<event>
+							<text>"Figured as much... but understand that my whole family died to a RadiKal raid while I was on duty. I didn't take this assignment at random. We need access to hinder their operations, and I really can't let that opportunity pass. I wish you had cooperated, it pains me to do this but I must!"
+
+							Their weapons are coming online!</text>
+							<ship hostile="true"/>
+
+							<choice hidden="true">
+								<text>Continue...</text>
+								<event load="COMBAT_CHECK"/>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
 		</event>
 	</choice>
 	
@@ -1187,7 +1270,7 @@ If used in eventList, list must have a non-unique option!-->
 
 				The Scorch gatekeeper will have you on fire soon and repeatedly, and that won't work too well against it either. But surely you already figured that one out!
 				
-				Just don't let my sons know i told you all that, Heeeheeehee! Oh and you can always just run away if you're a pussycat..."
+				Just don't let my sons know I told you all that, Heeeheeehee! Oh and you can always just run away if you're a pussycat..."
 				You can tell that even she would no longer respect you if you did that, but you must also think about the reality you're trying to save.
 				</text>
 			
@@ -1236,7 +1319,7 @@ If used in eventList, list must have a non-unique option!-->
 		<event>
 			<text>"Maybe you're just a little slow in the head, so just in case, let me lay it out for youuu." You repress the urge to respond to the insult.
 			
-			"Members of Bam believe in the blunt efficiency of impactful, stunning hits or events. Such as a good bonk to the dome, like i taught my children!
+			"Members of Bam believe in the blunt efficiency of impactful, stunning hits or events. Such as a good bonk to the dome, like I taught my children!
 		
 			The Punk prefer technological superiority, counter-intelligence and all that jazz. They tend to bring less firepower and more fancy gadgets to the table.
 		
@@ -1466,7 +1549,7 @@ About 900 lines, minimize if not interested. -->
 <ship name="SHIP_ZOLTAN_POLICE_RK" auto_blueprint="LIST_SHIPS_ZOLTAN_ELITE_GENERIC">
 	<destroyed load="DEFEAT_ZOLTAN_ELITE"/>
 	<deadCrew load="DEFEAT_ZOLTAN_ELITE"/>
-	<!-- THIS CRASHES THE GAME upon JUMPING TO THE BEACON! Maybe because that should go in autoblueprints.xml ?
+	<!-- THIS CRASHES THE GAME upon JUMPING TO THE BEACON! Maybe because of the "count" ?
 	<weaponOverride count="4">
 		<name>LIST_WEAPONS_ZOLTAN</name>
 	</weaponOverride> 
@@ -1733,7 +1816,7 @@ _LASERS version updated 5.5.1, re-copypaste the others completely, based on this
 	<choice hidden="true">
 		<text>Stay back and watch how this unfolds.</text>
 		<event>
-			<text>The RadiKal ship puts up a decent but hopeless fight and soon stops showing signs of life. The pirates briefly do whatever they went in there for, then re-open comms with you. "Thank you for not interfering my good sir. Imagine how much easier business would be if we had more cowa- i mean nice bystanders like you around? Here's some fuel for your exemplary behavior, and we're off to celebrate!" You scoop up the reward and briefly wonder what could have put them in such a good mood.</text>
+			<text>The RadiKal ship puts up a decent but hopeless fight and soon stops showing signs of life. The pirates briefly do whatever they went in there for, then re-open comms with you. "Thank you for not interfering my good sir. Imagine how much easier business would be if we had more cowa- I mean nice bystanders like you around? Here's some fuel for your exemplary behavior, and we're off to celebrate!" You scoop up the reward and briefly wonder what could have put them in such a good mood.</text>
 			<autoReward level="LOW">fuel_only</autoReward>
 			<!-- <item_modify>
 				<item type="scrap" min="5" max="10"/>
@@ -2563,13 +2646,14 @@ Except this time the loader is EXIT_RADIKAL so i'm not changing the name for con
 <event name="EXIT_RADIKAL_MAIN">
 	<text>"I'll make it simple for you, we have a reputation to uphold. If you're not able to beat one of our gatekeepers, we can't let you leave and make RadiKal gear look bad with your incompetence.
 	Think about it. Why do you think folks fund all of this? That's because you've never heard of subpar RadiKal equipment, and this is one way to do quality control.
+	
 	You do get to pick your opponent, so choose wisely... yeah, that IS part of the skill test.
 	Oh and, don't worry about killing crew in these ships, they're all purpose-grown illegal clones. In fact we'd like to see you try to kill them cleanly.
 	
 	So, which Gatekeeper do you choose?"
 	</text>
 	
-	<choice hidden="true">
+	<choice req="challenge_level" lvl="0" max_lvl="2" blue="false" hidden="true">
 		<text>Bam, with the raw blunt damage and reinforcements</text>
 		<event>
 			<text>You are taken to the Bam arena to prove your worth. Get ready!</text>
@@ -2581,6 +2665,20 @@ Except this time the loader is EXIT_RADIKAL so i'm not changing the name for con
 			</choice>
 		</event>
 	</choice>
+	<choice req="challenge_level" lvl="3" blue="false" hidden="true">
+		<text>Bam, with the raw blunt damage and reinforcements</text>
+		<event>
+			<text>You are taken to the Bam arena to prove your worth. Get ready!</text>
+			<environment type="asteroid"/>
+			<ship load="SHIP_RK_BAM_EXIT_BOSS_CHALLENGE" hostile="true"/>
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
+	</choice>
+
+
 	<choice hidden="true">
 		<text>Punk, with the fancy tricks and crew shenanigans</text>
 		<event>
@@ -2681,23 +2779,84 @@ REFS MV v5.5.1:
 -->
 <event name="RKS_EXIT_PIRATE_TRINITY_AMBUSH">
 	<text>Just as you were about to jump, a serious warship in pirate colors come out of hiding, followed by more pirates.
-		"Forgetting something? A lil' business meeting that YOU asked for, maybe? Have you no honor??! You can't just make a bunch of cutthroats waste their time. Now die, fool!"
-		
-		Looks like the pirates didn't appreciate you not coming to your own Pirate Trinity reunion. They have somehow reset the charge on your jump drive, so you'll have to fight this Elite while its associates provide fire support!
-	</text>
+		"Forgetting something? A lil' business meeting that YOU asked for, maybe? Have you no honor??! You can't just make a bunch of cutthroats waste their time. Now die, fool!"</text>
 	<clearJumpEvent/>
 
-	<resetFtl/>
+	<!-- <resetFtl/>		Should now be blocked completely by the ship itself. -->
 
 	<!-- Only possible after Gatekeeper fights thanks to multiShipFix in hyperspace.xml.append -->
-	<ship load="SHIP_PIRATE_ELITE_STARGROVE" hostile="true"/>
-	<environment type="PDS" target="player"/>
+	<!-- <ship load="SHIP_PIRATE_ELITE_STARGROVE" hostile="true"/> -->
+	<ship load="SHIP_RKS_EXIT_PIRATE_AMBUSHER"/>
+	<!-- <environment type="PDS" target="player"/> -->
 
 	<choice hidden="true">
 		<text>Oh, that's what the weird feeling was about.</text>
-		<event load="COMBAT_CHECK"/>
+		<event>
+			<text>Looks like the pirates really didn't appreciate you not coming to your own Pirate Trinity reunion. They are somehow jamming your jump drive too! You'll have to fight them to leave, as the RadiKals don't seem willing to pick a side here.</text>
+			<ship hostile="true"/>
+			
+			<choice hidden="true">
+				<text>Nothing to do here but fight!</text>
+				<event load="COMBAT_CHECK"/>
+			</choice>
+		</event>
 	</choice>
 </event>
+<!-- <ship name="SHIP_PIRATE_ELITE_STARGROVE" auto_blueprint="LIST_SHIPS_PIRATE_ELITE_ALL">
+	<surrender  chance="0.4" min="2" max="3" load="SURRENDER_PIRATE"/>
+	<escape  chance="0.3" min="3" max="4" load="ESCAPE_PIRATE"/>
+	<gotaway load="GOTAWAY_PIRATE"/>
+	<destroyed load="DESTROYED_PIRATE_ELITE"/>
+	<deadCrew load="DEAD_CREW_PIRATE_ELITE"/>
+	<weaponOverride count="1">
+		<name>LIST_WEAPONS_UNFAIR</name>
+	</weaponOverride>
+</ship> -->
+<ship name="SHIP_RKS_EXIT_PIRATE_AMBUSHER" auto_blueprint="RKS_EXIT_PIRATE_AMBUSHER">
+	<!-- <surrender  chance="0.4" min="2" max="3" load="SURRENDER_PIRATE"/> -->
+	<escape chance="1" min="2" max="9" load="ESCAPE_PIRATE"/>
+	<gotaway load="GOTAWAY_PIRATE"/>
+	<destroyed>
+		<text>"NOOO-" The pirate captain is cut off by their ship's explosion.
+
+			Most of the RadiKals are not so pleased.
+			"Didn't we tell you to make sure to pay these guys if you said you would? Now we're gonna have delivery issues for a while."
+			
+			The others make signs of approbation, their faces remaining unhappy.
+			"HAH, I mean this WAS such a good fight it would have been a shame to miss it, but at what cost?" "Yesss this asssshole had it coming, but he wassss alssso doing a lot of good work."
+			
+			"Tell you what, you earned that wreck, so scrap it nice and clean. That will be your part of cleaning up this mess. We'll take care of the rest if you can just make yourself scarce until this dies down."
+			It's clear that the news will spread regardless, but the RadiKals seem ready to spin this story in a neutral light. Your reputation among Pirates should not be ruined.</text>
+		<autoReward level="MED">standard</autoReward>
+
+		<choice hidden="true">
+			<text>Time to leave before they change their minds.</text>
+			<event load="MORALITY_REMOVE_GENERAL"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>"NOOOooo-" The pirate captain dies before they can finish.
+
+			Most of the RadiKals are not so pleased.
+			"Didn't we tell you to make sure to pay these guys if you said you would? Now we're gonna have delivery issues for a while."
+			
+			The others make signs of approbation, their faces remaining unhappy.
+			"HAH, I mean this WAS such a good fight it would have been a shame to miss it, but at what cost?" "Yesss this asssshole had it coming, but he wassss alssso doing a lot of good work."
+			
+			"Tell you what, you earned that wreck, so scrap it nice and clean. That will be your part of cleaning up this mess. We'll take care of the rest if you can just make yourself scarce until this dies down."
+			It's clear that the news will spread regardless, but the RadiKals seem ready to spin this story in a neutral light. Your reputation among Pirates should not be ruined.</text>
+		<autoReward level="HIGH">standard</autoReward>
+
+		<choice hidden="true">
+			<text>Time to leave before they change their minds.</text>
+			<event load="MORALITY_REMOVE_GENERAL"/>
+		</choice>
+	</deadCrew>
+	<!-- <crew>
+		<crewMember type="zoltan" prop="0.50"/>
+		<crewMember type="zoltan_peacekeeper" prop="0.50"/>	
+	</crew> -->
+</ship>
 
 <!-- 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -2727,6 +2886,20 @@ REFS MV v5.5.1:
 /////////////////////////////////				REFS v5.5.1
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+LaRoache defeat and gain scrap per jump:
+<event name="DEBT_COLLECTOR_DEFEAT">
+    <text>"Ah shit, I ain't getting myself out of this one am I? Well played, Renegade. Well... played..."</text>
+	<variable name="loc_loan_25" op="set" val="0"/>
+	<variable name="loc_loan_50" op="set" val="0"/>
+	<variable name="loc_loan_100" op="set" val="0"/>
+	<autoReward level="HIGH">standard_no_item</autoReward>
+	<augment name="ATM_MACHINE"/>
+	<triggeredEvent name="ATM_CHECKER" event="ATM_MACHINE_WITHDRAW_CHECK" loops="999999999">
+	  <jumps amount="1" type="1"/>
+	</triggeredEvent>
+	<unlockCustomShip silent="false">PLAYER_SHIP_GOLD_2</unlockCustomShip>
+</event>
 
 <instantEscape/>		This is how non-player ships instantly jump out.
 

@@ -15,7 +15,7 @@
 	<threadUrl><![CDATA[ https://ftlmultiverse.boards.net/thread/214/mv-radikal-sector-equipment-ships ]]></threadUrl>
 	<!-- Your forum user name. -->
 	<author><![CDATA[ Dj0z ]]></author>
-	<version><![CDATA[ 6.11n ]]></version>
+	<version><![CDATA[ 6.15b ]]></version>
 	<description>
 <![CDATA[
 (Patching order:
@@ -77,10 +77,11 @@ Internal augments:
 
 Efficient weapons:
 -'Bada' fissure beam can deal massive damage to large systems, or blow up ships!
--'Heavy Popper MK II' shoots superheavy shield-popping lasers, at your own risk.
+-Three 'Heavy Popper' lasers with shield-popping superheavy projectiles, at your own risk.
 -'Unloader' can quickly throw your whole stock of missiles at the enemy.
 -'Gravespred' radiation beam can be lethal including on your ship.
 -'Battery Artemis' reworks the classic design to power the next weapon.
+-'Radiation Repair Bomb' is multi-purpose.
 -'Shotphaser' shotguns accelerated phase ions with high stun chance.
 -'Rain of Ions' shoots all kinds of ions at once!
 -'Chimney' missile launcher starts strong fires and sustains them with oxygen!
@@ -90,7 +91,7 @@ Efficient weapons:
 -'BPS Messenger' heavy laser combines the strengths of all 3 RK subfactions.
 
 New crew:
--Squyrts are RK Bam modified Technopaths specialized in destruction.
+-Vexopaths are RK Bam modified Technopaths specialized in destruction.
 -Uptors are made out of Alpha Gouls to fit the fiery needs of the RK Scorch.
 -Unique crew!
 
@@ -103,38 +104,25 @@ Plus a few secrets!
 
 
 ************ Changelog ******************
-CHANGELOG RadiKal Sector v6.11n
+CHANGELOG RadiKal Sector v6.15b
 
 -Improved some texts.
 
-* Cruisers
--"Scorcher":
-Now has a layout C! (Win with layout B)
-Layout A's Flammabilizer now starts in "Damage" mode.
-
 * Augments
--New rare and powerful augment: BPS "Shield Over Matter"!
--A certain enemy:
-Reduced minimum crew by 4, increased maximum crew by 8, added a crew type, and slightly changed crew type probabilities.
-Increased maximum Medbay, Shields and Weapons power by 1.
-Reduced minimum Shields power by 1.
-Replaced its missile launcher by a Hydra.
--"H.A.C.": fixed it not counting as RK Punk gear for relevant checks. <credit: Mr. Do>
--"Weapons On Fire": increased chance of fire to 15% (was 10%).
+-"Persistence Shield": the option to rebuild the capacitor is no longer blue when the capacitor is fine. <credit: Limrix>
 
 * Weapons
--"Battery Artemis": Fixed it visually shooting backwards when used by enemies, by disabling its enhanced targeting.
--"Shotphaser": <credit: Cat that is an engineer, MagPak, slow, Jelly, bilaterus the platypus>
-Radius increased again, now 50 (more than Flak 2, less than Trion).
-Cooldown increased again to 16s (was 14). Now equal to the slowest MV ion.
-Stun chance reduced to 50% (was 60).
-Cost increased to 80 (was 70).
--"Hot Poker":
-System damage reduced to 3 (was 4).
-Cooldown reduced to 10s (was 14).
+-"Hot Poker": fixed a bug where it would not always fill the targeted room with fire when the Fireblast effect triggers. <credit: Limrix>
+
+* The RadiKal Sector
+-Multiple copies of "BPS Messenger" stack up very well, which is now balanced out by greater difficulty to get each one:
+It's now in a separate "RADIKAL BPS WEAPONS" section that only has a 34% chance to spawn in each RK store (the weapon is still guaranteed at the Sniper Store, and the section is guaranteed when Sylvan offers RK gear).
+The discount on it can now reach 20% (was 10%).
+-Fixed the Bam lab having a 50% chance to Not sell non-RK weapons that fit their style, unlike the other labs.
+-The Scorch lab now also sells 3 non-RK weapons that fit their style, like the other labs (was 1).
 
 
-Special thanks to (in no particular order) Wooden Bench Acolyte, Mr Do, Waffle, Cerebralcloud92, dirt block, aktoja, Harmony, Fajdek, Aleev, Zuggo, LoudMute, Arc, Lizzard, codyfun, Qaser7, bamalf, Dr. Nauter, Witherbottom, Chooseche, Eschaton, Pepper, Untitled, Pupi, vertaalfout, Dalvest, Alder, Kix, [Enchanter], Pedrosian96, Royal Slime, [yenlo]R4V3-0N, robinthedragon2, Ehtya (Laythe), Blizz/mr_easy_money, Skye[NikoMaster], Julk, Felipe, marcrusian, Abstrusity and other people who helped on the FTL:MV Discord, for streaming the mod, and valuable information on balance, modding, coding and art.
+Special thanks to (in no particular order) Sequestrator of Bases and Memes, Argentum, Wooden Bench Acolyte, Mr Do, Waffle, Cerebralcloud92, dirt block, aktoja, Harmony, Fajdek, Aleev, Zuggo, LoudMute, Arc, Lizzard, codyfun, Qaser7, bamalf, Dr. Nauter, Witherbottom, Chooseche, Eschaton, Pepper, Untitled, Pupi, vertaalfout, Dalvest, Alder, Kix, [Enchanter], Pedrosian96, Royal Slime, [yenlo]R4V3-0N, robinthedragon2, Ehtya (Laythe), Blizz/mr_easy_money, Skye[NikoMaster], Julk, Felipe, marcrusian, Abstrusity and other people who helped on the FTL:MV Discord, for streaming the mod, and valuable information on balance, modding, coding and art.
 
 Feedback? Questions? @Dj0z in the Multiverse server on Discord
 

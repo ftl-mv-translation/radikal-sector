@@ -139,7 +139,9 @@ Store Events - in vanilla, these are just extremely generic beacons with a store
 </ship>
 
 <event name="RKS_STORE_SNIPER_WIN">
-	<text>Sniper Girl wastes no time hailing you. "They just keep coming, with better equipment every time, to rob us. I just can't catch a breath. I know that's why you're here too..." You're about to say something to cheer her up when she cuts you off. "Because there's NO better shop in this universe for Stealth gear! So efficient, pirates dream about it, coalitions plot to acquire it, and renegades jump in to steal it! Buy while you still can!".
+	<text>Sniper Girl wastes no time hailing you. "They just keep coming, with better equipment every time, to rob us. I just can't catch a breath. I know that's why you're here too..." You're about to say something to cheer her up when she cuts you off. "Because there's NO better shop in this universe for Stealth gear! So efficient, pirates dream about it, coalitions plot to acquire it, and renegades jump in to steal it! Buy while you still can!
+		Did you know your Cloaking loses 20% of its maximum duration when most weapons start firing?".
+		
 		Turns out she's still in character. RK sector professionals must have seen some shit, you think to yourself.
 
 		"...And for your timely assistance, here's a little incentive to buy." You realize the gift is your "Thank you", and shrug.
@@ -1604,7 +1606,7 @@ To make normal nebula instead (debugging?), disable all that and make prefix "NE
 	</choice>
 
 	<choice hidden="true">
-		<text>Do a quick search around the beacon instead.</text>
+		<text>Forget this and carefully search around the beacon instead.</text>
 		<event>
 			<text>Your gut is telling you to not take the risk, so you take a look around the beacon to be sure.
 
@@ -1642,7 +1644,8 @@ To make normal nebula instead (debugging?), disable all that and make prefix "NE
 	<ship load="SHIP_RKS_BIL_FIREBLASTER_PIRATE" hostile="true"/>
 	<playSound>dj_scorchedEarth</playSound>
 	
-	<damage amount="1" system="room" effect="fire"/>
+	<damage amount="1" system="shields" effect="fire"/>
+	<!-- <damage amount="1" system="room" effect="fire"/> -->
 	<damage amount="1" system="room" effect="fire"/>
 	<damage amount="1" system="room" effect="fire"/>
 
@@ -1873,7 +1876,7 @@ it was interested in their O2 and medical rooms, they said they bring it back to
 			<text>Ok, then who did this?</text>
 			<event>
 				<text>"We were just minding our own business, on the way to this dock to sell our trinkets..."
-					As you dig into their eyes with your hand ready to gesture "Fire at will", they adjust their story.
+					As you dig into their eyes, with your hand ready to gesture "Fire at will", they adjust their story.
 					
 					"Ok mayyyybe we were selling a little neural shocker or two to those Engis off the books. But then they started acting strange and sent a Distress signal. Being just humble merchants, we took it as a clue to get the hell away! Right, Lisa?"
 
@@ -1954,7 +1957,8 @@ it was interested in their O2 and medical rooms, they said they bring it back to
 		<event>
 			<text>To your surprise, it does seem to be some sort of Engi Defender, and it definitely answers you like one.
 				
-				"Self = in jeopardy but know you = Federation. --COMPUTING-- This beacon = not likely your mission. Your presence here: purpose?"</text>
+				"Self = in jeopardy but know you = Federation. --COMPUTING--
+				This beacon = not likely your mission. Your presence here: purpose?"</text>
 
 			<choice hidden="true">
 				<text>Did you kill the Engi Defenders?</text>
@@ -1972,7 +1976,7 @@ it was interested in their O2 and medical rooms, they said they bring it back to
 						<event>
 							<text>"Answer = unexpected. You = fools: 97% probability. Regardless, I cease functioning in: [time.short]"
 
-								The creature does look desperate for oxygen by now, which took longer than you thought. You can't risk bringing it in just yet, but maybe you can help it remotely and see what happens.</text>
+								The creature does look desperate for oxygen by now, which took much longer than you thought. You can't risk bringing it in just yet, but maybe you can help it remotely and see what happens.</text>
 
 							<choice req="RK_COMBAT_OXYGENIZER" lvl="0" max_lvl="0" hidden="true" blue="false">
 								<text>You don't have ways to sufficiently oxygenize outside of your ship.</text>
@@ -2060,7 +2064,7 @@ it was interested in their O2 and medical rooms, they said they bring it back to
 					</choice>
 
 					<choice hidden="true">
-						<text>We will avenge our allies.</text>
+						<text>We will avenge our allies!</text>
 						<event>
 							<text>"Outcome: expected. Solutions = none. Proceed, this = better than: lethal suffocation."
 
@@ -2096,13 +2100,12 @@ it was interested in their O2 and medical rooms, they said they bring it back to
 		You decide that last one will do. Once healed, it helps you fully scrap the shuttle and you're all ready to go.
 	</text>
 	<autoReward level="MED">standard</autoReward>
-	<!-- <crewMember amount="1" class="unique_rk_defromorius" all_skills="2"/> -->
 	<crewMember amount="1" class="unique_rk_defromorius" all_skills="2">Defromorius</crewMember>
 	<achievement silent="false">ACH_RK_EVENT_DEFROMORIUS</achievement>
 	
 	<choice hidden="true">
 		<text>Continue...</text>
-		<event/>	<!-- TODO: attack here -->
+		<event/>	<!-- TODO: Harmony attack here with crewdrone boarders, no ASBs -->
 	</choice>		
 </event>
 
@@ -3614,7 +3617,7 @@ REF MV v5.5.1:
 				<event>
 					<text>"Bad words feddy captain, should have choose better words. But mostly should have bring scrap." The pirate ship in front of you instantly makes itself combat ready, having clearly expected that. 
 						
-						You can't tell whether the slug overseer is furious, vindicated, or both. "Hah! I knew it, you just wanted to take down a bunch of piratesss at once you wannabe hero. Guesss what, we're not that dumb! Hey Kurt, hand over the scrap, i won the bet."
+						You can't tell whether the slug overseer is furious, vindicated, or both. "Hah! I knew it, you just wanted to take down a bunch of piratesss at once you wannabe hero. Guesss what, we're not that dumb! Hey Kurt, hand over the scrap, I won the bet."
 						With that, they and the other pirate ships jump away, leaving you to deal with the slaver!</text> 
 					<ship hostile="true"/>
 
@@ -3679,7 +3682,7 @@ REF MV v5.5.1:
 				<event>
 					<text>"Bad choice, captain. You should have brought that scrap." The pirate ship in front of you instantly makes itself combat ready, having clearly expected that. 
 						
-						You can't tell whether the slug overseer is furious, vindicated, or both. "Hah! I knew it, you just wanted to take down a bunch of piratesss at once you wannabe hero. Guesss what, we're not that dumb! Hey Kurt, hand over the scrap, i won the bet."
+						You can't tell whether the slug overseer is furious, vindicated, or both. "Hah! I knew it, you just wanted to take down a bunch of piratesss at once you wannabe hero. Guesss what, we're not that dumb! Hey Kurt, hand over the scrap, I won the bet."
 						With that, they and the other pirate ships jump away, leaving you to deal with the mercenary!</text> 
 					<ship hostile="true"/>
 
@@ -3760,7 +3763,7 @@ REF MV v5.5.1:
 				<event>
 					<text>"Sad, I didn't take you for a joker. You should have brought that scrap." The pirate ship in front of you instantly makes itself combat ready, having clearly expected that. 
 						
-						You can't tell whether the slug overseer is furious, vindicated, or both. "Hah! I knew it, you just wanted to take down a bunch of piratesss at once you wannabe hero. Guesss what, we're not that dumb! Hey Kurt, hand over the scrap, i won the bet."
+						You can't tell whether the slug overseer is furious, vindicated, or both. "Hah! I knew it, you just wanted to take down a bunch of piratesss at once you wannabe hero. Guesss what, we're not that dumb! Hey Kurt, hand over the scrap, I won the bet."
 						With that, they and the other pirate ships jump away, leaving you to deal with the smuggler!</text> 
 					<ship hostile="true"/>
 
@@ -3867,6 +3870,29 @@ Just as you were about to jump, a volley suddenly grazes your ship! "I knew you 
 Looks like the pirates didn't appreciate you not coming to the meeting that you asked for when you entered the sector, and you'll have to beat this Elite to leave!
 -->
 
+<!-- <ship name="SHIP_RKS_EXIT_PIRATE_AMBUSHER" auto_blueprint="RKS_EXIT_PIRATE_AMBUSHER">
+	<destroyed>
+		<text>The Slaver ship has been defeated. You scrap the remains.
+			Intentionally or not, you've made a mess disrupting pirate operations in this sector.</text>
+		<autoReward level="HIGH">standard</autoReward>
+
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="MORALITY_REMOVE_GENERAL"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>The Slaver ship has been defeated. You scrap the interior and free a great slave from the cargo bay!
+			Intentionally or not, you've made a mess disrupting pirate operations in this sector.</text>
+		<autoReward level="MED">stuff</autoReward>
+		<crewMember amount="1" class="LIST_SLAVES_GREAT"/>
+
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event load="MORALITY_REMOVE_GENERAL"/>
+		</choice>
+	</deadCrew>
+</ship> -->
 
 <!--//////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////

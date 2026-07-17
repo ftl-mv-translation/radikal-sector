@@ -18,7 +18,7 @@ function Add_to_LaunchOrder(ev_name_loc)
 end ]]
 
 
--- WORKS. NEVER TRUST LUA CALLS THAT SHOULD RETURN A VALUE! ALWAYS SAVE IN A LOCAL INT INSTEAD!
+-- WORKS. NEVER TRUST LUA CALLS THAT SHOULD RETURN A VALUE! ALWAYS SAVE IN A LOCAL (int or whatever) INSTEAD!
 script.on_internal_event(Defines.InternalEvents.GET_DODGE_FACTOR, function(ship, value)
     
     if value == 0 then
@@ -103,12 +103,11 @@ script.on_internal_event(Defines.InternalEvents.JUMP_LEAVE, function ()
     -- Remove all Weapons On Fire stacks.
     local stackAugName = "RK_WEAPONS_ON_FIRE_TEMP"
 
-    -- No need to make it work for enemies too, if they jump away it's a new fight
+    -- No need to make it work for enemies too, if someone jumps away it's a new fight.
     local stackAugCount = Hyperspace.ships.player:HasAugmentation(stackAugName)
     --print('stacks for removal:'..stackAugCount)
 
     if stackAugCount > 0 then
-        -- No need to make it work for enemies too, if they jump away it's a new fight, right?
         local shipManager = Hyperspace.ships.player
         for i = 1, stackAugCount, 1 do
             --print('removed stack on jump')
@@ -118,3 +117,17 @@ script.on_internal_event(Defines.InternalEvents.JUMP_LEAVE, function ()
         end
     end
 end)
+
+-- TODO: W.I.P. internal RK Scorch "Backup Engine": charge jump drive slowly even with Piloting/Engines down. 
+-- Code by Arc - fill in the gaps, might need to find out how to manually activate the Jump button when fully charged.
+--[[ local time_increment = mods.multiverse.time_increment
+local engines_charge_speed = 1
+script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(shipManager)
+    if shipManager:HasAugmentation("YOUR_AUG") > 0 and shipManager:HasSystem(1) and shipManager:HasSystem(6) then
+        local engines_status = shipManager:GetSystem(1):GetEffectivePower() <= 0
+        local pilot_status = shipManager:GetSystem(6):GetEffectivePower() <= 0 or not shipManager:GetSystem(6).bManned
+        if engines_status or pilot_status then
+            shipManager.jump_timer.first = shipManager.jump_timer.first + engines_charge_speed * time_increment(true)
+        end
+    end
+end) ]]

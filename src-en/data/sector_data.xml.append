@@ -68,7 +68,8 @@ REFS
 
 <mod:findName type="sectorDescription" name="SECRET_ANCIENT">
 	<mod:findLike type="rarityList">
-		<mod-append:blueprint name="RK_COMBAT_AUTO_SYS_REPAIR" rarity="0"/>	
+		<mod-append:blueprint name="RK_BAM_DIVINE_ARMOR" rarity="0"/>
+		<mod-append:blueprint name="RK_COMBAT_AUTO_SYS_REPAIR" rarity="0"/>
 		<mod-append:blueprint name="DJMOD_COMBAT_SHIPVORE_RAM" rarity="0" />
 		<mod-append:blueprint name="RK_CREW_ARE_BOMBS_OFF" rarity="0"/>
 		<mod-append:blueprint name="RK_LEAD_TITANS" rarity="0"/>
@@ -98,9 +99,12 @@ REFS
 		<mod-append:blueprint name="RK_BPS_SURVEYOR" rarity="0"/>
 		
 		<mod-append:blueprint name="DJMOD_BAM_FISSUREBEAM" rarity="0" />
+		<mod-append:blueprint name="RK_HEAVY_POPPER_1" rarity="0" />
 		<mod-append:blueprint name="RK_HEAVY_POPPER_2" rarity="0" />
+		<mod-append:blueprint name="RK_HEAVY_POPPER_3" rarity="0" />
 		<mod-append:blueprint name="RK_UNLOADER" rarity="0" />
-
+		
+		<mod-append:blueprint name="RK_BOMBLAUNCHER_ANTIBIO_REPAIR" rarity="0" />
 		<mod-append:blueprint name="RK_KILLALL_BEAM" rarity="0" />
 		<mod-append:blueprint name="RK_MISSLAUNCHER_2_BATTERY" rarity="0" />
 		<mod-append:blueprint name="RK_RAIN_OF_ION" rarity="0" />
@@ -116,6 +120,7 @@ REFS
 </mod:findName>
 <mod:findName type="sectorDescription" name="SECRET_ROYAL">
 	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="RK_BAM_DIVINE_ARMOR" rarity="0"/>
 		<mod-append:blueprint name="RK_COMBAT_AUTO_SYS_REPAIR" rarity="0"/>	
 		<mod-append:blueprint name="DJMOD_COMBAT_SHIPVORE_RAM" rarity="0" />
 		<mod-append:blueprint name="RK_CREW_ARE_BOMBS_OFF" rarity="0"/>
@@ -146,9 +151,12 @@ REFS
 		<mod-append:blueprint name="RK_BPS_SURVEYOR" rarity="0"/>
 		
 		<mod-append:blueprint name="DJMOD_BAM_FISSUREBEAM" rarity="0" />
+		<mod-append:blueprint name="RK_HEAVY_POPPER_1" rarity="0" />
 		<mod-append:blueprint name="RK_HEAVY_POPPER_2" rarity="0" />
+		<mod-append:blueprint name="RK_HEAVY_POPPER_3" rarity="0" />
 		<mod-append:blueprint name="RK_UNLOADER" rarity="0" />
 
+		<mod-append:blueprint name="RK_BOMBLAUNCHER_ANTIBIO_REPAIR" rarity="0" />
 		<mod-append:blueprint name="RK_KILLALL_BEAM" rarity="0" />
 		<mod-append:blueprint name="RK_MISSLAUNCHER_2_BATTERY" rarity="0" />
 		<mod-append:blueprint name="RK_RAIN_OF_ION" rarity="0" />
@@ -169,6 +177,7 @@ RARITY IN OTHER ADD-ONS
 -->
 <mod:findName type="sectorDescription" name="SECRET_FR_COMMONWEALTH">
 	<mod:findLike type="rarityList">
+		<mod-append:blueprint name="RK_BAM_DIVINE_ARMOR" rarity="0"/>
 		<mod-append:blueprint name="RK_COMBAT_AUTO_SYS_REPAIR" rarity="0"/>	
 		<mod-append:blueprint name="DJMOD_COMBAT_SHIPVORE_RAM" rarity="0" />
 		<mod-append:blueprint name="RK_CREW_ARE_BOMBS_OFF" rarity="0"/>
@@ -199,9 +208,12 @@ RARITY IN OTHER ADD-ONS
 		<mod-append:blueprint name="RK_BPS_SURVEYOR" rarity="0"/>
 		
 		<mod-append:blueprint name="DJMOD_BAM_FISSUREBEAM" rarity="0" />
+		<mod-append:blueprint name="RK_HEAVY_POPPER_1" rarity="0" />
 		<mod-append:blueprint name="RK_HEAVY_POPPER_2" rarity="0" />
+		<mod-append:blueprint name="RK_HEAVY_POPPER_3" rarity="0" />
 		<mod-append:blueprint name="RK_UNLOADER" rarity="0" />
 
+		<mod-append:blueprint name="RK_BOMBLAUNCHER_ANTIBIO_REPAIR" rarity="0" />
 		<mod-append:blueprint name="RK_KILLALL_BEAM" rarity="0" />
 		<mod-append:blueprint name="RK_MISSLAUNCHER_2_BATTERY" rarity="0" />
 		<mod-append:blueprint name="RK_RAIN_OF_ION" rarity="0" />

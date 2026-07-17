@@ -694,7 +694,13 @@ including those that don't make the menu show up by themselves: APPEND to LIST_C
 </mod:findName>
 
 <mod:findName type = "event" name = "STORAGE_CHECK_AUG">
-	<mod-append:choice req="RK_PERSISTENCE_SHIELD" blue="true">
+	<mod-append:choice req="RK_CANNOT_REBUILD_CAPACITOR" blue="false">
+		<text>(Persistence Shield) Rebuild the capacitor.</text>
+		<event load="RK_PERSISTENCE_SHIELD_REBUILD_CAPACITOR"/>
+	</mod-append:choice>
+</mod:findName>
+<mod:findName type = "event" name = "STORAGE_CHECK_AUG">
+	<mod-append:choice req="RK_CAN_REBUILD_CAPACITOR" blue="true">
 		<text>(Persistence Shield) Rebuild the capacitor.</text>
 		<event load="RK_PERSISTENCE_SHIELD_REBUILD_CAPACITOR"/>
 	</mod-append:choice>
@@ -1089,7 +1095,7 @@ Adding multiple copies of an outcome increases its likelihood!-->
 <!-- TODO: Give worse outcome odds against enemies with stronger engines than Player, unless the code for that is horrible?
 If yes, include a warning about that in the text. -->
 <event name="SHIPVORE_RAM_ATTACK_2DMG_NOTHING">
-	<text>You barely manage to hit the enemy, dealing 2 damage...</text>
+	<text>You barely manage to hit the enemy hull (and [style[color:ff3377]]missed all systems[[/style]]), dealing 2 damage...</text>
 	<enemyDamage amount="2"/>
 	
 	<choice hidden="true">
@@ -1098,7 +1104,7 @@ If yes, include a warning about that in the text. -->
 	</choice>
 </event>
 <event name="SHIPVORE_RAM_ATTACK_3DMG_NOTHING">
-	<text>You catch a small part of the enemy ship, dealing 3 damage...</text>
+	<text>You catch a small part of the enemy ship (but [style[color:ff3377]]missed all systems[[/style]]), dealing 3 damage...</text>
 	<enemyDamage amount="3"/>
 	
 	<choice hidden="true">
@@ -4060,7 +4066,7 @@ AND relevant Unique crew, that's easier to keep track of and we can always prete
 <event name="RK_COMBAT_SCORCH_ENEMY_PAY">
 	<text>What fire source shall we use?</text>
 
-	<choice req="DJMOD_HAS_COMBUSTIBLE_CREW" hidden="true"> 
+	<choice hidden="true">
 		<text>Fire-starting crew for a strong activation! [Will die, can be cloned]</text>
 		<event load="RK_COMBAT_SCORCH_ENEMY_PAY_CREW"/>
 	</choice>
@@ -6473,7 +6479,7 @@ REFS:
 		<event>
 			<text>You take the time to speed-grow your new crew, ready to be automated by your ship's Harmony!</text>
 			<item_modify>
-				<item type="scrap" min="-15" max="-15"/>
+				<item type="scrap" min="-25" max="-25"/>
 				<item type="fuel" min="-1" max="-1"/>
 				<item type="drones" min="-1" max="-1"/>
 			</item_modify>
@@ -6505,7 +6511,7 @@ REFS:
 		<event>
 			<text>You take the time to speed-grow your new crew, to be automated by your ship's Harmony...</text>
 			<item_modify>
-				<item type="scrap" min="-30" max="-30"/>
+				<item type="scrap" min="-50" max="-50"/>
 				<item type="fuel" min="-1" max="-1"/>
 				<item type="drones" min="-2" max="-2"/>
 			</item_modify>
@@ -7004,17 +7010,17 @@ REFS Darkest Desires for MV 5.5.1
 		<event load="OPTION_INVALID"/>
 	</choice>
 	<choice req="INTERNAL_RK_CALIBRATOR" lvl="1" max_lvl="1" blue="false" hidden="true">
-		<text>Calibrator Lvl 2. [Cost: 40~]</text>
+		<text>Calibrator Lvl 2. [Cost: 45~, 1|]</text>
 		<event load="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CALIBRATOR"/>
 	</choice>
 	<choice req="INTERNAL_RK_CALIBRATOR" lvl="0" max_lvl="0" blue="false" hidden="true">
-		<text>Calibrator Lvl 1. [Cost: 40~]</text>
+		<text>Calibrator Lvl 1. [Cost: 45~ 1|]</text>
 		<event load="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CALIBRATOR"/>
 	</choice>
 
 	<choice req="INTERNAL_RK_CHOKING_IS_FINE" lvl="1" blue="false" hidden="true">
 		<text>RK Bam "Choking F.I.N.E.": Your crew take 0.75x suffocation damage.
-		While suffocating, they move, sabotage, repair and fight 1.5x better. Suffocation immune can't suffocate. [ALREADY INSTALLED]</text>
+		While suffocating, they move, sabotage, repair and fight 1.4x better. Does not affect suffocation immune crew. [ALREADY INSTALLED]</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
 	<choice req="INTERNAL_RK_CHOKING_IS_FINE" lvl="0" max_lvl="0" blue="false" hidden="true">
@@ -7124,11 +7130,12 @@ REFS Darkest Desires for MV 5.5.1
 	</choice>
 	
 	<choice req="DJMOD_HAS_RADIKAL_BAM_GEAR" lvl="1" blue="false" hidden="true">
-		<text>Perform the upgrade. [Cost: 40~]</text>
+		<text>Perform the upgrade. [Cost: 45~, 1|]</text>
 		<event>
 			<text>You install the upgrade.</text>
 			<item_modify>
-				<item type="scrap" min="-40" max="-40"/>
+				<item type="scrap" min="-45" max="-45"/>
+				<item type="drones" min="-1" max="-1"/>
 			</item_modify>
 			<choice hidden="true">
 				<text>Continue...</text>
@@ -7151,7 +7158,7 @@ REFS Darkest Desires for MV 5.5.1
 <event name="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE">
 	<text>You are about to install the Choking F.I.N.E. upgrade.
 	[Effects: Your crew take 0.75x suffocation damage.
-		While suffocating, they move, sabotage, repair and fight 1.5x better. Suffocation immune can't suffocate.]</text>
+		While suffocating, they move, sabotage, repair and fight 1.4x better. Does not affect suffocation immune crew.]</text>
 
 	<choice req="EX_RK_CHOKING_IS_FINE" blue="true" hidden="true">
 		<text>Install the External Augment internally.</text>

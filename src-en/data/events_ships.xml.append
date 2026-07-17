@@ -37,13 +37,48 @@ Events tied to the escape, surrender, death, or crewdeath of ships. From this ad
 		<text>The ship is destroyed. The other gatekeepers give a solemn nod. "Whoever passed our coordinates along to you made a good choice, and so did you coming here. You are free to go! Have some free repairs too."</text>
 		<weapon name="GIFTLIST_FITTING_WEAPON_BAM"/>
 		<autoReward level="HIGH">stuff</autoReward>
-		<damage amount="-10"/>
+		<damage amount="-7"/>
 	</destroyed>
 	<deadCrew>
 		<text>Now that you've passed the test, the other gatekeepers allow you out of the sector, and hint that since you even managed to leave the ship in one piece, you get a free random deckhand!</text>
 		<weapon name="GIFTLIST_FITTING_WEAPON_BAM"/>
 		<autoReward level="HIGH">stuff</autoReward>
-		<damage amount="-10"/>
+		<damage amount="-7"/>
+		<crewMember amount="1"/>
+	</deadCrew>
+	<crew>
+		<crewMember type="rk_weaponlike" prop="0.10"/>
+		<crewMember type="lanius_welder" prop="0.10"/>
+		<crewMember type="rock_crusader" prop="0.10"/>
+		<crewMember type="rock_paladin" prop="0.10"/>
+		<crewMember type="phantom_mare" prop="0.10"/>
+		<crewMember type="phantom_mare_alpha" prop="0.10"/>
+
+		<crewMember type="shell_mechanic" prop="0.20"/>
+		<crewMember type="zoltan_devotee" prop="0.20"/>
+	</crew>
+</ship>
+<ship name="SHIP_RK_BAM_EXIT_BOSS_CHALLENGE" auto_blueprint="DJMOD_RADIKAL_BOSS_BAM_CHALLENGE">
+	<surrender min="6" max="7">
+		<text>All of a sudden, the enemy fully restores their Supershields! This is probably a one-off.</text>
+		<superShields player="false" add="0"/>
+		
+		<choice hidden="true">
+			<text>Continue...</text>
+			<event/>
+		</choice>
+	</surrender>
+	<destroyed>
+		<text>The ship is destroyed. The other gatekeepers give a solemn nod. "Whoever passed our coordinates along to you made a good choice, and so did you coming here. You are free to go! Have some free repairs too."</text>
+		<weapon name="GIFTLIST_FITTING_WEAPON_BAM"/>
+		<autoReward level="HIGH">stuff</autoReward>
+		<damage amount="-7"/>
+	</destroyed>
+	<deadCrew>
+		<text>Now that you've passed the test, the other gatekeepers allow you out of the sector, and hint that since you even managed to leave the ship in one piece, you get a free random deckhand!</text>
+		<weapon name="GIFTLIST_FITTING_WEAPON_BAM"/>
+		<autoReward level="HIGH">stuff</autoReward>
+		<damage amount="-7"/>
 		<crewMember amount="1"/>
 	</deadCrew>
 	<crew>
@@ -64,13 +99,13 @@ Events tied to the escape, surrender, death, or crewdeath of ships. From this ad
 		<text>The ship is destroyed. The other gatekeepers give a solemn nod. "Whoever passed our coordinates along to you made a good choice, and so did you coming here. You are free to go! Have some free repairs too."</text>
 		<weapon name="GIFTLIST_FITTING_WEAPON_PUNK"/>
 		<autoReward level="HIGH">stuff</autoReward>
-		<damage amount="-10"/>
+		<damage amount="-7"/>
 	</destroyed>
 	<deadCrew>
 		<text>Now that you've passed the test, the other gatekeepers allow you out of the sector, and hint that since you even managed to leave the ship in one piece, you get a free random deckhand!</text>
 		<weapon name="GIFTLIST_FITTING_WEAPON_PUNK"/>
 		<autoReward level="HIGH">stuff</autoReward>
-		<damage amount="-10"/>
+		<damage amount="-7"/>
 		<crewMember amount="1"/>
 	</deadCrew>
 	<crew>
@@ -87,13 +122,13 @@ Events tied to the escape, surrender, death, or crewdeath of ships. From this ad
 		<text>The ship is destroyed. The other gatekeepers give a solemn nod. "Whoever passed our coordinates along to you made a good choice, and so did you coming here. You are free to go! Have some free repairs too."</text>
 		<weapon name="GIFTLIST_FITTING_WEAPON_SCORCH"/>
 		<autoReward level="HIGH">stuff</autoReward>
-		<damage amount="-10"/>
+		<damage amount="-7"/>
 	</destroyed>
 	<deadCrew>
 		<text>Now that you've passed the test, the other gatekeepers allow you out of the sector, and hint that since you even managed to leave the ship in one piece, you may retrieve a special cruiser blueprint from the wreck!</text>
 		<weapon name="GIFTLIST_FITTING_WEAPON_SCORCH"/>
 		<autoReward level="HIGH">stuff</autoReward>
-		<damage amount="-10"/>
+		<damage amount="-7"/>
 		<unlockCustomShip silent="false">PLAYER_SHIP_DJMOD_SCORCH</unlockCustomShip>
 	</deadCrew>
 	<crew>
