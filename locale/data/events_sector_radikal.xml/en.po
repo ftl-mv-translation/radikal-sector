@@ -74,7 +74,9 @@ msgstr "Continue..."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_STORE_SNIPER_WIN\"]/text"
 msgstr ""
-"Sniper Girl wastes no time hailing you. \"They just keep coming, with better equipment every time, to rob us. I just can't catch a breath. I know that's why you're here too...\" You're about to say something to cheer her up when she cuts you off. \"Because there's NO better shop in this universe for Stealth gear! So efficient, pirates dream about it, coalitions plot to acquire it, and renegades jump in to steal it! Buy while you still can!\".\n"
+"Sniper Girl wastes no time hailing you. \"They just keep coming, with better equipment every time, to rob us. I just can't catch a breath. I know that's why you're here too...\" You're about to say something to cheer her up when she cuts you off. \"Because there's NO better shop in this universe for Stealth gear! So efficient, pirates dream about it, coalitions plot to acquire it, and renegades jump in to steal it! Buy while you still can!\n"
+"\t\tDid you know your Cloaking loses 20% of its maximum duration when most weapons start firing?\".\n"
+"\t\t\n"
 "\t\tTurns out she's still in character. RK sector professionals must have seen some shit, you think to yourself.\n"
 "\n"
 "\t\t\"...And for your timely assistance, here's a little incentive to buy.\" You realize the gift is your \"Thank you\", and shrug.\n"
@@ -1488,7 +1490,7 @@ msgstr "Continue..."
 #: src-en/data/events_sector_radikal.xml:1609
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_BIL_SCORCH_REACTOR\"]/choice[2]/text"
-msgstr "Do a quick search around the beacon instead."
+msgstr "Forget this and carefully search around the beacon instead."
 
 #: src-en/data/events_sector_radikal.xml:1611
 msgid ""
@@ -1741,7 +1743,7 @@ msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_DEFROMORIUS_SUSPICIOUS\"]/surrender/choice[1]/event/text"
 msgstr ""
 "\"We were just minding our own business, on the way to this dock to sell our trinkets...\"\n"
-"\t\t\t\t\tAs you dig into their eyes with your hand ready to gesture \"Fire at will\", they adjust their story.\n"
+"\t\t\t\t\tAs you dig into their eyes, with your hand ready to gesture \"Fire at will\", they adjust their story.\n"
 "\t\t\t\t\t\n"
 "\t\t\t\t\t\"Ok mayyyybe we were selling a little neural shocker or two to those Engis off the books. But then they started acting strange and sent a Distress signal. Being just humble merchants, we took it as a clue to get the hell away! Right, Lisa?\"\n"
 "\n"
@@ -1822,7 +1824,8 @@ msgid ""
 msgstr ""
 "To your surprise, it does seem to be some sort of Engi Defender, and it definitely answers you like one.\n"
 "\t\t\t\t\n"
-"\t\t\t\t\"Self = in jeopardy but know you = Federation. --COMPUTING-- This beacon = not likely your mission. Your presence here: purpose?\""
+"\t\t\t\t\"Self = in jeopardy but know you = Federation. --COMPUTING--\n"
+"\t\t\t\tThis beacon = not likely your mission. Your presence here: purpose?\""
 
 #: src-en/data/events_sector_radikal.xml:1964
 msgid ""
@@ -1851,7 +1854,7 @@ msgid ""
 msgstr ""
 "\"Answer = unexpected. You = fools: 97% probability. Regardless, I cease functioning in: [time.short]\"\n"
 "\n"
-"\t\t\t\t\t\t\t\tThe creature does look desperate for oxygen by now, which took longer than you thought. You can't risk bringing it in just yet, but maybe you can help it remotely and see what happens."
+"\t\t\t\t\t\t\t\tThe creature does look desperate for oxygen by now, which took much longer than you thought. You can't risk bringing it in just yet, but maybe you can help it remotely and see what happens."
 
 #: src-en/data/events_sector_radikal.xml:1982
 msgid ""
@@ -1955,7 +1958,7 @@ msgstr "Continue..."
 #: src-en/data/events_sector_radikal.xml:2067
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[1]/event/choice/event/choice[2]/text"
-msgstr "We will avenge our allies."
+msgstr "We will avenge our allies!"
 
 #: src-en/data/events_sector_radikal.xml:2069
 msgid ""
@@ -3517,7 +3520,7 @@ msgid ""
 msgstr ""
 "\"Bad words feddy captain, should have choose better words. But mostly should have bring scrap.\" The pirate ship in front of you instantly makes itself combat ready, having clearly expected that. \n"
 "\t\t\t\t\t\t\n"
-"\t\t\t\t\t\tYou can't tell whether the slug overseer is furious, vindicated, or both. \"Hah! I knew it, you just wanted to take down a bunch of piratesss at once you wannabe hero. Guesss what, we're not that dumb! Hey Kurt, hand over the scrap, i won the bet.\"\n"
+"\t\t\t\t\t\tYou can't tell whether the slug overseer is furious, vindicated, or both. \"Hah! I knew it, you just wanted to take down a bunch of piratesss at once you wannabe hero. Guesss what, we're not that dumb! Hey Kurt, hand over the scrap, I won the bet.\"\n"
 "\t\t\t\t\t\tWith that, they and the other pirate ships jump away, leaving you to deal with the slaver!"
 
 #: src-en/data/events_sector_radikal.xml:3625
@@ -3583,7 +3586,7 @@ msgid ""
 msgstr ""
 "\"Bad choice, captain. You should have brought that scrap.\" The pirate ship in front of you instantly makes itself combat ready, having clearly expected that. \n"
 "\t\t\t\t\t\t\n"
-"\t\t\t\t\t\tYou can't tell whether the slug overseer is furious, vindicated, or both. \"Hah! I knew it, you just wanted to take down a bunch of piratesss at once you wannabe hero. Guesss what, we're not that dumb! Hey Kurt, hand over the scrap, i won the bet.\"\n"
+"\t\t\t\t\t\tYou can't tell whether the slug overseer is furious, vindicated, or both. \"Hah! I knew it, you just wanted to take down a bunch of piratesss at once you wannabe hero. Guesss what, we're not that dumb! Hey Kurt, hand over the scrap, I won the bet.\"\n"
 "\t\t\t\t\t\tWith that, they and the other pirate ships jump away, leaving you to deal with the mercenary!"
 
 #: src-en/data/events_sector_radikal.xml:3690
@@ -3664,7 +3667,7 @@ msgid ""
 msgstr ""
 "\"Sad, I didn't take you for a joker. You should have brought that scrap.\" The pirate ship in front of you instantly makes itself combat ready, having clearly expected that. \n"
 "\t\t\t\t\t\t\n"
-"\t\t\t\t\t\tYou can't tell whether the slug overseer is furious, vindicated, or both. \"Hah! I knew it, you just wanted to take down a bunch of piratesss at once you wannabe hero. Guesss what, we're not that dumb! Hey Kurt, hand over the scrap, i won the bet.\"\n"
+"\t\t\t\t\t\tYou can't tell whether the slug overseer is furious, vindicated, or both. \"Hah! I knew it, you just wanted to take down a bunch of piratesss at once you wannabe hero. Guesss what, we're not that dumb! Hey Kurt, hand over the scrap, I won the bet.\"\n"
 "\t\t\t\t\t\tWith that, they and the other pirate ships jump away, leaving you to deal with the smuggler!"
 
 #: src-en/data/events_sector_radikal.xml:3771
