@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-07-17 19:19+0000\n"
+"PO-Revision-Date: 2026-07-18 21:36+0000\n"
 "Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "dataevents_special_guardsxmlappend/ru/>\n"
@@ -59,11 +59,10 @@ msgid ""
 msgstr "Принять вызов."
 
 #: src-en/data/events_special_guards.xml.append:52
-#, fuzzy
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/text"
 msgstr ""
-"\"Эй. Новенький или бывалый?\" Охранник невозмутимо ждет вашего ответа.\n"
+"\"Итак. Новенький или бывалый?\" Охранник невозмутимо ждет вашего ответа.\n"
 "\t\t\t\tПохоже, речь о том, насколько вы знакомы с этим сектором."
 
 #: src-en/data/events_special_guards.xml.append:57
@@ -284,6 +283,8 @@ msgstr "Ничего не делать."
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"rks_pirate_trinity_active\"]/text"
 msgstr ""
+"Это же пиратское пристанище, да? Мы здесь по делам. *Сплевывает* "
+"[Складывается, рискованный выбор]"
 
 #: src-en/data/events_special_guards.xml.append:223
 msgid ""
@@ -303,6 +304,10 @@ msgstr "Пиратство - это круто. Оно стоит того."
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"DJMOD_REPUTATION_UPDATE_PIRATES_RKS_GUARD\"]/text"
 msgstr ""
+"[РЕПУТАЦИЯ ПОВЫШЕНА - ПИРАТЫ]\n"
+"\t\t\t\t\t\tВаши действия улучшили вашу репутацию среди пиратов. Некоторые "
+"пиратские кланы могут охотнее предлагать вам скидки или особые сделки и "
+"будут чувствовать себя комфортнее рядом с вами."
 
 #: src-en/data/events_special_guards.xml.append:246
 msgid ""
