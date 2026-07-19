@@ -5,74 +5,39 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src-en/data/text_blueprints.xml.append:3
-msgid ""
-"data/text_blueprints.xml.append$//text[@name=\"text_PLAYER_SHIP_DJMOD_RAMMER_class\"]"
-msgstr "Croiseur RadiKal Bam"
-
-#: src-en/data/text_blueprints.xml.append:4
-msgid ""
-"data/text_blueprints.xml.append$//text[@name=\"text_PLAYER_SHIP_DJMOD_RAMMER_name\"]"
-msgstr "Éperonneur"
-
-#: src-en/data/text_blueprints.xml.append:5
-msgid ""
-"data/text_blueprints.xml.append$//text[@name=\"text_PLAYER_SHIP_DJMOD_RAMMER_desc\"]"
-msgstr ""
-"Avec le vaisseau amiral des RadiKal Bam, approchez-vous au plus près pour "
-"percuter les vaisseaux ennemis, puis mangez-les ! Les vaisseaux, bien sûr."
-
-#: src-en/data/text_blueprints.xml.append:8
-msgid ""
-"data/text_blueprints.xml.append$//text[@name=\"text_PLAYER_SHIP_DJMOD_PUNKER_class\"]"
-msgstr "Croiseur RadiKal Punk"
-
-#: src-en/data/text_blueprints.xml.append:9
-msgid ""
-"data/text_blueprints.xml.append$//text[@name=\"text_PLAYER_SHIP_DJMOD_PUNKER_name\"]"
-msgstr "Anarcheur"
-
-#: src-en/data/text_blueprints.xml.append:10
-msgid ""
-"data/text_blueprints.xml.append$//text[@name=\"text_PLAYER_SHIP_DJMOD_PUNKER_desc\"]"
-msgstr ""
-"Un accélérateur de particules orbital transformé en croiseur est le vaisseau"
-" amiral RadiKal Punk. Utilisez son réacteur agrandi avec des améliorations "
-"moins chères pour le piratage et l'artillerie à particules, avant que les "
-"difficultés internes ne vous fassent démonter."
-
-#: src-en/data/text_blueprints.xml.append:12
-msgid ""
-"data/text_blueprints.xml.append$//text[@name=\"text_PLAYER_SHIP_DJMOD_SCORCH_class\"]"
-msgstr "Croiseur RadiKal Scorch"
-
-#: src-en/data/text_blueprints.xml.append:13
-msgid ""
-"data/text_blueprints.xml.append$//text[@name=\"text_PLAYER_SHIP_DJMOD_SCORCH_name\"]"
-msgstr "Calcinateur"
-
-#: src-en/data/text_blueprints.xml.append:14
-msgid ""
-"data/text_blueprints.xml.append$//text[@name=\"text_PLAYER_SHIP_DJMOD_SCORCH_desc\"]"
-msgstr ""
-"Le vaisseau amiral des RadiKal Scorch a des vulnérabilités structurelles "
-"évidentes, mais compense par l'utilisation mortelle de sa technologie."
-
 #: src-en/data/text_blueprints.xml.append:17
 msgid ""
-"data/text_blueprints.xml.append$//text[@name=\"ship_PLAYER_SHIP_DJMOD_PUNKER_unlock\"]"
+"data/text_blueprints.xml.append$//text[@name=\"ship_PLAYER_SHIP_DJMOD_RAMMER_2_unlock\"]"
 msgstr ""
-"Atteignez le secteur 8 avec le Croiseur RadiKal Bam (Éperonneur) OU gagnez "
-"avec le Croiseur RadiKal Scorch (Calcinateur) pour débloquer ce vaisseau."
 
-#: src-en/data/text_blueprints.xml.append:18
+#: src-en/data/text_blueprints.xml.append:19
+msgid ""
+"data/text_blueprints.xml.append$//text[@name=\"ship_PLAYER_SHIP_DJMOD_PUNKER_unlock\"]"
+msgstr "Atteignez le secteur 8 avec le Croiseur RadiKal Bam (Éperonneur)."
+
+#: src-en/data/text_blueprints.xml.append:20
 msgid ""
 "data/text_blueprints.xml.append$//text[@name=\"ship_PLAYER_SHIP_DJMOD_PUNKER_2_unlock\"]"
 msgstr ""
 
-#: src-en/data/text_blueprints.xml.append:20
+#: src-en/data/text_blueprints.xml.append:22
+msgid ""
+"data/text_blueprints.xml.append$//text[@name=\"ship_PLAYER_SHIP_RK_SCORCHER_unlock\"]"
+msgstr "Gagnez avec le Croiseur RadiKal Punk configuration B (\"NuH4RM0NY\")."
+
+#: src-en/data/text_blueprints.xml.append:23
+msgid ""
+"data/text_blueprints.xml.append$//text[@name=\"ship_PLAYER_SHIP_RK_SCORCHER_2_unlock\"]"
+msgstr ""
+
+#: src-en/data/text_blueprints.xml.append:24
+msgid ""
+"data/text_blueprints.xml.append$//text[@name=\"ship_PLAYER_SHIP_RK_SCORCHER_3_unlock\"]"
+msgstr ""
+
+#: src-en/data/text_blueprints.xml.append:25
 msgid ""
 "data/text_blueprints.xml.append$//text[@name=\"ship_PLAYER_SHIP_DJMOD_SCORCH_unlock\"]"
 msgstr ""
-"Éliminez l'équipage du gardien Scorch à la fin du secteur RadiKal pour "
-"débloquer ce vaisseau."
+"Éliminez l'équipage du Gardien des portes Scorch à la fin du secteur RadiKal"
+" pour déverrouiller ce vaisseau."

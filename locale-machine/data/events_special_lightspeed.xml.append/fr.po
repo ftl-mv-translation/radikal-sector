@@ -5,31 +5,71 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src-en/data/events_special_lightspeed.xml.append:12
+#: src-en/data/events_special_lightspeed.xml.append:37
+msgid ""
+"data/events_special_lightspeed.xml.append$//mod:findName[@name=\"ATLAS_MENU\"]/mod-"
+"append:choice/text"
+msgstr "Procéder vers le secteur RadiKal."
+
+#: src-en/data/events_special_lightspeed.xml.append:43
+msgid ""
+"data/events_special_lightspeed.xml.append$//mod:findName[@name=\"ATLAS_MENU_NOEQUIPMENT\"]/mod-"
+"append:choice/text"
+msgstr "Procéder vers le secteur RadiKal."
+
+#: src-en/data/events_special_lightspeed.xml.append:142
+msgid ""
+"data/events_special_lightspeed.xml.append$//event[@name=\"ENTER_RADIKAL\"]/choice/text"
+msgstr ""
+
+#: src-en/data/events_special_lightspeed.xml.append:176
+msgid ""
+"data/events_special_lightspeed.xml.append$//event[@name=\"RADIKAL_WARP\"]/text"
+msgstr ""
+"Nom : Secteur RadiKal\n"
+"\tType : Neutre\n"
+"\tFaction dominante : RK Bam, RK Punk, RK Scorch\n"
+"\tNiveau de menace rebelle : Très bas\n"
+"\tEmplacements d'intérêt : Laboratoires RK, Scorch BIL, Trinité pirate, Cachette\n"
+"\t\n"
+"\tLe secteur [style[color:ff3377]]dangereux[[/style]] où les sous-factions RadiKal développent de l'équipement illégal. Des spécialistes du monde entier viennent secrètement pour se tenir au courant de la technologie, réguler son commerce ou le voler. Faites attention à tout équipement Radikal (RK) que vous pourriez avoir là-bas !\n"
+"\t[Feedback ? @Dj0z sur discord.]"
+
+#: src-en/data/events_special_lightspeed.xml.append:185
+msgid ""
+"data/events_special_lightspeed.xml.append$//event[@name=\"RADIKAL_WARP\"]/choice[1]/text"
+msgstr "Quitter l'hypervitesse."
+
+#: src-en/data/events_special_lightspeed.xml.append:189
+msgid ""
+"data/events_special_lightspeed.xml.append$//event[@name=\"RADIKAL_WARP\"]/choice[@req=\"COORDS\"]/text"
+msgstr "Changer d'itinéraire."
+
+#: src-en/data/events_special_lightspeed.xml.append:271
 msgid ""
 "data/events_special_lightspeed.xml.append$//mod:findName[@name=\"REROUTE_MENU\"]/mod-"
 "append:choice/text"
-msgstr "Sauter vers le Secteur RadiKal."
+msgstr "Sauter vers le secteur RadiKal."
 
-#: src-en/data/events_special_lightspeed.xml.append:19
+#: src-en/data/events_special_lightspeed.xml.append:278
 msgid ""
 "data/events_special_lightspeed.xml.append$//mod:findName[@name=\"REROUTE_MENU_LASTSTAND\"]/mod-"
 "append:choice/text"
-msgstr "Sauter vers le Secteur RadiKal."
+msgstr "Sauter vers le secteur RadiKal."
 
-#: src-en/data/events_special_lightspeed.xml.append:27
+#: src-en/data/events_special_lightspeed.xml.append:314
 msgid ""
 "data/events_special_lightspeed.xml.append$//mod:findName[@name=\"REROUTE_MENU_HAT\"]/mod-"
 "append:choice[1]/text"
-msgstr "Aller vers le Secteur RadiKal."
+msgstr "Aller au secteur RadiKal."
 
-#: src-en/data/events_special_lightspeed.xml.append:31
+#: src-en/data/events_special_lightspeed.xml.append:318
 msgid ""
 "data/events_special_lightspeed.xml.append$//mod:findName[@name=\"REROUTE_MENU_HAT\"]/mod-"
 "append:choice[2]/text"
-msgstr "Le Secteur RadiKal est derrière vous."
+msgstr "Le secteur RadiKal est derrière vous."
 
-#: src-en/data/events_special_lightspeed.xml.append:104
+#: src-en/data/events_special_lightspeed.xml.append:403
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL\"]/text"
 msgstr ""
@@ -37,35 +77,36 @@ msgstr ""
 "\tNom : Secteur RadiKal\n"
 "\tType : Neutre\n"
 "\tFaction dominante : RK Bam, RK Punk, RK Scorch\n"
-"\tNiveau de menace rebelle : Très faible\n"
-"\tEmplacements d'intérêt : QG Bam, QG Punk, QG Scorch\n"
+"\tNiveau de menace rebelle : Très bas\n"
+"\tEmplacements d'intérêt : Laboratoires RK, Scorch BIL, Trinité pirate, Cachette\n"
 "\t\n"
-"\tLe secteur dangereux où les sous-factions RadiKal développent de l'équipement illégal. Des spécialistes de partout viennent secrètement pour se tenir au courant de la technologie, réguler son commerce ou la voler. Attention à tout équipement Radikal (RK) que vous avez là-dedans !\n"
-"\t[Retour ? @Dj0z sur discord.]"
+"\tLe secteur [style[color:ff3377]]dangereux[[/style]] où les sous-factions RadiKal développent de l'équipement illégal. Des rumeurs disent que des forces surnaturelles pourraient être impliquées. Pourtant, des spécialistes du monde entier viennent secrètement pour se tenir au courant de la technologie, tenter de réguler son commerce, ou le voler.\n"
+"\tFaites attention à tout équipement Radikal (RK) que vous pourriez avoir là-bas !\n"
+"\t[Feedback ? @Dj0z sur discord.]"
 
-#: src-en/data/events_special_lightspeed.xml.append:114
+#: src-en/data/events_special_lightspeed.xml.append:414
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL\"]/choice[1]/text"
 msgstr "Continuer le saut."
 
-#: src-en/data/events_special_lightspeed.xml.append:116
+#: src-en/data/events_special_lightspeed.xml.append:416
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL\"]/choice[1]/event/text"
 msgstr ""
-"Vous vous préparez à sauter vers les nouvelles coordonnées et changez votre "
-"trajectoire de vol en conséquence."
+"Vous vous préparez à sauter vers les nouvelles coordonnées, et changez votre"
+" trajectoire en conséquence."
 
-#: src-en/data/events_special_lightspeed.xml.append:120
+#: src-en/data/events_special_lightspeed.xml.append:423
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL\"]/choice[1]/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_lightspeed.xml.append:126
+#: src-en/data/events_special_lightspeed.xml.append:429
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL\"]/choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_lightspeed.xml.append:135
+#: src-en/data/events_special_lightspeed.xml.append:497
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS\"]/text"
 msgstr ""
@@ -73,35 +114,36 @@ msgstr ""
 "\tNom : Secteur RadiKal\n"
 "\tType : Neutre\n"
 "\tFaction dominante : RK Bam, RK Punk, RK Scorch\n"
-"\tNiveau de menace rebelle : Très faible\n"
-"\tEmplacements d'intérêt : QG Bam, QG Punk, QG Scorch\n"
+"\tNiveau de menace rebelle : Très bas\n"
+"\tEmplacements d'intérêt : Laboratoires RK, Scorch BIL, Trinité pirate, Cachette\n"
 "\t\n"
-"\tLe secteur dangereux où les sous-factions RadiKal développent de l'équipement illégal. Des spécialistes de partout viennent secrètement pour se tenir au courant de la technologie, réguler son commerce ou la voler. Attention à tout équipement Radikal (RK) que vous avez là-dedans !\n"
-"\t[Retour ? @Dj0z sur discord.]"
+"\tLe secteur [style[color:ff3377]]dangereux[[/style]] où les sous-factions RadiKal développent de l'équipement illégal. Des rumeurs disent que des forces surnaturelles pourraient être impliquées. Pourtant, des spécialistes du monde entier viennent secrètement pour se tenir au courant de la technologie, tenter de réguler son commerce, ou le voler.\n"
+"\tFaites attention à tout équipement Radikal (RK) que vous pourriez avoir là-bas !\n"
+"\t[Feedback ? @Dj0z sur discord.]"
 
-#: src-en/data/events_special_lightspeed.xml.append:145
+#: src-en/data/events_special_lightspeed.xml.append:508
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS\"]/choice[1]/text"
 msgstr "Continuer le saut."
 
-#: src-en/data/events_special_lightspeed.xml.append:147
+#: src-en/data/events_special_lightspeed.xml.append:510
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS\"]/choice[1]/event/text"
 msgstr ""
-"Vous vous préparez à sauter vers les nouvelles coordonnées et changez votre "
-"trajectoire de vol en conséquence."
+"Vous vous préparez à sauter vers les nouvelles coordonnées, et changez votre"
+" trajectoire en conséquence."
 
-#: src-en/data/events_special_lightspeed.xml.append:152
+#: src-en/data/events_special_lightspeed.xml.append:517
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS\"]/choice[1]/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_lightspeed.xml.append:158
+#: src-en/data/events_special_lightspeed.xml.append:523
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS\"]/choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_lightspeed.xml.append:167
+#: src-en/data/events_special_lightspeed.xml.append:590
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/text"
 msgstr ""
@@ -109,30 +151,31 @@ msgstr ""
 "\tNom : Secteur RadiKal\n"
 "\tType : Neutre\n"
 "\tFaction dominante : RK Bam, RK Punk, RK Scorch\n"
-"\tNiveau de menace rebelle : Très faible\n"
-"\tEmplacements d'intérêt : QG Bam, QG Punk, QG Scorch\n"
+"\tNiveau de menace rebelle : Très bas\n"
+"\tEmplacements d'intérêt : Laboratoires RK, Scorch BIL, Trinité pirate, Cachette\n"
 "\t\n"
-"\tLe secteur dangereux où les sous-factions RadiKal développent de l'équipement illégal. Des spécialistes de partout viennent secrètement pour se tenir au courant de la technologie, réguler son commerce ou la voler. Attention à tout équipement Radikal (RK) que vous avez là-dedans !\n"
-"\t[Retour ? @Dj0z sur discord.]"
+"\tLe secteur [style[color:ff3377]]dangereux[[/style]] où les sous-factions RadiKal développent de l'équipement illégal. Des rumeurs disent que des forces surnaturelles pourraient être impliquées. Pourtant, des spécialistes du monde entier viennent secrètement pour se tenir au courant de la technologie, tenter de réguler son commerce, ou le voler.\n"
+"\tFaites attention à tout équipement Radikal (RK) que vous pourriez avoir là-bas !\n"
+"\t[Feedback ? @Dj0z sur discord.]"
 
-#: src-en/data/events_special_lightspeed.xml.append:177
+#: src-en/data/events_special_lightspeed.xml.append:601
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/choice[1]/text"
 msgstr "Continuer le saut."
 
-#: src-en/data/events_special_lightspeed.xml.append:179
+#: src-en/data/events_special_lightspeed.xml.append:603
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/choice[1]/event/text"
 msgstr ""
-"Vous vous préparez à sauter vers les nouvelles coordonnées et changez votre "
-"trajectoire de vol en conséquence."
+"Vous vous préparez à sauter vers les nouvelles coordonnées, et changez votre"
+" trajectoire en conséquence."
 
-#: src-en/data/events_special_lightspeed.xml.append:184
+#: src-en/data/events_special_lightspeed.xml.append:610
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/choice[1]/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_lightspeed.xml.append:190
+#: src-en/data/events_special_lightspeed.xml.append:616
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/choice[2]/text"
 msgstr ""

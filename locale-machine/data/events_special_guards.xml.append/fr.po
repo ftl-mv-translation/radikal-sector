@@ -9,10 +9,10 @@ msgstr ""
 msgid ""
 "data/events_special_guards.xml.append$//textList[@name=\"TEXT_START_RADIKAL\"]/text[1]"
 msgstr ""
-"Vous êtes arrivé dans le Secteur RadiKal, où des spécialistes de partout viennent à la recherche d'équipement très efficace et illégal.\n"
+"Vous êtes arrivé dans le Secteur RadiKal, où des spécialistes venus de partout viennent en quête d'équipement hautement efficace et illégal.\n"
 "\t\t\n"
-"\t\tBien que des rebelles individuels ou de petits groupes travaillent certainement avec les RadiKals, la flotte aura du mal à venir ici, vous donnant un peu de temps pour vous préparer à sortir d'ici vivant.\n"
-"\t\tEt vous feriez mieux de vous préparer."
+"\t\tBien que des rebelles individuels ou de petits groupes travaillent certainement avec les RadiKals, la flotte aura du mal à arriver ici, vous donnant un peu de temps pour vous préparer à sortir d'ici vivant.\n"
+"\t\tEt vous feriez bien de vous préparer."
 
 #: src-en/data/events_special_guards.xml.append:11
 msgid ""
@@ -20,396 +20,415 @@ msgid ""
 msgstr ""
 "Vous êtes arrivé dans le Secteur RadiKal, où l'on peut trouver de l'équipement dangereux d'une grande puissance, si l'on est prêt à faire des sacrifices.\n"
 "\t\t\n"
-"\t\tBien que des rebelles individuels ou de petits groupes travaillent certainement avec les RadiKals, la flotte aura du mal à venir ici, vous donnant un peu de temps pour vous préparer à sortir d'ici vivant.\n"
-"\t\tEt vous feriez mieux de vous préparer."
+"\t\tBien que des rebelles individuels ou de petits groupes travaillent certainement avec les RadiKals, la flotte aura du mal à arriver ici, vous donnant un peu de temps pour vous préparer à sortir d'ici vivant.\n"
+"\t\tEt vous feriez bien de vous préparer."
 
 #: src-en/data/events_special_guards.xml.append:16
 msgid ""
 "data/events_special_guards.xml.append$//textList[@name=\"TEXT_START_RADIKAL\"]/text[3]"
 msgstr ""
-"Vous êtes arrivé dans le Secteur RadiKal, qui devrait bien se passer si vous savez ce que vous cherchez, et quand éviter les combats que vous pourriez ne pas gagner.\n"
+"Vous êtes arrivé dans le Secteur RadiKal, ce qui devrait aller si vous savez ce que vous cherchez, et quand éviter les combats que vous pourriez ne pas gagner.\n"
 "\t\t\n"
-"\t\tBien que des rebelles individuels ou de petits groupes travaillent certainement avec les RadiKals, la flotte aura du mal à venir ici, vous donnant un peu de temps pour vous préparer à sortir d'ici vivant.\n"
-"\t\tEt vous feriez mieux de vous préparer."
+"\t\tBien que des rebelles individuels ou de petits groupes travaillent certainement avec les RadiKals, la flotte aura du mal à arriver ici, vous donnant un peu de temps pour vous préparer à sortir d'ici vivant.\n"
+"\t\tEt vous feriez bien de vous préparer."
 
-#: src-en/data/events_special_guards.xml.append:36
+#: src-en/data/events_special_guards.xml.append:39
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"START_RADIKAL\"]/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:43
+#: src-en/data/events_special_guards.xml.append:46
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/text"
 msgstr ""
-"La balise est gardée par un vaisseau bien armé mais il n'est pas encore hostile. Au loin, vous voyez un vaisseau pirate sauter. D'après ce que vous pouvez dire, ils sont chargés de cargaison et le garde vient de les laisser passer, sans signes récents de bataille.\n"
+"La balise est gardée par un vaisseau bien armé mais il n'est pas encore hostile. Au loin, vous voyez un vaisseau pirate sauter. D'après ce que vous pouvez voir, ils sont chargés de cargaison et le garde vient de les laisser passer, sans aucun signe récent de bataille.\n"
 "\t\t\n"
-"\t\tLe garde vous appelle."
+"\t\tLe garde vous contacte."
 
-#: src-en/data/events_special_guards.xml.append:47
+#: src-en/data/events_special_guards.xml.append:50
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/text"
-msgstr "Accepter l'appel."
+msgstr "Acceptez l'appel."
 
-#: src-en/data/events_special_guards.xml.append:49
+#: src-en/data/events_special_guards.xml.append:52
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/text"
 msgstr ""
-"\"Salut. Rookie ou régulier ?\" Le garde attend nonchalamment votre réponse.\n"
+"\"Salut. Débutant ou habitué ?\" Le garde attend nonchalamment votre réponse.\n"
 "\t\t\t\tCela semble concerner votre familiarité avec ce secteur."
 
-#: src-en/data/events_special_guards.xml.append:54
+#: src-en/data/events_special_guards.xml.append:57
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
-" and not(@lvl)]/text"
-msgstr "(N'importe quelle pièce d'équipement RK) Régulier. Allez-y !"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[1]/text"
+msgstr "Demandez humblement des réparations bon marché."
 
-#: src-en/data/events_special_guards.xml.append:56
+#: src-en/data/events_special_guards.xml.append:59
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
-" and not(@lvl)]/event/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[1]/event/text"
 msgstr ""
-"\"Joli matériel ! Puisque vous êtes déjà l'un des nôtres, voici toutes les "
-"dernières coordonnées, au cas où vous voudriez diversifier vos options.\""
-
-#: src-en/data/events_special_guards.xml.append:58
-msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
-" and not(@lvl)]/event/choice/text"
-msgstr ""
-
-#: src-en/data/events_special_guards.xml.append:60
-msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
-" and not(@lvl)]/event/choice/event/text"
-msgstr ""
-"\"Voici l'emplacement actuel du labo RadiKal Bam, si vous avez des trucs "
-"explosifs, ou si vous en avez besoin de plus, vous savez qu'ils seront "
-"heureux de vous voir.\""
+"\"Vous avez eu du mal à arriver ici en un seul morceau, hein ? Je comprends, on est tous passés par là. Voici notre accueil client, vous en aurez besoin !\"\n"
+"\t\t\t\t\t\tPour un prix symbolique, les RadiKals effectuent rapidement des réparations approfondies sur votre vaisseau ! Apparemment, ils le feront autant de fois que vous en aurez besoin."
 
 #: src-en/data/events_special_guards.xml.append:68
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[1]/event/choice/text"
+msgstr ""
+
+#: src-en/data/events_special_guards.xml.append:75
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/text"
+msgstr "(N'importe quel équipement RK) Ok. Contacte-moi !"
+
+#: src-en/data/events_special_guards.xml.append:77
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/event/text"
+msgstr ""
+"\"Belle pièce ! Puisque vous faites déjà partie des nôtres, voici toutes les"
+" dernières coordonnées, au cas où vous voudriez diversifier vos options.\""
+
+#: src-en/data/events_special_guards.xml.append:79
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/event/choice/text"
+msgstr ""
+
+#: src-en/data/events_special_guards.xml.append:81
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+" and not(@lvl)]/event/choice/event/text"
+msgstr ""
+"\"Voici l'emplacement actuel du laboratoire RK Bam. Si vous avez des trucs "
+"explosifs, si vous en voulez plus, ou si vous voulez renforcer votre "
+"vaisseau, vous savez qu'ils seront heureux de vous voir.\""
+
+#: src-en/data/events_special_guards.xml.append:89
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:70
+#: src-en/data/events_special_guards.xml.append:91
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/event/text"
 msgstr ""
-"\"Rusés comme toujours, les Punk ont installé leur camp à cette balise. Pour"
-" tous vos besoins sophistiqués.\""
+"\"Rusés comme toujours, les RK Punk ont installé leur camp à cette balise. "
+"Pour tous vos besoins fantaisistes en électricité, bio, meurtres, et ainsi "
+"de suite.\""
 
-#: src-en/data/events_special_guards.xml.append:78
+#: src-en/data/events_special_guards.xml.append:99
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:80
+#: src-en/data/events_special_guards.xml.append:101
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/event/choice/event/text"
 msgstr ""
-"\"... et voici le labo Scorch. Ils ont besoin de fournitures. Vous savez, le genre qui brûle vraiment bien...\n"
+"\"... et voici le laboratoire Scorch. Ils ont besoin de ressources. Vous savez, le genre qui brûle vraiment bien...\n"
 "\t\t\t\t\t\t\t\t\t\t\t\tBon voyage ! Hahaha\"\n"
 "\t\t\t\t\t\t\t\t\t\t\t\t\n"
-"\t\t\t\t\t\t\t\t\t\t\t\tSi vous deviez deviner, les \"fournitures\" pourraient être des créatures vivantes, ce qui pourrait signifier toutes sortes d'ennuis.\n"
-"\t\t\t\t\t\t\t\t\t\t\t\tVous déciderez quoi faire en chemin, il n'y a rien d'autre à faire ici que de l'entretien."
+"\t\t\t\t\t\t\t\t\t\t\t\tÀ en deviner, les \"ressources\" pourraient bien être des créatures vivantes, ce qui pourrait signifier toutes sortes d'ennuis.\n"
+"\t\t\t\t\t\t\t\t\t\t\t\tVous déciderez quoi faire en chemin, il n'y a rien d'autre à faire ici que de la maintenance."
 
-#: src-en/data/events_special_guards.xml.append:93
+#: src-en/data/events_special_guards.xml.append:114
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/event/choice/event/choice[1]/text"
 msgstr "Vérifier le stockage."
 
-#: src-en/data/events_special_guards.xml.append:97
+#: src-en/data/events_special_guards.xml.append:118
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and not(@lvl)]/event/choice/event/choice/event/choice/event/choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:110
+#: src-en/data/events_special_guards.xml.append:131
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[@req=\"DJMOD_HAS_RADIKAL_GEAR\""
 " and @lvl=\"0\"]/text"
 msgstr ""
-"Vous n'avez aucun équipement RadiKal. Vous ne pilotez pas non plus de "
+"Vous ne possédez aucun équipement RadiKal. Vous ne pilotez pas non plus un "
 "vaisseau RK."
 
-#: src-en/data/events_special_guards.xml.append:115
+#: src-en/data/events_special_guards.xml.append:136
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/text"
-msgstr "Rookie."
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/text"
+msgstr "Tour."
 
-#: src-en/data/events_special_guards.xml.append:117
+#: src-en/data/events_special_guards.xml.append:138
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/text"
 msgstr ""
-"\"Oui, pas étonnant. Ton vaisseau a l'air d'avoir besoin de sérieuses "
-"améliorations. Est-ce que tu sais même ce que tu cherches ici ?\""
+"\"Ouais, sans blague. Votre vaisseau aurait bien besoin d'améliorations "
+"sérieuses. Savez-vous même ce que vous cherchez ici ?\""
 
-#: src-en/data/events_special_guards.xml.append:119
+#: src-en/data/events_special_guards.xml.append:140
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:121
+#: src-en/data/events_special_guards.xml.append:142
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/text"
 msgstr ""
-"\"Très bien, que ça va être ?.\" Le garde a fait apparaître une courte liste"
-" de destinations sur les communications, avec seulement des noms de code et "
-"tous les détails habituels sont manquants. Vous commencez à vous demander à "
-"quel point l'endroit où vous vous trouvez est louche."
+"\"Très bien, qu'est-ce que ce sera ?.\" Le garde a fait apparaître une "
+"courte liste de destinations sur les communications, avec seulement des noms"
+" de code, et tous les détails habituels manquent. Vous commencez à vous "
+"demander dans quel genre d'endroit louche vous vous êtes retrouvé."
 
-#: src-en/data/events_special_guards.xml.append:123
+#: src-en/data/events_special_guards.xml.append:144
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[1]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[1]/text"
 msgstr "Choisir \"Bam\"."
 
-#: src-en/data/events_special_guards.xml.append:125
+#: src-en/data/events_special_guards.xml.append:146
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[1]/event/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[1]/event/text"
 msgstr ""
-"\"Toujours fiable. 'En cas de doute, fais de gros trous dedans jusqu'à ce "
-"que ce soit en morceaux' ne rate jamais.\" Le garde vous transmet les "
+"\"Toujours fiable. 'Dans le doute, faites de gros trous dedans jusqu'à ce "
+"qu'il soit en morceaux' ne rate jamais.\" Le garde vous transmet les "
 "coordonnées, puis coupe rapidement les communications avant que vous ne "
 "puissiez répondre."
 
-#: src-en/data/events_special_guards.xml.append:133
+#: src-en/data/events_special_guards.xml.append:154
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[1]/event/choice[1]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[1]/event/choice[1]/text"
 msgstr "Vérifier le stockage."
 
-#: src-en/data/events_special_guards.xml.append:137
+#: src-en/data/events_special_guards.xml.append:158
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[1]/event/choice[2]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[1]/event/choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:143
+#: src-en/data/events_special_guards.xml.append:164
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[2]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[2]/text"
 msgstr "Choisir \"Punk\"."
 
-#: src-en/data/events_special_guards.xml.append:145
+#: src-en/data/events_special_guards.xml.append:166
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[2]/event/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[2]/event/text"
 msgstr ""
-"\"Un choix opportun, j'ai entendu dire qu'ils avaient du nouveau matériel de"
-" destruction élaboré et des trucs de nerds disponibles.\" Le garde vous "
+"\"Un choix opportun, j'ai entendu dire qu'ils ont du nouvel équipement de "
+"mise à mort élaboré et des trucs de nerds disponibles.\" Le garde vous "
 "transmet les coordonnées, puis coupe rapidement les communications avant que"
 " vous ne puissiez répondre."
 
-#: src-en/data/events_special_guards.xml.append:151
+#: src-en/data/events_special_guards.xml.append:172
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[2]/event/choice[1]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[2]/event/choice[1]/text"
 msgstr "Vérifier le stockage."
 
-#: src-en/data/events_special_guards.xml.append:155
+#: src-en/data/events_special_guards.xml.append:176
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[2]/event/choice[2]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[2]/event/choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:161
+#: src-en/data/events_special_guards.xml.append:182
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[3]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[3]/text"
 msgstr "Choisir \"Scorch\"."
 
-#: src-en/data/events_special_guards.xml.append:163
+#: src-en/data/events_special_guards.xml.append:184
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[3]/event/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[3]/event/text"
 msgstr ""
-"\"Tu cherches des trucs chauds, je vois.\" Le garde vous transmet les "
+"\"À la recherche de trucs brûlants, je vois.\" Le garde vous transmet les "
 "coordonnées, puis coupe rapidement les communications avant que vous ne "
 "puissiez répondre."
 
-#: src-en/data/events_special_guards.xml.append:169
+#: src-en/data/events_special_guards.xml.append:190
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[3]/event/choice[1]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[3]/event/choice[1]/text"
 msgstr "Vérifier le stockage."
 
-#: src-en/data/events_special_guards.xml.append:173
+#: src-en/data/events_special_guards.xml.append:194
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[1]/event/choice[3]/event/choice[2]/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[1]/event/choice[3]/event/choice[2]/text"
 msgstr ""
-
-#: src-en/data/events_special_guards.xml.append:181
-msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[2]/text"
-msgstr "Pas le moins du monde."
-
-#: src-en/data/events_special_guards.xml.append:183
-msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[2]/event/text"
-msgstr ""
-"Le garde fronce les sourcils. \"Je ne sais pas comment vous êtes arrivés ici mais ce n'est pas un endroit pour les touristes. Vous feriez mieux de vous diriger vers la sortie sans prendre de détours, et il n'y aura pas d'ennuis.\" Vous entendez ensuite le garde marmonner quelque chose à propos du \"besoin de renforcer la sécurité à nouveau\" avant que les communications ne soient coupées et vous réalisez qu'ils s'occupent déjà de la prochaine arrivée.\n"
-"\t\t\t\t\t\t\t\n"
-"\t\t\t\t\t\t\tVous passez à autre chose, confus et légèrement inquiet."
-
-#: src-en/data/events_special_guards.xml.append:187
-msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[2]/event/choice[1]/text"
-msgstr "Vérifier le stockage."
-
-#: src-en/data/events_special_guards.xml.append:191
-msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[3]/event/choice[2]/event/choice[2]/text"
-msgstr ""
-
-#: src-en/data/events_special_guards.xml.append:200
-msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[4]/text"
-msgstr ""
-"C'est ici le repaire des pirates, non ? On est là pour des affaires. "
-"*Crachat*"
 
 #: src-en/data/events_special_guards.xml.append:202
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[4]/event/text"
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[2]/text"
+msgstr "Pas le moins du monde."
+
+#: src-en/data/events_special_guards.xml.append:204
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[2]/event/text"
 msgstr ""
-"\"Oh.\" Le garde semble légèrement agacé, soit fatigué de devoir clarifier les choses à chaque fois, soit peu impressionné par votre attitude exagérée. \"Vous vous trompez légèrement, la piraterie n'est pas notre priorité, le progrès sans limites est plus proche de la réalité. Mais oui, vous pouvez mener ce que d'autres appellent des types de commerce illégaux ici. Très utile pour trouver le genre de choses dont nous avons besoin.\n"
-"\t\t\t\t\t\tJe ferai connaître votre demande à toutes les parties intéressées, et vous... ASSUREZ-VOUS d'apporter assez de ferraille. Nous aimons éviter les désordres inutiles.\"\n"
+"Le garde fronce les sourcils. \"Je ne sais pas comment vous êtes arrivés ici, mais ce n'est pas un endroit pour les touristes. Vous feriez mieux de vous diriger vers la sortie sans faire de détour, et il n'y aura pas d'ennuis.\" Vous entendez ensuite le garde marmonner quelque chose à propos de \"devoir renforcer la sécurité à nouveau\" avant que les communications ne soient coupées et vous réalisez qu'ils s'occupent déjà de la prochaine arrivée.\n"
+"\t\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t\tVous continuez votre route, confus et légèrement inquiet."
+
+#: src-en/data/events_special_guards.xml.append:208
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[2]/event/choice[1]/text"
+msgstr "Vérifier le stockage."
+
+#: src-en/data/events_special_guards.xml.append:212
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[4]/event/choice[2]/event/choice[2]/text"
+msgstr ""
+
+#: src-en/data/events_special_guards.xml.append:221
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[5]/text"
+msgstr ""
+"C'est ici le repaire des pirates, non ? On est là pour les affaires. "
+"*Crachat*"
+
+#: src-en/data/events_special_guards.xml.append:223
+msgid ""
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[5]/event/text"
+msgstr ""
+"\"Oh.\" Le garde semble légèrement agacé, soit lassé de devoir clarifier les choses à chaque fois, soit peu impressionné par votre attitude exagérée. \"Vous faites une légère erreur, la piraterie n'est pas notre priorité, nous visons plutôt le progrès sans limites. Mais oui, vous pouvez mener ce que d'autres appellent des échanges illégaux ici. Très utile pour se procurer le genre de choses dont nous avons besoin.\n"
+"\t\t\t\t\t\tJe ferai part de votre demande à toutes les parties intéressées, et vous... assurez-vous d'apporter assez de ferraille. Nous aimons éviter les désordres inutiles.\"\n"
 "\t\t\t\t\t\t\n"
 "\t\t\t\t\t\tIls vous envoient les coordonnées et vous laissent passer. Malgré le secret de ce secteur, vous pouvez déjà dire que cela aura un impact négatif sur votre réputation générale. Bien que si vous pouvez obtenir tout ce dont vous avez besoin par vous-même et auprès des pirates, cela n'a pas d'importance."
 
-#: src-en/data/events_special_guards.xml.append:214
+#: src-en/data/events_special_guards.xml.append:235
 msgid ""
-"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[1]/event/choice[4]/event/choice/text"
-msgstr "La piraterie, c'est assez cool. Ça vaut le coup."
+"data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_HAIL\"]/choice[5]/event/choice/text"
+msgstr "La piraterie, c'est plutôt cool. Ça vaut le coup."
 
-#: src-en/data/events_special_guards.xml.append:222
+#: src-en/data/events_special_guards.xml.append:243
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/text"
 msgstr "Les ignorer et essayer de passer en volant."
 
-#: src-en/data/events_special_guards.xml.append:224
+#: src-en/data/events_special_guards.xml.append:245
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/event/text"
 msgstr ""
-"Leurs armes se mettent immédiatement en ligne, ils s'attendaient clairement à cela. Cela aurait probablement pu être évité en échangeant quelques mots, mais ils ont déjà appelé des renforts.\n"
+"Leurs armes s'activent immédiatement, ils s'y attendaient clairement. Cela aurait probablement pu être évité en échangeant quelques mots, mais ils ont déjà appelé des renforts.\n"
 "\t\t\tÉtonnamment, il semble que le système d'O2 de leur vaisseau ait pris feu..."
 
-#: src-en/data/events_special_guards.xml.append:234
+#: src-en/data/events_special_guards.xml.append:255
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/event/choice/text"
-msgstr "Hah ! Quel idiot-"
+msgstr "Hah ! Quel idio-"
 
-#: src-en/data/events_special_guards.xml.append:236
+#: src-en/data/events_special_guards.xml.append:257
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/event/choice/event/text"
 msgstr ""
-"Soudain, vous entendez d'étranges bruits de téléportation dans votre vaisseau mais ne détectez aucun abordeur, juste des signatures thermiques... Votre vaisseau est aussi en feu ! Et bien plus que le leur.\n"
-"\t\t\t\t\tSi vous survivez à cela, vous pourriez découvrir ce qui s'est passé et comment en tirer parti."
+"Soudain, vous entendez d'étranges sons de téléportation dans votre vaisseau mais vous ne détectez aucun intrus, juste des signatures thermiques... Votre vaisseau est aussi en feu ! Et bien plus que le leur.\n"
+"\t\t\t\t\tSi vous survivez à cela, vous pourriez peut-être découvrir ce qui s'est passé et comment en tirer parti."
 
-#: src-en/data/events_special_guards.xml.append:245
+#: src-en/data/events_special_guards.xml.append:266
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL\"]/choice[2]/event/choice/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:269
+#: src-en/data/events_special_guards.xml.append:290
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DESTROY\"]/text"
 msgstr ""
-"Vous avez vaincu le garde RadiKal. Ce qui a pu se trouver dans leur "
+"Vous avez vaincu le garde RadiKal. Tout ce qui pouvait se trouver dans leur "
 "cargaison a certainement été détruit, mais vous pouvez au moins récupérer "
-"quelques fournitures du vaisseau."
+"quelques ressources du vaisseau."
 
-#: src-en/data/events_special_guards.xml.append:272
+#: src-en/data/events_special_guards.xml.append:293
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DESTROY\"]/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:277
+#: src-en/data/events_special_guards.xml.append:298
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/text"
 msgstr ""
 "Vous avez vaincu le garde RadiKal. Sans équipage à bord pour vous arrêter, "
 "vous pouvez enquêter sur leur cargaison. Vous trouvez du butin à ramener au "
-"vaisseau, et passez au démantèlement de leur coque."
+"vaisseau, et vous passez au démantèlement de leur coque."
 
-#: src-en/data/events_special_guards.xml.append:283
+#: src-en/data/events_special_guards.xml.append:304
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:285
+#: src-en/data/events_special_guards.xml.append:306
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/choice/event/text"
 msgstr "Vous trouvez de l'équipement RadiKal de rechange !"
 
-#: src-en/data/events_special_guards.xml.append:288
+#: src-en/data/events_special_guards.xml.append:309
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/choice/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:310
+#: src-en/data/events_special_guards.xml.append:331
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_FOLLOWUP\"]/text"
 msgstr ""
 "En tuant le garde RadiKal, vous les avez sans aucun doute poussés à envoyer "
-"des renforts pour vous traquer. Surveillez vos pas en explorant le secteur."
+"des renforts pour vous traquer. Faites attention pendant que vous explorez "
+"le secteur."
 
-#: src-en/data/events_special_guards.xml.append:318
+#: src-en/data/events_special_guards.xml.append:339
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_FOLLOWUP\"]/choice[1]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:322
+#: src-en/data/events_special_guards.xml.append:343
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_FOLLOWUP\"]/choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:331
+#: src-en/data/events_special_guards.xml.append:352
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/beaconType/unvisitedTooltip"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:332
+#: src-en/data/events_special_guards.xml.append:353
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/beaconType/visitedTooltip"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:333
+#: src-en/data/events_special_guards.xml.append:354
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/beaconType/undiscoveredTooltip"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:335
+#: src-en/data/events_special_guards.xml.append:356
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/text"
 msgstr ""
 "\"Quelqu'un doit bien être le garde. Ils faisaient juste leur travail, et "
 "connaissaient les risques. Mais vous aussi !\" Le vaisseau RadiKal attaque !"
 
-#: src-en/data/events_special_guards.xml.append:339
+#: src-en/data/events_special_guards.xml.append:360
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"REINFORCEMENTS_RADIKAL\"]/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:347
+#: src-en/data/events_special_guards.xml.append:368
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/beaconType/unvisitedTooltip"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:348
+#: src-en/data/events_special_guards.xml.append:369
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/beaconType/visitedTooltip"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:349
+#: src-en/data/events_special_guards.xml.append:370
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/beaconType/undiscoveredTooltip"
 msgstr ""
 
-#: src-en/data/events_special_guards.xml.append:351
+#: src-en/data/events_special_guards.xml.append:372
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/text"
 msgstr ""
 "\"Quelqu'un doit bien être le garde, ils faisaient juste leur travail et "
 "connaissaient les risques. Mais vous aussi !\" Le vaisseau RadiKal attaque !"
 
-#: src-en/data/events_special_guards.xml.append:357
+#: src-en/data/events_special_guards.xml.append:378
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"NEBULA_REINFORCEMENTS_RADIKAL\"]/choice/text"
 msgstr ""
