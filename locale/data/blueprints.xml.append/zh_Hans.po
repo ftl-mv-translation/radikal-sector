@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-07-17 19:19+0000\n"
+"PO-Revision-Date: 2026-07-19 08:23+0000\n"
 "Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/radikal-sector/datablueprintsxmlappend/zh_Hans/>\n"
@@ -53,39 +53,34 @@ msgid ""
 msgstr "技能提升速度很快"
 
 #: src-en/data/blueprints.xml.append:96
-#, fuzzy
 msgid "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/desc"
 msgstr ""
-"（RK 巴姆）通过对浸泡在酸液中并塞入炸弹的模物技变者施加电击来制造，使其疯狂且"
-"无法改变形态，但具备发射炸弹的能力。\n"
+"（RK 巴姆）此状态是通过对浸泡在酸液中并塞入炸弹的模物技变者施加电击来制造，使"
+"其疯狂且无法改变形态，但具备发射炸弹的能力。\n"
 "\t\t不再算作模物技变者或模物族。\n"
 "\n"
 "\t\t继承的属性：占用 0.5 船员槽位，免疫窒息，75% 火焰伤害抗性和眩晕抗性，0.8 "
 "倍移动速度。"
 
 #: src-en/data/blueprints.xml.append:101
-#, fuzzy
 msgid "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/title"
-msgstr "斯奎特"
+msgstr "维索"
 
 #: src-en/data/blueprints.xml.append:102
-#, fuzzy
 msgid "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/short"
-msgstr "斯奎特"
+msgstr "维索"
 
 #: src-en/data/blueprints.xml.append:105
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/powerList/power[1]"
-msgstr "主动能力：每跃迁一次，向敌舰传送一枚炸弹"
+msgstr "主动能力：每跃迁一次，向敌舰传送一枚造成 1 点伤害的炸弹"
 
 #: src-en/data/blueprints.xml.append:106
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/powerList/power[2]"
 msgstr ""
-"主动能力：每跃迁一次，在当前位置引爆炸弹 [style[color:ff3377]]（有友军伤害"
-"）[[/style]]"
+"主动能力：每跃迁一次，在当前位置引爆1伤害的炸弹 [style[color:ff3377]]（有友军"
+"伤害）[[/style]]"
 
 #: src-en/data/blueprints.xml.append:107
 msgid ""
@@ -119,32 +114,34 @@ msgstr "受折磨的融合体"
 #: src-en/data/blueprints.xml.append:133
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"unique_rk_defromorius\"]/short"
-msgstr ""
+msgstr "融合体"
 
 #: src-en/data/blueprints.xml.append:136
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"unique_rk_defromorius\"]/powerList/power[1]"
 msgstr ""
+"主动能力：自己与同一艘飞船上的友方单位受到的所有伤害降低 0.7 倍，并造成 1.5 "
+"倍伤害。[持续 10 秒。冷却 10 秒。]"
 
 #: src-en/data/blueprints.xml.append:137
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"unique_rk_defromorius\"]/powerList/power[2]"
-msgstr ""
+msgstr "311生命上限。0.5倍克隆速度"
 
 #: src-en/data/blueprints.xml.append:138
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"unique_rk_defromorius\"]/powerList/power[3]"
-msgstr ""
+msgstr "0.2 倍环境伤害"
 
 #: src-en/data/blueprints.xml.append:139
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"unique_rk_defromorius\"]/powerList/power[4]"
-msgstr ""
+msgstr "2倍近战速度"
 
 #: src-en/data/blueprints.xml.append:140
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"unique_rk_defromorius\"]/powerList/power[5]"
-msgstr ""
+msgstr "在朋克谐合作用下仍可被控制"
 
 #: src-en/data/blueprints.xml.append:156
 msgid "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/desc"
@@ -178,16 +175,14 @@ msgid ""
 msgstr "无法分裂、维修或灭火"
 
 #: src-en/data/blueprints.xml.append:170
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/powerList/power[4]"
-msgstr "所在的系统免疫火焰。所在的敌方系统受到的火焰伤害变为 2 倍"
+msgstr "所在的系统免疫火焰。所在的敌方系统受到的火焰伤害变为 1.6 倍"
 
 #: src-en/data/blueprints.xml.append:171
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/powerList/power[5]"
-msgstr "1.2倍移动速度"
+msgstr "1.1倍移动速度"
 
 #: src-en/data/blueprints.xml.append:172
 msgid ""
@@ -197,42 +192,42 @@ msgstr "1.5倍战斗伤害"
 #: src-en/data/blueprints.xml.append:188
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_bottledoxygen\"]/desc"
-msgstr ""
+msgstr "一瓶氧气。补充氧气。"
 
 #: src-en/data/blueprints.xml.append:190
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_bottledoxygen\"]/title"
-msgstr ""
+msgstr "氧气瓶"
 
 #: src-en/data/blueprints.xml.append:191
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_bottledoxygen\"]/short"
-msgstr ""
+msgstr "氧气瓶"
 
 #: src-en/data/blueprints.xml.append:194
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_bottledoxygen\"]/powerList/power[1]"
-msgstr ""
+msgstr "补充氧气速度极快"
 
 #: src-en/data/blueprints.xml.append:195
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_bottledoxygen\"]/powerList/power[2]"
-msgstr ""
+msgstr "可以引爆，造成30点船员伤害，并有60%的几率引发火灾"
 
 #: src-en/data/blueprints.xml.append:196
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_bottledoxygen\"]/powerList/power[3]"
-msgstr ""
+msgstr "如果房间里有盟友，可以移动"
 
 #: src-en/data/blueprints.xml.append:197
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_bottledoxygen\"]/powerList/power[4]"
-msgstr ""
+msgstr "什么都做不了了"
 
 #: src-en/data/blueprints.xml.append:198
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_bottledoxygen\"]/powerList/power[5]"
-msgstr ""
+msgstr "最大生命值是50，对环境伤害免疫"
 
 #: src-en/data/blueprints.xml.append:228
 msgid ""
@@ -243,7 +238,8 @@ msgstr "噬舰冲击"
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_COMBAT_SHIPVORE_RAM\"]/desc"
 msgstr ""
-"（RK 巴姆装备）反复冲撞敌人，必定造成伤害，通常还能获得免费维修，有时还有其他好处。\n"
+"（RK 巴姆装备）反复冲撞敌人，必定造成伤害，通常还能获得免费维修，有时还有其他"
+"好处。\n"
 "\t\t[在切换菜单中查看多效/组合]\n"
 "\n"
 "\t\t普通冲撞：（消耗 {）\n"
@@ -251,6 +247,7 @@ msgstr ""
 "\n"
 "\t\t满功率：（消耗 4{，[style[color:ff3377]]摧毁增强部件[[/style]]）\n"
 "\t\t6-7 点伤害，[style[color:ff3377]]20% 其他坏结果！[[/style]]\n"
+"\t\t\n"
 "\t\t应急供能器和燃料回收器可生效。\n"
 "\n"
 "\t\t可在空信标处花费一些废料进行加固，以承受下一次满功率使用。（不消耗信标）"
@@ -264,7 +261,8 @@ msgstr "噬舰冲击"
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"LOCKED_DJMOD_COMBAT_SHIPVORE_RAM\"]/desc"
 msgstr ""
-"（RK 巴姆装备）反复冲撞敌人，必定造成伤害，通常还能获得免费维修，有时还有其他好处。\n"
+"（RK 巴姆装备）反复冲撞敌人，必定造成伤害，通常还能获得免费维修，有时还有其他"
+"好处。\n"
 "\t\t[在切换菜单中查看多效/组合]\n"
 "\n"
 "\t\t普通冲撞：（消耗 {）\n"
@@ -272,9 +270,11 @@ msgstr ""
 "\n"
 "\t\t满功率：（消耗 4{，[style[color:ff3377]]摧毁增强部件[[/style]]）\n"
 "\t\t6-7 点伤害，[style[color:ff3377]]20% 坏结果！[[/style]]\n"
+"\t\t\n"
 "\t\t应急供能器和燃料回收器可生效。\n"
 "\n"
-"\t\t这艘舰船就是围绕这个锁定版本建造的，能够承受满功率使用。此外提供 9% 更快的护盾充能速度以及几率无视船体伤害。"
+"\t\t这艘舰船就是围绕这个锁定版本建造的，能够承受满功率使用。此外提供 9% 更快"
+"的护盾充能速度以及几率无视船体伤害。"
 
 #: src-en/data/blueprints.xml.append:267
 msgid ""
@@ -346,7 +346,7 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:325
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_BAM_DIVINE_ARMOR\"]/title"
-msgstr ""
+msgstr "强化船体"
 
 #: src-en/data/blueprints.xml.append:326
 msgid ""
@@ -377,7 +377,7 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:391
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_ARROGANCE_SHIELD\"]/title"
-msgstr ""
+msgstr "傲慢护盾"
 
 #: src-en/data/blueprints.xml.append:392
 msgid ""
@@ -447,17 +447,17 @@ msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_DREAD_DECK\"]/title"
 msgstr ""
 
 #: src-en/data/blueprints.xml.append:463
-#, fuzzy
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_DREAD_DECK\"]/desc"
 msgstr ""
 "（RK 朋克装备）本身不直接产生任何效果，但每当此增强部件出现时，经验丰富的船员"
 "就会开始祈祷并保持社交距离。\n"
 "\n"
 "\t\t登上你舰船的敌人受到的所有伤害提高 1.7 倍。\n"
-"\t\t你的船员从大多数来源获得的治疗效果提高 2.5 倍，克隆速度提高 2 倍，且克隆"
+"\t\t你的船员从大多数来源获得的治疗效果提高 1.6 倍，克隆速度提高 2 倍，且克隆"
 "不会失去技能。\n"
-"\t\t[style[color:ff3377]]警告：与你的任意船员处于同一舱室的所有船员，治疗效果"
-"降低 0.5 倍（不可叠加）且无法被克隆！[[/style]] [此减益效果呈现为紫色烟雾]"
+"\t\t[style[color:ff3377]]警告：与你的任意船员同处一室的所有船员，治疗效果降低"
+"至 0.5 倍[[/style]]（不叠加）[style[color:ff3377]]且无法被克隆！[[/style]] "
+"[此减益效果表现为紫色烟雾]"
 
 #: src-en/data/blueprints.xml.append:474
 msgid ""
@@ -478,7 +478,6 @@ msgid ""
 msgstr "朋克谐合"
 
 #: src-en/data/blueprints.xml.append:486
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_OWN_HARMONY_ON\"]/desc"
 msgstr ""
@@ -491,7 +490,7 @@ msgstr ""
 "\t\n"
 "\t可随时关闭。\n"
 "\n"
-"\t在空信标处，你可以花费 15 废料、1{ 和 1| 来培养一个半械分离者，"
+"\t在空信标处，你可以花费 25 废料、1{ 和 1| 来培养一个半械分离者，"
 "但[style[color:ff3377]]叛军舰队会加速 1 步[[/style]]"
 
 #: src-en/data/blueprints.xml.append:498
@@ -500,7 +499,6 @@ msgid ""
 msgstr "朋克谐合（关）"
 
 #: src-en/data/blueprints.xml.append:499
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_OWN_HARMONY_OFF\"]/desc"
 msgstr ""
@@ -513,7 +511,7 @@ msgstr ""
 "\t\n"
 "\t可随时开启。\n"
 "\n"
-"\t在空信标处，你可以花费 15 废料、1{ 和 1| 来培养一个半械分离者，"
+"\t在空信标处，你可以花费 25 废料、1{ 和 1| 来培养一个半械分离者，"
 "但[style[color:ff3377]]叛军舰队会加速 1 步[[/style]]"
 
 #: src-en/data/blueprints.xml.append:526
