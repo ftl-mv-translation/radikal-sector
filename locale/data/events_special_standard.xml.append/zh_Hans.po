@@ -1,16 +1,22 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-07-22 17:36+0000\n"
+"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/radikal-sector/dataevents_special_standardxmlappend/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events_special_standard.xml.append:34
-#, fuzzy
 msgid ""
 "data/events_special_standard.xml.append$//mod:findName[@name=\"REVISIT\"]/mod-"
 "append:choice/text"
-msgstr "花费 5~和 1}建造一个靶标，用于在太空中练习射击。"
+msgstr "（重新访问的信标）花费 5 ~和 1} 建造一个靶标，用于在太空中练习射击。"
 
 #: src-en/data/events_special_standard.xml.append:40
 msgid ""
@@ -32,7 +38,6 @@ msgstr ""
 "\t口袋里，封装在冻结的血液中的，是一张数据卡。你花不了多久就把它清理干净并解密了，里面包含了超光速跳跃坐标……"
 
 #: src-en/data/events_special_standard.xml.append:67
-#, fuzzy
 msgid ""
 "data/events_special_standard.xml.append$//event[@name=\"GET_COORDS_RADIKAL\"]/choice/text"
 msgstr "继续。"
@@ -53,16 +58,14 @@ msgid ""
 msgstr "到时候再说。"
 
 #: src-en/data/events_special_standard.xml.append:83
-#, fuzzy
 msgid ""
 "data/events_special_standard.xml.append$//event[@name=\"NOTGET_COORDS_RADIKAL\"]/text"
 msgstr ""
 "你的船员很喜欢这项练习，假装他们正在使用激进的战术与敌人作战。\n"
-"\t有那么一会儿，你琢磨着这项娱乐活动会不会产生什么特别的东西……\n"
+"\t有那么一会儿，你心想，这项娱乐活动大概有 50% 的几率会产生什么特别的东西……\n"
 "\t然后你结束了这一天，重新开始专注于你的任务。"
 
 #: src-en/data/events_special_standard.xml.append:87
-#, fuzzy
 msgid ""
 "data/events_special_standard.xml.append$//event[@name=\"NOTGET_COORDS_RADIKAL\"]/choice/text"
 msgstr "继续。"
