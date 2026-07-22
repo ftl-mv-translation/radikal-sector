@@ -1,24 +1,30 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-07-22 17:36+0000\n"
+"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/radikal-sector/dataevents_special_lightspeedxmlappend/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events_special_lightspeed.xml.append:37
 msgid ""
 "data/events_special_lightspeed.xml.append$//mod:findName[@name=\"ATLAS_MENU\"]/mod-"
 "append:choice/text"
-msgstr ""
+msgstr "前往拉迪卡尔星区。"
 
 #: src-en/data/events_special_lightspeed.xml.append:43
 msgid ""
 "data/events_special_lightspeed.xml.append$//mod:findName[@name=\"ATLAS_MENU_NOEQUIPMENT\"]/mod-"
 "append:choice/text"
-msgstr ""
+msgstr "前往拉迪卡尔星区。"
 
 #: src-en/data/events_special_lightspeed.xml.append:142
-#, fuzzy
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"ENTER_RADIKAL\"]/choice/text"
 msgstr "继续。"
@@ -27,26 +33,34 @@ msgstr "继续。"
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"RADIKAL_WARP\"]/text"
 msgstr ""
+"名称：拉迪卡尔星区\n"
+"\t类型：中立\n"
+"\t主导派系：RK 巴姆、RK 朋克、RK 灼烧\n"
+"\t叛军威胁等级：非常低\n"
+"\t标记点：RK 实验室、灼烧 BIL、海盗三合一、藏身处\n"
+"\t\n"
+"\t拉迪卡尔子派系在此开发非法装备的 [style[color:ff3377]]危险[[/style]] 星区。"
+"来自各地的专家秘密前来跟上技术发展、监管其贸易或进行窃取。小心你拥有的任何拉"
+"迪卡尔（RK）装备！\n"
+"\t[有反馈？请在 Discord 上联系 @Dj0z。]"
 
 #: src-en/data/events_special_lightspeed.xml.append:185
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"RADIKAL_WARP\"]/choice[1]/text"
-msgstr ""
+msgstr "退出超高速。"
 
 #: src-en/data/events_special_lightspeed.xml.append:189
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"RADIKAL_WARP\"]/choice[@req=\"COORDS\"]/text"
-msgstr ""
+msgstr "调整航径。"
 
 #: src-en/data/events_special_lightspeed.xml.append:271
-#, fuzzy
 msgid ""
 "data/events_special_lightspeed.xml.append$//mod:findName[@name=\"REROUTE_MENU\"]/mod-"
 "append:choice/text"
 msgstr "跃迁到拉迪卡尔星区。"
 
 #: src-en/data/events_special_lightspeed.xml.append:278
-#, fuzzy
 msgid ""
 "data/events_special_lightspeed.xml.append$//mod:findName[@name=\"REROUTE_MENU_LASTSTAND\"]/mod-"
 "append:choice/text"
@@ -56,13 +70,13 @@ msgstr "跃迁到拉迪卡尔星区。"
 msgid ""
 "data/events_special_lightspeed.xml.append$//mod:findName[@name=\"REROUTE_MENU_HAT\"]/mod-"
 "append:choice[1]/text"
-msgstr ""
+msgstr "前往拉迪卡尔星区。"
 
 #: src-en/data/events_special_lightspeed.xml.append:318
 msgid ""
 "data/events_special_lightspeed.xml.append$//mod:findName[@name=\"REROUTE_MENU_HAT\"]/mod-"
 "append:choice[2]/text"
-msgstr ""
+msgstr "拉迪卡尔星区已被你抛在身后。"
 
 #: src-en/data/events_special_lightspeed.xml.append:403
 msgid ""
@@ -90,13 +104,11 @@ msgid ""
 msgstr "你准备跃迁至新坐标处，并相应地调整航径。"
 
 #: src-en/data/events_special_lightspeed.xml.append:423
-#, fuzzy
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL\"]/choice[1]/event/choice/text"
 msgstr "继续。"
 
 #: src-en/data/events_special_lightspeed.xml.append:429
-#, fuzzy
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL\"]/choice[2]/text"
 msgstr "算了。"
@@ -127,13 +139,11 @@ msgid ""
 msgstr "你准备跃迁至新坐标处，并相应地调整航径。"
 
 #: src-en/data/events_special_lightspeed.xml.append:517
-#, fuzzy
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS\"]/choice[1]/event/choice/text"
 msgstr "继续。"
 
 #: src-en/data/events_special_lightspeed.xml.append:523
-#, fuzzy
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS\"]/choice[2]/text"
 msgstr "算了。"
@@ -142,23 +152,35 @@ msgstr "算了。"
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/text"
 msgstr ""
+"你即将调整航径。以下是该星区的航图集条目。\n"
+"\t名称：拉迪卡尔星区\n"
+"\t类型：中立\n"
+"\t主导派系：RK 巴姆、RK 朋克、RK 灼烧\n"
+"\t叛军威胁等级：非常低\n"
+"\t标记点：RK 实验室、灼烧 BIL、海盗三合一、藏身处\n"
+"\t\n"
+"\t拉迪卡尔子派系在此开发非法装备的 [style[color:ff3377]]危险[[/style]] 星区。"
+"有传言称其中可能涉及邪异力量。尽管如此，来自各地的专家仍会秘密前来，以跟上技"
+"术发展、尝试监管其贸易，或进行窃取。\n"
+"\t小心你拥有的任何拉迪卡尔（RK）装备！\n"
+"\t[有反馈？请在 Discord 上联系 @Dj0z。]"
 
 #: src-en/data/events_special_lightspeed.xml.append:601
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/choice[1]/text"
-msgstr ""
+msgstr "继续跳跃。"
 
 #: src-en/data/events_special_lightspeed.xml.append:603
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/choice[1]/event/text"
-msgstr ""
+msgstr "你准备跳转到新的坐标，并相应改变了飞行航线。"
 
 #: src-en/data/events_special_lightspeed.xml.append:610
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/choice[1]/event/choice/text"
-msgstr ""
+msgstr "继续..."
 
 #: src-en/data/events_special_lightspeed.xml.append:616
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/choice[2]/text"
-msgstr ""
+msgstr "算了。"
