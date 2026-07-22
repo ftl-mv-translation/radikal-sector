@@ -1,17 +1,26 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-07-22 17:36+0000\n"
+"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/radikal-sector/dataevents_special_boonsxmlappend/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events_special_boons.xml.append:7
 msgid ""
 "data/events_special_boons.xml.append$//event[@name=\"BOON_SELECT_RK_BAM_CREW\"]/text"
 msgstr ""
+"不知从何处传来一个声音，对你说话：“拉迪卡尔·巴姆的恩惠……你的拉迪卡尔船员将获"
+"得……29点生命值和1.1倍战斗伤害。你可以……感谢之前的挑战者。或者你……不感谢？谁说"
+"得准呢……”"
 
 #: src-en/data/events_special_boons.xml.append:10
-#, fuzzy
 msgid ""
 "data/events_special_boons.xml.append$//event[@name=\"BOON_SELECT_RK_BAM_CREW\"]/choice/text"
 msgstr "继续。"
@@ -20,9 +29,11 @@ msgstr "继续。"
 msgid ""
 "data/events_special_boons.xml.append$//event[@name=\"BOON_SELECT_RK_PUNK_CREW\"]/text"
 msgstr ""
+"不知从何处传来一个声音，对你说话：“拉迪卡尔·朋克的恩惠……你的拉迪卡尔船员将获"
+"得……40%更快的治疗和克隆速度。你可以……感谢之前的挑战者。或者你……不感谢？谁说得"
+"准呢……”"
 
 #: src-en/data/events_special_boons.xml.append:20
-#, fuzzy
 msgid ""
 "data/events_special_boons.xml.append$//event[@name=\"BOON_SELECT_RK_PUNK_CREW\"]/choice/text"
 msgstr "继续。"
@@ -31,9 +42,11 @@ msgstr "继续。"
 msgid ""
 "data/events_special_boons.xml.append$//event[@name=\"BOON_SELECT_RK_SCORCH_CREW\"]/text"
 msgstr ""
+"不知从何处传来一个声音，对你说话：“拉迪卡尔·灼烧的恩惠……你的拉迪卡尔船员在火"
+"焰中将获得……1.3倍移动速度和战斗伤害。你可以……感谢之前的挑战者。或者你……不感谢"
+"？谁说得准呢……”"
 
 #: src-en/data/events_special_boons.xml.append:30
-#, fuzzy
 msgid ""
 "data/events_special_boons.xml.append$//event[@name=\"BOON_SELECT_RK_SCORCH_CREW\"]/choice/text"
 msgstr "继续。"
@@ -42,9 +55,11 @@ msgstr "继续。"
 msgid ""
 "data/events_special_boons.xml.append$//event[@name=\"BOON_SELECT_RK_BAM_EQUIPMENT\"]/text"
 msgstr ""
+"不知从何处传来一个声音，对你说话：“挑战者！我赐予你拉迪卡尔坚韧祝福！你的飞船"
+"将有 +8% 的几率抵抗敌方武器造成的船体、系统和离子伤害，愿你的旅途受到祝福！你"
+"要感谢谁？当然是上一位挑战者！哈哈哈！”"
 
 #: src-en/data/events_special_boons.xml.append:42
-#, fuzzy
 msgid ""
 "data/events_special_boons.xml.append$//event[@name=\"BOON_SELECT_RK_BAM_EQUIPMENT\"]/choice/text"
 msgstr "继续。"
@@ -53,9 +68,11 @@ msgstr "继续。"
 msgid ""
 "data/events_special_boons.xml.append$//event[@name=\"BOON_SELECT_RK_PUNK_EQUIPMENT\"]/text"
 msgstr ""
+"不知从何处传来一个声音，对你说话：“挑战者！我赐予你拉迪卡尔狡黠祝福！你的系统"
+"维修速度将提升至 1.3 倍，愿你的旅途受到祝福！你要感谢谁？当然是上一位挑战者！"
+"哈哈哈！”"
 
 #: src-en/data/events_special_boons.xml.append:52
-#, fuzzy
 msgid ""
 "data/events_special_boons.xml.append$//event[@name=\"BOON_SELECT_RK_PUNK_EQUIPMENT\"]/choice/text"
 msgstr "继续。"
@@ -64,9 +81,11 @@ msgstr "继续。"
 msgid ""
 "data/events_special_boons.xml.append$//event[@name=\"BOON_SELECT_RK_SCORCH_EQUIPMENT\"]/text"
 msgstr ""
+"不知从何处传来一个声音，对你说话：“挑战者！我赐予你拉迪卡尔狂热祝福！你将获"
+"得 +8% 的武器充能速度和闪避率，愿你的旅途受到祝福！你要感谢谁？当然是上一位挑"
+"战者！哈哈哈！”"
 
 #: src-en/data/events_special_boons.xml.append:62
-#, fuzzy
 msgid ""
 "data/events_special_boons.xml.append$//event[@name=\"BOON_SELECT_RK_SCORCH_EQUIPMENT\"]/choice/text"
 msgstr "继续。"
@@ -75,6 +94,10 @@ msgstr "继续。"
 msgid ""
 "data/events_special_boons.xml.append$//event[@name=\"BOON_SELECT_RK_BPS_EQUIPMENT\"]/text"
 msgstr ""
+"不知从何处传来一个声音，对你说话：“挑战者！我赐予你拉迪卡尔工程祝福！你的飞船"
+"将有 +4% 的几率抵抗敌方武器造成的船体、系统和离子伤害，你的系统维修速度将提升"
+"至 1.15 倍，你将获得 +4% 的武器充能速度和闪避率，愿你的旅途受到祝福！你要感谢"
+"谁？当然是上一位挑战者！哈哈哈！”"
 
 #: src-en/data/events_special_boons.xml.append:72
 #, fuzzy
