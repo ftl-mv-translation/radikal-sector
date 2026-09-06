@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-09-05 15:14+0000\n"
+"PO-Revision-Date: 2026-09-07 12:36+0000\n"
 "Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "dataevents_sector_radikalxml/ru/>\n"
@@ -1514,7 +1514,6 @@ msgid ""
 msgstr "Продолжить..."
 
 #: src-en/data/events_sector_radikal.xml:1597
-#, fuzzy
 msgid "data/events_sector_radikal.xml$//event[@name=\"RKS_BIL_BAM_SYSTEMS\"]/text"
 msgstr ""
 "Внутри этого астероидного пояса вы натыкаетесь на странную мастерскую, в "
@@ -1528,12 +1527,12 @@ msgstr ""
 "\t\t\n"
 "\t\t\"Ваш корабль - мы можем его усовершенствовать. Брутально, если вы "
 "пропустили эту часть. За небольшую плату в виде лома.\n"
-"\t\tСначала мы [style[color:ff3377]]удаляем весь лишний корпус.[[/style]] "
-"Затем вы выбираете систему, которая получит 2 повышения уровня мощности, "
-"даже за пределами нормальных ограничений вашего жалкого корабля, если это "
-"необходимо.\n"
-"\t\tСистемы, с которыми мы работаем: Дроны, Щиты, Оружие. В алфавитном "
-"порядке, чтобы не запутать ваш плотский мозг.\n"
+"\t\tВо-первых, нам нужно [style[color:ff3377]]удалить ВСЕ ненужные элементы "
+"корпуса.[[/style]] Затем вы выбираете систему, которая получит 2 повышения "
+"уровня мощности, даже за пределами нормальных ограничений вашего жалкого "
+"корабля, если это необходимо.\n"
+"\t\tСистемы, с которыми мы работаем: Двигатели, Дроны, Щиты, Оружие. В "
+"алфавитном порядке, чтобы не запутать ваш плотский мозг.\n"
 "        \n"
 "\t\tЗатем вы уйдете. Или перед уходом проведите послеремонтное обслуживание "
 "на корабле. Рекомендуется на основании статистических данных.\n"
@@ -1548,6 +1547,8 @@ msgstr ""
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_BIL_BAM_SYSTEMS\"]/choice[@req=\"RKS_HAS_SYSTEMS_FOR_BAM_BIL\"]/text"
 msgstr ""
+"ПРЕДУПРЕЖДЕНИЕ: [style[color:ff3377]]У вас нет подходящих систем![[/style]] "
+"Эта процедура нанесет вам урон, не принеся никакой пользы!"
 
 #: src-en/data/events_sector_radikal.xml:1620
 msgid ""
@@ -1585,7 +1586,7 @@ msgstr "Улучшить мой блок Контроля дронов."
 #: src-en/data/events_sector_radikal.xml:1647
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_BIL_BAM_SYSTEMS\"]/choice[2]/event/choice/event/choice[@req=\"engines\"]/text"
-msgstr ""
+msgstr "Улучшить мои Двигатели"
 
 #: src-en/data/events_sector_radikal.xml:1652
 msgid ""
@@ -1606,6 +1607,13 @@ msgstr "Подождите-ка... у нас же даже нет подходя
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_BIL_BAM_SYSTEMS\"]/choice[2]/event/choice/event/choice[5]/event/text"
 msgstr ""
+"\"Типичная проблема с навыками принятия решений. Отчет отклонен.\n"
+"\t\t\t\t\t\t\t\tПроцедура выполнена на 100%. Автоматический корабль "
+"последующего обслуживания запущен. До свидания\".\n"
+"\n"
+"\t\t\t\t\t\t\tТеперь, когда вы видите, насколько непомерно высока стоимость "
+"ремонта, вам становится понятно, как этот бизнес может оставаться на "
+"плаву...\""
 
 #: src-en/data/events_sector_radikal.xml:1678
 msgid ""
@@ -2875,7 +2883,6 @@ msgid ""
 msgstr "Пиявка."
 
 #: src-en/data/events_sector_radikal.xml:2898
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK_2\"]/choice[@req=\"leech\"]/event/text"
 msgstr ""
@@ -3589,10 +3596,9 @@ msgid ""
 msgstr "Продолжим..."
 
 #: src-en/data/events_sector_radikal.xml:3560
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"zoltan_martyr\"]/text"
-msgstr "Мученик."
+msgstr "Мученик Вестников Заката."
 
 #: src-en/data/events_sector_radikal.xml:3562
 msgid ""
