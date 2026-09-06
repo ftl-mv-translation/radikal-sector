@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-09-05 15:14+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-09-07 12:36+0000\n"
+"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
 "Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
 "dataeventsxmlappend/ru/>\n"
 "Language: ru\n"
@@ -184,12 +184,11 @@ msgstr ""
 "места, куда она вела. Идем дальше."
 
 #: src-en/data/events.xml.append:478
-#, fuzzy
 msgid ""
 "data/events.xml.append$/dummyroot/event[@name=\"RK_A_OUTSIDE_POLICE_INTRO_QUEST_START\"]/text"
 msgstr ""
-"Здесь находится корабль в расцветке элиты, оснащенный совершенно уникальным "
-"наступательным, оборонительным и разведывательным оборудованием.\n"
+"Здесь находится корабль с [style[color:ff3377]]особым наступательным, "
+"оборонительным и разведывательным оборудованием[[/style]] в цветах элиты.\n"
 "\t\tСудя по тому, как быстро они выходят на связь, они, должно быть, "
 "находятся в состоянии повышенной боевой готовности."
 
@@ -197,16 +196,15 @@ msgstr ""
 msgid ""
 "data/events.xml.append$/dummyroot/event[@name=\"RK_A_OUTSIDE_POLICE_INTRO_QUEST_START\"]/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "У вас нет съемного оборудования РадиКал (РК)."
 
 #: src-en/data/events.xml.append:491
-#, fuzzy
 msgid ""
 "data/events.xml.append$/dummyroot/event[@name=\"RK_A_OUTSIDE_POLICE_INTRO_QUEST_START\"]/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"1\"]/text"
 msgstr ""
-"У вас есть оборудование РадиКал (РК), которое по определению запрещено "
-"практически везде.\n"
+"У вас есть съемное оборудование РадиКал (РК), которое по определению "
+"запрещено практически везде.\n"
 "\t\t\tСейчас это может дорого вам обойтись, так как, судя по всему, они "
 "специально сканируют ваш корабль в поисках его!"
 
@@ -219,6 +217,7 @@ msgstr "Принять их вызов."
 msgid ""
 "data/events.xml.append$/dummyroot/event[@name=\"RK_A_OUTSIDE_POLICE_INTRO_QUEST_START\"]/choice[3]/event/text"
 msgstr ""
+"\"Здравствуйте, граждане. Вы что-нибудь знаете о группировке Радикалов?\""
 
 #: src-en/data/events.xml.append:503
 msgid ""
@@ -226,20 +225,19 @@ msgid ""
 msgstr "Есть ли среди нас радикалы? Не думаю."
 
 #: src-en/data/events.xml.append:505
-#, fuzzy
 msgid ""
 "data/events.xml.append$/dummyroot/event[@name=\"RK_A_OUTSIDE_POLICE_INTRO_QUEST_START\"]/choice[3]/event/choice/event/text"
 msgstr ""
 "\"Я не совсем это имел в виду. Тогда позвольте мне просветить вас по вопросу "
 "общественной безопасности.\n"
 "\t\t\t\t\t\t\n"
-"\t\t\t\t\t\tРК - это полусекретная группа плохих людей, которые совершают "
-"плохие поступки и подстрекают других к тому же, продавая им плохое "
-"оборудование, которое они сами изготовили.\n"
+"\t\t\t\t\t\tРадиКалы, также известные как \"РК\", - это тайная группа "
+"злодеев, которые совершают плохие поступки и подстрекают других к тому же, "
+"продавая им плохие вещи, которые они сами создали.\n"
 "\n"
 "\t\t\t\t\t\tВы выглядите как добропорядочный гражданин, раз у вас нет "
 "ничего, связанного с РадиКал. Да, мы тщательно просканировали ваш корабль - "
-"дважды, на всякий случай."
+"дважды, на всякий случай\"."
 
 #: src-en/data/events.xml.append:512
 msgid ""
@@ -250,45 +248,63 @@ msgstr "Эй, ладно, а как же уважение к частной жи
 msgid ""
 "data/events.xml.append$/dummyroot/event[@name=\"RK_A_OUTSIDE_POLICE_INTRO_QUEST_START\"]/choice[3]/event/choice/event/choice/event/text"
 msgstr ""
+"\"Не притворяйтесь хипстером - всем известно, что \"конфиденциальность\" "
+"умерла где-то в начале XXI века. Вернемся к теме.\n"
+"                        \n"
+"                            Мы с гордостью являемся частью Секретной службы "
+"Анти-РадиКалов (ССАР). В обычных обстоятельствах мы бы вам об этом не "
+"рассказали, но нам ну... Э-э, нам бы НЕ ПОМЕШАЛА помощь, а вы выглядите "
+"способными.\n"
+"                            Если вы хотите обеспечить свою безопасность или "
+"даже присоединиться к благородной борьбе против них, мы продаем нужные "
+"инструменты, которые вы не найдете больше нигде.\n"
+"                            \n"
+"                            Но сначала мы должны проверить ваш корабль на "
+"наличие оборудования РК. Есть ли у вас что-нибудь, о чем мы должны знать?\""
 
 #: src-en/data/events.xml.append:522
 msgid ""
 "data/events.xml.append$/dummyroot/event[@name=\"RK_A_OUTSIDE_POLICE_INTRO_QUEST_START\"]/choice[3]/event/choice/event/choice/event/choice[1]/text"
 msgstr ""
+"(Съемное оборудование РК) Мы просто хотели узнать, как избавиться от этого "
+"проклятого хлама, офицер!"
 
 #: src-en/data/events.xml.append:528
 msgid ""
 "data/events.xml.append$/dummyroot/event[@name=\"RK_A_OUTSIDE_POLICE_INTRO_QUEST_START\"]/choice[3]/event/choice/event/choice/event/choice[2]/text"
-msgstr ""
+msgstr "У нас нет ничего такого, офицер."
 
 #: src-en/data/events.xml.append:530
 msgid ""
 "data/events.xml.append$/dummyroot/event[@name=\"RK_A_OUTSIDE_POLICE_INTRO_QUEST_START\"]/choice[3]/event/choice/event/choice/event/choice[2]/event/text"
 msgstr ""
+"Судно, должно быть, следило за вами с того самого момента, как вы совершили "
+"прыжок.\n"
+"\t\t\t\t\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t\t\t\t\t\"Вы принимаете нас за дураков, но вам будет вынесен "
+"приговор, презренные террористы, симпатизирующие хаосу. Мне так и не удалось "
+"найти тех, кто несет прямую ответственность, но по крайней мере вы "
+"поплатитесь за Северную лунную базу Зета-708T56-C Секундуса!\""
 
 #: src-en/data/events.xml.append:535
 msgid ""
 "data/events.xml.append$/dummyroot/event[@name=\"RK_A_OUTSIDE_POLICE_INTRO_QUEST_START\"]/choice[3]/event/choice/event/choice/event/choice[2]/event/choice/text"
-msgstr ""
+msgstr "Ох, ой..."
 
 #: src-en/data/events.xml.append:537
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_RK_DETECTED_ATTACK\"]/text"
 msgstr ""
-"У вас даже нет времени отдать приказ. Этот корабль, наверное, сканировал вас "
-"с самого момента вашего прыжка. И они уже решили уничтожить вас!\n"
-"\t\t\t\t\n"
-"\t\t\t\t\"Будет вынесен приговор вам, презренные террористы, симпатизирующие "
-"Хаосу. Мне так и не удалось найти тех, кто несет прямую ответственность, но "
-"по крайней мере вы поплатитесь за Северную лунную базу Зета-708T56-C "
-"Секундус!\"\n"
-"\t\t\t\n"
-"\t\t\tОни запускают свои орудия (которые, судя по всему, специально созданы "
-"для уничтожения кораблей РК) и одновременно выпускают вспомогательный "
+"В одно мгновение они активируют свое вооружение (которое, судя по всему, "
+"специально создано для уничтожения кораблей РК), выпускают вспомогательный "
 "корабль с мощными двигателями и пушками, который быстро улетает на некоторое "
-"расстояние, чтобы обеспечить артиллерийскую поддержку.\n"
-"\t\t\tКто бы они ни были, эти парни не шутят!"
+"расстояние, чтобы обеспечить артиллерийскую поддержку, а внезапный взрыв "
+"заставляет зазвенеть в ваших ушах.\n"
+"\t\t\t\t\t\t\t\t\t\t\t\tНаверное, они применили какой-то боевой модуль к "
+"вашим Двигателям!\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\n"
+"\n"
+"\t\t\t\t\t\t\t\t\t\t\t\tЭти парни не шутят. Вы быстро готовитесь к бою!"
 
 #: src-en/data/events.xml.append:547
 msgid ""
@@ -299,37 +315,53 @@ msgstr "Продолжить..."
 msgid ""
 "data/events.xml.append$/dummyroot/event[@name=\"RK_A_OUTSIDE_POLICE_INTRO_QUEST_START\"]/choice[3]/event/choice/event/choice/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "У нас нет ничего такого, офицер."
 
 #: src-en/data/events.xml.append:558
 msgid ""
 "data/events.xml.append$/dummyroot/event[@name=\"RK_A_OUTSIDE_POLICE_INTRO_QUEST_START\"]/choice[3]/event/choice/event/choice/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
+"\"Хорошо. Теперь, когда вы понимаете, о чем идет речь, у вас есть какая-"
+"нибудь информация о РадиКалах?\""
 
 #: src-en/data/events.xml.append:561
 msgid ""
 "data/events.xml.append$/dummyroot/event[@name=\"RK_A_OUTSIDE_POLICE_INTRO_QUEST_START\"]/choice[3]/event/choice/event/choice/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/choice[1]/text"
-msgstr ""
+msgstr "Нет, но я бы хотел посмотреть на то оборудование, о котором выговорили."
 
 #: src-en/data/events.xml.append:563
 msgid ""
 "data/events.xml.append$/dummyroot/event[@name=\"RK_A_OUTSIDE_POLICE_INTRO_QUEST_START\"]/choice[3]/event/choice/event/choice/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/choice[1]/event/text"
 msgstr ""
+"\"Это оборудование в мгновение ока сделает вас охотником за РК или защитит "
+"от их коварных уловок! Не дайте ему попасть в чужие руки.\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t\t\t\t\t\t\tА если впоследствии вам встретится кто-нибудь из "
+"этих подонков: не отвечайте на их вызовы, цельтесь в голову и \"Да "
+"восторжествует Порядок\"\"."
 
 #: src-en/data/events.xml.append:572
 msgid ""
 "data/events.xml.append$/dummyroot/event[@name=\"RK_A_OUTSIDE_POLICE_INTRO_QUEST_START\"]/choice[3]/event/choice/event/choice/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/choice[2]/text"
-msgstr ""
+msgstr "Ну, я думаю, они отправились в ту сторону."
 
 #: src-en/data/events.xml.append:574
 msgid ""
 "data/events.xml.append$/dummyroot/event[@name=\"RK_A_OUTSIDE_POLICE_INTRO_QUEST_START\"]/choice[3]/event/choice/event/choice/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/choice[2]/event/text"
 msgstr ""
+"\"Спасибо за сотрудничество. Альбрехт, соверши прыжок к ближайшему маяку и "
+"передай расчетные координаты цели в штаб! На перезарядку нашего прыжкового "
+"двигателя уйдет целый день\".\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t \n"
+"\t\t\t\t\t\t\t\t\t\t\t\tОни тут же бросают ящик с наградой через шлюз и "
+"прерывают связь. Остается надеяться, что, по какому-то счастливому стечению "
+"обстоятельств, в том направлении действительно есть РадиКалы, иначе вам "
+"лучше больше никогда не сталкиваться с этим кораблем."
 
 #: src-en/data/events.xml.append:584
 msgid ""
@@ -342,12 +374,16 @@ msgid ""
 "data/events.xml.append$/dummyroot/event[@name=\"RK_A_OUTSIDE_POLICE_INTRO_QUEST_START\"]/choice[3]/event/choice/event/choice/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/choice[3]/event/text"
 msgstr ""
+"\"Хм! У вас нет оборудования, но вы, должно быть, их сторонники. Та же самая "
+"мразь, только инструменты другие. Альбрехт?\"\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\"Готов, сэр\".\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\"Запускай!\""
 
 #: src-en/data/events.xml.append:591
 msgid ""
 "data/events.xml.append$/dummyroot/event[@name=\"RK_A_OUTSIDE_POLICE_INTRO_QUEST_START\"]/choice[3]/event/choice/event/choice/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/choice[3]/event/choice/text"
-msgstr ""
+msgstr "Приступим!"
 
 #: src-en/data/events.xml.append:635
 msgid ""
@@ -355,28 +391,27 @@ msgid ""
 msgstr "...Мне это совсем не нравится. Попробовать убежать!"
 
 #: src-en/data/events.xml.append:665
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER2_QUEST_START\"]/text"
 msgstr ""
-"Здесь находится корабль с совершенно особым оснащением; судя по тому, как "
-"быстро они выходят на связь, он, по-видимому, находится в состоянии "
+"Здесь находится корабль, оснащенный [style[color:ff3377]]особым "
+"наступательным, оборонительным и разведывательным оборудованием[[/style]], "
+"который, судя по тому, как быстро они вышли на связь, находится в состоянии "
 "повышенной боевой готовности."
 
 #: src-en/data/events.xml.append:673
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER2_QUEST_START\"]/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "У вас нет съемного оборудования РадиКал (РК)."
 
 #: src-en/data/events.xml.append:678
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER2_QUEST_START\"]/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"1\"]/text"
 msgstr ""
-"У вас есть оборудование РадиКал (РК), которое по определению запрещено "
-"практически везде.\n"
+"У вас есть съемное оборудование РадиКал (РК), которое по определению "
+"запрещено практически везде.\n"
 "\t\t\tСейчас это может дорого вам обойтись, так как, судя по всему, они "
 "специально сканируют ваш корабль в поисках его!"
 
@@ -389,44 +424,51 @@ msgstr "Принять их вызов."
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER2_QUEST_START\"]/choice[3]/event/text"
 msgstr ""
+"\"Гражданин, это секретная служба по борьбе с РадиКалами. Вы нашли какое-"
+"нибудь оборудование РадиКалов, чтобы мы могли его безопасно уничтожить?\""
 
 #: src-en/data/events.xml.append:691
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER2_QUEST_START\"]/choice[3]/event/choice[1]/text"
 msgstr ""
+"(Съемное оборудование РК) Вот все эти отвратительные вещи, связанные с "
+"убийствами, которые мы нашли, офицер."
 
 #: src-en/data/events.xml.append:697
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER2_QUEST_START\"]/choice[3]/event/choice[2]/text"
-msgstr ""
+msgstr "У нас нет ничего такого, офицер."
 
 #: src-en/data/events.xml.append:699
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER2_QUEST_START\"]/choice[3]/event/choice[2]/event/text"
 msgstr ""
+"Судно, должно быть, сканировало вас с того самого момента, как вы совершили "
+"прыжок.\n"
+"\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t\"Неверный ответ, отброс. И у нас есть все необходимое, чтобы "
+"стереть тебя с лица земли. Расследование так и не привело к каким-либо "
+"определенным результатам, но, по крайней мере, ТЫ поплатишься за то, что "
+"случилось с МОИМ отрядом!\""
 
 #: src-en/data/events.xml.append:704
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER2_QUEST_START\"]/choice[3]/event/choice[2]/event/choice/text"
-msgstr ""
+msgstr "Ох, ой..."
 
 #: src-en/data/events.xml.append:706
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER2_RK_DETECTED_ATTACK\"]/text"
 msgstr ""
-"У вас даже нет времени отдать приказ. Этот корабль, наверное, сканировал вас "
-"с самого момента вашего прыжка. И они уже решили уничтожить вас!\n"
-"\t\t\t\t\n"
-"\t\t\t\t\"Вы будете наказаны, презренные террористы, симпатизирующие Хаосу. "
-"Мне так и не удалось найти тех, кто несет прямую ответственность, но вы, по "
-"крайней мере, поплатитесь за то, что случилось с МОИМ отрядом!\"\n"
-"\t\t\t\n"
-"\t\t\tОни запускают свои орудия (которые, судя по всему, специально созданы "
-"для уничтожения кораблей РК) и одновременно выпускают вспомогательный "
+"В одно мгновение они активируют свое вооружение (которое, судя по всему, "
+"специально создано для уничтожения кораблей РК), выпускают вспомогательный "
 "корабль с мощными двигателями и пушками, который быстро улетает на некоторое "
-"расстояние, чтобы обеспечить артиллерийскую поддержку.\n"
-"\t\t\tКто бы они ни были, эти парни не шутят!"
+"расстояние, чтобы обеспечить артиллерийскую поддержку, а внезапный взрыв "
+"заставляет уши зазвенеть.\n"
+"\t\t\t\t\t\t\t\tОни, должно быть, применили какой-то боевой модуль к вашим "
+"Двигателям!\n"
+"\t\t\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t\t\tЭти парни не шутят. Вы быстро готовитесь к бою!"
 
 #: src-en/data/events.xml.append:716
 msgid ""
@@ -437,13 +479,13 @@ msgstr "Продолжить..."
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER2_QUEST_START\"]/choice[3]/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "У нас нет ничего такого, офицер."
 
 #: src-en/data/events.xml.append:727
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER2_QUEST_START\"]/choice[3]/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/text"
-msgstr ""
+msgstr "\"Хорошо. Вы видели в этом секторе кого-нибудь из РадиКалов?\""
 
 #: src-en/data/events.xml.append:730
 msgid ""
@@ -456,6 +498,9 @@ msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER2_QUEST_START\"]/choice[3]/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/choice[1]/event/text"
 msgstr ""
+"\"Тоже неплохо. Итак, если вы хотите приобрести Анти-РК оборудование, смело "
+"закупайтесь. Мы - единственная организация, имеющая право на его продажу\".\n"
+"\t\t\t\t\t\t\t\t\"Да воцарится порядок\"."
 
 #: src-en/data/events.xml.append:740
 msgid ""
@@ -464,15 +509,14 @@ msgid ""
 msgstr "Они пошли туда."
 
 #: src-en/data/events.xml.append:742
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER2_QUEST_START\"]/choice[3]/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/choice[2]/event/text"
 msgstr ""
-"\"Спасибо за сотрудничество\". Они тут же бросают ящик с вознаграждением "
-"через шлюз и улетают. Надеемся, что, по какому-то стечению обстоятельств, в "
-"том направлении действительно есть Радикалы, иначе вам вам лучше надеяться, "
-"что вы больше никогда не увидите этот корабль."
+"\"Спасибо за сотрудничество\". Они тут же бросают стандартный ящик с "
+"вознаграждением через шлюз и улетают. Остается надеяться, что, по какому-то "
+"счастливому стечению обстоятельств, в том направлении действительно есть "
+"РадиКалы, иначе вам лучше больше никогда не сталкиваться с этим кораблем."
 
 #: src-en/data/events.xml.append:749
 msgid ""
@@ -481,20 +525,19 @@ msgid ""
 msgstr "Может быть, а может и нет, но мы на вас нападаем!"
 
 #: src-en/data/events.xml.append:751
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER2_QUEST_START\"]/choice[3]/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/choice[3]/event/text"
 msgstr ""
-"\"Хм! У вас нет нужного снаряжения, но вы, должно быть, их сторонники. Та же "
-"самая мразь, только инструменты другие. Герберт?\"\n"
-"\t\t\t\t\t\t\"Готов, сэр\".\n"
-"\t\t\t\t\t\t\"Запускай!\"\n"
+"\"Хм! У вас нет оборудования, но вы, должно быть, их сторонники. Та же самая "
+"мразь, только инструменты другие. Герберт?\"\n"
+"\t\t\t\t\t\t\t\t\"Готов, сэр\".\n"
+"\t\t\t\t\t\t\t\t\"Запускай!\"\n"
 "\n"
-"\t\t\t\t\t\tОни включают оружие и одновременно выпускают вспомогательный "
+"\t\t\t\t\t\t\t\tОни включают оружие и одновременно выпускают вспомогательный "
 "корабль с мощными двигателями и пушками, который быстро улетает на некоторое "
 "расстояние, чтобы обеспечить артиллерийскую поддержку.\n"
-"\t\t\t\t\t\tКто бы они ни были, эти парни не шутят!"
+"\t\t\t\t\t\t\t\tКто бы они ни были, эти парни не шутят!"
 
 #: src-en/data/events.xml.append:761
 msgid ""
@@ -508,28 +551,27 @@ msgid ""
 msgstr "...Мне это совсем не нравится. Попробовать убежать!"
 
 #: src-en/data/events.xml.append:835
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER3_QUEST_START\"]/text"
 msgstr ""
-"Здесь находится корабль с совершенно особым оснащением; судя по тому, как "
-"быстро они выходят на связь, он, по-видимому, находится в состоянии "
+"Здесь находится корабль, оснащенный [style[color:ff3377]]особым "
+"наступательным, оборонительным и разведывательным оборудованием[[/style]], "
+"который, судя по тому, как быстро они вышли на связь, находится в состоянии "
 "повышенной боевой готовности."
 
 #: src-en/data/events.xml.append:843
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER3_QUEST_START\"]/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "У вас нет съемного оборудования РадиКал (РК)."
 
 #: src-en/data/events.xml.append:848
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER3_QUEST_START\"]/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"1\"]/text"
 msgstr ""
-"У вас есть оборудование РадиКал (РК), которое по определению запрещено "
-"практически везде.\n"
+"У вас есть съемное оборудование РадиКал (РК), которое по определению "
+"запрещено практически везде.\n"
 "\t\t\tСейчас это может дорого вам обойтись, так как, судя по всему, они "
 "специально сканируют ваш корабль в поисках его!"
 
@@ -542,44 +584,50 @@ msgstr "Принять их вызов."
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER3_QUEST_START\"]/choice[3]/event/text"
 msgstr ""
+"\"Эй, вы там. Это инквизитор Мальгро из Секретной службы Анти-РадиКалов. У "
+"вас есть какое-нибудь... оборудование РадиКалов для праведного уничтожения?\""
 
 #: src-en/data/events.xml.append:861
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER3_QUEST_START\"]/choice[3]/event/choice[1]/text"
 msgstr ""
+"(Съемное оборудование РК) Вот все эти ужасные улики, связанные с убийством, "
+"которые мы нашли, офицер."
 
 #: src-en/data/events.xml.append:867
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER3_QUEST_START\"]/choice[3]/event/choice[2]/text"
-msgstr ""
+msgstr "У нас нет ничего такого, офицер."
 
 #: src-en/data/events.xml.append:869
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER3_QUEST_START\"]/choice[3]/event/choice[2]/event/text"
 msgstr ""
+"Корабль, наверное, следил за вами с того самого момента, как вы совершили "
+"прыжок.\n"
+"\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t\"Ха! Они всегда думают, что им сойдет это с рук... Но от "
+"правосудия не уйти. Я знаю, что найти какие-либо улики уже невозможно, но "
+"ты, по крайней мере, ЗАПЛАТИШЬ ЗА МОЮ СЕМЬЮ, ТЫ, БОЛЬНОЙ УБЛ...!\""
 
 #: src-en/data/events.xml.append:874
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER3_QUEST_START\"]/choice[3]/event/choice[2]/event/choice/text"
-msgstr ""
+msgstr "Ох, ой..."
 
 #: src-en/data/events.xml.append:876
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER3_RK_DETECTED_ATTACK\"]/text"
 msgstr ""
-"У вас даже нет времени отдать приказ. Этот корабль, наверное, сканировал вас "
-"с самого момента вашего прыжка. И они уже решили уничтожить вас!\n"
-"\t\t\t\t\n"
-"\t\t\t\t\"Вы будете наказаны, презренные террористы, симпатизирующие Хаосу. "
-"Мне так и не удалось найти тех, кто несет прямую ответственность, но вы, по "
-"крайней мере, поплатитесь за МОЮ СЕМЬЮ, ВЫ, БОЛЬНЫЕ УБЛЮ...\"\n"
-"\t\t\t\n"
-"\t\t\tОни запускают свои орудия (которые, судя по всему, специально созданы "
-"для уничтожения кораблей РК) и одновременно выпускают вспомогательный "
+"В одно мгновение они активируют свое вооружение (которое, судя по всему, "
+"специально создано для уничтожения кораблей РК), выпускают вспомогательный "
 "корабль с мощными двигателями и пушками, который быстро улетает на некоторое "
-"расстояние, чтобы обеспечить артиллерийскую поддержку.\n"
-"\t\t\tКто бы они ни были, эти парни не шутят!"
+"расстояние, чтобы обеспечить артиллерийскую поддержку, а внезапный взрыв "
+"заставляет уши зазвенеть.\n"
+"\t\t\t\t\t\t\t\tОни, должно быть, применили какой-то боевой модуль к вашим "
+"Двигателям!\n"
+"\t\t\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t\t\tЭти парни не шутят. Вы быстро готовитесь к бою!"
 
 #: src-en/data/events.xml.append:886
 msgid ""
@@ -590,16 +638,15 @@ msgstr "Продолжить..."
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER3_QUEST_START\"]/choice[3]/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "У нас нет ничего такого, офицер."
 
 #: src-en/data/events.xml.append:897
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER3_QUEST_START\"]/choice[3]/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/text"
-msgstr ""
+msgstr "\"В самом деле... Где же прячутся РадиКалы в этом секторе?\""
 
 #: src-en/data/events.xml.append:900
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER3_QUEST_START\"]/choice[3]/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/choice[1]/text"
@@ -610,18 +657,28 @@ msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER3_QUEST_START\"]/choice[3]/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/choice[1]/event/text"
 msgstr ""
+"\"Да, верно. Никто этого никогда не знает... Просто помните: С.С.А.Р. всегда "
+"начеку.\n"
+"\t\t\t\t\t\t\t\tПочему бы вам не доказать свою невиновность, купив немного "
+"этого эксклюзивного оборудования против РК, а?\n"
+"\t\t\t\t\t\t\t\t\"Да восторжествует порядок\"\""
 
 #: src-en/data/events.xml.append:911
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER3_QUEST_START\"]/choice[3]/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/choice[2]/text"
-msgstr ""
+msgstr "В общем, они отправились в ту сторону."
 
 #: src-en/data/events.xml.append:913
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER3_QUEST_START\"]/choice[3]/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/choice[2]/event/text"
 msgstr ""
+"\"Неужели? Для вашего же блага надеюсь, что это правда...\" Они тут же "
+"бросают стандартный ящик с наградой через шлюз и улетают. Остается "
+"надеяться, что, по какому-то счастливому стечению обстоятельств, в том "
+"направлении действительно есть РадиКалы, иначе вам лучше больше никогда не "
+"сталкиваться с этим кораблем."
 
 #: src-en/data/events.xml.append:920
 msgid ""
@@ -634,12 +691,16 @@ msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER3_QUEST_START\"]/choice[3]/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/choice[3]/event/text"
 msgstr ""
+"\"Хм! У вас нет оборудования, но вы, должно быть, их сторонники. Та же самая "
+"мразь, только инструменты другие. Мордред?\"\n"
+"\t\t\t\t\t\t\t\t\"Готов, сэр\".\n"
+"\t\t\t\t\t\t\t\t\"Запускай!\""
 
 #: src-en/data/events.xml.append:927
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER3_QUEST_START\"]/choice[3]/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/choice[3]/event/choice/text"
-msgstr ""
+msgstr "Ох, ой..."
 
 #: src-en/data/events.xml.append:1042
 msgid ""
@@ -711,25 +772,43 @@ msgstr "Продолжить..."
 #: src-en/data/events.xml.append:1117
 msgid "data/events.xml.append$//event[@name=\"RK_OUTSIDE_STORE\"]/text"
 msgstr ""
+"Вы уже собирались улетать, как вдруг появляется корабль, находившийся в "
+"режиме маскировки. \"Не волнуйся, мы на одной стороне\".\n"
+"\t\t\n"
+"\t\tСловно в подтверждение своих слов они открывают огонь из своего оружия "
+"дальнего действия по вспомогательному кораблю, который перестает "
+"обстреливать вас издалека.\n"
+"\t\tНепонятно, уничтожен он или нет. В любом случае, к тому времени, как он "
+"восстановится, вы уже должны будете закончить здесь свои дела."
 
 #: src-en/data/events.xml.append:1124
 msgid "data/events.xml.append$//event[@name=\"RK_OUTSIDE_STORE\"]/choice/text"
-msgstr ""
+msgstr "Если мы на одной стороне, зачем так долго было тянуть с этим выстрелом?"
 
 #: src-en/data/events.xml.append:1126
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_OUTSIDE_STORE\"]/choice/event/text"
 msgstr ""
+"\"Это специальное оборудование просто еще не зарядилось, глупышка. Ты хоть "
+"знаешь, насколько длительная маскировка замедляет зарядку оружия? В любом "
+"случшае, это был отличшный бой! Могу с уверенностью сказать, чшто доверю "
+"тебе наш груз, если ты захочшешь его купить\"."
 
 #: src-en/data/events.xml.append:1129
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_OUTSIDE_STORE\"]/choice/event/choice[1]/text"
-msgstr ""
+msgstr "Интересно. Покажите, что у вас есть."
 
 #: src-en/data/events.xml.append:1131
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_OUTSIDE_STORE\"]/choice/event/choice[1]/event/text"
 msgstr ""
+"\"Обрати внимание, чшто любые другие корабли ССАР, заметившие тебя с чшем-"
+"либо, помечшенным буквами \"РК\", обязательно будут стрелять на поражение, "
+"чшто, судя по всему, тебя не особо беспокоит.\n"
+"\t\t\t\t\t\tПросто... не дай им вас сразить. Можно сказать, чшто они "
+"используют проклятое оборудование, и это будет недалеко от истины\".\n"
+"\t\t\t\t\t\t[Предупреждение: очень ограниченные возможности покупок]"
 
 #: src-en/data/events.xml.append:1138
 msgid ""
