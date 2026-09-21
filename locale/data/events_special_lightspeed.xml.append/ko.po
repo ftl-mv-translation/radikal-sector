@@ -1,141 +1,194 @@
 #
 msgid ""
 msgstr ""
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-09-21 14:08+0000\n"
+"Last-Translator: TrpleA <wndhkswnqls2@naver.com>\n"
+"Language-Team: Korean <https://weblate.hyperq.be/projects/radikal-sector/"
+"dataevents_special_lightspeedxmlappend/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events_special_lightspeed.xml.append:37
 msgid ""
 "data/events_special_lightspeed.xml.append$//mod:findName[@name=\"ATLAS_MENU\"]/mod-"
 "append:choice/text"
-msgstr ""
+msgstr "라디칼 구역으로 나아간다."
 
 #: src-en/data/events_special_lightspeed.xml.append:43
 msgid ""
 "data/events_special_lightspeed.xml.append$//mod:findName[@name=\"ATLAS_MENU_NOEQUIPMENT\"]/mod-"
 "append:choice/text"
-msgstr ""
+msgstr "라디칼 구역으로 나아간다."
 
 #: src-en/data/events_special_lightspeed.xml.append:142
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"ENTER_RADIKAL\"]/choice/text"
-msgstr ""
+msgstr "계속..."
 
 #: src-en/data/events_special_lightspeed.xml.append:176
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"RADIKAL_WARP\"]/text"
 msgstr ""
+"명칭: 라디칼 구역\n"
+"\t유형: 중립적\n"
+"\t통치 세력: RK 밤, RK 펑크, RK 스코치\n"
+"\t반군 위협 수준: 매우 낮음\n"
+"\t흥미로운 장소: RK 연구소, 스코치 BIL, 해적 트리니티, 은신처\n"
+"\t\n"
+"\t라디칼 파벌들이 불법 장비를 개발하는 [style[color:ff3377]]위험한[[/style]] "
+"구역입니다. 기술 발전 추세를 따라잡거나, 거래를 통제하거나, 기술을 "
+"도둑질하기 위해 전 구역의 전문가들이 비밀리에 모여듭니다. 이곳에 보유하고 "
+"있는 라디칼(RK) 장비가 있다면 각별히 주의하십시오!\n"
+"\t[피드백? 디스코드 @Dj0z]"
 
 #: src-en/data/events_special_lightspeed.xml.append:185
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"RADIKAL_WARP\"]/choice[1]/text"
-msgstr ""
+msgstr "한계속도를 마친다."
 
 #: src-en/data/events_special_lightspeed.xml.append:189
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"RADIKAL_WARP\"]/choice[@req=\"COORDS\"]/text"
-msgstr ""
+msgstr "경로를 변경한다."
 
 #: src-en/data/events_special_lightspeed.xml.append:271
 msgid ""
 "data/events_special_lightspeed.xml.append$//mod:findName[@name=\"REROUTE_MENU\"]/mod-"
 "append:choice/text"
-msgstr ""
+msgstr "라디칼 구역으로 도약한다."
 
 #: src-en/data/events_special_lightspeed.xml.append:278
 msgid ""
 "data/events_special_lightspeed.xml.append$//mod:findName[@name=\"REROUTE_MENU_LASTSTAND\"]/mod-"
 "append:choice/text"
-msgstr ""
+msgstr "라디칼 구역으로 도약한다."
 
 #: src-en/data/events_special_lightspeed.xml.append:314
 msgid ""
 "data/events_special_lightspeed.xml.append$//mod:findName[@name=\"REROUTE_MENU_HAT\"]/mod-"
 "append:choice[1]/text"
-msgstr ""
+msgstr "라디칼 구역으로 간다."
 
 #: src-en/data/events_special_lightspeed.xml.append:318
 msgid ""
 "data/events_special_lightspeed.xml.append$//mod:findName[@name=\"REROUTE_MENU_HAT\"]/mod-"
 "append:choice[2]/text"
-msgstr ""
+msgstr "당신은 이미 라디칼 구역을 지나왔습니다."
 
 #: src-en/data/events_special_lightspeed.xml.append:403
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL\"]/text"
 msgstr ""
+"당신은 경로를 변경하려고 합니다. 아래는 이 구역에 대한 아틀라스 항목입니다.\n"
+"\t명칭: 라디칼 구역\n"
+"\t유형: 중립적\n"
+"\t통치 세력: RK 밤, RK 펑크, RK 스코치\n"
+"\t반군 위협 수준: 매우 낮음\n"
+"\t흥미로운 장소: RK 연구소, 스코치 BIL, 해적 트리니티, 은신처\n"
+"\t\n"
+"\t라디칼 파벌들이 불법 장비를 개발하는 [style[color:ff3377]]위험한[[/style]] "
+"구역입니다. 섬뜩한 이물의 힘이 개입되어 있다는 소문이 돌고 있습니다. "
+"그럼에도 기술 발전 추세를 따라잡거나, 거래를 통제하거나, 기술을 도둑질하기 "
+"위해 전역의 전문가들이 비밀리에 모여듭니다.\n"
+"\t이곳에 보유하고 있는 라디칼(RK) 장비가 있다면 각별히 주의하십시오!\n"
+"\t[피드백? 디스코드 @Dj0z]"
 
 #: src-en/data/events_special_lightspeed.xml.append:414
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL\"]/choice[1]/text"
-msgstr ""
+msgstr "도약을 계속한다."
 
 #: src-en/data/events_special_lightspeed.xml.append:416
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL\"]/choice[1]/event/text"
-msgstr ""
+msgstr "당신은 새로운 좌표로 도약할 준비를 하고 그에 따라 비행 경로를 변경하였습니다."
 
 #: src-en/data/events_special_lightspeed.xml.append:423
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL\"]/choice[1]/event/choice/text"
-msgstr ""
+msgstr "계속..."
 
 #: src-en/data/events_special_lightspeed.xml.append:429
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL\"]/choice[2]/text"
-msgstr ""
+msgstr "아무것도 아니다."
 
 #: src-en/data/events_special_lightspeed.xml.append:497
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS\"]/text"
 msgstr ""
+"당신은 경로를 변경하려고 합니다. 아래는 이 구역에 대한 아틀라스 항목입니다.\n"
+"\t명칭: 라디칼 구역\n"
+"\t유형: 중립적\n"
+"\t통치 세력: RK 밤, RK 펑크, RK 스코치\n"
+"\t반군 위협 수준: 매우 낮음\n"
+"\t흥미로운 장소: RK 연구소, 스코치 BIL, 해적 트리니티, 은신처\n"
+"\t\n"
+"\t라디칼 파벌들이 불법 장비를 개발하는 [style[color:ff3377]]위험한[[/style]] "
+"구역입니다. 섬뜩한 이물의 힘이 개입되어 있다는 소문이 돌고 있습니다. "
+"그럼에도 기술 발전 추세를 따라잡거나, 거래를 통제하거나, 기술을 도둑질하기 "
+"위해 전 구역의 전문가들이 비밀리에 모여듭니다.\n"
+"\t이곳에 보유하고 있는 라디칼(RK) 장비가 있다면 각별히 주의하십시오!\n"
+"\t[피드백? 디스코드 @Dj0z]"
 
 #: src-en/data/events_special_lightspeed.xml.append:508
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS\"]/choice[1]/text"
-msgstr ""
+msgstr "도약을 계속한다."
 
 #: src-en/data/events_special_lightspeed.xml.append:510
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS\"]/choice[1]/event/text"
-msgstr ""
+msgstr "당신은 새로운 좌표로 도약할 준비를 하고 그에 따라 비행 경로를 변경하였습니다."
 
 #: src-en/data/events_special_lightspeed.xml.append:517
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS\"]/choice[1]/event/choice/text"
-msgstr ""
+msgstr "계속..."
 
 #: src-en/data/events_special_lightspeed.xml.append:523
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_BOSS\"]/choice[2]/text"
-msgstr ""
+msgstr "아무것도 아니다."
 
 #: src-en/data/events_special_lightspeed.xml.append:590
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/text"
 msgstr ""
+"당신은 경로를 변경하려고 합니다. 아래는 이 구역에 대한 아틀라스 항목입니다.\n"
+"\t명칭: 라디칼 구역\n"
+"\t유형: 중립적\n"
+"\t통치 세력: RK 밤, RK 펑크, RK 스코치\n"
+"\t반군 위협 수준: 매우 낮음\n"
+"\t흥미로운 장소: RK 연구소, 초토화 BIL, 해적 트리니티, 은신처\n"
+"\t\n"
+"\t라디칼 파벌들이 불법 장비를 개발하는 [style[color:ff3377]]위험한[[/style]] "
+"구역입니다. 섬뜩한 이물의 힘이 개입되어 있다는 소문이 돌고 있습니다. "
+"그럼에도 기술 발전 추세를 따라잡거나, 거래를 통제하거나, 기술을 도둑질하기 "
+"위해 전 구역의 전문가들이 비밀리에 모여듭니다.\n"
+"\t이곳에 보유하고 있는 라디칼(RK) 장비가 있다면 각별히 주의하십시오!\n"
+"\t[피드백? 디스코드 @Dj0z]"
 
 #: src-en/data/events_special_lightspeed.xml.append:601
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/choice[1]/text"
-msgstr ""
+msgstr "도약을 계속한다."
 
 #: src-en/data/events_special_lightspeed.xml.append:603
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/choice[1]/event/text"
-msgstr ""
+msgstr "당신은 새로운 좌표로 도약할 준비를 하고 그에 따라 비행 경로를 변경하였습니다."
 
 #: src-en/data/events_special_lightspeed.xml.append:610
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/choice[1]/event/choice/text"
-msgstr ""
+msgstr "계속..."
 
 #: src-en/data/events_special_lightspeed.xml.append:616
 msgid ""
 "data/events_special_lightspeed.xml.append$//event[@name=\"LIGHTSPEED_SECTOR_WARP_RADIKAL_HAT\"]/choice[2]/text"
-msgstr ""
+msgstr "아무것도 아니다."
