@@ -1,70 +1,97 @@
 #
 msgid ""
 msgstr ""
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-09-21 14:08+0000\n"
+"Last-Translator: TrpleA <wndhkswnqls2@naver.com>\n"
+"Language-Team: Korean <https://weblate.hyperq.be/projects/radikal-sector/"
+"dataevents_shipsxmlappend/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events_ships.xml.append:28
 msgid ""
 "data/events_ships.xml.append$//ship[@name=\"SHIP_RK_BAM_EXIT_BOSS\"]/surrender/text"
-msgstr ""
+msgstr "갑자기 적이 에너지 방어막을 완전히 회복합니다! 아마 일회성 현상일 것입니다."
 
 #: src-en/data/events_ships.xml.append:32
 msgid ""
 "data/events_ships.xml.append$//ship[@name=\"SHIP_RK_BAM_EXIT_BOSS\"]/surrender/choice/text"
-msgstr ""
+msgstr "계속..."
 
 #: src-en/data/events_ships.xml.append:37
 msgid ""
 "data/events_ships.xml.append$//ship[@name=\"SHIP_RK_BAM_EXIT_BOSS\"]/destroyed/text"
 msgstr ""
+"함선이 파괴되었습니다. 다른 수문장들이 엄숙하게 고개를 끄덕입니다. "
+"\"당신에게 우리 좌표를 전해준 자가 탁월한 선택을 했고, 이곳에 온 당신 역시 "
+"탁월한 선택을 했소. 이제 떠나도 좋소! 무상 수리 서비스도 받으시오.\""
 
 #: src-en/data/events_ships.xml.append:43
 msgid ""
 "data/events_ships.xml.append$//ship[@name=\"SHIP_RK_BAM_EXIT_BOSS\"]/deadCrew/text"
 msgstr ""
+"시험을 통과했으므로 다른 수문장들이 구역 밖으로 나가는 것을 허용하며, 함선을 "
+"온전하게 보존해낸 보상으로 무작위 선원 한 명을 무상으로 고용할 수 있다고 "
+"귀띔 해줍니다!"
 
 #: src-en/data/events_ships.xml.append:63
 msgid ""
 "data/events_ships.xml.append$//ship[@name=\"SHIP_RK_BAM_EXIT_BOSS_CHALLENGE\"]/surrender/text"
-msgstr ""
+msgstr "갑자기 적이 에너지 방어막을 완전히 회복합니다! 아마 일회성 현상일 것입니다."
 
 #: src-en/data/events_ships.xml.append:67
 msgid ""
 "data/events_ships.xml.append$//ship[@name=\"SHIP_RK_BAM_EXIT_BOSS_CHALLENGE\"]/surrender/choice/text"
-msgstr ""
+msgstr "계속..."
 
 #: src-en/data/events_ships.xml.append:72
 msgid ""
 "data/events_ships.xml.append$//ship[@name=\"SHIP_RK_BAM_EXIT_BOSS_CHALLENGE\"]/destroyed/text"
 msgstr ""
+"함선이 파괴되었습니다. 다른 수문장들이 엄숙하게 고개를 끄덕입니다. "
+"\"당신에게 우리 좌표를 전해준 자가 탁월한 선택을 했고, 이곳에 온 당신 역시 "
+"탁월한 선택을 했소. 이제 떠나도 좋소! 무상 수리 서비스도 받으시오.\""
 
 #: src-en/data/events_ships.xml.append:78
 msgid ""
 "data/events_ships.xml.append$//ship[@name=\"SHIP_RK_BAM_EXIT_BOSS_CHALLENGE\"]/deadCrew/text"
 msgstr ""
+"시험을 통과했으므로 다른 수문장들이 구역 밖으로 나가는 것을 허용하며, 함선을 "
+"온전하게 보존해낸 보상으로 무작위 선원 한 명을 무상으로 고용할 수 있다고 "
+"귀띔 해줍니다!"
 
 #: src-en/data/events_ships.xml.append:99
 msgid ""
 "data/events_ships.xml.append$//ship[@name=\"SHIP_RK_PUNK_EXIT_BOSS\"]/destroyed/text"
 msgstr ""
+"함선이 파괴되었습니다. 다른 수문장들이 엄숙하게 고개를 끄덕입니다. "
+"\"당신에게 우리 좌표를 전해준 자가 탁월한 선택을 했고, 이곳에 온 당신 역시 "
+"탁월한 선택을 했소. 이제 떠나도 좋소! 무상 수리 서비스도 받으시오.\""
 
 #: src-en/data/events_ships.xml.append:105
 msgid ""
 "data/events_ships.xml.append$//ship[@name=\"SHIP_RK_PUNK_EXIT_BOSS\"]/deadCrew/text"
 msgstr ""
+"시험을 통과했으므로 다른 수문장들이 구역 밖으로 나가는 것을 허용하며, 함선을 "
+"온전하게 보존해낸 보상으로 무작위 선원 한 명을 무상으로 고용할 수 있다고 "
+"귀띔 해줍니다!"
 
 #: src-en/data/events_ships.xml.append:122
 msgid ""
 "data/events_ships.xml.append$//ship[@name=\"SHIP_RK_SCORCH_EXIT_BOSS\"]/destroyed/text"
 msgstr ""
+"함선이 파괴되었습니다. 다른 수문장들이 엄숙하게 고개를 끄덕입니다. "
+"\"당신에게 우리 좌표를 전해준 자가 탁월한 선택을 했고, 이곳에 온 당신 역시 "
+"탁월한 선택을 했소. 이제 떠나도 좋소! 무상 수리 서비스도 받으시오.\""
 
 #: src-en/data/events_ships.xml.append:128
 msgid ""
 "data/events_ships.xml.append$//ship[@name=\"SHIP_RK_SCORCH_EXIT_BOSS\"]/deadCrew/text"
 msgstr ""
+"시험을 통과했으므로 다른 수문장들이 섹터 밖으로 나가는 것을 허용하며, 함선을 "
+"온전하게 보존해낸 보상으로 잔해에서 특별한 순양함 청사진을 회수할 수 있다고 "
+"귀띔 해줍니다!"
