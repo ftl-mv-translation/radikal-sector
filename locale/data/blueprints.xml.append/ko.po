@@ -1,1191 +1,1691 @@
 #
 msgid ""
 msgstr ""
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-09-21 14:08+0000\n"
+"Last-Translator: TrpleA <wndhkswnqls2@naver.com>\n"
+"Language-Team: Korean <https://weblate.hyperq.be/projects/radikal-sector/"
+"datablueprintsxmlappend/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/blueprints.xml.append:39
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"ADDON_INSTALLED_DJ0ZAUGMENTS\"]/title"
-msgstr ""
+msgstr "Dj0z' RadiKal Sector 모드를 설치해 주셔서 감사합니다!"
 
 #: src-en/data/blueprints.xml.append:40
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"ADDON_INSTALLED_DJ0ZAUGMENTS\"]/desc"
-msgstr ""
+msgstr "Dj0z' RadiKal Sector 모드를 설치해 주셔서 감사합니다!"
 
 #: src-en/data/blueprints.xml.append:61
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"human_soldier_operative\"]/desc"
 msgstr ""
+"엘리트 인간 선원. 고도로 훈련된 인간 병사로, 피해를 막아주는 보호구를 "
+"착용하고 있습니다. 괴로워하는 것처럼 보입니다?"
 
 #: src-en/data/blueprints.xml.append:63
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"human_soldier_operative\"]/title"
-msgstr ""
+msgstr "인간 병사"
 
 #: src-en/data/blueprints.xml.append:64
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"human_soldier_operative\"]/short"
-msgstr ""
+msgstr "Soldier"
 
 #: src-en/data/blueprints.xml.append:67
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"human_soldier_operative\"]/powerList/power[1]"
-msgstr ""
+msgstr "대인 공격력 1.2배"
 
 #: src-en/data/blueprints.xml.append:68
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"human_soldier_operative\"]/powerList/power[2]"
-msgstr ""
+msgstr "전투로부터 0.7배, 화재로부터 0.6배의 피해만을 받음"
 
 #: src-en/data/blueprints.xml.append:69
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"human_soldier_operative\"]/powerList/power[3]"
-msgstr ""
+msgstr "숙련도를 매우 빠르게 증가"
 
 #: src-en/data/blueprints.xml.append:96
 msgid "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/desc"
 msgstr ""
+"(RK 밤) 벡소패스는 산성 액체 속에 잠겨 폭탄이 장착된 테크노패스에게 전기 "
+"충격을 가해 만들어집니다. 분노 상태에 빠져 변형 능력을 잃어버리지만, 폭탄을 "
+"발사할 수 있게 됩니다.\n"
+"\t\t더 이상 테크노패스나 모프 판정을 받지 않습니다.\n"
+"\n"
+"\t계승된 능력: 선원 공간 0.5칸 차지, 질식 면역, 화재 피해 및 기절 저항 75%, "
+"이동 속도 0.8배."
 
 #: src-en/data/blueprints.xml.append:101
 msgid "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/title"
-msgstr ""
+msgstr "벡소패스"
 
 #: src-en/data/blueprints.xml.append:102
 msgid "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/short"
-msgstr ""
+msgstr "Vexo"
 
 #: src-en/data/blueprints.xml.append:105
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/powerList/power[1]"
-msgstr ""
+msgstr "활성화 능력: 적함에 1의 피해를 입히는 폭탄을 텔레포트 (도약당 1회)"
 
 #: src-en/data/blueprints.xml.append:106
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/powerList/power[2]"
 msgstr ""
+"활성화 능력: 현재 위치에서 1의 피해를 입히는 폭탄을 폭파 "
+"[style[color:ff3377]](아군 오사 적용)[[/style]] (도약당 1회)[[/style]]"
 
 #: src-en/data/blueprints.xml.append:107
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/powerList/power[3]"
-msgstr ""
+msgstr "최대 체력 80, 복제 속도가 2배 빠름"
 
 #: src-en/data/blueprints.xml.append:108
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/powerList/power[4]"
-msgstr ""
+msgstr "이동, 시스템 배치, 전투, 시스템 파괴, 순간이동만 가능"
 
 #: src-en/data/blueprints.xml.append:109
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_weaponlike\"]/powerList/power[5]"
-msgstr ""
+msgstr "무기 및 전투 숙련도가 극도로 빠르게 증가"
 
 #: src-en/data/blueprints.xml.append:127
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"unique_rk_defromorius\"]/desc"
 msgstr ""
+"(RK 펑크) 엔지 수비대가 실수로 락맨 모프 점액 및 라니우스 파편과 "
+"융합되었습니다. 하모니의 고문을 피하고자 라디칼이 되었습니다. 몸통이 머리에 "
+"필요한 산소를 흡수해 버립니다.\n"
+"\t\t변절한 엔지 수비대로 판정됩니다.\n"
+"\n"
+"\t계승된 능력: 기절 및 이동 속도 0.5배, 수리 속도 2.7배, 산소 흡수."
 
 #: src-en/data/blueprints.xml.append:132
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"unique_rk_defromorius\"]/title"
-msgstr ""
+msgstr "고통받는 융합체"
 
 #: src-en/data/blueprints.xml.append:133
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"unique_rk_defromorius\"]/short"
-msgstr ""
+msgstr "Amalgam"
 
 #: src-en/data/blueprints.xml.append:136
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"unique_rk_defromorius\"]/powerList/power[1]"
 msgstr ""
+"활성화 능력: 자신과 같은 함선의 아군이 모든원인으로부터 0.7배의 피해만을 "
+"받고, 가하는 피해가 1.5배 증가 [지속시간 10초. 충전시간 10초]"
 
 #: src-en/data/blueprints.xml.append:137
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"unique_rk_defromorius\"]/powerList/power[2]"
-msgstr ""
+msgstr "최대 체력이 311로 증가, 복제 속도가 0.5배로 감소"
 
 #: src-en/data/blueprints.xml.append:138
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"unique_rk_defromorius\"]/powerList/power[3]"
-msgstr ""
+msgstr "재해로부터 0.2배의 피해만을 받음"
 
 #: src-en/data/blueprints.xml.append:139
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"unique_rk_defromorius\"]/powerList/power[4]"
-msgstr ""
+msgstr "근접 공격속도 2배"
 
 #: src-en/data/blueprints.xml.append:140
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"unique_rk_defromorius\"]/powerList/power[5]"
-msgstr ""
+msgstr "펑크 하모니 상태에서도 조종 가능 유지"
 
 #: src-en/data/blueprints.xml.append:156
 msgid "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/desc"
 msgstr ""
+"(RK 스코치) 업토는 알파 구울들이 초고압으로 압축되어 형성된 존재입니다. "
+"자신의 몸에서 수시로 태양 욕토플레어를 일으킬 수 있습니다.\n"
+"\t\t고스트로 판정되지만 구울이나 떠돌이 판정은 받지 않습니다.\n"
+"\n"
+"\t계승된 알파 구울 능력: 재해 면역, 문 통과 가능, 시스템 파괴 속도 2배."
 
 #: src-en/data/blueprints.xml.append:161
 msgid "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/title"
-msgstr ""
+msgstr "업토"
 
 #: src-en/data/blueprints.xml.append:162
 msgid "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/short"
-msgstr ""
+msgstr "Uptor"
 
 #: src-en/data/blueprints.xml.append:165
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/powerList/power[1]"
 msgstr ""
+"활성화 능력: [style[color:ff3377]]양측 함선[[/style]]의 무작위 방에 화재를 "
+"일으킴. 짧은 충전시간"
 
 #: src-en/data/blueprints.xml.append:168
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/powerList/power[2]"
-msgstr ""
+msgstr "최대 체력이 165로 증가"
 
 #: src-en/data/blueprints.xml.append:169
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/powerList/power[3]"
-msgstr ""
+msgstr "분열, 수리, 화재 진압 불가능"
 
 #: src-en/data/blueprints.xml.append:170
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/powerList/power[4]"
 msgstr ""
+"현재 위치한 방의 시스템은 화재에 면역. 현재 위치한 적 시스템은 대신 1.6배의 "
+"화재 피해를 받음"
 
 #: src-en/data/blueprints.xml.append:171
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/powerList/power[5]"
-msgstr ""
+msgstr "이동 속도 1.1배"
 
 #: src-en/data/blueprints.xml.append:172
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_fireghost\"]/powerList/power[6]"
-msgstr ""
+msgstr "대인 공격력 1.5배"
 
 #: src-en/data/blueprints.xml.append:188
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_bottledoxygen\"]/desc"
-msgstr ""
+msgstr "산소통입니다. 위치한 선실에 산소를 충전합니다."
 
 #: src-en/data/blueprints.xml.append:190
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_bottledoxygen\"]/title"
-msgstr ""
+msgstr "O2 보관용기"
 
 #: src-en/data/blueprints.xml.append:191
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_bottledoxygen\"]/short"
-msgstr ""
+msgstr "B. O2"
 
 #: src-en/data/blueprints.xml.append:194
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_bottledoxygen\"]/powerList/power[1]"
-msgstr ""
+msgstr "산소를 매우 빠르게 보충"
 
 #: src-en/data/blueprints.xml.append:195
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_bottledoxygen\"]/powerList/power[2]"
-msgstr ""
+msgstr "폭발하여 30의 선원 피해를 가하고 60% 확률로 화재를 일으킴"
 
 #: src-en/data/blueprints.xml.append:196
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_bottledoxygen\"]/powerList/power[3]"
-msgstr ""
+msgstr "방에 아군이 있을 경우 이동 가능"
 
 #: src-en/data/blueprints.xml.append:197
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_bottledoxygen\"]/powerList/power[4]"
-msgstr ""
+msgstr "다른 행동은 불가능"
 
 #: src-en/data/blueprints.xml.append:198
 msgid ""
 "data/blueprints.xml.append$//crewBlueprint[@name=\"rk_bottledoxygen\"]/powerList/power[5]"
-msgstr ""
+msgstr "최대 체력 50, 재해에 면역"
 
 #: src-en/data/blueprints.xml.append:228
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_COMBAT_SHIPVORE_RAM\"]/title"
-msgstr ""
+msgstr "함선 포식 충각"
 
 #: src-en/data/blueprints.xml.append:229
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"DJMOD_COMBAT_SHIPVORE_RAM\"]/desc"
 msgstr ""
+"(RK 밤 장비) 적함을 반복적으로 충각하여 확정 피해를 주고, 높은 확률로 무료 "
+"수리를 받거나 기타 효과를 얻습니다.\n"
+"\t\t[토글 메뉴에서 보너스/조합 확인 가능]\n"
+"\n"
+"\t\t일반 충각: (비용 1{)\n"
+"\t\t2-3 피해, [style[color:ff3377]]25% 확률로 안 좋은 결과 발생![[/style]]\n"
+"\n"
+"\t\t최대 출력: (비용 4{, [style[color:ff3377]]보조장비가 파괴됨[[/style]]) \n"
+"\t\t6-7 피해, [style[color:ff3377]]20% 확률로 다른 안 좋은 결과 발생![[/"
+"style]]\n"
+"\t\t\n"
+"\t\t비상 발전기와 연료 절약 장치의 효과가 적용될 수 있습니다.\n"
+"\n"
+"\t\t비어있는 송신소에서 일정량의 ~를 소모하여 다음 최대 출력 사용 시 "
+"파괴되지 않도록 보강할 수 있습니다. (송신소를 소모하지 않음)"
 
 #: src-en/data/blueprints.xml.append:247
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"LOCKED_DJMOD_COMBAT_SHIPVORE_RAM\"]/title"
-msgstr ""
+msgstr "함선 포식 충각"
 
 #: src-en/data/blueprints.xml.append:248
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"LOCKED_DJMOD_COMBAT_SHIPVORE_RAM\"]/desc"
 msgstr ""
+"(RK 밤 장비) 적함을 반복적으로 충각하여 확정 피해를 주고, 높은 확률로 무료 "
+"수리를 받거나 기타 효과를 얻습니다.\n"
+"\t\t[토글 메뉴에서 보너스/조합 확인 가능]\n"
+"\n"
+"\t\t일반 충각: (비용 {)\n"
+"\t\t2-3 피해, [style[color:ff3377]]25% 확률로 안 좋은 결과 발생![[/style]]\n"
+"\n"
+"\t\t최대 출력: (비용 4{, [style[color:ff3377]]보조장비가 파괴됨[[/style]]) \n"
+"\t\t6-7 피해, [style[color:ff3377]]20% 확률로 안 좋은 결과 발생![[/style]]\n"
+"\t\t\n"
+"\t\t비상 발전기와 연료 절약 장치의 효과가 적용될 수 있습니다.\n"
+"\n"
+"\t\t이 함선은 최대 출력을 사용해도 파괴되지 않는 고정 버전으로 "
+"건조되었습니다. 또한 방어막 충전 속도가 9% 증가하고 선체 피해를 무시할 "
+"확률을 부여합니다."
 
 #: src-en/data/blueprints.xml.append:267
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_CREW_ARE_BOMBS_OFF\"]/title"
-msgstr ""
+msgstr "전하 벨트 (비활성화)"
 
 #: src-en/data/blueprints.xml.append:268
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_CREW_ARE_BOMBS_OFF\"]/desc"
 msgstr ""
+"(RK 밤 장비) 이 보조장비는 비활성화 상태이지만 언제든 활성화(On)로 전환할 수 "
+"있습니다. 활성화 시:\n"
+"\n"
+"\t[양날의 검인 이 보조장비는 선원들에게 벨트를 착용시켜 "
+"[style[color:ff3377]]체력을 10% 감소시키지만(떠돌이 주의)[[/style]] 사망 시 "
+"폭발을 일으킵니다. 폭발은 해당 방과 함선에 화재와 피해를 유발하며, 시스템이 "
+"없는 방에서는 추가 피해를 줍니다. [style[color:ff3377]]아군 피해 있음.[[/"
+"style]]\n"
+"\t기존의 사망 시 효과에 중첩됩니다.\n"
+"\t\n"
+"\t[style[color:ff3377]]경고: 비활성화(Off)로 되돌릴 수 없습니다.[[/style]] "
+"비어있는 송신소에서 분해하여 ~ 또는 }로 바꿀 수 있습니다.\n"
+"\n"
+"\t조합: 모든 선원을 플라즈마 텔레포터의 화재 발화원으로 만듭니다.]"
 
 #: src-en/data/blueprints.xml.append:281
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_CREW_ARE_BOMBS_ON\"]/title"
-msgstr ""
+msgstr "전하 벨트"
 
 #: src-en/data/blueprints.xml.append:282
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_CREW_ARE_BOMBS_ON\"]/desc"
 msgstr ""
+"(RK 밤 장비) 양날의 검인 이 보조장비는 선원들에게 벨트를 착용시켜 "
+"[style[color:ff3377]]체력을 10% 감소시키지만(떠돌이 주의)[[/style]] 사망 시 "
+"폭발을 일으킵니다. 폭발은 해당 방과 함선에 화재와 피해를 유발하며, 시스템이 "
+"없는 방에서는 추가 피해를 줍니다. [style[color:ff3377]]아군 피해 있음.[[/"
+"style]]\n"
+"\t기존의 사망 시 효과에 중첩됩니다.\n"
+"\t\n"
+"\t[style[color:ff3377]]경고: 비활성화(Off)로 되돌릴 수 없습니다.[[/style]] "
+"비어있는 송신소에서 분해하여 ~ 또는 }로 바꿀 수 있습니다.\n"
+"\n"
+"\t조합: 모든 선원을 플라즈마 텔레포터의 화재 발화원으로 만듭니다."
 
 #: src-en/data/blueprints.xml.append:295
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_COMBAT_AUTO_SYS_REPAIR\"]/title"
-msgstr ""
+msgstr "A.E.R.A. 재기 장치"
 
 #: src-en/data/blueprints.xml.append:296
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_COMBAT_AUTO_SYS_REPAIR\"]/desc"
 msgstr ""
+"(RK 밤 장비) '자동 비상 수리 보조장비'.\n"
+"\n"
+"\t\t이 전투 보조장비를 활성화한 상태에서 전투 중 함선이 완파 위기에 처하면"
+"(선체 체력 9 이하), 나노머신 폭발이 작동하여 시스템을 완충하고 선체 체력을 "
+"15 회복합니다. [활성화 시 전력 1 소모, 비상 발전기 적용 가능]\n"
+"\t\t[style[color:ff3377]]효과 발동 시 강화 장치가 파괴됩니다. 선체 체력이 "
+"즉시 0이 되면 발동하지 않습니다.[[/style]]\n"
+"\t\t\n"
+"\t\t토글 메뉴를 통해 언제든지 연료 1개를 소모하여 이 효과를 즉시 발동시킬 "
+"수도 있습니다."
 
 #: src-en/data/blueprints.xml.append:309
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_LEAD_TITANS\"]/title"
-msgstr ""
+msgstr "납 타이탄"
 
 #: src-en/data/blueprints.xml.append:310
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_LEAD_TITANS\"]/desc"
 msgstr ""
+"(RK 밤 장비) 누군가 근육 속에 가동성 납 섬유를 엮어 넣는 미친 아이디어를 "
+"떠올렸습니다. \n"
+"\t\t\n"
+"\t\t'대형' 선원(크리스탈, 라니우스, 락맨, 솔트맨)이 다음 효과를 얻습니다: "
+"모든 피해 저항 2.5배, 주는 피해 2.5배.\n"
+"\t\t[style[color:ff3377]]무게로 인해 선원 공간 2칸을 차지하고, 이동 시 "
+"균열을 생성하며, 수리를 할 수 없게 됩니다.[[/style]]\n"
+"\t\t기타 일반 선원들은 소형 섬유 덕분에 수리 속도가 고정 +75% 증가합니다.\n"
+"\n"
+"\t\t모든 선원의 이동 속도가 고정 +40% 증가합니다.\n"
+"\t\n"
+"\t\t[style[color:ff3377]]경고: 비활성화(Off)로 되돌릴 수 없습니다.[[/style]] "
+"비어있는 송신소에서 분해할 수 있습니다."
 
 #: src-en/data/blueprints.xml.append:325
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_BAM_DIVINE_ARMOR\"]/title"
-msgstr ""
+msgstr "두꺼운 선체"
 
 #: src-en/data/blueprints.xml.append:326
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_BAM_DIVINE_ARMOR\"]/desc"
 msgstr ""
+"(RK 밤 장비) 라디칼이 나포한 신정 이단심문관의 대단히 희귀한 장갑을 "
+"역설계하여 만든 조금 더 보급하기 쉽고 간소화된 장갑입니다.\n"
+"\t\t\n"
+"\t\t[style[color:ff3377]]무기 충전 속도가 5% 감소합니다.[[/style]]\n"
+"\t\t1의 피해를 입히는 충격을 40% 확률로 무효화하며, 그 외 모든 피해가 1 "
+"감소합니다."
 
 #: src-en/data/blueprints.xml.append:338
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_PERSISTENCE_SHIELD\"]/title"
-msgstr ""
+msgstr "지속 방어막"
 
 #: src-en/data/blueprints.xml.append:339
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_PERSISTENCE_SHIELD\"]/desc"
 msgstr ""
+"(RK 밤 장비) 방어막에 의존하는 고급 함선의 필수품으로, 돌아오지 못한 수많은 "
+"졸탄 정찰병들의 가혹한 스트레스 테스트를 거쳐 완성되었습니다.\n"
+"\t\t\n"
+"\t\t4 내구도의 에너지 방어막을 추가합니다. 다른 에너지 방어막과 중첩되지만, "
+"동일 장치와는 중첩되지 않습니다.\n"
+"\t\t또한 방어막 충전 속도가 25% 증가합니다.\n"
+"\t\t\n"
+"\t\t토글 메뉴에서 활성화하여 에너지 방어막 레이어를 즉시 모두 복구할 수 "
+"있습니다. [1 { 소모]\n"
+"\t\t빈 송신소에서 스크랩 7개를 소모해 콘덴서를 재구성하기 전까지는 다시 "
+"활성화할 수 없습니다."
 
 #: src-en/data/blueprints.xml.append:391
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_ARROGANCE_SHIELD\"]/title"
-msgstr ""
+msgstr "오만 보호막"
 
 #: src-en/data/blueprints.xml.append:392
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_ARROGANCE_SHIELD\"]/desc"
 msgstr ""
+"(RK 펑크 장비) 방어막 시스템에는 위험하지만 당신을 무적으로 만들어 줄 수도 "
+"있습니다. 정체불명의 큐브들이 이를 위해 희생되었습니다.\n"
+"\t\t\n"
+"\t\t9 내구도의 슈퍼 보호막을 추가합니다. 다른 슈퍼 보호막과 중첩되지만, 동일 "
+"장치와는 중첩되지 않습니다.\n"
+"\t\t자함 내에서 아군 선원-드론은 초당 3의 체력을 회복하는 반면, 적 선원-"
+"드론은 동일한 수치만큼 체력을 잃습니다.\n"
+"\t\t[style[color:ff3377]]경고: 보호막 충전 속도가 25% 감소하고 무기 충전 "
+"속도가 5% 감소합니다.[[/style]]"
 
 #: src-en/data/blueprints.xml.append:403
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_COMBAT_DEFENSE_REMOVER\"]/title"
-msgstr ""
+msgstr "방어 취약화 장치"
 
 #: src-en/data/blueprints.xml.append:404
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_COMBAT_DEFENSE_REMOVER\"]/desc"
 msgstr ""
+"(RK 펑크 장비) 이 전투 보조 장비는 적의 방어 시스템을 천천히 약화시킵니다. "
+"보스들이 매우 싫어합니다.\n"
+"\t\t\n"
+"\t\t3~7초마다(무작위) 적의 엔진실, 방어막 제어실, 융제 장갑(릴리의 혁신 모드 "
+"기능)의 전력을 1씩 제한합니다. 운이 좋으면 이 효과는 최대 16회까지 "
+"중첩됩니다.\n"
+"\t\t선택한 드론 부품 사용량에 따라 40초에서 75초 후에 모든 효과가 "
+"종료됩니다.\n"
+"\t\t[1-2 | 및 반응로 전력 3 소모. 비상 발전기 적용 가능.]"
 
 #: src-en/data/blueprints.xml.append:416
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_COMBAT_OFFENSE_DISABLER\"]/title"
-msgstr ""
+msgstr "공격 차단기"
 
 #: src-en/data/blueprints.xml.append:417
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_COMBAT_OFFENSE_DISABLER\"]/desc"
 msgstr ""
+"(RK 펑크 장비) 이 전투 보조장비는 6초 동안 적의 공격 시스템을 완전히 "
+"무력화할 수 있습니다. 이후 효과가 점점 약해지다 18초가 되면 완전히 사라집니다"
+"(경고 메시지 표시). 공격적인 적을 상대할 때 완벽합니다!\n"
+"\t\t[2| 및 반응로 전력 3 소모. 비상 발전기 적용 가능.]\n"
+"\n"
+"\t\t영향을 받는 시스템:\n"
+"\t\t무기 관제실, 드론 제어실, 정신 지배 장비,\n"
+"\t\t해킹 장비, 텔레포터, 모든 함포,\n"
+"\t\t타락기(\"Darkest Desire\" 모드),\n"
+"\t\t및 포탑 제어실(\"옛 파수꾼\" 모드)."
 
 #: src-en/data/blueprints.xml.append:445
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_COMBAT_HACK_FLEET\"]/title"
-msgstr ""
+msgstr "에니그마신"
 
 #: src-en/data/blueprints.xml.append:446
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_COMBAT_HACK_FLEET\"]/desc"
 msgstr ""
+"(RK 펑크 장비) 이 전투 보조장비는 신뢰성을 위해 적의 통신망을 통해 "
+"반란군에게 딥페이크 정보를 전송하려고 시도합니다.\n"
+"\t\t\n"
+"\t\t\"성공\" 시 추격 1턴 지연 (\"대성공\" 시 2턴 지연), 실패 시 아무 일도 "
+"일어나지 않으며, [style[color:ff3377]]\"대실패\" 시 추격이 1턴 가속됩니다[[/"
+"style]].\n"
+"\t\t무료 사용에는 17초가 소요됩니다. 해킹 시스템 전력을 제한하고 드론 부품을 "
+"사용하면 더 빠르고 좋은 결과를 얻을 수 있습니다. [style[color:ff3377]]"
+"(누군가 눈치챌 수도 있습니다)[[/style]]\n"
+"\t\t\n"
+"\t\t확률: (성공 / 대성공 / 대실패)\n"
+"\t\t0| + 해킹 미사용 = 55% / 5% / 15%\n"
+"\t\t1| + 해킹 1단계 = 60% / 10% / 10%\n"
+"\t\t2| + 해킹 2단계 = 65% / 15% / 5% / +?\n"
+"\t\t3| + 해킹 3단계 = 45% / 30% / 5% / +???"
 
 #: src-en/data/blueprints.xml.append:462
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_DREAD_DECK\"]/title"
-msgstr ""
+msgstr "공포의 갑판"
 
 #: src-en/data/blueprints.xml.append:463
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_DREAD_DECK\"]/desc"
 msgstr ""
+"(RK 펑크 장비) 직접적으로 아무 작업도 수행하지 않지만, 베테랑 선원들은 이 "
+"보조장비가 나타날 때마다 기도하고 거리두기를 시작합니다.\n"
+"\n"
+"\t\t자함에 침입한 적은 모든 피해를 1.7배로 받습니다.\n"
+"\t\t아군 선원은 대부분의 회복원으로부터 1.6배의 회복량을 얻고, 복제 속도가 "
+"2배가 되며, 복제 시 숙련도를 잃지 않습니다.\n"
+"\t\t[style[color:ff3377]]경고: 아군 선원과 같은 방에 있는 모든 선원은 "
+"회복량이 0.5배가 되며[[/style]] (중첩되지 않음) [style[color:ff3377]]복제될 "
+"수 없습니다![[/style]] [이 디버프는 보라색 연기로 표시됨]"
 
 #: src-en/data/blueprints.xml.append:474
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_SUPER_DEFENDERS\"]/title"
-msgstr ""
+msgstr "방어 장구"
 
 #: src-en/data/blueprints.xml.append:475
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_SUPER_DEFENDERS\"]/desc"
 msgstr ""
+"(RK 펑크 장비) 갖가지 위험을 무릅쓰는 라디칼에게는 때로 추가적인 생존 수단이 "
+"필요합니다. 이 장구에는 다양한 체형에 맞는 경량 동력 장갑, 약물 및 기타 의료 "
+"장비가 포함되어 있습니다.\n"
+"\n"
+"\t\t자신의 함선 내에서 아군 선원은 받는 피해 0.75배, 수리 속도 1.3배, 이동 "
+"속도 1.3배 능력을 얻으며, 대기 상태(제어실 배치조차 안 한 상태)일 때 초당 "
+"4의 체력을 회복합니다."
 
 #: src-en/data/blueprints.xml.append:485
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_OWN_HARMONY_ON\"]/title"
-msgstr ""
+msgstr "펑크 하모니"
 
 #: src-en/data/blueprints.xml.append:486
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_OWN_HARMONY_ON\"]/desc"
 msgstr ""
+"(RK 펑크 장비) 일부 멍청한 라디칼 펑크들이 자신들만의 하모니를 만들었습니다. "
+"함선의 [style[color:ff3377]]엔지를 통제하여[[/style]] (추가적인) 정신 지배 "
+"면역 상태로 만들고 피해 및 기절 저항을 +40% 부여합니다. 해킹 장비 또는 정신 "
+"지배 장비에 전력이 공급된 단계당 대인 공격력, 수리 속도, 이동 속도가 5/10/20/"
+"40/80/160% 증가합니다.\n"
+"\t\n"
+"\t요약하자면, 더 단단하고, 뛰어나고, 빠르고, 강하고, 자동화된 존재로 "
+"만듭니다.\n"
+"\t\n"
+"\t언제든 비활성화(Off)할 수 있습니다.\n"
+"\n"
+"\t비어있는 송신소에서 25~, 1{, 1|를 소모하여 분리주의자 엔지를 배양할 수 "
+"있으며 (더 많은 자원을 소모해 2명 배양 가능), 이때 [style[color:ff3377]]반군 "
+"함대의 추격이 1턴 가속됩니다[[/style]]"
 
 #: src-en/data/blueprints.xml.append:498
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_OWN_HARMONY_OFF\"]/title"
-msgstr ""
+msgstr "펑크 하모니 (비활성화)"
 
 #: src-en/data/blueprints.xml.append:499
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_OWN_HARMONY_OFF\"]/desc"
 msgstr ""
+"(RK 펑크 장비) 일부 멍청한 라디칼 펑크들이 자신들만의 하모니를 만들었습니다. "
+"함선의 [style[color:ff3377]]엔지를 통제하여[[/style]] (추가적인) 정신 지배 "
+"면역 상태로 만들고 피해 및 기절 저항을 +40% 부여합니다. 해킹 장비 또는 정신 "
+"지배 장비에 전력이 공급된 단계당 대인 공격력, 수리 속도, 이동 속도가 5/10/20/"
+"40/80/160% 증가합니다.\n"
+"\t\n"
+"\t요약하자면, 더 단단하고, 뛰어나고, 빠르고, 강하고, 자동화된 존재로 "
+"만듭니다.\n"
+"\t\n"
+"\t언제든 활성화(On)로 전환할 수 있습니다.\n"
+"\n"
+"\t비어있는 탐사지에서 25~, 1{, 1|를 소모하여 분리주의자 엔지를 배양할 수 "
+"있지만, [style[color:ff3377]]반군 함대의 추격이 1턴 가속됩니다[[/style]]"
 
 #: src-en/data/blueprints.xml.append:526
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"FIRE_IMMUNITY\"]/title"
-msgstr ""
+msgstr "화재 면역"
 
 #: src-en/data/blueprints.xml.append:527
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"FIRE_IMMUNITY\"]/desc"
-msgstr ""
+msgstr "시스템이 받는 화재 피해가 100% 감소합니다."
 
 #: src-en/data/blueprints.xml.append:538
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_SCORCH_SELF\"]/title"
-msgstr ""
+msgstr "초토화 대지 (1단계)"
 
 #: src-en/data/blueprints.xml.append:539
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_SCORCH_SELF\"]/desc"
 msgstr ""
+"(RK 스코치 장비) 아군 선원이 받는 화재 피해가 0.6배로 줄어들고 화재 진압 "
+"속도가 3배가 됩니다. 화재를 진압하는 동안 초당 2의 체력을 회복하며, 산소 "
+"시스템에 공급된 전력 단계당 +2만큼 추가 회복합니다.\n"
+"\t\n"
+"\t토글 메뉴에서 활성화하여 침입자와 싸우기 위해 [style[color:ff3377]]자신의 "
+"함선에서[[/style]] 특정 시스템 방(또는 함선 전체)에 불을 지를 수 있습니다.\n"
+"\t\n"
+"\t조합: 추가 비용 없이 플라즈마 텔레포터를 활성화할 수 있습니다.\n"
+"\t\n"
+"\t비어있는 송신소에서 2회 업그레이드할 수 있으며, 화재 저항이 증가하고 추가 "
+"효과를 얻습니다."
 
 #: src-en/data/blueprints.xml.append:555
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_SCORCH_SELF_2\"]/title"
-msgstr ""
+msgstr "화염의 대지 (2단계)"
 
 #: src-en/data/blueprints.xml.append:556
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_SCORCH_SELF_2\"]/desc"
 msgstr ""
+"(RK 스코치 장비) [2단계 초토화 대지] 아군 선원이 받는 화재 피해가 0.45배로 "
+"줄어들고 화재 진압 속도가 3배가 됩니다. 화재를 진압하는 동안 초당 2의 체력을 "
+"회복하며, 산소 시스템에 공급된 전력 단계당 +2만큼 추가 회복합니다.\n"
+"\t\t화염 속에서 오키드 1명 분량의 산소를 생성합니다.\n"
+"\t\n"
+"\t토글 메뉴에서 활성화하여 침입자와 싸우기 위해 [style[color:ff3377]]자신의 "
+"함선에서[[/style]] 특정 시스템 방(또는 함선 전체)에 불을 지를 수 있습니다.\n"
+"\t\n"
+"\t조합: 추가 비용 없이 플라즈마 텔레포터를 활성화할 수 있습니다.\n"
+"\t\n"
+"\t비어있는 송신소에서 1회 업그레이드할 수 있으며, 화재 저항 및 산소 생성량이 "
+"증가합니다."
 
 #: src-en/data/blueprints.xml.append:574
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_SCORCH_SELF_3\"]/title"
-msgstr ""
+msgstr "분출하는 대지 (3단계)"
 
 #: src-en/data/blueprints.xml.append:575
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_SCORCH_SELF_3\"]/desc"
 msgstr ""
+"(RK 스코치 장비) [3단계 초토화 대지] 아군 선원이 받는 화재 피해가 0.3배로 "
+"줄어들고 화재 진압 속도가 3배가 됩니다. 화재를 진압하는 동안 초당 2의 체력을 "
+"회복하며, 산소 시스템에 공급된 전력 단계당 +2만큼 추가 회복합니다.\n"
+"\t\t화염 속에서 오키드 3명 분량의 산소를 생성합니다.\n"
+"\t\n"
+"\t토글 메뉴에서 활성화하여 침입자와 싸우기 위해 [style[color:ff3377]]자신의 "
+"함선에서[[/style]] 특정 시스템 방(또는 함선 전체)에 불을 지를 수 있습니다.\n"
+"\t\n"
+"\t조합: 추가 비용 없이 플라즈마 텔레포터를 활성화할 수 있습니다."
 
 #: src-en/data/blueprints.xml.append:590
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_COMBAT_SCORCH_ENEMY\"]/title"
-msgstr ""
+msgstr "플라즈마 텔레포터"
 
 #: src-en/data/blueprints.xml.append:591
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_COMBAT_SCORCH_ENEMY\"]/desc"
 msgstr ""
+"(RK 스코치 장비) 이 전투 보조장비는 전투 시작 시 적함에 불을 질러 일부 "
+"전투를 순식간에 승리로 이끌 수 있습니다.\n"
+"\n"
+"\t\t화재 발화원이 필요합니다: 1} (약한 효과),\n"
+"\t\t또는 업토/구울/로스트선/셸/졸탄 ([style[color:ff3377]]사망[[/style]], "
+"복제 가능, 강한 효과).\n"
+"\t\t고스트 사용 시 추가 효과가 발동합니다.\n"
+"\t\t[1{ 소모, [style[color:ff3377]]자신의 함선에서 산소 시스템에 불을 지름[[/"
+"style]].]\n"
+"\n"
+"\t조합: 대전하 벨트 / 순교자의 조끼 사용 시 모든 선원이 화재 발화원이 "
+"됩니다.\n"
+"\t조합: 아무 초토화 대지 장비 소지 시 화재 발화원이 필요하지 않습니다."
 
 #: src-en/data/blueprints.xml.append:606
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_ENEMIES_CAN_BURN\"]/title"
-msgstr ""
+msgstr "가연성 가속기 - 면역 제어"
 
 #: src-en/data/blueprints.xml.append:607
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_ENEMIES_CAN_BURN\"]/desc"
 msgstr ""
+"(RK 스코치 장비) 적의 화재 면역을 패시브로 제거하고 화재 저항을 0%로 "
+"제한합니다. 화재 피해를 반전시켜 회복하는 적은 더 이상 회복하지 않습니다. "
+"취약한 적(오키드 등)은 영향을 받지 않습니다.\n"
+"\t양측 함선 모두에 적용됩니다.\n"
+"\n"
+"\t언제든 토글하여 화재 면역이 없는 적이 화재 피해를 더 많이 받도록 전환할 수 "
+"있습니다.\n"
+"\n"
+"\t두 토글 모드 모두 적이 화염 속에서 15% 천천히 이동하게 만듭니다(산소실 "
+"전력 3단계 시 최대 60%). [중첩되지 않음]."
 
 #: src-en/data/blueprints.xml.append:618
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_ENEMIES_BURN_MORE\"]/title"
-msgstr ""
+msgstr "가연성 가속기 - 피해 증폭"
 
 #: src-en/data/blueprints.xml.append:619
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_ENEMIES_BURN_MORE\"]/desc"
 msgstr ""
+"(RK 스코치 장비) 불에 탈 수 있는 적이 받는 화재 피해를 패시브로 40% "
+"증가시키며, 생명 유지(산소실) 시스템 전력이 3 이상일 때 최대 160%까지 비례 "
+"증가합니다.\n"
+"\t양측 함선 모두에 적용됩니다.\n"
+"\t\n"
+"\t언제든 토글하여 화재 면역, 화재 저항, 화재 회복 특성을 가진 적이 대신 화재 "
+"피해를 받도록 전환할 수 있습니다.\n"
+"\n"
+"\t두 토글 모드 모두 적이 화염 속에서 15% 천천히 이동하게 만듭니다(산소실 "
+"전력 3단계 시 최대 60%). [중첩되지 않음]."
 
 #: src-en/data/blueprints.xml.append:631
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_COMBAT_OXYGENIZER\"]/title"
-msgstr ""
+msgstr "대기 산소화 장치"
 
 #: src-en/data/blueprints.xml.append:632
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_COMBAT_OXYGENIZER\"]/desc"
 msgstr ""
+"(RK 스코치 장비) 이 작은 전투 보조장비는 전투 시작 시 초고압 축 산소가 담긴 "
+"거대한 중력 유도 통을 발사하여 우주 공간을 채울 수 있습니다. 일명 \"통조림 "
+"공기\"라고도 불립니다. 한바탕 소동이 일어납니다.\n"
+"\t\n"
+"\t양측 함선 모두에 대기를 형성하여, 균열이나 열린 환기구가 산소를 고갈시키는 "
+"대신 채우도록 만듭니다. [2} 소모]"
 
 #: src-en/data/blueprints.xml.append:641
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_SCORCH_PREIGNITER\"]/title"
-msgstr ""
+msgstr "스코치 조기 점화기"
 
 #: src-en/data/blueprints.xml.append:642
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_SCORCH_PREIGNITER\"]/desc"
 msgstr ""
+"(RK 스코치 장비) FTL 도약 직후 무기가 즉시 충전되지만, "
+"[style[color:ff3377]]발사체나 빔을 발사할 때마다 무기 제어실에 불을 "
+"지릅니다[[/style]].\n"
+"\t\t\n"
+"\t\t그 유명한 무기 조기 점화기의 변형판은 결함이 있어 이벤트나 아이테르 기술 "
+"요구 조건에서 조기 점화기로 인정받지 못하지만, 적어도 더 구하기 쉽습니다.\n"
+"\t\t\n"
+"\t\t조합: \"화염 속의 무기\" 보조장비의 최대 추가 보너스를 20%로 "
+"증가시킵니다."
 
 #: src-en/data/blueprints.xml.append:653
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_WEAPONS_ON_FIRE\"]/title"
-msgstr ""
+msgstr "화염 점화기"
 
 #: src-en/data/blueprints.xml.append:654
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_WEAPONS_ON_FIRE\"]/desc"
 msgstr ""
+"(RK 스코치 장비) 무기 및 함포의 발사 속도가 25% 향상됩니다.\n"
+"\t\t\n"
+"\t\t발사체나 빔을 발사할 때마다 발사 속도가 1%씩 추가로 증가하지만(최대 "
+"10% - 여러 개 중첩 불가), 동시에 [style[color:ff3377]]15% 확률로 무기 제어실 "
+"및 모든 함포실에 불이 붙습니다[[/style]].\n"
+"\t\t추가 보너스는 도약 시 초기화됩니다.\n"
+"\n"
+"\t\t조합: 스코치 조기 점화기가 최대 추가 보너스를 20%로 증가시킵니다."
 
 #: src-en/data/blueprints.xml.append:666
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_WEAPONS_ON_FIRE_TEMP\"]/title"
-msgstr ""
+msgstr "화염 점화기"
 
 #: src-en/data/blueprints.xml.append:667
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_WEAPONS_ON_FIRE_TEMP\"]/desc"
-msgstr ""
+msgstr "이 1% 무기 발사 속도 텍스트는 정상적인 상황에서 표시되지 않아야 합니다."
 
 #: src-en/data/blueprints.xml.append:685
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_BPS_SURVEYOR\"]/title"
-msgstr ""
+msgstr "RK 측량기"
 
 #: src-en/data/blueprints.xml.append:686
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"RK_BPS_SURVEYOR\"]/desc"
 msgstr ""
+"(RK BPS 장비) 모든 라디칼 분파들의 독창성 덕분에 무시할 수 없는 비용을 "
+"치르고 대부분의 비어있는 송신소를 정밀 탐사할 수 있습니다.\n"
+"\t\t\n"
+"\t\t발견한 무작위 무기나 보조장치를 회수/절도할 수 있지만, "
+"[style[color:ff3377]]함대 추격을 1턴 가속[[/style]]시킵니다."
 
 #: src-en/data/blueprints.xml.append:696
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_BPS_SHIELD_OVER_MATTER\"]/title"
-msgstr ""
+msgstr "물질 우위 방어막"
 
 #: src-en/data/blueprints.xml.append:697
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_BPS_SHIELD_OVER_MATTER\"]/desc"
 msgstr ""
+"(RK BPS 장비) 내구도 10의 에너지 방어막을 제공합니다. (동일 장치 및 다른 "
+"장비 중첩 불가 에너지 보호막과 중첩되지 않음)\n"
+"\t\t\n"
+"\t\t선체 피해를 입을 때마다 50% 확률로 에너지 방어막 1레이어를 복구하지만, "
+"이때 [style[color:ff3377]]피격을 당한 방에 불이 붙습니다(피해를 준 무기의 "
+"자체 화재 확률과 별개로 발화)[[/style]]."
 
 #: src-en/data/blueprints.xml.append:725
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_COMBAT_ACE_CONSOLE\"]/title"
-msgstr ""
+msgstr "해커 에이스의 콘솔"
 
 #: src-en/data/blueprints.xml.append:726
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_COMBAT_ACE_CONSOLE\"]/desc"
 msgstr ""
+"(RK 펑크 장비) 존재 자체를 부정하는 반군을 위해 비밀리에 개발된 H.A.C.는 "
+"전투 시작 시 2가지 작업을 수행할 수 있습니다:\n"
+"\t\t\n"
+"\t\t전투 내내 적의 엔진, 보호막, 무기 전력을 1씩 제한 [무료],\n"
+"\t\t\n"
+"\t\t또는 전투 내내 적의 방어막을 3, 엔진실과 무기 관제실을 2, 은폐실, 타락기"
+"(\"Darkest Desire\" 모드), 드론 제어실, 정신 지배 장비, 산소실, 조타실 및 "
+"포탑 제어실(\"옛 파수꾼\" 모드)를 1로 제한합니다. [3|과 반응로 전력 2를 "
+"사용합니다. 비상 발전기를 사용할 수 있습니다.]\n"
+"\t\n"
+"\t\tMFK 해커 에이스에게서 전리품으로 획득한 장치입니다."
 
 #: src-en/data/blueprints.xml.append:750
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_A_STANDARD_SUITE\"]/title"
-msgstr ""
+msgstr "대 라디칼 보급 제식 장비"
 
 #: src-en/data/blueprints.xml.append:751
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_A_STANDARD_SUITE\"]/desc"
 msgstr ""
+"라디칼을 사냥하는 것은 안전한 직업이 아니므로, 가장 열렬한 사냥꾼들에게 "
+"생존율을 높이고... 임무를 강제로 수행하도록 이 장비가 지급됩니다.\n"
+"\t\t\n"
+"\t\t선체, 시스템 및 이온 피해를 저항할 확률 15%.\n"
+"\t\t균열과 화재를 자동으로 천천히 수리/진압합니다.\n"
+"\t\t선원의 체력이 40% 증가합니다.\n"
+"\t\t[style[color:ff3377]]FTL 충전 속도가 90% 감소합니다.\n"
+"\t\t항복, 협상, 불복종을 할 수 없습니다.[[/style]]"
 
 #: src-en/data/blueprints.xml.append:765
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RKS_POLICE_WARRANT\"]/title"
-msgstr ""
+msgstr "Z. 경찰 수색 영장"
 
 #: src-en/data/blueprints.xml.append:766
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RKS_POLICE_WARRANT\"]/desc"
 msgstr ""
+"라디칼 구역에 거점을 둔 졸탄 경찰이 수상한 통행인을 수색하여 라디칼 장비를 "
+"압수할 수 있도록 이 권한을 부여했습니다. 팔아버릴 수도 있습니다.\n"
+"\t[라디칼 구역의 일부 송신소에서 파란 선택지를 제공합니다.]"
 
 #: src-en/data/blueprints.xml.append:783
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"SHIP_RK\"]/title"
-msgstr ""
+msgstr "라디칼 순양함"
 
 #: src-en/data/blueprints.xml.append:784
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"SHIP_RK\"]/desc"
-msgstr ""
+msgstr "이 텍스트는 정상적인 상황에서 표시되지 않아야 합니다."
 
 #: src-en/data/blueprints.xml.append:792
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"IS_RK_BAM_GEAR\"]/title"
-msgstr ""
+msgstr "밤 순양함 및 장비"
 
 #: src-en/data/blueprints.xml.append:793
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"IS_RK_BAM_GEAR\"]/desc"
-msgstr ""
+msgstr "이 텍스트는 정상적인 상황에서 표시되지 않아야 합니다."
 
 #: src-en/data/blueprints.xml.append:800
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"IS_RK_PUNK_GEAR\"]/title"
-msgstr ""
+msgstr "펑크 순양함 및 장비"
 
 #: src-en/data/blueprints.xml.append:801
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"IS_RK_PUNK_GEAR\"]/desc"
-msgstr ""
+msgstr "이 텍스트는 정상적인 상황에서 표시되지 않아야 합니다."
 
 #: src-en/data/blueprints.xml.append:808
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"IS_RK_SCORCH_GEAR\"]/title"
-msgstr ""
+msgstr "스코치 순양함 및 장비"
 
 #: src-en/data/blueprints.xml.append:809
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"IS_RK_SCORCH_GEAR\"]/desc"
-msgstr ""
+msgstr "이 텍스트는 정상적인 상황에서 표시되지 않아야 합니다."
 
 #: src-en/data/blueprints.xml.append:816
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"IS_RK_BPS_GEAR\"]/title"
-msgstr ""
+msgstr "BPS 순양함 및 장비"
 
 #: src-en/data/blueprints.xml.append:817
 msgid "data/blueprints.xml.append$//augBlueprint[@name=\"IS_RK_BPS_GEAR\"]/desc"
-msgstr ""
+msgstr "이 텍스트는 정상적인 상황에서 표시되지 않아야 합니다."
 
 #: src-en/data/blueprints.xml.append:904
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"INTERNAL_RK_CALIBRATOR\"]/title"
-msgstr ""
+msgstr "보정기"
 
 #: src-en/data/blueprints.xml.append:905
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"INTERNAL_RK_CALIBRATOR\"]/desc"
 msgstr ""
+"(RK 밤 장비) 무기 명중률이 +10% 증가하고 발사 속도가 4% 향상됩니다. 최대 "
+"2회까지 설치할 수 있습니다."
 
 #: src-en/data/blueprints.xml.append:912
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"EX_RK_CHOKING_IS_FINE\"]/title"
-msgstr ""
+msgstr "[X] 질식 성애 유발 신경 매혹기"
 
 #: src-en/data/blueprints.xml.append:913
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"EX_RK_CHOKING_IS_FINE\"]/desc"
 msgstr ""
+"(RK 밤 장비) 대부분의 라디칼 장비처럼 많은 곳에서 불법으로 지정되어 있지만, "
+"\"질식 성애 유발 신경 매혹기(Choking Fetish-Inducing Neural Entrancers)\"는 "
+"종종 수요가 많습니다.\n"
+"\t\t\n"
+"\t\t아군 선원이 받는 질식 피해가 0.75배로 줄어듭니다.\n"
+"\t\t질식 상태일 때 이동, 방해, 수리 및 전투 능력이 1.4배 향상됩니다. 질식 "
+"면역 선원에게는 영향을 주지 않습니다.\n"
+"\t\t\n"
+"\t[X] - 이 보조장비는 외장형 장비로, 정상적인 효과를 제공하지만 보조장비 "
+"슬롯을 차지합니다. 내부 업그레이드 창에서 비용 없이 내장형 장비로 전환할 수 "
+"있습니다.\n"
+"\t동일 장비끼리는 중첩되지 않으나, 내장형 장비는 중첩됩니다..."
 
 #: src-en/data/blueprints.xml.append:925
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"INTERNAL_RK_CHOKING_IS_FINE\"]/title"
-msgstr ""
+msgstr "질식 성애 유발 신경 매혹기"
 
 #: src-en/data/blueprints.xml.append:926
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"INTERNAL_RK_CHOKING_IS_FINE\"]/desc"
 msgstr ""
+"RK 밤 장비) 대부분의 라디칼 장비처럼 많은 곳에서 불법으로 지정되어 있지만, "
+"\"질식 성애 유발 신경 매혹기(Choking Fetish-Inducing Neural Entrancers)\"는 "
+"종종 수요가 많습니다.\n"
+"\t\t\n"
+"\t\t아군 선원이 받는 질식 피해가 0.75배로 줄어듭니다.\n"
+"\t\t질식 상태일 때 이동, 방해, 수리 및 전투 능력이 1.4배 향상됩니다. 질식 "
+"면역 선원에게는 영향을 주지 않습니다."
 
 #: src-en/data/blueprints.xml.append:936
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"INTERNAL_DJMOD_DEMICLONER\"]/title"
-msgstr ""
+msgstr "의사 복제기"
 
 #: src-en/data/blueprints.xml.append:937
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"INTERNAL_DJMOD_DEMICLONER\"]/desc"
 msgstr ""
+"(RK 펑크 장비) 어둠의 에너지가 주입된 배낭형 클론 배양실 시제품입니다. 진짜 "
+"클론 배양실이 없을 때 선원이 사망하면(이벤트 제외) 부활을 시도합니다.\n"
+"\t\t최선의 경우, 선원은 자신의 하위 버전(예: 병사 = 일반 인간 등)으로 "
+"부활합니다. 하위 버전이 존재하지 않는 경우 모프로 변합니다. 모프가 사망하면 "
+"아무 일도 일어나지 않습니다."
 
 #: src-en/data/blueprints.xml.append:945
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"EX_DJMOD_DEMICLONER\"]/title"
-msgstr ""
+msgstr "[X] 의사 복제기"
 
 #: src-en/data/blueprints.xml.append:946
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"EX_DJMOD_DEMICLONER\"]/desc"
 msgstr ""
+"라디칼 펑크가 어둠의 에너지를 주입한 배낭형 복제실 시제품입니다. 진짜 "
+"복제실이 없을 때 선원이 사망하면(이벤트 제외) 부활을 시도합니다.\n"
+"\t\t최선의 경우, 선원은 자신의 하위 버전(예: 병사 = 일반 인간 등)으로 "
+"부활합니다. 하위 버전이 존재하지 않는 경우 모프로 변합니다. 모프가 사망하면 "
+"아무 일도 일어나지 않습니다.\n"
+"\t\t\n"
+"\t[X] - 이 보조장비는 외장형 장비로, 정상적인 효과를 제공하지만 보조장비 "
+"슬롯을 차지합니다. 내부 업그레이드 창에서 비용 없이 내장형 장비로 전환할 수 "
+"있습니다.\n"
+"\t동일 장비끼리는 중첩되지 않으나, 내장형 장비는 중첩됩니다..."
 
 #: src-en/data/blueprints.xml.append:958
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"INTERNAL_DJMOD_MC_PARALYZER\"]/title"
-msgstr ""
+msgstr "정신 냉각기"
 
 #: src-en/data/blueprints.xml.append:959
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"INTERNAL_DJMOD_MC_PARALYZER\"]/desc"
 msgstr ""
+"정신 지배에 걸린 경우, 당신의 선원은 전투, 시스템 파괴 또는 순간이동을 할 수 "
+"없습니다. 양측 함선 모두에 적용됩니다."
 
 #: src-en/data/blueprints.xml.append:967
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"INTERNAL_RK_IN_FIRE_CREWBOOSTS\"]/title"
-msgstr ""
+msgstr "헬리온 붕대"
 
 #: src-en/data/blueprints.xml.append:968
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"INTERNAL_RK_IN_FIRE_CREWBOOSTS\"]/desc"
 msgstr ""
+"화염 속에서 아군 선원의 이동속도 및 시스템 파괴 속도가 1.75배 증가하고, 전투 "
+"및 문에 주는 피해가 1.75배 증가합니다. 양측 함선 모두에 적용됩니다."
 
 #: src-en/data/blueprints.xml.append:976
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/title"
-msgstr ""
+msgstr "정신 가열기"
 
 #: src-en/data/blueprints.xml.append:977
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/desc"
 msgstr ""
+"화재 속에서 선원이 정신 지배에 면역이 되며 치유되고, 기절 시간이 50% "
+"단축되며, 인접한 방을 밝힙니다. 양측 함선 모두에 적용됩니다."
 
 #: src-en/data/blueprints.xml.append:1030
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"JUDGE_BOON_RK_BAM_CREW\"]/title"
-msgstr ""
+msgstr "RK 밤의 선물"
 
 #: src-en/data/blueprints.xml.append:1031
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"JUDGE_BOON_RK_BAM_CREW\"]/desc"
-msgstr ""
+msgstr "라디칼의 체력이 29 증가하고 전투 피해가 1.1배 증가합니다."
 
 #: src-en/data/blueprints.xml.append:1037
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"JUDGE_BOON_RK_PUNK_CREW\"]/title"
-msgstr ""
+msgstr "RK 펑크의 선물"
 
 #: src-en/data/blueprints.xml.append:1038
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"JUDGE_BOON_RK_PUNK_CREW\"]/desc"
-msgstr ""
+msgstr "라디칼의 회복 및 복제 속도가 40% 빨라집니다."
 
 #: src-en/data/blueprints.xml.append:1044
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"JUDGE_BOON_RK_SCORCH_CREW\"]/title"
-msgstr ""
+msgstr "RK 스코치의 선물"
 
 #: src-en/data/blueprints.xml.append:1045
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"JUDGE_BOON_RK_SCORCH_CREW\"]/desc"
-msgstr ""
+msgstr "화염 속에서 라디칼의 이동 속도와 전투 피해가 1.3배 증가합니다."
 
 #: src-en/data/blueprints.xml.append:1104
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"JUDGE_BOON_RK_BAM_EQUIPMENT\"]/title"
-msgstr ""
+msgstr "라디칼 강인함의 축복"
 
 #: src-en/data/blueprints.xml.append:1105
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"JUDGE_BOON_RK_BAM_EQUIPMENT\"]/desc"
-msgstr ""
+msgstr "적 무기로부터 선체, 시스템 및 이온 피해를 저항할 확률 +8%."
 
 #: src-en/data/blueprints.xml.append:1112
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"JUDGE_BOON_RK_PUNK_EQUIPMENT\"]/title"
-msgstr ""
+msgstr "라디칼 교활함의 축복"
 
 #: src-en/data/blueprints.xml.append:1113
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"JUDGE_BOON_RK_PUNK_EQUIPMENT\"]/desc"
-msgstr ""
+msgstr "시스템 수리 속도가 1.3배 증가합니다."
 
 #: src-en/data/blueprints.xml.append:1119
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"JUDGE_BOON_RK_SCORCH_EQUIPMENT\"]/title"
-msgstr ""
+msgstr "라디칼 열정의 축복"
 
 #: src-en/data/blueprints.xml.append:1120
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"JUDGE_BOON_RK_SCORCH_EQUIPMENT\"]/desc"
-msgstr ""
+msgstr "무기 충전 속도 및 회피율 +8%."
 
 #: src-en/data/blueprints.xml.append:1126
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"JUDGE_BOON_RK_BPS_EQUIPMENT\"]/title"
-msgstr ""
+msgstr "라디칼 프로젝트의 축복"
 
 #: src-en/data/blueprints.xml.append:1127
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"JUDGE_BOON_RK_BPS_EQUIPMENT\"]/desc"
 msgstr ""
+"적 무기로부터 선체, 시스템 및 이온 피해를 저항할 확률 +4%, 시스템 수리 속도 "
+"1.15배, 무기 충전 속도 및 회피율 +4%."
 
 #: src-en/data/blueprints.xml.append:1229
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_BAM_FISSUREBEAM\"]/title"
-msgstr ""
+msgstr "'바다' 균열 빔"
 
 #: src-en/data/blueprints.xml.append:1230
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_BAM_FISSUREBEAM\"]/short"
-msgstr ""
+msgstr "'Bada' Beam"
 
 #: src-en/data/blueprints.xml.append:1231
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_BAM_FISSUREBEAM\"]/desc"
 msgstr ""
+"(RK 밤 장비) 시스템이나 함선을 파괴할 만큼 강력하게 3~5개 타일을 타격할 수 "
+"있습니다.\n"
+"\t\t균열 빔은 방 단위가 아닌 타일 단위로 피해를 입힙니다."
 
 #: src-en/data/blueprints.xml.append:1286
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_HEAVY_POPPER_1\"]/title"
-msgstr ""
+msgstr "헤비 포퍼 MK I"
 
 #: src-en/data/blueprints.xml.append:1287
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_HEAVY_POPPER_1\"]/short"
-msgstr ""
+msgstr "He. Pop. I"
 
 #: src-en/data/blueprints.xml.append:1288
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_HEAVY_POPPER_1\"]/desc"
 msgstr ""
+"(RK 밤 장비) 단 1전력으로 점사형 레이저 마크 3에 맞먹는 초당 피해량을 "
+"냅니다!\n"
+"\t\t[style[color:ff3377]]발사할 때마다 함선의 각 시스템이 5% 확률로 1의 "
+"시스템 피해를 입습니다![[/style]]\n"
+"\t\t헤비 포퍼는 명중률이 낮고 느리지만 방어막을 2겹 깎아내며 추가 균열을 "
+"일으킬 수 있습니다."
 
 #: src-en/data/blueprints.xml.append:1344
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_HEAVY_POPPER_2\"]/title"
-msgstr ""
+msgstr "헤비 포퍼 MK II"
 
 #: src-en/data/blueprints.xml.append:1345
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_HEAVY_POPPER_2\"]/short"
-msgstr ""
+msgstr "He. Pop. II"
 
 #: src-en/data/blueprints.xml.append:1346
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_HEAVY_POPPER_2\"]/desc"
 msgstr ""
+"(RK 밤 장비) 대부분의 적 방어막을 벗겨내거나 치명상을 입히기에 충분한 화력을 "
+"갖췄습니다.\n"
+"\t\t[style[color:ff3377]]발사할 때마다 함선의 각 시스템이 4% 확률로 1의 "
+"시스템 피해를 입습니다![[/style]]\n"
+"\t\t헤비 포퍼는 명중률이 낮고 느리지만 방어막을 2겹 깎아내며 추가 균열을 "
+"일으킬 수 있습니다."
 
 #: src-en/data/blueprints.xml.append:1444
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_HEAVY_POPPER_3\"]/title"
-msgstr ""
+msgstr "헤비 포퍼 MK III"
 
 #: src-en/data/blueprints.xml.append:1445
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_HEAVY_POPPER_3\"]/short"
-msgstr ""
+msgstr "He. Pop. III"
 
 #: src-en/data/blueprints.xml.append:1446
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_HEAVY_POPPER_3\"]/desc"
 msgstr ""
+"(RK 밤 장비) 함대 포격급 위력으로 방어막을 부수고 짓밟습니다. 살상. 파괴.\n"
+"\t\t[style[color:ff3377]]발사할 때마다 함선의 각 시스템이 3% 확률로 1의 "
+"시스템 피해를 입습니다![[/style]]\n"
+"\t\t헤비 포퍼는 명중률이 낮고 느리지만 방어막을 2겹 깎아내며 추가 균열을 "
+"일으킬 수 있습니다."
 
 #: src-en/data/blueprints.xml.append:1502
 msgid "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_UNLOADER\"]/title"
-msgstr ""
+msgstr "미사일 '하역기'"
 
 #: src-en/data/blueprints.xml.append:1503
 msgid "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_UNLOADER\"]/short"
-msgstr ""
+msgstr "Unloader"
 
 #: src-en/data/blueprints.xml.append:1504
 msgid "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_UNLOADER\"]/desc"
 msgstr ""
+"(RK 밤 장비) 사람들은 \"왜 과냉각 회전식 미사일 장전기에 이미 에너지가 "
+"충전된 레토 미사일들이 가득 들어있냐?\"라고 묻고, 라디칼 밤 분파는 \"대량 "
+"구매 할인을 엄청나게 받았거든.\"이라고 답합니다."
 
 #: src-en/data/blueprints.xml.append:1550
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_BOMBLAUNCHER_ANTIBIO_REPAIR\"]/title"
-msgstr ""
+msgstr "방사능 수리 폭탄"
 
 #: src-en/data/blueprints.xml.append:1551
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_BOMBLAUNCHER_ANTIBIO_REPAIR\"]/short"
-msgstr ""
+msgstr "Rad Rep."
 
 #: src-en/data/blueprints.xml.append:1553
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_BOMBLAUNCHER_ANTIBIO_REPAIR\"]/desc"
 msgstr ""
+"(RK 펑크 장비) 금지된 화합물을 사용하여 시스템을 수리하지만, "
+"[style[color:ff3377]]선원에게 피해를 주고 일시적으로 무력화합니다[[/"
+"style]].\n"
+"\t\t\n"
+"\t\t자신의 함선을 목표로 지정할 수 있습니다. 보존 무기는 직접 전력을 "
+"소모하진 않지만, 다른 무기에 전력이 공급되고 있어야 사용할 수 있습니다."
 
 #: src-en/data/blueprints.xml.append:1799
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_KILLALL_BEAM\"]/title"
-msgstr ""
+msgstr "'무덤확산' 방사성 빔"
 
 #: src-en/data/blueprints.xml.append:1800
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_KILLALL_BEAM\"]/short"
-msgstr ""
+msgstr "Gravespred"
 
 #: src-en/data/blueprints.xml.append:1801
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_KILLALL_BEAM\"]/desc"
 msgstr ""
+"(RK 펑크 장비) 이 방사성 빔은 모두의 죽음을 원합니다. 연쇄 발사당 선원 "
+"피해가 +15 증가합니다. (최대 105 선원 피해)\n"
+"\t\t보호막 2겹 관통 + 연속 발사당 +1. (최대 6 관통. 툴팁은 무시하세요)\n"
+"\t\t[style[color:ff3377]]경고: 연속 발사당 자신의 함선의 모든 선원에게 15의 "
+"피해를 입힙니다![[/style]] (최대 60)"
 
 #: src-en/data/blueprints.xml.append:1848
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_MISSLAUNCHER_2_BATTERY\"]/title"
-msgstr ""
+msgstr "'배터리 아르테미스' 미사일"
 
 #: src-en/data/blueprints.xml.append:1849
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_MISSLAUNCHER_2_BATTERY\"]/short"
-msgstr ""
+msgstr "'B. Artemis.'"
 
 #: src-en/data/blueprints.xml.append:1850
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_MISSLAUNCHER_2_BATTERY\"]/desc"
 msgstr ""
+"(RK 펑크 장비) 약간의 성능을 대가로 전력을 제공하도록 개선된 고전적인 "
+"아르테미스 미사일입니다."
 
 #: src-en/data/blueprints.xml.append:2052
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_RAIN_OF_ION\"]/title"
-msgstr ""
+msgstr "이온의 비"
 
 #: src-en/data/blueprints.xml.append:2053
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_RAIN_OF_ION\"]/short"
-msgstr ""
+msgstr "Rain Ions"
 
 #: src-en/data/blueprints.xml.append:2055
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_RAIN_OF_ION\"]/desc"
 msgstr ""
+"(RK 펑크 장비) 이 대형 샷건은 가속 관통자 이온, 중형 이온, 화염 이온, 일반 "
+"이온, 기절 이온, 방사성 이온을 (가장 빠른 순서부터 느린 순서대로) 한 번에 "
+"모두 발사합니다. 연속 발사 시 재충전 시간이 줄어듭니다.\n"
+"\t\t무기 수십 개 분량의 파란 선택지를 제공합니다!"
 
 #: src-en/data/blueprints.xml.append:2131
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_SHOTPHASER\"]/title"
-msgstr ""
+msgstr "산탄관통자"
 
 #: src-en/data/blueprints.xml.append:2132
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_SHOTPHASER\"]/short"
-msgstr ""
+msgstr "Shotphaser"
 
 #: src-en/data/blueprints.xml.append:2134
 msgid "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_SHOTPHASER\"]/desc"
 msgstr ""
+"(RK 펑크 장비) 이 샷건은 상당한 기절 확률을 가진 크게 가속된 위상 이온 3발을 "
+"범위를 지정하여 발사합니다.\n"
+"\t\t관통자는 보호막을 관통하여 첫 번째 보호막 레이어에 이온 피해를 입히고, "
+"타격한 시스템에도 추가 피해를 입힙니다."
 
 #: src-en/data/blueprints.xml.append:2198
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_BOMBLAUNCHER_OXYBOTTLE\"]/title"
-msgstr ""
+msgstr "산소 폭탄"
 
 #: src-en/data/blueprints.xml.append:2199
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_BOMBLAUNCHER_OXYBOTTLE\"]/short"
-msgstr ""
+msgstr "O2 B."
 
 #: src-en/data/blueprints.xml.append:2201
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_BOMBLAUNCHER_OXYBOTTLE\"]/desc"
 msgstr ""
+"(RK 스코치 장비) 모든 인질범들이 애용하는 장치입니다.\n"
+"\n"
+"\t\t15초 동안 유지되는 산소통 1개를 즉시 순간이동 배치합니다. 산소통은 "
+"체력이 50이며, 산소를 빠르게 채우고 원격 폭파시켜 30의 선원 피해와 60% "
+"확률의 화재를 일으킬 수 있습니다.\n"
+"\t\t\n"
+"\t\t자신의 함선을 목표로 지정할 수 있습니다. 보존 무기는 직접 전력을 "
+"소모하진 않지만, 다른 무기에 전력이 공급되고 있어야 사용할 수 있습니다."
 
 #: src-en/data/blueprints.xml.append:2232
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_BOMBLAUNCHER_OXYBOTTLE\"]/spawnCrew/name"
-msgstr ""
+msgstr "산소"
 
 #: src-en/data/blueprints.xml.append:2298
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_OXY_FIREFILL_MISSILES\"]/title"
-msgstr ""
+msgstr "'굴뚝' 발사기"
 
 #: src-en/data/blueprints.xml.append:2299
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_OXY_FIREFILL_MISSILES\"]/short"
-msgstr ""
+msgstr "Chimney"
 
 #: src-en/data/blueprints.xml.append:2300
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_OXY_FIREFILL_MISSILES\"]/desc"
 msgstr ""
+"(RK 스코치 장비) 빽빽하게 장전되어 발사 시 산소통도 함께 떨어뜨리는 "
+"미사일입니다.\n"
+"\t\t스코치 분파에게는 이런 격언이 있습니다: \"문제가 생겼다고? 그냥 굴뚝으로 "
+"날려 보내!\""
 
 #: src-en/data/blueprints.xml.append:2333
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_OXY_FIREFILL_MISSILES\"]/spawnCrew/name"
-msgstr ""
+msgstr "산소"
 
 #: src-en/data/blueprints.xml.append:2409
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_FOCUS_FIRE\"]/title"
-msgstr ""
+msgstr "'핫 포커' 핀포인트"
 
 #: src-en/data/blueprints.xml.append:2410
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_FOCUS_FIRE\"]/short"
-msgstr ""
+msgstr "'Hot Poker'"
 
 #: src-en/data/blueprints.xml.append:2411
 msgid "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_FOCUS_FIRE\"]/desc"
 msgstr ""
+"(RK 스코치 장비) 핀포인트가 정밀 무기라고 누가 그랬나요? 이 화염 폭발 입자 "
+"핀포인트을 만든 사람은 절대 아니었을 겁니다.\n"
+"\n"
+"\t\t시스템 피해 외에도 해당 방 전체에 불을 지릅니다. [화염 폭발: 적중한 방에 "
+"이미 불이 붙어 있었다면, 인접한 방(대각선 포함)이 1의 시스템 피해와 15의 "
+"선원 피해를 입고 불이 붙습니다. 아군 강습대원이 맞지 않게 조심하세요!]"
 
 #: src-en/data/blueprints.xml.append:2504
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_RAIN_OF_FIRE\"]/title"
-msgstr ""
+msgstr "화염의 비"
 
 #: src-en/data/blueprints.xml.append:2505
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_RAIN_OF_FIRE\"]/short"
-msgstr ""
+msgstr "Rain Fire"
 
 #: src-en/data/blueprints.xml.append:2506
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_RAIN_OF_FIRE\"]/desc"
 msgstr ""
+"(RK 스코치 장비) 이 발사기는 화력이 워낙 뛰어난 덕분에 연쇄 발사가 완전히 "
+"중첩되면 공기가 없는 방에서도 불이 계속 타오르게 만듭니다.\n"
+"\t\t피해는 없으나 방어막과 에너지 방어막을 관통합니다."
 
 #: src-en/data/blueprints.xml.append:2565
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_RAIN_OF_FIRE_ENEMYFIX\"]/title"
-msgstr ""
+msgstr "화염의 비"
 
 #: src-en/data/blueprints.xml.append:2566
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_RAIN_OF_FIRE_ENEMYFIX\"]/short"
-msgstr ""
+msgstr "RainFire"
 
 #: src-en/data/blueprints.xml.append:2567
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_RAIN_OF_FIRE_ENEMYFIX\"]/desc"
 msgstr ""
+"이 텍스트는 정상적인 상황에서 표시되지 않아야 합니다. AI 조준 방식으로 인해 "
+"(발사 수 > 플레이어 함선 방 개수)일 때 게임이 튕기는 현상을 방지하기 위해 "
+"발사 수가 3발로 제한되고 재충전 시간이 감소했습니다."
 
 #: src-en/data/blueprints.xml.append:2616
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_LASER_BPS\"]/title"
-msgstr ""
+msgstr "'BPS 전령'"
 
 #: src-en/data/blueprints.xml.append:2617
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_LASER_BPS\"]/short"
-msgstr ""
+msgstr "'BPS Mess.'"
 
 #: src-en/data/blueprints.xml.append:2618
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_LASER_BPS\"]/desc"
 msgstr ""
+"(RK BPS 장비) 라디칼 구역에서 강화된 관통형 중형 레이저입니다. 밤 분파는 "
+"선체 파괴와 향상된 기절 능력을, 펑크 분파는 이온 및 선원 피해를 추가했으며, "
+"스코치 분파는 균열 확률을 확정 화재 및 연쇄 발사 기능으로 교체했습니다."
 
 #: src-en/data/blueprints.xml.append:2687
 msgid "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_A_LASER_1\"]/title"
-msgstr ""
+msgstr "\"예의범절\" 대 라디칼 레이저"
 
 #: src-en/data/blueprints.xml.append:2688
 msgid "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_A_LASER_1\"]/short"
-msgstr ""
+msgstr "\"Decency\""
 
 #: src-en/data/blueprints.xml.append:2689
 msgid "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_A_LASER_1\"]/desc"
 msgstr ""
+"(대 라디칼 장비) 재충전 시간이 크게 감소하지만 속도가 느리며, 대상이 소지한 "
+"라디칼 무기 1개당 +1의 피해를 추가로 입힙니다.\n"
+"\t\t'질서가 승리하기를.'\n"
+"\t\t\n"
+"\t\t보존 무기는 직접 전력을 소모하진 않지만, 다른 무기에 전력이 공급되고 "
+"있어야 사용할 수 있습니다."
 
 #: src-en/data/blueprints.xml.append:2779
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_A_MISSLAUNCHER\"]/title"
-msgstr ""
+msgstr "'조치' 대 라디칼 미사일"
 
 #: src-en/data/blueprints.xml.append:2780
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_A_MISSLAUNCHER\"]/short"
-msgstr ""
+msgstr "'Measure'"
 
 #: src-en/data/blueprints.xml.append:2781
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_A_MISSLAUNCHER\"]/desc"
 msgstr ""
+"(대 라디칼 장비) 재충전 시간이 빠르게 감소하며, 대상이 소지한 라디칼 무기 "
+"1개당 +1의 시스템 피해를 추가로 입힙니다.\n"
+"\t\t'질서가 승리하기를.'\n"
+"\n"
+"\t\t이 특수한 미사일 발사기는 필요 없는 자원을 재활용해 탄두로 사용합니다. "
+"하지만 전투당 제한된 횟수만 발사할 수 있습니다."
 
 #: src-en/data/blueprints.xml.append:2882
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_ARTILLERY_FLAK_QUICK\"]/title"
-msgstr ""
+msgstr "플랙 함포"
 
 #: src-en/data/blueprints.xml.append:2883
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_ARTILLERY_FLAK_QUICK\"]/short"
-msgstr ""
+msgstr "Artillery"
 
 #: src-en/data/blueprints.xml.append:2884
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_ARTILLERY_FLAK_QUICK\"]/desc"
 msgstr ""
+"함포: 50 범위 내에 각 1의 피해를 입히는 플랙 파편 4발을 발사합니다.\n"
+"\t기본 충전 시간: 20초"
 
 #: src-en/data/blueprints.xml.append:2930
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_LASER_PARTICLE\"]/title"
-msgstr ""
+msgstr "입자 함포"
 
 #: src-en/data/blueprints.xml.append:2931
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_LASER_PARTICLE\"]/short"
-msgstr ""
+msgstr "Artillery"
 
 #: src-en/data/blueprints.xml.append:2932
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_LASER_PARTICLE\"]/desc"
 msgstr ""
+"함포: 각 2의 시스템 피해와 15의 선원 피해를 입히며, 보호막 1겹을 관통하고 "
+"절대 빗나가지 않는 입자 레이저 6발을 발사합니다.\n"
+"\t기본 충전 시간: 25초"
 
 #: src-en/data/blueprints.xml.append:2934
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_LASER_PARTICLE\"]/tooltip"
 msgstr ""
+"함포: [기본 충전 시간: 25초] 각 2의 시스템 피해와 15의 선원 피해를 입히며, "
+"보호막 1겹을 관통하고 절대 빗나가지 않는 입자 레이저 6발을 발사합니다."
 
 #: src-en/data/blueprints.xml.append:2973
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_MISSILE_FIRE\"]/title"
-msgstr ""
+msgstr "화염 미사일 함포"
 
 #: src-en/data/blueprints.xml.append:2974
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_MISSILE_FIRE\"]/short"
-msgstr ""
+msgstr "Artillery"
 
 #: src-en/data/blueprints.xml.append:2975
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_MISSILE_FIRE\"]/desc"
 msgstr ""
+"함포: 각 1의 선체 피해를 입히고 항상 화재를 일으키며 절대 빗나가지 않는 "
+"미사일 3발을 발사합니다.\n"
+"\t기본 충전 시간: 28초"
 
 #: src-en/data/blueprints.xml.append:2977
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_ARTILLERY_MISSILE_FIRE\"]/tooltip"
 msgstr ""
+"함포: [기본 충전 시간: 28초] 각 1의 선체 피해를 입히고 항상 화재를 일으키며 "
+"절대 빗나가지 않는 미사일 3발을 발사합니다."
 
 #: src-en/data/blueprints.xml.append:3026
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_WEAPONLIKE_SURGEBOMB\"]/title"
-msgstr ""
+msgstr "폭탄 분출"
 
 #: src-en/data/blueprints.xml.append:3027
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_WEAPONLIKE_SURGEBOMB\"]/short"
-msgstr ""
+msgstr "BOMBSURGE"
 
 #: src-en/data/blueprints.xml.append:3028
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_WEAPONLIKE_SURGEBOMB\"]/desc"
 msgstr ""
+"이 텍스트는 정상적인 상황에서 표시되지 않아야 합니다. 분출 강화형 선원 "
+"능력을 위한 항목입니다. ANCIENT_BOMB를 기반으로 합니다."
 
 #: src-en/data/blueprints.xml.append:3074
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_RAMMER\"]/class"
-msgstr ""
+msgstr "라디칼 밤 순양함"
 
 #: src-en/data/blueprints.xml.append:3075
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_RAMMER\"]/name"
-msgstr ""
+msgstr "Rammer"
 
 #: src-en/data/blueprints.xml.append:3076
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_RAMMER\"]/desc"
 msgstr ""
+"라디칼 밤 분파의 기함은 무기 공간이 제한적이지만, 적함에 안전하게* 들이받은 "
+"후 집어삼킬 수 있는 장비를 갖추고 있습니다!\n"
+"\t*(출처 검증 필요)"
 
 #: src-en/data/blueprints.xml.append:3153
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_RAMMER_2\"]/class"
-msgstr ""
+msgstr "라디칼 밤 순양함"
 
 #: src-en/data/blueprints.xml.append:3154
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_RAMMER_2\"]/name"
-msgstr ""
+msgstr "RAMBADAM"
 
 #: src-en/data/blueprints.xml.append:3155
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_RAMMER_2\"]/desc"
 msgstr ""
+"이 라디칼 밤 기함은 신속하고 맹목적이며 지속하기 어려운 파괴력을 위해 다양한 "
+"방어 수단을 희생했습니다. 최대 무기 전력: 10."
 
 #: src-en/data/blueprints.xml.append:3234
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER\"]/class"
-msgstr ""
+msgstr "라디칼 펑크 순양함"
 
 #: src-en/data/blueprints.xml.append:3235
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER\"]/name"
-msgstr ""
+msgstr "Punker"
 
 #: src-en/data/blueprints.xml.append:3236
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER\"]/desc"
 msgstr ""
+"궤도 입자 가속기를 순양함으로 개조한 라디칼 펑크의 기함입니다. 내부적인 "
+"문제로 함선이 고철이 되기 전에, 더 저렴해진 해킹 및 입자 함포 업그레이드와 "
+"확장된 반응로를 활용하세요."
 
 #: src-en/data/blueprints.xml.append:3310
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER_2\"]/class"
-msgstr ""
+msgstr "라디칼 펑크 순양함"
 
 #: src-en/data/blueprints.xml.append:3311
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER_2\"]/name"
-msgstr ""
+msgstr "NuH4RM0NY"
 
 #: src-en/data/blueprints.xml.append:3312
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_PUNKER_2\"]/desc"
 msgstr ""
+"요청하지도 않았는데 이 함선을 재설계한 짝퉁 하모니는 \"너희 같은 생물체 "
+"오점들이 알아채지 못하는 게 아쉬울 정도의 최고 수준의 디자인!!\"이라고 "
+"주장합니다. 실제 엔지 하모니의 접근을 불허합니다. 승리 후 폐기하십시오."
 
 #: src-en/data/blueprints.xml.append:3386
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_RK_SCORCHER\"]/class"
-msgstr ""
+msgstr "라디칼 스코치 순양함"
 
 #: src-en/data/blueprints.xml.append:3387
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_RK_SCORCHER\"]/name"
-msgstr ""
+msgstr "Scorcher"
 
 #: src-en/data/blueprints.xml.append:3389
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_RK_SCORCHER\"]/desc"
 msgstr ""
+"라디칼 스코치 분파의 기함은 명확한 구조적 취약점을 지니고 있지만, 그들의 "
+"기술을 마음먹고 적극 활용한다면 치명적인 위력으로 이를 보완할 수 있습니다."
 
 #: src-en/data/blueprints.xml.append:3461
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_RK_SCORCHER_2\"]/class"
-msgstr ""
+msgstr "라디칼 스코치 순양함"
 
 #: src-en/data/blueprints.xml.append:3462
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_RK_SCORCHER_2\"]/name"
-msgstr ""
+msgstr "Chokanburn"
 
 #: src-en/data/blueprints.xml.append:3464
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_RK_SCORCHER_2\"]/desc"
 msgstr ""
+"자체 방어 기능을 갖춘 이 함선을 운용하는 훌륭한 선원들은 자신들의 위대한 "
+"침공에 함께할 인원을 모으는 데 애를 먹었습니다. 적 강습대원이 무엇인가를 "
+"파괴하기 전에 알아서 죽어주기만을 바랄 뿐입니다."
 
 #: src-en/data/blueprints.xml.append:3537
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_RK_SCORCHER_3\"]/class"
-msgstr ""
+msgstr "라디칼 스코치 순양함"
 
 #: src-en/data/blueprints.xml.append:3538
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_RK_SCORCHER_3\"]/name"
-msgstr ""
+msgstr "Air Phoenix"
 
 #: src-en/data/blueprints.xml.append:3540
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_RK_SCORCHER_3\"]/desc"
 msgstr ""
+"한 조수가 \"왜 이 함선에는 산소실이 없죠? 당장 도약하지 않으면 금방이라도 "
+"산산조각 날 것처럼 보이는데요. 그리고 저 새 모양, 약간 MFK 느낌 나지 "
+"않나요?\"라고 말했습니다. 그의 시신은 끝내 발견되지 않았습니다. 최대 무기 "
+"전력: 10."
 
 #: src-en/data/blueprints.xml.append:3611
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_SCORCH\"]/class"
-msgstr ""
+msgstr "라디칼 스코치 순양함"
 
 #: src-en/data/blueprints.xml.append:3612
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_SCORCH\"]/name"
-msgstr ""
+msgstr "Scorcher Prototype"
 
 #: src-en/data/blueprints.xml.append:3614
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_DJMOD_SCORCH\"]/desc"
 msgstr ""
+"이 라디칼 스코치 기함 프로토타입은 더 최신의 버전이 개발되면서 "
+"퇴출당했습니다."
 
 #: src-en/data/blueprints.xml.append:3687
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_RK_LEAD_TITANS_USER\"]/class"
-msgstr ""
+msgstr "RK 밤 타이탄 수송선"
 
 #: src-en/data/blueprints.xml.append:3688
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_RK_LEAD_TITANS_USER\"]/name"
-msgstr ""
+msgstr "Nebula Jumpscare"
 
 #: src-en/data/blueprints.xml.append:3689
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_RK_LEAD_TITANS_USER\"]/desc"
 msgstr ""
+"라디칼이 경쟁 상대나 경찰의 요새를 발견하면, 타이탄들이 내려와 반대 세력을 "
+"힘으로 제압합니다. 이번 만큼은 좋은 목적을 위해 활용해 보세요."
 
 #: src-en/data/blueprints.xml.append:3690
 msgid ""
 "data/blueprints.xml.append$//shipBlueprint[@name=\"PLAYER_SHIP_RK_LEAD_TITANS_USER\"]/unlock"
 msgstr ""
+"이 함선을 해금하려면 라디칼 구역의 성운 지대에서 적 함선의 거대한 선원을 "
+"전부 전멸시키십시오."
