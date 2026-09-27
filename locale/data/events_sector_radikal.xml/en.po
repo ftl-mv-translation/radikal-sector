@@ -469,7 +469,7 @@ msgstr "Continue..."
 #: src-en/data/events_sector_radikal.xml:531
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_GRAVESPRED_USER_REBELAUTO\"]/destroyed/choice[4]/text"
-msgstr "Nothing"
+msgstr "Look for a blueprint instead"
 
 #: src-en/data/events_sector_radikal.xml:533
 msgid ""
@@ -1498,7 +1498,7 @@ msgid ""
 msgstr ""
 "Inside this asteroid belt, you stumble upon a strange workshop manned by Vexopaths.\n"
 "\n"
-"\t\t\"*Grumble* This is the RK Bam 'Brutal Improvement Lab'. Welcome.\"\n"
+"\t\t\"*Grumble* This is the RK Bam 'Brutal Improvement Garage' (B.I.G.). Welcome.\"\n"
 "\t\tYou already knew Vexopaths are not the life of the party. This one's tone manages to make you feel guilty and threatened before you've even said or done anything.\n"
 "\t\t\n"
 "\t\t\"Your ship, we can improve it. Brutally, in case you missed that part. For low scrap.\n"
@@ -1816,8 +1816,8 @@ msgstr "Continue..."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[@req=\"RKS_HAS_ENGI_AND_GHOST\"]/text"
 msgstr ""
-"Your Engi locates the box and says your Lanius could catch it before it's "
-"too late."
+"Your Engi locates the box and says your Ghost could catch it before it's too"
+" late."
 
 #: src-en/data/events_sector_radikal.xml:1978
 msgid ""
@@ -2316,8 +2316,7 @@ msgstr "Continue..."
 #: src-en/data/events_sector_radikal.xml:2420
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_LEECH_ANTIABUSE\"]/text"
-msgstr ""
-"(Non-Unique Mantis) We have 'workpieces' for sale, where should we go?"
+msgstr "(Non-Unique Leech) We have 'workpieces' for sale, where should we go?"
 
 #: src-en/data/events_sector_radikal.xml:2422
 msgid ""
@@ -2413,15 +2412,15 @@ msgstr "Nevermind. Back to what we were saying..."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ORCHID_ANTIABUSE\"]/text"
 msgstr ""
-"(Non-Unique Orchids) We have 'flammable material' for sale, where should we "
+"(Non-Unique Orchid) We have 'flammable material' for sale, where should we "
 "go?"
 
 #: src-en/data/events_sector_radikal.xml:2504
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ORCHID_ANTIABUSE\"]/event/text"
 msgstr ""
-"\"Righto, then it's the Punk lab you want. I can send you there instead. Be "
-"ready to show your RadiKal gear.\""
+"\"Righto, then it's the Scorch lab you want. I can send you there instead. "
+"Be ready to show your RadiKal gear.\""
 
 #: src-en/data/events_sector_radikal.xml:2508
 msgid ""
@@ -2464,15 +2463,15 @@ msgstr "Nevermind. Back to what we were saying..."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ZOLTAN_ANTIABUSE\"]/text"
 msgstr ""
-"(Non-Unique Orchids) We have 'flammable material' for sale, where should we "
+"(Non-Unique Zoltan) We have 'flammable material' for sale, where should we "
 "go?"
 
 #: src-en/data/events_sector_radikal.xml:2542
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ZOLTAN_ANTIABUSE\"]/event/text"
 msgstr ""
-"\"Righto, then it's the Punk lab you want. I can send you there instead. Be "
-"ready to show your RadiKal gear.\""
+"\"Righto, then it's the Scorch lab you want. I can send you there instead. "
+"Be ready to show your RadiKal gear.\""
 
 #: src-en/data/events_sector_radikal.xml:2546
 msgid ""
@@ -2927,8 +2926,8 @@ msgstr ""
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_SHELL_ANTIABUSE\"]/event/text"
 msgstr ""
-"\"Righto, then it's the Punk lab you want. I can send you there instead. Be "
-"ready to show your RadiKal gear.\""
+"\"Silly things, then it's the Bam lab you want. I can send you there "
+"instead. Be ready to show your RadiKal gear.\""
 
 #: src-en/data/events_sector_radikal.xml:2984
 msgid ""
@@ -2978,8 +2977,8 @@ msgstr ""
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_LANIUS_ANTIABUSE\"]/event/text"
 msgstr ""
-"\"Righto, then it's the Punk lab you want. I can send you there instead. Be "
-"ready to show your RadiKal gear.\""
+"\"Silly things, then it's the Bam lab you want. I can send you there "
+"instead. Be ready to show your RadiKal gear.\""
 
 #: src-en/data/events_sector_radikal.xml:3022
 msgid ""
@@ -3022,7 +3021,7 @@ msgstr "Nevermind. Back to what we were saying..."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ORCHID_ANTIABUSE\"]/text"
 msgstr ""
-"(Non-Unique Orchids) We have 'flammable material' for sale, where should we "
+"(Non-Unique Orchid) We have 'flammable material' for sale, where should we "
 "go?"
 
 #: src-en/data/events_sector_radikal.xml:3057
@@ -3043,7 +3042,7 @@ msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ORCHID_ANTIABUSE\"]/event/choice[@req=\"rks_lab_coords_scorch\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"\"Tell them they stink while you're at it. Hah! That's gonna make their "
+"\"Tell them they're idiots while you're at it. Hah! That's gonna make their "
 "blood boil.\""
 
 #: src-en/data/events_sector_radikal.xml:3071
@@ -3073,7 +3072,7 @@ msgstr "Nevermind. Back to what we were saying..."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ZOLTAN_ANTIABUSE\"]/text"
 msgstr ""
-"(Non-Unique Orchids) We have 'flammable material' for sale, where should we "
+"(Non-Unique Zoltan) We have 'flammable material' for sale, where should we "
 "go?"
 
 #: src-en/data/events_sector_radikal.xml:3095
@@ -3094,7 +3093,7 @@ msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ZOLTAN_ANTIABUSE\"]/event/choice[@req=\"rks_lab_coords_scorch\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"\"Tell them they stink while you're at it. Hah! That's gonna make their "
+"\"Tell them they're idiots while you're at it. Hah! That's gonna make their "
 "blood boil.\""
 
 #: src-en/data/events_sector_radikal.xml:3109
@@ -3572,7 +3571,7 @@ msgstr ""
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_SHELL_ANTIABUSE\"]/event/text"
 msgstr ""
-"\"Righto, then it's the Punk lab you want. I can send you there instead. Be "
+"\"Pfeh, then it's the Bam lab you want. I can send you there instead. Be "
 "ready to show your RadiKal gear.\""
 
 #: src-en/data/events_sector_radikal.xml:3567
@@ -3623,7 +3622,7 @@ msgstr ""
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_LANIUS_ANTIABUSE\"]/event/text"
 msgstr ""
-"\"Righto, then it's the Punk lab you want. I can send you there instead. Be "
+"\"Pfeh, then it's the Bam lab you want. I can send you there instead. Be "
 "ready to show your RadiKal gear.\""
 
 #: src-en/data/events_sector_radikal.xml:3605
@@ -3666,14 +3665,13 @@ msgstr "Nevermind. Back to what we were saying..."
 #: src-en/data/events_sector_radikal.xml:3638
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_LEECH_ANTIABUSE\"]/text"
-msgstr ""
-"(Non-Unique Mantis) We have 'workpieces' for sale, where should we go?"
+msgstr "(Non-Unique Leech) We have 'workpieces' for sale, where should we go?"
 
 #: src-en/data/events_sector_radikal.xml:3640
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_LEECH_ANTIABUSE\"]/event/text"
 msgstr ""
-"\"Righto, then it's the Punk lab you want. I can send you there instead. Be "
+"\"Pfeh, then it's the Punk lab you want. I can send you there instead. Be "
 "ready to show your RadiKal gear.\""
 
 #: src-en/data/events_sector_radikal.xml:3644
@@ -3686,7 +3684,8 @@ msgstr "Alright then."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_LEECH_ANTIABUSE\"]/event/choice[@req=\"rks_lab_coords_punk\""
 " and @lvl=\"0\"]/event/text"
-msgstr "\"Tell them they stink while you're at it. Hah! Those smug freaks.\""
+msgstr ""
+"\"Tell them they're slowpokes while you're at it. Hah! Those smug freaks.\""
 
 #: src-en/data/events_sector_radikal.xml:3653
 msgid ""
@@ -3721,7 +3720,7 @@ msgstr ""
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_MANTIS_ANTIABUSE\"]/event/text"
 msgstr ""
-"\"Righto, then it's the Punk lab you want. I can send you there instead. Be "
+"\"Pfeh, then it's the Punk lab you want. I can send you there instead. Be "
 "ready to show your RadiKal gear.\""
 
 #: src-en/data/events_sector_radikal.xml:3681
@@ -3734,7 +3733,8 @@ msgstr "Alright then."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_MANTIS_ANTIABUSE\"]/event/choice[@req=\"rks_lab_coords_punk\""
 " and @lvl=\"0\"]/event/text"
-msgstr "\"Tell them they stink while you're at it. Hah! Those smug freaks.\""
+msgstr ""
+"\"Tell them they're slowpokes while you're at it. Hah! Those smug freaks.\""
 
 #: src-en/data/events_sector_radikal.xml:3690
 msgid ""
@@ -3810,7 +3810,7 @@ msgid ""
 msgstr ""
 "\"First, the deliveries. What raw materials do you bring? The furnaces, vivisection labs and distilleries hunger.\"\n"
 "\n"
-"\t\tYou look at the list of \"materials\" and get a better understanding of why this sector is outlawed by so many factions. However the mission comes first, right?"
+"\t\tYou look at the list of \"flammable materials\" and get a better understanding of why this sector is outlawed by so many factions. However the mission comes first, right?"
 
 #: src-en/data/events_sector_radikal.xml:3756
 msgid ""
@@ -3881,7 +3881,7 @@ msgstr "A Caretaker."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid_caretaker\"]/event/text"
 msgstr ""
-"\"Quality material, yes. Here's greater payment.\"\n"
+"\"Deep, warm essence, yes. Here's greater payment.\"\n"
 "\t\t\t\n"
 "\t\t\t\tYou can feel the rest of your crew judging you."
 
@@ -3904,7 +3904,7 @@ msgstr "A Praetor."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid_praetor\"]/event/text"
 msgstr ""
-"\"Quality material, yes. Here's greater payment.\"\n"
+"\"Great funky spores, yes. Here's greater payment.\"\n"
 "\t\t\t\n"
 "\t\t\t\tYou can feel the rest of your crew judging you."
 
@@ -4037,7 +4037,7 @@ msgstr "A Peacekeeper."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"zoltan_peacekeeper\"]/event/text"
 msgstr ""
-"\"Quality material, yes. Here's greater payment.\"\n"
+"\"High voltage armored power! Here's greater payment.\"\n"
 "\t\t\t\n"
 "\t\t\t\tYou can feel the rest of your crew judging you."
 
@@ -4060,7 +4060,7 @@ msgstr "A Duskbringer Martyr."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"zoltan_martyr\"]/event/text"
 msgstr ""
-"\"Quality material, yes. Here's greater payment.\"\n"
+"\"Very volatile power, yes! Here's greater payment.\"\n"
 "\t\t\t\n"
 "\t\t\t\tYou can feel the rest of your crew judging you."
 

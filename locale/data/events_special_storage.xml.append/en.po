@@ -251,7 +251,7 @@ msgstr "(Punk Harmony) Grow a Separatist Engi."
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[23]/mod-"
 "append:choice/text"
-msgstr "(Oxygenizer) Create an atmosphere!"
+msgstr "(Oxygenizer) Create an atmosphere."
 
 #: src-en/data/events_special_storage.xml.append:728
 msgid ""
@@ -2594,7 +2594,7 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE_IN_EMPTY\"]/text"
 msgstr ""
 "Are you sure you want to do this?\n"
-"\t[Will envelop both ships in an O2 atmosphere, protecting fires and crew from venting and breaches. Costs 2}]"
+"\t[Will envelop your ship in an O2 atmosphere, protecting fires and crew from venting and breaches. Costs 1}]"
 
 #: src-en/data/events_special_storage.xml.append:4873
 msgid ""
@@ -3662,9 +3662,9 @@ msgstr ""
 "\"Fetch!\" You send out both special drones, fingers-or-equivalent-appendages crossed.\n"
 "\t\t\t\tSome time later, they remotely report their findings.\n"
 "\t\t\t\t\n"
-"\t\t\t\tIf you choose to retrieve nothing, you get back what's left of both retrievers.\n"
+"\t\t\t\tIf you choose to retrieve nothing, you get back some of the cost.\n"
 "\t\t\t\t\n"
-"\t\t\t\tIf you choose to retrieve anything, you get back what's left of 1 retriever, but the fleet will gain 1 turn on you."
+"\t\t\t\tIf you choose to retrieve anything the fleet will gain 1 turn on you."
 
 #: src-en/data/events_special_storage.xml.append:6691
 msgid ""
@@ -3865,8 +3865,8 @@ msgid ""
 " and @lvl=\"1\"]/text"
 msgstr ""
 "RK Punk \"Mind Cooler\": When under the effects of Mind Control, your crew "
-"cannot fight, sabotage, or teleport away. Works on both ships. [ALREADY "
-"INSTALLED]"
+"cannot fight, sabotage, use abilities, or teleport away. Works on both "
+"ships. [ALREADY INSTALLED]"
 
 #: src-en/data/events_special_storage.xml.append:7053
 msgid ""
@@ -4061,7 +4061,7 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER\"]/text"
 msgstr ""
 "You are about to install the Mind Cooler upgrade.\n"
-"\t[Effects: When under the effects of Mind Control, your crew cannot fight, sabotage, or teleport away. Works on both ships.]"
+"\t[Effects: When under the effects of Mind Control, your crew cannot fight, sabotage, use abilities, or teleport away. Works on both ships.]"
 
 #: src-en/data/events_special_storage.xml.append:7268
 msgid ""
