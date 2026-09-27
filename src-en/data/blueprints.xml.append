@@ -235,12 +235,13 @@ Fake / dummy crew
 		Full Power: (cost 4{, [style[color:ff3377]]destroys the augment[[/style]]) 
 		6-7 damage, [style[color:ff3377]]20% other bad outcomes![[/style]]
 		
-		Emergency Generator and Fuel Conserver can apply.
+		Emergency Generator can apply on the first strike.
+		Fuel Conserver can apply on every normal strike.
 
 		Can be reinforced at empty beacons for some ~, to survive the next Full Power use. (Does not use up the beacon)</desc>
     <cost>70</cost>
 	<!--<bp>4</bp>-->
-    <rarity>3</rarity>
+    <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 <augBlueprint name="LOCKED_DJMOD_COMBAT_SHIPVORE_RAM">
@@ -274,7 +275,7 @@ Fake / dummy crew
 
 	COMBO: Makes any crew a fire source for Plasma Teleporter.]</desc>
     <cost>50</cost>		
-    <rarity>5</rarity>
+    <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 <augBlueprint name="RK_CREW_ARE_BOMBS_ON">
@@ -301,7 +302,7 @@ Fake / dummy crew
 		You can also trigger this via the Toggle Menu anytime for 1{.
 	</desc>
     <cost>60</cost>
-    <rarity>3</rarity>
+    <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 
@@ -339,13 +340,13 @@ Fake / dummy crew
 	<desc>(RK Bam gear) A staple of high-end ships relying on Shields, made possible by stress tests on many Zoltan scouts who never came home.
 		
 		Adds a 4 hitpoints Super Shield. Stacks with other Super Shields, but not with itself.
-		Also increases Shield charge speed by 25%.
+		Also increases Shield charge speed by 20%.
 		
 		Activate from the Toggle Menu to instantly restore all your Supershield layers. [Uses 1 {]
 		Cannot be activated again until you rebuild its capacitor at an empty beacon for 7~ .
 	</desc>
     <cost>130</cost>
-    <rarity>5</rarity>
+    <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 </FTL>
@@ -391,11 +392,11 @@ Make a quest to obtain it. Add ways to feed it 1 zoltan to increase layers by 3 
     <title>Arrogance Shield</title>
 	<desc>(RK Punk gear) Risky for your Shields but could make you untouchable. Strange cubes died for this.
 		
-		Adds a 9 hitpoints Super Shield. Stacks with other Super Shields, but not with itself.
+		Adds a 8 hitpoints Super Shield. Stacks with other Super Shields, but not with itself.
 		On your ship, your crew-drones also gain 3 HP/second while enemy crew-drones lose that much.
-		[style[color:ff3377]]WARNING: Reduces Shield charge speed by 25% and Weapons charge speed by 5%.[[/style]]</desc>
+		[style[color:ff3377]]WARNING: Reduces Shield charge speed by 30% and Weapons charge speed by 8%.[[/style]]</desc>
     <cost>120</cost>
-    <rarity>5</rarity>
+    <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 
@@ -407,7 +408,7 @@ Make a quest to obtain it. Add ways to feed it 1 zoltan to increase layers by 3 
 		All effects end after 40 to 75 seconds, based on how many droneparts you choose to use.
 		[Uses 1-2 | and 3 reactor power. Emergency Generator can apply.]</desc>
     <cost>80</cost>
-    <rarity>5</rarity>
+    <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 
@@ -423,7 +424,7 @@ Make a quest to obtain it. Add ways to feed it 1 zoltan to increase layers by 3 
 		Corruptor (from "Darkest Desire"),
 		and Turrets (from "The Old Guard").</desc>
     <cost>70</cost>
-    <rarity>4</rarity>
+    <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 
@@ -454,7 +455,7 @@ REWORKED JumpDecoy -->
 		2| + hacking 2 = 65% / 15% / 5% / +?
 		3| + hacking 3 = 45% / 30% / 5% / +???</desc>
     <cost>35</cost>
-    <rarity>3</rarity>
+    <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 
@@ -466,7 +467,7 @@ REWORKED JumpDecoy -->
 		Your crew have 1.6x healing from most sources, 2x cloning speed, and lose no skills from cloning.
 		[style[color:ff3377]]WARNING: All crew in the same room as any of your crew has 0.5x healing[[/style]] (does not stack) [style[color:ff3377]]and cannot be cloned![[/style]] [This debuff is purple smoke]</desc>
     <cost>120</cost>
-    <rarity>5</rarity>
+    <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 
@@ -475,8 +476,8 @@ REWORKED JumpDecoy -->
     <desc>(RK Punk gear) With all the risks they take, sometimes RadiKals need extra survivability. These kits include light motorized armor for all shapes and sizes, drugs, and other medical equipment.
 
 		On your ship, your crew have 0.75x damage taken, 1.3x repair speed, 1.3x movement speed, and a 4 HP/second heal while idle (not even manning).</desc>
-    <cost>90</cost>
-    <rarity>4</rarity>
+    <cost>80</cost>
+    <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 
@@ -491,7 +492,7 @@ REWORKED JumpDecoy -->
 
 	At empty beacons, you can grow a Separatist for 25~, 1{ and 1| (or two Separatists for more resources), but [style[color:ff3377]]the rebel fleet accelerates for 1 turn[[/style]]</desc>
     <cost>55</cost>
-    <rarity>5</rarity>
+    <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 <augBlueprint name="RK_OWN_HARMONY_OFF">
@@ -544,7 +545,7 @@ The first one allows widespread own ship fire control (removal and creation) and
 	
 	Can be upgraded twice at empty beacons, increasing the fire resistance and gaining an effect.</desc>
     <cost>60</cost>
-    <rarity>3</rarity>
+    <rarity>0</rarity>
 	<!-- <value>1</value> This field is unneeded and can't fix system fire resistance. -->
     <!-- <stackable>false</stackable> -->
     <stackable>true</stackable>
@@ -562,7 +563,7 @@ The first one allows widespread own ship fire control (removal and creation) and
 	
 	Can be upgraded once at empty beacons, increasing the fire resistances and O2 production.</desc>
     <cost>90</cost>			
-    <rarity>5</rarity>
+    <rarity>0</rarity>
 	<!-- <value>1</value> This field is unneeded and can't fix system fire resistance. -->
     <!-- <stackable>false</stackable> -->
     <stackable>true</stackable>
@@ -596,9 +597,9 @@ The first one allows widespread own ship fire control (removal and creation) and
 		[Uses 1{, [style[color:ff3377]]ignites your O2 system[[/style]].]
 
 	COMBO: Charged Belts / Martyr Vests make all crew fire sources.
-	COMBO: any Scorched Earth removes the need for a fire source.</desc>
+	COMBO: any Scorched Earth lets you pick effect strength, without needing a fire source.</desc>
 	<cost>75</cost>
-	<rarity>5</rarity>
+	<rarity>0</rarity>
 	<stackable>false</stackable>
 </augBlueprint>
 
@@ -611,7 +612,7 @@ The first one allows widespread own ship fire control (removal and creation) and
 
 	Both toggle modes make enemies move 15% slower in fire (up to 60% with 3 power in O2) [Does not stack].</desc>
 	<cost>80</cost>
-	<rarity>5</rarity>
+	<rarity>0</rarity>
 	<stackable>false</stackable>
 </augBlueprint>
 <augBlueprint name="RK_ENEMIES_BURN_MORE">
@@ -623,7 +624,7 @@ The first one allows widespread own ship fire control (removal and creation) and
 
 	Both toggle modes make enemies move 15% slower in fire (up to 60% with 3 power in O2) [Does not stack].</desc>
 	<cost>80</cost>
-	<rarity>5</rarity>
+	<rarity>0</rarity>
 	<stackable>false</stackable>
 </augBlueprint>
 
@@ -631,9 +632,10 @@ The first one allows widespread own ship fire control (removal and creation) and
 	<title>Oxygenizer</title>
 	<desc>(RK Scorch gear) This little Combat Augment can shoot out giant gravity-inducing canisters of ultracompressed O2 to fill the void of space when a fight starts. Some nickname it "Canned Air". Shenanigans ensue.
 	
-	Puts both ships in an atmosphere, making breaches and open vents fill oxygen instead of depleting it. [Uses 2}]</desc>
+	Puts both ships in an atmosphere, making breaches and open vents fill oxygen instead of depleting it. [Uses 2}]
+	Can also be done at empty beacons. [Uses 1}]</desc>
 	<cost>20</cost>
-	<rarity>4</rarity>
+	<rarity>0</rarity>
 	<stackable>false</stackable>
 </augBlueprint>
 
@@ -658,7 +660,7 @@ The first one allows widespread own ship fire control (removal and creation) and
 
 		COMBO: Scorch Preigniter increases the maximum extra bonus to 20%</desc>
 	<cost>135</cost>
-	<rarity>5</rarity>
+	<rarity>0</rarity>
 	<value>0.15</value>		<!-- Chance of fire. intended: 0.15 -->
 	<stackable>true</stackable>
 </augBlueprint>
@@ -686,9 +688,10 @@ RadiKal Bam+Punk+Scorch ( = BPS)
     <desc>(RK BPS gear) The ingenuity of RadiKals from all subfactions lets you deep-search most empty beacons, at a non-negligible cost.
 		
 		You can choose to retrieve/steal the random weapon or augment found, [style[color:ff3377]]accelerating the fleet 1 turn[[/style]].
+		Or just leave it there without affecting the fleet, getting back some of the cost.
 	</desc>
     <cost>40</cost>
-    <rarity>4</rarity>
+    <rarity>0</rarity>
     <stackable>false</stackable>
 </augBlueprint>
 
@@ -696,7 +699,7 @@ RadiKal Bam+Punk+Scorch ( = BPS)
     <title>Shield Over Matter</title>
     <desc>(RK BPS gear) Provides an Energy Shield with an integrity of 10 hitpoints. (Does not stack with itself or other non-stacking Energy Shields)
 		
-		Whenever you take hull damage, it has a 50% chance to restore 1 layer of Energy Shields but when that happens, [style[color:ff3377]]the room that was hit catches fire (on top of any fire chance from the weapon that did the damage)[[/style]].</desc>
+		Whenever you take hull damage, it has a 50% chance to restore 1 layer of Energy Shields but then [style[color:ff3377]]the room that was hit also catches fire (on top of any fire chance from the weapon that did the damage)[[/style]].</desc>
     <cost>200</cost>
     <rarity>0</rarity>
 	<value>0.5</value>		<!-- Chance of re-shield. intended: 0.5 -->
@@ -956,7 +959,7 @@ REF Darkest Desires for MV 5.5.1:
 <!-- Console: "LOAD ELITE_SHIP_SLUG 8" to retest. -->
 <augBlueprint name="INTERNAL_DJMOD_MC_PARALYZER">
 	<title>Mind Cooler</title>
-	<desc>When under the effects of Mind Control, your crew cannot fight, sabotage, or teleport away. Works on both ships.</desc>
+	<desc>When under the effects of Mind Control, your crew cannot fight, sabotage, use abilities, or teleport away. Works on both ships.</desc>
 	<cost>0</cost>
 	<rarity>0</rarity>
 	<stackable>false</stackable>
@@ -1145,7 +1148,7 @@ REF Darkest Desires for MV 5.5.1
 -->
 <FTL>
 
- <!-- <descriptionOverride>TEXT</descriptionOverride>
+<!-- <descriptionOverride>TEXT</descriptionOverride>
 Overrides the weapon's description you see when you open your inventory menu, with whatever you'd like it to say. The reason you would want this is if you say, wanted to hide the fact that the weapon spawned crew, such as my example below.
 Example
  <descriptionOverride>Fires a photonic blast that can disrupt shields like normal lasers, but only deals system damage with a low chance to start a fire or breach. A ship would have to be close to destruction for this to possibly destroy it.
@@ -1261,7 +1264,7 @@ REFS (TRC v2.6 for MV v5.5.1) Fangtian, and Goedendag (and it's the art size bas
 	<power>3</power>
 	<cost>100</cost>
 	<bp>5</bp>
-	<rarity>4</rarity>
+	<rarity>0</rarity>
 	<image>beam_contact</image>
 	
 	<!-- REFS: Spetum 45, Spontoon 65, Voulge 100, TRC Fangtian 128, Pike 170. -->
@@ -1313,7 +1316,7 @@ REFS (TRC v2.6 for MV v5.5.1) Fangtian, and Goedendag (and it's the art size bas
 	<power>1</power>
 	<cost>60</cost>
 	<bp>6</bp>
-	<rarity>3</rarity>
+	<rarity>0</rarity>
 	<projectiles>
 		<projectile count="1" fake="false">rk_laser_heavy_popper</projectile>
 	</projectiles>
@@ -1371,7 +1374,7 @@ REFS (TRC v2.6 for MV v5.5.1) Fangtian, and Goedendag (and it's the art size bas
 	<power>3</power>
 	<cost>80</cost>
 	<bp>6</bp>
-	<rarity>4</rarity>
+	<rarity>0</rarity>
 	<projectiles>
 		<projectile count="1" fake="false">rk_laser_heavy_popper</projectile>
 	</projectiles>
@@ -1471,7 +1474,7 @@ REFS (TRC v2.6 for MV v5.5.1) Fangtian, and Goedendag (and it's the art size bas
 	<power>4</power>
 	<cost>120</cost>
 	<bp>6</bp>
-	<rarity>5</rarity>
+	<rarity>0</rarity>
 	<projectiles>
 		<projectile count="1" fake="false">rk_laser_heavy_popper</projectile>
 	</projectiles>
@@ -1515,7 +1518,7 @@ REFS (TRC v2.6 for MV v5.5.1) Fangtian, and Goedendag (and it's the art size bas
 	<power>3</power>
 	<cost>70</cost>
 	<bp>2</bp>
-	<rarity>5</rarity>
+	<rarity>0</rarity>
 	<image>missile_heavy_1</image>
 	<launchSounds>
 		<sound>smallMissile1</sound>
@@ -1576,7 +1579,7 @@ REFS (TRC v2.6 for MV v5.5.1) Fangtian, and Goedendag (and it's the art size bas
 
 	<cost>50</cost>
 	<bp>4</bp>
-	<rarity>4</rarity>
+	<rarity>0</rarity>
 	<image>rk_bomb_antibio_repair</image>
 	<explosion>explosion_bio</explosion>
 	<launchSounds>
@@ -1832,7 +1835,7 @@ Shield Piercing: 2</tooltipOverride>
 	<power>3</power>
 	<cost>80</cost>
 	<bp>6</bp>
-	<rarity>5</rarity>
+	<rarity>0</rarity>
 	<length>350</length>
 	<image>beam_contact</image>
 	<launchSounds>
@@ -1843,6 +1846,7 @@ Shield Piercing: 2</tooltipOverride>
 </weaponBlueprint>
 <!-- Console: "LOAD MU_UNION_OUTRIDER 8" to retest. -->
 
+<!-- Based on Artemis (see below) -->
 <weaponBlueprint name="RK_MISSLAUNCHER_2_BATTERY">
 	<type>MISSILES</type>
 	<title>'Battery Artemis' Missiles</title>
@@ -1857,14 +1861,14 @@ Shield Piercing: 2</tooltipOverride>
 	<accuracyMod>10</accuracyMod>
 	<shots>1</shots>
 	<sp>10</sp>
-	<fireChance>2</fireChance>
-	<breachChance>2</breachChance>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
 	<!-- <stunChance>3</stunChance> -->
 	<cooldown>16</cooldown>
 	<power>-2</power>
 	<cost>70</cost>
 	<bp>5</bp>
-	<rarity>5</rarity>
+	<rarity>0</rarity>
 	<image>missile_heavy_1</image>
 	<launchSounds>
 		<sound>smallMissile1</sound>
@@ -1925,8 +1929,8 @@ Shield Piercing: 2</tooltipOverride>
 	<iconImage>missile</iconImage>
 </weaponBlueprint> -->
 
-<!-- Rain of Ion. Main Weapon worthy ion blaster. -->
-<!-- REFS MV v5.5.1: 
+<!-- Rain of Ion. Main Weapon worthy ion blaster.
+REFS MV v5.5.1: 
 
 Fastest base MV ion:
 <weaponBlueprint name="ION_4">
@@ -2078,7 +2082,7 @@ Targeting specific systems, even has conditions:
 	<power>4</power>
 	<cost>120</cost>
 	<bp>3</bp>
-	<rarity>5</rarity>
+	<rarity>0</rarity>
 	<!-- REF: Trifecta from TRC.
 	ION_HEAVY is 3 ion dmg
 	ION_FIRE is 2 ion
@@ -2154,7 +2158,7 @@ Targeting specific systems, even has conditions:
 	<power>2</power>
 	<cost>80</cost>
 	<bp>3</bp>
-	<rarity>4</rarity>
+	<rarity>0</rarity>
 
 	<projectiles>
 		<projectile count="3" fake="false">ion_phase</projectile>
@@ -2234,7 +2238,7 @@ Targeting specific systems, even has conditions:
 		<noSlot>true</noSlot>
 	</spawnCrew>
 	<crewSpawnChance>10</crewSpawnChance>
-	<rarity>4</rarity>
+	<rarity>0</rarity>
 	<image>rk_bomb_oxybottle</image>
 	<explosion>rk_bottledoxygen_charge</explosion>
 	<launchSounds>
@@ -2297,7 +2301,7 @@ Targeting specific systems, even has conditions:
 	<type>MISSILES</type>
 	<title>Chimney</title>
 	<short>Chimney</short>
-	<desc>(RK Scorch gear) Missiles loaded to the brim that also drop a Bottled Oxygen.
+	<desc>(RK Scorch gear) Over-filled with fire. Also drops a Bottled Oxygen. [style[color:ff3377]]Each shot ignites your Weapons room![[/style]]
 		The Scorch have a saying: "Problems? Just send them up the Chimney!"</desc>
 	<tip>RK_lore_RK_OXY_FIREFILL_MISSILES</tip>
 	<!-- <drone_targetable>1</drone_targetable> -->
@@ -2322,7 +2326,7 @@ Targeting specific systems, even has conditions:
     <speed>27</speed>		<!-- REFS: Mines = 15 speed. Phase ion (the slowest) = 25. Flak = 26 -->
 	<shots>1</shots>
 	<sp>10</sp>
-	<cooldown>12</cooldown>
+	<cooldown>15.5</cooldown>		<!-- REFS: Hermes(MISSILES_3): 15s, loot Hades 17s, Hades: 18s -->
 	<power>2</power>
 	<cost>70</cost>
 	<bp>6</bp>
@@ -2336,7 +2340,7 @@ Targeting specific systems, even has conditions:
 	</spawnCrew>
 	<crewSpawnChance>10</crewSpawnChance>
 
-	<rarity>4</rarity>
+	<rarity>0</rarity>
 	<image>rk_missile_firefill_oxygen</image>
 	
 	<launchSounds>
@@ -2408,9 +2412,10 @@ Targeting specific systems, even has conditions:
 	<flavorType>Pinpoint</flavorType>
 	<title>Hot Poker</title>
 	<short>'Hot Poker'</short>
-	<desc>(RK Scorch gear) Who said pinpoints are precision tools? Not whoever made this Fireblast Particle Pinpoint.
+	<desc>(RK Scorch gear) Who said pinpoints need precision? Not whoever made this Fireblast Particle Pinpoint.
 
-		On top of system damage, sets the room fully on fire. [Fireblast: If the room hit was on fire, adjacent rooms (diagonals included) take: 1 system and 15 crew damage, and a fire. Don't hit your boarders!]</desc>
+		On top of system damage, sets the room fully on fire.
+		[Fireblast: If the room hit was on fire, adjacent rooms (diagonals included) take: 1 system and 15 crew damage, and a fire. Don't hit your boarders!]</desc>
 	<tip>RK_lore_RK_FOCUS_FIRE</tip>
 	<damage>0</damage>
 	<sysDamage>3</sysDamage>
@@ -2420,7 +2425,7 @@ Targeting specific systems, even has conditions:
 	<breachChance>0</breachChance>
 
 	<mv-aiSystemTarget system="any"/>
-	<cooldown>10</cooldown>			<!-- REFS: LASER_PARTICLE 13s (3dmg/1pow), LASER_PARTICLE_2 15s (5dmg/2pow) -->
+	<cooldown>9</cooldown>			<!-- REFS: LASER_PARTICLE 13s (3dmg/1pow), LASER_PARTICLE_2 15s (5dmg/2pow) -->
 
 	<color>
 		<r>255</r>
@@ -2432,7 +2437,7 @@ Targeting specific systems, even has conditions:
 	<power>3</power>
 	<cost>80</cost>
 	<bp>2</bp>
-	<rarity>5</rarity>
+	<rarity>0</rarity>
 	<image>beam_contact</image>
 
 	<length>1</length>
@@ -2524,7 +2529,7 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 	<power>2</power>
 	<cost>70</cost>
 	<bp>6</bp>
-	<rarity>3</rarity>
+	<rarity>0</rarity>
 	<projectiles>
 		<projectile count="1" fake="false">rk_napalm_missile</projectile>
 	</projectiles>
@@ -2605,17 +2610,90 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 <!-- 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
-			BPS weapons
+			BPS weapons - 1 for each power from Conservative to 4pow.
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
+
+<!-- Weak free pinpoint with plenty thematic effects.
+REFS: Dirk, Partisan, Gungnir, TRC's focus_fire, TRC_FOCUS_CONSERVATIVE (Poniard) -->
+<weaponBlueprint name="RK_BPS_FOCUS_STATUS">
+	<type>BEAM</type>
+	<flavorType>Pinpoint</flavorType>
+	<title>BPS Letter</title>
+	<short>'BPS Lett.'</short>
+	<desc>(RK BPS gear) A weaker but more annoying Dirk, from a joint RadiKal team: lights fires, breaches, stuns, and hacks all at once.</desc>
+	<tip>RK_lore_RK_BPS_FOCUS_STATUS</tip>
+	<damage>1</damage>
+	<sysDamage>0</sysDamage>
+	<persDamage>0</persDamage>
+	<sp>1</sp>
+
+	<mv-hack duration="4"/>			<!-- REFS: Gungnir 6s(17s CD, length 85) -->
+
+	<fireChance>10</fireChance>
+	<breachChance>10</breachChance>
+	<stun>6</stun>
+
+	<mv-aiSystemTarget system="any"/>
+	<cooldown>12</cooldown>			<!-- REFS: Dirk 12s, Poniard 13s -->
+
+	<color>
+		<r>220</r>
+		<g>225</g>
+		<b>125</b>
+	</color>
+
+	<speed>1</speed>
+
+	<power>0</power>
+    <mv-conservative/>
+
+	<cost>60</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<image>beam_contact</image>
+	<length>1</length>
+	<launchSounds>
+		<sound>focus_weak</sound>
+	</launchSounds>
+	<weaponArt>rk_bps_focus_status</weaponArt>
+	<iconImage>beam</iconImage>
+</weaponBlueprint>
+<!-- Dirk
+<weaponBlueprint name="FOCUS_1">
+	<type>BEAM</type>
+	<flavorType>Pinpoint</flavorType>
+	<tip>tip_focus</tip>
+	<title>'Dirk' Pinpoint</title>
+	<short>'Dirk'</short>
+	<desc>A fairly simple weapon that fires a straight beam that can only hit 1 room, but does 2 damage.</desc>
+	<tooltip>One damage per room beam weapon</tooltip>
+	<damage>2</damage>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>2</breachChance>
+	<cooldown>12</cooldown>
+	<speed>1</speed>
+	<power>1</power>
+	<cost>45</cost>
+	<bp>2</bp>
+	<rarity>2</rarity>
+	<image>beam_contact</image>
+	<length>1</length>
+	<launchSounds>
+		<sound>focus_weak</sound>
+	</launchSounds>
+	<weaponArt>focus_1</weaponArt>
+	<iconImage>beam</iconImage>
+</weaponBlueprint> -->
 
 <!-- Laser with plenty thematic effects. -->
 <weaponBlueprint name="DJMOD_LASER_BPS">
 	<type>LASER</type>
 	<title>'BPS Messenger'</title>
 	<short>'BPS Mess.'</short>
-	<desc>(RK BPS gear) A Piercing Heavy Laser boosted in the RadiKal Sector: the Bam gave it hullbust and better stun, the Punk added ion and crew damage, and the Scorch replaced breach chance with guaranteed fire and chaining.</desc>
+	<desc>(RK BPS gear) Piercing Heavy tweaked in the RadiKal Sector: the Bam replaced stun by hullbust, the Punk added ion and crew damage, and the Scorch made it light fires and chain but not breach.</desc>
 	<tip>RK_lore_DJMOD_LASER_BPS</tip>
 	<damage>2</damage>
 	<sysDamage>0</sysDamage>			<!-- Adding any of this makes it an Ancient Ion = Plasma! OP against shields. -->
@@ -2634,19 +2712,19 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 	<fireChance>10</fireChance>
 	<breachChance>0</breachChance>
 	<!-- <stunChance>9</stunChance> 	"Negates stun duration if you declare this."-->
-	<stun>5</stun>					<!-- Duration. Implies 100% stunChance. Heavy Stunner & Neural Laser: 12s -->
+	<!-- <stun>5</stun>					Duration. Implies 100% stunChance. Heavy Stunner & Neural Laser: 12s -->
 
-	<!-- max chained intended : 5.75s = 1 ion dissipation time +0.75s . 
+	<!-- max chained intended : 6s = 1 ion dissipation time +1s . 
 	Non-chain REFS: Pierce Heavy 11s (1 pow),
 	Fully chained REFS: LASER_HEAVY_CHAINGUN 13s->4s (1 pow) -->
-	<cooldown>14</cooldown>
+	<cooldown>14.75</cooldown>
 	<power>2</power>
 	<cost>100</cost>
 	<bp>2</bp>
-	<rarity>5</rarity>
+	<rarity>0</rarity>
 	<boost>
 		<type>cooldown</type>
-		<amount>2.75</amount>
+		<amount>3</amount>
 		<count>3</count>
 	</boost>
 	<!-- <projectiles> and <image> are mutually exclusive. If you declare one, 
@@ -2677,7 +2755,9 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 <!-- 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
 			ANTI-RADIKAL weapons
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
@@ -3689,7 +3769,7 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 	<desc>When RadiKals find competitor or police fortifications, Titans come down to strong-arm the opposition. Make it work for a good cause for once.</desc>
 	<unlock>Crewkill a dangerous enemy in the RadiKal Sector.</unlock>
 	<systemList>
-		<battery power="1" max="4" room="12" start="false" img="room_battery_rk_1x1_w" />
+		<battery power="1" max="2" room="12" start="false" img="room_battery_rk_1x1_w" />
 		<cloaking power="1" room="2" start="false" img="room_cloaking_3" />
 		<clonebay power="1" room="4" start="false">
 			<slot>
@@ -3759,6 +3839,75 @@ DO NOT remove the EnemyFix version, they shoot multiple rooms with each cooldown
 	<aug name="RK_LEAD_TITANS" />
 	<aug name="EX_BREACH_SEALANT" />
 </shipBlueprint>
+
+<shipBlueprint name="PLAYER_SHIP_RK_GRAVESPRED_USER" layout="rk_gravespred_user_a" img="rk_gravespred_user_a">
+	<class>RK Punk Depopulator</class>
+	<name>Tabula Rasa</name>
+	<desc>Small. Kills people. Does not feel. Sent when RadiKals need to sever ties with former allies. Unfortunately, it cannot accomodate the usual systems.</desc>
+	<unlock>Destroy a dangerous enemy in the RadiKal Sector, then choose correctly.</unlock>
+	<systemList>
+		<battery power="1" max="2" room="10" start="false" img="room_battery_rk_1x1_w" />
+		<cloaking power="1" room="9" start="false" img="room_cloaking_13" />
+		<clonebay power="1" room="1" start="false">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="2" room="11" start="true" img="room_doors">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" max="8" room="6" start="true" img="room_drones" />
+		<engines power="5" room="0" start="true" img="room_engines_8">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="4" start="false" img="room_hacking_7" />
+		<mind power="1" room="7" start="false" img="room_mind_rk_1x1" />
+		<pilot power="3" room="8" start="true" img="room_pilot_3">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</pilot>
+		<sensors power="3" room="3" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="8" room="2" start="false" img="room_shields_11">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<temporal power="1" max="3" room="12" start="false" img="room_temporal_rk_1x1_w" />
+		<weapons power="3" room="5" start="true" img="room_weapons_8">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>3</droneSlots>
+	<weaponList missiles="10" count="4">
+		<weapon name="RK_MISSLAUNCHER_2_BATTERY" />
+		<weapon name="RK_KILLALL_BEAM" />
+	</weaponList>
+	<droneList drones="10" count="3">
+		<drone name="REPAIR" />
+	</droneList>
+	<health amount="25" />
+	<maxPower amount="7" />
+	<aug name="RK_ARROGANCE_SHIELD" />
+</shipBlueprint>
+
 
 </FTL>
 

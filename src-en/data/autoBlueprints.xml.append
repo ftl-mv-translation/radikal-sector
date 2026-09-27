@@ -735,7 +735,6 @@ For Demicloners End.
 	<name>RK_SCORCH_SELF_3</name>
 	<name>RK_ENEMIES_BURN_MORE</name>
 	<name>RK_ENEMIES_CAN_BURN</name>
-	<name>RK_SCORCH_PREIGNITER</name>
 	<name>RK_WEAPONS_ON_FIRE</name>
 
 	<name>RK_BPS_SHIELD_OVER_MATTER</name>
@@ -881,6 +880,7 @@ RK and RK-thematic WEAPON lists
 	<name>RK_OXY_FIREFILL_MISSILES</name>
 	<name>DJMOD_RAIN_OF_FIRE</name>
 	
+	<name>RK_BPS_FOCUS_STATUS</name>
 	<name>DJMOD_LASER_BPS</name>
 </blueprintList>
 
@@ -940,6 +940,7 @@ RK and RK-thematic WEAPON lists
 	<name>RK_FOCUS_FIRE</name>
 	<name>RK_OXY_FIREFILL_MISSILES</name>
 	
+	<name>RK_BPS_FOCUS_STATUS</name>
 	<name>DJMOD_LASER_BPS</name>
 </blueprintList>
 
@@ -1982,7 +1983,7 @@ RK and RK-thematic WEAPON lists
 
 
 <!-- Fully skippable fight unless player buys mega upgrade that sets player on fire -->
-<shipBlueprint name="RKS_BIL_FIREBLASTER_PIRATE" layout="mu_rock_destroyer" img="mu_pirate_rock_destroyer">
+<shipBlueprint name="RKS_GARAGE_FIREBLASTER_PIRATE" layout="mu_rock_destroyer" img="mu_pirate_rock_destroyer">
 	<class>Pirate Fireblaster</class>
 	<systemList>
 		<doors power="1" max="2" room="7" start="false" />
@@ -2091,8 +2092,8 @@ QUEST BOSSES
 		<oxygen power="1" max="2" room="10" start="true" />
 		<pilot power="2" max="3" room="0" start="true" />
 		<shields power="4" max="8" room="3" start="true" />
-		<teleporter power="2" max="3" room="4" start="true" />
-		<weapons power="4" max="7" room="2" start="true" />
+		<teleporter power="3" max="3" room="4" start="true" />
+		<weapons power="3" max="7" room="2" start="true" />
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>0</droneSlots>
@@ -2106,7 +2107,7 @@ QUEST BOSSES
 	<droneList drones="0" count="0" />
 	<health amount="18" />
 	<maxPower amount="14" />
-	<crewCount amount="8" max="16" class="mantis_warlord" />
+	<!-- <crewCount amount="8" max="16" class="mantis_warlord" /> -->
 	<boardingAI>invasion</boardingAI>
 	<aug name="SUPER_CREW_STIMS" />
 	<aug name="UPG_TECH_BYPASS" />
@@ -2115,14 +2116,14 @@ QUEST BOSSES
 <shipBlueprint name="RKS_LAB_PUNK_FREEMANTIS_ELITE_CHALLENGE" layout="mu_freemantis_dropship" img="mu_freemantis_dropship_elite">
 	<class>Warlord Dropship</class>
 	<systemList>
-		<!-- <clonebay power="1" max="3" room="5" start="true" />	Can this ship have medbay instead? -->
+		<!-- <clonebay power="1" max="3" room="5" start="true" /> -->
 		<engines power="2" max="4" room="1" start="true" />
 		<mind power="1" max="1" room="8" start="false" />
 		<oxygen power="1" max="2" room="10" start="true" />
 		<pilot power="2" max="3" room="0" start="true" />
 		<shields power="4" max="8" room="3" start="true" />
-		<teleporter power="2" max="3" room="4" start="true" />
-		<weapons power="4" max="7" room="2" start="true" />
+		<teleporter power="3" max="3" room="4" start="true" />
+		<weapons power="3" max="7" room="2" start="true" />
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>0</droneSlots>
@@ -2136,7 +2137,7 @@ QUEST BOSSES
 	<droneList drones="0" count="0" />
 	<health amount="18" />
 	<maxPower amount="15" />
-	<crewCount amount="8" max="16" class="mantis_warlord" />
+	<!-- <crewCount amount="8" max="16" class="mantis_warlord" /> -->
 	<boardingAI>invasion</boardingAI>
 	<aug name="SUPER_CREW_STIMS" />
 	<aug name="UPG_TECH_BYPASS" />
@@ -2772,7 +2773,8 @@ LIST_CREW_MORPH and all the other morph lists...
 <blueprintList name="JUDGELIST_ROCK_RK_BPS_EQUIPMENT">
 	<name>RK_BPS_SHIELD_OVER_MATTER</name>
 	<name>RK_BPS_SURVEYOR</name>
-
+	
+	<name>RK_BPS_FOCUS_STATUS</name>
 	<name>DJMOD_LASER_BPS</name>
 </blueprintList>
 
@@ -2861,7 +2863,8 @@ LIST_SLAVES_GREAT
 	<mod-append:name>RK_FOCUS_FIRE</mod-append:name>
 	<mod-append:name>RK_OXY_FIREFILL_MISSILES</mod-append:name>
 	<mod-append:name>DJMOD_RAIN_OF_FIRE</mod-append:name>
-
+	
+	<mod-append:name>RK_BPS_FOCUS_STATUS</mod-append:name>
 	<mod-append:name>DJMOD_LASER_BPS</mod-append:name>
 </mod:findName>
 <!-- 
@@ -2966,6 +2969,7 @@ LIST_CONTRABAND_WEP_SMUGGLER_DELUXE
 	<mod-append:name>RK_OXY_FIREFILL_MISSILES</mod-append:name>
 	<mod-append:name>DJMOD_RAIN_OF_FIRE</mod-append:name>
 
+	<mod-append:name>RK_BPS_FOCUS_STATUS</mod-append:name>
 	<mod-append:name>DJMOD_LASER_BPS</mod-append:name>
 </mod:findName>
 
@@ -2989,6 +2993,7 @@ LIST_CONTRABAND_WEP_SMUGGLER_DELUXE
 	<mod-append:name>RK_OXY_FIREFILL_MISSILES</mod-append:name>
 	<mod-append:name>DJMOD_RAIN_OF_FIRE</mod-append:name>
 
+	<mod-append:name>RK_BPS_FOCUS_STATUS</mod-append:name>
 	<mod-append:name>DJMOD_LASER_BPS</mod-append:name>
 </mod:findName>
 
@@ -3079,10 +3084,14 @@ BLUELIST_WEAPONS_RECYCLER
 
 <mod:findName type="blueprintList" name="BLUELIST_FOCUS_ALL">
 	<mod-append:name>RK_FOCUS_FIRE</mod-append:name>
+
+	<mod-append:name>RK_BPS_FOCUS_STATUS</mod-append:name>
 </mod:findName>
-<!-- 
-BLUELIST_FOCUS_DAMAGE
- -->
+
+<mod:findName type="blueprintList" name="BLUELIST_FOCUS_DAMAGE">
+	<mod-append:name>RK_BPS_FOCUS_STATUS</mod-append:name>
+</mod:findName>
+
 <mod:findName type="blueprintList" name="BLUELIST_WEAPONS_BEAM_POWERFUL">
 	<mod-append:name>DJMOD_BAM_FISSUREBEAM</mod-append:name>
 </mod:findName>
@@ -3100,11 +3109,15 @@ BLUELIST_FOCUS_DAMAGE
 	<mod-append:name>RK_HEAVY_POPPER_1</mod-append:name>
 	<mod-append:name>RK_HEAVY_POPPER_2</mod-append:name>
 	<mod-append:name>RK_HEAVY_POPPER_3</mod-append:name>
+
 	<mod-append:name>RK_RAIN_OF_ION</mod-append:name>
+
 	<mod-append:name>RK_BOMBLAUNCHER_OXYBOTTLE</mod-append:name>
 	<mod-append:name>RK_FOCUS_FIRE</mod-append:name>
 	<mod-append:name>RK_OXY_FIREFILL_MISSILES</mod-append:name>
 	<mod-append:name>DJMOD_RAIN_OF_FIRE</mod-append:name>
+	
+	<mod-append:name>RK_BPS_FOCUS_STATUS</mod-append:name>
 	<mod-append:name>DJMOD_LASER_BPS</mod-append:name>
 	
 	<!-- <mod-append:name>DJMOD_ARTILLERY_LASER_PARTICLE</mod-append:name> -->
@@ -3156,11 +3169,15 @@ BLUELIST_FOCUS_DAMAGE
 	<mod-append:name>RK_HEAVY_POPPER_1</mod-append:name>
 	<mod-append:name>RK_HEAVY_POPPER_2</mod-append:name>
 	<mod-append:name>RK_HEAVY_POPPER_3</mod-append:name>
+
 	<mod-append:name>RK_RAIN_OF_ION</mod-append:name>
+
 	<mod-append:name>RK_BOMBLAUNCHER_OXYBOTTLE</mod-append:name>
 	<mod-append:name>RK_FOCUS_FIRE</mod-append:name>
 	<mod-append:name>RK_OXY_FIREFILL_MISSILES</mod-append:name>
 	<mod-append:name>DJMOD_RAIN_OF_FIRE</mod-append:name>
+	
+	<mod-append:name>RK_BPS_FOCUS_STATUS</mod-append:name>
 	<mod-append:name>DJMOD_LASER_BPS</mod-append:name>
 
 	<!-- <mod-append:name>DJMOD_ARTILLERY_LASER_PARTICLE</mod-append:name> -->
@@ -3175,6 +3192,7 @@ BLUELIST_FOCUS_DAMAGE
 	<mod-append:name>RK_HEAVY_POPPER_3</mod-append:name>
 	<mod-append:name>RK_RAIN_OF_ION</mod-append:name>
 	<mod-append:name>RK_FOCUS_FIRE</mod-append:name>
+	<mod-append:name>RK_BPS_FOCUS_STATUS</mod-append:name>
 	<mod-append:name>DJMOD_LASER_BPS</mod-append:name>
 </mod:findName>
 
@@ -3187,7 +3205,11 @@ BLUELIST_FOCUS_DAMAGE
 </mod:findName>
 <!-- 
 BLUELIST_WEAPONS_CRYSTAL
-BLUELIST_WEAPONS_HACK
+ -->
+<mod:findName type="blueprintList" name="BLUELIST_WEAPONS_HACK">
+	<mod-append:name>RK_BPS_FOCUS_STATUS</mod-append:name>
+</mod:findName>
+<!-- 
 BLUELIST_WEAPONS_MIND_AFFECT (see note in MV)
 BLUELIST_WEAPONS_MIND_CONTROL
  -->
@@ -3252,6 +3274,8 @@ BLUELIST_PHEROMONES
 	<mod-append:name>RK_MISSLAUNCHER_2_BATTERY</mod-append:name>
 
 	<mod-append:name>RK_BOMBLAUNCHER_OXYBOTTLE</mod-append:name>
+	
+	<mod-append:name>RK_BPS_FOCUS_STATUS</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_CHAIN">
@@ -3266,15 +3290,19 @@ SHOP_ITEM_SYLVAN_RECYCLER
  -->
 <mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_PIERCE">
 	<!-- <mod-append:name>RK_KILLALL_BEAM</mod-append:name> -->
+	<mod-append:name>RK_BPS_FOCUS_STATUS</mod-append:name>
 	<mod-append:name>DJMOD_LASER_BPS</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_FIRE">
 	<mod-append:name>RK_RAIN_OF_ION</mod-append:name>
+
 	<mod-append:name>RK_BOMBLAUNCHER_OXYBOTTLE</mod-append:name>
 	<mod-append:name>RK_FOCUS_FIRE</mod-append:name>
 	<mod-append:name>RK_OXY_FIREFILL_MISSILES</mod-append:name>
 	<mod-append:name>DJMOD_RAIN_OF_FIRE</mod-append:name>
+
+	<mod-append:name>RK_BPS_FOCUS_STATUS</mod-append:name>
 	<mod-append:name>DJMOD_LASER_BPS</mod-append:name>
 </mod:findName>
 
@@ -3283,6 +3311,8 @@ SHOP_ITEM_SYLVAN_RECYCLER
 	<mod-append:name>RK_HEAVY_POPPER_1</mod-append:name>
 	<mod-append:name>RK_HEAVY_POPPER_2</mod-append:name>
 	<mod-append:name>RK_HEAVY_POPPER_3</mod-append:name>
+	
+	<mod-append:name>RK_BPS_FOCUS_STATUS</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_SYSTEM">
@@ -3305,7 +3335,9 @@ SHOP_ITEM_SYLVAN_RECYCLER
 	<mod-append:name>RK_KILLALL_BEAM</mod-append:name>
 	<mod-append:name>RK_RAIN_OF_ION</mod-append:name>
 	<mod-append:name>RK_OXY_FIREFILL_MISSILES</mod-append:name>
-	<mod-append:name>DJMOD_LASER_BPS</mod-append:name>
+	
+	<mod-append:name>RK_BPS_FOCUS_STATUS</mod-append:name>
+	<!-- <mod-append:name>DJMOD_LASER_BPS</mod-append:name> -->
 </mod:findName>
 <!-- 
 SHOP_ITEM_SYLVAN_LOCKDOWN
@@ -3358,6 +3390,8 @@ SHOP_ITEM_SYLVAN_FOCUS_STANDARD
 -->
 <mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_FOCUS_SPECIAL">
 	<mod-append:name>RK_FOCUS_FIRE</mod-append:name>
+	
+	<mod-append:name>RK_BPS_FOCUS_STATUS</mod-append:name>
 </mod:findName>
 
 <mod:findName type="blueprintList" name="SHOP_ITEM_SYLVAN_ION_STANDARD">

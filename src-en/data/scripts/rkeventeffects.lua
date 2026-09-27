@@ -1,4 +1,4 @@
---Bam B.I.L.
+--Bam B.I.G.
 script.on_game_event("RKS_UPGRADE_DRONES_BY_2", false, function()
 	Hyperspace.ships.player:GetSystem(4):UpgradeSystem(2)
 end)
@@ -61,7 +61,7 @@ end)
 
 
 
---Scorch B.I.L.
+--Scorch B.I.G.
 script.on_game_event("RKS_UPGRADE_REACTOR_BY_5", false, function()
 	local powerManager = Hyperspace.PowerManager.GetPowerManager(0)
 	powerManager.currentPower.second = powerManager.currentPower.second + 5

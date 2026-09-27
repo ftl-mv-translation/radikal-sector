@@ -1153,6 +1153,17 @@ BPS
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
 
+<animSheet name="rk_bps_focus_status" w="210" h="60" fw="30" fh="60">weapon_radikal/rk_bps_focus_status.png</animSheet>
+<weaponAnim name="rk_bps_focus_status">
+    <sheet>rk_bps_focus_status</sheet>
+    <desc length="7" x="0" y="0"/>
+    <chargedFrame>1</chargedFrame>
+    <fireFrame>2</fireFrame>
+    <firePoint  x="16" y="44"/>
+    <mountPoint x="3" y="52"/>
+    <chargeImage>weapon_radikal/rk_bps_focus_status_glow.png</chargeImage>
+</weaponAnim>
+
 <animSheet name="djmod_laser_superheavy" w="55" h="33" fw="55" fh="33">projectiles/djmod_laser_superheavy.png</animSheet>
 <anim name="djmod_laser_superheavy">
 	<sheet>djmod_laser_superheavy</sheet>

@@ -294,6 +294,13 @@ end, 64) ]]
         end
     end
 
+    -- Chimney, Scorch weapon. Self-fire.
+    if weapon.blueprint and weapon.blueprint.name == "RK_OXY_FIREFILL_MISSILES" then
+        local roomId = shipManager.weaponSystem.roomId
+        if roomId then
+            shipManager:StartFire(roomId)
+        end
+    end
 
     -- Gravespred beam.
     --[[ REF Lily's Beam Emporium:

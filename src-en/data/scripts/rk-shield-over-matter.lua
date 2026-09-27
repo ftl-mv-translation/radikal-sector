@@ -1,11 +1,11 @@
--- mods.rk = {}
--- WORKS with mods.rk = {} defined here, and in a separate core.lua .
+-- WORKS with "mods.rk = {}" defined here, or in a separate core.lua .
 
 local function get_room_at_location(shipManager, location, includeWalls)
     return Hyperspace.ShipGraph.GetShipInfo(shipManager.iShipId):GetSelectedRoom(location.x, location.y, includeWalls)
 end
 
--- RK BPS Shield Over Matter augment.
+-- RK BPS Shield Over Matter augment. 
+--REFS: Lily's Innovations' Ablative Armor (1300+ lines), MV's Divine Armor (paladin armor)
 
 local userdata_table = mods.rk.userdata_table
 local create_damage_message = mods.rk.create_damage_message
@@ -25,7 +25,7 @@ end
 mods.rk.autoReshieldAugs = {
     --[[
     ARMOR_MISSILES = {
-        amount = 1, -- The CHANCE to auto-reshield? Should be the value in the aug instead i guess.
+        amount = 1, -- NOT the CHANCE to auto-reshield since that is the value in the aug instead.
         weapons = "LIST_WEAPONS_MISSILES" -- Blueprint list of weapons the augment applies to (leave undefined to apply to all weapons)
     },
     --]]
@@ -36,10 +36,13 @@ mods.rk.autoReshieldAugs = {
 local autoReshieldAugs = mods.rk.autoReshieldAugs
 
 -- Regen supershields for relevant augments
-local function handle_auto_reshield(shipManager, projectile, location, damage, immediateDmgMsg)
+
+--local function handle_auto_reshield(shipManager, projectile, location, damage, immediateDmgMsg)
+local function handle_auto_reshield(shipManager, projectile, location, damage, forceHit, shipFriendlyFire)
     -- Check for auto-reshield augments
     -- print("Handle Auto-reshield")
 
+    
     for augName, reshieldData in pairs(autoReshieldAugs) do
         -- print("Auto-reshield: loop")
         if shipManager:HasAugmentation(augName) > 0 then
@@ -48,15 +51,9 @@ local function handle_auto_reshield(shipManager, projectile, location, damage, i
                 
                 -- print("Auto-reshield: affected weapons: pass")
                 if reshieldData.amount > 0 then
-                    --[[ -- Check if incoming damage is greater than the reduction amount
-                    if damage.iDamage > reshieldData.amount then
-                        -- Reduce damage
-                        damage.iDamage = damage.iDamage - reshieldData.amount
-                    elseif damage.iDamage > 0 then ]]
                     if damage.iDamage > 0 then
                         -- Roll the chance to reshield.
                         local reshieldChance = shipManager:GetAugmentationValue(augName)
-                        -- if math.random() < shipManager:GetAugmentationValue(augName) then
                         if math.random() < reshieldChance then
 
                             -- damage.iDamage = 0
@@ -89,55 +86,115 @@ local function handle_auto_reshield(shipManager, projectile, location, damage, i
                                 -- print("Auto-reshield 100fire at: "..hitRoomId)
                                 shipManager:StartFire(hitRoomId)
                             end
-                                
-
-                            -- Random fire chance to all systems. Untested!
-                            -- for room in vter(shipManager.ship.vRoomList) do
-                            --[[ for system in vter(shipManager.vSystemList) do
-
-                                -- Random self-Fire. WORKS?
-                                print("Auto-reshield: self-fire loop")
-
-                                -- local roomId = room.iRoomId
-                                local roomId = shipManager:GetSystemRoom(system:GetId())
-                                -- local location = shipManager:GetRoomCenter(roomId)
-                                local reshieldFireChance = reshieldChance * 0.5     -- intended: * 0.05
-                                
-                                print("reshieldFireChance: "..reshieldFireChance)
-                                if math.random() < reshieldFireChance then
-                                    shipManager:StartFire(roomId)
-                                end
-                            end ]]
                             
 
                             -- Seems unneeded and nonfunctional
-                            if immediateDmgMsg == true then
+                            --[[ if immediateDmgMsg == true then
                                 create_damage_message(shipManager.iShipId, damageMessages.NEGATED, location.x, location.y)
                             else
                                 userdata_table(projectile, "mods.rk.autoReshieldAugs").showMsg = true
-                            end
+                            end ]]
                         end
                     end
-                --[[ elseif damage.iDamage > 0 then
-                    -- Increase damage for negative values
-                    damage.iDamage = damage.iDamage - reshieldData.amount ]]
                 end
             end
         end
     end
 end
-script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, handle_auto_reshield)
-script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(shipManager, projectile, location)
-    -- HS log says "attempt to call a nil value (upvalue 'userdata_table')" even without the augment.
-    --[[ if projectile and userdata_table(projectile, "mods.rk.autoReshieldAugs").showMsg then
-        create_damage_message(shipManager.ishipManagerId, damageMessages.NEGATED, location.x, location.y)
+
+local okForReshield = false
+
+--Runs BEFORE dodge check, in tandem with the _HIT version for the 2nd part.
+--script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, handle_auto_reshield)
+script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA, function(ship, projectile, location, damage, forceHit, shipFriendlyFire)
+    --[[ print("SOM DAMAGE_AREA")
+    print("Projectile: " .. (projectile and "true" or "false"))
+    if projectile then
+        print(projectile)
+        print("ID:" .. projectile.ownerId)
+        print("Type:" .. projectile:GetType())
     end ]]
+
+    if ship:HasAugmentation("RK_BPS_SHIELD_OVER_MATTER") <= 0 then
+        --print("SOM absent")
+        return Defines.Chain.CONTINUE, forceHit, shipFriendlyFire
+    end
+
+    --[[ if currentLayers == nil or currentLayers == 0 or forceHit == Defines.Evasion.MISS then
+        return Defines.Chain.CONTINUE, forceHit, shipFriendlyFire
+    end ]]
+    if forceHit == Defines.Evasion.MISS then
+        --print("SOM miss")
+        return Defines.Chain.CONTINUE, forceHit, shipFriendlyFire
+    end
+
+    if damage.iDamage <= 0 then
+        --print("SOM 0dmg")
+        return Defines.Chain.CONTINUE, forceHit, shipFriendlyFire
+    end
+
+    okForReshield = true
+    return Defines.Chain.CONTINUE, forceHit, shipFriendlyFire
 end)
+
+--Runs AFTER the confirmed hit, and actually applies effects.
+--script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(shipManager, projectile, location)
+script.on_internal_event(Defines.InternalEvents.DAMAGE_AREA_HIT, function(shipManager, projectile, location, damage, shipFriendlyFire)
+    --[[ print("DAMAGE_AREA_HIT")
+    print("Projectile: " .. (projectile and "true" or "false"))
+    if projectile then
+        print(projectile)
+        print("ID:" .. projectile.ownerId)
+        print("Type:" .. projectile:GetType())
+    end ]]
+
+    -- We check Defines.InternalEvents.DAMAGE_AREA's result.
+    if not okForReshield then
+        --print("SOM reshield not OK")
+        return Defines.Chain.CONTINUE
+    end
+
+    -- Roll the chance to reshield. Abort on fail.
+    local reshieldChance = shipManager:GetAugmentationValue("RK_BPS_SHIELD_OVER_MATTER")
+    if math.random() > reshieldChance then
+        return Defines.Chain.CONTINUE
+    end
+
+    local superShieldsToAdd = shipManager.shieldSystem.shields.power.super.second - shipManager.shieldSystem.shields.power.super.first
+    -- print("superShieldsToAdd: " .. superShieldsToAdd)
+    if superShieldsToAdd > 0 then
+        -- Just 1 layer.
+        shipManager.shieldSystem:AddSuperShield(shipManager.shieldSystem.superUpLoc)
+    end
+
+    -- Guaranteed fire to the hit room.
+    local hitRoomId = get_room_at_location(shipManager, location, false)
+    -- print("Auto-reshield 100fire")
+    if hitRoomId then
+        -- print("Auto-reshield 100fire at: "..hitRoomId)
+        shipManager:StartFire(hitRoomId)
+    end
+    
+    return Defines.Chain.CONTINUE
+end)
+
+--Beams can't miss so this is necessarily separate.
 script.on_internal_event(Defines.InternalEvents.DAMAGE_BEAM, function(shipManager, projectile, location, damage, realNewTile, beamHitType)
     if beamHitType == Defines.BeamHit.NEW_ROOM then
         handle_auto_reshield(shipManager, projectile, location, damage, true)
     end
 end)
+
+
+
+
+
+
+
+
+
+
+
 
 
 --[[ REF: MV's damage-reduction-armor

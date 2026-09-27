@@ -75,6 +75,7 @@ mods.rk.weaponsAntiRKWeaponsShouldReactTo = {
     "RK_OXY_FIREFILL_MISSILES",
     "DJMOD_RAIN_OF_FIRE",
 
+    "RK_BPS_FOCUS_STATUS",
     "DJMOD_LASER_BPS",
 }
 --[[ REF: Lily's Beam Emporium

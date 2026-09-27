@@ -717,6 +717,13 @@ including those that don't make the menu show up by themselves: APPEND to LIST_C
 
 
 <mod:findName type = "event" name = "STORAGE_CHECK_AUG">
+	<mod-append:choice req="RK_COMBAT_OXYGENIZER" blue="true">
+		<text>(Oxygenizer) Create an atmosphere.</text>
+		<event load="RK_COMBAT_OXYGENIZER_ACTIVATE_IN_EMPTY"/>
+	</mod-append:choice>
+</mod:findName>
+
+<mod:findName type = "event" name = "STORAGE_CHECK_AUG">
 	<mod-append:choice req="RK_SCORCH_SELF" blue="true">
 		<text>(Scorched Earth) Upgrade to Blazing Earth (Tier 2).</text>
 		<event load="RK_SCORCH_SELF_UPGRADE"/>
@@ -4718,29 +4725,6 @@ Plasma Teleporter activation effects
 	<enemyDamage amount="0" system="room" effect="fire"/>
 	<enemyDamage amount="0" system="room" effect="fire"/>
 	<enemyDamage amount="0" system="room" effect="fire"/>
-	<!-- <text>A lot of fire is produced and mostly funneled through the Plasma Teleporter onto the enemy ship.
-	Both ships are ablaze!</text>
-	<playSound>dj_plasmaTeleporter_S</playSound>
-	
-	<damage amount="0" system="oxygen" effect="fire"/>
-	
-	<damage amount="0" system="room" effect="fire"/>
-	<damage amount="0" system="room" effect="fire"/>
-		 
-	<choice>
-		<text>Deal with the fire and continue to the fight!</text>
-		<event>
-			<enemyDamage amount="0" system="random" effect="fire"/>
-			<enemyDamage amount="0" system="random" effect="fire"/>
-			<enemyDamage amount="0" system="random" effect="fire"/>
-			<enemyDamage amount="0" system="random" effect="fire"/>
-			<enemyDamage amount="0" system="random" effect="fire"/>
-			
-			<enemyDamage amount="0" system="random" effect="fire"/>
-			<enemyDamage amount="0" system="random" effect="fire"/>
-			<enemyDamage amount="0" system="random" effect="fire"/>	
-		</event>
-	</choice> -->
 </event>
 
 <!-- REF: Scorched Earth targeted activation:
@@ -4820,11 +4804,12 @@ See events_imageList.xml.append -->
 <event name="RK_COMBAT_OXYGENIZER_ACTIVATE">
 	<text>Are you sure you want to do this?
 	[Will envelop both ships in an O2 atmosphere, protecting fires and crew from venting and breaches. Costs 2}]</text>
+	
 	<choice req="loc_environment_atmosphere" lvl="0" max_lvl="0" blue="false" hidden="false">
 		<text>Yes.</text>
 		<event>
 			<text>You fire the flash-release ultracompressed O2 grenades, enveloping the whole area in just enough atmosphere to breathe... or sustain fires!</text>
-			<!-- <environment type="sun"/> It's Lua, not an "environment type". -->
+			<!-- <environment type="sun"/> It's Lua detecting the line below, not an "environment type". -->
 			<changeBackground>BACK_RK_COMBAT_OXYGENIZER_ACTIVATE</changeBackground>
 			<item_modify>
 				<item type="missiles" min="-2" max="-2"/>
@@ -4842,6 +4827,7 @@ See events_imageList.xml.append -->
 		<text>You're already in atmosphere!</text>
 		<event load="OPTION_INVALID" />
 	</choice>
+	
 	<choice>
         <text>Do something else instead.</text>
         <event load="COMBAT_CHECK"/>
@@ -4850,7 +4836,7 @@ See events_imageList.xml.append -->
 		<text>Nevermind, let's fight!</text>
 		<event/>
 	</choice>
-</event> 
+</event>
 <!-- REF MV 5.5.1: SOLAR PANELS
 <event name="STORAGE_CHECK_SOLAR_PANELS">
 	<text>Are you sure you want to do this? 
@@ -4878,6 +4864,39 @@ See events_imageList.xml.append -->
 	</choice>
 </event> -->
 
+<!-- Empty beacon version -->
+<event name="RK_COMBAT_OXYGENIZER_ACTIVATE_IN_EMPTY">
+	<text>Are you sure you want to do this?
+	[Will envelop your ship in an O2 atmosphere, protecting fires and crew from venting and breaches. Costs 1}]</text>
+	
+	<choice req="loc_environment_atmosphere" lvl="0" max_lvl="0" blue="false" hidden="false">
+		<text>Yes.</text>
+		<event>
+			<text>You fire the flash-release ultracompressed O2 grenades, enveloping the whole area in just enough atmosphere to breathe... or sustain fires!</text>
+			<!-- <environment type="sun"/> It's Lua detecting the line below, not an "environment type". -->
+			<changeBackground>BACK_RK_COMBAT_OXYGENIZER_ACTIVATE</changeBackground>
+			<item_modify>
+				<item type="missiles" min="-1" max="-1"/>
+			</item_modify>
+			<playSound>dj_oxygenizer</playSound>
+			
+			<!-- Extra pop-up screen needed for the O2 atmo to actually trigger. -->
+			<choice>
+				<text>Ahhh, fresh air!</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="loc_environment_atmosphere" blue="false" hidden="true">
+		<text>You're already in atmosphere!</text>
+		<event load="OPTION_INVALID" />
+	</choice>
+
+	<choice>
+		<text>Nevermind, do something else.</text>
+		<event load="STORAGE_CHECK"/>
+	</choice>
+</event>
 
 <!--
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -6046,10 +6065,6 @@ From "TGH - YAP 0.3.20" in events_tgh_combat_augments.xml - WORKS SILENTLY BECAU
 				DEFENSE REMOVER
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-TODO:
-.
-
-REFS:
 
 -->
 
@@ -6196,9 +6211,7 @@ REFS:
 	<status type="loss" target="enemy" system="engines" amount="1"/>
 	<status type="loss" target="enemy" system="shields" amount="1"/>
 	<status type="loss" target="enemy" system="lily_ablative_armor" amount="1"/>
-	<!-- <item_modify>
-		<item type="drones" min="-1" max="-1"/>
-	</item_modify> -->
+	
 	<playSound>dj_hackingZap3</playSound>
 	<triggeredEvent event="RK_COMBAT_DEFENSE_REMOVER_STEP_BOTH_2" minTime="3.0" maxTime="7.0" thisFight="true"/>
 </event>
@@ -6509,17 +6522,6 @@ REFS:
 				<text>This will bolster our ranks nicely.</text>
 				<event/>
 			</choice>
-			<!-- <choice hidden="true">
-				<text>Continue...</text>
-				<event>
-					<text>Your finish upgrading the augment successfully.</text>
-					<augment name="RK_SCORCH_SELF_2"/>
-					<choice>
-						<text>Success!</text>
-						<event/>
-					</choice>
-				</event>
-			</choice> -->
 		</event>
 	</choice>
 
@@ -6537,10 +6539,6 @@ REFS:
 
 			<crewMember amount="1" class="engi_separatist">MTFKN</crewMember>
 			
-			<!-- <choice>
-				<text>This will bolster our ranks nicely.</text>
-				<event/>
-			</choice> -->
 			<choice hidden="true">
 				<text>Continue...</text>
 				<event>
@@ -6651,16 +6649,7 @@ REFS:
 			<remove name="RK_LEAD_TITANS"/>
 		</event>
 	</choice>
-	<!-- <choice req="RK_LEAD_TITANS" hidden="false" blue="false">
-		<text>Yes, but turn it into explosives.</text>
-		<event>
-			<item_modify>
-				<item type="missiles" min="6" max="6"/>
-			</item_modify>
-			
-			<remove name="RK_LEAD_TITANS"/>
-		</event>
-	</choice> -->
+
 	<choice>
 		<text>Nevermind, do something else.</text>
 		<event load="STORAGE_CHECK"/>
@@ -6687,15 +6676,15 @@ Add low chance to get attacked by dedicated Elite(s), of course -->
 			<text>"Fetch!" You send out both special drones, fingers-or-equivalent-appendages crossed.
 				Some time later, they remotely report their findings.
 				
-				If you choose to retrieve nothing, you get back what's left of both retrievers.
+				If you choose to retrieve nothing, you get back some of the cost.
 				
-				If you choose to retrieve anything, you get back what's left of 1 retriever, but the fleet will gain 1 turn on you.
+				If you choose to retrieve anything the fleet will gain 1 turn on you.
 			</text>
 			<item_modify>
-				<item type="scrap" min="-8" max="-8"/>
+				<item type="scrap" min="-4" max="-4"/>
 				<item type="fuel" min="-2" max="-2"/>
 				<item type="missiles" min="-2" max="-2"/>
-				<item type="drones" min="-2" max="-2"/>
+				<item type="drones" min="-1" max="-1"/>
 			</item_modify>
 			
 			<choice>
@@ -6703,10 +6692,10 @@ Add low chance to get attacked by dedicated Elite(s), of course -->
 				<event>
 					<text>You take the time to meet the drone halfway to retrieve that.</text>
 					<weapon name="RANDOM"/>
-					<item_modify>
+					<!-- <item_modify>
 						<item type="scrap" min="4" max="4"/>
 						<item type="drones" min="1" max="1"/>
-					</item_modify>
+					</item_modify> -->
 					
 					<modifyPursuit amount="1"/>
 					
@@ -6722,10 +6711,10 @@ Add low chance to get attacked by dedicated Elite(s), of course -->
 				<event>
 					<text>You take the time to meet the drone halfway to retrieve that.</text>
 					<augment name="RANDOM"/>
-					<item_modify>
+					<!-- <item_modify>
 						<item type="scrap" min="4" max="4"/>
 						<item type="drones" min="1" max="1"/>
-					</item_modify>
+					</item_modify> -->
 					
 					<modifyPursuit amount="1"/>
 					
@@ -6742,8 +6731,8 @@ Add low chance to get attacked by dedicated Elite(s), of course -->
 				<event>
 					<text>You cut your losses, recycle the drones and move on.</text>
 					<item_modify>
-						<item type="scrap" min="8" max="8"/>
-						<item type="drones" min="2" max="2"/>
+						<item type="scrap" min="4" max="4"/>
+						<item type="drones" min="1" max="1"/>
 					</item_modify>
 					
 					<choice hidden="true">
@@ -6760,7 +6749,8 @@ Add low chance to get attacked by dedicated Elite(s), of course -->
 	</choice>
 </event>
 
-<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////
+<!-- 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////// INTERNAL AUGMENTATIONS
 ///////////////////////////////////////////////////////////////////////////////////////////////////////// 
 TODO: 
@@ -7056,7 +7046,7 @@ REFS Darkest Desires for MV 5.5.1
 	</choice>
 
 	<choice req="INTERNAL_DJMOD_MC_PARALYZER" lvl="1" blue="false" hidden="true">
-		<text>RK Punk "Mind Cooler": When under the effects of Mind Control, your crew cannot fight, sabotage, or teleport away. Works on both ships. [ALREADY INSTALLED]</text>
+		<text>RK Punk "Mind Cooler": When under the effects of Mind Control, your crew cannot fight, sabotage, use abilities, or teleport away. Works on both ships. [ALREADY INSTALLED]</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
 	<choice req="INTERNAL_DJMOD_MC_PARALYZER" lvl="0" max_lvl="0" blue="false" hidden="true">
@@ -7160,7 +7150,7 @@ REFS Darkest Desires for MV 5.5.1
 			</choice>
 		</event>
 	</choice>
-	<!-- <choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true"> -->
+	
 	<choice req="pilot" lvl="1" blue="false" hidden="true">
 		<text>Nevermind.</text>
 		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
@@ -7209,7 +7199,7 @@ REFS Darkest Desires for MV 5.5.1
 			</choice>
 		</event>
 	</choice>
-	<!-- <choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true"> -->
+	
 	<choice req="pilot" lvl="1" blue="false" hidden="true">
 		<text>Nevermind.</text>
 		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
@@ -7259,7 +7249,6 @@ REFS Darkest Desires for MV 5.5.1
 		</event>
 	</choice>
 	
-	<!-- <choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true"> -->
 	<choice req="pilot" lvl="1" blue="false" hidden="true">
 		<text>Nevermind.</text>
 		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
@@ -7273,7 +7262,7 @@ REFS Darkest Desires for MV 5.5.1
 
 <event name="STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER">
 	<text>You are about to install the Mind Cooler upgrade.
-	[Effects: When under the effects of Mind Control, your crew cannot fight, sabotage, or teleport away. Works on both ships.]</text>
+	[Effects: When under the effects of Mind Control, your crew cannot fight, sabotage, use abilities, or teleport away. Works on both ships.]</text>
 	
 	<choice req="DJMOD_HAS_RADIKAL_PUNK_GEAR" lvl="0" max_lvl="0" blue="false" hidden="true">
 		<text>This upgrade is unavailable. You need any RadiKal Punk (or BPS) weapon/augment/crew/ship.</text>
@@ -7294,7 +7283,6 @@ REFS Darkest Desires for MV 5.5.1
 		</event>
 	</choice>
 	
-	<!-- <choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true"> -->
 	<choice req="pilot" lvl="1" blue="false" hidden="true">
 		<text>Nevermind.</text>
 		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
@@ -7331,7 +7319,6 @@ REFS Darkest Desires for MV 5.5.1
 		</event>
 	</choice>
 	
-	<!-- <choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true"> -->
 	<choice req="pilot" lvl="1" blue="false" hidden="true">
 		<text>Nevermind.</text>
 		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>
@@ -7367,7 +7354,6 @@ REFS Darkest Desires for MV 5.5.1
 		</event>
 	</choice>
 	
-	<!-- <choice req="pilot" lvl="1" max_group="2" blue="false" hidden="true"> -->
 	<choice req="pilot" lvl="1" blue="false" hidden="true">
 		<text>Nevermind.</text>
 		<event load="STORAGE_CHECK_SYSTEM_LOAD"/>

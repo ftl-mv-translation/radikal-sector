@@ -482,13 +482,38 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
 		<systemLimit>8</systemLimit>
 	</mod-append:customShip>
 
+	<mod-append:ship name="PLAYER_SHIP_RK_GRAVESPRED_USER" a="true" b="false" c="false" secret="true">
+	<!-- <splitVictoryAchievement>true</splitVictoryAchievement> -->
+		<unlock variant="a" silent="false">
+			<type>4</type>						<!-- Pick the blueprint reward. See events_sector_radikal.xml -->
+		</unlock>
+	</mod-append:ship>
+	<mod-append:customShip name="PLAYER_SHIP_RK_GRAVESPRED_USER">
+		<hiddenAug>SHIP_RK</hiddenAug>
+		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
+		<hiddenAug>IS_RK_PUNK_GEAR</hiddenAug>
+		<crewLimit>5</crewLimit>
+		<systemLimit>7</systemLimit>
+		<!-- optional when ship starts with no crew. Here for reference. -->
+		<autoShipForce>true</autoShipForce>
+	</mod-append:customShip>
 
-	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ ENEMIES \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+	<!-- 
+	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	 			ENEMIES
+	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 	renderlayers:
 	0 - draws below everything including no o2 stripes, can't be seen when room has no vision
 	1 - draws above o2 stripes but below crew, can't be seen when room has no vision
 	2 - draws below crew but CAN be seen when room has no vision
 	3 - draws above everything
+
+
+	When crew is custom-placed here with the <crew> tag, do not include a <crew> tag anywhere else (so, no scaling).
+	To have it scale with Challenge level, make a <customship> per Challenge difficulty blueprint (like Flagship).
 	-->
 	
 	<!-- REF MV v 5.5.1
@@ -511,6 +536,34 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
 		<noFuelStalemate/>
 	</customShip> -->
 
+	<mod-append:customShip name="RK_A_ZOLTAN_POLICE_INTRO">
+		<shipIcons>
+            <shipIcon>icon_threat</shipIcon>
+		</shipIcons>
+		<noFuelStalemate/>
+	</mod-append:customShip>
+
+	<mod-append:customShip name="RK_A_ZOLTAN_POLICE_NUMBER2">
+		<shipIcons>
+            <shipIcon>icon_threat</shipIcon>
+		</shipIcons>
+		<noFuelStalemate/>
+	</mod-append:customShip>
+
+	<mod-append:customShip name="RK_A_ZOLTAN_POLICE_NUMBER3">
+		<shipIcons>
+            <shipIcon>icon_threat</shipIcon>
+		</shipIcons>
+		<noFuelStalemate/>
+	</mod-append:customShip>
+
+	<mod-append:customShip name="RK_A_ZOLTAN_POLICE_NUMBER4">
+		<shipIcons>
+            <shipIcon>icon_threat</shipIcon>
+		</shipIcons>
+		<noFuelStalemate/>
+	</mod-append:customShip>
+
 	<mod-append:customShip name="RK_HACK_FLEET_BOSS_MFK">
 		<shipIcons>
             <shipIcon>icon_threat</shipIcon>
@@ -522,7 +575,7 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
 		<shipIcons>
 			<shipIcon>rk_icon_radikal_ship</shipIcon>
 			<shipIcon>rk_icon_plasma_teleporter</shipIcon>
-			<!-- Last one here shows up topmost in-game. 
+			<!-- Last one here should show up topmost in-game. 
 			Augment icons are now auto-displayed on enemies if icon is defined in hyperspace. Just add the custom ones. -->
 		</shipIcons>
 		<noFuelStalemate/>
@@ -660,6 +713,26 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
             <shipIcon>icon_threat</shipIcon>
 			<shipIcon>icon_invasion</shipIcon>
 		</shipIcons>
+		<crew>
+			<mantis_warlord room="4" name="Wakk"/> <!--teleporter-->
+			<mantis_warlord room="4" name="Xakk"/> <!--teleporter-->
+			<mantis_free room="4" name="Yakk"/> <!--teleporter-->
+			<mantis_free room="4" name="Zakk"/> <!--teleporter-->
+			
+			<engi room="0"/> <!--piloting-->
+			<mantis_warlord room="0"/> <!--piloting-->
+
+			<engi room="2"/> <!--weapons-->
+			<mantis_warlord room="2"/> <!--weapons-->
+
+			<engi_defender room="3"/> <!--shields-->
+			<mantis_free room="3"/> <!--shields-->
+
+			<engi room="1"/> <!--engines-->
+			<mantis_free room="8"/> <!--mind-->
+			
+			<mantis_free room="10"/> <!--oxygen-->
+		</crew>
 		<noFuelStalemate/>
 	</mod-append:customShip>
 	<mod-append:customShip name="RKS_LAB_PUNK_FREEMANTIS_ELITE_CHALLENGE">
@@ -675,8 +748,41 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
 				<sysDamageResistChance>100</sysDamageResistChance>
 			</room>
 		</rooms>
+		<crew>
+			<mantis_warlord room="4" name="Wakk"/> <!--teleporter-->
+			<mantis_warlord room="4" name="Xakk"/> <!--teleporter-->
+			<mantis_warlord room="4" name="Yakk"/> <!--teleporter-->
+			<mantis_free room="4" name="Zakk"/> <!--teleporter-->
+
+			<engi room="0"/> <!--piloting-->
+			<mantis_warlord room="0"/> <!--piloting-->
+
+			<engi room="2"/> <!--weapons-->
+			<mantis_warlord room="2"/> <!--weapons-->
+
+			<engi_defender room="3"/> <!--shields-->
+			<mantis_free room="3"/> <!--shields-->
+
+			<engi room="1"/> <!--engines-->
+			<mantis_free room="8"/> <!--mind-->
+			
+			<mantis_free room="10"/> <!--oxygen-->
+			<mantis_free room="10"/> <!--oxygen-->
+		</crew>
 		<noFuelStalemate/>
 	</mod-append:customShip>
+	<!-- REF: Highwayman
+	<customShip name="MU_PIRATE_STARGROVE_HIGHWAYMAN">
+		<shipIcons>
+            <shipIcon>icon_threat</shipIcon>
+            <shipIcon>icon_cloakjam</shipIcon>
+        </shipIcons>
+		<crew>
+			<crystal_sentinel room="0" name="Zirc"/> 		MV SAYS: piloting
+			<mantis_bishop room="1" name="Karrrakaam the Callous"/> 	ETC...
+		</crew>
+		<noFuelStalemate/>
+	</customShip> -->
 
 	<mod-append:customShip name="RKS_LAB_SCORCH_ORCHID_ELITE">
 		<shipIcons>
@@ -825,7 +931,7 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
 		<mod-append:shipIcon>
 			<name>rk_icon_mind_cooler</name>
 			<tooltip>MIND COOLER:
-			When under the effects of Mind Control, this ship's crew cannot fight, sabotage, or teleport away. Works on both ships.</tooltip>
+			When under the effects of Mind Control, this ship's crew cannot fight, sabotage, use abilities, or teleport away. Works on both ships.</tooltip>
 		</mod-append:shipIcon>
 	</mod:findLike>
 
@@ -890,9 +996,9 @@ NOTE: FIRE_IMMUNITY in fire_common.lua is really SHIP SYSTEM FIRE RESISTANCE PER
 		<mod-append:empty/>
 
         <mod-append:empty/>
+        <mod-append:empty/>
+        <mod-append:ship>PLAYER_SHIP_RK_GRAVESPRED_USER</mod-append:ship>
         <mod-append:ship>PLAYER_SHIP_RK_LEAD_TITANS_USER</mod-append:ship>
-        <mod-append:empty/>
-        <mod-append:empty/>
 
         <mod-append:empty/>
         <mod-append:ship>PLAYER_SHIP_DJMOD_SCORCH</mod-append:ship>
@@ -1028,6 +1134,7 @@ JUDGE STUFF (NON-APPEND)
 	<mod-append:variable name="rks_lab_coords_bam" op="set" val="0"/>
 	<mod-append:variable name="rks_lab_coords_punk" op="set" val="0"/>
 	<mod-append:variable name="rks_lab_coords_scorch" op="set" val="0"/>
+	<mod-append:variable name="rks_lab_redirected" op="set" val="0"/>
 
 	<!-- Pirate Trinity beacon progress. -->
 	<mod-append:variable name="rks_pirate_trinity_active" op="set" val="0"/>
@@ -1397,6 +1504,7 @@ JUDGE STUFF (NON-APPEND)
 		
 		<mod-append:name>RK_OWN_HARMONY_ANY</mod-append:name>
 
+		<mod-append:name>RK_COMBAT_OXYGENIZER</mod-append:name>
 		<mod-append:name>DJMOD_COMBAT_SELF_FIRE_ANY_UPGRADABLE</mod-append:name>
 
 		<mod-append:name>RK_BPS_SURVEYOR</mod-append:name>
@@ -3024,6 +3132,7 @@ Outside RK sector checks, like ARKSS checks. //// "GEAR" = "EQUIPMENT" + crew.
 	<name>RK_BPS_SHIELD_OVER_MATTER</name>
 	<name>RK_BPS_SURVEYOR</name>
 
+	<name>RK_BPS_FOCUS_STATUS</name>
 	<name>DJMOD_LASER_BPS</name>
 </req>
 
@@ -3131,6 +3240,7 @@ For unique sector 'membership' and other gear checks like Judges. //// "GEAR" = 
 	<name>RK_BPS_SHIELD_OVER_MATTER</name>
 	<name>RK_BPS_SURVEYOR</name>
 
+	<name>RK_BPS_FOCUS_STATUS</name>
 	<name>DJMOD_LASER_BPS</name>
 </req>
 
@@ -3185,6 +3295,7 @@ For unique sector 'membership' and other gear checks like Judges. //// "GEAR" = 
 	<name>RK_OXY_FIREFILL_MISSILES</name>
 	<name>DJMOD_RAIN_OF_FIRE</name>
 
+	<name>RK_BPS_FOCUS_STATUS</name>
 	<name>DJMOD_LASER_BPS</name>
 </req>
 
@@ -3226,6 +3337,10 @@ Other RKSector checks
 	<req type="any" load="LIST_CREW_ENGI"/>
 	<req type="any" load="LIST_CREW_LANIUS"/>
 </req>
+<req name="RKS_HAS_ENGI_AND_GHOST" type="all">
+	<req type="any" load="LIST_CREW_ENGI"/>
+	<req type="any" load="LIST_CREW_GHOST"/>
+</req>
 <!-- Quest unique_rk_defromorius: remote-decode black box -->
 <req name="RKS_HAS_HIGH_SENSORS_AND_HACKING" type="all">
 	<req lvl="2">
@@ -3237,9 +3352,10 @@ Other RKSector checks
 </req>
 
 
-<!-- Bam BIL systems check -->
-<req name="RKS_HAS_SYSTEMS_FOR_BAM_BIL" type="any">
+<!-- Bam BIG systems check -->
+<req name="RKS_HAS_SYSTEMS_FOR_BAM_GARAGE" type="any">
 	<name>drones</name>
+	<name>engines</name>
 	<name>shields</name>
 	<name>weapons</name>
 </req>
@@ -3248,6 +3364,8 @@ Other RKSector checks
 <!-- 
 RADIKAL LABS
  -->
+
+
 <!-- Bam Lab -->
 <req name="RKS_HAS_ANY_SACRIFICEABLE_SHELL" type="any">
 	<name>shell</name>
@@ -3256,11 +3374,23 @@ RADIKAL LABS
 	<name>shell_guardian</name>
 	<name>shell_radiant</name>
 </req>
+<req name="RKS_HAS_ANY_SACRIFICEABLE_SHELL_ANTIABUSE" type="all">
+	<name>RKS_HAS_ANY_SACRIFICEABLE_SHELL</name>
+	<req lvl="0" max_lvl="0">
+		<name>rks_lab_redirected</name>
+	</req>
+</req>
 <!-- Bam Lab Shell fight skip check: unique_alkali is the only one. -->
  <req name="RKS_HAS_ANY_SACRIFICEABLE_LANIUS" type="any">
 	<name>lanius</name>
 	<name>lanius_welder</name>
 	<name>lanius_augmented</name>
+</req>
+<req name="RKS_HAS_ANY_SACRIFICEABLE_LANIUS_ANTIABUSE" type="all">
+	<name>RKS_HAS_ANY_SACRIFICEABLE_LANIUS</name>
+	<req lvl="0" max_lvl="0">
+		<name>rks_lab_redirected</name>
+	</req>
 </req>
 <!-- Bam Lab Lanius fight skip check (UNRELEASED) -->
 <req name="RKS_HAS_LANIUS_UNIQUE" type="any">
@@ -3273,6 +3403,12 @@ RADIKAL LABS
 	<name>leech</name>
 	<name>leech_ampere</name>
 </req>
+<req name="RKS_HAS_ANY_SACRIFICEABLE_LEECH_ANTIABUSE" type="all">
+	<name>RKS_HAS_ANY_SACRIFICEABLE_LEECH</name>
+	<req lvl="0" max_lvl="0">
+		<name>rks_lab_redirected</name>
+	</req>
+</req>
 
 <req name="RKS_HAS_ANY_SACRIFICEABLE_MANTIS" type="any">
 	<name>mantis</name>
@@ -3280,6 +3416,12 @@ RADIKAL LABS
 	<name>mantis_warlord</name>
 	<name>mantis_suzerain</name>
 	<name>mantis_bishop</name>
+</req>
+<req name="RKS_HAS_ANY_SACRIFICEABLE_MANTIS_ANTIABUSE" type="all">
+	<name>RKS_HAS_ANY_SACRIFICEABLE_MANTIS</name>
+	<req lvl="0" max_lvl="0">
+		<name>rks_lab_redirected</name>
+	</req>
 </req>
 <!-- Punk Lab fight skip check, REF: MV's LIST_CREW_MANTIS at the end -->
 <req name="RKS_HAS_MANTIS_UNIQUE" type="any">
@@ -3299,6 +3441,12 @@ RADIKAL LABS
 	<name>orchid_vampweed</name>
 	<name>orchid_cultivator</name>
 </req>
+<req name="RKS_HAS_ANY_SACRIFICEABLE_ORCHID_ANTIABUSE" type="all">
+	<name>RKS_HAS_ANY_SACRIFICEABLE_ORCHID</name>
+	<req lvl="0" max_lvl="0">
+		<name>rks_lab_redirected</name>
+	</req>
+</req>
 <!-- Scorch Lab fight skip check, REF: MV's LIST_CREW_ORCHID_UNIQUE -->
 <req name="RKS_HAS_ORCHID_UNIQUE" type="any">
 	<name>unique_mayeb</name>
@@ -3312,6 +3460,12 @@ RADIKAL LABS
 	<name>zoltan_peacekeeper</name>
 	<name>zoltan_devotee</name>
 	<name>zoltan_martyr</name>
+</req>
+<req name="RKS_HAS_ANY_SACRIFICEABLE_ZOLTAN_ANTIABUSE" type="all">
+	<name>RKS_HAS_ANY_SACRIFICEABLE_ZOLTAN</name>
+	<req lvl="0" max_lvl="0">
+		<name>rks_lab_redirected</name>
+	</req>
 </req>
 
 
@@ -3479,13 +3633,18 @@ REFS: MV v5.5.1; The Outer Expansion for that MV (STORE_SYLVAN_AEA_WEAPONS)
 		<category type="WEAPONS">
 			<customTitle>RADIKAL BPS WEAPONS</customTitle>
             <item>
+                <blueprint>RK_BPS_FOCUS_STATUS</blueprint>
+                <modifier min="0.8" max="1.1" flat="false"/>
+                <price>-1</price>
+            </item>
+            <item>
                 <blueprint>DJMOD_LASER_BPS</blueprint>
                 <modifier min="0.8" max="1.1" flat="false"/>
                 <price>-1</price>
             </item>
         </category>
 		<category type="WEAPONS">
-			<customTitle>RADIKAL WEAPONS</customTitle>
+			<customTitle>RK SUBFACTIONS WEAPONS</customTitle>
             <item>
                 <blueprint>LIST_WEAPONS_RK_BAM</blueprint>
                 <modifier min="0.8" max="1.1" flat="false"/>
@@ -3635,7 +3794,7 @@ REFS: MV v5.5.1; The Outer Expansion for that MV (STORE_SYLVAN_AEA_WEAPONS)
 				<modifier min="0.95" max="1.05" flat="false"/>
 			</item>
 			<item>
-				<blueprint>RK_KILLALL_BEAM</blueprint>
+				<blueprint>RK_BOMBLAUNCHER_ANTIBIO_REPAIR</blueprint>
 				<modifier min="0.95" max="1.05" flat="false"/>
 			</item>
 			<item>
@@ -3646,29 +3805,33 @@ REFS: MV v5.5.1; The Outer Expansion for that MV (STORE_SYLVAN_AEA_WEAPONS)
 		</category>
 		
 		<category type="WEAPONS">
-			<customTitle>RADIKAL WEAPONS</customTitle>
-			<item>
-				<blueprint>LIST_WEAPONS_RK_SUBFACTIONS</blueprint>
+			<customTitle>RK SUBFACTIONS WEAPONS</customTitle>
+            <item>
+                <blueprint>LIST_WEAPONS_RK_BAM</blueprint>
 				<modifier min="0.95" max="1.05" flat="false"/>
-			</item>
-			<item>
-				<blueprint>LIST_WEAPONS_RK_SUBFACTIONS</blueprint>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>LIST_WEAPONS_RK_PUNK</blueprint>
 				<modifier min="0.95" max="1.05" flat="false"/>
-			</item>
-			<item>
-				<blueprint>LIST_WEAPONS_RK_SUBFACTIONS</blueprint>
+                <price>-1</price>
+            </item>    
+            <item>
+                <blueprint>LIST_WEAPONS_RK_SCORCH</blueprint>
 				<modifier min="0.95" max="1.05" flat="false"/>
-			</item>
-			<item/>
-			<chance>50</chance>			
-		</category>
+                <price>-1</price>
+            </item>    
+        </category>
 
 		<category type="WEAPONS">
 			<customTitle>RADIKAL BPS WEAPONS</customTitle>
             <item>
+                <blueprint>RK_BPS_FOCUS_STATUS</blueprint>
+				<modifier min="0.95" max="1.05" flat="false"/>
+            </item>
+            <item>
                 <blueprint>DJMOD_LASER_BPS</blueprint>
 				<modifier min="0.95" max="1.05" flat="false"/>
-                <!-- <price>-1</price> -->
             </item>
 			<chance>25</chance>
         </category>
@@ -3814,66 +3977,76 @@ REFS: MV v5.5.1; The Outer Expansion for that MV (STORE_SYLVAN_AEA_WEAPONS)
 			<chance>100</chance>
         </category>
 
-		<category type="AUGMENTS" group="2">
-			<customTitle>RARE RADIKAL AUGMENTS</customTitle>
-			<item>
-                <blueprint>SHOP_ITEM_RARE_RK_AUGMENTS</blueprint>
-                <modifier min="0.9" max="1.0" flat="false"/>
-                <price>-1</price>
-            </item>
-            <item>
-                <blueprint>SHOP_ITEM_RARE_RK_AUGMENTS</blueprint>
-                <modifier min="0.9" max="1.0" flat="false"/>
-                <price>-1</price>
-            </item>
-			<item>
-                <blueprint>SHOP_ITEM_RARE_RK_AUGMENTS</blueprint>
-                <modifier min="0.9" max="1.0" flat="false"/>
-                <price>-1</price>
-            </item>
-			<chance>50</chance>
-        </category>
-		
 		<!-- <category type="AUGMENTS" group="2">
 			<customTitle>RARE RADIKAL AUGMENTS</customTitle>
 			<item>
                 <blueprint>SHOP_ITEM_RARE_RK_AUGMENTS</blueprint>
-                <modifier min="0.9" max="1.0" flat="false"/>
+				<modifier min="0.95" max="1.05" flat="false"/>
                 <price>-1</price>
             </item>
             <item>
                 <blueprint>SHOP_ITEM_RARE_RK_AUGMENTS</blueprint>
-                <modifier min="0.9" max="1.0" flat="false"/>
+				<modifier min="0.95" max="1.05" flat="false"/>
                 <price>-1</price>
             </item>
 			<item>
                 <blueprint>SHOP_ITEM_RARE_RK_AUGMENTS</blueprint>
-                <modifier min="0.9" max="1.0" flat="false"/>
+				<modifier min="0.95" max="1.05" flat="false"/>
+                <price>-1</price>
+            </item>
+			<chance>50</chance>
+        </category> -->
+		
+		<category type="AUGMENTS" group="2">
+			<customTitle>RARE RADIKAL AUGMENTS</customTitle>
+			<item>
+                <blueprint>SHOP_ITEM_RARE_RK_AUGMENTS</blueprint>
+				<modifier min="0.95" max="1.05" flat="false"/>
+                <price>-1</price>
+            </item>
+            <item>
+                <blueprint>SHOP_ITEM_RARE_RK_AUGMENTS</blueprint>
+				<modifier min="0.95" max="1.05" flat="false"/>
+                <price>-1</price>
+            </item>
+			<item>
+                <blueprint>SHOP_ITEM_RARE_RK_AUGMENTS</blueprint>
+				<modifier min="0.95" max="1.05" flat="false"/>
                 <price>-1</price>
             </item>
 			<groupChance>65</groupChance>
-			<chance>75</chance>
+			<chance>100</chance>
         </category>
 		<category type="AUGMENTS" group="2">
 			<customTitle>VERY RARE RADIKAL AUGMENTS</customTitle>
 			<item>
                 <blueprint>SHOP_ITEM_RARE_RK_AUGMENTS_2</blueprint>
-                <modifier min="0.95" max="1.0" flat="false"/>
+				<modifier min="0.95" max="1.05" flat="false"/>
                 <price>-1</price>
             </item>
             <item>
                 <blueprint>SHOP_ITEM_RARE_RK_AUGMENTS_2</blueprint>
-                <modifier min="0.95" max="1.0" flat="false"/>
+				<modifier min="0.95" max="1.05" flat="false"/>
                 <price>-1</price>
             </item>
 			<item>
                 <blueprint>SHOP_ITEM_RARE_RK_AUGMENTS_2</blueprint>
-                <modifier min="0.95" max="1.0" flat="false"/>
+				<modifier min="0.95" max="1.05" flat="false"/>
                 <price>-1</price>
             </item>
 			<groupChance>35</groupChance>
-			<chance>75</chance>
-        </category> -->
+			<chance>100</chance>
+        </category>
+
+		<category type="AUGMENTS">
+			<customTitle>BPS AUGMENTS</customTitle>
+            <item>
+                <blueprint>RK_BPS_SURVEYOR</blueprint>
+				<modifier min="0.95" max="1.05" flat="false"/>
+                <price>-1</price>
+            </item>
+			<chance>50</chance>
+        </category>
 
 	</mod-append:customStore>
 
@@ -3912,7 +4085,7 @@ REFS: MV v5.5.1; The Outer Expansion for that MV (STORE_SYLVAN_AEA_WEAPONS)
 				<modifier min="0.80" max="0.90" flat="false"/>
 			</item>
 			<item>
-				<blueprint>RK_KILLALL_BEAM</blueprint>
+				<blueprint>RK_BOMBLAUNCHER_ANTIBIO_REPAIR</blueprint>
 				<modifier min="0.80" max="0.90" flat="false"/>
 			</item>
 			<item>
@@ -3943,9 +4116,12 @@ REFS: MV v5.5.1; The Outer Expansion for that MV (STORE_SYLVAN_AEA_WEAPONS)
 		<category type="WEAPONS">
 			<customTitle>RADIKAL BPS WEAPONS</customTitle>
             <item>
+                <blueprint>RK_BPS_FOCUS_STATUS</blueprint>
+                <modifier min="0.8" max="0.9" flat="false"/>
+            </item>
+			<item>
                 <blueprint>DJMOD_LASER_BPS</blueprint>
                 <modifier min="0.8" max="0.9" flat="false"/>
-                <!-- <price>-1</price> -->
             </item>
 			<chance>34</chance>
         </category>
@@ -4270,15 +4446,15 @@ REFS: MV v5.5.1; The Outer Expansion for that MV (STORE_SYLVAN_AEA_WEAPONS)
 				<blueprint>RK_UNLOADER</blueprint>
 				<modifier flat="false">0.9</modifier>
 			</item>
-			<!-- <item>
-				<blueprint>DJMOD_LASER_BPS</blueprint>
-				<modifier flat="false">0.9</modifier>
-			</item> -->
 			<chance>100</chance>
 		</category>
 
 		<category type="WEAPONS">
 			<customTitle>RADIKAL BPS WEAPONS</customTitle>
+            <item>
+                <blueprint>RK_BPS_FOCUS_STATUS</blueprint>
+                <modifier min="0.8" max="0.9" flat="false"/>
+            </item>
             <item>
                 <blueprint>DJMOD_LASER_BPS</blueprint>
                 <modifier min="0.8" max="0.9" flat="false"/>
@@ -4509,15 +4685,15 @@ REFS: MV v5.5.1; The Outer Expansion for that MV (STORE_SYLVAN_AEA_WEAPONS)
 				<blueprint>RK_MISSLAUNCHER_2_BATTERY</blueprint>
 				<modifier flat="false">0.9</modifier>
 			</item>
-			<!-- <item>
-				<blueprint>DJMOD_LASER_BPS</blueprint>
-				<modifier flat="false">0.9</modifier>
-			</item> -->
 			<chance>100</chance>
 		</category>
 
 		<category type="WEAPONS">
 			<customTitle>RADIKAL BPS WEAPONS</customTitle>
+            <item>
+                <blueprint>RK_BPS_FOCUS_STATUS</blueprint>
+                <modifier min="0.8" max="0.9" flat="false"/>
+            </item>
             <item>
                 <blueprint>DJMOD_LASER_BPS</blueprint>
                 <modifier min="0.8" max="0.9" flat="false"/>
@@ -4753,15 +4929,15 @@ REFS: MV v5.5.1; The Outer Expansion for that MV (STORE_SYLVAN_AEA_WEAPONS)
 				<blueprint>RK_FOCUS_FIRE</blueprint>
 				<modifier flat="false">0.9</modifier>
 			</item>
-			<!-- <item>
-				<blueprint>DJMOD_LASER_BPS</blueprint>
-				<modifier flat="false">0.9</modifier>
-			</item> -->
 			<chance>100</chance>
 		</category>
 
 		<category type="WEAPONS">
 			<customTitle>RADIKAL BPS WEAPONS</customTitle>
+            <item>
+                <blueprint>RK_BPS_FOCUS_STATUS</blueprint>
+                <modifier min="0.8" max="0.9" flat="false"/>
+            </item>
             <item>
                 <blueprint>DJMOD_LASER_BPS</blueprint>
                 <modifier min="0.8" max="0.9" flat="false"/>
@@ -5097,7 +5273,7 @@ plus any cloak-friendly/cloak-like augs. -->
 </mod:findLike>
 
 <mod:findLike type="store">
-	<mod-append:customStore id="STORE_RKS_BIL_BAM">
+	<mod-append:customStore id="STORE_RKS_GARAGE_BAM">
 		
 		<!-- Egregiously expensive repairs. Still great quantities because hungry augments.-->
 		<hullRepair>
@@ -5571,7 +5747,7 @@ plus any cloak-friendly/cloak-like augs. -->
 	-->
 	<aug name="RK_PERSISTENCE_SHIELD">
 		<function name="ENERGY_SHIELD" value="0" useForReqs="true" warning="false"/>
-		<function name="SHIELD_RECHARGE" value="0.25" useForReqs="true" warning="false" />
+		<function name="SHIELD_RECHARGE" value="0.20" useForReqs="true" warning="false" />
 		<superShield>
 			<value>0</value>
 			<add>4</add>
@@ -5599,11 +5775,11 @@ plus any cloak-friendly/cloak-like augs. -->
 	<aug name="RK_ARROGANCE_SHIELD">
 		<function name="ENERGY_SHIELD" value="0" useForReqs="true" warning="false"/>
 		<!-- intended: -0.30 -->
-		<function name="SHIELD_RECHARGE" value="-0.25" useForReqs="false" warning="false" />
-		<function name="AUTO_COOLDOWN" value="-0.05" useForReqs="false" warning="false" />
+		<function name="SHIELD_RECHARGE" value="-0.30" useForReqs="false" warning="false" />
+		<function name="AUTO_COOLDOWN" value="-0.08" useForReqs="false" warning="false" />
 		<superShield>
 			<value>0</value>
-			<add>9</add>
+			<add>8</add>
 			<!-- <color r="0" g="255" b="6" a="0.8"/>		Obelisk shield color -->
 			<!-- <color r="175" g="58" b="165" a="1.0"/>	Sylvan shield color -->
 			<color r="145" g="58" b="135" a="1.0"/>
@@ -9826,6 +10002,21 @@ TODO:
 				<droneTarget>CREW</droneTarget>
 				<priority>-9876</priority>
 
+				<extraConditions type="and">             
+					<mindControlled>true</mindControlled>
+				</extraConditions>
+			</statBoost>
+
+			<statBoost name="silenced">
+				<boostType>SET</boostType>
+				<value>false</value>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ORIGINAL_ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<priority>-9876</priority>
+				
+				<blackList load="LIST_CREW_MADNESS_IMMUNE"/>
+				<boostAnim>madness</boostAnim>
 				<extraConditions type="and">             
 					<mindControlled>true</mindControlled>
 				</extraConditions>

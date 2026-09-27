@@ -526,6 +526,19 @@ To make normal nebula instead (debugging?), disable all that and make prefix "NE
 				</choice>
 			</event>
 		</choice>
+
+		<choice>
+			<text>Look for a blueprint instead</text>
+			<event>
+				<text>You're not sure why you expected to find a blueprint, but you do! Then you get away before everything blows up.</text>
+				<unlockCustomShip silent="false">PLAYER_SHIP_RK_GRAVESPRED_USER</unlockCustomShip>
+
+				<choice hidden="true">
+					<text>Continue...</text>
+					<event/>
+				</choice>
+			</event>
+		</choice>
 		
 		<choice>
 			<text>Nothing</text>
@@ -1586,17 +1599,17 @@ To make normal nebula instead (debugging?), disable all that and make prefix "NE
 <!-- 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////		BRUTAL IMPROVEMENT LABS ("B.I.L.s")
+////////		BRUTAL IMPROVEMENT GARAGES ("B.I.G.s"), formerly "B.I.L.s" (for Labs)
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 -->
 
-<event name="RKS_BIL_BAM_SYSTEMS">
+<event name="RKS_GARAGE_BAM_SYSTEMS">
 	<preventQuest/>
     <environment type="asteroid"/>
 	<text>Inside this asteroid belt, you stumble upon a strange workshop manned by Vexopaths.
 
-		"*Grumble* This is the RK Bam 'Brutal Improvement Lab'. Welcome."
+		"*Grumble* This is the RK Bam 'Brutal Improvement Garage' (B.I.G.). Welcome."
 		You already knew Vexopaths are not the life of the party. This one's tone manages to make you feel guilty and threatened before you've even said or done anything.
 		
 		"Your ship, we can improve it. Brutally, in case you missed that part. For low scrap.
@@ -1610,7 +1623,7 @@ To make normal nebula instead (debugging?), disable all that and make prefix "NE
 		Well, other than the "almost be destroyed in the middle of an asteroid belt" bit. And the pricing seems a bit too good.</text>
 	<ship load="SHIP_LANIUS_STATION" hostile="false"/>
 	
-	<choice req="RKS_HAS_SYSTEMS_FOR_BAM_BIL" lvl="0" max_lvl="0" hidden="true" blue="false">
+	<choice req="RKS_HAS_SYSTEMS_FOR_BAM_GARAGE" lvl="0" max_lvl="0" hidden="true" blue="false">
 		<text>WARNING: [style[color:ff3377]]you have no eligible systems![[/style]] This procedure will damage you for no benefit!</text>
 		<event load="OPTION_INVALID"/>
 	</choice>
@@ -1665,7 +1678,7 @@ To make normal nebula instead (debugging?), disable all that and make prefix "NE
 								Procedure 100% complete. Automated Aftercare ship deployed. Goodbye."
 
 							Now that you can see the egregious price of the repairs, you understand how this business can stay afloat..."</text>
-							<store>STORE_RKS_BIL_BAM</store>
+							<store>STORE_RKS_GARAGE_BAM</store>
 
 						</event>
 					</choice>
@@ -1718,22 +1731,22 @@ To make normal nebula instead (debugging?), disable all that and make prefix "NE
 
 <!-- Lua-powered -->
 <event name="RKS_UPGRADE_DRONES_BY_2">
-	<text load="RKS_BIL_BAM_FINISHED_TEXT"/>
-	<store>STORE_RKS_BIL_BAM</store>
+	<text load="RKS_GARAGE_BAM_FINISHED_TEXT"/>
+	<store>STORE_RKS_GARAGE_BAM</store>
 </event>
 <event name="RKS_UPGRADE_ENGINES_BY_2">
-	<text load="RKS_BIL_BAM_FINISHED_TEXT"/>
-	<store>STORE_RKS_BIL_BAM</store>
+	<text load="RKS_GARAGE_BAM_FINISHED_TEXT"/>
+	<store>STORE_RKS_GARAGE_BAM</store>
 </event>
 <event name="RKS_UPGRADE_SHIELDS_BY_2">
-	<text load="RKS_BIL_BAM_FINISHED_TEXT"/>
-	<store>STORE_RKS_BIL_BAM</store>
+	<text load="RKS_GARAGE_BAM_FINISHED_TEXT"/>
+	<store>STORE_RKS_GARAGE_BAM</store>
 </event>
 <event name="RKS_UPGRADE_WEAPONS_BY_2">
-	<text load="RKS_BIL_BAM_FINISHED_TEXT"/>
-	<store>STORE_RKS_BIL_BAM</store>
+	<text load="RKS_GARAGE_BAM_FINISHED_TEXT"/>
+	<store>STORE_RKS_GARAGE_BAM</store>
 </event>
-<textList name="RKS_BIL_BAM_FINISHED_TEXT">
+<textList name="RKS_GARAGE_BAM_FINISHED_TEXT">
 	<text>Rather quickly, they finish adding components you don't recognize to your system, then your ship is basically dumped on the side of the workshop.
 	At first you're worried, but the upgrades did work!
 	
@@ -1742,19 +1755,21 @@ To make normal nebula instead (debugging?), disable all that and make prefix "NE
 </textList>
 
 <!-- Uses Multi-ship -->
-<event name="RKS_BIL_SCORCH_REACTOR">
+<event name="RKS_GARAGE_SCORCH_REACTOR">
 	<preventQuest/>
     <environment type="sun"/>
-	<text>Next to this sun, you stumble upon a strange workshop manned by Uptors.
+	<text>Next to this sun, you stumble upon a strange kind of workshop manned by Uptors.
 
-		"You have found the RK Scorch 'Brutal Improvement Lab', welcome!
+		"You have found the RK Scorch 'Brutal Improvement Garage' (B.I.G.), welcome!
 		For a fee, we can mightily improve the potential of your ship, while gathering data about the side-effects of the procedure.
 		The benefits are massive: your reactor would be improved by 5 whole levels, including beyond its normal maximum.
 
-		However even with the latest protocol, after looking at our hasty scans of your ship, we expect it to [style[color:ff3377]]take a measly 3 total hull damage spread around, and also... catch fire quite spectacularly[[/style]].
+		However even with the latest protocol, after looking at our hasty scans of your ship, we expect it to [style[color:ff3377]]take a measly 3 total hull and system damage spread around, and also... catch fire quite spectacularly[[/style]].
 		Interested?"
+
+		Seeing your puzzled look, they add "Come on, live a little! This is quite the unique opportunity."
 		
-		It would be a shame if you were attacked in these conditions, but you did not notice any other ships at this beacon on the way in...</text>
+		It would be a shame if you were attacked in these conditions, but you don't think you've noticed any other ships at this beacon on the way in...</text>
 	<ship load="SHIP_LOSTSUN_STATION" hostile="false"/>
 	
 	<choice req="reactor" lvl="0" blue="false" hidden="false">
@@ -1828,13 +1843,13 @@ To make normal nebula instead (debugging?), disable all that and make prefix "NE
 		"I KNEW someone would be foolish enough to go for that! All we had to do was wait a jump over until our detector hidden here was triggered by the power spike. Easiest ambush ever!".
 	
 		As if that wasn't bad enough, they have RK Fireblast weaponry. You would do well to rid your ship of fires A.S.A.P.!</text>
-	<ship load="SHIP_RKS_BIL_FIREBLASTER_PIRATE" hostile="true"/>
+	<ship load="SHIP_RKS_GARAGE_FIREBLASTER_PIRATE" hostile="true"/>
 	<playSound>dj_scorchedEarth</playSound>
 	
 	<damage amount="1" system="shields" effect="fire"/>
+	<damage amount="1" system="random" effect="fire"/>
+	<damage amount="1" system="random" effect="fire"/>
 	<!-- <damage amount="1" system="room" effect="fire"/> -->
-	<damage amount="1" system="room" effect="fire"/>
-	<damage amount="1" system="room" effect="fire"/>
 
 	<damage amount="0" system="room" effect="fire"/>
 	<damage amount="0" system="room" effect="fire"/>
@@ -1864,7 +1879,7 @@ To make normal nebula instead (debugging?), disable all that and make prefix "NE
 	<variable name="aea_old_reactor_upgrades" op="add" val="1"/>
 	<loadEvent>STORAGE_CHECK_SYSTEM</loadEvent>
 </event> -->
-<ship name="SHIP_RKS_BIL_FIREBLASTER_PIRATE" auto_blueprint="RKS_BIL_FIREBLASTER_PIRATE">
+<ship name="SHIP_RKS_GARAGE_FIREBLASTER_PIRATE" auto_blueprint="RKS_GARAGE_FIREBLASTER_PIRATE">
 	<surrender  chance="0.5" min="2" max="4" load="SURRENDER_PIRATE"/>
 	<escape  chance="0.3" min="5" max="7" load="ESCAPE_PIRATE"/>
 	<gotaway load="GOTAWAY_PIRATE"/>
@@ -1957,6 +1972,22 @@ it was interested in their O2 and medical rooms, they said they bring it back to
 		</event>
 	</choice>
 	
+	<choice req="RKS_HAS_ENGI_AND_GHOST" hidden="true">
+		<text>Your Engi locates the box and says your Ghost could catch it before it's too late.</text>
+		<event>
+			<text>"Suggestion: throw gaseous lifeform through airlock in less than 4.7534 seconds. Chance of success = significant."
+				You're not too sure about this, but your Ghost tells you to hold their beverage and quickly jumps out to grab the box! You didn't even know they could "drink".
+				
+				Fortunately it's used to this type of acrobatics, and avoids any injuries while also bringing back some scrap.</text>
+			<autoReward level="LOW">scrap_only</autoReward>
+
+			<choice hidden="true">
+				<text>Continue...</text>
+				<event load="RKS_QUEST_DEFROMORIUS_2"/>
+			</choice>
+		</event>
+	</choice>
+
 	<choice hidden="true">
 		<text>There's nothing we can do, just scrap whatever's left.</text>
 		<event>
@@ -2228,6 +2259,27 @@ it was interested in their O2 and medical rooms, they said they bring it back to
 									</choice>
 								</event>
 							</choice>
+							
+							<choice req="unique_rk_defromorius" hidden="true">
+								<text>(Defromorius) "Identity confirmed: alternate self".</text>
+								<event>
+									<text>Knowing exactly what to do, your own Defromorius leads the rescue effort to success, using minimal resources.
+
+										"Greetings, me #2."
+										"Identity confirmed: alternate self. Greetings, me #2."
+										Once they're done devising a better way to tell themselves apart, they add "Captain. Our existence was already: IMPOSSIBLY IMPROBABLE. Logical conclusion: this event = evidence that our existence (includes: yours) is merely a simulation."
+
+										Unaffected by the sudden existential crisis taking hold in your ship, the Defromoriuses simply move on to the next tasks, like scrapping the wreck.</text>
+									<autoReward level="MED">standard</autoReward>
+									<crewMember amount="1" class="unique_rk_defromorius" all_skills="2">Defromorius</crewMember>
+									<achievement silent="false">ACH_RK_EVENT_DEFROMORIUS</achievement>
+									
+									<choice hidden="true">
+										<text>Continue...</text>
+										<event/>	<!-- TODO: Harmony attack here with crewdrone boarders, no ASBs -->
+									</choice>	
+								</event>
+							</choice>
 
 							<choice hidden="true">
 								<text>Leave it to die, it did deserve it.</text>
@@ -2364,8 +2416,8 @@ RK Bam lab
 		</event>
 	</choice>
 
-	<choice req="RKS_HAS_ANY_SACRIFICEABLE_MANTIS" lvl="1" hidden="true" blue="true">
-		<text>(Non-Unique Mantis) We have 'workpieces' for sale, where should we go?</text>
+	<choice req="RKS_HAS_ANY_SACRIFICEABLE_LEECH_ANTIABUSE" lvl="1" hidden="true" blue="true">
+		<text>(Non-Unique Leech) We have 'workpieces' for sale, where should we go?</text>
 		<event>
 			<text>"Righto, then it's the Punk lab you want. I can send you there instead. Be ready to show your RadiKal gear."
 			</text>
@@ -2380,6 +2432,7 @@ RK Bam lab
 						<!-- <nextSector>false</nextSector>
 						<aggressive>2</aggressive> -->
 					</quest>
+					<variable name="rks_lab_redirected" op="add" val="1"/>
 					<variable name="rks_lab_coords_punk" op="set" val="1"/>
 					
 					<choice>
@@ -2406,10 +2459,49 @@ RK Bam lab
 			</choice>
 		</event>
 	</choice>
-	<choice req="RKS_HAS_ANY_SACRIFICEABLE_ORCHID" lvl="1" hidden="true" blue="true">
-		<text>(Non-Unique Orchids) We have 'flammable material' for sale, where should we go?</text>
+	<choice req="RKS_HAS_ANY_SACRIFICEABLE_MANTIS_ANTIABUSE" lvl="1" hidden="true" blue="true">
+		<text>(Non-Unique Mantis) We have 'workpieces' for sale, where should we go?</text>
 		<event>
 			<text>"Righto, then it's the Punk lab you want. I can send you there instead. Be ready to show your RadiKal gear."
+			</text>
+			
+			<choice req="rks_lab_coords_punk" lvl="0" max_lvl="0" hidden="true" blue="false">
+				<text>Alright then.</text>
+				<event>
+					<text>"Tell them they stink while you're at it. Hah! Those smug freaks."				
+					</text>
+					<quest event="RKS_QUEST_LAB_PUNK">
+					</quest>
+					<variable name="rks_lab_redirected" op="add" val="1"/>
+					<variable name="rks_lab_coords_punk" op="set" val="1"/>
+					
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+
+			<choice req="rks_lab_coords_punk" lvl="1" hidden="true" blue="false">
+				<text>We already have that RK lab's coordinates.</text>
+				<event load="OPTION_INVALID"/>
+			</choice>
+
+			<choice hidden="true">
+				<text>Nevermind. Back to what we were saying...</text>
+				<event><loadEvent>RKS_QUEST_LAB_BAM</loadEvent></event>
+			</choice>
+		</event>
+	</choice>
+	
+	<choice req="RKS_HAS_ANY_SACRIFICEABLE_ORCHID_ANTIABUSE" lvl="1" hidden="true" blue="true">
+		<text>(Non-Unique Orchid) We have 'flammable material' for sale, where should we go?</text>
+		<event>
+			<text>"Righto, then it's the Scorch lab you want. I can send you there instead. Be ready to show your RadiKal gear."
 			</text>
 			
 			<choice req="rks_lab_coords_scorch" lvl="0" max_lvl="0" hidden="true" blue="false">
@@ -2419,6 +2511,45 @@ RK Bam lab
 					</text>
 					<quest event="RKS_QUEST_LAB_SCORCH">
 					</quest>
+					<variable name="rks_lab_redirected" op="add" val="1"/>
+					<variable name="rks_lab_coords_scorch" op="set" val="1"/>
+					
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+
+			<choice req="rks_lab_coords_scorch" lvl="1" hidden="true" blue="false">
+				<text>We already have that RK lab's coordinates.</text>
+				<event load="OPTION_INVALID"/>
+			</choice>
+
+			<choice hidden="true">
+				<text>Nevermind. Back to what we were saying...</text>
+				<event><loadEvent>RKS_QUEST_LAB_BAM</loadEvent></event>
+			</choice>
+		</event>
+	</choice>
+	<choice req="RKS_HAS_ANY_SACRIFICEABLE_ZOLTAN_ANTIABUSE" lvl="1" hidden="true" blue="true">
+		<text>(Non-Unique Zoltan) We have 'flammable material' for sale, where should we go?</text>
+		<event>
+			<text>"Righto, then it's the Scorch lab you want. I can send you there instead. Be ready to show your RadiKal gear."
+			</text>
+			
+			<choice req="rks_lab_coords_scorch" lvl="0" max_lvl="0" hidden="true" blue="false">
+				<text>Alright then.</text>
+				<event>
+					<text>"Tell them they stink while you're at it. Hah! That's gonna make their blood boil."				
+					</text>
+					<quest event="RKS_QUEST_LAB_SCORCH">
+					</quest>
+					<variable name="rks_lab_redirected" op="add" val="1"/>
 					<variable name="rks_lab_coords_scorch" op="set" val="1"/>
 					
 					<choice>
@@ -2843,6 +2974,160 @@ RK Punk lab
 		</event>
 	</choice>
 
+	<choice req="RKS_HAS_ANY_SACRIFICEABLE_SHELL_ANTIABUSE" lvl="1" hidden="true" blue="true">
+		<text>(Non-Unique Shell) We have 'hard/explosive stuff' for sale, where should we go?</text>
+		<event>
+			<text>"Silly things, then it's the Bam lab you want. I can send you there instead. Be ready to show your RadiKal gear."
+			</text>
+			
+			<choice req="rks_lab_coords_bam" lvl="0" max_lvl="0" hidden="true" blue="false">
+				<text>Alright then.</text>
+				<event>
+					<text>"Tell them they're idiots while you're at it. Hah! That's gonna piss them off."				
+					</text>
+					<quest event="RKS_QUEST_LAB_BAM">
+					</quest>
+					<variable name="rks_lab_redirected" op="add" val="1"/>
+					<variable name="rks_lab_coords_bam" op="set" val="1"/>
+					
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+
+			<choice req="rks_lab_coords_bam" lvl="1" hidden="true" blue="false">
+				<text>We already have that RK lab's coordinates.</text>
+				<event load="OPTION_INVALID"/>
+			</choice>
+
+			<choice hidden="true">
+				<text>Nevermind. Back to what we were saying...</text>
+				<event><loadEvent>RKS_QUEST_LAB_PUNK</loadEvent></event>
+			</choice>
+		</event>
+	</choice>
+	<choice req="RKS_HAS_ANY_SACRIFICEABLE_LANIUS_ANTIABUSE" lvl="1" hidden="true" blue="true">
+		<text>(Non-Unique Lanius) We have 'hard/explosive stuff' for sale, where should we go?</text>
+		<event>
+			<text>"Silly things, then it's the Bam lab you want. I can send you there instead. Be ready to show your RadiKal gear."
+			</text>
+			
+			<choice req="rks_lab_coords_bam" lvl="0" max_lvl="0" hidden="true" blue="false">
+				<text>Alright then.</text>
+				<event>
+					<text>"Tell them they're idiots while you're at it. Hah! That's gonna piss them off."				
+					</text>
+					<quest event="RKS_QUEST_LAB_BAM">
+					</quest>
+					<variable name="rks_lab_redirected" op="add" val="1"/>
+					<variable name="rks_lab_coords_bam" op="set" val="1"/>
+					
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+
+			<choice req="rks_lab_coords_bam" lvl="1" hidden="true" blue="false">
+				<text>We already have that RK lab's coordinates.</text>
+				<event load="OPTION_INVALID"/>
+			</choice>
+
+			<choice hidden="true">
+				<text>Nevermind. Back to what we were saying...</text>
+				<event><loadEvent>RKS_QUEST_LAB_PUNK</loadEvent></event>
+			</choice>
+		</event>
+	</choice>
+
+	<choice req="RKS_HAS_ANY_SACRIFICEABLE_ORCHID_ANTIABUSE" lvl="1" hidden="true" blue="true">
+		<text>(Non-Unique Orchid) We have 'flammable material' for sale, where should we go?</text>
+		<event>
+			<text>"Silly things, then it's the Scorch lab you want. I can send you there instead. Be ready to show your RadiKal gear."
+			</text>
+			
+			<choice req="rks_lab_coords_scorch" lvl="0" max_lvl="0" hidden="true" blue="false">
+				<text>Alright then.</text>
+				<event>
+					<text>"Tell them they're idiots while you're at it. Hah! That's gonna make their blood boil."				
+					</text>
+					<quest event="RKS_QUEST_LAB_SCORCH">
+					</quest>
+					<variable name="rks_lab_redirected" op="add" val="1"/>
+					<variable name="rks_lab_coords_scorch" op="set" val="1"/>
+					
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+
+			<choice req="rks_lab_coords_scorch" lvl="1" hidden="true" blue="false">
+				<text>We already have that RK lab's coordinates.</text>
+				<event load="OPTION_INVALID"/>
+			</choice>
+
+			<choice hidden="true">
+				<text>Nevermind. Back to what we were saying...</text>
+				<event><loadEvent>RKS_QUEST_LAB_PUNK</loadEvent></event>
+			</choice>
+		</event>
+	</choice>
+	<choice req="RKS_HAS_ANY_SACRIFICEABLE_ZOLTAN_ANTIABUSE" lvl="1" hidden="true" blue="true">
+		<text>(Non-Unique Zoltan) We have 'flammable material' for sale, where should we go?</text>
+		<event>
+			<text>"Silly things, then it's the Scorch lab you want. I can send you there instead. Be ready to show your RadiKal gear."
+			</text>
+			
+			<choice req="rks_lab_coords_scorch" lvl="0" max_lvl="0" hidden="true" blue="false">
+				<text>Alright then.</text>
+				<event>
+					<text>"Tell them they're idiots while you're at it. Hah! That's gonna make their blood boil."				
+					</text>
+					<quest event="RKS_QUEST_LAB_SCORCH">
+					</quest>
+					<variable name="rks_lab_redirected" op="add" val="1"/>
+					<variable name="rks_lab_coords_scorch" op="set" val="1"/>
+					
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+
+			<choice req="rks_lab_coords_scorch" lvl="1" hidden="true" blue="false">
+				<text>We already have that RK lab's coordinates.</text>
+				<event load="OPTION_INVALID"/>
+			</choice>
+
+			<choice hidden="true">
+				<text>Nevermind. Back to what we were saying...</text>
+				<event><loadEvent>RKS_QUEST_LAB_PUNK</loadEvent></event>
+			</choice>
+		</event>
+	</choice>
+
 	<choice hidden="true">
 		<text>Is this the Aqua Funzone?</text>
 		<event>
@@ -3181,11 +3466,11 @@ RK Punk lab
 			<event/>
 		</choice>
 	</deadCrew>
-	<crew>
+	<!-- <crew>
 		<crewMember type="mantis_warlord" prop="0.40"/>
 		<crewMember type="mantis_free" prop="0.40"/>
 		<crewMember type="engi" prop="0.20"/>
-	</crew>
+	</crew> -->
 </ship>
 <ship name="SHIP_RKS_LAB_PUNK_ATTACKER_CHALLENGE" auto_blueprint="RKS_LAB_PUNK_FREEMANTIS_ELITE_CHALLENGE">
 	<destroyed>
@@ -3204,11 +3489,11 @@ RK Punk lab
 			<event/>
 		</choice>
 	</deadCrew>
-	<crew>
+	<!-- <crew>
 		<crewMember type="mantis_warlord" prop="0.40"/>
 		<crewMember type="mantis_free" prop="0.40"/>
 		<crewMember type="engi" prop="0.20"/>
-	</crew>
+	</crew> -->
 </ship>
 
 <!-- 
@@ -3272,6 +3557,158 @@ RK Scorch lab
 		</event>
 	</choice>
 
+	<choice req="RKS_HAS_ANY_SACRIFICEABLE_SHELL_ANTIABUSE" lvl="1" hidden="true" blue="true">
+		<text>(Non-Unique Shell) We have 'hard/explosive stuff' for sale, where should we go?</text>
+		<event>
+			<text>"Pfeh, then it's the Bam lab you want. I can send you there instead. Be ready to show your RadiKal gear."
+			</text>
+			
+			<choice req="rks_lab_coords_bam" lvl="0" max_lvl="0" hidden="true" blue="false">
+				<text>Alright then.</text>
+				<event>
+					<text>"Tell them they're slowpokes while you're at it. Hah! That's gonna piss them off."				
+					</text>
+					<quest event="RKS_QUEST_LAB_BAM">
+					</quest>
+					<variable name="rks_lab_redirected" op="add" val="1"/>
+					<variable name="rks_lab_coords_bam" op="set" val="1"/>
+					
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+
+			<choice req="rks_lab_coords_bam" lvl="1" hidden="true" blue="false">
+				<text>We already have that RK lab's coordinates.</text>
+				<event load="OPTION_INVALID"/>
+			</choice>
+
+			<choice hidden="true">
+				<text>Nevermind. Back to what we were saying...</text>
+				<event><loadEvent>RKS_QUEST_LAB_SCORCH</loadEvent></event>
+			</choice>
+		</event>
+	</choice>
+	<choice req="RKS_HAS_ANY_SACRIFICEABLE_LANIUS_ANTIABUSE" lvl="1" hidden="true" blue="true">
+		<text>(Non-Unique Lanius) We have 'hard/explosive stuff' for sale, where should we go?</text>
+		<event>
+			<text>"Pfeh, then it's the Bam lab you want. I can send you there instead. Be ready to show your RadiKal gear."
+			</text>
+			
+			<choice req="rks_lab_coords_bam" lvl="0" max_lvl="0" hidden="true" blue="false">
+				<text>Alright then.</text>
+				<event>
+					<text>"Tell them they're slowpokes while you're at it. Hah! That's gonna piss them off."				
+					</text>
+					<quest event="RKS_QUEST_LAB_BAM">
+					</quest>
+					<variable name="rks_lab_redirected" op="add" val="1"/>
+					<variable name="rks_lab_coords_bam" op="set" val="1"/>
+					
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+
+			<choice req="rks_lab_coords_bam" lvl="1" hidden="true" blue="false">
+				<text>We already have that RK lab's coordinates.</text>
+				<event load="OPTION_INVALID"/>
+			</choice>
+
+			<choice hidden="true">
+				<text>Nevermind. Back to what we were saying...</text>
+				<event><loadEvent>RKS_QUEST_LAB_SCORCH</loadEvent></event>
+			</choice>
+		</event>
+	</choice>
+
+	<choice req="RKS_HAS_ANY_SACRIFICEABLE_LEECH_ANTIABUSE" lvl="1" hidden="true" blue="true">
+		<text>(Non-Unique Leech) We have 'workpieces' for sale, where should we go?</text>
+		<event>
+			<text>"Pfeh, then it's the Punk lab you want. I can send you there instead. Be ready to show your RadiKal gear."
+			</text>
+			
+			<choice req="rks_lab_coords_punk" lvl="0" max_lvl="0" hidden="true" blue="false">
+				<text>Alright then.</text>
+				<event>
+					<text>"Tell them they're slowpokes while you're at it. Hah! Those smug freaks."</text>
+					<quest event="RKS_QUEST_LAB_PUNK">
+					</quest>
+					<variable name="rks_lab_redirected" op="add" val="1"/>
+					<variable name="rks_lab_coords_punk" op="set" val="1"/>
+					
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+
+			<choice req="rks_lab_coords_punk" lvl="1" hidden="true" blue="false">
+				<text>We already have that RK lab's coordinates.</text>
+				<event load="OPTION_INVALID"/>
+			</choice>
+
+			<choice hidden="true">
+				<text>Nevermind. Back to what we were saying...</text>
+				<event><loadEvent>RKS_QUEST_LAB_SCORCH</loadEvent></event>
+			</choice>
+		</event>
+	</choice>
+	<choice req="RKS_HAS_ANY_SACRIFICEABLE_MANTIS_ANTIABUSE" lvl="1" hidden="true" blue="true">
+		<text>(Non-Unique Mantis) We have 'workpieces' for sale, where should we go?</text>
+		<event>
+			<text>"Pfeh, then it's the Punk lab you want. I can send you there instead. Be ready to show your RadiKal gear."
+			</text>
+			
+			<choice req="rks_lab_coords_punk" lvl="0" max_lvl="0" hidden="true" blue="false">
+				<text>Alright then.</text>
+				<event>
+					<text>"Tell them they're slowpokes while you're at it. Hah! Those smug freaks."</text>
+					<quest event="RKS_QUEST_LAB_PUNK">
+					</quest>
+					<variable name="rks_lab_redirected" op="add" val="1"/>
+					<variable name="rks_lab_coords_punk" op="set" val="1"/>
+					
+					<choice>
+						<text>Do something onboard the ship.</text>
+						<event load="STORAGE_CHECK"/>
+					</choice>
+					<choice>
+						<text>Do nothing.</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+
+			<choice req="rks_lab_coords_punk" lvl="1" hidden="true" blue="false">
+				<text>We already have that RK lab's coordinates.</text>
+				<event load="OPTION_INVALID"/>
+			</choice>
+
+			<choice hidden="true">
+				<text>Nevermind. Back to what we were saying...</text>
+				<event><loadEvent>RKS_QUEST_LAB_SCORCH</loadEvent></event>
+			</choice>
+		</event>
+	</choice>
+
 	<choice hidden="true">
 		<text>Is this the Bakery Planet?</text>
 		<event>
@@ -3311,7 +3748,7 @@ RK Scorch lab
 <event name="RKS_QUEST_LAB_SCORCH_2">
 	<text>"First, the deliveries. What raw materials do you bring? The furnaces, vivisection labs and distilleries hunger."
 
-		You look at the list of "materials" and get a better understanding of why this sector is outlawed by so many factions. However the mission comes first, right?
+		You look at the list of "flammable materials" and get a better understanding of why this sector is outlawed by so many factions. However the mission comes first, right?
 	</text>
 	<jumpEvent>RKS_LAB_SCORCH_AMBUSH</jumpEvent>
 
@@ -3374,7 +3811,7 @@ RK Scorch lab
 	<choice req="orchid_caretaker" hidden="false">
 		<text>A Caretaker.</text>
 		<event>
-			<text>"Quality material, yes. Here's greater payment."
+			<text>"Deep, warm essence, yes. Here's greater payment."
 			
 				You can feel the rest of your crew judging you.
 			</text>
@@ -3397,7 +3834,7 @@ RK Scorch lab
 	<choice req="orchid_praetor" hidden="false">
 		<text>A Praetor.</text>
 		<event>
-			<text>"Quality material, yes. Here's greater payment."
+			<text>"Great funky spores, yes. Here's greater payment."
 			
 				You can feel the rest of your crew judging you.
 			</text>
@@ -3535,7 +3972,7 @@ RK Scorch lab
 	<choice req="zoltan_peacekeeper" hidden="false">
 		<text>A Peacekeeper.</text>
 		<event>
-			<text>"Quality material, yes. Here's greater payment."
+			<text>"High voltage armored power! Here's greater payment."
 			
 				You can feel the rest of your crew judging you.
 			</text>
@@ -3559,7 +3996,7 @@ RK Scorch lab
 	<choice req="zoltan_martyr" hidden="false">
 		<text>A Duskbringer Martyr.</text>
 		<event>
-			<text>"Quality material, yes. Here's greater payment."
+			<text>"Very volatile power, yes! Here's greater payment."
 			
 				You can feel the rest of your crew judging you.
 			</text>
