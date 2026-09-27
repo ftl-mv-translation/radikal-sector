@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-09-28 16:36+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: TrpleA <wndhkswnqls2@naver.com>\n"
 "Language-Team: Korean <https://weblate.hyperq.be/projects/radikal-sector/"
 "dataevents_special_storagexmlappend/ko/>\n"
 "Language: ko\n"
@@ -253,7 +253,7 @@ msgstr "(펑크 하모니) 분리주의자 엔지를 배양합니다."
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[23]/mod-"
 "append:choice/text"
-msgstr "(산소 발생기) 대기를 생성합니다!"
+msgstr "(산소 발생기) 대기를 생성합니다."
 
 #: src-en/data/events_special_storage.xml.append:728
 msgid ""
@@ -2504,13 +2504,12 @@ msgid ""
 msgstr "생각이 바뀌었다, 바로 싸운다!"
 
 #: src-en/data/events_special_storage.xml.append:4869
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE_IN_EMPTY\"]/text"
 msgstr ""
 "확실합니까? 이렇게 하시겠습니까?\n"
-"\t[두 함선 모두를 산소 환경으로 감싸 화재와 선원을 가스 배출 및 균열로부터 "
-"보호합니다. 비용 2}]"
+"\t[자신의 함선을 전부 산소 환경으로 감싸 화재와 선원을 가스 배출 및 "
+"균열로부터 보호합니다. 비용 1}]"
 
 #: src-en/data/events_special_storage.xml.append:4873
 msgid ""
@@ -2528,7 +2527,7 @@ msgstr "초압축 산소 수류탄을 신속하게 투척하여, 숨을 쉬거�
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE_IN_EMPTY\"]/choice[@req=\"loc_environment_atmosphere\""
 " and @lvl=\"0\"]/event/choice/text"
-msgstr ""
+msgstr "아, 신선한 공기!"
 
 #: src-en/data/events_special_storage.xml.append:4891
 msgid ""
@@ -3541,12 +3540,14 @@ msgstr "예"
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/text"
 msgstr ""
-"\"물어와!\" 손가락(혹은 이에 준하는 신체 부위)을 고이 모아 기도하며 두 특수 드론을 보냅니다.\n"
+"\"물어와!\" 손가락(혹은 이에 준하는 신체 부위)을 고이 모아 기도하며 두 특수 "
+"드론을 보냅니다.\n"
 "\t\t\t\t잠시 후, 드론들이 발견한 물품을 원격으로 보고해 옵니다.\n"
 "\t\t\t\t\n"
-"\t\t\t\t아무것도 회수하지 않기로 선택하면, 두 드론의 잔해와 남은 물자를 환불받습니다.\n"
+"\t\t\t\t아무것도 회수하지 않기로 선택하면, 소모한 물자의 일부를 "
+"환불받습니다.\n"
 "\t\t\t\t\n"
-"\t\t\t\t물품을 회수하기로 선택하면 드론 1대의 남은 물자만 회수하며, 반군 함대가 1턴 더 추격해 옵니다."
+"\t\t\t\t물품을 회수하기로 선택하면, 반군 함대가 1턴 더 추격해 옵니다."
 
 #: src-en/data/events_special_storage.xml.append:6691
 msgid ""
@@ -3746,8 +3747,9 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_MC_PARALYZER\""
 " and @lvl=\"1\"]/text"
 msgstr ""
-"RK 펑크 \"정신 냉각기\": 정신 지배에 걸린 경우, 당신의 선원은 전투, 시스템 파괴 또는 순간이동을 할 수 없습니다. 양측 함선 "
-"모두에 적용됩니다. [이미 설치됨]"
+"RK 펑크 \"정신 냉각기\": 정신 지배에 걸린 경우, 당신의 선원은 전투, 시설 "
+"파괴, 순간이동 또는 능력을 사용할 수 없습니다. 양측 함선 모두에 적용됩니다. "
+"[이미 설치됨]"
 
 #: src-en/data/events_special_storage.xml.append:7053
 msgid ""
@@ -3934,7 +3936,8 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER\"]/text"
 msgstr ""
 "정신 냉각기 업그레이드를 설치하려고 합니다.\n"
-"\t[효과: 정신 지배에 걸린 경우, 당신의 선원은 전투, 시스템 파괴 또는 순간이동을 할 수 없습니다. 양측 함선 모두에 적용됩니다.]"
+"\t[효과: 정신 지배에 걸린 경우, 당신의 선원은 전투, 시설 파괴, 순간이동 또는 "
+"능력을 사용할 수 없습니다. 양측 함선 모두에 적용됩니다.]"
 
 #: src-en/data/events_special_storage.xml.append:7268
 msgid ""
