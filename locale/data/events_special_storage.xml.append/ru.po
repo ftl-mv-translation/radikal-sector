@@ -1,9 +1,17 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-28 16:36+0000\n"
+"Last-Translator: Ukn <bbg100bbg@gmail.com>\n"
+"Language-Team: Russian <https://weblate.hyperq.be/projects/radikal-sector/"
+"dataevents_special_storagexmlappend/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events_special_storage.xml.append:396
 msgid ""
@@ -263,6 +271,7 @@ msgid ""
 msgstr "(Панк Гармония) Вырасти Сепаратиста энджи."
 
 #: src-en/data/events_special_storage.xml.append:721
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[23]/mod-"
 "append:choice/text"
@@ -3722,15 +3731,19 @@ msgid ""
 msgstr "Да"
 
 #: src-en/data/events_special_storage.xml.append:6676
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/text"
 msgstr ""
-"\"На поиски!\" - вы отправляете оба специальных дрона, скрестив пальцы или что-то в этом роде.\n"
+"\"На поиски!\" - вы отправляете оба специальных дрона, скрестив пальцы или "
+"что-то в этом роде.\n"
 "\t\t\t\tЧерез некоторое время они удаленно сообщают о своих находках.\n"
 "\t\t\t\t\n"
-"\t\t\t\tЕсли вы решите ничего не забирать, то получите обратно то, что осталось от обоих дронов-разведчиков.\n"
+"\t\t\t\tЕсли вы решите ничего не забирать, то получите обратно то, что "
+"осталось от обоих дронов-разведчиков.\n"
 "\t\t\t\t\n"
-"\t\t\t\tЕсли вы решите что-нибудь забрать, вы получите обратно то, что осталось от 1 дрона-разведчика, но флот ускорится на 1 прыжок."
+"\t\t\t\tЕсли вы решите что-нибудь забрать, вы получите обратно то, что "
+"осталось от 1 дрона-разведчика, но флот ускорится на 1 прыжок."
 
 #: src-en/data/events_special_storage.xml.append:6691
 msgid ""
@@ -3928,6 +3941,7 @@ msgid ""
 msgstr "Демиклонеры. [Цена: 35~, 2|]"
 
 #: src-en/data/events_special_storage.xml.append:7049
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_MC_PARALYZER\""
 " and @lvl=\"1\"]/text"
@@ -4126,11 +4140,13 @@ msgid ""
 msgstr "Неважно."
 
 #: src-en/data/events_special_storage.xml.append:7264
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER\"]/text"
 msgstr ""
 "Вы хотите добавить Успокоитель разума.\n"
-"\t[Эффекты: Под воздействием контроля разума ваш экипаж не может сражаться, саботировать или телепортироваться. Действует на обоих кораблях]"
+"\t[Эффекты: Под воздействием контроля разума ваш экипаж не может сражаться, "
+"саботировать или телепортироваться. Действует на обоих кораблях]"
 
 #: src-en/data/events_special_storage.xml.append:7268
 msgid ""
