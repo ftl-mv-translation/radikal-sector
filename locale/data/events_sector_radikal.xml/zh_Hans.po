@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-28 16:36+0000\n"
+"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/radikal-sector/dataevents_sector_radikalxml/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events_sector_radikal.xml:82
 msgid ""
@@ -445,6 +452,7 @@ msgid ""
 msgstr "继续。"
 
 #: src-en/data/events_sector_radikal.xml:531
+#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_GRAVESPRED_USER_REBELAUTO\"]/destroyed/choice[4]/text"
 msgstr "什么都不做"
@@ -3539,12 +3547,14 @@ msgid ""
 msgstr "跳过。"
 
 #: src-en/data/events_sector_radikal.xml:3749
+#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/text"
 msgstr ""
 "“首先，交货。你带来了什么原材料？熔炉、活体解剖实验室和蒸馏厂都急需。”\n"
 "\n"
-"\t\t你看了看“材料”清单，并更好地理解了为什么这个星区被这么多派系宣布为非法。然而，任务优先，对吧？"
+"\t\t你看了看“材料”清单，并更好地理解了为什么这个星区被这么多派系宣布为非法。"
+"然而，任务优先，对吧？"
 
 #: src-en/data/events_sector_radikal.xml:3756
 msgid ""
@@ -3606,6 +3616,7 @@ msgid ""
 msgstr "一个看护者。"
 
 #: src-en/data/events_sector_radikal.xml:3814
+#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid_caretaker\"]/event/text"
 msgstr ""
@@ -3628,6 +3639,7 @@ msgid ""
 msgstr "一个军政官。"
 
 #: src-en/data/events_sector_radikal.xml:3837
+#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid_praetor\"]/event/text"
 msgstr ""
@@ -3755,6 +3767,7 @@ msgid ""
 msgstr "一个维和兵。"
 
 #: src-en/data/events_sector_radikal.xml:3975
+#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"zoltan_peacekeeper\"]/event/text"
 msgstr ""
@@ -3778,6 +3791,7 @@ msgid ""
 msgstr "一个殉义者。"
 
 #: src-en/data/events_sector_radikal.xml:3999
+#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"zoltan_martyr\"]/event/text"
 msgstr ""
