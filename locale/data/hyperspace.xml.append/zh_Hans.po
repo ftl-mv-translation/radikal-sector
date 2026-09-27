@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-28 16:36+0000\n"
+"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/radikal-sector/datahyperspace-xml-append/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/hyperspace.xml.append:245
 msgid "data/hyperspace.xml.append$//human_soldier[@name=\"Rammerman\"]/@name"
@@ -299,12 +306,14 @@ msgstr ""
 "\t\t\t最好的情况是，他们复活为自己较弱的版本（士兵 = 默认人类等）。如果没有较弱的版本存在，他们会变成模物族。当模物族死亡时，则无事发生。"
 
 #: src-en/data/hyperspace.xml.append:933
+#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[3]/mod:findLike[3]/mod-"
 "append:shipIcon[6]/tooltip"
 msgstr ""
 "冷静头脑：\n"
-"\t\t\t当受到心灵控制效果影响时，这艘飞船的船员无法战斗、破坏或传送离开。对双方飞船都有效。"
+"\t\t\t当受到心灵控制效果影响时，这艘飞船的船员无法战斗、破坏或传送离开。对双"
+"方飞船都有效。"
 
 #: src-en/data/hyperspace.xml.append:941
 msgid ""
@@ -549,6 +558,7 @@ msgid ""
 msgstr "拉迪卡尔 BPS 武器"
 
 #: src-en/data/hyperspace.xml.append:3647
+#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[1]/category[2]/customTitle"
@@ -591,6 +601,7 @@ msgid ""
 msgstr "基础拉迪卡尔武器"
 
 #: src-en/data/hyperspace.xml.append:3808
+#, fuzzy
 msgid ""
 "data/hyperspace.xml.append$/dummyroot/FTL/mod:findLike[9]/mod-"
 "append:customStore[4]/category[2]/customTitle"
