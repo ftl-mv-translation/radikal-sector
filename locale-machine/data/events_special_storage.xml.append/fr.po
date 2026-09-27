@@ -9,40 +9,39 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[1]/mod-"
 "append:choice/text"
-msgstr "(Bélier Vorace) Éperonnez l'ennemi pour des réparations !"
+msgstr "(Shipvore Ram) Éperonner l'ennemi pour des réparations !"
 
 #: src-en/data/events_special_storage.xml.append:404
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[2]/mod-"
 "append:choice/text"
-msgstr "(Second Souffle A.E.R.A.) Activez l'auto-réparation d'urgence !"
+msgstr "(Second Souffle AERA) Activer l'auto-réparation d'urgence !"
 
 #: src-en/data/events_special_storage.xml.append:411
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[3]/mod-"
 "append:choice[1]/text"
 msgstr ""
-"(Énigmachine) Les rebelles sont déjà là, avec des brouilleurs Énigmachine. "
+"(Enigmashin) Les rebelles sont déjà là, avec des brouilleurs Enigmashin. "
 "Aucune raison de le garder."
 
 #: src-en/data/events_special_storage.xml.append:415
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[3]/mod-"
 "append:choice[2]/text"
-msgstr "(Énigmachine) Essayez de retarder les rebelles !"
+msgstr "(Enigmashin) Essayer de retarder les rebelles !"
 
 #: src-en/data/events_special_storage.xml.append:420
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[3]/mod-"
 "append:choice[3]/text"
-msgstr ""
-"(Calibreur d'ordonnance ineffable) Limiter plusieurs systèmes ennemis !"
+msgstr "(H.A.C.) Limiter plusieurs systèmes ennemis !"
 
 #: src-en/data/events_special_storage.xml.append:429
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[4]/mod-"
 "append:choice/text"
-msgstr "(Neutraliseur offensif) Neutraliser l'offensive ennemie !"
+msgstr "(Neutralisateur offensif) Désactiver l'offensif ennemi !"
 
 #: src-en/data/events_special_storage.xml.append:438
 msgid ""
@@ -54,7 +53,7 @@ msgstr "(Vulnérabilisateur) Commencer à supprimer la défense ennemie !"
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[6]/mod-"
 "append:choice/text"
-msgstr "(Téléporteur plasmatique) Mettre le vaisseau ennemi à feu !"
+msgstr "(Téléporteur Plasmatique) Mettre le vaisseau ennemi en feu !"
 
 #: src-en/data/events_special_storage.xml.append:454
 msgid ""
@@ -67,7 +66,7 @@ msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[8]/mod-"
 "append:choice/text"
 msgstr ""
-"(Ceintures chargées) L'allumer. [style[color:ff3377]][Ne peut pas être "
+"(Ceintures Chargées) L'allumer. [style[color:ff3377]][Ne peut pas être "
 "éteint !][[/style]] [Mode actuel : Éteint]"
 
 #: src-en/data/events_special_storage.xml.append:500
@@ -104,14 +103,14 @@ msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[13]/mod-"
 "append:choice/text"
 msgstr ""
-"(Second Souffle A.E.R.A.) Réparer immédiatement pour 1{. "
+"(Second Souffle AERA) Réparer immédiatement pour 1{. "
 "[style[color:ff3377]][Détruit l'augmentation !][[/style]]"
 
 #: src-en/data/events_special_storage.xml.append:535
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[13]/mod-"
 "append:choice/event/text"
-msgstr "Vous démarrez l'augmentation avec du carburant..."
+msgstr "Tu démarres l'augmentation avec du carburant..."
 
 #: src-en/data/events_special_storage.xml.append:541
 msgid ""
@@ -123,40 +122,40 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[14]/mod-"
 "append:choice/text"
-msgstr "(Bouclier de persistance) Régénérez vos Super Boucliers !"
+msgstr "(Bouclier de Persistance) Régénérer tes Super Boucliers !"
 
 #: src-en/data/events_special_storage.xml.append:557
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[15]/mod-"
 "append:choice/text"
 msgstr ""
-"(Série Terre calcinée) Sélectionnez quelle partie de votre vaisseau mettre "
-"en feu !"
+"(Série Terre Calcinée) Sélectionne quelle partie de ton vaisseau mettre en "
+"feu !"
 
 #: src-en/data/events_special_storage.xml.append:571
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[16]/mod-"
 "append:choice/text"
-msgstr "(Bélier Vorace) Voir les bonus actuels et les Combos"
+msgstr "(Shipvore Ram) Voir les bonus et Combos actuels"
 
 #: src-en/data/events_special_storage.xml.append:577
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"TOGGLEMENU_RK_SHIPVORE_RAM\"]/text"
 msgstr ""
-"Bonus et Combos du Bélier Vorace actuellement actifs ci-dessous. (FP = "
-"Pleine Puissance)"
+"Bonus et Combos Shipvore Ram actuellement actifs ci-dessous. (FP = Pleine "
+"Puissance)"
 
 #: src-en/data/events_special_storage.xml.append:580
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"TOGGLEMENU_RK_SHIPVORE_RAM\"]/choice[@req=\"cloaking\""
 " and @lvl=\"2\"]/text"
-msgstr "(Camouflage 2) Plus de chances d'infliger des dégâts élevés."
+msgstr "(Camouflage 2) Plus de chances d'infliger de gros dégâts."
 
 #: src-en/data/events_special_storage.xml.append:584
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"TOGGLEMENU_RK_SHIPVORE_RAM\"]/choice[@req=\"cloaking\""
 " and @lvl=\"3\"]/text"
-msgstr "(Camouflage 3) Plus de chances d'infliger des dégâts élevés."
+msgstr "(Camouflage 3) Plus de chances d'infliger de gros dégâts."
 
 #: src-en/data/events_special_storage.xml.append:589
 msgid ""
@@ -180,47 +179,47 @@ msgstr "(Moteurs 6) Dégâts max +1. Dégâts max FP +1."
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"TOGGLEMENU_RK_SHIPVORE_RAM\"]/choice[@req=\"engines\""
 " and @lvl=\"8\"]/text"
-msgstr "(Moteurs 8) Plus de chances d'infliger des dégâts élevés."
+msgstr "(Moteurs 8) Plus de chances d'infliger de gros dégâts."
 
 #: src-en/data/events_special_storage.xml.append:606
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"TOGGLEMENU_RK_SHIPVORE_RAM\"]/choice[@req=\"mind\"]/text"
 msgstr ""
 "(Contrôle mental) L'équipage ne peut pas refuser d'éperonner à nouveau (ou "
-"vous trahir) quand il a peur."
+"te trahir) quand il a peur."
 
 #: src-en/data/events_special_storage.xml.append:611
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"TOGGLEMENU_RK_SHIPVORE_RAM\"]/choice[@req=\"pilot\""
 " and @lvl=\"2\"]/text"
-msgstr "(Pilotage 2) Résultats négatifs plus rares."
+msgstr "(Pilotage 2) Issues négatives plus rares."
 
 #: src-en/data/events_special_storage.xml.append:615
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"TOGGLEMENU_RK_SHIPVORE_RAM\"]/choice[@req=\"pilot\""
 " and @lvl=\"3\"]/text"
 msgstr ""
-"(Pilotage 3) Pas de résultats négatifs avec perte de ressources. Résultats "
-"négatifs FP plus rares."
+"(Pilotage 3) Pas d'issues négatives avec perte de ressources. Issues FP "
+"négatives plus rares."
 
 #: src-en/data/events_special_storage.xml.append:620
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"TOGGLEMENU_RK_SHIPVORE_RAM\"]/choice[@req=\"DEBUG_GENERATOR\"]/text"
 msgstr ""
-"(Générateur de secours) L'éperonnage normal est gratuit (coup initial)."
+"(Générateur d'urgence) L'éperonnage normal est gratuit (frappe initiale)."
 
 #: src-en/data/events_special_storage.xml.append:624
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"TOGGLEMENU_RK_SHIPVORE_RAM\"]/choice[@req=\"FUEL_CONSERVER\"]/text"
 msgstr ""
-"(Conserve-carburant) L'éperonnage normal est gratuit (coups initiaux et "
-"répétés)."
+"(Conserve-carburant) L'éperonnage normal est gratuit (frappes initiale et "
+"répétées)."
 
 #: src-en/data/events_special_storage.xml.append:629
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"TOGGLEMENU_RK_SHIPVORE_RAM\"]/choice[@req=\"DJMOD_ANY_RESCUE_ARM\"]/text"
 msgstr ""
-"(Bras magnétique/Drone) Peut utiliser de la ferraille pour récupérer "
+"(Bras magnétique/drone) Peut utiliser de la ferraille pour récupérer "
 "l'équipage éjecté."
 
 #: src-en/data/events_special_storage.xml.append:634
@@ -233,31 +232,31 @@ msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[17]/mod-"
 "append:choice/text"
 msgstr ""
-"(Bélier Vorace) Renforcer pour résister à l'utilisation en Pleine Puissance."
+"(Shipvore Ram) Renforcer pour résister à l'utilisation en Pleine Puissance."
 
 #: src-en/data/events_special_storage.xml.append:685
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[18]/mod-"
 "append:choice/text"
-msgstr "(Ceintures chargées) Démanteler."
+msgstr "(Ceintures Chargées) La démanteler."
 
 #: src-en/data/events_special_storage.xml.append:692
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[19]/mod-"
 "append:choice/text"
-msgstr "(Titans de Plomb) Démanteler."
+msgstr "(Titans de Plomb) Le démanteler."
 
 #: src-en/data/events_special_storage.xml.append:699
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[20]/mod-"
 "append:choice/text"
-msgstr "(Bouclier de persistance) Reconstruire le condensateur."
+msgstr "(Bouclier de Persistance) Reconstruire le condensateur."
 
 #: src-en/data/events_special_storage.xml.append:705
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[21]/mod-"
 "append:choice/text"
-msgstr "(Bouclier de persistance) Reconstruire le condensateur."
+msgstr "(Bouclier de Persistance) Reconstruire le condensateur."
 
 #: src-en/data/events_special_storage.xml.append:713
 msgid ""
@@ -269,27 +268,27 @@ msgstr "(Punk Harmonie) Faire pousser un Engi Séparatiste."
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[23]/mod-"
 "append:choice/text"
-msgstr "(Terre calcinée) Améliorer en Terre du brasier (Niveau 2)."
+msgstr "(Terre Calcinée) Améliorer en Terre du brasier (Niveau 2)."
 
 #: src-en/data/events_special_storage.xml.append:727
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[24]/mod-"
 "append:choice/text"
-msgstr "(Terre du brasier) Améliorer en Terre éruptive (Niveau max)."
+msgstr "(Terre du brasier) Améliorer en Terre en éruption (Niveau Max)."
 
 #: src-en/data/events_special_storage.xml.append:735
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[25]/mod-"
 "append:choice/text"
-msgstr "(Arpenteur) Rechercher en profondeur sur la balise."
+msgstr "(Arpenteur) Fouiller en profondeur la balise."
 
 #: src-en/data/events_special_storage.xml.append:781
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/text"
 msgstr ""
-"Êtes-vous sûr de vouloir faire cela ?\n"
-"\t[Éperonnez le vaisseau ennemi, grande chance de réparer votre vaisseau.\n"
-"\tATTENTION : cela peut mal tourner !]"
+"Es-tu sûr de vouloir faire ça ?\n"
+"\t[Éperonner le vaisseau ennemi, forte chance de réparer ton vaisseau.\n"
+"\tATTENTION : peut mal tourner !]"
 
 #: src-en/data/events_special_storage.xml.append:790
 msgid ""
@@ -299,7 +298,7 @@ msgstr "Oui [Nécessite 10 secondes.]"
 #: src-en/data/events_special_storage.xml.append:792
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[1]/event/text"
-msgstr "Vous activez l'augmentation..."
+msgstr "Tu actives l'augmentation..."
 
 #: src-en/data/events_special_storage.xml.append:800
 msgid ""
@@ -309,7 +308,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:806
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[@req=\"DEBUG_GENERATOR\"]/text"
-msgstr "(Générateur de secours) Oui, sans utiliser de carburant."
+msgstr "(Générateur d'urgence) Oui, sans utiliser de carburant."
 
 #: src-en/data/events_special_storage.xml.append:810
 msgid ""
@@ -320,13 +319,13 @@ msgstr "(Conserve-carburant) Oui, sans utiliser de carburant."
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCED\"]/text"
 msgstr ""
-"(Bélier Vorace renforcé) Oui, à pleine puissance !\n"
-"\t\t[Vous [style[color:ff3377]]perdrez le renforcement[[/style]]. [style[color:ff3377]]Impossible d'éperonner à nouveau[[/style]] avant le prochain saut. Nécessite 7 secondes.]"
+"(Shipvore Ram Renforcé) Oui, en pleine puissance !\n"
+"\t\t[Tu [style[color:ff3377]]perdras le renforcement[[/style]]. [style[color:ff3377]]Ne peux plus éperonner[[/style]] avant de sauter. Nécessite 7 secondes.]"
 
 #: src-en/data/events_special_storage.xml.append:818
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCED\"]/event/text"
-msgstr "Vous activez l'augmentation à pleine puissance..."
+msgstr "Tu actives l'augmentation en pleine puissance..."
 
 #: src-en/data/events_special_storage.xml.append:827
 msgid ""
@@ -337,13 +336,13 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED\"]/text"
 msgstr ""
-"Oui, à pleine puissance !\n"
+"Oui, en pleine puissance !\n"
 "\t\t[L'augmentation va [style[color:ff3377]]se désintégrer[[/style]]. Nécessite 7 secondes.]"
 
 #: src-en/data/events_special_storage.xml.append:836
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED\"]/event/text"
-msgstr "Vous activez l'augmentation à pleine puissance..."
+msgstr "Tu actives l'augmentation en pleine puissance..."
 
 #: src-en/data/events_special_storage.xml.append:845
 msgid ""
@@ -354,13 +353,13 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[@req=\"LOCKED_DJMOD_COMBAT_SHIPVORE_RAM\"]/text"
 msgstr ""
-"Oui, à pleine puissance !\n"
-"\t\t[Impossible d'éperonner à nouveau avant le prochain saut. Nécessite 7 secondes.]"
+"Oui, en pleine puissance !\n"
+"\t\t[Ne peux plus éperonner avant le prochain saut. Nécessite 7 secondes.]"
 
 #: src-en/data/events_special_storage.xml.append:854
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_SHIPVORE_RAM\"]/choice[@req=\"LOCKED_DJMOD_COMBAT_SHIPVORE_RAM\"]/event/text"
-msgstr "Vous activez l'augmentation à pleine puissance..."
+msgstr "Tu actives l'augmentation en pleine puissance..."
 
 #: src-en/data/events_special_storage.xml.append:864
 msgid ""
@@ -385,53 +384,53 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:890
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_START\"]/triggeredEvent/triggeredEventBox/tooltip"
-msgstr "Vous serez prêt à éperonner le vaisseau ennemi dans ce laps de temps."
+msgstr "Tu seras prêt à éperonner le vaisseau ennemi dans ce laps de temps."
 
 #: src-en/data/events_special_storage.xml.append:904
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_START_FULL_POWER\"]/triggeredEvent/triggeredEventBox/tooltip"
 msgstr ""
-"Vous serez pleinement opérationnel pour éperonner le vaisseau ennemi dans ce"
-" laps de temps."
+"Tu seras pleinement chargé pour éperonner le vaisseau ennemi dans ce laps de"
+" temps."
 
 #: src-en/data/events_special_storage.xml.append:918
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END\"]/text"
-msgstr "Prêt à éperonner ! Procéder ?"
+msgstr "Prêt à éperonner ! Continuer ?"
 
 #: src-en/data/events_special_storage.xml.append:921
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END\"]/choice[1]/text"
-msgstr "Allons-y !"
+msgstr "C'est parti !"
 
 #: src-en/data/events_special_storage.xml.append:926
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END\"]/choice[@req=\"shipvore_ram_used_fuel\""
 " and @lvl=\"0\"]/text"
-msgstr "Abandonner. (Aucun { n'a été utilisé)"
+msgstr "Annuler. (Aucun { n'a été utilisé)"
 
 #: src-en/data/events_special_storage.xml.append:933
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END\"]/choice[@req=\"shipvore_ram_used_fuel\""
 " and @lvl=\"1\"]/text"
-msgstr "Abandonner et récupérer tout { non consommé."
+msgstr "Annuler, et récupérer les { non consommés."
 
 #: src-en/data/events_special_storage.xml.append:946
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/text"
-msgstr "Prêt à éperonner ! Procéder ?"
+msgstr "Complètement prêt à éperonner ! Continuer ?"
 
 #: src-en/data/events_special_storage.xml.append:949
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCED_AT_FULL_POWER\"]/text"
 msgstr ""
-"(Pleine puissance) Donnez tout ! [Vous [style[color:ff3377]]perdrez le "
-"renforcement[[/style]] sur l'augmentation.]"
+"(Pleine puissance) Donne tout ce que tu as ! [Tu "
+"[style[color:ff3377]]perdras le renforcement[[/style]] sur l'augmentation.]"
 
 #: src-en/data/events_special_storage.xml.append:952
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCED_AT_FULL_POWER\"]/event/text"
-msgstr "Le renforcement de votre augmentation fond..."
+msgstr "Le renforcement de ton augmentation fond..."
 
 #: src-en/data/events_special_storage.xml.append:959
 msgid ""
@@ -442,14 +441,14 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED_AT_FULL_POWER\"]/text"
 msgstr ""
-"(Pleine puissance) Donnez tout ! [Renforcez l'augmentation aux balises vides"
-" d'abord, ou utilisez-la maintenant mais elle va [style[color:ff3377]]se "
-"désintégrer[[/style]].]"
+"(Pleine puissance) Donne tout ce que tu as ! [Renforce l'augmentation à des "
+"balises vides d'abord, ou utilise-la maintenant mais elle va "
+"[style[color:ff3377]]se désintégrer[[/style]].]"
 
 #: src-en/data/events_special_storage.xml.append:968
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED_AT_FULL_POWER\"]/event/text"
-msgstr "Votre augmentation se désintègre..."
+msgstr "Ton augmentation se désintègre..."
 
 #: src-en/data/events_special_storage.xml.append:975
 msgid ""
@@ -460,13 +459,13 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[@req=\"locked_shipvore_ram_full_power\"]/text"
 msgstr ""
-"(Pleine puissance) C'est nous ou eux ! [[style[color:ff3377]]Impossible "
-"d'éperonner à nouveau[[/style]] avant le prochain saut.]"
+"(Pleine puissance) C'est nous ou eux ! [[style[color:ff3377]]Ne peux plus "
+"éperonner[[/style]] avant de sauter.]"
 
 #: src-en/data/events_special_storage.xml.append:985
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[@req=\"locked_shipvore_ram_full_power\"]/event/text"
-msgstr "Vous sentez fortement vos moteurs se charger..."
+msgstr "Tu sens fortement tes moteurs charger..."
 
 #: src-en/data/events_special_storage.xml.append:991
 msgid ""
@@ -476,246 +475,241 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:998
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_TIMER_END_FULL_POWER\"]/choice[4]/text"
-msgstr "Abandonner et récupérer tout { non consommé."
+msgstr "Annuler, et récupérer les { non consommés."
 
 #: src-en/data/events_special_storage.xml.append:1099
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_2DMG_NOTHING\"]/text"
 msgstr ""
-"Vous réussissez à peine à toucher la coque ennemie (et "
-"[style[color:ff3377]]avez raté tous les systèmes[[/style]]), infligeant 2 "
-"dégâts..."
+"Tu réussis à peine à toucher la coque ennemie (et [style[color:ff3377]]tu as"
+" manqué tous les systèmes[[/style]]), infligeant 2 dégâts..."
 
 #: src-en/data/events_special_storage.xml.append:1103
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_2DMG_NOTHING\"]/choice/text"
 msgstr ""
-"...avec ce résultat sur votre propre vaisseau (75% de chances que ce soit "
-"positif)."
+"...avec ce résultat sur ton propre vaisseau (75 % de chance que ce soit "
+"bon)."
 
 #: src-en/data/events_special_storage.xml.append:1108
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_3DMG_NOTHING\"]/text"
 msgstr ""
-"Vous attrapez une petite partie du vaisseau ennemi (mais "
-"[style[color:ff3377]]avez raté tous les systèmes[[/style]]), infligeant 3 "
-"dégâts..."
+"Tu touches une petite partie du vaisseau ennemi (mais "
+"[style[color:ff3377]]tu as manqué tous les systèmes[[/style]]), infligeant 3"
+" dégâts..."
 
 #: src-en/data/events_special_storage.xml.append:1112
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_3DMG_NOTHING\"]/choice/text"
 msgstr ""
-"...avec ce résultat sur votre propre vaisseau (75% de chances que ce soit "
-"positif)."
+"...avec ce résultat sur ton propre vaisseau (75 % de chance que ce soit "
+"bon)."
 
 #: src-en/data/events_special_storage.xml.append:1118
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_3DMG_BREACH\"]/text"
 msgstr ""
-"Vous arrachez une petite partie du vaisseau ennemi, infligeant 3 dégâts..."
+"Tu arraches une petite partie du vaisseau ennemi, infligeant 3 dégâts..."
 
 #: src-en/data/events_special_storage.xml.append:1124
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_3DMG_BREACH\"]/choice/text"
 msgstr ""
-"...avec ce résultat sur votre propre vaisseau (75% de chances que ce soit "
-"positif)..."
+"...avec ce résultat sur ton propre vaisseau (75 % de chance que ce soit "
+"bon)..."
 
 #: src-en/data/events_special_storage.xml.append:1129
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_4DMG_BREACH\"]/text"
-msgstr "Vous déchirez la coque du vaisseau ennemi pour 4 dégâts solides..."
+msgstr "Tu déchires la coque du vaisseau ennemi pour 4 dégâts solides..."
 
 #: src-en/data/events_special_storage.xml.append:1133
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_4DMG_BREACH\"]/choice/text"
 msgstr ""
-"...avec ce résultat sur votre propre vaisseau (75% de chances que ce soit "
-"positif)."
+"...avec ce résultat sur ton propre vaisseau (75 % de chance que ce soit "
+"bon)."
 
 #: src-en/data/events_special_storage.xml.append:1138
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_5DMG_BREACH\"]/text"
-msgstr "Vous percutez la coque du vaisseau ennemi pour 5 dégâts sérieux..."
+msgstr "Tu percuttes la coque du vaisseau ennemi pour 5 dégâts sérieux..."
 
 #: src-en/data/events_special_storage.xml.append:1142
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_5DMG_BREACH\"]/choice/text"
 msgstr ""
-"...avec ce résultat sur votre propre vaisseau (75% de chances que ce soit "
-"positif)."
+"...avec ce résultat sur ton propre vaisseau (75 % de chance que ce soit "
+"bon)."
 
 #: src-en/data/events_special_storage.xml.append:1149
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_5DMG_BREACH_1DMG_BREACH\"]/text"
-msgstr "Vous fracassez le vaisseau ennemi à pleine puissance pour 6 dégâts..."
+msgstr "Tu fracasses le vaisseau ennemi à pleine puissance pour 6 dégâts..."
 
 #: src-en/data/events_special_storage.xml.append:1154
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_5DMG_BREACH_1DMG_BREACH\"]/choice/text"
 msgstr ""
-"...avec ce résultat sur votre propre vaisseau (80% de chances que ce soit "
-"positif)."
+"...avec ce résultat sur ton propre vaisseau (80 % de chance que ce soit "
+"bon)."
 
 #: src-en/data/events_special_storage.xml.append:1160
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_6DMG_BREACH_1DMG_BREACH\"]/text"
 msgstr ""
-"Vous fracassez le vaisseau ennemi à pleine puissance pour 7 dégâts "
-"massifs..."
+"Tu fracasses le vaisseau ennemi à pleine puissance pour 7 dégâts massifs..."
 
 #: src-en/data/events_special_storage.xml.append:1165
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_6DMG_BREACH_1DMG_BREACH\"]/choice/text"
 msgstr ""
-"...avec ce résultat sur votre propre vaisseau (80% de chances que ce soit "
-"positif)."
+"...avec ce résultat sur ton propre vaisseau (80 % de chance que ce soit "
+"bon)."
 
 #: src-en/data/events_special_storage.xml.append:1170
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_5DMG_BREACH_2DMG_BREACH\"]/text"
 msgstr ""
-"Vous fracassez le vaisseau ennemi à pleine puissance pour 7 dégâts "
-"massifs..."
+"Tu fracasses le vaisseau ennemi à pleine puissance pour 7 dégâts massifs..."
 
 #: src-en/data/events_special_storage.xml.append:1175
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_5DMG_BREACH_2DMG_BREACH\"]/choice/text"
 msgstr ""
-"...avec ce résultat sur votre propre vaisseau (80% de chances que ce soit "
-"positif)."
+"...avec ce résultat sur ton propre vaisseau (80 % de chance que ce soit "
+"bon)."
 
 #: src-en/data/events_special_storage.xml.append:1181
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_6DMG_ALL_2DMG_BREACH\"]/text"
 msgstr ""
-"Vous fracassez la coque de l'ennemi à pleine puissance pour 8 dégâts "
+"Tu fracasses la coque de l'ennemi à pleine puissance pour 8 dégâts "
 "dévastateurs..."
 
 #: src-en/data/events_special_storage.xml.append:1186
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_6DMG_ALL_2DMG_BREACH\"]/choice/text"
 msgstr ""
-"...avec ce résultat sur votre propre vaisseau (80% de chances que ce soit "
-"positif)."
+"...avec ce résultat sur ton propre vaisseau (80 % de chance que ce soit "
+"bon)."
 
 #: src-en/data/events_special_storage.xml.append:1191
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_5DMG_ALL_3DMG_BREACH\"]/text"
 msgstr ""
-"Vous fracassez la coque de l'ennemi à pleine puissance pour 8 dégâts "
+"Tu fracasses la coque de l'ennemi à pleine puissance pour 8 dégâts "
 "dévastateurs..."
 
 #: src-en/data/events_special_storage.xml.append:1196
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_5DMG_ALL_3DMG_BREACH\"]/choice/text"
 msgstr ""
-"...avec ce résultat sur votre propre vaisseau (80% de chances que ce soit "
-"positif)."
+"...avec ce résultat sur ton propre vaisseau (80 % de chance que ce soit "
+"bon)."
 
 #: src-en/data/events_special_storage.xml.append:1202
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_6DMG_ALL_3DMG_BREACH\"]/text"
 msgstr ""
-"Vous labourez le vaisseau ennemi à pleine puissance comme un missile pour 9 "
+"Tu laboures le vaisseau ennemi à pleine puissance comme un missile pour 9 "
 "dégâts critiques..."
 
 #: src-en/data/events_special_storage.xml.append:1207
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_6DMG_ALL_3DMG_BREACH\"]/choice/text"
 msgstr ""
-"...avec ce résultat sur votre propre vaisseau (80% de chances que ce soit "
-"positif)."
+"...avec ce résultat sur ton propre vaisseau (80 % de chance que ce soit "
+"bon)."
 
 #: src-en/data/events_special_storage.xml.append:1212
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_5DMG_ALL_4DMG_BREACH\"]/text"
 msgstr ""
-"Vous labourez le vaisseau ennemi à pleine puissance comme un missile pour 9 "
+"Tu laboures le vaisseau ennemi à pleine puissance comme un missile pour 9 "
 "dégâts critiques..."
 
 #: src-en/data/events_special_storage.xml.append:1217
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_5DMG_ALL_4DMG_BREACH\"]/choice/text"
 msgstr ""
-"...avec ce résultat sur votre propre vaisseau (80% de chances que ce soit "
-"positif)."
+"...avec ce résultat sur ton propre vaisseau (80 % de chance que ce soit "
+"bon)."
 
 #: src-en/data/events_special_storage.xml.append:1222
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_3DMG_ALL_3DMG_BREACH_3DMG_BREACH\"]/text"
 msgstr ""
-"Vous labourez le vaisseau ennemi à pleine puissance comme un missile pour 9 "
+"Tu laboures le vaisseau ennemi à pleine puissance comme un missile pour 9 "
 "dégâts critiques..."
 
 #: src-en/data/events_special_storage.xml.append:1228
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_ATTACK_3DMG_ALL_3DMG_BREACH_3DMG_BREACH\"]/choice/text"
 msgstr ""
-"...avec ce résultat sur votre propre vaisseau (80% de chances que ce soit "
-"positif)."
+"...avec ce résultat sur ton propre vaisseau (80 % de chance que ce soit "
+"bon)."
 
 #: src-en/data/events_special_storage.xml.append:1353
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_1\"]/text"
-msgstr "Nous n'avons presque pas obtenu de réparations avec cela."
+msgstr "On n'a pratiquement eu aucune réparation avec ça."
 
 #: src-en/data/events_special_storage.xml.append:1357
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_1\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
-msgstr "(Bélier Vorace) Peut-être pouvons-nous recommencer."
+msgstr "(Shipvore Ram) Peut-être qu'on peut recommencer."
 
 #: src-en/data/events_special_storage.xml.append:1362
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_1\"]/choice[2]/text"
-msgstr "C'est assez."
+msgstr "C'est suffisant."
 
 #: src-en/data/events_special_storage.xml.append:1367
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_2\"]/text"
-msgstr "Ce coup nous a apporté des réparations décentes."
+msgstr "Cette frappe nous a apporté des réparations décentes."
 
 #: src-en/data/events_special_storage.xml.append:1371
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_2\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
-msgstr "(Bélier Vorace) Peut-être pouvons-nous recommencer."
+msgstr "(Shipvore Ram) Peut-être qu'on peut recommencer."
 
 #: src-en/data/events_special_storage.xml.append:1375
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_2\"]/choice[2]/text"
-msgstr "C'est assez."
+msgstr "C'est suffisant."
 
 #: src-en/data/events_special_storage.xml.append:1381
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_3_SCRAP\"]/text"
-msgstr "Nous avons réussi de bonnes réparations grâce à ces débris."
+msgstr "On a réussi à obtenir de bonnes réparations avec ces débris."
 
 #: src-en/data/events_special_storage.xml.append:1388
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_3_SCRAP\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
-msgstr "(Bélier Vorace) Peut-être pouvons-nous recommencer."
+msgstr "(Shipvore Ram) Peut-être qu'on peut recommencer."
 
 #: src-en/data/events_special_storage.xml.append:1392
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_3_SCRAP\"]/choice[2]/text"
-msgstr "C'est assez."
+msgstr "C'est suffisant."
 
 #: src-en/data/events_special_storage.xml.append:1397
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_4_SCRAP\"]/text"
-msgstr ""
-"Nous avons obtenu d'excellentes réparations grâce aux débris de ce vaisseau "
-"!"
+msgstr "On a obtenu de super réparations avec les débris de ce vaisseau !"
 
 #: src-en/data/events_special_storage.xml.append:1404
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_4_SCRAP\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
-msgstr "(Bélier Vorace) Peut-être pouvons-nous recommencer."
+msgstr "(Shipvore Ram) Peut-être qu'on peut recommencer."
 
 #: src-en/data/events_special_storage.xml.append:1408
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_4_SCRAP\"]/choice[2]/text"
-msgstr "C'est assez."
+msgstr "C'est suffisant."
 
 #: src-en/data/events_special_storage.xml.append:1413
 msgid ""
@@ -725,152 +719,154 @@ msgstr "Notre vaisseau se régale de coque !!"
 #: src-en/data/events_special_storage.xml.append:1420
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_5_SCRAP\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
-msgstr "(Bélier Vorace) Peut-être pouvons-nous recommencer."
+msgstr "(Shipvore Ram) Peut-être qu'on peut recommencer."
 
 #: src-en/data/events_special_storage.xml.append:1424
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_5_SCRAP\"]/choice[2]/text"
-msgstr "C'est assez."
+msgstr "C'est suffisant."
 
 #: src-en/data/events_special_storage.xml.append:1429
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_GETMISSILES\"]/text"
 msgstr ""
-"Nous avons volé quelques missiles de leur cargaison en plus des réparations "
-"!"
+"On a volé quelques missiles dans leur cargaison en plus des réparations !"
 
 #: src-en/data/events_special_storage.xml.append:1436
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_GETMISSILES\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
-msgstr "(Bélier Vorace) Peut-être pouvons-nous recommencer."
+msgstr "(Shipvore Ram) Peut-être qu'on peut recommencer."
 
 #: src-en/data/events_special_storage.xml.append:1440
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_GETMISSILES\"]/choice[2]/text"
-msgstr "C'est assez."
+msgstr "C'est suffisant."
 
 #: src-en/data/events_special_storage.xml.append:1445
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_GETDRONEPARTS\"]/text"
 msgstr ""
-"Nous avons volé quelques pièces de drone de leur cargaison en plus des "
+"On a volé quelques pièces de drone dans leur cargaison en plus des "
 "réparations !"
 
 #: src-en/data/events_special_storage.xml.append:1452
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_GETDRONEPARTS\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
-msgstr "(Bélier Vorace) Peut-être pouvons-nous recommencer."
+msgstr "(Shipvore Ram) Peut-être qu'on peut recommencer."
 
 #: src-en/data/events_special_storage.xml.append:1456
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_GOOD_GETDRONEPARTS\"]/choice[2]/text"
-msgstr "C'est assez."
+msgstr "C'est suffisant."
 
 #: src-en/data/events_special_storage.xml.append:1466
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_ENGINES_OVERHEAT\"]/text"
 msgstr ""
-"Ces débris sont trop mauvais pour les réparations, et nos moteurs ont "
+"Ces débris sont trop mauvais pour des réparations, et nos moteurs ont "
 "surchauffé."
 
 #: src-en/data/events_special_storage.xml.append:1470
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_ENGINES_OVERHEAT\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
-msgstr "(Bélier Vorace) Peut-être pouvons-nous recommencer."
+msgstr "(Shipvore Ram) Peut-être qu'on peut recommencer."
 
 #: src-en/data/events_special_storage.xml.append:1474
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_ENGINES_OVERHEAT\"]/choice[2]/text"
-msgstr "C'est assez."
+msgstr "C'est suffisant."
 
 #: src-en/data/events_special_storage.xml.append:1479
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_HULL_ENGINE\"]/text"
 msgstr ""
-"Frapper une partie solide de la coque ennemie nous laisse avec une perte "
-"nette. L'éperonnage EST risqué après tout..."
+"Toucher une partie solide de la coque ennemie nous laisse en perte nette. "
+"Éperonner EST risqué après tout..."
 
 #: src-en/data/events_special_storage.xml.append:1483
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_HULL_ENGINE\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
-msgstr "(Bélier Vorace) Peut-être pouvons-nous recommencer."
+msgstr "(Shipvore Ram) Peut-être qu'on peut recommencer."
 
 #: src-en/data/events_special_storage.xml.append:1487
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_HULL_ENGINE\"]/choice[2]/text"
-msgstr "C'est assez."
+msgstr "C'est suffisant."
 
 #: src-en/data/events_special_storage.xml.append:1492
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_ENGINES\"]/text"
 msgstr ""
-"Une tentative d'esquive à la dernière seconde a rendu cela très éprouvant "
-"pour nos moteurs, mais nous avons évité les dégâts à la coque."
+"Une tentative d'esquive de dernière seconde a rendu cela très éprouvant pour"
+" nos moteurs, mais nous avons évité les dégâts à la coque."
 
 #: src-en/data/events_special_storage.xml.append:1497
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_ENGINES\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
-msgstr "(Bélier Vorace) Peut-être pouvons-nous recommencer."
+msgstr "(Shipvore Ram) Peut-être qu'on peut recommencer."
 
 #: src-en/data/events_special_storage.xml.append:1501
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_ENGINES\"]/choice[2]/text"
-msgstr "C'est assez."
+msgstr "C'est suffisant."
 
 #: src-en/data/events_special_storage.xml.append:1507
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_HULL_2\"]/text"
 msgstr ""
-"Ce coup était si mauvais que nous avons peut-être endommagé notre vaisseau "
-"autant que le leur."
+"Cette frappe était si mauvaise que nous pourrions avoir endommagé notre "
+"vaisseau autant que celui de l'ennemi."
 
 #: src-en/data/events_special_storage.xml.append:1513
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_HULL_2\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
-msgstr "(Bélier Vorace) Peut-être pouvons-nous recommencer."
+msgstr "(Shipvore Ram) Peut-être qu'on peut recommencer."
 
 #: src-en/data/events_special_storage.xml.append:1517
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_HULL_2\"]/choice[2]/text"
-msgstr "C'est assez."
+msgstr "C'est suffisant."
 
 #: src-en/data/events_special_storage.xml.append:1523
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_MISSILES\"]/text"
 msgstr ""
-"Une partie des munitions de notre cargaison a été éjectée par une brèche..."
+"Un peu de munitions dans notre cargaison a été éjecté à travers une "
+"brèche..."
 
 #: src-en/data/events_special_storage.xml.append:1531
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_MISSILES\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
-msgstr "(Bélier Vorace) Peut-être pouvons-nous recommencer."
+msgstr "(Shipvore Ram) Peut-être qu'on peut recommencer."
 
 #: src-en/data/events_special_storage.xml.append:1535
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_MISSILES\"]/choice[2]/text"
-msgstr "C'est assez."
+msgstr "C'est suffisant."
 
 #: src-en/data/events_special_storage.xml.append:1541
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_DRONEPARTS\"]/text"
-msgstr "Une pièce de drone de notre cargaison a été éjectée par une brèche..."
+msgstr ""
+"Une pièce de drone dans notre cargaison a été éjectée à travers une "
+"brèche..."
 
 #: src-en/data/events_special_storage.xml.append:1549
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_DRONEPARTS\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
-msgstr "(Bélier Vorace) Peut-être pouvons-nous recommencer."
+msgstr "(Shipvore Ram) Peut-être qu'on peut recommencer."
 
 #: src-en/data/events_special_storage.xml.append:1553
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_DRONEPARTS\"]/choice[2]/text"
-msgstr "C'est assez."
+msgstr "C'est suffisant."
 
 #: src-en/data/events_special_storage.xml.append:1560
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/text"
 msgstr ""
-"Le choc était terrible... Il semble que notre équipage ait été projeté dans "
-"l'espace par une brèche !"
+"Le choc était terrible... Il semble que notre équipage ait été éjecté dans "
+"l'espace à travers une brèche !"
 
 #: src-en/data/events_special_storage.xml.append:1566
 msgid ""
@@ -883,70 +879,70 @@ msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_CAN_TELEPORT_EJECTED_CREW\""
 " and @lvl=\"1\"]/event/text"
 msgstr ""
-"Votre préparation porte ses fruits car vous les téléportez facilement en "
-"bonne santé."
+"Ta préparation porte ses fruits car tu les téléportes facilement en bonne "
+"santé."
 
 #: src-en/data/events_special_storage.xml.append:1571
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_CAN_TELEPORT_EJECTED_CREW\""
 " and @lvl=\"1\"]/event/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
-msgstr "Facile ! Peut-être pouvons-nous recommencer ?"
+msgstr "Facile ! Peut-être qu'on peut recommencer ?"
 
 #: src-en/data/events_special_storage.xml.append:1577
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_CAN_TELEPORT_EJECTED_CREW\""
 " and @lvl=\"0\"]/text"
-msgstr "Votre équipement de téléportation est insuffisant."
+msgstr "Ton équipement de téléportation est insuffisant."
 
 #: src-en/data/events_special_storage.xml.append:1582
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_SUFFICIENT_PILOTING_AND_SENSORS\""
 " and not(@lvl)]/text"
-msgstr "(Pilotage 3, Capteurs 2) Faites un tonneau !"
+msgstr "(Pilotage 3, Capteurs 2) Fais un tonneau !"
 
 #: src-en/data/events_special_storage.xml.append:1584
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_SUFFICIENT_PILOTING_AND_SENSORS\""
 " and not(@lvl)]/event/text"
 msgstr ""
-"Une manœuvre précise assistée par IA remet votre équipage en place par la "
-"même brèche !"
+"Une manœuvre précise assistée par l'IA remet ton équipage en place à travers"
+" la même brèche !"
 
 #: src-en/data/events_special_storage.xml.append:1590
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_SUFFICIENT_PILOTING_AND_SENSORS\""
 " and not(@lvl)]/event/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
-msgstr "C'était moins une ! Peut-être pouvons-nous recommencer ?"
+msgstr "C'était moins une ! Peut-être qu'on peut recommencer ?"
 
 #: src-en/data/events_special_storage.xml.append:1596
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_SUFFICIENT_PILOTING_AND_SENSORS\""
 " and @lvl=\"0\"]/text"
-msgstr "Votre système de Pilotage ou de Capteurs est trop faible."
+msgstr "Ton système de Pilotage ou de Capteurs est trop faible."
 
 #: src-en/data/events_special_storage.xml.append:1601
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"engines\""
 " and @lvl=\"5\"]/text"
-msgstr "(Moteurs 5) Vite, esquivez !"
+msgstr "(Moteurs 5) Vite, dévie !"
 
 #: src-en/data/events_special_storage.xml.append:1603
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"engines\""
 " and @lvl=\"5\"]/event/text"
-msgstr "Avec une grande vitesse, vous rattrapez votre équipage en plein vol !"
+msgstr "Avec une grande vitesse, tu rattrapes ton équipage en plein vol !"
 
 #: src-en/data/events_special_storage.xml.append:1609
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"engines\""
 " and @lvl=\"5\"]/event/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
-msgstr "C'était moins une ! Peut-être pouvons-nous recommencer ?"
+msgstr "C'était moins une ! Peut-être qu'on peut recommencer ?"
 
 #: src-en/data/events_special_storage.xml.append:1615
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"engines\""
 " and not(@lvl)]/text"
-msgstr "Votre système de Moteurs est trop faible."
+msgstr "Ton système de Moteurs est trop faible."
 
 #: src-en/data/events_special_storage.xml.append:1620
 msgid ""
@@ -957,113 +953,114 @@ msgstr "(Drone Médical) Vite, sauvetage par drone !"
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[7]/event/text"
 msgstr ""
-"Votre drone médical ramène rapidement l'équipage tout en protégeant leurs "
-"organes vitaux !"
+"Ton Dr. Drone ramène rapidement l'équipage tout en protégeant leurs organes "
+"vitaux !"
 
 #: src-en/data/events_special_storage.xml.append:1628
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[7]/event/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
-msgstr "C'était moins une ! Peut-être pouvons-nous recommencer ?"
+msgstr "C'était moins une ! Peut-être qu'on peut recommencer ?"
 
 #: src-en/data/events_special_storage.xml.append:1634
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[8]/text"
-msgstr "Vous n'avez pas le drone d'équipage approprié."
+msgstr "Tu n'as pas le drone d'équipage approprié."
 
 #: src-en/data/events_special_storage.xml.append:1639
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_ANY_RESCUE_ARM\""
 " and not(@lvl)]/text"
-msgstr "(Bras du vaisseau) Attrapez-les avec un lasso de fortune !"
+msgstr "(Bras magnétique) Attrape-les avec un lasso improvisé !"
 
 #: src-en/data/events_special_storage.xml.append:1641
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_ANY_RESCUE_ARM\""
 " and not(@lvl)]/event/text"
 msgstr ""
-"Avec une logique douteuse, vous faites rentrer votre équipage par la même "
+"Avec une logique douteuse, tu fais revenir ton équipage à travers la même "
 "brèche !"
 
 #: src-en/data/events_special_storage.xml.append:1647
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_ANY_RESCUE_ARM\""
 " and not(@lvl)]/event/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
-msgstr "C'était moins une ! Peut-être pouvons-nous recommencer ?"
+msgstr "C'était moins une ! Peut-être qu'on peut recommencer ?"
 
 #: src-en/data/events_special_storage.xml.append:1653
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_ANY_RESCUE_ARM\""
 " and @lvl=\"0\"]/text"
-msgstr "Votre vaisseau n'a pas de Bras."
+msgstr "Ton vaisseau n'a pas de Bras."
 
 #: src-en/data/events_special_storage.xml.append:1658
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_SUM_ENGINEERS\""
 " and @lvl=\"2\"]/text"
-msgstr "(Au moins 2 ingénieurs) Vite, bricolez-leur un transport spatial !"
+msgstr ""
+"(Au moins 2 ingénieurs) Vite, bricole-leur un tour de manège spatial !"
 
 #: src-en/data/events_special_storage.xml.append:1660
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_SUM_ENGINEERS\""
 " and @lvl=\"2\"]/event/text"
 msgstr ""
-"Avec une logique douteuse, vous faites rentrer votre équipage par la même "
-"brèche ! Mais vous subissez aussi des dégâts à la coque."
+"Avec une logique douteuse, tu fais revenir ton équipage à travers la même "
+"brèche ! Mais tu subis aussi quelques dégâts à la coque."
 
 #: src-en/data/events_special_storage.xml.append:1668
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_SUM_ENGINEERS\""
 " and @lvl=\"2\"]/event/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
-msgstr "C'était moins une ! Peut-être pouvons-nous recommencer ?"
+msgstr "C'était moins une ! Peut-être qu'on peut recommencer ?"
 
 #: src-en/data/events_special_storage.xml.append:1674
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[@req=\"DJMOD_SUM_ENGINEERS\""
 " and not(@lvl)]/text"
-msgstr "Vous n'avez pas assez d'équipage de classe ingénieur."
+msgstr "Tu n'as pas assez d'équipage de classe ingénieur."
 
 #: src-en/data/events_special_storage.xml.append:1679
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[13]/text"
-msgstr "...Nous ne pouvons rien y faire, concentrez-vous sur le combat !"
+msgstr "...Il n'y a rien qu'on puisse y faire, concentre-toi sur le combat !"
 
 #: src-en/data/events_special_storage.xml.append:1681
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[13]/event/text"
 msgstr ""
-"Alors que votre équipage est perdu seul dans le vide, les autres refusent "
+"Comme ton équipage est perdu seul dans le vide, les autres refusent "
 "d'éperonner ce vaisseau à nouveau !"
 
 #: src-en/data/events_special_storage.xml.append:1686
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[13]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:1690
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[13]/event/choice[@req=\"mind\""
 " and @lvl=\"1\"]/text"
-msgstr "(Contrôle mental) Obéissez à votre capitaine !"
+msgstr "(Contrôle mental) Obéis à ton capitaine !"
 
 #: src-en/data/events_special_storage.xml.append:1692
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[13]/event/choice[@req=\"mind\""
 " and @lvl=\"1\"]/event/text"
 msgstr ""
-"L'impulsion mentale préprogrammée est libérée et l'équipage cesse de se "
-"plaindre. Vos méthodes sont contraires à l'éthique mais efficaces."
+"L'impulsion mentale pré-programmée est libérée et l'équipage arrête de se "
+"plaindre. Tes méthodes sont contraires à l'éthique mais efficaces."
 
 #: src-en/data/events_special_storage.xml.append:1694
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[13]/event/choice[@req=\"mind\""
 " and @lvl=\"1\"]/event/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/text"
-msgstr "C'est déjà mieux."
+msgstr "C'est déjà mieux comme ça."
 
 #: src-en/data/events_special_storage.xml.append:1699
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_CREW\"]/choice[13]/event/choice[@req=\"mind\""
 " and @lvl=\"1\"]/event/choice[2]/text"
-msgstr "En fait, je me sens mal à ce sujet maintenant, oubliez ça."
+msgstr "En fait, je me sens mal à propos de ça maintenant, oublie."
 
 #: src-en/data/events_special_storage.xml.append:1705
 msgid ""
@@ -1078,12 +1075,12 @@ msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_BREACHES\"]/text"
 msgstr ""
 "Nous avons déchiré notre coque sur un morceau de débris tranchant !\n"
-"\tLes dégâts sont superficiels mais l'équipage a maintenant très peur d'être éjecté dans l'espace par une brèche..."
+"\tLes dégâts sont superficiels mais l'équipage a maintenant très peur d'être éjecté dans l'espace à travers une brèche..."
 
 #: src-en/data/events_special_storage.xml.append:1721
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_OWN_OUTCOME_BAD_BREACHES\"]/choice/text"
-msgstr "(Bélier Vorace) Peut-être pouvons-nous recommencer."
+msgstr "(Shipvore Ram) Peut-être qu'on peut recommencer."
 
 #: src-en/data/events_special_storage.xml.append:1848
 msgid ""
@@ -1099,7 +1096,7 @@ msgstr "Bien !"
 #: src-en/data/events_special_storage.xml.append:1857
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETSCRAP\"]/text"
-msgstr "On dirait que nous avons ouvert une caisse de ferraille !"
+msgstr "On dirait qu'on a cassé une Caisse de Ferraille !"
 
 #: src-en/data/events_special_storage.xml.append:1860
 msgid ""
@@ -1110,8 +1107,8 @@ msgstr "Bien !"
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETSCRAP_2\"]/text"
 msgstr ""
-"Mauvaise nouvelle, nous n'avons obtenu aucune réparation.\n"
-"\tBonne nouvelle, nous avons ouvert une énorme caisse de ferraille !! Un résultat fantastique, même si une partie de la ferraille a été perdue dans l'espace."
+"Mauvaise nouvelle, on n'a obtenu aucune réparation.\n"
+"\tBonne nouvelle, on a cassé une Énorme Caisse de Ferraille !! Un résultat fantastique, même si une partie de la ferraille a été perdue dans l'espace."
 
 #: src-en/data/events_special_storage.xml.append:1873
 msgid ""
@@ -1121,7 +1118,7 @@ msgstr "Bien !"
 #: src-en/data/events_special_storage.xml.append:1884
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETSCRAP_SCALING\"]/text"
-msgstr "Une grande partie des débris est de la bonne ferraille !"
+msgstr "Une bonne partie des débris est de la bonne ferraille !"
 
 #: src-en/data/events_special_storage.xml.append:1887
 msgid ""
@@ -1131,7 +1128,7 @@ msgstr "Bien !"
 #: src-en/data/events_special_storage.xml.append:1895
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETFUEL\"]/text"
-msgstr "On dirait que nous avons ouvert une caisse de carburant !"
+msgstr "On dirait qu'on a cassé une Caisse de Carburant !"
 
 #: src-en/data/events_special_storage.xml.append:1898
 msgid ""
@@ -1151,7 +1148,7 @@ msgstr "Bien !"
 #: src-en/data/events_special_storage.xml.append:1919
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETMISSILES\"]/text"
-msgstr "On dirait que nous avons ouvert une caisse de munitions !"
+msgstr "On dirait qu'on a cassé une Caisse de Munitions !"
 
 #: src-en/data/events_special_storage.xml.append:1922
 msgid ""
@@ -1161,7 +1158,7 @@ msgstr "Bien !"
 #: src-en/data/events_special_storage.xml.append:1932
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETMISSILES_SCALING\"]/text"
-msgstr "Une partie des débris contient des munitions intactes !"
+msgstr "Une partie des débris est constituée de munitions intactes !"
 
 #: src-en/data/events_special_storage.xml.append:1935
 msgid ""
@@ -1171,7 +1168,7 @@ msgstr "Bien !"
 #: src-en/data/events_special_storage.xml.append:1943
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETDRONEPARTS\"]/text"
-msgstr "On dirait que nous avons ouvert une caisse de pièces de drones !"
+msgstr "On dirait qu'on a cassé une Caisse de Pièces de drones !"
 
 #: src-en/data/events_special_storage.xml.append:1946
 msgid ""
@@ -1181,7 +1178,8 @@ msgstr "Bien !"
 #: src-en/data/events_special_storage.xml.append:1956
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETDRONEPARTS_SCALING\"]/text"
-msgstr "Une partie des débris contient des pièces de drone fonctionnelles !"
+msgstr ""
+"Une partie des débris est constituée de pièces de drones fonctionnelles !"
 
 #: src-en/data/events_special_storage.xml.append:1959
 msgid ""
@@ -1202,7 +1200,7 @@ msgstr "Bien !"
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_GETWEAPON_2\"]/text"
 msgstr ""
-"Nous avons trouvé une arme au hasard dans une caisse parmi les débris !"
+"Nous avons trouvé par hasard une arme dans une caisse parmi les débris !"
 
 #: src-en/data/events_special_storage.xml.append:1985
 msgid ""
@@ -1237,8 +1235,8 @@ msgstr "Pas bon."
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_CRITICAL\"]/text"
 msgstr ""
-"Il y avait très peu de chances que cela arrive, mais nous les avons frappés "
-"sous un mauvais angle à pleine puissance, endommageant notre vaisseau à "
+"Il y avait très peu de chances que cela arrive mais nous les avons frappés "
+"avec un mauvais angle à pleine puissance, endommageant notre vaisseau à "
 "plusieurs endroits !"
 
 #: src-en/data/events_special_storage.xml.append:2030
@@ -1264,8 +1262,8 @@ msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_CAN_TELEPORT_EJECTED_CREW\""
 " and @lvl=\"1\"]/event/text"
 msgstr ""
-"Votre préparation porte ses fruits car vous les téléportez facilement en "
-"bonne santé."
+"Ta préparation porte ses fruits car tu les téléportes facilement en bonne "
+"santé."
 
 #: src-en/data/events_special_storage.xml.append:2047
 msgid ""
@@ -1277,21 +1275,21 @@ msgstr "Crise évitée !"
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_CAN_TELEPORT_EJECTED_CREW\""
 " and @lvl=\"0\"]/text"
-msgstr "Votre équipement de téléportation est insuffisant."
+msgstr "Ton équipement de téléportation est insuffisant."
 
 #: src-en/data/events_special_storage.xml.append:2058
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_SUFFICIENT_PILOTING_AND_SENSORS\""
 " and not(@lvl)]/text"
-msgstr "(Pilotage 3, Capteurs 2) Faites un tonneau !"
+msgstr "(Pilotage 3, Capteurs 2) Fais un tonneau !"
 
 #: src-en/data/events_special_storage.xml.append:2060
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_SUFFICIENT_PILOTING_AND_SENSORS\""
 " and not(@lvl)]/event/text"
 msgstr ""
-"Une manœuvre précise assistée par IA remet votre équipage en place par la "
-"même brèche !"
+"Une manœuvre précise assistée par l'IA remet ton équipage en place à travers"
+" la même brèche !"
 
 #: src-en/data/events_special_storage.xml.append:2066
 msgid ""
@@ -1303,19 +1301,19 @@ msgstr "Crise évitée !"
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_SUFFICIENT_PILOTING_AND_SENSORS\""
 " and @lvl=\"0\"]/text"
-msgstr "Votre système de Pilotage ou de Capteurs est trop faible."
+msgstr "Ton système de Pilotage ou de Capteurs est trop faible."
 
 #: src-en/data/events_special_storage.xml.append:2077
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"engines\""
 " and @lvl=\"6\"]/text"
-msgstr "(Moteurs 6) Vite, esquivez !"
+msgstr "(Moteurs 6) Vite, dévie !"
 
 #: src-en/data/events_special_storage.xml.append:2079
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"engines\""
 " and @lvl=\"6\"]/event/text"
-msgstr "Avec une grande vitesse, vous rattrapez votre équipage en plein vol !"
+msgstr "Avec une grande vitesse, tu rattrapes ton équipage en plein vol !"
 
 #: src-en/data/events_special_storage.xml.append:2085
 msgid ""
@@ -1327,7 +1325,7 @@ msgstr "Crise évitée !"
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"engines\""
 " and not(@lvl)]/text"
-msgstr "Votre système de Moteurs est trop faible."
+msgstr "Ton système de Moteurs est trop faible."
 
 #: src-en/data/events_special_storage.xml.append:2096
 msgid ""
@@ -1338,8 +1336,8 @@ msgstr "(Drone Médical) Vite, sauvetage par drone !"
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[7]/event/text"
 msgstr ""
-"Votre drone médical ramène rapidement l'équipage tout en protégeant leurs "
-"organes vitaux !"
+"Ton Dr. Drone ramène rapidement l'équipage tout en protégeant leurs organes "
+"vitaux !"
 
 #: src-en/data/events_special_storage.xml.append:2104
 msgid ""
@@ -1349,20 +1347,20 @@ msgstr "Crise évitée !"
 #: src-en/data/events_special_storage.xml.append:2110
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[8]/text"
-msgstr "Vous n'avez pas le drone d'équipage approprié."
+msgstr "Tu n'as pas le drone d'équipage approprié."
 
 #: src-en/data/events_special_storage.xml.append:2115
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_ANY_RESCUE_ARM\""
 " and not(@lvl)]/text"
-msgstr "(Bras du vaisseau approprié) Attrapez-les avec un lasso de fortune !"
+msgstr "(Bras magnétique) Attrape-les avec un lasso improvisé !"
 
 #: src-en/data/events_special_storage.xml.append:2117
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_ANY_RESCUE_ARM\""
 " and not(@lvl)]/event/text"
 msgstr ""
-"Avec une logique douteuse, vous faites rentrer votre équipage par la même "
+"Avec une logique douteuse, tu fais revenir ton équipage à travers la même "
 "brèche !"
 
 #: src-en/data/events_special_storage.xml.append:2123
@@ -1375,21 +1373,22 @@ msgstr "Crise évitée !"
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_ANY_RESCUE_ARM\""
 " and @lvl=\"0\"]/text"
-msgstr "Votre vaisseau n'a pas de Bras approprié."
+msgstr "Ton vaisseau n'a pas de Bras approprié."
 
 #: src-en/data/events_special_storage.xml.append:2134
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_SUM_ENGINEERS\""
 " and @lvl=\"2\"]/text"
-msgstr "(Au moins 2 ingénieurs) Vite, bricolez-leur un transport spatial !"
+msgstr ""
+"(Au moins 2 ingénieurs) Vite, bricole-leur un tour de manège spatial !"
 
 #: src-en/data/events_special_storage.xml.append:2136
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_SUM_ENGINEERS\""
 " and @lvl=\"2\"]/event/text"
 msgstr ""
-"Avec une logique douteuse, vous faites rentrer votre équipage par la même "
-"brèche ! Mais vous subissez aussi des dégâts à la coque."
+"Avec une logique douteuse, tu fais revenir ton équipage à travers la même "
+"brèche ! Mais tu subis aussi quelques dégâts à la coque."
 
 #: src-en/data/events_special_storage.xml.append:2144
 msgid ""
@@ -1401,33 +1400,33 @@ msgstr "Crise évitée !"
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[@req=\"DJMOD_SUM_ENGINEERS\""
 " and not(@lvl)]/text"
-msgstr "Vous n'avez pas assez d'équipage de classe ingénieur."
+msgstr "Tu n'as pas assez d'équipage de classe ingénieur."
 
 #: src-en/data/events_special_storage.xml.append:2155
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[13]/text"
-msgstr "...Nous ne pouvons rien y faire, concentrez-vous sur le combat !"
+msgstr "...Il n'y a rien qu'on puisse y faire, concentre-toi sur le combat !"
 
 #: src-en/data/events_special_storage.xml.append:2157
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[13]/event/text"
 msgstr ""
-"Alors que votre équipage est perdu seul dans le vide, les autres ont l'air "
+"Alors que ton équipage est perdu seul dans le vide, les autres ont l'air "
 "terrifiés !"
 
 #: src-en/data/events_special_storage.xml.append:2160
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[13]/event/choice[@req=\"mind\""
 " and @lvl=\"1\"]/text"
-msgstr "(Contrôle mental) Préparez-vous au pire..."
+msgstr "(Contrôle mental) Prépare-toi au pire..."
 
 #: src-en/data/events_special_storage.xml.append:2162
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[13]/event/choice[@req=\"mind\""
 " and @lvl=\"1\"]/event/text"
 msgstr ""
-"De plus, un ami de la victime a perdu toute confiance en vous !\n"
-"\t\t\t\t\tCela aurait pu être pire, mais votre système de Contrôle mental a empêché la trahison."
+"Qui plus est, un ami de la victime a perdu toute confiance en toi !\n"
+"\t\t\t\t\tCela aurait pu être pire, mais ton système de Contrôle Mental a évité une trahison."
 
 #: src-en/data/events_special_storage.xml.append:2165
 msgid ""
@@ -1446,21 +1445,21 @@ msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[13]/event/choice[@req=\"mind\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"De plus, un ami de la victime, rouge de rage et d'adrénaline, se tourne vers la violence !\n"
+"Qui plus est, un ami de la victime, rouge de rage et d'adrénaline, se tourne vers la violence !\n"
 "\t\t\t\t\tCela aurait probablement pu être évité avec le système de contrôle approprié..."
 
 #: src-en/data/events_special_storage.xml.append:2180
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"SHIPVORE_RAM_FP_OWN_OUTCOME_BAD_TRAITOR\"]/choice[13]/event/choice[@req=\"mind\""
 " and @lvl=\"0\"]/event/choice/text"
-msgstr "C'est sans doute le pire qui puisse arriver !"
+msgstr "C'est le pire qui puisse arriver !"
 
 #: src-en/data/events_special_storage.xml.append:2225
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/text"
 msgstr ""
 "Se préparer à éperonner à nouveau ?\n"
-"\t[Éperonnez le vaisseau ennemi, grande chance de réparer votre vaisseau.\n"
+"\t[Éperonner le vaisseau ennemi, forte chance de réparer ton vaisseau.\n"
 "\tAttention : peut mal tourner !]"
 
 #: src-en/data/events_special_storage.xml.append:2237
@@ -1471,7 +1470,7 @@ msgstr "Oui [Nécessite 10 secondes.]"
 #: src-en/data/events_special_storage.xml.append:2239
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_ANY\"]/event/text"
-msgstr "Vous activez l'augmentation..."
+msgstr "Tu actives l'augmentation..."
 
 #: src-en/data/events_special_storage.xml.append:2247
 msgid ""
@@ -1487,13 +1486,13 @@ msgstr "(Conserve-carburant) Oui, sans utiliser de carburant."
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCED\"]/text"
 msgstr ""
-"(Bélier Vorace renforcé) Oui, à pleine puissance !\n"
-"\t\t[Perdre le renforcement. Impossible d'éperonner à nouveau avant le prochain saut. Nécessite 7 secondes.]"
+"(Shipvore Ram Renforcé) Oui, en pleine puissance !\n"
+"\t\t[Perdre le renforcement. Ne peux plus éperonner avant le prochain saut. Nécessite 7 secondes.]"
 
 #: src-en/data/events_special_storage.xml.append:2264
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCED\"]/event/text"
-msgstr "Vous activez l'augmentation à pleine puissance..."
+msgstr "Tu actives l'augmentation en pleine puissance..."
 
 #: src-en/data/events_special_storage.xml.append:2275
 msgid ""
@@ -1504,13 +1503,13 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED\"]/text"
 msgstr ""
-"Oui, à pleine puissance !\n"
+"Oui, en pleine puissance !\n"
 "\t\t[L'augmentation va [style[color:ff3377]]se désintégrer[[/style]]. Nécessite 7 secondes.]"
 
 #: src-en/data/events_special_storage.xml.append:2284
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"DJMOD_COMBAT_SHIPVORE_RAM_NOT_REINFORCED\"]/event/text"
-msgstr "Vous activez l'augmentation à pleine puissance..."
+msgstr "Tu actives l'augmentation en pleine puissance..."
 
 #: src-en/data/events_special_storage.xml.append:2293
 msgid ""
@@ -1521,13 +1520,13 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"LOCKED_DJMOD_COMBAT_SHIPVORE_RAM\"]/text"
 msgstr ""
-"Oui, à pleine puissance !\n"
-"\t\t[[style[color:ff3377]]Impossible d'éperonner à nouveau[[/style]] avant le prochain saut. Nécessite 7 secondes.]"
+"Oui, en pleine puissance !\n"
+"\t\t[[style[color:ff3377]]Ne peux plus éperonner[[/style]] avant de sauter. Nécessite 7 secondes.]"
 
 #: src-en/data/events_special_storage.xml.append:2302
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[@req=\"LOCKED_DJMOD_COMBAT_SHIPVORE_RAM\"]/event/text"
-msgstr "Vous activez l'augmentation à pleine puissance..."
+msgstr "Tu actives l'augmentation en pleine puissance..."
 
 #: src-en/data/events_special_storage.xml.append:2311
 msgid ""
@@ -1537,7 +1536,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:2318
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REPEAT\"]/choice[6]/text"
-msgstr "C'est assez."
+msgstr "C'est suffisant."
 
 #: src-en/data/events_special_storage.xml.append:2325
 msgid ""
@@ -1553,9 +1552,9 @@ msgstr "D'accord."
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCE\"]/text"
 msgstr ""
-"Êtes-vous sûr de vouloir renforcer cette augmentation ?\n"
-"\t[Lors du choix du coup \"Pleine Puissance\", le renforcement sera perdu à la place de l'augmentation. \n"
-"\tVous pouvez toujours faire quelque chose à la balise vide après cela.]"
+"Es-tu sûr de vouloir renforcer cette augmentation ?\n"
+"\t[Lors du choix de la frappe \"Pleine Puissance\", le renforcement sera perdu au lieu de l'augmentation. \n"
+"\tTu peux toujours faire quelque chose à la balise vide après cela.]"
 
 #: src-en/data/events_special_storage.xml.append:2348
 msgid ""
@@ -1567,7 +1566,7 @@ msgstr "Oui"
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCE\"]/choice[@req=\"shipvore_ram_reinforcement\""
 " and @lvl=\"0\"]/event/text"
-msgstr "Vous renforcez l'augmentation."
+msgstr "Tu renforces l'augmentation."
 
 #: src-en/data/events_special_storage.xml.append:2357
 msgid ""
@@ -1579,7 +1578,7 @@ msgstr "Cela nous donnera un avantage !"
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCE\"]/choice[@req=\"shipvore_ram_reinforcement\""
 " and @lvl=\"1\"]/text"
-msgstr "Votre Bélier Vorace a un renforcement."
+msgstr "Ton Shipvore Ram a un renforcement."
 
 #: src-en/data/events_special_storage.xml.append:2368
 msgid ""
@@ -1590,9 +1589,9 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_PERSISTENCE_SHIELD_REBUILD_CAPACITOR\"]/text"
 msgstr ""
-"Êtes-vous sûr de vouloir reconstruire le condensateur du Bouclier de persistance ?\n"
-"\t[Permet d'utiliser à nouveau sa capacité active depuis le Menu Bascule. \n"
-"\tVous pouvez toujours faire quelque chose à la balise vide après cela.]"
+"Es-tu sûr de vouloir reconstruire le condensateur du Bouclier de Persistance ?\n"
+"\t[Permet d'utiliser à nouveau sa capacité active depuis le Menu de bascule. \n"
+"\tTu peux toujours faire quelque chose à la balise vide après cela.]"
 
 #: src-en/data/events_special_storage.xml.append:2380
 msgid ""
@@ -1611,7 +1610,7 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_PERSISTENCE_SHIELD_REBUILD_CAPACITOR\"]/choice[@req=\"rk_persistence_shield_capacitorneed\""
 " and @lvl=\"1\"]/event/text"
 msgstr ""
-"Vous reconstruisez le condensateur, restaurant la fonctionnalité de "
+"Tu reconstruis le condensateur, restaurant les fonctionnalités de "
 "l'augmentation."
 
 #: src-en/data/events_special_storage.xml.append:2393
@@ -1629,14 +1628,14 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"TOGGLEMENU_RK_PERSISTENCE_SHIELD\"]/text"
 msgstr ""
-"Êtes-vous sûr de vouloir faire cela ?\n"
-"\t[Régénérez tous vos Super Boucliers. Impossible de le refaire tant que vous n'aurez pas reconstruit le condensateur à une balise vide.]"
+"Es-tu sûr de vouloir faire ça ?\n"
+"\t[Régénérer tous tes Super Boucliers. Ne peut pas être refait avant d'avoir reconstruit le condensateur à une balise vide.]"
 
 #: src-en/data/events_special_storage.xml.append:2410
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"TOGGLEMENU_RK_PERSISTENCE_SHIELD\"]/choice[@req=\"rk_persistence_shield_capacitorneed\""
 " and not(@lvl)]/text"
-msgstr "Vous devez d'abord reconstruire le condensateur à une balise vide."
+msgstr "Tu dois d'abord reconstruire le condensateur à une balise vide."
 
 #: src-en/data/events_special_storage.xml.append:2415
 msgid ""
@@ -1653,9 +1652,9 @@ msgstr "Pas besoin. Retour au menu de bascule."
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/text"
 msgstr ""
-"Êtes-vous sûr de vouloir faire cela ?\n"
-"\t\t[Mettez votre propre vaisseau à feu ! Habituellement pour repousser les intrus.]\n"
-"\t\tBrûlez-les dans..."
+"Es-tu sûr de vouloir faire ça ?\n"
+"\t\t[Mettre ton propre vaisseau en feu ! Habituellement pour repousser les intrus.]\n"
+"\t\tLes brûler hors de..."
 
 #: src-en/data/events_special_storage.xml.append:2462
 msgid ""
@@ -1670,7 +1669,7 @@ msgstr "La salle de la Batterie !"
 #: src-en/data/events_special_storage.xml.append:2470
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"cloaking\"]/text"
-msgstr "La salle du Camouflage !"
+msgstr "La salle de Camouflage !"
 
 #: src-en/data/events_special_storage.xml.append:2474
 msgid ""
@@ -1680,12 +1679,12 @@ msgstr "La salle des clones !"
 #: src-en/data/events_special_storage.xml.append:2478
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"doors\"]/text"
-msgstr "La salle du Contrôle des portes !"
+msgstr "La salle de Contrôle des portes !"
 
 #: src-en/data/events_special_storage.xml.append:2482
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"drones\"]/text"
-msgstr "La salle du Contrôle des drones !"
+msgstr "La salle de Contrôle des drones !"
 
 #: src-en/data/events_special_storage.xml.append:2486
 msgid ""
@@ -1695,7 +1694,7 @@ msgstr "La salle des Moteurs !"
 #: src-en/data/events_special_storage.xml.append:2490
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"hacking\"]/text"
-msgstr "La salle du Piratage !"
+msgstr "La salle de Piratage !"
 
 #: src-en/data/events_special_storage.xml.append:2494
 msgid ""
@@ -1705,17 +1704,17 @@ msgstr "L'Infirmerie !"
 #: src-en/data/events_special_storage.xml.append:2498
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"mind\"]/text"
-msgstr "La salle du Contrôle mental !"
+msgstr "La salle de Contrôle mental !"
 
 #: src-en/data/events_special_storage.xml.append:2502
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"oxygen\"]/text"
-msgstr "La salle du Système de survie (O2) !"
+msgstr "La salle de Survie (O2) !"
 
 #: src-en/data/events_special_storage.xml.append:2506
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"pilot\"]/text"
-msgstr "La salle du Pilotage !"
+msgstr "La salle de Pilotage !"
 
 #: src-en/data/events_special_storage.xml.append:2510
 msgid ""
@@ -1745,7 +1744,7 @@ msgstr "La salle des Armes !"
 #: src-en/data/events_special_storage.xml.append:2535
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_ablative_armor\"]/text"
-msgstr "(LI) La salle du Blindage ablatif !"
+msgstr "(LI) La salle d'Armure Ablative !"
 
 #: src-en/data/events_special_storage.xml.append:2540
 msgid ""
@@ -1765,12 +1764,12 @@ msgstr "(LI) La salle de la Suite ECM !"
 #: src-en/data/events_special_storage.xml.append:2554
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_fiber_liner\"]/text"
-msgstr "(LI) La salle de revêtement en fibre !"
+msgstr "(LI) La salle du Revêtement en fibre !"
 
 #: src-en/data/events_special_storage.xml.append:2558
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_infusion_bay\"]/text"
-msgstr "(LI) La baie d'Infusion !"
+msgstr "(LI) La Baie d'Infusion !"
 
 #: src-en/data/events_special_storage.xml.append:2562
 msgid ""
@@ -1780,67 +1779,67 @@ msgstr "(LI) La salle du Neutralisateur de choc !"
 #: src-en/data/events_special_storage.xml.append:2566
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_system_bracers\"]/text"
-msgstr "(LI) La salle des Bracelets de système !"
+msgstr "(LI) La salle des Renforts de système !"
 
 #: src-en/data/events_special_storage.xml.append:2570
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_targeting_core\"]/text"
-msgstr "(LI) La salle du Noyau de ciblage !"
+msgstr "(LI) La salle du Cœur de ciblage !"
 
 #: src-en/data/events_special_storage.xml.append:2575
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"og_turret_adaptive\"]/text"
-msgstr "(OG) La salle de Contrôle de tourelle adaptative #1 !"
+msgstr "(OG) La salle de Contrôle de tourelle adaptative n°1 !"
 
 #: src-en/data/events_special_storage.xml.append:2579
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"og_turret_adaptive_2\"]/text"
-msgstr "(OG) La salle de Contrôle de tourelle adaptative #2 !"
+msgstr "(OG) La salle de Contrôle de tourelle adaptative n°2 !"
 
 #: src-en/data/events_special_storage.xml.append:2584
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"og_turret_mini\"]/text"
-msgstr "(OG) La salle de Contrôle de micro-tourelle #1 !"
+msgstr "(OG) La salle de Contrôle de micro-tourelle n°1 !"
 
 #: src-en/data/events_special_storage.xml.append:2588
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"og_turret_mini_2\"]/text"
-msgstr "(OG) La salle de Contrôle de micro-tourelle #2 !"
+msgstr "(OG) La salle de Contrôle de micro-tourelle n°2 !"
 
 #: src-en/data/events_special_storage.xml.append:2592
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"og_turret_mini_3\"]/text"
-msgstr "(OG) La salle de Contrôle de micro-tourelle #3 !"
+msgstr "(OG) La salle de Contrôle de micro-tourelle n°3 !"
 
 #: src-en/data/events_special_storage.xml.append:2596
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"og_turret_mini_4\"]/text"
-msgstr "(OG) La salle de Contrôle de micro-tourelle #4 !"
+msgstr "(OG) La salle de Contrôle de micro-tourelle n°4 !"
 
 #: src-en/data/events_special_storage.xml.append:2601
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"og_turret\"]/text"
-msgstr "(OG) La salle de Contrôle de tourelle #1 !"
+msgstr "(OG) La salle de Contrôle de tourelle n°1 !"
 
 #: src-en/data/events_special_storage.xml.append:2605
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"og_turret_2\"]/text"
-msgstr "(OG) La salle de Contrôle de tourelle #2 !"
+msgstr "(OG) La salle de Contrôle de tourelle n°2 !"
 
 #: src-en/data/events_special_storage.xml.append:2609
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"og_turret_3\"]/text"
-msgstr "(OG) La salle de Contrôle de tourelle #3 !"
+msgstr "(OG) La salle de Contrôle de tourelle n°3 !"
 
 #: src-en/data/events_special_storage.xml.append:2613
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"og_turret_4\"]/text"
-msgstr "(OG) La salle de Contrôle de tourelle #4 !"
+msgstr "(OG) La salle de Contrôle de tourelle n°4 !"
 
 #: src-en/data/events_special_storage.xml.append:2619
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[37]/text"
-msgstr "Trop d'ennemis. Allumez TOUT le vaisseau !!"
+msgstr "Trop d'ennemis. Fais flamber TOUT le vaisseau !!"
 
 #: src-en/data/events_special_storage.xml.append:2671
 msgid ""
@@ -1851,8 +1850,8 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_SCORCH_SELF_UPGRADE\"]/text"
 msgstr ""
-"Êtes-vous sûr de vouloir améliorer cette augmentation ?\n"
-"\t[Plus de résistance au feu. Dans le feu, votre équipage produit de l'O2 comme 1 Orchidée.]"
+"Es-tu sûr de vouloir améliorer cette augmentation ?\n"
+"\t[Plus de résistance au feu. Dans le feu, ton équipage produit de l'O2 comme 1 Orchidée.]"
 
 #: src-en/data/events_special_storage.xml.append:3950
 msgid ""
@@ -1862,7 +1861,7 @@ msgstr "Oui [-16~, -1{, -1}]"
 #: src-en/data/events_special_storage.xml.append:3952
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_SCORCH_SELF_UPGRADE\"]/choice[@req=\"RK_SCORCH_SELF\"]/event/text"
-msgstr "Vous commencez à améliorer l'augmentation..."
+msgstr "Tu commences à améliorer l'augmentation..."
 
 #: src-en/data/events_special_storage.xml.append:3961
 msgid ""
@@ -1872,7 +1871,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:3963
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_SCORCH_SELF_UPGRADE\"]/choice[@req=\"RK_SCORCH_SELF\"]/event/choice/event/text"
-msgstr "Vous finissez d'améliorer l'augmentation avec succès."
+msgstr "Tu finis d'améliorer l'augmentation avec succès."
 
 #: src-en/data/events_special_storage.xml.append:3966
 msgid ""
@@ -1888,18 +1887,18 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_SCORCH_SELF_UPGRADE_2\"]/text"
 msgstr ""
-"Êtes-vous sûr de vouloir améliorer cette augmentation ?\n"
-"\t[Plus de résistance au feu pour votre équipage. Dans le feu, votre équipage produit de l'O2 comme 3 Orchidées.]"
+"Es-tu sûr de vouloir améliorer cette augmentation ?\n"
+"\t[Plus de résistance au feu pour ton équipage. Dans le feu, ton équipage produit de l'O2 comme 3 Orchidées.]"
 
 #: src-en/data/events_special_storage.xml.append:3984
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_SCORCH_SELF_UPGRADE_2\"]/choice[@req=\"RK_SCORCH_SELF_2\"]/text"
-msgstr "Oui [-11~, -1{, -1}, la flotte avance de 1 tour]"
+msgstr "Oui [-11~, -1{, -1}, la flotte avance d'un tour]"
 
 #: src-en/data/events_special_storage.xml.append:3986
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_SCORCH_SELF_UPGRADE_2\"]/choice[@req=\"RK_SCORCH_SELF_2\"]/event/text"
-msgstr "Vous commencez à améliorer l'augmentation..."
+msgstr "Tu commences à améliorer l'augmentation..."
 
 #: src-en/data/events_special_storage.xml.append:3996
 msgid ""
@@ -1909,7 +1908,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:3998
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_SCORCH_SELF_UPGRADE_2\"]/choice[@req=\"RK_SCORCH_SELF_2\"]/event/choice/event/text"
-msgstr "Vous finissez d'améliorer l'augmentation avec succès."
+msgstr "Tu finis d'améliorer l'augmentation avec succès."
 
 #: src-en/data/events_special_storage.xml.append:4001
 msgid ""
@@ -1925,26 +1924,27 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"COMBAT_CHECK_RK_COMBAT_SCORCH_ENEMY\"]/text"
 msgstr ""
-"Êtes-vous sûr de vouloir faire cela ? (Nécessite une source de feu)\n"
-"\t[Déclenche un feu dans votre salle du Système de survie (O2) si vous en avez une, et plus de feux aléatoires dans le vaisseau ennemi (surtout les systèmes). Utilise {]"
+"Es-tu sûr de vouloir faire ça ? (Nécessite une source de feu)\n"
+"\t[Déclenche un incendie dans ta salle de Survie (O2) si tu en as une, et plus d'incendies aléatoires dans le vaisseau ennemi (surtout les systèmes). Utilise {]"
 
 #: src-en/data/events_special_storage.xml.append:4032
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"COMBAT_CHECK_RK_COMBAT_SCORCH_ENEMY\"]/choice[@req=\"DJMOD_COMBAT_SELF_FIRE_ANY\"]/text"
 msgstr ""
-"Vous ne possédez aucun niveau de l'augmentation Terre calcinée pour une "
-"activation gratuite."
+"Tu n'as aucun niveau de l'augmentation Terre Calcinée pour une activation "
+"gratuite."
 
 #: src-en/data/events_special_storage.xml.append:4037
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"COMBAT_CHECK_RK_COMBAT_SCORCH_ENEMY\"]/choice[2]/text"
-msgstr "(Terre calcinée) Oui ! [Quelques feux dans le vaisseau ennemi]"
+msgstr "(Terre Calcinée) Oui ! [Quelques incendies dans le vaisseau ennemi]"
 
 #: src-en/data/events_special_storage.xml.append:4041
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"COMBAT_CHECK_RK_COMBAT_SCORCH_ENEMY\"]/choice[3]/text"
 msgstr ""
-"(Terre calcinée) Activation forte ! [Plus de feux dans les deux vaisseaux]"
+"(Terre Calcinée) Activation forte ! [Plus d'incendies dans les deux "
+"vaisseaux]"
 
 #: src-en/data/events_special_storage.xml.append:4046
 msgid ""
@@ -1975,7 +1975,7 @@ msgstr "Quelle source de feu devons-nous utiliser ?"
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY\"]/choice[1]/text"
 msgstr ""
-"Équipage déclenchant le feu pour une activation forte ! [Mourra, peut être "
+"Équipier lanceur d'incendie pour une activation forte ! [Mourra, peut être "
 "cloné]"
 
 #: src-en/data/events_special_storage.xml.append:4076
@@ -1986,7 +1986,7 @@ msgstr "1{ + 1}. Activation faible, mais ça fera l'affaire."
 #: src-en/data/events_special_storage.xml.append:4078
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY\"]/choice[2]/event/text"
-msgstr "Vous insérez les missiles..."
+msgstr "Tu insères les missiles..."
 
 #: src-en/data/events_special_storage.xml.append:4085
 msgid ""
@@ -2016,7 +2016,7 @@ msgstr "Quel type d'équipage ?"
 #: src-en/data/events_special_storage.xml.append:4134
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"DJMOD_HAS_CREW_ARE_BOMBS_AND_CREW\"]/text"
-msgstr "(Ceintures chargées) N'importe qui ! Tirez à la courte paille."
+msgstr "(Ceintures Chargées) N'importe qui ! Tirez à la courte paille."
 
 #: src-en/data/events_special_storage.xml.append:4136
 msgid ""
@@ -2028,7 +2028,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4143
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"DJMOD_HAS_CREW_ARE_BOMBS_AND_CREW\"]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:4147
 msgid ""
@@ -2038,7 +2038,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4153
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"DJMOD_HAS_DEATH_VESTS_AND_CREW\"]/text"
-msgstr "(Gilets de martyr) N'importe qui ! Tirez à la courte paille."
+msgstr "(Vestes de Martyre) N'importe qui ! Tirez à la courte paille."
 
 #: src-en/data/events_special_storage.xml.append:4155
 msgid ""
@@ -2050,7 +2050,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4162
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"DJMOD_HAS_DEATH_VESTS_AND_CREW\"]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:4166
 msgid ""
@@ -2060,17 +2060,17 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4176
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"LIST_CREW_SHELL\"]/text"
-msgstr "Une Coquille (choisissez un type)"
+msgstr "Une Coquille (choisis un type)"
 
 #: src-en/data/events_special_storage.xml.append:4180
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"LIST_CREW_ZOLTAN\"]/text"
-msgstr "Un Zoltan (choisissez un type)"
+msgstr "Un Zoltan (choisis un type)"
 
 #: src-en/data/events_special_storage.xml.append:4185
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"LIST_CREW_SOLAR\"]/text"
-msgstr "Un Lanius Enflammé (choisissez un type)"
+msgstr "Un Lanius Enflammé (choisis un type)"
 
 #: src-en/data/events_special_storage.xml.append:4190
 msgid ""
@@ -2087,7 +2087,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4199
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"rock_commando\"]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:4203
 msgid ""
@@ -2109,7 +2109,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4219
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"phantom_goul\"]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:4223
 msgid ""
@@ -2119,7 +2119,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4230
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"phantom_goul_alpha\"]/text"
-msgstr "Une Goul Alpha aléatoire"
+msgstr "Une Goule Alpha aléatoire"
 
 #: src-en/data/events_special_storage.xml.append:4232
 msgid ""
@@ -2131,7 +2131,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4239
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"phantom_goul_alpha\"]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:4243
 msgid ""
@@ -2141,7 +2141,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4245
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"phantom_goul_alpha\"]/event/choice/event/text"
-msgstr "Une Goule normale est également produite !"
+msgstr "Une Goule normale est aussi produite !"
 
 #: src-en/data/events_special_storage.xml.append:4249
 msgid ""
@@ -2163,7 +2163,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4267
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"rk_fireghost\"]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:4271
 msgid ""
@@ -2173,7 +2173,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4273
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW\"]/choice[@req=\"rk_fireghost\"]/event/choice/event/text"
-msgstr "Une Goule Alpha est également produite !"
+msgstr "Une Goule Alpha est aussi produite !"
 
 #: src-en/data/events_special_storage.xml.append:4277
 msgid ""
@@ -2188,12 +2188,12 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4293
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/text"
-msgstr "Quel type de Coquille ? [Sera consommé, peut être cloné]"
+msgstr "Quel type de coquille ? [Sera consommée, peut être clonée]"
 
 #: src-en/data/events_special_storage.xml.append:4296
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell\"]/text"
-msgstr "Une Coquille normale aléatoire"
+msgstr "Une coquille normale aléatoire"
 
 #: src-en/data/events_special_storage.xml.append:4298
 msgid ""
@@ -2205,7 +2205,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4305
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell\"]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:4309
 msgid ""
@@ -2215,7 +2215,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4315
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell_mechanic\"]/text"
-msgstr "Un Mécanicien Coquille aléatoire"
+msgstr "Un Coquille Mécanicien aléatoire"
 
 #: src-en/data/events_special_storage.xml.append:4317
 msgid ""
@@ -2227,7 +2227,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4324
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell_mechanic\"]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:4328
 msgid ""
@@ -2237,7 +2237,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4334
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell_scientist\"]/text"
-msgstr "Un Scientifique Coquille aléatoire"
+msgstr "Un Coquille Scientifique aléatoire"
 
 #: src-en/data/events_special_storage.xml.append:4336
 msgid ""
@@ -2249,7 +2249,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4343
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell_scientist\"]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:4347
 msgid ""
@@ -2259,7 +2259,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4353
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell_guardian\"]/text"
-msgstr "Un Gardien Coquille aléatoire"
+msgstr "Un Coquille Gardien aléatoire"
 
 #: src-en/data/events_special_storage.xml.append:4355
 msgid ""
@@ -2271,7 +2271,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4362
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell_guardian\"]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:4366
 msgid ""
@@ -2281,7 +2281,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4372
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell_radiant\"]/text"
-msgstr "Un Radiant Coquille aléatoire"
+msgstr "Un Coquille Radiant aléatoire"
 
 #: src-en/data/events_special_storage.xml.append:4374
 msgid ""
@@ -2293,7 +2293,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4381
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"shell_radiant\"]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:4385
 msgid ""
@@ -2315,7 +2315,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4400
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_SHELLS\"]/choice[@req=\"unique_alkali\"]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:4404
 msgid ""
@@ -2330,7 +2330,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4417
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/text"
-msgstr "Quel type de Zoltan ? [Sera consommé, peut être cloné]"
+msgstr "Quel type de zoltan ? [Sera consommé, peut être cloné]"
 
 #: src-en/data/events_special_storage.xml.append:4420
 msgid ""
@@ -2347,7 +2347,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4429
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan\"]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:4433
 msgid ""
@@ -2363,13 +2363,13 @@ msgstr "Un moine zoltan aléatoire"
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_monk\"]/event/text"
 msgstr ""
-"L'équipage est paisiblement consommé pour le bien commun, activant fortement"
-" l'augmentation !"
+"L'équipage est pacifiquement consommé pour le bien commun, activant "
+"fortement l'augmentation !"
 
 #: src-en/data/events_special_storage.xml.append:4448
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_monk\"]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:4452
 msgid ""
@@ -2391,7 +2391,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4467
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_peacekeeper\"]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:4471
 msgid ""
@@ -2413,7 +2413,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4486
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_devotee\"]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:4490
 msgid ""
@@ -2423,7 +2423,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4496
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_martyr\"]/text"
-msgstr "Un Martyre Crépusculeur aléatoire"
+msgstr "Un Crépusculeur Martyre aléatoire"
 
 #: src-en/data/events_special_storage.xml.append:4498
 msgid ""
@@ -2435,7 +2435,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4505
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_martyr\"]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:4509
 msgid ""
@@ -2445,7 +2445,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4515
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_infernum\"]/text"
-msgstr "Un moine Infernum aléatoire"
+msgstr "Un Moine Infernum aléatoire"
 
 #: src-en/data/events_special_storage.xml.append:4517
 msgid ""
@@ -2457,7 +2457,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4524
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"zoltan_infernum\"]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:4528
 msgid ""
@@ -2479,7 +2479,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4543
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"unique_devorak\"]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:4547
 msgid ""
@@ -2495,13 +2495,13 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"symbiote\"]/event/text"
 msgstr ""
-"L'horreur symbiotique laisse échapper un soupir de soulagement alors qu'elle"
-" est consommée pour le bien commun, activant fortement l'augmentation !"
+"L'horreur symbiotique pousse un soupir de soulagement alors qu'elle est "
+"consommée pour le bien commun, activant fortement l'augmentation !"
 
 #: src-en/data/events_special_storage.xml.append:4562
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_ZOLTANS\"]/choice[@req=\"symbiote\"]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:4566
 msgid ""
@@ -2533,7 +2533,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4591
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"solar_lanius\"]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:4595
 msgid ""
@@ -2555,7 +2555,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4612
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"midnight_lanius\"]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:4616
 msgid ""
@@ -2577,7 +2577,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4631
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"midnight_lantern\"]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:4635
 msgid ""
@@ -2599,7 +2599,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4651
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"unique_corona\"]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:4655
 msgid ""
@@ -2621,7 +2621,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:4670
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_SCORCH_ENEMY_PAY_CREW_LANIUS_FIRE\"]/choice[@req=\"unique_corona_masked\"]/event/removeCrew/text"
-msgstr "Votre salle des clones a réanimé avec succès votre équipage."
+msgstr "Ta salle des clones a réanimé avec succès ton équipage."
 
 #: src-en/data/events_special_storage.xml.append:4674
 msgid ""
@@ -2637,8 +2637,8 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE\"]/text"
 msgstr ""
-"Êtes-vous sûr de vouloir faire cela ?\n"
-"\t[Enveloppera les deux vaisseaux dans une atmosphère d'O2, protégeant les incendies et l'équipage de l'éventation et des brèches. Coûte 2}]"
+"Es-tu sûr de vouloir faire ça ?\n"
+"\t[Enveloppera les deux vaisseaux dans une atmosphère d'O2, protégeant les feux et l'équipage des évacuations d'air et des brèches. Coûte 2}]"
 
 #: src-en/data/events_special_storage.xml.append:4824
 msgid ""
@@ -2651,9 +2651,9 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE\"]/choice[@req=\"loc_environment_atmosphere\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Vous tirez les grenades à O2 ultracomprimé à libération instantanée, "
-"enveloppant toute la zone dans juste assez d'atmosphère pour respirer... ou "
-"alimenter les incendies !"
+"Tu tires les grenades d'O2 ultra-compressé à libération rapide, enveloppant "
+"toute la zone dans juste assez d'atmosphère pour respirer... ou alimenter "
+"des incendies !"
 
 #: src-en/data/events_special_storage.xml.append:4836
 msgid ""
@@ -2665,7 +2665,7 @@ msgstr "Cela nous donnera l'avantage !"
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE\"]/choice[@req=\"loc_environment_atmosphere\""
 " and not(@lvl)]/text"
-msgstr "Vous êtes déjà dans l'atmosphère !"
+msgstr "Tu es déjà dans une atmosphère !"
 
 #: src-en/data/events_special_storage.xml.append:4846
 msgid ""
@@ -2681,8 +2681,8 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_CHECK_AUTO_SYS_REPAIR\"]/text"
 msgstr ""
-"Êtes-vous sûr de vouloir faire cela ?\n"
-"\t[Si la coque atteint 9 points ou moins, obtenez des réparations complètes des systèmes, 15 de réparation de coque, et perdez l'augmentation. Utilise 1 de puissance.]"
+"Es-tu sûr de vouloir faire ça ?\n"
+"\t[Si la coque atteint 9 points ou moins, obtiens des réparations complètes des systèmes, 15 réparations de coque, et perds l'augmentation. Utilise 1 énergie.]"
 
 #: src-en/data/events_special_storage.xml.append:4898
 msgid ""
@@ -2692,7 +2692,7 @@ msgstr "Oui"
 #: src-en/data/events_special_storage.xml.append:4900
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_CHECK_AUTO_SYS_REPAIR\"]/choice[@req=\"reactor\"]/event/text"
-msgstr "Vous activez l'augmentation..."
+msgstr "Tu actives l'augmentation..."
 
 #: src-en/data/events_special_storage.xml.append:4912
 msgid ""
@@ -2708,8 +2708,8 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_CHECK_AUTO_SYS_REPAIR\"]/choice[@req=\"DEBUG_GENERATOR\"]/event/text"
 msgstr ""
-"Vous activez l'augmentation, pleinement alimentée par le Générateur de "
-"secours..."
+"Tu actives l'augmentation, pleinement alimentée par le Générateur "
+"d'urgence..."
 
 #: src-en/data/events_special_storage.xml.append:4930
 msgid ""
@@ -2735,9 +2735,9 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"RK_COMBAT_AUTO_SYS_REPAIR_TRIGGERED_SUCCESS\"]/text"
 msgstr ""
-"Partout dans votre vaisseau, vous entendez soudain le son rassurant des "
-"rafales de nanomachine \"Second Souffle A.E.R.A.\" réparant instantanément "
-"vos systèmes !"
+"Partout dans ton vaisseau, tu entends soudain le son rassurant des salves de"
+" nanomachines du \"Second Souffle A.E.R.A.\" réparant instantanément tes "
+"systèmes !"
 
 #: src-en/data/events_special_storage.xml.append:4967
 msgid ""
@@ -2748,7 +2748,7 @@ msgstr "C'est bien."
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/event[@name=\"RK_COMBAT_AUTO_SYS_REPAIR_TRIGGERED_SUCCESS\"]/choice[@req=\"pilot\"]/event/text"
 msgstr ""
-"Le reste des nanomachines répare à la hâte votre coque avant de cesser de "
+"Le reste des nanomachines répare à la hâte ta coque avant de cesser de "
 "fonctionner."
 
 #: src-en/data/events_special_storage.xml.append:4976
@@ -2760,7 +2760,7 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/text"
 msgstr ""
-"Êtes-vous sûr de vouloir faire cela ?\n"
+"Es-tu sûr de vouloir faire ça ?\n"
 "\t[Tenter un piratage spécial pour retarder la flotte Rebelle]"
 
 #: src-en/data/events_special_storage.xml.append:5006
@@ -2771,7 +2771,7 @@ msgstr "Oui, piratage gratuit de 17 secondes."
 #: src-en/data/events_special_storage.xml.append:5008
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[1]/event/text"
-msgstr "Vous activez l'augmentation..."
+msgstr "Tu actives l'augmentation..."
 
 #: src-en/data/events_special_storage.xml.append:5011
 msgid ""
@@ -2783,18 +2783,18 @@ msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[@req=\"HAS_HACKING_OR_LILY_ECM\""
 " and @lvl=\"0\"]/text"
 msgstr ""
-"Installez un système de Piratage (ou une Suite ECM de \"Lily's "
-"Innovations\") pour plus d'options."
+"Installe un système de Piratage (ou une Suite ECM de \"Lily's Innovations\")"
+" pour plus d'options."
 
 #: src-en/data/events_special_storage.xml.append:5024
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[3]/text"
-msgstr "(Piratage niveau 1, 1|) Piratage de 14 secondes."
+msgstr "(Piratage niveau 1, 1|) piratage de 14 secondes."
 
 #: src-en/data/events_special_storage.xml.append:5026
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[3]/event/text"
-msgstr "Vous activez l'augmentation..."
+msgstr "Tu actives l'augmentation..."
 
 #: src-en/data/events_special_storage.xml.append:5035
 msgid ""
@@ -2805,13 +2805,13 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[@req=\"HAS_HACKING_OR_LILY_ECM\""
 " and @lvl=\"2\"]/text"
-msgstr "(Piratage niveau 2, 2|) Piratage de 9 secondes."
+msgstr "(Piratage niveau 2, 2|) piratage de 9 secondes."
 
 #: src-en/data/events_special_storage.xml.append:5044
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[@req=\"HAS_HACKING_OR_LILY_ECM\""
 " and @lvl=\"2\"]/event/text"
-msgstr "Vous activez l'augmentation..."
+msgstr "Tu actives l'augmentation..."
 
 #: src-en/data/events_special_storage.xml.append:5053
 msgid ""
@@ -2828,13 +2828,13 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[@req=\"HAS_HACKING_OR_LILY_ECM\""
 " and @lvl=\"3\"]/text"
-msgstr "(Piratage niveau 3, 3|) Piratage instantané."
+msgstr "(Piratage niveau 3, 3|) piratage instantané."
 
 #: src-en/data/events_special_storage.xml.append:5067
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_ACTIVATE\"]/choice[@req=\"HAS_HACKING_OR_LILY_ECM\""
 " and @lvl=\"3\"]/event/text"
-msgstr "Vous activez l'augmentation..."
+msgstr "Tu actives l'augmentation..."
 
 #: src-en/data/events_special_storage.xml.append:5075
 msgid ""
@@ -2861,15 +2861,15 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START\"]/text"
 msgstr ""
-"Vous commencez à pirater les communications ennemies. Maintenant, survivez "
+"Tu commences à pirater les communications de l'ennemi. Maintenant, survis "
 "sans vaincre l'ennemi trop vite..."
 
 #: src-en/data/events_special_storage.xml.append:5100
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START\"]/triggeredEvent/triggeredEventBox/tooltip"
 msgstr ""
-"Le piratage de retardement de la flotte réussit ou échoue dans ce laps de "
-"temps. Annulé si vous vainquez l'ennemi."
+"Le piratage retardant la flotte réussit ou échoue dans ce laps de temps. "
+"Annulé si tu vaincs l'ennemi."
 
 #: src-en/data/events_special_storage.xml.append:5110
 msgid ""
@@ -2890,15 +2890,15 @@ msgstr "Voyons si ça a marché..."
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS1\"]/text"
 msgstr ""
-"Vous commencez à pirater les communications ennemies. Maintenant, survivez "
+"Tu commences à pirater les communications de l'ennemi. Maintenant, survis "
 "sans vaincre l'ennemi trop vite..."
 
 #: src-en/data/events_special_storage.xml.append:5165
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS1\"]/triggeredEvent/triggeredEventBox/tooltip"
 msgstr ""
-"Le piratage de retardement de la flotte réussit ou échoue dans ce laps de "
-"temps. Annulé si vous vainquez l'ennemi."
+"Le piratage retardant la flotte réussit ou échoue dans ce laps de temps. "
+"Annulé si tu vaincs l'ennemi."
 
 #: src-en/data/events_special_storage.xml.append:5175
 msgid ""
@@ -2919,15 +2919,15 @@ msgstr "Voyons si ça a marché..."
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS2\"]/text"
 msgstr ""
-"Vous commencez à pirater les communications ennemies. Maintenant, survivez "
+"Tu commences à pirater les communications de l'ennemi. Maintenant, survis "
 "sans vaincre l'ennemi trop vite..."
 
 #: src-en/data/events_special_storage.xml.append:5231
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_TIMER_START_BONUS2\"]/triggeredEvent/triggeredEventBox/tooltip"
 msgstr ""
-"Le piratage de retardement de la flotte réussit ou échoue dans ce laps de "
-"temps. Annulé si vous vainquez l'ennemi."
+"Le piratage retardant la flotte réussit ou échoue dans ce laps de temps. "
+"Annulé si tu vaincs l'ennemi."
 
 #: src-en/data/events_special_storage.xml.append:5241
 msgid ""
@@ -2959,8 +2959,8 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_OUTCOME_GOOD\"]/text"
 msgstr ""
-"Ils sont tombés dans le panneau ! Au moins, on obtient un peu de repos grâce"
-" à ça."
+"Ils sont tombés dans le panneau ! Au moins on obtient un peu de repos grâce "
+"à ça."
 
 #: src-en/data/events_special_storage.xml.append:5334
 msgid ""
@@ -2994,46 +2994,46 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_OUTCOME_BOSS\"]/text"
 msgstr ""
-"Ce piratage aurait dû retarder la flotte davantage, mais l'effet était plus faible que prévu...\n"
+"Ce piratage aurait dû retarder la flotte considérablement, mais l'effet était plus faible que prévu...\n"
 "\t\t\n"
-"\t\tQuelqu'un est intervenu et nous a envoyé des coordonnées étranges avec ce message attaché : \"N00bs!!1!\"."
+"\t\tQuelqu'un a interféré, et nous a envoyé d'étranges coordonnées avec ce message : \"N00bs!!1!\"."
 
 #: src-en/data/events_special_storage.xml.append:5361
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_HACK_FLEET_OUTCOME_BOSS\"]/choice/text"
-msgstr "Bizarre, mais on s'en occupera plus tard. Continuez le combat !"
+msgstr "Bizarre, mais on s'occupera de ça plus tard. Continue le combat !"
 
 #: src-en/data/events_special_storage.xml.append:5391
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/beaconType/unvisitedTooltip"
 msgstr ""
-"Quelqu'un d'assez dangereux pour arrêter un fort piratage RK Énigmachine "
-"vous met au défi de venir !"
+"Quelqu'un assez dangereux pour arrêter un fort piratage Enigmashin RK te met"
+" au défi de venir !"
 
 #: src-en/data/events_special_storage.xml.append:5394
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/text"
 msgstr ""
-"Un vaisseau rebelle d'élite à l'air très méchant est ici. Son capitaine vous dévisage, avec juste un soupçon d'étincelle dans les yeux.\n"
+"Un vaisseau rebelle d'élite à l'air très méchant est ici. Son capitaine te fixe, avec juste un soupçon d'étincelle dans l'œil.\n"
 "\n"
-"\t\t\"Quand j'ai entendu dire que quelqu'un jouait gros avec les communications de la flotte, j'ai su que je devais rencontrer les imbéciles ! Et vous voilà, noobs !\n"
-"\t\tJ'espère que ça ne vous dérange pas que je vous appelle comme ça, noobs. Il n'y a pas de mal à vous dire que nous respectons même l'audace, de faire chier la plus grande armée de ce côté de l'univers, qui couvre des secteurs entiers dans l'ombre des vaisseaux de la flotte.\n"
-"\t\tMais moi et mes amis ici n'avons pas fait partie des MFK en devenant mous pour si peu, comme on pourrait le deviner.\n"
+"\t\t\"Quand j'ai entendu dire que quelqu'un jouait à des jeux de grande envergure avec les communications de la flotte, j'ai su que je devais rencontrer ces imbéciles ! Et te voilà, noobs !\n"
+"\t\tJ'espère que ça ne te dérange pas que je t'appelle comme ça, noobs. Il n'y a aucun mal à te dire que nous respectons même l'audace, d'énerver la plus grande armée de ce côté de l'univers, qui couvre des secteurs entiers de l'ombre des vaisseaux de la flotte.\n"
+"\t\tMais mes amis et moi, nous ne sommes pas devenus des MFK en devenant tout mous pour si peu, comme on pourrait le deviner.\n"
 "\n"
-"\t\tAlors, en signe de rivalité amicale, laissez-moi vous montrer comment on fait ! Juste avant qu'on vous assassine.\""
+"\t\tAlors, en signe de rivalité amicale, laisse-moi te montrer comment on fait ! Juste avant qu'on te massacre.\""
 
 #: src-en/data/events_special_storage.xml.append:5405
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/choice[1]/text"
-msgstr "Un défi, alors ? Allons-y !"
+msgstr "Un défi, alors ? C'est parti !"
 
 #: src-en/data/events_special_storage.xml.append:5407
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/choice[1]/event/text"
 msgstr ""
-"Le sourire vicieux sur le visage du capitaine ennemi s'élargit. \"Nyahaha, voici un avant-goût !\"\n"
+"Le sourire vicieux sur le visage du capitaine ennemi s'élargit. \"Nyahaha, tiens, un avant-goût !\"\n"
 "\n"
-"\t\t\t\tVous remarquez immédiatement des dysfonctionnements dans plusieurs systèmes de votre vaisseau ! Ils doivent utiliser une augmentation de combat ! Vous vous attendiez probablement à ce qu'un vaisseau pirate informatique ne joue pas franc jeu, mais si ce n'était pas le cas, il est grand temps d'envisager une fuite rapide avant que quelque chose de [style[color:ff3377]]pire[[/style]] n'arrive."
+"\t\t\t\tTu remarques immédiatement des dysfonctionnements dans plusieurs systèmes de ton vaisseau ! Ils doivent utiliser une augmentation de combat ! Tu t'attendais probablement à ce qu'un vaisseau hacker ne joue pas loyalement, mais si ce n'était pas le cas, il est grand temps d'envisager une fuite rapide avant que quelque chose de [style[color:ff3377]]pire[[/style]] n'arrive."
 
 #: src-en/data/events_special_storage.xml.append:5422
 msgid ""
@@ -3043,12 +3043,12 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:5427
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/choice[1]/event/choice[@req=\"ANTI_VIRUS\"]/text"
-msgstr "(Anti-Virus) Restaurez vos systèmes."
+msgstr "(Anti-Virus) Restaurer tes systèmes."
 
 #: src-en/data/events_special_storage.xml.append:5429
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/choice[1]/event/choice[@req=\"ANTI_VIRUS\"]/event/text"
-msgstr "Vos systèmes sont restaurés à pleine puissance."
+msgstr "Tes systèmes sont restaurés à pleine puissance."
 
 #: src-en/data/events_special_storage.xml.append:5439
 msgid ""
@@ -3059,8 +3059,8 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_HACK_FLEET_BOSS\"]/choice[2]/text"
 msgstr ""
-"Nous avons appris notre leçon, nous vous supplions de nous laisser partir ! "
-"Voici un tribut pour vous et la Rébellion comme preuve."
+"Nous avons appris notre leçon, nous te prions de nous laisser partir ! Voici"
+" un tribut pour toi et la Rébellion comme preuve."
 
 #: src-en/data/events_special_storage.xml.append:5460
 msgid ""
@@ -3068,7 +3068,7 @@ msgid ""
 msgstr ""
 "\"Tu joues les durs, hein ! Comment tu trouves ça ?\"\n"
 "\n"
-"\t\t\tDes dysfonctionnements plus forts affectent encore plus de systèmes de votre vaisseau !"
+"\t\t\tDes dysfonctionnements plus forts affectent encore plus de systèmes de ton vaisseau !"
 
 #: src-en/data/events_special_storage.xml.append:5499
 msgid ""
@@ -3078,12 +3078,12 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:5504
 msgid ""
 "data/events_special_storage.xml.append$//ship[@name=\"SHIP_RK_HACK_FLEET_BOSS\"]/surrender/choice[@req=\"ANTI_VIRUS\"]/text"
-msgstr "(Anti-Virus) Restaurez vos systèmes."
+msgstr "(Anti-Virus) Restaurer tes systèmes."
 
 #: src-en/data/events_special_storage.xml.append:5506
 msgid ""
 "data/events_special_storage.xml.append$//ship[@name=\"SHIP_RK_HACK_FLEET_BOSS\"]/surrender/choice[@req=\"ANTI_VIRUS\"]/event/text"
-msgstr "Vos systèmes sont restaurés à pleine puissance."
+msgstr "Tes systèmes sont restaurés à pleine puissance."
 
 #: src-en/data/events_special_storage.xml.append:5540
 msgid ""
@@ -3094,8 +3094,8 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//ship[@name=\"SHIP_RK_HACK_FLEET_BOSS\"]/destroyed/text"
 msgstr ""
-"Le Hacker MFK se disloque et vous récupérez rapidement une grande quantité "
-"de choses !"
+"Le Hacker MFK se désagrège et tu récupères rapidement une grande quantité de"
+" choses !"
 
 #: src-en/data/events_special_storage.xml.append:5585
 msgid ""
@@ -3106,10 +3106,10 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"SHIP_RK_HACK_FLEET_BOSS_REWARD_CHOICES\"]/text"
 msgstr ""
-"Alors que vous finissez de fouiller, vous trouvez un équipement très particulier !\n"
+"En finissant de fouiller, tu trouves un équipement très particulier !\n"
 "\t\t\t\t\t\n"
-"\t\t\t\t\tEn analysant l'épave, vous comprenez qu'un appareil interne peut vous permettre d'extraire quelque chose du vaisseau, mais que tout explosera ensuite.\n"
-"\t\t\t\t\tQue choisissez-vous ?"
+"\t\t\t\t\tEn analysant l'épave, tu comprends qu'un appareil interne peut te permettre d'extraire quelque chose du vaisseau, mais qu'ensuite tout explosera.\n"
+"\t\t\t\t\tQue choisis-tu ?"
 
 #: src-en/data/events_special_storage.xml.append:5594
 msgid ""
@@ -3119,7 +3119,7 @@ msgstr "\"Gungnir\""
 #: src-en/data/events_special_storage.xml.append:5596
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"SHIP_RK_HACK_FLEET_BOSS_REWARD_CHOICES\"]/choice[1]/event/text"
-msgstr "Vous extrayez l'arme et vous échappez avant que tout n'explose."
+msgstr "Vous extrayez l'arme et vous enfuyez avant que tout n'explose."
 
 #: src-en/data/events_special_storage.xml.append:5600
 msgid ""
@@ -3135,7 +3135,7 @@ msgstr "\"Console de l'As Hacker\""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"SHIP_RK_HACK_FLEET_BOSS_REWARD_CHOICES\"]/choice[2]/event/text"
 msgstr ""
-"Vous extrayez l'augmentation et vous échappez avant que tout n'explose."
+"Vous extrayez l'augmentation et vous enfuyez avant que tout n'explose."
 
 #: src-en/data/events_special_storage.xml.append:5613
 msgid ""
@@ -3151,8 +3151,8 @@ msgstr "Rien"
 msgid ""
 "data/events_special_storage.xml.append$//ship[@name=\"SHIP_RK_HACK_FLEET_BOSS\"]/deadCrew/text"
 msgstr ""
-"L'équipage étant mort, vous récupérez rapidement une grande quantité de "
-"choses sur le vaisseau Hacker MFK !"
+"L'équipage étant mort, tu récupères rapidement une grande quantité de choses"
+" sur le vaisseau Hacker MFK !"
 
 #: src-en/data/events_special_storage.xml.append:5665
 msgid ""
@@ -3163,7 +3163,7 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_ACE_CONSOLE_ACTIVATE\"]/text"
 msgstr ""
-"Êtes-vous sûr de vouloir faire cela ?\n"
+"Es-tu sûr de vouloir faire ça ?\n"
 "\t[Limiter plusieurs systèmes ennemis pour le reste du combat]"
 
 #: src-en/data/events_special_storage.xml.append:5686
@@ -3174,7 +3174,7 @@ msgstr "Oui, limitation gratuite."
 #: src-en/data/events_special_storage.xml.append:5688
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_ACE_CONSOLE_ACTIVATE\"]/choice[1]/event/text"
-msgstr "Vous activez l'augmentation..."
+msgstr "Tu actives l'augmentation..."
 
 #: src-en/data/events_special_storage.xml.append:5691
 msgid ""
@@ -3184,12 +3184,12 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:5699
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_ACE_CONSOLE_ACTIVATE\"]/choice[2]/text"
-msgstr "Oui, limitation forte ! [Utilise 3| et 2 de puissance de réacteur]"
+msgstr "Oui, limitation forte ! [Utilise 3| et 2 d'énergie de réacteur]"
 
 #: src-en/data/events_special_storage.xml.append:5701
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_ACE_CONSOLE_ACTIVATE\"]/choice[2]/event/text"
-msgstr "Vous activez l'augmentation..."
+msgstr "Tu actives l'augmentation..."
 
 #: src-en/data/events_special_storage.xml.append:5709
 msgid ""
@@ -3204,7 +3204,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:5717
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_ACE_CONSOLE_ACTIVATE\"]/choice[@req=\"DEBUG_GENERATOR\"]/event/text"
-msgstr "Vous activez l'augmentation..."
+msgstr "Tu actives l'augmentation..."
 
 #: src-en/data/events_special_storage.xml.append:5723
 msgid ""
@@ -3230,8 +3230,8 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_OFFENSE_DISABLER\"]/text"
 msgstr ""
-"Êtes-vous sûr de vouloir faire cela ?\n"
-"\t[Désactive les systèmes offensifs ennemis, puis l'effet s'affaiblit de plus en plus rapidement. Utilise 2| et 3 de puissance de réacteur]"
+"Es-tu sûr de vouloir faire ça ?\n"
+"\t[Désactive les systèmes offensifs ennemis, puis l'effet s'affaiblit de plus en plus rapidement. Utilise 2| et 3 d'énergie de réacteur]"
 
 #: src-en/data/events_special_storage.xml.append:5832
 msgid ""
@@ -3241,7 +3241,7 @@ msgstr "Oui"
 #: src-en/data/events_special_storage.xml.append:5834
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_OFFENSE_DISABLER\"]/choice[@req=\"reactor\"]/event/text"
-msgstr "Vous activez l'augmentation..."
+msgstr "Tu actives l'augmentation..."
 
 #: src-en/data/events_special_storage.xml.append:5842
 msgid ""
@@ -3256,7 +3256,7 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:5850
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_OFFENSE_DISABLER\"]/choice[@req=\"DEBUG_GENERATOR\"]/event/text"
-msgstr "Vous activez l'augmentation..."
+msgstr "Tu actives l'augmentation..."
 
 #: src-en/data/events_special_storage.xml.append:5856
 msgid ""
@@ -3281,13 +3281,14 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:5875
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_OFFENSE_DISABLER_TIMER_START\"]/text"
-msgstr "L'offensive de l'ennemi est désactivée, profitez-en..."
+msgstr ""
+"L'offensive de l'ennemi est désactivée, fais en sorte que ça compte..."
 
 #: src-en/data/events_special_storage.xml.append:5885
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_OFFENSE_DISABLER_TIMER_START\"]/triggeredEvent/triggeredEventBox/tooltip"
 msgstr ""
-"L'offensive de l'ennemi est entièrement restaurée dans ce laps de temps."
+"L'offensive de l'ennemi est complètement restaurée dans ce laps de temps."
 
 #: src-en/data/events_special_storage.xml.append:5894
 msgid ""
@@ -3298,19 +3299,19 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/text"
 msgstr ""
-"Êtes-vous sûr de vouloir faire cela ?\n"
-"\t[Réduit à la fois les Moteurs et les Boucliers ennemis toutes les 3 à 7 secondes (au hasard). Utilise 3 de puissance de réacteur]"
+"Es-tu sûr de vouloir faire ça ?\n"
+"\t[Réduit les Moteurs, Boucliers et Armure Ablative de l'ennemi (de Lily's Innovations) toutes les 3 à 7 secondes (au hasard). Utilise 3 d'énergie de réacteur]"
 
 #: src-en/data/events_special_storage.xml.append:6061
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/choice[1]/text"
 msgstr ""
-"Alimentez l'augmentation avec le Générateur de secours, pendant 40 secondes."
+"Alimenter l'augmentation avec le Générateur d'urgence, pendant 40 secondes."
 
 #: src-en/data/events_special_storage.xml.append:6063
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/choice[1]/event/text"
-msgstr "Vous activez l'augmentation..."
+msgstr "Tu actives l'augmentation..."
 
 #: src-en/data/events_special_storage.xml.append:6069
 msgid ""
@@ -3325,7 +3326,7 @@ msgstr "Oui, pendant 40 secondes"
 #: src-en/data/events_special_storage.xml.append:6077
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/choice[2]/event/text"
-msgstr "Vous activez l'augmentation..."
+msgstr "Tu actives l'augmentation..."
 
 #: src-en/data/events_special_storage.xml.append:6085
 msgid ""
@@ -3336,12 +3337,12 @@ msgstr ""
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/choice[3]/text"
 msgstr ""
-"Alimentez l'augmentation avec le Générateur de secours, pendant 75 secondes."
+"Alimenter l'augmentation avec le Générateur d'urgence, pendant 75 secondes."
 
 #: src-en/data/events_special_storage.xml.append:6094
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/choice[3]/event/text"
-msgstr "Vous activez l'augmentation..."
+msgstr "Tu actives l'augmentation..."
 
 #: src-en/data/events_special_storage.xml.append:6100
 msgid ""
@@ -3356,7 +3357,7 @@ msgstr "Oui, pendant 75 secondes"
 #: src-en/data/events_special_storage.xml.append:6108
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/choice[4]/event/text"
-msgstr "Vous activez l'augmentation..."
+msgstr "Tu actives l'augmentation..."
 
 #: src-en/data/events_special_storage.xml.append:6116
 msgid ""
@@ -3381,13 +3382,13 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:6135
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_DEFENSE_REMOVER_TIMER_START_LOW\"]/text"
-msgstr "La défense de l'ennemi sera lentement supprimée. Survivez !"
+msgstr "La défense de l'ennemi sera lentement supprimée. Survis !"
 
 #: src-en/data/events_special_storage.xml.append:6142
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_DEFENSE_REMOVER_TIMER_START_LOW\"]/triggeredEvent/triggeredEventBox/tooltip"
 msgstr ""
-"Les défenses de l'ennemi cessent d'être limitées dans ce laps de temps."
+"Les défenses de l'ennemi ne seront plus limitées dans ce laps de temps."
 
 #: src-en/data/events_special_storage.xml.append:6151
 msgid ""
@@ -3397,844 +3398,842 @@ msgstr ""
 #: src-en/data/events_special_storage.xml.append:6159
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_DEFENSE_REMOVER_TIMER_START_HIGH\"]/text"
-msgstr "La défense de l'ennemi sera lentement supprimée. Survivez !"
+msgstr "La défense de l'ennemi sera lentement supprimée. Survis !"
 
 #: src-en/data/events_special_storage.xml.append:6166
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_DEFENSE_REMOVER_TIMER_START_HIGH\"]/triggeredEvent/triggeredEventBox/tooltip"
 msgstr ""
-"Les défenses de l'ennemi cessent d'être limitées dans ce laps de temps."
+"Les défenses de l'ennemi ne seront plus limitées dans ce laps de temps."
 
 #: src-en/data/events_special_storage.xml.append:6175
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_DEFENSE_REMOVER_TIMER_START_HIGH\"]/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6356
+#: src-en/data/events_special_storage.xml.append:6372
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_IMMUNE\"]/text"
 msgstr ""
-"À quelle puissance voulez-vous régler l'augmentation ?\n"
+"À quelle puissance veux-tu régler l'augmentation ?\n"
 "\tMode actuel : Supprime l'immunité au feu"
 
-#: src-en/data/events_special_storage.xml.append:6359
+#: src-en/data/events_special_storage.xml.append:6375
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_IMMUNE\"]/choice[1]/text"
 msgstr ""
-"Réglez l'augmentation sur le Mode Dégâts. [Les ennemis subissent plus de "
-"dégâts de feu]"
+"Régler l'augmentation en Mode Dégâts. [Les ennemis subissent plus de dégâts "
+"de feu]"
 
-#: src-en/data/events_special_storage.xml.append:6361
+#: src-en/data/events_special_storage.xml.append:6377
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_IMMUNE\"]/choice[1]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6364
+#: src-en/data/events_special_storage.xml.append:6380
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_IMMUNE\"]/choice[1]/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6366
+#: src-en/data/events_special_storage.xml.append:6382
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_IMMUNE\"]/choice[1]/event/choice/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6369
+#: src-en/data/events_special_storage.xml.append:6385
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_IMMUNE\"]/choice[1]/event/choice/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6377
+#: src-en/data/events_special_storage.xml.append:6393
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_IMMUNE\"]/choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6382
+#: src-en/data/events_special_storage.xml.append:6398
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_DAMAGE\"]/text"
 msgstr ""
-"À quelle puissance voulez-vous régler l'augmentation ?\n"
+"À quelle puissance veux-tu régler l'augmentation ?\n"
 "\tMode actuel : Les ennemis subissent plus de dégâts de feu"
 
-#: src-en/data/events_special_storage.xml.append:6385
+#: src-en/data/events_special_storage.xml.append:6401
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_DAMAGE\"]/choice[1]/text"
-msgstr ""
-"Réglez l'augmentation sur le Mode Immunisé. [Supprime l'immunité au feu]"
+msgstr "Régler l'augmentation en Mode Immunisé. [Supprime l'immunité au feu]"
 
-#: src-en/data/events_special_storage.xml.append:6387
+#: src-en/data/events_special_storage.xml.append:6403
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_DAMAGE\"]/choice[1]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6390
+#: src-en/data/events_special_storage.xml.append:6406
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_DAMAGE\"]/choice[1]/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6392
+#: src-en/data/events_special_storage.xml.append:6408
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_DAMAGE\"]/choice[1]/event/choice/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6395
+#: src-en/data/events_special_storage.xml.append:6411
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_DAMAGE\"]/choice[1]/event/choice/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6403
+#: src-en/data/events_special_storage.xml.append:6419
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_FLAMMABILIZER_DAMAGE\"]/choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6419
+#: src-en/data/events_special_storage.xml.append:6435
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_ON\"]/text"
 msgstr ""
-"À quelle puissance voulez-vous régler l'augmentation ?\n"
-"\tMode actuel : Activé (On)"
+"À quelle puissance veux-tu régler l'augmentation ?\n"
+"\tMode actuel : Activé (Allumé)"
 
-#: src-en/data/events_special_storage.xml.append:6422
+#: src-en/data/events_special_storage.xml.append:6438
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_ON\"]/choice[1]/text"
-msgstr "Éteignez l'augmentation."
+msgstr "Éteindre l'augmentation."
 
-#: src-en/data/events_special_storage.xml.append:6424
+#: src-en/data/events_special_storage.xml.append:6440
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_ON\"]/choice[1]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6427
+#: src-en/data/events_special_storage.xml.append:6443
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_ON\"]/choice[1]/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6429
+#: src-en/data/events_special_storage.xml.append:6445
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_ON\"]/choice[1]/event/choice/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6432
+#: src-en/data/events_special_storage.xml.append:6448
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_ON\"]/choice[1]/event/choice/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6441
+#: src-en/data/events_special_storage.xml.append:6457
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_ON\"]/choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6446
+#: src-en/data/events_special_storage.xml.append:6462
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_OFF\"]/text"
 msgstr ""
-"À quelle puissance voulez-vous régler l'augmentation ?\n"
-"\tMode actuel : Désactivé (Off)"
+"À quelle puissance veux-tu régler l'augmentation ?\n"
+"\tMode actuel : Désactivé (Éteint)"
 
-#: src-en/data/events_special_storage.xml.append:6449
+#: src-en/data/events_special_storage.xml.append:6465
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_OFF\"]/choice[1]/text"
-msgstr "Allumez l'augmentation."
+msgstr "Allumer l'augmentation."
 
-#: src-en/data/events_special_storage.xml.append:6451
+#: src-en/data/events_special_storage.xml.append:6467
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_OFF\"]/choice[1]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6454
+#: src-en/data/events_special_storage.xml.append:6470
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_OFF\"]/choice[1]/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6456
+#: src-en/data/events_special_storage.xml.append:6472
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_OFF\"]/choice[1]/event/choice/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6459
+#: src-en/data/events_special_storage.xml.append:6475
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_OFF\"]/choice[1]/event/choice/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6468
+#: src-en/data/events_special_storage.xml.append:6484
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_HARMONY_OFF\"]/choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6475
+#: src-en/data/events_special_storage.xml.append:6491
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/text"
 msgstr ""
-"Êtes-vous sûr de vouloir faire pousser un équipage Engi Séparatiste ?\n"
+"Es-tu sûr de vouloir faire pousser un équipage Engi Séparatiste ?\n"
 "\t[La flotte Rebelle accélère d'un tour.]"
 
-#: src-en/data/events_special_storage.xml.append:6479
+#: src-en/data/events_special_storage.xml.append:6495
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/choice[1]/text"
 msgstr "Oui"
 
-#: src-en/data/events_special_storage.xml.append:6481
+#: src-en/data/events_special_storage.xml.append:6497
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/choice[1]/event/text"
 msgstr ""
-"Vous prenez le temps de faire pousser rapidement votre nouvel équipage, prêt"
-" à être automatisé par l'Harmonie de votre vaisseau !"
+"Tu prends le temps de faire croître rapidement ton nouvel équipage, prêt à "
+"être automatisé par l'Harmonie de ton vaisseau !"
 
-#: src-en/data/events_special_storage.xml.append:6490
+#: src-en/data/events_special_storage.xml.append:6506
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/choice[1]/event/crewMember"
 msgstr "Starboy"
 
-#: src-en/data/events_special_storage.xml.append:6493
+#: src-en/data/events_special_storage.xml.append:6509
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/choice[1]/event/choice/text"
 msgstr "Cela renforcera bien nos rangs."
 
-#: src-en/data/events_special_storage.xml.append:6511
+#: src-en/data/events_special_storage.xml.append:6527
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/choice[2]/text"
-msgstr "Faites-en 2 puisque cela prend le même temps"
+msgstr "Fais-en 2 puisque cela prend le même temps"
 
-#: src-en/data/events_special_storage.xml.append:6513
+#: src-en/data/events_special_storage.xml.append:6529
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/choice[2]/event/text"
 msgstr ""
-"Vous prenez le temps de faire pousser rapidement votre nouvel équipage, à "
-"automatiser par l'Harmonie de votre vaisseau..."
+"Tu prends le temps de faire croître rapidement ton nouvel équipage, pour "
+"être automatisé par l'Harmonie de ton vaisseau..."
 
-#: src-en/data/events_special_storage.xml.append:6522
+#: src-en/data/events_special_storage.xml.append:6538
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/choice[2]/event/crewMember"
 msgstr "MTFKN"
 
-#: src-en/data/events_special_storage.xml.append:6529
+#: src-en/data/events_special_storage.xml.append:6545
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/choice[2]/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6531
+#: src-en/data/events_special_storage.xml.append:6547
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/choice[2]/event/choice/event/text"
-msgstr "Vos deux nouveaux membres d'équipage sont prêts !"
+msgstr "Tes deux nouveaux équipiers sont prêts !"
 
-#: src-en/data/events_special_storage.xml.append:6532
+#: src-en/data/events_special_storage.xml.append:6548
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/choice[2]/event/choice/event/crewMember"
 msgstr "Starboy"
 
-#: src-en/data/events_special_storage.xml.append:6535
+#: src-en/data/events_special_storage.xml.append:6551
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/choice[2]/event/choice/event/choice/text"
 msgstr "Automatisation en hausse !"
 
-#: src-en/data/events_special_storage.xml.append:6544
+#: src-en/data/events_special_storage.xml.append:6560
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_OWN_HARMONY_GROW_ENGI_SEPARATIST\"]/choice[3]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6558
+#: src-en/data/events_special_storage.xml.append:6574
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_CREW_ARE_BOMBS_OFF\"]/text"
 msgstr ""
-"Êtes-vous sûr de vouloir activer cette augmentation ? ATTENTION : Elle ne peut pas être éteinte, mais peut être démantelée à une balise vide, ou vendue normalement.\n"
-"\tMode actuel : Désactivé (Off)"
+"Es-tu sûr de vouloir allumer cette augmentation ? ATTENTION : Elle ne peut pas être éteinte, mais peut se démanteler elle-même à une balise vide, ou être vendue normalement.\n"
+"\tMode actuel : Désactivé (Éteint)"
 
-#: src-en/data/events_special_storage.xml.append:6561
+#: src-en/data/events_special_storage.xml.append:6577
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_CREW_ARE_BOMBS_OFF\"]/choice[1]/text"
-msgstr "Allumez l'augmentation."
+msgstr "Allumer l'augmentation."
 
-#: src-en/data/events_special_storage.xml.append:6563
+#: src-en/data/events_special_storage.xml.append:6579
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_CREW_ARE_BOMBS_OFF\"]/choice[1]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6566
+#: src-en/data/events_special_storage.xml.append:6582
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_CREW_ARE_BOMBS_OFF\"]/choice[1]/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6568
+#: src-en/data/events_special_storage.xml.append:6584
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_CREW_ARE_BOMBS_OFF\"]/choice[1]/event/choice/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6571
+#: src-en/data/events_special_storage.xml.append:6587
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_CREW_ARE_BOMBS_OFF\"]/choice[1]/event/choice/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6580
+#: src-en/data/events_special_storage.xml.append:6596
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLE_CREW_ARE_BOMBS_OFF\"]/choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6586
+#: src-en/data/events_special_storage.xml.append:6602
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_CREW_ARE_BOMBS_ON_SELFSCRAP\"]/text"
 msgstr ""
-"Êtes-vous sûr de vouloir démanteler cette augmentation pour la moitié de sa valeur ?\n"
-"\t[Seul moyen de l'éteindre si vous ne pouvez pas la vendre ou la jeter pour le moment.]"
+"Es-tu sûr de vouloir démanteler cette augmentation pour la moitié de sa valeur ?\n"
+"\t[Seul moyen de l'éteindre si tu ne peux pas la vendre ou la jeter pour le moment.]"
 
-#: src-en/data/events_special_storage.xml.append:6590
+#: src-en/data/events_special_storage.xml.append:6606
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_CREW_ARE_BOMBS_ON_SELFSCRAP\"]/choice[1]/text"
 msgstr "Oui, c'est trop dangereux."
 
-#: src-en/data/events_special_storage.xml.append:6601
+#: src-en/data/events_special_storage.xml.append:6617
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_CREW_ARE_BOMBS_ON_SELFSCRAP\"]/choice[2]/text"
-msgstr "Oui, mais transformez-la en explosifs."
+msgstr "Oui, mais transforme-la en explosifs."
 
-#: src-en/data/events_special_storage.xml.append:6611
+#: src-en/data/events_special_storage.xml.append:6627
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_CREW_ARE_BOMBS_ON_SELFSCRAP\"]/choice[3]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6624
+#: src-en/data/events_special_storage.xml.append:6640
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_LEAD_TITANS_SELFSCRAP\"]/text"
 msgstr ""
-"Êtes-vous sûr de vouloir démanteler cette augmentation pour la moitié de sa valeur ?\n"
-"\t[Seul moyen de l'éteindre si vous ne pouvez pas la vendre ou la jeter pour le moment.]"
+"Es-tu sûr de vouloir démanteler cette augmentation pour la moitié de sa valeur ?\n"
+"\t[Seul moyen de l'éteindre si tu ne peux pas la vendre ou la jeter pour le moment.]"
 
-#: src-en/data/events_special_storage.xml.append:6628
+#: src-en/data/events_special_storage.xml.append:6644
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_LEAD_TITANS_SELFSCRAP\"]/choice[@req=\"RK_LEAD_TITANS\"]/text"
 msgstr "Oui, c'est trop dangereux."
 
-#: src-en/data/events_special_storage.xml.append:6649
+#: src-en/data/events_special_storage.xml.append:6665
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_LEAD_TITANS_SELFSCRAP\"]/choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6664
+#: src-en/data/events_special_storage.xml.append:6680
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/text"
 msgstr ""
-"Êtes-vous sûr de vouloir faire cela ?\n"
-"\t[Dépensez des ressources pour envoyer des drones pilleurs de reconnaissance profonde. Ils trouvent une arme et une augmentation aléatoires.\n"
-"\tVous pouvez en choisir une à récupérer au prix de 1 accélération de flotte, ou partir avec un petit remboursement.]"
+"Es-tu sûr de vouloir faire ça ?\n"
+"\t[Dépenser des ressources pour envoyer des drones pilleurs de reconnaissance en profondeur. Ils trouvent une arme et une augmentation aléatoires.\n"
+"\tTu peux choisir d'en récupérer une au prix d'une accélération de flotte, ou partir avec un petit remboursement.]"
 
-#: src-en/data/events_special_storage.xml.append:6669
+#: src-en/data/events_special_storage.xml.append:6685
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/text"
 msgstr "Oui"
 
-#: src-en/data/events_special_storage.xml.append:6671
+#: src-en/data/events_special_storage.xml.append:6687
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/text"
 msgstr ""
-"\"Va chercher !\" Vous envoyez les deux drones spéciaux, doigts ou appendices équivalents croisés.\n"
-"\t\t\t\tQuelque temps plus tard, ils signalent à distance leurs trouvailles.\n"
+"\"Va chercher !\" Tu envoies les deux drones spéciaux, les doigts ou appendices équivalents croisés.\n"
+"\t\t\t\tQuelque temps plus tard, ils rapportent leurs trouvailles à distance.\n"
 "\t\t\t\t\n"
-"\t\t\t\tSi vous choisissez de ne rien récupérer, vous récupérez ce qu'il reste des deux récupérateurs.\n"
+"\t\t\t\tSi tu choisis de ne rien récupérer, tu récupères ce qui reste des deux drones récupérateurs.\n"
 "\t\t\t\t\n"
-"\t\t\t\tSi vous choisissez de récupérer quelque chose, vous récupérez ce qu'il reste d'un récupérateur, mais la flotte gagnera un tour sur vous."
+"\t\t\t\tSi tu choisis de récupérer quelque chose, tu récupères ce qui reste d'un drone récupérateur, mais la flotte gagnera un tour sur toi."
 
-#: src-en/data/events_special_storage.xml.append:6686
+#: src-en/data/events_special_storage.xml.append:6702
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/choice[1]/text"
 msgstr "Récupérer l'arme aléatoire."
 
-#: src-en/data/events_special_storage.xml.append:6688
+#: src-en/data/events_special_storage.xml.append:6704
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/choice[1]/event/text"
 msgstr ""
-"Vous prenez le temps de rencontrer le drone à mi-chemin pour récupérer cela."
+"Tu prends le temps de rencontrer le drone à mi-chemin pour récupérer ça."
 
-#: src-en/data/events_special_storage.xml.append:6698
+#: src-en/data/events_special_storage.xml.append:6714
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/choice[1]/event/choice/text"
-msgstr "Bonne trouvaille ! Belle prise Dronno, bravo !"
+msgstr "Belle trouvaille ! Bien joué Dronno, bien joué !"
 
-#: src-en/data/events_special_storage.xml.append:6705
+#: src-en/data/events_special_storage.xml.append:6721
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/choice[2]/text"
 msgstr "Récupérer l'augmentation aléatoire."
 
-#: src-en/data/events_special_storage.xml.append:6707
+#: src-en/data/events_special_storage.xml.append:6723
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/choice[2]/event/text"
 msgstr ""
-"Vous prenez le temps de rencontrer le drone à mi-chemin pour récupérer cela."
+"Tu prends le temps de rencontrer le drone à mi-chemin pour récupérer ça."
 
-#: src-en/data/events_special_storage.xml.append:6717
+#: src-en/data/events_special_storage.xml.append:6733
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/choice[2]/event/choice/text"
 msgstr "C'est qui le bon beepboop ? C'est toi, oui c'est toi !"
 
-#: src-en/data/events_special_storage.xml.append:6725
+#: src-en/data/events_special_storage.xml.append:6741
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/choice[3]/text"
-msgstr "Dame Chance n'était pas avec nous, oubliez ça."
+msgstr "La chance n'était pas avec nous, oublie."
 
-#: src-en/data/events_special_storage.xml.append:6727
+#: src-en/data/events_special_storage.xml.append:6743
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/choice[3]/event/text"
-msgstr "Vous limitez vos pertes, recyclez les drones et passez à autre chose."
+msgstr "Tu limites la casse, recycle les drones et continues."
 
-#: src-en/data/events_special_storage.xml.append:6734
+#: src-en/data/events_special_storage.xml.append:6750
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/choice[3]/event/choice/text"
 msgstr "Plus de chance la prochaine fois."
 
-#: src-en/data/events_special_storage.xml.append:6742
+#: src-en/data/events_special_storage.xml.append:6758
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[2]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:6896
+#: src-en/data/events_special_storage.xml.append:6912
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[26]/mod-"
 "append:choice/text"
-msgstr ""
-"Technologie RadiKal. [Vous n'en avez aucune. Ouvrir pour voir les exigences]"
+msgstr "Tech RadiKal. [Tu n'en as aucune. Ouvre pour voir les prérequis]"
 
-#: src-en/data/events_special_storage.xml.append:6902
+#: src-en/data/events_special_storage.xml.append:6918
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[27]/mod-"
 "append:choice/text"
-msgstr "Technologie RadiKal."
+msgstr "Tech RadiKal."
 
-#: src-en/data/events_special_storage.xml.append:6928
+#: src-en/data/events_special_storage.xml.append:6944
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[1]/text"
 msgstr "Calibreur [X2]"
 
-#: src-en/data/events_special_storage.xml.append:6932
+#: src-en/data/events_special_storage.xml.append:6948
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[2]/text"
 msgstr "Calibreur [X1]"
 
-#: src-en/data/events_special_storage.xml.append:6936
+#: src-en/data/events_special_storage.xml.append:6952
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[3]/text"
-msgstr "Calibreur [Non installé]"
+msgstr "Calibreur [Non Installé]"
 
-#: src-en/data/events_special_storage.xml.append:6941
+#: src-en/data/events_special_storage.xml.append:6957
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[4]/text"
 msgstr "Choking F.I.N.E. [Installé]"
 
-#: src-en/data/events_special_storage.xml.append:6945
+#: src-en/data/events_special_storage.xml.append:6961
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[5]/text"
-msgstr "Choking F.I.N.E. [Non installé]"
+msgstr "Choking F.I.N.E. [Non Installé]"
 
-#: src-en/data/events_special_storage.xml.append:6951
+#: src-en/data/events_special_storage.xml.append:6967
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[6]/text"
 msgstr "Demicloneurs [Installé]"
 
-#: src-en/data/events_special_storage.xml.append:6955
+#: src-en/data/events_special_storage.xml.append:6971
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[7]/text"
-msgstr "Demicloneurs [Non installé]"
+msgstr "Demicloneurs [Non Installé]"
 
-#: src-en/data/events_special_storage.xml.append:6960
+#: src-en/data/events_special_storage.xml.append:6976
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[8]/text"
 msgstr "Refroidisseur mental [Installé]"
 
-#: src-en/data/events_special_storage.xml.append:6964
+#: src-en/data/events_special_storage.xml.append:6980
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[9]/text"
-msgstr "Refroidisseur mental [Non installé]"
+msgstr "Refroidisseur mental [Non Installé]"
 
-#: src-en/data/events_special_storage.xml.append:6970
+#: src-en/data/events_special_storage.xml.append:6986
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[10]/text"
-msgstr "Hellion Wraps [Installé]"
+msgstr "Wraps Hellion [Installé]"
 
-#: src-en/data/events_special_storage.xml.append:6974
+#: src-en/data/events_special_storage.xml.append:6990
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[11]/text"
-msgstr "Hellion Wraps [Non installé]"
+msgstr "Wraps Hellion [Non Installé]"
 
-#: src-en/data/events_special_storage.xml.append:6979
+#: src-en/data/events_special_storage.xml.append:6995
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[12]/text"
 msgstr "Chauffeur mental [Installé]"
 
-#: src-en/data/events_special_storage.xml.append:6983
+#: src-en/data/events_special_storage.xml.append:6999
 msgid ""
 "data/events_special_storage.xml.append$//mod:findName[@name=\"STORAGE_CHECK_INVENTORY_UPGRADES\"]/mod-"
 "append:choice[13]/text"
-msgstr "Chauffeur mental [Non installé]"
+msgstr "Chauffeur mental [Non Installé]"
 
-#: src-en/data/events_special_storage.xml.append:6991
+#: src-en/data/events_special_storage.xml.append:7007
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7009
+#: src-en/data/events_special_storage.xml.append:7025
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_CALIBRATOR\""
 " and @lvl=\"2\"]/text"
 msgstr ""
-"RK Bam \"Calibreur\" : Vos armes ont +10% de précision et 4% de cadence de tir accrue.\n"
-"\t\t\tPeut être installé deux fois. [DÉJÀ INSTALLÉ : Vous avez déjà le niveau maximal de cette amélioration]"
+"RK Bam \"Calibreur\" : Tes armes ont +10 % de précision et 4 % de cadence de tir augmentée.\n"
+"\t\t\tPeut être installé deux fois. [DÉJÀ INSTALLÉ : Tu as déjà atteint le niveau maximal de cette amélioration]"
 
-#: src-en/data/events_special_storage.xml.append:7014
+#: src-en/data/events_special_storage.xml.append:7030
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_CALIBRATOR\""
 " and @lvl=\"1\"]/text"
-msgstr "Calibreur Niv. 2. [Coût : 45~, 1|]"
+msgstr "Calibreur Nv 2. [Coût : 45~, 1|]"
 
-#: src-en/data/events_special_storage.xml.append:7018
+#: src-en/data/events_special_storage.xml.append:7034
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_CALIBRATOR\""
 " and @lvl=\"0\"]/text"
-msgstr "Calibreur Niv. 1. [Coût : 45~ 1|]"
+msgstr "Calibreur Nv 1. [Coût : 45~ 1|]"
 
-#: src-en/data/events_special_storage.xml.append:7023
+#: src-en/data/events_special_storage.xml.append:7039
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_CHOKING_IS_FINE\""
 " and @lvl=\"1\"]/text"
 msgstr ""
-"RK Bam \"Choking F.I.N.E.\" : Votre équipage subit 0.75x dégâts d'asphyxie.\n"
-"\t\tEn asphyxiant, ils se déplacent, sabotent, réparent et combattent 1.4x mieux. N'affecte pas l'équipage immunisé contre l'asphyxie. [DÉJÀ INSTALLÉ]"
+"RK Bam \"Choking F.I.N.E.\" : Ton équipage subit 0.75x les dégâts de suffocation.\n"
+"\t\tEn suffoquant, ils se déplacent, sabotent, réparent et se battent 1.4x mieux. N'affecte pas l'équipage immunisé à la suffocation. [DÉJÀ INSTALLÉ]"
 
-#: src-en/data/events_special_storage.xml.append:7028
+#: src-en/data/events_special_storage.xml.append:7044
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_CHOKING_IS_FINE\""
 " and @lvl=\"0\"]/text"
 msgstr "Choking F.I.N.E. [Coût : 55~, 1}, 1|]"
 
-#: src-en/data/events_special_storage.xml.append:7033
+#: src-en/data/events_special_storage.xml.append:7049
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_DEMICLONER\""
 " and @lvl=\"1\"]/text"
 msgstr ""
-"RK Punk \"Demicloneurs\" : Sans Salle des clones, votre équipage mourant ressuscite en une version inférieure (Soldat = Humain par défaut, etc.)\n"
-"\t\t\tSi aucune n'existe, ils deviennent des Morphes. Quand les Morphes meurent, rien ne se passe. Ne fonctionne pas pour les morts lors d'événements. [DÉJÀ INSTALLÉ]"
+"RK Punk \"Demicloneurs\" : Sans salle des clones, ton équipage mourant ressuscite en une version moindre (Soldat = Humain par défaut, etc.)\n"
+"\t\t\tS'il n'en existe aucune, ils deviennent des Morphes. Quand les Morphes meurent, il ne se passe rien. Ne fonctionne pas pour les décès lors d'événements. [DÉJÀ INSTALLÉ]"
 
-#: src-en/data/events_special_storage.xml.append:7038
+#: src-en/data/events_special_storage.xml.append:7054
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_DEMICLONER\""
 " and @lvl=\"0\"]/text"
 msgstr "Demicloneurs. [Coût : 35~, 2|]"
 
-#: src-en/data/events_special_storage.xml.append:7043
+#: src-en/data/events_special_storage.xml.append:7059
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_MC_PARALYZER\""
 " and @lvl=\"1\"]/text"
 msgstr ""
-"RK Punk \"Refroidisseur mental\" : Lorsqu'il est sous les effets du Contrôle"
-" mental, votre équipage ne peut pas combattre, saboter ou se téléporter. "
-"Fonctionne sur les deux vaisseaux. [DÉJÀ INSTALLÉ]"
+"RK Punk \"Refroidisseur mental\" : Sous les effets du Contrôle mental, ton "
+"équipage ne peut pas se battre, saboter ou se téléporter. Fonctionne sur les"
+" deux vaisseaux. [DÉJÀ INSTALLÉ]"
 
-#: src-en/data/events_special_storage.xml.append:7047
+#: src-en/data/events_special_storage.xml.append:7063
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_MC_PARALYZER\""
 " and @lvl=\"0\"]/text"
 msgstr "Refroidisseur mental. [Coût : 30~, 1|]"
 
-#: src-en/data/events_special_storage.xml.append:7053
+#: src-en/data/events_special_storage.xml.append:7069
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_IN_FIRE_CREWBOOSTS\""
 " and @lvl=\"1\"]/text"
 msgstr ""
-"RK Scorch \"Hellion Wraps\" : Dans le feu, votre équipage a 1.75x vitesse de"
-" déplacement et de sabotage, et inflige 1.75x dégâts de combat et aux "
+"RK Scorch \"Wraps Hellion\" : Dans le feu, ton équipage a 1.75x de vitesse "
+"de mouvement et de sabotage, et inflige 1.75x de dégâts de combat et aux "
 "portes, sur les deux vaisseaux. [DÉJÀ INSTALLÉ]"
 
-#: src-en/data/events_special_storage.xml.append:7057
+#: src-en/data/events_special_storage.xml.append:7073
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_IN_FIRE_CREWBOOSTS\""
 " and @lvl=\"0\"]/text"
-msgstr "Hellion Wraps. [Coût : 55~, 1{, 1}]"
+msgstr "Wraps Hellion. [Coût : 55~, 1{, 1}]"
 
-#: src-en/data/events_special_storage.xml.append:7062
+#: src-en/data/events_special_storage.xml.append:7078
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\""
 " and @lvl=\"1\"]/text"
 msgstr ""
-"RK Scorch \"Chauffeur mental\" : Dans le feu, votre équipage est immunisé "
-"contre le Contrôle mental et en est guéri, est étourdi 50% moins longtemps "
-"et révèle les salles adjacentes, sur les deux vaisseaux. [DÉJÀ INSTALLÉ]"
+"RK Scorch \"Chauffeur mental\" : Dans le feu, ton équipage est immunisé "
+"contre le Contrôle mental et en est guéri, étourdi 50 % moins longtemps, et "
+"révèle les salles adjacentes, sur les deux vaisseaux. [DÉJÀ INSTALLÉ]"
 
-#: src-en/data/events_special_storage.xml.append:7066
+#: src-en/data/events_special_storage.xml.append:7082
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\""
 " and @lvl=\"0\"]/text"
 msgstr "Chauffeur mental. [Coût : 30~, 1{, 1|]"
 
-#: src-en/data/events_special_storage.xml.append:7071
+#: src-en/data/events_special_storage.xml.append:7087
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[14]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7112
+#: src-en/data/events_special_storage.xml.append:7128
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CALIBRATOR\"]/text"
 msgstr ""
-"Vous êtes sur le point d'installer l'amélioration Calibreur.\n"
-"\t[Effets : Vos armes ont +10 de précision et 4% de cadence de tir accrue. \n"
+"Tu es sur le point d'installer l'amélioration Calibreur.\n"
+"\t[Effets : Tes armes ont +10 de précision et 4 % de cadence de tir augmentée. \n"
 "\tPeut être installé deux fois.]"
 
-#: src-en/data/events_special_storage.xml.append:7129
+#: src-en/data/events_special_storage.xml.append:7145
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CALIBRATOR\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
 " and @lvl=\"0\"]/text"
 msgstr ""
-"Cette amélioration n'est pas disponible. Vous avez besoin d'une "
+"Cette amélioration n'est pas disponible. Tu as besoin d'une "
 "arme/augmentation/équipage/vaisseau RadiKal Bam (ou BPS)."
 
-#: src-en/data/events_special_storage.xml.append:7134
+#: src-en/data/events_special_storage.xml.append:7150
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CALIBRATOR\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
 " and @lvl=\"1\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7136
+#: src-en/data/events_special_storage.xml.append:7152
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CALIBRATOR\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
 " and @lvl=\"1\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7142
+#: src-en/data/events_special_storage.xml.append:7158
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CALIBRATOR\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
 " and @lvl=\"1\"]/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7149
+#: src-en/data/events_special_storage.xml.append:7165
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CALIBRATOR\"]/choice[@req=\"pilot\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7160
+#: src-en/data/events_special_storage.xml.append:7176
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE\"]/text"
 msgstr ""
-"Vous êtes sur le point d'installer l'amélioration Choking F.I.N.E.\n"
-"\t[Effets : Votre équipage subit 0.75x dégâts d'asphyxie.\n"
-"\t\tEn asphyxiant, ils se déplacent, sabotent, réparent et combattent 1.4x mieux. N'affecte pas l'équipage immunisé contre l'asphyxie.]"
+"Tu es sur le point d'installer l'amélioration Choking F.I.N.E.\n"
+"\t[Effets : Ton équipage subit 0.75x les dégâts de suffocation.\n"
+"\t\tEn suffoquant, ils se déplacent, sabotent, réparent et se battent 1.4x mieux. N'affecte pas l'équipage immunisé à la suffocation.]"
 
-#: src-en/data/events_special_storage.xml.append:7165
+#: src-en/data/events_special_storage.xml.append:7181
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE\"]/choice[@req=\"EX_RK_CHOKING_IS_FINE\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7167
+#: src-en/data/events_special_storage.xml.append:7183
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE\"]/choice[@req=\"EX_RK_CHOKING_IS_FINE\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7170
+#: src-en/data/events_special_storage.xml.append:7186
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE\"]/choice[@req=\"EX_RK_CHOKING_IS_FINE\"]/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7177
+#: src-en/data/events_special_storage.xml.append:7193
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
 " and @lvl=\"0\"]/text"
 msgstr ""
-"Cette amélioration n'est pas disponible. Vous avez besoin d'une "
+"Cette amélioration n'est pas disponible. Tu as besoin d'une "
 "arme/augmentation/équipage/vaisseau RadiKal Bam (ou BPS)."
 
-#: src-en/data/events_special_storage.xml.append:7182
+#: src-en/data/events_special_storage.xml.append:7198
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
 " and @lvl=\"1\"]/text"
 msgstr "Effectuer l'amélioration. [Coût : 55~, 1}, 1|]"
 
-#: src-en/data/events_special_storage.xml.append:7184
+#: src-en/data/events_special_storage.xml.append:7200
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
 " and @lvl=\"1\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7191
+#: src-en/data/events_special_storage.xml.append:7207
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE\"]/choice[@req=\"DJMOD_HAS_RADIKAL_BAM_GEAR\""
 " and @lvl=\"1\"]/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7198
+#: src-en/data/events_special_storage.xml.append:7214
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_CHOKING_IS_FINE\"]/choice[@req=\"pilot\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7209
+#: src-en/data/events_special_storage.xml.append:7225
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/text"
 msgstr ""
-"Vous êtes sur le point d'installer l'amélioration Demicloneurs.\n"
-"\t[Effets : Les RadiKal Punk ont infusé ces prototypes de salle des clones sac à dos avec des énergies sombres. Ils tentent de ressusciter votre équipage s'il meurt (pas dans les événements) alors que vous n'avez pas de vraie Salle des clones.\n"
-"\t\tAu mieux, l'équipage ressuscite en sa version inférieure (Soldat = Humain par défaut, etc.) Si aucune version inférieure n'existe, ils deviennent des Morphes. Quand les Morphes meurent, rien ne se passe.]"
+"Tu es sur le point d'installer l'amélioration Demicloneurs.\n"
+"\t[Effets : Les RadiKal Punk ont infusé ces prototypes de salle des clones dorsale avec des énergies sombres. Ils tentent de ressusciter ton équipage s'ils meurent (pas lors d'événements) quand tu n'as pas de vraie Salle des clones.\n"
+"\t\tAu mieux, l'équipage ressuscite en une version moindre (Soldat = Humain par défaut, etc.) S'il n'existe aucune version moindre, ils deviennent des Morphes. Quand les Morphes meurent, il ne se passe rien.]"
 
-#: src-en/data/events_special_storage.xml.append:7215
+#: src-en/data/events_special_storage.xml.append:7231
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/choice[@req=\"EX_DJMOD_DEMICLONER\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7217
+#: src-en/data/events_special_storage.xml.append:7233
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/choice[@req=\"EX_DJMOD_DEMICLONER\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7220
+#: src-en/data/events_special_storage.xml.append:7236
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/choice[@req=\"EX_DJMOD_DEMICLONER\"]/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7227
+#: src-en/data/events_special_storage.xml.append:7243
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"0\"]/text"
 msgstr ""
-"Cette amélioration n'est pas disponible. Vous avez besoin d'une "
+"Cette amélioration n'est pas disponible. Tu as besoin d'une "
 "arme/augmentation/équipage/vaisseau RadiKal Punk (ou BPS)."
 
-#: src-en/data/events_special_storage.xml.append:7232
+#: src-en/data/events_special_storage.xml.append:7248
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"1\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7234
+#: src-en/data/events_special_storage.xml.append:7250
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"1\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7240
+#: src-en/data/events_special_storage.xml.append:7256
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"1\"]/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7248
+#: src-en/data/events_special_storage.xml.append:7264
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_DEMICLONER\"]/choice[@req=\"pilot\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7259
+#: src-en/data/events_special_storage.xml.append:7275
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER\"]/text"
 msgstr ""
-"Vous êtes sur le point d'installer l'amélioration Refroidisseur mental.\n"
-"\t[Effets : Lorsqu'il est sous les effets du Contrôle mental, votre équipage ne peut pas combattre, saboter ou se téléporter. Fonctionne sur les deux vaisseaux.]"
+"Tu es sur le point d'installer l'amélioration Refroidisseur mental.\n"
+"\t[Effets : Sous les effets du Contrôle mental, ton équipage ne peut pas se battre, saboter ou se téléporter. Fonctionne sur les deux vaisseaux.]"
 
-#: src-en/data/events_special_storage.xml.append:7263
+#: src-en/data/events_special_storage.xml.append:7279
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"0\"]/text"
 msgstr ""
-"Cette amélioration n'est pas disponible. Vous avez besoin d'une "
+"Cette amélioration n'est pas disponible. Tu as besoin d'une "
 "arme/augmentation/équipage/vaisseau RadiKal Punk (ou BPS)."
 
-#: src-en/data/events_special_storage.xml.append:7267
+#: src-en/data/events_special_storage.xml.append:7283
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"1\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7269
+#: src-en/data/events_special_storage.xml.append:7285
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"1\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7275
+#: src-en/data/events_special_storage.xml.append:7291
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER\"]/choice[@req=\"DJMOD_HAS_RADIKAL_PUNK_GEAR\""
 " and @lvl=\"1\"]/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7283
+#: src-en/data/events_special_storage.xml.append:7299
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER\"]/choice[@req=\"pilot\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7295
+#: src-en/data/events_special_storage.xml.append:7311
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_IN_FIRE_CREWBOOSTS\"]/text"
 msgstr ""
-"Vous êtes sur le point d'installer l'amélioration Hellion Wraps.\n"
-"\t[Effets : Dans le feu, votre équipage a 1.75x vitesse de déplacement et de sabotage, et inflige 1.75x dégâts de combat et aux portes, sur les deux vaisseaux.]"
+"Tu es sur le point d'installer l'amélioration Wraps Hellion.\n"
+"\t[Effets : Dans le feu, ton équipage a 1.75x de vitesse de mouvement et de sabotage, et inflige 1.75x de dégâts de combat et aux portes, sur les deux vaisseaux.]"
 
-#: src-en/data/events_special_storage.xml.append:7299
+#: src-en/data/events_special_storage.xml.append:7315
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_IN_FIRE_CREWBOOSTS\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
 " and @lvl=\"0\"]/text"
 msgstr ""
-"Cette amélioration n'est pas disponible. Vous avez besoin d'une "
+"Cette amélioration n'est pas disponible. Tu as besoin d'une "
 "arme/augmentation/équipage/vaisseau RadiKal Scorch (ou BPS)."
 
-#: src-en/data/events_special_storage.xml.append:7303
+#: src-en/data/events_special_storage.xml.append:7319
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_IN_FIRE_CREWBOOSTS\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
 " and @lvl=\"1\"]/text"
 msgstr "Effectuer l'amélioration. [Coût : 55~, 1{, 1}]"
 
-#: src-en/data/events_special_storage.xml.append:7305
+#: src-en/data/events_special_storage.xml.append:7321
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_IN_FIRE_CREWBOOSTS\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
 " and @lvl=\"1\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7312
+#: src-en/data/events_special_storage.xml.append:7328
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_IN_FIRE_CREWBOOSTS\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
 " and @lvl=\"1\"]/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7320
+#: src-en/data/events_special_storage.xml.append:7336
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_RK_IN_FIRE_CREWBOOSTS\"]/choice[@req=\"pilot\"]/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7331
+#: src-en/data/events_special_storage.xml.append:7347
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/text"
 msgstr ""
-"Vous êtes sur le point d'installer l'amélioration Chauffeur mental.\n"
-"\t[Effets : Dans le feu, votre équipage est immunisé contre le Contrôle mental et en est guéri, est étourdi 50% moins longtemps et révèle les salles adjacentes, sur les deux vaisseaux.]"
+"Tu es sur le point d'installer l'amélioration Chauffeur mental.\n"
+"\t[Effets : Dans le feu, ton équipage est immunisé contre le Contrôle mental et en est guéri, étourdi 50 % moins longtemps, et révèle les salles adjacentes, sur les deux vaisseaux.]"
 
-#: src-en/data/events_special_storage.xml.append:7335
+#: src-en/data/events_special_storage.xml.append:7351
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
 " and @lvl=\"0\"]/text"
 msgstr ""
-"Cette amélioration n'est pas disponible. Vous avez besoin d'une "
+"Cette amélioration n'est pas disponible. Tu as besoin d'une "
 "arme/augmentation/équipage/vaisseau RadiKal Scorch (ou BPS)."
 
-#: src-en/data/events_special_storage.xml.append:7339
+#: src-en/data/events_special_storage.xml.append:7355
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
 " and @lvl=\"1\"]/text"
 msgstr "Effectuer l'amélioration. [Coût : 30~, 1{, 1|]"
 
-#: src-en/data/events_special_storage.xml.append:7341
+#: src-en/data/events_special_storage.xml.append:7357
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
 " and @lvl=\"1\"]/event/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7348
+#: src-en/data/events_special_storage.xml.append:7364
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/choice[@req=\"DJMOD_HAS_RADIKAL_SCORCH_GEAR\""
 " and @lvl=\"1\"]/event/choice/text"
 msgstr ""
 
-#: src-en/data/events_special_storage.xml.append:7356
+#: src-en/data/events_special_storage.xml.append:7372
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\"]/choice[@req=\"pilot\"]/text"
 msgstr ""
