@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-28 16:36+0000\n"
+"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/radikal-sector/dataevents_special_storagexmlappend/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events_special_storage.xml.append:396
 msgid ""
@@ -240,6 +247,7 @@ msgid ""
 msgstr "（朋克谐合）培养一个半械分离者。"
 
 #: src-en/data/events_special_storage.xml.append:721
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[23]/mod-"
 "append:choice/text"
@@ -3519,6 +3527,7 @@ msgid ""
 msgstr "确定"
 
 #: src-en/data/events_special_storage.xml.append:6676
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/text"
 msgstr ""
@@ -3527,7 +3536,8 @@ msgstr ""
 "\t\t\t\t\n"
 "\t\t\t\t如果你选择什么都不取回，你将收回两架回收器剩下的部分。\n"
 "\t\t\t\t\n"
-"\t\t\t\t如果你选择取回任何东西，你将收回 1 架回收器剩下的部分，但舰队将加速 1 次。"
+"\t\t\t\t如果你选择取回任何东西，你将收回 1 架回收器剩下的部分，但舰队将加速 "
+"1 次。"
 
 #: src-en/data/events_special_storage.xml.append:6691
 msgid ""
@@ -3723,10 +3733,13 @@ msgid ""
 msgstr "双重克隆器。[花费：35~，2|]"
 
 #: src-en/data/events_special_storage.xml.append:7049
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_MC_PARALYZER\""
 " and @lvl=\"1\"]/text"
-msgstr "RK 朋克 “冷静头脑”：当受到心灵控制效果影响时，你的船员无法战斗、破坏或传送离开。对双方飞船都有效。[已安装]"
+msgstr ""
+"RK 朋克 “冷静头脑”：当受到心灵控制效果影响时，你的船员无法战斗、破坏或传送离"
+"开。对双方飞船都有效。[已安装]"
 
 #: src-en/data/events_special_storage.xml.append:7053
 msgid ""
@@ -3905,11 +3918,13 @@ msgid ""
 msgstr "算了。"
 
 #: src-en/data/events_special_storage.xml.append:7264
+#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER\"]/text"
 msgstr ""
 "你即将安装冷静头脑升级。\n"
-"[效果：当受到心灵控制效果影响时，你的船员无法战斗、破坏或传送离开。对双方飞船都有效。]"
+"[效果：当受到心灵控制效果影响时，你的船员无法战斗、破坏或传送离开。对双方飞船"
+"都有效。]"
 
 #: src-en/data/events_special_storage.xml.append:7268
 msgid ""
