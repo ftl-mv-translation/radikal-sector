@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-09-28 16:36+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: TrpleA <wndhkswnqls2@naver.com>\n"
 "Language-Team: Korean <https://weblate.hyperq.be/projects/radikal-sector/"
 "dataevents_sector_radikalxml/ko/>\n"
 "Language: ko\n"
@@ -458,12 +458,14 @@ msgstr "계속..."
 #: src-en/data/events_sector_radikal.xml:531
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_GRAVESPRED_USER_REBELAUTO\"]/destroyed/choice[4]/text"
-msgstr "없음"
+msgstr "대신 청사진을 찾는다."
 
 #: src-en/data/events_sector_radikal.xml:533
 msgid ""
 "data/events_sector_radikal.xml$//ship[@name=\"SHIP_RKS_GRAVESPRED_USER_REBELAUTO\"]/destroyed/choice[4]/event/text"
 msgstr ""
+"왜 청사진을 찾을 수 있을 거라 기대했는지는 스스로도 의문이지만, 아무튼 "
+"찾아냈습니다! 이제 전부 폭발하기전에 어서 빠져나갑니다."
 
 #: src-en/data/events_sector_radikal.xml:537
 msgid ""
@@ -839,7 +841,9 @@ msgstr ""
 #: src-en/data/events_sector_radikal.xml:1001
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_instabenefit\"]/text"
-msgstr "건설 가속기를 건설합니다. [건설해도 탐사 지점이 종료되지 않아, 어느 회차에서든 추가 건설이나 혜택 획득이 가능합니다]"
+msgstr ""
+"건설 가속기를 건설한다. [건설해도 탐사 지점이 종료되지 않아, 어느 회차에서든 "
+"추가 건설이나 혜택 획득이 가능합니다]"
 
 #: src-en/data/events_sector_radikal.xml:1003
 msgid ""
@@ -849,7 +853,7 @@ msgstr "드론들이 회전 휠과 시간조율실을 만들기 위해 작업에
 #: src-en/data/events_sector_radikal.xml:1016
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_instabenefit\"]/event/choice[@req=\"rks_hideout_instabenefit\"]/text"
-msgstr "(가속기) 다른 작업을 수행합니다."
+msgstr "(가속기) 다른 작업을 수행한다."
 
 #: src-en/data/events_sector_radikal.xml:1021
 msgid ""
@@ -860,7 +864,8 @@ msgstr "창밖으로 드론들이 작업하는 모습을 지켜본 뒤 떠납니
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_multibenefit\"]/text"
 msgstr ""
-"서비스 촉진기를 건설합니다. [은신처 혜택을 수령해도 탐사 지점이 종료되지 않아, 어느 회차에서든 추가 건설이나 혜택 획득이 가능합니다]"
+"서비스 촉진기를 건설한다. [은신처 혜택을 수령해도 탐사 지점이 종료되지 않아, "
+"어느 회차에서든 추가 건설이나 혜택 획득이 가능합니다]"
 
 #: src-en/data/events_sector_radikal.xml:1030
 msgid ""
@@ -870,7 +875,7 @@ msgstr "드론들이 F1 안정기와 디스펜서를 만들기 위해 작업에 
 #: src-en/data/events_sector_radikal.xml:1042
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_multibenefit\"]/event/choice[@req=\"rks_hideout_instabenefit\"]/text"
-msgstr "(가속기) 다른 작업을 수행합니다."
+msgstr "(가속기) 다른 작업을 수행한다."
 
 #: src-en/data/events_sector_radikal.xml:1047
 msgid ""
@@ -881,7 +886,8 @@ msgstr "창밖으로 드론들이 작업하는 모습을 지켜본 뒤 떠납니
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_morechoices_1\"]/text"
 msgstr ""
-"1단계 아지트 확장 시설을 건설합니다. [함대 추격 속도가 1턴 증가합니다] [다중 선택지가 있는 서비스에 선택지가 1개 추가됩니다]"
+"1단계 아지트 확장 시설을 건설한다. [함대 추격 속도가 1턴 증가합니다] [다중 "
+"선택지가 있는 서비스에 선택지가 1개 추가됩니다]"
 
 #: src-en/data/events_sector_radikal.xml:1056
 msgid ""
@@ -891,7 +897,7 @@ msgstr "드론들이 보안 경계선을 재구축하고 영역을 확장하는 
 #: src-en/data/events_sector_radikal.xml:1068
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_morechoices_1\"]/event/choice[@req=\"rks_hideout_instabenefit\"]/text"
-msgstr "(가속기) 다른 작업을 수행합니다."
+msgstr "(가속기) 다른 작업을 수행한다."
 
 #: src-en/data/events_sector_radikal.xml:1073
 msgid ""
@@ -902,7 +908,8 @@ msgstr "창밖으로 드론들이 작업하는 모습을 지켜본 뒤 떠납니
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_morechoices_2\"]/text"
 msgstr ""
-"2단계 아지트 확장 시설을 건설합니다. [함대 추격 속도가 1턴 증가합니다] [다중 선택지가 있는 서비스에 선택지가 1개 추가됩니다]"
+"2단계 아지트 확장 시설을 건설한다. [함대 추격 속도가 1턴 증가합니다] [다중 "
+"선택지가 있는 서비스에 선택지가 1개 추가됩니다]"
 
 #: src-en/data/events_sector_radikal.xml:1081
 msgid ""
@@ -912,7 +919,7 @@ msgstr "드론들이 보안 경계선을 재구축하고 영역을 훨씬 더 �
 #: src-en/data/events_sector_radikal.xml:1093
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_morechoices_2\"]/event/choice[@req=\"rks_hideout_instabenefit\"]/text"
-msgstr "(가속기) 다른 작업을 수행합니다."
+msgstr "(가속기) 다른 작업을 수행한다."
 
 #: src-en/data/events_sector_radikal.xml:1098
 msgid ""
@@ -922,7 +929,9 @@ msgstr "창밖으로 드론들이 작업하는 모습을 지켜본 뒤 떠납니
 #: src-en/data/events_sector_radikal.xml:1105
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_repairs\"]/text"
-msgstr "수리 플랫폼을 건설합니다. [함대 추격 속도가 1턴 증가합니다] [어느 회차에서든 선체 체력을 15 수리합니다]"
+msgstr ""
+"수리 플랫폼을 건설한다. [함대 추격 속도가 1턴 증가합니다] [어느 회차에서든 "
+"선체 체력을 15 수리합니다]"
 
 #: src-en/data/events_sector_radikal.xml:1107
 msgid ""
@@ -932,7 +941,7 @@ msgstr "드론들이 함선을 수리할 비계, 기계 팔, 예비 부품 상�
 #: src-en/data/events_sector_radikal.xml:1118
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_repairs\"]/event/choice[@req=\"rks_hideout_instabenefit\"]/text"
-msgstr "(가속기) 다른 작업을 수행합니다."
+msgstr "(가속기) 다른 작업을 수행한다."
 
 #: src-en/data/events_sector_radikal.xml:1123
 msgid ""
@@ -942,17 +951,17 @@ msgstr "창밖으로 드론들이 작업하는 모습을 지켜본 뒤 떠납니
 #: src-en/data/events_sector_radikal.xml:1129
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_REPAIR\"]/text"
-msgstr "(수리 플랫폼) 함선을 정비합니다."
+msgstr "(수리 플랫폼) 함선을 정비한다."
 
 #: src-en/data/events_sector_radikal.xml:1131
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_REPAIR\"]/event/text"
-msgstr "무료 수리를 받습니다. 뭐, 사실 이미 비용을 지불한 수리지만 말입니다."
+msgstr "무료 수리를 받습니다. 음, 사실 이미 비용을 지불한 수리지만 말입니다."
 
 #: src-en/data/events_sector_radikal.xml:1136
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_REPAIR\"]/event/choice[@req=\"rks_hideout_multibenefit\"]/text"
-msgstr "(촉진기) 다른 작업을 수행합니다."
+msgstr "(촉진기) 다른 작업을 수행한다."
 
 #: src-en/data/events_sector_radikal.xml:1141
 msgid ""
@@ -968,7 +977,8 @@ msgstr "떠난다."
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_scavenge\"]/text"
 msgstr ""
-"자동 회수 단지를 건설합니다. [함대 추격 속도가 1턴 증가합니다] [어느 회차에서든 스크랩, 연료, 미사일, 드론 부품을 제공합니다]"
+"자동 회수 단지를 건설한다. [함대 추격 속도가 1턴 증가합니다] [어느 "
+"회차에서든 스크랩, 연료, 미사일, 드론 부품을 제공합니다]"
 
 #: src-en/data/events_sector_radikal.xml:1154
 msgid ""
@@ -978,12 +988,12 @@ msgstr "드론들이 센서 배열기, 중앙 조정기, 회수 드론 격납고
 #: src-en/data/events_sector_radikal.xml:1166
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_scavenge\"]/event/choice/text"
-msgstr "다른 작업을 수행합니다."
+msgstr "다른 작업을 수행한다."
 
 #: src-en/data/events_sector_radikal.xml:1172
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_SCAVENGE\"]/text"
-msgstr "(자동 회수 단지) 수확물을 수거합니다."
+msgstr "(자동 회수 단지) 수확물을 수거한다."
 
 #: src-en/data/events_sector_radikal.xml:1174
 msgid ""
@@ -993,7 +1003,7 @@ msgstr "회수 드론들이 이 현실에서 열심히 일을 해두었습니다
 #: src-en/data/events_sector_radikal.xml:1185
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_SCAVENGE\"]/event/choice[@req=\"rks_hideout_multibenefit\"]/text"
-msgstr "(촉진기) 다른 작업을 수행합니다."
+msgstr "(촉진기) 다른 작업을 수행한다."
 
 #: src-en/data/events_sector_radikal.xml:1190
 msgid ""
@@ -1008,7 +1018,9 @@ msgstr "떠난다."
 #: src-en/data/events_sector_radikal.xml:1201
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_recruit\"]/text"
-msgstr "모집 센터를 건설합니다. [함대 추격 속도가 1턴 증가합니다] [어느 회차에서든 일부 선원을 무료로 영입할 수 있습니다]"
+msgstr ""
+"모집 센터를 건설한다. [함대 추격 속도가 1턴 증가합니다] [어느 회차에서든 "
+"일부 선원을 무료로 영입할 수 있습니다]"
 
 #: src-en/data/events_sector_radikal.xml:1203
 msgid ""
@@ -1018,7 +1030,7 @@ msgstr "드론들이 암호화된 제안 방송 장치, 수경 재배 농장, �
 #: src-en/data/events_sector_radikal.xml:1215
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_recruit\"]/event/choice[@req=\"rks_hideout_instabenefit\"]/text"
-msgstr "(가속기) 다른 작업을 수행합니다."
+msgstr "(가속기) 다른 작업을 수행한다."
 
 #: src-en/data/events_sector_radikal.xml:1220
 msgid ""
@@ -1048,7 +1060,7 @@ msgstr "그들을 함선에 맞이합니다."
 #: src-en/data/events_sector_radikal.xml:1239
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_RECRUIT\"]/event/choice[1]/event/choice[@req=\"rks_hideout_multibenefit\"]/text"
-msgstr "(촉진기) 다른 작업을 수행합니다."
+msgstr "(촉진기) 다른 작업을 수행한다."
 
 #: src-en/data/events_sector_radikal.xml:1243
 msgid ""
@@ -1068,7 +1080,7 @@ msgstr "그들을 함선에 맞이합니다."
 #: src-en/data/events_sector_radikal.xml:1255
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_RECRUIT\"]/event/choice[2]/event/choice[@req=\"rks_hideout_multibenefit\"]/text"
-msgstr "(촉진기) 다른 작업을 수행합니다."
+msgstr "(촉진기) 다른 작업을 수행한다."
 
 #: src-en/data/events_sector_radikal.xml:1259
 msgid ""
@@ -1088,7 +1100,7 @@ msgstr "그들을 함선에 맞이합니다."
 #: src-en/data/events_sector_radikal.xml:1271
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_RECRUIT\"]/event/choice[@req=\"rks_hideout_morechoices_1\"]/event/choice[@req=\"rks_hideout_multibenefit\"]/text"
-msgstr "(촉진기) 다른 작업을 수행합니다."
+msgstr "(촉진기) 다른 작업을 수행한다."
 
 #: src-en/data/events_sector_radikal.xml:1275
 msgid ""
@@ -1108,7 +1120,7 @@ msgstr "그들을 함선에 맞이합니다."
 #: src-en/data/events_sector_radikal.xml:1287
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_RECRUIT\"]/event/choice[@req=\"rks_hideout_morechoices_2\"]/event/choice[@req=\"rks_hideout_multibenefit\"]/text"
-msgstr "(촉진기) 다른 작업을 수행합니다."
+msgstr "(촉진기) 다른 작업을 수행한다."
 
 #: src-en/data/events_sector_radikal.xml:1291
 msgid ""
@@ -1118,7 +1130,7 @@ msgstr "떠난다."
 #: src-en/data/events_sector_radikal.xml:1298
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_RECRUIT\"]/event/choice[5]/text"
-msgstr "이 작업을 포기하고 다른 작업을 수행합니다."
+msgstr "이 작업을 포기하고 다른 작업을 수행한다."
 
 #: src-en/data/events_sector_radikal.xml:1303
 msgid ""
@@ -1134,7 +1146,8 @@ msgstr "이번 회차의 아지트 작업이 끝났습니다. 떠납니다."
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_getweapon\"]/text"
 msgstr ""
-"무기 회수 센터를 건설합니다. [함대 추격 속도가 1턴 증가합니다] [어느 회차에서든 일부 무기를 무료로 획득할 수 있습니다]"
+"무기 회수 센터를 건설한다. [함대 추격 속도가 1턴 증가합니다] [어느 "
+"회차에서든 일부 무기를 무료로 획득할 수 있습니다]"
 
 #: src-en/data/events_sector_radikal.xml:1316
 msgid ""
@@ -1144,7 +1157,7 @@ msgstr "드론들이 다목적 기계 팔, 자동 탐사선, 무기 거치대를
 #: src-en/data/events_sector_radikal.xml:1328
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"rks_hideout_getweapon\"]/event/choice[@req=\"rks_hideout_instabenefit\"]/text"
-msgstr "(가속기) 다른 작업을 수행합니다."
+msgstr "(가속기) 다른 작업을 수행한다."
 
 #: src-en/data/events_sector_radikal.xml:1333
 msgid ""
@@ -1154,7 +1167,7 @@ msgstr "창밖으로 드론들이 작업하는 모습을 지켜본 뒤 떠납니
 #: src-en/data/events_sector_radikal.xml:1339
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_GETWEAPON\"]/text"
-msgstr "(무기 회수 센터) 무료로 무기를 획득합니다."
+msgstr "(무기 회수 센터) 무료로 무기를 획득한다."
 
 #: src-en/data/events_sector_radikal.xml:1341
 msgid ""
@@ -1174,7 +1187,7 @@ msgstr "무기를 챙깁니다."
 #: src-en/data/events_sector_radikal.xml:1352
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_GETWEAPON\"]/event/choice[1]/event/choice[@req=\"rks_hideout_multibenefit\"]/text"
-msgstr "(촉진기) 다른 작업을 수행합니다."
+msgstr "(촉진기) 다른 작업을 수행한다."
 
 #: src-en/data/events_sector_radikal.xml:1356
 msgid ""
@@ -1194,7 +1207,7 @@ msgstr "무기를 챙깁니다."
 #: src-en/data/events_sector_radikal.xml:1368
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_GETWEAPON\"]/event/choice[2]/event/choice[@req=\"rks_hideout_multibenefit\"]/text"
-msgstr "(촉진기) 다른 작업을 수행합니다."
+msgstr "(촉진기) 다른 작업을 수행한다."
 
 #: src-en/data/events_sector_radikal.xml:1372
 msgid ""
@@ -1214,7 +1227,7 @@ msgstr "무기를 챙깁니다."
 #: src-en/data/events_sector_radikal.xml:1384
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_GETWEAPON\"]/event/choice[@req=\"rks_hideout_morechoices_1\"]/event/choice[@req=\"rks_hideout_multibenefit\"]/text"
-msgstr "(촉진기) 다른 작업을 수행합니다."
+msgstr "(촉진기) 다른 작업을 수행한다."
 
 #: src-en/data/events_sector_radikal.xml:1388
 msgid ""
@@ -1234,7 +1247,7 @@ msgstr "무기를 챙깁니다."
 #: src-en/data/events_sector_radikal.xml:1401
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_GETWEAPON\"]/event/choice[@req=\"rks_hideout_morechoices_2\"]/event/choice[@req=\"rks_hideout_multibenefit\"]/text"
-msgstr "(촉진기) 다른 작업을 수행합니다."
+msgstr "(촉진기) 다른 작업을 수행한다."
 
 #: src-en/data/events_sector_radikal.xml:1405
 msgid ""
@@ -1244,7 +1257,7 @@ msgstr "떠난다."
 #: src-en/data/events_sector_radikal.xml:1412
 msgid ""
 "data/events_sector_radikal.xml$/dummyroot/FTL/event[@name=\"NEBULA_LIGHT_RKS_HIDEOUT\"]/choice[@req=\"RKS_HIDEOUT_CAN_GETWEAPON\"]/event/choice[5]/text"
-msgstr "이 작업을 포기하고 다른 작업을 수행합니다."
+msgstr "이 작업을 포기하고 다른 작업을 수행한다."
 
 #: src-en/data/events_sector_radikal.xml:1417
 msgid ""
@@ -1324,7 +1337,7 @@ msgstr "경찰 수색 영장이 없이는 그들을 수색에 응하게 할 수 
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_SUSPICIOUS_SMUGGLER\"]/choice[@req=\"RKS_POLICE_WARRANT\""
 " and not(@lvl)]/text"
-msgstr "(경찰 수색 영장) 수색에 응할 것을 요구합니다."
+msgstr "(경찰 수색 영장) 수색에 응할 것을 요구한다."
 
 #: src-en/data/events_sector_radikal.xml:1519
 msgid ""
@@ -1430,13 +1443,12 @@ msgid ""
 msgstr "계속..."
 
 #: src-en/data/events_sector_radikal.xml:1610
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_GARAGE_BAM_SYSTEMS\"]/text"
 msgstr ""
 "이 소행성 지대 내부에서, 벡소패스들이 운영하는 이상한 작업장을 발견합니다.\n"
 "\n"
-"\t\t\"*중얼거림* 이곳은 RK 밤 '무자비한 개조 연구소'다. 환영한다.\"\n"
+"\t\t\"*중얼거림* 이곳은 RK 밤 '무자비한 개조 정비소'다. 환영한다.\"\n"
 "\t\t벡소패스가 유쾌한 구석이라곤 전혀 없는 종족이라는 것쯤은 당신도 이미 "
 "알고 있었습니다. 하지만 이놈의 어조는 당신이 아무 말이나 행동도 하기 전에 "
 "죄책감과 위협을 느끼게 만듭니다.\n"
@@ -1580,6 +1592,25 @@ msgstr ""
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_GARAGE_SCORCH_REACTOR\"]/text"
 msgstr ""
+"이 태양 근처에서, 당신은 업토들이 운영하는 이상한 작업장을 발견합니다.\n"
+"\n"
+"\t\t\"RK 스코치 '무자비한 개조 정비소'(B.I.G.)를 찾아오신 것을 환영합니다!\n"
+"\t\t수수료만 내시면 시술의 부작용에 대한 데이터를 수집하는 동안, 귀하 함선의 "
+"잠재력을 비약적으로 향상시켜 드릴 수 있습니다.\n"
+"\t\t이점은 어마어마합니다. 원자로가 정상적인 최대 한계를 넘어서는 것을 "
+"포함해 무려 5단계나 향상됩니다.\n"
+"\n"
+"\t\t하지만 최신 프로토콜을 적용하더라도, 귀하 함선에 대한 신속 스캔 결과를 "
+"보니 [style[color:ff3377]]여기저기 분산되어 총 3의 하찮은 선체 및 시스템 "
+"피해를 입을 것이며... 또한 무척 화려하게 불길이 치솟을 것으로[[/style]] "
+"예상됩니다.\n"
+"\t\t관심 있으신가요?\"\n"
+"\n"
+"\t\t당신의 알 수 없다는 표정을 본 그들이 덧붙입니다. \"에이, 인생 뭐 "
+"있겠습니까! 이건 아주 특별한 기회라고요.\"\n"
+"\t\t\n"
+"\t\t이런 조건에서 공격이라도 받는다면 참 답이 없겠지만, 들어오는 길에 이 "
+"송신소에서 다른 함선은 딱히 발견하지 못했습니다..."
 
 #: src-en/data/events_sector_radikal.xml:1776
 msgid ""
@@ -1741,17 +1772,24 @@ msgid ""
 msgstr "계속..."
 
 #: src-en/data/events_sector_radikal.xml:1976
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[@req=\"RKS_HAS_ENGI_AND_GHOST\"]/text"
 msgstr ""
-"당신의 엔지가 블랙박스의 위치를 파악하고, 너무 늦기 전에 라니우스가 그것을 "
+"당신의 엔지가 블랙박스의 위치를 파악하고, 너무 늦기 전에 고스트가 그것을 "
 "건져낼 수 있다고 말합니다."
 
 #: src-en/data/events_sector_radikal.xml:1978
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS\"]/choice[@req=\"RKS_HAS_ENGI_AND_GHOST\"]/event/text"
 msgstr ""
+"\"제안: 4.7534초 이내에 기체 생명체를 에어록 밖으로 투척 바람. 성공 확률 = "
+"높음.\"\n"
+"\t\t\t\t이게 맞나 싶지만, 당신의 고스트 선원은 당신에게 음료수나 잠시 잡고 "
+"있으라더니 곧바로 몸을 던져 상자를 낚아챕니다! 그들이 \"음료\"를 마실 수 "
+"있다는 사실조차 당신은 몰랐습니다.\n"
+"\t\t\t\t\n"
+"\t\t\t\t다행히 이런 종류의 곡예에 익숙했던 고스트는 아무런 부상 없이 약간의 "
+"스크랩과 함께 상자를 무사히 가지고 돌아왔습니다."
 
 #: src-en/data/events_sector_radikal.xml:1985
 msgid ""
@@ -2069,12 +2107,25 @@ msgstr "계속..."
 #: src-en/data/events_sector_radikal.xml:2264
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[1]/event/choice/event/choice[1]/event/choice[@req=\"unique_rk_defromorius\"]/text"
-msgstr ""
+msgstr "(데프로모리우스) \"신원 확인 완료: 또 다른 자신.\""
 
 #: src-en/data/events_sector_radikal.xml:2266
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_DEFROMORIUS_SHUTTLE\"]/choice[1]/event/choice/event/choice[1]/event/choice[@req=\"unique_rk_defromorius\"]/event/text"
 msgstr ""
+"무엇을 해야 할지 정확히 알고 있던 당신의 데프로모리우스는 최소한의 자원만을 "
+"사용하여 구출 작업을 성공적으로 이끕니다.\n"
+"\n"
+"\t\t\t\t\t\t\t\t\t\t\"반갑다, 나 2호.\"\n"
+"\t\t\t\t\t\t\t\t\t\t\"신원 확인 완료: 또 다른 자신. 반갑다, 나 2호.\"\n"
+"\t\t\t\t\t\t\t\t\t\t서로를 구별할 더 나은 방법을 고안해 낸 두 "
+"데프로모리우스가 덧붙입니다. \"선장. 우리의 존재는 이미 불가능할 정도로 "
+"희박한 확률에 기반함. 논리적 결론: 본 사건 = 우리의 존재가(귀하의 존재 포함) "
+"단순한 시뮬레이션에 불과하다는 증거.\"\n"
+"\n"
+"\t\t\t\t\t\t\t\t\t\t함선에 몰아쳐 온 갑작스러운 실존적 위기 따위에는 아무런 "
+"영향도 받지 않은 채, 데프로모리우스 둘은 잔해를 수거하는 등 그저 다음 할 "
+"일로 태연히 넘어갑니다."
 
 #: src-en/data/events_sector_radikal.xml:2274
 msgid ""
@@ -2210,10 +2261,9 @@ msgid ""
 msgstr "계속..."
 
 #: src-en/data/events_sector_radikal.xml:2420
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_LEECH_ANTIABUSE\"]/text"
-msgstr "(일반 맨티스) 판매할 '가공품'이 있는데, 어디로 가면 됩니까?"
+msgstr "(일반 리치) 판매할 '가공품'이 있는데, 어디로 가면 됩니까?"
 
 #: src-en/data/events_sector_radikal.xml:2422
 msgid ""
@@ -2301,17 +2351,15 @@ msgid ""
 msgstr "신경 쓰지 마십시오. 아까 하던 이야기로 돌아갑시다..."
 
 #: src-en/data/events_sector_radikal.xml:2502
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ORCHID_ANTIABUSE\"]/text"
 msgstr "(일반 오키드) 판매할 '가연성 물질'이 있는데, 어디로 가면 됩니까?"
 
 #: src-en/data/events_sector_radikal.xml:2504
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ORCHID_ANTIABUSE\"]/event/text"
 msgstr ""
-"\"좋아, 그럼 네가 갈 곳은 펑크 연구소야. 거기로 보내 줄 수도 있지. 라디칼 "
+"\"좋아, 그럼 네가 갈 곳은 스코치 연구소야. 거기로 보내 줄 수도 있지. 라디칼 "
 "장비를 보여줄 준비나 해둬.\""
 
 #: src-en/data/events_sector_radikal.xml:2508
@@ -2350,17 +2398,15 @@ msgid ""
 msgstr "신경 쓰지 마십시오. 아까 하던 이야기로 돌아갑시다..."
 
 #: src-en/data/events_sector_radikal.xml:2540
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ZOLTAN_ANTIABUSE\"]/text"
-msgstr "(일반 오키드) 판매할 '가연성 물질'이 있는데, 어디로 가면 됩니까?"
+msgstr "(일반 졸탄) 판매할 '가연성 물질'이 있는데, 어디로 가면 됩니까?"
 
 #: src-en/data/events_sector_radikal.xml:2542
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_BAM\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ZOLTAN_ANTIABUSE\"]/event/text"
 msgstr ""
-"\"좋아, 그럼 네가 갈 곳은 펑크 연구소야. 거기로 보내 줄 수도 있지. 라디칼 "
+"\"좋아, 그럼 네가 갈 곳은 스코치 연구소야. 거기로 보내 줄 수도 있지. 라디칼 "
 "장비를 보여줄 준비나 해둬.\""
 
 #: src-en/data/events_sector_radikal.xml:2546
@@ -2791,14 +2837,15 @@ msgstr "계속..."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_SHELL_ANTIABUSE\"]/text"
 msgstr ""
+"(일반 셸) 저희에게 팔 수 있는 '단단하고 폭발적인 물건'이 있는데, 어디로 가면 "
+"됩니까?"
 
 #: src-en/data/events_sector_radikal.xml:2980
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_SHELL_ANTIABUSE\"]/event/text"
 msgstr ""
-"\"좋아, 그럼 네가 갈 곳은 펑크 연구소야. 거기로 보내 줄 수도 있지. 라디칼 "
-"장비를 보여줄 준비나 해둬.\""
+"\"바보 같은 소릴 하고 있네. 그럼 네가 갈 곳은 밤 연구소야. 거기로 보내 줄 "
+"수도 있지. 라디칼 장비를 보여줄 준비나 해둬.\""
 
 #: src-en/data/events_sector_radikal.xml:2984
 msgid ""
@@ -2810,7 +2857,7 @@ msgstr "알겠습니다."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_SHELL_ANTIABUSE\"]/event/choice[@req=\"rks_lab_coords_bam\""
 " and @lvl=\"0\"]/event/text"
-msgstr ""
+msgstr "\"가는 김에 그 녀석들한테 멍청이라고 좀 전해줘라. 하! 아주 빡쳐하겠구만.\""
 
 #: src-en/data/events_sector_radikal.xml:2994
 msgid ""
@@ -2839,14 +2886,15 @@ msgstr "신경 쓰지 마십시오. 아까 하던 이야기로 돌아갑시다..
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_LANIUS_ANTIABUSE\"]/text"
 msgstr ""
+"(일반 라니우스) 저희에게 팔 수 있는 '단단하고 폭발적인 물건'이 있는데, "
+"어디로 가면 됩니까?"
 
 #: src-en/data/events_sector_radikal.xml:3018
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_LANIUS_ANTIABUSE\"]/event/text"
 msgstr ""
-"\"좋아, 그럼 네가 갈 곳은 펑크 연구소야. 거기로 보내 줄 수도 있지. 라디칼 "
-"장비를 보여줄 준비나 해둬.\""
+"\"바보 같은 소릴 하고 있네. 그럼 네가 갈 곳은 밤 연구소야. 거기로 보내 줄 "
+"수도 있지. 라디칼 장비를 보여줄 준비나 해둬.\""
 
 #: src-en/data/events_sector_radikal.xml:3022
 msgid ""
@@ -2858,7 +2906,7 @@ msgstr "알겠습니다."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_LANIUS_ANTIABUSE\"]/event/choice[@req=\"rks_lab_coords_bam\""
 " and @lvl=\"0\"]/event/text"
-msgstr ""
+msgstr "\"가는 김에 그 녀석들한테 멍청이라고 좀 전해줘라. 하! 아주 빡쳐하겠구만.\""
 
 #: src-en/data/events_sector_radikal.xml:3032
 msgid ""
@@ -2884,7 +2932,6 @@ msgid ""
 msgstr "신경 쓰지 마십시오. 아까 하던 이야기로 돌아갑시다..."
 
 #: src-en/data/events_sector_radikal.xml:3055
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ORCHID_ANTIABUSE\"]/text"
 msgstr "(일반 오키드) 판매할 '가연성 물질'이 있는데, 어디로 가면 됩니까?"
@@ -2893,6 +2940,8 @@ msgstr "(일반 오키드) 판매할 '가연성 물질'이 있는데, 어디로 
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ORCHID_ANTIABUSE\"]/event/text"
 msgstr ""
+"\"바보 같은 소릴 하고 있네. 그렇다면 네가 가야 할 곳은 밤 연구소다. 원한다면 "
+"그쪽으로 보내주지. 라디칼 장비를 보여줄 준비나 해둬라.\""
 
 #: src-en/data/events_sector_radikal.xml:3061
 msgid ""
@@ -2901,11 +2950,10 @@ msgid ""
 msgstr "알겠습니다."
 
 #: src-en/data/events_sector_radikal.xml:3063
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ORCHID_ANTIABUSE\"]/event/choice[@req=\"rks_lab_coords_scorch\""
 " and @lvl=\"0\"]/event/text"
-msgstr "\"가는 김에 그놈들한테 악취 난다고 전해줘. 하! 피가 거꾸로 솟구칠 거다.\""
+msgstr "\"가는 김에 그놈들한테 멍청이라고 좀 전해줘. 하! 피가 거꾸로 솟구칠 거다.\""
 
 #: src-en/data/events_sector_radikal.xml:3071
 msgid ""
@@ -2931,15 +2979,16 @@ msgid ""
 msgstr "신경 쓰지 마십시오. 아까 하던 이야기로 돌아갑시다..."
 
 #: src-en/data/events_sector_radikal.xml:3093
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ZOLTAN_ANTIABUSE\"]/text"
-msgstr "(일반 오키드) 판매할 '가연성 물질'이 있는데, 어디로 가면 됩니까?"
+msgstr "(일반 졸탄) 판매할 '가연성 물질'이 있는데, 어디로 가면 됩니까?"
 
 #: src-en/data/events_sector_radikal.xml:3095
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ZOLTAN_ANTIABUSE\"]/event/text"
 msgstr ""
+"\"바보 같은 소릴 하고 있네. 그렇다면 네가 가야 할 곳은 밤 연구소다. 원한다면 "
+"그쪽으로 보내주지. 라디칼 장비를 보여줄 준비나 해둬라.\""
 
 #: src-en/data/events_sector_radikal.xml:3099
 msgid ""
@@ -2948,11 +2997,10 @@ msgid ""
 msgstr "알겠습니다."
 
 #: src-en/data/events_sector_radikal.xml:3101
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_PUNK\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_ZOLTAN_ANTIABUSE\"]/event/choice[@req=\"rks_lab_coords_scorch\""
 " and @lvl=\"0\"]/event/text"
-msgstr "\"가는 김에 그놈들한테 악취 난다고 전해줘. 하! 피가 거꾸로 솟구칠 거다.\""
+msgstr "\"가는 김에 그놈들한테 멍청이라고 좀 전해줘. 하! 피가 거꾸로 솟구칠 거다.\""
 
 #: src-en/data/events_sector_radikal.xml:3109
 msgid ""
@@ -3405,14 +3453,15 @@ msgstr "계속..."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_SHELL_ANTIABUSE\"]/text"
 msgstr ""
+"(일반 셸) 저희에게 팔 수 있는 '단단하고 폭발적인 물건'이 있는데, 어디로 가면 "
+"됩니까?"
 
 #: src-en/data/events_sector_radikal.xml:3563
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_SHELL_ANTIABUSE\"]/event/text"
 msgstr ""
-"\"좋아, 그럼 네가 갈 곳은 펑크 연구소야. 거기로 보내 줄 수도 있지. 라디칼 "
-"장비를 보여줄 준비나 해둬.\""
+"\"쳇, 그렇다면 네가 가야 할 곳은 밤 연구소다. 원한다면 그쪽으로 보내주지. "
+"라디칼 장비를 보여줄 준비나 해둬라.\""
 
 #: src-en/data/events_sector_radikal.xml:3567
 msgid ""
@@ -3424,7 +3473,7 @@ msgstr "알겠습니다."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_SHELL_ANTIABUSE\"]/event/choice[@req=\"rks_lab_coords_bam\""
 " and @lvl=\"0\"]/event/text"
-msgstr ""
+msgstr "\"가는 김에 그 녀석들한테 느림보라고 좀 전해줘라. 하! 아주 빡쳐하겠구만.\""
 
 #: src-en/data/events_sector_radikal.xml:3577
 msgid ""
@@ -3453,14 +3502,15 @@ msgstr "신경 쓰지 마십시오. 아까 하던 이야기로 돌아갑시다..
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_LANIUS_ANTIABUSE\"]/text"
 msgstr ""
+"(일반 라니우스) 저희에게 팔 수 있는 '단단하고 폭발적인 물건'이 있는데, "
+"어디로 가면 됩니까?"
 
 #: src-en/data/events_sector_radikal.xml:3601
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_LANIUS_ANTIABUSE\"]/event/text"
 msgstr ""
-"\"좋아, 그럼 네가 갈 곳은 펑크 연구소야. 거기로 보내 줄 수도 있지. 라디칼 "
-"장비를 보여줄 준비나 해둬.\""
+"\"쳇, 그렇다면 네가 가야 할 곳은 밤 연구소다. 원한다면 그쪽으로 보내주지. "
+"라디칼 장비를 보여줄 준비나 해둬라.\""
 
 #: src-en/data/events_sector_radikal.xml:3605
 msgid ""
@@ -3472,7 +3522,7 @@ msgstr "알겠습니다."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_LANIUS_ANTIABUSE\"]/event/choice[@req=\"rks_lab_coords_bam\""
 " and @lvl=\"0\"]/event/text"
-msgstr ""
+msgstr "\"가는 김에 그 녀석들한테 느림보라고 좀 전해줘라. 하! 아주 빡쳐하겠구만.\""
 
 #: src-en/data/events_sector_radikal.xml:3615
 msgid ""
@@ -3498,17 +3548,15 @@ msgid ""
 msgstr "신경 쓰지 마십시오. 아까 하던 이야기로 돌아갑시다..."
 
 #: src-en/data/events_sector_radikal.xml:3638
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_LEECH_ANTIABUSE\"]/text"
-msgstr "(일반 맨티스) 판매할 '가공품'이 있는데, 어디로 가면 됩니까?"
+msgstr "(일반 리치) 판매할 '가공품'이 있는데, 어디로 가면 됩니까?"
 
 #: src-en/data/events_sector_radikal.xml:3640
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_LEECH_ANTIABUSE\"]/event/text"
 msgstr ""
-"\"좋아, 그럼 네가 갈 곳은 펑크 연구소야. 거기로 보내 줄 수도 있지. 라디칼 "
+"\"쳇, 그럼 네가 갈 곳은 펑크 연구소야. 거기로 보내 줄 수도 있지. 라디칼 "
 "장비를 보여줄 준비나 해둬.\""
 
 #: src-en/data/events_sector_radikal.xml:3644
@@ -3518,11 +3566,12 @@ msgid ""
 msgstr "알겠습니다."
 
 #: src-en/data/events_sector_radikal.xml:3646
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_LEECH_ANTIABUSE\"]/event/choice[@req=\"rks_lab_coords_punk\""
 " and @lvl=\"0\"]/event/text"
-msgstr "\"가는 김에 그놈들한테 악취 난다고 전해줘. 하! 우쭐대는 괴물 녀석들 같으니.\""
+msgstr ""
+"\"가는 김에 그놈들한테 느림보라고 좀 전해줘. 하! 잘난 척하는 괴상망측한 "
+"놈들.\""
 
 #: src-en/data/events_sector_radikal.xml:3653
 msgid ""
@@ -3553,11 +3602,10 @@ msgid ""
 msgstr "(일반 맨티스) 판매할 '가공품'이 있는데, 어디로 가면 됩니까?"
 
 #: src-en/data/events_sector_radikal.xml:3677
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_MANTIS_ANTIABUSE\"]/event/text"
 msgstr ""
-"\"좋아, 그럼 네가 갈 곳은 펑크 연구소야. 거기로 보내 줄 수도 있지. 라디칼 "
+"\"쳇, 그럼 네가 갈 곳은 펑크 연구소야. 거기로 보내 줄 수도 있지. 라디칼 "
 "장비를 보여줄 준비나 해둬.\""
 
 #: src-en/data/events_sector_radikal.xml:3681
@@ -3567,11 +3615,12 @@ msgid ""
 msgstr "알겠습니다."
 
 #: src-en/data/events_sector_radikal.xml:3683
-#, fuzzy
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH\"]/choice[@req=\"RKS_HAS_ANY_SACRIFICEABLE_MANTIS_ANTIABUSE\"]/event/choice[@req=\"rks_lab_coords_punk\""
 " and @lvl=\"0\"]/event/text"
-msgstr "\"가는 김에 그놈들한테 악취 난다고 전해줘. 하! 우쭐대는 괴물 녀석들 같으니.\""
+msgstr ""
+"\"가는 김에 그놈들한테 느림보라고 좀 전해줘. 하! 잘난 척하는 괴상망측한 "
+"놈들.\""
 
 #: src-en/data/events_sector_radikal.xml:3690
 msgid ""
@@ -3643,9 +3692,12 @@ msgstr "아무것도 하지 않는다."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/text"
 msgstr ""
-"\"우선 배달물부터 보자. 무슨 원자재를 가져왔나? 용광로와 생체 해부실, 증류소가 굶주리고 있다.\"\n"
+"\"우선 배달물부터 보자. 무슨 원자재를 가져왔나? 용광로와 생체 해부실, "
+"증류소가 굶주리고 있다.\"\n"
 "\n"
-"\t\t\"원자재\" 목록을 들여다보니 어째서 이 구역이 수많은 세력으로부터 불법으로 규정되었는지 확실히 이해가 갑니다. 하지만 임무가 최우선 아니겠습니까?"
+"\t\t\"가연성 원자재\" 목록을 들여다보니 어째서 이 구역이 수많은 세력으로부터 "
+"불법으로 규정되었는지 확실히 이해가 갑니다. 하지만 임무가 최우선 "
+"아니겠습니까?"
 
 #: src-en/data/events_sector_radikal.xml:3756
 msgid ""
@@ -3712,7 +3764,7 @@ msgstr "화초 관리인."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid_caretaker\"]/event/text"
 msgstr ""
-"\"품질 좋은 자재로군, 그래. 여기 더 많은 대금이다.\"\n"
+"\"깊고 뜨거운 정수로군, 그래. 여기 더 많은 대금이다.\"\n"
 "\t\t\t\n"
 "\t\t\t\t나머지 선원들이 당신을 비난의 눈빛으로 바라보는 것이 느껴집니다."
 
@@ -3735,7 +3787,7 @@ msgstr "근위병."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"orchid_praetor\"]/event/text"
 msgstr ""
-"\"품질 좋은 자재로군, 그래. 여기 더 많은 대금이다.\"\n"
+"\"아주 골때리는 포자로군, 그래. 여기 더 많은 대금이다.\"\n"
 "\t\t\t\n"
 "\t\t\t\t나머지 선원들이 당신을 비난의 눈빛으로 바라보는 것이 느껴집니다."
 
@@ -3868,7 +3920,7 @@ msgstr "평화유지군."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"zoltan_peacekeeper\"]/event/text"
 msgstr ""
-"\"품질 좋은 자재로군, 그래. 여기 더 많은 대금이다.\"\n"
+"\"무장까지 갖춘 고전압 전력이라니! 여기 더 많은 대금이다.\"\n"
 "\t\t\t\n"
 "\t\t\t\t나머지 선원들이 당신을 비난의 눈빛으로 바라보는 것이 느껴집니다."
 
@@ -3891,7 +3943,7 @@ msgstr "더스크브링어 순교자."
 msgid ""
 "data/events_sector_radikal.xml$//event[@name=\"RKS_QUEST_LAB_SCORCH_2\"]/choice[@req=\"zoltan_martyr\"]/event/text"
 msgstr ""
-"\"품질 좋은 자재로군, 그래. 여기 더 많은 대금이다.\"\n"
+"\"아주 휘발성이 강한 전력이라니, 그래! 여기 더 많은 대금이다.\"\n"
 "\t\t\t\n"
 "\t\t\t\t나머지 선원들이 당신을 비난의 눈빛으로 바라보는 것이 느껴집니다."
 
