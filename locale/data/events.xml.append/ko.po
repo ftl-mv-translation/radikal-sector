@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-09-28 16:36+0000\n"
+"Last-Translator: TrpleA <wndhkswnqls2@naver.com>\n"
+"Language-Team: Korean <https://weblate.hyperq.be/projects/radikal-sector/"
+"dataeventsxmlappend/ko/>\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events.xml.append:208
 msgid "data/events.xml.append$//event[@name=\"RKSHOP\"]/text"
@@ -518,10 +525,15 @@ msgstr "신고할 물품은 없습니다, 심문관님."
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER3_QUEST_START\"]/choice[3]/event/choice[2]/event/text"
 msgstr ""
-"저 함선은 당신이 도약해 들어온 그 순간부터 스캔을 돌리고 있었던 것이 틀림없습니다.\n"
+"저 함선은 당신이 도약해 들어온 그 순간부터 스캔을 돌리고 있었던 것이 "
+"틀림없습니다.\n"
 "\t\t\t\t\t\t\n"
-"\t\t\t\t\t\t\"하! 놈들은 항상 모면할 수 있을 거라 생각하지... 정의로부터 달아날 수는 없다. 이제 아무런 단서도 찾을 수 없다는 건 알지만, 적어도 너희는 내 가족에 대한 대가를 치러라, 이 미친 병ㅅ-!\"\n"
-"\t\t\t\t\t\t당신은 통신을 차단합니다. 당신이 그들의 가족을 죽인 적은 (아마도) 없겠지만, 상대는 그런 걸 전혀 신경 쓰지 않는 게 분명합니다."
+"\t\t\t\t\t\t\"하! 놈들은 항상 모면할 수 있을 거라 생각하지... 정의로부터 "
+"달아날 수는 없다. 이제 아무런 단서도 찾을 수 없다는 건 알지만, 적어도 너희는 "
+"내 가족에 대한 대가를 치러라, 이 미친 병ㅅ-!\"\n"
+"\n"
+"\t\t\t\t\t\t당신은 통신을 차단합니다. 당신이 그들의 가족을 죽인 적은 "
+"(아마도) 없겠지만, 상대는 그런 걸 전혀 신경 쓰지 않는 게 분명합니다."
 
 #: src-en/data/events.xml.append:877
 msgid ""
@@ -696,10 +708,13 @@ msgstr "흥미롭군요. 물건을 보여주십시오."
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_OUTSIDE_STORE\"]/choice/event/choice[1]/event/text"
 msgstr ""
-"\"'RK' 태그가 붙은 물건을 소오오지한 너를 발견한 다른 ARKSS 함서어언들은 분명히 사아아사아알할 의도로 사아아격할 거다. 뭐, 딱히 시이인경 쓰으으는 것 같지도 않지만 말이다.\n"
-"\t\t\t\t\t\t그저... 놈들에게 맞지나 마라. 놈들이 혐오로 가득 찬 장비를 쓰으은다고 해도 딱히 틀린 말은 아니니까.\"\n"
+"\"'RK' 태그가 붙은 물건을 소오오지한 너를 발견한 다른 ARKSS 함서어언들은 "
+"분명히 사아아사아알할 의도로 사아아격할 거다. 뭐, 딱히 시이인경 쓰으으는 것 "
+"같지도 않지만 말이다.\n"
+"\t\t\t\t\t\t그저... 놈들에게 맞지나 마라. 놈들이 혐오로 가득 찬 장비를 "
+"쓰으은다고 해도 딱히 틀린 말은 아니니까.\"\n"
 "\n"
-"\t\t\t\t\t\t[경고: 구매 수량이 매우 제한적임]"
+"\t\t\t\t\t\t[style[color:ff3377]][경고: 구매 수량이 매우 제한적임]"
 
 #: src-en/data/events.xml.append:1141
 msgid ""
@@ -1341,7 +1356,7 @@ msgstr "계속..."
 #: src-en/data/events.xml.append:1850
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_SURRENDER_GEAR_TO_RK_A\"]/choice[@req=\"RK_BPS_FOCUS_STATUS\"]/text"
-msgstr ""
+msgstr "BPS 서신 핀포인트를 반납합니다."
 
 #: src-en/data/events.xml.append:1852
 msgid ""
@@ -1976,7 +1991,7 @@ msgstr ""
 #: src-en/data/events.xml.append:2435
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/choice[@req=\"RK_BPS_FOCUS_STATUS\"]/text"
-msgstr ""
+msgstr "BPS 서신 핀포인트를 120~에 판매합니다."
 
 #: src-en/data/events.xml.append:2437
 msgid ""
@@ -2281,7 +2296,7 @@ msgstr ""
 #: src-en/data/events.xml.append:2682
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice[1]/event/choice/event/choice[1]/event/choice[@req=\"RK_BPS_FOCUS_STATUS\"]/text"
-msgstr ""
+msgstr "BPS 서신 핀포인트를 120~에 판매합니다."
 
 #: src-en/data/events.xml.append:2684
 msgid ""
@@ -3969,8 +3984,11 @@ msgstr "아, 아까 느꼈던 이상한 기분이 이것 때문이었군."
 msgid ""
 "data/events.xml.append$//event[@name=\"RKS_EXIT_PIRATE_TRINITY_AMBUSH\"]/choice/event/text"
 msgstr ""
-"해적 트리니티 모임에 당신이 참석하지 않은 것에 대해 해적들이 매우 얹짢아했던 모양입니다. 저들은 당신의 도약 추진기마저 교란하고 "
-"있습니다! 라디칼 분파가 어느 한쪽 편을 들 생각이 없어 보이므로, 이곳을 벗어나려면 저들과 싸워야만 합니다."
+"해적 트리니티 모임에 당신이 참석하지 않은 것에 대해 해적들이 매우 얹짢아했던 "
+"모양입니다.\n"
+"\t\t\t\t\n"
+"\t\t\t\t저들은 당신의 도약 추진기마저 교란하고 있습니다! 라디칼 분파가 어느 "
+"한쪽 편을 들 생각이 없어 보이므로, 이곳을 벗어나려면 저들과 싸워야만 합니다."
 
 #: src-en/data/events.xml.append:4338
 msgid ""
