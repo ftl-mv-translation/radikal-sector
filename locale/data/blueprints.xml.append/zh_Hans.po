@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-10-13 17:26+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-10-21 11:36+0000\n"
+"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/radikal-sector/datablueprintsxmlappend/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -275,7 +275,6 @@ msgid ""
 msgstr "充能腰带（关）"
 
 #: src-en/data/blueprints.xml.append:269
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_CREW_ARE_BOMBS_OFF\"]/desc"
 msgstr ""
@@ -347,7 +346,6 @@ msgid ""
 msgstr "强化船体"
 
 #: src-en/data/blueprints.xml.append:327
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_BAM_DIVINE_ARMOR\"]/desc"
 msgstr ""
@@ -363,7 +361,6 @@ msgid ""
 msgstr "持久护盾"
 
 #: src-en/data/blueprints.xml.append:342
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//augBlueprint[@name=\"RK_PERSISTENCE_SHIELD\"]/desc"
 msgstr ""
@@ -374,7 +371,7 @@ msgstr ""
 "\t\t同时提高50%的护盾充能速度。\n"
 "\t\t\n"
 "\t\t从切换菜单中激活，可立即恢复你所有的能量护盾层数。[消耗 1 {]\n"
-"\t\t在空信标处以 7 废料重建其电容器之前，无法再次激活。"
+"\t\t在空信标处以 7 废料重建其电容器之前，无法再次激活。[不消耗空信标]"
 
 #: src-en/data/blueprints.xml.append:394
 msgid ""
@@ -1068,17 +1065,21 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:1854
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_KILLALL_BEAM_ELITE\"]/title"
-msgstr ""
+msgstr "精英“墓志铭'辐射光束"
 
 #: src-en/data/blueprints.xml.append:1855
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_KILLALL_BEAM_ELITE\"]/short"
-msgstr ""
+msgstr "墓志铭.+"
 
 #: src-en/data/blueprints.xml.append:1856
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_KILLALL_BEAM_ELITE\"]/desc"
 msgstr ""
+"（RK 朋克装备）这款精英版充能更快、链式更多。（最高 135 点船员伤害）\n"
+"\t\t穿透 2 层护盾，每次链式 +1。（最高 8 层穿透。忽略工具提示）\n"
+"\t\t[style[color:ff3377]]警告：每次链式对你舰船上的所有船员造成 15 点伤害"
+"！[[/style]]（最高 90）"
 
 #: src-en/data/blueprints.xml.append:1901
 msgid ""
@@ -1115,7 +1116,7 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:2184
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_RAIN_OF_ION_ELITE\"]/title"
-msgstr ""
+msgstr "精英 '离子之雨'"
 
 #: src-en/data/blueprints.xml.append:2185
 msgid ""
@@ -1126,6 +1127,9 @@ msgstr "离子雨"
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_RAIN_OF_ION_ELITE\"]/desc"
 msgstr ""
+"（RK 朋克装备）更快的“离子之雨”，其冷却链式次数翻倍。这是对往昔疯狂时光的纪念"
+"。\n"
+"\t\t依然拥有多把武器合起来的蓝色选项价值！"
 
 #: src-en/data/blueprints.xml.append:2253
 msgid ""
@@ -1241,10 +1245,9 @@ msgid ""
 msgstr "你永远不应该看到这条信息。为避免因 AI 瞄准方式导致（射击数 > 玩家飞船舱室数）时游戏卡死，射击次数限制为 3 次且冷却时间已缩短。"
 
 #: src-en/data/blueprints.xml.append:2741
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_BPS_FOCUS_STATUS\"]/title"
-msgstr "BPS 匕首光点"
+msgstr "'BPS 匕首光点'"
 
 #: src-en/data/blueprints.xml.append:2742
 msgid ""
@@ -1275,18 +1278,17 @@ msgstr ""
 #: src-en/data/blueprints.xml.append:2875
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_LASER_BPS_ELITE\"]/title"
-msgstr ""
+msgstr "精英 'BPS 信使'"
 
 #: src-en/data/blueprints.xml.append:2876
-#, fuzzy
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_LASER_BPS_ELITE\"]/short"
-msgstr "BPS 信使"
+msgstr "BPS 信使+"
 
 #: src-en/data/blueprints.xml.append:2877
 msgid ""
 "data/blueprints.xml.append$//weaponBlueprint[@name=\"DJMOD_LASER_BPS_ELITE\"]/desc"
-msgstr ""
+msgstr "（RK BPS 装备）更快、且带眩晕效果的信使。这样的好东西现在已经绝版了。"
 
 #: src-en/data/blueprints.xml.append:2942
 msgid "data/blueprints.xml.append$//weaponBlueprint[@name=\"RK_A_LASER_1\"]/title"
