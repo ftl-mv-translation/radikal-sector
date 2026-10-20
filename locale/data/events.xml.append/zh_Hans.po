@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-10-13 17:26+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-10-21 11:36+0000\n"
+"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/radikal-sector/dataeventsxmlappend/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -232,6 +232,16 @@ msgstr "哇哦好吧，还真是尊重隐私啊？"
 msgid ""
 "data/events.xml.append$/dummyroot/event[@name=\"RK_A_OUTSIDE_POLICE_INTRO_QUEST_START\"]/choice[3]/event/choice/event/choice/event/text"
 msgstr ""
+"“别装什么潮人了，大家都知道‘隐私’这玩意儿早在21世纪初就死透了。言归正传。\n"
+"\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t\t我们非常自豪地隶属于反拉迪卡尔秘密特勤局（ARKSS）。通常情况下我"
+"们是不会告诉你这些的，但我们需——……咳咳，我们倒是可以用点人手，而你看起来挺能"
+"干。\n"
+"\t\t\t\t\t\t\t如果你想确保自身的安全，甚至想加入对抗他们的正义之战，我们出售"
+"你在别处绝对找不到的合适工具。\n"
+"\t\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t\t但首先，我们必须检查你的舰船是否携带了 RK 装备。有什么需要申报"
+"的吗？”"
 
 #: src-en/data/events.xml.append:527
 msgid ""
@@ -247,6 +257,11 @@ msgstr "没什么要申报的，警官。"
 msgid ""
 "data/events.xml.append$/dummyroot/event[@name=\"RK_A_OUTSIDE_POLICE_INTRO_QUEST_START\"]/choice[3]/event/choice/event/choice/event/choice[2]/event/text"
 msgstr ""
+"这艘舰船肯定从你跃迁进来的那一刻起就在扫描你了。\n"
+"\t\t\t\t\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t\t\t\t\t“你把我们当傻子，但审判必将降临到你头上，卑鄙的混沌同情者"
+"恐怖分子。我始终找不到那些直接责任人，但至少你会为泽塔-708T56-C 塞昆杜斯的北"
+"部月球基地付出代价！”"
 
 #: src-en/data/events.xml.append:540
 msgid ""
@@ -290,6 +305,11 @@ msgid ""
 "data/events.xml.append$/dummyroot/event[@name=\"RK_A_OUTSIDE_POLICE_INTRO_QUEST_START\"]/choice[3]/event/choice/event/choice/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/choice[1]/event/text"
 msgstr ""
+"“这套装备能让你立刻成为一名 RK 猎手，或者保护你免受他们那些阴险诡计的暗算！别"
+"让它落入坏人手里。\n"
+"\t\t\t\t\t\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t\t\t\t\t\t如果你之后遇到那些渣滓：别接他们的通讯，瞄准头部，并且‘"
+"愿秩序永存’。”"
 
 #: src-en/data/events.xml.append:577
 msgid ""
@@ -302,6 +322,11 @@ msgid ""
 "data/events.xml.append$/dummyroot/event[@name=\"RK_A_OUTSIDE_POLICE_INTRO_QUEST_START\"]/choice[3]/event/choice/event/choice/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/choice[2]/event/text"
 msgstr ""
+"“感谢你的配合。阿尔布雷希特，跃迁至最近的信号标，并将预估目标坐标传送给指挥部"
+"！我们的跃迁引擎需要整整一天才能重新充能。”\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t他们立刻通过气闸扔出一个奖励包裹，然后切断了通讯。希"
+"望那边真的碰巧有拉迪卡尔人，否则你最好祈祷再也别见到这艘舰船。"
 
 #: src-en/data/events.xml.append:589
 msgid ""
@@ -314,6 +339,10 @@ msgid ""
 "data/events.xml.append$/dummyroot/event[@name=\"RK_A_OUTSIDE_POLICE_INTRO_QUEST_START\"]/choice[3]/event/choice/event/choice/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/choice[3]/event/text"
 msgstr ""
+"“哼！你没有那些装备，但你一定是同情者。同样的渣滓，不同的工具。阿尔布雷希特？"
+"”\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t“准备好了，长官。”\n"
+"\t\t\t\t\t\t\t\t\t\t\t\t“部署！”"
 
 #: src-en/data/events.xml.append:596
 msgid ""
@@ -371,6 +400,10 @@ msgstr "没什么要申报的，警官。"
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER2_QUEST_START\"]/choice[3]/event/choice[2]/event/text"
 msgstr ""
+"那艘舰船肯定从你跃迁进来的那一刻起就在扫描你了。\n"
+"\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t“回答错误，渣滓。我们有一切必要的手段把你从这个世界上抹除。调查从"
+"未得出任何确凿的结论，但至少你会为发生在我小队身上的事付出代价！”"
 
 #: src-en/data/events.xml.append:709
 msgid ""
@@ -401,7 +434,7 @@ msgstr "没什么要申报的，警官。"
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER2_QUEST_START\"]/choice[3]/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/text"
-msgstr ""
+msgstr "“很好。你在这个星区见过任何拉迪卡尔人吗？”"
 
 #: src-en/data/events.xml.append:735
 msgid ""
@@ -414,6 +447,9 @@ msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER2_QUEST_START\"]/choice[3]/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/choice[1]/event/text"
 msgstr ""
+"“也很好。现在，如果你想获取反 RK 装备，请随意采购。我们是唯一被授权出售此类装"
+"备的组织。\n"
+"\t\t\t\t\t\t\t\t‘愿秩序永存’。”"
 
 #: src-en/data/events.xml.append:745
 msgid ""
@@ -426,6 +462,8 @@ msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER2_QUEST_START\"]/choice[3]/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/choice[2]/event/text"
 msgstr ""
+"“感谢你的配合。”他们立刻通过气闸扔出一个标准奖励包裹，然后离开了。希望那边真"
+"的碰巧有拉迪卡尔人，否则你最好祈祷再也别见到这艘舰船。"
 
 #: src-en/data/events.xml.append:754
 msgid ""
@@ -501,6 +539,15 @@ msgstr "没什么要申报的，警官。"
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER3_QUEST_START\"]/choice[3]/event/choice[2]/event/text"
 msgstr ""
+"那艘舰船肯定从你跃迁进来的那一刻起就在扫描你了。\n"
+"\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t“哈！他们总是以为能逃脱惩罚……但正义是逃不掉的。\n"
+"\t\t\t\t\t\t我知道现在已经不可能找到任何关于罪魁祸首的线索了，但有足够的证据"
+"证明那是拉迪卡尔干的……\n"
+"\t\t\t\t\t\t所以你必须为他们对我的家人所做的一切付出代价，你这个该死的混——”\n"
+"\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t你切断了通讯。你（大概？）并没有屠杀他们的家人，但他们显然完全不"
+"在乎，只是一心想要见血。"
 
 #: src-en/data/events.xml.append:882
 msgid ""
@@ -544,13 +591,16 @@ msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER3_QUEST_START\"]/choice[3]/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/choice[1]/event/text"
 msgstr ""
+"“是的，没错。从来没人知道……记住，A-RK.S.S. 时刻都在监视着。\n"
+"\t\t\t\t\t\t\t\t你为什么不买点我们独家销售的反 RK 装备来证明你的清白呢，嗯"
+"？\n"
+"\t\t\t\t\t\t\t\t‘愿秩序永存’。”"
 
 #: src-en/data/events.xml.append:919
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER3_QUEST_START\"]/choice[3]/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/choice[2]/text"
-msgstr "他们往那个方向去了。"
+msgstr "他们往那个方向去了！"
 
 #: src-en/data/events.xml.append:921
 msgid ""
@@ -560,11 +610,10 @@ msgstr ""
 "“是吗？为了你好，我希望那是真的……”他们立刻通过气闸扔出一个标准奖励包裹，然后离开了。希望那边真的有拉迪卡尔成员，否则你最好祈祷再也别见到这艘舰船。"
 
 #: src-en/data/events.xml.append:928
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_A_OUTSIDE_POLICE_NUMBER3_QUEST_START\"]/choice[3]/event/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\""
 " and @lvl=\"0\"]/event/choice[3]/text"
-msgstr "也许有，也许没有，但我们就是要攻击你！"
+msgstr "也许我知道，也许我不知道，但我们要攻击你了！"
 
 #: src-en/data/events.xml.append:930
 msgid ""
@@ -648,6 +697,12 @@ msgstr "继续。"
 #: src-en/data/events.xml.append:1125
 msgid "data/events.xml.append$//event[@name=\"RK_OUTSIDE_STORE\"]/text"
 msgstr ""
+"你正准备跳跃离开时，一艘隐形舰船突然现身。“别担心，我们站在同——一边。”\n"
+"\t\t\n"
+"\t\t仿佛为了证明这一点，他们用自己的远程武器向那艘正在远处轰炸你的辅助舰船开"
+"火，使其停止了攻击。\n"
+"\t\t你无法判断它是否被摧毁。无论如何，等它自我修复完毕，你在这里的事情应该早"
+"就办完了。"
 
 #: src-en/data/events.xml.append:1132
 msgid "data/events.xml.append$//event[@name=\"RK_OUTSIDE_STORE\"]/choice/text"
@@ -668,6 +723,12 @@ msgstr "有意思。让我看看货。"
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_OUTSIDE_STORE\"]/choice/event/choice[1]/event/text"
 msgstr ""
+"“请注——意，任何其他 ARKSS 舰船看到你带着任何标有‘RK’的东西，都绝——对会开火击"
+"毙你，而你似乎并不介意这一点。\n"
+"\t\t\t\t\t\t只是……别被他们打中。可以说他——们使用的装备充满了仇恨，这话一点也—"
+"—不夸张。”\n"
+"\n"
+"\t\t\t\t\t\t[style[color:ff3377]][警告：购买数量非常有限][[/style]]"
 
 #: src-en/data/events.xml.append:1146
 msgid ""
@@ -683,6 +744,10 @@ msgstr "实际上，我想更深入地参与。我想去源头。"
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_OUTSIDE_STORE\"]/choice/event/choice[@req=\"DJMOD_NO_COORDS_NO_VISIT_RADIKAL_SECTOR\"]/event/text"
 msgstr ""
+"“嘿！我喜——欢你这份热情。拿着这些前往拉迪卡尔星区的调整航径坐标，继续保持你那"
+"种‘别死掉’的作风！\n"
+"\t\t\t\t\t\t\n"
+"\t\t\t\t\t\t不过提醒你，可没那——么容易，但这能让你接触到最好的东西。”"
 
 #: src-en/data/events.xml.append:1168
 msgid ""
@@ -697,6 +762,12 @@ msgstr "“真——是令人失望。不过，请随意去杀更多的 ARKSS。
 #: src-en/data/events.xml.append:1186
 msgid "data/events.xml.append$//event[@name=\"RK_SURRENDER_GEAR_TO_RK_A\"]/text"
 msgstr ""
+"“给我们看看。每件的寻物费是 15 废料。\n"
+"\t\t之后我们当然会再次扫描你。如果一切符合规定，你就可以走了。”\n"
+"\n"
+"\t\t他们的设备或许无法探测到 RK 内置升级，但他们绝对清楚你携带的其余所有东西"
+"。\n"
+"\t\t根据他们不断刷屏的文件，哪怕少交一件，都是联邦重罪！"
 
 #: src-en/data/events.xml.append:1198
 msgid ""
@@ -1196,7 +1267,7 @@ msgstr "继续。"
 #: src-en/data/events.xml.append:1738
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_SURRENDER_GEAR_TO_RK_A\"]/choice[@req=\"RK_KILLALL_BEAM_ELITE\"]/text"
-msgstr ""
+msgstr "上交你的精英墓志铭光束。"
 
 #: src-en/data/events.xml.append:1740
 msgid ""
@@ -1241,7 +1312,7 @@ msgstr "继续。"
 #: src-en/data/events.xml.append:1787
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_SURRENDER_GEAR_TO_RK_A\"]/choice[@req=\"RK_RAIN_OF_ION_ELITE\"]/text"
-msgstr ""
+msgstr "上交你的（精英）离子之雨。"
 
 #: src-en/data/events.xml.append:1789
 msgid ""
@@ -1359,10 +1430,9 @@ msgid ""
 msgstr "继续。"
 
 #: src-en/data/events.xml.append:1922
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_SURRENDER_GEAR_TO_RK_A\"]/choice[@req=\"DJMOD_LASER_BPS_ELITE\"]/text"
-msgstr "上交你的BPS 信使。"
+msgstr "上交你的精英BPS 信使。"
 
 #: src-en/data/events.xml.append:1924
 msgid ""
@@ -1377,7 +1447,7 @@ msgstr "继续。"
 #: src-en/data/events.xml.append:1940
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_SURRENDER_GEAR_TO_RK_A\"]/choice[@req=\"RK_ATKD_SHOTPHASER\"]/text"
-msgstr ""
+msgstr "上交你的相位无人机。"
 
 #: src-en/data/events.xml.append:1942
 msgid ""
@@ -1392,7 +1462,7 @@ msgstr "继续。"
 #: src-en/data/events.xml.append:1957
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_SURRENDER_GEAR_TO_RK_A\"]/choice[@req=\"RK_ATKD_BOMBLAUNCHER_OXYBOTTLE\"]/text"
-msgstr ""
+msgstr "上交你的氧气轰炸无人机。"
 
 #: src-en/data/events.xml.append:1959
 msgid ""
@@ -1413,6 +1483,21 @@ msgstr "(已上交的 RK 装备) 你知道吗，剩下的我们还是想留着�
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_SURRENDER_GEAR_TO_RK_A\"]/choice[@req=\"rk_a_outside_police_surrendered_gear\"]/event/text"
 msgstr ""
+"舰长看起来对你深感失望。“难道不道德力量的诱惑在这么短的时间内就如此控制了你？"
+"以至于你竟敢当面直接向 ARKSS 承认犯罪意图？”\n"
+"\t\t\t\t\n"
+"\t\t\t\t他们花了一点时间反思。显然，事情从一开始通常只有两种走向，而在审查中"
+"途像这样突然改变心意的情况肯定很少见。\n"
+"\t\t\t\t然而，似乎他们强化服上的一记电击让他们回过神来。\n"
+"\t\t\t\t\n"
+"\t\t\t\t“所以，就这样，你选择了死亡。又一艘还算过得去的舰船堕入了黑暗面。当这"
+"份工作变成去杀害那些刚被无良商人腐蚀、原本还无辜的人时，就没那么令人愉快了。"
+"但我们还是会执行的。我没说错吧？”\n"
+"\t\t\t\t他们全体船员对这句排练已久的齐声回答立刻响起：“愿秩序永存！”\n"
+"\t\t\t\t“现在受死吧，刚成为罪犯的吃猫变态疯子们！”\n"
+"\t\t\t\t\n"
+"\t\t\t\t你根本没时间去反驳这些话里包含的无数假设：他们的武器正在上线，而且还"
+"包括一艘可部署的火力支援舰！"
 
 #: src-en/data/events.xml.append:1992
 msgid ""
@@ -1469,6 +1554,19 @@ msgstr "转念一想，我们还是留着吧！"
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_SURRENDER_GEAR_TO_RK_A\"]/choice[49]/event/text"
 msgstr ""
+"舰长看起来对你深感失望。“难道不道德力量的诱惑在这么短的时间内就如此控制了你？"
+"以至于你竟敢当面直接向 ARKSS 承认犯罪意图？”\n"
+"\t\t\t\t他们花了一小会儿反思。显然，事情从一开始通常只有两种走向，而在审查中"
+"途像这样突然改变心意的情况肯定很少见。\n"
+"\t\t\t\t\n"
+"\t\t\t\t“所以，就这样，你选择了死亡。又一艘还算过得去的舰船堕入了黑暗面。当这"
+"份工作需要去杀害那些刚被无良商人腐蚀、原本还无辜的人时，就没那么令人愉快了。"
+"但我们还是会执行的。我没说错吧？”\n"
+"\t\t\t\t他们全体船员对这句排练已久的齐声回答立刻响起：“愿秩序永存！”\n"
+"\t\t\t\t“现在受死吧，刚成为罪犯的吃小猫变态！”\n"
+"\t\t\t\t\n"
+"\t\t\t\t你根本没时间去反驳这些话里包含的无数假设：他们的武器正在上线，而且还"
+"包括一艘可部署的火力支援舰！"
 
 #: src-en/data/events.xml.append:2052
 msgid ""
@@ -1494,6 +1592,11 @@ msgstr "就这样。"
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_SURRENDER_GEAR_TO_RK_A\"]/choice[@req=\"RK_HAS_GEAR_SURRENDERABLE_TO_RK_A\"]/event/text"
 msgstr ""
+"你松了一口气，终于把那些非法装备交给了有关当局，而不必为了它们与对方开战。\n"
+"\t\t\t\t希望你所剩下的东西已经足够了。\n"
+"\t\t\t\n"
+"\t\t\t\t“既然你已经证明自己愿意为安全事业做出贡献，那就尽管更好地武装自己，以"
+"应对这个日益增长的威胁吧。”"
 
 #: src-en/data/events.xml.append:2102
 msgid ""
@@ -1873,10 +1976,9 @@ msgid ""
 msgstr "当他们转移过量的报酬时，你试图掩饰自己的满足感，但也暗暗希望不会在不久的将来因某次不幸的遭遇而后悔这笔交易。他们一言不发地离开了。"
 
 #: src-en/data/events.xml.append:2451
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/choice[@req=\"RK_KILLALL_BEAM_ELITE\"]/text"
-msgstr "把你的 墓志铭光束 卖给他们，得 120 ~。"
+msgstr "把你的精英墓志铭光束卖给他们，得 120 ~。"
 
 #: src-en/data/events.xml.append:2453
 msgid ""
@@ -1906,7 +2008,7 @@ msgstr "当他们转移过量的报酬时，你试图掩饰自己的满足感，
 #: src-en/data/events.xml.append:2481
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/choice[@req=\"RK_RAIN_OF_ION_ELITE\"]/text"
-msgstr ""
+msgstr "把你的（精英）离子之雨卖给他们，得 270 废料。"
 
 #: src-en/data/events.xml.append:2483
 msgid ""
@@ -1984,10 +2086,9 @@ msgid ""
 msgstr "当他们转移过量的报酬时，你试图掩饰自己的满足感，但也暗暗希望不会在不久的将来因某次不幸的遭遇而后悔这笔交易。他们一言不发地离开了。"
 
 #: src-en/data/events.xml.append:2568
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/choice[@req=\"DJMOD_LASER_BPS_ELITE\"]/text"
-msgstr "把你的 BPS 信使 激光卖给他们，得 200 ~。"
+msgstr "把你的精英BPS信使 激光卖给他们，得 280 ~。"
 
 #: src-en/data/events.xml.append:2570
 msgid ""
@@ -1997,7 +2098,7 @@ msgstr "当他们转移过量的报酬时，你试图掩饰自己的满足感，
 #: src-en/data/events.xml.append:2580
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/choice[@req=\"RK_ATKD_SHOTPHASER\"]/text"
-msgstr ""
+msgstr "把你的相位无人机卖给他们，得 135~。"
 
 #: src-en/data/events.xml.append:2582
 msgid ""
@@ -2007,7 +2108,7 @@ msgstr "当他们转移过量的报酬时，你试图掩饰自己的满足感，
 #: src-en/data/events.xml.append:2591
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ROCKMAN\"]/choice[1]/event/choice/event/choice/event/choice/event/choice[@req=\"RK_ATKD_BOMBLAUNCHER_OXYBOTTLE\"]/text"
-msgstr ""
+msgstr "把你的氧气轰炸无人机卖给他们，得 105~."
 
 #: src-en/data/events.xml.append:2593
 msgid ""
@@ -2190,10 +2291,9 @@ msgid ""
 msgstr "当他们转移过量的报酬时，你试图掩饰自己的满足感，但也暗暗希望不会在不久的将来因某次不幸的遭遇而后悔这笔交易。他们一言不发地离开了。"
 
 #: src-en/data/events.xml.append:2753
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice[1]/event/choice/event/choice[1]/event/choice[@req=\"RK_KILLALL_BEAM_ELITE\"]/text"
-msgstr "把你的 墓志铭光束 卖给他们，得 120 ~。"
+msgstr "把你的精英墓志铭光束卖给他们得 150 ~。"
 
 #: src-en/data/events.xml.append:2755
 msgid ""
@@ -2223,7 +2323,7 @@ msgstr "当他们转移过量的报酬时，你试图掩饰自己的满足感，
 #: src-en/data/events.xml.append:2783
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice[1]/event/choice/event/choice[1]/event/choice[@req=\"RK_RAIN_OF_ION_ELITE\"]/text"
-msgstr ""
+msgstr "把你的（精英）离子之雨卖给他们，得 270~."
 
 #: src-en/data/events.xml.append:2785
 msgid ""
@@ -2301,10 +2401,9 @@ msgid ""
 msgstr "当他们转移过量的报酬时，你试图掩饰自己的满足感，但也暗暗希望不会在不久的将来因某次不幸的遭遇而后悔这笔交易。他们一言不发地离开了。"
 
 #: src-en/data/events.xml.append:2870
-#, fuzzy
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice[1]/event/choice/event/choice[1]/event/choice[@req=\"DJMOD_LASER_BPS_ELITE\"]/text"
-msgstr "把你的 BPS 信使 激光卖给他们，得 200 ~。"
+msgstr "把你的精英BPS 信使激光卖给他们得200 ~。"
 
 #: src-en/data/events.xml.append:2872
 msgid ""
@@ -2314,7 +2413,7 @@ msgstr "当他们转移过量的报酬时，你试图掩饰自己的满足感，
 #: src-en/data/events.xml.append:2882
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice[1]/event/choice/event/choice[1]/event/choice[@req=\"RK_ATKD_SHOTPHASER\"]/text"
-msgstr ""
+msgstr "把你的相位无人机卖给他们，得 135~."
 
 #: src-en/data/events.xml.append:2884
 msgid ""
@@ -2324,7 +2423,7 @@ msgstr "当他们转移过量的报酬时，你试图掩饰自己的满足感，
 #: src-en/data/events.xml.append:2893
 msgid ""
 "data/events.xml.append$//event[@name=\"RK_GEAR_BUYER_ZOLTAN\"]/choice[1]/event/choice[1]/event/choice/event/choice[1]/event/choice[@req=\"RK_ATKD_BOMBLAUNCHER_OXYBOTTLE\"]/text"
-msgstr ""
+msgstr "把你的氧气轰炸无人机卖给他们，得 105~."
 
 #: src-en/data/events.xml.append:2895
 msgid ""
