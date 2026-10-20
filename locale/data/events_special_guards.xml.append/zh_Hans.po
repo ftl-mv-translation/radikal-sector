@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-10-21 11:36+0000\n"
+"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
+"projects/radikal-sector/dataevents_special_guardsxmlappend/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-en/data/events_special_guards.xml.append:6
 msgid ""
@@ -328,12 +335,14 @@ msgstr "你击败了拉迪卡尔守卫。没有船员的阻拦，你可以去调
 #: src-en/data/events_special_guards.xml.append:318
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/choice[@req=\"DJMOD_LASER_BPS\"]/text"
-msgstr ""
+msgstr "（BPS 信使）你的 RK 装备检测到了它自己的升级套件。"
 
 #: src-en/data/events_special_guards.xml.append:320
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/choice[@req=\"DJMOD_LASER_BPS\"]/event/text"
 msgstr ""
+"你提取出升级套件并迅速撤离。\n"
+"\t\t\t\t你立刻将其应用到了你的装备上……"
 
 #: src-en/data/events_special_guards.xml.append:326
 msgid ""
@@ -343,7 +352,7 @@ msgstr "继续。"
 #: src-en/data/events_special_guards.xml.append:328
 msgid ""
 "data/events_special_guards.xml.append$//event[@name=\"GUARD_RADIKAL_DEADCREW\"]/choice[@req=\"DJMOD_LASER_BPS\"]/event/choice/event/text"
-msgstr ""
+msgstr "你的装备现在已是精英级！"
 
 #: src-en/data/events_special_guards.xml.append:332
 msgid ""
