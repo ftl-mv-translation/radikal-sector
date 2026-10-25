@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-10-13 17:26+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-10-26 01:36+0000\n"
+"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/radikal-sector/dataevents_special_storagexmlappend/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -247,11 +247,10 @@ msgid ""
 msgstr "（朋克谐合）培养一个半械分离者。"
 
 #: src-en/data/events_special_storage.xml.append:721
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$/dummyroot/FTL/mod:findName[23]/mod-"
 "append:choice/text"
-msgstr "（增氧器）创造大气环境！"
+msgstr "（增氧器）创造大气环境。"
 
 #: src-en/data/events_special_storage.xml.append:728
 msgid ""
@@ -1426,13 +1425,13 @@ msgid ""
 msgstr "好的。"
 
 #: src-en/data/events_special_storage.xml.append:2350
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_SHIPVORE_RAM_REINFORCE\"]/text"
 msgstr ""
 "你确定要强化这个增强部件吗？\n"
-"[选择满功率运行时，将失去强化效果而非装置本身。\n"
-"在此之后你仍然可以在空信标处进行其他操作。]"
+"\t[选择满功率运行时，将失去强化效果而非装置本身。\n"
+"\t\n"
+"\t在此之后你仍然可以在空信标处进行其他操作。]"
 
 #: src-en/data/events_special_storage.xml.append:2356
 msgid ""
@@ -1464,13 +1463,13 @@ msgid ""
 msgstr "算了，做点别的。"
 
 #: src-en/data/events_special_storage.xml.append:2383
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_PERSISTENCE_SHIELD_REBUILD_CAPACITOR\"]/text"
 msgstr ""
 "你确定要重建持久护盾的电容器吗？\n"
-"[允许你再次从切换菜单中使用其主动能力。\n"
-"在此之后，你仍然可以在空信标处做些别的事情。]"
+"\t[允许你再次从切换菜单中使用其主动能力。\n"
+"\t\n"
+"\t在此之后，你仍然可以在空信标处做些别的事情。]"
 
 #: src-en/data/events_special_storage.xml.append:2389
 msgid ""
@@ -1624,20 +1623,19 @@ msgid ""
 msgstr "（OE）辅助护盾舱室！"
 
 #: src-en/data/events_special_storage.xml.append:2549
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"oe_aux_shields\"]/text"
-msgstr "（OE）辅助护盾舱室！"
+msgstr "（OE 重置）辅助护盾舱室！"
 
 #: src-en/data/events_special_storage.xml.append:2553
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"oe_growth\"]/text"
-msgstr ""
+msgstr "(OE 重置) 绽放舱室!"
 
 #: src-en/data/events_special_storage.xml.append:2557
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"oe_grease\"]/text"
-msgstr ""
+msgstr "（OE 重置）武器增幅器舱室！"
 
 #: src-en/data/events_special_storage.xml.append:2562
 msgid ""
@@ -1652,7 +1650,7 @@ msgstr "（LI）烧蚀装甲舱室！"
 #: src-en/data/events_special_storage.xml.append:2571
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_TOGGLEMENU_SCORCH_SELF\"]/choice[@req=\"lily_aux_reactor\"]/text"
-msgstr ""
+msgstr "(LI) 辅助反应堆!"
 
 #: src-en/data/events_special_storage.xml.append:2575
 msgid ""
@@ -2517,12 +2515,11 @@ msgid ""
 msgstr "算了，直接战斗！"
 
 #: src-en/data/events_special_storage.xml.append:4935
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE_IN_EMPTY\"]/text"
 msgstr ""
-"你确定要这么做吗？\n"
-"[将双方飞船都笼罩在氧气大气中，保护火焰和船员免受排气和破舱的影响。消耗 2}]"
+"你确定要这样做吗？\n"
+"\t[将使你的舰船笼罩在氧气环境中，保护火焰与船员免受缺氧与破舱的影响。消耗 1}]"
 
 #: src-en/data/events_special_storage.xml.append:4939
 msgid ""
@@ -2540,7 +2537,7 @@ msgstr "你发射了闪释超压缩氧气炸弹，将整个区域笼罩在刚好
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_COMBAT_OXYGENIZER_ACTIVATE_IN_EMPTY\"]/choice[@req=\"loc_environment_atmosphere\""
 " and @lvl=\"0\"]/event/choice/text"
-msgstr ""
+msgstr "啊，新鲜空气！"
 
 #: src-en/data/events_special_storage.xml.append:4957
 msgid ""
@@ -3134,12 +3131,12 @@ msgid ""
 msgstr "开始战斗！"
 
 #: src-en/data/events_special_storage.xml.append:6138
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"DJMOD_COMBAT_CHECK_DEFENSE_REMOVER\"]/text"
 msgstr ""
-"你确定要这么做吗？\n"
-"[每 3 到 7 秒（随机）降低敌方引擎和护盾各 1 点。消耗 3 反应堆]"
+"你确定要这样做吗？\n"
+"\t[每 3 到 7 秒（随机）削弱敌方引擎、护盾及烧蚀装甲（来自革新系统）。消耗 3 "
+"点反应堆能量]"
 
 #: src-en/data/events_special_storage.xml.append:6142
 msgid ""
@@ -3551,16 +3548,15 @@ msgid ""
 msgstr "确定"
 
 #: src-en/data/events_special_storage.xml.append:6742
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"RK_BPS_SURVEYOR_ACTIVATE\"]/choice[@req=\"RK_BPS_SURVEYOR\"]/event/text"
 msgstr ""
 "“去吧！”你派出了两架特殊无人机，祈祷好运。\n"
 "\t\t\t\t一段时间后，它们远程报告了发现。\n"
 "\t\t\t\t\n"
-"\t\t\t\t如果你选择什么都不取回，你将收回两架回收器剩下的部分。\n"
+"\t\t\t\t如果你选择不取回任何东西，你会收回部分成本。\n"
 "\t\t\t\t\n"
-"\t\t\t\t如果你选择取回任何东西，你将收回 1 架回收器剩下的部分，但舰队将加速 1 次。"
+"\t\t\t\t如果你选择取回任何东西，舰队将追近你 1 回合。"
 
 #: src-en/data/events_special_storage.xml.append:6757
 msgid ""
@@ -3716,18 +3712,16 @@ msgstr ""
 "\t\t\t可安装两次。[已安装：你已拥有此升级的最大数量]"
 
 #: src-en/data/events_special_storage.xml.append:7086
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_CALIBRATOR\""
 " and @lvl=\"1\"]/text"
-msgstr "校准器 Lv 2。[花费：45~，1|]"
+msgstr "[RK 巴姆]校准器 Lv 2。[花费：45~，1|]"
 
 #: src-en/data/events_special_storage.xml.append:7090
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_CALIBRATOR\""
 " and @lvl=\"0\"]/text"
-msgstr "校准器 Lv 1。[花费：45~，1|]"
+msgstr "[RK 巴姆]校准器 Lv 1。[花费：45~，1|]"
 
 #: src-en/data/events_special_storage.xml.append:7095
 msgid ""
@@ -3738,11 +3732,10 @@ msgstr ""
 "窒息时，他们的移动、破坏、维修和战斗能力提升 1.4 倍。不影响免疫窒息的船员。[已安装]"
 
 #: src-en/data/events_special_storage.xml.append:7100
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_CHOKING_IS_FINE\""
 " and @lvl=\"0\"]/text"
-msgstr "憋气冠军 [花费：55 ~，1}，1|]"
+msgstr "[RK 巴姆]憋气冠军 [花费：55 ~，1}，1|]"
 
 #: src-en/data/events_special_storage.xml.append:7105
 msgid ""
@@ -3753,25 +3746,24 @@ msgstr ""
 "如果没有较弱的版本存在，他们会变成模物族。当模物族死亡时，则无事发生。不适用于事件死亡。[已安装]"
 
 #: src-en/data/events_special_storage.xml.append:7110
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_DEMICLONER\""
 " and @lvl=\"0\"]/text"
-msgstr "双重克隆器。[花费：35~，2|]"
+msgstr "[RK 朋克]双重克隆器。[花费：35~，2|]"
 
 #: src-en/data/events_special_storage.xml.append:7115
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_MC_PARALYZER\""
 " and @lvl=\"1\"]/text"
-msgstr "RK 朋克 “冷静头脑”：当受到心灵控制效果影响时，你的船员无法战斗、破坏或传送离开。对双方飞船都有效。[已安装]"
+msgstr ""
+"RK 朋克 “冷静头脑”：当受到心灵控制效果影响时，你的船员无法战斗、破坏、使用技"
+"能或传送离开。对双方舰船均有效。[已安装]"
 
 #: src-en/data/events_special_storage.xml.append:7119
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_MC_PARALYZER\""
 " and @lvl=\"0\"]/text"
-msgstr "冷静头脑。[花费： 30~，1|]"
+msgstr "[RK 朋克]冷静头脑。[花费： 30~，1|]"
 
 #: src-en/data/events_special_storage.xml.append:7125
 msgid ""
@@ -3780,11 +3772,10 @@ msgid ""
 msgstr "RK 灼烧 “浴火裹布”：在火焰中，你的船员移动和破坏速度为 1.75 倍，战斗和门伤害为 1.75 倍。对双方飞船都有效。[已安装]"
 
 #: src-en/data/events_special_storage.xml.append:7129
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_RK_IN_FIRE_CREWBOOSTS\""
 " and @lvl=\"0\"]/text"
-msgstr "浴火裹布。[花费：55 ~，1{，1}]"
+msgstr "[RK 灼烧]浴火裹布。[花费：55 ~，1{，1}]"
 
 #: src-en/data/events_special_storage.xml.append:7134
 msgid ""
@@ -3793,11 +3784,10 @@ msgid ""
 msgstr "RK 灼烧 “心灵加热器”：在火焰中，你的船员免疫心灵控制并会被治愈，眩晕时间缩短 50%，并揭示相邻舱室。对双方飞船都有效。[已安装]"
 
 #: src-en/data/events_special_storage.xml.append:7138
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL\"]/choice[@req=\"INTERNAL_DJMOD_MC_IMMUNE_FROM_FIRE\""
 " and @lvl=\"0\"]/text"
-msgstr "心灵加热器。[花费：30 ~，1{，1|]"
+msgstr "[RK 灼烧]心灵加热器。[花费：30 ~，1{，1|]"
 
 #: src-en/data/events_special_storage.xml.append:7143
 msgid ""
@@ -3946,12 +3936,12 @@ msgid ""
 msgstr "算了。"
 
 #: src-en/data/events_special_storage.xml.append:7330
-#, fuzzy
 msgid ""
 "data/events_special_storage.xml.append$//event[@name=\"STORAGE_CHECK_SYSTEM_DJMOD_RADIKAL_INTERNAL_DJMOD_MC_PARALYZER\"]/text"
 msgstr ""
 "你即将安装冷静头脑升级。\n"
-"[效果：当受到心灵控制效果影响时，你的船员无法战斗、破坏或传送离开。对双方飞船都有效。]"
+"\t[效果：当受到精神控制效果影响时，你的船员无法战斗、破坏、使用技能或传送离开"
+"。对双方舰船均有效。]"
 
 #: src-en/data/events_special_storage.xml.append:7334
 msgid ""
